@@ -2972,6 +2972,326 @@
       (IOSTANDARD HSTL_I_DCI)
     )
     (SIGNAL
+      (NAME RIO_CLK_0_1)
+      (HDL_NAME RIO_CLK_0_1)
+      (DIR IN)
+      (TYPE MGTCLK)
+      (SIG_P RIO_CLK_0_1_P)
+      (SIG_N RIO_CLK_0_1_N)
+    )
+    (SIGNAL
+      (NAME RIO_CLK_2_3)
+      (HDL_NAME RIO_CLK_2_3)
+      (DIR IN)
+      (TYPE MGTCLK)
+      (SIG_P RIO_CLK_2_3_P)
+      (SIG_N RIO_CLK_2_3_N)
+    )
+    (SIGNAL
+      (NAME RIO_RX0_)
+      (HDL_NAME RIO_RX0_)
+      (DIR IN)
+      (ELEMENTS
+        (SIGNAL
+          (NAME "RIO_RX0_<3>")
+          (HDL_NAME "RIO_RX0_<3>")
+          (TYPE MGTRX)
+          (SIG_P "RIO_RX0__P<3>")
+          (SIG_N "RIO_RX0__N<3>")
+        )
+        (SIGNAL
+          (NAME "RIO_RX0_<2>")
+          (HDL_NAME "RIO_RX0_<2>")
+          (TYPE MGTRX)
+          (SIG_P "RIO_RX0__P<2>")
+          (SIG_N "RIO_RX0__N<2>")
+        )
+        (SIGNAL
+          (NAME "RIO_RX0_<1>")
+          (HDL_NAME "RIO_RX0_<1>")
+          (TYPE MGTRX)
+          (SIG_P "RIO_RX0__P<1>")
+          (SIG_N "RIO_RX0__N<1>")
+        )
+        (SIGNAL
+          (NAME "RIO_RX0_<0>")
+          (HDL_NAME "RIO_RX0_<0>")
+          (TYPE MGTRX)
+          (SIG_P "RIO_RX0__P<0>")
+          (SIG_N "RIO_RX0__N<0>")
+        )
+      )
+      (TYPE MGTRX)
+      (SIG_P RIO_RX0__P)
+      (SIG_N RIO_RX0__N)
+    )
+    (SIGNAL
+      (NAME RIO_RX1_)
+      (HDL_NAME RIO_RX1_)
+      (DIR IN)
+      (ELEMENTS
+        (SIGNAL
+          (NAME "RIO_RX1_<3>")
+          (HDL_NAME "RIO_RX1_<3>")
+          (TYPE MGTRX)
+          (SIG_P "RIO_RX1__P<3>")
+          (SIG_N "RIO_RX1__N<3>")
+        )
+        (SIGNAL
+          (NAME "RIO_RX1_<2>")
+          (HDL_NAME "RIO_RX1_<2>")
+          (TYPE MGTRX)
+          (SIG_P "RIO_RX1__P<2>")
+          (SIG_N "RIO_RX1__N<2>")
+        )
+        (SIGNAL
+          (NAME "RIO_RX1_<1>")
+          (HDL_NAME "RIO_RX1_<1>")
+          (TYPE MGTRX)
+          (SIG_P "RIO_RX1__P<1>")
+          (SIG_N "RIO_RX1__N<1>")
+        )
+        (SIGNAL
+          (NAME "RIO_RX1_<0>")
+          (HDL_NAME "RIO_RX1_<0>")
+          (TYPE MGTRX)
+          (SIG_P "RIO_RX1__P<0>")
+          (SIG_N "RIO_RX1__N<0>")
+        )
+      )
+      (TYPE MGTRX)
+      (SIG_P RIO_RX1__P)
+      (SIG_N RIO_RX1__N)
+    )
+    (SIGNAL
+      (NAME RIO_RX2_)
+      (HDL_NAME RIO_RX2_)
+      (DIR IN)
+      (ELEMENTS
+        (SIGNAL
+          (NAME "RIO_RX2_<3>")
+          (HDL_NAME "RIO_RX2_<3>")
+          (TYPE MGTRX)
+          (SIG_P "RIO_RX2__P<3>")
+          (SIG_N "RIO_RX2__N<3>")
+        )
+        (SIGNAL
+          (NAME "RIO_RX2_<2>")
+          (HDL_NAME "RIO_RX2_<2>")
+          (TYPE MGTRX)
+          (SIG_P "RIO_RX2__P<2>")
+          (SIG_N "RIO_RX2__N<2>")
+        )
+        (SIGNAL
+          (NAME "RIO_RX2_<1>")
+          (HDL_NAME "RIO_RX2_<1>")
+          (TYPE MGTRX)
+          (SIG_P "RIO_RX2__P<1>")
+          (SIG_N "RIO_RX2__N<1>")
+        )
+        (SIGNAL
+          (NAME "RIO_RX2_<0>")
+          (HDL_NAME "RIO_RX2_<0>")
+          (TYPE MGTRX)
+          (SIG_P "RIO_RX2__P<0>")
+          (SIG_N "RIO_RX2__N<0>")
+        )
+      )
+      (TYPE MGTRX)
+      (SIG_P RIO_RX2__P)
+      (SIG_N RIO_RX2__N)
+    )
+    (SIGNAL
+      (NAME RIO_RX3_)
+      (HDL_NAME RIO_RX3_)
+      (DIR IN)
+      (ELEMENTS
+        (SIGNAL
+          (NAME "RIO_RX3_<3>")
+          (HDL_NAME "RIO_RX3_<3>")
+          (TYPE MGTRX)
+          (SIG_P "RIO_RX3__P<3>")
+          (SIG_N "RIO_RX3__N<3>")
+        )
+        (SIGNAL
+          (NAME "RIO_RX3_<2>")
+          (HDL_NAME "RIO_RX3_<2>")
+          (TYPE MGTRX)
+          (SIG_P "RIO_RX3__P<2>")
+          (SIG_N "RIO_RX3__N<2>")
+        )
+        (SIGNAL
+          (NAME "RIO_RX3_<1>")
+          (HDL_NAME "RIO_RX3_<1>")
+          (TYPE MGTRX)
+          (SIG_P "RIO_RX3__P<1>")
+          (SIG_N "RIO_RX3__N<1>")
+        )
+        (SIGNAL
+          (NAME "RIO_RX3_<0>")
+          (HDL_NAME "RIO_RX3_<0>")
+          (TYPE MGTRX)
+          (SIG_P "RIO_RX3__P<0>")
+          (SIG_N "RIO_RX3__N<0>")
+        )
+      )
+      (TYPE MGTRX)
+      (SIG_P RIO_RX3__P)
+      (SIG_N RIO_RX3__N)
+    )
+    (SIGNAL
+      (NAME RIO_TX0_)
+      (HDL_NAME RIO_TX0_)
+      (DIR IN)
+      (ELEMENTS
+        (SIGNAL
+          (NAME "RIO_TX0_<3>")
+          (HDL_NAME "RIO_TX0_<3>")
+          (TYPE MGTTX)
+          (SIG_P "RIO_TX0__P<3>")
+          (SIG_N "RIO_TX0__N<3>")
+        )
+        (SIGNAL
+          (NAME "RIO_TX0_<2>")
+          (HDL_NAME "RIO_TX0_<2>")
+          (TYPE MGTTX)
+          (SIG_P "RIO_TX0__P<2>")
+          (SIG_N "RIO_TX0__N<2>")
+        )
+        (SIGNAL
+          (NAME "RIO_TX0_<1>")
+          (HDL_NAME "RIO_TX0_<1>")
+          (TYPE MGTTX)
+          (SIG_P "RIO_TX0__P<1>")
+          (SIG_N "RIO_TX0__N<1>")
+        )
+        (SIGNAL
+          (NAME "RIO_TX0_<0>")
+          (HDL_NAME "RIO_TX0_<0>")
+          (TYPE MGTTX)
+          (SIG_P "RIO_TX0__P<0>")
+          (SIG_N "RIO_TX0__N<0>")
+        )
+      )
+      (TYPE MGTTX)
+      (SIG_P RIO_TX0__P)
+      (SIG_N RIO_TX0__N)
+    )
+    (SIGNAL
+      (NAME RIO_TX1_)
+      (HDL_NAME RIO_TX1_)
+      (DIR IN)
+      (ELEMENTS
+        (SIGNAL
+          (NAME "RIO_TX1_<3>")
+          (HDL_NAME "RIO_TX1_<3>")
+          (TYPE MGTTX)
+          (SIG_P "RIO_TX1__P<3>")
+          (SIG_N "RIO_TX1__N<3>")
+        )
+        (SIGNAL
+          (NAME "RIO_TX1_<2>")
+          (HDL_NAME "RIO_TX1_<2>")
+          (TYPE MGTTX)
+          (SIG_P "RIO_TX1__P<2>")
+          (SIG_N "RIO_TX1__N<2>")
+        )
+        (SIGNAL
+          (NAME "RIO_TX1_<1>")
+          (HDL_NAME "RIO_TX1_<1>")
+          (TYPE MGTTX)
+          (SIG_P "RIO_TX1__P<1>")
+          (SIG_N "RIO_TX1__N<1>")
+        )
+        (SIGNAL
+          (NAME "RIO_TX1_<0>")
+          (HDL_NAME "RIO_TX1_<0>")
+          (TYPE MGTTX)
+          (SIG_P "RIO_TX1__P<0>")
+          (SIG_N "RIO_TX1__N<0>")
+        )
+      )
+      (TYPE MGTTX)
+      (SIG_P RIO_TX1__P)
+      (SIG_N RIO_TX1__N)
+    )
+    (SIGNAL
+      (NAME RIO_TX2_)
+      (HDL_NAME RIO_TX2_)
+      (DIR IN)
+      (ELEMENTS
+        (SIGNAL
+          (NAME "RIO_TX2_<3>")
+          (HDL_NAME "RIO_TX2_<3>")
+          (TYPE MGTTX)
+          (SIG_P "RIO_TX2__P<3>")
+          (SIG_N "RIO_TX2__N<3>")
+        )
+        (SIGNAL
+          (NAME "RIO_TX2_<2>")
+          (HDL_NAME "RIO_TX2_<2>")
+          (TYPE MGTTX)
+          (SIG_P "RIO_TX2__P<2>")
+          (SIG_N "RIO_TX2__N<2>")
+        )
+        (SIGNAL
+          (NAME "RIO_TX2_<1>")
+          (HDL_NAME "RIO_TX2_<1>")
+          (TYPE MGTTX)
+          (SIG_P "RIO_TX2__P<1>")
+          (SIG_N "RIO_TX2__N<1>")
+        )
+        (SIGNAL
+          (NAME "RIO_TX2_<0>")
+          (HDL_NAME "RIO_TX2_<0>")
+          (TYPE MGTTX)
+          (SIG_P "RIO_TX2__P<0>")
+          (SIG_N "RIO_TX2__N<0>")
+        )
+      )
+      (TYPE MGTTX)
+      (SIG_P RIO_TX2__P)
+      (SIG_N RIO_TX2__N)
+    )
+    (SIGNAL
+      (NAME RIO_TX3_)
+      (HDL_NAME RIO_TX3_)
+      (DIR IN)
+      (ELEMENTS
+        (SIGNAL
+          (NAME "RIO_TX3_<3>")
+          (HDL_NAME "RIO_TX3_<3>")
+          (TYPE MGTTX)
+          (SIG_P "RIO_TX3__P<3>")
+          (SIG_N "RIO_TX3__N<3>")
+        )
+        (SIGNAL
+          (NAME "RIO_TX3_<2>")
+          (HDL_NAME "RIO_TX3_<2>")
+          (TYPE MGTTX)
+          (SIG_P "RIO_TX3__P<2>")
+          (SIG_N "RIO_TX3__N<2>")
+        )
+        (SIGNAL
+          (NAME "RIO_TX3_<1>")
+          (HDL_NAME "RIO_TX3_<1>")
+          (TYPE MGTTX)
+          (SIG_P "RIO_TX3__P<1>")
+          (SIG_N "RIO_TX3__N<1>")
+        )
+        (SIGNAL
+          (NAME "RIO_TX3_<0>")
+          (HDL_NAME "RIO_TX3_<0>")
+          (TYPE MGTTX)
+          (SIG_P "RIO_TX3__P<0>")
+          (SIG_N "RIO_TX3__N<0>")
+        )
+      )
+      (TYPE MGTTX)
+      (SIG_P RIO_TX3__P)
+      (SIG_N RIO_TX3__N)
+    )
+    (SIGNAL
       (NAME V5_TCK)
       (DIR IN)
       (PIN AB15)
@@ -7701,7 +8021,7 @@
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(ADC_0),(ADC_1),(DDR2_DIMM),(epb),(GPIO_DIFF),(qdr2_by0_1),(qdr2_by2_3)")
+          (VALUE "(ADC_0),(ADC_1),(DDR2_DIMM),(epb),(GPIO_DIFF),(qdr2_by0_1),(qdr2_by2_3),(RIO_SIGNAL)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -12575,7 +12895,7 @@
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(ADC_0),(ADC_1),(DDR2_DIMM),(epb),(GPIO_DIFF),(qdr2_by0_1),(qdr2_by2_3)")
+          (VALUE "(ADC_0),(ADC_1),(DDR2_DIMM),(epb),(GPIO_DIFF),(qdr2_by0_1),(qdr2_by2_3),(RIO_SIGNAL)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -20103,7 +20423,7 @@
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(ADC_0),(ADC_1),(DDR2_DIMM),(epb),(GPIO_DIFF),(qdr2_by0_1),(qdr2_by2_3)")
+          (VALUE "(ADC_0),(ADC_1),(DDR2_DIMM),(epb),(GPIO_DIFF),(qdr2_by0_1),(qdr2_by2_3),(RIO_SIGNAL)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -20320,7 +20640,7 @@
           (STRING "External Slave Peripheral")
           (POSITION 2540 0)
           (FONT FONT_5 9)
-          (COLOR Black)
+          (COLOR Red)
         )
         (TEXT
           (STRING Interface)
@@ -20332,13 +20652,13 @@
           (STRING "External Master Peripheral")
           (POSITION 2540 93980)
           (FONT FONT_5 9)
-          (COLOR Black)
+          (COLOR Red)
         )
         (TEXT
           (STRING Interface)
-          (POSITION 2540 96266)
+          (POSITION 2517 97692)
           (FONT FONT_5 9)
-          (COLOR Black)
+          (COLOR Red)
         )
         (PORT
           (TYPE SSIGNAL)
@@ -24332,7 +24652,7 @@
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(ADC_0),(ADC_1),(DDR2_DIMM),(epb),(GPIO_DIFF),(qdr2_by0_1),(qdr2_by2_3)")
+          (VALUE "(ADC_0),(ADC_1),(DDR2_DIMM),(epb),(GPIO_DIFF),(qdr2_by0_1),(qdr2_by2_3),(RIO_SIGNAL)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -29116,7 +29436,7 @@
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(ADC_0),(ADC_1),(DDR2_DIMM),(epb),(GPIO_DIFF),(qdr2_by0_1),(qdr2_by2_3)")
+          (VALUE "(ADC_0),(ADC_1),(DDR2_DIMM),(epb),(GPIO_DIFF),(qdr2_by0_1),(qdr2_by2_3),(RIO_SIGNAL)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -33669,7 +33989,7 @@
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(ADC_0),(ADC_1),(DDR2_DIMM),(epb),(GPIO_DIFF),(qdr2_by0_1),(qdr2_by2_3)")
+          (VALUE "(ADC_0),(ADC_1),(DDR2_DIMM),(epb),(GPIO_DIFF),(qdr2_by0_1),(qdr2_by2_3),(RIO_SIGNAL)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -38233,7 +38553,7 @@
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(ADC_0),(ADC_1),(DDR2_DIMM),(epb),(GPIO_DIFF),(qdr2_by0_1),(qdr2_by2_3)")
+          (VALUE "(ADC_0),(ADC_1),(DDR2_DIMM),(epb),(GPIO_DIFF),(qdr2_by0_1),(qdr2_by2_3),(RIO_SIGNAL)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -38440,6 +38760,4101 @@
         )
       )
       (VERTEX -10160 0)
+    )
+    (SYMBOL
+      (NAME RIO_SIGNAL)
+      (BACKGROUND T)
+      (BACKGROUNDNAME Box)
+      (OUTLINE -10160 0 86360 228600)
+      (ELEMENTS
+        (RECT
+          (POSITION 0 0 76200 228600)
+          (FILL default solid)
+          (BACKGROUND T)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME RIO_CLK_0_1_P)
+          (POSITION -10160 10160)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 1)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF RIO_CLK_0_1)
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE RIO_CLK_0_1_P)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE RIO_CLK_0_1_P)
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL RIO_CLK_0_1_P)
+          (POSITION 846 10160)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME RIO_CLK_0_1_N)
+          (POSITION -10160 15240)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 2)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF RIO_CLK_0_1)
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE RIO_CLK_0_1_N)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE RIO_CLK_0_1_N)
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL RIO_CLK_0_1_N)
+          (POSITION 846 15240)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME RIO_CLK_2_3_P)
+          (POSITION -10160 121920)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 3)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF RIO_CLK_2_3)
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE RIO_CLK_2_3_P)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE RIO_CLK_2_3_P)
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL RIO_CLK_2_3_P)
+          (POSITION 846 121920)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME RIO_CLK_2_3_N)
+          (POSITION -10160 127000)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 4)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF RIO_CLK_2_3)
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE RIO_CLK_2_3_N)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE RIO_CLK_2_3_N)
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL RIO_CLK_2_3_N)
+          (POSITION 846 127000)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX0__P<3>")
+          (POSITION -10160 25400)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 5)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX0_<3>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX0__P(3)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX0__P(3)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX0__P<3>")
+          (POSITION 846 25400)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX0__N<3>")
+          (POSITION -10160 30480)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 6)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX0_<3>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX0__N(3)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX0__N(3)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX0__N<3>")
+          (POSITION 846 30480)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX0__P<2>")
+          (POSITION -10160 35560)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 7)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX0_<2>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX0__P(2)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX0__P(2)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX0__P<2>")
+          (POSITION 846 35560)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX0__N<2>")
+          (POSITION -10160 40640)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 8)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX0_<2>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX0__N(2)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX0__N(2)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX0__N<2>")
+          (POSITION 846 40640)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX0__P<1>")
+          (POSITION -10160 45720)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 9)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX0_<1>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX0__P(1)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX0__P(1)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX0__P<1>")
+          (POSITION 846 45720)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX0__N<1>")
+          (POSITION -10160 50800)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 10)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX0_<1>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX0__N(1)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX0__N(1)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX0__N<1>")
+          (POSITION 846 50800)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX0__P<0>")
+          (POSITION -10160 55880)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 11)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX0_<0>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX0__P(0)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX0__P(0)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX0__P<0>")
+          (POSITION 846 55880)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX0__N<0>")
+          (POSITION -10160 60960)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 12)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX0_<0>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX0__N(0)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX0__N(0)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX0__N<0>")
+          (POSITION 846 60960)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX1__P<3>")
+          (POSITION -10160 71120)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 13)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX1_<3>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX1__P(3)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX1__P(3)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX1__P<3>")
+          (POSITION 846 71120)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX1__N<3>")
+          (POSITION -10160 76200)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 14)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX1_<3>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX1__N(3)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX1__N(3)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX1__N<3>")
+          (POSITION 846 76200)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX1__P<2>")
+          (POSITION -10160 81280)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 15)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX1_<2>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX1__P(2)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX1__P(2)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX1__P<2>")
+          (POSITION 846 81280)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX1__N<2>")
+          (POSITION -10160 86360)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 16)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX1_<2>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX1__N(2)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX1__N(2)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX1__N<2>")
+          (POSITION 846 86360)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX1__P<1>")
+          (POSITION -10160 91440)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 17)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX1_<1>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX1__P(1)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX1__P(1)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX1__P<1>")
+          (POSITION 846 91440)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX1__N<1>")
+          (POSITION -10160 96520)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 18)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX1_<1>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX1__N(1)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX1__N(1)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX1__N<1>")
+          (POSITION 846 96520)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX1__P<0>")
+          (POSITION -10160 101600)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 19)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX1_<0>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX1__P(0)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX1__P(0)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX1__P<0>")
+          (POSITION 846 101600)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX1__N<0>")
+          (POSITION -10160 106680)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 20)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX1_<0>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX1__N(0)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX1__N(0)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX1__N<0>")
+          (POSITION 846 106680)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX2__P<3>")
+          (POSITION -10160 137160)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 21)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX2_<3>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX2__P(3)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX2__P(3)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX2__P<3>")
+          (POSITION 846 137160)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX2__N<3>")
+          (POSITION -10160 142240)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 22)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX2_<3>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX2__N(3)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX2__N(3)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX2__N<3>")
+          (POSITION 846 142240)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX2__P<2>")
+          (POSITION -10160 147320)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 23)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX2_<2>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX2__P(2)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX2__P(2)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX2__P<2>")
+          (POSITION 846 147320)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX2__N<2>")
+          (POSITION -10160 152400)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 24)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX2_<2>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX2__N(2)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX2__N(2)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX2__N<2>")
+          (POSITION 846 152400)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX2__P<1>")
+          (POSITION -10160 157480)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 25)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX2_<1>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX2__P(1)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX2__P(1)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX2__P<1>")
+          (POSITION 846 157480)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX2__N<1>")
+          (POSITION -10160 162560)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 26)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX2_<1>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX2__N(1)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX2__N(1)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX2__N<1>")
+          (POSITION 846 162560)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX2__P<0>")
+          (POSITION -10160 167640)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 27)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX2_<0>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX2__P(0)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX2__P(0)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX2__P<0>")
+          (POSITION 846 167640)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX2__N<0>")
+          (POSITION -10160 172720)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 28)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX2_<0>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX2__N(0)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX2__N(0)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX2__N<0>")
+          (POSITION 846 172720)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX3__P<3>")
+          (POSITION -10160 182880)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 29)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX3_<3>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX3__P(3)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX3__P(3)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX3__P<3>")
+          (POSITION 846 182880)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX3__N<3>")
+          (POSITION -10160 187960)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 30)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX3_<3>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX3__N(3)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX3__N(3)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX3__N<3>")
+          (POSITION 846 187960)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX3__P<2>")
+          (POSITION -10160 193040)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 31)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX3_<2>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX3__P(2)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX3__P(2)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX3__P<2>")
+          (POSITION 846 193040)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX3__N<2>")
+          (POSITION -10160 198120)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 32)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX3_<2>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX3__N(2)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX3__N(2)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX3__N<2>")
+          (POSITION 846 198120)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX3__P<1>")
+          (POSITION -10160 203200)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 33)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX3_<1>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX3__P(1)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX3__P(1)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX3__P<1>")
+          (POSITION 846 203200)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX3__N<1>")
+          (POSITION -10160 208280)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 34)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX3_<1>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX3__N(1)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX3__N(1)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX3__N<1>")
+          (POSITION 846 208280)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX3__P<0>")
+          (POSITION -10160 213360)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 35)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX3_<0>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX3__P(0)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX3__P(0)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX3__P<0>")
+          (POSITION 846 213360)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_RX3__N<0>")
+          (POSITION -10160 218440)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 36)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_RX3_<0>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_RX3__N(0)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_RX3__N(0)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_RX3__N<0>")
+          (POSITION 846 218440)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX0__P<0>")
+          (POSITION 86360 55880)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 37)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX0_<0>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX0__P(0)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX0__P(0)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX0__P<0>")
+          (POSITION 75354 55880)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX0__N<0>")
+          (POSITION 86360 60960)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 38)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX0_<0>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX0__N(0)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX0__N(0)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX0__N<0>")
+          (POSITION 75354 60960)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX0__P<1>")
+          (POSITION 86360 45720)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 39)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX0_<1>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX0__P(1)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX0__P(1)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX0__P<1>")
+          (POSITION 75354 45720)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX0__N<1>")
+          (POSITION 86360 50800)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 40)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX0_<1>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX0__N(1)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX0__N(1)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX0__N<1>")
+          (POSITION 75354 50800)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX0__P<2>")
+          (POSITION 86360 35560)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 41)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX0_<2>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX0__P(2)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX0__P(2)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX0__P<2>")
+          (POSITION 75354 35560)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX0__N<2>")
+          (POSITION 86360 40640)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 42)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX0_<2>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX0__N(2)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX0__N(2)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX0__N<2>")
+          (POSITION 75354 40640)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX0__P<3>")
+          (POSITION 86360 25400)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 43)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX0_<3>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX0__P(3)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX0__P(3)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX0__P<3>")
+          (POSITION 75354 25400)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX0__N<3>")
+          (POSITION 86360 30480)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 44)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX0_<3>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX0__N(3)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX0__N(3)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX0__N<3>")
+          (POSITION 75354 30480)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX1__P<0>")
+          (POSITION 86360 101600)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 45)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX1_<0>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX1__P(0)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX1__P(0)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX1__P<0>")
+          (POSITION 75354 101600)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX1__N<0>")
+          (POSITION 86360 106680)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 46)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX1_<0>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX1__N(0)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX1__N(0)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX1__N<0>")
+          (POSITION 75354 106680)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX1__P<1>")
+          (POSITION 86360 91440)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 47)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX1_<1>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX1__P(1)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX1__P(1)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX1__P<1>")
+          (POSITION 75354 91440)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX1__N<1>")
+          (POSITION 86360 96520)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 48)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX1_<1>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX1__N(1)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX1__N(1)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX1__N<1>")
+          (POSITION 75354 96520)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX1__P<2>")
+          (POSITION 86360 81280)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 49)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX1_<2>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX1__P(2)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX1__P(2)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX1__P<2>")
+          (POSITION 75354 81280)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX1__N<2>")
+          (POSITION 86360 86360)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 50)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX1_<2>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX1__N(2)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX1__N(2)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX1__N<2>")
+          (POSITION 75354 86360)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX1__P<3>")
+          (POSITION 86360 71120)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 51)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX1_<3>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX1__P(3)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX1__P(3)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX1__P<3>")
+          (POSITION 75354 71120)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX1__N<3>")
+          (POSITION 86360 76200)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 52)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX1_<3>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX1__N(3)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX1__N(3)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX1__N<3>")
+          (POSITION 75354 76200)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX2__P<0>")
+          (POSITION 86360 167640)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 53)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX2_<0>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX2__P(0)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX2__P(0)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX2__P<0>")
+          (POSITION 75354 167640)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX2__N<0>")
+          (POSITION 86360 172720)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 54)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX2_<0>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX2__N(0)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX2__N(0)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX2__N<0>")
+          (POSITION 75354 172720)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX2__P<1>")
+          (POSITION 86360 157480)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 55)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX2_<1>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX2__P(1)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX2__P(1)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX2__P<1>")
+          (POSITION 75354 157480)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX2__N<1>")
+          (POSITION 86360 162560)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 56)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX2_<1>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX2__N(1)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX2__N(1)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX2__N<1>")
+          (POSITION 75354 162560)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX2__P<2>")
+          (POSITION 86360 147320)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 57)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX2_<2>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX2__P(2)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX2__P(2)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX2__P<2>")
+          (POSITION 75354 147320)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX2__N<2>")
+          (POSITION 86360 152400)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 58)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX2_<2>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX2__N(2)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX2__N(2)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX2__N<2>")
+          (POSITION 75354 152400)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX2__P<3>")
+          (POSITION 86360 137160)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 59)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX2_<3>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX2__P(3)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX2__P(3)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX2__P<3>")
+          (POSITION 75354 137160)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX2__N<3>")
+          (POSITION 86360 142240)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 60)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX2_<3>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX2__N(3)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX2__N(3)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX2__N<3>")
+          (POSITION 75354 142240)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX3__P<0>")
+          (POSITION 86360 213360)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 61)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX3_<0>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX3__P(0)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX3__P(0)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX3__P<0>")
+          (POSITION 75354 213360)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX3__N<0>")
+          (POSITION 86360 218440)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 62)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX3_<0>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX3__N(0)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX3__N(0)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX3__N<0>")
+          (POSITION 75354 218440)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX3__P<1>")
+          (POSITION 86360 203200)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 63)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX3_<1>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX3__P(1)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX3__P(1)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX3__P<1>")
+          (POSITION 75354 203200)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX3__N<1>")
+          (POSITION 86360 208280)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 64)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX3_<1>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX3__N(1)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX3__N(1)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX3__N<1>")
+          (POSITION 75354 208280)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX3__P<2>")
+          (POSITION 86360 193040)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 65)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX3_<2>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX3__P(2)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX3__P(2)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX3__P<2>")
+          (POSITION 75354 193040)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX3__N<2>")
+          (POSITION 86360 198120)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 66)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX3_<2>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX3__N(2)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX3__N(2)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX3__N<2>")
+          (POSITION 75354 198120)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX3__P<3>")
+          (POSITION 86360 182880)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 67)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX3_<3>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX3__P(3)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX3__P(3)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX3__P<3>")
+          (POSITION 75354 182880)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME "RIO_TX3__N<3>")
+          (POSITION 86360 187960)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 68)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF "RIO_TX3_<3>")
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE "")
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE "")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE "")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "RIO_TX3__N(3)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "RIO_TX3__N(3)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "RIO_TX3__N<3>")
+          (POSITION 75354 187960)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+      )
+      (PCB T)
+      (ATTRIBUTES
+        (ATTRIBUTE
+          (NAME "Part Name")
+          (VALUE "5vsx95t_roach_top")
+          (OWNER DESIGNCAPTURE)
+        )
+        (ATTRIBUTE
+          (NAME HETERO_SYMNAME)
+          (VALUE "5vsx95t_roach")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME HETERO)
+          (VALUE "(ADC_0),(ADC_1),(DDR2_DIMM),(epb),(GPIO_DIFF),(qdr2_by0_1),(qdr2_by2_3),(RIO_SIGNAL)")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME COMP)
+          (VALUE RIO_SIGNAL)
+          (OWNER DESIGNARCHITECT)
+        )
+        (ATTRIBUTE
+          (NAME LEVEL)
+          (VALUE std)
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME REFDES)
+          (VALUE "U?")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME TYPE)
+          (VALUE FPGA)
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME PINSWAP)
+          (VALUE "")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "GND;A11,A12,A17,A22,A27,A32,AA11,AA13,AA15,AA17,AA19,AA2,AA21,AA23,AA27,AA7,AB12,AB14,AB16,AB18,AB20,AB22,AB24,AB34,AB4,AC11,AC13,AC17,AC19,AC21,AC26,AC31,AD12,AD16,AD18,AD28,AD8,AE10,AE15,AE20,AE25,AE4,AE5,AF12,AF17,AF2,AF22,AF27,AF32,AG19,AG2,AG24,AG29,AG34,AG9,AH16,AH26,AH4,AH6,AJ13,AJ23,AJ33,AJ5,AK10,AK20,AK30,AK4,AL17,AL27,AL6,AL9,AM14,AM2,AM24,AM34,AN1,AN11,AN2,AN21,AN31,AN7,AN8,AP11,AP13,AP18,AP23,AP28,AP33,B1,B11,B14,B2,B24,B29,B34,B7,B8,C11,C2,C21,C31,D18,D28,D33,D6,D9,E15,E25,E5,F12,F22,F32,F7,G19,G29,G34,G4,G9,H16,H2,H21,H26,H6,J13,J18,J2,J23,J33,K10,K15,K20,K25,K30,K4,K5,L13,L17,L22,L27,L7,M12,M14,M16,M18,M20,M24,M34,M4,N11,N13,N17,N19,N21,N26,N31,N4,P12,P14,P16,P18,P2,P20,P22,P28,P8,R10,R13,R15,R17,R19,R2,R21,R23,R25,R5,T12,T14,T16,T17,T18,T20,T22,T32,T4,T5,U11,U13,U15,U17,U18,U19,U21,U23,U29,U34,U6,U9,V12,V14,V16,V17,V18,V20,V22,V26,V6,W13,W15,W19,W21,W23,W33,W4,W5,Y10,Y12,Y14,Y16,Y18,Y2,Y20,Y22,Y25,Y30,Y5")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "VCC;AA3,AA4,AB3,AC3,AD3,AE3,AG3,AG4,AH3,AJ3,AJ4,AK3,AK5,AL3,AL8,AM10,AM3,AM4,AM5,AM6,AM8,AM9,C10,C3,C4,C5,C6,C7,C9,D3,D5,D7,E3,F3,F4,G3,J3,J4,K3,L3,M3,N3,R3,R4,T3,U3,V3,W3")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "VCCAUX;AB11,AC12,L12,M11,M21,P11,P23,T23,U24,V11,V23,Y23")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "VCCINT;AA12,AA14,AA16,AA18,AA20,AB13,AB17,AB19,AB21,AC16,AC18,AC20,AD13,AD17,M13,M17,M19,N12,N16,N18,N20,P13,P17,P19,P21,R12,R14,R16,R18,R20,R22,T13,T15,T19,T21,U12,U14,U16,U20,U22,V13,V15,V19,V21,W12,W14,W16,W20,W22,Y13,Y15,Y17,Y19,Y21")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "VCCO_0;AA22,AD23")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "VCCO_1;D13,G14")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "VCCO_11;R30,T27,V31")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "VCCO_12;M9,N6,T7")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "VCCO_13;AA32,AB29,W28")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "VCCO_15;L32,M29,P33")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "VCCO_17;AD33,AE30,AH31")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "VCCO_18;AB9,AC6,W8")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "VCCO_19;E30,H31,J28")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "VCCO_2;AH21,AM19")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "VCCO_20;E10,H11,J8")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "VCCO_21;AJ28,AL32,AM29")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "VCCO_22;AF7,AH11,AJ8")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "VCCO_23;C26,F27,G24")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "VCCO_25;AK25,AL22,AN26")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "VCCO_3;D23,E20")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "VCCO_4;AG14,AL12")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "VCCO_5;B19,C16,F17")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "VCCO_6;AJ18,AK15,AN16")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME NC)
+          (VALUE "A13,A14,A15,A16,A18,A19,A2,A20,A21,A23,A24,A25,A26,A28,A29,A3,A30,A31,A33,A6,A7,A8,A9,AA1,AA10,AA24,AA25,AA26,AA28,AA29,AA30,AA31,AA33,AA34,AA5,AA6,AA8,AA9,AB1,AB10,AB15,AB2,AB23,AB25,AB26,AB27,AB28,AB30,AB31,AB32,AB33,AB5,AB6,AB7,AB8,AC10,AC14,AC15,AC2,AC22,AC23,AC24,AC25,AC27,AC28,AC29,AC30,AC32,AC33,AC34,AC4,AC5,AC7,AC8,AC9,AD10,AD11,AD14,AD15,AD19,AD2,AD20,AD21,AD22,AD24,AD25,AD26,AD27,AD29,AD30,AD31,AD32,AD34,AD4,AD5,AD6,AD7,AD9,AE1,AE11,AE12,AE13,AE14,AE16,AE17,AE18,AE19,AE2,AE21,AE22,AE23,AE24,AE26,AE27,AE28,AE29,AE31,AE32,AE33,AE34,AE6,AE7,AE8,AE9,AF1,AF10,AF11,AF13,AF14,AF15,AF16,AF18,AF19,AF20,AF21,AF23,AF24,AF25,AF26,AF28,AF29,AF3,AF30,AF31,AF33,AF34,AF4,AF5,AF6,AF8,AF9,AG1,AG10,AG11,AG12,AG13,AG15,AG16,AG17,AG18,AG20,AG21,AG22,AG23,AG25,AG26,AG27,AG28,AG30,AG31,AG32,AG33,AG5,AG6,AG7,AG8,AH1,AH10,AH12,AH13,AH14,AH15,AH17,AH18,AH19,AH2,AH20,AH22,AH23,AH24,AH25,AH27,AH28,AH29,AH30,AH32,AH33,AH34,AH5,AH7,AH8,AH9,AJ10,AJ11,AJ12,AJ14,AJ15,AJ16,AJ17,AJ19,AJ2,AJ20,AJ21,AJ22,AJ24")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME NC)
+          (VALUE "AJ25,AJ26,AJ27,AJ29,AJ30,AJ31,AJ32,AJ34,AJ6,AJ7,AJ9,AK11,AK12,AK13,AK14,AK16,AK17,AK18,AK19,AK2,AK21,AK22,AK23,AK24,AK26,AK27,AK28,AK29,AK31,AK32,AK33,AK34,AK6,AK7,AK8,AK9,AL1,AL10,AL11,AL13,AL14,AL15,AL16,AL18,AL19,AL2,AL20,AL21,AL23,AL24,AL25,AL26,AL28,AL29,AL30,AL31,AL33,AL34,AL4,AL5,AL7,AM1,AM11,AM12,AM13,AM15,AM16,AM17,AM18,AM20,AM21,AM22,AM23,AM25,AM26,AM27,AM28,AM30,AM31,AM32,AM33,AM7,AN10,AN12,AN13,AN14,AN15,AN17,AN18,AN19,AN20,AN22,AN23,AN24,AN25,AN27,AN28,AN29,AN3,AN30,AN32,AN33,AN34,AN4,AN5,AN6,AN9,AP12,AP14,AP15,AP16,AP17,AP19,AP2,AP20,AP21,AP22,AP24,AP25,AP26,AP27,AP29,AP3,AP30,AP31,AP32,AP6,AP7,AP8,AP9,B10,B12,B13,B15,B16,B17,B18,B20,B21,B22,B23,B25,B26,B27,B28,B3,B30,B31,B32,B33,B4,B5,B6,B9,C1,C12,C13,C14,C15,C17,C18,C19,C20,C22,C23,C24,C25,C27,C28,C29,C30,C32,C33,C34,C8,D1,D10,D11,D12,D14,D15,D16,D17,D19,D2,D20,D21,D22,D24,D25,D26,D27,D29,D30,D31,D32,D34,D4,D8,E11,E12,E13,E14,E16,E17,E18,E19,E2,E21,E22,E23,E24,E26,E27,E28,E29,E31,E32,E33,E34,E4,E6,E7,E8,E9,F10,F11,F13")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME NC)
+          (VALUE "F14,F15,F16,F18,F19,F2,F20,F21,F23,F24,F25,F26,F28,F29,F30,F31,F33,F34,F5,F6,F8,F9,G1,G10,G11,G12,G13,G15,G16,G17,G18,G2,G20,G21,G22,G23,G25,G26,G27,G28,G30,G31,G32,G33,G5,G6,G7,G8,H1,H10,H12,H13,H14,H15,H17,H18,H19,H20,H22,H23,H24,H25,H27,H28,H29,H3,H30,H32,H33,H34,H4,H5,H7,H8,H9,J1,J10,J11,J12,J14,J15,J16,J17,J19,J20,J21,J22,J24,J25,J26,J27,J29,J30,J31,J32,J34,J5,J6,J7,J9,K1,K11,K12,K13,K14,K16,K17,K18,K19,K2,K21,K22,K23,K24,K26,K27,K28,K29,K31,K32,K33,K34,K6,K7,K8,K9,L10,L11,L14,L15,L16,L18,L19,L2,L20,L21,L23,L24,L25,L26,L28,L29,L30,L31,L33,L34,L4,L5,L6,L8,L9,M10,M15,M2,M22,M23,M25,M26,M27,M28,M30,M31,M32,M33,M5,M6,M7,M8,N1,N10,N14,N15,N2,N22,N23,N24,N25,N27,N28,N29,N30,N32,N33,N34,N5,N7,N8,N9,P1,P10,P15,P24,P25,P26,P27,P29,P3,P30,P31,P32,P34,P4,P5,P6,P7,P9,R1,R11,R24,R26,R27,R28,R29,R31,R32,R33,R34,R6,R7,R8,R9,T1,T10,T11,T2,T24,T25,T26,T28,T29,T30,T31,T33,T34,T6,T8,T9,U10,U2,U25,U26,U27,U28,U30,U31,U32,U33,U4,U5,U7,U8,V10,V2,V24,V25,V27,V28,V29,V30,V32,V33,V34,V4,V5,V7,V8,V9,W1,W10")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME NC)
+          (VALUE "W11,W17,W18,W2,W24,W25,W26,W27,W29,W30,W31,W32,W34,W6,W7,W9,Y1,Y11,Y24,Y26,Y27,Y28,Y29,Y3,Y31,Y32,Y33,Y34,Y4,Y6,Y7,Y8,Y9")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME DEVICE)
+          (VALUE "5vsx95t")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME PKG_TYPE)
+          (VALUE ff1136)
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME PART_NO)
+          (VALUE "5vsx95t|5vsx95t_roach")
+          (OWNER DESIGNARCHITECT)
+        )
+        (ATTRIBUTE
+          (NAME GEOM)
+          (VALUE ff1136)
+          (OWNER DESIGNARCHITECT)
+        )
+        (ATTRIBUTE
+          (NAME "Part Number")
+          (VALUE "5vsx95t")
+          (OWNER DESIGNCAPTURE)
+        )
+      )
+      (INSTANCEATTRIBUTES
+        (ATTRIBUTE
+          (NAME INST)
+          (VALUE RIO_SIGNAL)
+          (OWNER DESIGNARCHITECT)
+        )
+      )
     )
   )
   (SCHEMESETTINGS
