@@ -11,7 +11,7 @@
   (CELL ff1136)
   (DX_PROJECT_PATH "..\\roach" 1181750614 1)
   (DX_TOP_LEVEL_DESIGN ROACH_XC5VSX95T)
-  (CONSTRAINTS_FILE "./mig_qdr2_0.ucf" 0 1)
+  (CONSTRAINTS_FILE "./mig_qdr2_0.ucf" 1184068530 1)
   (CONSTRAINTS_FILE_FORMAT ise_ucf)
   (EXPEDITION_REFDES U1)
   (SSO_BANK_THRESHOLD 70)
@@ -35,6 +35,18 @@
       (NAME "1V5")
       (DIR INOUT)
       (TYPE VCCO)
+    )
+    (SIGNAL
+      (NAME "1V5_DCI_VRN")
+      (DIR INOUT)
+      (PIN N27)
+      (TYPE CONFIG)
+    )
+    (SIGNAL
+      (NAME "1V5_DCI_VRP")
+      (DIR INOUT)
+      (PIN M27)
+      (TYPE CONFIG)
     )
     (SIGNAL
       (NAME "1V8")
@@ -1943,7 +1955,6 @@
       (NAME QDR2_CQ_BY0_1)
       (HDL_NAME QDR2_CQ_BY0_1)
       (DIR IN)
-      (PIN C24 D25)
       (TYPE DIFF)
       (SIG_P QDR2_CQ_BY0_1_P)
       (SIG_N QDR2_CQ_BY0_1_N)
@@ -2101,6 +2112,7 @@
         (SIGNAL
           (NAME "QDR2_D_BY1_B<7>")
           (HDL_NAME "QDR2_D_BY1_B<7>")
+          (PIN J24)
           (TYPE IO)
           (IOSTANDARD HSTL_I_DCI)
         )
@@ -2245,7 +2257,6 @@
       (NAME QDR2_K_BY0_1)
       (HDL_NAME QDR2_K_BY0_1)
       (DIR OUT)
-      (PIN K24 L24)
       (TYPE DIFF)
       (SIG_P QDR2_K_BY0_1_P)
       (SIG_N QDR2_K_BY0_1_N)
@@ -2258,15 +2269,6 @@
       (IOSTANDARD DIFF_HSTL_I_DCI)
       (SIG_P QDR2_K_BY2_3_P)
       (SIG_N QDR2_K_BY2_3_N)
-    )
-    (SIGNAL
-      (NAME QDR2_QVLD_BY0_1)
-      (HDL_NAME QDR2_QVLD_BY0_1)
-      (DIR OUT)
-      (PIN L25 L26)
-      (TYPE DIFF)
-      (SIG_P QDR2_QVLD_BY0_1)
-      (SIG_N QDR2_C_N_COMPAT_BY0_1_N)
     )
     (SIGNAL
       (NAME QDR2_Q_BY0_B)
@@ -2390,6 +2392,7 @@
         (SIGNAL
           (NAME "QDR2_Q_BY1_B<6>")
           (HDL_NAME "QDR2_Q_BY1_B<6>")
+          (PIN C29)
           (TYPE IO)
           (IOSTANDARD HSTL_I_DCI)
         )
@@ -2475,69 +2478,6 @@
       (IOSTANDARD HSTL_I_DCI)
     )
     (SIGNAL
-      (NAME QDR2_Q_BY3_B)
-      (HDL_NAME QDR2_Q_BY3_B)
-      (DIR IN)
-      (ELEMENTS
-        (SIGNAL
-          (NAME "QDR2_Q_BY3_B<0>")
-          (HDL_NAME "QDR2_Q_BY3_B<0>")
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_Q_BY3_B<1>")
-          (HDL_NAME "QDR2_Q_BY3_B<1>")
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_Q_BY3_B<2>")
-          (HDL_NAME "QDR2_Q_BY3_B<2>")
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_Q_BY3_B<3>")
-          (HDL_NAME "QDR2_Q_BY3_B<3>")
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_Q_BY3_B<4>")
-          (HDL_NAME "QDR2_Q_BY3_B<4>")
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_Q_BY3_B<5>")
-          (HDL_NAME "QDR2_Q_BY3_B<5>")
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_Q_BY3_B<6>")
-          (HDL_NAME "QDR2_Q_BY3_B<6>")
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_Q_BY3_B<7>")
-          (HDL_NAME "QDR2_Q_BY3_B<7>")
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_Q_BY3_B<8>")
-          (HDL_NAME "QDR2_Q_BY3_B<8>")
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-      )
-      (TYPE IO)
-      (IOSTANDARD HSTL_I_DCI)
-    )
-    (SIGNAL
       (NAME "QDR2_R_BY0_1#")
       (HDL_NAME "QDR2_R_BY0_1#")
       (DIR OUT)
@@ -2558,142 +2498,9 @@
       (DIR OUT)
       (ELEMENTS
         (SIGNAL
-          (NAME "QDR2_SA_BY0_1<21>")
-          (HDL_NAME "QDR2_SA_BY0_1<21>")
-          (PIN M26)
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_SA_BY0_1<20>")
-          (HDL_NAME "QDR2_SA_BY0_1<20>")
-          (PIN J27)
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_SA_BY0_1<19>")
-          (HDL_NAME "QDR2_SA_BY0_1<19>")
-          (PIN G25)
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_SA_BY0_1<18>")
-          (HDL_NAME "QDR2_SA_BY0_1<18>")
-          (PIN G26)
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_SA_BY0_1<17>")
-          (HDL_NAME "QDR2_SA_BY0_1<17>")
-          (PIN H25)
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_SA_BY0_1<16>")
-          (HDL_NAME "QDR2_SA_BY0_1<16>")
-          (PIN H24)
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_SA_BY0_1<15>")
-          (HDL_NAME "QDR2_SA_BY0_1<15>")
-          (PIN F25)
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_SA_BY0_1<14>")
-          (HDL_NAME "QDR2_SA_BY0_1<14>")
-          (PIN F26)
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_SA_BY0_1<13>")
-          (HDL_NAME "QDR2_SA_BY0_1<13>")
-          (PIN G27)
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_SA_BY0_1<12>")
-          (HDL_NAME "QDR2_SA_BY0_1<12>")
-          (PIN H27)
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_SA_BY0_1<11>")
-          (HDL_NAME "QDR2_SA_BY0_1<11>")
-          (PIN H28)
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_SA_BY0_1<10>")
-          (HDL_NAME "QDR2_SA_BY0_1<10>")
-          (PIN G28)
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_SA_BY0_1<9>")
-          (HDL_NAME "QDR2_SA_BY0_1<9>")
-          (PIN E28)
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_SA_BY0_1<8>")
-          (HDL_NAME "QDR2_SA_BY0_1<8>")
-          (PIN F28)
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_SA_BY0_1<7>")
-          (HDL_NAME "QDR2_SA_BY0_1<7>")
-          (PIN E26)
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_SA_BY0_1<6>")
-          (HDL_NAME "QDR2_SA_BY0_1<6>")
-          (PIN E27)
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_SA_BY0_1<5>")
-          (HDL_NAME "QDR2_SA_BY0_1<5>")
-          (PIN K28)
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_SA_BY0_1<4>")
-          (HDL_NAME "QDR2_SA_BY0_1<4>")
-          (PIN L28)
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_SA_BY0_1<3>")
-          (HDL_NAME "QDR2_SA_BY0_1<3>")
-          (PIN K27)
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_SA_BY0_1<2>")
-          (HDL_NAME "QDR2_SA_BY0_1<2>")
-          (PIN M28)
+          (NAME "QDR2_SA_BY0_1<0>")
+          (HDL_NAME "QDR2_SA_BY0_1<0>")
+          (PIN P26)
           (TYPE IO)
           (IOSTANDARD HSTL_I_DCI)
         )
@@ -2705,150 +2512,142 @@
           (IOSTANDARD HSTL_I_DCI)
         )
         (SIGNAL
-          (NAME "QDR2_SA_BY0_1<0>")
-          (HDL_NAME "QDR2_SA_BY0_1<0>")
-          (PIN P26)
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-      )
-      (TYPE IO)
-      (IOSTANDARD HSTL_I_DCI)
-    )
-    (SIGNAL
-      (NAME QDR2_SA_BY2_3)
-      (HDL_NAME QDR2_SA_BY2_3)
-      (DIR OUT)
-      (ELEMENTS
-        (SIGNAL
-          (NAME "QDR2_SA_BY2_3<21>")
-          (HDL_NAME "QDR2_SA_BY2_3<21>")
+          (NAME "QDR2_SA_BY0_1<2>")
+          (HDL_NAME "QDR2_SA_BY0_1<2>")
+          (PIN M28)
           (TYPE IO)
           (IOSTANDARD HSTL_I_DCI)
         )
         (SIGNAL
-          (NAME "QDR2_SA_BY2_3<20>")
-          (HDL_NAME "QDR2_SA_BY2_3<20>")
+          (NAME "QDR2_SA_BY0_1<3>")
+          (HDL_NAME "QDR2_SA_BY0_1<3>")
+          (PIN K27)
           (TYPE IO)
           (IOSTANDARD HSTL_I_DCI)
         )
         (SIGNAL
-          (NAME "QDR2_SA_BY2_3<19>")
-          (HDL_NAME "QDR2_SA_BY2_3<19>")
+          (NAME "QDR2_SA_BY0_1<4>")
+          (HDL_NAME "QDR2_SA_BY0_1<4>")
+          (PIN L28)
           (TYPE IO)
           (IOSTANDARD HSTL_I_DCI)
         )
         (SIGNAL
-          (NAME "QDR2_SA_BY2_3<18>")
-          (HDL_NAME "QDR2_SA_BY2_3<18>")
+          (NAME "QDR2_SA_BY0_1<5>")
+          (HDL_NAME "QDR2_SA_BY0_1<5>")
+          (PIN K28)
           (TYPE IO)
           (IOSTANDARD HSTL_I_DCI)
         )
         (SIGNAL
-          (NAME "QDR2_SA_BY2_3<17>")
-          (HDL_NAME "QDR2_SA_BY2_3<17>")
+          (NAME "QDR2_SA_BY0_1<6>")
+          (HDL_NAME "QDR2_SA_BY0_1<6>")
+          (PIN E27)
           (TYPE IO)
           (IOSTANDARD HSTL_I_DCI)
         )
         (SIGNAL
-          (NAME "QDR2_SA_BY2_3<16>")
-          (HDL_NAME "QDR2_SA_BY2_3<16>")
+          (NAME "QDR2_SA_BY0_1<7>")
+          (HDL_NAME "QDR2_SA_BY0_1<7>")
+          (PIN E26)
           (TYPE IO)
           (IOSTANDARD HSTL_I_DCI)
         )
         (SIGNAL
-          (NAME "QDR2_SA_BY2_3<15>")
-          (HDL_NAME "QDR2_SA_BY2_3<15>")
+          (NAME "QDR2_SA_BY0_1<8>")
+          (HDL_NAME "QDR2_SA_BY0_1<8>")
+          (PIN F28)
           (TYPE IO)
           (IOSTANDARD HSTL_I_DCI)
         )
         (SIGNAL
-          (NAME "QDR2_SA_BY2_3<14>")
-          (HDL_NAME "QDR2_SA_BY2_3<14>")
+          (NAME "QDR2_SA_BY0_1<9>")
+          (HDL_NAME "QDR2_SA_BY0_1<9>")
+          (PIN E28)
           (TYPE IO)
           (IOSTANDARD HSTL_I_DCI)
         )
         (SIGNAL
-          (NAME "QDR2_SA_BY2_3<13>")
-          (HDL_NAME "QDR2_SA_BY2_3<13>")
+          (NAME "QDR2_SA_BY0_1<10>")
+          (HDL_NAME "QDR2_SA_BY0_1<10>")
+          (PIN G28)
           (TYPE IO)
           (IOSTANDARD HSTL_I_DCI)
         )
         (SIGNAL
-          (NAME "QDR2_SA_BY2_3<12>")
-          (HDL_NAME "QDR2_SA_BY2_3<12>")
+          (NAME "QDR2_SA_BY0_1<11>")
+          (HDL_NAME "QDR2_SA_BY0_1<11>")
+          (PIN H28)
           (TYPE IO)
           (IOSTANDARD HSTL_I_DCI)
         )
         (SIGNAL
-          (NAME "QDR2_SA_BY2_3<11>")
-          (HDL_NAME "QDR2_SA_BY2_3<11>")
+          (NAME "QDR2_SA_BY0_1<12>")
+          (HDL_NAME "QDR2_SA_BY0_1<12>")
+          (PIN H27)
           (TYPE IO)
           (IOSTANDARD HSTL_I_DCI)
         )
         (SIGNAL
-          (NAME "QDR2_SA_BY2_3<10>")
-          (HDL_NAME "QDR2_SA_BY2_3<10>")
+          (NAME "QDR2_SA_BY0_1<13>")
+          (HDL_NAME "QDR2_SA_BY0_1<13>")
+          (PIN G27)
           (TYPE IO)
           (IOSTANDARD HSTL_I_DCI)
         )
         (SIGNAL
-          (NAME "QDR2_SA_BY2_3<9>")
-          (HDL_NAME "QDR2_SA_BY2_3<9>")
+          (NAME "QDR2_SA_BY0_1<14>")
+          (HDL_NAME "QDR2_SA_BY0_1<14>")
+          (PIN F26)
           (TYPE IO)
           (IOSTANDARD HSTL_I_DCI)
         )
         (SIGNAL
-          (NAME "QDR2_SA_BY2_3<8>")
-          (HDL_NAME "QDR2_SA_BY2_3<8>")
+          (NAME "QDR2_SA_BY0_1<15>")
+          (HDL_NAME "QDR2_SA_BY0_1<15>")
+          (PIN F25)
           (TYPE IO)
           (IOSTANDARD HSTL_I_DCI)
         )
         (SIGNAL
-          (NAME "QDR2_SA_BY2_3<7>")
-          (HDL_NAME "QDR2_SA_BY2_3<7>")
+          (NAME "QDR2_SA_BY0_1<16>")
+          (HDL_NAME "QDR2_SA_BY0_1<16>")
+          (PIN H24)
           (TYPE IO)
           (IOSTANDARD HSTL_I_DCI)
         )
         (SIGNAL
-          (NAME "QDR2_SA_BY2_3<6>")
-          (HDL_NAME "QDR2_SA_BY2_3<6>")
+          (NAME "QDR2_SA_BY0_1<17>")
+          (HDL_NAME "QDR2_SA_BY0_1<17>")
+          (PIN H25)
           (TYPE IO)
           (IOSTANDARD HSTL_I_DCI)
         )
         (SIGNAL
-          (NAME "QDR2_SA_BY2_3<5>")
-          (HDL_NAME "QDR2_SA_BY2_3<5>")
+          (NAME "QDR2_SA_BY0_1<18>")
+          (HDL_NAME "QDR2_SA_BY0_1<18>")
+          (PIN G26)
           (TYPE IO)
           (IOSTANDARD HSTL_I_DCI)
         )
         (SIGNAL
-          (NAME "QDR2_SA_BY2_3<4>")
-          (HDL_NAME "QDR2_SA_BY2_3<4>")
+          (NAME "QDR2_SA_BY0_1<19>")
+          (HDL_NAME "QDR2_SA_BY0_1<19>")
+          (PIN G25)
           (TYPE IO)
           (IOSTANDARD HSTL_I_DCI)
         )
         (SIGNAL
-          (NAME "QDR2_SA_BY2_3<3>")
-          (HDL_NAME "QDR2_SA_BY2_3<3>")
+          (NAME "QDR2_SA_BY0_1<20>")
+          (HDL_NAME "QDR2_SA_BY0_1<20>")
+          (PIN J27)
           (TYPE IO)
           (IOSTANDARD HSTL_I_DCI)
         )
         (SIGNAL
-          (NAME "QDR2_SA_BY2_3<2>")
-          (HDL_NAME "QDR2_SA_BY2_3<2>")
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_SA_BY2_3<1>")
-          (HDL_NAME "QDR2_SA_BY2_3<1>")
-          (TYPE IO)
-          (IOSTANDARD HSTL_I_DCI)
-        )
-        (SIGNAL
-          (NAME "QDR2_SA_BY2_3<0>")
-          (HDL_NAME "QDR2_SA_BY2_3<0>")
+          (NAME "QDR2_SA_BY0_1<21>")
+          (HDL_NAME "QDR2_SA_BY0_1<21>")
+          (PIN M26)
           (TYPE IO)
           (IOSTANDARD HSTL_I_DCI)
         )
@@ -3226,12 +3025,6 @@
       (SIG_N RIO_TX3__N)
     )
     (SIGNAL
-      (NAME SYS_CLK)
-      (HDL_NAME SYS_CLK)
-      (DIR IN)
-      (TYPE CLOCK)
-    )
-    (SIGNAL
       (NAME V5_TCK)
       (DIR IN)
       (PIN AB15)
@@ -3284,6 +3077,840 @@
       (DIR INOUT)
       (TYPE VCCO)
       (SWAPGROUP VCCO_0)
+    )
+    (SIGNAL
+      (NAME cal_done)
+      (HDL_NAME cal_done)
+      (DIR NONE)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS15)
+    )
+    (SIGNAL
+      (NAME compare_error)
+      (HDL_NAME compare_error)
+      (DIR NONE)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS15)
+    )
+    (SIGNAL
+      (NAME dly_clk_200)
+      (HDL_NAME dly_clk_200)
+      (DIR NONE)
+      (PIN K17 L18)
+      (TYPE DIFF_CLOCK)
+      (IOSTANDARD LVPECL_25)
+      (SIG_P dly_clk_200_p)
+      (SIG_N dly_clk_200_n)
+    )
+    (SIGNAL
+      (NAME qdr2_by2_3_cal_done)
+      (HDL_NAME qdr2_by2_3_cal_done)
+      (DIR NONE)
+      (PIN U32)
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME qdr2_by2_3_compare_error)
+      (HDL_NAME qdr2_by2_3_compare_error)
+      (DIR NONE)
+      (PIN U33)
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME qdr2_by2_3_sys_rst_n)
+      (HDL_NAME qdr2_by2_3_sys_rst_n)
+      (DIR NONE)
+      (PIN T34)
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME qdr2_c_n_compat_by0_1)
+      (HDL_NAME qdr2_c_n_compat_by0_1)
+      (DIR NONE)
+      (PIN J26)
+      (TYPE IO)
+      (IOSTANDARD HSTL_I_DCI)
+    )
+    (SIGNAL
+      (NAME qdr2_c_n_compat_by2_3)
+      (HDL_NAME qdr2_c_n_compat_by2_3)
+      (DIR NONE)
+      (PIN C32)
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME "qdr2_cq_by0_1_n<0>")
+      (HDL_NAME "qdr2_cq_by0_1_n<0>")
+      (DIR NONE)
+      (PIN D25)
+      (TYPE IO)
+      (IOSTANDARD HSTL_I_DCI)
+    )
+    (SIGNAL
+      (NAME "qdr2_cq_by0_1_p<0>")
+      (HDL_NAME "qdr2_cq_by0_1_p<0>")
+      (DIR NONE)
+      (PIN C24)
+      (TYPE IO)
+      (IOSTANDARD HSTL_I_DCI)
+    )
+    (SIGNAL
+      (NAME qdr2_d_by0_b)
+      (HDL_NAME qdr2_d_by0_b)
+      (DIR NONE)
+      (ELEMENTS
+        (SIGNAL
+          (NAME "qdr2_d_by0_b<8>")
+          (HDL_NAME "qdr2_d_by0_b<8>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by0_b<7>")
+          (HDL_NAME "qdr2_d_by0_b<7>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by0_b<6>")
+          (HDL_NAME "qdr2_d_by0_b<6>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by0_b<5>")
+          (HDL_NAME "qdr2_d_by0_b<5>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by0_b<4>")
+          (HDL_NAME "qdr2_d_by0_b<4>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by0_b<3>")
+          (HDL_NAME "qdr2_d_by0_b<3>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by0_b<2>")
+          (HDL_NAME "qdr2_d_by0_b<2>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by0_b<1>")
+          (HDL_NAME "qdr2_d_by0_b<1>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by0_b<0>")
+          (HDL_NAME "qdr2_d_by0_b<0>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+      )
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME qdr2_d_by1_b)
+      (HDL_NAME qdr2_d_by1_b)
+      (DIR NONE)
+      (ELEMENTS
+        (SIGNAL
+          (NAME "qdr2_d_by1_b<8>")
+          (HDL_NAME "qdr2_d_by1_b<8>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by1_b<7>")
+          (HDL_NAME "qdr2_d_by1_b<7>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by1_b<6>")
+          (HDL_NAME "qdr2_d_by1_b<6>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by1_b<5>")
+          (HDL_NAME "qdr2_d_by1_b<5>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by1_b<4>")
+          (HDL_NAME "qdr2_d_by1_b<4>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by1_b<3>")
+          (HDL_NAME "qdr2_d_by1_b<3>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by1_b<2>")
+          (HDL_NAME "qdr2_d_by1_b<2>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by1_b<1>")
+          (HDL_NAME "qdr2_d_by1_b<1>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by1_b<0>")
+          (HDL_NAME "qdr2_d_by1_b<0>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+      )
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME qdr2_d_by2_b)
+      (HDL_NAME qdr2_d_by2_b)
+      (DIR NONE)
+      (ELEMENTS
+        (SIGNAL
+          (NAME "qdr2_d_by2_b<8>")
+          (HDL_NAME "qdr2_d_by2_b<8>")
+          (PIN T29)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by2_b<7>")
+          (HDL_NAME "qdr2_d_by2_b<7>")
+          (PIN T28)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by2_b<6>")
+          (HDL_NAME "qdr2_d_by2_b<6>")
+          (PIN U30)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by2_b<5>")
+          (HDL_NAME "qdr2_d_by2_b<5>")
+          (PIN R31)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by2_b<4>")
+          (HDL_NAME "qdr2_d_by2_b<4>")
+          (PIN T31)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by2_b<3>")
+          (HDL_NAME "qdr2_d_by2_b<3>")
+          (PIN N30)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by2_b<2>")
+          (HDL_NAME "qdr2_d_by2_b<2>")
+          (PIN M31)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by2_b<1>")
+          (HDL_NAME "qdr2_d_by2_b<1>")
+          (PIN P30)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by2_b<0>")
+          (HDL_NAME "qdr2_d_by2_b<0>")
+          (PIN P31)
+          (TYPE IO)
+        )
+      )
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME qdr2_d_by3_b)
+      (HDL_NAME qdr2_d_by3_b)
+      (DIR NONE)
+      (ELEMENTS
+        (SIGNAL
+          (NAME "qdr2_d_by3_b<17>")
+          (HDL_NAME "qdr2_d_by3_b<17>")
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by3_b<16>")
+          (HDL_NAME "qdr2_d_by3_b<16>")
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by3_b<15>")
+          (HDL_NAME "qdr2_d_by3_b<15>")
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by3_b<14>")
+          (HDL_NAME "qdr2_d_by3_b<14>")
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by3_b<13>")
+          (HDL_NAME "qdr2_d_by3_b<13>")
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by3_b<12>")
+          (HDL_NAME "qdr2_d_by3_b<12>")
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by3_b<11>")
+          (HDL_NAME "qdr2_d_by3_b<11>")
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by3_b<10>")
+          (HDL_NAME "qdr2_d_by3_b<10>")
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_d_by3_b<9>")
+          (HDL_NAME "qdr2_d_by3_b<9>")
+          (TYPE IO)
+        )
+      )
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME "qdr2_d_by3_b<0>")
+      (HDL_NAME "qdr2_d_by3_b<0>")
+      (DIR NONE)
+      (PIN U28)
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME "qdr2_d_by3_b<1>")
+      (HDL_NAME "qdr2_d_by3_b<1>")
+      (DIR NONE)
+      (PIN R26)
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME "qdr2_d_by3_b<2>")
+      (HDL_NAME "qdr2_d_by3_b<2>")
+      (DIR NONE)
+      (PIN R27)
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME "qdr2_d_by3_b<3>")
+      (HDL_NAME "qdr2_d_by3_b<3>")
+      (DIR NONE)
+      (PIN U26)
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME "qdr2_d_by3_b<4>")
+      (HDL_NAME "qdr2_d_by3_b<4>")
+      (DIR NONE)
+      (PIN T26)
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME "qdr2_d_by3_b<5>")
+      (HDL_NAME "qdr2_d_by3_b<5>")
+      (DIR NONE)
+      (PIN U25)
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME "qdr2_d_by3_b<6>")
+      (HDL_NAME "qdr2_d_by3_b<6>")
+      (DIR NONE)
+      (PIN T25)
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME "qdr2_d_by3_b<7>")
+      (HDL_NAME "qdr2_d_by3_b<7>")
+      (DIR NONE)
+      (PIN B32)
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME "qdr2_d_by3_b<8>")
+      (HDL_NAME "qdr2_d_by3_b<8>")
+      (DIR NONE)
+      (PIN D32)
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME qdr2_k_by0_1_n)
+      (HDL_NAME qdr2_k_by0_1_n)
+      (DIR NONE)
+      (ELEMENTS
+        (SIGNAL
+          (NAME "qdr2_k_by0_1_n<0>")
+          (HDL_NAME "qdr2_k_by0_1_n<0>")
+          (PIN L24)
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+      )
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME qdr2_k_by0_1_p)
+      (HDL_NAME qdr2_k_by0_1_p)
+      (DIR NONE)
+      (ELEMENTS
+        (SIGNAL
+          (NAME "qdr2_k_by0_1_p<0>")
+          (HDL_NAME "qdr2_k_by0_1_p<0>")
+          (PIN K24)
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+      )
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME qdr2_q_by0_b)
+      (HDL_NAME qdr2_q_by0_b)
+      (DIR NONE)
+      (ELEMENTS
+        (SIGNAL
+          (NAME "qdr2_q_by0_b<7>")
+          (HDL_NAME "qdr2_q_by0_b<7>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by0_b<6>")
+          (HDL_NAME "qdr2_q_by0_b<6>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by0_b<5>")
+          (HDL_NAME "qdr2_q_by0_b<5>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by0_b<4>")
+          (HDL_NAME "qdr2_q_by0_b<4>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by0_b<3>")
+          (HDL_NAME "qdr2_q_by0_b<3>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by0_b<2>")
+          (HDL_NAME "qdr2_q_by0_b<2>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by0_b<1>")
+          (HDL_NAME "qdr2_q_by0_b<1>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by0_b<0>")
+          (HDL_NAME "qdr2_q_by0_b<0>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+      )
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME qdr2_q_by1_b)
+      (HDL_NAME qdr2_q_by1_b)
+      (DIR NONE)
+      (ELEMENTS
+        (SIGNAL
+          (NAME "qdr2_q_by1_b<8>")
+          (HDL_NAME "qdr2_q_by1_b<8>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by1_b<7>")
+          (HDL_NAME "qdr2_q_by1_b<7>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by1_b<6>")
+          (HDL_NAME "qdr2_q_by1_b<6>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by1_b<5>")
+          (HDL_NAME "qdr2_q_by1_b<5>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by1_b<4>")
+          (HDL_NAME "qdr2_q_by1_b<4>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by1_b<3>")
+          (HDL_NAME "qdr2_q_by1_b<3>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by1_b<2>")
+          (HDL_NAME "qdr2_q_by1_b<2>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by1_b<1>")
+          (HDL_NAME "qdr2_q_by1_b<1>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by1_b<0>")
+          (HDL_NAME "qdr2_q_by1_b<0>")
+          (TYPE IO)
+          (IOSTANDARD HSTL_I_DCI)
+        )
+      )
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME qdr2_q_by2_b)
+      (HDL_NAME qdr2_q_by2_b)
+      (DIR NONE)
+      (ELEMENTS
+        (SIGNAL
+          (NAME "qdr2_q_by2_b<8>")
+          (HDL_NAME "qdr2_q_by2_b<8>")
+          (PIN L29)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by2_b<7>")
+          (HDL_NAME "qdr2_q_by2_b<7>")
+          (PIN E31)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by2_b<6>")
+          (HDL_NAME "qdr2_q_by2_b<6>")
+          (PIN F31)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by2_b<5>")
+          (HDL_NAME "qdr2_q_by2_b<5>")
+          (PIN J29)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by2_b<4>")
+          (HDL_NAME "qdr2_q_by2_b<4>")
+          (PIN H29)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by2_b<3>")
+          (HDL_NAME "qdr2_q_by2_b<3>")
+          (PIN F30)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by2_b<2>")
+          (HDL_NAME "qdr2_q_by2_b<2>")
+          (PIN G30)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by2_b<1>")
+          (HDL_NAME "qdr2_q_by2_b<1>")
+          (PIN F29)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by2_b<0>")
+          (HDL_NAME "qdr2_q_by2_b<0>")
+          (PIN E29)
+          (TYPE IO)
+        )
+      )
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME qdr2_q_by3_b)
+      (HDL_NAME qdr2_q_by3_b)
+      (DIR NONE)
+      (ELEMENTS
+        (SIGNAL
+          (NAME "qdr2_q_by3_b<0>")
+          (HDL_NAME "qdr2_q_by3_b<0>")
+          (PIN H30)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by3_b<1>")
+          (HDL_NAME "qdr2_q_by3_b<1>")
+          (PIN G31)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by3_b<2>")
+          (HDL_NAME "qdr2_q_by3_b<2>")
+          (PIN J30)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by3_b<3>")
+          (HDL_NAME "qdr2_q_by3_b<3>")
+          (PIN J31)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by3_b<4>")
+          (HDL_NAME "qdr2_q_by3_b<4>")
+          (PIN L30)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by3_b<5>")
+          (HDL_NAME "qdr2_q_by3_b<5>")
+          (PIN M30)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by3_b<6>")
+          (HDL_NAME "qdr2_q_by3_b<6>")
+          (PIN P29)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by3_b<7>")
+          (HDL_NAME "qdr2_q_by3_b<7>")
+          (PIN K31)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_q_by3_b<8>")
+          (HDL_NAME "qdr2_q_by3_b<8>")
+          (PIN L31)
+          (TYPE IO)
+        )
+      )
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME "qdr2_qvld_by0_1<0>")
+      (HDL_NAME "qdr2_qvld_by0_1<0>")
+      (DIR NONE)
+      (PIN L25)
+      (TYPE IO)
+      (IOSTANDARD HSTL_I_DCI)
+    )
+    (SIGNAL
+      (NAME qdr2_qvld_by2_3)
+      (HDL_NAME qdr2_qvld_by2_3)
+      (DIR NONE)
+      (PIN C33)
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME qdr2_sa_by2_3)
+      (HDL_NAME qdr2_sa_by2_3)
+      (DIR NONE)
+      (ELEMENTS
+        (SIGNAL
+          (NAME "qdr2_sa_by2_3<21>")
+          (HDL_NAME "qdr2_sa_by2_3<21>")
+          (PIN D34)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_sa_by2_3<20>")
+          (HDL_NAME "qdr2_sa_by2_3<20>")
+          (PIN G32)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_sa_by2_3<19>")
+          (HDL_NAME "qdr2_sa_by2_3<19>")
+          (PIN F33)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_sa_by2_3<18>")
+          (HDL_NAME "qdr2_sa_by2_3<18>")
+          (PIN E34)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_sa_by2_3<17>")
+          (HDL_NAME "qdr2_sa_by2_3<17>")
+          (PIN E32)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_sa_by2_3<16>")
+          (HDL_NAME "qdr2_sa_by2_3<16>")
+          (PIN E33)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_sa_by2_3<15>")
+          (HDL_NAME "qdr2_sa_by2_3<15>")
+          (PIN G33)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_sa_by2_3<14>")
+          (HDL_NAME "qdr2_sa_by2_3<14>")
+          (PIN F34)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_sa_by2_3<13>")
+          (HDL_NAME "qdr2_sa_by2_3<13>")
+          (PIN J32)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_sa_by2_3<12>")
+          (HDL_NAME "qdr2_sa_by2_3<12>")
+          (PIN H33)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_sa_by2_3<11>")
+          (HDL_NAME "qdr2_sa_by2_3<11>")
+          (PIN H34)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_sa_by2_3<10>")
+          (HDL_NAME "qdr2_sa_by2_3<10>")
+          (PIN J34)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_sa_by2_3<9>")
+          (HDL_NAME "qdr2_sa_by2_3<9>")
+          (PIN L34)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_sa_by2_3<8>")
+          (HDL_NAME "qdr2_sa_by2_3<8>")
+          (PIN K34)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_sa_by2_3<7>")
+          (HDL_NAME "qdr2_sa_by2_3<7>")
+          (PIN K33)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_sa_by2_3<6>")
+          (HDL_NAME "qdr2_sa_by2_3<6>")
+          (PIN K32)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_sa_by2_3<5>")
+          (HDL_NAME "qdr2_sa_by2_3<5>")
+          (PIN L33)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_sa_by2_3<4>")
+          (HDL_NAME "qdr2_sa_by2_3<4>")
+          (PIN M32)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_sa_by2_3<3>")
+          (HDL_NAME "qdr2_sa_by2_3<3>")
+          (PIN P34)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_sa_by2_3<2>")
+          (HDL_NAME "qdr2_sa_by2_3<2>")
+          (PIN P32)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_sa_by2_3<1>")
+          (HDL_NAME "qdr2_sa_by2_3<1>")
+          (PIN N32)
+          (TYPE IO)
+        )
+        (SIGNAL
+          (NAME "qdr2_sa_by2_3<0>")
+          (HDL_NAME "qdr2_sa_by2_3<0>")
+          (PIN T33)
+          (TYPE IO)
+        )
+      )
+      (TYPE IO)
+    )
+    (SIGNAL
+      (NAME sys_clk)
+      (HDL_NAME sys_clk)
+      (DIR NONE)
+      (PIN H17 H18)
+      (TYPE DIFF_CLOCK)
+      (IOSTANDARD LVPECL_25)
+      (SIG_P sys_clk_p)
+      (SIG_N sys_clk_n)
+    )
+    (SIGNAL
+      (NAME sys_rst_n)
+      (HDL_NAME sys_rst_n)
+      (DIR NONE)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS15)
+    )
+    (SIGNAL
+      (NAME "u_infrastructure/clk200_in")
+      (HDL_NAME "u_infrastructure/clk200_in")
+      (DIR IN)
+      (TYPE CLOCK)
+    )
+    (SIGNAL
+      (NAME "u_infrastructure/sysclk_in")
+      (HDL_NAME "u_infrastructure/sysclk_in")
+      (DIR IN)
+      (TYPE CLOCK)
     )
   )
   (SYMBOLS
@@ -8124,12 +8751,12 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "AK24,AK26,AK27,AK28,AK29,AK31,AK32,AK33,AK34,AK6,AK7,AK8,AK9,AL10,AL11,AL13,AL14,AL15,AL16,AL18,AL19,AL20,AL21,AL23,AL24,AL25,AL26,AL28,AL29,AL30,AL31,AL33,AL34,AL7,AM11,AM12,AM13,AM15,AM16,AM17,AM18,AM20,AM21,AM22,AM23,AM25,AM26,AM27,AM28,AM30,AM31,AM32,AM33,AM7,AN12,AN13,AN14,AN15,AN17,AN18,AN19,AN20,AN22,AN23,AN24,AN25,AN27,AN28,AN29,AN30,AN32,AN33,AN34,AP12,AP14,AP15,AP16,AP17,AP19,AP20,AP21,AP22,AP24,AP25,AP26,AP27,AP29,AP30,AP31,AP32,B12,B13,B15,B16,B17,B28,B32,B33,C12,C13,C14,C15,C17,C24,C29,C32,C33,C34,C8,D10,D11,D12,D14,D15,D16,D17,D19,D20,D21,D22,D24,D25,D32,D34,D4,D8,E11,E12,E13,E14,E16,E17,E18,E19,E21,E22,E23,E24,E29,E31,E32,E33,E34,E4,E6,E7,E8,E9,F10,F11,F13,F14,F15,F16,F18,F19,F20,F21,F23,F24,F29,F30,F31,F33,F34,F5,F6,F8,F9,G10,G11,G12,G13,G15,G16,G17,G18,G20,G21,G22,G23,G30,G31,G32,G33,G5,G6,G7,G8,H10,H12,H13,H14,H15,H17,H18,H19,H20,H22,H23,H29,H30,H32,H33,H34,H5,H7,H8,H9,J10,J11,J12,J14,J15,J16,J17,J19,J20,J21,J22,J24,J26,J29,J30,J31,J32,J34,J5,J6,J7,J9,K11,K12,K13,K14")
+          (VALUE "AK24,AK26,AK27,AK28,AK29,AK31,AK32,AK33,AK34,AK6,AK7,AK8,AK9,AL10,AL11,AL13,AL14,AL15,AL16,AL18,AL19,AL20,AL21,AL23,AL24,AL25,AL26,AL28,AL29,AL30,AL31,AL33,AL34,AL7,AM11,AM12,AM13,AM15,AM16,AM17,AM18,AM20,AM21,AM22,AM23,AM25,AM26,AM27,AM28,AM30,AM31,AM32,AM33,AM7,AN12,AN13,AN14,AN15,AN17,AN18,AN19,AN20,AN22,AN23,AN24,AN25,AN27,AN28,AN29,AN30,AN32,AN33,AN34,AP12,AP14,AP15,AP16,AP17,AP19,AP20,AP21,AP22,AP24,AP25,AP26,AP27,AP29,AP30,AP31,AP32,B12,B13,B15,B16,B17,B28,B32,B33,C12,C13,C14,C15,C17,C32,C33,C34,C8,D10,D11,D12,D14,D15,D16,D17,D19,D20,D21,D22,D24,D32,D34,D4,D8,E11,E12,E13,E14,E16,E17,E18,E19,E21,E22,E23,E24,E29,E31,E32,E33,E34,E4,E6,E7,E8,E9,F10,F11,F13,F14,F15,F16,F18,F19,F20,F21,F23,F24,F29,F30,F31,F33,F34,F5,F6,F8,F9,G10,G11,G12,G13,G15,G16,G17,G18,G20,G21,G22,G23,G30,G31,G32,G33,G5,G6,G7,G8,H10,H12,H13,H14,H15,H17,H18,H19,H20,H22,H23,H29,H30,H32,H33,H34,H5,H7,H8,H9,J10,J11,J12,J14,J15,J16,J17,J19,J20,J21,J22,J26,J29,J30,J31,J32,J34,J5,J6,J7,J9,K11,K12,K13,K14,K16,K17,K18,K19")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "K16,K17,K18,K19,K21,K22,K23,K24,K26,K29,K31,K32,K33,K34,K6,K7,K8,K9,L10,L11,L14,L15,L16,L18,L19,L20,L21,L23,L24,L25,L26,L29,L30,L31,L33,L34,L4,L5,L6,L8,L9,M10,M15,M22,M23,M27,M30,M31,M32,M33,M5,M6,M7,M8,N10,N14,N15,N22,N23,N25,N27,N29,N30,N32,N33,N34,N5,N7,N8,N9,P10,P15,P25,P29,P3,P30,P31,P32,P34,P4,P5,P6,P7,P9,R11,R24,R26,R27,R28,R29,R31,R32,R33,R34,R6,R7,R8,R9,T10,T11,T24,T25,T26,T28,T29,T30,T31,T33,T34,T6,T8,T9,U10,U25,U26,U27,U28,U30,U31,U32,U33,U4,U5,U7,U8,V10,V24,V25,V27,V28,V29,V30,V32,V33,V34,V4,V5,V7,V8,V9,W10,W11,W17,W18,W24,W25,W26,W27,W29,W30,W31,W32,W34,W6,W7,W9,Y11,Y24,Y26,Y27,Y28,Y29,Y3,Y31,Y32,Y33,Y34,Y4,Y6,Y7,Y8,Y9")
+          (VALUE "K21,K22,K23,K24,K26,K29,K31,K32,K33,K34,K6,K7,K8,K9,L10,L11,L14,L15,L16,L18,L19,L20,L21,L23,L24,L25,L26,L29,L30,L31,L33,L34,L4,L5,L6,L8,L9,M10,M15,M22,M23,M27,M30,M31,M32,M33,M5,M6,M7,M8,N10,N14,N15,N22,N23,N25,N27,N29,N30,N32,N33,N34,N5,N7,N8,N9,P10,P15,P25,P29,P3,P30,P31,P32,P34,P4,P5,P6,P7,P9,R11,R24,R26,R27,R28,R29,R31,R32,R33,R34,R6,R7,R8,R9,T10,T11,T24,T25,T26,T28,T29,T30,T31,T33,T34,T6,T8,T9,U10,U25,U26,U27,U28,U30,U31,U32,U33,U4,U5,U7,U8,V10,V24,V25,V27,V28,V29,V30,V32,V33,V34,V4,V5,V7,V8,V9,W10,W11,W17,W18,W24,W25,W26,W27,W29,W30,W31,W32,W34,W6,W7,W9,Y11,Y24,Y26,Y27,Y28,Y29,Y3,Y31,Y32,Y33,Y34,Y4,Y6,Y7,Y8,Y9")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -12993,12 +13620,12 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "AK24,AK26,AK27,AK28,AK29,AK31,AK32,AK33,AK34,AK6,AK7,AK8,AK9,AL10,AL11,AL13,AL14,AL15,AL16,AL18,AL19,AL20,AL21,AL23,AL24,AL25,AL26,AL28,AL29,AL30,AL31,AL33,AL34,AL7,AM11,AM12,AM13,AM15,AM16,AM17,AM18,AM20,AM21,AM22,AM23,AM25,AM26,AM27,AM28,AM30,AM31,AM32,AM33,AM7,AN12,AN13,AN14,AN15,AN17,AN18,AN19,AN20,AN22,AN23,AN24,AN25,AN27,AN28,AN29,AN30,AN32,AN33,AN34,AP12,AP14,AP15,AP16,AP17,AP19,AP20,AP21,AP22,AP24,AP25,AP26,AP27,AP29,AP30,AP31,AP32,B12,B13,B15,B16,B17,B28,B32,B33,C12,C13,C14,C15,C17,C24,C29,C32,C33,C34,C8,D10,D11,D12,D14,D15,D16,D17,D19,D20,D21,D22,D24,D25,D32,D34,D4,D8,E11,E12,E13,E14,E16,E17,E18,E19,E21,E22,E23,E24,E29,E31,E32,E33,E34,E4,E6,E7,E8,E9,F10,F11,F13,F14,F15,F16,F18,F19,F20,F21,F23,F24,F29,F30,F31,F33,F34,F5,F6,F8,F9,G10,G11,G12,G13,G15,G16,G17,G18,G20,G21,G22,G23,G30,G31,G32,G33,G5,G6,G7,G8,H10,H12,H13,H14,H15,H17,H18,H19,H20,H22,H23,H29,H30,H32,H33,H34,H5,H7,H8,H9,J10,J11,J12,J14,J15,J16,J17,J19,J20,J21,J22,J24,J26,J29,J30,J31,J32,J34,J5,J6,J7,J9,K11,K12,K13,K14")
+          (VALUE "AK24,AK26,AK27,AK28,AK29,AK31,AK32,AK33,AK34,AK6,AK7,AK8,AK9,AL10,AL11,AL13,AL14,AL15,AL16,AL18,AL19,AL20,AL21,AL23,AL24,AL25,AL26,AL28,AL29,AL30,AL31,AL33,AL34,AL7,AM11,AM12,AM13,AM15,AM16,AM17,AM18,AM20,AM21,AM22,AM23,AM25,AM26,AM27,AM28,AM30,AM31,AM32,AM33,AM7,AN12,AN13,AN14,AN15,AN17,AN18,AN19,AN20,AN22,AN23,AN24,AN25,AN27,AN28,AN29,AN30,AN32,AN33,AN34,AP12,AP14,AP15,AP16,AP17,AP19,AP20,AP21,AP22,AP24,AP25,AP26,AP27,AP29,AP30,AP31,AP32,B12,B13,B15,B16,B17,B28,B32,B33,C12,C13,C14,C15,C17,C32,C33,C34,C8,D10,D11,D12,D14,D15,D16,D17,D19,D20,D21,D22,D24,D32,D34,D4,D8,E11,E12,E13,E14,E16,E17,E18,E19,E21,E22,E23,E24,E29,E31,E32,E33,E34,E4,E6,E7,E8,E9,F10,F11,F13,F14,F15,F16,F18,F19,F20,F21,F23,F24,F29,F30,F31,F33,F34,F5,F6,F8,F9,G10,G11,G12,G13,G15,G16,G17,G18,G20,G21,G22,G23,G30,G31,G32,G33,G5,G6,G7,G8,H10,H12,H13,H14,H15,H17,H18,H19,H20,H22,H23,H29,H30,H32,H33,H34,H5,H7,H8,H9,J10,J11,J12,J14,J15,J16,J17,J19,J20,J21,J22,J26,J29,J30,J31,J32,J34,J5,J6,J7,J9,K11,K12,K13,K14,K16,K17,K18,K19")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "K16,K17,K18,K19,K21,K22,K23,K24,K26,K29,K31,K32,K33,K34,K6,K7,K8,K9,L10,L11,L14,L15,L16,L18,L19,L20,L21,L23,L24,L25,L26,L29,L30,L31,L33,L34,L4,L5,L6,L8,L9,M10,M15,M22,M23,M27,M30,M31,M32,M33,M5,M6,M7,M8,N10,N14,N15,N22,N23,N25,N27,N29,N30,N32,N33,N34,N5,N7,N8,N9,P10,P15,P25,P29,P3,P30,P31,P32,P34,P4,P5,P6,P7,P9,R11,R24,R26,R27,R28,R29,R31,R32,R33,R34,R6,R7,R8,R9,T10,T11,T24,T25,T26,T28,T29,T30,T31,T33,T34,T6,T8,T9,U10,U25,U26,U27,U28,U30,U31,U32,U33,U4,U5,U7,U8,V10,V24,V25,V27,V28,V29,V30,V32,V33,V34,V4,V5,V7,V8,V9,W10,W11,W17,W18,W24,W25,W26,W27,W29,W30,W31,W32,W34,W6,W7,W9,Y11,Y24,Y26,Y27,Y28,Y29,Y3,Y31,Y32,Y33,Y34,Y4,Y6,Y7,Y8,Y9")
+          (VALUE "K21,K22,K23,K24,K26,K29,K31,K32,K33,K34,K6,K7,K8,K9,L10,L11,L14,L15,L16,L18,L19,L20,L21,L23,L24,L25,L26,L29,L30,L31,L33,L34,L4,L5,L6,L8,L9,M10,M15,M22,M23,M27,M30,M31,M32,M33,M5,M6,M7,M8,N10,N14,N15,N22,N23,N25,N27,N29,N30,N32,N33,N34,N5,N7,N8,N9,P10,P15,P25,P29,P3,P30,P31,P32,P34,P4,P5,P6,P7,P9,R11,R24,R26,R27,R28,R29,R31,R32,R33,R34,R6,R7,R8,R9,T10,T11,T24,T25,T26,T28,T29,T30,T31,T33,T34,T6,T8,T9,U10,U25,U26,U27,U28,U30,U31,U32,U33,U4,U5,U7,U8,V10,V24,V25,V27,V28,V29,V30,V32,V33,V34,V4,V5,V7,V8,V9,W10,W11,W17,W18,W24,W25,W26,W27,W29,W30,W31,W32,W34,W6,W7,W9,Y11,Y24,Y26,Y27,Y28,Y29,Y3,Y31,Y32,Y33,Y34,Y4,Y6,Y7,Y8,Y9")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -20516,12 +21143,12 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "AK24,AK26,AK27,AK28,AK29,AK31,AK32,AK33,AK34,AK6,AK7,AK8,AK9,AL10,AL11,AL13,AL14,AL15,AL16,AL18,AL19,AL20,AL21,AL23,AL24,AL25,AL26,AL28,AL29,AL30,AL31,AL33,AL34,AL7,AM11,AM12,AM13,AM15,AM16,AM17,AM18,AM20,AM21,AM22,AM23,AM25,AM26,AM27,AM28,AM30,AM31,AM32,AM33,AM7,AN12,AN13,AN14,AN15,AN17,AN18,AN19,AN20,AN22,AN23,AN24,AN25,AN27,AN28,AN29,AN30,AN32,AN33,AN34,AP12,AP14,AP15,AP16,AP17,AP19,AP20,AP21,AP22,AP24,AP25,AP26,AP27,AP29,AP30,AP31,AP32,B12,B13,B15,B16,B17,B28,B32,B33,C12,C13,C14,C15,C17,C24,C29,C32,C33,C34,C8,D10,D11,D12,D14,D15,D16,D17,D19,D20,D21,D22,D24,D25,D32,D34,D4,D8,E11,E12,E13,E14,E16,E17,E18,E19,E21,E22,E23,E24,E29,E31,E32,E33,E34,E4,E6,E7,E8,E9,F10,F11,F13,F14,F15,F16,F18,F19,F20,F21,F23,F24,F29,F30,F31,F33,F34,F5,F6,F8,F9,G10,G11,G12,G13,G15,G16,G17,G18,G20,G21,G22,G23,G30,G31,G32,G33,G5,G6,G7,G8,H10,H12,H13,H14,H15,H17,H18,H19,H20,H22,H23,H29,H30,H32,H33,H34,H5,H7,H8,H9,J10,J11,J12,J14,J15,J16,J17,J19,J20,J21,J22,J24,J26,J29,J30,J31,J32,J34,J5,J6,J7,J9,K11,K12,K13,K14")
+          (VALUE "AK24,AK26,AK27,AK28,AK29,AK31,AK32,AK33,AK34,AK6,AK7,AK8,AK9,AL10,AL11,AL13,AL14,AL15,AL16,AL18,AL19,AL20,AL21,AL23,AL24,AL25,AL26,AL28,AL29,AL30,AL31,AL33,AL34,AL7,AM11,AM12,AM13,AM15,AM16,AM17,AM18,AM20,AM21,AM22,AM23,AM25,AM26,AM27,AM28,AM30,AM31,AM32,AM33,AM7,AN12,AN13,AN14,AN15,AN17,AN18,AN19,AN20,AN22,AN23,AN24,AN25,AN27,AN28,AN29,AN30,AN32,AN33,AN34,AP12,AP14,AP15,AP16,AP17,AP19,AP20,AP21,AP22,AP24,AP25,AP26,AP27,AP29,AP30,AP31,AP32,B12,B13,B15,B16,B17,B28,B32,B33,C12,C13,C14,C15,C17,C32,C33,C34,C8,D10,D11,D12,D14,D15,D16,D17,D19,D20,D21,D22,D24,D32,D34,D4,D8,E11,E12,E13,E14,E16,E17,E18,E19,E21,E22,E23,E24,E29,E31,E32,E33,E34,E4,E6,E7,E8,E9,F10,F11,F13,F14,F15,F16,F18,F19,F20,F21,F23,F24,F29,F30,F31,F33,F34,F5,F6,F8,F9,G10,G11,G12,G13,G15,G16,G17,G18,G20,G21,G22,G23,G30,G31,G32,G33,G5,G6,G7,G8,H10,H12,H13,H14,H15,H17,H18,H19,H20,H22,H23,H29,H30,H32,H33,H34,H5,H7,H8,H9,J10,J11,J12,J14,J15,J16,J17,J19,J20,J21,J22,J26,J29,J30,J31,J32,J34,J5,J6,J7,J9,K11,K12,K13,K14,K16,K17,K18,K19")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "K16,K17,K18,K19,K21,K22,K23,K24,K26,K29,K31,K32,K33,K34,K6,K7,K8,K9,L10,L11,L14,L15,L16,L18,L19,L20,L21,L23,L24,L25,L26,L29,L30,L31,L33,L34,L4,L5,L6,L8,L9,M10,M15,M22,M23,M27,M30,M31,M32,M33,M5,M6,M7,M8,N10,N14,N15,N22,N23,N25,N27,N29,N30,N32,N33,N34,N5,N7,N8,N9,P10,P15,P25,P29,P3,P30,P31,P32,P34,P4,P5,P6,P7,P9,R11,R24,R26,R27,R28,R29,R31,R32,R33,R34,R6,R7,R8,R9,T10,T11,T24,T25,T26,T28,T29,T30,T31,T33,T34,T6,T8,T9,U10,U25,U26,U27,U28,U30,U31,U32,U33,U4,U5,U7,U8,V10,V24,V25,V27,V28,V29,V30,V32,V33,V34,V4,V5,V7,V8,V9,W10,W11,W17,W18,W24,W25,W26,W27,W29,W30,W31,W32,W34,W6,W7,W9,Y11,Y24,Y26,Y27,Y28,Y29,Y3,Y31,Y32,Y33,Y34,Y4,Y6,Y7,Y8,Y9")
+          (VALUE "K21,K22,K23,K24,K26,K29,K31,K32,K33,K34,K6,K7,K8,K9,L10,L11,L14,L15,L16,L18,L19,L20,L21,L23,L24,L25,L26,L29,L30,L31,L33,L34,L4,L5,L6,L8,L9,M10,M15,M22,M23,M27,M30,M31,M32,M33,M5,M6,M7,M8,N10,N14,N15,N22,N23,N25,N27,N29,N30,N32,N33,N34,N5,N7,N8,N9,P10,P15,P25,P29,P3,P30,P31,P32,P34,P4,P5,P6,P7,P9,R11,R24,R26,R27,R28,R29,R31,R32,R33,R34,R6,R7,R8,R9,T10,T11,T24,T25,T26,T28,T29,T30,T31,T33,T34,T6,T8,T9,U10,U25,U26,U27,U28,U30,U31,U32,U33,U4,U5,U7,U8,V10,V24,V25,V27,V28,V29,V30,V32,V33,V34,V4,V5,V7,V8,V9,W10,W11,W17,W18,W24,W25,W26,W27,W29,W30,W31,W32,W34,W6,W7,W9,Y11,Y24,Y26,Y27,Y28,Y29,Y3,Y31,Y32,Y33,Y34,Y4,Y6,Y7,Y8,Y9")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -24740,12 +25367,12 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "AK24,AK26,AK27,AK28,AK29,AK31,AK32,AK33,AK34,AK6,AK7,AK8,AK9,AL10,AL11,AL13,AL14,AL15,AL16,AL18,AL19,AL20,AL21,AL23,AL24,AL25,AL26,AL28,AL29,AL30,AL31,AL33,AL34,AL7,AM11,AM12,AM13,AM15,AM16,AM17,AM18,AM20,AM21,AM22,AM23,AM25,AM26,AM27,AM28,AM30,AM31,AM32,AM33,AM7,AN12,AN13,AN14,AN15,AN17,AN18,AN19,AN20,AN22,AN23,AN24,AN25,AN27,AN28,AN29,AN30,AN32,AN33,AN34,AP12,AP14,AP15,AP16,AP17,AP19,AP20,AP21,AP22,AP24,AP25,AP26,AP27,AP29,AP30,AP31,AP32,B12,B13,B15,B16,B17,B28,B32,B33,C12,C13,C14,C15,C17,C24,C29,C32,C33,C34,C8,D10,D11,D12,D14,D15,D16,D17,D19,D20,D21,D22,D24,D25,D32,D34,D4,D8,E11,E12,E13,E14,E16,E17,E18,E19,E21,E22,E23,E24,E29,E31,E32,E33,E34,E4,E6,E7,E8,E9,F10,F11,F13,F14,F15,F16,F18,F19,F20,F21,F23,F24,F29,F30,F31,F33,F34,F5,F6,F8,F9,G10,G11,G12,G13,G15,G16,G17,G18,G20,G21,G22,G23,G30,G31,G32,G33,G5,G6,G7,G8,H10,H12,H13,H14,H15,H17,H18,H19,H20,H22,H23,H29,H30,H32,H33,H34,H5,H7,H8,H9,J10,J11,J12,J14,J15,J16,J17,J19,J20,J21,J22,J24,J26,J29,J30,J31,J32,J34,J5,J6,J7,J9,K11,K12,K13,K14")
+          (VALUE "AK24,AK26,AK27,AK28,AK29,AK31,AK32,AK33,AK34,AK6,AK7,AK8,AK9,AL10,AL11,AL13,AL14,AL15,AL16,AL18,AL19,AL20,AL21,AL23,AL24,AL25,AL26,AL28,AL29,AL30,AL31,AL33,AL34,AL7,AM11,AM12,AM13,AM15,AM16,AM17,AM18,AM20,AM21,AM22,AM23,AM25,AM26,AM27,AM28,AM30,AM31,AM32,AM33,AM7,AN12,AN13,AN14,AN15,AN17,AN18,AN19,AN20,AN22,AN23,AN24,AN25,AN27,AN28,AN29,AN30,AN32,AN33,AN34,AP12,AP14,AP15,AP16,AP17,AP19,AP20,AP21,AP22,AP24,AP25,AP26,AP27,AP29,AP30,AP31,AP32,B12,B13,B15,B16,B17,B28,B32,B33,C12,C13,C14,C15,C17,C32,C33,C34,C8,D10,D11,D12,D14,D15,D16,D17,D19,D20,D21,D22,D24,D32,D34,D4,D8,E11,E12,E13,E14,E16,E17,E18,E19,E21,E22,E23,E24,E29,E31,E32,E33,E34,E4,E6,E7,E8,E9,F10,F11,F13,F14,F15,F16,F18,F19,F20,F21,F23,F24,F29,F30,F31,F33,F34,F5,F6,F8,F9,G10,G11,G12,G13,G15,G16,G17,G18,G20,G21,G22,G23,G30,G31,G32,G33,G5,G6,G7,G8,H10,H12,H13,H14,H15,H17,H18,H19,H20,H22,H23,H29,H30,H32,H33,H34,H5,H7,H8,H9,J10,J11,J12,J14,J15,J16,J17,J19,J20,J21,J22,J26,J29,J30,J31,J32,J34,J5,J6,J7,J9,K11,K12,K13,K14,K16,K17,K18,K19")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "K16,K17,K18,K19,K21,K22,K23,K24,K26,K29,K31,K32,K33,K34,K6,K7,K8,K9,L10,L11,L14,L15,L16,L18,L19,L20,L21,L23,L24,L25,L26,L29,L30,L31,L33,L34,L4,L5,L6,L8,L9,M10,M15,M22,M23,M27,M30,M31,M32,M33,M5,M6,M7,M8,N10,N14,N15,N22,N23,N25,N27,N29,N30,N32,N33,N34,N5,N7,N8,N9,P10,P15,P25,P29,P3,P30,P31,P32,P34,P4,P5,P6,P7,P9,R11,R24,R26,R27,R28,R29,R31,R32,R33,R34,R6,R7,R8,R9,T10,T11,T24,T25,T26,T28,T29,T30,T31,T33,T34,T6,T8,T9,U10,U25,U26,U27,U28,U30,U31,U32,U33,U4,U5,U7,U8,V10,V24,V25,V27,V28,V29,V30,V32,V33,V34,V4,V5,V7,V8,V9,W10,W11,W17,W18,W24,W25,W26,W27,W29,W30,W31,W32,W34,W6,W7,W9,Y11,Y24,Y26,Y27,Y28,Y29,Y3,Y31,Y32,Y33,Y34,Y4,Y6,Y7,Y8,Y9")
+          (VALUE "K21,K22,K23,K24,K26,K29,K31,K32,K33,K34,K6,K7,K8,K9,L10,L11,L14,L15,L16,L18,L19,L20,L21,L23,L24,L25,L26,L29,L30,L31,L33,L34,L4,L5,L6,L8,L9,M10,M15,M22,M23,M27,M30,M31,M32,M33,M5,M6,M7,M8,N10,N14,N15,N22,N23,N25,N27,N29,N30,N32,N33,N34,N5,N7,N8,N9,P10,P15,P25,P29,P3,P30,P31,P32,P34,P4,P5,P6,P7,P9,R11,R24,R26,R27,R28,R29,R31,R32,R33,R34,R6,R7,R8,R9,T10,T11,T24,T25,T26,T28,T29,T30,T31,T33,T34,T6,T8,T9,U10,U25,U26,U27,U28,U30,U31,U32,U33,U4,U5,U7,U8,V10,V24,V25,V27,V28,V29,V30,V32,V33,V34,V4,V5,V7,V8,V9,W10,W11,W17,W18,W24,W25,W26,W27,W29,W30,W31,W32,W34,W6,W7,W9,Y11,Y24,Y26,Y27,Y28,Y29,Y3,Y31,Y32,Y33,Y34,Y4,Y6,Y7,Y8,Y9")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -29519,12 +30146,12 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "AK24,AK26,AK27,AK28,AK29,AK31,AK32,AK33,AK34,AK6,AK7,AK8,AK9,AL10,AL11,AL13,AL14,AL15,AL16,AL18,AL19,AL20,AL21,AL23,AL24,AL25,AL26,AL28,AL29,AL30,AL31,AL33,AL34,AL7,AM11,AM12,AM13,AM15,AM16,AM17,AM18,AM20,AM21,AM22,AM23,AM25,AM26,AM27,AM28,AM30,AM31,AM32,AM33,AM7,AN12,AN13,AN14,AN15,AN17,AN18,AN19,AN20,AN22,AN23,AN24,AN25,AN27,AN28,AN29,AN30,AN32,AN33,AN34,AP12,AP14,AP15,AP16,AP17,AP19,AP20,AP21,AP22,AP24,AP25,AP26,AP27,AP29,AP30,AP31,AP32,B12,B13,B15,B16,B17,B28,B32,B33,C12,C13,C14,C15,C17,C24,C29,C32,C33,C34,C8,D10,D11,D12,D14,D15,D16,D17,D19,D20,D21,D22,D24,D25,D32,D34,D4,D8,E11,E12,E13,E14,E16,E17,E18,E19,E21,E22,E23,E24,E29,E31,E32,E33,E34,E4,E6,E7,E8,E9,F10,F11,F13,F14,F15,F16,F18,F19,F20,F21,F23,F24,F29,F30,F31,F33,F34,F5,F6,F8,F9,G10,G11,G12,G13,G15,G16,G17,G18,G20,G21,G22,G23,G30,G31,G32,G33,G5,G6,G7,G8,H10,H12,H13,H14,H15,H17,H18,H19,H20,H22,H23,H29,H30,H32,H33,H34,H5,H7,H8,H9,J10,J11,J12,J14,J15,J16,J17,J19,J20,J21,J22,J24,J26,J29,J30,J31,J32,J34,J5,J6,J7,J9,K11,K12,K13,K14")
+          (VALUE "AK24,AK26,AK27,AK28,AK29,AK31,AK32,AK33,AK34,AK6,AK7,AK8,AK9,AL10,AL11,AL13,AL14,AL15,AL16,AL18,AL19,AL20,AL21,AL23,AL24,AL25,AL26,AL28,AL29,AL30,AL31,AL33,AL34,AL7,AM11,AM12,AM13,AM15,AM16,AM17,AM18,AM20,AM21,AM22,AM23,AM25,AM26,AM27,AM28,AM30,AM31,AM32,AM33,AM7,AN12,AN13,AN14,AN15,AN17,AN18,AN19,AN20,AN22,AN23,AN24,AN25,AN27,AN28,AN29,AN30,AN32,AN33,AN34,AP12,AP14,AP15,AP16,AP17,AP19,AP20,AP21,AP22,AP24,AP25,AP26,AP27,AP29,AP30,AP31,AP32,B12,B13,B15,B16,B17,B28,B32,B33,C12,C13,C14,C15,C17,C32,C33,C34,C8,D10,D11,D12,D14,D15,D16,D17,D19,D20,D21,D22,D24,D32,D34,D4,D8,E11,E12,E13,E14,E16,E17,E18,E19,E21,E22,E23,E24,E29,E31,E32,E33,E34,E4,E6,E7,E8,E9,F10,F11,F13,F14,F15,F16,F18,F19,F20,F21,F23,F24,F29,F30,F31,F33,F34,F5,F6,F8,F9,G10,G11,G12,G13,G15,G16,G17,G18,G20,G21,G22,G23,G30,G31,G32,G33,G5,G6,G7,G8,H10,H12,H13,H14,H15,H17,H18,H19,H20,H22,H23,H29,H30,H32,H33,H34,H5,H7,H8,H9,J10,J11,J12,J14,J15,J16,J17,J19,J20,J21,J22,J26,J29,J30,J31,J32,J34,J5,J6,J7,J9,K11,K12,K13,K14,K16,K17,K18,K19")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "K16,K17,K18,K19,K21,K22,K23,K24,K26,K29,K31,K32,K33,K34,K6,K7,K8,K9,L10,L11,L14,L15,L16,L18,L19,L20,L21,L23,L24,L25,L26,L29,L30,L31,L33,L34,L4,L5,L6,L8,L9,M10,M15,M22,M23,M27,M30,M31,M32,M33,M5,M6,M7,M8,N10,N14,N15,N22,N23,N25,N27,N29,N30,N32,N33,N34,N5,N7,N8,N9,P10,P15,P25,P29,P3,P30,P31,P32,P34,P4,P5,P6,P7,P9,R11,R24,R26,R27,R28,R29,R31,R32,R33,R34,R6,R7,R8,R9,T10,T11,T24,T25,T26,T28,T29,T30,T31,T33,T34,T6,T8,T9,U10,U25,U26,U27,U28,U30,U31,U32,U33,U4,U5,U7,U8,V10,V24,V25,V27,V28,V29,V30,V32,V33,V34,V4,V5,V7,V8,V9,W10,W11,W17,W18,W24,W25,W26,W27,W29,W30,W31,W32,W34,W6,W7,W9,Y11,Y24,Y26,Y27,Y28,Y29,Y3,Y31,Y32,Y33,Y34,Y4,Y6,Y7,Y8,Y9")
+          (VALUE "K21,K22,K23,K24,K26,K29,K31,K32,K33,K34,K6,K7,K8,K9,L10,L11,L14,L15,L16,L18,L19,L20,L21,L23,L24,L25,L26,L29,L30,L31,L33,L34,L4,L5,L6,L8,L9,M10,M15,M22,M23,M27,M30,M31,M32,M33,M5,M6,M7,M8,N10,N14,N15,N22,N23,N25,N27,N29,N30,N32,N33,N34,N5,N7,N8,N9,P10,P15,P25,P29,P3,P30,P31,P32,P34,P4,P5,P6,P7,P9,R11,R24,R26,R27,R28,R29,R31,R32,R33,R34,R6,R7,R8,R9,T10,T11,T24,T25,T26,T28,T29,T30,T31,T33,T34,T6,T8,T9,U10,U25,U26,U27,U28,U30,U31,U32,U33,U4,U5,U7,U8,V10,V24,V25,V27,V28,V29,V30,V32,V33,V34,V4,V5,V7,V8,V9,W10,W11,W17,W18,W24,W25,W26,W27,W29,W30,W31,W32,W34,W6,W7,W9,Y11,Y24,Y26,Y27,Y28,Y29,Y3,Y31,Y32,Y33,Y34,Y4,Y6,Y7,Y8,Y9")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -30267,7 +30894,7 @@
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME "#")
-              (VALUE "")
+              (VALUE C29)
               (OWNER DXDESIGNER)
             )
             (ATTRIBUTE
@@ -30292,12 +30919,12 @@
             )
             (ATTRIBUTE
               (NAME PIN_NO)
-              (VALUE "")
+              (VALUE C29)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Number")
-              (VALUE "")
+              (VALUE C29)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -31342,7 +31969,7 @@
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME "#")
-              (VALUE "")
+              (VALUE J24)
               (OWNER DXDESIGNER)
             )
             (ATTRIBUTE
@@ -31367,12 +31994,12 @@
             )
             (ATTRIBUTE
               (NAME PIN_NO)
-              (VALUE "")
+              (VALUE J24)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Number")
-              (VALUE "")
+              (VALUE J24)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -33523,116 +34150,6 @@
         )
         (PORT
           (TYPE SSIGNAL)
-          (NAME C24)
-          (POSITION -10160 111760)
-          (EXTTYPE IN)
-          (LENGTH 10160)
-          (SLOT 614)
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE C24)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE C24)
-              (OWNER DESIGNCAPTURE)
-            )
-          )
-        )
-        (TEXT
-          (LABEL C24)
-          (POSITION 846 111760)
-          (VALIGN CENTER)
-        )
-        (PORT
-          (TYPE SSIGNAL)
-          (NAME D25)
-          (POSITION -10160 116840)
-          (EXTTYPE IN)
-          (LENGTH 10160)
-          (SLOT 645)
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE D25)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE D25)
-              (OWNER DESIGNCAPTURE)
-            )
-          )
-        )
-        (TEXT
-          (LABEL D25)
-          (POSITION 846 116840)
-          (VALIGN CENTER)
-        )
-        (PORT
-          (TYPE SSIGNAL)
           (NAME K24)
           (POSITION 111760 127000)
           (EXTTYPE OUT)
@@ -33859,6 +34376,114 @@
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME "qdr2_cq_by0_1_n<0>")
+          (POSITION -10160 116840)
+          (LENGTH 10160)
+          (SLOT 648)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE D25)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE D25)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE D25)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "qdr2_cq_by0_1_n(0)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "qdr2_cq_by0_1_n(0)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "qdr2_cq_by0_1_n<0>")
+          (POSITION 846 116840)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME "qdr2_cq_by0_1_p<0>")
+          (POSITION -10160 111760)
+          (LENGTH 10160)
+          (SLOT 649)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE C24)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE C24)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE C24)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "qdr2_cq_by0_1_p(0)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "qdr2_cq_by0_1_p(0)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "qdr2_cq_by0_1_p<0>")
+          (POSITION 846 111760)
+          (VALIGN CENTER)
+        )
       )
       (PCB T)
       (ATTRIBUTES
@@ -34009,12 +34634,12 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "AK24,AK26,AK27,AK28,AK29,AK31,AK32,AK33,AK34,AK6,AK7,AK8,AK9,AL10,AL11,AL13,AL14,AL15,AL16,AL18,AL19,AL20,AL21,AL23,AL24,AL25,AL26,AL28,AL29,AL30,AL31,AL33,AL34,AL7,AM11,AM12,AM13,AM15,AM16,AM17,AM18,AM20,AM21,AM22,AM23,AM25,AM26,AM27,AM28,AM30,AM31,AM32,AM33,AM7,AN12,AN13,AN14,AN15,AN17,AN18,AN19,AN20,AN22,AN23,AN24,AN25,AN27,AN28,AN29,AN30,AN32,AN33,AN34,AP12,AP14,AP15,AP16,AP17,AP19,AP20,AP21,AP22,AP24,AP25,AP26,AP27,AP29,AP30,AP31,AP32,B12,B13,B15,B16,B17,B28,B32,B33,C12,C13,C14,C15,C17,C24,C29,C32,C33,C34,C8,D10,D11,D12,D14,D15,D16,D17,D19,D20,D21,D22,D24,D25,D32,D34,D4,D8,E11,E12,E13,E14,E16,E17,E18,E19,E21,E22,E23,E24,E29,E31,E32,E33,E34,E4,E6,E7,E8,E9,F10,F11,F13,F14,F15,F16,F18,F19,F20,F21,F23,F24,F29,F30,F31,F33,F34,F5,F6,F8,F9,G10,G11,G12,G13,G15,G16,G17,G18,G20,G21,G22,G23,G30,G31,G32,G33,G5,G6,G7,G8,H10,H12,H13,H14,H15,H17,H18,H19,H20,H22,H23,H29,H30,H32,H33,H34,H5,H7,H8,H9,J10,J11,J12,J14,J15,J16,J17,J19,J20,J21,J22,J24,J26,J29,J30,J31,J32,J34,J5,J6,J7,J9,K11,K12,K13,K14")
+          (VALUE "AK24,AK26,AK27,AK28,AK29,AK31,AK32,AK33,AK34,AK6,AK7,AK8,AK9,AL10,AL11,AL13,AL14,AL15,AL16,AL18,AL19,AL20,AL21,AL23,AL24,AL25,AL26,AL28,AL29,AL30,AL31,AL33,AL34,AL7,AM11,AM12,AM13,AM15,AM16,AM17,AM18,AM20,AM21,AM22,AM23,AM25,AM26,AM27,AM28,AM30,AM31,AM32,AM33,AM7,AN12,AN13,AN14,AN15,AN17,AN18,AN19,AN20,AN22,AN23,AN24,AN25,AN27,AN28,AN29,AN30,AN32,AN33,AN34,AP12,AP14,AP15,AP16,AP17,AP19,AP20,AP21,AP22,AP24,AP25,AP26,AP27,AP29,AP30,AP31,AP32,B12,B13,B15,B16,B17,B28,B32,B33,C12,C13,C14,C15,C17,C32,C33,C34,C8,D10,D11,D12,D14,D15,D16,D17,D19,D20,D21,D22,D24,D32,D34,D4,D8,E11,E12,E13,E14,E16,E17,E18,E19,E21,E22,E23,E24,E29,E31,E32,E33,E34,E4,E6,E7,E8,E9,F10,F11,F13,F14,F15,F16,F18,F19,F20,F21,F23,F24,F29,F30,F31,F33,F34,F5,F6,F8,F9,G10,G11,G12,G13,G15,G16,G17,G18,G20,G21,G22,G23,G30,G31,G32,G33,G5,G6,G7,G8,H10,H12,H13,H14,H15,H17,H18,H19,H20,H22,H23,H29,H30,H32,H33,H34,H5,H7,H8,H9,J10,J11,J12,J14,J15,J16,J17,J19,J20,J21,J22,J26,J29,J30,J31,J32,J34,J5,J6,J7,J9,K11,K12,K13,K14,K16,K17,K18,K19")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "K16,K17,K18,K19,K21,K22,K23,K24,K26,K29,K31,K32,K33,K34,K6,K7,K8,K9,L10,L11,L14,L15,L16,L18,L19,L20,L21,L23,L24,L25,L26,L29,L30,L31,L33,L34,L4,L5,L6,L8,L9,M10,M15,M22,M23,M27,M30,M31,M32,M33,M5,M6,M7,M8,N10,N14,N15,N22,N23,N25,N27,N29,N30,N32,N33,N34,N5,N7,N8,N9,P10,P15,P25,P29,P3,P30,P31,P32,P34,P4,P5,P6,P7,P9,R11,R24,R26,R27,R28,R29,R31,R32,R33,R34,R6,R7,R8,R9,T10,T11,T24,T25,T26,T28,T29,T30,T31,T33,T34,T6,T8,T9,U10,U25,U26,U27,U28,U30,U31,U32,U33,U4,U5,U7,U8,V10,V24,V25,V27,V28,V29,V30,V32,V33,V34,V4,V5,V7,V8,V9,W10,W11,W17,W18,W24,W25,W26,W27,W29,W30,W31,W32,W34,W6,W7,W9,Y11,Y24,Y26,Y27,Y28,Y29,Y3,Y31,Y32,Y33,Y34,Y4,Y6,Y7,Y8,Y9")
+          (VALUE "K21,K22,K23,K24,K26,K29,K31,K32,K33,K34,K6,K7,K8,K9,L10,L11,L14,L15,L16,L18,L19,L20,L21,L23,L24,L25,L26,L29,L30,L31,L33,L34,L4,L5,L6,L8,L9,M10,M15,M22,M23,M27,M30,M31,M32,M33,M5,M6,M7,M8,N10,N14,N15,N22,N23,N25,N27,N29,N30,N32,N33,N34,N5,N7,N8,N9,P10,P15,P25,P29,P3,P30,P31,P32,P34,P4,P5,P6,P7,P9,R11,R24,R26,R27,R28,R29,R31,R32,R33,R34,R6,R7,R8,R9,T10,T11,T24,T25,T26,T28,T29,T30,T31,T33,T34,T6,T8,T9,U10,U25,U26,U27,U28,U30,U31,U32,U33,U4,U5,U7,U8,V10,V24,V25,V27,V28,V29,V30,V32,V33,V34,V4,V5,V7,V8,V9,W10,W11,W17,W18,W24,W25,W26,W27,W29,W30,W31,W32,W34,W6,W7,W9,Y11,Y24,Y26,Y27,Y28,Y29,Y3,Y31,Y32,Y33,Y34,Y4,Y6,Y7,Y8,Y9")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -34044,7 +34669,7 @@
         )
         (ATTRIBUTE
           (NAME PINSWAP)
-          (VALUE "(QDR2_Q_BY0_B8,QDR2_Q_BY0_B7,QDR2_Q_BY0_B6,QDR2_Q_BY0_B5,QDR2_Q_BY0_B4,QDR2_Q_BY0_B3,QDR2_Q_BY0_B2,QDR2_Q_BY0_B1,QDR2_Q_BY0_B0,QDR2_Q_BY1_B8,QDR2_Q_BY1_B7,QDR2_Q_BY1_B5,QDR2_Q_BY1_B4,QDR2_Q_BY1_B3,QDR2_Q_BY1_B2,QDR2_Q_BY1_B1,QDR2_Q_BY1_B0,QDR2_D_BY0_B8,QDR2_D_BY0_B7,QDR2_D_BY0_B6,QDR2_D_BY0_B4,QDR2_D_BY0_B3,QDR2_D_BY0_B2,QDR2_D_BY0_B1,QDR2_D_BY0_B0,QDR2_D_BY1_B8,QDR2_D_BY1_B6,QDR2_D_BY1_B5,QDR2_D_BY1_B4,QDR2_D_BY1_B3,QDR2_D_BY1_B2,QDR2_D_BY1_B1,QDR2_D_BY1_B0,QDR2_DLL_OFF_BY0_1#,QDR2_R_BY0_1#,QDR2_W_BY0_1#,QDR2_SA_BY0_121,QDR2_SA_BY0_120,QDR2_SA_BY0_119,QDR2_SA_BY0_118,QDR2_SA_BY0_117,QDR2_SA_BY0_116,QDR2_SA_BY0_115,QDR2_SA_BY0_114,QDR2_SA_BY0_113,QDR2_SA_BY0_112,QDR2_SA_BY0_111,QDR2_SA_BY0_110,QDR2_SA_BY0_19,QDR2_SA_BY0_18,QDR2_SA_BY0_17,QDR2_SA_BY0_16,QDR2_SA_BY0_15,QDR2_SA_BY0_14,QDR2_SA_BY0_13,QDR2_SA_BY0_12,QDR2_SA_BY0_11,QDR2_SA_BY0_10,QDR2_BW_BY0#,QDR2_BW_BY1#)")
+          (VALUE "(QDR2_Q_BY1_B8,QDR2_Q_BY1_B7,QDR2_D_BY0_B5),(QDR2_Q_BY0_B8,QDR2_Q_BY0_B7,QDR2_Q_BY0_B6,QDR2_Q_BY0_B5,QDR2_Q_BY0_B4,QDR2_Q_BY0_B3,QDR2_Q_BY0_B2,QDR2_Q_BY0_B1,QDR2_Q_BY0_B0,QDR2_Q_BY1_B6,QDR2_Q_BY1_B5,QDR2_Q_BY1_B4,QDR2_Q_BY1_B3,QDR2_Q_BY1_B2,QDR2_Q_BY1_B1,QDR2_Q_BY1_B0,QDR2_D_BY0_B8,QDR2_D_BY0_B7,QDR2_D_BY0_B6,QDR2_D_BY0_B4,QDR2_D_BY0_B3,QDR2_D_BY0_B2,QDR2_D_BY0_B1,QDR2_D_BY0_B0,QDR2_D_BY1_B8,QDR2_D_BY1_B7,QDR2_D_BY1_B6,QDR2_D_BY1_B5,QDR2_D_BY1_B4,QDR2_D_BY1_B3,QDR2_D_BY1_B2,QDR2_D_BY1_B1,QDR2_D_BY1_B0,QDR2_DLL_OFF_BY0_1#,QDR2_R_BY0_1#,QDR2_W_BY0_1#,QDR2_SA_BY0_121,QDR2_SA_BY0_120,QDR2_SA_BY0_119,QDR2_SA_BY0_118,QDR2_SA_BY0_117,QDR2_SA_BY0_116,QDR2_SA_BY0_115,QDR2_SA_BY0_114,QDR2_SA_BY0_113,QDR2_SA_BY0_112,QDR2_SA_BY0_111,QDR2_SA_BY0_110,QDR2_SA_BY0_19,QDR2_SA_BY0_18,QDR2_SA_BY0_17,QDR2_SA_BY0_16,QDR2_SA_BY0_15,QDR2_SA_BY0_14,QDR2_SA_BY0_13,QDR2_SA_BY0_12,QDR2_SA_BY0_11,QDR2_SA_BY0_10,QDR2_BW_BY0#,QDR2_BW_BY1#,qdr2_cq_by0_1_n0,qdr2_cq_by0_1_p0)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -34079,502 +34704,6 @@
       (ELEMENTS
         (RECT
           (POSITION 0 0 101600 243840)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_Q_BY3_B<7>")
-          (POSITION -10160 66040)
-          (EXTTYPE IN)
-          (LENGTH 10160)
-          (SLOT 586)
-          (CUSTOMLABEL "QDR2_Q_BY3_B<7>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_Q_BY3_B(7)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_Q_BY3_B(7)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_Q_BY3_B<7>")
-          (POSITION 762 66040)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_Q_BY3_B<6>")
-          (POSITION -10160 71120)
-          (EXTTYPE IN)
-          (LENGTH 10160)
-          (SLOT 587)
-          (CUSTOMLABEL "QDR2_Q_BY3_B<6>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_Q_BY3_B(6)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_Q_BY3_B(6)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_Q_BY3_B<6>")
-          (POSITION 762 71120)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_Q_BY3_B<5>")
-          (POSITION -10160 76200)
-          (EXTTYPE IN)
-          (LENGTH 10160)
-          (SLOT 588)
-          (CUSTOMLABEL "QDR2_Q_BY3_B<5>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_Q_BY3_B(5)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_Q_BY3_B(5)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_Q_BY3_B<5>")
-          (POSITION 762 76200)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_Q_BY3_B<4>")
-          (POSITION -10160 81280)
-          (EXTTYPE IN)
-          (LENGTH 10160)
-          (SLOT 589)
-          (CUSTOMLABEL "QDR2_Q_BY3_B<4>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_Q_BY3_B(4)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_Q_BY3_B(4)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_Q_BY3_B<4>")
-          (POSITION 762 81280)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_Q_BY3_B<3>")
-          (POSITION -10160 86360)
-          (EXTTYPE IN)
-          (LENGTH 10160)
-          (SLOT 590)
-          (CUSTOMLABEL "QDR2_Q_BY3_B<3>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_Q_BY3_B(3)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_Q_BY3_B(3)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_Q_BY3_B<3>")
-          (POSITION 762 86360)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_Q_BY3_B<2>")
-          (POSITION -10160 91440)
-          (EXTTYPE IN)
-          (LENGTH 10160)
-          (SLOT 591)
-          (CUSTOMLABEL "QDR2_Q_BY3_B<2>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_Q_BY3_B(2)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_Q_BY3_B(2)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_Q_BY3_B<2>")
-          (POSITION 762 91440)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_Q_BY3_B<1>")
-          (POSITION -10160 96520)
-          (EXTTYPE IN)
-          (LENGTH 10160)
-          (SLOT 592)
-          (CUSTOMLABEL "QDR2_Q_BY3_B<1>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_Q_BY3_B(1)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_Q_BY3_B(1)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_Q_BY3_B<1>")
-          (POSITION 762 96520)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_Q_BY3_B<0>")
-          (POSITION -10160 101600)
-          (EXTTYPE IN)
-          (LENGTH 10160)
-          (SLOT 593)
-          (CUSTOMLABEL "QDR2_Q_BY3_B<0>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_Q_BY3_B(0)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_Q_BY3_B(0)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_Q_BY3_B<0>")
-          (POSITION 762 101600)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
         )
         (PORT
           (TYPE SIGNAL)
@@ -35922,1370 +36051,6 @@
         )
         (PORT
           (TYPE SIGNAL)
-          (NAME "QDR2_SA_BY2_3<21>")
-          (POSITION -10160 127000)
-          (EXTTYPE OUT)
-          (LENGTH 10160)
-          (SLOT 621)
-          (CUSTOMLABEL "QDR2_SA_BY2_3<21>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_SA_BY2_3(21)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_SA_BY2_3(21)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_SA_BY2_3<21>")
-          (POSITION 762 127000)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_SA_BY2_3<20>")
-          (POSITION -10160 132080)
-          (EXTTYPE OUT)
-          (LENGTH 10160)
-          (SLOT 622)
-          (CUSTOMLABEL "QDR2_SA_BY2_3<20>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_SA_BY2_3(20)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_SA_BY2_3(20)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_SA_BY2_3<20>")
-          (POSITION 762 132080)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_SA_BY2_3<19>")
-          (POSITION -10160 137160)
-          (EXTTYPE OUT)
-          (LENGTH 10160)
-          (SLOT 623)
-          (CUSTOMLABEL "QDR2_SA_BY2_3<19>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_SA_BY2_3(19)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_SA_BY2_3(19)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_SA_BY2_3<19>")
-          (POSITION 762 137160)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_SA_BY2_3<18>")
-          (POSITION -10160 142240)
-          (EXTTYPE OUT)
-          (LENGTH 10160)
-          (SLOT 624)
-          (CUSTOMLABEL "QDR2_SA_BY2_3<18>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_SA_BY2_3(18)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_SA_BY2_3(18)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_SA_BY2_3<18>")
-          (POSITION 762 142240)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_SA_BY2_3<17>")
-          (POSITION -10160 147320)
-          (EXTTYPE OUT)
-          (LENGTH 10160)
-          (SLOT 625)
-          (CUSTOMLABEL "QDR2_SA_BY2_3<17>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_SA_BY2_3(17)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_SA_BY2_3(17)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_SA_BY2_3<17>")
-          (POSITION 762 147320)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_SA_BY2_3<16>")
-          (POSITION -10160 152400)
-          (EXTTYPE OUT)
-          (LENGTH 10160)
-          (SLOT 626)
-          (CUSTOMLABEL "QDR2_SA_BY2_3<16>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_SA_BY2_3(16)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_SA_BY2_3(16)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_SA_BY2_3<16>")
-          (POSITION 762 152400)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_SA_BY2_3<15>")
-          (POSITION -10160 157480)
-          (EXTTYPE OUT)
-          (LENGTH 10160)
-          (SLOT 627)
-          (CUSTOMLABEL "QDR2_SA_BY2_3<15>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_SA_BY2_3(15)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_SA_BY2_3(15)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_SA_BY2_3<15>")
-          (POSITION 762 157480)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_SA_BY2_3<14>")
-          (POSITION -10160 162560)
-          (EXTTYPE OUT)
-          (LENGTH 10160)
-          (SLOT 628)
-          (CUSTOMLABEL "QDR2_SA_BY2_3<14>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_SA_BY2_3(14)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_SA_BY2_3(14)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_SA_BY2_3<14>")
-          (POSITION 762 162560)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_SA_BY2_3<13>")
-          (POSITION -10160 167640)
-          (EXTTYPE OUT)
-          (LENGTH 10160)
-          (SLOT 629)
-          (CUSTOMLABEL "QDR2_SA_BY2_3<13>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_SA_BY2_3(13)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_SA_BY2_3(13)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_SA_BY2_3<13>")
-          (POSITION 762 167640)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_SA_BY2_3<12>")
-          (POSITION -10160 172720)
-          (EXTTYPE OUT)
-          (LENGTH 10160)
-          (SLOT 630)
-          (CUSTOMLABEL "QDR2_SA_BY2_3<12>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_SA_BY2_3(12)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_SA_BY2_3(12)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_SA_BY2_3<12>")
-          (POSITION 762 172720)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_SA_BY2_3<11>")
-          (POSITION -10160 177800)
-          (EXTTYPE OUT)
-          (LENGTH 10160)
-          (SLOT 631)
-          (CUSTOMLABEL "QDR2_SA_BY2_3<11>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_SA_BY2_3(11)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_SA_BY2_3(11)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_SA_BY2_3<11>")
-          (POSITION 762 177800)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_SA_BY2_3<10>")
-          (POSITION -10160 182880)
-          (EXTTYPE OUT)
-          (LENGTH 10160)
-          (SLOT 632)
-          (CUSTOMLABEL "QDR2_SA_BY2_3<10>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_SA_BY2_3(10)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_SA_BY2_3(10)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_SA_BY2_3<10>")
-          (POSITION 762 182880)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_SA_BY2_3<9>")
-          (POSITION -10160 187960)
-          (EXTTYPE OUT)
-          (LENGTH 10160)
-          (SLOT 633)
-          (CUSTOMLABEL "QDR2_SA_BY2_3<9>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_SA_BY2_3(9)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_SA_BY2_3(9)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_SA_BY2_3<9>")
-          (POSITION 762 187960)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_SA_BY2_3<8>")
-          (POSITION -10160 193040)
-          (EXTTYPE OUT)
-          (LENGTH 10160)
-          (SLOT 634)
-          (CUSTOMLABEL "QDR2_SA_BY2_3<8>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_SA_BY2_3(8)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_SA_BY2_3(8)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_SA_BY2_3<8>")
-          (POSITION 762 193040)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_SA_BY2_3<7>")
-          (POSITION -10160 198120)
-          (EXTTYPE OUT)
-          (LENGTH 10160)
-          (SLOT 635)
-          (CUSTOMLABEL "QDR2_SA_BY2_3<7>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_SA_BY2_3(7)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_SA_BY2_3(7)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_SA_BY2_3<7>")
-          (POSITION 762 198120)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_SA_BY2_3<6>")
-          (POSITION -10160 203200)
-          (EXTTYPE OUT)
-          (LENGTH 10160)
-          (SLOT 636)
-          (CUSTOMLABEL "QDR2_SA_BY2_3<6>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_SA_BY2_3(6)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_SA_BY2_3(6)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_SA_BY2_3<6>")
-          (POSITION 762 203200)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_SA_BY2_3<5>")
-          (POSITION -10160 208280)
-          (EXTTYPE OUT)
-          (LENGTH 10160)
-          (SLOT 637)
-          (CUSTOMLABEL "QDR2_SA_BY2_3<5>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_SA_BY2_3(5)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_SA_BY2_3(5)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_SA_BY2_3<5>")
-          (POSITION 762 208280)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_SA_BY2_3<4>")
-          (POSITION -10160 213360)
-          (EXTTYPE OUT)
-          (LENGTH 10160)
-          (SLOT 638)
-          (CUSTOMLABEL "QDR2_SA_BY2_3<4>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_SA_BY2_3(4)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_SA_BY2_3(4)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_SA_BY2_3<4>")
-          (POSITION 762 213360)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_SA_BY2_3<3>")
-          (POSITION -10160 218440)
-          (EXTTYPE OUT)
-          (LENGTH 10160)
-          (SLOT 639)
-          (CUSTOMLABEL "QDR2_SA_BY2_3<3>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_SA_BY2_3(3)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_SA_BY2_3(3)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_SA_BY2_3<3>")
-          (POSITION 762 218440)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_SA_BY2_3<2>")
-          (POSITION -10160 223520)
-          (EXTTYPE OUT)
-          (LENGTH 10160)
-          (SLOT 640)
-          (CUSTOMLABEL "QDR2_SA_BY2_3<2>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_SA_BY2_3(2)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_SA_BY2_3(2)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_SA_BY2_3<2>")
-          (POSITION 762 223520)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_SA_BY2_3<1>")
-          (POSITION -10160 228600)
-          (EXTTYPE OUT)
-          (LENGTH 10160)
-          (SLOT 641)
-          (CUSTOMLABEL "QDR2_SA_BY2_3<1>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_SA_BY2_3(1)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_SA_BY2_3(1)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_SA_BY2_3<1>")
-          (POSITION 762 228600)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_SA_BY2_3<0>")
-          (POSITION -10160 233680)
-          (EXTTYPE OUT)
-          (LENGTH 10160)
-          (SLOT 642)
-          (CUSTOMLABEL "QDR2_SA_BY2_3<0>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_SA_BY2_3(0)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_SA_BY2_3(0)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE OUT)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_SA_BY2_3<0>")
-          (POSITION 762 233680)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
           (NAME "QDR2_BW_BY2#")
           (POSITION 111760 162560)
           (EXTTYPE OUT)
@@ -37409,68 +36174,6 @@
           (LABEL "QDR2_BW_BY3#")
           (POSITION 100838 167640)
           (HALIGN RIGHT)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "QDR2_Q_BY3_B<8>")
-          (POSITION -10160 60960)
-          (EXTTYPE IN)
-          (LENGTH 10160)
-          (SLOT 585)
-          (CUSTOMLABEL "QDR2_Q_BY3_B<8>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE "")
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "QDR2_Q_BY3_B(8)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "QDR2_Q_BY3_B(8)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE "")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE "")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "QDR2_Q_BY3_B<8>")
-          (POSITION 762 60960)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
@@ -38568,12 +37271,12 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "AK24,AK26,AK27,AK28,AK29,AK31,AK32,AK33,AK34,AK6,AK7,AK8,AK9,AL10,AL11,AL13,AL14,AL15,AL16,AL18,AL19,AL20,AL21,AL23,AL24,AL25,AL26,AL28,AL29,AL30,AL31,AL33,AL34,AL7,AM11,AM12,AM13,AM15,AM16,AM17,AM18,AM20,AM21,AM22,AM23,AM25,AM26,AM27,AM28,AM30,AM31,AM32,AM33,AM7,AN12,AN13,AN14,AN15,AN17,AN18,AN19,AN20,AN22,AN23,AN24,AN25,AN27,AN28,AN29,AN30,AN32,AN33,AN34,AP12,AP14,AP15,AP16,AP17,AP19,AP20,AP21,AP22,AP24,AP25,AP26,AP27,AP29,AP30,AP31,AP32,B12,B13,B15,B16,B17,B28,B32,B33,C12,C13,C14,C15,C17,C24,C29,C32,C33,C34,C8,D10,D11,D12,D14,D15,D16,D17,D19,D20,D21,D22,D24,D25,D32,D34,D4,D8,E11,E12,E13,E14,E16,E17,E18,E19,E21,E22,E23,E24,E29,E31,E32,E33,E34,E4,E6,E7,E8,E9,F10,F11,F13,F14,F15,F16,F18,F19,F20,F21,F23,F24,F29,F30,F31,F33,F34,F5,F6,F8,F9,G10,G11,G12,G13,G15,G16,G17,G18,G20,G21,G22,G23,G30,G31,G32,G33,G5,G6,G7,G8,H10,H12,H13,H14,H15,H17,H18,H19,H20,H22,H23,H29,H30,H32,H33,H34,H5,H7,H8,H9,J10,J11,J12,J14,J15,J16,J17,J19,J20,J21,J22,J24,J26,J29,J30,J31,J32,J34,J5,J6,J7,J9,K11,K12,K13,K14")
+          (VALUE "AK24,AK26,AK27,AK28,AK29,AK31,AK32,AK33,AK34,AK6,AK7,AK8,AK9,AL10,AL11,AL13,AL14,AL15,AL16,AL18,AL19,AL20,AL21,AL23,AL24,AL25,AL26,AL28,AL29,AL30,AL31,AL33,AL34,AL7,AM11,AM12,AM13,AM15,AM16,AM17,AM18,AM20,AM21,AM22,AM23,AM25,AM26,AM27,AM28,AM30,AM31,AM32,AM33,AM7,AN12,AN13,AN14,AN15,AN17,AN18,AN19,AN20,AN22,AN23,AN24,AN25,AN27,AN28,AN29,AN30,AN32,AN33,AN34,AP12,AP14,AP15,AP16,AP17,AP19,AP20,AP21,AP22,AP24,AP25,AP26,AP27,AP29,AP30,AP31,AP32,B12,B13,B15,B16,B17,B28,B32,B33,C12,C13,C14,C15,C17,C32,C33,C34,C8,D10,D11,D12,D14,D15,D16,D17,D19,D20,D21,D22,D24,D32,D34,D4,D8,E11,E12,E13,E14,E16,E17,E18,E19,E21,E22,E23,E24,E29,E31,E32,E33,E34,E4,E6,E7,E8,E9,F10,F11,F13,F14,F15,F16,F18,F19,F20,F21,F23,F24,F29,F30,F31,F33,F34,F5,F6,F8,F9,G10,G11,G12,G13,G15,G16,G17,G18,G20,G21,G22,G23,G30,G31,G32,G33,G5,G6,G7,G8,H10,H12,H13,H14,H15,H17,H18,H19,H20,H22,H23,H29,H30,H32,H33,H34,H5,H7,H8,H9,J10,J11,J12,J14,J15,J16,J17,J19,J20,J21,J22,J26,J29,J30,J31,J32,J34,J5,J6,J7,J9,K11,K12,K13,K14,K16,K17,K18,K19")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "K16,K17,K18,K19,K21,K22,K23,K24,K26,K29,K31,K32,K33,K34,K6,K7,K8,K9,L10,L11,L14,L15,L16,L18,L19,L20,L21,L23,L24,L25,L26,L29,L30,L31,L33,L34,L4,L5,L6,L8,L9,M10,M15,M22,M23,M27,M30,M31,M32,M33,M5,M6,M7,M8,N10,N14,N15,N22,N23,N25,N27,N29,N30,N32,N33,N34,N5,N7,N8,N9,P10,P15,P25,P29,P3,P30,P31,P32,P34,P4,P5,P6,P7,P9,R11,R24,R26,R27,R28,R29,R31,R32,R33,R34,R6,R7,R8,R9,T10,T11,T24,T25,T26,T28,T29,T30,T31,T33,T34,T6,T8,T9,U10,U25,U26,U27,U28,U30,U31,U32,U33,U4,U5,U7,U8,V10,V24,V25,V27,V28,V29,V30,V32,V33,V34,V4,V5,V7,V8,V9,W10,W11,W17,W18,W24,W25,W26,W27,W29,W30,W31,W32,W34,W6,W7,W9,Y11,Y24,Y26,Y27,Y28,Y29,Y3,Y31,Y32,Y33,Y34,Y4,Y6,Y7,Y8,Y9")
+          (VALUE "K21,K22,K23,K24,K26,K29,K31,K32,K33,K34,K6,K7,K8,K9,L10,L11,L14,L15,L16,L18,L19,L20,L21,L23,L24,L25,L26,L29,L30,L31,L33,L34,L4,L5,L6,L8,L9,M10,M15,M22,M23,M27,M30,M31,M32,M33,M5,M6,M7,M8,N10,N14,N15,N22,N23,N25,N27,N29,N30,N32,N33,N34,N5,N7,N8,N9,P10,P15,P25,P29,P3,P30,P31,P32,P34,P4,P5,P6,P7,P9,R11,R24,R26,R27,R28,R29,R31,R32,R33,R34,R6,R7,R8,R9,T10,T11,T24,T25,T26,T28,T29,T30,T31,T33,T34,T6,T8,T9,U10,U25,U26,U27,U28,U30,U31,U32,U33,U4,U5,U7,U8,V10,V24,V25,V27,V28,V29,V30,V32,V33,V34,V4,V5,V7,V8,V9,W10,W11,W17,W18,W24,W25,W26,W27,W29,W30,W31,W32,W34,W6,W7,W9,Y11,Y24,Y26,Y27,Y28,Y29,Y3,Y31,Y32,Y33,Y34,Y4,Y6,Y7,Y8,Y9")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -42679,12 +41382,12 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "AK24,AK26,AK27,AK28,AK29,AK31,AK32,AK33,AK34,AK6,AK7,AK8,AK9,AL10,AL11,AL13,AL14,AL15,AL16,AL18,AL19,AL20,AL21,AL23,AL24,AL25,AL26,AL28,AL29,AL30,AL31,AL33,AL34,AL7,AM11,AM12,AM13,AM15,AM16,AM17,AM18,AM20,AM21,AM22,AM23,AM25,AM26,AM27,AM28,AM30,AM31,AM32,AM33,AM7,AN12,AN13,AN14,AN15,AN17,AN18,AN19,AN20,AN22,AN23,AN24,AN25,AN27,AN28,AN29,AN30,AN32,AN33,AN34,AP12,AP14,AP15,AP16,AP17,AP19,AP20,AP21,AP22,AP24,AP25,AP26,AP27,AP29,AP30,AP31,AP32,B12,B13,B15,B16,B17,B28,B32,B33,C12,C13,C14,C15,C17,C24,C29,C32,C33,C34,C8,D10,D11,D12,D14,D15,D16,D17,D19,D20,D21,D22,D24,D25,D32,D34,D4,D8,E11,E12,E13,E14,E16,E17,E18,E19,E21,E22,E23,E24,E29,E31,E32,E33,E34,E4,E6,E7,E8,E9,F10,F11,F13,F14,F15,F16,F18,F19,F20,F21,F23,F24,F29,F30,F31,F33,F34,F5,F6,F8,F9,G10,G11,G12,G13,G15,G16,G17,G18,G20,G21,G22,G23,G30,G31,G32,G33,G5,G6,G7,G8,H10,H12,H13,H14,H15,H17,H18,H19,H20,H22,H23,H29,H30,H32,H33,H34,H5,H7,H8,H9,J10,J11,J12,J14,J15,J16,J17,J19,J20,J21,J22,J24,J26,J29,J30,J31,J32,J34,J5,J6,J7,J9,K11,K12,K13,K14")
+          (VALUE "AK24,AK26,AK27,AK28,AK29,AK31,AK32,AK33,AK34,AK6,AK7,AK8,AK9,AL10,AL11,AL13,AL14,AL15,AL16,AL18,AL19,AL20,AL21,AL23,AL24,AL25,AL26,AL28,AL29,AL30,AL31,AL33,AL34,AL7,AM11,AM12,AM13,AM15,AM16,AM17,AM18,AM20,AM21,AM22,AM23,AM25,AM26,AM27,AM28,AM30,AM31,AM32,AM33,AM7,AN12,AN13,AN14,AN15,AN17,AN18,AN19,AN20,AN22,AN23,AN24,AN25,AN27,AN28,AN29,AN30,AN32,AN33,AN34,AP12,AP14,AP15,AP16,AP17,AP19,AP20,AP21,AP22,AP24,AP25,AP26,AP27,AP29,AP30,AP31,AP32,B12,B13,B15,B16,B17,B28,B32,B33,C12,C13,C14,C15,C17,C32,C33,C34,C8,D10,D11,D12,D14,D15,D16,D17,D19,D20,D21,D22,D24,D32,D34,D4,D8,E11,E12,E13,E14,E16,E17,E18,E19,E21,E22,E23,E24,E29,E31,E32,E33,E34,E4,E6,E7,E8,E9,F10,F11,F13,F14,F15,F16,F18,F19,F20,F21,F23,F24,F29,F30,F31,F33,F34,F5,F6,F8,F9,G10,G11,G12,G13,G15,G16,G17,G18,G20,G21,G22,G23,G30,G31,G32,G33,G5,G6,G7,G8,H10,H12,H13,H14,H15,H17,H18,H19,H20,H22,H23,H29,H30,H32,H33,H34,H5,H7,H8,H9,J10,J11,J12,J14,J15,J16,J17,J19,J20,J21,J22,J26,J29,J30,J31,J32,J34,J5,J6,J7,J9,K11,K12,K13,K14,K16,K17,K18,K19")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "K16,K17,K18,K19,K21,K22,K23,K24,K26,K29,K31,K32,K33,K34,K6,K7,K8,K9,L10,L11,L14,L15,L16,L18,L19,L20,L21,L23,L24,L25,L26,L29,L30,L31,L33,L34,L4,L5,L6,L8,L9,M10,M15,M22,M23,M27,M30,M31,M32,M33,M5,M6,M7,M8,N10,N14,N15,N22,N23,N25,N27,N29,N30,N32,N33,N34,N5,N7,N8,N9,P10,P15,P25,P29,P3,P30,P31,P32,P34,P4,P5,P6,P7,P9,R11,R24,R26,R27,R28,R29,R31,R32,R33,R34,R6,R7,R8,R9,T10,T11,T24,T25,T26,T28,T29,T30,T31,T33,T34,T6,T8,T9,U10,U25,U26,U27,U28,U30,U31,U32,U33,U4,U5,U7,U8,V10,V24,V25,V27,V28,V29,V30,V32,V33,V34,V4,V5,V7,V8,V9,W10,W11,W17,W18,W24,W25,W26,W27,W29,W30,W31,W32,W34,W6,W7,W9,Y11,Y24,Y26,Y27,Y28,Y29,Y3,Y31,Y32,Y33,Y34,Y4,Y6,Y7,Y8,Y9")
+          (VALUE "K21,K22,K23,K24,K26,K29,K31,K32,K33,K34,K6,K7,K8,K9,L10,L11,L14,L15,L16,L18,L19,L20,L21,L23,L24,L25,L26,L29,L30,L31,L33,L34,L4,L5,L6,L8,L9,M10,M15,M22,M23,M27,M30,M31,M32,M33,M5,M6,M7,M8,N10,N14,N15,N22,N23,N25,N27,N29,N30,N32,N33,N34,N5,N7,N8,N9,P10,P15,P25,P29,P3,P30,P31,P32,P34,P4,P5,P6,P7,P9,R11,R24,R26,R27,R28,R29,R31,R32,R33,R34,R6,R7,R8,R9,T10,T11,T24,T25,T26,T28,T29,T30,T31,T33,T34,T6,T8,T9,U10,U25,U26,U27,U28,U30,U31,U32,U33,U4,U5,U7,U8,V10,V24,V25,V27,V28,V29,V30,V32,V33,V34,V4,V5,V7,V8,V9,W10,W11,W17,W18,W24,W25,W26,W27,W29,W30,W31,W32,W34,W6,W7,W9,Y11,Y24,Y26,Y27,Y28,Y29,Y3,Y31,Y32,Y33,Y34,Y4,Y6,Y7,Y8,Y9")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -42722,7 +41425,10 @@
       )
     )
   )
-  (ENABLED_DIFF_PINS C24 D25 K19 K24 L19 L24 L25 L26)
+  (DISABLED_CONFIG_PINS C29)
+  (DISABLED_VREF_PINS J26)
+  (ENABLED_DIFF_PINS H17 H18 K17 K19 L18 L19)
+  (ENABLED_IO_PINS C29 J26)
   (IO_STANDARDS
     (IO
       (PIN A19)
@@ -42825,6 +41531,10 @@
       (STANDARD HSTL_I_DCI)
     )
     (IO
+      (PIN C24)
+      (STANDARD HSTL_I_DCI)
+    )
+    (IO
       (PIN C25)
       (STANDARD HSTL_I_DCI)
     )
@@ -42837,7 +41547,15 @@
       (STANDARD HSTL_I_DCI)
     )
     (IO
+      (PIN C29)
+      (STANDARD HSTL_I_DCI)
+    )
+    (IO
       (PIN C30)
+      (STANDARD HSTL_I_DCI)
+    )
+    (IO
+      (PIN D25)
       (STANDARD HSTL_I_DCI)
     )
     (IO
@@ -42901,6 +41619,14 @@
       (STANDARD HSTL_I_DCI)
     )
     (IO
+      (PIN H17)
+      (STANDARD LVPECL_25)
+    )
+    (IO
+      (PIN H18)
+      (STANDARD LVPECL_25)
+    )
+    (IO
       (PIN H24)
       (STANDARD HSTL_I_DCI)
     )
@@ -42917,7 +41643,15 @@
       (STANDARD HSTL_I_DCI)
     )
     (IO
+      (PIN J24)
+      (STANDARD HSTL_I_DCI)
+    )
+    (IO
       (PIN J25)
+      (STANDARD HSTL_I_DCI)
+    )
+    (IO
+      (PIN J26)
       (STANDARD HSTL_I_DCI)
     )
     (IO
@@ -42925,8 +41659,16 @@
       (STANDARD HSTL_I_DCI)
     )
     (IO
+      (PIN K17)
+      (STANDARD LVPECL_25)
+    )
+    (IO
       (PIN K19)
       (STANDARD LVDS_25)
+    )
+    (IO
+      (PIN K24)
+      (STANDARD HSTL_I_DCI)
     )
     (IO
       (PIN K27)
@@ -42937,8 +41679,20 @@
       (STANDARD HSTL_I_DCI)
     )
     (IO
+      (PIN L18)
+      (STANDARD LVPECL_25)
+    )
+    (IO
       (PIN L19)
       (STANDARD LVDS_25)
+    )
+    (IO
+      (PIN L24)
+      (STANDARD HSTL_I_DCI)
+    )
+    (IO
+      (PIN L25)
+      (STANDARD HSTL_I_DCI)
     )
     (IO
       (PIN L28)
@@ -42961,6 +41715,10 @@
       (STANDARD HSTL_I_DCI)
     )
     (IO
+      (PIN N25)
+      (STANDARD LVCMOS15)
+    )
+    (IO
       (PIN N28)
       (STANDARD HSTL_I_DCI)
     )
@@ -42969,12 +41727,20 @@
       (STANDARD HSTL_I_DCI)
     )
     (IO
+      (PIN P25)
+      (STANDARD LVCMOS15)
+    )
+    (IO
       (PIN P26)
       (STANDARD HSTL_I_DCI)
     )
     (IO
       (PIN P27)
       (STANDARD HSTL_I_DCI)
+    )
+    (IO
+      (PIN R24)
+      (STANDARD LVCMOS15)
     )
   )
   (SWAP_GROUPS
@@ -43000,10 +41766,6 @@
     )
     (SWAP
       (PIN A24)
-      (GROUP IO_Vref_0_75_VccIO_1_5)
-    )
-    (SWAP
-      (PIN A25)
       (GROUP IO_Vref_0_75_VccIO_1_5)
     )
     (SWAP
@@ -43191,10 +41953,6 @@
       (GROUP IO_Vref_0_75_VccIO_1_5)
     )
     (SWAP
-      (PIN B26)
-      (GROUP IO_Vref_0_75_VccIO_1_5)
-    )
-    (SWAP
       (PIN B27)
       (GROUP IO_Vref_0_75_VccIO_1_5)
     )
@@ -43209,6 +41967,10 @@
     (SWAP
       (PIN B31)
       (GROUP IO_Vref_0_75_VccIO_1_5)
+    )
+    (SWAP
+      (PIN B32)
+      (GROUP IO_11)
     )
     (SWAP
       (PIN B4)
@@ -43252,7 +42014,7 @@
     )
     (SWAP
       (PIN C24)
-      (GROUP DIFF_23)
+      (GROUP IO_Vref_0_75_VccIO_1_5)
     )
     (SWAP
       (PIN C25)
@@ -43263,8 +42025,20 @@
       (GROUP IO_Vref_0_75_VccIO_1_5)
     )
     (SWAP
+      (PIN C29)
+      (GROUP IO_Vref_0_75_VccIO_1_5)
+    )
+    (SWAP
       (PIN C30)
       (GROUP IO_Vref_0_75_VccIO_1_5)
+    )
+    (SWAP
+      (PIN C32)
+      (GROUP IO_11)
+    )
+    (SWAP
+      (PIN C33)
+      (GROUP IO_11)
     )
     (SWAP
       (PIN D1)
@@ -43276,7 +42050,7 @@
     )
     (SWAP
       (PIN D25)
-      (GROUP DIFF_23)
+      (GROUP IO_Vref_0_75_VccIO_1_5)
     )
     (SWAP
       (PIN D26)
@@ -43299,6 +42073,14 @@
       (GROUP IO_Vref_0_75_VccIO_1_5)
     )
     (SWAP
+      (PIN D32)
+      (GROUP IO_11)
+    )
+    (SWAP
+      (PIN D34)
+      (GROUP IO_11)
+    )
+    (SWAP
       (PIN E2)
       (GROUP MGTTX)
     )
@@ -43319,6 +42101,26 @@
       (GROUP IO_Vref_0_75_VccIO_1_5)
     )
     (SWAP
+      (PIN E29)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN E31)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN E32)
+      (GROUP IO_11)
+    )
+    (SWAP
+      (PIN E33)
+      (GROUP IO_11)
+    )
+    (SWAP
+      (PIN E34)
+      (GROUP IO_11)
+    )
+    (SWAP
       (PIN F2)
       (GROUP MGTTX)
     )
@@ -43333,6 +42135,26 @@
     (SWAP
       (PIN F28)
       (GROUP IO_Vref_0_75_VccIO_1_5)
+    )
+    (SWAP
+      (PIN F29)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN F30)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN F31)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN F33)
+      (GROUP IO_11)
+    )
+    (SWAP
+      (PIN F34)
+      (GROUP IO_11)
     )
     (SWAP
       (PIN G1)
@@ -43359,8 +42181,32 @@
       (GROUP IO_Vref_0_75_VccIO_1_5)
     )
     (SWAP
+      (PIN G30)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN G31)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN G32)
+      (GROUP IO_11)
+    )
+    (SWAP
+      (PIN G33)
+      (GROUP IO_11)
+    )
+    (SWAP
       (PIN H1)
       (GROUP MGTRX)
+    )
+    (SWAP
+      (PIN H17)
+      (GROUP DIFF_CLOCK_Vref_NR_VccIO_2_5)
+    )
+    (SWAP
+      (PIN H18)
+      (GROUP DIFF_CLOCK_Vref_NR_VccIO_2_5)
     )
     (SWAP
       (PIN H24)
@@ -43379,8 +42225,24 @@
       (GROUP IO_Vref_0_75_VccIO_1_5)
     )
     (SWAP
+      (PIN H29)
+      (GROUP IO_15)
+    )
+    (SWAP
       (PIN H3)
       (GROUP MGTCLK)
+    )
+    (SWAP
+      (PIN H30)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN H33)
+      (GROUP IO_11)
+    )
+    (SWAP
+      (PIN H34)
+      (GROUP IO_11)
     )
     (SWAP
       (PIN H4)
@@ -43392,10 +42254,14 @@
     )
     (SWAP
       (PIN J24)
-      (GROUP IO_19)
+      (GROUP IO_Vref_0_75_VccIO_1_5)
     )
     (SWAP
       (PIN J25)
+      (GROUP IO_Vref_0_75_VccIO_1_5)
+    )
+    (SWAP
+      (PIN J26)
       (GROUP IO_Vref_0_75_VccIO_1_5)
     )
     (SWAP
@@ -43403,8 +42269,32 @@
       (GROUP IO_Vref_0_75_VccIO_1_5)
     )
     (SWAP
+      (PIN J29)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN J30)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN J31)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN J32)
+      (GROUP IO_11)
+    )
+    (SWAP
+      (PIN J34)
+      (GROUP IO_11)
+    )
+    (SWAP
       (PIN K1)
       (GROUP MGTRX)
+    )
+    (SWAP
+      (PIN K17)
+      (GROUP DIFF_CLOCK_Vref_NR_VccIO_2_5)
     )
     (SWAP
       (PIN K19)
@@ -43415,12 +42305,36 @@
       (GROUP MGTTX)
     )
     (SWAP
+      (PIN K24)
+      (GROUP IO_Vref_0_75_VccIO_1_5)
+    )
+    (SWAP
       (PIN K27)
       (GROUP IO_Vref_0_75_VccIO_1_5)
     )
     (SWAP
       (PIN K28)
       (GROUP IO_Vref_0_75_VccIO_1_5)
+    )
+    (SWAP
+      (PIN K31)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN K32)
+      (GROUP IO_11)
+    )
+    (SWAP
+      (PIN K33)
+      (GROUP IO_11)
+    )
+    (SWAP
+      (PIN K34)
+      (GROUP IO_11)
+    )
+    (SWAP
+      (PIN L18)
+      (GROUP DIFF_CLOCK_Vref_NR_VccIO_2_5)
     )
     (SWAP
       (PIN L19)
@@ -43432,11 +42346,11 @@
     )
     (SWAP
       (PIN L24)
-      (GROUP DIFF_19)
+      (GROUP IO_Vref_0_75_VccIO_1_5)
     )
     (SWAP
       (PIN L25)
-      (GROUP DIFF_19)
+      (GROUP IO_Vref_0_75_VccIO_1_5)
     )
     (SWAP
       (PIN L26)
@@ -43445,6 +42359,26 @@
     (SWAP
       (PIN L28)
       (GROUP IO_Vref_0_75_VccIO_1_5)
+    )
+    (SWAP
+      (PIN L29)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN L30)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN L31)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN L33)
+      (GROUP IO_11)
+    )
+    (SWAP
+      (PIN L34)
+      (GROUP IO_11)
     )
     (SWAP
       (PIN M2)
@@ -43459,8 +42393,24 @@
       (GROUP IO_Vref_0_75_VccIO_1_5)
     )
     (SWAP
+      (PIN M27)
+      (GROUP NOSWAP)
+    )
+    (SWAP
       (PIN M28)
       (GROUP IO_Vref_0_75_VccIO_1_5)
+    )
+    (SWAP
+      (PIN M30)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN M31)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN M32)
+      (GROUP IO_11)
     )
     (SWAP
       (PIN N1)
@@ -43475,8 +42425,24 @@
       (GROUP IO_Vref_0_75_VccIO_1_5)
     )
     (SWAP
+      (PIN N25)
+      (GROUP IO_Vref_NR_VccIO_1_5)
+    )
+    (SWAP
+      (PIN N27)
+      (GROUP NOSWAP)
+    )
+    (SWAP
       (PIN N28)
       (GROUP IO_Vref_0_75_VccIO_1_5)
+    )
+    (SWAP
+      (PIN N30)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN N32)
+      (GROUP IO_11)
     )
     (SWAP
       (PIN P1)
@@ -43487,6 +42453,10 @@
       (GROUP IO_Vref_0_75_VccIO_1_5)
     )
     (SWAP
+      (PIN P25)
+      (GROUP IO_Vref_NR_VccIO_1_5)
+    )
+    (SWAP
       (PIN P26)
       (GROUP IO_Vref_0_75_VccIO_1_5)
     )
@@ -43495,8 +42465,44 @@
       (GROUP IO_Vref_0_75_VccIO_1_5)
     )
     (SWAP
+      (PIN P29)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN P30)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN P31)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN P32)
+      (GROUP IO_11)
+    )
+    (SWAP
+      (PIN P34)
+      (GROUP IO_11)
+    )
+    (SWAP
       (PIN R1)
       (GROUP MGTRX)
+    )
+    (SWAP
+      (PIN R24)
+      (GROUP IO_Vref_NR_VccIO_1_5)
+    )
+    (SWAP
+      (PIN R26)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN R27)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN R31)
+      (GROUP IO_15)
     )
     (SWAP
       (PIN T1)
@@ -43507,8 +42513,60 @@
       (GROUP MGTTX)
     )
     (SWAP
+      (PIN T25)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN T26)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN T28)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN T29)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN T31)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN T33)
+      (GROUP IO_11)
+    )
+    (SWAP
+      (PIN T34)
+      (GROUP IO_11)
+    )
+    (SWAP
       (PIN U2)
       (GROUP MGTTX)
+    )
+    (SWAP
+      (PIN U25)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN U26)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN U28)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN U30)
+      (GROUP IO_15)
+    )
+    (SWAP
+      (PIN U32)
+      (GROUP IO_11)
+    )
+    (SWAP
+      (PIN U33)
+      (GROUP IO_11)
     )
     (SWAP
       (PIN V2)
@@ -43734,6 +42792,24 @@
       (COLOR SymbolNameColor Green)
       (FONT SymbolNameFont "FONT_0,12,0,0,0,0,50")
       (STRING VoltageSignals "0_6=0V6,0_75=0V75,0_8=0V8,0_9=0V9,1=1V,1_0=V_1_0,1_1=1V1,1_2=1V2,1_25=1V25,1_5=1V5,1_65=1V65,1_8=1V8,2_5=2V5,3_3=3V3,AnalogGND=AGND,AnalogVCC=AVCC,GND=GND,VCC=VCC,VCCA=VCCA,VCCAUX=VCCAUX,VCCINT=VCCINT,VCCO=VCCO,VccMgtTermination=VCCMGT")
+    )
+  )
+  (TIMING_CONSTRAINTS
+    (CLOCK_CONSTRAINTS
+      (CLOCK
+        (SIGNAL "u_infrastructure/sysclk_in")
+        (REQ_TIME "4 ns")
+        (ACT_TIME "0.000 ns")
+        (DUTY_CYCLE "50 %")
+        (HL HIGH)
+      )
+      (CLOCK
+        (SIGNAL "u_infrastructure/clk200_in")
+        (REQ_TIME "5.0 ns")
+        (ACT_TIME "0.000 ns")
+        (DUTY_CYCLE "50 %")
+        (HL HIGH)
+      )
     )
   )
 )
