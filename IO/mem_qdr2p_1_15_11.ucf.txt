@@ -1,0 +1,196 @@
+############################################################################								
+##								
+##	Xilinx,	Inc.	2006	www.xilinx.com				
+##	Wed	11	Jul	08:42:44	2007			
+##	Generated	by	MIG	Version	1.72			
+##	Edited	by	Francois	Kapp	1			
+##								
+############################################################################								
+##	File	name	:	mem_qdr2p_0_23_19.ucf				
+##								
+##	Description	:	Constraints	file				
+##	targetted	to	xc5vlx110t-ff1136					
+##								
+############################################################################								
+								
+############################################################################								
+#	Clock	constraints	#					
+############################################################################								
+								
+NET	u_infrastructure/sysclk_in	TNM_NET	=	SYS_CLK				
+								
+NET	u_infrastructure/clk200_in	TNM_NET	=	CLK_200				
+########################################################################								
+#	Controller	0						
+#	Memory	Device	QDRII_SRAM->Components->K7S3218T4C-FC40	#				
+########################################################################								
+								
+########################################################################								
+#	DCI	Cascading						
+########################################################################								
+CONFIG	DCI_CASCADE	=	23 19 15 11					
+								
+######################################################################################################								
+#	I/O	STANDARDS						
+######################################################################################################								
+								
+NET	qdr2_by2_3_w		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_r		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_dll_off	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by0_bw		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by1_bw		IOSTANDARD	=	HSTL_I				
+NET	sys_clk_p		IOSTANDARD	=	LVPECL_25				
+NET	sys_clk_n		IOSTANDARD	=	LVPECL_25				
+NET	dly_clk_200_p		IOSTANDARD	=	LVPECL_25				
+NET	dly_clk_200_n		IOSTANDARD	=	LVPECL_25				
+NET	qdr2_by2_3_compare_error	IOSTANDARD	=	LVCMOS15				
+NET	qdr2_by2_3_sys_rst_n	IOSTANDARD	=	LVCMOS15				
+NET	qdr2_by2_3_cal_done	IOSTANDARD	=	LVCMOS15				
+NET	qdr2_by2_3_cq_p		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_cq_n		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_k_p		IOSTANDARD	=	HSTL_II				
+NET	qdr2_by2_3_k_n		IOSTANDARD	=	HSTL_II				
+NET	qdr2_by2_3_qvld		IOSTANDARD	=	HSTL_II				
+NET	qdr2_by2_3_c_n_compat	IOSTANDARD	=	HSTL_II				
+NET	qdr2_by2_3_d<0>		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_d<1>		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_d<2>		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_d<3>		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_d<4>		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_d<5>		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_d<6>		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_d<7>		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_d<8>		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_d<9>		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_d<10>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_d<11>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_d<12>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_d<13>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_d<14>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_d<15>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_d<16>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_d<17>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_q<0>		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_q<1>		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_q<2>		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_q<3>		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_q<4>		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_q<5>		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_q<6>		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_q<7>		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_q<8>		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_q<9>		IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_q<10>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_q<11>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_q<12>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_q<13>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_q<14>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_q<15>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_q<16>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_q<17>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_sa<0>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_sa<1>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_sa<2>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_sa<3>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_sa<4>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_sa<5>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_sa<6>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_sa<7>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_sa<8>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_sa<9>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_sa<10>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_sa<11>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_sa<12>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_sa<13>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_sa<14>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_sa<15>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_sa<16>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_sa<17>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_sa<18>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_sa<19>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_sa<20>	IOSTANDARD	=	HSTL_I				
+NET	qdr2_by2_3_sa<21>	IOSTANDARD	=	HSTL_I				
+								
+######################################################################################################								
+#	Location	Constraints						
+######################################################################################################								
+NET	qdr2_by2_3_d<0>		LOC	=	B32	#Bank	19		IO_L0P_11
+NET	qdr2_by2_3_d<1>		LOC	=	A33	#Bank	19		IO_L0N_11
+NET	qdr2_by2_3_d<2>		LOC	=	B33	#Bank	19		IO_L1P_11
+NET	qdr2_by2_3_d<3>		LOC	=	C33	#Bank	19		IO_L1N_11
+NET	qdr2_by2_3_d<4>		LOC	=	C32	#Bank	19		IO_L2P_11
+NET	qdr2_by2_3_d<5>		LOC	=	D32	#Bank	19		IO_L2N_11
+NET	qdr2_by2_3_d<6>		LOC	=	C34	#Bank	19		IO_L3P_11
+NET	qdr2_by2_3_d<7>		LOC	=	D34	#Bank	19		IO_L3N_11
+NET	qdr2_by2_3_d<8>		LOC	=	G32	#Bank	19		IO_L4P_11
+NET	qdr2_by2_3_d<9>		LOC	=	F33	#Bank	19		IO_L5P_11
+NET	qdr2_by2_3_d<10>	LOC	=	E34	#Bank	19		IO_L5N_11
+NET	qdr2_by2_3_d<11>	LOC	=	E32	#Bank	19		IO_L6P_11
+NET	qdr2_by2_3_d<12>	LOC	=	E33	#Bank	19		IO_L6N_11
+NET	qdr2_by2_3_d<13>	LOC	=	G33	#Bank	19		IO_L7P_11
+NET	qdr2_by2_3_d<14>	LOC	=	F34	#Bank	19		IO_L7N_11
+NET	qdr2_by2_3_d<15>	LOC	=	J32	#Bank	19		IO_L8P_CC_11
+NET	qdr2_by2_3_d<16>	LOC	=	H33	#Bank	19		IO_L8N_CC_11
+NET	qdr2_by2_3_d<17>	LOC	=	K34	#Bank	19		IO_L10N_CC_SM15N_11
+NET	qdr2_by2_3_q<0>		LOC	=	V32	#Bank	19		IO_L0P_SM8P_13
+NET	qdr2_by2_3_q<1>		LOC	=	K32	#Bank	19		IO_L11N_CC_SM14N_11
+NET	qdr2_by2_3_q<2>		LOC	=	L34	#Bank	19		IO_L10P_CC_SM15P_11
+NET	qdr2_by2_3_q<3>		LOC	=	N33	#Bank	19		IO_L12P_VRN_11
+NET	qdr2_by2_3_q<4>		LOC	=	M33	#Bank	19		IO_L12N_VRP_11
+NET	qdr2_by2_3_q<5>		LOC	=	L33	#Bank	19		IO_L13P_11
+NET	qdr2_by2_3_q<6>		LOC	=	M32	#Bank	19		IO_L13N_11
+NET	qdr2_by2_3_q<7>		LOC	=	P34	#Bank	19		IO_L14P_11
+NET	qdr2_by2_3_q<8>		LOC	=	N32	#Bank	19		IO_L15N_SM13N_11
+NET	qdr2_by2_3_q<9>		LOC	=	AK18	#Bank	19		IO_L14P_6
+NET	qdr2_by2_3_q<10>	LOC	=	R34	#Bank	19		IO_L16N_SM12N_11
+NET	qdr2_by2_3_q<11>	LOC	=	P32	#Bank	19		IO_L15P_SM13P_11
+NET	qdr2_by2_3_q<12>	LOC	=	R32	#Bank	19		IO_L17N_SM11N_11
+NET	qdr2_by2_3_q<13>	LOC	=	T33	#Bank	19		IO_L16P_SM12P_11
+NET	qdr2_by2_3_q<14>	LOC	=	T34	#Bank	19		IO_L18N_SM10N_11
+NET	qdr2_by2_3_q<15>	LOC	=	R33	#Bank	19		IO_L17P_SM11P_11
+NET	qdr2_by2_3_q<16>	LOC	=	U31	#Bank	19		IO_L19N_SM9N_11
+NET	qdr2_by2_3_q<17>	LOC	=	U33	#Bank	19		IO_L18P_SM10P_11
+NET	qdr2_by2_3_sa<21>	LOC	=	G30	#Bank	23		IO_L1P_15
+NET	qdr2_by2_3_sa<20>	LOC	=	F30	#Bank	23		IO_L1N_15
+NET	qdr2_by2_3_sa<19>	LOC	=	H29	#Bank	23		IO_L2P_15
+NET	qdr2_by2_3_sa<18>	LOC	=	J29	#Bank	23		IO_L2N_15
+NET	qdr2_by2_3_sa<17>	LOC	=	F31	#Bank	23		IO_L3P_15
+NET	qdr2_by2_3_sa<16>	LOC	=	E31	#Bank	23		IO_L3N_15
+NET	qdr2_by2_3_sa<15>	LOC	=	L29	#Bank	23		IO_L4P_15
+NET	qdr2_by2_3_sa<14>	LOC	=	H30	#Bank	23		IO_L5P_15
+NET	qdr2_by2_3_sa<13>	LOC	=	G31	#Bank	23		IO_L5N_15
+NET	qdr2_by2_3_sa<12>	LOC	=	J30	#Bank	23		IO_L6P_15
+NET	qdr2_by2_3_sa<11>	LOC	=	J31	#Bank	23		IO_L6N_15
+NET	qdr2_by2_3_sa<10>	LOC	=	L30	#Bank	23		IO_L7P_15
+NET	qdr2_by2_3_sa<9>	LOC	=	M30	#Bank	23		IO_L7N_15
+NET	qdr2_by2_3_sa<8>	LOC	=	P31	#Bank	23		IO_L10P_CC_15
+NET	qdr2_by2_3_sa<7>	LOC	=	P30	#Bank	23		IO_L10N_CC_15
+NET	qdr2_by2_3_sa<6>	LOC	=	M31	#Bank	23		IO_L11P_CC_15
+NET	qdr2_by2_3_sa<5>	LOC	=	N30	#Bank	23		IO_L11N_CC_15
+NET	qdr2_by2_3_sa<4>	LOC	=	R28	#Bank	23		IO_L12P_VRN_15
+NET	qdr2_by2_3_sa<3>	LOC	=	R29	#Bank	23		IO_L12N_VRP_15
+NET	qdr2_by2_3_sa<2>	LOC	=	T31	#Bank	23		IO_L13P_15
+NET	qdr2_by2_3_sa<1>	LOC	=	R31	#Bank	23		IO_L13N_15
+NET	qdr2_by2_3_sa<0>	LOC	=	U30	#Bank	23		IO_L14P_15
+NET	qdr2_by2_3_w		LOC	=	T28	#Bank	23		IO_L15P_15
+NET	qdr2_by2_3_r		LOC	=	U27	#Bank	23		IO_L16P_15
+NET	qdr2_by2_3_dll_off	LOC	=	T29	#Bank	23		IO_L15N_15
+NET	qdr2_by2_bw		LOC	=	U26	#Bank	23		IO_L18P_15
+NET	qdr2_by3_bw		LOC	=	T26	#Bank	23		IO_L18N_15
+NET	sys_clk_p		LOC	=	H17	#Bank	3		IO_L0P_CC_GC_3
+NET	sys_clk_n		LOC	=	H18	#Bank	3		IO_L0N_CC_GC_3
+NET	dly_clk_200_p		LOC	=	K17	#Bank	3		IO_L1P_CC_GC_3
+NET	dly_clk_200_n		LOC	=	L18	#Bank	3		IO_L1N_CC_GC_3
+NET	compare_error		LOC	=	U28	#Bank	23		IO_L16N_15
+NET	sys_rst_n		LOC	=	R26	#Bank	23		IO_L17P_15
+NET	cal_done		LOC	=	R27	#Bank	23		IO_L17N_15
+NET	qdr2_by2_3_cq_p		LOC	=	H34	#Bank	19		IO_L9P_CC_11
+NET	qdr2_by2_3_cq_n		LOC	=	J34	#Bank	19		IO_L9N_CC_11
+NET	qdr2_by2_3_k_p		LOC	=	N29	#Bank	23		IO_L8P_CC_15
+NET	qdr2_by2_3_k_n		LOC	=	P29	#Bank	23		IO_L8N_CC_15
+NET	qdr2_by2_3_qvld		LOC	=	K31	#Bank	23		IO_L9P_CC_15
+NET	qdr2_by2_3_c_n_compat	LOC	=	L31	#Bank	23		IO_L9N_CC_15
+CONFIG	PART	=	5vsx95t-ff1136-3					
+								
+NET	u_infrastructure/sysclk_in	PERIOD	=	4	ns	HIGH	50	%
+NET	u_infrastructure/clk200_in	PERIOD	=	5	ns	HIGH	50	%
