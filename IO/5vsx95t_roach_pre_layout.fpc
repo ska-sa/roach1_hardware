@@ -9,7 +9,7 @@
   (VENDOR xilinx)
   (LANGUAGE Vhdl)
   (CELL ff1136)
-  (CONSTRAINTS_FILE "./mem_qdr2p_0_23_19.ucf" 1184158790)
+  (CONSTRAINTS_FILE "./mem_qdr2p_0_23_19.ucf" 1184158790 1)
   (CONSTRAINTS_FILE_FORMAT ise_ucf)
   (SSO_BANK_THRESHOLD 70)
   (CDBFLOW 0)
@@ -579,6 +579,16 @@
       (PIN D30)
       (TYPE IO)
       (IOSTANDARD HSTL_I)
+    )
+    (SIGNAL
+      (NAME qdr2_vrn)
+      (DIR INOUT)
+      (TYPE CONFIG)
+    )
+    (SIGNAL
+      (NAME qdr2_vrp)
+      (DIR INOUT)
+      (TYPE CONFIG)
     )
     (SIGNAL
       (NAME sys_clk)
