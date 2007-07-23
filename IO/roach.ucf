@@ -9,7 +9,7 @@
 ##  Francois Kapp
 ##  
 ############################################################################
-##  File name :       mem_qdr2p_0_23_19.ucf
+##  File name :       ROACH.ucf
 ## 
 ##  Description :     Constraints file
 ##                    targetted to xc5vsx95t-ff1136
@@ -883,8 +883,8 @@ NET	"SP_PER_A[*]"	IOSTANDARD = 	LVCMOS33;
 NET	"PER_A[*]"	IOSTANDARD =	LVCMOS33;
 NET	"PER_CS0"	IOSTANDARD =	LVCMOS33;
 NET	"PER_WBE[*]"	IOSTANDARD =	LVCMOS33;
-NET	"PER_R_W#"	IOSTANDARD =	LVCMOS33;
-NET	"PER_OE#"	IOSTANDARD =	LVCMOS33;
+NET	"PER_R_W_n"	IOSTANDARD =	LVCMOS33;
+NET	"PER_OE_n"	IOSTANDARD =	LVCMOS33;
 NET	"PER_B_LAST"	IOSTANDARD =	LVCMOS33;
 NET	"PER_READY"	IOSTANDARD =	LVCMOS33;
 NET	"PER_ERR"	IOSTANDARD =	LVCMOS33;
@@ -947,8 +947,8 @@ NET	"SP_PER_A[2]"	LOC = "J12" ;	      #Bank 1		Select for Address/GPIO		MSB
 NET	"PER_CS0"	LOC = "AE14" ;	      #Bank 2
 NET	"PER_WBE[0]"	LOC = "AF14" ;	      #Bank 2
 NET	"PER_WBE[1]"	LOC = "AF18" ;	      #Bank 4
-NET	"PER_R_W#"	LOC = "AF20" ;	      #Bank 2
-NET	"PER_OE#"	LOC = "AF21" ;	      #Bank 2
+NET	"PER_R_W_n"	LOC = "AF20" ;	      #Bank 2
+NET	"PER_OE_n"	LOC = "AF21" ;	      #Bank 2
 NET	"PER_B_LAST"	LOC = "AE18" ;	      #Bank 4
 NET	"PER_READY"	LOC = "AH18" ;	      #Bank 4
 NET	"PER_ERR"	LOC = "AG17" ;	      #Bank 4
