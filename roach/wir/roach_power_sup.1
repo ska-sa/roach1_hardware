@@ -3,6 +3,69 @@ V 5.4
 K 146173371600 roach_power_sup
 DW roach_power_sup
 Q Case
+|Q roach_power_sup_io 1
+AS roach_power_sup_io PINORDER=0V9_0_SLP[0:1] 0V9_1_SLP[0:1] 1V2_INHIBIT 1V2_MGT0_EN 1V2_MGT0_PG 1V2_MGT1_EN 1V2_MGT1_PG 1V5_ENABLE 1V5_PG 1V8_INHIBIT 2V5_INHIBIT 2V5_MARGIN_DOWN 2V5_MARGIN_UP 2V5_TRACK ATX_PS_ON# ATX_PWR_OK BP_GA[0:4] BP_PERST# BP_PWREN# BP_SCL BP_SDA BRD_TCK BRD_TDI BRD_TDO BRD_TMS CB_CS#[0:1] CB_SCLK CB_SDIO CB_SDO CHS_ALERT CHS_NOTIFY CM_ALERT CM_SCL CM_SDA CM_TCK CM_TDI CM_TDO CM_TMS FPGA_TCK[0:1] FPGA_TDI[0:1] FPGA_TDO[0:1] FPGA_TMS[0:1] PS_ALERT# PS_ATNLED PS_ATNSW# PS_GPIO0 PS_GPIO1 PS_LED[0:2] PS_MPWRGD PS_TCK PS_TDI PS_TDO PS_TMS PS_TRST PS_WAKE# XMC_PD[0:1] XMC_TCK[0:1] XMC_TDI[0:1] XMC_TDO[0:1] XMC_TMS[0:1]
+AS roach_power_sup_io INOV_VER_REC=9:14_6-6-07
+AP roach_power_sup_io 1 PINTYPE=OUT
+AP roach_power_sup_io 2 PINTYPE=OUT
+AP roach_power_sup_io 3 PINTYPE=OUT
+AP roach_power_sup_io 4 PINTYPE=OUT
+AP roach_power_sup_io 5 PINTYPE=IN
+AP roach_power_sup_io 6 PINTYPE=OUT
+AP roach_power_sup_io 7 PINTYPE=IN
+AP roach_power_sup_io 8 PINTYPE=OUT
+AP roach_power_sup_io 9 PINTYPE=IN
+AP roach_power_sup_io 10 PINTYPE=OUT
+AP roach_power_sup_io 11 PINTYPE=OUT
+AP roach_power_sup_io 12 PINTYPE=OUT
+AP roach_power_sup_io 13 PINTYPE=OUT
+AP roach_power_sup_io 14 PINTYPE=OUT
+AP roach_power_sup_io 15 PINTYPE=OUT
+AP roach_power_sup_io 16 PINTYPE=IN
+AP roach_power_sup_io 17 PINTYPE=IN
+AP roach_power_sup_io 18 PINTYPE=IN
+AP roach_power_sup_io 19 PINTYPE=IN
+AP roach_power_sup_io 20 PINTYPE=BI
+AP roach_power_sup_io 21 PINTYPE=BI
+AP roach_power_sup_io 22 PINTYPE=IN
+AP roach_power_sup_io 23 PINTYPE=IN
+AP roach_power_sup_io 24 PINTYPE=OUT
+AP roach_power_sup_io 25 PINTYPE=IN
+AP roach_power_sup_io 26 PINTYPE=OUT
+AP roach_power_sup_io 27 PINTYPE=OUT
+AP roach_power_sup_io 28 PINTYPE=BI
+AP roach_power_sup_io 29 PINTYPE=IN
+AP roach_power_sup_io 30 PINTYPE=IN
+AP roach_power_sup_io 31 PINTYPE=OUT
+AP roach_power_sup_io 32 PINTYPE=OUT
+AP roach_power_sup_io 33 PINTYPE=BI
+AP roach_power_sup_io 34 PINTYPE=BI
+AP roach_power_sup_io 35 PINTYPE=OUT
+AP roach_power_sup_io 36 PINTYPE=OUT
+AP roach_power_sup_io 37 PINTYPE=IN
+AP roach_power_sup_io 38 PINTYPE=OUT
+AP roach_power_sup_io 39 PINTYPE=OUT
+AP roach_power_sup_io 40 PINTYPE=OUT
+AP roach_power_sup_io 41 PINTYPE=IN
+AP roach_power_sup_io 42 PINTYPE=OUT
+AP roach_power_sup_io 43 PINTYPE=OUT
+AP roach_power_sup_io 44 PINTYPE=IN
+AP roach_power_sup_io 45 PINTYPE=OUT
+AP roach_power_sup_io 46 PINTYPE=OUT
+AP roach_power_sup_io 47 PINTYPE=IN
+AP roach_power_sup_io 48 PINTYPE=OUT
+AP roach_power_sup_io 49 PINTYPE=OUT
+AP roach_power_sup_io 50 PINTYPE=IN
+AP roach_power_sup_io 51 PINTYPE=IN
+AP roach_power_sup_io 52 PINTYPE=OUT
+AP roach_power_sup_io 53 PINTYPE=IN
+AP roach_power_sup_io 54 PINTYPE=IN
+AP roach_power_sup_io 55 PINTYPE=OUT
+AP roach_power_sup_io 56 PINTYPE=IN
+AP roach_power_sup_io 57 PINTYPE=OUT
+AP roach_power_sup_io 58 PINTYPE=OUT
+AP roach_power_sup_io 59 PINTYPE=IN
+AP roach_power_sup_io 60 PINTYPE=OUT
 AS builtin:out OUT
 AS builtin:out PINORDER=OUT
 AP builtin:out 1 PINTYPE=OUT
@@ -12,97 +75,36 @@ AP builtin:in 1 PINTYPE=IN
 AS builtin:bi BI
 AS builtin:bi PINORDER=OUT
 AP builtin:bi 1 PINTYPE=BI
-|Q XCC_FX60:power_supervisor_io 1
-AS XCC_FX60:power_supervisor_io SYMTYPE=FUB
-AS XCC_FX60:power_supervisor_io PINORDER=0V9_0_SLP[0:1] 0V9_1_SLP[0:1] 1V2_INHIBIT 1V2_MGT0_EN 1V2_MGT0_PG 1V2_MGT1_EN 1V2_MGT1_PG 1V5_ENABLE 1V5_PG 1V8_INHIBIT 2V5_INHIBIT 2V5_MARGIN_DOWN 2V5_MARGIN_UP 2V5_TRACK ATX_PS_ON# ATX_PWR_OK BP_GA[0:4] BP_PERST# BP_PWREN# BP_SCL BP_SDA BRD_TCK BRD_TDI BRD_TDO BRD_TMS CB_CS#[0:1] CB_SCLK CB_SDIO CB_SDO CHS_ALERT CHS_NOTIFY CM_ALERT CM_SCL CM_SDA CM_TCK CM_TDI CM_TDO CM_TMS FPGA_TCK[0:1] FPGA_TDI[0:1] FPGA_TDO[0:1] FPGA_TMS[0:1] PS_ALERT# PS_ATNLED PS_ATNSW# PS_GPIO0 PS_GPIO1 PS_LED[0:2] PS_MPWRGD PS_TCK PS_TDI PS_TDO PS_TMS PS_TRST PS_WAKE# XMC_PD[0:1] XMC_TCK[0:1] XMC_TDI[0:1] XMC_TDO[0:1] XMC_TMS[0:1]
-AP XCC_FX60:power_supervisor_io 1 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 2 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 3 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 4 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 5 PINTYPE=IN
-AP XCC_FX60:power_supervisor_io 6 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 7 PINTYPE=IN
-AP XCC_FX60:power_supervisor_io 8 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 9 PINTYPE=IN
-AP XCC_FX60:power_supervisor_io 10 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 11 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 12 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 13 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 14 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 15 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 16 PINTYPE=IN
-AP XCC_FX60:power_supervisor_io 17 PINTYPE=IN
-AP XCC_FX60:power_supervisor_io 18 PINTYPE=IN
-AP XCC_FX60:power_supervisor_io 19 PINTYPE=IN
-AP XCC_FX60:power_supervisor_io 20 PINTYPE=BI
-AP XCC_FX60:power_supervisor_io 21 PINTYPE=BI
-AP XCC_FX60:power_supervisor_io 22 PINTYPE=IN
-AP XCC_FX60:power_supervisor_io 23 PINTYPE=IN
-AP XCC_FX60:power_supervisor_io 24 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 25 PINTYPE=IN
-AP XCC_FX60:power_supervisor_io 26 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 27 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 28 PINTYPE=BI
-AP XCC_FX60:power_supervisor_io 29 PINTYPE=IN
-AP XCC_FX60:power_supervisor_io 30 PINTYPE=IN
-AP XCC_FX60:power_supervisor_io 31 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 32 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 33 PINTYPE=BI
-AP XCC_FX60:power_supervisor_io 34 PINTYPE=BI
-AP XCC_FX60:power_supervisor_io 35 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 36 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 37 PINTYPE=IN
-AP XCC_FX60:power_supervisor_io 38 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 39 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 40 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 41 PINTYPE=IN
-AP XCC_FX60:power_supervisor_io 42 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 43 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 44 PINTYPE=IN
-AP XCC_FX60:power_supervisor_io 45 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 46 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 47 PINTYPE=IN
-AP XCC_FX60:power_supervisor_io 48 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 49 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 50 PINTYPE=IN
-AP XCC_FX60:power_supervisor_io 51 PINTYPE=IN
-AP XCC_FX60:power_supervisor_io 52 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 53 PINTYPE=IN
-AP XCC_FX60:power_supervisor_io 54 PINTYPE=IN
-AP XCC_FX60:power_supervisor_io 55 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 56 PINTYPE=IN
-AP XCC_FX60:power_supervisor_io 57 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 58 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_io 59 PINTYPE=IN
-AP XCC_FX60:power_supervisor_io 60 PINTYPE=OUT
-|Q XCC_FX60:power_supervisor_analogue 1
-AS XCC_FX60:power_supervisor_analogue SYMTYPE=FUB
-AS XCC_FX60:power_supervisor_analogue PINORDER=12V_EN 3V3_EN 5V_EN BP_5VAUX FPGA_TDN[0:1] FPGA_TDP[0:1] I0V9_0 I0V9_1 I12V I1V2 I1V5 I1V8 I2V5 I3V3 I5V TMPDIOD_N[0:1] TMPDIOD_P[0:3]
-AP XCC_FX60:power_supervisor_analogue 1 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_analogue 2 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_analogue 3 PINTYPE=OUT
-AP XCC_FX60:power_supervisor_analogue 4 PINTYPE=IN
-AP XCC_FX60:power_supervisor_analogue 5 PINTYPE=IN
-AP XCC_FX60:power_supervisor_analogue 6 PINTYPE=IN
-AP XCC_FX60:power_supervisor_analogue 7 PINTYPE=IN
-AP XCC_FX60:power_supervisor_analogue 8 PINTYPE=IN
-AP XCC_FX60:power_supervisor_analogue 9 PINTYPE=IN
-AP XCC_FX60:power_supervisor_analogue 10 PINTYPE=IN
-AP XCC_FX60:power_supervisor_analogue 11 PINTYPE=IN
-AP XCC_FX60:power_supervisor_analogue 12 PINTYPE=IN
-AP XCC_FX60:power_supervisor_analogue 13 PINTYPE=IN
-AP XCC_FX60:power_supervisor_analogue 14 PINTYPE=IN
-AP XCC_FX60:power_supervisor_analogue 15 PINTYPE=IN
-AP XCC_FX60:power_supervisor_analogue 16 PINTYPE=IN
-AP XCC_FX60:power_supervisor_analogue 17 PINTYPE=IN
-|Q XCC_FX60:power_supervisor_power 1
-AS XCC_FX60:power_supervisor_power SYMTYPE=FUB
-AS XCC_FX60:power_supervisor_power PINORDER=PS_VPUMP
-AP XCC_FX60:power_supervisor_power 1 PINTYPE=IN
+|Q roach_power_sup_ana 1
+AS roach_power_sup_ana PINORDER=12V_EN 3V3_EN 5V_EN BP_5VAUX FPGA_TDN[0:1] FPGA_TDP[0:1] I0V9_0 I0V9_1 I12V I1V2 I1V5 I1V8 I2V5 I3V3 I5V TMPDIOD_N[0:1] TMPDIOD_P[0:3]
+AS roach_power_sup_ana INOV_VER_REC=9:15_6-6-07
+AP roach_power_sup_ana 1 PINTYPE=OUT
+AP roach_power_sup_ana 2 PINTYPE=OUT
+AP roach_power_sup_ana 3 PINTYPE=OUT
+AP roach_power_sup_ana 4 PINTYPE=IN
+AP roach_power_sup_ana 5 PINTYPE=IN
+AP roach_power_sup_ana 6 PINTYPE=IN
+AP roach_power_sup_ana 7 PINTYPE=IN
+AP roach_power_sup_ana 8 PINTYPE=IN
+AP roach_power_sup_ana 9 PINTYPE=IN
+AP roach_power_sup_ana 10 PINTYPE=IN
+AP roach_power_sup_ana 11 PINTYPE=IN
+AP roach_power_sup_ana 12 PINTYPE=IN
+AP roach_power_sup_ana 13 PINTYPE=IN
+AP roach_power_sup_ana 14 PINTYPE=IN
+AP roach_power_sup_ana 15 PINTYPE=IN
+AP roach_power_sup_ana 16 PINTYPE=IN
+AP roach_power_sup_ana 17 PINTYPE=IN
+|Q roach_power_sup_pow 1
+AS roach_power_sup_pow PINORDER=PS_VPUMP
+AS roach_power_sup_pow INOV_VER_REC=9:17_6-6-07
+AP roach_power_sup_pow 1 PINTYPE=IN
 AN TMPDIOD_P[0:3] VLBUSISONSHEET=1
 AN FPGA_TDN[0:1] VLBUSISONSHEET=1
 AN FPGA_TDP[0:1] VLBUSISONSHEET=1
 AN TMPDIOD_N[0:1] VLBUSISONSHEET=1
+W roach_power_sup_io $1I425
+I $1I425 roach_power_sup_io 0V9_0_SLP[0:1] 0V9_1_SLP[0:1] 1V2_INHIBIT 1V2_MGT0_EN 1V2_MGT0_PG 1V2_MGT1_EN 1V2_MGT1_PG 1V5_ENABLE 1V5_PG 1V8_INHIBIT 2V5_INHIBIT 2V5_MARGIN_DOWN 2V5_MARGIN_UP 2V5_TRACK ATX_PS_ON# ATX_PWR_OK BP_GA[0:4] BP_PERST# BP_PWREN# BP_SCL BP_SDA BRD_TCK BRD_TDI BRD_TDO BRD_TMS CB_CS#[0:1] CB_SCLK CB_SDIO CB_SDO CHS_ALERT CHS_NOTIFY CM_ALERT CM_SCL CM_SDA CM_TCK CM_TDI CM_TDO CM_TMS FPGA_TCK[0:1] FPGA_TDI[0:1] FPGA_TDO[0:1] FPGA_TMS[0:1] PS_ALERT# PS_ATNLED PS_ATNSW# PS_GPIO0 PS_GPIO1 PS_LED[0:2] PS_MPWRGD PS_TCK PS_TDI PS_TDO PS_TMS PS_TRST PS_WAKE# XMC_PD[0:1] XMC_TCK[0:1] XMC_TDI[0:1] XMC_TDO[0:1] XMC_TMS[0:1] 
 P builtin:out ATX_PS_ON#
 I ATX_PS_ON# builtin:out ATX_PS_ON# 
 P builtin:in ATX_PWR_OK
@@ -259,10 +261,8 @@ P builtin:in TMPDIOD_N[0:1]
 I TMPDIOD_N[0:1] builtin:in TMPDIOD_N[0:1] 
 P builtin:out CB_CS#[0:1]
 I CB_CS#[0:1] builtin:out CB_CS#[0:1] 
-W XCC_FX60:power_supervisor_io $1I4
-I $1I4 XCC_FX60:power_supervisor_io 0V9_0_SLP[0:1] 0V9_1_SLP[0:1] 1V2_INHIBIT 1V2_MGT0_EN 1V2_MGT0_PG 1V2_MGT1_EN 1V2_MGT1_PG 1V5_ENABLE 1V5_PG 1V8_INHIBIT 2V5_INHIBIT 2V5_MARGIN_DOWN 2V5_MARGIN_UP 2V5_TRACK ATX_PS_ON# ATX_PWR_OK BP_GA[0:4] BP_PERST# BP_PWREN# BP_SCL BP_SDA BRD_TCK BRD_TDI BRD_TDO BRD_TMS CB_CS#[0:1] CB_SCLK CB_SDIO CB_SDO CHS_ALERT CHS_NOTIFY CM_ALERT CM_SCL CM_SDA CM_TCK CM_TDI CM_TDO CM_TMS FPGA_TCK[0:1] FPGA_TDI[0:1] FPGA_TDO[0:1] FPGA_TMS[0:1] PS_ALERT# PS_ATNLED PS_ATNSW# PS_GPIO0 PS_GPIO1 PS_LED[0:2] PS_MPWRGD PS_TCK PS_TDI PS_TDO PS_TMS PS_TRST PS_WAKE# XMC_PD[0:1] XMC_TCK[0:1] XMC_TDI[0:1] XMC_TDO[0:1] XMC_TMS[0:1] 
-W XCC_FX60:power_supervisor_analogue $1I3
-I $1I3 XCC_FX60:power_supervisor_analogue 12V_EN 3V3_EN 5V_EN BP_5VAUX FPGA_TDN[0:1] FPGA_TDP[0:1] I0V9_0 I0V9_1 I12V I1V2 I1V5 I1V8 I2V5 I3V3 I5V TMPDIOD_N[0:1] TMPDIOD_P[0:3] 
-W XCC_FX60:power_supervisor_power $1I2
-I $1I2 XCC_FX60:power_supervisor_power PS_VPUMP 
+W roach_power_sup_ana $1I426
+I $1I426 roach_power_sup_ana 12V_EN 3V3_EN 5V_EN BP_5VAUX FPGA_TDN[0:1] FPGA_TDP[0:1] I0V9_0 I0V9_1 I12V I1V2 I1V5 I1V8 I2V5 I3V3 I5V TMPDIOD_N[0:1] TMPDIOD_P[0:3] 
+W roach_power_sup_pow $1I427
+I $1I427 roach_power_sup_pow PS_VPUMP 
 EW
