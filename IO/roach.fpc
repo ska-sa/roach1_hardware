@@ -16,6 +16,7 @@
   (SSO_BANK_THRESHOLD 70)
   (CDBFLOW 0)
   (HKP true)
+  (GENERATENEEDED_SYMBOLS 1)
   (LIBRARY_VERSION "Version 0002")
   (PART_NUMBER "5VSX95T")
   (SIGNALS
@@ -185,6 +186,77 @@
       (SWAPGROUP VCCO_4)
     )
     (SIGNAL
+      (NAME DDR2_CKE)
+      (HDL_NAME DDR2_CKE)
+      (DIR INOUT)
+      (ELEMENTS
+        (SIGNAL
+          (NAME DDR2_CKE_0)
+          (HDL_NAME DDR2_CKE_0)
+          (PIN AH30)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+        (SIGNAL
+          (NAME DDR2_CKE_1)
+          (HDL_NAME DDR2_CKE_1)
+          (PIN AK32)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+        (SIGNAL
+          (NAME DDR2_CKE_2)
+          (HDL_NAME DDR2_CKE_2)
+          (PIN AK33)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+      )
+      (TYPE IO)
+      (IOSTANDARD SSTL18_I)
+      (RANGE 2 0)
+    )
+    (SIGNAL
+      (NAME DDR2_CS_N_0)
+      (HDL_NAME DDR2_CS_N_0)
+      (DIR INOUT)
+      (PIN AF30)
+      (TYPE IO)
+      (IOSTANDARD SSTL18_I)
+    )
+    (SIGNAL
+      (NAME DDR2_CS_N_1)
+      (HDL_NAME DDR2_CS_N_1)
+      (DIR INOUT)
+      (PIN AC30)
+      (TYPE IO)
+      (IOSTANDARD SSTL18_I)
+    )
+    (SIGNAL
+      (NAME DDR2_ODT)
+      (HDL_NAME DDR2_ODT)
+      (DIR INOUT)
+      (ELEMENTS
+        (SIGNAL
+          (NAME DDR2_ODT_0)
+          (HDL_NAME DDR2_ODT_0)
+          (PIN AJ30)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+        (SIGNAL
+          (NAME DDR2_ODT_1)
+          (HDL_NAME DDR2_ODT_1)
+          (PIN AE32)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+      )
+      (TYPE IO)
+      (IOSTANDARD SSTL18_I)
+      (RANGE 1 0)
+    )
+    (SIGNAL
       (NAME GND)
       (DIR INOUT)
       (PINS A11 A12 A17 A22 A27 A32 AA11 AA13 AA15 AA17 AA19 AA2 AA21 AA23 AA27 AA7 AB12 AB14 AB16 AB18 AB20 AB22 AB24 AB34 AB4 AC11 AC13 AC17 AC19 AC21 AC26 AC31 AD12 AD16 AD18 AD28 AD8 AE10 AE15 AE20 AE25 AE4 AE5 AF12 AF17 AF2 AF22 AF27 AF32 AG19 AG2 AG24 AG29 AG34 AG9 AH16 AH26 AH4 AH6 AJ13 AJ23 AJ33 AJ5 AK10 AK20 AK30 AK4 AL17 AL27 AL6 AL9 AM14 AM2 AM24 AM34 AN1 AN11 AN2 AN21 AN31 AN7 AN8 AP11 AP13 AP18 AP23 AP28 AP33 B1 B11 B14 B2 B24 B29 B34 B7 B8 C11 C2 C21 C31 D18 D28 D33 D6 D9 E15 E25 E5 F12 F22 F32 F7 G19 G29 G34 G4 G9 H16 H2 H21 H26 H6 J13 J18 J2 J23 J33 K10 K15 K20 K25 K30 K4 K5 L13 L17 L22 L27 L7 M12 M14 M16 M18 M20 M24 M34 M4 N11 N13 N17 N19 N21 N26 N31 N4 P12 P14 P16 P18 P2 P20 P22 P28 P8 R10 R13 R15 R17 R19 R2 R21 R23 R25 R5 T12 T14 T16 T20 T22 T32 T4 T5 U11 U13 U15 U19 U21 U23 U29 U34 U6 U9 V12 V14 V16 V20 V22 V26 V6 W13 W15 W19 W21 W23 W33 W4 W5 Y10 Y12 Y14 Y16 Y18 Y2 Y20 Y22 Y25 Y30 Y5)
@@ -192,195 +264,168 @@
       (SWAPGROUP GND)
     )
     (SIGNAL
-      (NAME GPIOLVC15)
-      (HDL_NAME GPIOLVC15)
+      (NAME "GPIOLVC15<0>")
+      (HDL_NAME "GPIOLVC15<0>")
       (DIR NONE)
-      (ELEMENTS
-        (SIGNAL
-          (NAME "GPIOLVC15<3>")
-          (HDL_NAME "GPIOLVC15<3>")
-          (PIN B20)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS15)
-        )
-        (SIGNAL
-          (NAME "GPIOLVC15<2>")
-          (HDL_NAME "GPIOLVC15<2>")
-          (PIN C20)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS15)
-        )
-        (SIGNAL
-          (NAME "GPIOLVC15<1>")
-          (HDL_NAME "GPIOLVC15<1>")
-          (PIN F29)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS15)
-        )
-        (SIGNAL
-          (NAME "GPIOLVC15<0>")
-          (HDL_NAME "GPIOLVC15<0>")
-          (PIN E29)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS15)
-        )
-      )
+      (PIN E29)
       (TYPE IO)
+      (IOSTANDARD LVCMOS15)
     )
     (SIGNAL
-      (NAME GPIOLVC18)
-      (HDL_NAME GPIOLVC18)
+      (NAME "GPIOLVC15<1>")
+      (HDL_NAME "GPIOLVC15<1>")
       (DIR NONE)
-      (ELEMENTS
-        (SIGNAL
-          (NAME "GPIOLVC18<0>")
-          (HDL_NAME "GPIOLVC18<0>")
-          (PIN AE32)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS18)
-        )
-        (SIGNAL
-          (NAME "GPIOLVC18<1>")
-          (HDL_NAME "GPIOLVC18<1>")
-          (PIN AK33)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS18)
-        )
-        (SIGNAL
-          (NAME "GPIOLVC18<2>")
-          (HDL_NAME "GPIOLVC18<2>")
-          (PIN AK32)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS18)
-        )
-        (SIGNAL
-          (NAME "GPIOLVC18<3>")
-          (HDL_NAME "GPIOLVC18<3>")
-          (PIN AC30)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS18)
-        )
-        (SIGNAL
-          (NAME "GPIOLVC18<4>")
-          (HDL_NAME "GPIOLVC18<4>")
-          (PIN AA30)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS18)
-        )
-        (SIGNAL
-          (NAME "GPIOLVC18<5>")
-          (HDL_NAME "GPIOLVC18<5>")
-          (PIN AD31)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS18)
-        )
-        (SIGNAL
-          (NAME "GPIOLVC18<6>")
-          (HDL_NAME "GPIOLVC18<6>")
-          (PIN AE31)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS18)
-        )
-        (SIGNAL
-          (NAME "GPIOLVC18<7>")
-          (HDL_NAME "GPIOLVC18<7>")
-          (PIN AC29)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS18)
-        )
-        (SIGNAL
-          (NAME "GPIOLVC18<8>")
-          (HDL_NAME "GPIOLVC18<8>")
-          (PIN AH29)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS18)
-        )
-        (SIGNAL
-          (NAME "GPIOLVC18<9>")
-          (HDL_NAME "GPIOLVC18<9>")
-          (PIN AG30)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS18)
-        )
-        (SIGNAL
-          (NAME "GPIOLVC18<10>")
-          (HDL_NAME "GPIOLVC18<10>")
-          (PIN AK27)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS18)
-        )
-        (SIGNAL
-          (NAME "GPIOLVC18<11>")
-          (HDL_NAME "GPIOLVC18<11>")
-          (PIN AJ26)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS18)
-        )
-        (SIGNAL
-          (NAME "GPIOLVC18<12>")
-          (HDL_NAME "GPIOLVC18<12>")
-          (PIN AJ25)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS18)
-        )
-        (SIGNAL
-          (NAME "GPIOLVC18<13>")
-          (HDL_NAME "GPIOLVC18<13>")
-          (PIN AH25)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS18)
-        )
-        (SIGNAL
-          (NAME "GPIOLVC18<14>")
-          (HDL_NAME "GPIOLVC18<14>")
-          (PIN AG25)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS18)
-        )
-        (SIGNAL
-          (NAME "GPIOLVC18<15>")
-          (HDL_NAME "GPIOLVC18<15>")
-          (PIN AD25)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS18)
-        )
-        (SIGNAL
-          (NAME "GPIOLVC18<16>")
-          (HDL_NAME "GPIOLVC18<16>")
-          (PIN AP25)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS18)
-        )
-        (SIGNAL
-          (NAME "GPIOLVC18<17>")
-          (HDL_NAME "GPIOLVC18<17>")
-          (PIN AL24)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS18)
-        )
-        (SIGNAL
-          (NAME "GPIOLVC18<18>")
-          (HDL_NAME "GPIOLVC18<18>")
-          (PIN AN24)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS18)
-        )
-        (SIGNAL
-          (NAME "GPIOLVC18<19>")
-          (HDL_NAME "GPIOLVC18<19>")
-          (PIN AP24)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS18)
-        )
-        (SIGNAL
-          (NAME "GPIOLVC18<20>")
-          (HDL_NAME "GPIOLVC18<20>")
-          (PIN AM20)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS18)
-        )
-      )
+      (PIN F29)
       (TYPE IO)
+      (IOSTANDARD LVCMOS15)
+    )
+    (SIGNAL
+      (NAME "GPIOLVC15<2>")
+      (HDL_NAME "GPIOLVC15<2>")
+      (DIR NONE)
+      (PIN C20)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS15)
+    )
+    (SIGNAL
+      (NAME "GPIOLVC15<3>")
+      (HDL_NAME "GPIOLVC15<3>")
+      (DIR NONE)
+      (PIN B20)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS15)
+    )
+    (SIGNAL
+      (NAME "GPIOLVC18<10>")
+      (HDL_NAME "GPIOLVC18<10>")
+      (DIR NONE)
+      (PIN AK27)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS18)
+    )
+    (SIGNAL
+      (NAME "GPIOLVC18<11>")
+      (HDL_NAME "GPIOLVC18<11>")
+      (DIR NONE)
+      (PIN AJ26)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS18)
+    )
+    (SIGNAL
+      (NAME "GPIOLVC18<12>")
+      (HDL_NAME "GPIOLVC18<12>")
+      (DIR NONE)
+      (PIN AJ25)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS18)
+    )
+    (SIGNAL
+      (NAME "GPIOLVC18<13>")
+      (HDL_NAME "GPIOLVC18<13>")
+      (DIR NONE)
+      (PIN AH25)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS18)
+    )
+    (SIGNAL
+      (NAME "GPIOLVC18<14>")
+      (HDL_NAME "GPIOLVC18<14>")
+      (DIR NONE)
+      (PIN AG25)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS18)
+    )
+    (SIGNAL
+      (NAME "GPIOLVC18<15>")
+      (HDL_NAME "GPIOLVC18<15>")
+      (DIR NONE)
+      (PIN AD25)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS18)
+    )
+    (SIGNAL
+      (NAME "GPIOLVC18<16>")
+      (HDL_NAME "GPIOLVC18<16>")
+      (DIR NONE)
+      (PIN AP25)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS18)
+    )
+    (SIGNAL
+      (NAME "GPIOLVC18<17>")
+      (HDL_NAME "GPIOLVC18<17>")
+      (DIR NONE)
+      (PIN AL24)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS18)
+    )
+    (SIGNAL
+      (NAME "GPIOLVC18<18>")
+      (HDL_NAME "GPIOLVC18<18>")
+      (DIR NONE)
+      (PIN AN24)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS18)
+    )
+    (SIGNAL
+      (NAME "GPIOLVC18<19>")
+      (HDL_NAME "GPIOLVC18<19>")
+      (DIR NONE)
+      (PIN AP24)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS18)
+    )
+    (SIGNAL
+      (NAME "GPIOLVC18<20>")
+      (HDL_NAME "GPIOLVC18<20>")
+      (DIR NONE)
+      (PIN AM20)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS18)
+    )
+    (SIGNAL
+      (NAME "GPIOLVC18<4>")
+      (HDL_NAME "GPIOLVC18<4>")
+      (DIR NONE)
+      (PIN AA30)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS18)
+    )
+    (SIGNAL
+      (NAME "GPIOLVC18<5>")
+      (HDL_NAME "GPIOLVC18<5>")
+      (DIR NONE)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS18)
+    )
+    (SIGNAL
+      (NAME "GPIOLVC18<6>")
+      (HDL_NAME "GPIOLVC18<6>")
+      (DIR NONE)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS18)
+    )
+    (SIGNAL
+      (NAME "GPIOLVC18<7>")
+      (HDL_NAME "GPIOLVC18<7>")
+      (DIR NONE)
+      (PIN AC29)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS18)
+    )
+    (SIGNAL
+      (NAME "GPIOLVC18<8>")
+      (HDL_NAME "GPIOLVC18<8>")
+      (DIR NONE)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS18)
+    )
+    (SIGNAL
+      (NAME "GPIOLVC18<9>")
+      (HDL_NAME "GPIOLVC18<9>")
+      (DIR NONE)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS18)
     )
     (SIGNAL
       (NAME GPIOLVC33)
@@ -1244,100 +1289,9 @@
       (DIR NONE)
       (ELEMENTS
         (SIGNAL
-          (NAME "ddr2_a<15>")
-          (HDL_NAME "ddr2_a<15>")
-          (PIN AP22)
-          (TYPE IO)
-          (IOSTANDARD SSTL18_I)
-        )
-        (SIGNAL
-          (NAME "ddr2_a<14>")
-          (HDL_NAME "ddr2_a<14>")
-          (PIN AM18)
-          (TYPE IO)
-          (IOSTANDARD SSTL18_I)
-        )
-        (SIGNAL
-          (NAME "ddr2_a<13>")
-          (HDL_NAME "ddr2_a<13>")
-          (PIN AN18)
-          (TYPE IO)
-          (IOSTANDARD SSTL18_I)
-        )
-        (SIGNAL
-          (NAME "ddr2_a<12>")
-          (HDL_NAME "ddr2_a<12>")
-          (PIN AM22)
-          (TYPE IO)
-          (IOSTANDARD SSTL18_I)
-        )
-        (SIGNAL
-          (NAME "ddr2_a<11>")
-          (HDL_NAME "ddr2_a<11>")
-          (PIN AN22)
-          (TYPE IO)
-          (IOSTANDARD SSTL18_I)
-        )
-        (SIGNAL
-          (NAME "ddr2_a<10>")
-          (HDL_NAME "ddr2_a<10>")
-          (PIN AP20)
-          (TYPE IO)
-          (IOSTANDARD SSTL18_I)
-        )
-        (SIGNAL
-          (NAME "ddr2_a<9>")
-          (HDL_NAME "ddr2_a<9>")
-          (PIN AN20)
-          (TYPE IO)
-          (IOSTANDARD SSTL18_I)
-        )
-        (SIGNAL
-          (NAME "ddr2_a<8>")
-          (HDL_NAME "ddr2_a<8>")
-          (PIN AN23)
-          (TYPE IO)
-          (IOSTANDARD SSTL18_I)
-        )
-        (SIGNAL
-          (NAME "ddr2_a<7>")
-          (HDL_NAME "ddr2_a<7>")
-          (PIN AD26)
-          (TYPE IO)
-          (IOSTANDARD SSTL18_I)
-        )
-        (SIGNAL
-          (NAME "ddr2_a<6>")
-          (HDL_NAME "ddr2_a<6>")
-          (PIN AC24)
-          (TYPE IO)
-          (IOSTANDARD SSTL18_I)
-        )
-        (SIGNAL
-          (NAME "ddr2_a<5>")
-          (HDL_NAME "ddr2_a<5>")
-          (PIN AC25)
-          (TYPE IO)
-          (IOSTANDARD SSTL18_I)
-        )
-        (SIGNAL
-          (NAME "ddr2_a<4>")
-          (HDL_NAME "ddr2_a<4>")
-          (PIN AE26)
-          (TYPE IO)
-          (IOSTANDARD SSTL18_I)
-        )
-        (SIGNAL
-          (NAME "ddr2_a<3>")
-          (HDL_NAME "ddr2_a<3>")
-          (PIN AE27)
-          (TYPE IO)
-          (IOSTANDARD SSTL18_I)
-        )
-        (SIGNAL
-          (NAME "ddr2_a<2>")
-          (HDL_NAME "ddr2_a<2>")
-          (PIN AF26)
+          (NAME "ddr2_a<0>")
+          (HDL_NAME "ddr2_a<0>")
+          (PIN AG27)
           (TYPE IO)
           (IOSTANDARD SSTL18_I)
         )
@@ -1349,14 +1303,106 @@
           (IOSTANDARD SSTL18_I)
         )
         (SIGNAL
-          (NAME "ddr2_a<0>")
-          (HDL_NAME "ddr2_a<0>")
-          (PIN AG27)
+          (NAME "ddr2_a<2>")
+          (HDL_NAME "ddr2_a<2>")
+          (PIN AF26)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+        (SIGNAL
+          (NAME "ddr2_a<3>")
+          (HDL_NAME "ddr2_a<3>")
+          (PIN AE27)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+        (SIGNAL
+          (NAME "ddr2_a<4>")
+          (HDL_NAME "ddr2_a<4>")
+          (PIN AE26)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+        (SIGNAL
+          (NAME "ddr2_a<5>")
+          (HDL_NAME "ddr2_a<5>")
+          (PIN AC25)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+        (SIGNAL
+          (NAME "ddr2_a<6>")
+          (HDL_NAME "ddr2_a<6>")
+          (PIN AC24)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+        (SIGNAL
+          (NAME "ddr2_a<7>")
+          (HDL_NAME "ddr2_a<7>")
+          (PIN AD26)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+        (SIGNAL
+          (NAME "ddr2_a<8>")
+          (HDL_NAME "ddr2_a<8>")
+          (PIN AN23)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+        (SIGNAL
+          (NAME "ddr2_a<9>")
+          (HDL_NAME "ddr2_a<9>")
+          (PIN AN20)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+        (SIGNAL
+          (NAME "ddr2_a<10>")
+          (HDL_NAME "ddr2_a<10>")
+          (PIN AP20)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+        (SIGNAL
+          (NAME "ddr2_a<11>")
+          (HDL_NAME "ddr2_a<11>")
+          (PIN AN22)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+        (SIGNAL
+          (NAME "ddr2_a<12>")
+          (HDL_NAME "ddr2_a<12>")
+          (PIN AM22)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+        (SIGNAL
+          (NAME "ddr2_a<13>")
+          (HDL_NAME "ddr2_a<13>")
+          (PIN AN18)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+        (SIGNAL
+          (NAME "ddr2_a<14>")
+          (HDL_NAME "ddr2_a<14>")
+          (PIN AM18)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+        (SIGNAL
+          (NAME "ddr2_a<15>")
+          (HDL_NAME "ddr2_a<15>")
+          (PIN AP22)
           (TYPE IO)
           (IOSTANDARD SSTL18_I)
         )
       )
       (TYPE IO)
+      (IOSTANDARD SSTL18_I)
     )
     (SIGNAL
       (NAME ddr2_ba)
@@ -1364,9 +1410,9 @@
       (DIR NONE)
       (ELEMENTS
         (SIGNAL
-          (NAME "ddr2_ba<2>")
-          (HDL_NAME "ddr2_ba<2>")
-          (PIN AD29)
+          (NAME "ddr2_ba<0>")
+          (HDL_NAME "ddr2_ba<0>")
+          (PIN AF31)
           (TYPE IO)
           (IOSTANDARD SSTL18_I)
         )
@@ -1378,14 +1424,15 @@
           (IOSTANDARD SSTL18_I)
         )
         (SIGNAL
-          (NAME "ddr2_ba<0>")
-          (HDL_NAME "ddr2_ba<0>")
-          (PIN AF31)
+          (NAME "ddr2_ba<2>")
+          (HDL_NAME "ddr2_ba<2>")
+          (PIN AD29)
           (TYPE IO)
           (IOSTANDARD SSTL18_I)
         )
       )
       (TYPE IO)
+      (IOSTANDARD SSTL18_I)
     )
     (SIGNAL
       (NAME ddr2_cas_n)
@@ -1396,53 +1443,34 @@
       (IOSTANDARD SSTL18_I)
     )
     (SIGNAL
-      (NAME ddr2_ck_n_ddr2_ck)
-      (HDL_NAME ddr2_ck_n_ddr2_ck)
+      (NAME ddr2_ck_0)
+      (HDL_NAME ddr2_ck_0)
       (DIR NONE)
-      (ELEMENTS
-        (SIGNAL
-          (NAME "ddr2_ck_n_ddr2_ck<0>")
-          (HDL_NAME "ddr2_ck_n_ddr2_ck<0>")
-          (PIN AD24 AE24)
-          (TYPE DIFF)
-          (IOSTANDARD DIFF_SSTL18_II)
-          (SIG_P "ddr2_ck<0>")
-          (SIG_N "ddr2_ck_n<0>")
-        )
-      )
+      (PIN AD24 AE24)
       (TYPE DIFF)
-      (SIG_P ddr2_ck)
-      (SIG_N ddr2_ck_n)
+      (IOSTANDARD DIFF_SSTL18_II)
+      (SIG_P ddr2_ck_0_p)
+      (SIG_N ddr2_ck_0_n)
     )
     (SIGNAL
-      (NAME ddr2_cke)
-      (HDL_NAME ddr2_cke)
+      (NAME ddr2_ck_1)
+      (HDL_NAME ddr2_ck_1)
       (DIR NONE)
-      (ELEMENTS
-        (SIGNAL
-          (NAME "ddr2_cke<0>")
-          (HDL_NAME "ddr2_cke<0>")
-          (PIN AH30)
-          (TYPE IO)
-          (IOSTANDARD SSTL18_I)
-        )
-      )
-      (TYPE IO)
+      (PIN AD31 AE31)
+      (TYPE DIFF)
+      (IOSTANDARD DIFF_SSTL18_II)
+      (SIG_P ddr2_ck_1_p)
+      (SIG_N ddr2_ck_1_n)
     )
     (SIGNAL
-      (NAME ddr2_cs_n)
-      (HDL_NAME ddr2_cs_n)
+      (NAME ddr2_ck_2)
+      (HDL_NAME ddr2_ck_2)
       (DIR NONE)
-      (ELEMENTS
-        (SIGNAL
-          (NAME "ddr2_cs_n<0>")
-          (HDL_NAME "ddr2_cs_n<0>")
-          (PIN AF30)
-          (TYPE IO)
-          (IOSTANDARD SSTL18_I)
-        )
-      )
-      (TYPE IO)
+      (PIN AH29 AG30)
+      (TYPE DIFF)
+      (IOSTANDARD DIFF_SSTL18_II)
+      (SIG_P ddr2_ck_2_p)
+      (SIG_N ddr2_ck_2_n)
     )
     (SIGNAL
       (NAME ddr2_dm)
@@ -1450,51 +1478,9 @@
       (DIR NONE)
       (ELEMENTS
         (SIGNAL
-          (NAME "ddr2_dm<8>")
-          (HDL_NAME "ddr2_dm<8>")
-          (PIN AL25)
-          (TYPE IO)
-          (IOSTANDARD SSTL18_I)
-        )
-        (SIGNAL
-          (NAME "ddr2_dm<7>")
-          (HDL_NAME "ddr2_dm<7>")
-          (PIN AP26)
-          (TYPE IO)
-          (IOSTANDARD SSTL18_I)
-        )
-        (SIGNAL
-          (NAME "ddr2_dm<6>")
-          (HDL_NAME "ddr2_dm<6>")
-          (PIN AH27)
-          (TYPE IO)
-          (IOSTANDARD SSTL18_I)
-        )
-        (SIGNAL
-          (NAME "ddr2_dm<5>")
-          (HDL_NAME "ddr2_dm<5>")
-          (PIN AK28)
-          (TYPE IO)
-          (IOSTANDARD SSTL18_I)
-        )
-        (SIGNAL
-          (NAME "ddr2_dm<4>")
-          (HDL_NAME "ddr2_dm<4>")
-          (PIN AA29)
-          (TYPE IO)
-          (IOSTANDARD SSTL18_I)
-        )
-        (SIGNAL
-          (NAME "ddr2_dm<3>")
-          (HDL_NAME "ddr2_dm<3>")
-          (PIN AB30)
-          (TYPE IO)
-          (IOSTANDARD SSTL18_I)
-        )
-        (SIGNAL
-          (NAME "ddr2_dm<2>")
-          (HDL_NAME "ddr2_dm<2>")
-          (PIN AJ32)
+          (NAME "ddr2_dm<0>")
+          (HDL_NAME "ddr2_dm<0>")
+          (PIN AD32)
           (TYPE IO)
           (IOSTANDARD SSTL18_I)
         )
@@ -1506,14 +1492,57 @@
           (IOSTANDARD SSTL18_I)
         )
         (SIGNAL
-          (NAME "ddr2_dm<0>")
-          (HDL_NAME "ddr2_dm<0>")
-          (PIN AD32)
+          (NAME "ddr2_dm<2>")
+          (HDL_NAME "ddr2_dm<2>")
+          (PIN AJ32)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+        (SIGNAL
+          (NAME "ddr2_dm<3>")
+          (HDL_NAME "ddr2_dm<3>")
+          (PIN AB30)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+        (SIGNAL
+          (NAME "ddr2_dm<4>")
+          (HDL_NAME "ddr2_dm<4>")
+          (PIN AA29)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+        (SIGNAL
+          (NAME "ddr2_dm<5>")
+          (HDL_NAME "ddr2_dm<5>")
+          (PIN AK28)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+        (SIGNAL
+          (NAME "ddr2_dm<6>")
+          (HDL_NAME "ddr2_dm<6>")
+          (PIN AH27)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+        (SIGNAL
+          (NAME "ddr2_dm<7>")
+          (HDL_NAME "ddr2_dm<7>")
+          (PIN AP26)
+          (TYPE IO)
+          (IOSTANDARD SSTL18_I)
+        )
+        (SIGNAL
+          (NAME "ddr2_dm<8>")
+          (HDL_NAME "ddr2_dm<8>")
+          (PIN AL25)
           (TYPE IO)
           (IOSTANDARD SSTL18_I)
         )
       )
       (TYPE IO)
+      (IOSTANDARD SSTL18_I)
     )
     (SIGNAL
       (NAME ddr2_dq)
@@ -2026,6 +2055,7 @@
         )
       )
       (TYPE IO)
+      (IOSTANDARD SSTL18_II)
     )
     (SIGNAL
       (NAME ddr2_dqs_n_ddr2_dqs)
@@ -2033,67 +2063,13 @@
       (DIR NONE)
       (ELEMENTS
         (SIGNAL
-          (NAME "ddr2_dqs_n_ddr2_dqs<8>")
-          (HDL_NAME "ddr2_dqs_n_ddr2_dqs<8>")
-          (PIN AM26 AL26)
+          (NAME "ddr2_dqs_n_ddr2_dqs<0>")
+          (HDL_NAME "ddr2_dqs_n_ddr2_dqs<0>")
+          (PIN AF33 AE33)
           (TYPE DIFF)
           (IOSTANDARD DIFF_SSTL18_II)
-          (SIG_P "ddr2_dqs<8>")
-          (SIG_N "ddr2_dqs_n<8>")
-        )
-        (SIGNAL
-          (NAME "ddr2_dqs_n_ddr2_dqs<7>")
-          (HDL_NAME "ddr2_dqs_n_ddr2_dqs<7>")
-          (PIN AN25 AM25)
-          (TYPE DIFF)
-          (IOSTANDARD DIFF_SSTL18_II)
-          (SIG_P "ddr2_dqs<7>")
-          (SIG_N "ddr2_dqs_n<7>")
-        )
-        (SIGNAL
-          (NAME "ddr2_dqs_n_ddr2_dqs<6>")
-          (HDL_NAME "ddr2_dqs_n_ddr2_dqs<6>")
-          (PIN AK29 AJ29)
-          (TYPE DIFF)
-          (IOSTANDARD DIFF_SSTL18_II)
-          (SIG_P "ddr2_dqs<6>")
-          (SIG_N "ddr2_dqs_n<6>")
-        )
-        (SIGNAL
-          (NAME "ddr2_dqs_n_ddr2_dqs<5>")
-          (HDL_NAME "ddr2_dqs_n_ddr2_dqs<5>")
-          (PIN AK26 AJ27)
-          (TYPE DIFF)
-          (IOSTANDARD DIFF_SSTL18_II)
-          (SIG_P "ddr2_dqs<5>")
-          (SIG_N "ddr2_dqs_n<5>")
-        )
-        (SIGNAL
-          (NAME "ddr2_dqs_n_ddr2_dqs<4>")
-          (HDL_NAME "ddr2_dqs_n_ddr2_dqs<4>")
-          (PIN AB31 AA31)
-          (TYPE DIFF)
-          (IOSTANDARD DIFF_SSTL18_II)
-          (SIG_P "ddr2_dqs<4>")
-          (SIG_N "ddr2_dqs_n<4>")
-        )
-        (SIGNAL
-          (NAME "ddr2_dqs_n_ddr2_dqs<3>")
-          (HDL_NAME "ddr2_dqs_n_ddr2_dqs<3>")
-          (PIN Y28 Y29)
-          (TYPE DIFF)
-          (IOSTANDARD DIFF_SSTL18_II)
-          (SIG_P "ddr2_dqs<3>")
-          (SIG_N "ddr2_dqs_n<3>")
-        )
-        (SIGNAL
-          (NAME "ddr2_dqs_n_ddr2_dqs<2>")
-          (HDL_NAME "ddr2_dqs_n_ddr2_dqs<2>")
-          (PIN AH34 AJ34)
-          (TYPE DIFF)
-          (IOSTANDARD DIFF_SSTL18_II)
-          (SIG_P "ddr2_dqs<2>")
-          (SIG_N "ddr2_dqs_n<2>")
+          (SIG_P ddr2_dqs_0)
+          (SIG_N ddr2_dqs_n_0)
         )
         (SIGNAL
           (NAME "ddr2_dqs_n_ddr2_dqs<1>")
@@ -2101,22 +2077,77 @@
           (PIN AF34 AE34)
           (TYPE DIFF)
           (IOSTANDARD DIFF_SSTL18_II)
-          (SIG_P "ddr2_dqs<1>")
-          (SIG_N "ddr2_dqs_n<1>")
+          (SIG_P ddr2_dqs_1)
+          (SIG_N ddr2_dqs_n_1)
         )
         (SIGNAL
-          (NAME "ddr2_dqs_n_ddr2_dqs<0>")
-          (HDL_NAME "ddr2_dqs_n_ddr2_dqs<0>")
-          (PIN AF33 AE33)
+          (NAME "ddr2_dqs_n_ddr2_dqs<2>")
+          (HDL_NAME "ddr2_dqs_n_ddr2_dqs<2>")
+          (PIN AH34 AJ34)
           (TYPE DIFF)
           (IOSTANDARD DIFF_SSTL18_II)
-          (SIG_P "ddr2_dqs<0>")
-          (SIG_N "ddr2_dqs_n<0>")
+          (SIG_P ddr2_dqs_2)
+          (SIG_N ddr2_dqs_n_2)
+        )
+        (SIGNAL
+          (NAME "ddr2_dqs_n_ddr2_dqs<3>")
+          (HDL_NAME "ddr2_dqs_n_ddr2_dqs<3>")
+          (PIN Y28 Y29)
+          (TYPE DIFF)
+          (IOSTANDARD DIFF_SSTL18_II)
+          (SIG_P ddr2_dqs_3)
+          (SIG_N ddr2_dqs_n_3)
+        )
+        (SIGNAL
+          (NAME "ddr2_dqs_n_ddr2_dqs<4>")
+          (HDL_NAME "ddr2_dqs_n_ddr2_dqs<4>")
+          (PIN AB31 AA31)
+          (TYPE DIFF)
+          (IOSTANDARD DIFF_SSTL18_II)
+          (SIG_P ddr2_dqs_4)
+          (SIG_N ddr2_dqs_n_4)
+        )
+        (SIGNAL
+          (NAME "ddr2_dqs_n_ddr2_dqs<5>")
+          (HDL_NAME "ddr2_dqs_n_ddr2_dqs<5>")
+          (PIN AK26 AJ27)
+          (TYPE DIFF)
+          (IOSTANDARD DIFF_SSTL18_II)
+          (SIG_P ddr2_dqs_5)
+          (SIG_N ddr2_dqs_n_5)
+        )
+        (SIGNAL
+          (NAME "ddr2_dqs_n_ddr2_dqs<6>")
+          (HDL_NAME "ddr2_dqs_n_ddr2_dqs<6>")
+          (PIN AK29 AJ29)
+          (TYPE DIFF)
+          (IOSTANDARD DIFF_SSTL18_II)
+          (SIG_P ddr2_dqs_6)
+          (SIG_N ddr2_dqs_n_6)
+        )
+        (SIGNAL
+          (NAME "ddr2_dqs_n_ddr2_dqs<7>")
+          (HDL_NAME "ddr2_dqs_n_ddr2_dqs<7>")
+          (PIN AN25 AM25)
+          (TYPE DIFF)
+          (IOSTANDARD DIFF_SSTL18_II)
+          (SIG_P ddr2_dqs_7)
+          (SIG_N ddr2_dqs_n_7)
+        )
+        (SIGNAL
+          (NAME "ddr2_dqs_n_ddr2_dqs<8>")
+          (HDL_NAME "ddr2_dqs_n_ddr2_dqs<8>")
+          (PIN AM26 AL26)
+          (TYPE DIFF)
+          (IOSTANDARD DIFF_SSTL18_II)
+          (SIG_P ddr2_dqs_8)
+          (SIG_N ddr2_dqs_n_8)
         )
       )
       (TYPE DIFF)
-      (SIG_P ddr2_dqs)
-      (SIG_N ddr2_dqs_n)
+      (IOSTANDARD DIFF_SSTL18_II)
+      (SIG_P ddr2_dqs_n_ddr2_dqs_P)
+      (SIG_N ddr2_dqs_n_ddr2_dqs_N)
     )
     (SIGNAL
       (NAME ddr2_error)
@@ -2125,21 +2156,6 @@
       (PIN AP19)
       (TYPE IO)
       (IOSTANDARD LVCMOS18)
-    )
-    (SIGNAL
-      (NAME ddr2_odt)
-      (HDL_NAME ddr2_odt)
-      (DIR NONE)
-      (ELEMENTS
-        (SIGNAL
-          (NAME "ddr2_odt<0>")
-          (HDL_NAME "ddr2_odt<0>")
-          (PIN AJ30)
-          (TYPE IO)
-          (IOSTANDARD SSTL18_I)
-        )
-      )
-      (TYPE IO)
     )
     (SIGNAL
       (NAME ddr2_phy_init_done)
@@ -4920,7 +4936,7 @@
         )
         (TEXT
           (PROPERTY BANKS)
-          (POSITION 82550 382016)
+          (POSITION 90170 382016)
           (FONT FONT_0 10)
         )
         (PORT
@@ -6241,7 +6257,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 22)
+          (SLOT 20)
           (CUSTOMLABEL "DDR2_DQ<2>")
           (ELEMENTS
             (LINE
@@ -6313,7 +6329,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 23)
+          (SLOT 21)
           (CUSTOMLABEL "DDR2_DQ<3>")
           (ELEMENTS
             (LINE
@@ -6385,7 +6401,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 24)
+          (SLOT 22)
           (CUSTOMLABEL "DDR2_DQ<4>")
           (ELEMENTS
             (LINE
@@ -6457,7 +6473,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 25)
+          (SLOT 23)
           (CUSTOMLABEL "DDR2_DQ<5>")
           (ELEMENTS
             (LINE
@@ -6529,7 +6545,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 26)
+          (SLOT 24)
           (CUSTOMLABEL "DDR2_DQ<6>")
           (ELEMENTS
             (LINE
@@ -6601,7 +6617,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 27)
+          (SLOT 25)
           (CUSTOMLABEL "DDR2_DQ<7>")
           (ELEMENTS
             (LINE
@@ -6673,7 +6689,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 28)
+          (SLOT 26)
           (CUSTOMLABEL "DDR2_DQ<8>")
           (ELEMENTS
             (LINE
@@ -6745,7 +6761,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 29)
+          (SLOT 27)
           (CUSTOMLABEL "DDR2_DQ<9>")
           (ELEMENTS
             (LINE
@@ -6817,7 +6833,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 30)
+          (SLOT 28)
           (CUSTOMLABEL "DDR2_DQ<10>")
           (ELEMENTS
             (LINE
@@ -6889,7 +6905,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 31)
+          (SLOT 29)
           (CUSTOMLABEL "DDR2_DQ<11>")
           (ELEMENTS
             (LINE
@@ -6961,7 +6977,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 32)
+          (SLOT 30)
           (CUSTOMLABEL "DDR2_DQ<12>")
           (ELEMENTS
             (LINE
@@ -7033,7 +7049,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 33)
+          (SLOT 31)
           (CUSTOMLABEL "DDR2_DQ<13>")
           (ELEMENTS
             (LINE
@@ -7105,7 +7121,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 34)
+          (SLOT 32)
           (CUSTOMLABEL "DDR2_DQ<14>")
           (ELEMENTS
             (LINE
@@ -7177,7 +7193,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 35)
+          (SLOT 33)
           (CUSTOMLABEL "DDR2_DQ<15>")
           (ELEMENTS
             (LINE
@@ -7249,7 +7265,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 36)
+          (SLOT 34)
           (CUSTOMLABEL "DDR2_DQ<16>")
           (ELEMENTS
             (LINE
@@ -7321,7 +7337,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 37)
+          (SLOT 35)
           (CUSTOMLABEL "DDR2_DQ<17>")
           (ELEMENTS
             (LINE
@@ -7393,7 +7409,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 38)
+          (SLOT 36)
           (CUSTOMLABEL "DDR2_DQ<18>")
           (ELEMENTS
             (LINE
@@ -7465,7 +7481,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 39)
+          (SLOT 37)
           (CUSTOMLABEL "DDR2_DQ<19>")
           (ELEMENTS
             (LINE
@@ -7537,7 +7553,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 40)
+          (SLOT 38)
           (CUSTOMLABEL "DDR2_DQ<20>")
           (ELEMENTS
             (LINE
@@ -7609,7 +7625,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 41)
+          (SLOT 39)
           (CUSTOMLABEL "DDR2_DQ<21>")
           (ELEMENTS
             (LINE
@@ -7681,7 +7697,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 42)
+          (SLOT 40)
           (CUSTOMLABEL "DDR2_DQ<22>")
           (ELEMENTS
             (LINE
@@ -7753,7 +7769,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 43)
+          (SLOT 41)
           (CUSTOMLABEL "DDR2_DQ<23>")
           (ELEMENTS
             (LINE
@@ -7825,7 +7841,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 44)
+          (SLOT 42)
           (CUSTOMLABEL "DDR2_DQ<24>")
           (ELEMENTS
             (LINE
@@ -7897,7 +7913,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 45)
+          (SLOT 43)
           (CUSTOMLABEL "DDR2_DQ<25>")
           (ELEMENTS
             (LINE
@@ -7969,7 +7985,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 46)
+          (SLOT 44)
           (CUSTOMLABEL "DDR2_DQ<26>")
           (ELEMENTS
             (LINE
@@ -8041,7 +8057,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 47)
+          (SLOT 45)
           (CUSTOMLABEL "DDR2_DQ<27>")
           (ELEMENTS
             (LINE
@@ -8113,7 +8129,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 48)
+          (SLOT 46)
           (CUSTOMLABEL "DDR2_DQ<28>")
           (ELEMENTS
             (LINE
@@ -8185,7 +8201,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 49)
+          (SLOT 47)
           (CUSTOMLABEL "DDR2_DQ<29>")
           (ELEMENTS
             (LINE
@@ -8257,7 +8273,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 50)
+          (SLOT 48)
           (CUSTOMLABEL "DDR2_DQ<30>")
           (ELEMENTS
             (LINE
@@ -8329,7 +8345,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 51)
+          (SLOT 49)
           (CUSTOMLABEL "DDR2_DQ<31>")
           (ELEMENTS
             (LINE
@@ -8401,7 +8417,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 52)
+          (SLOT 50)
           (CUSTOMLABEL "DDR2_DQ<32>")
           (ELEMENTS
             (LINE
@@ -8473,7 +8489,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 53)
+          (SLOT 51)
           (CUSTOMLABEL "DDR2_DQ<33>")
           (ELEMENTS
             (LINE
@@ -8545,7 +8561,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 54)
+          (SLOT 52)
           (CUSTOMLABEL "DDR2_DQ<34>")
           (ELEMENTS
             (LINE
@@ -8617,7 +8633,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 55)
+          (SLOT 53)
           (CUSTOMLABEL "DDR2_DQ<35>")
           (ELEMENTS
             (LINE
@@ -8689,7 +8705,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 56)
+          (SLOT 54)
           (CUSTOMLABEL "DDR2_DQ<36>")
           (ELEMENTS
             (LINE
@@ -8761,7 +8777,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 57)
+          (SLOT 55)
           (CUSTOMLABEL "DDR2_DQ<37>")
           (ELEMENTS
             (LINE
@@ -8833,7 +8849,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 58)
+          (SLOT 56)
           (CUSTOMLABEL "DDR2_DQ<38>")
           (ELEMENTS
             (LINE
@@ -8905,7 +8921,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 59)
+          (SLOT 57)
           (CUSTOMLABEL "DDR2_DQ<39>")
           (ELEMENTS
             (LINE
@@ -8977,7 +8993,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 60)
+          (SLOT 58)
           (CUSTOMLABEL "DDR2_DQ<40>")
           (ELEMENTS
             (LINE
@@ -9049,7 +9065,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 61)
+          (SLOT 59)
           (CUSTOMLABEL "DDR2_DQ<41>")
           (ELEMENTS
             (LINE
@@ -9121,7 +9137,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 62)
+          (SLOT 60)
           (CUSTOMLABEL "DDR2_DQ<42>")
           (ELEMENTS
             (LINE
@@ -9193,7 +9209,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 63)
+          (SLOT 61)
           (CUSTOMLABEL "DDR2_DQ<43>")
           (ELEMENTS
             (LINE
@@ -9265,7 +9281,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 64)
+          (SLOT 62)
           (CUSTOMLABEL "DDR2_DQ<44>")
           (ELEMENTS
             (LINE
@@ -9337,7 +9353,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 65)
+          (SLOT 63)
           (CUSTOMLABEL "DDR2_DQ<45>")
           (ELEMENTS
             (LINE
@@ -9409,7 +9425,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 66)
+          (SLOT 64)
           (CUSTOMLABEL "DDR2_DQ<46>")
           (ELEMENTS
             (LINE
@@ -9481,7 +9497,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 67)
+          (SLOT 65)
           (CUSTOMLABEL "DDR2_DQ<47>")
           (ELEMENTS
             (LINE
@@ -9553,7 +9569,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 68)
+          (SLOT 66)
           (CUSTOMLABEL "DDR2_DQ<48>")
           (ELEMENTS
             (LINE
@@ -9625,7 +9641,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 69)
+          (SLOT 67)
           (CUSTOMLABEL "DDR2_DQ<49>")
           (ELEMENTS
             (LINE
@@ -9697,7 +9713,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 70)
+          (SLOT 68)
           (CUSTOMLABEL "DDR2_DQ<50>")
           (ELEMENTS
             (LINE
@@ -9769,7 +9785,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 71)
+          (SLOT 69)
           (CUSTOMLABEL "DDR2_DQ<51>")
           (ELEMENTS
             (LINE
@@ -9841,7 +9857,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 72)
+          (SLOT 70)
           (CUSTOMLABEL "DDR2_DQ<52>")
           (ELEMENTS
             (LINE
@@ -9913,7 +9929,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 73)
+          (SLOT 71)
           (CUSTOMLABEL "DDR2_DQ<53>")
           (ELEMENTS
             (LINE
@@ -9985,7 +10001,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 74)
+          (SLOT 72)
           (CUSTOMLABEL "DDR2_DQ<54>")
           (ELEMENTS
             (LINE
@@ -10057,7 +10073,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 75)
+          (SLOT 73)
           (CUSTOMLABEL "DDR2_DQ<55>")
           (ELEMENTS
             (LINE
@@ -10129,7 +10145,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 76)
+          (SLOT 74)
           (CUSTOMLABEL "DDR2_DQ<56>")
           (ELEMENTS
             (LINE
@@ -10201,7 +10217,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 77)
+          (SLOT 75)
           (CUSTOMLABEL "DDR2_DQ<57>")
           (ELEMENTS
             (LINE
@@ -10273,7 +10289,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 78)
+          (SLOT 76)
           (CUSTOMLABEL "DDR2_DQ<58>")
           (ELEMENTS
             (LINE
@@ -10345,7 +10361,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 79)
+          (SLOT 77)
           (CUSTOMLABEL "DDR2_DQ<59>")
           (ELEMENTS
             (LINE
@@ -10417,7 +10433,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 80)
+          (SLOT 78)
           (CUSTOMLABEL "DDR2_DQ<60>")
           (ELEMENTS
             (LINE
@@ -10489,7 +10505,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 81)
+          (SLOT 79)
           (CUSTOMLABEL "DDR2_DQ<61>")
           (ELEMENTS
             (LINE
@@ -10561,7 +10577,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 82)
+          (SLOT 80)
           (CUSTOMLABEL "DDR2_DQ<62>")
           (ELEMENTS
             (LINE
@@ -10633,7 +10649,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 83)
+          (SLOT 81)
           (CUSTOMLABEL "DDR2_DQ<63>")
           (ELEMENTS
             (LINE
@@ -10705,7 +10721,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 84)
+          (SLOT 82)
           (CUSTOMLABEL "DDR2_DQ<64>")
           (ELEMENTS
             (LINE
@@ -10777,7 +10793,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 85)
+          (SLOT 83)
           (CUSTOMLABEL "DDR2_DQ<65>")
           (ELEMENTS
             (LINE
@@ -10849,7 +10865,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 86)
+          (SLOT 84)
           (CUSTOMLABEL "DDR2_DQ<66>")
           (ELEMENTS
             (LINE
@@ -10921,7 +10937,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 87)
+          (SLOT 85)
           (CUSTOMLABEL "DDR2_DQ<67>")
           (ELEMENTS
             (LINE
@@ -10993,7 +11009,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 88)
+          (SLOT 86)
           (CUSTOMLABEL "DDR2_DQ<68>")
           (ELEMENTS
             (LINE
@@ -11065,7 +11081,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 89)
+          (SLOT 87)
           (CUSTOMLABEL "DDR2_DQ<69>")
           (ELEMENTS
             (LINE
@@ -11137,7 +11153,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 90)
+          (SLOT 88)
           (CUSTOMLABEL "DDR2_DQ<70>")
           (ELEMENTS
             (LINE
@@ -11209,7 +11225,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 91)
+          (SLOT 89)
           (CUSTOMLABEL "DDR2_DQ<71>")
           (ELEMENTS
             (LINE
@@ -11275,226 +11291,18 @@
           (FONT FONT_0 10)
         )
         (PORT
-          (TYPE SIGNAL)
-          (NAME "ddr2_cs_n<0>")
-          (POSITION -10160 116840)
-          (EXTTYPE BI)
-          (LENGTH 10160)
-          (SLOT 92)
-          (CUSTOMLABEL "DDR2_CS_N<0>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AF30)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "ddr2_cs_n(0)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "ddr2_cs_n(0)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AF30)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AF30)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "ddr2_cs_n<0>")
-          (POSITION 762 116840)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER "ddr2_cs_n<0>")
-          (POSITION -10160 116840)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME ddr2_cas_n)
-          (POSITION -10160 127000)
-          (EXTTYPE BI)
-          (LENGTH 10160)
-          (SLOT 93)
-          (CUSTOMLABEL DDR2_CAS_N)
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AK31)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE ddr2_cas_n)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE ddr2_cas_n)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AK31)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AK31)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL ddr2_cas_n)
-          (POSITION 762 127000)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER ddr2_cas_n)
-          (POSITION -10160 127000)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME ddr2_ras_n)
-          (POSITION -10160 137160)
-          (EXTTYPE BI)
-          (LENGTH 10160)
-          (SLOT 94)
-          (CUSTOMLABEL DDR2_RAS_N)
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AJ31)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE ddr2_ras_n)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE ddr2_ras_n)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AJ31)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AJ31)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL ddr2_ras_n)
-          (POSITION 762 137160)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER ddr2_ras_n)
-          (POSITION -10160 137160)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNALPN)
-          (NAME "ddr2_dqs<8>")
+          (TYPE PIN)
+          (NAME AM26)
           (POSITION -10160 147320)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 95)
+          (SLOT 90)
           (CUSTOMLABEL "DDR2_DQS<8>")
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
             )
           )
-          (DIFF "ddr2_dqs_n_ddr2_dqs<8>")
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME "#")
@@ -11514,12 +11322,12 @@
             )
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE "ddr2_dqs(8)")
+              (VALUE ddr2_dqs_8)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE "ddr2_dqs(8)")
+              (VALUE ddr2_dqs_8)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -11540,31 +11348,30 @@
           )
         )
         (TEXT
-          (LABEL "ddr2_dqs<8>")
+          (LABEL AM26)
           (POSITION 762 147320)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
-          (PINNUMBER "ddr2_dqs<8>")
+          (PINNUMBER AM26)
           (POSITION -10160 147320)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
         )
         (PORT
-          (TYPE SIGNALPN)
-          (NAME "ddr2_dqs_n<8>")
+          (TYPE PIN)
+          (NAME AL26)
           (POSITION -10160 152400)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 96)
+          (SLOT 91)
           (CUSTOMLABEL "DDR2_DQS_N<8>")
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
             )
           )
-          (DIFF "ddr2_dqs_n_ddr2_dqs<8>")
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME "#")
@@ -11584,12 +11391,12 @@
             )
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE "ddr2_dqs_n(8)")
+              (VALUE ddr2_dqs_n_8)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE "ddr2_dqs_n(8)")
+              (VALUE ddr2_dqs_n_8)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -11610,31 +11417,30 @@
           )
         )
         (TEXT
-          (LABEL "ddr2_dqs_n<8>")
+          (LABEL AL26)
           (POSITION 762 152400)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
-          (PINNUMBER "ddr2_dqs_n<8>")
+          (PINNUMBER AL26)
           (POSITION -10160 152400)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
         )
         (PORT
-          (TYPE SIGNALPN)
-          (NAME "ddr2_dqs<7>")
+          (TYPE PIN)
+          (NAME AN25)
           (POSITION -10160 157480)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 97)
+          (SLOT 92)
           (CUSTOMLABEL "DDR2_DQS<7>")
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
             )
           )
-          (DIFF "ddr2_dqs_n_ddr2_dqs<7>")
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME "#")
@@ -11654,12 +11460,12 @@
             )
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE "ddr2_dqs(7)")
+              (VALUE ddr2_dqs_7)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE "ddr2_dqs(7)")
+              (VALUE ddr2_dqs_7)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -11680,31 +11486,30 @@
           )
         )
         (TEXT
-          (LABEL "ddr2_dqs<7>")
+          (LABEL AN25)
           (POSITION 762 157480)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
-          (PINNUMBER "ddr2_dqs<7>")
+          (PINNUMBER AN25)
           (POSITION -10160 157480)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
         )
         (PORT
-          (TYPE SIGNALPN)
-          (NAME "ddr2_dqs_n<7>")
+          (TYPE PIN)
+          (NAME AM25)
           (POSITION -10160 162560)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 98)
+          (SLOT 93)
           (CUSTOMLABEL "DDR2_DQS_N<7>")
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
             )
           )
-          (DIFF "ddr2_dqs_n_ddr2_dqs<7>")
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME "#")
@@ -11724,12 +11529,12 @@
             )
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE "ddr2_dqs_n(7)")
+              (VALUE ddr2_dqs_n_7)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE "ddr2_dqs_n(7)")
+              (VALUE ddr2_dqs_n_7)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -11750,31 +11555,30 @@
           )
         )
         (TEXT
-          (LABEL "ddr2_dqs_n<7>")
+          (LABEL AM25)
           (POSITION 762 162560)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
-          (PINNUMBER "ddr2_dqs_n<7>")
+          (PINNUMBER AM25)
           (POSITION -10160 162560)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
         )
         (PORT
-          (TYPE SIGNALPN)
-          (NAME "ddr2_dqs<6>")
+          (TYPE PIN)
+          (NAME AK29)
           (POSITION -10160 167640)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 99)
+          (SLOT 94)
           (CUSTOMLABEL "DDR2_DQS<6>")
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
             )
           )
-          (DIFF "ddr2_dqs_n_ddr2_dqs<6>")
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME "#")
@@ -11794,12 +11598,12 @@
             )
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE "ddr2_dqs(6)")
+              (VALUE ddr2_dqs_6)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE "ddr2_dqs(6)")
+              (VALUE ddr2_dqs_6)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -11820,31 +11624,30 @@
           )
         )
         (TEXT
-          (LABEL "ddr2_dqs<6>")
+          (LABEL AK29)
           (POSITION 762 167640)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
-          (PINNUMBER "ddr2_dqs<6>")
+          (PINNUMBER AK29)
           (POSITION -10160 167640)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
         )
         (PORT
-          (TYPE SIGNALPN)
-          (NAME "ddr2_dqs_n<6>")
+          (TYPE PIN)
+          (NAME AJ29)
           (POSITION -10160 172720)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 100)
+          (SLOT 95)
           (CUSTOMLABEL "DDR2_DQS_N<6>")
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
             )
           )
-          (DIFF "ddr2_dqs_n_ddr2_dqs<6>")
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME "#")
@@ -11864,12 +11667,12 @@
             )
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE "ddr2_dqs_n(6)")
+              (VALUE ddr2_dqs_n_6)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE "ddr2_dqs_n(6)")
+              (VALUE ddr2_dqs_n_6)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -11890,31 +11693,30 @@
           )
         )
         (TEXT
-          (LABEL "ddr2_dqs_n<6>")
+          (LABEL AJ29)
           (POSITION 762 172720)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
-          (PINNUMBER "ddr2_dqs_n<6>")
+          (PINNUMBER AJ29)
           (POSITION -10160 172720)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
         )
         (PORT
-          (TYPE SIGNALPN)
-          (NAME "ddr2_dqs<5>")
+          (TYPE PIN)
+          (NAME AK26)
           (POSITION -10160 177800)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 101)
+          (SLOT 96)
           (CUSTOMLABEL "DDR2_DQS<5>")
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
             )
           )
-          (DIFF "ddr2_dqs_n_ddr2_dqs<5>")
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME "#")
@@ -11934,12 +11736,12 @@
             )
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE "ddr2_dqs(5)")
+              (VALUE ddr2_dqs_5)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE "ddr2_dqs(5)")
+              (VALUE ddr2_dqs_5)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -11960,31 +11762,30 @@
           )
         )
         (TEXT
-          (LABEL "ddr2_dqs<5>")
+          (LABEL AK26)
           (POSITION 762 177800)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
-          (PINNUMBER "ddr2_dqs<5>")
+          (PINNUMBER AK26)
           (POSITION -10160 177800)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
         )
         (PORT
-          (TYPE SIGNALPN)
-          (NAME "ddr2_dqs_n<5>")
+          (TYPE PIN)
+          (NAME AJ27)
           (POSITION -10160 182880)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 102)
+          (SLOT 97)
           (CUSTOMLABEL "DDR2_DQS_N<5>")
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
             )
           )
-          (DIFF "ddr2_dqs_n_ddr2_dqs<5>")
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME "#")
@@ -12004,12 +11805,12 @@
             )
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE "ddr2_dqs_n(5)")
+              (VALUE ddr2_dqs_n_5)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE "ddr2_dqs_n(5)")
+              (VALUE ddr2_dqs_n_5)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -12030,31 +11831,30 @@
           )
         )
         (TEXT
-          (LABEL "ddr2_dqs_n<5>")
+          (LABEL AJ27)
           (POSITION 762 182880)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
-          (PINNUMBER "ddr2_dqs_n<5>")
+          (PINNUMBER AJ27)
           (POSITION -10160 182880)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
         )
         (PORT
-          (TYPE SIGNALPN)
-          (NAME "ddr2_dqs<4>")
+          (TYPE PIN)
+          (NAME AB31)
           (POSITION -10160 187960)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 103)
+          (SLOT 98)
           (CUSTOMLABEL "DDR2_DQS<4>")
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
             )
           )
-          (DIFF "ddr2_dqs_n_ddr2_dqs<4>")
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME "#")
@@ -12074,12 +11874,12 @@
             )
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE "ddr2_dqs(4)")
+              (VALUE ddr2_dqs_4)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE "ddr2_dqs(4)")
+              (VALUE ddr2_dqs_4)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -12100,31 +11900,30 @@
           )
         )
         (TEXT
-          (LABEL "ddr2_dqs<4>")
+          (LABEL AB31)
           (POSITION 762 187960)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
-          (PINNUMBER "ddr2_dqs<4>")
+          (PINNUMBER AB31)
           (POSITION -10160 187960)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
         )
         (PORT
-          (TYPE SIGNALPN)
-          (NAME "ddr2_dqs_n<4>")
+          (TYPE PIN)
+          (NAME AA31)
           (POSITION -10160 193040)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 104)
+          (SLOT 99)
           (CUSTOMLABEL "DDR2_DQS_N<4>")
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
             )
           )
-          (DIFF "ddr2_dqs_n_ddr2_dqs<4>")
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME "#")
@@ -12144,12 +11943,12 @@
             )
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE "ddr2_dqs_n(4)")
+              (VALUE ddr2_dqs_n_4)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE "ddr2_dqs_n(4)")
+              (VALUE ddr2_dqs_n_4)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -12170,31 +11969,30 @@
           )
         )
         (TEXT
-          (LABEL "ddr2_dqs_n<4>")
+          (LABEL AA31)
           (POSITION 762 193040)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
-          (PINNUMBER "ddr2_dqs_n<4>")
+          (PINNUMBER AA31)
           (POSITION -10160 193040)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
         )
         (PORT
-          (TYPE SIGNALPN)
-          (NAME "ddr2_dqs<3>")
+          (TYPE PIN)
+          (NAME Y28)
           (POSITION -10160 198120)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 105)
+          (SLOT 100)
           (CUSTOMLABEL "DDR2_DQS<3>")
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
             )
           )
-          (DIFF "ddr2_dqs_n_ddr2_dqs<3>")
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME "#")
@@ -12214,12 +12012,12 @@
             )
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE "ddr2_dqs(3)")
+              (VALUE ddr2_dqs_3)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE "ddr2_dqs(3)")
+              (VALUE ddr2_dqs_3)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -12240,31 +12038,30 @@
           )
         )
         (TEXT
-          (LABEL "ddr2_dqs<3>")
+          (LABEL Y28)
           (POSITION 762 198120)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
-          (PINNUMBER "ddr2_dqs<3>")
+          (PINNUMBER Y28)
           (POSITION -10160 198120)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
         )
         (PORT
-          (TYPE SIGNALPN)
-          (NAME "ddr2_dqs_n<3>")
+          (TYPE PIN)
+          (NAME Y29)
           (POSITION -10160 203200)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 106)
+          (SLOT 101)
           (CUSTOMLABEL "DDR2_DQS_N<3>")
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
             )
           )
-          (DIFF "ddr2_dqs_n_ddr2_dqs<3>")
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME "#")
@@ -12284,12 +12081,12 @@
             )
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE "ddr2_dqs_n(3)")
+              (VALUE ddr2_dqs_n_3)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE "ddr2_dqs_n(3)")
+              (VALUE ddr2_dqs_n_3)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -12310,31 +12107,30 @@
           )
         )
         (TEXT
-          (LABEL "ddr2_dqs_n<3>")
+          (LABEL Y29)
           (POSITION 762 203200)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
-          (PINNUMBER "ddr2_dqs_n<3>")
+          (PINNUMBER Y29)
           (POSITION -10160 203200)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
         )
         (PORT
-          (TYPE SIGNALPN)
-          (NAME "ddr2_dqs<2>")
+          (TYPE PIN)
+          (NAME AH34)
           (POSITION -10160 208280)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 107)
+          (SLOT 102)
           (CUSTOMLABEL "DDR2_DQS<2>")
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
             )
           )
-          (DIFF "ddr2_dqs_n_ddr2_dqs<2>")
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME "#")
@@ -12354,12 +12150,12 @@
             )
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE "ddr2_dqs(2)")
+              (VALUE ddr2_dqs_2)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE "ddr2_dqs(2)")
+              (VALUE ddr2_dqs_2)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -12380,31 +12176,30 @@
           )
         )
         (TEXT
-          (LABEL "ddr2_dqs<2>")
+          (LABEL AH34)
           (POSITION 762 208280)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
-          (PINNUMBER "ddr2_dqs<2>")
+          (PINNUMBER AH34)
           (POSITION -10160 208280)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
         )
         (PORT
-          (TYPE SIGNALPN)
-          (NAME "ddr2_dqs_n<2>")
+          (TYPE PIN)
+          (NAME AJ34)
           (POSITION -10160 213360)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 108)
+          (SLOT 103)
           (CUSTOMLABEL "DDR2_DQS_N<2>")
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
             )
           )
-          (DIFF "ddr2_dqs_n_ddr2_dqs<2>")
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME "#")
@@ -12424,12 +12219,12 @@
             )
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE "ddr2_dqs_n(2)")
+              (VALUE ddr2_dqs_n_2)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE "ddr2_dqs_n(2)")
+              (VALUE ddr2_dqs_n_2)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -12450,31 +12245,30 @@
           )
         )
         (TEXT
-          (LABEL "ddr2_dqs_n<2>")
+          (LABEL AJ34)
           (POSITION 762 213360)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
-          (PINNUMBER "ddr2_dqs_n<2>")
+          (PINNUMBER AJ34)
           (POSITION -10160 213360)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
         )
         (PORT
-          (TYPE SIGNALPN)
-          (NAME "ddr2_dqs<1>")
+          (TYPE PIN)
+          (NAME AF34)
           (POSITION -10160 218440)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 109)
+          (SLOT 104)
           (CUSTOMLABEL "DDR2_DQS<1>")
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
             )
           )
-          (DIFF "ddr2_dqs_n_ddr2_dqs<1>")
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME "#")
@@ -12494,12 +12288,12 @@
             )
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE "ddr2_dqs(1)")
+              (VALUE ddr2_dqs_1)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE "ddr2_dqs(1)")
+              (VALUE ddr2_dqs_1)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -12520,31 +12314,30 @@
           )
         )
         (TEXT
-          (LABEL "ddr2_dqs<1>")
+          (LABEL AF34)
           (POSITION 762 218440)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
-          (PINNUMBER "ddr2_dqs<1>")
+          (PINNUMBER AF34)
           (POSITION -10160 218440)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
         )
         (PORT
-          (TYPE SIGNALPN)
-          (NAME "ddr2_dqs_n<1>")
+          (TYPE PIN)
+          (NAME AE34)
           (POSITION -10160 223520)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 110)
+          (SLOT 105)
           (CUSTOMLABEL "DDR2_DQS_N<1>")
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
             )
           )
-          (DIFF "ddr2_dqs_n_ddr2_dqs<1>")
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME "#")
@@ -12564,12 +12357,12 @@
             )
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE "ddr2_dqs_n(1)")
+              (VALUE ddr2_dqs_n_1)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE "ddr2_dqs_n(1)")
+              (VALUE ddr2_dqs_n_1)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -12590,31 +12383,30 @@
           )
         )
         (TEXT
-          (LABEL "ddr2_dqs_n<1>")
+          (LABEL AE34)
           (POSITION 762 223520)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
-          (PINNUMBER "ddr2_dqs_n<1>")
+          (PINNUMBER AE34)
           (POSITION -10160 223520)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
         )
         (PORT
-          (TYPE SIGNALPN)
-          (NAME "ddr2_dqs<0>")
+          (TYPE PIN)
+          (NAME AF33)
           (POSITION -10160 228600)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 111)
+          (SLOT 106)
           (CUSTOMLABEL "DDR2_DQS<0>")
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
             )
           )
-          (DIFF "ddr2_dqs_n_ddr2_dqs<0>")
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME "#")
@@ -12634,12 +12426,12 @@
             )
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE "ddr2_dqs(0)")
+              (VALUE ddr2_dqs_0)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE "ddr2_dqs(0)")
+              (VALUE ddr2_dqs_0)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -12660,31 +12452,30 @@
           )
         )
         (TEXT
-          (LABEL "ddr2_dqs<0>")
+          (LABEL AF33)
           (POSITION 762 228600)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
-          (PINNUMBER "ddr2_dqs<0>")
+          (PINNUMBER AF33)
           (POSITION -10160 228600)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
         )
         (PORT
-          (TYPE SIGNALPN)
-          (NAME "ddr2_dqs_n<0>")
+          (TYPE PIN)
+          (NAME AE33)
           (POSITION -10160 233680)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 112)
+          (SLOT 107)
           (CUSTOMLABEL "DDR2_DQS_N<0>")
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
             )
           )
-          (DIFF "ddr2_dqs_n_ddr2_dqs<0>")
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME "#")
@@ -12704,12 +12495,12 @@
             )
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE "ddr2_dqs_n(0)")
+              (VALUE ddr2_dqs_n_0)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE "ddr2_dqs_n(0)")
+              (VALUE ddr2_dqs_n_0)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -12730,13 +12521,13 @@
           )
         )
         (TEXT
-          (LABEL "ddr2_dqs_n<0>")
+          (LABEL AE33)
           (POSITION 762 233680)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
-          (PINNUMBER "ddr2_dqs_n<0>")
+          (PINNUMBER AE33)
           (POSITION -10160 233680)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
@@ -12747,7 +12538,7 @@
           (POSITION -10160 243840)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 113)
+          (SLOT 108)
           (CUSTOMLABEL "DDR2_DM<8>")
           (ELEMENTS
             (LINE
@@ -12816,7 +12607,7 @@
           (POSITION -10160 248920)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 114)
+          (SLOT 109)
           (CUSTOMLABEL "DDR2_DM<7>")
           (ELEMENTS
             (LINE
@@ -12885,7 +12676,7 @@
           (POSITION -10160 254000)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 115)
+          (SLOT 110)
           (CUSTOMLABEL "DDR2_DM<6>")
           (ELEMENTS
             (LINE
@@ -12954,7 +12745,7 @@
           (POSITION -10160 259080)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 116)
+          (SLOT 111)
           (CUSTOMLABEL "DDR2_DM<5>")
           (ELEMENTS
             (LINE
@@ -13023,7 +12814,7 @@
           (POSITION -10160 264160)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 117)
+          (SLOT 112)
           (CUSTOMLABEL "DDR2_DM<4>")
           (ELEMENTS
             (LINE
@@ -13092,7 +12883,7 @@
           (POSITION -10160 269240)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 118)
+          (SLOT 113)
           (CUSTOMLABEL "DDR2_DM<3>")
           (ELEMENTS
             (LINE
@@ -13161,7 +12952,7 @@
           (POSITION -10160 274320)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 119)
+          (SLOT 114)
           (CUSTOMLABEL "DDR2_DM<2>")
           (ELEMENTS
             (LINE
@@ -13230,7 +13021,7 @@
           (POSITION -10160 279400)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 120)
+          (SLOT 115)
           (CUSTOMLABEL "DDR2_DM<1>")
           (ELEMENTS
             (LINE
@@ -13299,7 +13090,7 @@
           (POSITION -10160 284480)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 121)
+          (SLOT 116)
           (CUSTOMLABEL "DDR2_DM<0>")
           (ELEMENTS
             (LINE
@@ -13363,1209 +13154,13 @@
           (FONT FONT_0 10)
         )
         (PORT
-          (TYPE SIGNALPN)
-          (NAME "ddr2_ck<0>")
-          (POSITION -10160 294640)
-          (EXTTYPE BI)
-          (LENGTH 10160)
-          (SLOT 122)
-          (CUSTOMLABEL "DDR2_CK<0>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (DIFF "ddr2_ck_n_ddr2_ck<0>")
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AD24)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "ddr2_ck(0)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "ddr2_ck(0)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AD24)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AD24)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "ddr2_ck<0>")
-          (POSITION 762 294640)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER "ddr2_ck<0>")
-          (POSITION -10160 294640)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNALPN)
-          (NAME "ddr2_ck_n<0>")
-          (POSITION -10160 299720)
-          (EXTTYPE BI)
-          (LENGTH 10160)
-          (SLOT 123)
-          (CUSTOMLABEL "DDR2_CK_N<0>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (DIFF "ddr2_ck_n_ddr2_ck<0>")
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AE24)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "ddr2_ck_n(0)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "ddr2_ck_n(0)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AE24)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AE24)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "ddr2_ck_n<0>")
-          (POSITION 762 299720)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER "ddr2_ck_n<0>")
-          (POSITION -10160 299720)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "ddr2_cke<0>")
-          (POSITION -10160 309880)
-          (EXTTYPE BI)
-          (LENGTH 10160)
-          (SLOT 124)
-          (CUSTOMLABEL "DDR2_CKE<0>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AH30)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "ddr2_cke(0)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "ddr2_cke(0)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AH30)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AH30)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "ddr2_cke<0>")
-          (POSITION 762 309880)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER "ddr2_cke<0>")
-          (POSITION -10160 309880)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "ddr2_odt<0>")
-          (POSITION -10160 314960)
-          (EXTTYPE BI)
-          (LENGTH 10160)
-          (SLOT 125)
-          (CUSTOMLABEL "DDR2_ODT<0>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AJ30)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "ddr2_odt(0)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "ddr2_odt(0)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AJ30)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AJ30)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "ddr2_odt<0>")
-          (POSITION 762 314960)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER "ddr2_odt<0>")
-          (POSITION -10160 314960)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME ddr2_reset_n)
-          (POSITION -10160 320040)
-          (EXTTYPE BI)
-          (LENGTH 10160)
-          (SLOT 126)
-          (CUSTOMLABEL DDR2_RESET_N)
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AP21)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE ddr2_reset_n)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE ddr2_reset_n)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AP21)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AP21)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL ddr2_reset_n)
-          (POSITION 762 320040)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER ddr2_reset_n)
-          (POSITION -10160 320040)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME ddr2_we_n)
-          (POSITION -10160 325120)
-          (EXTTYPE BI)
-          (LENGTH 10160)
-          (SLOT 127)
-          (CUSTOMLABEL DDR2_WE_N)
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AF29)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE ddr2_we_n)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE ddr2_we_n)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AF29)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AF29)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL ddr2_we_n)
-          (POSITION 762 325120)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER ddr2_we_n)
-          (POSITION -10160 325120)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME ddr2_error)
-          (POSITION -10160 330200)
-          (EXTTYPE BI)
-          (LENGTH 10160)
-          (SLOT 128)
-          (CUSTOMLABEL DDR2_ERROR)
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AP19)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE ddr2_error)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE ddr2_error)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AP19)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AP19)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL ddr2_error)
-          (POSITION 762 330200)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER ddr2_error)
-          (POSITION -10160 330200)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME ddr2_phy_init_done)
-          (POSITION -10160 335280)
-          (EXTTYPE BI)
-          (LENGTH 10160)
-          (SLOT 129)
-          (CUSTOMLABEL DDR2_PHY_INIT_DONE)
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AN19)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE ddr2_phy_init_done)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE ddr2_phy_init_done)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AN19)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AN19)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL ddr2_phy_init_done)
-          (POSITION 762 335280)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER ddr2_phy_init_done)
-          (POSITION -10160 335280)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE PIN)
-          (NAME AH33)
-          (POSITION -10160 345440)
-          (EXTTYPE BI)
-          (LENGTH 10160)
-          (SLOT 130)
-          (CUSTOMLABEL VRP_13)
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AH33)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE vrp_13)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE vrp_13)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AH33)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AH33)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL AH33)
-          (POSITION 762 345440)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER AH33)
-          (POSITION -10160 345440)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE PIN)
-          (NAME AG33)
-          (POSITION -10160 350520)
-          (EXTTYPE BI)
-          (LENGTH 10160)
-          (SLOT 131)
-          (CUSTOMLABEL VRN_13)
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AG33)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE vrn_13)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE vrn_13)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AG33)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AG33)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL AG33)
-          (POSITION 762 350520)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER AG33)
-          (POSITION -10160 350520)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE PIN)
-          (NAME AD27)
-          (POSITION 40640 391160)
-          (EXTTYPE BI)
-          (ROTATION 270)
-          (LENGTH 10160)
-          (SLOT 132)
-          (CUSTOMLABEL "0V9")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AD27)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "0v9")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "0v9")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AD27)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AD27)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL AD27)
-          (POSITION 40640 380238)
-          (ANGLE 270)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER AD27)
-          (POSITION 40640 391160)
-          (ANGLE 270)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE PIN)
-          (NAME AG26)
-          (POSITION 45720 391160)
-          (EXTTYPE BI)
-          (ROTATION 270)
-          (LENGTH 10160)
-          (SLOT 133)
-          (CUSTOMLABEL "0V9_1")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AG26)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "0v9_1")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "0v9_1")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AG26)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AG26)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL AG26)
-          (POSITION 45720 380238)
-          (ANGLE 270)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER AG26)
-          (POSITION 45720 391160)
-          (ANGLE 270)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE PIN)
-          (NAME AG31)
-          (POSITION 50800 391160)
-          (EXTTYPE BI)
-          (ROTATION 270)
-          (LENGTH 10160)
-          (SLOT 134)
-          (CUSTOMLABEL "0V9_2")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AG31)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "0v9_2")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "0v9_2")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AG31)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AG31)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL AG31)
-          (POSITION 50800 380238)
-          (ANGLE 270)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER AG31)
-          (POSITION 50800 391160)
-          (ANGLE 270)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE PIN)
-          (NAME AH32)
-          (POSITION 55880 391160)
-          (EXTTYPE BI)
-          (ROTATION 270)
-          (LENGTH 10160)
-          (SLOT 135)
-          (CUSTOMLABEL "0V9_3")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AH32)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "0v9_3")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "0v9_3")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AH32)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AH32)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL AH32)
-          (POSITION 55880 380238)
-          (ANGLE 270)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER AH32)
-          (POSITION 55880 391160)
-          (ANGLE 270)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE PIN)
-          (NAME AL28)
-          (POSITION 60960 391160)
-          (EXTTYPE BI)
-          (ROTATION 270)
-          (LENGTH 10160)
-          (SLOT 136)
-          (CUSTOMLABEL "0V9_4")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AL28)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "0v9_4")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "0v9_4")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AL28)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AL28)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL AL28)
-          (POSITION 60960 380238)
-          (ANGLE 270)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER AL28)
-          (POSITION 60960 391160)
-          (ANGLE 270)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE PIN)
-          (NAME AM23)
-          (POSITION 66040 391160)
-          (EXTTYPE BI)
-          (ROTATION 270)
-          (LENGTH 10160)
-          (SLOT 137)
-          (CUSTOMLABEL "0V9_5")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AM23)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "0v9_5")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "0v9_5")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AM23)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AM23)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL AM23)
-          (POSITION 66040 380238)
-          (ANGLE 270)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER AM23)
-          (POSITION 66040 391160)
-          (ANGLE 270)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE PIN)
-          (NAME W30)
-          (POSITION 71120 391160)
-          (EXTTYPE BI)
-          (ROTATION 270)
-          (LENGTH 10160)
-          (SLOT 138)
-          (CUSTOMLABEL "0V9_6")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE W30)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "0v9_6")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "0v9_6")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE W30)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE W30)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL W30)
-          (POSITION 71120 380238)
-          (ANGLE 270)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER W30)
-          (POSITION 71120 391160)
-          (ANGLE 270)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
           (TYPE PIN)
           (NAME AA32)
           (POSITION 86360 -10160)
           (EXTTYPE BI)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 140)
+          (SLOT 117)
           (CUSTOMLABEL "1V8_13")
           (ELEMENTS
             (LINE
@@ -14639,7 +13234,7 @@
           (EXTTYPE BI)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 141)
+          (SLOT 118)
           (CUSTOMLABEL "1V8_13_1")
           (ELEMENTS
             (LINE
@@ -14713,7 +13308,7 @@
           (EXTTYPE BI)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 142)
+          (SLOT 119)
           (CUSTOMLABEL "1V8_13_2")
           (ELEMENTS
             (LINE
@@ -14787,7 +13382,7 @@
           (EXTTYPE BI)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 143)
+          (SLOT 120)
           (CUSTOMLABEL "1V8_17")
           (ELEMENTS
             (LINE
@@ -14861,7 +13456,7 @@
           (EXTTYPE BI)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 144)
+          (SLOT 121)
           (CUSTOMLABEL "1V8_17_1")
           (ELEMENTS
             (LINE
@@ -14935,7 +13530,7 @@
           (EXTTYPE BI)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 145)
+          (SLOT 122)
           (CUSTOMLABEL "1V8_17_2")
           (ELEMENTS
             (LINE
@@ -15009,7 +13604,7 @@
           (EXTTYPE BI)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 146)
+          (SLOT 123)
           (CUSTOMLABEL "1V8_21")
           (ELEMENTS
             (LINE
@@ -15083,7 +13678,7 @@
           (EXTTYPE BI)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 147)
+          (SLOT 124)
           (CUSTOMLABEL "1V8_21_1")
           (ELEMENTS
             (LINE
@@ -15157,7 +13752,7 @@
           (EXTTYPE BI)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 148)
+          (SLOT 125)
           (CUSTOMLABEL "1V8_21_2")
           (ELEMENTS
             (LINE
@@ -15231,7 +13826,7 @@
           (EXTTYPE BI)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 149)
+          (SLOT 126)
           (CUSTOMLABEL "1V8_25")
           (ELEMENTS
             (LINE
@@ -15305,7 +13900,7 @@
           (EXTTYPE BI)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 151)
+          (SLOT 127)
           (CUSTOMLABEL "1V8_25_2")
           (ELEMENTS
             (LINE
@@ -15379,7 +13974,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 21)
+          (SLOT 128)
           (CUSTOMLABEL "DDR2_DQ<1>")
           (ELEMENTS
             (LINE
@@ -15451,7 +14046,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 20)
+          (SLOT 129)
           (CUSTOMLABEL "DDR2_DQ<0>")
           (ELEMENTS
             (LINE
@@ -15523,7 +14118,7 @@
           (EXTTYPE BI)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 150)
+          (SLOT 130)
           (CUSTOMLABEL "1V8_25_1")
           (ELEMENTS
             (LINE
@@ -15593,11 +14188,11 @@
         (PORT
           (TYPE PIN)
           (NAME W32)
-          (POSITION 76200 391160)
+          (POSITION 86360 391160)
           (EXTTYPE BI)
           (ROTATION 270)
           (LENGTH 10160)
-          (SLOT 139)
+          (SLOT 131)
           (CUSTOMLABEL "0V9_7")
           (ELEMENTS
             (LINE
@@ -15650,17 +14245,1985 @@
         )
         (TEXT
           (LABEL W32)
-          (POSITION 76200 380238)
+          (POSITION 86360 380238)
           (ANGLE 270)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
           (PINNUMBER W32)
+          (POSITION 86360 391160)
+          (ANGLE 270)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE PIN)
+          (NAME W30)
+          (POSITION 81280 391160)
+          (EXTTYPE BI)
+          (ROTATION 270)
+          (LENGTH 10160)
+          (SLOT 132)
+          (CUSTOMLABEL "0V9_6")
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE W30)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "0v9_6")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "0v9_6")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE W30)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE W30)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL W30)
+          (POSITION 81280 380238)
+          (ANGLE 270)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER W30)
+          (POSITION 81280 391160)
+          (ANGLE 270)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE PIN)
+          (NAME AM23)
+          (POSITION 76200 391160)
+          (EXTTYPE BI)
+          (ROTATION 270)
+          (LENGTH 10160)
+          (SLOT 133)
+          (CUSTOMLABEL "0V9_5")
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AM23)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "0v9_5")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "0v9_5")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AM23)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AM23)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL AM23)
+          (POSITION 76200 380238)
+          (ANGLE 270)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER AM23)
           (POSITION 76200 391160)
           (ANGLE 270)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE PIN)
+          (NAME AL28)
+          (POSITION 71120 391160)
+          (EXTTYPE BI)
+          (ROTATION 270)
+          (LENGTH 10160)
+          (SLOT 134)
+          (CUSTOMLABEL "0V9_4")
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AL28)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "0v9_4")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "0v9_4")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AL28)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AL28)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL AL28)
+          (POSITION 71120 380238)
+          (ANGLE 270)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER AL28)
+          (POSITION 71120 391160)
+          (ANGLE 270)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE PIN)
+          (NAME AH32)
+          (POSITION 66040 391160)
+          (EXTTYPE BI)
+          (ROTATION 270)
+          (LENGTH 10160)
+          (SLOT 135)
+          (CUSTOMLABEL "0V9_3")
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AH32)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "0v9_3")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "0v9_3")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AH32)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AH32)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL AH32)
+          (POSITION 66040 380238)
+          (ANGLE 270)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER AH32)
+          (POSITION 66040 391160)
+          (ANGLE 270)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE PIN)
+          (NAME AG31)
+          (POSITION 60960 391160)
+          (EXTTYPE BI)
+          (ROTATION 270)
+          (LENGTH 10160)
+          (SLOT 136)
+          (CUSTOMLABEL "0V9_2")
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AG31)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "0v9_2")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "0v9_2")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AG31)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AG31)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL AG31)
+          (POSITION 60960 380238)
+          (ANGLE 270)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER AG31)
+          (POSITION 60960 391160)
+          (ANGLE 270)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE PIN)
+          (NAME AG26)
+          (POSITION 55880 391160)
+          (EXTTYPE BI)
+          (ROTATION 270)
+          (LENGTH 10160)
+          (SLOT 137)
+          (CUSTOMLABEL "0V9_1")
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AG26)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "0v9_1")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "0v9_1")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AG26)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AG26)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL AG26)
+          (POSITION 55880 380238)
+          (ANGLE 270)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER AG26)
+          (POSITION 55880 391160)
+          (ANGLE 270)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE PIN)
+          (NAME AD27)
+          (POSITION 50800 391160)
+          (EXTTYPE BI)
+          (ROTATION 270)
+          (LENGTH 10160)
+          (SLOT 138)
+          (CUSTOMLABEL "0V9")
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AD27)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "0v9")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "0v9")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AD27)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AD27)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL AD27)
+          (POSITION 50800 380238)
+          (ANGLE 270)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER AD27)
+          (POSITION 50800 391160)
+          (ANGLE 270)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE PIN)
+          (NAME AG33)
+          (POSITION 40640 391160)
+          (EXTTYPE BI)
+          (ROTATION 270)
+          (LENGTH 10160)
+          (SLOT 139)
+          (CUSTOMLABEL VRN_13)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AG33)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE vrn_13)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE vrn_13)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AG33)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AG33)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL AG33)
+          (POSITION 40640 380238)
+          (ANGLE 270)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER AG33)
+          (POSITION 40640 391160)
+          (ANGLE 270)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE PIN)
+          (NAME AH33)
+          (POSITION 35560 391160)
+          (EXTTYPE BI)
+          (ROTATION 270)
+          (LENGTH 10160)
+          (SLOT 140)
+          (CUSTOMLABEL VRP_13)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AH33)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE vrp_13)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE vrp_13)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AH33)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AH33)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL AH33)
+          (POSITION 35560 380238)
+          (ANGLE 270)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER AH33)
+          (POSITION 35560 391160)
+          (ANGLE 270)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME ddr2_we_n)
+          (POSITION -10160 355600)
+          (EXTTYPE BI)
+          (LENGTH 10160)
+          (SLOT 141)
+          (CUSTOMLABEL DDR2_WE_N)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AF29)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE ddr2_we_n)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE ddr2_we_n)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AF29)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AF29)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL ddr2_we_n)
+          (POSITION 762 355600)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER ddr2_we_n)
+          (POSITION -10160 355600)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME ddr2_error)
+          (POSITION -10160 360680)
+          (EXTTYPE BI)
+          (LENGTH 10160)
+          (SLOT 142)
+          (CUSTOMLABEL DDR2_ERROR)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AP19)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE ddr2_error)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE ddr2_error)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AP19)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AP19)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL ddr2_error)
+          (POSITION 762 360680)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER ddr2_error)
+          (POSITION -10160 360680)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME ddr2_phy_init_done)
+          (POSITION -10160 365760)
+          (EXTTYPE BI)
+          (LENGTH 10160)
+          (SLOT 143)
+          (CUSTOMLABEL DDR2_PHY_INIT_DONE)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AN19)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE ddr2_phy_init_done)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE ddr2_phy_init_done)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AN19)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AN19)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL ddr2_phy_init_done)
+          (POSITION 762 365760)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER ddr2_phy_init_done)
+          (POSITION -10160 365760)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME ddr2_reset_n)
+          (POSITION -10160 370840)
+          (EXTTYPE BI)
+          (LENGTH 10160)
+          (SLOT 144)
+          (CUSTOMLABEL DDR2_RESET_N)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AP21)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE ddr2_reset_n)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE ddr2_reset_n)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AP21)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AP21)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL ddr2_reset_n)
+          (POSITION 762 370840)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER ddr2_reset_n)
+          (POSITION -10160 370840)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME ddr2_ras_n)
+          (POSITION -10160 137160)
+          (EXTTYPE BI)
+          (LENGTH 10160)
+          (SLOT 145)
+          (CUSTOMLABEL DDR2_RAS_N)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AJ31)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE ddr2_ras_n)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE ddr2_ras_n)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AJ31)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AJ31)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL ddr2_ras_n)
+          (POSITION 762 137160)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER ddr2_ras_n)
+          (POSITION -10160 137160)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME ddr2_cas_n)
+          (POSITION -10160 132080)
+          (EXTTYPE BI)
+          (LENGTH 10160)
+          (SLOT 146)
+          (CUSTOMLABEL DDR2_CAS_N)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AK31)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE ddr2_cas_n)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE ddr2_cas_n)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AK31)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AK31)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL ddr2_cas_n)
+          (POSITION 762 132080)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER ddr2_cas_n)
+          (POSITION -10160 132080)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME DDR2_CS_N_0)
+          (POSITION -10160 116840)
+          (EXTTYPE OUT)
+          (LENGTH 10160)
+          (SLOT 147)
+          (CUSTOMLABEL DDR2_CS_N_0)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AF30)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE DDR2_CS_N_0)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE DDR2_CS_N_0)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AF30)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AF30)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL DDR2_CS_N_0)
+          (POSITION 762 116840)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER DDR2_CS_N_0)
+          (POSITION -10160 116840)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME DDR2_CKE_0)
+          (POSITION -10160 340360)
+          (EXTTYPE OUT)
+          (LENGTH 10160)
+          (SLOT 148)
+          (CUSTOMLABEL DDR2_CKE_0)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AH30)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE DDR2_CKE_0)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE DDR2_CKE_0)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AH30)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AH30)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL DDR2_CKE_0)
+          (POSITION 762 340360)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER DDR2_CKE_0)
+          (POSITION -10160 340360)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME DDR2_ODT_0)
+          (POSITION -10160 350520)
+          (EXTTYPE OUT)
+          (LENGTH 10160)
+          (SLOT 149)
+          (CUSTOMLABEL DDR2_ODT_0)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AJ30)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE DDR2_ODT_0)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE DDR2_ODT_0)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AJ30)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AJ30)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL DDR2_ODT_0)
+          (POSITION 762 350520)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER DDR2_ODT_0)
+          (POSITION -10160 350520)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME ddr2_ck_2_p)
+          (POSITION -10160 294640)
+          (EXTTYPE BI)
+          (LENGTH 10160)
+          (SLOT 150)
+          (CUSTOMLABEL DDR2_CK_2_P)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF ddr2_ck_2)
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AH29)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE ddr2_ck_2_p)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE ddr2_ck_2_p)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AH29)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AH29)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL ddr2_ck_2_p)
+          (POSITION 762 294640)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER ddr2_ck_2_p)
+          (POSITION -10160 294640)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME ddr2_ck_2_n)
+          (POSITION -10160 299720)
+          (EXTTYPE BI)
+          (LENGTH 10160)
+          (SLOT 151)
+          (CUSTOMLABEL DDR2_CK_2_N)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF ddr2_ck_2)
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AG30)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE ddr2_ck_2_n)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE ddr2_ck_2_n)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AG30)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AG30)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL ddr2_ck_2_n)
+          (POSITION 762 299720)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER ddr2_ck_2_n)
+          (POSITION -10160 299720)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME ddr2_ck_1_n)
+          (POSITION -10160 304800)
+          (EXTTYPE BI)
+          (LENGTH 10160)
+          (SLOT 152)
+          (CUSTOMLABEL DDR2_CK_1_N)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF ddr2_ck_1)
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AE31)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE ddr2_ck_1_n)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE ddr2_ck_1_n)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AE31)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AE31)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL ddr2_ck_1_n)
+          (POSITION 762 304800)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER ddr2_ck_1_n)
+          (POSITION -10160 304800)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME ddr2_ck_1_p)
+          (POSITION -10160 309880)
+          (EXTTYPE BI)
+          (LENGTH 10160)
+          (SLOT 153)
+          (CUSTOMLABEL DDR2_CK_1_P)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF ddr2_ck_1)
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AD31)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE ddr2_ck_1_p)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE ddr2_ck_1_p)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AD31)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AD31)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL ddr2_ck_1_p)
+          (POSITION 762 309880)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER ddr2_ck_1_p)
+          (POSITION -10160 309880)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME ddr2_ck_0_p)
+          (POSITION -10160 314960)
+          (EXTTYPE BI)
+          (LENGTH 10160)
+          (SLOT 154)
+          (CUSTOMLABEL DDR2_CK_0_P)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF ddr2_ck_0)
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AD24)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE ddr2_ck_0_p)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE ddr2_ck_0_p)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AD24)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AD24)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL ddr2_ck_0_p)
+          (POSITION 762 314960)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER ddr2_ck_0_p)
+          (POSITION -10160 314960)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE SIGNALPN)
+          (NAME ddr2_ck_0_n)
+          (POSITION -10160 320040)
+          (EXTTYPE BI)
+          (LENGTH 10160)
+          (SLOT 155)
+          (CUSTOMLABEL DDR2_CK_0_N)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (DIFF ddr2_ck_0)
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AE24)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE ddr2_ck_0_n)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE ddr2_ck_0_n)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AE24)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AE24)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL ddr2_ck_0_n)
+          (POSITION 762 320040)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER ddr2_ck_0_n)
+          (POSITION -10160 320040)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME DDR2_CS_N_1)
+          (POSITION -10160 121920)
+          (EXTTYPE OUT)
+          (LENGTH 10160)
+          (SLOT 156)
+          (CUSTOMLABEL DDR2_CS_N_1)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AC30)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE DDR2_CS_N_1)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE DDR2_CS_N_1)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AC30)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AC30)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL DDR2_CS_N_1)
+          (POSITION 762 121920)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME DDR2_CKE_1)
+          (POSITION -10160 335280)
+          (EXTTYPE OUT)
+          (LENGTH 10160)
+          (SLOT 157)
+          (CUSTOMLABEL DDR2_CKE_1)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AK32)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE DDR2_CKE_1)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE DDR2_CKE_1)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AK32)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AK32)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL DDR2_CKE_1)
+          (POSITION 762 335280)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER DDR2_CKE_1)
+          (POSITION -10160 335280)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME DDR2_CKE_2)
+          (POSITION -10160 330200)
+          (EXTTYPE OUT)
+          (LENGTH 10160)
+          (SLOT 158)
+          (CUSTOMLABEL DDR2_CKE_2)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AK33)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE DDR2_CKE_2)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE DDR2_CKE_2)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AK33)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AK33)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL DDR2_CKE_2)
+          (POSITION 762 330200)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER DDR2_CKE_2)
+          (POSITION -10160 330200)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME DDR2_ODT_1)
+          (POSITION -10160 345440)
+          (EXTTYPE OUT)
+          (LENGTH 10160)
+          (SLOT 159)
+          (CUSTOMLABEL DDR2_ODT_1)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE AE32)
+              (OWNER DXDESIGNER)
+              (VISIBILITY Value)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE DDR2_ODT_1)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE DDR2_ODT_1)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE AE32)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE AE32)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DESIGNARCHITECT)
+            )
+          )
+        )
+        (TEXT
+          (LABEL DDR2_ODT_1)
+          (POSITION 762 345440)
+          (VALIGN CENTER)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PINNUMBER DDR2_ODT_1)
+          (POSITION -10160 345440)
+          (VALIGN BOTTOM)
+          (FONT FONT_0 10)
+        )
+        (TEXT
+          (PORTPROPERTY DDR2_CS_N_1 "#")
+          (POSITION -10160 122428)
+          (HIDDEN T)
+        )
+        (TEXT
+          (PINNUMBER DDR2_CS_N_1)
+          (POSITION -10160 121412)
+          (VALIGN BOTTOM)
         )
       )
       (PCB T)
@@ -15672,7 +16235,7 @@
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(ROACH_GPIO),(ROACH_JTAG_CONF),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(ROACH_SYS_MON),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -15691,11 +16254,6 @@
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
-          (NAME SIGNAL)
-          (VALUE "")
-          (OWNER DXDESIGNER)
-        )
-        (ATTRIBUTE
           (NAME NC)
           (VALUE "U4,U5")
           (OWNER DXDESIGNER)
@@ -15704,24 +16262,22 @@
           (NAME DEVICE)
           (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME PKG_TYPE)
-          (VALUE BGA1136C100P34X34_3500X3500X340)
+          (VALUE FF1136)
           (OWNER DXDESIGNER)
-          (LOCKED T)
+        )
+        (ATTRIBUTE
+          (NAME TIME_STAMP)
+          (VALUE "2007/8/8")
+          (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME BANKS)
           (VALUE "13, 17, 21, 25")
           (OWNER DXDESIGNER)
           (VISIBILITY Both)
-        )
-        (ATTRIBUTE
-          (NAME TIME_STAMP)
-          (VALUE "2007/7/25")
-          (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME "Part Name")
@@ -15735,36 +16291,38 @@
         )
         (ATTRIBUTE
           (NAME PINSWAP)
-          (VALUE "([ddr2_dqs8,ddr2_dqs_n8],[ddr2_dqs7,ddr2_dqs_n7],[ddr2_dqs6,ddr2_dqs_n6],[ddr2_dqs5,ddr2_dqs_n5],[ddr2_dqs4,ddr2_dqs_n4],[ddr2_dqs3,ddr2_dqs_n3],[ddr2_dqs2,ddr2_dqs_n2],[ddr2_dqs1,ddr2_dqs_n1],[ddr2_dqs0,ddr2_dqs_n0],[ddr2_ck0,ddr2_ck_n0])")
+          (VALUE "([ddr2_dqs_8,ddr2_dqs_n_8],[ddr2_dqs_7,ddr2_dqs_n_7],[ddr2_dqs_6,ddr2_dqs_n_6],[ddr2_dqs_5,ddr2_dqs_n_5],[ddr2_dqs_4,ddr2_dqs_n_4],[ddr2_dqs_3,ddr2_dqs_n_3],[ddr2_dqs_2,ddr2_dqs_n_2],[ddr2_dqs_1,ddr2_dqs_n_1],[ddr2_dqs_0,ddr2_dqs_n_0],[ddr2_ck_2_p,ddr2_ck_2_n],[ddr2_ck_1_p,ddr2_ck_1_n],[ddr2_ck_0_p,ddr2_ck_0_n])")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME PINSWAP)
-          (VALUE "(ddr2_a15,ddr2_a14,ddr2_a13,ddr2_a12,ddr2_a11,ddr2_a10,ddr2_a9,ddr2_a8,ddr2_a7,ddr2_a6,ddr2_a5,ddr2_a4,ddr2_a3,ddr2_a2,ddr2_a1,ddr2_a0,ddr2_ba2,ddr2_ba1,ddr2_ba0,ddr2_dq2,ddr2_dq3,ddr2_dq4,ddr2_dq5,ddr2_dq6,ddr2_dq7,ddr2_dq8,ddr2_dq9,ddr2_dq10,ddr2_dq11,ddr2_dq12,ddr2_dq13,ddr2_dq14,ddr2_dq15,ddr2_dq16,ddr2_dq17,ddr2_dq18,ddr2_dq19,ddr2_dq20,ddr2_dq21,ddr2_dq22,ddr2_dq23,ddr2_dq24,ddr2_dq25,ddr2_dq26,ddr2_dq27,ddr2_dq28,ddr2_dq29,ddr2_dq30,ddr2_dq31,ddr2_dq32,ddr2_dq33,ddr2_dq34,ddr2_dq35,ddr2_dq36,ddr2_dq37,ddr2_dq38,ddr2_dq39,ddr2_dq40,ddr2_dq41,ddr2_dq42,ddr2_dq43,ddr2_dq44,ddr2_dq45,ddr2_dq46,ddr2_dq47,ddr2_dq48,ddr2_dq49,ddr2_dq50,ddr2_dq51,ddr2_dq52,ddr2_dq53,ddr2_dq54,ddr2_dq55,ddr2_dq56,ddr2_dq57,ddr2_dq58,ddr2_dq59,ddr2_dq60,ddr2_dq61,ddr2_dq62,ddr2_dq63,ddr2_dq64,ddr2_dq65,ddr2_dq66,ddr2_dq67,ddr2_dq68,ddr2_dq69,ddr2_dq70,ddr2_dq71,ddr2_cs_n0,ddr2_cas_n,ddr2_ras_n,ddr2_dm8,ddr2_dm7,ddr2_dm6,ddr2_dm5,ddr2_dm4,ddr2_dm3,ddr2_dm2,ddr2_dm1,ddr2_dm0,ddr2_cke0,ddr2_odt0,ddr2_we_n)")
+          (VALUE "(ddr2_a15,ddr2_a14,ddr2_a13,ddr2_a12,ddr2_a11,ddr2_a10,ddr2_a9,ddr2_a8,ddr2_a7,ddr2_a6,ddr2_a5,ddr2_a4,ddr2_a3,ddr2_a2,ddr2_a1,ddr2_a0,ddr2_ba2,ddr2_ba1,ddr2_ba0,ddr2_dq2,ddr2_dq3,ddr2_dq4,ddr2_dq5,ddr2_dq6,ddr2_dq7,ddr2_dq8,ddr2_dq9,ddr2_dq10,ddr2_dq11,ddr2_dq12,ddr2_dq13,ddr2_dq14,ddr2_dq15,ddr2_dq16,ddr2_dq17,ddr2_dq18,ddr2_dq19,ddr2_dq20,ddr2_dq21,ddr2_dq22,ddr2_dq23,ddr2_dq24,ddr2_dq25,ddr2_dq26,ddr2_dq27,ddr2_dq28,ddr2_dq29,ddr2_dq30,ddr2_dq31,ddr2_dq32,ddr2_dq33,ddr2_dq34,ddr2_dq35,ddr2_dq36,ddr2_dq37,ddr2_dq38,ddr2_dq39,ddr2_dq40,ddr2_dq41,ddr2_dq42,ddr2_dq43,ddr2_dq44,ddr2_dq45,ddr2_dq46,ddr2_dq47,ddr2_dq48,ddr2_dq49,ddr2_dq50,ddr2_dq51,ddr2_dq52,ddr2_dq53,ddr2_dq54,ddr2_dq55,ddr2_dq56,ddr2_dq57,ddr2_dq58,ddr2_dq59,ddr2_dq60,ddr2_dq61,ddr2_dq62,ddr2_dq63,ddr2_dq64,ddr2_dq65,ddr2_dq66,ddr2_dq67,ddr2_dq68,ddr2_dq69,ddr2_dq70,ddr2_dq71,ddr2_dm8,ddr2_dm7,ddr2_dm6,ddr2_dm5,ddr2_dm4,ddr2_dm3,ddr2_dm2,ddr2_dm1,ddr2_dm0,ddr2_dq1,ddr2_dq0,ddr2_we_n,ddr2_ras_n,ddr2_cas_n,DDR2_CS_N_0)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME PINSWAP)
-          (VALUE "(ddr2_dq1,ddr2_dq0),(ddr2_reset_n,ddr2_error,ddr2_phy_init_done),(1v8_13,1v8_13_1,1v8_13_2),(1v8_17,1v8_17_1,1v8_17_2),(1v8_21,1v8_21_1,1v8_21_2),(1v8_25,1v8_25_2,1v8_25_1)")
+          (VALUE "(DDR2_CKE_0,DDR2_ODT_0,DDR2_CS_N_1,DDR2_CKE_1,DDR2_CKE_2,DDR2_ODT_1),(ddr2_error,ddr2_phy_init_done,ddr2_reset_n),(1v8_13,1v8_13_1,1v8_13_2),(1v8_17,1v8_17_1,1v8_17_2),(1v8_21,1v8_21_1,1v8_21_2),(1v8_25,1v8_25_2,1v8_25_1)")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME PART_NO)
-          (VALUE "5VSX95T")
+          (VALUE "5vsx95t|roach")
           (OWNER DESIGNARCHITECT)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME GEOM)
-          (VALUE BGA1136C100P34X34_3500X3500X340)
+          (VALUE ff1136)
           (OWNER DESIGNARCHITECT)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME "Part Number")
-          (VALUE "5VSX95T")
+          (VALUE "5vsx95t")
           (OWNER DESIGNCAPTURE)
-          (LOCKED T)
         )
       )
       (INSTANCEATTRIBUTES
@@ -31795,296 +32353,8 @@
         )
         (PORT
           (TYPE SIGNAL)
-          (NAME "GPIOLVC18<0>")
-          (POSITION 91440 111760)
-          (EXTTYPE BI)
-          (ROTATION 180)
-          (LENGTH 10160)
-          (SLOT 1)
-          (CUSTOMLABEL "GPIOLVC18<0>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AE32)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "GPIOLVC18(0)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "GPIOLVC18(0)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AE32)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AE32)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "GPIOLVC18<0>")
-          (POSITION 80518 111760)
-          (HALIGN RIGHT)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER "GPIOLVC18<0>")
-          (POSITION 91440 111760)
-          (HALIGN RIGHT)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "GPIOLVC18<1>")
-          (POSITION 91440 106680)
-          (EXTTYPE BI)
-          (ROTATION 180)
-          (LENGTH 10160)
-          (SLOT 2)
-          (CUSTOMLABEL "GPIOLVC18<1>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AK33)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "GPIOLVC18(1)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "GPIOLVC18(1)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AK33)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AK33)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "GPIOLVC18<1>")
-          (POSITION 80518 106680)
-          (HALIGN RIGHT)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER "GPIOLVC18<1>")
-          (POSITION 91440 106680)
-          (HALIGN RIGHT)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "GPIOLVC18<2>")
-          (POSITION 91440 101600)
-          (EXTTYPE BI)
-          (ROTATION 180)
-          (LENGTH 10160)
-          (SLOT 3)
-          (CUSTOMLABEL "GPIOLVC18<2>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AK32)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "GPIOLVC18(2)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "GPIOLVC18(2)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AK32)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AK32)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "GPIOLVC18<2>")
-          (POSITION 80518 101600)
-          (HALIGN RIGHT)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER "GPIOLVC18<2>")
-          (POSITION 91440 101600)
-          (HALIGN RIGHT)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "GPIOLVC18<3>")
-          (POSITION 91440 96520)
-          (EXTTYPE BI)
-          (ROTATION 180)
-          (LENGTH 10160)
-          (SLOT 4)
-          (CUSTOMLABEL "GPIOLVC18<3>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AC30)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "GPIOLVC18(3)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "GPIOLVC18(3)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AC30)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AC30)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "GPIOLVC18<3>")
-          (POSITION 80518 96520)
-          (HALIGN RIGHT)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER "GPIOLVC18<3>")
-          (POSITION 91440 96520)
-          (HALIGN RIGHT)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
           (NAME "GPIOLVC18<4>")
-          (POSITION 91440 91440)
+          (POSITION 91440 71120)
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
@@ -32141,158 +32411,14 @@
         )
         (TEXT
           (LABEL "GPIOLVC18<4>")
-          (POSITION 80518 91440)
+          (POSITION 80518 71120)
           (HALIGN RIGHT)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
           (PINNUMBER "GPIOLVC18<4>")
-          (POSITION 91440 91440)
-          (HALIGN RIGHT)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "GPIOLVC18<5>")
-          (POSITION 91440 86360)
-          (EXTTYPE BI)
-          (ROTATION 180)
-          (LENGTH 10160)
-          (SLOT 6)
-          (CUSTOMLABEL "GPIOLVC18<5>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AD31)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "GPIOLVC18(5)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "GPIOLVC18(5)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AD31)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AD31)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "GPIOLVC18<5>")
-          (POSITION 80518 86360)
-          (HALIGN RIGHT)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER "GPIOLVC18<5>")
-          (POSITION 91440 86360)
-          (HALIGN RIGHT)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "GPIOLVC18<6>")
-          (POSITION 91440 81280)
-          (EXTTYPE BI)
-          (ROTATION 180)
-          (LENGTH 10160)
-          (SLOT 7)
-          (CUSTOMLABEL "GPIOLVC18<6>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AE31)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "GPIOLVC18(6)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "GPIOLVC18(6)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AE31)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AE31)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "GPIOLVC18<6>")
-          (POSITION 80518 81280)
-          (HALIGN RIGHT)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER "GPIOLVC18<6>")
-          (POSITION 91440 81280)
+          (POSITION 91440 71120)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
@@ -32300,7 +32426,7 @@
         (PORT
           (TYPE SIGNAL)
           (NAME "GPIOLVC18<7>")
-          (POSITION 91440 76200)
+          (POSITION 91440 66040)
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
@@ -32357,157 +32483,13 @@
         )
         (TEXT
           (LABEL "GPIOLVC18<7>")
-          (POSITION 80518 76200)
-          (HALIGN RIGHT)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER "GPIOLVC18<7>")
-          (POSITION 91440 76200)
-          (HALIGN RIGHT)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "GPIOLVC18<8>")
-          (POSITION 91440 71120)
-          (EXTTYPE BI)
-          (ROTATION 180)
-          (LENGTH 10160)
-          (SLOT 9)
-          (CUSTOMLABEL "GPIOLVC18<8>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AH29)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "GPIOLVC18(8)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "GPIOLVC18(8)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AH29)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AH29)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "GPIOLVC18<8>")
-          (POSITION 80518 71120)
-          (HALIGN RIGHT)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER "GPIOLVC18<8>")
-          (POSITION 91440 71120)
-          (HALIGN RIGHT)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
-        (PORT
-          (TYPE SIGNAL)
-          (NAME "GPIOLVC18<9>")
-          (POSITION 91440 66040)
-          (EXTTYPE BI)
-          (ROTATION 180)
-          (LENGTH 10160)
-          (SLOT 10)
-          (CUSTOMLABEL "GPIOLVC18<9>")
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE AG30)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE BI)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE "GPIOLVC18(9)")
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE "GPIOLVC18(9)")
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE AG30)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE AG30)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IXO)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL "GPIOLVC18<9>")
           (POSITION 80518 66040)
           (HALIGN RIGHT)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
-          (PINNUMBER "GPIOLVC18<9>")
+          (PINNUMBER "GPIOLVC18<7>")
           (POSITION 91440 66040)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
@@ -33986,7 +33968,7 @@
         )
         (ATTRIBUTE
           (NAME PINSWAP)
-          (VALUE "(GPIOLVC153,GPIOLVC152,GPIOLVC151,GPIOLVC150),(GPIOLVC180,GPIOLVC181,GPIOLVC182,GPIOLVC183,GPIOLVC184,GPIOLVC185,GPIOLVC186,GPIOLVC187,GPIOLVC188,GPIOLVC189,GPIOLVC1810,GPIOLVC1811,GPIOLVC1812,GPIOLVC1813,GPIOLVC1814,GPIOLVC1815,GPIOLVC1816,GPIOLVC1817,GPIOLVC1818,GPIOLVC1819,GPIOLVC1820),(GPIOLVC334,GPIOLVC333,GPIOLVC332,GPIOLVC331,GPIOLVC330)")
+          (VALUE "(GPIOLVC153,GPIOLVC152,GPIOLVC151,GPIOLVC150),(GPIOLVC184,GPIOLVC187,GPIOLVC1810,GPIOLVC1811,GPIOLVC1812,GPIOLVC1813,GPIOLVC1814,GPIOLVC1815,GPIOLVC1816,GPIOLVC1817,GPIOLVC1818,GPIOLVC1819,GPIOLVC1820),(GPIOLVC334,GPIOLVC333,GPIOLVC332,GPIOLVC331,GPIOLVC330)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -88477,8 +88459,8 @@
   (DISABLED_CONFIG_PINS AD19 AD20 AD31 AE14 AE16 AE17 AE19 AE21 AE22 AE23 AE31 AF13 AF15 AF16 AF21 AF23 AG12 AG13 AG16 AG22 AG23 AH12 AH13 AH14 AH17 AH19 AH20 AH22 AH25 AJ25 AN24 AP24 G22 G23 H12 H22 H23 J12 J15 J22 K12 K13 K14 K16 K21 K22 K23 L14 L15 L16 L20 L21 M27 M33 N27 N33)
   (DISABLED_VREF_PINS AF10 AF14 AG20 AG7 AL18 AL23 AN12 D10 F19 G18 H22 J17 L5 L8 P10 Y9)
   (ENABLED_CLOCK_PINS J17)
-  (ENABLED_DIFF_PINS A13 A14 A15 A16 AA10 AA31 AA5 AA6 AA8 AA9 AB10 AB31 AB5 AB6 AB7 AB8 AC10 AC4 AC5 AC7 AC8 AC9 AD10 AD11 AD24 AD4 AD5 AD6 AD7 AD9 AE11 AE24 AE33 AE34 AE6 AE7 AE8 AF10 AF11 AF33 AF34 AF5 AF6 AF9 AG10 AG11 AG5 AG7 AG8 AH10 AH23 AH24 AH34 AH7 AH8 AH9 AJ10 AJ11 AJ12 AJ14 AJ15 AJ16 AJ19 AJ20 AJ21 AJ22 AJ24 AJ27 AJ29 AJ34 AJ6 AJ7 AJ9 AK11 AK12 AK13 AK14 AK16 AK18 AK19 AK21 AK22 AK23 AK24 AK26 AK29 AK6 AK7 AK8 AK9 AL10 AL11 AL13 AL14 AL15 AL16 AL18 AL19 AL20 AL21 AL23 AL26 AM11 AM12 AM13 AM15 AM16 AM17 AM25 AM26 AN12 AN13 AN14 AN15 AN17 AN25 AP12 AP14 AP15 AP16 AP17 B12 B13 B15 B16 B17 C12 C13 C14 C15 C17 D10 D11 D12 D14 D15 D16 D17 D20 D21 D22 D24 E11 E12 E13 E14 E16 E17 E19 E21 E22 E23 E24 E6 E7 E8 E9 F10 F11 F13 F14 F15 F16 F18 F19 F20 F21 F23 F24 F5 F6 F8 F9 G10 G11 G12 G13 G17 G18 G20 G21 G5 G6 G7 G8 H10 H13 H14 H15 H17 H18 H19 H20 H5 H7 H8 H9 J10 J11 J14 J16 J17 J19 J20 J21 J5 J6 J7 J9 K11 K17 K18 K19 K6 K7 K8 K9 L18 L19 L4 L5 L6 L8 L9 M10 M5 M6 M7 M8 N10 N5 N7 N8 N9 P10 P5 P6 P7 R11 R6 R7 R8 T10 T11 T6 T8 T9 U10 U7 U8 V10 V7 V8 V9 W10 W11 W6 W7 W9 Y11 Y28 Y29 Y6 Y7 Y8 Y9)
-  (ENABLED_IO_PINS AD19 AD20 AD31 AE14 AE16 AE17 AE18 AE19 AE21 AE22 AE23 AE31 AF13 AF14 AF15 AF16 AF18 AF19 AF21 AF23 AG12 AG13 AG15 AG16 AG17 AG18 AG20 AG21 AG22 AG23 AH12 AH13 AH14 AH15 AH17 AH18 AH19 AH20 AH22 AH25 AJ25 AN24 AP24 G22 G23 H12 H22 H23 J12 J15 J22 K12 K13 K14 K16 K21 K22 K23 L14 L15 L16 L20 L21 M27 M33 N27 N33)
+  (ENABLED_DIFF_PINS A13 A14 A15 A16 AA10 AA31 AA5 AA6 AA8 AA9 AB10 AB31 AB5 AB6 AB7 AB8 AC10 AC4 AC5 AC7 AC8 AC9 AD10 AD11 AD24 AD31 AD4 AD5 AD6 AD7 AD9 AE11 AE24 AE31 AE33 AE34 AE6 AE7 AE8 AF10 AF11 AF33 AF34 AF5 AF6 AF9 AG10 AG11 AG30 AG5 AG7 AG8 AH10 AH23 AH24 AH29 AH34 AH7 AH8 AH9 AJ10 AJ11 AJ12 AJ14 AJ15 AJ16 AJ19 AJ20 AJ21 AJ22 AJ24 AJ27 AJ29 AJ34 AJ6 AJ7 AJ9 AK11 AK12 AK13 AK14 AK16 AK18 AK19 AK21 AK22 AK23 AK24 AK26 AK29 AK6 AK7 AK8 AK9 AL10 AL11 AL13 AL14 AL15 AL16 AL18 AL19 AL20 AL21 AL23 AL26 AM11 AM12 AM13 AM15 AM16 AM17 AM25 AM26 AN12 AN13 AN14 AN15 AN17 AN25 AP12 AP14 AP15 AP16 AP17 B12 B13 B15 B16 B17 C12 C13 C14 C15 C17 D10 D11 D12 D14 D15 D16 D17 D20 D21 D22 D24 E11 E12 E13 E14 E16 E17 E19 E21 E22 E23 E24 E6 E7 E8 E9 F10 F11 F13 F14 F15 F16 F18 F19 F20 F21 F23 F24 F5 F6 F8 F9 G10 G11 G12 G13 G17 G18 G20 G21 G5 G6 G7 G8 H10 H13 H14 H15 H17 H18 H19 H20 H5 H7 H8 H9 J10 J11 J14 J16 J17 J19 J20 J21 J5 J6 J7 J9 K11 K17 K18 K19 K6 K7 K8 K9 L18 L19 L4 L5 L6 L8 L9 M10 M5 M6 M7 M8 N10 N5 N7 N8 N9 P10 P5 P6 P7 R11 R6 R7 R8 T10 T11 T6 T8 T9 U10 U7 U8 V10 V7 V8 V9 W10 W11 W6 W7 W9 Y11 Y28 Y29 Y6 Y7 Y8 Y9)
+  (ENABLED_IO_PINS AD19 AD20 AE14 AE16 AE17 AE18 AE19 AE21 AE22 AE23 AF13 AF14 AF15 AF16 AF18 AF19 AF21 AF23 AG12 AG13 AG15 AG16 AG17 AG18 AG20 AG21 AG22 AG23 AH12 AH13 AH14 AH15 AH17 AH18 AH19 AH20 AH22 AH25 AJ25 AN24 AP24 G22 G23 H12 H22 H23 J12 J15 J22 K12 K13 K14 K16 K21 K22 K23 L14 L15 L16 L20 L21 M27 M33 N27 N33)
   (IO_STANDARDS
     (IO
       (PIN A13)
@@ -88674,7 +88656,7 @@
     )
     (IO
       (PIN AC30)
-      (STANDARD LVCMOS18)
+      (STANDARD SSTL18_I)
     )
     (IO
       (PIN AC32)
@@ -88746,7 +88728,7 @@
     )
     (IO
       (PIN AD31)
-      (STANDARD LVCMOS18)
+      (STANDARD DIFF_SSTL18_II)
     )
     (IO
       (PIN AD32)
@@ -88842,11 +88824,11 @@
     )
     (IO
       (PIN AE31)
-      (STANDARD LVCMOS18)
+      (STANDARD DIFF_SSTL18_II)
     )
     (IO
       (PIN AE32)
-      (STANDARD LVCMOS18)
+      (STANDARD SSTL18_I)
     )
     (IO
       (PIN AE33)
@@ -89022,7 +89004,7 @@
     )
     (IO
       (PIN AG30)
-      (STANDARD LVCMOS18)
+      (STANDARD DIFF_SSTL18_II)
     )
     (IO
       (PIN AG32)
@@ -89102,7 +89084,7 @@
     )
     (IO
       (PIN AH29)
-      (STANDARD LVCMOS18)
+      (STANDARD DIFF_SSTL18_II)
     )
     (IO
       (PIN AH30)
@@ -89278,11 +89260,11 @@
     )
     (IO
       (PIN AK32)
-      (STANDARD LVCMOS18)
+      (STANDARD SSTL18_I)
     )
     (IO
       (PIN AK33)
-      (STANDARD LVCMOS18)
+      (STANDARD SSTL18_I)
     )
     (IO
       (PIN AK34)
@@ -91344,7 +91326,7 @@
     )
     (SWAP
       (PIN AC30)
-      (GROUP IO_Vref_NR_VccIO_1_8)
+      (GROUP IO_Vref_0_9_VccIO_1_8)
     )
     (SWAP
       (PIN AC31)
@@ -91464,7 +91446,7 @@
     )
     (SWAP
       (PIN AD31)
-      (GROUP IO_Vref_NR_VccIO_1_8)
+      (GROUP DIFF_Vref_NR_VccIO_1_8)
     )
     (SWAP
       (PIN AD32)
@@ -91600,11 +91582,11 @@
     )
     (SWAP
       (PIN AE31)
-      (GROUP IO_Vref_NR_VccIO_1_8)
+      (GROUP DIFF_Vref_NR_VccIO_1_8)
     )
     (SWAP
       (PIN AE32)
-      (GROUP IO_Vref_NR_VccIO_1_8)
+      (GROUP IO_Vref_0_9_VccIO_1_8)
     )
     (SWAP
       (PIN AE33)
@@ -91868,7 +91850,7 @@
     )
     (SWAP
       (PIN AG30)
-      (GROUP IO_Vref_NR_VccIO_1_8)
+      (GROUP DIFF_Vref_NR_VccIO_1_8)
     )
     (SWAP
       (PIN AG31)
@@ -91996,7 +91978,7 @@
     )
     (SWAP
       (PIN AH29)
-      (GROUP IO_Vref_NR_VccIO_1_8)
+      (GROUP DIFF_Vref_NR_VccIO_1_8)
     )
     (SWAP
       (PIN AH3)
@@ -92276,11 +92258,11 @@
     )
     (SWAP
       (PIN AK32)
-      (GROUP IO_Vref_NR_VccIO_1_8)
+      (GROUP IO_Vref_0_9_VccIO_1_8)
     )
     (SWAP
       (PIN AK33)
-      (GROUP IO_Vref_NR_VccIO_1_8)
+      (GROUP IO_Vref_0_9_VccIO_1_8)
     )
     (SWAP
       (PIN AK34)
