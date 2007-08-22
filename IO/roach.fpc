@@ -471,6 +471,11 @@
       (TYPE IO)
     )
     (SIGNAL
+      (NAME MGT_VTRXC)
+      (DIR INOUT)
+      (TYPE REFRES)
+    )
+    (SIGNAL
       (NAME PER_A)
       (HDL_NAME PER_A)
       (DIR NONE)
@@ -16255,7 +16260,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "U4,U5")
+          (VALUE "U4,U5,V5")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -32275,7 +32280,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "U4,U5")
+          (VALUE "U4,U5,V5")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -33938,7 +33943,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "U4,U5")
+          (VALUE "U4,U5,V5")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -35467,78 +35472,6 @@
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
         )
-        (PORT
-          (TYPE PIN)
-          (NAME V5)
-          (POSITION 91440 50800)
-          (EXTTYPE IN)
-          (ROTATION 180)
-          (LENGTH 10160)
-          (SLOT 2292)
-          (CUSTOMLABEL SX95T_MGTAVTTRXC)
-          (ELEMENTS
-            (LINE
-              (POINTS 0 0 10160 0)
-            )
-          )
-          (ATTRIBUTES
-            (ATTRIBUTE
-              (NAME NO_CONNECT)
-              (VALUE NO)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DXDESIGNER)
-            )
-            (ATTRIBUTE
-              (NAME "#")
-              (VALUE V5)
-              (OWNER DXDESIGNER)
-              (VISIBILITY Value)
-            )
-            (ATTRIBUTE
-              (NAME PIN)
-              (VALUE V5)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Name")
-              (VALUE V5)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PIN_NO)
-              (VALUE V5)
-              (OWNER DESIGNARCHITECT)
-            )
-            (ATTRIBUTE
-              (NAME "Pin Number")
-              (VALUE V5)
-              (OWNER DESIGNCAPTURE)
-            )
-            (ATTRIBUTE
-              (NAME PINTYPE)
-              (VALUE IN)
-              (OWNER DESIGNARCHITECT)
-            )
-          )
-        )
-        (TEXT
-          (LABEL V5)
-          (POSITION 80518 50800)
-          (HALIGN RIGHT)
-          (VALIGN CENTER)
-          (FONT FONT_0 10)
-        )
-        (TEXT
-          (PINNUMBER V5)
-          (POSITION 91440 50800)
-          (HALIGN RIGHT)
-          (VALIGN BOTTOM)
-          (FONT FONT_0 10)
-        )
       )
       (PCB T)
       (ATTRIBUTES
@@ -35569,7 +35502,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "U4,U5")
+          (VALUE "U4,U5,V5")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -36863,7 +36796,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "U4,U5")
+          (VALUE "U4,U5,V5")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -38101,7 +38034,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "U4,U5")
+          (VALUE "U4,U5,V5")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -39339,7 +39272,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "U4,U5")
+          (VALUE "U4,U5,V5")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -40577,7 +40510,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "U4,U5")
+          (VALUE "U4,U5,V5")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -41815,7 +41748,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "U4,U5")
+          (VALUE "U4,U5,V5")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -43053,7 +42986,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "U4,U5")
+          (VALUE "U4,U5,V5")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -44291,7 +44224,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "U4,U5")
+          (VALUE "U4,U5,V5")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -45529,7 +45462,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "U4,U5")
+          (VALUE "U4,U5,V5")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -49939,7 +49872,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "U4,U5")
+          (VALUE "U4,U5,V5")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -55954,7 +55887,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "U4,U5")
+          (VALUE "U4,U5,V5")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -61974,7 +61907,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "U4,U5")
+          (VALUE "U4,U5,V5")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -68533,7 +68466,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "U4,U5")
+          (VALUE "U4,U5,V5")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -69381,7 +69314,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "U4,U5")
+          (VALUE "U4,U5,V5")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -70046,7 +69979,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "U4,U5")
+          (VALUE "U4,U5,V5")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -70980,7 +70913,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "U4,U5")
+          (VALUE "U4,U5,V5")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -75077,7 +75010,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "U4,U5")
+          (VALUE "U4,U5,V5")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -81718,7 +81651,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "U4,U5")
+          (VALUE "U4,U5,V5")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -88375,7 +88308,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "U4,U5")
+          (VALUE "U4,U5,V5")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
