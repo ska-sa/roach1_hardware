@@ -1,30 +1,4 @@
 | Wirelist created using version 5.4.
-| Error - Symbol xc2c256_roach has a pin GND2 that is not defined in its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach has a pin GND5 that is not defined in its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach has a pin GND6 that is not defined in its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach has a pin GND7 that is not defined in its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach has a pin GND8 that is not defined in its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach has a pin GND3 that is not defined in its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach has a pin GND4 that is not defined in its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach has a pin GND1 that is not defined in its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach has a pin VCCAUX_JTAG that is not defined in its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach has a pin TCK that is not defined in its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach has a pin TDO that is not defined in its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach has a pin TMS that is not defined in its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach has a pin TDI that is not defined in its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach is expected to have pin GNDINT1 according to its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach is expected to have pin GNDINT2 according to its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach is expected to have pin B1_TMS according to its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach is expected to have pin B1_TDI according to its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach is expected to have pin B1_TCK according to its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach is expected to have pin B1_TDO according to its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach is expected to have pin GNDIO3 according to its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach is expected to have pin GNDIO4 according to its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach is expected to have pin GNDIO5 according to its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach is expected to have pin GNDIO6 according to its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach is expected to have pin GNDIO1 according to its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach is expected to have pin GNDIO2 according to its pin order file xc2c256_roach.PIN.
-| Error - Symbol xc2c256_roach is expected to have pin VCCIO2_3 according to its pin order file xc2c256_roach.PIN.
 V 5.4
 K 11537160090 roach_ppc_cpld
 DW roach_ppc_cpld
@@ -36,184 +10,171 @@ AS c PARTSPEC=CAPACITOR
 AS c PARTS=1
 AS c PKG_TYPE=CAP
 AS c PINOFF
-AS c REFDES=C?
 AS c VALUE
 AS c VOLTAGERATING
+AS c REFDES=C?
 AS c PINORDER=N1 N2
-AS c INOV_VER_REC=12:01_5-8-07
+AS c INOV_VER_REC=6:11_8-28-07
 AP c 1 PINTYPE=BI
 AP c 1 #=1
 AP c 2 PINTYPE=BI
 AP c 2 #=2
-|Q analog:r 2
-AS analog:r REFDES=R?
-AS analog:r VALUE=
-AS analog:r PARTS=1
-AS analog:r ORDER=MODEL$ VALUE$ TC1=
-AS analog:r PREFIX=R
-AS analog:r PINOFF
-AS analog:r PKG_TYPE=RES
-AS analog:r PINORDER=N1 N2
-AP analog:r 1 PINTYPE=BI
-AP analog:r 1 #=1
-AP analog:r 2 PINTYPE=BI
-AP analog:r 2 #=2
-|Q Sequoia:res_10k_0402_5_ 2
-AS Sequoia:res_10k_0402_5_ REFDES=R?
-AS Sequoia:res_10k_0402_5_ DEVICE=RES_10K_0402_5%
-AS Sequoia:res_10k_0402_5_ PARTS=1
-AS Sequoia:res_10k_0402_5_ PKG_TYPE=R_0402_IPC
-AS Sequoia:res_10k_0402_5_ SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
-AS Sequoia:res_10k_0402_5_ EPI#=P11400000000020
-AS Sequoia:res_10k_0402_5_ GRN=LHR
-AS Sequoia:res_10k_0402_5_ MFGI_2#=BRN: CR0402JE103GLF
-AS Sequoia:res_10k_0402_5_ MFGI_1#=YAE: 9C04021A1002JEPF3
-AS Sequoia:res_10k_0402_5_ SHAPE=0402
-AS Sequoia:res_10k_0402_5_ MFG_1#=YAE: 9C04021A1002JEPF3
-AS Sequoia:res_10k_0402_5_ MFG_2#=BRN: CR0402JE103GLF
-AS Sequoia:res_10k_0402_5_ BOARD_OPTION
-AS Sequoia:res_10k_0402_5_ EP#=P11400000000020
-AS Sequoia:res_10k_0402_5_ VALUE
-AS Sequoia:res_10k_0402_5_ PINORDER=1 2
-AP Sequoia:res_10k_0402_5_ 1 #=1
-AP Sequoia:res_10k_0402_5_ 1 PINTYPE=OUT
-AP Sequoia:res_10k_0402_5_ 2 #=2
-AP Sequoia:res_10k_0402_5_ 2 PINTYPE=OUT
-|Q Sequoia:ic_and_sc70_single_74lvc1g08 1
-AS Sequoia:ic_and_sc70_single_74lvc1g08 REFDES=U?
-AS Sequoia:ic_and_sc70_single_74lvc1g08 DEVICE=IC_AND_SC70_SINGLE_74LVC1G08
-AS Sequoia:ic_and_sc70_single_74lvc1g08 PARTS=1
-AS Sequoia:ic_and_sc70_single_74lvc1g08 PKG_TYPE=SC70_5
-AS Sequoia:ic_and_sc70_single_74lvc1g08 SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
-AS Sequoia:ic_and_sc70_single_74lvc1g08 EPI#=P10500000000002
-AS Sequoia:ic_and_sc70_single_74lvc1g08 SHAPE=SC70-5
-AS Sequoia:ic_and_sc70_single_74lvc1g08 BOARD_OPTION
-AS Sequoia:ic_and_sc70_single_74lvc1g08 MFG_2#=FAI: NC7SZ08P5X
-AS Sequoia:ic_and_sc70_single_74lvc1g08 MFG_1#=TI: SN74LVC1G08DCKR
-AS Sequoia:ic_and_sc70_single_74lvc1g08 MFGI_1#=TI: SN74LVC1G08DCKR
-AS Sequoia:ic_and_sc70_single_74lvc1g08 EP#=P10500000000002
-AS Sequoia:ic_and_sc70_single_74lvc1g08 MFGI_2#=FAI: NC7SZ08P5X
-AS Sequoia:ic_and_sc70_single_74lvc1g08 GRN=LHRG
-AS Sequoia:ic_and_sc70_single_74lvc1g08 VALUE
-AS Sequoia:ic_and_sc70_single_74lvc1g08 PINORDER=A B Y VCC GND
-AP Sequoia:ic_and_sc70_single_74lvc1g08 1 #=1
-AP Sequoia:ic_and_sc70_single_74lvc1g08 1 PINTYPE=OUT
-AP Sequoia:ic_and_sc70_single_74lvc1g08 2 #=2
-AP Sequoia:ic_and_sc70_single_74lvc1g08 2 PINTYPE=OUT
-AP Sequoia:ic_and_sc70_single_74lvc1g08 3 #=4
-AP Sequoia:ic_and_sc70_single_74lvc1g08 3 PINTYPE=IN
-AP Sequoia:ic_and_sc70_single_74lvc1g08 4 #=5
-AP Sequoia:ic_and_sc70_single_74lvc1g08 4 PINTYPE=POWER
-AP Sequoia:ic_and_sc70_single_74lvc1g08 5 #=3
-AP Sequoia:ic_and_sc70_single_74lvc1g08 5 PINTYPE=POWER
-|Q Sequoia:diode_led_0805_red 1
-AS Sequoia:diode_led_0805_red REFDES=CR?
-AS Sequoia:diode_led_0805_red DEVICE=DIODE_LED_0805_RED
-AS Sequoia:diode_led_0805_red PARTS=1
-AS Sequoia:diode_led_0805_red PKG_TYPE=LED_0805
-AS Sequoia:diode_led_0805_red SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
-AS Sequoia:diode_led_0805_red SHAPE=0805
-AS Sequoia:diode_led_0805_red MFGI_2#=FAI: QTLP610C-2
-AS Sequoia:diode_led_0805_red MFGI_1#=FAI: QTLP630C-2
-AS Sequoia:diode_led_0805_red MFG_1#=FAI: QTLP630C-2
-AS Sequoia:diode_led_0805_red MFG_2#=AGI: HSMH-C150
-AS Sequoia:diode_led_0805_red BOARD_OPTION
-AS Sequoia:diode_led_0805_red EP#=P10300000000005
-AS Sequoia:diode_led_0805_red GRN=LHR
-AS Sequoia:diode_led_0805_red EPI#=P10300000000005
-AS Sequoia:diode_led_0805_red VALUE
-AS Sequoia:diode_led_0805_red PINORDER=ANODE CATHODE
-AP Sequoia:diode_led_0805_red 1 #=1
-AP Sequoia:diode_led_0805_red 1 PINTYPE=OUT
-AP Sequoia:diode_led_0805_red 2 #=2
-AP Sequoia:diode_led_0805_red 2 PINTYPE=OUT
-|Q Sequoia:res_180_0402_5_ 2
-AS Sequoia:res_180_0402_5_ REFDES=R?
-AS Sequoia:res_180_0402_5_ DEVICE=RES_180_0402_5%
-AS Sequoia:res_180_0402_5_ PARTS=1
-AS Sequoia:res_180_0402_5_ PKG_TYPE=R_0402_IPC
-AS Sequoia:res_180_0402_5_ SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
-AS Sequoia:res_180_0402_5_ EPI#=P11400000000043
-AS Sequoia:res_180_0402_5_ GRN=LHR
-AS Sequoia:res_180_0402_5_ MFGI_2#=BRN: CR0402JE181GLF
-AS Sequoia:res_180_0402_5_ MFGI_1#=YAE: 9C04021A180RJEPF3
-AS Sequoia:res_180_0402_5_ MFG_2#=BRN: CR0402JE181GLF
-AS Sequoia:res_180_0402_5_ MFG_1#=YAE: 9C04021A180RJEPF3
-AS Sequoia:res_180_0402_5_ SHAPE=0402
-AS Sequoia:res_180_0402_5_ BOARD_OPTION
-AS Sequoia:res_180_0402_5_ EP#=P11400000000043
-AS Sequoia:res_180_0402_5_ VALUE
-AS Sequoia:res_180_0402_5_ PINORDER=1 2
-AP Sequoia:res_180_0402_5_ 1 #=1
-AP Sequoia:res_180_0402_5_ 1 PINTYPE=OUT
-AP Sequoia:res_180_0402_5_ 2 #=2
-AP Sequoia:res_180_0402_5_ 2 PINTYPE=OUT
-|Q Sequoia:cap_100nf_0402_16v_10__x7r 1
-AS Sequoia:cap_100nf_0402_16v_10__x7r REFDES=C?
-AS Sequoia:cap_100nf_0402_16v_10__x7r DEVICE=CAP_100NF_0402_16V_10%_X7R
-AS Sequoia:cap_100nf_0402_16v_10__x7r PARTS=1
-AS Sequoia:cap_100nf_0402_16v_10__x7r PKG_TYPE=C_0402_IPC
-AS Sequoia:cap_100nf_0402_16v_10__x7r SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
-AS Sequoia:cap_100nf_0402_16v_10__x7r GRN=LHR
-AS Sequoia:cap_100nf_0402_16v_10__x7r EP#=P10100000000001
-AS Sequoia:cap_100nf_0402_16v_10__x7r TYPE=X7R
-AS Sequoia:cap_100nf_0402_16v_10__x7r BOARD_OPTION
-AS Sequoia:cap_100nf_0402_16v_10__x7r SHAPE=0402
-AS Sequoia:cap_100nf_0402_16v_10__x7r MFG_1#=VEN: C0402X7R160-104KN
-AS Sequoia:cap_100nf_0402_16v_10__x7r MFG_2#=NA
-AS Sequoia:cap_100nf_0402_16v_10__x7r MFGI_1#=VEN: C0402X7R160-104KN
-AS Sequoia:cap_100nf_0402_16v_10__x7r MFGI_2#=NA
-AS Sequoia:cap_100nf_0402_16v_10__x7r EPI#=P10100000000001
-AS Sequoia:cap_100nf_0402_16v_10__x7r VALUE
-AS Sequoia:cap_100nf_0402_16v_10__x7r PINORDER=1 2
-AP Sequoia:cap_100nf_0402_16v_10__x7r 1 #=1
-AP Sequoia:cap_100nf_0402_16v_10__x7r 1 PINTYPE=OUT
-AP Sequoia:cap_100nf_0402_16v_10__x7r 2 #=2
-AP Sequoia:cap_100nf_0402_16v_10__x7r 2 PINTYPE=OUT
-|Q Sequoia:diode_led_0805_grn 1
-AS Sequoia:diode_led_0805_grn REFDES=CR?
-AS Sequoia:diode_led_0805_grn DEVICE=DIODE_LED_0805_GRN
-AS Sequoia:diode_led_0805_grn PARTS=1
-AS Sequoia:diode_led_0805_grn PKG_TYPE=LED_0805
-AS Sequoia:diode_led_0805_grn SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
-AS Sequoia:diode_led_0805_grn SHAPE=0805
-AS Sequoia:diode_led_0805_grn BOARD_OPTION
-AS Sequoia:diode_led_0805_grn MFG_2#=AGI: HSMG-C150
-AS Sequoia:diode_led_0805_grn MFG_1#=FAI: QTLP630C-4
-AS Sequoia:diode_led_0805_grn MFGI_1#=FAI: QTLP630C-4
-AS Sequoia:diode_led_0805_grn MFGI_2#=FAI: QTLP610C-4
-AS Sequoia:diode_led_0805_grn EP#=P10300000000004
-AS Sequoia:diode_led_0805_grn GRN=LHR
-AS Sequoia:diode_led_0805_grn EPI#=P10300000000004
-AS Sequoia:diode_led_0805_grn VALUE
-AS Sequoia:diode_led_0805_grn PINORDER=ANODE CATHODE
-AP Sequoia:diode_led_0805_grn 1 #=1
-AP Sequoia:diode_led_0805_grn 1 PINTYPE=OUT
-AP Sequoia:diode_led_0805_grn 2 #=2
-AP Sequoia:diode_led_0805_grn 2 PINTYPE=OUT
-|Q Sequoia:res_10k_0402_5__opt3p 2
-AS Sequoia:res_10k_0402_5__opt3p REFDES=RO?
-AS Sequoia:res_10k_0402_5__opt3p DEVICE=RES_10K_0402_5%_OPT3P
-AS Sequoia:res_10k_0402_5__opt3p PARTS=1
-AS Sequoia:res_10k_0402_5__opt3p PKG_TYPE=R_0402_3P_IPC
-AS Sequoia:res_10k_0402_5__opt3p SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
-AS Sequoia:res_10k_0402_5__opt3p EPI#=P11400000000020
-AS Sequoia:res_10k_0402_5__opt3p GRN=LHR
-AS Sequoia:res_10k_0402_5__opt3p BOARD_OPTION
-AS Sequoia:res_10k_0402_5__opt3p MFG_2#=BRN: CR0402JE103GLF
-AS Sequoia:res_10k_0402_5__opt3p MFG_1#=YAE: 9C04021A1002JEPF3
-AS Sequoia:res_10k_0402_5__opt3p SHAPE=0402
-AS Sequoia:res_10k_0402_5__opt3p MFGI_1#=YAE: 9C04021A1002JEPF3
-AS Sequoia:res_10k_0402_5__opt3p MFGI_2#=BRN: CR0402JE103GLF
-AS Sequoia:res_10k_0402_5__opt3p EP#=P11400000000020
-AS Sequoia:res_10k_0402_5__opt3p VALUE
-AS Sequoia:res_10k_0402_5__opt3p PINORDER=1 2 3
-AP Sequoia:res_10k_0402_5__opt3p 1 #=1
-AP Sequoia:res_10k_0402_5__opt3p 1 PINTYPE=OUT
-AP Sequoia:res_10k_0402_5__opt3p 2 #=2
-AP Sequoia:res_10k_0402_5__opt3p 2 PINTYPE=OUT
-AP Sequoia:res_10k_0402_5__opt3p 3 #=3
-AP Sequoia:res_10k_0402_5__opt3p 3 PINTYPE=OUT
+|Q res_10k_0402_5_ 2
+AS res_10k_0402_5_ REFDES=R?
+AS res_10k_0402_5_ DEVICE=RES_10K_0402_5%
+AS res_10k_0402_5_ PARTS=1
+AS res_10k_0402_5_ PKG_TYPE=R_0402_IPC
+AS res_10k_0402_5_ SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
+AS res_10k_0402_5_ EPI#=P11400000000020
+AS res_10k_0402_5_ GRN=LHR
+AS res_10k_0402_5_ MFGI_2#=BRN: CR0402JE103GLF
+AS res_10k_0402_5_ MFGI_1#=YAE: 9C04021A1002JEPF3
+AS res_10k_0402_5_ SHAPE=0402
+AS res_10k_0402_5_ MFG_1#=YAE: 9C04021A1002JEPF3
+AS res_10k_0402_5_ MFG_2#=BRN: CR0402JE103GLF
+AS res_10k_0402_5_ BOARD_OPTION
+AS res_10k_0402_5_ EP#=P11400000000020
+AS res_10k_0402_5_ VALUE
+AS res_10k_0402_5_ PINORDER=1 2
+AP res_10k_0402_5_ 1 #=1
+AP res_10k_0402_5_ 1 PINTYPE=OUT
+AP res_10k_0402_5_ 2 #=2
+AP res_10k_0402_5_ 2 PINTYPE=OUT
+|Q ic_and_sc70_single_74lvc1g08 1
+AS ic_and_sc70_single_74lvc1g08 REFDES=U?
+AS ic_and_sc70_single_74lvc1g08 DEVICE=IC_AND_SC70_SINGLE_74LVC1G08
+AS ic_and_sc70_single_74lvc1g08 PARTS=1
+AS ic_and_sc70_single_74lvc1g08 PKG_TYPE=SC70_5
+AS ic_and_sc70_single_74lvc1g08 SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
+AS ic_and_sc70_single_74lvc1g08 EPI#=P10500000000002
+AS ic_and_sc70_single_74lvc1g08 SHAPE=SC70-5
+AS ic_and_sc70_single_74lvc1g08 BOARD_OPTION
+AS ic_and_sc70_single_74lvc1g08 MFG_2#=FAI: NC7SZ08P5X
+AS ic_and_sc70_single_74lvc1g08 MFG_1#=TI: SN74LVC1G08DCKR
+AS ic_and_sc70_single_74lvc1g08 MFGI_1#=TI: SN74LVC1G08DCKR
+AS ic_and_sc70_single_74lvc1g08 EP#=P10500000000002
+AS ic_and_sc70_single_74lvc1g08 MFGI_2#=FAI: NC7SZ08P5X
+AS ic_and_sc70_single_74lvc1g08 GRN=LHRG
+AS ic_and_sc70_single_74lvc1g08 VALUE
+AS ic_and_sc70_single_74lvc1g08 PINORDER=A B Y VCC GND
+AP ic_and_sc70_single_74lvc1g08 1 #=1
+AP ic_and_sc70_single_74lvc1g08 1 PINTYPE=OUT
+AP ic_and_sc70_single_74lvc1g08 2 #=2
+AP ic_and_sc70_single_74lvc1g08 2 PINTYPE=OUT
+AP ic_and_sc70_single_74lvc1g08 3 #=4
+AP ic_and_sc70_single_74lvc1g08 3 PINTYPE=IN
+AP ic_and_sc70_single_74lvc1g08 4 #=5
+AP ic_and_sc70_single_74lvc1g08 4 PINTYPE=POWER
+AP ic_and_sc70_single_74lvc1g08 5 #=3
+AP ic_and_sc70_single_74lvc1g08 5 PINTYPE=POWER
+|Q diode_led_0805_red 1
+AS diode_led_0805_red REFDES=CR?
+AS diode_led_0805_red DEVICE=DIODE_LED_0805_RED
+AS diode_led_0805_red PARTS=1
+AS diode_led_0805_red PKG_TYPE=LED_0805
+AS diode_led_0805_red SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
+AS diode_led_0805_red SHAPE=0805
+AS diode_led_0805_red MFGI_2#=FAI: QTLP610C-2
+AS diode_led_0805_red MFGI_1#=FAI: QTLP630C-2
+AS diode_led_0805_red MFG_1#=FAI: QTLP630C-2
+AS diode_led_0805_red MFG_2#=AGI: HSMH-C150
+AS diode_led_0805_red BOARD_OPTION
+AS diode_led_0805_red EP#=P10300000000005
+AS diode_led_0805_red GRN=LHR
+AS diode_led_0805_red EPI#=P10300000000005
+AS diode_led_0805_red VALUE
+AS diode_led_0805_red PINORDER=ANODE CATHODE
+AP diode_led_0805_red 1 #=1
+AP diode_led_0805_red 1 PINTYPE=OUT
+AP diode_led_0805_red 2 #=2
+AP diode_led_0805_red 2 PINTYPE=OUT
+|Q res_180_0402_5_ 2
+AS res_180_0402_5_ REFDES=R?
+AS res_180_0402_5_ DEVICE=RES_180_0402_5%
+AS res_180_0402_5_ PARTS=1
+AS res_180_0402_5_ PKG_TYPE=R_0402_IPC
+AS res_180_0402_5_ SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
+AS res_180_0402_5_ EPI#=P11400000000043
+AS res_180_0402_5_ GRN=LHR
+AS res_180_0402_5_ MFGI_2#=BRN: CR0402JE181GLF
+AS res_180_0402_5_ MFGI_1#=YAE: 9C04021A180RJEPF3
+AS res_180_0402_5_ MFG_2#=BRN: CR0402JE181GLF
+AS res_180_0402_5_ MFG_1#=YAE: 9C04021A180RJEPF3
+AS res_180_0402_5_ SHAPE=0402
+AS res_180_0402_5_ BOARD_OPTION
+AS res_180_0402_5_ EP#=P11400000000043
+AS res_180_0402_5_ VALUE
+AS res_180_0402_5_ PINORDER=1 2
+AP res_180_0402_5_ 1 #=1
+AP res_180_0402_5_ 1 PINTYPE=OUT
+AP res_180_0402_5_ 2 #=2
+AP res_180_0402_5_ 2 PINTYPE=OUT
+|Q cap_100nf_0402_16v_10__x7r 1
+AS cap_100nf_0402_16v_10__x7r REFDES=C?
+AS cap_100nf_0402_16v_10__x7r DEVICE=CAP_100NF_0402_16V_10%_X7R
+AS cap_100nf_0402_16v_10__x7r PARTS=1
+AS cap_100nf_0402_16v_10__x7r PKG_TYPE=C_0402_IPC
+AS cap_100nf_0402_16v_10__x7r SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
+AS cap_100nf_0402_16v_10__x7r GRN=LHR
+AS cap_100nf_0402_16v_10__x7r EP#=P10100000000001
+AS cap_100nf_0402_16v_10__x7r TYPE=X7R
+AS cap_100nf_0402_16v_10__x7r BOARD_OPTION
+AS cap_100nf_0402_16v_10__x7r SHAPE=0402
+AS cap_100nf_0402_16v_10__x7r MFG_1#=VEN: C0402X7R160-104KN
+AS cap_100nf_0402_16v_10__x7r MFG_2#=NA
+AS cap_100nf_0402_16v_10__x7r MFGI_1#=VEN: C0402X7R160-104KN
+AS cap_100nf_0402_16v_10__x7r MFGI_2#=NA
+AS cap_100nf_0402_16v_10__x7r EPI#=P10100000000001
+AS cap_100nf_0402_16v_10__x7r VALUE
+AS cap_100nf_0402_16v_10__x7r PINORDER=1 2
+AP cap_100nf_0402_16v_10__x7r 1 #=1
+AP cap_100nf_0402_16v_10__x7r 1 PINTYPE=OUT
+AP cap_100nf_0402_16v_10__x7r 2 #=2
+AP cap_100nf_0402_16v_10__x7r 2 PINTYPE=OUT
+|Q diode_led_0805_grn 1
+AS diode_led_0805_grn REFDES=CR?
+AS diode_led_0805_grn DEVICE=DIODE_LED_0805_GRN
+AS diode_led_0805_grn PARTS=1
+AS diode_led_0805_grn PKG_TYPE=LED_0805
+AS diode_led_0805_grn SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
+AS diode_led_0805_grn SHAPE=0805
+AS diode_led_0805_grn BOARD_OPTION
+AS diode_led_0805_grn MFG_2#=AGI: HSMG-C150
+AS diode_led_0805_grn MFG_1#=FAI: QTLP630C-4
+AS diode_led_0805_grn MFGI_1#=FAI: QTLP630C-4
+AS diode_led_0805_grn MFGI_2#=FAI: QTLP610C-4
+AS diode_led_0805_grn EP#=P10300000000004
+AS diode_led_0805_grn GRN=LHR
+AS diode_led_0805_grn EPI#=P10300000000004
+AS diode_led_0805_grn VALUE
+AS diode_led_0805_grn PINORDER=ANODE CATHODE
+AP diode_led_0805_grn 1 #=1
+AP diode_led_0805_grn 1 PINTYPE=OUT
+AP diode_led_0805_grn 2 #=2
+AP diode_led_0805_grn 2 PINTYPE=OUT
+|Q res_10k_0402_5__opt3p 2
+AS res_10k_0402_5__opt3p REFDES=RO?
+AS res_10k_0402_5__opt3p DEVICE=RES_10K_0402_5%_OPT3P
+AS res_10k_0402_5__opt3p PARTS=1
+AS res_10k_0402_5__opt3p PKG_TYPE=R_0402_3P_IPC
+AS res_10k_0402_5__opt3p SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
+AS res_10k_0402_5__opt3p EPI#=P11400000000020
+AS res_10k_0402_5__opt3p GRN=LHR
+AS res_10k_0402_5__opt3p BOARD_OPTION
+AS res_10k_0402_5__opt3p MFG_2#=BRN: CR0402JE103GLF
+AS res_10k_0402_5__opt3p MFG_1#=YAE: 9C04021A1002JEPF3
+AS res_10k_0402_5__opt3p SHAPE=0402
+AS res_10k_0402_5__opt3p MFGI_1#=YAE: 9C04021A1002JEPF3
+AS res_10k_0402_5__opt3p MFGI_2#=BRN: CR0402JE103GLF
+AS res_10k_0402_5__opt3p EP#=P11400000000020
+AS res_10k_0402_5__opt3p VALUE
+AS res_10k_0402_5__opt3p PINORDER=1 2 3
+AP res_10k_0402_5__opt3p 1 #=1
+AP res_10k_0402_5__opt3p 1 PINTYPE=OUT
+AP res_10k_0402_5__opt3p 2 #=2
+AP res_10k_0402_5__opt3p 2 PINTYPE=OUT
+AP res_10k_0402_5__opt3p 3 #=3
+AP res_10k_0402_5__opt3p 3 PINTYPE=OUT
 |Q xc2c256_roach 1
 AS xc2c256_roach PINSWAP=(1,2,3,4,6,7,8,9,10,11,12,13,14,15,16,17,18,19,22,23,24,27,28,29,30,32,33,34,35,36,37,39,40,41,42,43,44,46,49,50,52,53,54,55,56,58,59,60,61,63,64,65,66,67,68,70,71,72,73,74,76,77,78,79,80,81,82,85,86,87,89,90,91,92,93,94,95,96,97,99)
 AS xc2c256_roach DEVICE=XC2C256
@@ -221,210 +182,210 @@ AS xc2c256_roach MANUFACTURER=XILINX
 AS xc2c256_roach PARTS=1
 AS xc2c256_roach PKG_TYPE=QFP50P1600X1600X120-100N
 AS xc2c256_roach VALUE
-AS xc2c256_roach P/D_NUM=XC2C256-7VQ100C
 AS xc2c256_roach REFDES=U?
-AS xc2c256_roach PINORDER=GNDINT1 GNDINT2 B1_TMS B1_TDI B1_TCK B1_TDO VCCINT1 VCCINT2 GNDIO3 GNDIO4 GNDIO5 GNDIO6 VCCIO1_3 VCCIO2_1 VCCIO2_2 B1_IO_GCLK0 B2_IO_GCLK2 B2_IO_GCLK3 B1_IO_OE B1_IO_CLR# GNDIO1 GNDIO2 VCCIO1_1 VCCIO1_2 VCCIO2_3 B1_IO_GCLK1 B1_IO1 B1_IO2 B1_IO3 B1_IO4 B1_IO5 B1_IO6 B1_IO7 B1_IO8 B1_IO9 B1_IO10 B1_IO11 B1_IO12 B1_IO13 B1_IO14 B1_IO15 B1_IO16 B1_IO17 B1_IO18 B1_IO19 B1_IO20 B1_IO21 B1_IO22 B1_IO23 B1_IO24 B1_IO25 B1_IO26 B1_IO27 B1_IO28 B1_IO29 B1_IO30 B1_IO31 B1_IO32 B1_IO33 B1_IO34 B2_IO_1 B2_IO_2 B2_IO_3 B2_IO_4 B2_IO_5 B2_IO_6 B2_IO_7 B2_IO_8 B2_IO_9 B2_IO_10 B2_IO_11 B2_IO_12 B2_IO_13 B2_IO_14 B2_IO_15 B2_IO_16 B2_IO_17 B2_IO_18 B2_IO_19 B2_IO_20 B2_IO_21 B2_IO_22 B2_IO_23 B2_IO_24 B2_IO_25 B2_IO_26 B2_IO_27 B2_IO_28 B2_IO_29 B2_IO_30 B2_IO_31 B2_IO_32 B2_IO_33 B2_IO_34 B2_IO_35 B2_IO_36 B2_IO_37 B2_IO_38 B2_IO_39 B2_IO_40
-AS xc2c256_roach INOV_VER_REC=8:58_8-23-07
-AP xc2c256_roach 7 #=26
-AP xc2c256_roach 7 PINTYPE=POWER
-AP xc2c256_roach 8 #=57
-AP xc2c256_roach 8 PINTYPE=POWER
-AP xc2c256_roach 13 #=51
-AP xc2c256_roach 13 PINTYPE=POWER
-AP xc2c256_roach 14 #=88
-AP xc2c256_roach 14 PINTYPE=POWER
-AP xc2c256_roach 15 #=98
-AP xc2c256_roach 15 PINTYPE=POWER
-AP xc2c256_roach 16 #=67
+AS xc2c256_roach P/D_NUM=XC2C256-7VQ100C
+AS xc2c256_roach PINORDER=B1_IO1 B1_IO10 B1_IO11 B1_IO12 B1_IO13 B1_IO14 B1_IO15 B1_IO16 B1_IO17 B1_IO18 B1_IO19 B1_IO2 B1_IO20 B1_IO21 B1_IO22 B1_IO23 B1_IO24 B1_IO25 B1_IO26 B1_IO27 B1_IO28 B1_IO29 B1_IO3 B1_IO30 B1_IO31 B1_IO32 B1_IO33 B1_IO34 B1_IO4 B1_IO5 B1_IO6 B1_IO7 B1_IO8 B1_IO9 B1_IO_CLR# B1_IO_GCLK0 B1_IO_GCLK1 B1_IO_OE B2_IO_1 B2_IO_10 B2_IO_11 B2_IO_12 B2_IO_13 B2_IO_14 B2_IO_15 B2_IO_16 B2_IO_17 B2_IO_18 B2_IO_19 B2_IO_2 B2_IO_20 B2_IO_21 B2_IO_22 B2_IO_23 B2_IO_24 B2_IO_25 B2_IO_26 B2_IO_27 B2_IO_28 B2_IO_29 B2_IO_3 B2_IO_30 B2_IO_31 B2_IO_32 B2_IO_33 B2_IO_34 B2_IO_35 B2_IO_36 B2_IO_37 B2_IO_38 B2_IO_39 B2_IO_4 B2_IO_40 B2_IO_5 B2_IO_6 B2_IO_7 B2_IO_8 B2_IO_9 B2_IO_GCLK2 B2_IO_GCLK3 GND1 GND2 GND3 GND4 GND5 GND6 GND7 GND8 TCK TDI TDO TMS VCCAUX_JTAG VCCINT1 VCCINT2 VCCIO1_1 VCCIO1_2 VCCIO1_3 VCCIO2_1 VCCIO2_2
+AS xc2c256_roach INOV_VER_REC=8:38_8-28-07
+AP xc2c256_roach 1 #=33
+AP xc2c256_roach 1 PINTYPE=BI
+AP xc2c256_roach 2 #=90
+AP xc2c256_roach 2 PINTYPE=BI
+AP xc2c256_roach 3 #=23
+AP xc2c256_roach 3 PINTYPE=BI
+AP xc2c256_roach 4 #=91
+AP xc2c256_roach 4 PINTYPE=BI
+AP xc2c256_roach 5 #=92
+AP xc2c256_roach 5 PINTYPE=BI
+AP xc2c256_roach 6 #=93
+AP xc2c256_roach 6 PINTYPE=BI
+AP xc2c256_roach 7 #=15
+AP xc2c256_roach 7 PINTYPE=BI
+AP xc2c256_roach 8 #=22
+AP xc2c256_roach 8 PINTYPE=BI
+AP xc2c256_roach 9 #=28
+AP xc2c256_roach 9 PINTYPE=BI
+AP xc2c256_roach 10 #=11
+AP xc2c256_roach 10 PINTYPE=BI
+AP xc2c256_roach 11 #=14
+AP xc2c256_roach 11 PINTYPE=BI
+AP xc2c256_roach 12 #=32
+AP xc2c256_roach 12 PINTYPE=BI
+AP xc2c256_roach 13 #=17
+AP xc2c256_roach 13 PINTYPE=BI
+AP xc2c256_roach 14 #=52
+AP xc2c256_roach 14 PINTYPE=BI
+AP xc2c256_roach 15 #=29
+AP xc2c256_roach 15 PINTYPE=BI
+AP xc2c256_roach 16 #=63
 AP xc2c256_roach 16 PINTYPE=BI
-AP xc2c256_roach 17 #=68
-AP xc2c256_roach 17 PINTYPE=BI
-AP xc2c256_roach 18 #=87
+AP xc2c256_roach 17 #=10
+AP xc2c256_roach 17 PINTYPE=OUT
+AP xc2c256_roach 18 #=70
 AP xc2c256_roach 18 PINTYPE=BI
-AP xc2c256_roach 19 #=64
-AP xc2c256_roach 19 PINTYPE=BI
-AP xc2c256_roach 20 #=49
+AP xc2c256_roach 19 #=9
+AP xc2c256_roach 19 PINTYPE=OUT
+AP xc2c256_roach 20 #=94
 AP xc2c256_roach 20 PINTYPE=BI
-AP xc2c256_roach 23 #=20
-AP xc2c256_roach 23 PINTYPE=POWER
-AP xc2c256_roach 24 #=38
-AP xc2c256_roach 24 PINTYPE=POWER
-AP xc2c256_roach 26 #=66
+AP xc2c256_roach 21 #=61
+AP xc2c256_roach 21 PINTYPE=BI
+AP xc2c256_roach 22 #=44
+AP xc2c256_roach 22 PINTYPE=BI
+AP xc2c256_roach 23 #=6
+AP xc2c256_roach 23 PINTYPE=BI
+AP xc2c256_roach 24 #=46
+AP xc2c256_roach 24 PINTYPE=BI
+AP xc2c256_roach 25 #=50
+AP xc2c256_roach 25 PINTYPE=BI
+AP xc2c256_roach 26 #=86
 AP xc2c256_roach 26 PINTYPE=BI
-AP xc2c256_roach 27 #=33
+AP xc2c256_roach 27 #=76
 AP xc2c256_roach 27 PINTYPE=BI
-AP xc2c256_roach 28 #=32
+AP xc2c256_roach 28 #=41
 AP xc2c256_roach 28 PINTYPE=BI
-AP xc2c256_roach 29 #=6
+AP xc2c256_roach 29 #=4
 AP xc2c256_roach 29 PINTYPE=BI
-AP xc2c256_roach 30 #=4
+AP xc2c256_roach 30 #=3
 AP xc2c256_roach 30 PINTYPE=BI
-AP xc2c256_roach 31 #=3
+AP xc2c256_roach 31 #=30
 AP xc2c256_roach 31 PINTYPE=BI
-AP xc2c256_roach 32 #=30
+AP xc2c256_roach 32 #=2
 AP xc2c256_roach 32 PINTYPE=BI
-AP xc2c256_roach 33 #=2
+AP xc2c256_roach 33 #=18
 AP xc2c256_roach 33 PINTYPE=BI
-AP xc2c256_roach 34 #=18
+AP xc2c256_roach 34 #=1
 AP xc2c256_roach 34 PINTYPE=BI
-AP xc2c256_roach 35 #=1
+AP xc2c256_roach 35 #=49
 AP xc2c256_roach 35 PINTYPE=BI
-AP xc2c256_roach 36 #=90
+AP xc2c256_roach 36 #=67
 AP xc2c256_roach 36 PINTYPE=BI
-AP xc2c256_roach 37 #=23
+AP xc2c256_roach 37 #=66
 AP xc2c256_roach 37 PINTYPE=BI
-AP xc2c256_roach 38 #=91
+AP xc2c256_roach 38 #=64
 AP xc2c256_roach 38 PINTYPE=BI
-AP xc2c256_roach 39 #=92
+AP xc2c256_roach 39 #=79
 AP xc2c256_roach 39 PINTYPE=BI
-AP xc2c256_roach 40 #=93
+AP xc2c256_roach 40 #=40
 AP xc2c256_roach 40 PINTYPE=BI
-AP xc2c256_roach 41 #=15
+AP xc2c256_roach 41 #=77
 AP xc2c256_roach 41 PINTYPE=BI
-AP xc2c256_roach 42 #=22
+AP xc2c256_roach 42 #=53
 AP xc2c256_roach 42 PINTYPE=BI
-AP xc2c256_roach 43 #=28
+AP xc2c256_roach 43 #=85
 AP xc2c256_roach 43 PINTYPE=BI
-AP xc2c256_roach 44 #=11
+AP xc2c256_roach 44 #=16
 AP xc2c256_roach 44 PINTYPE=BI
-AP xc2c256_roach 45 #=14
+AP xc2c256_roach 45 #=27
 AP xc2c256_roach 45 PINTYPE=BI
-AP xc2c256_roach 46 #=17
+AP xc2c256_roach 46 #=42
 AP xc2c256_roach 46 PINTYPE=BI
-AP xc2c256_roach 47 #=52
+AP xc2c256_roach 47 #=55
 AP xc2c256_roach 47 PINTYPE=BI
-AP xc2c256_roach 48 #=29
+AP xc2c256_roach 48 #=43
 AP xc2c256_roach 48 PINTYPE=BI
-AP xc2c256_roach 49 #=63
+AP xc2c256_roach 49 #=65
 AP xc2c256_roach 49 PINTYPE=BI
-AP xc2c256_roach 50 #=10
-AP xc2c256_roach 50 PINTYPE=OUT
-AP xc2c256_roach 51 #=70
+AP xc2c256_roach 50 #=80
+AP xc2c256_roach 50 PINTYPE=BI
+AP xc2c256_roach 51 #=78
 AP xc2c256_roach 51 PINTYPE=BI
-AP xc2c256_roach 52 #=9
-AP xc2c256_roach 52 PINTYPE=OUT
-AP xc2c256_roach 53 #=94
+AP xc2c256_roach 52 #=59
+AP xc2c256_roach 52 PINTYPE=BI
+AP xc2c256_roach 53 #=24
 AP xc2c256_roach 53 PINTYPE=BI
-AP xc2c256_roach 54 #=61
+AP xc2c256_roach 54 #=58
 AP xc2c256_roach 54 PINTYPE=BI
-AP xc2c256_roach 55 #=44
+AP xc2c256_roach 55 #=60
 AP xc2c256_roach 55 PINTYPE=BI
-AP xc2c256_roach 56 #=46
+AP xc2c256_roach 56 #=39
 AP xc2c256_roach 56 PINTYPE=BI
-AP xc2c256_roach 57 #=50
+AP xc2c256_roach 57 #=95
 AP xc2c256_roach 57 PINTYPE=BI
-AP xc2c256_roach 58 #=86
+AP xc2c256_roach 58 #=12
 AP xc2c256_roach 58 PINTYPE=BI
-AP xc2c256_roach 59 #=76
+AP xc2c256_roach 59 #=74
 AP xc2c256_roach 59 PINTYPE=BI
-AP xc2c256_roach 60 #=41
-AP xc2c256_roach 60 PINTYPE=BI
-AP xc2c256_roach 61 #=79
+AP xc2c256_roach 60 #=7
+AP xc2c256_roach 60 PINTYPE=OUT
+AP xc2c256_roach 61 #=89
 AP xc2c256_roach 61 PINTYPE=BI
-AP xc2c256_roach 62 #=80
+AP xc2c256_roach 62 #=96
 AP xc2c256_roach 62 PINTYPE=BI
-AP xc2c256_roach 63 #=89
-AP xc2c256_roach 63 PINTYPE=BI
-AP xc2c256_roach 64 #=13
+AP xc2c256_roach 63 #=8
+AP xc2c256_roach 63 PINTYPE=OUT
+AP xc2c256_roach 64 #=97
 AP xc2c256_roach 64 PINTYPE=BI
-AP xc2c256_roach 65 #=19
+AP xc2c256_roach 65 #=71
 AP xc2c256_roach 65 PINTYPE=BI
-AP xc2c256_roach 66 #=82
+AP xc2c256_roach 66 #=73
 AP xc2c256_roach 66 PINTYPE=BI
-AP xc2c256_roach 67 #=81
+AP xc2c256_roach 67 #=72
 AP xc2c256_roach 67 PINTYPE=BI
-AP xc2c256_roach 68 #=54
+AP xc2c256_roach 68 #=99
 AP xc2c256_roach 68 PINTYPE=BI
-AP xc2c256_roach 69 #=56
+AP xc2c256_roach 69 #=37
 AP xc2c256_roach 69 PINTYPE=BI
-AP xc2c256_roach 70 #=40
+AP xc2c256_roach 70 #=36
 AP xc2c256_roach 70 PINTYPE=BI
-AP xc2c256_roach 71 #=77
+AP xc2c256_roach 71 #=35
 AP xc2c256_roach 71 PINTYPE=BI
-AP xc2c256_roach 72 #=53
+AP xc2c256_roach 72 #=13
 AP xc2c256_roach 72 PINTYPE=BI
-AP xc2c256_roach 73 #=85
+AP xc2c256_roach 73 #=34
 AP xc2c256_roach 73 PINTYPE=BI
-AP xc2c256_roach 74 #=16
+AP xc2c256_roach 74 #=19
 AP xc2c256_roach 74 PINTYPE=BI
-AP xc2c256_roach 75 #=27
+AP xc2c256_roach 75 #=82
 AP xc2c256_roach 75 PINTYPE=BI
-AP xc2c256_roach 76 #=42
+AP xc2c256_roach 76 #=81
 AP xc2c256_roach 76 PINTYPE=BI
-AP xc2c256_roach 77 #=55
+AP xc2c256_roach 77 #=54
 AP xc2c256_roach 77 PINTYPE=BI
-AP xc2c256_roach 78 #=43
+AP xc2c256_roach 78 #=56
 AP xc2c256_roach 78 PINTYPE=BI
-AP xc2c256_roach 79 #=65
+AP xc2c256_roach 79 #=68
 AP xc2c256_roach 79 PINTYPE=BI
-AP xc2c256_roach 80 #=78
+AP xc2c256_roach 80 #=87
 AP xc2c256_roach 80 PINTYPE=BI
-AP xc2c256_roach 81 #=59
-AP xc2c256_roach 81 PINTYPE=BI
-AP xc2c256_roach 82 #=24
-AP xc2c256_roach 82 PINTYPE=BI
-AP xc2c256_roach 83 #=58
-AP xc2c256_roach 83 PINTYPE=BI
-AP xc2c256_roach 84 #=60
-AP xc2c256_roach 84 PINTYPE=BI
-AP xc2c256_roach 85 #=39
-AP xc2c256_roach 85 PINTYPE=BI
-AP xc2c256_roach 86 #=95
-AP xc2c256_roach 86 PINTYPE=BI
-AP xc2c256_roach 87 #=12
-AP xc2c256_roach 87 PINTYPE=BI
-AP xc2c256_roach 88 #=74
-AP xc2c256_roach 88 PINTYPE=BI
-AP xc2c256_roach 89 #=7
-AP xc2c256_roach 89 PINTYPE=OUT
-AP xc2c256_roach 90 #=96
-AP xc2c256_roach 90 PINTYPE=BI
-AP xc2c256_roach 91 #=8
+AP xc2c256_roach 81 #=21
+AP xc2c256_roach 81 PINTYPE=POWER
+AP xc2c256_roach 82 #=25
+AP xc2c256_roach 82 PINTYPE=POWER
+AP xc2c256_roach 83 #=31
+AP xc2c256_roach 83 PINTYPE=POWER
+AP xc2c256_roach 84 #=62
+AP xc2c256_roach 84 PINTYPE=POWER
+AP xc2c256_roach 85 #=69
+AP xc2c256_roach 85 PINTYPE=POWER
+AP xc2c256_roach 86 #=75
+AP xc2c256_roach 86 PINTYPE=POWER
+AP xc2c256_roach 87 #=84
+AP xc2c256_roach 87 PINTYPE=POWER
+AP xc2c256_roach 88 #=100
+AP xc2c256_roach 88 PINTYPE=POWER
+AP xc2c256_roach 89 #=48
+AP xc2c256_roach 89 PINTYPE=IN
+AP xc2c256_roach 90 #=45
+AP xc2c256_roach 90 PINTYPE=IN
+AP xc2c256_roach 91 #=83
 AP xc2c256_roach 91 PINTYPE=OUT
-AP xc2c256_roach 92 #=97
-AP xc2c256_roach 92 PINTYPE=BI
-AP xc2c256_roach 93 #=71
-AP xc2c256_roach 93 PINTYPE=BI
-AP xc2c256_roach 94 #=73
-AP xc2c256_roach 94 PINTYPE=BI
-AP xc2c256_roach 95 #=72
-AP xc2c256_roach 95 PINTYPE=BI
-AP xc2c256_roach 96 #=99
-AP xc2c256_roach 96 PINTYPE=BI
-AP xc2c256_roach 97 #=37
-AP xc2c256_roach 97 PINTYPE=BI
-AP xc2c256_roach 98 #=36
-AP xc2c256_roach 98 PINTYPE=BI
-AP xc2c256_roach 99 #=35
-AP xc2c256_roach 99 PINTYPE=BI
-AP xc2c256_roach 100 #=34
-AP xc2c256_roach 100 PINTYPE=BI
-AP xc2c256_roach 0 #=25
-AP xc2c256_roach 0 PINTYPE=POWER
-AP xc2c256_roach 0 #=69
-AP xc2c256_roach 0 PINTYPE=POWER
-AP xc2c256_roach 0 #=75
-AP xc2c256_roach 0 PINTYPE=POWER
-AP xc2c256_roach 0 #=84
-AP xc2c256_roach 0 PINTYPE=POWER
-AP xc2c256_roach 0 #=100
-AP xc2c256_roach 0 PINTYPE=POWER
-AP xc2c256_roach 0 #=31
-AP xc2c256_roach 0 PINTYPE=POWER
-AP xc2c256_roach 0 #=62
-AP xc2c256_roach 0 PINTYPE=POWER
-AP xc2c256_roach 0 #=21
-AP xc2c256_roach 0 PINTYPE=POWER
-AP xc2c256_roach 0 PINTYPE=IN
-AP xc2c256_roach 0 #=5
-AP xc2c256_roach 0 #=48
-AP xc2c256_roach 0 PINTYPE=IN
-AP xc2c256_roach 0 #=83
-AP xc2c256_roach 0 PINTYPE=OUT
-AP xc2c256_roach 0 #=47
-AP xc2c256_roach 0 PINTYPE=IN
-AP xc2c256_roach 0 #=45
-AP xc2c256_roach 0 PINTYPE=IN
+AP xc2c256_roach 92 #=47
+AP xc2c256_roach 92 PINTYPE=IN
+AP xc2c256_roach 93 PINTYPE=IN
+AP xc2c256_roach 93 #=5
+AP xc2c256_roach 94 #=26
+AP xc2c256_roach 94 PINTYPE=POWER
+AP xc2c256_roach 95 #=57
+AP xc2c256_roach 95 PINTYPE=POWER
+AP xc2c256_roach 96 #=20
+AP xc2c256_roach 96 PINTYPE=POWER
+AP xc2c256_roach 97 #=38
+AP xc2c256_roach 97 PINTYPE=POWER
+AP xc2c256_roach 98 #=51
+AP xc2c256_roach 98 PINTYPE=POWER
+AP xc2c256_roach 99 #=88
+AP xc2c256_roach 99 PINTYPE=POWER
+AP xc2c256_roach 100 #=98
+AP xc2c256_roach 100 PINTYPE=POWER
 |Q xilinx_14_pin_jtag 1
 AS xilinx_14_pin_jtag PKG_TYPE=JTAG-14
 AS xilinx_14_pin_jtag LEVEL=STD
@@ -464,63 +425,77 @@ AP xilinx_14_pin_jtag 13 #=11
 AP xilinx_14_pin_jtag 13 PINTYPE=OUT
 AP xilinx_14_pin_jtag 14 #=13
 AP xilinx_14_pin_jtag 14 PINTYPE=ANALOG
-|Q SKASYMGEN:cap 1
-AS SKASYMGEN:cap VPC=250MW
-AS SKASYMGEN:cap VALUE=
-AS SKASYMGEN:cap REFDES=C?
-AS SKASYMGEN:cap PREFIX=C
-AS SKASYMGEN:cap P/D_NUM=C12345/0-123
-AS SKASYMGEN:cap PARTSPEC=CAPACITOR
-AS SKASYMGEN:cap ORDER=MODEL$ VALUE$
-AS SKASYMGEN:cap PARTS=1
-AS SKASYMGEN:cap PKG_TYPE=CAP
-AS SKASYMGEN:cap PINOFF
-AS SKASYMGEN:cap PINORDER=N1 N2
-AP SKASYMGEN:cap 1 PINTYPE=BI
-AP SKASYMGEN:cap 1 #=1
-AP SKASYMGEN:cap 2 #=2
-AP SKASYMGEN:cap 2 PINTYPE=BI
-|Q Sequoia:switch_dip_4pole_0r1_smt8 1
-AS Sequoia:switch_dip_4pole_0r1_smt8 REFDES=SW?
-AS Sequoia:switch_dip_4pole_0r1_smt8 DEVICE=SWITCH_DIP_4POLE_0R1_SMT8
-AS Sequoia:switch_dip_4pole_0r1_smt8 PARTS=1
-AS Sequoia:switch_dip_4pole_0r1_smt8 PKG_TYPE=DIPSW4
-AS Sequoia:switch_dip_4pole_0r1_smt8 SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
-AS Sequoia:switch_dip_4pole_0r1_smt8 GRN=LHR
-AS Sequoia:switch_dip_4pole_0r1_smt8 SHAPE=.1 SMT
-AS Sequoia:switch_dip_4pole_0r1_smt8 MFGI_2#=GRA: 90HBW04PT
-AS Sequoia:switch_dip_4pole_0r1_smt8 MFGI_1#=OMR: A6S-4101
-AS Sequoia:switch_dip_4pole_0r1_smt8 BOARD_OPTION
-AS Sequoia:switch_dip_4pole_0r1_smt8 MFG_2#=GRA: 90HBW04PT
-AS Sequoia:switch_dip_4pole_0r1_smt8 MFG_1#=OMR: A6S-4101
-AS Sequoia:switch_dip_4pole_0r1_smt8 EP#=P11600000000001
-AS Sequoia:switch_dip_4pole_0r1_smt8 EPI#=P11600000000001
-AS Sequoia:switch_dip_4pole_0r1_smt8 VALUE
-AS Sequoia:switch_dip_4pole_0r1_smt8 PINORDER=SW1A SW2A SW3A SW4A SW1B SW2B SW3B SW4B
-AP Sequoia:switch_dip_4pole_0r1_smt8 1 #=1
-AP Sequoia:switch_dip_4pole_0r1_smt8 1 ORDER=0
-AP Sequoia:switch_dip_4pole_0r1_smt8 1 PINTYPE=OUT
-AP Sequoia:switch_dip_4pole_0r1_smt8 2 #=3
-AP Sequoia:switch_dip_4pole_0r1_smt8 2 ORDER=1
-AP Sequoia:switch_dip_4pole_0r1_smt8 2 PINTYPE=OUT
-AP Sequoia:switch_dip_4pole_0r1_smt8 3 #=5
-AP Sequoia:switch_dip_4pole_0r1_smt8 3 ORDER=2
-AP Sequoia:switch_dip_4pole_0r1_smt8 3 PINTYPE=OUT
-AP Sequoia:switch_dip_4pole_0r1_smt8 4 #=7
-AP Sequoia:switch_dip_4pole_0r1_smt8 4 ORDER=3
-AP Sequoia:switch_dip_4pole_0r1_smt8 4 PINTYPE=OUT
-AP Sequoia:switch_dip_4pole_0r1_smt8 5 #=2
-AP Sequoia:switch_dip_4pole_0r1_smt8 5 ORDER=0
-AP Sequoia:switch_dip_4pole_0r1_smt8 5 PINTYPE=OUT
-AP Sequoia:switch_dip_4pole_0r1_smt8 6 #=4
-AP Sequoia:switch_dip_4pole_0r1_smt8 6 ORDER=1
-AP Sequoia:switch_dip_4pole_0r1_smt8 6 PINTYPE=OUT
-AP Sequoia:switch_dip_4pole_0r1_smt8 7 #=6
-AP Sequoia:switch_dip_4pole_0r1_smt8 7 ORDER=2
-AP Sequoia:switch_dip_4pole_0r1_smt8 7 PINTYPE=OUT
-AP Sequoia:switch_dip_4pole_0r1_smt8 8 #=8
-AP Sequoia:switch_dip_4pole_0r1_smt8 8 ORDER=3
-AP Sequoia:switch_dip_4pole_0r1_smt8 8 PINTYPE=OUT
+|Q cap 1
+AS cap VPC=250MW
+AS cap VALUE=
+AS cap REFDES=C?
+AS cap PREFIX=C
+AS cap P/D_NUM=C12345/0-123
+AS cap PARTSPEC=CAPACITOR
+AS cap ORDER=MODEL$ VALUE$
+AS cap PARTS=1
+AS cap PKG_TYPE=CAP
+AS cap PINOFF
+AS cap PINORDER=N1 N2
+AP cap 1 PINTYPE=BI
+AP cap 1 #=1
+AP cap 2 #=2
+AP cap 2 PINTYPE=BI
+|Q switch_dip_4pole_0r1_smt8 1
+AS switch_dip_4pole_0r1_smt8 REFDES=SW?
+AS switch_dip_4pole_0r1_smt8 DEVICE=SWITCH_DIP_4POLE_0R1_SMT8
+AS switch_dip_4pole_0r1_smt8 PARTS=1
+AS switch_dip_4pole_0r1_smt8 PKG_TYPE=DIPSW4
+AS switch_dip_4pole_0r1_smt8 SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
+AS switch_dip_4pole_0r1_smt8 GRN=LHR
+AS switch_dip_4pole_0r1_smt8 SHAPE=.1 SMT
+AS switch_dip_4pole_0r1_smt8 MFGI_2#=GRA: 90HBW04PT
+AS switch_dip_4pole_0r1_smt8 MFGI_1#=OMR: A6S-4101
+AS switch_dip_4pole_0r1_smt8 BOARD_OPTION
+AS switch_dip_4pole_0r1_smt8 MFG_2#=GRA: 90HBW04PT
+AS switch_dip_4pole_0r1_smt8 MFG_1#=OMR: A6S-4101
+AS switch_dip_4pole_0r1_smt8 EP#=P11600000000001
+AS switch_dip_4pole_0r1_smt8 EPI#=P11600000000001
+AS switch_dip_4pole_0r1_smt8 VALUE
+AS switch_dip_4pole_0r1_smt8 PINORDER=SW1A SW2A SW3A SW4A SW1B SW2B SW3B SW4B
+AP switch_dip_4pole_0r1_smt8 1 #=1
+AP switch_dip_4pole_0r1_smt8 1 ORDER=0
+AP switch_dip_4pole_0r1_smt8 1 PINTYPE=OUT
+AP switch_dip_4pole_0r1_smt8 2 #=3
+AP switch_dip_4pole_0r1_smt8 2 ORDER=1
+AP switch_dip_4pole_0r1_smt8 2 PINTYPE=OUT
+AP switch_dip_4pole_0r1_smt8 3 #=5
+AP switch_dip_4pole_0r1_smt8 3 ORDER=2
+AP switch_dip_4pole_0r1_smt8 3 PINTYPE=OUT
+AP switch_dip_4pole_0r1_smt8 4 #=7
+AP switch_dip_4pole_0r1_smt8 4 ORDER=3
+AP switch_dip_4pole_0r1_smt8 4 PINTYPE=OUT
+AP switch_dip_4pole_0r1_smt8 5 #=2
+AP switch_dip_4pole_0r1_smt8 5 ORDER=0
+AP switch_dip_4pole_0r1_smt8 5 PINTYPE=OUT
+AP switch_dip_4pole_0r1_smt8 6 #=4
+AP switch_dip_4pole_0r1_smt8 6 ORDER=1
+AP switch_dip_4pole_0r1_smt8 6 PINTYPE=OUT
+AP switch_dip_4pole_0r1_smt8 7 #=6
+AP switch_dip_4pole_0r1_smt8 7 ORDER=2
+AP switch_dip_4pole_0r1_smt8 7 PINTYPE=OUT
+AP switch_dip_4pole_0r1_smt8 8 #=8
+AP switch_dip_4pole_0r1_smt8 8 ORDER=3
+AP switch_dip_4pole_0r1_smt8 8 PINTYPE=OUT
+|Q r 2
+AS r PKG_TYPE=RES
+AS r PINOFF
+AS r PREFIX=R
+AS r PARTS=1
+AS r REFDES=R?
+AS r VALUE
+AS r POWERRATING
+AS r PINORDER=N1 N2
+AS r INOV_VER_REC=9:03_5-9-07
+AP r 1 PINTYPE=BI
+AP r 1 #=1
+AP r 2 PINTYPE=BI
+AP r 2 #=2
 AN PADD[27:31] VLBUSISONSHEET=1
 AN PDATA[0:7] VLBUSISONSHEET=1
 G +5V_VIN
@@ -555,232 +530,173 @@ I $1I305 c 3V3 GND REFDES=C?`VALUE=100NF`TYPE=FIXED`TOLERANCE=10%`VOLTAGERATING=
 API $1I305 c 1 #=1
 API $1I305 c 2 #=2
 |N 2
-M analog:r $1I275
-I $1I275 analog:r CPLD_TCK 3V3 PARTNUMBERID=2100`DATASOURCEFILE=NONE`SUPERPART=YES`REVISIONPENDING=FALSE`OBSOLETE=FALSE`SAGEIMPORT=TRUE`USEEQUIVALENT=FALSE`PASSQA=FALSE`DISCONTINUED=FALSE`PASSPRODUCTION=TRUE`PASSCADADMIN=TRUE`PADSPASSPCB=FALSE`PDFPACKAGE=\\SERVER\HARDWAREFILES\PARTS DATABASE\PDF\PART OUTLINES\LOOK IN COMPONENT PDF`PDFFOOTPRINT=\\SERVER\HARDWAREFILES\PARTS DATABASE\PDF\LAND PATTERNS\NONE`PDF=\\SERVER\HARDWAREFILES\PARTS DATABASE\PDF\PHILIPS_CHIP_RES.PDF`WIDTH=0`LENGTH=0`HEIGHT=0.4`MANPARTPACKAGE=0402 (1005)`OPERATINGVOLTAGE=50V`MANPARTDESCRIPTION=CHIP RESISTOR.`PARTTYPE=RESISTORS`PRODUCTCODE=PI-0104-2100`P/D_NUM=2322 705 70102`REFDES=R?`MANUFACTURER=PHILIPS`DESCRIP=CHIP RESISTOR`RATING=0.063W`TOLERANCE=5%`VALUE=1K`PKG_TYPE=CC0402\H0.55`
-API $1I275 analog:r 1 #=1
-API $1I275 analog:r 2 #=2
+M res_10k_0402_5_ $1I111
+I $1I111 res_10k_0402_5_ USER_DIP0 3V3 REFDES=R193`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=10K`SHAPE`
+M ic_and_sc70_single_74lvc1g08 $1I112
+I $1I112 ic_and_sc70_single_74lvc1g08 PWR_GOOD PWR_GOOD N20618055 3V3 GND REFDES=U35`PKG_TYPE=SC70_5`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=74LVC1G08`SHAPE`
 |N 2
-M Sequoia:res_10k_0402_5_ $1I111
-I $1I111 Sequoia:res_10k_0402_5_ USER_DIP0 3V3 REFDES=R193`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=10K`SHAPE`
-API $1I111 Sequoia:res_10k_0402_5_ 1 #=1
-API $1I111 Sequoia:res_10k_0402_5_ 2 #=2
-M Sequoia:ic_and_sc70_single_74lvc1g08 $1I112
-I $1I112 Sequoia:ic_and_sc70_single_74lvc1g08 PWR_GOOD PWR_GOOD N20618055 3V3 GND REFDES=U35`PKG_TYPE=SC70_5`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=74LVC1G08`SHAPE`
-API $1I112 Sequoia:ic_and_sc70_single_74lvc1g08 1 #=1
-API $1I112 Sequoia:ic_and_sc70_single_74lvc1g08 2 #=2
-API $1I112 Sequoia:ic_and_sc70_single_74lvc1g08 3 #=4
-API $1I112 Sequoia:ic_and_sc70_single_74lvc1g08 4 #=5
-API $1I112 Sequoia:ic_and_sc70_single_74lvc1g08 5 #=3
+M res_10k_0402_5_ $1I114
+I $1I114 res_10k_0402_5_ CFG_DIP2 3V3 REFDES=R192`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=10K`SHAPE`
+M diode_led_0805_red $1I117
+I $1I117 diode_led_0805_red 3V3 N20628217 REFDES=CR6`PKG_TYPE=LED_0805`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=RED`SHAPE`
 |N 2
-M Sequoia:res_10k_0402_5_ $1I114
-I $1I114 Sequoia:res_10k_0402_5_ CFG_DIP2 3V3 REFDES=R192`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=10K`SHAPE`
-API $1I114 Sequoia:res_10k_0402_5_ 1 #=1
-API $1I114 Sequoia:res_10k_0402_5_ 2 #=2
-M Sequoia:diode_led_0805_red $1I117
-I $1I117 Sequoia:diode_led_0805_red 3V3 N20628217 REFDES=CR6`PKG_TYPE=LED_0805`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=RED`SHAPE`
-API $1I117 Sequoia:diode_led_0805_red 1 #=1
-API $1I117 Sequoia:diode_led_0805_red 2 #=2
+M res_180_0402_5_ $1I119
+I $1I119 res_180_0402_5_ GND N20611000 REFDES=R197`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=180`SHAPE`
 |N 2
-M Sequoia:res_180_0402_5_ $1I119
-I $1I119 Sequoia:res_180_0402_5_ GND N20611000 REFDES=R197`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=180`SHAPE`
-API $1I119 Sequoia:res_180_0402_5_ 1 #=1
-API $1I119 Sequoia:res_180_0402_5_ 2 #=2
+M res_10k_0402_5_ $1I122
+I $1I122 res_10k_0402_5_ CFG_DIP1 3V3 REFDES=R191`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=10K`SHAPE`
+M cap_100nf_0402_16v_10__x7r $1I123
+I $1I123 cap_100nf_0402_16v_10__x7r 3V3 GND REFDES=C35-1`PKG_TYPE=C_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
 |N 2
-M Sequoia:res_10k_0402_5_ $1I122
-I $1I122 Sequoia:res_10k_0402_5_ CFG_DIP1 3V3 REFDES=R191`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=10K`SHAPE`
-API $1I122 Sequoia:res_10k_0402_5_ 1 #=1
-API $1I122 Sequoia:res_10k_0402_5_ 2 #=2
-M Sequoia:cap_100nf_0402_16v_10__x7r $1I123
-I $1I123 Sequoia:cap_100nf_0402_16v_10__x7r 3V3 GND REFDES=C35-1`PKG_TYPE=C_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
-API $1I123 Sequoia:cap_100nf_0402_16v_10__x7r 1 #=1
-API $1I123 Sequoia:cap_100nf_0402_16v_10__x7r 2 #=2
+M res_180_0402_5_ $1I127
+I $1I127 res_180_0402_5_ SYSERR# N20627117 REFDES=R202`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=180`SHAPE`
 |N 2
-M Sequoia:res_180_0402_5_ $1I127
-I $1I127 Sequoia:res_180_0402_5_ SYSERR# N20627117 REFDES=R202`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=180`SHAPE`
-API $1I127 Sequoia:res_180_0402_5_ 1 #=1
-API $1I127 Sequoia:res_180_0402_5_ 2 #=2
+M res_180_0402_5_ $1I131
+I $1I131 res_180_0402_5_ USER_LED1 N20621028 REFDES=R201`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=180`SHAPE`
+M diode_led_0805_grn $1I132
+I $1I132 diode_led_0805_grn +5V_VIN N20611000 REFDES=CR1`PKG_TYPE=LED_0805`NEED_TO_MIRROR/ROTATE_PIN_DISPLAY_PROPERTIES`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=GRN`SHAPE`
 |N 2
-M Sequoia:res_180_0402_5_ $1I131
-I $1I131 Sequoia:res_180_0402_5_ USER_LED1 N20621028 REFDES=R201`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=180`SHAPE`
-API $1I131 Sequoia:res_180_0402_5_ 1 #=1
-API $1I131 Sequoia:res_180_0402_5_ 2 #=2
-M Sequoia:diode_led_0805_grn $1I132
-I $1I132 Sequoia:diode_led_0805_grn +5V_VIN N20611000 REFDES=CR1`PKG_TYPE=LED_0805`NEED_TO_MIRROR/ROTATE_PIN_DISPLAY_PROPERTIES`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=GRN`SHAPE`
-API $1I132 Sequoia:diode_led_0805_grn 1 #=1
-API $1I132 Sequoia:diode_led_0805_grn 2 #=2
+M res_10k_0402_5_ $1I133
+I $1I133 res_10k_0402_5_ USER_DIP3 3V3 REFDES=R196`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=10K`SHAPE`
+M diode_led_0805_grn $1I135
+I $1I135 diode_led_0805_grn N20618055 N20618049 REFDES=CR2`PKG_TYPE=LED_0805`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=GRN`SHAPE`
 |N 2
-M Sequoia:res_10k_0402_5_ $1I133
-I $1I133 Sequoia:res_10k_0402_5_ USER_DIP3 3V3 REFDES=R196`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=10K`SHAPE`
-API $1I133 Sequoia:res_10k_0402_5_ 1 #=1
-API $1I133 Sequoia:res_10k_0402_5_ 2 #=2
-M Sequoia:diode_led_0805_grn $1I135
-I $1I135 Sequoia:diode_led_0805_grn N20618055 N20618049 REFDES=CR2`PKG_TYPE=LED_0805`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=GRN`SHAPE`
-API $1I135 Sequoia:diode_led_0805_grn 1 #=1
-API $1I135 Sequoia:diode_led_0805_grn 2 #=2
+M res_180_0402_5_ $1I136
+I $1I136 res_180_0402_5_ USER_LED0 N20620996 REFDES=R200`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=180`SHAPE`
+M diode_led_0805_grn $1I138
+I $1I138 diode_led_0805_grn 3V3 N20620996 REFDES=CR3`PKG_TYPE=LED_0805`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=GRN`SHAPE`
 |N 2
-M Sequoia:res_180_0402_5_ $1I136
-I $1I136 Sequoia:res_180_0402_5_ USER_LED0 N20620996 REFDES=R200`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=180`SHAPE`
-API $1I136 Sequoia:res_180_0402_5_ 1 #=1
-API $1I136 Sequoia:res_180_0402_5_ 2 #=2
-M Sequoia:diode_led_0805_grn $1I138
-I $1I138 Sequoia:diode_led_0805_grn 3V3 N20620996 REFDES=CR3`PKG_TYPE=LED_0805`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=GRN`SHAPE`
-API $1I138 Sequoia:diode_led_0805_grn 1 #=1
-API $1I138 Sequoia:diode_led_0805_grn 2 #=2
+M res_10k_0402_5_ $1I139
+I $1I139 res_10k_0402_5_ CFG_DIP0 3V3 REFDES=R190`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=10K`SHAPE`
 |N 2
-M Sequoia:res_10k_0402_5_ $1I139
-I $1I139 Sequoia:res_10k_0402_5_ CFG_DIP0 3V3 REFDES=R190`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=10K`SHAPE`
-API $1I139 Sequoia:res_10k_0402_5_ 1 #=1
-API $1I139 Sequoia:res_10k_0402_5_ 2 #=2
+M res_10k_0402_5_ $1I141
+I $1I141 res_10k_0402_5_ USER_DIP2 3V3 REFDES=R195`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=10K`SHAPE`
+M diode_led_0805_red $1I143
+I $1I143 diode_led_0805_red 3V3 N20627117 REFDES=CR5`PKG_TYPE=LED_0805`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=RED`SHAPE`
 |N 2
-M Sequoia:res_10k_0402_5_ $1I141
-I $1I141 Sequoia:res_10k_0402_5_ USER_DIP2 3V3 REFDES=R195`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=10K`SHAPE`
-API $1I141 Sequoia:res_10k_0402_5_ 1 #=1
-API $1I141 Sequoia:res_10k_0402_5_ 2 #=2
-M Sequoia:diode_led_0805_red $1I143
-I $1I143 Sequoia:diode_led_0805_red 3V3 N20627117 REFDES=CR5`PKG_TYPE=LED_0805`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=RED`SHAPE`
-API $1I143 Sequoia:diode_led_0805_red 1 #=1
-API $1I143 Sequoia:diode_led_0805_red 2 #=2
+M res_180_0402_5_ $1I144
+I $1I144 res_180_0402_5_ GND N20618049 REFDES=R199`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=180`SHAPE`
+M diode_led_0805_grn $1I146
+I $1I146 diode_led_0805_grn 3V3 N20621028 REFDES=CR4`PKG_TYPE=LED_0805`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=GRN`SHAPE`
 |N 2
-M Sequoia:res_180_0402_5_ $1I144
-I $1I144 Sequoia:res_180_0402_5_ GND N20618049 REFDES=R199`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=180`SHAPE`
-API $1I144 Sequoia:res_180_0402_5_ 1 #=1
-API $1I144 Sequoia:res_180_0402_5_ 2 #=2
-M Sequoia:diode_led_0805_grn $1I146
-I $1I146 Sequoia:diode_led_0805_grn 3V3 N20621028 REFDES=CR4`PKG_TYPE=LED_0805`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=GRN`SHAPE`
-API $1I146 Sequoia:diode_led_0805_grn 1 #=1
-API $1I146 Sequoia:diode_led_0805_grn 2 #=2
+M res_10k_0402_5_ $1I147
+I $1I147 res_10k_0402_5_ USER_DIP1 3V3 REFDES=R194`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=10K`SHAPE`
 |N 2
-M Sequoia:res_10k_0402_5_ $1I147
-I $1I147 Sequoia:res_10k_0402_5_ USER_DIP1 3V3 REFDES=R194`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=10K`SHAPE`
-API $1I147 Sequoia:res_10k_0402_5_ 1 #=1
-API $1I147 Sequoia:res_10k_0402_5_ 2 #=2
+M res_10k_0402_5__opt3p $1I148
+I $1I148 res_10k_0402_5__opt3p GND BOOT_CFG2 3V3 REFDES=RO38`PKG_TYPE=R_0402_3P_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=10K`SHAPE`
 |N 2
-M Sequoia:res_10k_0402_5__opt3p $1I148
-I $1I148 Sequoia:res_10k_0402_5__opt3p GND BOOT_CFG2 3V3 REFDES=RO38`PKG_TYPE=R_0402_3P_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=10K`SHAPE`
-API $1I148 Sequoia:res_10k_0402_5__opt3p 1 #=1
-API $1I148 Sequoia:res_10k_0402_5__opt3p 2 #=2
-API $1I148 Sequoia:res_10k_0402_5__opt3p 3 #=3
-|N 2
-M Sequoia:res_10k_0402_5__opt3p $1I113
-I $1I113 Sequoia:res_10k_0402_5__opt3p 3V3 BOOT_CFG1 GND REFDES=RO37`PKG_TYPE=R_0402_3P_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=10K`SHAPE`
-API $1I113 Sequoia:res_10k_0402_5__opt3p 1 #=1
-API $1I113 Sequoia:res_10k_0402_5__opt3p 2 #=2
-API $1I113 Sequoia:res_10k_0402_5__opt3p 3 #=3
+M res_10k_0402_5__opt3p $1I113
+I $1I113 res_10k_0402_5__opt3p 3V3 BOOT_CFG1 GND REFDES=RO37`PKG_TYPE=R_0402_3P_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=10K`SHAPE`
 M xc2c256_roach $1I150
-I $1I150 xc2c256_roach ? ? ? ? ? ? 3V3 3V3 ? ? ? ? 3V3 3V3 3V3 CLK_CPLD_50MHZ CLK_PERCLK EE2_BOOT_WP PDATA5 PDATA2 ? ? 3V3 3V3 ? CLK_CPLD_33MHZ USB_SELECT# EBC_SELECT# SPARE_0 SPARE_1 SPARE_2 RESET_CPLD# SPARE_3 USER_DIP1 SPARE_4 SPARE_5 USER_LED0 SPARE_6 SPARE_7 ? BOOT_CFG1 USER_DIP3 CFG_DIP1 RESET_BUFPOR# BOOT_CFG0 USER_DIP0 PDATA4 CFG_DIP0 PDATA6 GND CLK_TMRCLK 3V3 ? PDATA7 PDATA0 PDATA1 PDATA3 STTM_AS FRY_BY# PADD29 NF_WP# USB2_VCC_PI EE1_WP USER_LED1 USER_DIP2 CLK_USB2_CPLD USB2_VCC_PE RESET_PB_POR# PWBE_0# PADD28 FWP# DEBUG_TRST# USB2_RESET BOOT_CFG2 CFG_DIP2 PADD30 RESET_POR# PADD31 CPU_TRST# ? POE# M66EN PR_W# PCS_2 PADD27 ? SYSERR# SYSERR 3V3 ? GND ? ? SEL_SYSCLK CLK_SEL_M66EN ? GETH0_RST# GETH0_COMA GETH1_RST# GETH1_COMA PKG_TYPE=TQFP100_A`BOARD_OPTION=BASE`REFDES=U?`
-API $1I150 xc2c256_roach 7 #=26
-API $1I150 xc2c256_roach 8 #=57
-API $1I150 xc2c256_roach 13 #=51
-API $1I150 xc2c256_roach 14 #=88
-API $1I150 xc2c256_roach 15 #=98
-API $1I150 xc2c256_roach 16 #=67
-API $1I150 xc2c256_roach 17 #=68
-API $1I150 xc2c256_roach 18 #=87
-API $1I150 xc2c256_roach 19 #=64
-API $1I150 xc2c256_roach 20 #=49
-API $1I150 xc2c256_roach 23 #=20
-API $1I150 xc2c256_roach 24 #=38
-API $1I150 xc2c256_roach 26 #=66
-API $1I150 xc2c256_roach 27 #=33
-API $1I150 xc2c256_roach 28 #=32
-API $1I150 xc2c256_roach 29 #=6
-API $1I150 xc2c256_roach 30 #=4
-API $1I150 xc2c256_roach 31 #=3
-API $1I150 xc2c256_roach 32 #=30
-API $1I150 xc2c256_roach 33 #=2
-API $1I150 xc2c256_roach 34 #=18
-API $1I150 xc2c256_roach 35 #=1
-API $1I150 xc2c256_roach 36 #=90
-API $1I150 xc2c256_roach 37 #=23
-API $1I150 xc2c256_roach 38 #=91
-API $1I150 xc2c256_roach 39 #=92
-API $1I150 xc2c256_roach 40 NC
-API $1I150 xc2c256_roach 40 #=93
-API $1I150 xc2c256_roach 41 #=15
-API $1I150 xc2c256_roach 42 #=22
-API $1I150 xc2c256_roach 43 #=28
-API $1I150 xc2c256_roach 44 #=11
-API $1I150 xc2c256_roach 45 #=14
-API $1I150 xc2c256_roach 46 #=17
-API $1I150 xc2c256_roach 47 #=52
-API $1I150 xc2c256_roach 48 #=29
-API $1I150 xc2c256_roach 49 #=63
-API $1I150 xc2c256_roach 50 #=10
-API $1I150 xc2c256_roach 51 #=70
-API $1I150 xc2c256_roach 52 #=9
-API $1I150 xc2c256_roach 53 NC
-API $1I150 xc2c256_roach 53 #=94
-API $1I150 xc2c256_roach 54 #=61
-API $1I150 xc2c256_roach 55 #=44
-API $1I150 xc2c256_roach 56 #=46
-API $1I150 xc2c256_roach 57 #=50
-API $1I150 xc2c256_roach 58 #=86
-API $1I150 xc2c256_roach 59 #=76
-API $1I150 xc2c256_roach 60 #=41
-API $1I150 xc2c256_roach 61 #=79
-API $1I150 xc2c256_roach 62 #=80
-API $1I150 xc2c256_roach 63 #=89
-API $1I150 xc2c256_roach 64 #=13
-API $1I150 xc2c256_roach 65 #=19
-API $1I150 xc2c256_roach 66 #=82
-API $1I150 xc2c256_roach 67 #=81
-API $1I150 xc2c256_roach 68 #=54
-API $1I150 xc2c256_roach 69 #=56
-API $1I150 xc2c256_roach 70 #=40
-API $1I150 xc2c256_roach 71 #=77
-API $1I150 xc2c256_roach 72 #=53
-API $1I150 xc2c256_roach 73 #=85
-API $1I150 xc2c256_roach 74 #=16
-API $1I150 xc2c256_roach 75 #=27
-API $1I150 xc2c256_roach 76 #=42
-API $1I150 xc2c256_roach 77 #=55
-API $1I150 xc2c256_roach 78 #=43
-API $1I150 xc2c256_roach 79 #=65
-API $1I150 xc2c256_roach 80 NC
-API $1I150 xc2c256_roach 80 #=78
-API $1I150 xc2c256_roach 81 #=59
-API $1I150 xc2c256_roach 82 #=24
-API $1I150 xc2c256_roach 83 #=58
-API $1I150 xc2c256_roach 84 #=60
-API $1I150 xc2c256_roach 85 #=39
-API $1I150 xc2c256_roach 86 NC
-API $1I150 xc2c256_roach 86 #=95
-API $1I150 xc2c256_roach 87 #=12
-API $1I150 xc2c256_roach 88 #=74
-API $1I150 xc2c256_roach 89 #=7
-API $1I150 xc2c256_roach 90 NC
-API $1I150 xc2c256_roach 90 #=96
-API $1I150 xc2c256_roach 91 #=8
-API $1I150 xc2c256_roach 92 NC
-API $1I150 xc2c256_roach 92 #=97
-API $1I150 xc2c256_roach 93 NC
-API $1I150 xc2c256_roach 93 #=71
-API $1I150 xc2c256_roach 94 #=73
-API $1I150 xc2c256_roach 95 #=72
-API $1I150 xc2c256_roach 96 NC
-API $1I150 xc2c256_roach 96 #=99
-API $1I150 xc2c256_roach 97 #=37
-API $1I150 xc2c256_roach 98 #=36
-API $1I150 xc2c256_roach 99 #=35
-API $1I150 xc2c256_roach 100 #=34
-API $1I150 xc2c256_roach 0 #=25
-API $1I150 xc2c256_roach 0 #=69
-API $1I150 xc2c256_roach 0 #=75
-API $1I150 xc2c256_roach 0 #=84
-API $1I150 xc2c256_roach 0 #=100
-API $1I150 xc2c256_roach 0 #=31
-API $1I150 xc2c256_roach 0 #=62
-API $1I150 xc2c256_roach 0 #=21
-API $1I150 xc2c256_roach 0 #=5
-API $1I150 xc2c256_roach 0 #=48
-API $1I150 xc2c256_roach 0 #=83
-API $1I150 xc2c256_roach 0 #=47
-API $1I150 xc2c256_roach 0 #=45
-|N 2
-M analog:r $1I276
-I $1I276 analog:r CPLD_TMS 3V3 PARTNUMBERID=2100`DATASOURCEFILE=NONE`SUPERPART=YES`REVISIONPENDING=FALSE`OBSOLETE=FALSE`SAGEIMPORT=TRUE`USEEQUIVALENT=FALSE`PASSQA=FALSE`DISCONTINUED=FALSE`PASSPRODUCTION=TRUE`PASSCADADMIN=TRUE`PADSPASSPCB=FALSE`PDFPACKAGE=\\SERVER\HARDWAREFILES\PARTS DATABASE\PDF\PART OUTLINES\LOOK IN COMPONENT PDF`PDFFOOTPRINT=\\SERVER\HARDWAREFILES\PARTS DATABASE\PDF\LAND PATTERNS\NONE`PDF=\\SERVER\HARDWAREFILES\PARTS DATABASE\PDF\PHILIPS_CHIP_RES.PDF`WIDTH=0`LENGTH=0`HEIGHT=0.4`MANPARTPACKAGE=0402 (1005)`OPERATINGVOLTAGE=50V`MANPARTDESCRIPTION=CHIP RESISTOR.`PARTTYPE=RESISTORS`PRODUCTCODE=PI-0104-2100`P/D_NUM=2322 705 70102`REFDES=R?`MANUFACTURER=PHILIPS`DESCRIP=CHIP RESISTOR`RATING=0.063W`TOLERANCE=5%`VALUE=1K`PKG_TYPE=CC0402\H0.55`
-API $1I276 analog:r 1 #=1
-API $1I276 analog:r 2 #=2
+I $1I150 xc2c256_roach USB_SELECT# SPARE_5 USER_LED0 SPARE_6 SPARE_7 ? BOOT_CFG1 USER_DIP3 CFG_DIP1 RESET_BUFPOR# BOOT_CFG0 EBC_SELECT# USER_DIP0 PDATA4 CFG_DIP0 PDATA6 GND CLK_TMRCLK 3V3 ? PDATA7 PDATA0 SPARE_0 PDATA1 PDATA3 STTM_AS FRY_BY# PADD29 SPARE_1 SPARE_2 RESET_CPLD# SPARE_3 USER_DIP1 SPARE_4 PDATA2 CLK_CPLD_50MHZ CLK_CPLD_33MHZ PDATA5 NF_WP# PADD28 FWP# DEBUG_TRST# USB2_RESET BOOT_CFG2 CFG_DIP2 PADD30 RESET_POR# PADD31 CPU_TRST# USB2_VCC_PI ? POE# M66EN PR_W# PCS_2 PADD27 ? SYSERR# SYSERR 3V3 EE1_WP ? GND ? ? SEL_SYSCLK CLK_SEL_M66EN ? GETH0_RST# GETH0_COMA GETH1_RST# USER_LED1 GETH1_COMA USER_DIP2 CLK_USB2_CPLD USB2_VCC_PE RESET_PB_POR# PWBE_0# CLK_PERCLK EE2_BOOT_WP GND GND GND GND GND GND GND GND CPLD_TCK CPLD_TDI CPLD_TDO CPLD_TMS 3V3 3V3 3V3 3V3 3V3 3V3 3V3 3V3 PKG_TYPE=TQFP100_A`BOARD_OPTION=BASE`REFDES=U?`
+API $1I150 xc2c256_roach 1 #=33
+API $1I150 xc2c256_roach 2 #=90
+API $1I150 xc2c256_roach 3 #=23
+API $1I150 xc2c256_roach 4 #=91
+API $1I150 xc2c256_roach 5 #=92
+API $1I150 xc2c256_roach 6 NC
+API $1I150 xc2c256_roach 6 #=93
+API $1I150 xc2c256_roach 7 #=15
+API $1I150 xc2c256_roach 8 #=22
+API $1I150 xc2c256_roach 9 #=28
+API $1I150 xc2c256_roach 10 #=11
+API $1I150 xc2c256_roach 11 #=14
+API $1I150 xc2c256_roach 12 #=32
+API $1I150 xc2c256_roach 13 #=17
+API $1I150 xc2c256_roach 14 #=52
+API $1I150 xc2c256_roach 15 #=29
+API $1I150 xc2c256_roach 16 #=63
+API $1I150 xc2c256_roach 17 #=10
+API $1I150 xc2c256_roach 18 #=70
+API $1I150 xc2c256_roach 19 #=9
+API $1I150 xc2c256_roach 20 NC
+API $1I150 xc2c256_roach 20 #=94
+API $1I150 xc2c256_roach 21 #=61
+API $1I150 xc2c256_roach 22 #=44
+API $1I150 xc2c256_roach 23 #=6
+API $1I150 xc2c256_roach 24 #=46
+API $1I150 xc2c256_roach 25 #=50
+API $1I150 xc2c256_roach 26 #=86
+API $1I150 xc2c256_roach 27 #=76
+API $1I150 xc2c256_roach 28 #=41
+API $1I150 xc2c256_roach 29 #=4
+API $1I150 xc2c256_roach 30 #=3
+API $1I150 xc2c256_roach 31 #=30
+API $1I150 xc2c256_roach 32 #=2
+API $1I150 xc2c256_roach 33 #=18
+API $1I150 xc2c256_roach 34 #=1
+API $1I150 xc2c256_roach 35 #=49
+API $1I150 xc2c256_roach 36 #=67
+API $1I150 xc2c256_roach 37 #=66
+API $1I150 xc2c256_roach 38 #=64
+API $1I150 xc2c256_roach 39 #=79
+API $1I150 xc2c256_roach 40 #=40
+API $1I150 xc2c256_roach 41 #=77
+API $1I150 xc2c256_roach 42 #=53
+API $1I150 xc2c256_roach 43 #=85
+API $1I150 xc2c256_roach 44 #=16
+API $1I150 xc2c256_roach 45 #=27
+API $1I150 xc2c256_roach 46 #=42
+API $1I150 xc2c256_roach 47 #=55
+API $1I150 xc2c256_roach 48 #=43
+API $1I150 xc2c256_roach 49 #=65
+API $1I150 xc2c256_roach 50 #=80
+API $1I150 xc2c256_roach 51 NC
+API $1I150 xc2c256_roach 51 #=78
+API $1I150 xc2c256_roach 52 #=59
+API $1I150 xc2c256_roach 53 #=24
+API $1I150 xc2c256_roach 54 #=58
+API $1I150 xc2c256_roach 55 #=60
+API $1I150 xc2c256_roach 56 #=39
+API $1I150 xc2c256_roach 57 NC
+API $1I150 xc2c256_roach 57 #=95
+API $1I150 xc2c256_roach 58 #=12
+API $1I150 xc2c256_roach 59 #=74
+API $1I150 xc2c256_roach 60 #=7
+API $1I150 xc2c256_roach 61 #=89
+API $1I150 xc2c256_roach 62 NC
+API $1I150 xc2c256_roach 62 #=96
+API $1I150 xc2c256_roach 63 #=8
+API $1I150 xc2c256_roach 64 NC
+API $1I150 xc2c256_roach 64 #=97
+API $1I150 xc2c256_roach 65 NC
+API $1I150 xc2c256_roach 65 #=71
+API $1I150 xc2c256_roach 66 #=73
+API $1I150 xc2c256_roach 67 #=72
+API $1I150 xc2c256_roach 68 NC
+API $1I150 xc2c256_roach 68 #=99
+API $1I150 xc2c256_roach 69 #=37
+API $1I150 xc2c256_roach 70 #=36
+API $1I150 xc2c256_roach 71 #=35
+API $1I150 xc2c256_roach 72 #=13
+API $1I150 xc2c256_roach 73 #=34
+API $1I150 xc2c256_roach 74 #=19
+API $1I150 xc2c256_roach 75 #=82
+API $1I150 xc2c256_roach 76 #=81
+API $1I150 xc2c256_roach 77 #=54
+API $1I150 xc2c256_roach 78 #=56
+API $1I150 xc2c256_roach 79 #=68
+API $1I150 xc2c256_roach 80 #=87
+API $1I150 xc2c256_roach 81 #=21
+API $1I150 xc2c256_roach 82 #=25
+API $1I150 xc2c256_roach 83 #=31
+API $1I150 xc2c256_roach 84 #=62
+API $1I150 xc2c256_roach 85 #=69
+API $1I150 xc2c256_roach 86 #=75
+API $1I150 xc2c256_roach 87 #=84
+API $1I150 xc2c256_roach 88 #=100
+API $1I150 xc2c256_roach 89 #=48
+API $1I150 xc2c256_roach 90 #=45
+API $1I150 xc2c256_roach 91 #=83
+API $1I150 xc2c256_roach 92 #=47
+API $1I150 xc2c256_roach 93 #=5
+API $1I150 xc2c256_roach 94 #=26
+API $1I150 xc2c256_roach 95 #=57
+API $1I150 xc2c256_roach 96 #=20
+API $1I150 xc2c256_roach 97 #=38
+API $1I150 xc2c256_roach 98 #=51
+API $1I150 xc2c256_roach 99 #=88
+API $1I150 xc2c256_roach 100 #=98
 M xilinx_14_pin_jtag $1I292
 I $1I292 xilinx_14_pin_jtag GND GND GND GND GND GND GND ? ? CPLD_TCK CPLD_TDI CPLD_TDO CPLD_TMS 3V3 DESCRIP=J-TAG CONNECTOR`MANUFACTURER=MOLEX`REFDES=J?`P/D_NUM=87832-1420`PKG_TYPE=CON7X2_87832_P2_H11_SMD`PARTNUMBERID=7931`DATASOURCEFILE=NONE`DATAURL=WWW.MOLEX.COM`SUPERPART=NO`REVISIONPENDING=TRUE`OBSOLETE=FALSE`SAGEIMPORT=TRUE`USEEQUIVALENT=FALSE`PASSQA=FALSE`DISCONTINUED=FALSE`PASSPRODUCTION=TRUE`PASSCADADMIN=FALSE`PADSPASSPCB=TRUE`PDFPACKAGE=\\SERVER\HARDWAREFILES\PARTS DATABASE\PDF\PART OUTLINES\LOOK IN COMPONENT PDF`PDFFOOTPRINT=\\SERVER\HARDWAREFILES\PARTS DATABASE\PDF\LAND PATTERNS\LOOK IN COMPONENT PDF`PDF=\\SERVER\HARDWAREFILES\PARTS DATABASE\PDF\87832-1420 - MOLEX.PDF`WIDTH=0`LENGTH=0`HEIGHT=7.6`MANPARTPACKAGE=JTAG : 14-PIN`OPERATINGVOLTAGE=150V`RATING=2A`MANPARTDESCRIPTION=STAIGHT SMD, DUAL ROW HEADER - ROHS`PARTTYPE=CONNECTORS`PRODUCTCODE=PI-0103-7931`
 API $1I292 xilinx_14_pin_jtag 1 #=2
@@ -797,16 +713,13 @@ API $1I292 xilinx_14_pin_jtag 11 #=5
 API $1I292 xilinx_14_pin_jtag 12 #=7
 API $1I292 xilinx_14_pin_jtag 13 #=11
 API $1I292 xilinx_14_pin_jtag 14 #=13
-M SKASYMGEN:cap $1I269
-I $1I269 SKASYMGEN:cap 3V3 GND VALUE=2U2F`PKG_TYPE=CC0805\H1.3`TOLERANCE=±10%`RATING=6V3`DESCRIP=CER CAP`MANUFACTURER=MURATA`REFDES=C?`P/D_NUM=GRM21BR60J225KA01K`HEIGHT=1.35`WIDTH=0`
-API $1I269 SKASYMGEN:cap 1 #=1
-API $1I269 SKASYMGEN:cap 2 #=2
+M cap $1I269
+I $1I269 cap 3V3 GND VALUE=2U2F`PKG_TYPE=CC0805\H1.3`TOLERANCE=±10%`RATING=6V3`DESCRIP=CER CAP`MANUFACTURER=MURATA`REFDES=C?`P/D_NUM=GRM21BR60J225KA01K`HEIGHT=1.35`WIDTH=0`
+API $1I269 cap 1 #=1
+API $1I269 cap 2 #=2
 |N 2
-M Sequoia:res_10k_0402_5__opt3p $1I137
-I $1I137 Sequoia:res_10k_0402_5__opt3p GND BOOT_CFG0 3V3 REFDES=RO36`PKG_TYPE=R_0402_3P_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=10K`SHAPE`
-API $1I137 Sequoia:res_10k_0402_5__opt3p 1 #=1
-API $1I137 Sequoia:res_10k_0402_5__opt3p 2 #=2
-API $1I137 Sequoia:res_10k_0402_5__opt3p 3 #=3
+M res_10k_0402_5__opt3p $1I137
+I $1I137 res_10k_0402_5__opt3p GND BOOT_CFG0 3V3 REFDES=RO36`PKG_TYPE=R_0402_3P_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=10K`SHAPE`
 M c $1I312
 I $1I312 c 3V3 GND PARTS=1`GEOMETRY.HEIGHT=0.5`STANDARDS=0402`TANLOSSANGLE=0`P/D_NUM=GRM155R71A104KAO1B`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIP CAPACITOR`DIELECTRIC=X7R`VOLTAGERATING=10V`TOLERANCE=10%`TYPE=FIXED`VALUE=100NF`REFDES=C?`
 API $1I312 c 1 #=1
@@ -820,28 +733,20 @@ I $1I304 c 3V3 GND PARTS=1`GEOMETRY.HEIGHT=0.5`STANDARDS=0402`TANLOSSANGLE=0`P/D
 API $1I304 c 1 #=1
 API $1I304 c 2 #=2
 |N 2
-M Sequoia:res_180_0402_5_ $1I125
-I $1I125 Sequoia:res_180_0402_5_ RESET_BUFPOR# N20628217 REFDES=R203`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=180`SHAPE`
-API $1I125 Sequoia:res_180_0402_5_ 1 #=1
-API $1I125 Sequoia:res_180_0402_5_ 2 #=2
-M Sequoia:switch_dip_4pole_0r1_smt8 $1I140
-I $1I140 Sequoia:switch_dip_4pole_0r1_smt8 CFG_DIP0 CFG_DIP1 CFG_DIP2 M66EN GND GND GND GND REFDES=SW2`BOARD_OPTION=BASE`PKG_TYPE=90HB_SERIES`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=4POLE`SHAPE`
-API $1I140 Sequoia:switch_dip_4pole_0r1_smt8 1 #=1
-API $1I140 Sequoia:switch_dip_4pole_0r1_smt8 2 #=3
-API $1I140 Sequoia:switch_dip_4pole_0r1_smt8 3 #=5
-API $1I140 Sequoia:switch_dip_4pole_0r1_smt8 4 #=7
-API $1I140 Sequoia:switch_dip_4pole_0r1_smt8 5 #=2
-API $1I140 Sequoia:switch_dip_4pole_0r1_smt8 6 #=4
-API $1I140 Sequoia:switch_dip_4pole_0r1_smt8 7 #=6
-API $1I140 Sequoia:switch_dip_4pole_0r1_smt8 8 #=8
-M Sequoia:switch_dip_4pole_0r1_smt8 $1I118
-I $1I118 Sequoia:switch_dip_4pole_0r1_smt8 USER_DIP0 USER_DIP1 USER_DIP2 USER_DIP3 GND GND GND GND REFDES=SW3`BOARD_OPTION=BASE`PKG_TYPE=90HB_SERIES`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=4POLE`SHAPE`
-API $1I118 Sequoia:switch_dip_4pole_0r1_smt8 1 #=1
-API $1I118 Sequoia:switch_dip_4pole_0r1_smt8 2 #=3
-API $1I118 Sequoia:switch_dip_4pole_0r1_smt8 3 #=5
-API $1I118 Sequoia:switch_dip_4pole_0r1_smt8 4 #=7
-API $1I118 Sequoia:switch_dip_4pole_0r1_smt8 5 #=2
-API $1I118 Sequoia:switch_dip_4pole_0r1_smt8 6 #=4
-API $1I118 Sequoia:switch_dip_4pole_0r1_smt8 7 #=6
-API $1I118 Sequoia:switch_dip_4pole_0r1_smt8 8 #=8
+M res_180_0402_5_ $1I125
+I $1I125 res_180_0402_5_ RESET_BUFPOR# N20628217 REFDES=R203`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=180`SHAPE`
+M switch_dip_4pole_0r1_smt8 $1I140
+I $1I140 switch_dip_4pole_0r1_smt8 CFG_DIP0 CFG_DIP1 CFG_DIP2 M66EN GND GND GND GND REFDES=SW2`BOARD_OPTION=BASE`PKG_TYPE=90HB_SERIES`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=4POLE`SHAPE`
+M switch_dip_4pole_0r1_smt8 $1I118
+I $1I118 switch_dip_4pole_0r1_smt8 USER_DIP0 USER_DIP1 USER_DIP2 USER_DIP3 GND GND GND GND REFDES=SW3`BOARD_OPTION=BASE`PKG_TYPE=90HB_SERIES`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=4POLE`SHAPE`
+|N 2
+M r $1I276
+I $1I276 r CPLD_TMS 3V3 PARTNUMBERID=2100`DATASOURCEFILE=NONE`SUPERPART=YES`REVISIONPENDING=FALSE`OBSOLETE=FALSE`SAGEIMPORT=TRUE`USEEQUIVALENT=FALSE`PASSQA=FALSE`DISCONTINUED=FALSE`PASSPRODUCTION=TRUE`PASSCADADMIN=TRUE`PADSPASSPCB=FALSE`PDFPACKAGE=\\SERVER\HARDWAREFILES\PARTS DATABASE\PDF\PART OUTLINES\LOOK IN COMPONENT PDF`PDFFOOTPRINT=\\SERVER\HARDWAREFILES\PARTS DATABASE\PDF\LAND PATTERNS\NONE`PDF=\\SERVER\HARDWAREFILES\PARTS DATABASE\PDF\PHILIPS_CHIP_RES.PDF`WIDTH=0`LENGTH=0`HEIGHT=0.4`MANPARTPACKAGE=0402 (1005)`OPERATINGVOLTAGE=50V`MANPARTDESCRIPTION=CHIP RESISTOR.`PARTTYPE=RESISTORS`PRODUCTCODE=PI-0104-2100`P/D_NUM=2322 705 70102`REFDES=R?`MANUFACTURER=PHILIPS`DESCRIP=CHIP RESISTOR`RATING=0.063W`TOLERANCE=5%`VALUE=1K`PKG_TYPE=CC0402\H0.55`
+API $1I276 r 1 #=1
+API $1I276 r 2 #=2
+|N 2
+M r $1I275
+I $1I275 r CPLD_TCK 3V3 PARTNUMBERID=2100`DATASOURCEFILE=NONE`SUPERPART=YES`REVISIONPENDING=FALSE`OBSOLETE=FALSE`SAGEIMPORT=TRUE`USEEQUIVALENT=FALSE`PASSQA=FALSE`DISCONTINUED=FALSE`PASSPRODUCTION=TRUE`PASSCADADMIN=TRUE`PADSPASSPCB=FALSE`PDFPACKAGE=\\SERVER\HARDWAREFILES\PARTS DATABASE\PDF\PART OUTLINES\LOOK IN COMPONENT PDF`PDFFOOTPRINT=\\SERVER\HARDWAREFILES\PARTS DATABASE\PDF\LAND PATTERNS\NONE`PDF=\\SERVER\HARDWAREFILES\PARTS DATABASE\PDF\PHILIPS_CHIP_RES.PDF`WIDTH=0`LENGTH=0`HEIGHT=0.4`MANPARTPACKAGE=0402 (1005)`OPERATINGVOLTAGE=50V`MANPARTDESCRIPTION=CHIP RESISTOR.`PARTTYPE=RESISTORS`PRODUCTCODE=PI-0104-2100`P/D_NUM=2322 705 70102`REFDES=R?`MANUFACTURER=PHILIPS`DESCRIP=CHIP RESISTOR`RATING=0.063W`TOLERANCE=5%`VALUE=1K`PKG_TYPE=CC0402\H0.55`
+API $1I275 r 1 #=1
+API $1I275 r 2 #=2
 EW

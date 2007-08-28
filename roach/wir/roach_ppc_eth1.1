@@ -1,13 +1,38 @@
 | Wirelist created using version 5.4.
-| Sch_Warning - Component $1I261, Symbol=jumper3 at (2350, 1090), is not connected.
-| Sch_Warning - Component $1I259 (R?), Symbol=r at (2240, 1020), is not connected.
-| Sch_Warning - Component $1I258 (D?), Symbol=SKASYMGEN:led at (2160, 1080), is not connected.
-| Sch_Warning - Component $1I260 (R?), Symbol=r at (2190, 970), is not connected.
 V 5.4
 K 40128622890 roach_ppc_eth1
 DW roach_ppc_eth1
 Q Case
 SA SOURCE_PATH 
+|Q led 1
+AS led REFDES=D?
+AS led PINORDER=P N
+AS led ORDER=MODEL$
+AS led PREFIX=D
+AS led PINOFF
+AS led PARTS=1
+AS led MODEL=NO_MODEL
+AS led PKG_TYPE=TO-5
+AS led INOV_VER_REC=15:29_10-25-06
+AP led 1 PINTYPE=IN
+AP led 1 #=1
+AP led 2 PINTYPE=OUT
+AP led 2 #=2
+|Q c 2
+AS c PREFIX=C
+AS c PARTSPEC=CAPACITOR
+AS c PARTS=1
+AS c PKG_TYPE=CAP
+AS c PINOFF
+AS c REFDES=C?
+AS c VALUE
+AS c VOLTAGERATING
+AS c PINORDER=N1 N2
+AS c INOV_VER_REC=8:39_5-9-07
+AP c 1 PINTYPE=BI
+AP c 1 #=1
+AP c 2 PINTYPE=BI
+AP c 2 #=2
 |Q jumper3 1
 AS jumper3 PINORDER=P1 P2 P3
 AS jumper3 INOV_VER_REC=12:47_8-15-07
@@ -17,417 +42,6 @@ AP jumper3 2 PINTYPE=BI
 AP jumper3 2 #=2
 AP jumper3 3 PINTYPE=BI
 AP jumper3 3 #=3
-|Q Sequoia:res_22r1_0402_1_ 2
-AS Sequoia:res_22r1_0402_1_ REFDES=R?
-AS Sequoia:res_22r1_0402_1_ DEVICE=RES_22R1_0402_1%
-AS Sequoia:res_22r1_0402_1_ PARTS=1
-AS Sequoia:res_22r1_0402_1_ PKG_TYPE=R_0402_IPC
-AS Sequoia:res_22r1_0402_1_ SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
-AS Sequoia:res_22r1_0402_1_ EPI#=P11400000000076
-AS Sequoia:res_22r1_0402_1_ EP#=P11400000000076
-AS Sequoia:res_22r1_0402_1_ BOARD_OPTION
-AS Sequoia:res_22r1_0402_1_ MFG_2#=BRN: CR0402FK22R1GLF
-AS Sequoia:res_22r1_0402_1_ MFG_1#=YAE: 9C04021A22R1FKPF3
-AS Sequoia:res_22r1_0402_1_ SHAPE=0402
-AS Sequoia:res_22r1_0402_1_ MFGI_1#=YAE: 9C04021A22R1FKPF3
-AS Sequoia:res_22r1_0402_1_ MFGI_2#=BRN: CR0402FK22R1GLF
-AS Sequoia:res_22r1_0402_1_ GRN=LHR
-AS Sequoia:res_22r1_0402_1_ VALUE
-AS Sequoia:res_22r1_0402_1_ PINORDER=1 2
-AP Sequoia:res_22r1_0402_1_ 1 #=1
-AP Sequoia:res_22r1_0402_1_ 1 PINTYPE=OUT
-AP Sequoia:res_22r1_0402_1_ 2 #=2
-AP Sequoia:res_22r1_0402_1_ 2 PINTYPE=OUT
-|Q Sequoia:cap_100nf_0402_16v_10__x7r 1
-AS Sequoia:cap_100nf_0402_16v_10__x7r REFDES=C?
-AS Sequoia:cap_100nf_0402_16v_10__x7r DEVICE=CAP_100NF_0402_16V_10%_X7R
-AS Sequoia:cap_100nf_0402_16v_10__x7r PARTS=1
-AS Sequoia:cap_100nf_0402_16v_10__x7r PKG_TYPE=C_0402_IPC
-AS Sequoia:cap_100nf_0402_16v_10__x7r SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
-AS Sequoia:cap_100nf_0402_16v_10__x7r GRN=LHR
-AS Sequoia:cap_100nf_0402_16v_10__x7r EP#=P10100000000001
-AS Sequoia:cap_100nf_0402_16v_10__x7r TYPE=X7R
-AS Sequoia:cap_100nf_0402_16v_10__x7r BOARD_OPTION
-AS Sequoia:cap_100nf_0402_16v_10__x7r SHAPE=0402
-AS Sequoia:cap_100nf_0402_16v_10__x7r MFG_1#=VEN: C0402X7R160-104KN
-AS Sequoia:cap_100nf_0402_16v_10__x7r MFG_2#=NA
-AS Sequoia:cap_100nf_0402_16v_10__x7r MFGI_1#=VEN: C0402X7R160-104KN
-AS Sequoia:cap_100nf_0402_16v_10__x7r MFGI_2#=NA
-AS Sequoia:cap_100nf_0402_16v_10__x7r EPI#=P10100000000001
-AS Sequoia:cap_100nf_0402_16v_10__x7r VALUE
-AS Sequoia:cap_100nf_0402_16v_10__x7r PINORDER=1 2
-AP Sequoia:cap_100nf_0402_16v_10__x7r 1 #=1
-AP Sequoia:cap_100nf_0402_16v_10__x7r 1 PINTYPE=OUT
-AP Sequoia:cap_100nf_0402_16v_10__x7r 2 #=2
-AP Sequoia:cap_100nf_0402_16v_10__x7r 2 PINTYPE=OUT
-|Q Sequoia:cap_10nf_0402_25v_10__x7r 1
-AS Sequoia:cap_10nf_0402_25v_10__x7r REFDES=C?
-AS Sequoia:cap_10nf_0402_25v_10__x7r DEVICE=CAP_10NF_0402_25V_10%_X7R
-AS Sequoia:cap_10nf_0402_25v_10__x7r PARTS=1
-AS Sequoia:cap_10nf_0402_25v_10__x7r PKG_TYPE=C_0402_IPC
-AS Sequoia:cap_10nf_0402_25v_10__x7r SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
-AS Sequoia:cap_10nf_0402_25v_10__x7r EPI#=P10100000000008
-AS Sequoia:cap_10nf_0402_25v_10__x7r GRN=LHR
-AS Sequoia:cap_10nf_0402_25v_10__x7r EP#=P10100000000008
-AS Sequoia:cap_10nf_0402_25v_10__x7r TYPE=X7R
-AS Sequoia:cap_10nf_0402_25v_10__x7r BOARD_OPTION
-AS Sequoia:cap_10nf_0402_25v_10__x7r SHAPE=0402
-AS Sequoia:cap_10nf_0402_25v_10__x7r MFG_1#=KEM: C0402C103K3RAC
-AS Sequoia:cap_10nf_0402_25v_10__x7r MFG_2#=VIS: VJ0402Y103KXX
-AS Sequoia:cap_10nf_0402_25v_10__x7r MFGI_1#=KEM: C0402C103K3RAC
-AS Sequoia:cap_10nf_0402_25v_10__x7r MFGI_2#=VIS: VJ0402Y103KXX
-AS Sequoia:cap_10nf_0402_25v_10__x7r VALUE
-AS Sequoia:cap_10nf_0402_25v_10__x7r PINORDER=1 2
-AP Sequoia:cap_10nf_0402_25v_10__x7r 1 #=1
-AP Sequoia:cap_10nf_0402_25v_10__x7r 1 PINTYPE=OUT
-AP Sequoia:cap_10nf_0402_25v_10__x7r 2 #=2
-AP Sequoia:cap_10nf_0402_25v_10__x7r 2 PINTYPE=OUT
-|Q Sequoia:cap_1nf_0402_25v_10__x7r 1
-AS Sequoia:cap_1nf_0402_25v_10__x7r REFDES=C?
-AS Sequoia:cap_1nf_0402_25v_10__x7r DEVICE=CAP_1NF_0402_25V_10%_X7R
-AS Sequoia:cap_1nf_0402_25v_10__x7r PARTS=1
-AS Sequoia:cap_1nf_0402_25v_10__x7r PKG_TYPE=C_0402_IPC
-AS Sequoia:cap_1nf_0402_25v_10__x7r SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
-AS Sequoia:cap_1nf_0402_25v_10__x7r MFGI_2#=KEM: C0402C102K3RAC
-AS Sequoia:cap_1nf_0402_25v_10__x7r MFGI_1#=AVX: 04023C102KAT2A
-AS Sequoia:cap_1nf_0402_25v_10__x7r TYPE=X7R
-AS Sequoia:cap_1nf_0402_25v_10__x7r MFG_2#=KEM: C0402C102K3RAC
-AS Sequoia:cap_1nf_0402_25v_10__x7r MFG_1#=AVX: 04023C102KAT2A
-AS Sequoia:cap_1nf_0402_25v_10__x7r SHAPE=0402
-AS Sequoia:cap_1nf_0402_25v_10__x7r BOARD_OPTION
-AS Sequoia:cap_1nf_0402_25v_10__x7r EP#=P10100000000017
-AS Sequoia:cap_1nf_0402_25v_10__x7r GRN=LHR
-AS Sequoia:cap_1nf_0402_25v_10__x7r EPI#=P10100000000017
-AS Sequoia:cap_1nf_0402_25v_10__x7r VALUE
-AS Sequoia:cap_1nf_0402_25v_10__x7r PINORDER=1 2
-AP Sequoia:cap_1nf_0402_25v_10__x7r 1 #=1
-AP Sequoia:cap_1nf_0402_25v_10__x7r 1 PINTYPE=OUT
-AP Sequoia:cap_1nf_0402_25v_10__x7r 2 #=2
-AP Sequoia:cap_1nf_0402_25v_10__x7r 2 PINTYPE=OUT
-|Q Sequoia:res_75_0402_5_ 1
-AS Sequoia:res_75_0402_5_ REFDES=R?
-AS Sequoia:res_75_0402_5_ DEVICE=RES_75_0402_5%
-AS Sequoia:res_75_0402_5_ PARTS=1
-AS Sequoia:res_75_0402_5_ PKG_TYPE=R_0402_IPC
-AS Sequoia:res_75_0402_5_ SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
-AS Sequoia:res_75_0402_5_ EPI#=P11400000000151
-AS Sequoia:res_75_0402_5_ EP#=P11400000000151
-AS Sequoia:res_75_0402_5_ MFGI_2#=BRN: CR0402JE750GLF
-AS Sequoia:res_75_0402_5_ MFGI_1#=YAE: 9C04021A75R0JEPF3
-AS Sequoia:res_75_0402_5_ BOARD_OPTION
-AS Sequoia:res_75_0402_5_ SHAPE=0402
-AS Sequoia:res_75_0402_5_ MFG_1#=YAE: 9C04021A75R0JEPF3
-AS Sequoia:res_75_0402_5_ MFG_2#=BRN: CR0402JE750GLF
-AS Sequoia:res_75_0402_5_ GRN=LHR
-AS Sequoia:res_75_0402_5_ VALUE
-AS Sequoia:res_75_0402_5_ PINORDER=1 2
-AP Sequoia:res_75_0402_5_ 1 #=1
-AP Sequoia:res_75_0402_5_ 1 PINTYPE=OUT
-AP Sequoia:res_75_0402_5_ 2 #=2
-AP Sequoia:res_75_0402_5_ 2 PINTYPE=OUT
-|Q Sequoia:res_49r9_0402_1_ 2
-AS Sequoia:res_49r9_0402_1_ REFDES=R?
-AS Sequoia:res_49r9_0402_1_ DEVICE=RES_49R9_0402_1%
-AS Sequoia:res_49r9_0402_1_ PARTS=1
-AS Sequoia:res_49r9_0402_1_ PKG_TYPE=R_0402_IPC
-AS Sequoia:res_49r9_0402_1_ SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
-AS Sequoia:res_49r9_0402_1_ EPI#=P11400000000119
-AS Sequoia:res_49r9_0402_1_ GRN=LHR
-AS Sequoia:res_49r9_0402_1_ EP#=P11400000000119
-AS Sequoia:res_49r9_0402_1_ MFGI_2#=BRN: CR0402FK49R9GLF
-AS Sequoia:res_49r9_0402_1_ MFGI_1#=YAE: 9C04021A49R9FKPF3
-AS Sequoia:res_49r9_0402_1_ MFG_2#=BRN: CR0402FK49R9GLF
-AS Sequoia:res_49r9_0402_1_ MFG_1#=YAE: 9C04021A49R9FKPF3
-AS Sequoia:res_49r9_0402_1_ SHAPE=0402
-AS Sequoia:res_49r9_0402_1_ BOARD_OPTION
-AS Sequoia:res_49r9_0402_1_ VALUE
-AS Sequoia:res_49r9_0402_1_ PINORDER=1 2
-AP Sequoia:res_49r9_0402_1_ 1 #=1
-AP Sequoia:res_49r9_0402_1_ 1 PINTYPE=OUT
-AP Sequoia:res_49r9_0402_1_ 2 #=2
-AP Sequoia:res_49r9_0402_1_ 2 PINTYPE=OUT
-|Q Sequoia:ind_bead_0603_180ohm_1r5a_25_ 2
-AS Sequoia:ind_bead_0603_180ohm_1r5a_25_ REFDES=L?
-AS Sequoia:ind_bead_0603_180ohm_1r5a_25_ DEVICE=IND_BEAD_0603_180OHM_1R5A_25%
-AS Sequoia:ind_bead_0603_180ohm_1r5a_25_ PARTS=1
-AS Sequoia:ind_bead_0603_180ohm_1r5a_25_ PKG_TYPE=L_0603
-AS Sequoia:ind_bead_0603_180ohm_1r5a_25_ SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
-AS Sequoia:ind_bead_0603_180ohm_1r5a_25_ EP#=P11000000000009
-AS Sequoia:ind_bead_0603_180ohm_1r5a_25_ BOARD_OPTION
-AS Sequoia:ind_bead_0603_180ohm_1r5a_25_ MFG_1#=MUR: BLM18PG181SN1x
-AS Sequoia:ind_bead_0603_180ohm_1r5a_25_ MFG_2#=NA
-AS Sequoia:ind_bead_0603_180ohm_1r5a_25_ MFGI_1#=MUR: BLM18PG181SN1x
-AS Sequoia:ind_bead_0603_180ohm_1r5a_25_ MFGI_2#=NA
-AS Sequoia:ind_bead_0603_180ohm_1r5a_25_ SHAPE=0603
-AS Sequoia:ind_bead_0603_180ohm_1r5a_25_ GRN=LHR
-AS Sequoia:ind_bead_0603_180ohm_1r5a_25_ EPI#=P11000000000009
-AS Sequoia:ind_bead_0603_180ohm_1r5a_25_ VALUE
-AS Sequoia:ind_bead_0603_180ohm_1r5a_25_ PINORDER=A B
-AP Sequoia:ind_bead_0603_180ohm_1r5a_25_ 1 #=1
-AP Sequoia:ind_bead_0603_180ohm_1r5a_25_ 1 PINTYPE=OUT
-AP Sequoia:ind_bead_0603_180ohm_1r5a_25_ 2 #=2
-AP Sequoia:ind_bead_0603_180ohm_1r5a_25_ 2 PINTYPE=OUT
-|Q Sequoia:res_300_0402_5_ 2
-AS Sequoia:res_300_0402_5_ REFDES=R?
-AS Sequoia:res_300_0402_5_ DEVICE=RES_300_0402_5%
-AS Sequoia:res_300_0402_5_ PARTS=1
-AS Sequoia:res_300_0402_5_ PKG_TYPE=R_0402_IPC
-AS Sequoia:res_300_0402_5_ SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
-AS Sequoia:res_300_0402_5_ EPI#=P11400000000093
-AS Sequoia:res_300_0402_5_ EP#=P11400000000093
-AS Sequoia:res_300_0402_5_ MFG_2#=BRN: CR0402JE301GLF
-AS Sequoia:res_300_0402_5_ MFG_1#=YAE: 9C04021A300RJEPF3
-AS Sequoia:res_300_0402_5_ SHAPE=0402
-AS Sequoia:res_300_0402_5_ BOARD_OPTION
-AS Sequoia:res_300_0402_5_ MFGI_1#=YAE: 9C04021A300RJEPF3
-AS Sequoia:res_300_0402_5_ MFGI_2#=BRN: CR0402JE301GLF
-AS Sequoia:res_300_0402_5_ GRN=LHR
-AS Sequoia:res_300_0402_5_ VALUE
-AS Sequoia:res_300_0402_5_ PINORDER=1 2
-AP Sequoia:res_300_0402_5_ 1 #=1
-AP Sequoia:res_300_0402_5_ 1 PINTYPE=OUT
-AP Sequoia:res_300_0402_5_ 2 #=2
-AP Sequoia:res_300_0402_5_ 2 PINTYPE=OUT
-|Q Sequoia:con_rj45_1x8_f_ra_th_2biledyg 1
-AS Sequoia:con_rj45_1x8_f_ra_th_2biledyg REFDES=J?
-AS Sequoia:con_rj45_1x8_f_ra_th_2biledyg DEVICE=CON_RJ45_1X8_F_RA_TH_2BILEDYG
-AS Sequoia:con_rj45_1x8_f_ra_th_2biledyg PARTS=1
-AS Sequoia:con_rj45_1x8_f_ra_th_2biledyg PKG_TYPE=RJ45_8POS
-AS Sequoia:con_rj45_1x8_f_ra_th_2biledyg SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
-AS Sequoia:con_rj45_1x8_f_ra_th_2biledyg EPI#=P10200000000036
-AS Sequoia:con_rj45_1x8_f_ra_th_2biledyg GRN=LHR
-AS Sequoia:con_rj45_1x8_f_ra_th_2biledyg EP#=P10200000000036
-AS Sequoia:con_rj45_1x8_f_ra_th_2biledyg MFG_1#=AMP: 2-406549-8
-AS Sequoia:con_rj45_1x8_f_ra_th_2biledyg MFG_2#=NA
-AS Sequoia:con_rj45_1x8_f_ra_th_2biledyg BOARD_OPTION
-AS Sequoia:con_rj45_1x8_f_ra_th_2biledyg MFGI_1#=AMP: 2-406549-8 (80C)
-AS Sequoia:con_rj45_1x8_f_ra_th_2biledyg MFGI_2#=NA
-AS Sequoia:con_rj45_1x8_f_ra_th_2biledyg SHAPE=RJ45
-AS Sequoia:con_rj45_1x8_f_ra_th_2biledyg VALUE
-AS Sequoia:con_rj45_1x8_f_ra_th_2biledyg PINORDER=RXP1 TXN1 TXP1 R1_YA_GC R1_YC_GA L1_YC_GA L1_YA_GC EG1 EG2 RXN1 4 5 7 8 H1 H2
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 1 #=3
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 1 PINTYPE=OUT
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 2 #=2
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 2 PINTYPE=OUT
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 3 #=1
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 3 PINTYPE=OUT
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 4 #=10
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 4 PINTYPE=OUT
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 5 #=9
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 5 PINTYPE=OUT
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 6 #=11
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 6 PINTYPE=OUT
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 7 #=12
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 7 PINTYPE=OUT
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 8 #=14
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 8 PINTYPE=OUT
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 9 #=13
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 9 PINTYPE=OUT
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 10 #=6
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 10 PINTYPE=OUT
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 11 #=4
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 11 PINTYPE=OUT
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 12 #=5
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 12 PINTYPE=OUT
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 13 #=7
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 13 PINTYPE=OUT
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 14 #=8
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 14 PINTYPE=OUT
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 15 #=15
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 15 PINTYPE=OUT
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 16 #=16
-AP Sequoia:con_rj45_1x8_f_ra_th_2biledyg 16 PINTYPE=OUT
-|Q Sequoia:cap_1nf_1808_2kv_10__x7r 1
-AS Sequoia:cap_1nf_1808_2kv_10__x7r REFDES=C?
-AS Sequoia:cap_1nf_1808_2kv_10__x7r DEVICE=CAP_1NF_1808_2KV_10%_X7R
-AS Sequoia:cap_1nf_1808_2kv_10__x7r PARTS=1
-AS Sequoia:cap_1nf_1808_2kv_10__x7r PKG_TYPE=C_1808_AVX
-AS Sequoia:cap_1nf_1808_2kv_10__x7r SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
-AS Sequoia:cap_1nf_1808_2kv_10__x7r EPI#=P10100000000020
-AS Sequoia:cap_1nf_1808_2kv_10__x7r GRN=LHR
-AS Sequoia:cap_1nf_1808_2kv_10__x7r EP#=P10100000000020
-AS Sequoia:cap_1nf_1808_2kv_10__x7r MFGI_2#=NOV: 1808B102K202NT
-AS Sequoia:cap_1nf_1808_2kv_10__x7r MFGI_1#=AVX: 1808GC102KAT2A
-AS Sequoia:cap_1nf_1808_2kv_10__x7r TYPE=X7R
-AS Sequoia:cap_1nf_1808_2kv_10__x7r SHAPE=1808
-AS Sequoia:cap_1nf_1808_2kv_10__x7r MFG_1#=AVX: 1808GC102KAT2A
-AS Sequoia:cap_1nf_1808_2kv_10__x7r MFG_2#=NOV: 1808B102K202NT
-AS Sequoia:cap_1nf_1808_2kv_10__x7r BOARD_OPTION
-AS Sequoia:cap_1nf_1808_2kv_10__x7r VALUE
-AS Sequoia:cap_1nf_1808_2kv_10__x7r PINORDER=1 2
-AP Sequoia:cap_1nf_1808_2kv_10__x7r 1 #=1
-AP Sequoia:cap_1nf_1808_2kv_10__x7r 1 PINTYPE=OUT
-AP Sequoia:cap_1nf_1808_2kv_10__x7r 2 #=2
-AP Sequoia:cap_1nf_1808_2kv_10__x7r 2 PINTYPE=OUT
-|Q Sequoia:con_hdr_1x2_m_vt_0r1_smt 1
-AS Sequoia:con_hdr_1x2_m_vt_0r1_smt REFDES=P?
-AS Sequoia:con_hdr_1x2_m_vt_0r1_smt DEVICE=CON_HDR_1X2_M_VT_0R1_SMT
-AS Sequoia:con_hdr_1x2_m_vt_0r1_smt PARTS=1
-AS Sequoia:con_hdr_1x2_m_vt_0r1_smt PKG_TYPE=TSM_2X1_SV
-AS Sequoia:con_hdr_1x2_m_vt_0r1_smt SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
-AS Sequoia:con_hdr_1x2_m_vt_0r1_smt SHAPE=1x2 VT
-AS Sequoia:con_hdr_1x2_m_vt_0r1_smt BOARD_OPTION
-AS Sequoia:con_hdr_1x2_m_vt_0r1_smt MFG_2#=MET: M650-H102-02-01G
-AS Sequoia:con_hdr_1x2_m_vt_0r1_smt MFG_1#=SAM: TSM-102-01-TM-SV
-AS Sequoia:con_hdr_1x2_m_vt_0r1_smt MFGI_1#=SAM: TSM-102-01-TM-SV
-AS Sequoia:con_hdr_1x2_m_vt_0r1_smt MFGI_2#=MET: M650-H102-02-01G
-AS Sequoia:con_hdr_1x2_m_vt_0r1_smt EP#=P10200000000010
-AS Sequoia:con_hdr_1x2_m_vt_0r1_smt GRN=LHR
-AS Sequoia:con_hdr_1x2_m_vt_0r1_smt EPI#=P10200000000010
-AS Sequoia:con_hdr_1x2_m_vt_0r1_smt VALUE
-AS Sequoia:con_hdr_1x2_m_vt_0r1_smt PINORDER=1 2
-AP Sequoia:con_hdr_1x2_m_vt_0r1_smt 1 #=1
-AP Sequoia:con_hdr_1x2_m_vt_0r1_smt 1 PINTYPE=OUT
-AP Sequoia:con_hdr_1x2_m_vt_0r1_smt 2 #=2
-AP Sequoia:con_hdr_1x2_m_vt_0r1_smt 2 PINTYPE=OUT
-|Q Sequoia:ic_cpu_te_pbga680_440epx_grx_h 1
-AS Sequoia:ic_cpu_te_pbga680_440epx_grx_h REFDES=U?
-AS Sequoia:ic_cpu_te_pbga680_440epx_grx_h DEVICE=IC_CPU_TE-PBGA680_440EPX-GRX
-AS Sequoia:ic_cpu_te_pbga680_440epx_grx_h PARTS=1
-AS Sequoia:ic_cpu_te_pbga680_440epx_grx_h PKG_TYPE=BGA100P34X34-680T
-AS Sequoia:ic_cpu_te_pbga680_440epx_grx_h SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
-AS Sequoia:ic_cpu_te_pbga680_440epx_grx_h EP#=P10700000000016
-AS Sequoia:ic_cpu_te_pbga680_440epx_grx_h MFGI_1#=AMC: PPC440EPX-SUA667T
-AS Sequoia:ic_cpu_te_pbga680_440epx_grx_h BOARD_OPTION
-AS Sequoia:ic_cpu_te_pbga680_440epx_grx_h MFG_2#=NA
-AS Sequoia:ic_cpu_te_pbga680_440epx_grx_h MFG_1#=AMC: PPC440EPX-SUA667T
-AS Sequoia:ic_cpu_te_pbga680_440epx_grx_h MFGI_2#=NA
-AS Sequoia:ic_cpu_te_pbga680_440epx_grx_h SHAPE=TE-PBGA680
-AS Sequoia:ic_cpu_te_pbga680_440epx_grx_h NOTES=245degC 30sec, max peak process
-AS Sequoia:ic_cpu_te_pbga680_440epx_grx_h GRN=HR*
-AS Sequoia:ic_cpu_te_pbga680_440epx_grx_h EPI#=P10700000000016
-AS Sequoia:ic_cpu_te_pbga680_440epx_grx_h VALUE
-AS Sequoia:ic_cpu_te_pbga680_440epx_grx_h HETERO=IC_CPU_TE_PBGA680_440EPX_GRX_A,IC_CPU_TE_PBGA680_440EPX_GRX_B,IC_CPU_TE_PBGA680_440EPX_GRX_C,IC_CPU_TE_PBGA680_440EPX_GRX_D,IC_CPU_TE_PBGA680_440EPX_GRX_E,IC_CPU_TE_PBGA680_440EPX_GRX_F,IC_CPU_TE_PBGA680_440EPX_GRX_G,IC_CPU_TE_PBGA680_440EPX_GRX_H,IC_CPU_TE_PBGA680_440EPX_GRX_I,IC_CPU_TE_PBGA680_440EPX_GRX_J
-AS Sequoia:ic_cpu_te_pbga680_440epx_grx_h PINORDER=GMCMDCLK GMCMDIO GMCREFCLK GMC0_TXD0 GMC0_TXD1 GMC0_TXD2 GMC0_TXD3 GMC0_TXCTL GMC0_TXCLK GMC0_RXD0 GMC0_RXD1 GMC0_RXD2 GMC0_RXD3 GMC0_RXCTL GMC0_RXCLK GMCTXCLK REJECTPKT0 REJECTPKT1
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 1 #=AL34
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 1 PINTYPE=IN
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 2 #=AK34
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 2 PINTYPE=BI
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 3 #=AJ33
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 3 PINTYPE=OUT
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 4 #=AL24
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 4 PINTYPE=IN
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 5 #=AN25
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 5 PINTYPE=IN
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 6 #=AM25
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 6 PINTYPE=IN
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 7 #=AL25
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 7 PINTYPE=IN
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 8 #=AN24
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 8 PINTYPE=IN
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 9 #=AM27
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 9 PINTYPE=IN
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 10 #=AL28
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 10 PINTYPE=OUT
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 11 #=AP29
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 11 PINTYPE=OUT
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 12 #=AM28
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 12 PINTYPE=OUT
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 13 #=AN29
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 13 PINTYPE=OUT
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 14 #=AJ31
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 14 PINTYPE=OUT
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 15 #=AN28
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 15 PINTYPE=OUT
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 16 #=AL27
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 16 PINTYPE=OUT
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 17 #=AM23
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 17 PINTYPE=OUT
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 18 #=AL23
-AP Sequoia:ic_cpu_te_pbga680_440epx_grx_h 18 PINTYPE=OUT
-|Q r 2
-AS r PKG_TYPE=RES
-AS r PINOFF
-AS r PREFIX=R
-AS r PARTS=1
-AS r REFDES=R?
-AS r VALUE
-AS r POWERRATING
-AS r PINORDER=N1 N2
-AS r INOV_VER_REC=9:03_5-9-07
-AP r 1 PINTYPE=BI
-AP r 1 #=1
-AP r 2 PINTYPE=BI
-AP r 2 #=2
-|Q Sequoia:xfmr_1_1_soic24_genet_quad 1
-AS Sequoia:xfmr_1_1_soic24_genet_quad REFDES=T?
-AS Sequoia:xfmr_1_1_soic24_genet_quad DEVICE=XFMR_1:1_SOIC24_GENET_QUAD
-AS Sequoia:xfmr_1_1_soic24_genet_quad PARTS=1
-AS Sequoia:xfmr_1_1_soic24_genet_quad PKG_TYPE=T_EPG4011
-AS Sequoia:xfmr_1_1_soic24_genet_quad SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
-AS Sequoia:xfmr_1_1_soic24_genet_quad EPI#=P11800000000003
-AS Sequoia:xfmr_1_1_soic24_genet_quad EP#=P11800000000002
-AS Sequoia:xfmr_1_1_soic24_genet_quad GRN=LHR
-AS Sequoia:xfmr_1_1_soic24_genet_quad MFG_2#=NA
-AS Sequoia:xfmr_1_1_soic24_genet_quad MFGI_2#=NA
-AS Sequoia:xfmr_1_1_soic24_genet_quad MFGI_1#=PCA: EPG4011JE-LF
-AS Sequoia:xfmr_1_1_soic24_genet_quad BOARD_OPTION
-AS Sequoia:xfmr_1_1_soic24_genet_quad MFG_1#=PCA: EPG4011J-LF
-AS Sequoia:xfmr_1_1_soic24_genet_quad SHAPE=SOIC24
-AS Sequoia:xfmr_1_1_soic24_genet_quad VALUE
-AS Sequoia:xfmr_1_1_soic24_genet_quad PINORDER=1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
-AP Sequoia:xfmr_1_1_soic24_genet_quad 1 #=1
-AP Sequoia:xfmr_1_1_soic24_genet_quad 1 PINTYPE=OUT
-AP Sequoia:xfmr_1_1_soic24_genet_quad 2 #=2
-AP Sequoia:xfmr_1_1_soic24_genet_quad 2 PINTYPE=OUT
-AP Sequoia:xfmr_1_1_soic24_genet_quad 3 #=3
-AP Sequoia:xfmr_1_1_soic24_genet_quad 3 PINTYPE=OUT
-AP Sequoia:xfmr_1_1_soic24_genet_quad 4 #=4
-AP Sequoia:xfmr_1_1_soic24_genet_quad 4 PINTYPE=OUT
-AP Sequoia:xfmr_1_1_soic24_genet_quad 5 #=5
-AP Sequoia:xfmr_1_1_soic24_genet_quad 5 PINTYPE=OUT
-AP Sequoia:xfmr_1_1_soic24_genet_quad 6 #=6
-AP Sequoia:xfmr_1_1_soic24_genet_quad 6 PINTYPE=OUT
-AP Sequoia:xfmr_1_1_soic24_genet_quad 7 #=7
-AP Sequoia:xfmr_1_1_soic24_genet_quad 7 PINTYPE=OUT
-AP Sequoia:xfmr_1_1_soic24_genet_quad 8 #=8
-AP Sequoia:xfmr_1_1_soic24_genet_quad 8 PINTYPE=OUT
-AP Sequoia:xfmr_1_1_soic24_genet_quad 9 #=9
-AP Sequoia:xfmr_1_1_soic24_genet_quad 9 PINTYPE=OUT
-AP Sequoia:xfmr_1_1_soic24_genet_quad 10 #=10
-AP Sequoia:xfmr_1_1_soic24_genet_quad 10 PINTYPE=OUT
-AP Sequoia:xfmr_1_1_soic24_genet_quad 11 #=11
-AP Sequoia:xfmr_1_1_soic24_genet_quad 11 PINTYPE=OUT
-AP Sequoia:xfmr_1_1_soic24_genet_quad 12 #=12
-AP Sequoia:xfmr_1_1_soic24_genet_quad 12 PINTYPE=OUT
-AP Sequoia:xfmr_1_1_soic24_genet_quad 13 #=13
-AP Sequoia:xfmr_1_1_soic24_genet_quad 13 PINTYPE=OUT
-AP Sequoia:xfmr_1_1_soic24_genet_quad 14 #=14
-AP Sequoia:xfmr_1_1_soic24_genet_quad 14 PINTYPE=OUT
-AP Sequoia:xfmr_1_1_soic24_genet_quad 15 #=15
-AP Sequoia:xfmr_1_1_soic24_genet_quad 15 PINTYPE=OUT
-AP Sequoia:xfmr_1_1_soic24_genet_quad 16 #=16
-AP Sequoia:xfmr_1_1_soic24_genet_quad 16 PINTYPE=OUT
-AP Sequoia:xfmr_1_1_soic24_genet_quad 17 #=17
-AP Sequoia:xfmr_1_1_soic24_genet_quad 17 PINTYPE=OUT
-AP Sequoia:xfmr_1_1_soic24_genet_quad 18 #=18
-AP Sequoia:xfmr_1_1_soic24_genet_quad 18 PINTYPE=OUT
-AP Sequoia:xfmr_1_1_soic24_genet_quad 19 #=19
-AP Sequoia:xfmr_1_1_soic24_genet_quad 19 PINTYPE=OUT
-AP Sequoia:xfmr_1_1_soic24_genet_quad 20 #=20
-AP Sequoia:xfmr_1_1_soic24_genet_quad 20 PINTYPE=OUT
-AP Sequoia:xfmr_1_1_soic24_genet_quad 21 #=21
-AP Sequoia:xfmr_1_1_soic24_genet_quad 21 PINTYPE=OUT
-AP Sequoia:xfmr_1_1_soic24_genet_quad 22 #=22
-AP Sequoia:xfmr_1_1_soic24_genet_quad 22 PINTYPE=OUT
-AP Sequoia:xfmr_1_1_soic24_genet_quad 23 #=23
-AP Sequoia:xfmr_1_1_soic24_genet_quad 23 PINTYPE=OUT
-AP Sequoia:xfmr_1_1_soic24_genet_quad 24 #=24
-AP Sequoia:xfmr_1_1_soic24_genet_quad 24 PINTYPE=OUT
-|Q SKASYMGEN:led 1
-AS SKASYMGEN:led REFDES=D?
-AS SKASYMGEN:led PINORDER=P N
-AS SKASYMGEN:led ORDER=MODEL$
-AS SKASYMGEN:led PREFIX=D
-AS SKASYMGEN:led PINOFF
-AS SKASYMGEN:led PARTS=1
-AS SKASYMGEN:led MODEL=NO_MODEL
-AS SKASYMGEN:led PKG_TYPE=TO-5
-AS SKASYMGEN:led INOV_VER_REC=15:29_10-25-06
-AP SKASYMGEN:led 1 PINTYPE=IN
-AP SKASYMGEN:led 1 #=1
-AP SKASYMGEN:led 2 PINTYPE=OUT
-AP SKASYMGEN:led 2 #=2
 |Q r 1
 AS r PKG_TYPE=RES
 AS r PINOFF
@@ -442,6 +56,204 @@ AP r 1 PINTYPE=BI
 AP r 1 #=1
 AP r 2 PINTYPE=BI
 AP r 2 #=2
+|Q r 2
+AS r PKG_TYPE=RES
+AS r PINOFF
+AS r PREFIX=R
+AS r PARTS=1
+AS r REFDES=R?
+AS r VALUE
+AS r POWERRATING
+AS r PINORDER=N1 N2
+AS r INOV_VER_REC=9:03_5-9-07
+AP r 1 PINTYPE=BI
+AP r 1 #=1
+AP r 2 PINTYPE=BI
+AP r 2 #=2
+|Q res_22r1_0402_1_ 2
+AS res_22r1_0402_1_ REFDES=R?
+AS res_22r1_0402_1_ DEVICE=RES_22R1_0402_1%
+AS res_22r1_0402_1_ PARTS=1
+AS res_22r1_0402_1_ PKG_TYPE=R_0402_IPC
+AS res_22r1_0402_1_ SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
+AS res_22r1_0402_1_ EPI#=P11400000000076
+AS res_22r1_0402_1_ EP#=P11400000000076
+AS res_22r1_0402_1_ BOARD_OPTION
+AS res_22r1_0402_1_ MFG_2#=BRN: CR0402FK22R1GLF
+AS res_22r1_0402_1_ MFG_1#=YAE: 9C04021A22R1FKPF3
+AS res_22r1_0402_1_ SHAPE=0402
+AS res_22r1_0402_1_ MFGI_1#=YAE: 9C04021A22R1FKPF3
+AS res_22r1_0402_1_ MFGI_2#=BRN: CR0402FK22R1GLF
+AS res_22r1_0402_1_ GRN=LHR
+AS res_22r1_0402_1_ VALUE
+AS res_22r1_0402_1_ PINORDER=1 2
+AP res_22r1_0402_1_ 1 #=1
+AP res_22r1_0402_1_ 1 PINTYPE=OUT
+AP res_22r1_0402_1_ 2 #=2
+AP res_22r1_0402_1_ 2 PINTYPE=OUT
+|Q cap_100nf_0402_16v_10__x7r 1
+AS cap_100nf_0402_16v_10__x7r REFDES=C?
+AS cap_100nf_0402_16v_10__x7r DEVICE=CAP_100NF_0402_16V_10%_X7R
+AS cap_100nf_0402_16v_10__x7r PARTS=1
+AS cap_100nf_0402_16v_10__x7r PKG_TYPE=C_0402_IPC
+AS cap_100nf_0402_16v_10__x7r SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
+AS cap_100nf_0402_16v_10__x7r GRN=LHR
+AS cap_100nf_0402_16v_10__x7r EP#=P10100000000001
+AS cap_100nf_0402_16v_10__x7r TYPE=X7R
+AS cap_100nf_0402_16v_10__x7r BOARD_OPTION
+AS cap_100nf_0402_16v_10__x7r SHAPE=0402
+AS cap_100nf_0402_16v_10__x7r MFG_1#=VEN: C0402X7R160-104KN
+AS cap_100nf_0402_16v_10__x7r MFG_2#=NA
+AS cap_100nf_0402_16v_10__x7r MFGI_1#=VEN: C0402X7R160-104KN
+AS cap_100nf_0402_16v_10__x7r MFGI_2#=NA
+AS cap_100nf_0402_16v_10__x7r EPI#=P10100000000001
+AS cap_100nf_0402_16v_10__x7r VALUE
+AS cap_100nf_0402_16v_10__x7r PINORDER=1 2
+AP cap_100nf_0402_16v_10__x7r 1 #=1
+AP cap_100nf_0402_16v_10__x7r 1 PINTYPE=OUT
+AP cap_100nf_0402_16v_10__x7r 2 #=2
+AP cap_100nf_0402_16v_10__x7r 2 PINTYPE=OUT
+|Q cap_10nf_0402_25v_10__x7r 1
+AS cap_10nf_0402_25v_10__x7r REFDES=C?
+AS cap_10nf_0402_25v_10__x7r DEVICE=CAP_10NF_0402_25V_10%_X7R
+AS cap_10nf_0402_25v_10__x7r PARTS=1
+AS cap_10nf_0402_25v_10__x7r PKG_TYPE=C_0402_IPC
+AS cap_10nf_0402_25v_10__x7r SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
+AS cap_10nf_0402_25v_10__x7r EPI#=P10100000000008
+AS cap_10nf_0402_25v_10__x7r GRN=LHR
+AS cap_10nf_0402_25v_10__x7r EP#=P10100000000008
+AS cap_10nf_0402_25v_10__x7r TYPE=X7R
+AS cap_10nf_0402_25v_10__x7r BOARD_OPTION
+AS cap_10nf_0402_25v_10__x7r SHAPE=0402
+AS cap_10nf_0402_25v_10__x7r MFG_1#=KEM: C0402C103K3RAC
+AS cap_10nf_0402_25v_10__x7r MFG_2#=VIS: VJ0402Y103KXX
+AS cap_10nf_0402_25v_10__x7r MFGI_1#=KEM: C0402C103K3RAC
+AS cap_10nf_0402_25v_10__x7r MFGI_2#=VIS: VJ0402Y103KXX
+AS cap_10nf_0402_25v_10__x7r VALUE
+AS cap_10nf_0402_25v_10__x7r PINORDER=1 2
+AP cap_10nf_0402_25v_10__x7r 1 #=1
+AP cap_10nf_0402_25v_10__x7r 1 PINTYPE=OUT
+AP cap_10nf_0402_25v_10__x7r 2 #=2
+AP cap_10nf_0402_25v_10__x7r 2 PINTYPE=OUT
+|Q cap_1nf_0402_25v_10__x7r 1
+AS cap_1nf_0402_25v_10__x7r REFDES=C?
+AS cap_1nf_0402_25v_10__x7r DEVICE=CAP_1NF_0402_25V_10%_X7R
+AS cap_1nf_0402_25v_10__x7r PARTS=1
+AS cap_1nf_0402_25v_10__x7r PKG_TYPE=C_0402_IPC
+AS cap_1nf_0402_25v_10__x7r SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
+AS cap_1nf_0402_25v_10__x7r MFGI_2#=KEM: C0402C102K3RAC
+AS cap_1nf_0402_25v_10__x7r MFGI_1#=AVX: 04023C102KAT2A
+AS cap_1nf_0402_25v_10__x7r TYPE=X7R
+AS cap_1nf_0402_25v_10__x7r MFG_2#=KEM: C0402C102K3RAC
+AS cap_1nf_0402_25v_10__x7r MFG_1#=AVX: 04023C102KAT2A
+AS cap_1nf_0402_25v_10__x7r SHAPE=0402
+AS cap_1nf_0402_25v_10__x7r BOARD_OPTION
+AS cap_1nf_0402_25v_10__x7r EP#=P10100000000017
+AS cap_1nf_0402_25v_10__x7r GRN=LHR
+AS cap_1nf_0402_25v_10__x7r EPI#=P10100000000017
+AS cap_1nf_0402_25v_10__x7r VALUE
+AS cap_1nf_0402_25v_10__x7r PINORDER=1 2
+AP cap_1nf_0402_25v_10__x7r 1 #=1
+AP cap_1nf_0402_25v_10__x7r 1 PINTYPE=OUT
+AP cap_1nf_0402_25v_10__x7r 2 #=2
+AP cap_1nf_0402_25v_10__x7r 2 PINTYPE=OUT
+|Q ind_bead_0603_180ohm_1r5a_25_ 2
+AS ind_bead_0603_180ohm_1r5a_25_ REFDES=L?
+AS ind_bead_0603_180ohm_1r5a_25_ DEVICE=IND_BEAD_0603_180OHM_1R5A_25%
+AS ind_bead_0603_180ohm_1r5a_25_ PARTS=1
+AS ind_bead_0603_180ohm_1r5a_25_ PKG_TYPE=L_0603
+AS ind_bead_0603_180ohm_1r5a_25_ SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
+AS ind_bead_0603_180ohm_1r5a_25_ EP#=P11000000000009
+AS ind_bead_0603_180ohm_1r5a_25_ BOARD_OPTION
+AS ind_bead_0603_180ohm_1r5a_25_ MFG_1#=MUR: BLM18PG181SN1x
+AS ind_bead_0603_180ohm_1r5a_25_ MFG_2#=NA
+AS ind_bead_0603_180ohm_1r5a_25_ MFGI_1#=MUR: BLM18PG181SN1x
+AS ind_bead_0603_180ohm_1r5a_25_ MFGI_2#=NA
+AS ind_bead_0603_180ohm_1r5a_25_ SHAPE=0603
+AS ind_bead_0603_180ohm_1r5a_25_ GRN=LHR
+AS ind_bead_0603_180ohm_1r5a_25_ EPI#=P11000000000009
+AS ind_bead_0603_180ohm_1r5a_25_ VALUE
+AS ind_bead_0603_180ohm_1r5a_25_ PINORDER=A B
+AP ind_bead_0603_180ohm_1r5a_25_ 1 #=1
+AP ind_bead_0603_180ohm_1r5a_25_ 1 PINTYPE=OUT
+AP ind_bead_0603_180ohm_1r5a_25_ 2 #=2
+AP ind_bead_0603_180ohm_1r5a_25_ 2 PINTYPE=OUT
+|Q con_hdr_1x2_m_vt_0r1_smt 1
+AS con_hdr_1x2_m_vt_0r1_smt REFDES=P?
+AS con_hdr_1x2_m_vt_0r1_smt DEVICE=CON_HDR_1X2_M_VT_0R1_SMT
+AS con_hdr_1x2_m_vt_0r1_smt PARTS=1
+AS con_hdr_1x2_m_vt_0r1_smt PKG_TYPE=TSM_2X1_SV
+AS con_hdr_1x2_m_vt_0r1_smt SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
+AS con_hdr_1x2_m_vt_0r1_smt SHAPE=1x2 VT
+AS con_hdr_1x2_m_vt_0r1_smt BOARD_OPTION
+AS con_hdr_1x2_m_vt_0r1_smt MFG_2#=MET: M650-H102-02-01G
+AS con_hdr_1x2_m_vt_0r1_smt MFG_1#=SAM: TSM-102-01-TM-SV
+AS con_hdr_1x2_m_vt_0r1_smt MFGI_1#=SAM: TSM-102-01-TM-SV
+AS con_hdr_1x2_m_vt_0r1_smt MFGI_2#=MET: M650-H102-02-01G
+AS con_hdr_1x2_m_vt_0r1_smt EP#=P10200000000010
+AS con_hdr_1x2_m_vt_0r1_smt GRN=LHR
+AS con_hdr_1x2_m_vt_0r1_smt EPI#=P10200000000010
+AS con_hdr_1x2_m_vt_0r1_smt VALUE
+AS con_hdr_1x2_m_vt_0r1_smt PINORDER=1 2
+AP con_hdr_1x2_m_vt_0r1_smt 1 #=1
+AP con_hdr_1x2_m_vt_0r1_smt 1 PINTYPE=OUT
+AP con_hdr_1x2_m_vt_0r1_smt 2 #=2
+AP con_hdr_1x2_m_vt_0r1_smt 2 PINTYPE=OUT
+|Q ic_cpu_te_pbga680_440epx_grx_h 1
+AS ic_cpu_te_pbga680_440epx_grx_h REFDES=U?
+AS ic_cpu_te_pbga680_440epx_grx_h DEVICE=IC_CPU_TE-PBGA680_440EPX-GRX
+AS ic_cpu_te_pbga680_440epx_grx_h PARTS=1
+AS ic_cpu_te_pbga680_440epx_grx_h PKG_TYPE=BGA100P34X34-680T
+AS ic_cpu_te_pbga680_440epx_grx_h SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB
+AS ic_cpu_te_pbga680_440epx_grx_h EP#=P10700000000016
+AS ic_cpu_te_pbga680_440epx_grx_h MFGI_1#=AMC: PPC440EPX-SUA667T
+AS ic_cpu_te_pbga680_440epx_grx_h BOARD_OPTION
+AS ic_cpu_te_pbga680_440epx_grx_h MFG_2#=NA
+AS ic_cpu_te_pbga680_440epx_grx_h MFG_1#=AMC: PPC440EPX-SUA667T
+AS ic_cpu_te_pbga680_440epx_grx_h MFGI_2#=NA
+AS ic_cpu_te_pbga680_440epx_grx_h SHAPE=TE-PBGA680
+AS ic_cpu_te_pbga680_440epx_grx_h NOTES=245degC 30sec, max peak process
+AS ic_cpu_te_pbga680_440epx_grx_h GRN=HR*
+AS ic_cpu_te_pbga680_440epx_grx_h EPI#=P10700000000016
+AS ic_cpu_te_pbga680_440epx_grx_h VALUE
+AS ic_cpu_te_pbga680_440epx_grx_h HETERO=IC_CPU_TE_PBGA680_440EPX_GRX_A,IC_CPU_TE_PBGA680_440EPX_GRX_B,IC_CPU_TE_PBGA680_440EPX_GRX_C,IC_CPU_TE_PBGA680_440EPX_GRX_D,IC_CPU_TE_PBGA680_440EPX_GRX_E,IC_CPU_TE_PBGA680_440EPX_GRX_F,IC_CPU_TE_PBGA680_440EPX_GRX_G,IC_CPU_TE_PBGA680_440EPX_GRX_H,IC_CPU_TE_PBGA680_440EPX_GRX_I,IC_CPU_TE_PBGA680_440EPX_GRX_J
+AS ic_cpu_te_pbga680_440epx_grx_h PINORDER=GMCMDCLK GMCMDIO GMCREFCLK GMC0_TXD0 GMC0_TXD1 GMC0_TXD2 GMC0_TXD3 GMC0_TXCTL GMC0_TXCLK GMC0_RXD0 GMC0_RXD1 GMC0_RXD2 GMC0_RXD3 GMC0_RXCTL GMC0_RXCLK GMCTXCLK REJECTPKT0 REJECTPKT1
+AP ic_cpu_te_pbga680_440epx_grx_h 1 #=AL34
+AP ic_cpu_te_pbga680_440epx_grx_h 1 PINTYPE=IN
+AP ic_cpu_te_pbga680_440epx_grx_h 2 #=AK34
+AP ic_cpu_te_pbga680_440epx_grx_h 2 PINTYPE=BI
+AP ic_cpu_te_pbga680_440epx_grx_h 3 #=AJ33
+AP ic_cpu_te_pbga680_440epx_grx_h 3 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_h 4 #=AL24
+AP ic_cpu_te_pbga680_440epx_grx_h 4 PINTYPE=IN
+AP ic_cpu_te_pbga680_440epx_grx_h 5 #=AN25
+AP ic_cpu_te_pbga680_440epx_grx_h 5 PINTYPE=IN
+AP ic_cpu_te_pbga680_440epx_grx_h 6 #=AM25
+AP ic_cpu_te_pbga680_440epx_grx_h 6 PINTYPE=IN
+AP ic_cpu_te_pbga680_440epx_grx_h 7 #=AL25
+AP ic_cpu_te_pbga680_440epx_grx_h 7 PINTYPE=IN
+AP ic_cpu_te_pbga680_440epx_grx_h 8 #=AN24
+AP ic_cpu_te_pbga680_440epx_grx_h 8 PINTYPE=IN
+AP ic_cpu_te_pbga680_440epx_grx_h 9 #=AM27
+AP ic_cpu_te_pbga680_440epx_grx_h 9 PINTYPE=IN
+AP ic_cpu_te_pbga680_440epx_grx_h 10 #=AL28
+AP ic_cpu_te_pbga680_440epx_grx_h 10 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_h 11 #=AP29
+AP ic_cpu_te_pbga680_440epx_grx_h 11 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_h 12 #=AM28
+AP ic_cpu_te_pbga680_440epx_grx_h 12 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_h 13 #=AN29
+AP ic_cpu_te_pbga680_440epx_grx_h 13 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_h 14 #=AJ31
+AP ic_cpu_te_pbga680_440epx_grx_h 14 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_h 15 #=AN28
+AP ic_cpu_te_pbga680_440epx_grx_h 15 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_h 16 #=AL27
+AP ic_cpu_te_pbga680_440epx_grx_h 16 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_h 17 #=AM23
+AP ic_cpu_te_pbga680_440epx_grx_h 17 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_h 18 #=AL23
+AP ic_cpu_te_pbga680_440epx_grx_h 18 PINTYPE=OUT
 |Q dp83865_phy 1
 AS dp83865_phy MANUFACTURER=NATIONAL
 AS dp83865_phy DEVICE=NATSEMI_DP83865DVH
@@ -714,394 +526,382 @@ AP dp83865_phy 127 PINTYPE=POWER
 AP dp83865_phy 127 #=36
 AP dp83865_phy 128 #=38
 AP dp83865_phy 128 PINTYPE=POWER
-G GND
+|Q con_rj45_1x8_f_ra_th_2biledyg 1
+AS con_rj45_1x8_f_ra_th_2biledyg DESCRIPTION=RJ45, INTEGRATED MAGNETICS, 2 BI-COLOUR LEDS
+AS con_rj45_1x8_f_ra_th_2biledyg MANUFACTURER=HALO
+AS con_rj45_1x8_f_ra_th_2biledyg DEVICE=CON_RJ45_1X8_F_RA_TH_2BILEDYG
+AS con_rj45_1x8_f_ra_th_2biledyg PARTS=1
+AS con_rj45_1x8_f_ra_th_2biledyg PKG_TYPE=RJ45_8POS
+AS con_rj45_1x8_f_ra_th_2biledyg VALUE
+AS con_rj45_1x8_f_ra_th_2biledyg REFDES=J?
+AS con_rj45_1x8_f_ra_th_2biledyg P/D_NUM=HFJ11-1G02E-L55
+AS con_rj45_1x8_f_ra_th_2biledyg PINORDER=CASE1 CASE2 GND L1_YA_GC L1_YC_GA MNT1 MNT2 R1_YA_GC R1_YC_GA TD0N TD0P TD1N TD1P TD2N TD2P TD3N TD3P VCC
+AS con_rj45_1x8_f_ra_th_2biledyg INOV_VER_REC=8:09_8-28-07
+AP con_rj45_1x8_f_ra_th_2biledyg 1 #=17
+AP con_rj45_1x8_f_ra_th_2biledyg 1 PINTYPE=OUT
+AP con_rj45_1x8_f_ra_th_2biledyg 2 PINTYPE=OUT
+AP con_rj45_1x8_f_ra_th_2biledyg 2 #=18
+AP con_rj45_1x8_f_ra_th_2biledyg 3 #=10
+AP con_rj45_1x8_f_ra_th_2biledyg 3 PINTYPE=OUT
+AP con_rj45_1x8_f_ra_th_2biledyg 4 #=14
+AP con_rj45_1x8_f_ra_th_2biledyg 4 PINTYPE=OUT
+AP con_rj45_1x8_f_ra_th_2biledyg 5 #=13
+AP con_rj45_1x8_f_ra_th_2biledyg 5 PINTYPE=OUT
+AP con_rj45_1x8_f_ra_th_2biledyg 6 PINTYPE=OUT
+AP con_rj45_1x8_f_ra_th_2biledyg 6 #=15
+AP con_rj45_1x8_f_ra_th_2biledyg 7 #=16
+AP con_rj45_1x8_f_ra_th_2biledyg 7 PINTYPE=OUT
+AP con_rj45_1x8_f_ra_th_2biledyg 8 #=12
+AP con_rj45_1x8_f_ra_th_2biledyg 8 PINTYPE=OUT
+AP con_rj45_1x8_f_ra_th_2biledyg 9 #=11
+AP con_rj45_1x8_f_ra_th_2biledyg 9 PINTYPE=OUT
+AP con_rj45_1x8_f_ra_th_2biledyg 10 #=2
+AP con_rj45_1x8_f_ra_th_2biledyg 10 PINTYPE=OUT
+AP con_rj45_1x8_f_ra_th_2biledyg 11 #=1
+AP con_rj45_1x8_f_ra_th_2biledyg 11 PINTYPE=OUT
+AP con_rj45_1x8_f_ra_th_2biledyg 12 #=6
+AP con_rj45_1x8_f_ra_th_2biledyg 12 PINTYPE=OUT
+AP con_rj45_1x8_f_ra_th_2biledyg 13 #=3
+AP con_rj45_1x8_f_ra_th_2biledyg 13 PINTYPE=OUT
+AP con_rj45_1x8_f_ra_th_2biledyg 14 #=5
+AP con_rj45_1x8_f_ra_th_2biledyg 14 PINTYPE=OUT
+AP con_rj45_1x8_f_ra_th_2biledyg 15 #=4
+AP con_rj45_1x8_f_ra_th_2biledyg 15 PINTYPE=OUT
+AP con_rj45_1x8_f_ra_th_2biledyg 16 #=8
+AP con_rj45_1x8_f_ra_th_2biledyg 16 PINTYPE=OUT
+AP con_rj45_1x8_f_ra_th_2biledyg 17 #=7
+AP con_rj45_1x8_f_ra_th_2biledyg 17 PINTYPE=OUT
+AP con_rj45_1x8_f_ra_th_2biledyg 18 #=9
+AP con_rj45_1x8_f_ra_th_2biledyg 18 PINTYPE=OUT
+AN 2V5 NET_ALIAS=+2.5V
+G ETH_VDDA
 G +1.0V
-G GND_EARTH
 G +2.5V
-M jumper3 $1I261
-I $1I261 jumper3 ? ? ? 
-API $1I261 jumper3 1 #=1
-API $1I261 jumper3 2 #=2
-API $1I261 jumper3 3 #=3
+G 2V5
+G GND
+M led $1I342
+I $1I342 led $1N349 $1N350 DATAURL=WWW.AGILENT.COM`DISCONTINUED=FALSE`WIDTH=0`LENGTH=0`HEIGHT=1.1`MANPARTPACKAGE=HSMS-C150`OPERATINGVOLTAGE=VF = 2.1V`RATING=25MA`MANPARTDESCRIPTION=SMD CHIP LED, HIGH EFFICIENCY RED`VALUE=L100 LED`PARTTYPE=OPTICAL DEVICES`PRODUCTCODE=PI-0106-4461`PKG_TYPE=C1206\HSMX-C650\H1.1`REFDES=D?`MANUFACTURER=AGILENT TECHNOLOGIES`DESCRIP=LED`
+M led $1I365
+I $1I365 led $1N358 $1N357 DESCRIP=LED`MANUFACTURER=AGILENT TECHNOLOGIES`REFDES=D?`PKG_TYPE=C1206\HSMX-C650\H1.1`PRODUCTCODE=PI-0106-4461`PARTTYPE=OPTICAL DEVICES`VALUE=L1000 LED`MANPARTDESCRIPTION=SMD CHIP LED, HIGH EFFICIENCY RED`RATING=25MA`OPERATINGVOLTAGE=VF = 2.1V`MANPARTPACKAGE=HSMS-C150`HEIGHT=1.1`LENGTH=0`WIDTH=0`DISCONTINUED=FALSE`DATAURL=WWW.AGILENT.COM`
+M led $1I258
+I $1I258 led $1N307 $1N308 DESCRIP=LED`MANUFACTURER=AGILENT TECHNOLOGIES`REFDES=D?`PKG_TYPE=C1206\HSMX-C650\H1.1`PRODUCTCODE=PI-0106-4461`PARTTYPE=OPTICAL DEVICES`VALUE=DUPLEX LED`MANPARTDESCRIPTION=SMD CHIP LED, HIGH EFFICIENCY RED`RATING=25MA`OPERATINGVOLTAGE=VF = 2.1V`MANPARTPACKAGE=HSMS-C150`HEIGHT=1.1`LENGTH=0`WIDTH=0`DISCONTINUED=FALSE`DATAURL=WWW.AGILENT.COM`
+M led $1I329
+I $1I329 led $1N336 $1N337 DESCRIP=LED`MANUFACTURER=AGILENT TECHNOLOGIES`REFDES=D?`PKG_TYPE=C1206\HSMX-C650\H1.1`PRODUCTCODE=PI-0106-4461`PARTTYPE=OPTICAL DEVICES`VALUE=L10 LED`MANPARTDESCRIPTION=SMD CHIP LED, HIGH EFFICIENCY RED`RATING=25MA`OPERATINGVOLTAGE=VF = 2.1V`MANPARTPACKAGE=HSMS-C150`HEIGHT=1.1`LENGTH=0`WIDTH=0`DISCONTINUED=FALSE`DATAURL=WWW.AGILENT.COM`
+M led $1I316
+I $1I316 led $1N323 $1N324 DATAURL=WWW.AGILENT.COM`DISCONTINUED=FALSE`WIDTH=0`LENGTH=0`HEIGHT=1.1`MANPARTPACKAGE=HSMS-C150`OPERATINGVOLTAGE=VF = 2.1V`RATING=25MA`MANPARTDESCRIPTION=SMD CHIP LED, HIGH EFFICIENCY RED`VALUE=ACT LED`PARTTYPE=OPTICAL DEVICES`PRODUCTCODE=PI-0106-4461`PKG_TYPE=C1206\HSMX-C650\H1.1`REFDES=D?`MANUFACTURER=AGILENT TECHNOLOGIES`DESCRIP=LED`
 |N 2
-M Sequoia:res_22r1_0402_1_ $1I128
-I $1I128 Sequoia:res_22r1_0402_1_ N27904007 GMC0TXD2 GEOMETRY.HEIGHT=1`REFDES=R92`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
-API $1I128 Sequoia:res_22r1_0402_1_ 1 #=1
-API $1I128 Sequoia:res_22r1_0402_1_ 2 #=2
-M Sequoia:cap_100nf_0402_16v_10__x7r $1I129
-I $1I129 Sequoia:cap_100nf_0402_16v_10__x7r +2.5_F1-2 GND GEOMETRY.HEIGHT=1`REFDES=C33-6`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
-API $1I129 Sequoia:cap_100nf_0402_16v_10__x7r 1 #=1
-API $1I129 Sequoia:cap_100nf_0402_16v_10__x7r 2 #=2
-M Sequoia:cap_10nf_0402_25v_10__x7r $1I130
-I $1I130 Sequoia:cap_10nf_0402_25v_10__x7r +1.0_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-10`MFGI_1#=KEM: C0402C103K3RAC`MFG_1#=KEM: C0402C103K3RAC`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=.01UF`SHAPE`
-API $1I130 Sequoia:cap_10nf_0402_25v_10__x7r 1 #=1
-API $1I130 Sequoia:cap_10nf_0402_25v_10__x7r 2 #=2
-M Sequoia:cap_1nf_0402_25v_10__x7r $1I132
-I $1I132 Sequoia:cap_1nf_0402_25v_10__x7r +2.5_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-17`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=1000PF`SHAPE`
-API $1I132 Sequoia:cap_1nf_0402_25v_10__x7r 1 #=1
-API $1I132 Sequoia:cap_1nf_0402_25v_10__x7r 2 #=2
-M Sequoia:res_75_0402_5_ $1I133
-I $1I133 Sequoia:res_75_0402_5_ N27903416 N27903067 GEOMETRY.HEIGHT=1`REFDES=R111`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=75`SHAPE`
-API $1I133 Sequoia:res_75_0402_5_ 1 #=1
-API $1I133 Sequoia:res_75_0402_5_ 2 #=2
-M Sequoia:cap_1nf_0402_25v_10__x7r $1I134
-I $1I134 Sequoia:cap_1nf_0402_25v_10__x7r +2.5_F1-2 GND GEOMETRY.HEIGHT=1`REFDES=C33-1`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=1000PF`SHAPE`
-API $1I134 Sequoia:cap_1nf_0402_25v_10__x7r 1 #=1
-API $1I134 Sequoia:cap_1nf_0402_25v_10__x7r 2 #=2
-M Sequoia:cap_100nf_0402_16v_10__x7r $1I135
-I $1I135 Sequoia:cap_100nf_0402_16v_10__x7r +1.0_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-14`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
-API $1I135 Sequoia:cap_100nf_0402_16v_10__x7r 1 #=1
-API $1I135 Sequoia:cap_100nf_0402_16v_10__x7r 2 #=2
+M c $1I408
+I $1I408 c ETH_VDDA GND REFDES=C?`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIP CAPACITOR`DIELECTRIC=X7R`GEOMETRY.HEIGHT=0.5`P/D_NUM=GRM155R71E103KAO1B`PKG_TYPE=CAPC1005X55N`STANDARDS=0402`TOLERANCE=10%`TYPE=FIXED`VALUE=10NF`VOLTAGERATING=25V`
+API $1I408 c 1 #=1
+API $1I408 c 2 #=2
 |N 2
-M Sequoia:res_22r1_0402_1_ $1I136
-I $1I136 Sequoia:res_22r1_0402_1_ GMC0RXD1 N27903366 GEOMETRY.HEIGHT=1`REFDES=R97`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
-API $1I136 Sequoia:res_22r1_0402_1_ 1 #=1
-API $1I136 Sequoia:res_22r1_0402_1_ 2 #=2
-M Sequoia:res_75_0402_5_ $1I137
-I $1I137 Sequoia:res_75_0402_5_ N27903424 N27903067 GEOMETRY.HEIGHT=1`REFDES=R113`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=75`SHAPE`
-API $1I137 Sequoia:res_75_0402_5_ 1 #=1
-API $1I137 Sequoia:res_75_0402_5_ 2 #=2
+M c $1I406
+I $1I406 c ETH_VDDA GND REFDES=C?`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIP CAPACITOR`DIELECTRIC=X7R`GEOMETRY.HEIGHT=0.5`P/D_NUM=GRM155R71E103KAO1B`PKG_TYPE=CAPC1005X55N`STANDARDS=0402`TOLERANCE=10%`TYPE=FIXED`VALUE=10NF`VOLTAGERATING=25V`
+API $1I406 c 1 #=1
+API $1I406 c 2 #=2
+M jumper3 $1I362
+I $1I362 jumper3 LED0_L1000 $1N359 2V5 
+API $1I362 jumper3 1 #=1
+API $1I362 jumper3 2 #=2
+API $1I362 jumper3 3 #=3
+M r $1I363
+I $1I363 r $1N358 $1N359 REFDES=R?`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGF0331T1E`VALUE=330R`POWERRATING=0.0625`PKG_TYPE=RESC1005X40N`GEOMETRY.HEIGHT=0.35`STANDARDS=0402`TOLERANCE=5%`
+API $1I363 r 1 #=1
+API $1I363 r 2 #=2
 |N 2
-M Sequoia:res_49r9_0402_1_ $1I138
-I $1I138 Sequoia:res_49r9_0402_1_ MDI0_1P N27903188 GEOMETRY.HEIGHT=1`REFDES=R105`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=49.9, 1%`SHAPE`
-API $1I138 Sequoia:res_49r9_0402_1_ 1 #=1
-API $1I138 Sequoia:res_49r9_0402_1_ 2 #=2
-M Sequoia:cap_100nf_0402_16v_10__x7r $1I140
-I $1I140 Sequoia:cap_100nf_0402_16v_10__x7r +2.5_F1-2 GND GEOMETRY.HEIGHT=1`REFDES=C33-7`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
-API $1I140 Sequoia:cap_100nf_0402_16v_10__x7r 1 #=1
-API $1I140 Sequoia:cap_100nf_0402_16v_10__x7r 2 #=2
+M r $1I364
+I $1I364 r $1N357 $1N359 VALUE=2K2`TOLERANCE=5%`STANDARDS=0402`POWERRATING=0.0625`PKG_TYPE=RESC1005X40N`P/D_NUM=0402WGF0222T1E`MANUFACTURER=ROYAL OHM`GEOMETRY.HEIGHT=0.35`REFDES=R?`
+API $1I364 r 1 #=1
+API $1I364 r 2 #=2
+M jumper3 $1I366
+I $1I366 jumper3 GND $1N357 LED0_L1000 
+API $1I366 jumper3 1 #=1
+API $1I366 jumper3 2 #=2
+API $1I366 jumper3 3 #=3
+M jumper3 $1I341
+I $1I341 jumper3 GND $1N350 LED_L100 
+API $1I341 jumper3 1 #=1
+API $1I341 jumper3 2 #=2
+API $1I341 jumper3 3 #=3
 |N 2
-M Sequoia:ind_bead_0603_180ohm_1r5a_25_ $1I141
-I $1I141 Sequoia:ind_bead_0603_180ohm_1r5a_25_ +2.5V +2.5_F1-1 GEOMETRY.HEIGHT=1`REFDES=L15`PKG_TYPE=L_0603`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=180OHM 1.5A`SHAPE`
-API $1I141 Sequoia:ind_bead_0603_180ohm_1r5a_25_ 1 #=1
-API $1I141 Sequoia:ind_bead_0603_180ohm_1r5a_25_ 2 #=2
+M r $1I343
+I $1I343 r $1N350 $1N348 REFDES=R?`GEOMETRY.HEIGHT=0.35`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGF0222T1E`PKG_TYPE=RESC1005X40N`POWERRATING=0.0625`STANDARDS=0402`TOLERANCE=5%`VALUE=2K2`
+API $1I343 r 1 #=1
+API $1I343 r 2 #=2
+M r $1I344
+I $1I344 r $1N349 $1N348 TOLERANCE=5%`STANDARDS=0402`GEOMETRY.HEIGHT=0.35`PKG_TYPE=RESC1005X40N`POWERRATING=0.0625`VALUE=330R`P/D_NUM=0402WGF0331T1E`MANUFACTURER=ROYAL OHM`REFDES=R?`
+API $1I344 r 1 #=1
+API $1I344 r 2 #=2
+M jumper3 $1I345
+I $1I345 jumper3 LED_L100 $1N348 2V5 
+API $1I345 jumper3 1 #=1
+API $1I345 jumper3 2 #=2
+API $1I345 jumper3 3 #=3
+M jumper3 $1I328
+I $1I328 jumper3 GND $1N337 LED_L10 
+API $1I328 jumper3 1 #=1
+API $1I328 jumper3 2 #=2
+API $1I328 jumper3 3 #=3
 |N 2
-M Sequoia:res_22r1_0402_1_ $1I142
-I $1I142 Sequoia:res_22r1_0402_1_ GMC0RXD3 N27903704 GEOMETRY.HEIGHT=1`REFDES=R99`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
-API $1I142 Sequoia:res_22r1_0402_1_ 1 #=1
-API $1I142 Sequoia:res_22r1_0402_1_ 2 #=2
-M Sequoia:cap_10nf_0402_25v_10__x7r $1I143
-I $1I143 Sequoia:cap_10nf_0402_25v_10__x7r +2.5_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-18`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=.01UF`SHAPE`
-API $1I143 Sequoia:cap_10nf_0402_25v_10__x7r 1 #=1
-API $1I143 Sequoia:cap_10nf_0402_25v_10__x7r 2 #=2
+M r $1I330
+I $1I330 r $1N337 $1N335 VALUE=2K2`TOLERANCE=5%`STANDARDS=0402`POWERRATING=0.0625`PKG_TYPE=RESC1005X40N`P/D_NUM=0402WGF0222T1E`MANUFACTURER=ROYAL OHM`GEOMETRY.HEIGHT=0.35`REFDES=R?`
+API $1I330 r 1 #=1
+API $1I330 r 2 #=2
+M r $1I331
+I $1I331 r $1N336 $1N335 REFDES=R?`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGF0331T1E`VALUE=330R`POWERRATING=0.0625`PKG_TYPE=RESC1005X40N`GEOMETRY.HEIGHT=0.35`STANDARDS=0402`TOLERANCE=5%`
+API $1I331 r 1 #=1
+API $1I331 r 2 #=2
+M jumper3 $1I332
+I $1I332 jumper3 LED_L10 $1N335 2V5 
+API $1I332 jumper3 1 #=1
+API $1I332 jumper3 2 #=2
+API $1I332 jumper3 3 #=3
+M jumper3 $1I315
+I $1I315 jumper3 GND $1N324 LED_ACT 
+API $1I315 jumper3 1 #=1
+API $1I315 jumper3 2 #=2
+API $1I315 jumper3 3 #=3
 |N 2
-M Sequoia:res_49r9_0402_1_ $1I144
-I $1I144 Sequoia:res_49r9_0402_1_ MDI0_3N N27903368 GEOMETRY.HEIGHT=1`REFDES=R110`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=49.9, 1%`SHAPE`
-API $1I144 Sequoia:res_49r9_0402_1_ 1 #=1
-API $1I144 Sequoia:res_49r9_0402_1_ 2 #=2
-M Sequoia:cap_1nf_0402_25v_10__x7r $1I145
-I $1I145 Sequoia:cap_1nf_0402_25v_10__x7r +1.0_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-9`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=1000PF`SHAPE`
-API $1I145 Sequoia:cap_1nf_0402_25v_10__x7r 1 #=1
-API $1I145 Sequoia:cap_1nf_0402_25v_10__x7r 2 #=2
+M r $1I317
+I $1I317 r $1N324 $1N322 REFDES=R?`GEOMETRY.HEIGHT=0.35`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGF0222T1E`PKG_TYPE=RESC1005X40N`POWERRATING=0.0625`STANDARDS=0402`TOLERANCE=5%`VALUE=2K2`
+API $1I317 r 1 #=1
+API $1I317 r 2 #=2
+M r $1I318
+I $1I318 r $1N323 $1N322 TOLERANCE=5%`STANDARDS=0402`GEOMETRY.HEIGHT=0.35`PKG_TYPE=RESC1005X40N`POWERRATING=0.0625`VALUE=330R`P/D_NUM=0402WGF0331T1E`MANUFACTURER=ROYAL OHM`REFDES=R?`
+API $1I318 r 1 #=1
+API $1I318 r 2 #=2
+M jumper3 $1I319
+I $1I319 jumper3 LED_ACT $1N322 2V5 
+API $1I319 jumper3 1 #=1
+API $1I319 jumper3 2 #=2
+API $1I319 jumper3 3 #=3
 |N 2
-M Sequoia:res_22r1_0402_1_ $1I147
-I $1I147 Sequoia:res_22r1_0402_1_ N27904117 GMC0TXCLK GEOMETRY.HEIGHT=1`REFDES=R95`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
-API $1I147 Sequoia:res_22r1_0402_1_ 1 #=1
-API $1I147 Sequoia:res_22r1_0402_1_ 2 #=2
+M res_22r1_0402_1_ $1I128
+I $1I128 res_22r1_0402_1_ N27904007 GMC0TXD2 GEOMETRY.HEIGHT=1`REFDES=R92`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
+API $1I128 res_22r1_0402_1_ 1 #=1
+API $1I128 res_22r1_0402_1_ 2 #=2
+M cap_100nf_0402_16v_10__x7r $1I129
+I $1I129 cap_100nf_0402_16v_10__x7r +2.5_F1-2 GND GEOMETRY.HEIGHT=1`REFDES=C33-6`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
+API $1I129 cap_100nf_0402_16v_10__x7r 1 #=1
+API $1I129 cap_100nf_0402_16v_10__x7r 2 #=2
+M cap_10nf_0402_25v_10__x7r $1I130
+I $1I130 cap_10nf_0402_25v_10__x7r +1.0_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-10`MFGI_1#=KEM: C0402C103K3RAC`MFG_1#=KEM: C0402C103K3RAC`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=.01UF`SHAPE`
+API $1I130 cap_10nf_0402_25v_10__x7r 1 #=1
+API $1I130 cap_10nf_0402_25v_10__x7r 2 #=2
+M cap_1nf_0402_25v_10__x7r $1I132
+I $1I132 cap_1nf_0402_25v_10__x7r +2.5_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-17`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=1000PF`SHAPE`
+API $1I132 cap_1nf_0402_25v_10__x7r 1 #=1
+API $1I132 cap_1nf_0402_25v_10__x7r 2 #=2
+M cap_1nf_0402_25v_10__x7r $1I134
+I $1I134 cap_1nf_0402_25v_10__x7r +2.5_F1-2 GND GEOMETRY.HEIGHT=1`REFDES=C33-1`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=1000PF`SHAPE`
+API $1I134 cap_1nf_0402_25v_10__x7r 1 #=1
+API $1I134 cap_1nf_0402_25v_10__x7r 2 #=2
+M cap_100nf_0402_16v_10__x7r $1I135
+I $1I135 cap_100nf_0402_16v_10__x7r +1.0_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-14`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
+API $1I135 cap_100nf_0402_16v_10__x7r 1 #=1
+API $1I135 cap_100nf_0402_16v_10__x7r 2 #=2
 |N 2
-M Sequoia:res_300_0402_5_ $1I148
-I $1I148 Sequoia:res_300_0402_5_ LED0_L1000 GETH0_LED_L1000 GEOMETRY.HEIGHT=1`REFDES=R115`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=300`SHAPE`
-API $1I148 Sequoia:res_300_0402_5_ 1 #=1
-API $1I148 Sequoia:res_300_0402_5_ 2 #=2
-M Sequoia:res_75_0402_5_ $1I149
-I $1I149 Sequoia:res_75_0402_5_ N27903428 N27903067 GEOMETRY.HEIGHT=1`REFDES=R114`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=75`SHAPE`
-API $1I149 Sequoia:res_75_0402_5_ 1 #=1
-API $1I149 Sequoia:res_75_0402_5_ 2 #=2
-M Sequoia:cap_100nf_0402_16v_10__x7r $1I151
-I $1I151 Sequoia:cap_100nf_0402_16v_10__x7r +2.5_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-22`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
-API $1I151 Sequoia:cap_100nf_0402_16v_10__x7r 1 #=1
-API $1I151 Sequoia:cap_100nf_0402_16v_10__x7r 2 #=2
-M Sequoia:cap_10nf_0402_25v_10__x7r $1I152
-I $1I152 Sequoia:cap_10nf_0402_25v_10__x7r N27903733 GND GEOMETRY.HEIGHT=1`REFDES=C173`MFGI_1#=KEM: C0402C103K3RAC`MFG_1#=KEM: C0402C103K3RAC`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=.01UF`SHAPE`
-API $1I152 Sequoia:cap_10nf_0402_25v_10__x7r 1 #=1
-API $1I152 Sequoia:cap_10nf_0402_25v_10__x7r 2 #=2
-M Sequoia:cap_100nf_0402_16v_10__x7r $1I153
-I $1I153 Sequoia:cap_100nf_0402_16v_10__x7r +2.5V GND GEOMETRY.HEIGHT=1`REFDES=C174`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
-API $1I153 Sequoia:cap_100nf_0402_16v_10__x7r 1 #=1
-API $1I153 Sequoia:cap_100nf_0402_16v_10__x7r 2 #=2
+M res_22r1_0402_1_ $1I136
+I $1I136 res_22r1_0402_1_ GMC0RXD1 N27903366 GEOMETRY.HEIGHT=1`REFDES=R97`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
+API $1I136 res_22r1_0402_1_ 1 #=1
+API $1I136 res_22r1_0402_1_ 2 #=2
+M cap_100nf_0402_16v_10__x7r $1I140
+I $1I140 cap_100nf_0402_16v_10__x7r +2.5_F1-2 GND GEOMETRY.HEIGHT=1`REFDES=C33-7`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
+API $1I140 cap_100nf_0402_16v_10__x7r 1 #=1
+API $1I140 cap_100nf_0402_16v_10__x7r 2 #=2
 |N 2
-M Sequoia:res_49r9_0402_1_ $1I154
-I $1I154 Sequoia:res_49r9_0402_1_ MDI0_2N N27903283 GEOMETRY.HEIGHT=1`REFDES=R108`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=49.9, 1%`SHAPE`
-API $1I154 Sequoia:res_49r9_0402_1_ 1 #=1
-API $1I154 Sequoia:res_49r9_0402_1_ 2 #=2
-M Sequoia:cap_100nf_0402_16v_10__x7r $1I156
-I $1I156 Sequoia:cap_100nf_0402_16v_10__x7r +2.5_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-21`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
-API $1I156 Sequoia:cap_100nf_0402_16v_10__x7r 1 #=1
-API $1I156 Sequoia:cap_100nf_0402_16v_10__x7r 2 #=2
-M Sequoia:cap_10nf_0402_25v_10__x7r $1I157
-I $1I157 Sequoia:cap_10nf_0402_25v_10__x7r +1.0_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-11`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=.01UF`SHAPE`
-API $1I157 Sequoia:cap_10nf_0402_25v_10__x7r 1 #=1
-API $1I157 Sequoia:cap_10nf_0402_25v_10__x7r 2 #=2
+M res_22r1_0402_1_ $1I142
+I $1I142 res_22r1_0402_1_ GMC0RXD3 N27903704 GEOMETRY.HEIGHT=1`REFDES=R99`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
+API $1I142 res_22r1_0402_1_ 1 #=1
+API $1I142 res_22r1_0402_1_ 2 #=2
+M cap_10nf_0402_25v_10__x7r $1I143
+I $1I143 cap_10nf_0402_25v_10__x7r +2.5_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-18`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=.01UF`SHAPE`
+API $1I143 cap_10nf_0402_25v_10__x7r 1 #=1
+API $1I143 cap_10nf_0402_25v_10__x7r 2 #=2
+M cap_1nf_0402_25v_10__x7r $1I145
+I $1I145 cap_1nf_0402_25v_10__x7r +1.0_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-9`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=1000PF`SHAPE`
+API $1I145 cap_1nf_0402_25v_10__x7r 1 #=1
+API $1I145 cap_1nf_0402_25v_10__x7r 2 #=2
 |N 2
-M Sequoia:ind_bead_0603_180ohm_1r5a_25_ $1I158
-I $1I158 Sequoia:ind_bead_0603_180ohm_1r5a_25_ +2.5V +2.5_F1-2 GEOMETRY.HEIGHT=1`REFDES=L14`PKG_TYPE=L_0603`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=180OHM 1.5A`SHAPE`
-API $1I158 Sequoia:ind_bead_0603_180ohm_1r5a_25_ 1 #=1
-API $1I158 Sequoia:ind_bead_0603_180ohm_1r5a_25_ 2 #=2
-M Sequoia:cap_100nf_0402_16v_10__x7r $1I159
-I $1I159 Sequoia:cap_100nf_0402_16v_10__x7r +1.0_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-16`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
-API $1I159 Sequoia:cap_100nf_0402_16v_10__x7r 1 #=1
-API $1I159 Sequoia:cap_100nf_0402_16v_10__x7r 2 #=2
+M res_22r1_0402_1_ $1I147
+I $1I147 res_22r1_0402_1_ N27904117 GMC0TXCLK GEOMETRY.HEIGHT=1`REFDES=R95`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
+API $1I147 res_22r1_0402_1_ 1 #=1
+API $1I147 res_22r1_0402_1_ 2 #=2
+M cap_100nf_0402_16v_10__x7r $1I151
+I $1I151 cap_100nf_0402_16v_10__x7r +2.5_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-22`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
+API $1I151 cap_100nf_0402_16v_10__x7r 1 #=1
+API $1I151 cap_100nf_0402_16v_10__x7r 2 #=2
+M cap_100nf_0402_16v_10__x7r $1I156
+I $1I156 cap_100nf_0402_16v_10__x7r +2.5_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-21`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
+API $1I156 cap_100nf_0402_16v_10__x7r 1 #=1
+API $1I156 cap_100nf_0402_16v_10__x7r 2 #=2
+M cap_10nf_0402_25v_10__x7r $1I157
+I $1I157 cap_10nf_0402_25v_10__x7r +1.0_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-11`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=.01UF`SHAPE`
+API $1I157 cap_10nf_0402_25v_10__x7r 1 #=1
+API $1I157 cap_10nf_0402_25v_10__x7r 2 #=2
 |N 2
-M Sequoia:res_22r1_0402_1_ $1I160
-I $1I160 Sequoia:res_22r1_0402_1_ GMCREFCLK_125MHZ N27904256 GEOMETRY.HEIGHT=1`REFDES=R102`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
-API $1I160 Sequoia:res_22r1_0402_1_ 1 #=1
-API $1I160 Sequoia:res_22r1_0402_1_ 2 #=2
-M Sequoia:cap_100nf_0402_16v_10__x7r $1I161
-I $1I161 Sequoia:cap_100nf_0402_16v_10__x7r +2.5_F1-2 GND GEOMETRY.HEIGHT=1`REFDES=C33-8`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
-API $1I161 Sequoia:cap_100nf_0402_16v_10__x7r 1 #=1
-API $1I161 Sequoia:cap_100nf_0402_16v_10__x7r 2 #=2
+M ind_bead_0603_180ohm_1r5a_25_ $1I158
+I $1I158 ind_bead_0603_180ohm_1r5a_25_ +2.5V +2.5_F1-2 GEOMETRY.HEIGHT=1`REFDES=L14`PKG_TYPE=L_0603`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=180OHM 1.5A`SHAPE`
+API $1I158 ind_bead_0603_180ohm_1r5a_25_ 1 #=1
+API $1I158 ind_bead_0603_180ohm_1r5a_25_ 2 #=2
+M cap_100nf_0402_16v_10__x7r $1I159
+I $1I159 cap_100nf_0402_16v_10__x7r +1.0_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-16`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
+API $1I159 cap_100nf_0402_16v_10__x7r 1 #=1
+API $1I159 cap_100nf_0402_16v_10__x7r 2 #=2
 |N 2
-M Sequoia:res_22r1_0402_1_ $1I162
-I $1I162 Sequoia:res_22r1_0402_1_ N27904052 GMC0TXD3 GEOMETRY.HEIGHT=1`REFDES=R93`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
-API $1I162 Sequoia:res_22r1_0402_1_ 1 #=1
-API $1I162 Sequoia:res_22r1_0402_1_ 2 #=2
-M Sequoia:cap_100nf_0402_16v_10__x7r $1I163
-I $1I163 Sequoia:cap_100nf_0402_16v_10__x7r +2.5_F1-2 GND GEOMETRY.HEIGHT=1`REFDES=C33-5`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
-API $1I163 Sequoia:cap_100nf_0402_16v_10__x7r 1 #=1
-API $1I163 Sequoia:cap_100nf_0402_16v_10__x7r 2 #=2
-M Sequoia:cap_100nf_0402_16v_10__x7r $1I164
-I $1I164 Sequoia:cap_100nf_0402_16v_10__x7r +1.0_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-12`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
-API $1I164 Sequoia:cap_100nf_0402_16v_10__x7r 1 #=1
-API $1I164 Sequoia:cap_100nf_0402_16v_10__x7r 2 #=2
-M Sequoia:cap_10nf_0402_25v_10__x7r $1I165
-I $1I165 Sequoia:cap_10nf_0402_25v_10__x7r +2.5_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-19`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=.01UF`SHAPE`
-API $1I165 Sequoia:cap_10nf_0402_25v_10__x7r 1 #=1
-API $1I165 Sequoia:cap_10nf_0402_25v_10__x7r 2 #=2
-M Sequoia:res_75_0402_5_ $1I166
-I $1I166 Sequoia:res_75_0402_5_ N27903420 N27903067 GEOMETRY.HEIGHT=1`REFDES=R112`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=75`SHAPE`
-API $1I166 Sequoia:res_75_0402_5_ 1 #=1
-API $1I166 Sequoia:res_75_0402_5_ 2 #=2
-M Sequoia:con_rj45_1x8_f_ra_th_2biledyg $1I167
-I $1I167 Sequoia:con_rj45_1x8_f_ra_th_2biledyg X0_MDI_1P X0_MDI_0N X0_MDI_0P GETH0_LED_L100 GETH0_LED_L1000 GETH0_LED_DUPLEX GETH0_LED_TX GND_EARTH GND_EARTH X0_MDI_1N X0_MDI_2P X0_MDI_2N X0_MDI_3P X0_MDI_3N ? ? GEOMETRY.HEIGHT=1`REFDES=J8`PKG_TYPE=RJ45_8POS`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=F TH`SHAPE`
-API $1I167 Sequoia:con_rj45_1x8_f_ra_th_2biledyg 1 #=3
-API $1I167 Sequoia:con_rj45_1x8_f_ra_th_2biledyg 2 #=2
-API $1I167 Sequoia:con_rj45_1x8_f_ra_th_2biledyg 3 #=1
-API $1I167 Sequoia:con_rj45_1x8_f_ra_th_2biledyg 4 #=10
-API $1I167 Sequoia:con_rj45_1x8_f_ra_th_2biledyg 5 #=9
-API $1I167 Sequoia:con_rj45_1x8_f_ra_th_2biledyg 6 #=11
-API $1I167 Sequoia:con_rj45_1x8_f_ra_th_2biledyg 7 #=12
-API $1I167 Sequoia:con_rj45_1x8_f_ra_th_2biledyg 8 #=14
-API $1I167 Sequoia:con_rj45_1x8_f_ra_th_2biledyg 9 #=13
-API $1I167 Sequoia:con_rj45_1x8_f_ra_th_2biledyg 10 #=6
-API $1I167 Sequoia:con_rj45_1x8_f_ra_th_2biledyg 11 #=4
-API $1I167 Sequoia:con_rj45_1x8_f_ra_th_2biledyg 12 #=5
-API $1I167 Sequoia:con_rj45_1x8_f_ra_th_2biledyg 13 #=7
-API $1I167 Sequoia:con_rj45_1x8_f_ra_th_2biledyg 14 #=8
-API $1I167 Sequoia:con_rj45_1x8_f_ra_th_2biledyg 15 #=15
-API $1I167 Sequoia:con_rj45_1x8_f_ra_th_2biledyg 15 NC
-API $1I167 Sequoia:con_rj45_1x8_f_ra_th_2biledyg 16 #=16
-API $1I167 Sequoia:con_rj45_1x8_f_ra_th_2biledyg 16 NC
+M res_22r1_0402_1_ $1I160
+I $1I160 res_22r1_0402_1_ GMCREFCLK_125MHZ N27904256 GEOMETRY.HEIGHT=1`REFDES=R102`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
+API $1I160 res_22r1_0402_1_ 1 #=1
+API $1I160 res_22r1_0402_1_ 2 #=2
+M cap_100nf_0402_16v_10__x7r $1I161
+I $1I161 cap_100nf_0402_16v_10__x7r +2.5_F1-2 GND GEOMETRY.HEIGHT=1`REFDES=C33-8`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
+API $1I161 cap_100nf_0402_16v_10__x7r 1 #=1
+API $1I161 cap_100nf_0402_16v_10__x7r 2 #=2
 |N 2
-M Sequoia:res_49r9_0402_1_ $1I169
-I $1I169 Sequoia:res_49r9_0402_1_ MDI0_1N N27903188 GEOMETRY.HEIGHT=1`REFDES=R106`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=49.9, 1%`SHAPE`
-API $1I169 Sequoia:res_49r9_0402_1_ 1 #=1
-API $1I169 Sequoia:res_49r9_0402_1_ 2 #=2
-M Sequoia:cap_1nf_1808_2kv_10__x7r $1I171
-I $1I171 Sequoia:cap_1nf_1808_2kv_10__x7r N27903067 GND_EARTH GEOMETRY.HEIGHT=1`REFDES=C178`BOARD_OPTION=BASE`PKG_TYPE=C_1808_AVX`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=1000PF,2KV`SHAPE`
-API $1I171 Sequoia:cap_1nf_1808_2kv_10__x7r 1 #=1
-API $1I171 Sequoia:cap_1nf_1808_2kv_10__x7r 2 #=2
-M Sequoia:cap_10nf_0402_25v_10__x7r $1I172
-I $1I172 Sequoia:cap_10nf_0402_25v_10__x7r N27903188 GND GEOMETRY.HEIGHT=1`REFDES=C170`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=.01UF`SHAPE`
-API $1I172 Sequoia:cap_10nf_0402_25v_10__x7r 1 #=1
-API $1I172 Sequoia:cap_10nf_0402_25v_10__x7r 2 #=2
+M res_22r1_0402_1_ $1I162
+I $1I162 res_22r1_0402_1_ N27904052 GMC0TXD3 GEOMETRY.HEIGHT=1`REFDES=R93`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
+API $1I162 res_22r1_0402_1_ 1 #=1
+API $1I162 res_22r1_0402_1_ 2 #=2
+M cap_100nf_0402_16v_10__x7r $1I163
+I $1I163 cap_100nf_0402_16v_10__x7r +2.5_F1-2 GND GEOMETRY.HEIGHT=1`REFDES=C33-5`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
+API $1I163 cap_100nf_0402_16v_10__x7r 1 #=1
+API $1I163 cap_100nf_0402_16v_10__x7r 2 #=2
+M cap_100nf_0402_16v_10__x7r $1I164
+I $1I164 cap_100nf_0402_16v_10__x7r +1.0_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-12`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
+API $1I164 cap_100nf_0402_16v_10__x7r 1 #=1
+API $1I164 cap_100nf_0402_16v_10__x7r 2 #=2
+M cap_10nf_0402_25v_10__x7r $1I165
+I $1I165 cap_10nf_0402_25v_10__x7r +2.5_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-19`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=.01UF`SHAPE`
+API $1I165 cap_10nf_0402_25v_10__x7r 1 #=1
+API $1I165 cap_10nf_0402_25v_10__x7r 2 #=2
 |N 2
-M Sequoia:res_22r1_0402_1_ $1I173
-I $1I173 Sequoia:res_22r1_0402_1_ GMC0RXCTL N27904376 GEOMETRY.HEIGHT=1`REFDES=R100`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
-API $1I173 Sequoia:res_22r1_0402_1_ 1 #=1
-API $1I173 Sequoia:res_22r1_0402_1_ 2 #=2
+M res_22r1_0402_1_ $1I173
+I $1I173 res_22r1_0402_1_ GMC0RXCTL N27904376 GEOMETRY.HEIGHT=1`REFDES=R100`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
+API $1I173 res_22r1_0402_1_ 1 #=1
+API $1I173 res_22r1_0402_1_ 2 #=2
 |N 2
-M Sequoia:res_22r1_0402_1_ $1I175
-I $1I175 Sequoia:res_22r1_0402_1_ N27904001 GMC0TXD1 GEOMETRY.HEIGHT=1`REFDES=R91`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
-API $1I175 Sequoia:res_22r1_0402_1_ 1 #=1
-API $1I175 Sequoia:res_22r1_0402_1_ 2 #=2
+M res_22r1_0402_1_ $1I175
+I $1I175 res_22r1_0402_1_ N27904001 GMC0TXD1 GEOMETRY.HEIGHT=1`REFDES=R91`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
+API $1I175 res_22r1_0402_1_ 1 #=1
+API $1I175 res_22r1_0402_1_ 2 #=2
+M cap_100nf_0402_16v_10__x7r $1I178
+I $1I178 cap_100nf_0402_16v_10__x7r +2.5_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-20`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
+API $1I178 cap_100nf_0402_16v_10__x7r 1 #=1
+API $1I178 cap_100nf_0402_16v_10__x7r 2 #=2
+M cap_100nf_0402_16v_10__x7r $1I179
+I $1I179 cap_100nf_0402_16v_10__x7r +2.5_F1-2 GND GEOMETRY.HEIGHT=1`REFDES=C33-4`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
+API $1I179 cap_100nf_0402_16v_10__x7r 1 #=1
+API $1I179 cap_100nf_0402_16v_10__x7r 2 #=2
 |N 2
-M Sequoia:res_49r9_0402_1_ $1I177
-I $1I177 Sequoia:res_49r9_0402_1_ MDI0_0N N27903733 GEOMETRY.HEIGHT=1`REFDES=R104`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=49.9, 1%`SHAPE`
-API $1I177 Sequoia:res_49r9_0402_1_ 1 #=1
-API $1I177 Sequoia:res_49r9_0402_1_ 2 #=2
-M Sequoia:cap_100nf_0402_16v_10__x7r $1I178
-I $1I178 Sequoia:cap_100nf_0402_16v_10__x7r +2.5_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-20`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
-API $1I178 Sequoia:cap_100nf_0402_16v_10__x7r 1 #=1
-API $1I178 Sequoia:cap_100nf_0402_16v_10__x7r 2 #=2
-M Sequoia:cap_100nf_0402_16v_10__x7r $1I179
-I $1I179 Sequoia:cap_100nf_0402_16v_10__x7r +2.5_F1-2 GND GEOMETRY.HEIGHT=1`REFDES=C33-4`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
-API $1I179 Sequoia:cap_100nf_0402_16v_10__x7r 1 #=1
-API $1I179 Sequoia:cap_100nf_0402_16v_10__x7r 2 #=2
+M res_22r1_0402_1_ $1I180
+I $1I180 res_22r1_0402_1_ GMC0RXD0 N27903625 GEOMETRY.HEIGHT=1`REFDES=R96`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
+API $1I180 res_22r1_0402_1_ 1 #=1
+API $1I180 res_22r1_0402_1_ 2 #=2
+M con_hdr_1x2_m_vt_0r1_smt $1I181
+I $1I181 con_hdr_1x2_m_vt_0r1_smt GND GMCMDCLK GEOMETRY.HEIGHT=1`REFDES=J11`PKG_TYPE=TSM_2X1_SV`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1IN M SMT`SHAPE`
+API $1I181 con_hdr_1x2_m_vt_0r1_smt 1 #=1
+API $1I181 con_hdr_1x2_m_vt_0r1_smt 2 #=2
 |N 2
-M Sequoia:res_22r1_0402_1_ $1I180
-I $1I180 Sequoia:res_22r1_0402_1_ GMC0RXD0 N27903625 GEOMETRY.HEIGHT=1`REFDES=R96`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
-API $1I180 Sequoia:res_22r1_0402_1_ 1 #=1
-API $1I180 Sequoia:res_22r1_0402_1_ 2 #=2
-M Sequoia:con_hdr_1x2_m_vt_0r1_smt $1I181
-I $1I181 Sequoia:con_hdr_1x2_m_vt_0r1_smt GND GMCMDCLK GEOMETRY.HEIGHT=1`REFDES=J11`PKG_TYPE=TSM_2X1_SV`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1IN M SMT`SHAPE`
-API $1I181 Sequoia:con_hdr_1x2_m_vt_0r1_smt 1 #=1
-API $1I181 Sequoia:con_hdr_1x2_m_vt_0r1_smt 2 #=2
+M res_22r1_0402_1_ $1I183
+I $1I183 res_22r1_0402_1_ N27903945 GMC0TXD0 GEOMETRY.HEIGHT=1`REFDES=R90`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
+API $1I183 res_22r1_0402_1_ 1 #=1
+API $1I183 res_22r1_0402_1_ 2 #=2
+M con_hdr_1x2_m_vt_0r1_smt $1I185
+I $1I185 con_hdr_1x2_m_vt_0r1_smt GND GMCMDIO GEOMETRY.HEIGHT=1`REFDES=J10`PKG_TYPE=TSM_2X1_SV`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1IN M SMT`SHAPE`
+API $1I185 con_hdr_1x2_m_vt_0r1_smt 1 #=1
+API $1I185 con_hdr_1x2_m_vt_0r1_smt 2 #=2
 |N 2
-M Sequoia:res_49r9_0402_1_ $1I182
-I $1I182 Sequoia:res_49r9_0402_1_ MDI0_3P N27903368 GEOMETRY.HEIGHT=1`REFDES=R109`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=49.9, 1%`SHAPE`
-API $1I182 Sequoia:res_49r9_0402_1_ 1 #=1
-API $1I182 Sequoia:res_49r9_0402_1_ 2 #=2
+M res_22r1_0402_1_ $1I187
+I $1I187 res_22r1_0402_1_ GMC0RXD2 N27904057 GEOMETRY.HEIGHT=1`REFDES=R98`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
+API $1I187 res_22r1_0402_1_ 1 #=1
+API $1I187 res_22r1_0402_1_ 2 #=2
+M cap_100nf_0402_16v_10__x7r $1I188
+I $1I188 cap_100nf_0402_16v_10__x7r +1.0_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-13`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
+API $1I188 cap_100nf_0402_16v_10__x7r 1 #=1
+API $1I188 cap_100nf_0402_16v_10__x7r 2 #=2
+M cap_100nf_0402_16v_10__x7r $1I190
+I $1I190 cap_100nf_0402_16v_10__x7r +1.0_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-15`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
+API $1I190 cap_100nf_0402_16v_10__x7r 1 #=1
+API $1I190 cap_100nf_0402_16v_10__x7r 2 #=2
 |N 2
-M Sequoia:res_22r1_0402_1_ $1I183
-I $1I183 Sequoia:res_22r1_0402_1_ N27903945 GMC0TXD0 GEOMETRY.HEIGHT=1`REFDES=R90`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
-API $1I183 Sequoia:res_22r1_0402_1_ 1 #=1
-API $1I183 Sequoia:res_22r1_0402_1_ 2 #=2
-M Sequoia:cap_10nf_0402_25v_10__x7r $1I184
-I $1I184 Sequoia:cap_10nf_0402_25v_10__x7r N27903283 GND GEOMETRY.HEIGHT=1`REFDES=C171`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=.01UF`SHAPE`
-API $1I184 Sequoia:cap_10nf_0402_25v_10__x7r 1 #=1
-API $1I184 Sequoia:cap_10nf_0402_25v_10__x7r 2 #=2
-M Sequoia:con_hdr_1x2_m_vt_0r1_smt $1I185
-I $1I185 Sequoia:con_hdr_1x2_m_vt_0r1_smt GND GMCMDIO GEOMETRY.HEIGHT=1`REFDES=J10`PKG_TYPE=TSM_2X1_SV`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1IN M SMT`SHAPE`
-API $1I185 Sequoia:con_hdr_1x2_m_vt_0r1_smt 1 #=1
-API $1I185 Sequoia:con_hdr_1x2_m_vt_0r1_smt 2 #=2
-M Sequoia:cap_100nf_0402_16v_10__x7r $1I186
-I $1I186 Sequoia:cap_100nf_0402_16v_10__x7r +2.5V GND GEOMETRY.HEIGHT=1`REFDES=C175`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
-API $1I186 Sequoia:cap_100nf_0402_16v_10__x7r 1 #=1
-API $1I186 Sequoia:cap_100nf_0402_16v_10__x7r 2 #=2
+M res_22r1_0402_1_ $1I192
+I $1I192 res_22r1_0402_1_ N27904104 GMC0TXCTL GEOMETRY.HEIGHT=1`REFDES=R94`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
+API $1I192 res_22r1_0402_1_ 1 #=1
+API $1I192 res_22r1_0402_1_ 2 #=2
+M cap_10nf_0402_25v_10__x7r $1I194
+I $1I194 cap_10nf_0402_25v_10__x7r +2.5_F1-2 GND GEOMETRY.HEIGHT=1`REFDES=C33-3`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=.01UF`SHAPE`
+API $1I194 cap_10nf_0402_25v_10__x7r 1 #=1
+API $1I194 cap_10nf_0402_25v_10__x7r 2 #=2
+M cap_10nf_0402_25v_10__x7r $1I196
+I $1I196 cap_10nf_0402_25v_10__x7r +2.5_F1-2 GND GEOMETRY.HEIGHT=1`REFDES=C33-2`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=.01UF`SHAPE`
+API $1I196 cap_10nf_0402_25v_10__x7r 1 #=1
+API $1I196 cap_10nf_0402_25v_10__x7r 2 #=2
 |N 2
-M Sequoia:res_22r1_0402_1_ $1I187
-I $1I187 Sequoia:res_22r1_0402_1_ GMC0RXD2 N27904057 GEOMETRY.HEIGHT=1`REFDES=R98`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
-API $1I187 Sequoia:res_22r1_0402_1_ 1 #=1
-API $1I187 Sequoia:res_22r1_0402_1_ 2 #=2
-M Sequoia:cap_100nf_0402_16v_10__x7r $1I188
-I $1I188 Sequoia:cap_100nf_0402_16v_10__x7r +1.0_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-13`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
-API $1I188 Sequoia:cap_100nf_0402_16v_10__x7r 1 #=1
-API $1I188 Sequoia:cap_100nf_0402_16v_10__x7r 2 #=2
+M ind_bead_0603_180ohm_1r5a_25_ $1I197
+I $1I197 ind_bead_0603_180ohm_1r5a_25_ +1.0_F1-1 +1.0V GEOMETRY.HEIGHT=1`REFDES=L16`PKG_TYPE=L_0603`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=180OHM 1.5A`SHAPE`
+API $1I197 ind_bead_0603_180ohm_1r5a_25_ 1 #=1
+API $1I197 ind_bead_0603_180ohm_1r5a_25_ 2 #=2
 |N 2
-M Sequoia:res_49r9_0402_1_ $1I189
-I $1I189 Sequoia:res_49r9_0402_1_ MDI0_0P N27903733 GEOMETRY.HEIGHT=1`REFDES=R103`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=49.9, 1%`SHAPE`
-API $1I189 Sequoia:res_49r9_0402_1_ 1 #=1
-API $1I189 Sequoia:res_49r9_0402_1_ 2 #=2
-M Sequoia:cap_100nf_0402_16v_10__x7r $1I190
-I $1I190 Sequoia:cap_100nf_0402_16v_10__x7r +1.0_F1-1 GND GEOMETRY.HEIGHT=1`REFDES=C33-15`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
-API $1I190 Sequoia:cap_100nf_0402_16v_10__x7r 1 #=1
-API $1I190 Sequoia:cap_100nf_0402_16v_10__x7r 2 #=2
-M Sequoia:cap_100nf_0402_16v_10__x7r $1I191
-I $1I191 Sequoia:cap_100nf_0402_16v_10__x7r +2.5V GND GEOMETRY.HEIGHT=1`REFDES=C177`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
-API $1I191 Sequoia:cap_100nf_0402_16v_10__x7r 1 #=1
-API $1I191 Sequoia:cap_100nf_0402_16v_10__x7r 2 #=2
-|N 2
-M Sequoia:res_22r1_0402_1_ $1I192
-I $1I192 Sequoia:res_22r1_0402_1_ N27904104 GMC0TXCTL GEOMETRY.HEIGHT=1`REFDES=R94`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
-API $1I192 Sequoia:res_22r1_0402_1_ 1 #=1
-API $1I192 Sequoia:res_22r1_0402_1_ 2 #=2
-M Sequoia:cap_10nf_0402_25v_10__x7r $1I194
-I $1I194 Sequoia:cap_10nf_0402_25v_10__x7r +2.5_F1-2 GND GEOMETRY.HEIGHT=1`REFDES=C33-3`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=.01UF`SHAPE`
-API $1I194 Sequoia:cap_10nf_0402_25v_10__x7r 1 #=1
-API $1I194 Sequoia:cap_10nf_0402_25v_10__x7r 2 #=2
-M Sequoia:cap_10nf_0402_25v_10__x7r $1I196
-I $1I196 Sequoia:cap_10nf_0402_25v_10__x7r +2.5_F1-2 GND GEOMETRY.HEIGHT=1`REFDES=C33-2`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=.01UF`SHAPE`
-API $1I196 Sequoia:cap_10nf_0402_25v_10__x7r 1 #=1
-API $1I196 Sequoia:cap_10nf_0402_25v_10__x7r 2 #=2
-|N 2
-M Sequoia:ind_bead_0603_180ohm_1r5a_25_ $1I197
-I $1I197 Sequoia:ind_bead_0603_180ohm_1r5a_25_ +1.0_F1-1 +1.0V GEOMETRY.HEIGHT=1`REFDES=L16`PKG_TYPE=L_0603`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=180OHM 1.5A`SHAPE`
-API $1I197 Sequoia:ind_bead_0603_180ohm_1r5a_25_ 1 #=1
-API $1I197 Sequoia:ind_bead_0603_180ohm_1r5a_25_ 2 #=2
-M Sequoia:cap_10nf_0402_25v_10__x7r $1I198
-I $1I198 Sequoia:cap_10nf_0402_25v_10__x7r N27903368 GND GEOMETRY.HEIGHT=1`REFDES=C172`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=.01UF`SHAPE`
-API $1I198 Sequoia:cap_10nf_0402_25v_10__x7r 1 #=1
-API $1I198 Sequoia:cap_10nf_0402_25v_10__x7r 2 #=2
-|N 2
-M Sequoia:res_49r9_0402_1_ $1I199
-I $1I199 Sequoia:res_49r9_0402_1_ MDI0_2P N27903283 GEOMETRY.HEIGHT=1`REFDES=R107`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=49.9, 1%`SHAPE`
-API $1I199 Sequoia:res_49r9_0402_1_ 1 #=1
-API $1I199 Sequoia:res_49r9_0402_1_ 2 #=2
-|N 2
-M Sequoia:res_22r1_0402_1_ $1I200
-I $1I200 Sequoia:res_22r1_0402_1_ GMC0RXCLK N27903590 GEOMETRY.HEIGHT=1`REFDES=R101`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
-API $1I200 Sequoia:res_22r1_0402_1_ 1 #=1
-API $1I200 Sequoia:res_22r1_0402_1_ 2 #=2
-M Sequoia:cap_100nf_0402_16v_10__x7r $1I202
-I $1I202 Sequoia:cap_100nf_0402_16v_10__x7r +2.5V GND GEOMETRY.HEIGHT=1`REFDES=C176`BOARD_OPTION=BASE`PKG_TYPE=C_0402_IPC`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
-API $1I202 Sequoia:cap_100nf_0402_16v_10__x7r 1 #=1
-API $1I202 Sequoia:cap_100nf_0402_16v_10__x7r 2 #=2
-M Sequoia:ic_cpu_te_pbga680_440epx_grx_h $1I131
-I $1I131 Sequoia:ic_cpu_te_pbga680_440epx_grx_h GMCMDCLK GMCMDIO GMCREFCLK_125MHZ N27903945 N27904001 N27904007 N27904052 N27904104 N27904117 GMC0RXD0 GMC0RXD1 GMC0RXD2 GMC0RXD3 GMC0RXCTL GMC0RXCLK GND N28822458 N28823672 GEOMETRY.HEIGHT=1`REFDES=U1`SLOT=8`PKG_TYPE=BGA100P34X34-680T`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=440EPX/GRX`SHAPE`
-API $1I131 Sequoia:ic_cpu_te_pbga680_440epx_grx_h 1 #=AL34
-API $1I131 Sequoia:ic_cpu_te_pbga680_440epx_grx_h 2 #=AK34
-API $1I131 Sequoia:ic_cpu_te_pbga680_440epx_grx_h 3 #=AJ33
-API $1I131 Sequoia:ic_cpu_te_pbga680_440epx_grx_h 4 #=AL24
-API $1I131 Sequoia:ic_cpu_te_pbga680_440epx_grx_h 5 #=AN25
-API $1I131 Sequoia:ic_cpu_te_pbga680_440epx_grx_h 6 #=AM25
-API $1I131 Sequoia:ic_cpu_te_pbga680_440epx_grx_h 7 #=AL25
-API $1I131 Sequoia:ic_cpu_te_pbga680_440epx_grx_h 8 #=AN24
-API $1I131 Sequoia:ic_cpu_te_pbga680_440epx_grx_h 9 #=AM27
-API $1I131 Sequoia:ic_cpu_te_pbga680_440epx_grx_h 10 #=AL28
-API $1I131 Sequoia:ic_cpu_te_pbga680_440epx_grx_h 11 #=AP29
-API $1I131 Sequoia:ic_cpu_te_pbga680_440epx_grx_h 12 #=AM28
-API $1I131 Sequoia:ic_cpu_te_pbga680_440epx_grx_h 13 #=AN29
-API $1I131 Sequoia:ic_cpu_te_pbga680_440epx_grx_h 14 #=AJ31
-API $1I131 Sequoia:ic_cpu_te_pbga680_440epx_grx_h 15 #=AN28
-API $1I131 Sequoia:ic_cpu_te_pbga680_440epx_grx_h 16 #=AL27
-API $1I131 Sequoia:ic_cpu_te_pbga680_440epx_grx_h 17 #=AM23
-API $1I131 Sequoia:ic_cpu_te_pbga680_440epx_grx_h 18 #=AL23
+M res_22r1_0402_1_ $1I200
+I $1I200 res_22r1_0402_1_ GMC0RXCLK N27903590 GEOMETRY.HEIGHT=1`REFDES=R101`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=22.1, 1%`SHAPE`
+API $1I200 res_22r1_0402_1_ 1 #=1
+API $1I200 res_22r1_0402_1_ 2 #=2
+M ic_cpu_te_pbga680_440epx_grx_h $1I131
+I $1I131 ic_cpu_te_pbga680_440epx_grx_h GMCMDCLK GMCMDIO GMCREFCLK_125MHZ N27903945 N27904001 N27904007 N27904052 N27904104 N27904117 GMC0RXD0 GMC0RXD1 GMC0RXD2 GMC0RXD3 GMC0RXCTL GMC0RXCLK GND N28822458 N28823672 GEOMETRY.HEIGHT=1`REFDES=U1`SLOT=8`PKG_TYPE=BGA100P34X34-680T`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=440EPX/GRX`SHAPE`
+API $1I131 ic_cpu_te_pbga680_440epx_grx_h 1 #=AL34
+API $1I131 ic_cpu_te_pbga680_440epx_grx_h 2 #=AK34
+API $1I131 ic_cpu_te_pbga680_440epx_grx_h 3 #=AJ33
+API $1I131 ic_cpu_te_pbga680_440epx_grx_h 4 #=AL24
+API $1I131 ic_cpu_te_pbga680_440epx_grx_h 5 #=AN25
+API $1I131 ic_cpu_te_pbga680_440epx_grx_h 6 #=AM25
+API $1I131 ic_cpu_te_pbga680_440epx_grx_h 7 #=AL25
+API $1I131 ic_cpu_te_pbga680_440epx_grx_h 8 #=AN24
+API $1I131 ic_cpu_te_pbga680_440epx_grx_h 9 #=AM27
+API $1I131 ic_cpu_te_pbga680_440epx_grx_h 10 #=AL28
+API $1I131 ic_cpu_te_pbga680_440epx_grx_h 11 #=AP29
+API $1I131 ic_cpu_te_pbga680_440epx_grx_h 12 #=AM28
+API $1I131 ic_cpu_te_pbga680_440epx_grx_h 13 #=AN29
+API $1I131 ic_cpu_te_pbga680_440epx_grx_h 14 #=AJ31
+API $1I131 ic_cpu_te_pbga680_440epx_grx_h 15 #=AN28
+API $1I131 ic_cpu_te_pbga680_440epx_grx_h 16 #=AL27
+API $1I131 ic_cpu_te_pbga680_440epx_grx_h 17 #=AM23
+API $1I131 ic_cpu_te_pbga680_440epx_grx_h 18 #=AL23
 |N 2
 M r $1I155
 I $1I155 r +2.5V GMCMDIO SHAPE`VALUE=4.7K`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`REFDES=R?`GEOMETRY.HEIGHT=1`
 API $1I155 r 1 #=1
 API $1I155 r 2 #=2
 |N 2
-M r $1I201
-I $1I201 r N28823672 +2.5V SHAPE`VALUE=3.3K`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`REFDES=R?`GEOMETRY.HEIGHT=1`
-API $1I201 r 1 #=1
-API $1I201 r 2 #=2
-|N 2
-M r $1I193
-I $1I193 r N28822458 +2.5V SHAPE`VALUE=3.3K`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`REFDES=R?`GEOMETRY.HEIGHT=1`
-API $1I193 r 1 #=1
-API $1I193 r 2 #=2
-|N 2
 M r $1I174
 I $1I174 r N27903154 GND SHAPE`VALUE=4.7K`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`REFDES=R?`GEOMETRY.HEIGHT=1`
 API $1I174 r 1 #=1
 API $1I174 r 2 #=2
-M Sequoia:xfmr_1_1_soic24_genet_quad $1I170
-I $1I170 Sequoia:xfmr_1_1_soic24_genet_quad +2.5V MDI0_0P MDI0_0N +2.5V MDI0_1P MDI0_1N +2.5V MDI0_2P MDI0_2N +2.5V MDI0_3P MDI0_3N X0_MDI_3N X0_MDI_3P N27903416 X0_MDI_2N X0_MDI_2P N27903420 X0_MDI_1N X0_MDI_1P N27903424 X0_MDI_0N X0_MDI_0P N27903428 GEOMETRY.HEIGHT=1`REFDES=T1`BOARD_OPTION=BASE`PKG_TYPE=T_EPG4011`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=EPG4011`SHAPE`
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 1 #=1
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 2 #=2
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 3 #=3
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 4 #=4
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 5 #=5
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 6 #=6
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 7 #=7
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 8 #=8
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 9 #=9
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 10 #=10
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 11 #=11
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 12 #=12
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 13 #=13
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 14 #=14
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 15 #=15
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 16 #=16
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 17 #=17
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 18 #=18
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 19 #=19
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 20 #=20
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 21 #=21
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 22 #=22
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 23 #=23
-API $1I170 Sequoia:xfmr_1_1_soic24_genet_quad 24 #=24
-|N 2
-M Sequoia:res_300_0402_5_ $1I176
-I $1I176 Sequoia:res_300_0402_5_ LED0_TX GETH0_LED_TX GEOMETRY.HEIGHT=1`REFDES=R116`PKG_TYPE=R_0402_IPC`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=300`SHAPE`
-API $1I176 Sequoia:res_300_0402_5_ 1 #=1
-API $1I176 Sequoia:res_300_0402_5_ 2 #=2
-|N 2
-M r $1I259
-I $1I259 r ? ? REFDES=R?`
-API $1I259 r 1 #=1
-API $1I259 r 2 #=2
-M SKASYMGEN:led $1I258
-I $1I258 SKASYMGEN:led ? ? PARTNUMBERID=4461`DATASOURCEFILE=NONE`DATAURL=WWW.AGILENT.COM`SUPERPART=NO`REVISIONPENDING=FALSE`OBSOLETE=FALSE`SAGEIMPORT=TRUE`USEEQUIVALENT=FALSE`PASSQA=FALSE`DISCONTINUED=FALSE`PASSPRODUCTION=TRUE`PASSCADADMIN=TRUE`PADSPASSPCB=FALSE`PDFPACKAGE=\\SERVER\HARDWAREFILES\PARTS DATABASE\PDF\PART OUTLINES\LOOK IN COMPONENT PDF`PDFFOOTPRINT=\\SERVER\HARDWAREFILES\PARTS DATABASE\PDF\LAND PATTERNS\LOOK IN COMPONENT PDF`PDF=\\SERVER\HARDWAREFILES\PARTS DATABASE\PDF\HSMX-C1XX - AGILENT.PDF`WIDTH=0`LENGTH=0`HEIGHT=1.1`MANPARTPACKAGE=HSMS-C150`OPERATINGVOLTAGE=VF = 2.1V`RATING=25MA`MANPARTDESCRIPTION=SMD CHIP LED, HIGH EFFICIENCY RED`VALUE=RED LED`PARTTYPE=OPTICAL DEVICES`PRODUCTCODE=PI-0106-4461`P/D_NUM=HSMS-C150`PKG_TYPE=C1206\HSMX-C650\H1.1`REFDES=D?`MANUFACTURER=AGILENT TECHNOLOGIES`DESCRIP=LED`
-API $1I258 SKASYMGEN:led 1 #=1
-API $1I258 SKASYMGEN:led 2 #=2
+M jumper3 $1I298
+I $1I298 jumper3 LED_DUPLEX $1N304 2V5 
+API $1I298 jumper3 1 #=1
+API $1I298 jumper3 2 #=2
+API $1I298 jumper3 3 #=3
 M r $1I260
-I $1I260 r ? ? REFDES=R?`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGF0101T1E`VALUE=100R`POWERRATING=0.0625`PKG_TYPE=RESC1005X40N`GEOMETRY.HEIGHT=0.35`STANDARDS=0402`TOLERANCE=5%`
+I $1I260 r $1N307 $1N304 REFDES=R?`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGF0331T1E`VALUE=330R`POWERRATING=0.0625`PKG_TYPE=RESC1005X40N`GEOMETRY.HEIGHT=0.35`STANDARDS=0402`TOLERANCE=5%`
 API $1I260 r 1 #=1
 API $1I260 r 2 #=2
+M jumper3 $1I261
+I $1I261 jumper3 GND $1N308 LED_DUPLEX 
+API $1I261 jumper3 1 #=1
+API $1I261 jumper3 2 #=2
+API $1I261 jumper3 3 #=3
+|N 2
+M r $1I259
+I $1I259 r $1N308 $1N304 VALUE=2K2`TOLERANCE=5%`STANDARDS=0402`POWERRATING=0.0625`PKG_TYPE=RESC1005X40N`P/D_NUM=0402WGF0222T1E`MANUFACTURER=ROYAL OHM`GEOMETRY.HEIGHT=0.35`REFDES=R?`
+API $1I259 r 1 #=1
+API $1I259 r 2 #=2
+|N 2
+M r $1I367
+I $1I367 r GND $1N368 REFDES=R?`GEOMETRY.HEIGHT=0.35`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGF9761T1E`PKG_TYPE=RESC1005X40N`POWERRATING=0.0625`STANDARDS=0402`TOLERANCE=1%`VALUE=9K76`
+API $1I367 r 1 #=1
+API $1I367 r 2 #=2
 M dp83865_phy $1I146
-I $1I146 dp83865_phy ? LED0_TX ? ? ? CLK_GETH0_25MHZ ? N27904256 ? ? ? ? ? ? ? ? ? ? GETH0_LED_DUPLEX GMC0TXCLK GETH0_INT# ? ? ? ? ? ? ? ? ? ? ? ? LED0_L1000 GETH0_LED_L100 ? ? GMCMDCLK MDI0_0N MDI0_0P MDI0_1N MDI0_1P MDI0_2N MDI0_2P MDI0_3N MDI0_3P GMCMDIO ? ? ? ? ? ? ? ? ? ? ? GETH0_RST# N27903625 N27903366 N27904057 N27903704 ? ? ? ? N27903590 N27904376 ? ? ? ? ? ? ? ? ? ? N27903154 GMC0TXD0 GMC0TXD1 GMC0TXD2 GMC0TXD3 GND GND GND GND ? GMC0TXCTL GND ? ? GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND #=0`NC`SHAPE`VALUE=88E1111`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`BOARD_OPTION=BASE`PKG_TYPE=BCC_PACK_96`REFDES=U?`GEOMETRY.HEIGHT=1`
+I $1I146 dp83865_phy ? LED_ACT ? $1N368 ? CLK_GETH0_25MHZ ? N27904256 ? ? ? ? ? ? ? ? ? ? LED_DUPLEX GMC0TXCLK GETH0_INT# ? ? ? ? ? ? ? ? ? ? ? ? LED0_L1000 LED_L100 LED_L10 ? GMCMDCLK MDI0_0N MDI0_0P MDI0_1N MDI0_1P MDI0_2N MDI0_2P MDI0_3N MDI0_3P GMCMDIO ? ? ? ? ? ? ? ? ? ? ? GETH0_RST# N27903625 N27903366 N27904057 N27903704 ? ? ? ? N27903590 N27904376 ? ? ? ? ? ? ? ? ? ? N27903154 GMC0TXD0 GMC0TXD1 GMC0TXD2 GMC0TXD3 GND GND GND GND ? GMC0TXCTL GND ? ? GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND #=0`NC`SHAPE`VALUE=88E1111`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`BOARD_OPTION=BASE`PKG_TYPE=BCC_PACK_96`REFDES=U?`GEOMETRY.HEIGHT=1`
 API $1I146 dp83865_phy 1 #=100
 API $1I146 dp83865_phy 2 #=7
 API $1I146 dp83865_phy 3 #=96
@@ -1239,5 +1039,82 @@ API $1I146 dp83865_phy 125 #=26
 API $1I146 dp83865_phy 126 #=30
 API $1I146 dp83865_phy 127 #=36
 API $1I146 dp83865_phy 128 #=38
+|N 2
+M ind_bead_0603_180ohm_1r5a_25_ $1I141
+I $1I141 ind_bead_0603_180ohm_1r5a_25_ +2.5V +2.5_F1-1 GEOMETRY.HEIGHT=1`REFDES=L15`PKG_TYPE=L_0603`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=180OHM 1.5A`SHAPE`
+API $1I141 ind_bead_0603_180ohm_1r5a_25_ 1 #=1
+API $1I141 ind_bead_0603_180ohm_1r5a_25_ 2 #=2
+|N 2
+M r $1I201
+I $1I201 r N28823672 +2.5V SHAPE`VALUE=3.3K`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`REFDES=R?`GEOMETRY.HEIGHT=1`
+API $1I201 r 1 #=1
+API $1I201 r 2 #=2
+|N 2
+M r $1I193
+I $1I193 r N28822458 +2.5V SHAPE`VALUE=3.3K`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`BOARD_OPTION=BASE`PKG_TYPE=R_0402_IPC`REFDES=R?`GEOMETRY.HEIGHT=1`
+API $1I193 r 1 #=1
+API $1I193 r 2 #=2
+M r $1I393
+I $1I393 r MDI0_1N ETH_VDDA STANDARDS=0402`GEOMETRY.HEIGHT=0.35`PKG_TYPE=RESC1005X40N`POWERRATING=0.0625`VALUE=49.9R`P/D_NUM=0402WGF499JT1E`MANUFACTURER=ROYAL OHM`REFDES=R?`
+API $1I393 r 1 #=1
+API $1I393 r 2 #=2
+M r $1I394
+I $1I394 r MDI0_1P ETH_VDDA REFDES=R?`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGF499JT1E`VALUE=49.9R`POWERRATING=0.0625`PKG_TYPE=RESC1005X40N`GEOMETRY.HEIGHT=0.35`STANDARDS=0402`
+API $1I394 r 1 #=1
+API $1I394 r 2 #=2
+M r $1I396
+I $1I396 r MDI0_2N ETH_VDDA REFDES=R?`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGF499JT1E`VALUE=49.9R`POWERRATING=0.0625`PKG_TYPE=RESC1005X40N`GEOMETRY.HEIGHT=0.35`STANDARDS=0402`
+API $1I396 r 1 #=1
+API $1I396 r 2 #=2
+M r $1I395
+I $1I395 r MDI0_2P ETH_VDDA STANDARDS=0402`GEOMETRY.HEIGHT=0.35`PKG_TYPE=RESC1005X40N`POWERRATING=0.0625`VALUE=49.9R`P/D_NUM=0402WGF499JT1E`MANUFACTURER=ROYAL OHM`REFDES=R?`
+API $1I395 r 1 #=1
+API $1I395 r 2 #=2
+M r $1I389
+I $1I389 r MDI0_0N ETH_VDDA REFDES=R?`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGF499JT1E`VALUE=49.9R`POWERRATING=0.0625`PKG_TYPE=RESC1005X40N`GEOMETRY.HEIGHT=0.35`STANDARDS=0402`
+API $1I389 r 1 #=1
+API $1I389 r 2 #=2
+M r $1I388
+I $1I388 r MDI0_0P ETH_VDDA STANDARDS=0402`GEOMETRY.HEIGHT=0.35`PKG_TYPE=RESC1005X40N`POWERRATING=0.0625`VALUE=49.9R`P/D_NUM=0402WGF499JT1E`MANUFACTURER=ROYAL OHM`REFDES=R?`
+API $1I388 r 1 #=1
+API $1I388 r 2 #=2
+M r $1I397
+I $1I397 r MDI0_3P ETH_VDDA REFDES=R?`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGF499JT1E`VALUE=49.9R`POWERRATING=0.0625`PKG_TYPE=RESC1005X40N`GEOMETRY.HEIGHT=0.35`STANDARDS=0402`
+API $1I397 r 1 #=1
+API $1I397 r 2 #=2
+M r $1I398
+I $1I398 r MDI0_3N ETH_VDDA STANDARDS=0402`GEOMETRY.HEIGHT=0.35`PKG_TYPE=RESC1005X40N`POWERRATING=0.0625`VALUE=49.9R`P/D_NUM=0402WGF499JT1E`MANUFACTURER=ROYAL OHM`REFDES=R?`
+API $1I398 r 1 #=1
+API $1I398 r 2 #=2
+|N 2
+M c $1I405
+I $1I405 c ETH_VDDA GND VOLTAGERATING=25V`VALUE=10NF`TYPE=FIXED`TOLERANCE=10%`STANDARDS=0402`PKG_TYPE=CAPC1005X55N`P/D_NUM=GRM155R71E103KAO1B`GEOMETRY.HEIGHT=0.5`DIELECTRIC=X7R`DEVICE=CHIP CAPACITOR`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`REFDES=C?`
+API $1I405 c 1 #=1
+API $1I405 c 2 #=2
+|N 2
+M c $1I407
+I $1I407 c ETH_VDDA GND VOLTAGERATING=25V`VALUE=10NF`TYPE=FIXED`TOLERANCE=10%`STANDARDS=0402`PKG_TYPE=CAPC1005X55N`P/D_NUM=GRM155R71E103KAO1B`GEOMETRY.HEIGHT=0.5`DIELECTRIC=X7R`DEVICE=CHIP CAPACITOR`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`REFDES=C?`
+API $1I407 c 1 #=1
+API $1I407 c 2 #=2
+M con_rj45_1x8_f_ra_th_2biledyg $1I167
+I $1I167 con_rj45_1x8_f_ra_th_2biledyg ? ? ? GETH0_LED_TX GETH0_LED_DUPLEX ? ? GETH0_LED_L100 GETH0_LED_L1000 MDI0_0N MDI0_0P MDI0_1N MDI0_1P MDI0_2N MDI0_2P MDI0_3N MDI0_3P ? NC`PKG_TYPE=RJ45_8POS`REFDES=J8`GEOMETRY.HEIGHT=1`
+API $1I167 con_rj45_1x8_f_ra_th_2biledyg 1 #=17
+API $1I167 con_rj45_1x8_f_ra_th_2biledyg 2 #=18
+API $1I167 con_rj45_1x8_f_ra_th_2biledyg 3 #=10
+API $1I167 con_rj45_1x8_f_ra_th_2biledyg 4 #=14
+API $1I167 con_rj45_1x8_f_ra_th_2biledyg 5 #=13
+API $1I167 con_rj45_1x8_f_ra_th_2biledyg 6 #=15
+API $1I167 con_rj45_1x8_f_ra_th_2biledyg 7 #=16
+API $1I167 con_rj45_1x8_f_ra_th_2biledyg 8 #=12
+API $1I167 con_rj45_1x8_f_ra_th_2biledyg 9 #=11
+API $1I167 con_rj45_1x8_f_ra_th_2biledyg 10 #=2
+API $1I167 con_rj45_1x8_f_ra_th_2biledyg 11 #=1
+API $1I167 con_rj45_1x8_f_ra_th_2biledyg 12 #=6
+API $1I167 con_rj45_1x8_f_ra_th_2biledyg 13 #=3
+API $1I167 con_rj45_1x8_f_ra_th_2biledyg 14 #=5
+API $1I167 con_rj45_1x8_f_ra_th_2biledyg 15 #=4
+API $1I167 con_rj45_1x8_f_ra_th_2biledyg 16 #=8
+API $1I167 con_rj45_1x8_f_ra_th_2biledyg 17 #=7
+API $1I167 con_rj45_1x8_f_ra_th_2biledyg 18 #=9
 EW
-| Sch_Warning - Pin/Net disassociation at location (1180,1080).
+| Sch_Info - Net 2V5 has alias of +2.5V.
