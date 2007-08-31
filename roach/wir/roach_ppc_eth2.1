@@ -4,6 +4,9 @@ K 165441318500 roach_ppc_eth2
 DW roach_ppc_eth2
 Q Case
 SA SOURCE_PATH 
+AS in IN
+AS in PINORDER=IN
+AP in 1 PINTYPE=IN
 |Q r 1
 AS r PKG_TYPE=RES
 AS r PINOFF
@@ -94,53 +97,6 @@ AP r 1 PINTYPE=BI
 AP r 1 #=1
 AP r 2 PINTYPE=BI
 AP r 2 #=2
-|Q halo_gigabit_fastjack_2led 1
-AS halo_gigabit_fastjack_2led DESCRIPTION=RJ45, INTEGRATED MAGNETICS, 2 LEDS
-AS halo_gigabit_fastjack_2led MANUFACTURER=HALO
-AS halo_gigabit_fastjack_2led DEVICE=CON_RJ45_1X8_F_RA_TH_2LEDGY
-AS halo_gigabit_fastjack_2led PARTS=1
-AS halo_gigabit_fastjack_2led PKG_TYPE=RJ45_8POS
-AS halo_gigabit_fastjack_2led VALUE
-AS halo_gigabit_fastjack_2led REFDES=J?
-AS halo_gigabit_fastjack_2led P/D_NUM=HFJ11-1G02E-L12
-AS halo_gigabit_fastjack_2led PINORDER=CASE1 CASE2 GND L1_YA_GC L1_YC_GA MNT1 MNT2 R1_YA_GC R1_YC_GA TD0N TD0P TD1N TD1P TD2N TD2P TD3N TD3P VCC
-AS halo_gigabit_fastjack_2led INOV_VER_REC=9:37_8-29-07
-AP halo_gigabit_fastjack_2led 1 #=17
-AP halo_gigabit_fastjack_2led 1 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 2 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 2 #=18
-AP halo_gigabit_fastjack_2led 3 #=10
-AP halo_gigabit_fastjack_2led 3 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 4 #=14
-AP halo_gigabit_fastjack_2led 4 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 5 #=13
-AP halo_gigabit_fastjack_2led 5 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 6 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 6 #=15
-AP halo_gigabit_fastjack_2led 7 #=16
-AP halo_gigabit_fastjack_2led 7 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 8 #=12
-AP halo_gigabit_fastjack_2led 8 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 9 #=11
-AP halo_gigabit_fastjack_2led 9 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 10 #=2
-AP halo_gigabit_fastjack_2led 10 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 11 #=1
-AP halo_gigabit_fastjack_2led 11 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 12 #=6
-AP halo_gigabit_fastjack_2led 12 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 13 #=3
-AP halo_gigabit_fastjack_2led 13 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 14 #=5
-AP halo_gigabit_fastjack_2led 14 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 15 #=4
-AP halo_gigabit_fastjack_2led 15 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 16 #=8
-AP halo_gigabit_fastjack_2led 16 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 17 #=7
-AP halo_gigabit_fastjack_2led 17 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 18 #=9
-AP halo_gigabit_fastjack_2led 18 PINTYPE=OUT
 |Q jumper 1
 AS jumper LEVEL=STD
 AS jumper MANUFACTURER
@@ -157,9 +113,6 @@ AP jumper 1 #=1
 AP jumper 1 PINTYPE=BI
 AP jumper 2 PINTYPE=BI
 AP jumper 2 #=2
-AS bi BI
-AS bi PINORDER=BI
-AP bi 1 PINTYPE=BI
 |Q dp83865_phy 1
 AS dp83865_phy MANUFACTURER=NATIONAL
 AS dp83865_phy DEVICE=NATSEMI_DP83865DVH
@@ -467,6 +420,59 @@ AP ic_cpu_te_pbga680_440epx_grx_j 11 #=AN26
 AP ic_cpu_te_pbga680_440epx_grx_j 11 PINTYPE=IN
 AP ic_cpu_te_pbga680_440epx_grx_j 12 #=AM26
 AP ic_cpu_te_pbga680_440epx_grx_j 12 PINTYPE=IN
+AS out OUT
+AS out PINORDER=OUT
+AP out 1 PINTYPE=OUT
+AS bi BI
+AS bi PINORDER=BI
+AP bi 1 PINTYPE=BI
+|Q halo_gigabit_fastjack_2led 1
+AS halo_gigabit_fastjack_2led DESCRIPTION=RJ45, INTEGRATED MAGNETICS, 2 LEDS
+AS halo_gigabit_fastjack_2led MANUFACTURER=HALO
+AS halo_gigabit_fastjack_2led DEVICE=CON_RJ45_1X8_F_RA_TH_2LEDGY
+AS halo_gigabit_fastjack_2led PARTS=1
+AS halo_gigabit_fastjack_2led PKG_TYPE=RJ45_8POS
+AS halo_gigabit_fastjack_2led VALUE
+AS halo_gigabit_fastjack_2led REFDES=J?
+AS halo_gigabit_fastjack_2led P/D_NUM=HFJ11-1G02E-L12
+AS halo_gigabit_fastjack_2led PINORDER=CASE1 CASE2 GND L1_YA_GC L1_YC_GA MNT1 MNT2 R1_YA_GC R1_YC_GA TD0N TD0P TD1N TD1P TD2N TD2P TD3N TD3P VCC
+AS halo_gigabit_fastjack_2led INOV_VER_REC=9:37_8-29-07
+AP halo_gigabit_fastjack_2led 1 #=17
+AP halo_gigabit_fastjack_2led 1 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 2 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 2 #=18
+AP halo_gigabit_fastjack_2led 3 #=10
+AP halo_gigabit_fastjack_2led 3 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 4 #=14
+AP halo_gigabit_fastjack_2led 4 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 5 #=13
+AP halo_gigabit_fastjack_2led 5 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 6 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 6 #=15
+AP halo_gigabit_fastjack_2led 7 #=16
+AP halo_gigabit_fastjack_2led 7 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 8 #=12
+AP halo_gigabit_fastjack_2led 8 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 9 #=11
+AP halo_gigabit_fastjack_2led 9 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 10 #=2
+AP halo_gigabit_fastjack_2led 10 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 11 #=1
+AP halo_gigabit_fastjack_2led 11 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 12 #=6
+AP halo_gigabit_fastjack_2led 12 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 13 #=3
+AP halo_gigabit_fastjack_2led 13 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 14 #=5
+AP halo_gigabit_fastjack_2led 14 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 15 #=4
+AP halo_gigabit_fastjack_2led 15 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 16 #=8
+AP halo_gigabit_fastjack_2led 16 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 17 #=7
+AP halo_gigabit_fastjack_2led 17 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 18 #=9
+AP halo_gigabit_fastjack_2led 18 PINTYPE=OUT
 AN $1N511 NC
 AN $1N510 NC
 AN $1N509 NC
@@ -485,6 +491,12 @@ G CHASSIS_GND
 G GND
 G GND
 G GND
+P in CLK_GETH1_25MHZ
+I CLK_GETH1_25MHZ in CLK_GETH1_25MHZ GEOMETRY.HEIGHT=1`NAME=CLK_GETH1_25MHZ`
+|R 7:39_8-30-07
+P in GMCMDCLK
+I GMCMDCLK in GMCMDCLK GEOMETRY.HEIGHT=1`NAME=GMCMDCLK`
+|R 7:39_8-30-07
 M r $1I227
 I $1I227 r GMC1RXCTL N27904376 P/D_NUM=0402WGF0220T1E`MANUFACTURER=ROYAL OHM`TOLERANCE=5%`STANDARDS=0402`POWERRATING=0.0625`VALUE=22R`PKG_TYPE=RESC1005X40N`REFDES=R?`GEOMETRY.HEIGHT=0.35`
 API $1I227 r 1 #=1
@@ -790,8 +802,6 @@ M r $1I472
 I $1I472 r $1N232 $1N233 REFDES=R?`GEOMETRY.HEIGHT=0.35`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGF0222T1E`PKG_TYPE=RESC1005X40N`POWERRATING=0.0625`STANDARDS=0402`TOLERANCE=5%`VALUE=2K2`
 API $1I472 r 1 #=1
 API $1I472 r 2 #=2
-M halo_gigabit_fastjack_2led $1I475
-I $1I475 halo_gigabit_fastjack_2led CHASSIS_GND CHASSIS_GND GND $1N479 $1N480 $1N447 $1N240 $1N477 $1N476 MDI1_0N MDI1_0P MDI1_1N MDI1_1P MDI1_2N MDI1_2P MDI1_3N MDI1_3P 2V5 GEOMETRY.HEIGHT=1`REFDES=J?`PKG_TYPE=RJ45_8POS`NC`
 M r $1I478
 I $1I478 r $1N480 $1N322 TOLERANCE=5%`STANDARDS=0402`GEOMETRY.HEIGHT=0.35`PKG_TYPE=RESC1005X40N`POWERRATING=0.0625`VALUE=330R`P/D_NUM=0402WGF0331T1E`MANUFACTURER=ROYAL OHM`REFDES=R?`
 API $1I478 r 1 #=1
@@ -851,9 +861,6 @@ M jumper $1I352
 I $1I352 jumper GND GMCMDCLK SHAPE`BOARD_OPTION=BASE`PKG_TYPE=TSM_2X1_SV`REFDES=JP?`GEOMETRY.HEIGHT=1`
 API $1I352 jumper 1 #=1
 API $1I352 jumper 2 #=2
-P bi GMCMDIO
-I GMCMDIO bi GMCMDIO NAME=GMCMDIO`GEOMETRY.HEIGHT=1`
-|R 12:48_8-29-07
 M r $1I489
 I $1I489 r GMC1RXD0 N27903625 P/D_NUM=0402WGF0220T1E`MANUFACTURER=ROYAL OHM`TOLERANCE=5%`STANDARDS=0402`POWERRATING=0.0625`VALUE=22R`PKG_TYPE=RESC1005X40N`REFDES=R?`GEOMETRY.HEIGHT=0.35`
 API $1I489 r 1 #=1
@@ -863,7 +870,7 @@ I $1I412 c 2V5 GND VOLTAGERATING=25V`TYPE=FIXED`STANDARDS=0402`TOLERANCE=10%`DEV
 API $1I412 c 1 #=1
 API $1I412 c 2 #=2
 M dp83865_phy $1I444
-I $1I444 dp83865_phy ETH1_1V8_AVDD3 LED1_ACT 2V5 $1N293 2V5 CLK_GETH0_25MHZ $1N511 $1N512 ? 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 ? LED1_DUPLEX GMC1TXCLK GETH0_INT# 2V5 2V5 2V5 2V5 2V5 2V5 2V5 2V5 2V5 2V5 2V5 2V5 LED1_L1000 LED1_L100 LED1_L10 $1N247 GMCMDCLK MDI1_0N MDI1_0P MDI1_1N MDI1_1P MDI1_2N MDI1_2P MDI1_3N MDI1_3P GMCMDIO $1N246 $1N245 ? ETH1_PGM_VDD $1N233 $1N455 $1N454 $1N456 ? ? ? GETH0_RST# N27903625 N27903366 N27904057 N27903704 $1N252 $1N253 $1N254 $1N255 N27903590 N27904376 ? 1V8 1V8 1V8 1V8 1V8 $1N508 $1N509 $1N510 $1N507 $1N485 GMC1TXD0 GMC1TXD1 GMC1TXD2 GMC1TXD3 GND GND GND GND ? GMC1TXCTL GND ? GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND #=0`NC`SHAPE`BOARD_OPTION=BASE`REFDES=U?`GEOMETRY.HEIGHT=1`
+I $1I444 dp83865_phy ETH1_1V8_AVDD3 LED1_ACT 2V5 $1N293 2V5 CLK_GETH1_25MHZ $1N511 $1N512 ? 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 ? LED1_DUPLEX GMC1TXCLK GETH1_INT# 2V5 2V5 2V5 2V5 2V5 2V5 2V5 2V5 2V5 2V5 2V5 2V5 LED1_L1000 LED1_L100 LED1_L10 $1N247 GMCMDCLK MDI1_0N MDI1_0P MDI1_1N MDI1_1P MDI1_2N MDI1_2P MDI1_3N MDI1_3P GMCMDIO $1N246 $1N245 ? ETH1_PGM_VDD $1N233 $1N455 $1N454 $1N456 ? ? ? GETH1_RST# N27903625 N27903366 N27904057 N27903704 $1N252 $1N253 $1N254 $1N255 N27903590 N27904376 ? 1V8 1V8 1V8 1V8 1V8 $1N508 $1N509 $1N510 $1N507 $1N485 GMC1TXD0 GMC1TXD1 GMC1TXD2 GMC1TXD3 GND GND GND GND ? GMC1TXCTL GND ? GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND #=0`NC`SHAPE`BOARD_OPTION=BASE`REFDES=U?`GEOMETRY.HEIGHT=1`
 API $1I444 dp83865_phy 1 #=100
 API $1I444 dp83865_phy 2 #=7
 API $1I444 dp83865_phy 3 #=96
@@ -1046,4 +1053,32 @@ M led $1I288
 I $1I288 led $1N425 $1N326 DESCRIP=LED`MANUFACTURER=AGILENT TECHNOLOGIES`REFDES=D?`PKG_TYPE=LEDC3216X120N`PRODUCTCODE=PI-0106-4461`PARTTYPE=OPTICAL DEVICES`VALUE=DUPLEX LED`MANPARTDESCRIPTION=SMD CHIP LED, HIGH EFFICIENCY RED`RATING=25MA`OPERATINGVOLTAGE=VF = 2.1V`MANPARTPACKAGE=HSMS-C150`HEIGHT=1.1`LENGTH=0`WIDTH=0`DISCONTINUED=FALSE`DATAURL=WWW.AGILENT.COM`
 API $1I288 led 1 #=1
 API $1I288 led 2 #=2
+P out GETH1_INT#
+I GETH1_INT# out GETH1_INT# GEOMETRY.HEIGHT=1`NAME=GETH1_INT#`
+P in GETH1_RST#
+I GETH1_RST# in GETH1_RST# GEOMETRY.HEIGHT=1`NAME=GETH1_RST#`
+|R 7:39_8-30-07
+P bi GMCMDIO
+I GMCMDIO bi GMCMDIO NAME=GMCMDIO`GEOMETRY.HEIGHT=1`
+|R 7:46_8-30-07
+M halo_gigabit_fastjack_2led $1I475
+I $1I475 halo_gigabit_fastjack_2led CHASSIS_GND CHASSIS_GND GND $1N479 $1N480 $1N447 $1N240 $1N477 $1N476 MDI1_0N MDI1_0P MDI1_1N MDI1_1P MDI1_2N MDI1_2P MDI1_3N MDI1_3P 2V5 GEOMETRY.HEIGHT=1`REFDES=J?`PKG_TYPE=RJ45_8POS`NC`
+API $1I475 halo_gigabit_fastjack_2led 1 #=17
+API $1I475 halo_gigabit_fastjack_2led 2 #=18
+API $1I475 halo_gigabit_fastjack_2led 3 #=10
+API $1I475 halo_gigabit_fastjack_2led 4 #=14
+API $1I475 halo_gigabit_fastjack_2led 5 #=13
+API $1I475 halo_gigabit_fastjack_2led 6 #=15
+API $1I475 halo_gigabit_fastjack_2led 7 #=16
+API $1I475 halo_gigabit_fastjack_2led 8 #=12
+API $1I475 halo_gigabit_fastjack_2led 9 #=11
+API $1I475 halo_gigabit_fastjack_2led 10 #=2
+API $1I475 halo_gigabit_fastjack_2led 11 #=1
+API $1I475 halo_gigabit_fastjack_2led 12 #=6
+API $1I475 halo_gigabit_fastjack_2led 13 #=3
+API $1I475 halo_gigabit_fastjack_2led 14 #=5
+API $1I475 halo_gigabit_fastjack_2led 15 #=4
+API $1I475 halo_gigabit_fastjack_2led 16 #=8
+API $1I475 halo_gigabit_fastjack_2led 17 #=7
+API $1I475 halo_gigabit_fastjack_2led 18 #=9
 EW

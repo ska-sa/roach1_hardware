@@ -3,4 +3,99 @@ V 5.4
 K 29591324190 roach_top
 DW roach_top
 Q Case
+|Q roach_adc_0 1
+AS roach_adc_0 INOV_VER_REC=6:30_8-31-07
+|Q roach_adc_1 1
+AS roach_adc_1 INOV_VER_REC=6:29_8-31-07
+|Q roach_ddr2_dimm 1
+AS roach_ddr2_dimm INOV_VER_REC=6:32_8-31-07
+|Q roach_diff_gpio 1
+AS roach_diff_gpio INOV_VER_REC=6:33_8-31-07
+|Q roach_transceivers0_1 1
+AS roach_transceivers0_1 INOV_VER_REC=7:26_8-31-07
+|Q roach_transceivers2_3 1
+AS roach_transceivers2_3 INOV_VER_REC=6:27_8-31-07
+|Q roach_transceivers_psu 1
+AS roach_transceivers_psu SHEETNO=XXX
+AS roach_transceivers_psu INOV_VER_REC=7:29_8-31-07
+|Q roach_ppc_eth1 1
+AS roach_ppc_eth1 SHEETNO=XXX
+AS roach_ppc_eth1 DEVICE=ROACH_PPC_ETH1
+AS roach_ppc_eth1 PINORDER= GMCMDCLK GMCMDIO GETH0_RST# GETH0_INT# CLK_GETH0_25MHZ
+AS roach_ppc_eth1 REFDES=U?
+AS roach_ppc_eth1 INOV_VER_REC=8:18_8-31-07
+AP roach_ppc_eth1 1 PINTYPE=OUT
+AP roach_ppc_eth1 1 NAME=GMCMDCLK
+AP roach_ppc_eth1 2 PINTYPE=BI
+AP roach_ppc_eth1 2 NAME=GMCMDIO
+AP roach_ppc_eth1 3 PINTYPE=IN
+AP roach_ppc_eth1 3 NAME=GETH0_RST#
+AP roach_ppc_eth1 4 PINTYPE=OUT
+AP roach_ppc_eth1 4 NAME=GETH0_INT#
+AP roach_ppc_eth1 5 PINTYPE=IN
+AP roach_ppc_eth1 5 NAME=CLK_GETH0_25MHZ
+|Q roach_qdr2p_by0_1 1
+AS roach_qdr2p_by0_1 SHEETNO=XXX
+AS roach_qdr2p_by0_1 DEVICE=ROACH_QDR2P_BY0_1
+AS roach_qdr2p_by0_1 PINORDER= QDR2_BY0_1_SYS_RST_N QDR2_BY0_1_TDO QDR2_TMS QDR2_TDI QDR2_TCK
+AS roach_qdr2p_by0_1 REFDES=U?
+AS roach_qdr2p_by0_1 INOV_VER_REC=7:19_8-31-07
+AP roach_qdr2p_by0_1 1 PINTYPE=IN
+AP roach_qdr2p_by0_1 2 PINTYPE=OUT
+AP roach_qdr2p_by0_1 3 PINTYPE=IN
+AP roach_qdr2p_by0_1 4 PINTYPE=IN
+AP roach_qdr2p_by0_1 5 PINTYPE=IN
+|Q roach_qdr2p_by2_3 1
+AS roach_qdr2p_by2_3 SHEETNO=XXX
+AS roach_qdr2p_by2_3 DEVICE=ROACH_QDR2P_BY2_3
+AS roach_qdr2p_by2_3 PINORDER= QDR2_BY2_3_SYS_RST_N QDR2_BY2_3_TDO QDR2_TCK QDR2_TMS QDR2_BY0_1_TDO
+AS roach_qdr2p_by2_3 REFDES=U?
+AS roach_qdr2p_by2_3 INOV_VER_REC=7:19_8-31-07
+AP roach_qdr2p_by2_3 1 PINTYPE=IN
+AP roach_qdr2p_by2_3 2 PINTYPE=OUT
+AP roach_qdr2p_by2_3 3 PINTYPE=IN
+AP roach_qdr2p_by2_3 4 PINTYPE=IN
+AP roach_qdr2p_by2_3 5 PINTYPE=IN
+|Q roach_ppc_eth2 1
+AS roach_ppc_eth2 DEVICE=ROACH_PPC_ETH2
+AS roach_ppc_eth2 PINORDER= CLK_GETH1_25MHZ GMCMDCLK GETH1_INT# GETH1_RST# GMCMDIO
+AS roach_ppc_eth2 SHEETNO=XXX
+AS roach_ppc_eth2 INOV_VER_REC=8:47_8-31-07
+AP roach_ppc_eth2 1 PINTYPE=IN
+AP roach_ppc_eth2 1 NAME=CLK_GETH1_25MHZ
+AP roach_ppc_eth2 1 GEOMETRY.HEIGHT=1
+AP roach_ppc_eth2 2 PINTYPE=IN
+AP roach_ppc_eth2 2 NAME=GMCMDCLK
+AP roach_ppc_eth2 2 GEOMETRY.HEIGHT=1
+AP roach_ppc_eth2 3 PINTYPE=OUT
+AP roach_ppc_eth2 3 NAME=GETH1_INT#
+AP roach_ppc_eth2 3 GEOMETRY.HEIGHT=1
+AP roach_ppc_eth2 4 PINTYPE=IN
+AP roach_ppc_eth2 4 NAME=GETH1_RST#
+AP roach_ppc_eth2 4 GEOMETRY.HEIGHT=1
+AP roach_ppc_eth2 5 PINTYPE=BI
+AP roach_ppc_eth2 5 NAME=GMCMDIO
+AP roach_ppc_eth2 5 GEOMETRY.HEIGHT=1
+W roach_adc_0 $1I4
+I $1I4 roach_adc_0 SHEETNO=XXX`LABEL=ROACH_ADC_0`
+W roach_adc_1 $1I5
+I $1I5 roach_adc_1 SHEETNO=XXX`LABEL=ROACH_ADC_1`
+W roach_ddr2_dimm $1I6
+I $1I6 roach_ddr2_dimm SHEETNO=XXX`LABEL=ROACH_DDR2_DIMM`
+W roach_diff_gpio $1I7
+I $1I7 roach_diff_gpio LABEL=ROACH_DIFF_IO`SHEETNO=XXX`
+W roach_transceivers0_1 $1I2
+I $1I2 roach_transceivers0_1 SHEETNO=XXX`LABEL=ROACH_TRANSCEIVERS0_1`
+W roach_transceivers2_3 $1I3
+I $1I3 roach_transceivers2_3 SHEETNO=XXX`LABEL=ROACH_TRANSCEIVERS2_3`
+W roach_transceivers_psu $1I21
+I $1I21 roach_transceivers_psu LABEL=ROACH_TRANSCEIVERS_PSU`
+W roach_ppc_eth1 $1I23
+I $1I23 roach_ppc_eth1 GMCMDCLK GMCMDIO GETH0_RST# GETH0_INT# CLK_GETH0_25MHZ LABEL=ROACH_PPC_ETH1`
+W roach_qdr2p_by0_1 $1I9
+I $1I9 roach_qdr2p_by0_1 QDR2_BY0_1_SYS_RST_N QDR2_BY0_1_TDO QDR2_TMS QDR2_TDI QDR2_TCK LABEL=ROACH_QDR2P_BY0_1`
+W roach_qdr2p_by2_3 $1I15
+I $1I15 roach_qdr2p_by2_3 QDR2_BY2_3_SYS_RST_N QDR2_BY2_3_TDO QDR2_TCK QDR2_TMS QDR2_BY0_1_TDO LABEL=ROACH_QDR2P_BY2_3`
+W roach_ppc_eth2 $1I35
+I $1I35 roach_ppc_eth2 CLK_GETH1_25MHZ GMCMDCLK GETH1_INT# GETH1_RST# GMCMDIO LABEL=ROACH_PPC_ETH2`
 EW
