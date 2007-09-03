@@ -1,28 +1,14 @@
 | Wirelist created using version 5.4.
-| Sch_Warning - Symbol roach_ppc_eth1 has changed since component ROACH_PPC_ETH1 was instantiated.
-| Sch_Warning - Symbol roach_ppc_eth2 has changed since component ROACH_PPC_ETH2 was instantiated.
 V 5.4
 K 29591324190 roach_top
 DW roach_top
 Q Case
-|Q roach_ppc_usb 1
-AS roach_ppc_usb PINORDER= CLK_USB2.0_48MHZ USB2_VCC_PI
-AS roach_ppc_usb SHEETNO=XXX
-AS roach_ppc_usb INOV_VER_REC=11:24_8-31-07
-AP roach_ppc_usb 1 PINTYPE=IN
-AP roach_ppc_usb 1 NAME=CLK_USB2.0_48MHZ
-AP roach_ppc_usb 2 PINTYPE=OUT
-AP roach_ppc_usb 2 NAME=USB2_VCC_PI
 |Q roach_adc_0 1
 AS roach_adc_0 INOV_VER_REC=6:30_8-31-07
 |Q roach_adc_1 1
 AS roach_adc_1 INOV_VER_REC=6:29_8-31-07
 |Q roach_ddr2_dimm 1
 AS roach_ddr2_dimm INOV_VER_REC=6:32_8-31-07
-|Q roach_diff_gpio 1
-AS roach_diff_gpio INOV_VER_REC=6:33_8-31-07
-|Q roach_transceivers0_1 1
-AS roach_transceivers0_1 INOV_VER_REC=7:26_8-31-07
 |Q roach_transceivers2_3 1
 AS roach_transceivers2_3 INOV_VER_REC=6:27_8-31-07
 |Q roach_transceivers_psu 1
@@ -30,26 +16,13 @@ AS roach_transceivers_psu SHEETNO=XXX
 AS roach_transceivers_psu INOV_VER_REC=7:29_8-31-07
 |Q roach_qdr2p_by0_1 1
 AS roach_qdr2p_by0_1 SHEETNO=XXX
-AS roach_qdr2p_by0_1 DEVICE=ROACH_QDR2P_BY0_1
 AS roach_qdr2p_by0_1 PINORDER= QDR2_BY0_1_SYS_RST_N QDR2_BY0_1_TDO QDR2_TMS QDR2_TDI QDR2_TCK
-AS roach_qdr2p_by0_1 REFDES=U?
 AS roach_qdr2p_by0_1 INOV_VER_REC=7:19_8-31-07
 AP roach_qdr2p_by0_1 1 PINTYPE=IN
 AP roach_qdr2p_by0_1 2 PINTYPE=OUT
 AP roach_qdr2p_by0_1 3 PINTYPE=IN
 AP roach_qdr2p_by0_1 4 PINTYPE=IN
 AP roach_qdr2p_by0_1 5 PINTYPE=IN
-|Q roach_qdr2p_by2_3 1
-AS roach_qdr2p_by2_3 SHEETNO=XXX
-AS roach_qdr2p_by2_3 DEVICE=ROACH_QDR2P_BY2_3
-AS roach_qdr2p_by2_3 PINORDER= QDR2_BY2_3_SYS_RST_N QDR2_BY2_3_TDO QDR2_TCK QDR2_TMS QDR2_BY0_1_TDO
-AS roach_qdr2p_by2_3 REFDES=U?
-AS roach_qdr2p_by2_3 INOV_VER_REC=7:19_8-31-07
-AP roach_qdr2p_by2_3 1 PINTYPE=IN
-AP roach_qdr2p_by2_3 2 PINTYPE=OUT
-AP roach_qdr2p_by2_3 3 PINTYPE=IN
-AP roach_qdr2p_by2_3 4 PINTYPE=IN
-AP roach_qdr2p_by2_3 5 PINTYPE=IN
 |Q roach_ppc_ddr2 1
 AS roach_ppc_ddr2 SHEETNO=XXX
 AS roach_ppc_ddr2 INOV_VER_REC=11:11_8-31-07
@@ -57,7 +30,6 @@ AS roach_ppc_ddr2 INOV_VER_REC=11:11_8-31-07
 AS roach_ppc_eth1 PINORDER= GMCMDCLK GMCMDIO GETH0_RST# GETH0_INT# CLK_GETH0_25MHZ
 AS roach_ppc_eth1 SHEETNO=XXX
 AS roach_ppc_eth1 INOV_VER_REC=11:12_8-31-07
-
 AP roach_ppc_eth1 1 PINTYPE=OUT
 AP roach_ppc_eth1 1 NAME=GMCMDCLK
 AP roach_ppc_eth1 2 PINTYPE=BI
@@ -72,7 +44,6 @@ AP roach_ppc_eth1 5 NAME=CLK_GETH0_25MHZ
 AS roach_ppc_eth2 PINORDER= CLK_GETH1_25MHZ GMCMDCLK GETH1_INT# GETH1_RST# GMCMDIO
 AS roach_ppc_eth2 SHEETNO=XXX
 AS roach_ppc_eth2 INOV_VER_REC=11:12_8-31-07
-
 AP roach_ppc_eth2 1 PINTYPE=IN
 AP roach_ppc_eth2 1 NAME=CLK_GETH1_25MHZ
 AP roach_ppc_eth2 1 GEOMETRY.HEIGHT=1
@@ -88,132 +59,6 @@ AP roach_ppc_eth2 4 GEOMETRY.HEIGHT=1
 AP roach_ppc_eth2 5 PINTYPE=BI
 AP roach_ppc_eth2 5 NAME=GMCMDIO
 AP roach_ppc_eth2 5 GEOMETRY.HEIGHT=1
-|Q roach_ppc_cpld 1
-AS roach_ppc_cpld SHEETNO=XXX
-AS roach_ppc_cpld PINORDER=PWR_GOOD PCS_2 POE# PR_W# PWBE_0# USB2_VCC_PE USB2_VCC_PI CLK_USB2_CPLD SYSERR CLK_CPLD_33MHZ CLK_CPLD_50MHZ CLK_PERCLK FRY_BY# DEBUG_TRST# RESET_POR# SPARE_1 SPARE_0 SPARE_7 SPARE_6 SPARE_5 SPARE_4 SPARE_3 SPARE_2 BOOT_CFG0 BOOT_CFG1 BOOT_CFG2 FWP# EE1_WP EE2_BOOT_WP STTM_AS USB2_RESET NF_WP# USB_SELECT# EBC_SELECT# RESET_CPLD# SEL_SYSCLK CLK_SEL_M66EN CLK_TMRCLK GETH1_RST# GETH0_RST# GETH0_COMA GETH1_COMA CPU_TRST# RESET_PB_POR# PDATA[0:7] PADD[27:31] M66EN
-AS roach_ppc_cpld INOV_VER_REC=11:43_8-31-07
-AP roach_ppc_cpld 1 PINTYPE=IN
-AP roach_ppc_cpld 1 NAME=PWR_GOOD
-AP roach_ppc_cpld 2 PINTYPE=IN
-AP roach_ppc_cpld 2 NAME=PCS_2
-AP roach_ppc_cpld 3 PINTYPE=IN
-AP roach_ppc_cpld 3 NAME=POE#
-AP roach_ppc_cpld 4 PINTYPE=IN
-AP roach_ppc_cpld 4 NAME=PR_W#
-AP roach_ppc_cpld 5 PINTYPE=IN
-AP roach_ppc_cpld 5 NAME=PWBE_0#
-AP roach_ppc_cpld 6 PINTYPE=IN
-AP roach_ppc_cpld 6 NAME=USB2_VCC_PE
-AP roach_ppc_cpld 6 IREF=10
-AP roach_ppc_cpld 7 PINTYPE=IN
-AP roach_ppc_cpld 7 NAME=USB2_VCC_PI
-AP roach_ppc_cpld 7 IREF=10
-AP roach_ppc_cpld 8 PINTYPE=IN
-AP roach_ppc_cpld 8 NAME=CLK_USB2_CPLD
-AP roach_ppc_cpld 8 IREF=10
-AP roach_ppc_cpld 9 PINTYPE=IN
-AP roach_ppc_cpld 9 NAME=SYSERR
-AP roach_ppc_cpld 10 PINTYPE=IN
-AP roach_ppc_cpld 10 NAME=CLK_CPLD_33MHZ
-AP roach_ppc_cpld 11 PINTYPE=IN
-AP roach_ppc_cpld 11 NAME=CLK_CPLD_50MHZ
-AP roach_ppc_cpld 12 PINTYPE=IN
-AP roach_ppc_cpld 12 NAME=CLK_PERCLK
-AP roach_ppc_cpld 13 PINTYPE=IN
-AP roach_ppc_cpld 13 NAME=FRY_BY#
-AP roach_ppc_cpld 13 IREF=6
-AP roach_ppc_cpld 14 PINTYPE=IN
-AP roach_ppc_cpld 14 NAME=DEBUG_TRST#
-AP roach_ppc_cpld 15 PINTYPE=IN
-AP roach_ppc_cpld 15 NAME=RESET_POR#
-AP roach_ppc_cpld 16 PINTYPE=BI
-AP roach_ppc_cpld 16 NAME=SPARE_1
-AP roach_ppc_cpld 16 IREF=6
-AP roach_ppc_cpld 17 PINTYPE=BI
-AP roach_ppc_cpld 17 NAME=SPARE_0
-AP roach_ppc_cpld 17 IREF=6
-AP roach_ppc_cpld 18 PINTYPE=BI
-AP roach_ppc_cpld 18 NAME=SPARE_7
-AP roach_ppc_cpld 18 IREF=6
-AP roach_ppc_cpld 19 PINTYPE=BI
-AP roach_ppc_cpld 19 NAME=SPARE_6
-AP roach_ppc_cpld 19 IREF=6
-AP roach_ppc_cpld 20 PINTYPE=BI
-AP roach_ppc_cpld 20 NAME=SPARE_5
-AP roach_ppc_cpld 20 IREF=6
-AP roach_ppc_cpld 21 PINTYPE=BI
-AP roach_ppc_cpld 21 NAME=SPARE_4
-AP roach_ppc_cpld 21 IREF=6
-AP roach_ppc_cpld 22 PINTYPE=BI
-AP roach_ppc_cpld 22 NAME=SPARE_3
-AP roach_ppc_cpld 22 IREF=6
-AP roach_ppc_cpld 23 PINTYPE=BI
-AP roach_ppc_cpld 23 NAME=SPARE_2
-AP roach_ppc_cpld 23 IREF=6
-AP roach_ppc_cpld 24 PINTYPE=OUT
-AP roach_ppc_cpld 24 NAME=BOOT_CFG0
-AP roach_ppc_cpld 24 IREF=6
-AP roach_ppc_cpld 25 PINTYPE=OUT
-AP roach_ppc_cpld 25 NAME=BOOT_CFG1
-AP roach_ppc_cpld 25 IREF=6
-AP roach_ppc_cpld 26 PINTYPE=OUT
-AP roach_ppc_cpld 26 NAME=BOOT_CFG2
-AP roach_ppc_cpld 26 IREF=6
-AP roach_ppc_cpld 27 PINTYPE=OUT
-AP roach_ppc_cpld 27 NAME=FWP#
-AP roach_ppc_cpld 27 IREF=6
-AP roach_ppc_cpld 28 PINTYPE=OUT
-AP roach_ppc_cpld 28 NAME=EE1_WP
-AP roach_ppc_cpld 28 IREF=6
-AP roach_ppc_cpld 29 PINTYPE=OUT
-AP roach_ppc_cpld 29 NAME=EE2_BOOT_WP
-AP roach_ppc_cpld 29 IREF=6
-AP roach_ppc_cpld 30 PINTYPE=OUT
-AP roach_ppc_cpld 30 NAME=STTM_AS
-AP roach_ppc_cpld 30 IREF=6
-AP roach_ppc_cpld 31 PINTYPE=OUT
-AP roach_ppc_cpld 31 NAME=USB2_RESET
-AP roach_ppc_cpld 31 IREF=10
-AP roach_ppc_cpld 32 PINTYPE=OUT
-AP roach_ppc_cpld 32 NAME=NF_WP#
-AP roach_ppc_cpld 32 IREF=6
-AP roach_ppc_cpld 33 PINTYPE=OUT
-AP roach_ppc_cpld 33 NAME=USB_SELECT#
-AP roach_ppc_cpld 33 IREF=10
-AP roach_ppc_cpld 34 PINTYPE=OUT
-AP roach_ppc_cpld 34 NAME=EBC_SELECT#
-AP roach_ppc_cpld 34 IREF=6
-AP roach_ppc_cpld 35 PINTYPE=OUT
-AP roach_ppc_cpld 35 NAME=RESET_CPLD#
-AP roach_ppc_cpld 35 IREF=6
-AP roach_ppc_cpld 36 PINTYPE=OUT
-AP roach_ppc_cpld 36 NAME=SEL_SYSCLK
-AP roach_ppc_cpld 37 PINTYPE=OUT
-AP roach_ppc_cpld 37 NAME=CLK_SEL_M66EN
-AP roach_ppc_cpld 38 PINTYPE=OUT
-AP roach_ppc_cpld 38 NAME=CLK_TMRCLK
-AP roach_ppc_cpld 39 PINTYPE=OUT
-AP roach_ppc_cpld 39 NAME=GETH0_COMA
-AP roach_ppc_cpld 39 IREF=7
-AP roach_ppc_cpld 40 PINTYPE=OUT
-AP roach_ppc_cpld 40 NAME=GETH1_COMA
-AP roach_ppc_cpld 40 IREF=8
-AP roach_ppc_cpld 41 PINTYPE=OUT
-AP roach_ppc_cpld 41 NAME=GETH0_RST#
-AP roach_ppc_cpld 41 IREF=7
-AP roach_ppc_cpld 42 PINTYPE=OUT
-AP roach_ppc_cpld 42 NAME=GETH1_RST#
-AP roach_ppc_cpld 42 IREF=8
-AP roach_ppc_cpld 43 PINTYPE=OUT
-AP roach_ppc_cpld 43 NAME=CPU_TRST#
-AP roach_ppc_cpld 44 PINTYPE=OUT
-AP roach_ppc_cpld 44 NAME=RESET_PB_POR#
-AP roach_ppc_cpld 45 PINTYPE=BI
-AP roach_ppc_cpld 45 NAME=PDATA[0..7]
-AP roach_ppc_cpld 46 PINTYPE=IN
-AP roach_ppc_cpld 46 NAME=PADD[27..31]
-AP roach_ppc_cpld 47 PINTYPE=IN
-AP roach_ppc_cpld 47 NAME=M66EN
 |Q roach_ppc_nvm_serial 1
 AS roach_ppc_nvm_serial SHEETNO=XXX
 AS roach_ppc_nvm_serial PINORDER=CLK_PERCLK FRY_BY# RESET_POR# CLK_UART_11.0592MHZ NF_WP# M66EN BOOT_CFG2 BOOT_CFG0 FWP# EE1_WP STTM_ALERT STTM_AS EE2_BOOT_WP BOOT_CFG1 RESET_CPLD#
@@ -361,36 +206,177 @@ AP roach_ppc_tst_clk_io 23 IREF=11
 AP roach_ppc_tst_clk_io 24 PINTYPE=IN
 AP roach_ppc_tst_clk_io 24 NAME=GETH0_INT#
 AP roach_ppc_tst_clk_io 24 IREF=7
+|Q roach_ppc_usb 1
+AS roach_ppc_usb PINORDER= CLK_USB2.0_48MHZ USB2_VCC_PI
+AS roach_ppc_usb SHEETNO=XXX
+AS roach_ppc_usb INOV_VER_REC=11:24_8-31-07
+AP roach_ppc_usb 1 PINTYPE=IN
+AP roach_ppc_usb 1 NAME=CLK_USB2.0_48MHZ
+AP roach_ppc_usb 2 PINTYPE=OUT
+AP roach_ppc_usb 2 NAME=USB2_VCC_PI
+|Q roach_qdr2p_by2_3 1
+AS roach_qdr2p_by2_3 SHEETNO=XXX
+AS roach_qdr2p_by2_3 PINORDER= QDR2_BY2_3_SYS_RST_N QDR2_BY2_3_TDO QDR2_TCK QDR2_TMS QDR2_BY0_1_TDO
+AS roach_qdr2p_by2_3 INOV_VER_REC=7:19_8-31-07
+AP roach_qdr2p_by2_3 1 PINTYPE=IN
+AP roach_qdr2p_by2_3 2 PINTYPE=OUT
+AP roach_qdr2p_by2_3 3 PINTYPE=IN
+AP roach_qdr2p_by2_3 4 PINTYPE=IN
+AP roach_qdr2p_by2_3 5 PINTYPE=IN
+|Q roach_gpio_misc 1
+AS roach_gpio_misc SHEETNO=XXX
+AS roach_gpio_misc INOV_VER_REC=10:14_9-3-07
+|Q roach_ppc_cpld 1
+AS roach_ppc_cpld SHEETNO=XXX
+AS roach_ppc_cpld PINORDER=PWR_GOOD PCS_2 POE# PR_W# PWBE_0# USB2_VCC_PE USB2_VCC_PI CLK_USB2_CPLD SYSERR CLK_CPLD_33MHZ CLK_CPLD_50MHZ CLK_PERCLK FRY_BY# DEBUG_TRST# RESET_POR# SPARE_1 SPARE_0 SPARE_7 SPARE_6 SPARE_5 SPARE_4 SPARE_3 SPARE_2 BOOT_CFG0 BOOT_CFG1 BOOT_CFG2 FWP# EE1_WP EE2_BOOT_WP STTM_AS USB2_RESET NF_WP# USB_SELECT# EBC_SELECT# RESET_CPLD# SEL_SYSCLK CLK_SEL_M66EN CLK_TMRCLK GETH1_RST# GETH0_RST# GETH0_COMA GETH1_COMA CPU_TRST# RESET_PB_POR# PDATA[0:7] PADD[27:31] M66EN
+AS roach_ppc_cpld INOV_VER_REC=11:43_8-31-07
+AP roach_ppc_cpld 1 PINTYPE=IN
+AP roach_ppc_cpld 1 NAME=PWR_GOOD
+AP roach_ppc_cpld 2 PINTYPE=IN
+AP roach_ppc_cpld 2 NAME=PCS_2
+AP roach_ppc_cpld 3 PINTYPE=IN
+AP roach_ppc_cpld 3 NAME=POE#
+AP roach_ppc_cpld 4 PINTYPE=IN
+AP roach_ppc_cpld 4 NAME=PR_W#
+AP roach_ppc_cpld 5 PINTYPE=IN
+AP roach_ppc_cpld 5 NAME=PWBE_0#
+AP roach_ppc_cpld 6 PINTYPE=IN
+AP roach_ppc_cpld 6 NAME=USB2_VCC_PE
+AP roach_ppc_cpld 6 IREF=10
+AP roach_ppc_cpld 7 PINTYPE=IN
+AP roach_ppc_cpld 7 NAME=USB2_VCC_PI
+AP roach_ppc_cpld 7 IREF=10
+AP roach_ppc_cpld 8 PINTYPE=IN
+AP roach_ppc_cpld 8 NAME=CLK_USB2_CPLD
+AP roach_ppc_cpld 8 IREF=10
+AP roach_ppc_cpld 9 PINTYPE=IN
+AP roach_ppc_cpld 9 NAME=SYSERR
+AP roach_ppc_cpld 10 PINTYPE=IN
+AP roach_ppc_cpld 10 NAME=CLK_CPLD_33MHZ
+AP roach_ppc_cpld 11 PINTYPE=IN
+AP roach_ppc_cpld 11 NAME=CLK_CPLD_50MHZ
+AP roach_ppc_cpld 12 PINTYPE=IN
+AP roach_ppc_cpld 12 NAME=CLK_PERCLK
+AP roach_ppc_cpld 13 PINTYPE=IN
+AP roach_ppc_cpld 13 NAME=FRY_BY#
+AP roach_ppc_cpld 13 IREF=6
+AP roach_ppc_cpld 14 PINTYPE=IN
+AP roach_ppc_cpld 14 NAME=DEBUG_TRST#
+AP roach_ppc_cpld 15 PINTYPE=IN
+AP roach_ppc_cpld 15 NAME=RESET_POR#
+AP roach_ppc_cpld 16 PINTYPE=BI
+AP roach_ppc_cpld 16 NAME=SPARE_1
+AP roach_ppc_cpld 16 IREF=6
+AP roach_ppc_cpld 17 PINTYPE=BI
+AP roach_ppc_cpld 17 NAME=SPARE_0
+AP roach_ppc_cpld 17 IREF=6
+AP roach_ppc_cpld 18 PINTYPE=BI
+AP roach_ppc_cpld 18 NAME=SPARE_7
+AP roach_ppc_cpld 18 IREF=6
+AP roach_ppc_cpld 19 PINTYPE=BI
+AP roach_ppc_cpld 19 NAME=SPARE_6
+AP roach_ppc_cpld 19 IREF=6
+AP roach_ppc_cpld 20 PINTYPE=BI
+AP roach_ppc_cpld 20 NAME=SPARE_5
+AP roach_ppc_cpld 20 IREF=6
+AP roach_ppc_cpld 21 PINTYPE=BI
+AP roach_ppc_cpld 21 NAME=SPARE_4
+AP roach_ppc_cpld 21 IREF=6
+AP roach_ppc_cpld 22 PINTYPE=BI
+AP roach_ppc_cpld 22 NAME=SPARE_3
+AP roach_ppc_cpld 22 IREF=6
+AP roach_ppc_cpld 23 PINTYPE=BI
+AP roach_ppc_cpld 23 NAME=SPARE_2
+AP roach_ppc_cpld 23 IREF=6
+AP roach_ppc_cpld 24 PINTYPE=OUT
+AP roach_ppc_cpld 24 NAME=BOOT_CFG0
+AP roach_ppc_cpld 24 IREF=6
+AP roach_ppc_cpld 25 PINTYPE=OUT
+AP roach_ppc_cpld 25 NAME=BOOT_CFG1
+AP roach_ppc_cpld 25 IREF=6
+AP roach_ppc_cpld 26 PINTYPE=OUT
+AP roach_ppc_cpld 26 NAME=BOOT_CFG2
+AP roach_ppc_cpld 26 IREF=6
+AP roach_ppc_cpld 27 PINTYPE=OUT
+AP roach_ppc_cpld 27 NAME=FWP#
+AP roach_ppc_cpld 27 IREF=6
+AP roach_ppc_cpld 28 PINTYPE=OUT
+AP roach_ppc_cpld 28 NAME=EE1_WP
+AP roach_ppc_cpld 28 IREF=6
+AP roach_ppc_cpld 29 PINTYPE=OUT
+AP roach_ppc_cpld 29 NAME=EE2_BOOT_WP
+AP roach_ppc_cpld 29 IREF=6
+AP roach_ppc_cpld 30 PINTYPE=OUT
+AP roach_ppc_cpld 30 NAME=STTM_AS
+AP roach_ppc_cpld 30 IREF=6
+AP roach_ppc_cpld 31 PINTYPE=OUT
+AP roach_ppc_cpld 31 NAME=USB2_RESET
+AP roach_ppc_cpld 31 IREF=10
+AP roach_ppc_cpld 32 PINTYPE=OUT
+AP roach_ppc_cpld 32 NAME=NF_WP#
+AP roach_ppc_cpld 32 IREF=6
+AP roach_ppc_cpld 33 PINTYPE=OUT
+AP roach_ppc_cpld 33 NAME=USB_SELECT#
+AP roach_ppc_cpld 33 IREF=10
+AP roach_ppc_cpld 34 PINTYPE=OUT
+AP roach_ppc_cpld 34 NAME=EBC_SELECT#
+AP roach_ppc_cpld 34 IREF=6
+AP roach_ppc_cpld 35 PINTYPE=OUT
+AP roach_ppc_cpld 35 NAME=RESET_CPLD#
+AP roach_ppc_cpld 35 IREF=6
+AP roach_ppc_cpld 36 PINTYPE=OUT
+AP roach_ppc_cpld 36 NAME=SEL_SYSCLK
+AP roach_ppc_cpld 37 PINTYPE=OUT
+AP roach_ppc_cpld 37 NAME=CLK_SEL_M66EN
+AP roach_ppc_cpld 38 PINTYPE=OUT
+AP roach_ppc_cpld 38 NAME=CLK_TMRCLK
+AP roach_ppc_cpld 39 PINTYPE=OUT
+AP roach_ppc_cpld 39 NAME=GETH0_COMA
+AP roach_ppc_cpld 39 IREF=7
+AP roach_ppc_cpld 40 PINTYPE=OUT
+AP roach_ppc_cpld 40 NAME=GETH1_COMA
+AP roach_ppc_cpld 40 IREF=8
+AP roach_ppc_cpld 41 PINTYPE=OUT
+AP roach_ppc_cpld 41 NAME=GETH0_RST#
+AP roach_ppc_cpld 41 IREF=7
+AP roach_ppc_cpld 42 PINTYPE=OUT
+AP roach_ppc_cpld 42 NAME=GETH1_RST#
+AP roach_ppc_cpld 42 IREF=8
+AP roach_ppc_cpld 43 PINTYPE=OUT
+AP roach_ppc_cpld 43 NAME=CPU_TRST#
+AP roach_ppc_cpld 44 PINTYPE=OUT
+AP roach_ppc_cpld 44 NAME=RESET_PB_POR#
+AP roach_ppc_cpld 45 PINTYPE=BI
+AP roach_ppc_cpld 45 NAME=PDATA[0..7]
+AP roach_ppc_cpld 46 PINTYPE=IN
+AP roach_ppc_cpld 46 NAME=PADD[27..31]
+AP roach_ppc_cpld 47 PINTYPE=IN
+AP roach_ppc_cpld 47 NAME=M66EN
+|Q roach_transceivers0_1 1
+AS roach_transceivers0_1 INOV_VER_REC=7:26_8-31-07
+|Q roach_diff_gpio 1
+AS roach_diff_gpio SHEETNO=XXX
+AS roach_diff_gpio INOV_VER_REC=10:12_9-3-07
 AN PDATA[0:7] VLBUSISONSHEET=1
 AN PADD[27:31] VLBUSISONSHEET=1
-W roach_ppc_usb $1I42
-I $1I42 roach_ppc_usb CLK_USB2.0_48MHZ USB2_VCC_PI 
 W roach_adc_0 $1I4
 I $1I4 roach_adc_0 SHEETNO=XXX`LABEL=ROACH_ADC_0`
 W roach_adc_1 $1I5
 I $1I5 roach_adc_1 SHEETNO=XXX`LABEL=ROACH_ADC_1`
 W roach_ddr2_dimm $1I6
 I $1I6 roach_ddr2_dimm SHEETNO=XXX`LABEL=ROACH_DDR2_DIMM`
-W roach_diff_gpio $1I7
-I $1I7 roach_diff_gpio LABEL=ROACH_DIFF_IO`SHEETNO=XXX`
-W roach_transceivers0_1 $1I2
-I $1I2 roach_transceivers0_1 SHEETNO=XXX`LABEL=ROACH_TRANSCEIVERS0_1`
 W roach_transceivers2_3 $1I3
 I $1I3 roach_transceivers2_3 SHEETNO=XXX`LABEL=ROACH_TRANSCEIVERS2_3`
 W roach_transceivers_psu $1I21
 I $1I21 roach_transceivers_psu LABEL=ROACH_TRANSCEIVERS_PSU`
 W roach_qdr2p_by0_1 $1I9
 I $1I9 roach_qdr2p_by0_1 QDR2_BY0_1_SYS_RST_N QDR2_BY0_1_TDO QDR2_TMS QDR2_TDI QDR2_TCK LABEL=ROACH_QDR2P_BY0_1`
-W roach_qdr2p_by2_3 $1I15
-I $1I15 roach_qdr2p_by2_3 QDR2_BY2_3_SYS_RST_N QDR2_BY2_3_TDO QDR2_TCK QDR2_TMS QDR2_BY0_1_TDO LABEL=ROACH_QDR2P_BY2_3`
 W roach_ppc_ddr2 $1I41
 I $1I41 roach_ppc_ddr2 LABEL=ROACH_PPC_DDR2`
 W roach_ppc_eth1 $1I23
 I $1I23 roach_ppc_eth1 GMCMDCLK GMCMDIO GETH0_RST# GETH0_INT# CLK_GETH0_25MHZ LABEL=ROACH_PPC_ETH1`
 W roach_ppc_eth2 $1I35
 I $1I35 roach_ppc_eth2 CLK_GETH1_25MHZ GMCMDCLK GETH1_INT# GETH1_RST# GMCMDIO LABEL=ROACH_PPC_ETH2`
-W roach_ppc_cpld $1I45
-I $1I45 roach_ppc_cpld PWR_GOOD PCS_2 POE# PR_W# PWBE_0# USB2_VCC_PE USB2_VCC_PI CLK_USB2_CPLD SYSERR CLK_CPLD_33MHZ CLK_CPLD_50MHZ CLK_PERCLK FRY_BY# DEBUG_TRST# RESET_POR# SPARE_1 SPARE_0 SPARE_7 SPARE_6 SPARE_5 SPARE_4 SPARE_3 SPARE_2 BOOT_CFG0 BOOT_CFG1 BOOT_CFG2 FWP# EE1_WP EE2_BOOT_WP STTM_AS USB2_RESET NF_WP# USB_SELECT# EBC_SELECT# RESET_CPLD# SEL_SYSCLK CLK_SEL_M66EN CLK_TMRCLK GETH1_RST# GETH0_RST# GETH0_COMA GETH1_COMA CPU_TRST# RESET_PB_POR# PDATA[0:7] PADD[27:31] M66EN LABEL=ROACH_PPC_CPLD`
 W roach_ppc_nvm_serial $1I93
 I $1I93 roach_ppc_nvm_serial CLK_PERCLK FRY_BY# RESET_POR# CLK_UART_11.0592MHZ NF_WP# M66EN BOOT_CFG2 BOOT_CFG0 FWP# EE1_WP STTM_ALERT STTM_AS EE2_BOOT_WP BOOT_CFG1 RESET_CPLD# LABEL=ROACH_PPC_NVM_SERIAL`
 W roach_ppc_pci $1I109
@@ -401,4 +387,16 @@ W roach_ppc_power_2 $1I116
 I $1I116 roach_ppc_power_2 PWR_GOOD LABEL=ROACH_PPC_POWER_2`
 W roach_ppc_tst_clk_io $1I118
 I $1I118 roach_ppc_tst_clk_io SYSERR DEBUG_TRST# CLK_UART_11.0592MHZ CLK_CPLD_33MHZ CLK_GETH1_25MHZ CLK_PCI2_66/33MHZ CLK_PCI3_66/33MHZ CLK_GETH0_25MHZ CLK_USB2.0_48MHZ CLK_CPLD_50MHZ CLK_USB2.0_12MHZ CLK_PCI1_66/33MHZ RESET_POR# GPIO45 GPIO46 GPIO47 GPIO48 GPIO44 GETH1_INT# STTM_ALERT PCI_INTA# CPU_TRST# SEL_SYSCLK GETH0_INT# LABEL=ROACH_PPC_TST_CLK_IO`
+W roach_ppc_usb $1I42
+I $1I42 roach_ppc_usb CLK_USB2.0_48MHZ USB2_VCC_PI LABEL=ROACH_PPC_USB`
+W roach_qdr2p_by2_3 $1I15
+I $1I15 roach_qdr2p_by2_3 QDR2_BY2_3_SYS_RST_N QDR2_BY2_3_TDO QDR2_TCK QDR2_TMS QDR2_BY0_1_TDO LABEL=ROACH_QDR2P_BY2_3`
+W roach_gpio_misc $1I144
+I $1I144 roach_gpio_misc LABEL=ROACH_GPIO_MISC`
+W roach_ppc_cpld $1I45
+I $1I45 roach_ppc_cpld PWR_GOOD PCS_2 POE# PR_W# PWBE_0# USB2_VCC_PE USB2_VCC_PI CLK_USB2_CPLD SYSERR CLK_CPLD_33MHZ CLK_CPLD_50MHZ CLK_PERCLK FRY_BY# DEBUG_TRST# RESET_POR# SPARE_1 SPARE_0 SPARE_7 SPARE_6 SPARE_5 SPARE_4 SPARE_3 SPARE_2 BOOT_CFG0 BOOT_CFG1 BOOT_CFG2 FWP# EE1_WP EE2_BOOT_WP STTM_AS USB2_RESET NF_WP# USB_SELECT# EBC_SELECT# RESET_CPLD# SEL_SYSCLK CLK_SEL_M66EN CLK_TMRCLK GETH1_RST# GETH0_RST# GETH0_COMA GETH1_COMA CPU_TRST# RESET_PB_POR# PDATA[0:7] PADD[27:31] M66EN LABEL=ROACH_PPC_CPLD`
+W roach_transceivers0_1 $1I2
+I $1I2 roach_transceivers0_1 SHEETNO=XXX`LABEL=ROACH_TRANSCEIVERS0_1`
+W roach_diff_gpio $1I7
+I $1I7 roach_diff_gpio LABEL=ROACH_DIFF_IO`
 EW
