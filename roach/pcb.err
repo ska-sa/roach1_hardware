@@ -1,6 +1,9 @@
-pcb: Note 5996: Using Config File D:\ROACH\elec\roach\roach_pcb.cfg
+pcb: Note 5996: Using Config File D:\ROACH\elec\pads2007_oats.cfg
+pcb: Note 6045: roach_top com ROACH_PPC_POWER_1\$1I251: Repacking (attribute conflict)
+pcb: Note 6085: roach_top pkg Q3: 1 empty slot(s), device XSTR_PWR_PNFET_PPKSO8_SI7540DP
 pcb: Warning 7206: roach_top pkg U12: Hetero Symbol Missing from Hetero Package on Device '5VSX95T' 
 pcb: Note 6085: roach_top pkg D1: 1 empty slot(s), device DIODE_SIG_SOT23_150MA_BAV70
+pcb: Note 6085: roach_top pkg Q2: 1 empty slot(s), device XSTR_PWR_PNFET_PPKSO8_SI7540DP
 pcb: Warning 6083: roach_top pin ROACH_PPC_NVM_SERIAL\$1I634.PER_WBE1: Single pin net: ROACH_PPC_NVM_SERIAL\PER_WBE1
 pcb: Warning 6083: roach_top pin ROACH_PPC_NVM_SERIAL\$1I634.PER_WBE0: Single pin net: ROACH_PPC_NVM_SERIAL\PER_WBE0
 pcb: Warning 6083: roach_top pin ROACH_PPC_NVM_SERIAL\$1I634.PER_SP_A9: Single pin net: ROACH_PPC_NVM_SERIAL\PER_SP_A9
@@ -189,117 +192,50 @@ pcb: Warning 6083: roach_top pin ROACH_PPC_TST_CLK_IO\$1I187.2: Single pin net: 
 pcb: Warning 6083: roach_top pin ROACH_PPC_CPLD\$1I150.B1_IO25: Single pin net: CLK_TMRCLK
 pcb: Warning 6083: roach_top pin ROACH_PPC_CPLD\$1I150.B2_IO_35: Single pin net: CLK_SEL_M66EN
 pcb: Warning 6083: roach_top pin ROACH_PPC_TST_CLK_IO\$1I171.2: Single pin net: CLK_PCI3_66/33MHZ
-pcb: Note 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA16: Pin not connected
-pcb: Note 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA17: Pin not connected
-pcb: Note 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA18: Pin not connected
-pcb: Note 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA19: Pin not connected
-pcb: Note 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA20: Pin not connected
-pcb: Note 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA21: Pin not connected
-pcb: Note 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA22: Pin not connected
-pcb: Note 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA23: Pin not connected
-pcb: Note 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA24: Pin not connected
-pcb: Note 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA25: Pin not connected
-pcb: Note 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA26: Pin not connected
-pcb: Note 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA27: Pin not connected
-pcb: Note 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA28: Pin not connected
-pcb: Note 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA29: Pin not connected
-pcb: Note 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA30: Pin not connected
-pcb: Note 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA31: Pin not connected
-pcb: Note 6094: roach_top pin ROACH_DIFF_IO\$1I223.MNT1: Pin not connected
-pcb: Note 6094: roach_top pin ROACH_DIFF_IO\$1I223.MNT2: Pin not connected
-pcb: Note 6094: roach_top pin ROACH_PPC_ETH2\$1I444.CRS/RGMII_SEL0: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA16: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA17: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA18: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA19: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA20: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA21: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA22: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA23: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA24: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA25: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA26: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA27: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA28: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA29: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA30: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_NVM_SERIAL\$1I374.PERDATA31: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_DIFF_IO\$1I223.MNT1: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_DIFF_IO\$1I223.MNT2: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_ETH2\$1I444.CRS/RGMII_SEL0: Pin not connected
 pcb: Warning 7203: roach_top pin ROACH_PPC_ETH2\$1I444.RXD4: NC attribute attached to connected pin
 pcb: Warning 7203: roach_top pin ROACH_PPC_ETH2\$1I444.RXD5: NC attribute attached to connected pin
 pcb: Warning 7203: roach_top pin ROACH_PPC_ETH2\$1I444.RXD6: NC attribute attached to connected pin
 pcb: Warning 7203: roach_top pin ROACH_PPC_ETH2\$1I444.RXD7: NC attribute attached to connected pin
-pcb: Note 6094: roach_top pin ROACH_PPC_ETH2\$1I444.RX_ER/RXDV_ER: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_ETH2\$1I444.RX_ER/RXDV_ER: Pin not connected
 pcb: Warning 7203: roach_top pin ROACH_PPC_ETH2\$1I444.TCK: NC attribute attached to connected pin
 pcb: Warning 7203: roach_top pin ROACH_PPC_ETH2\$1I444.TDI: NC attribute attached to connected pin
 pcb: Warning 7203: roach_top pin ROACH_PPC_ETH2\$1I444.TDO: NC attribute attached to connected pin
 pcb: Warning 7203: roach_top pin ROACH_PPC_ETH2\$1I444.TMS: NC attribute attached to connected pin
-pcb: Note 6094: roach_top pin ROACH_PPC_ETH2\$1I444.TX_CLK/RGMII_SEL1: Pin not connected
-pcb: Note 6094: roach_top pin ROACH_PPC_ETH1\$1I146.CRS/RGMII_SEL0: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_ETH2\$1I444.TX_CLK/RGMII_SEL1: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_ETH1\$1I146.CRS/RGMII_SEL0: Pin not connected
 pcb: Warning 7203: roach_top pin ROACH_PPC_ETH1\$1I146.RXD4: NC attribute attached to connected pin
 pcb: Warning 7203: roach_top pin ROACH_PPC_ETH1\$1I146.RXD5: NC attribute attached to connected pin
 pcb: Warning 7203: roach_top pin ROACH_PPC_ETH1\$1I146.RXD6: NC attribute attached to connected pin
 pcb: Warning 7203: roach_top pin ROACH_PPC_ETH1\$1I146.RXD7: NC attribute attached to connected pin
-pcb: Note 6094: roach_top pin ROACH_PPC_ETH1\$1I146.RX_ER/RXDV_ER: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_ETH1\$1I146.RX_ER/RXDV_ER: Pin not connected
 pcb: Warning 7203: roach_top pin ROACH_PPC_ETH1\$1I146.TCK: NC attribute attached to connected pin
 pcb: Warning 7203: roach_top pin ROACH_PPC_ETH1\$1I146.TDI: NC attribute attached to connected pin
 pcb: Warning 7203: roach_top pin ROACH_PPC_ETH1\$1I146.TDO: NC attribute attached to connected pin
 pcb: Warning 7203: roach_top pin ROACH_PPC_ETH1\$1I146.TMS: NC attribute attached to connected pin
-pcb: Note 6094: roach_top pin ROACH_PPC_ETH1\$1I146.TX_CLK/RGMII_SEL1: Pin not connected
-pcb: Note 6094: roach_top pin ROACH_PPC_TST_CLK_IO\$1I196.NC: Pin not connected
-pcb: Note 6094: roach_top pin ROACH_PPC_POWER_1\$1I248.2: Pin not connected
-pcb: Note 6094: roach_top pin ROACH_PPC_POWER_1\$1I248.5: Pin not connected
-pcb: Note 5854: Oat (REFDES=U10) was added to instance ($1I184) on schematic ().
-pcb: Note 5854: Oat (REFDES=U11) was added to instance ($1I223) on schematic ().
-pcb: Note 5854: Oat (REFDES=U12) was added to instance ($1I32) on schematic ().
-pcb: Note 5854: Oat (REFDES=U14) was added to instance ($1I1222) on schematic ().
-pcb: Note 5854: Oat (REFDES=U14) was added to instance ($1I1571) on schematic ().
-pcb: Note 5854: Oat (REFDES=U14) was added to instance ($1I1710) on schematic ().
-pcb: Note 5854: Oat (REFDES=U13) was added to instance ($1I1851) on schematic ().
-pcb: Note 5854: Oat (REFDES=U12) was added to instance ($1I1964) on schematic ().
-pcb: Note 5854: Oat (REFDES=U12) was added to instance ($1I20) on schematic ().
-pcb: Note 5854: Oat (REFDES=U12) was added to instance ($1I37) on schematic ().
-pcb: Note 5854: Oat (REFDES=U12) was added to instance ($1I54) on schematic ().
-pcb: Note 5854: Oat (REFDES=U12) was added to instance ($1I150) on schematic ().
-pcb: Note 5854: Oat (REFDES=U17) was added to instance ($1I686) on schematic ().
-pcb: Note 5854: Oat (REFDES=U18) was added to instance ($1I691) on schematic ().
-pcb: Note 5854: Oat (REFDES=U19) was added to instance ($1I692) on schematic ().
-pcb: Note 5854: Oat (REFDES=U15) was added to instance ($1I693) on schematic ().
-pcb: Note 5854: Oat (REFDES=U20) was added to instance ($1I839) on schematic ().
-pcb: Note 5854: Oat (REFDES=U18) was added to instance ($1I841) on schematic ().
-pcb: Note 5854: Oat (REFDES=U17) was added to instance ($1I845) on schematic ().
-pcb: Note 5854: Oat (REFDES=U16) was added to instance ($1I869) on schematic ().
-pcb: Note 5854: Oat (REFDES=U21) was added to instance ($1I628) on schematic ().
-pcb: Note 5854: Oat (REFDES=U22) was added to instance ($1I684) on schematic ().
-pcb: Note 5854: Oat (REFDES=U23) was added to instance ($1I706) on schematic ().
-pcb: Note 5854: Oat (REFDES=U24) was added to instance ($1I146) on schematic ().
-pcb: Note 5854: Oat (REFDES=U12) was added to instance ($1I71) on schematic ().
-pcb: Note 5854: Oat (REFDES=U12) was added to instance ($1I88) on schematic ().
-pcb: Note 5854: Oat (REFDES=U12) was added to instance ($1I105) on schematic ().
-pcb: Note 5854: Oat (REFDES=U12) was added to instance ($1I122) on schematic ().
-pcb: Note 5854: Oat (REFDES=U25) was added to instance ($1I578) on schematic ().
-pcb: Note 5854: Oat (REFDES=U27) was added to instance ($1I602) on schematic ().
-pcb: Note 5854: Oat (REFDES=U28) was added to instance ($1I606) on schematic ().
-pcb: Note 5854: Oat (REFDES=U29) was added to instance ($1I608) on schematic ().
-pcb: Note 5854: Oat (REFDES=U30) was added to instance ($1I646) on schematic ().
-pcb: Note 5854: Oat (REFDES=U28) was added to instance ($1I647) on schematic ().
-pcb: Note 5854: Oat (REFDES=U27) was added to instance ($1I651) on schematic ().
-pcb: Note 5854: Oat (REFDES=U26) was added to instance ($1I657) on schematic ().
-pcb: Note 5854: Oat (REFDES=U31) was added to instance ($1I444) on schematic ().
-pcb: Note 5854: Oat (REFDES=U12) was added to instance ($1I634) on schematic ().
-pcb: Note 5854: Oat (REFDES=U33) was added to instance ($1I433) on schematic ().
-pcb: Note 5854: Oat (REFDES=U32) was added to instance ($1I435) on schematic ().
-pcb: Note 5854: Oat (REFDES=U34) was added to instance ($1I526) on schematic ().
-pcb: Note 5854: Oat (REFDES=U35) was added to instance ($1I542) on schematic ().
-pcb: Note 5854: Oat (REFDES=U36) was added to instance ($1I579) on schematic ().
-pcb: Note 5854: Oat (REFDES=U37) was added to instance ($1I112) on schematic ().
-pcb: Note 5854: Oat (REFDES=U38) was added to instance ($1I150) on schematic ().
-pcb: Note 5854: Oat (REFDES=U12) was added to instance ($1I634) on schematic ().
-pcb: Note 5854: Oat (REFDES=U12) was added to instance ($1I2085) on schematic ().
-pcb: Note 5854: Oat (REFDES=U12) was added to instance ($1I2) on schematic ().
-pcb: Note 5854: Oat (REFDES=U40) was added to instance ($1I1222) on schematic ().
-pcb: Note 5854: Oat (REFDES=U12) was added to instance ($1I1401) on schematic ().
-pcb: Note 5854: Oat (REFDES=U40) was added to instance ($1I1571) on schematic ().
-pcb: Note 5854: Oat (REFDES=U40) was added to instance ($1I1710) on schematic ().
-pcb: Note 5854: Oat (REFDES=U39) was added to instance ($1I1851) on schematic ().
-pcb: Note 5854: Oat (REFDES=U41) was added to instance ($1I303) on schematic ().
-pcb: Note 5854: Oat (REFDES=U49) was added to instance ($1I305) on schematic ().
-pcb: Note 5854: Oat (REFDES=U44) was added to instance ($1I315) on schematic ().
-pcb: Note 5854: Oat (REFDES=U50) was added to instance ($1I324) on schematic ().
-pcb: Note 5854: Oat (REFDES=U47) was added to instance ($1I327) on schematic ().
-pcb: Note 5854: Oat (REFDES=U51) was added to instance ($1I328) on schematic ().
-pcb: Note 5854: Oat (REFDES=U42) was added to instance ($1I335) on schematic ().
-pcb: Note 5854: Oat (REFDES=U52) was added to instance ($1I352) on schematic ().
-pcb: Note 5854: Oat (REFDES=U53) was added to instance ($1I353) on schematic ().
-pcb: Note 5854: Oat (REFDES=U46) was added to instance ($1I365) on schematic ().
-pcb: Note 5854: Oat (REFDES=U43) was added to instance ($1I366) on schematic ().
-pcb: Note 5854: Oat (REFDES=U54) was added to instance ($1I369) on schematic ().
-pcb: Note 5854: Oat (REFDES=U48) was added to instance ($1I370) on schematic ().
-pcb: Note 5854: Oat (REFDES=U45) was added to instance ($1I371) on schematic ().
-pcb: Note 5854: Oat (REFDES=U12) was added to instance ($1I634) on schematic ().
+pcb: Warning 6094: roach_top pin ROACH_PPC_ETH1\$1I146.TX_CLK/RGMII_SEL1: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_TST_CLK_IO\$1I196.NC: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_POWER_1\$1I248.2: Pin not connected
+pcb: Warning 6094: roach_top pin ROACH_PPC_POWER_1\$1I248.5: Pin not connected
+pcb: Note 5854: Oat (REFDES=Q3) was added to instance ($1I251) on schematic ().
 pcb: Note 5626: Summary of pcb.err
-Status 0, Notes 97, Warnings 205
+Status 0, Notes 6, Warnings 232
 Errors 0, Failures 0, Fatals 0, Internals 0
