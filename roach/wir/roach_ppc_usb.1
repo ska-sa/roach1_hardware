@@ -131,6 +131,41 @@ AP res_15k_0402_5_ 1 #=1
 AP res_15k_0402_5_ 1 PINTYPE=OUT
 AP res_15k_0402_5_ 2 #=2
 AP res_15k_0402_5_ 2 PINTYPE=OUT
+AS in IN
+AS in PINORDER=IN
+AP in 1 PINTYPE=IN
+|Q con_usbb_1x4_f_ra_th 1
+AS con_usbb_1x4_f_ra_th REFDES=P?
+AS con_usbb_1x4_f_ra_th DEVICE=CON_USBB_1X4_F_RA_TH
+AS con_usbb_1x4_f_ra_th PARTS=1
+AS con_usbb_1x4_f_ra_th PKG_TYPE=787780_TH
+AS con_usbb_1x4_f_ra_th LEVEL=STD
+AS con_usbb_1x4_f_ra_th EPI#=P10200000000047
+AS con_usbb_1x4_f_ra_th SHAPE=1x4 USBB
+AS con_usbb_1x4_f_ra_th MFGI_2#=NA
+AS con_usbb_1x4_f_ra_th MFGI_1#=AMP: 292304-1
+AS con_usbb_1x4_f_ra_th MFG_1#=AMP: 292304-1
+AS con_usbb_1x4_f_ra_th MFG_2#=ADA: USB-B-S-RA-RC
+AS con_usbb_1x4_f_ra_th BOARD_OPTION
+AS con_usbb_1x4_f_ra_th EP#=P10200000000047
+AS con_usbb_1x4_f_ra_th GRN=LHR
+AS con_usbb_1x4_f_ra_th VALUE
+AS con_usbb_1x4_f_ra_th PINORDER=1 2 3 4 5 6
+AP con_usbb_1x4_f_ra_th 1 #=1
+AP con_usbb_1x4_f_ra_th 1 PINTYPE=OUT
+AP con_usbb_1x4_f_ra_th 2 #=2
+AP con_usbb_1x4_f_ra_th 2 PINTYPE=OUT
+AP con_usbb_1x4_f_ra_th 3 #=3
+AP con_usbb_1x4_f_ra_th 3 PINTYPE=OUT
+AP con_usbb_1x4_f_ra_th 4 #=4
+AP con_usbb_1x4_f_ra_th 4 PINTYPE=OUT
+AP con_usbb_1x4_f_ra_th 5 #=5
+AP con_usbb_1x4_f_ra_th 5 PINTYPE=OUT
+AP con_usbb_1x4_f_ra_th 6 #=6
+AP con_usbb_1x4_f_ra_th 6 PINTYPE=OUT
+AS out OUT
+AS out PINORDER=OUT
+AP out 1 PINTYPE=OUT
 |Q ic_cpu_te_pbga680_440epx_grx_g 1
 AS ic_cpu_te_pbga680_440epx_grx_g REFDES=U?
 AS ic_cpu_te_pbga680_440epx_grx_g DEVICE=IC_CPU_TE-PBGA680_440EPX-GRX
@@ -179,41 +214,6 @@ AP ic_cpu_te_pbga680_440epx_grx_g 17 #=N2
 AP ic_cpu_te_pbga680_440epx_grx_g 17 PINTYPE=OUT
 AP ic_cpu_te_pbga680_440epx_grx_g 18 #=N3
 AP ic_cpu_te_pbga680_440epx_grx_g 18 PINTYPE=OUT
-AS in IN
-AS in PINORDER=IN
-AP in 1 PINTYPE=IN
-|Q con_usbb_1x4_f_ra_th 1
-AS con_usbb_1x4_f_ra_th REFDES=P?
-AS con_usbb_1x4_f_ra_th DEVICE=CON_USBB_1X4_F_RA_TH
-AS con_usbb_1x4_f_ra_th PARTS=1
-AS con_usbb_1x4_f_ra_th PKG_TYPE=787780_TH
-AS con_usbb_1x4_f_ra_th LEVEL=STD
-AS con_usbb_1x4_f_ra_th EPI#=P10200000000047
-AS con_usbb_1x4_f_ra_th SHAPE=1x4 USBB
-AS con_usbb_1x4_f_ra_th MFGI_2#=NA
-AS con_usbb_1x4_f_ra_th MFGI_1#=AMP: 292304-1
-AS con_usbb_1x4_f_ra_th MFG_1#=AMP: 292304-1
-AS con_usbb_1x4_f_ra_th MFG_2#=ADA: USB-B-S-RA-RC
-AS con_usbb_1x4_f_ra_th BOARD_OPTION
-AS con_usbb_1x4_f_ra_th EP#=P10200000000047
-AS con_usbb_1x4_f_ra_th GRN=LHR
-AS con_usbb_1x4_f_ra_th VALUE
-AS con_usbb_1x4_f_ra_th PINORDER=1 2 3 4 5 6
-AP con_usbb_1x4_f_ra_th 1 #=1
-AP con_usbb_1x4_f_ra_th 1 PINTYPE=OUT
-AP con_usbb_1x4_f_ra_th 2 #=2
-AP con_usbb_1x4_f_ra_th 2 PINTYPE=OUT
-AP con_usbb_1x4_f_ra_th 3 #=3
-AP con_usbb_1x4_f_ra_th 3 PINTYPE=OUT
-AP con_usbb_1x4_f_ra_th 4 #=4
-AP con_usbb_1x4_f_ra_th 4 PINTYPE=OUT
-AP con_usbb_1x4_f_ra_th 5 #=5
-AP con_usbb_1x4_f_ra_th 5 PINTYPE=OUT
-AP con_usbb_1x4_f_ra_th 6 #=6
-AP con_usbb_1x4_f_ra_th 6 PINTYPE=OUT
-AS out OUT
-AS out PINORDER=OUT
-AP out 1 PINTYPE=OUT
 AN $1N383 NC
 AN $1N382 NC
 AN $1N371 NC
@@ -265,8 +265,21 @@ M var_5r5v_0603_30a $1I270
 I $1I270 var_5r5v_0603_30a N19077656 CHASSIS_GND REFDES=VR4`NEED_TO_MIRROR/ROTATE_PIN_DISPLAY_PROPERTIES`PKG_TYPE=VR_0603`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=5.5V 20A`SHAPE`
 API $1I270 var_5r5v_0603_30a 1 #=1
 API $1I270 var_5r5v_0603_30a 2 #=2
+P in CLK_USB2.0_48MHZ
+I CLK_USB2.0_48MHZ in CLK_USB2.0_48MHZ SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`NAME=CLK_USB2.0_48MHZ`
+|R 7:39_8-30-07
+M con_usbb_1x4_f_ra_th $1I253
+I $1I253 con_usbb_1x4_f_ra_th N19077656 USB2_XCVR_D- USB2_XCVR_D+ GND CHASSIS_GND CHASSIS_GND REFDES=P6`PKG_TYPE=787780_TH`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=F TH`SHAPE`
+API $1I253 con_usbb_1x4_f_ra_th 1 #=1
+API $1I253 con_usbb_1x4_f_ra_th 2 #=2
+API $1I253 con_usbb_1x4_f_ra_th 3 #=3
+API $1I253 con_usbb_1x4_f_ra_th 4 #=4
+API $1I253 con_usbb_1x4_f_ra_th 5 #=5
+API $1I253 con_usbb_1x4_f_ra_th 6 #=6
+P out USB2_VCC_PI
+I USB2_VCC_PI out USB2_VCC_PI SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`NAME=USB2_VCC_PI`
 M ic_cpu_te_pbga680_440epx_grx_g $1I228
-I $1I228 ic_cpu_te_pbga680_440epx_grx_g $1N383 $1N375 $1N374 $1N373 $1N372 N29340527 $1N380 $1N378 $1N379 $1N371 $1N376 $1N381 $1N382 USB2_XCVR_D+ USB2_XCVR_D- $1N377 GND N28336898 REFDES=U1`SLOT=7`PKG_TYPE=BGA680C100P34X34_3500X3500X265`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=440EPX/GRX`SHAPE`
+I $1I228 ic_cpu_te_pbga680_440epx_grx_g $1N383 $1N375 $1N374 $1N373 $1N372 N29340527 $1N380 $1N378 $1N379 $1N371 $1N376 $1N381 $1N382 USB2_XCVR_D+ USB2_XCVR_D- $1N377 GND N28336898 P/D_NUM=PPC440EPX-NTA533T`NOTES=245DEGC 30SEC, MAX PEAK PROCESS`REFDES=U1`PKG_TYPE=BGA680C100P34X34_3500X3500X265`VALUE=440EPX`
 API $1I228 ic_cpu_te_pbga680_440epx_grx_g 1 #=A5
 API $1I228 ic_cpu_te_pbga680_440epx_grx_g 2 #=R2
 API $1I228 ic_cpu_te_pbga680_440epx_grx_g 3 #=P1
@@ -285,17 +298,4 @@ API $1I228 ic_cpu_te_pbga680_440epx_grx_g 15 #=J1
 API $1I228 ic_cpu_te_pbga680_440epx_grx_g 16 #=M3
 API $1I228 ic_cpu_te_pbga680_440epx_grx_g 17 #=N2
 API $1I228 ic_cpu_te_pbga680_440epx_grx_g 18 #=N3
-P in CLK_USB2.0_48MHZ
-I CLK_USB2.0_48MHZ in CLK_USB2.0_48MHZ SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`NAME=CLK_USB2.0_48MHZ`
-|R 7:39_8-30-07
-M con_usbb_1x4_f_ra_th $1I253
-I $1I253 con_usbb_1x4_f_ra_th N19077656 USB2_XCVR_D- USB2_XCVR_D+ GND CHASSIS_GND CHASSIS_GND REFDES=P6`PKG_TYPE=787780_TH`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=F TH`SHAPE`
-API $1I253 con_usbb_1x4_f_ra_th 1 #=1
-API $1I253 con_usbb_1x4_f_ra_th 2 #=2
-API $1I253 con_usbb_1x4_f_ra_th 3 #=3
-API $1I253 con_usbb_1x4_f_ra_th 4 #=4
-API $1I253 con_usbb_1x4_f_ra_th 5 #=5
-API $1I253 con_usbb_1x4_f_ra_th 6 #=6
-P out USB2_VCC_PI
-I USB2_VCC_PI out USB2_VCC_PI SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`NAME=USB2_VCC_PI`
 EW
