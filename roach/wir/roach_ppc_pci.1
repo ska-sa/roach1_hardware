@@ -180,27 +180,6 @@ AP fuse_100ma_1210_smt 1 #=1
 AP fuse_100ma_1210_smt 1 PINTYPE=OUT
 AP fuse_100ma_1210_smt 2 #=2
 AP fuse_100ma_1210_smt 2 PINTYPE=OUT
-|Q fuse_5a_smt_holder 1
-AS fuse_5a_smt_holder REFDES=FH?
-AS fuse_5a_smt_holder DEVICE=FUSE_5A_SMT_HOLDER
-AS fuse_5a_smt_holder PARTS=1
-AS fuse_5a_smt_holder PKG_TYPE=154_SERIES
-AS fuse_5a_smt_holder LEVEL=STD
-AS fuse_5a_smt_holder SHAPE=SMT 10x5mm
-AS fuse_5a_smt_holder EP#=P10400000000004
-AS fuse_5a_smt_holder GRN=LHR
-AS fuse_5a_smt_holder MFGI_2#=NA
-AS fuse_5a_smt_holder MFG_1#=LIF: 154005
-AS fuse_5a_smt_holder MFG_2#=NA
-AS fuse_5a_smt_holder BOARD_OPTION
-AS fuse_5a_smt_holder MFGI_1#=NA
-AS fuse_5a_smt_holder EPI#=NA
-AS fuse_5a_smt_holder VALUE
-AS fuse_5a_smt_holder PINORDER=1 2
-AP fuse_5a_smt_holder 1 #=1
-AP fuse_5a_smt_holder 1 PINTYPE=OUT
-AP fuse_5a_smt_holder 2 #=2
-AP fuse_5a_smt_holder 2 PINTYPE=OUT
 |Q fuse_8a_smt_holder 1
 AS fuse_8a_smt_holder REFDES=FH?
 AS fuse_8a_smt_holder DEVICE=FUSE_8A_SMT_HOLDER
@@ -616,6 +595,27 @@ AP ic_cpu_te_pbga680_440epx_grx_i 59 #=K31
 AP ic_cpu_te_pbga680_440epx_grx_i 59 PINTYPE=BI
 AP ic_cpu_te_pbga680_440epx_grx_i 60 #=K34
 AP ic_cpu_te_pbga680_440epx_grx_i 60 PINTYPE=BI
+|Q fuse_5a_smt_holder 1
+AS fuse_5a_smt_holder REFDES=FH?
+AS fuse_5a_smt_holder DEVICE=FUSE_5A_SMT_HOLDER
+AS fuse_5a_smt_holder PARTS=1
+AS fuse_5a_smt_holder PKG_TYPE=154_SERIES
+AS fuse_5a_smt_holder LEVEL=STD
+AS fuse_5a_smt_holder SHAPE=SMT 10x5mm
+AS fuse_5a_smt_holder EP#=P10400000000004
+AS fuse_5a_smt_holder GRN=LHR
+AS fuse_5a_smt_holder MFGI_2#=NA
+AS fuse_5a_smt_holder MFG_1#=LIF: 154005
+AS fuse_5a_smt_holder MFG_2#=NA
+AS fuse_5a_smt_holder BOARD_OPTION
+AS fuse_5a_smt_holder MFGI_1#=NA
+AS fuse_5a_smt_holder EPI#=NA
+AS fuse_5a_smt_holder VALUE
+AS fuse_5a_smt_holder PINORDER=1 2
+AP fuse_5a_smt_holder 1 #=1
+AP fuse_5a_smt_holder 1 PINTYPE=OUT
+AP fuse_5a_smt_holder 2 #=2
+AP fuse_5a_smt_holder 2 PINTYPE=OUT
 G 5V_VIN
 G -12V
 G 12V
@@ -740,7 +740,7 @@ I $1I360 cap_100nf_0402_16v_10__x7r 3V3_PCI1 GND REFDES=C73`BOARD_OPTION=BASE`PK
 API $1I360 cap_100nf_0402_16v_10__x7r 1 #=1
 API $1I360 cap_100nf_0402_16v_10__x7r 2 #=2
 M fuse_100ma_1210_smt $1I364
-I $1I364 fuse_100ma_1210_smt -12V -12V_PCI1 REFDES=F8`PKG_TYPE=FU_1210`COST=.71`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=100MA`SHAPE`
+I $1I364 fuse_100ma_1210_smt -12V -12V_PCI1 MFG_1#=RAY: MICROSMD010F`REFDES=F8`PKG_TYPE=FUSM3226X110N`COST=.71`BOARD_OPTION=BASE`VALUE=100MA`SHAPE`
 API $1I364 fuse_100ma_1210_smt 1 #=1
 API $1I364 fuse_100ma_1210_smt 2 #=2
 |N 2
@@ -849,10 +849,6 @@ M cap_100nf_0402_16v_10__x7r $1I402
 I $1I402 cap_100nf_0402_16v_10__x7r 5V_PCI1 GND REFDES=C79`BOARD_OPTION=BASE`PKG_TYPE=CAPC1005X55N`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
 API $1I402 cap_100nf_0402_16v_10__x7r 1 #=1
 API $1I402 cap_100nf_0402_16v_10__x7r 2 #=2
-M fuse_5a_smt_holder $1I403
-I $1I403 fuse_5a_smt_holder 5V_VIN 5V_PCI1 REFDES=FH4`PKG_TYPE=154_SERIES`BOARD_OPTION=BASE`COST=1.3`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=5A HOLDER`SHAPE`
-API $1I403 fuse_5a_smt_holder 1 #=1
-API $1I403 fuse_5a_smt_holder 2 #=2
 M cap_100nf_0402_16v_10__x7r $1I404
 I $1I404 cap_100nf_0402_16v_10__x7r 3V3_PCI1 GND REFDES=C69`BOARD_OPTION=BASE`PKG_TYPE=CAPC1005X55N`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=0.1UF`SHAPE`
 API $1I404 cap_100nf_0402_16v_10__x7r 1 #=1
@@ -863,7 +859,7 @@ I $1I405 res_4r99k_0402_1_ PCI_C/BE3# 3V3 REFDES=R160`BOARD_OPTION=BASE`PKG_TYPE
 API $1I405 res_4r99k_0402_1_ 1 #=1
 API $1I405 res_4r99k_0402_1_ 2 #=2
 M fuse_8a_smt_holder $1I382
-I $1I382 fuse_8a_smt_holder 3V3 3V3_PCI1 REFDES=FH6`BOARD_OPTION=BASE`PKG_TYPE=154_SERIES`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=8A HOLDER`SHAPE`
+I $1I382 fuse_8a_smt_holder 3V3 3V3_PCI1 GEOMETRY.HEIGHT=3.81`REFDES=FH6`BOARD_OPTION=BASE`PKG_TYPE=FUSM9750X381N`VALUE=8A HOLDER`SHAPE`
 API $1I382 fuse_8a_smt_holder 1 #=1
 API $1I382 fuse_8a_smt_holder 2 #=2
 M cap_22uf_1210_16v_10__x5r $1I325
@@ -1085,4 +1081,8 @@ API $1I361 ic_cpu_te_pbga680_440epx_grx_i 57 #=AA31
 API $1I361 ic_cpu_te_pbga680_440epx_grx_i 58 #=J34
 API $1I361 ic_cpu_te_pbga680_440epx_grx_i 59 #=K31
 API $1I361 ic_cpu_te_pbga680_440epx_grx_i 60 #=K34
+M fuse_5a_smt_holder $1I403
+I $1I403 fuse_5a_smt_holder 5V_VIN 5V_PCI1 GEOMETRY.HEIGHT=3.81`REFDES=FH4`PKG_TYPE=FUSM9750X381N`BOARD_OPTION=BASE`COST=1.3`VALUE=5A HOLDER`SHAPE`
+API $1I403 fuse_5a_smt_holder 1 #=1
+API $1I403 fuse_5a_smt_holder 2 #=2
 EW
