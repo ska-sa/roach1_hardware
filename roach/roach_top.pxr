@@ -5170,6 +5170,12 @@ Pin_Cross_Reference
 		(2    "GND")
 	)
 )
+("C535"
+	( 1    "ROACH_PPC_CPLD\$1I269"
+		(1    "3V3")
+		(2    "GND")
+	)
+)
 ("CP1"
 	( 1    "ROACH_QDR2P_BY2_3\$1I1738"
 		(1    "VDDQ_QDR2_BY2_3")
@@ -5840,12 +5846,6 @@ Pin_Cross_Reference
 		(6    "GND")
 		(7    "GND")
 		(8    "GND")
-	)
-)
-("C535"
-	( 1    "ROACH_PPC_CPLD\$1I269"
-		(1    "3V3")
-		(2    "GND")
 	)
 )
 ("C287"
@@ -11674,18 +11674,6 @@ Pin_Cross_Reference
 		(2    "GMCMDCLK")
 	)
 )
-("JP38"
-	( 1    "ROACH_PPC_ETH2\$1I352"
-		(1    "GND")
-		(2    "GMCMDCLK")
-	)
-)
-("JP39"
-	( 1    "ROACH_PPC_ETH2\$1I353"
-		(1    "GND")
-		(2    "GMCMDIO")
-	)
-)
 ("JP1"
 	( 1    "ROACH_QDR2P_BY2_3\$1I1784"
 		(1    "1V8")
@@ -11932,6 +11920,30 @@ Pin_Cross_Reference
 		(2    "GND")
 	)
 )
+("JP38"
+	( 1    "ROACH_PPC_ETH2\$1I352"
+		(1    "GND")
+		(2    "GMCMDCLK")
+	)
+)
+("JP39"
+	( 1    "ROACH_PPC_ETH2\$1I353"
+		(1    "GND")
+		(2    "GMCMDIO")
+	)
+)
+("D2"
+	( 1    "ROACH_TRANSCEIVERS0_1\$1I900"
+		(1    "ROACH_TRANSCEIVERS0_1\$1N799")
+		(2    "ROACH_TRANSCEIVERS0_1\FAULT")
+	)
+)
+("D3"
+	( 1    "ROACH_TRANSCEIVERS0_1\$1I901"
+		(1    "ROACH_TRANSCEIVERS0_1\$1N853")
+		(2    "ROACH_TRANSCEIVERS0_1\FAULT")
+	)
+)
 ("D4"
 	( 1    "ROACH_PPC_ETH1\$1I258"
 		(1    "ROACH_PPC_ETH1\$1N307")
@@ -11950,6 +11962,18 @@ Pin_Cross_Reference
 		(2    "ROACH_PPC_ETH1\$1N350")
 	)
 )
+("D7"
+	( 1    "ROACH_TRANSCEIVERS2_3\$1I625"
+		(1    "ROACH_TRANSCEIVERS2_3\$1N594")
+		(2    "ROACH_TRANSCEIVERS2_3\FAULT")
+	)
+)
+("D8"
+	( 1    "ROACH_TRANSCEIVERS2_3\$1I702"
+		(1    "ROACH_TRANSCEIVERS2_3\$1N675")
+		(2    "ROACH_TRANSCEIVERS2_3\FAULT")
+	)
+)
 ("D9"
 	( 1    "ROACH_PPC_ETH2\$1I287"
 		(1    "ROACH_PPC_ETH2\$1N307")
@@ -11966,30 +11990,6 @@ Pin_Cross_Reference
 	( 1    "ROACH_PPC_ETH2\$1I505"
 		(1    "ROACH_PPC_ETH2\$1N482")
 		(2    "ROACH_PPC_ETH2\$1N316")
-	)
-)
-("D7"
-	( 1    "ROACH_TRANSCEIVERS2_3\$1I625"
-		(1    "ROACH_TRANSCEIVERS2_3\$1N594")
-		(2    "ROACH_TRANSCEIVERS2_3\FAULT")
-	)
-)
-("D8"
-	( 1    "ROACH_TRANSCEIVERS2_3\$1I702"
-		(1    "ROACH_TRANSCEIVERS2_3\$1N675")
-		(2    "ROACH_TRANSCEIVERS2_3\FAULT")
-	)
-)
-("D2"
-	( 1    "ROACH_TRANSCEIVERS0_1\$1I900"
-		(1    "ROACH_TRANSCEIVERS0_1\$1N799")
-		(2    "ROACH_TRANSCEIVERS0_1\FAULT")
-	)
-)
-("D3"
-	( 1    "ROACH_TRANSCEIVERS0_1\$1I901"
-		(1    "ROACH_TRANSCEIVERS0_1\$1N853")
-		(2    "ROACH_TRANSCEIVERS0_1\FAULT")
 	)
 )
 ("U18"
@@ -13591,6 +13591,12 @@ Pin_Cross_Reference
 		(2    "ROACH_PPC_ETH1\GMC0TXD3")
 	)
 )
+("R124"
+	( 1    "ROACH_PPC_ETH1\$1I174"
+		(1    "ROACH_PPC_ETH1\$1N679")
+		(2    "GND")
+	)
+)
 ("R125"
 	( 1    "ROACH_PPC_ETH1\$1I175"
 		(1    "ROACH_PPC_ETH1\N27904001")
@@ -14071,6 +14077,12 @@ Pin_Cross_Reference
 		(2    "ROACH_PPC_ETH2\GMC1TXCLK")
 	)
 )
+("R220"
+	( 1    "ROACH_PPC_ETH2\$1I506"
+		(1    "ROACH_PPC_ETH2\$1N485")
+		(2    "GND")
+	)
+)
 ("R221"
 	( 1    "ROACH_ADC_0\$1I1018"
 		(1    "2V5_20")
@@ -14189,18 +14201,6 @@ Pin_Cross_Reference
 	( 1    "ROACH_QDR2P_BY0_1\$1I1873"
 		(1    "5V")
 		(2    "ROACH_QDR2P_BY0_1\$1N1874")
-	)
-)
-("R124"
-	( 1    "ROACH_PPC_ETH1\$1I174"
-		(1    "ROACH_PPC_ETH1\$1N679")
-		(2    "GND")
-	)
-)
-("R220"
-	( 1    "ROACH_PPC_ETH2\$1I506"
-		(1    "ROACH_PPC_ETH2\$1N485")
-		(2    "GND")
 	)
 )
 ("U5"
@@ -16012,102 +16012,6 @@ Pin_Cross_Reference
 		(2    "GND")
 	)
 )
-("R292"
-	( 1    "ROACH_PPC_DDR2\$1I412"
-		(1    "ROACH_PPC_DDR2\DDR_PDM1")
-		(2    "ROACH_PPC_DDR2\DDR_DM1")
-	)
-)
-("R294"
-	( 1    "ROACH_PPC_DDR2\$1I416"
-		(1    "ROACH_PPC_DDR2\DDR_PDQS1")
-		(2    "ROACH_PPC_DDR2\DDR_DQS1")
-	)
-)
-("R300"
-	( 1    "ROACH_PPC_DDR2\$1I437"
-		(1    "ROACH_PPC_DDR2\DDR_PDM7")
-		(2    "ROACH_PPC_DDR2\DDR_DM7")
-	)
-)
-("R306"
-	( 1    "ROACH_PPC_DDR2\$1I456"
-		(1    "ROACH_PPC_DDR2\DDR_PDM5")
-		(2    "ROACH_PPC_DDR2\DDR_DM5")
-	)
-)
-("R313"
-	( 1    "ROACH_PPC_DDR2\$1I478"
-		(1    "ROACH_PPC_DDR2\DDR_PDM3")
-		(2    "ROACH_PPC_DDR2\DDR_DM3")
-	)
-)
-("R315"
-	( 1    "ROACH_PPC_DDR2\$1I481"
-		(1    "ROACH_PPC_DDR2\DDR_PDQS6")
-		(2    "ROACH_PPC_DDR2\DDR_DQS6")
-	)
-)
-("R322"
-	( 1    "ROACH_PPC_DDR2\$1I507"
-		(1    "ROACH_PPC_DDR2\DDR_PDQS4")
-		(2    "ROACH_PPC_DDR2\DDR_DQS4")
-	)
-)
-("R328"
-	( 1    "ROACH_PPC_DDR2\$1I530"
-		(1    "ROACH_PPC_DDR2\DDR_PDQS2")
-		(2    "ROACH_PPC_DDR2\DDR_DQS2")
-	)
-)
-("R335"
-	( 1    "ROACH_PPC_DDR2\$1I557"
-		(1    "ROACH_PPC_DDR2\DDR_PDQS0")
-		(2    "ROACH_PPC_DDR2\DDR_DQS0")
-	)
-)
-("R341"
-	( 1    "ROACH_PPC_DDR2\$1I575"
-		(1    "ROACH_PPC_DDR2\DDR_PDM6")
-		(2    "ROACH_PPC_DDR2\DDR_DM6")
-	)
-)
-("R348"
-	( 1    "ROACH_PPC_DDR2\$1I601"
-		(1    "ROACH_PPC_DDR2\DDR_PDM4")
-		(2    "ROACH_PPC_DDR2\DDR_DM4")
-	)
-)
-("R350"
-	( 1    "ROACH_PPC_DDR2\$1I604"
-		(1    "ROACH_PPC_DDR2\DDR_PDQS7")
-		(2    "ROACH_PPC_DDR2\DDR_DQS7")
-	)
-)
-("R351"
-	( 1    "ROACH_PPC_DDR2\$1I609"
-		(1    "ROACH_PPC_DDR2\DDR_PDM0")
-		(2    "ROACH_PPC_DDR2\DDR_DM0")
-	)
-)
-("R358"
-	( 1    "ROACH_PPC_DDR2\$1I624"
-		(1    "ROACH_PPC_DDR2\DDR_PDM2")
-		(2    "ROACH_PPC_DDR2\DDR_DM2")
-	)
-)
-("R360"
-	( 1    "ROACH_PPC_DDR2\$1I628"
-		(1    "ROACH_PPC_DDR2\DDR_PDQS5")
-		(2    "ROACH_PPC_DDR2\DDR_DQS5")
-	)
-)
-("R367"
-	( 1    "ROACH_PPC_DDR2\$1I648"
-		(1    "ROACH_PPC_DDR2\DDR_PDQS3")
-		(2    "ROACH_PPC_DDR2\DDR_DQS3")
-	)
-)
 ("R288"
 	( 1    "ROACH_PPC_DDR2\$1I405"
 		(1    "ROACH_PPC_DDR2\DDR_DQ18")
@@ -16132,10 +16036,22 @@ Pin_Cross_Reference
 		(2    "ROACH_PPC_DDR2\DDR_PDQ40")
 	)
 )
+("R292"
+	( 1    "ROACH_PPC_DDR2\$1I412"
+		(1    "ROACH_PPC_DDR2\DDR_PDM1")
+		(2    "ROACH_PPC_DDR2\DDR_DM1")
+	)
+)
 ("R293"
 	( 1    "ROACH_PPC_DDR2\$1I415"
 		(1    "ROACH_PPC_DDR2\DDR_DQ51")
 		(2    "ROACH_PPC_DDR2\DDR_PDQ51")
+	)
+)
+("R294"
+	( 1    "ROACH_PPC_DDR2\$1I416"
+		(1    "ROACH_PPC_DDR2\DDR_PDQS1")
+		(2    "ROACH_PPC_DDR2\DDR_DQS1")
 	)
 )
 ("R295"
@@ -16168,6 +16084,12 @@ Pin_Cross_Reference
 		(2    "ROACH_PPC_DDR2\DDR_PDQ49")
 	)
 )
+("R300"
+	( 1    "ROACH_PPC_DDR2\$1I437"
+		(1    "ROACH_PPC_DDR2\DDR_PDM7")
+		(2    "ROACH_PPC_DDR2\DDR_DM7")
+	)
+)
 ("R301"
 	( 1    "ROACH_PPC_DDR2\$1I438"
 		(1    "ROACH_PPC_DDR2\DDR_DQ60")
@@ -16196,6 +16118,12 @@ Pin_Cross_Reference
 	( 1    "ROACH_PPC_DDR2\$1I455"
 		(1    "ROACH_PPC_DDR2\DDR_DQ47")
 		(2    "ROACH_PPC_DDR2\DDR_PDQ47")
+	)
+)
+("R306"
+	( 1    "ROACH_PPC_DDR2\$1I456"
+		(1    "ROACH_PPC_DDR2\DDR_PDM5")
+		(2    "ROACH_PPC_DDR2\DDR_DM5")
 	)
 )
 ("R307"
@@ -16234,10 +16162,22 @@ Pin_Cross_Reference
 		(2    "ROACH_PPC_DDR2\DDR_PDQ45")
 	)
 )
+("R313"
+	( 1    "ROACH_PPC_DDR2\$1I478"
+		(1    "ROACH_PPC_DDR2\DDR_PDM3")
+		(2    "ROACH_PPC_DDR2\DDR_DM3")
+	)
+)
 ("R314"
 	( 1    "ROACH_PPC_DDR2\$1I480"
 		(1    "ROACH_PPC_DDR2\DDR_DQ56")
 		(2    "ROACH_PPC_DDR2\DDR_PDQ56")
+	)
+)
+("R315"
+	( 1    "ROACH_PPC_DDR2\$1I481"
+		(1    "ROACH_PPC_DDR2\DDR_PDQS6")
+		(2    "ROACH_PPC_DDR2\DDR_DQS6")
 	)
 )
 ("R316"
@@ -16276,6 +16216,12 @@ Pin_Cross_Reference
 		(2    "ROACH_PPC_DDR2\DDR_PDQ54")
 	)
 )
+("R322"
+	( 1    "ROACH_PPC_DDR2\$1I507"
+		(1    "ROACH_PPC_DDR2\DDR_PDQS4")
+		(2    "ROACH_PPC_DDR2\DDR_DQS4")
+	)
+)
 ("R323"
 	( 1    "ROACH_PPC_DDR2\$1I518"
 		(1    "ROACH_PPC_DDR2\DDR_DQ19")
@@ -16304,6 +16250,12 @@ Pin_Cross_Reference
 	( 1    "ROACH_PPC_DDR2\$1I528"
 		(1    "ROACH_PPC_DDR2\DDR_DQ52")
 		(2    "ROACH_PPC_DDR2\DDR_PDQ52")
+	)
+)
+("R328"
+	( 1    "ROACH_PPC_DDR2\$1I530"
+		(1    "ROACH_PPC_DDR2\DDR_PDQS2")
+		(2    "ROACH_PPC_DDR2\DDR_DQS2")
 	)
 )
 ("R329"
@@ -16342,6 +16294,12 @@ Pin_Cross_Reference
 		(2    "ROACH_PPC_DDR2\DDR_PDQ50")
 	)
 )
+("R335"
+	( 1    "ROACH_PPC_DDR2\$1I557"
+		(1    "ROACH_PPC_DDR2\DDR_PDQS0")
+		(2    "ROACH_PPC_DDR2\DDR_DQS0")
+	)
+)
 ("R336"
 	( 1    "ROACH_PPC_DDR2\$1I560"
 		(1    "ROACH_PPC_DDR2\DDR_DQ61")
@@ -16370,6 +16328,12 @@ Pin_Cross_Reference
 	( 1    "ROACH_PPC_DDR2\$1I574"
 		(1    "ROACH_PPC_DDR2\DDR_DQ48")
 		(2    "ROACH_PPC_DDR2\DDR_PDQ48")
+	)
+)
+("R341"
+	( 1    "ROACH_PPC_DDR2\$1I575"
+		(1    "ROACH_PPC_DDR2\DDR_PDM6")
+		(2    "ROACH_PPC_DDR2\DDR_DM6")
 	)
 )
 ("R342"
@@ -16408,10 +16372,28 @@ Pin_Cross_Reference
 		(2    "ROACH_PPC_DDR2\DDR_PDQ46")
 	)
 )
+("R348"
+	( 1    "ROACH_PPC_DDR2\$1I601"
+		(1    "ROACH_PPC_DDR2\DDR_PDM4")
+		(2    "ROACH_PPC_DDR2\DDR_DM4")
+	)
+)
 ("R349"
 	( 1    "ROACH_PPC_DDR2\$1I603"
 		(1    "ROACH_PPC_DDR2\DDR_DQ57")
 		(2    "ROACH_PPC_DDR2\DDR_PDQ57")
+	)
+)
+("R350"
+	( 1    "ROACH_PPC_DDR2\$1I604"
+		(1    "ROACH_PPC_DDR2\DDR_PDQS7")
+		(2    "ROACH_PPC_DDR2\DDR_DQS7")
+	)
+)
+("R351"
+	( 1    "ROACH_PPC_DDR2\$1I609"
+		(1    "ROACH_PPC_DDR2\DDR_PDM0")
+		(2    "ROACH_PPC_DDR2\DDR_DM0")
 	)
 )
 ("R352"
@@ -16450,10 +16432,22 @@ Pin_Cross_Reference
 		(2    "ROACH_PPC_DDR2\DDR_PDQ44")
 	)
 )
+("R358"
+	( 1    "ROACH_PPC_DDR2\$1I624"
+		(1    "ROACH_PPC_DDR2\DDR_PDM2")
+		(2    "ROACH_PPC_DDR2\DDR_DM2")
+	)
+)
 ("R359"
 	( 1    "ROACH_PPC_DDR2\$1I627"
 		(1    "ROACH_PPC_DDR2\DDR_DQ55")
 		(2    "ROACH_PPC_DDR2\DDR_PDQ55")
+	)
+)
+("R360"
+	( 1    "ROACH_PPC_DDR2\$1I628"
+		(1    "ROACH_PPC_DDR2\DDR_PDQS5")
+		(2    "ROACH_PPC_DDR2\DDR_DQS5")
 	)
 )
 ("R361"
@@ -16490,6 +16484,12 @@ Pin_Cross_Reference
 	( 1    "ROACH_PPC_DDR2\$1I647"
 		(1    "ROACH_PPC_DDR2\DDR_DQ53")
 		(2    "ROACH_PPC_DDR2\DDR_PDQ53")
+	)
+)
+("R367"
+	( 1    "ROACH_PPC_DDR2\$1I648"
+		(1    "ROACH_PPC_DDR2\DDR_PDQS3")
+		(2    "ROACH_PPC_DDR2\DDR_DQS3")
 	)
 )
 ("R32"
@@ -17188,11 +17188,11 @@ Pin_Cross_Reference
 	)
 )
 ("Q1"
-	( 1    "ROACH_PPC_POWER_1\$1I153"
-		(8    "ROACH_PPC_POWER_1\PWR_OUT2")
+	( 1    "ROACH_PPC_POWER_1\$1I197"
+		(8    "ROACH_PPC_POWER_1\PWR_OUT1")
 		(1    "GND")
-		(7    "ROACH_PPC_POWER_1\PWR_OUT2")
-		(2    "ROACH_PPC_POWER_1\N15170927")
+		(7    "ROACH_PPC_POWER_1\PWR_OUT1")
+		(2    "ROACH_PPC_POWER_1\N15170673")
 	)
 	( 2    "ROACH_PPC_POWER_1\$1I134"
 		(6    "ROACH_PPC_POWER_1\PWR_OUT1")
@@ -17202,25 +17202,11 @@ Pin_Cross_Reference
 	)
 )
 ("Q2"
-	( 1    "ROACH_PPC_POWER_1\$1I197"
-		(8    "ROACH_PPC_POWER_1\PWR_OUT1")
+	( 1    "ROACH_PPC_POWER_1\$1I153"
+		(8    "ROACH_PPC_POWER_1\PWR_OUT2")
 		(1    "GND")
-		(7    "ROACH_PPC_POWER_1\PWR_OUT1")
-		(2    "ROACH_PPC_POWER_1\N15170673")
-	)
-	( 2    ""
-		(6    "")
-		(3    "")
-		(5    "")
-		(4    "")
-	)
-)
-("Q3"
-	( 1    ""
-		(8    "")
-		(1    "")
-		(7    "")
-		(2    "")
+		(7    "ROACH_PPC_POWER_1\PWR_OUT2")
+		(2    "ROACH_PPC_POWER_1\N15170927")
 	)
 	( 2    "ROACH_PPC_POWER_1\$1I251"
 		(6    "ROACH_PPC_POWER_1\PWR_OUT2")
