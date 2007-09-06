@@ -3,26 +3,6 @@ V 5.4
 K 29591324190 roach_top
 DW roach_top
 Q Case
-|Q roach_adc_0 1
-AS roach_adc_0 INOV_VER_REC=6:30_8-31-07
-|Q roach_adc_1 1
-AS roach_adc_1 INOV_VER_REC=6:29_8-31-07
-|Q roach_ddr2_dimm 1
-AS roach_ddr2_dimm INOV_VER_REC=6:32_8-31-07
-|Q roach_transceivers2_3 1
-AS roach_transceivers2_3 INOV_VER_REC=6:27_8-31-07
-|Q roach_transceivers_psu 1
-AS roach_transceivers_psu SHEETNO=XXX
-AS roach_transceivers_psu INOV_VER_REC=7:29_8-31-07
-|Q roach_qdr2p_by0_1 1
-AS roach_qdr2p_by0_1 SHEETNO=XXX
-AS roach_qdr2p_by0_1 PINORDER= QDR2_BY0_1_SYS_RST_N QDR2_BY0_1_TDO QDR2_TMS QDR2_TDI QDR2_TCK
-AS roach_qdr2p_by0_1 INOV_VER_REC=7:19_8-31-07
-AP roach_qdr2p_by0_1 1 PINTYPE=IN
-AP roach_qdr2p_by0_1 2 PINTYPE=OUT
-AP roach_qdr2p_by0_1 3 PINTYPE=IN
-AP roach_qdr2p_by0_1 4 PINTYPE=IN
-AP roach_qdr2p_by0_1 5 PINTYPE=IN
 |Q roach_ppc_ddr2 1
 AS roach_ppc_ddr2 SHEETNO=XXX
 AS roach_ppc_ddr2 INOV_VER_REC=11:11_8-31-07
@@ -352,25 +332,33 @@ AP roach_ppc_cpld 46 PINTYPE=IN
 AP roach_ppc_cpld 46 NAME=PADD[27..31]
 AP roach_ppc_cpld 47 PINTYPE=IN
 AP roach_ppc_cpld 47 NAME=M66EN
-|Q roach_transceivers0_1 1
-AS roach_transceivers0_1 INOV_VER_REC=7:26_8-31-07
 |Q roach_diff_gpio 1
 AS roach_diff_gpio SHEETNO=XXX
 AS roach_diff_gpio INOV_VER_REC=10:12_9-3-07
+|Q roach_transceivers0_1 1
+AS roach_transceivers0_1 INOV_VER_REC=7:26_8-31-07
+|Q roach_transceivers2_3 1
+AS roach_transceivers2_3 INOV_VER_REC=6:27_8-31-07
+|Q roach_transceivers_psu 1
+AS roach_transceivers_psu SHEETNO=XXX
+AS roach_transceivers_psu INOV_VER_REC=7:29_8-31-07
+|Q roach_qdr2p_by0_1 1
+AS roach_qdr2p_by0_1 SHEETNO=XXX
+AS roach_qdr2p_by0_1 PINORDER= QDR2_BY0_1_SYS_RST_N QDR2_BY0_1_TDO QDR2_TMS QDR2_TDI QDR2_TCK
+AS roach_qdr2p_by0_1 INOV_VER_REC=7:19_8-31-07
+AP roach_qdr2p_by0_1 1 PINTYPE=IN
+AP roach_qdr2p_by0_1 2 PINTYPE=OUT
+AP roach_qdr2p_by0_1 3 PINTYPE=IN
+AP roach_qdr2p_by0_1 4 PINTYPE=IN
+AP roach_qdr2p_by0_1 5 PINTYPE=IN
+|Q roach_adc_1 1
+AS roach_adc_1 INOV_VER_REC=6:29_8-31-07
+|Q roach_ddr2_dimm 1
+AS roach_ddr2_dimm INOV_VER_REC=6:32_8-31-07
+|Q roach_adc_0 1
+AS roach_adc_0 INOV_VER_REC=6:30_8-31-07
 AN PDATA[0:7] VLBUSISONSHEET=1
 AN PADD[27:31] VLBUSISONSHEET=1
-W roach_adc_0 $1I4
-I $1I4 roach_adc_0 SHEETNO=XXX`LABEL=ROACH_ADC_0`
-W roach_adc_1 $1I5
-I $1I5 roach_adc_1 SHEETNO=XXX`LABEL=ROACH_ADC_1`
-W roach_ddr2_dimm $1I6
-I $1I6 roach_ddr2_dimm SHEETNO=XXX`LABEL=ROACH_DDR2_DIMM`
-W roach_transceivers2_3 $1I3
-I $1I3 roach_transceivers2_3 SHEETNO=XXX`LABEL=ROACH_TRANSCEIVERS2_3`
-W roach_transceivers_psu $1I21
-I $1I21 roach_transceivers_psu LABEL=ROACH_TRANSCEIVERS_PSU`
-W roach_qdr2p_by0_1 $1I9
-I $1I9 roach_qdr2p_by0_1 QDR2_BY0_1_SYS_RST_N QDR2_BY0_1_TDO QDR2_TMS QDR2_TDI QDR2_TCK LABEL=ROACH_QDR2P_BY0_1`
 W roach_ppc_ddr2 $1I41
 I $1I41 roach_ppc_ddr2 LABEL=ROACH_PPC_DDR2`
 W roach_ppc_eth1 $1I23
@@ -395,8 +383,20 @@ W roach_gpio_misc $1I144
 I $1I144 roach_gpio_misc LABEL=ROACH_GPIO_MISC`
 W roach_ppc_cpld $1I45
 I $1I45 roach_ppc_cpld PWR_GOOD PCS_2 POE# PR_W# PWBE_0# USB2_VCC_PE USB2_VCC_PI CLK_USB2_CPLD SYSERR CLK_CPLD_33MHZ CLK_CPLD_50MHZ CLK_PERCLK FRY_BY# DEBUG_TRST# RESET_POR# SPARE_1 SPARE_0 SPARE_7 SPARE_6 SPARE_5 SPARE_4 SPARE_3 SPARE_2 BOOT_CFG0 BOOT_CFG1 BOOT_CFG2 FWP# EE1_WP EE2_BOOT_WP STTM_AS USB2_RESET NF_WP# USB_SELECT# EBC_SELECT# RESET_CPLD# SEL_SYSCLK CLK_SEL_M66EN CLK_TMRCLK GETH1_RST# GETH0_RST# GETH0_COMA GETH1_COMA CPU_TRST# RESET_PB_POR# PDATA[0:7] PADD[27:31] M66EN LABEL=ROACH_PPC_CPLD`
-W roach_transceivers0_1 $1I2
-I $1I2 roach_transceivers0_1 SHEETNO=XXX`LABEL=ROACH_TRANSCEIVERS0_1`
 W roach_diff_gpio $1I7
 I $1I7 roach_diff_gpio LABEL=ROACH_DIFF_IO`
+W roach_transceivers0_1 $1I2
+I $1I2 roach_transceivers0_1 SHEETNO=XXX`LABEL=ROACH_TRANSCEIVERS0_1`
+W roach_transceivers2_3 $1I3
+I $1I3 roach_transceivers2_3 SHEETNO=XXX`LABEL=ROACH_TRANSCEIVERS2_3`
+W roach_transceivers_psu $1I21
+I $1I21 roach_transceivers_psu LABEL=ROACH_TRANSCEIVERS_PSU`
+W roach_qdr2p_by0_1 $1I9
+I $1I9 roach_qdr2p_by0_1 QDR2_BY0_1_SYS_RST_N QDR2_BY0_1_TDO QDR2_TMS QDR2_TDI QDR2_TCK LABEL=ROACH_QDR2P_BY0_1`
+W roach_adc_1 $1I5
+I $1I5 roach_adc_1 SHEETNO=XXX`LABEL=ROACH_ADC_1`
+W roach_ddr2_dimm $1I6
+I $1I6 roach_ddr2_dimm SHEETNO=XXX`LABEL=ROACH_DDR2_DIMM`
+W roach_adc_0 $1I4
+I $1I4 roach_adc_0 SHEETNO=XXX`LABEL=ROACH_ADC_0`
 EW

@@ -1,7 +1,4 @@
 | Wirelist created using version 5.4.
-| Sch_Warning - Symbol qdr2p_ctrl_data has changed since component $1I1571 was instantiated.
-| Sch_Warning - Symbol qdr2p_jtag has changed since component $1I1222 was instantiated.
-| Sch_Warning - Symbol qdr2p_power has changed since component $1I1710 was instantiated.
 V 5.4
 K 240348898000 roach_qdr2p_by0_1
 DW roach_qdr2p_by0_1
@@ -1884,9 +1881,6 @@ I QDR2_BY0_1_TDO out QDR2_BY0_1_TDO
 P in QDR2_TMS
 I QDR2_TMS in QDR2_TMS 
 |R 7:39_8-30-07
-P in QDR2_TDI
-I QDR2_TDI in QDR2_TDI 
-|R 7:39_8-30-07
 P in QDR2_TCK
 I QDR2_TCK in QDR2_TCK 
 |R 7:39_8-30-07
@@ -2108,4 +2102,7 @@ API $1I1710 qdr2p_power 50 #=D8
 API $1I1710 qdr2p_power 51 #=E5
 API $1I1710 qdr2p_power 52 #=E6
 API $1I1710 qdr2p_power 53 #=E7
+P in QDR2_TDI
+I QDR2_TDI in QDR2_TDI 
+|R 7:39_8-30-07
 EW
