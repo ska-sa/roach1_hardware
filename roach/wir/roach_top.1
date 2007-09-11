@@ -1,21 +1,8 @@
 | Wirelist created using version 5.4.
-| Sch_Warning - Component SX95T_TMS, Symbol=out at (1440, 980), is not connected.
-| Sch_Warning - Component SX95T_TCK, Symbol=out at (1440, 1000), is not connected.
-| Sch_Warning - Component SX95T_TDI, Symbol=out at (1440, 1020), is not connected.
-| Sch_Warning - Component SX95T_TDO, Symbol=in at (1440, 960), is not connected.
 V 5.4
 K 29591324190 roach_top
 DW roach_top
 Q Case
-AS out OUT
-AS out PINORDER=OUT
-AP out 1 PINTYPE=OUT
-AS in IN
-AS in PINORDER=IN
-AP in 1 PINTYPE=IN
-|Q roach_ppc_ddr2 1
-AS roach_ppc_ddr2 SHEETNO=XXX
-AS roach_ppc_ddr2 INOV_VER_REC=11:11_8-31-07
 |Q roach_ppc_eth1 1
 AS roach_ppc_eth1 PINORDER= GMCMDCLK GMCMDIO GETH0_RST# GETH0_INT# CLK_GETH0_25MHZ
 AS roach_ppc_eth1 SHEETNO=XXX
@@ -49,52 +36,6 @@ AP roach_ppc_eth2 4 GEOMETRY.HEIGHT=1
 AP roach_ppc_eth2 5 PINTYPE=BI
 AP roach_ppc_eth2 5 NAME=GMCMDIO
 AP roach_ppc_eth2 5 GEOMETRY.HEIGHT=1
-|Q roach_ppc_nvm_serial 1
-AS roach_ppc_nvm_serial SHEETNO=XXX
-AS roach_ppc_nvm_serial PINORDER=CLK_PERCLK FRY_BY# RESET_POR# CLK_UART_11.0592MHZ NF_WP# M66EN BOOT_CFG2 BOOT_CFG0 FWP# EE1_WP STTM_ALERT STTM_AS EE2_BOOT_WP BOOT_CFG1 RESET_CPLD#
-AS roach_ppc_nvm_serial INOV_VER_REC=11:52_8-31-07
-AP roach_ppc_nvm_serial 1 PINTYPE=OUT
-AP roach_ppc_nvm_serial 1 NAME=CLK_PERCLK
-AP roach_ppc_nvm_serial 1 IREF=11
-AP roach_ppc_nvm_serial 2 PINTYPE=OUT
-AP roach_ppc_nvm_serial 2 NAME=FRY_BY#
-AP roach_ppc_nvm_serial 2 IREF=11
-AP roach_ppc_nvm_serial 3 PINTYPE=IN
-AP roach_ppc_nvm_serial 3 NAME=RESET_POR#
-AP roach_ppc_nvm_serial 3 IREF=4,11
-AP roach_ppc_nvm_serial 4 PINTYPE=IN
-AP roach_ppc_nvm_serial 4 NAME=CLK_UART_11.0592MHZ
-AP roach_ppc_nvm_serial 4 IREF=4
-AP roach_ppc_nvm_serial 5 PINTYPE=IN
-AP roach_ppc_nvm_serial 5 NAME=NF_WP#
-AP roach_ppc_nvm_serial 6 PINTYPE=IN
-AP roach_ppc_nvm_serial 6 NAME=M66EN
-AP roach_ppc_nvm_serial 6 IREF=9,11
-AP roach_ppc_nvm_serial 7 PINTYPE=IN
-AP roach_ppc_nvm_serial 7 NAME=BOOT_CFG2
-AP roach_ppc_nvm_serial 7 IREF=11
-AP roach_ppc_nvm_serial 8 PINTYPE=IN
-AP roach_ppc_nvm_serial 8 NAME=BOOT_CFG0
-AP roach_ppc_nvm_serial 8 IREF=11
-AP roach_ppc_nvm_serial 9 PINTYPE=IN
-AP roach_ppc_nvm_serial 9 NAME=FWP#
-AP roach_ppc_nvm_serial 9 IREF=11
-AP roach_ppc_nvm_serial 10 PINTYPE=IN
-AP roach_ppc_nvm_serial 10 NAME=EE1_WP
-AP roach_ppc_nvm_serial 11 PINTYPE=OUT
-AP roach_ppc_nvm_serial 11 NAME=STTM_ALERT
-AP roach_ppc_nvm_serial 11 IREF=4
-AP roach_ppc_nvm_serial 12 PINTYPE=IN
-AP roach_ppc_nvm_serial 12 NAME=STTM_AS
-AP roach_ppc_nvm_serial 12 IREF=11
-AP roach_ppc_nvm_serial 13 PINTYPE=IN
-AP roach_ppc_nvm_serial 13 NAME=EE2_BOOT_WP
-AP roach_ppc_nvm_serial 13 IREF=11
-AP roach_ppc_nvm_serial 14 PINTYPE=IN
-AP roach_ppc_nvm_serial 14 NAME=BOOT_CFG1
-AP roach_ppc_nvm_serial 14 IREF=11
-AP roach_ppc_nvm_serial 15 PINTYPE=IN
-AP roach_ppc_nvm_serial 15 NAME=RESET_CPLD#
 |Q roach_ppc_pci 1
 AS roach_ppc_pci PINORDER= M66EN CLK_PCI1_66/33MHZ CLK_PCI2_66/33MHZ PCI_INTA#
 AS roach_ppc_pci SHEETNO=XXX
@@ -120,82 +61,6 @@ AS roach_ppc_power_2 SHEETNO=XXX
 AS roach_ppc_power_2 INOV_VER_REC=12:20_8-31-07
 AP roach_ppc_power_2 1 PINTYPE=OUT
 AP roach_ppc_power_2 1 NAME=PWR_GOOD
-|Q roach_ppc_tst_clk_io 1
-AS roach_ppc_tst_clk_io SHEETNO=XXX
-AS roach_ppc_tst_clk_io PINORDER=SYSERR DEBUG_TRST# CLK_UART_11.0592MHZ CLK_CPLD_33MHZ CLK_GETH1_25MHZ CLK_PCI2_66/33MHZ CLK_PCI3_66/33MHZ CLK_GETH0_25MHZ CLK_USB2.0_48MHZ CLK_CPLD_50MHZ CLK_USB2.0_12MHZ CLK_PCI1_66/33MHZ RESET_POR# GPIO45 GPIO46 GPIO47 GPIO48 GPIO44 GETH1_INT# STTM_ALERT PCI_INTA# CPU_TRST# SEL_SYSCLK GETH0_INT#
-AS roach_ppc_tst_clk_io INOV_VER_REC=12:29_8-31-07
-AP roach_ppc_tst_clk_io 1 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 1 NAME=SYSERR
-AP roach_ppc_tst_clk_io 1 IREF=11
-AP roach_ppc_tst_clk_io 2 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 2 NAME=DEBUG_TRST#
-AP roach_ppc_tst_clk_io 2 IREF=11
-AP roach_ppc_tst_clk_io 3 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 3 NAME=CLK_UART_11.0592MHZ
-AP roach_ppc_tst_clk_io 3 IREF=6
-AP roach_ppc_tst_clk_io 4 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 4 NAME=CLK_CPLD_33MHZ
-AP roach_ppc_tst_clk_io 4 IREF=11
-AP roach_ppc_tst_clk_io 5 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 5 NAME=CLK_GETH1_25MHZ
-AP roach_ppc_tst_clk_io 5 IREF=8
-AP roach_ppc_tst_clk_io 6 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 6 NAME=CLK_PCI2_66/33MHZ
-AP roach_ppc_tst_clk_io 6 IREF=9
-AP roach_ppc_tst_clk_io 7 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 7 NAME=CLK_PCI3_66/33MHZ
-AP roach_ppc_tst_clk_io 7 IREF=9
-AP roach_ppc_tst_clk_io 8 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 8 NAME=CLK_GETH0_25MHZ
-AP roach_ppc_tst_clk_io 8 IREF=7
-AP roach_ppc_tst_clk_io 9 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 9 NAME=CLK_USB2.0_48MHZ
-AP roach_ppc_tst_clk_io 9 IREF=10
-AP roach_ppc_tst_clk_io 10 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 10 NAME=CLK_CPLD_50MHZ
-AP roach_ppc_tst_clk_io 10 IREF=11
-AP roach_ppc_tst_clk_io 11 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 11 NAME=CLK_USB2.0_12MHZ
-AP roach_ppc_tst_clk_io 11 IREF=10
-AP roach_ppc_tst_clk_io 12 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 12 NAME=CLK_PCI1_66/33MHZ
-AP roach_ppc_tst_clk_io 12 IREF=9
-AP roach_ppc_tst_clk_io 13 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 13 NAME=RESET_POR#
-AP roach_ppc_tst_clk_io 13 IREF=6,11
-AP roach_ppc_tst_clk_io 14 PINTYPE=BI
-AP roach_ppc_tst_clk_io 14 NAME=GPIO45
-AP roach_ppc_tst_clk_io 14 IREF=6
-AP roach_ppc_tst_clk_io 15 PINTYPE=BI
-AP roach_ppc_tst_clk_io 15 NAME=GPIO46
-AP roach_ppc_tst_clk_io 15 IREF=6
-AP roach_ppc_tst_clk_io 16 PINTYPE=BI
-AP roach_ppc_tst_clk_io 16 NAME=GPIO47
-AP roach_ppc_tst_clk_io 16 IREF=6
-AP roach_ppc_tst_clk_io 17 PINTYPE=BI
-AP roach_ppc_tst_clk_io 17 NAME=GPIO48
-AP roach_ppc_tst_clk_io 17 IREF=6
-AP roach_ppc_tst_clk_io 18 PINTYPE=BI
-AP roach_ppc_tst_clk_io 18 NAME=GPIO44
-AP roach_ppc_tst_clk_io 18 IREF=6
-AP roach_ppc_tst_clk_io 19 PINTYPE=IN
-AP roach_ppc_tst_clk_io 19 NAME=GETH1_INT#
-AP roach_ppc_tst_clk_io 19 IREF=8
-AP roach_ppc_tst_clk_io 20 PINTYPE=IN
-AP roach_ppc_tst_clk_io 20 NAME=STTM_ALERT
-AP roach_ppc_tst_clk_io 20 IREF=6
-AP roach_ppc_tst_clk_io 21 PINTYPE=IN
-AP roach_ppc_tst_clk_io 21 NAME=PCI_INTA#
-AP roach_ppc_tst_clk_io 21 IREF=9
-AP roach_ppc_tst_clk_io 22 PINTYPE=IN
-AP roach_ppc_tst_clk_io 22 NAME=CPU_TRST#
-AP roach_ppc_tst_clk_io 22 IREF=11
-AP roach_ppc_tst_clk_io 23 PINTYPE=IN
-AP roach_ppc_tst_clk_io 23 NAME=SEL_SYSCLK
-AP roach_ppc_tst_clk_io 23 IREF=11
-AP roach_ppc_tst_clk_io 24 PINTYPE=IN
-AP roach_ppc_tst_clk_io 24 NAME=GETH0_INT#
-AP roach_ppc_tst_clk_io 24 IREF=7
 |Q roach_ppc_usb 1
 AS roach_ppc_usb PINORDER= CLK_USB2.0_48MHZ USB2_VCC_PI
 AS roach_ppc_usb SHEETNO=XXX
@@ -347,33 +212,58 @@ AP roach_ppc_cpld 46 PINTYPE=OUT
 AP roach_ppc_cpld 46 NAME=BOOT_CFG1
 AP roach_ppc_cpld 47 PINTYPE=OUT
 AP roach_ppc_cpld 47 NAME=BOOT_CFG0
+|Q roach_ppc_ddr2 1
+AS roach_ppc_ddr2 SHEETNO=XXX
+AS roach_ppc_ddr2 INOV_VER_REC=11:11_8-31-07
+|Q roach_ppc_tst_clk_io 1
+AS roach_ppc_tst_clk_io SHEETNO=XXX
+AS roach_ppc_tst_clk_io PINORDER=CLK_SEL_M66EN CLK_TMRCLK SX95T_TMS SX95T_TCK SX95T_TDI SX95T_TDO RESET_POR# SYSERR DEBUG_TRST# CLK_PCI1_66/33MHZ CLK_PCI2_66/33MHZ CLK_PCI3_66/33MHZ CLK_GETH0_25MHZ CLK_GETH1_25MHZ CLK_USB2.0_48MHZ CLK_CPLD_50MHZ CLK_USB2.0_12MHZ GPIO44 STTM_ALERT PCI_INTA# GETH1_INT# GETH0_INT# CLK_CPLD_33MHZ CLK_UART_11.0592MHZ SEL_SYSCLK CPU_TRST# PWR_GOOD RESET_PB_POR#
+AS roach_ppc_tst_clk_io INOV_VER_REC=13:46_9-11-07
+
+AP roach_ppc_tst_clk_io 1 PINTYPE=IN
+AP roach_ppc_tst_clk_io 2 PINTYPE=IN
+AP roach_ppc_tst_clk_io 3 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 4 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 5 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 6 PINTYPE=IN
+AP roach_ppc_tst_clk_io 7 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 7 NAME=RESET_POR#
+AP roach_ppc_tst_clk_io 7 IREF=6,11
+AP roach_ppc_tst_clk_io 8 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 9 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 9 NAME=DEBUG_TRST#
+AP roach_ppc_tst_clk_io 9 IREF=11
+AP roach_ppc_tst_clk_io 10 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 11 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 12 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 13 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 14 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 15 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 16 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 17 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 18 PINTYPE=BI
+AP roach_ppc_tst_clk_io 19 PINTYPE=IN
+AP roach_ppc_tst_clk_io 20 PINTYPE=IN
+AP roach_ppc_tst_clk_io 21 PINTYPE=IN
+AP roach_ppc_tst_clk_io 22 PINTYPE=IN
+AP roach_ppc_tst_clk_io 23 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 24 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 25 PINTYPE=IN
+AP roach_ppc_tst_clk_io 26 PINTYPE=IN
+AP roach_ppc_tst_clk_io 27 PINTYPE=IN
+AP roach_ppc_tst_clk_io 28 PINTYPE=IN
 AN PADD[27:31] VLBUSISONSHEET=1
 AN PDATA[0:7] VLBUSISONSHEET=1
-P out SX95T_TMS
-I SX95T_TMS out ? SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`
-P out SX95T_TCK
-I SX95T_TCK out ? SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`
-P out SX95T_TDI
-I SX95T_TDI out ? SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`
-P in SX95T_TDO
-I SX95T_TDO in ? 
-|R 7:39_8-30-07
-W roach_ppc_ddr2 $1I41
-I $1I41 roach_ppc_ddr2 LABEL=ROACH_PPC_DDR2`
 W roach_ppc_eth1 $1I23
 I $1I23 roach_ppc_eth1 GMCMDCLK GMCMDIO GETH0_RST# GETH0_INT# CLK_GETH0_25MHZ LABEL=ROACH_PPC_ETH1`
 W roach_ppc_eth2 $1I35
 I $1I35 roach_ppc_eth2 CLK_GETH1_25MHZ GMCMDCLK GETH1_INT# GETH1_RST# GMCMDIO LABEL=ROACH_PPC_ETH2`
-W roach_ppc_nvm_serial $1I93
-I $1I93 roach_ppc_nvm_serial CLK_PERCLK FRY_BY# RESET_POR# CLK_UART_11.0592MHZ NF_WP# M66EN BOOT_CFG2 BOOT_CFG0 FWP# EE1_WP STTM_ALERT STTM_AS EE2_BOOT_WP BOOT_CFG1 RESET_CPLD# LABEL=ROACH_PPC_NVM_SERIAL`
 W roach_ppc_pci $1I109
 I $1I109 roach_ppc_pci M66EN CLK_PCI1_66/33MHZ CLK_PCI2_66/33MHZ PCI_INTA# LABEL=ROACH_PPC_PCI`
 W roach_ppc_power_1 $1I114
 I $1I114 roach_ppc_power_1 PWR_GOOD LABEL=ROACH_PPC_POWER_1`
 W roach_ppc_power_2 $1I116
 I $1I116 roach_ppc_power_2 PWR_GOOD LABEL=ROACH_PPC_POWER_2`
-W roach_ppc_tst_clk_io $1I118
-I $1I118 roach_ppc_tst_clk_io SYSERR DEBUG_TRST# CLK_UART_11.0592MHZ CLK_CPLD_33MHZ CLK_GETH1_25MHZ CLK_PCI2_66/33MHZ CLK_PCI3_66/33MHZ CLK_GETH0_25MHZ CLK_USB2.0_48MHZ CLK_CPLD_50MHZ CLK_USB2.0_12MHZ CLK_PCI1_66/33MHZ RESET_POR# GPIO45 GPIO46 GPIO47 GPIO48 GPIO44 GETH1_INT# STTM_ALERT PCI_INTA# CPU_TRST# SEL_SYSCLK GETH0_INT# LABEL=ROACH_PPC_TST_CLK_IO`
 W roach_ppc_usb $1I42
 I $1I42 roach_ppc_usb CLK_USB2.0_48MHZ USB2_VCC_PI LABEL=ROACH_PPC_USB`
 W roach_qdr2p_by2_3 $1I15
@@ -398,6 +288,10 @@ W roach_adc_0 $1I4
 I $1I4 roach_adc_0 SHEETNO=XXX`LABEL=ROACH_ADC_0`
 W roach_config $1I145
 I $1I145 roach_config SX95T_INIT_B_0 SX95T_CS_B_0 SX95T_D_OUT_BUSY_0 SX95T_D_IN_0 SX95T_PROGRAM_B_0 SX95T_RDWR_B_0 SX95T_DONE_0 SX95T_CCLK_0 SX95T_TDO SX95T_TDI SX95T_TMS SX95T_TCK LABEL=ROACH_CONFIG`
-W roach_ppc_cpld $1I162
-I $1I162 roach_ppc_cpld CPU_TRST# USB2_VCC_PI USB2_VCC_PE CLK_USB2_CPLD USB2_RESET STTM_AS EE2_BOOT_WP EE1_WP FWP# FRY_BY# SYSERR SEL_SYSCLK CLK_SEL_M66EN CLK_TMRCLK CLK_PERCLK CLK_CPLD_50MHZ CLK_CPLD_33MHZ M66EN SX95T_D_OUT_BUSY_0 SX95T_CS_B_0 SX95T_D_IN_0 SX95T_PROGRAM_B_0 SX95T_RDWR_B_0 PADD[27:31] SX95T_CCLK_0 SX95T_DONE_0 SX95T_INIT_B_0 PCS_2 PR_W# POE# PWBE_0# PDATA[0:7] RESET_POR# RESET_PB_POR# DEBUG_TRST# NF_WP# GETH0_RST# GETH1_RST# GETH0_COMA GETH1_COMA USB_SELECT# EBC_SELECT# RESET_CPLD# PWR_GOOD BOOT_CFG2 BOOT_CFG1 BOOT_CFG0 LABEL=ROACH_PPC_CPLD`
+W roach_ppc_cpld $1I210
+I $1I210 roach_ppc_cpld CPU_TRST# USB2_VCC_PI USB2_VCC_PE CLK_USB2_CPLD USB2_RESET STTM_AS EE2_BOOT_WP EE1_WP FWP# FRY_BY# SYSERR SEL_SYSCLK CLK_SEL_M66EN CLK_TMRCLK CLK_PERCLK CLK_CPLD_50MHZ CLK_CPLD_33MHZ M66EN SX95T_D_OUT_BUSY_0 SX95T_CS_B_0 SX95T_D_IN_0 SX95T_PROGRAM_B_0 SX95T_RDWR_B_0 PADD[27:31] SX95T_CCLK_0 SX95T_DONE_0 SX95T_INIT_B_0 PCS_2 PR_W# POE# PWBE_0# PDATA[0:7] RESET_POR# RESET_PB_POR# DEBUG_TRST# NF_WP# GETH0_RST# GETH1_RST# GETH0_COMA GETH1_COMA USB_SELECT# EBC_SELECT# RESET_CPLD# PWR_GOOD BOOT_CFG2 BOOT_CFG1 BOOT_CFG0 LABEL=ROACH_PPC_CPLD`
+W roach_ppc_ddr2 $1I41
+I $1I41 roach_ppc_ddr2 LABEL=ROACH_PPC_DDR2`
+W roach_ppc_tst_clk_io $1I258
+I $1I258 roach_ppc_tst_clk_io CLK_SEL_M66EN CLK_TMRCLK SX95T_TMS SX95T_TCK SX95T_TDI SX95T_TDO RESET_POR# SYSERR DEBUG_TRST# CLK_PCI1_66/33MHZ CLK_PCI2_66/33MHZ CLK_PCI3_66/33MHZ CLK_GETH0_25MHZ CLK_GETH1_25MHZ CLK_USB2.0_48MHZ CLK_CPLD_50MHZ CLK_USB2.0_12MHZ GPIO44 STTM_ALERT PCI_INTA# GETH1_INT# GETH0_INT# CLK_CPLD_33MHZ CLK_UART_11.0592MHZ SEL_SYSCLK CPU_TRST# PWR_GOOD RESET_PB_POR# LABEL=ROACH_PPC_TST_CLK_IO`
 EW
