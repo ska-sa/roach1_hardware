@@ -2205,6 +2205,25 @@
       (SIG_N dly_clk_200_n)
     )
     (SIGNAL
+      (NAME gpio_clk0)
+      (HDL_NAME gpio_clk0)
+      (DIR IN)
+      (PIN H19 H20)
+      (TYPE DIFF_CLOCK)
+      (IOSTANDARD LVPECL_25)
+      (SIG_P gpio_clk0_P)
+      (SIG_N gpio_clk0_N)
+    )
+    (SIGNAL
+      (NAME gpio_clk1)
+      (HDL_NAME gpio_clk1)
+      (DIR INOUT)
+      (PIN G15 G16)
+      (TYPE DIFF_CLOCK)
+      (SIG_P gpio_clk1_P)
+      (SIG_N gpio_clk1_N)
+    )
+    (SIGNAL
       (NAME mgt_112_ref_clk)
       (HDL_NAME mgt_112_ref_clk)
       (DIR IN)
@@ -4051,15 +4070,6 @@
       (SIG_N sys_clk_n)
     )
     (SIGNAL
-      (NAME sys_clk_sp)
-      (HDL_NAME sys_clk_sp)
-      (DIR IN)
-      (PIN H19 H20)
-      (TYPE DIFF_CLOCK)
-      (SIG_P sys_clk_sp_P)
-      (SIG_N sys_clk_sp_N)
-    )
-    (SIGNAL
       (NAME vbatt_0)
       (DIR IN)
       (PIN L23)
@@ -4105,12 +4115,6 @@
       (NAME vrn_23)
       (DIR INOUT)
       (PIN C29)
-      (TYPE CONFIG)
-    )
-    (SIGNAL
-      (NAME vrn_3)
-      (DIR INOUT)
-      (PIN G15)
       (TYPE CONFIG)
     )
     (SIGNAL
@@ -4165,12 +4169,6 @@
       (NAME vrp_23)
       (DIR INOUT)
       (PIN B28)
-      (TYPE CONFIG)
-    )
-    (SIGNAL
-      (NAME vrp_3)
-      (DIR INOUT)
-      (PIN G16)
       (TYPE CONFIG)
     )
     (SIGNAL
@@ -68783,7 +68781,7 @@
         )
         (PORT
           (TYPE SIGNALPN)
-          (NAME sys_clk_sp_P)
+          (NAME gpio_clk0_P)
           (POSITION -10160 40640)
           (EXTTYPE IN)
           (LENGTH 10160)
@@ -68794,7 +68792,7 @@
               (POINTS 0 0 10160 0)
             )
           )
-          (DIFF sys_clk_sp)
+          (DIFF gpio_clk0)
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME "#")
@@ -68814,12 +68812,12 @@
             )
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE sys_clk_sp_P)
+              (VALUE gpio_clk0_P)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE sys_clk_sp_P)
+              (VALUE gpio_clk0_P)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -68840,20 +68838,20 @@
           )
         )
         (TEXT
-          (LABEL sys_clk_sp_P)
+          (LABEL gpio_clk0_P)
           (POSITION 5842 40640)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
-          (PINNUMBER sys_clk_sp_P)
+          (PINNUMBER gpio_clk0_P)
           (POSITION -10160 40640)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
         )
         (PORT
           (TYPE SIGNALPN)
-          (NAME sys_clk_sp_N)
+          (NAME gpio_clk0_N)
           (POSITION -10160 45720)
           (EXTTYPE IN)
           (LENGTH 10160)
@@ -68864,7 +68862,7 @@
               (POINTS 0 0 10160 0)
             )
           )
-          (DIFF sys_clk_sp)
+          (DIFF gpio_clk0)
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME "#")
@@ -68884,12 +68882,12 @@
             )
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE sys_clk_sp_N)
+              (VALUE gpio_clk0_N)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE sys_clk_sp_N)
+              (VALUE gpio_clk0_N)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -68910,13 +68908,13 @@
           )
         )
         (TEXT
-          (LABEL sys_clk_sp_N)
+          (LABEL gpio_clk0_N)
           (POSITION 5842 45720)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
-          (PINNUMBER sys_clk_sp_N)
+          (PINNUMBER gpio_clk0_N)
           (POSITION -10160 45720)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
@@ -68929,7 +68927,6 @@
           (ROTATION 180)
           (LENGTH 10160)
           (SLOT 39)
-          (CUSTOMLABEL VRP_3)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -68954,12 +68951,12 @@
             )
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE vrp_3)
+              (VALUE gpio_clk1_N)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE vrp_3)
+              (VALUE gpio_clk1_N)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -69001,7 +68998,6 @@
           (ROTATION 180)
           (LENGTH 10160)
           (SLOT 40)
-          (CUSTOMLABEL VRN_3)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -69026,12 +69022,12 @@
             )
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE vrn_3)
+              (VALUE gpio_clk1_P)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE vrn_3)
+              (VALUE gpio_clk1_P)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -69352,7 +69348,7 @@
         )
         (ATTRIBUTE
           (NAME PINSWAP)
-          (VALUE "([sys_clk_p,sys_clk_n],[dly_clk_200_p,dly_clk_200_n]),(2v5_3,2v5_3_1)")
+          (VALUE "([sys_clk_p,sys_clk_n],[dly_clk_200_p,dly_clk_200_n],[gpio_clk0_P,gpio_clk0_N]),(2v5_3,2v5_3_1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -88389,10 +88385,10 @@
     )
   )
   (DISABLED_CLOCK_PINS AE18 AF18 AF19 AG15 AG17 AG18 AG21 AH15 AH18)
-  (DISABLED_CONFIG_PINS AD19 AD20 AD31 AE14 AE16 AE17 AE19 AE21 AE22 AE23 AE31 AF13 AF15 AF16 AF21 AF23 AG12 AG13 AG16 AG22 AG23 AH12 AH13 AH14 AH17 AH19 AH20 AH22 AH25 AJ25 AN24 AP24 G22 G23 H12 H22 H23 J12 J15 J22 K12 K13 K14 K16 K21 K22 K23 L14 L15 L16 L20 L21 M27 M33 N27 N33)
+  (DISABLED_CONFIG_PINS AD19 AD20 AD31 AE14 AE16 AE17 AE19 AE21 AE22 AE23 AE31 AF13 AF15 AF16 AF21 AF23 AG12 AG13 AG16 AG22 AG23 AH12 AH13 AH14 AH17 AH19 AH20 AH22 AH25 AJ25 AN24 AP24 G15 G16 G22 G23 H12 H22 H23 J12 J15 J22 K12 K13 K14 K16 K21 K22 K23 L14 L15 L16 L20 L21 M27 M33 N27 N33)
   (DISABLED_VREF_PINS AF10 AF14 AG20 AG7 AL18 AL23 AN12 D10 F19 G18 H22 J17 L5 L8 P10 Y9)
-  (ENABLED_CLOCK_PINS J17)
-  (ENABLED_DIFF_PINS A13 A14 A15 A16 AA10 AA31 AA5 AA6 AA8 AA9 AB10 AB31 AB5 AB6 AB7 AB8 AC10 AC4 AC5 AC7 AC8 AC9 AD10 AD11 AD24 AD31 AD4 AD5 AD6 AD7 AD9 AE11 AE24 AE31 AE33 AE34 AE6 AE7 AE8 AF10 AF11 AF33 AF34 AF5 AF6 AF9 AG10 AG11 AG30 AG5 AG7 AG8 AH10 AH23 AH24 AH29 AH34 AH7 AH8 AH9 AJ10 AJ11 AJ12 AJ14 AJ15 AJ16 AJ19 AJ20 AJ21 AJ22 AJ24 AJ27 AJ29 AJ34 AJ6 AJ7 AJ9 AK11 AK12 AK13 AK14 AK16 AK18 AK19 AK21 AK22 AK23 AK24 AK26 AK29 AK6 AK7 AK8 AK9 AL10 AL11 AL13 AL14 AL15 AL16 AL18 AL19 AL20 AL21 AL23 AL26 AM11 AM12 AM13 AM15 AM16 AM17 AM25 AM26 AN12 AN13 AN14 AN15 AN17 AN25 AP12 AP14 AP15 AP16 AP17 B12 B13 B15 B16 B17 C12 C13 C14 C15 C17 D10 D11 D12 D14 D15 D16 D17 D20 D21 D22 D24 E11 E12 E13 E14 E16 E17 E19 E21 E22 E23 E24 E6 E7 E8 E9 F10 F11 F13 F14 F15 F16 F18 F19 F20 F21 F23 F24 F5 F6 F8 F9 G10 G11 G12 G13 G17 G18 G20 G21 G5 G6 G7 G8 H10 H13 H14 H15 H17 H18 H19 H20 H5 H7 H8 H9 J10 J11 J14 J16 J17 J19 J20 J21 J5 J6 J7 J9 K11 K17 K18 K19 K6 K7 K8 K9 L18 L19 L4 L5 L6 L8 L9 M10 M5 M6 M7 M8 N10 N5 N7 N8 N9 P10 P5 P6 P7 R11 R6 R7 R8 T10 T11 T6 T8 T9 U10 U7 U8 V10 V7 V8 V9 W10 W11 W6 W7 W9 Y11 Y28 Y29 Y6 Y7 Y8 Y9)
+  (ENABLED_CLOCK_PINS G15 G16 J17)
+  (ENABLED_DIFF_PINS A13 A14 A15 A16 AA10 AA31 AA5 AA6 AA8 AA9 AB10 AB31 AB5 AB6 AB7 AB8 AC10 AC4 AC5 AC7 AC8 AC9 AD10 AD11 AD24 AD31 AD4 AD5 AD6 AD7 AD9 AE11 AE24 AE31 AE33 AE34 AE6 AE7 AE8 AF10 AF11 AF33 AF34 AF5 AF6 AF9 AG10 AG11 AG30 AG5 AG7 AG8 AH10 AH23 AH24 AH29 AH34 AH7 AH8 AH9 AJ10 AJ11 AJ12 AJ14 AJ15 AJ16 AJ19 AJ20 AJ21 AJ22 AJ24 AJ27 AJ29 AJ34 AJ6 AJ7 AJ9 AK11 AK12 AK13 AK14 AK16 AK18 AK19 AK21 AK22 AK23 AK24 AK26 AK29 AK6 AK7 AK8 AK9 AL10 AL11 AL13 AL14 AL15 AL16 AL18 AL19 AL20 AL21 AL23 AL26 AM11 AM12 AM13 AM15 AM16 AM17 AM25 AM26 AN12 AN13 AN14 AN15 AN17 AN25 AP12 AP14 AP15 AP16 AP17 B12 B13 B15 B16 B17 C12 C13 C14 C15 C17 D10 D11 D12 D14 D15 D16 D17 D20 D21 D22 D24 E11 E12 E13 E14 E16 E17 E19 E21 E22 E23 E24 E6 E7 E8 E9 F10 F11 F13 F14 F15 F16 F18 F19 F20 F21 F23 F24 F5 F6 F8 F9 G10 G11 G12 G13 G15 G16 G17 G18 G20 G21 G5 G6 G7 G8 H10 H13 H14 H15 H17 H18 H19 H20 H5 H7 H8 H9 J10 J11 J14 J16 J17 J19 J20 J21 J5 J6 J7 J9 K11 K17 K18 K19 K6 K7 K8 K9 L18 L19 L4 L5 L6 L8 L9 M10 M5 M6 M7 M8 N10 N5 N7 N8 N9 P10 P5 P6 P7 R11 R6 R7 R8 T10 T11 T6 T8 T9 U10 U7 U8 V10 V7 V8 V9 W10 W11 W6 W7 W9 Y11 Y28 Y29 Y6 Y7 Y8 Y9)
   (ENABLED_IO_PINS AD19 AD20 AE14 AE16 AE17 AE18 AE19 AE21 AE22 AE23 AF13 AF14 AF15 AF16 AF18 AF19 AF21 AF23 AG12 AG13 AG15 AG16 AG17 AG18 AG20 AG21 AG22 AG23 AH12 AH13 AH14 AH15 AH17 AH18 AH19 AH20 AH22 AH25 AJ25 AN24 AP24 G22 G23 H12 H22 H23 J12 J15 J22 K12 K13 K14 K16 K21 K22 K23 L14 L15 L16 L20 L21 M27 M33 N27 N33)
   (IO_STANDARDS
     (IO
@@ -90029,6 +90025,14 @@
     )
     (IO
       (PIN H18)
+      (STANDARD LVPECL_25)
+    )
+    (IO
+      (PIN H19)
+      (STANDARD LVPECL_25)
+    )
+    (IO
+      (PIN H20)
       (STANDARD LVPECL_25)
     )
     (IO
@@ -93447,11 +93451,11 @@
     )
     (SWAP
       (PIN G15)
-      (GROUP NOSWAP)
+      (GROUP DIFF_CLOCK_3)
     )
     (SWAP
       (PIN G16)
-      (GROUP NOSWAP)
+      (GROUP DIFF_CLOCK_3)
     )
     (SWAP
       (PIN G17)
@@ -93599,11 +93603,15 @@
     )
     (SWAP
       (PIN H19)
-      (GROUP DIFF_CLOCK_3)
+      (GROUP DIFF_CLOCK_Vref_NR_VccIO_2_5)
     )
     (SWAP
       (PIN H2)
       (GROUP GND)
+    )
+    (SWAP
+      (PIN H20)
+      (GROUP DIFF_CLOCK_Vref_NR_VccIO_2_5)
     )
     (SWAP
       (PIN H21)
