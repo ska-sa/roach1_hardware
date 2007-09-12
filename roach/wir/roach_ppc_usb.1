@@ -134,35 +134,6 @@ AP res_15k_0402_5_ 2 PINTYPE=OUT
 AS in IN
 AS in PINORDER=IN
 AP in 1 PINTYPE=IN
-|Q con_usbb_1x4_f_ra_th 1
-AS con_usbb_1x4_f_ra_th REFDES=P?
-AS con_usbb_1x4_f_ra_th DEVICE=CON_USBB_1X4_F_RA_TH
-AS con_usbb_1x4_f_ra_th PARTS=1
-AS con_usbb_1x4_f_ra_th PKG_TYPE=787780_TH
-AS con_usbb_1x4_f_ra_th LEVEL=STD
-AS con_usbb_1x4_f_ra_th EPI#=P10200000000047
-AS con_usbb_1x4_f_ra_th SHAPE=1x4 USBB
-AS con_usbb_1x4_f_ra_th MFGI_2#=NA
-AS con_usbb_1x4_f_ra_th MFGI_1#=AMP: 292304-1
-AS con_usbb_1x4_f_ra_th MFG_1#=AMP: 292304-1
-AS con_usbb_1x4_f_ra_th MFG_2#=ADA: USB-B-S-RA-RC
-AS con_usbb_1x4_f_ra_th BOARD_OPTION
-AS con_usbb_1x4_f_ra_th EP#=P10200000000047
-AS con_usbb_1x4_f_ra_th GRN=LHR
-AS con_usbb_1x4_f_ra_th VALUE
-AS con_usbb_1x4_f_ra_th PINORDER=1 2 3 4 5 6
-AP con_usbb_1x4_f_ra_th 1 #=1
-AP con_usbb_1x4_f_ra_th 1 PINTYPE=OUT
-AP con_usbb_1x4_f_ra_th 2 #=2
-AP con_usbb_1x4_f_ra_th 2 PINTYPE=OUT
-AP con_usbb_1x4_f_ra_th 3 #=3
-AP con_usbb_1x4_f_ra_th 3 PINTYPE=OUT
-AP con_usbb_1x4_f_ra_th 4 #=4
-AP con_usbb_1x4_f_ra_th 4 PINTYPE=OUT
-AP con_usbb_1x4_f_ra_th 5 #=5
-AP con_usbb_1x4_f_ra_th 5 PINTYPE=OUT
-AP con_usbb_1x4_f_ra_th 6 #=6
-AP con_usbb_1x4_f_ra_th 6 PINTYPE=OUT
 AS out OUT
 AS out PINORDER=OUT
 AP out 1 PINTYPE=OUT
@@ -214,6 +185,35 @@ AP ic_cpu_te_pbga680_440epx_grx_g 17 #=N2
 AP ic_cpu_te_pbga680_440epx_grx_g 17 PINTYPE=OUT
 AP ic_cpu_te_pbga680_440epx_grx_g 18 #=N3
 AP ic_cpu_te_pbga680_440epx_grx_g 18 PINTYPE=OUT
+|Q con_usbb_1x4_f_ra_th 1
+AS con_usbb_1x4_f_ra_th REFDES=P?
+AS con_usbb_1x4_f_ra_th DEVICE=CON_USBB_1X4_F_RA_TH
+AS con_usbb_1x4_f_ra_th PARTS=1
+AS con_usbb_1x4_f_ra_th PKG_TYPE=787780_TH
+AS con_usbb_1x4_f_ra_th LEVEL=STD
+AS con_usbb_1x4_f_ra_th EPI#=P10200000000047
+AS con_usbb_1x4_f_ra_th SHAPE=1x4 USBB
+AS con_usbb_1x4_f_ra_th MFGI_2#=NA
+AS con_usbb_1x4_f_ra_th MFGI_1#=AMP: 292304-1
+AS con_usbb_1x4_f_ra_th MFG_1#=AMP: 292304-1
+AS con_usbb_1x4_f_ra_th MFG_2#=ADA: USB-B-S-RA-RC
+AS con_usbb_1x4_f_ra_th BOARD_OPTION
+AS con_usbb_1x4_f_ra_th EP#=P10200000000047
+AS con_usbb_1x4_f_ra_th GRN=LHR
+AS con_usbb_1x4_f_ra_th VALUE
+AS con_usbb_1x4_f_ra_th PINORDER=1 2 3 4 5 6
+AP con_usbb_1x4_f_ra_th 1 #=1
+AP con_usbb_1x4_f_ra_th 1 PINTYPE=OUT
+AP con_usbb_1x4_f_ra_th 2 #=2
+AP con_usbb_1x4_f_ra_th 2 PINTYPE=OUT
+AP con_usbb_1x4_f_ra_th 3 #=3
+AP con_usbb_1x4_f_ra_th 3 PINTYPE=OUT
+AP con_usbb_1x4_f_ra_th 4 #=4
+AP con_usbb_1x4_f_ra_th 4 PINTYPE=OUT
+AP con_usbb_1x4_f_ra_th 5 #=5
+AP con_usbb_1x4_f_ra_th 5 PINTYPE=OUT
+AP con_usbb_1x4_f_ra_th 6 #=6
+AP con_usbb_1x4_f_ra_th 6 PINTYPE=OUT
 AN $1N383 NC
 AN $1N382 NC
 AN $1N371 NC
@@ -268,14 +268,6 @@ API $1I270 var_5r5v_0603_30a 2 #=2
 P in CLK_USB2.0_48MHZ
 I CLK_USB2.0_48MHZ in CLK_USB2.0_48MHZ SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`NAME=CLK_USB2.0_48MHZ`
 |R 7:39_8-30-07
-M con_usbb_1x4_f_ra_th $1I253
-I $1I253 con_usbb_1x4_f_ra_th N19077656 USB2_XCVR_D- USB2_XCVR_D+ GND CHASSIS_GND CHASSIS_GND REFDES=P6`PKG_TYPE=787780_TH`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=F TH`SHAPE`
-API $1I253 con_usbb_1x4_f_ra_th 1 #=1
-API $1I253 con_usbb_1x4_f_ra_th 2 #=2
-API $1I253 con_usbb_1x4_f_ra_th 3 #=3
-API $1I253 con_usbb_1x4_f_ra_th 4 #=4
-API $1I253 con_usbb_1x4_f_ra_th 5 #=5
-API $1I253 con_usbb_1x4_f_ra_th 6 #=6
 P out USB2_VCC_PI
 I USB2_VCC_PI out USB2_VCC_PI SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`NAME=USB2_VCC_PI`
 M ic_cpu_te_pbga680_440epx_grx_g $1I228
@@ -298,4 +290,12 @@ API $1I228 ic_cpu_te_pbga680_440epx_grx_g 15 #=J1
 API $1I228 ic_cpu_te_pbga680_440epx_grx_g 16 #=M3
 API $1I228 ic_cpu_te_pbga680_440epx_grx_g 17 #=N2
 API $1I228 ic_cpu_te_pbga680_440epx_grx_g 18 #=N3
+M con_usbb_1x4_f_ra_th $1I253
+I $1I253 con_usbb_1x4_f_ra_th N19077656 USB2_XCVR_D- USB2_XCVR_D+ GND CHASSIS_GND CHASSIS_GND REFDES=P6`PKG_TYPE=787780_TH`BOARD_OPTION=BASE`SOURCE_PATH=F:\ENGINEERING\ORCAD_LIBRARY\PARTS LIBRARY\EP_LF_ORCAD_LIBRARY1.OLB`VALUE=F TH`SHAPE`
+API $1I253 con_usbb_1x4_f_ra_th 1 #=1
+API $1I253 con_usbb_1x4_f_ra_th 2 #=2
+API $1I253 con_usbb_1x4_f_ra_th 3 #=3
+API $1I253 con_usbb_1x4_f_ra_th 4 #=4
+API $1I253 con_usbb_1x4_f_ra_th 5 #=5
+API $1I253 con_usbb_1x4_f_ra_th 6 #=6
 EW
