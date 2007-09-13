@@ -2217,7 +2217,7 @@
     (SIGNAL
       (NAME gpio_clk1)
       (HDL_NAME gpio_clk1)
-      (DIR INOUT)
+      (DIR IN)
       (PIN G15 G16)
       (TYPE DIFF_CLOCK)
       (SIG_P gpio_clk1_P)
@@ -68922,9 +68922,8 @@
         (PORT
           (TYPE PIN)
           (NAME G16)
-          (POSITION 71120 10160)
-          (EXTTYPE BI)
-          (ROTATION 180)
+          (POSITION -10160 60960)
+          (EXTTYPE IN)
           (LENGTH 10160)
           (SLOT 39)
           (ELEMENTS
@@ -68941,7 +68940,7 @@
             )
             (ATTRIBUTE
               (NAME PINTYPE)
-              (VALUE BI)
+              (VALUE IN)
               (OWNER DXDESIGNER)
             )
             (ATTRIBUTE
@@ -68971,31 +68970,28 @@
             )
             (ATTRIBUTE
               (NAME PINTYPE)
-              (VALUE IXO)
+              (VALUE IN)
               (OWNER DESIGNARCHITECT)
             )
           )
         )
         (TEXT
           (LABEL G16)
-          (POSITION 60198 10160)
-          (HALIGN RIGHT)
+          (POSITION 762 60960)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
           (PINNUMBER G16)
-          (POSITION 71120 10160)
-          (HALIGN RIGHT)
+          (POSITION -10160 60960)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
         )
         (PORT
           (TYPE PIN)
           (NAME G15)
-          (POSITION 71120 15240)
-          (EXTTYPE BI)
-          (ROTATION 180)
+          (POSITION -10160 55880)
+          (EXTTYPE IN)
           (LENGTH 10160)
           (SLOT 40)
           (ELEMENTS
@@ -69012,7 +69008,7 @@
             )
             (ATTRIBUTE
               (NAME PINTYPE)
-              (VALUE BI)
+              (VALUE IN)
               (OWNER DXDESIGNER)
             )
             (ATTRIBUTE
@@ -69042,22 +69038,20 @@
             )
             (ATTRIBUTE
               (NAME PINTYPE)
-              (VALUE IXO)
+              (VALUE IN)
               (OWNER DESIGNARCHITECT)
             )
           )
         )
         (TEXT
           (LABEL G15)
-          (POSITION 60198 15240)
-          (HALIGN RIGHT)
+          (POSITION 762 55880)
           (VALIGN CENTER)
           (FONT FONT_0 10)
         )
         (TEXT
           (PINNUMBER G15)
-          (POSITION 71120 15240)
-          (HALIGN RIGHT)
+          (POSITION -10160 55880)
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
         )
