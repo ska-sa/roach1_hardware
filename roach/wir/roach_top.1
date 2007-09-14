@@ -1,58 +1,10 @@
 | Wirelist created using version 5.4.
-| Error - Symbol roach_v5_clk not found or empty.
-| Error - Symbol roach_5v_power not found or empty.
 V 5.4
 K 29591324190 roach_top
 DW roach_top
 Q Case
-|Q roach_ppc_nvm_serial 1
-AS roach_ppc_nvm_serial SHEETNO=XXX
-AS roach_ppc_nvm_serial PINORDER=CLK_PERCLK FRY_BY# RESET_POR# CLK_UART_11.0592MHZ M66EN BOOT_CFG2 BOOT_CFG0 FWP# EE1_WP STTM_ALERT STTM_AS EE2_BOOT_WP BOOT_CFG1 RESET_CPLD#
-AS roach_ppc_nvm_serial INOV_VER_REC=8:35_9-13-07
-AP roach_ppc_nvm_serial 1 PINTYPE=OUT
-AP roach_ppc_nvm_serial 1 NAME=CLK_PERCLK
-AP roach_ppc_nvm_serial 1 IREF=11
-AP roach_ppc_nvm_serial 2 PINTYPE=OUT
-AP roach_ppc_nvm_serial 2 NAME=FRY_BY#
-AP roach_ppc_nvm_serial 2 IREF=11
-AP roach_ppc_nvm_serial 3 PINTYPE=IN
-AP roach_ppc_nvm_serial 3 NAME=RESET_POR#
-AP roach_ppc_nvm_serial 3 IREF=4,11
-AP roach_ppc_nvm_serial 4 PINTYPE=IN
-AP roach_ppc_nvm_serial 4 NAME=CLK_UART_11.0592MHZ
-AP roach_ppc_nvm_serial 4 IREF=4
-AP roach_ppc_nvm_serial 5 PINTYPE=IN
-AP roach_ppc_nvm_serial 5 NAME=M66EN
-AP roach_ppc_nvm_serial 5 IREF=9,11
-AP roach_ppc_nvm_serial 6 PINTYPE=IN
-AP roach_ppc_nvm_serial 6 NAME=BOOT_CFG2
-AP roach_ppc_nvm_serial 6 IREF=11
-AP roach_ppc_nvm_serial 7 PINTYPE=IN
-AP roach_ppc_nvm_serial 7 NAME=BOOT_CFG0
-AP roach_ppc_nvm_serial 7 IREF=11
-AP roach_ppc_nvm_serial 8 PINTYPE=IN
-AP roach_ppc_nvm_serial 8 NAME=FWP#
-AP roach_ppc_nvm_serial 8 IREF=11
-AP roach_ppc_nvm_serial 9 PINTYPE=IN
-AP roach_ppc_nvm_serial 9 NAME=EE1_WP
-AP roach_ppc_nvm_serial 10 PINTYPE=OUT
-AP roach_ppc_nvm_serial 10 NAME=STTM_ALERT
-AP roach_ppc_nvm_serial 10 IREF=4
-AP roach_ppc_nvm_serial 11 PINTYPE=IN
-AP roach_ppc_nvm_serial 11 NAME=STTM_AS
-AP roach_ppc_nvm_serial 11 IREF=11
-AP roach_ppc_nvm_serial 12 PINTYPE=IN
-AP roach_ppc_nvm_serial 12 NAME=EE2_BOOT_WP
-AP roach_ppc_nvm_serial 12 IREF=11
-AP roach_ppc_nvm_serial 13 PINTYPE=IN
-AP roach_ppc_nvm_serial 13 NAME=BOOT_CFG1
-AP roach_ppc_nvm_serial 13 IREF=11
-AP roach_ppc_nvm_serial 14 PINTYPE=IN
-AP roach_ppc_nvm_serial 14 NAME=RESET_CPLD#
 |Q roach_transceivers0_1 1
 AS roach_transceivers0_1 INOV_VER_REC=7:26_8-31-07
-|Q roach_transceivers2_3 1
-AS roach_transceivers2_3 INOV_VER_REC=6:27_8-31-07
 |Q roach_transceivers_psu 1
 AS roach_transceivers_psu SHEETNO=XXX
 AS roach_transceivers_psu INOV_VER_REC=7:29_8-31-07
@@ -295,18 +247,64 @@ AS roach_ppc_power_2 SHEETNO=XXX
 AS roach_ppc_power_2 INOV_VER_REC=12:20_8-31-07
 AP roach_ppc_power_2 1 PINTYPE=OUT
 AP roach_ppc_power_2 1 NAME=PWR_GOOD
-|Q roach_v5_clk 1
 |Q roach_adc_0 1
 AS roach_adc_0 INOV_VER_REC=6:30_8-31-07
 |Q roach_5v_power 1
+AS roach_5v_power SHEETNO=XXX
+AS roach_5v_power INOV_VER_REC=8:38_9-13-07
+|Q roach_v5_clk 1
+AS roach_v5_clk SHEETNO=XXX
+AS roach_v5_clk INOV_VER_REC=8:27_9-13-07
+|Q roach_transceivers2_3 1
+AS roach_transceivers2_3 INOV_VER_REC=6:27_8-31-07
+|Q roach_ppc_nvm_serial 1
+AS roach_ppc_nvm_serial SHEETNO=XXX
+AS roach_ppc_nvm_serial PINORDER=CLK_PERCLK FRY_BY# RESET_POR# CLK_UART_11.0592MHZ M66EN BOOT_CFG2 BOOT_CFG0 FWP# EE1_WP STTM_ALERT STTM_AS EE2_BOOT_WP BOOT_CFG1 RESET_CPLD#
+AS roach_ppc_nvm_serial INOV_VER_REC=8:35_9-13-07
+AP roach_ppc_nvm_serial 1 PINTYPE=OUT
+AP roach_ppc_nvm_serial 1 NAME=CLK_PERCLK
+AP roach_ppc_nvm_serial 1 IREF=11
+AP roach_ppc_nvm_serial 2 PINTYPE=OUT
+AP roach_ppc_nvm_serial 2 NAME=FRY_BY#
+AP roach_ppc_nvm_serial 2 IREF=11
+AP roach_ppc_nvm_serial 3 PINTYPE=IN
+AP roach_ppc_nvm_serial 3 NAME=RESET_POR#
+AP roach_ppc_nvm_serial 3 IREF=4,11
+AP roach_ppc_nvm_serial 4 PINTYPE=IN
+AP roach_ppc_nvm_serial 4 NAME=CLK_UART_11.0592MHZ
+AP roach_ppc_nvm_serial 4 IREF=4
+AP roach_ppc_nvm_serial 5 PINTYPE=IN
+AP roach_ppc_nvm_serial 5 NAME=M66EN
+AP roach_ppc_nvm_serial 5 IREF=9,11
+AP roach_ppc_nvm_serial 6 PINTYPE=IN
+AP roach_ppc_nvm_serial 6 NAME=BOOT_CFG2
+AP roach_ppc_nvm_serial 6 IREF=11
+AP roach_ppc_nvm_serial 7 PINTYPE=IN
+AP roach_ppc_nvm_serial 7 NAME=BOOT_CFG0
+AP roach_ppc_nvm_serial 7 IREF=11
+AP roach_ppc_nvm_serial 8 PINTYPE=IN
+AP roach_ppc_nvm_serial 8 NAME=FWP#
+AP roach_ppc_nvm_serial 8 IREF=11
+AP roach_ppc_nvm_serial 9 PINTYPE=IN
+AP roach_ppc_nvm_serial 9 NAME=EE1_WP
+AP roach_ppc_nvm_serial 10 PINTYPE=OUT
+AP roach_ppc_nvm_serial 10 NAME=STTM_ALERT
+AP roach_ppc_nvm_serial 10 IREF=4
+AP roach_ppc_nvm_serial 11 PINTYPE=IN
+AP roach_ppc_nvm_serial 11 NAME=STTM_AS
+AP roach_ppc_nvm_serial 11 IREF=11
+AP roach_ppc_nvm_serial 12 PINTYPE=IN
+AP roach_ppc_nvm_serial 12 NAME=EE2_BOOT_WP
+AP roach_ppc_nvm_serial 12 IREF=11
+AP roach_ppc_nvm_serial 13 PINTYPE=IN
+AP roach_ppc_nvm_serial 13 NAME=BOOT_CFG1
+AP roach_ppc_nvm_serial 13 IREF=11
+AP roach_ppc_nvm_serial 14 PINTYPE=IN
+AP roach_ppc_nvm_serial 14 NAME=RESET_CPLD#
 AN PADD[27:31] VLBUSISONSHEET=1
 AN PDATA[0:7] VLBUSISONSHEET=1
-W roach_ppc_nvm_serial $1I292
-I $1I292 roach_ppc_nvm_serial CLK_PERCLK FRY_BY# RESET_POR# CLK_UART_11.0592MHZ M66EN BOOT_CFG2 BOOT_CFG0 FWP# EE1_WP STTM_ALERT STTM_AS EE2_BOOT_WP BOOT_CFG1 RESET_CPLD# 
 W roach_transceivers0_1 $1I2
 I $1I2 roach_transceivers0_1 SHEETNO=XXX`LABEL=ROACH_TRANSCEIVERS0_1`
-W roach_transceivers2_3 $1I3
-I $1I3 roach_transceivers2_3 SHEETNO=XXX`LABEL=ROACH_TRANSCEIVERS2_3`
 W roach_transceivers_psu $1I21
 I $1I21 roach_transceivers_psu LABEL=ROACH_TRANSCEIVERS_PSU`
 W roach_adc_1 $1I5
@@ -341,10 +339,14 @@ W roach_ppc_power_1 $1I114
 I $1I114 roach_ppc_power_1 PWR_GOOD LABEL=ROACH_PPC_POWER_1`
 W roach_ppc_power_2 $1I116
 I $1I116 roach_ppc_power_2 PWR_GOOD LABEL=ROACH_PPC_POWER_2`
-W roach_v5_clk $1I291
-I $1I291 roach_v5_clk LABEL=ROACH_V5_CLK`
 W roach_adc_0 $1I4
 I $1I4 roach_adc_0 SHEETNO=XXX`LABEL=ROACH_ADC_0`
 W roach_5v_power $1I307
 I $1I307 roach_5v_power LABEL=ROACH_5V_POWER`
+W roach_v5_clk $1I291
+I $1I291 roach_v5_clk LABEL=ROACH_V5_CLK`
+W roach_transceivers2_3 $1I3
+I $1I3 roach_transceivers2_3 SHEETNO=XXX`LABEL=ROACH_TRANSCEIVERS2_3`
+W roach_ppc_nvm_serial $1I292
+I $1I292 roach_ppc_nvm_serial CLK_PERCLK FRY_BY# RESET_POR# CLK_UART_11.0592MHZ M66EN BOOT_CFG2 BOOT_CFG0 FWP# EE1_WP STTM_ALERT STTM_AS EE2_BOOT_WP BOOT_CFG1 RESET_CPLD# LABEL=ROACH_PPC_NVM_SERIAL`
 EW
