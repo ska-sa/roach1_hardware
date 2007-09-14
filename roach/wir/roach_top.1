@@ -12,9 +12,6 @@ AS roach_transceivers_psu INOV_VER_REC=7:29_8-31-07
 AS roach_adc_1 INOV_VER_REC=6:29_8-31-07
 |Q roach_ddr2_dimm 1
 AS roach_ddr2_dimm INOV_VER_REC=6:32_8-31-07
-|Q roach_diff_gpio 1
-AS roach_diff_gpio SHEETNO=XXX
-AS roach_diff_gpio INOV_VER_REC=10:12_9-3-07
 |Q roach_gpio_misc 1
 AS roach_gpio_misc SHEETNO=XXX
 AS roach_gpio_misc INOV_VER_REC=10:14_9-3-07
@@ -301,6 +298,9 @@ AP roach_ppc_nvm_serial 13 NAME=BOOT_CFG1
 AP roach_ppc_nvm_serial 13 IREF=11
 AP roach_ppc_nvm_serial 14 PINTYPE=IN
 AP roach_ppc_nvm_serial 14 NAME=RESET_CPLD#
+|Q roach_diff_gpio 1
+AS roach_diff_gpio SHEETNO=XXX
+AS roach_diff_gpio INOV_VER_REC=10:12_9-3-07
 AN PADD[27:31] VLBUSISONSHEET=1
 AN PDATA[0:7] VLBUSISONSHEET=1
 W roach_transceivers0_1 $1I2
@@ -311,8 +311,6 @@ W roach_adc_1 $1I5
 I $1I5 roach_adc_1 SHEETNO=XXX`LABEL=ROACH_ADC_1`
 W roach_ddr2_dimm $1I6
 I $1I6 roach_ddr2_dimm SHEETNO=XXX`LABEL=ROACH_DDR2_DIMM`
-W roach_diff_gpio $1I7
-I $1I7 roach_diff_gpio LABEL=ROACH_DIFF_IO`
 W roach_gpio_misc $1I144
 I $1I144 roach_gpio_misc LABEL=ROACH_GPIO_MISC`
 W roach_qdr2p_by0_1 $1I9
@@ -349,4 +347,6 @@ W roach_transceivers2_3 $1I3
 I $1I3 roach_transceivers2_3 SHEETNO=XXX`LABEL=ROACH_TRANSCEIVERS2_3`
 W roach_ppc_nvm_serial $1I292
 I $1I292 roach_ppc_nvm_serial CLK_PERCLK FRY_BY# RESET_POR# CLK_UART_11.0592MHZ M66EN BOOT_CFG2 BOOT_CFG0 FWP# EE1_WP STTM_ALERT STTM_AS EE2_BOOT_WP BOOT_CFG1 RESET_CPLD# LABEL=ROACH_PPC_NVM_SERIAL`
+W roach_diff_gpio $1I7
+I $1I7 roach_diff_gpio LABEL=ROACH_DIFF_GPIO`
 EW
