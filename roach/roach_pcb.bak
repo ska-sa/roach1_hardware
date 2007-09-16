@@ -14,7 +14,7 @@ LayoutId GENERIC
 |PartFileName packages.pkg
 |SignalStyle Pkgpin
 |SignalStyle Strip
-|DoOats yes
+DoOats yes
 |GenericEnable Yes | [No]	| Enables the processing of PKT files
 
 SuppressIdBackAnno yes | [no] | Controls the back annotation of IDs.
@@ -53,14 +53,14 @@ BeginAttPassList
 Specific
 COM PKG_LOCK
 PKG PKG_GRP  | Required for REUSE_BLOCK
-|BeginOatAtts
+BeginOatAtts
 COM REFDES
 COM $OBJNAME
 COM GEN_ID
 NET  GEN_ID
 PIN #
 NET $OBJNAME
-|EndOatAtts
+EndOatAtts
 
 NET NC   | Suppresses pcb Warning 6083: Single pin net
 PIN NC   | Suppresses pcb: Warning 6094: Pin not connected
@@ -86,6 +86,8 @@ COM HETERO
 COM DEVICE
 COM FUNCTYPE
 COM SYMTAG
+
+SYM NC
 
 PKG PKG_TYPE
 PKG CLASS

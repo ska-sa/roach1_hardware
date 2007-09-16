@@ -4,8 +4,8 @@
 	(units "basic")
 	(config_properties
 		(attributes
-			(attval "PcbConfigName" "D:\ROACH\elec\pads2007_oats.cfg")
-			(attval "CnsFile" ".\pads2007.cns")
+			(attval "PcbConfigName" "D:\ROACH\elec\roach\roach_pcb.cfg")
+			(attval "CnsFile" "D:\ROACH\elec\roach\pads2007.cns")
 			(attval "BeAdapter" "PADS2007")
 			(attval "FeAdapter" "DxDesigner")
 			(attval "SYSCONFIG" "pcbfwd")
@@ -26,7 +26,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1189770630"))
+		(file_ext "roach_top.pxr" "1189973932"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -30141,24 +30141,366 @@
 		(net_scalar "ROACH_PPC_PCI\N19256134"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\X_UART2_TX"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\X_UART2_RX"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\X_UART2_RTS#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\X_UART2_CTS#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\X_UART1_TX"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\X_UART1_RX"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\X_UART1_RTS#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\X_UART1_CTS#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\UART2_TX"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\UART2_RX"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\UART2_RTS#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\UART2_CTS#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\UART1_TX"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\UART1_RX"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\UART1_CTS#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\SCPDO"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\SCPDI"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\SCPCLK"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PWBE_3#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PWBE_2#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PWBE_1#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PWBE_0#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PR_W#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PREADY"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\POE#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "ROACH_PPC_NVM_SERIAL\PER_D_PAR1"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "ROACH_PPC_NVM_SERIAL\PER_D_PAR0"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PERPAR1_UART1_RTS#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PERPAR0_UART1_CTS#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PERERR"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PDATA15"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PDATA14"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PDATA13"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PDATA12"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PDATA11"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PDATA10"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PDATA9"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PDATA8"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PDATA7"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PDATA6"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PDATA5"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PDATA4"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PDATA3"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PDATA2"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PDATA1"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PDATA0"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PCS_NOR"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PCS_NAND"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PCS_5_GPIO010"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PCS_4_GPIO09"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PCS_2"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PCS_1"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PCS_0"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PBLAST#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD31"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD30"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD29"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD28"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD27"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD26"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD25"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD24"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD23"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD22"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD21"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD20"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD19"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD18"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD17"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD16"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD15"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD14"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD13"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD12"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD11"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD10"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD9"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD8"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD7"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD6"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD5"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD4"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD3"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\PADD2"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\NF_CE#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\N17929567"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\N17929543"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\N17929517"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\N17929475"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\N17929360"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\N17929344"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\N17929070"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\N17929048"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\N17929025"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\N17929015"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\N17928993"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\N17928985"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\N17928913"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\N17928909"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\N17928905"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\N17928863"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\I2C0_SDATA"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\I2C0_SCLK"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\I2C0_66_DATA"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\I2C0_33_DATA"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\EXT_RESET#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\CPU_UART0_DSR#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\CPU_UART0_DCD#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\BOOT_NOR"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\$PIN0"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "ROACH_PPC_NVM_SERIAL\$1N775"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "ROACH_PPC_NVM_SERIAL\$1N774"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "ROACH_PPC_NVM_SERIAL\$1N773"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "ROACH_PPC_NVM_SERIAL\$1N772"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\$1N129"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_PPC_NVM_SERIAL\$1N90"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "ROACH_PPC_ETH2\N27904376"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
@@ -31310,6 +31652,258 @@
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "ROACH_GPIO_MISC\GPIOLVC150"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\VRP_6"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\VRP_5"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\VRN_6"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\VRN_5"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_P18"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_P17"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_P16"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_P15"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_P14"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_P13"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_P12"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_P11"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_P10"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_P9"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_P8"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_P7"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_P6"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_P5"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_P4"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_P3"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_P2"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_P1"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_P0"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_N18"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_N17"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_N16"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_N15"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_N14"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_N13"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_N12"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_N11"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_N10"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_N9"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_N8"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_N7"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_N6"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_N5"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_N4"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_N3"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_N2"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_N1"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_D_N0"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_CLK_P"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_B_CLK_N"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_P18"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_P17"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_P16"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_P15"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_P14"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_P13"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_P12"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_P11"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_P10"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_P9"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_P8"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_P7"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_P6"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_P5"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_P4"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_P3"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_P2"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_P1"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_P0"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_N18"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_N17"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_N16"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_N15"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_N14"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_N13"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_N12"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_N11"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_N10"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_N9"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_N8"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_N7"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_N6"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_N5"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_N4"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_N3"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_N2"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_N1"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_D_N0"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_CLK_P"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "ROACH_DIFF_GPIO\QSH_A_CLK_N"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "ROACH_DDR2_DIMM\PAR_IN"
