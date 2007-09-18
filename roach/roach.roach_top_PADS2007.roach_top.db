@@ -1,11 +1,11 @@
 
-(pcb "K:\roach\elec\roach\roach.roach_top_PADS2007.roach_top.db"
+(pcb "D:\ROACH\elec\roach\roach.roach_top_PADS2007.roach_top.db"
 	(version "5.0.0")
 	(units "basic")
 	(config_properties
 		(attributes
-			(attval "PcbConfigName" "K:\roach\elec\roach\roach_pcb.cfg")
-			(attval "CnsFile" "K:\roach\elec\roach\pads2007.cns")
+			(attval "PcbConfigName" "D:\ROACH\elec\roach\roach_pcb.cfg")
+			(attval "CnsFile" "D:\ROACH\elec\roach\pads2007.cns")
 			(attval "BeAdapter" "PADS2007")
 			(attval "FeAdapter" "DxDesigner")
 			(attval "SYSCONFIG" "pcbfwd")
@@ -26,7 +26,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1190052959"))
+		(file_ext "roach_top.pxr" "1190120378"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -5138,9 +5138,8 @@
 						(attval "HETERO"
  "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
 						(attval "DEVICE" "5VSX95T"))))
-			(pin V5 2 "power_gate56" 0 "NC" 0)
-			(pin U5 2 "power_gate57" 0 "NC" 0)
-			(pin U4 2 "power_gate58" 0 "NC" 0)
+			(pin U5 2 "power_gate56" 0 "NC" 0)
+			(pin U4 2 "power_gate57" 0 "NC" 0)
 			(pin E29  5 "5VSX95T__5VSX95T_1" 0 "GPIOLVC150" 0)
 			(pin F29  5 "5VSX95T__5VSX95T_1" 0 "GPIOLVC151" 0)
 			(pin C20  5 "5VSX95T__5VSX95T_1" 0 "GPIOLVC152" 0)
@@ -5274,7 +5273,7 @@
 			(pin N3  5 "5VSX95T__5VSX95T_1" 0 "MGTAVTTRX_112" 0)
 			(pin M3  5 "5VSX95T__5VSX95T_1" 0 "MGTAVTTTX_112" 0)
 			(pin U3  5 "5VSX95T__5VSX95T_1" 0 "MGTAVTTTX_112_1" 0)
-			(pin V4  5 "5VSX95T__5VSX95T_1" 0 "MGTRREF" 0)
+			(pin V4  3 "5VSX95T__5VSX95T_1" 0 "MGTRREF" 0)
 			(pin P1  3 "5VSX95T__5VSX95T_1" 0 "MGTRX0_112_N" 0)
 			(pin N1  3 "5VSX95T__5VSX95T_1" 0 "MGTRX0_112_P" 0)
 			(pin R1  3 "5VSX95T__5VSX95T_1" 0 "MGTRX1_112_N" 0)
@@ -5285,6 +5284,7 @@
 			(pin U2  4 "5VSX95T__5VSX95T_1" 0 "MGTTX1_112_P" 0)
 			(pin P3  3 "5VSX95T__5VSX95T_1" 0 "MGT_112_REF_CLK_N" 0)
 			(pin P4  3 "5VSX95T__5VSX95T_1" 0 "MGT_112_REF_CLK_P" 0)
+			(pin V5  5 "5VSX95T__5VSX95T_1" 0 "MGT_VTRXC" 0)
 			(pin AB3  5 "5VSX95T__5VSX95T_1" 0 "MGTAVCCPLL_114" 0)
 			(pin AA3  5 "5VSX95T__5VSX95T_1" 0 "MGTAVCC_114" 0)
 			(pin AA4  5 "5VSX95T__5VSX95T_1" 0 "MGTAVCC_114_1" 0)
@@ -7822,7 +7822,7 @@
 				(comp_pin "N3" 0.0 0.0 "BI")
 				(comp_pin "M3" 0.0 0.0 "BI")
 				(comp_pin "U3" 0.0 0.0 "BI")
-				(comp_pin "V4" 0.0 0.0 "BI")
+				(comp_pin "V4" 0.0 0.0 "IN")
 				(comp_pin "P1" 0.0 0.0 "IN")
 				(comp_pin "N1" 0.0 0.0 "IN")
 				(comp_pin "R1" 0.0 0.0 "IN")
@@ -7833,6 +7833,7 @@
 				(comp_pin "U2" 0.0 0.0 "OUT")
 				(comp_pin "P3" 0.0 0.0 "IN")
 				(comp_pin "P4" 0.0 0.0 "IN")
+				(comp_pin "V5" 0.0 0.0 "BI")
 				(comp_pin "AB3" 0.0 0.0 "BI")
 				(comp_pin "AA3" 0.0 0.0 "BI")
 				(comp_pin "AA4" 0.0 0.0 "BI")
@@ -8823,8 +8824,7 @@
 				(comp_pin "C29" 0.0 0.0 "BI")
 				(comp_pin "B28" 0.0 0.0 "BI")
 				(comp_pin "U4" 0.0 0.0 "NC")
-				(comp_pin "U5" 0.0 0.0 "NC")
-				(comp_pin "V5" 0.0 0.0 "NC"))
+				(comp_pin "U5" 0.0 0.0 "NC"))
 			(attributes
 				(attval "DEVICE" "5VSX95T")
 				(attval "REFDES" "U9")))
@@ -23907,10 +23907,10 @@
 			(pins R282-2 U9-L11))
 		(net "ROACH_ADC_0\ZDOK0_CLK0_N"
 			(guid "$1I4\ZDOK0_CLK0_N")
-			(pins U9-J19 P13-F18))
+			(pins U9-J19 P13-C20))
 		(net "ROACH_ADC_0\ZDOK0_CLK0_P"
 			(guid "$1I4\ZDOK0_CLK0_P")
-			(pins U9-K18 P13-F17))
+			(pins U9-K18 P13-C19))
 		(net "ROACH_ADC_0\ZDOK0_CLK1_N"
 			(guid "$1I4\ZDOK0_CLK1_N")
 			(pins U9-J17 P13-F20))
@@ -24006,31 +24006,31 @@
 			(pins U9-R8 P13-C18))
 		(net "ROACH_ADC_0\ZDOK0_DP_N29"
 			(guid "$1I4\ZDOK0_DP_N29")
-			(pins U9-U7 P13-C20))
+			(pins U9-U7 P13-F2))
 		(net "ROACH_ADC_0\ZDOK0_DP_N30"
 			(guid "$1I4\ZDOK0_DP_N30")
-			(pins U9-J7 P13-F2))
+			(pins U9-J7 P13-F4))
 		(net "ROACH_ADC_0\ZDOK0_DP_N31"
 			(guid "$1I4\ZDOK0_DP_N31")
-			(pins U9-G5 P13-F4))
+			(pins U9-G5 P13-F6))
 		(net "ROACH_ADC_0\ZDOK0_DP_N32"
 			(guid "$1I4\ZDOK0_DP_N32")
-			(pins U9-P10 P13-F6))
+			(pins U9-P10 P13-F8))
 		(net "ROACH_ADC_0\ZDOK0_DP_N33"
 			(guid "$1I4\ZDOK0_DP_N33")
-			(pins U9-F6 P13-F8))
+			(pins U9-F6 P13-F10))
 		(net "ROACH_ADC_0\ZDOK0_DP_N34"
 			(guid "$1I4\ZDOK0_DP_N34")
-			(pins U9-T11 P13-F10))
+			(pins U9-T11 P13-F12))
 		(net "ROACH_ADC_0\ZDOK0_DP_N35"
 			(guid "$1I4\ZDOK0_DP_N35")
-			(pins U9-G7 P13-F12))
+			(pins U9-G7 P13-F14))
 		(net "ROACH_ADC_0\ZDOK0_DP_N36"
 			(guid "$1I4\ZDOK0_DP_N36")
-			(pins U9-U10 P13-F14))
+			(pins U9-U10 P13-F16))
 		(net "ROACH_ADC_0\ZDOK0_DP_N37"
 			(guid "$1I4\ZDOK0_DP_N37")
-			(pins U9-E7 P13-F16))
+			(pins U9-E7 P13-F18))
 		(net "ROACH_ADC_0\ZDOK0_DP_P0"
 			(guid "$1I4\ZDOK0_DP_P0")
 			(pins U9-E9 P13-A1))
@@ -24120,31 +24120,31 @@
 			(pins U9-R7 P13-C17))
 		(net "ROACH_ADC_0\ZDOK0_DP_P29"
 			(guid "$1I4\ZDOK0_DP_P29")
-			(pins U9-T8 P13-C19))
+			(pins U9-T8 P13-F1))
 		(net "ROACH_ADC_0\ZDOK0_DP_P30"
 			(guid "$1I4\ZDOK0_DP_P30")
-			(pins U9-H7 P13-F1))
+			(pins U9-H7 P13-F3))
 		(net "ROACH_ADC_0\ZDOK0_DP_P31"
 			(guid "$1I4\ZDOK0_DP_P31")
-			(pins U9-H5 P13-F3))
+			(pins U9-H5 P13-F5))
 		(net "ROACH_ADC_0\ZDOK0_DP_P32"
 			(guid "$1I4\ZDOK0_DP_P32")
-			(pins U9-R11 P13-F5))
+			(pins U9-R11 P13-F7))
 		(net "ROACH_ADC_0\ZDOK0_DP_P33"
 			(guid "$1I4\ZDOK0_DP_P33")
-			(pins U9-F5 P13-F7))
+			(pins U9-F5 P13-F9))
 		(net "ROACH_ADC_0\ZDOK0_DP_P34"
 			(guid "$1I4\ZDOK0_DP_P34")
-			(pins U9-T10 P13-F9))
+			(pins U9-T10 P13-F11))
 		(net "ROACH_ADC_0\ZDOK0_DP_P35"
 			(guid "$1I4\ZDOK0_DP_P35")
-			(pins U9-G6 P13-F11))
+			(pins U9-G6 P13-F13))
 		(net "ROACH_ADC_0\ZDOK0_DP_P36"
 			(guid "$1I4\ZDOK0_DP_P36")
-			(pins U9-T9 P13-F13))
+			(pins U9-T9 P13-F15))
 		(net "ROACH_ADC_0\ZDOK0_DP_P37"
 			(guid "$1I4\ZDOK0_DP_P37")
-			(pins U9-E6 P13-F15))
+			(pins U9-E6 P13-F17))
 		(net "ROACH_ADC_1\VRN_18"
 			(guid "$1I5\VRN_18")
 			(pins R288-2 U9-AH5))
@@ -24159,10 +24159,10 @@
 			(pins R290-2 U9-AE9))
 		(net "ROACH_ADC_1\ZDOK1_CLK0_N"
 			(guid "$1I5\ZDOK1_CLK0_N")
-			(pins U9-K19 P15-F18))
+			(pins U9-K19 P15-C20))
 		(net "ROACH_ADC_1\ZDOK1_CLK0_P"
 			(guid "$1I5\ZDOK1_CLK0_P")
-			(pins U9-L19 P15-F17))
+			(pins U9-L19 P15-C19))
 		(net "ROACH_ADC_1\ZDOK1_CLK1_N"
 			(guid "$1I5\ZDOK1_CLK1_N")
 			(pins U9-H15 P15-F20))
@@ -24258,31 +24258,31 @@
 			(pins U9-AD9 P15-C18))
 		(net "ROACH_ADC_1\ZDOK1_DP_N29"
 			(guid "$1I5\ZDOK1_DP_N29")
-			(pins U9-AD11 P15-C20))
+			(pins U9-AD11 P15-F2))
 		(net "ROACH_ADC_1\ZDOK1_DP_N30"
 			(guid "$1I5\ZDOK1_DP_N30")
-			(pins U9-AJ11 P15-F2))
+			(pins U9-AJ11 P15-F4))
 		(net "ROACH_ADC_1\ZDOK1_DP_N31"
 			(guid "$1I5\ZDOK1_DP_N31")
-			(pins U9-AK9 P15-F4))
+			(pins U9-AK9 P15-F6))
 		(net "ROACH_ADC_1\ZDOK1_DP_N32"
 			(guid "$1I5\ZDOK1_DP_N32")
-			(pins U9-AF10 P15-F6))
+			(pins U9-AF10 P15-F8))
 		(net "ROACH_ADC_1\ZDOK1_DP_N33"
 			(guid "$1I5\ZDOK1_DP_N33")
-			(pins U9-AJ10 P15-F8))
+			(pins U9-AJ10 P15-F10))
 		(net "ROACH_ADC_1\ZDOK1_DP_N34"
 			(guid "$1I5\ZDOK1_DP_N34")
-			(pins U9-AE11 P15-F10))
+			(pins U9-AE11 P15-F12))
 		(net "ROACH_ADC_1\ZDOK1_DP_N35"
 			(guid "$1I5\ZDOK1_DP_N35")
-			(pins U9-AH10 P15-F12))
+			(pins U9-AH10 P15-F14))
 		(net "ROACH_ADC_1\ZDOK1_DP_N36"
 			(guid "$1I5\ZDOK1_DP_N36")
-			(pins U9-AH8 P15-F14))
+			(pins U9-AH8 P15-F16))
 		(net "ROACH_ADC_1\ZDOK1_DP_N37"
 			(guid "$1I5\ZDOK1_DP_N37")
-			(pins U9-AG11 P15-F16))
+			(pins U9-AG11 P15-F18))
 		(net "ROACH_ADC_1\ZDOK1_DP_P0"
 			(guid "$1I5\ZDOK1_DP_P0")
 			(pins U9-AC4 P15-A1))
@@ -24372,31 +24372,31 @@
 			(pins U9-AE8 P15-C17))
 		(net "ROACH_ADC_1\ZDOK1_DP_P29"
 			(guid "$1I5\ZDOK1_DP_P29")
-			(pins U9-AD10 P15-C19))
+			(pins U9-AD10 P15-F1))
 		(net "ROACH_ADC_1\ZDOK1_DP_P30"
 			(guid "$1I5\ZDOK1_DP_P30")
-			(pins U9-AK11 P15-F1))
+			(pins U9-AK11 P15-F3))
 		(net "ROACH_ADC_1\ZDOK1_DP_P31"
 			(guid "$1I5\ZDOK1_DP_P31")
-			(pins U9-AK8 P15-F3))
+			(pins U9-AK8 P15-F5))
 		(net "ROACH_ADC_1\ZDOK1_DP_P32"
 			(guid "$1I5\ZDOK1_DP_P32")
-			(pins U9-AF9 P15-F5))
+			(pins U9-AF9 P15-F7))
 		(net "ROACH_ADC_1\ZDOK1_DP_P33"
 			(guid "$1I5\ZDOK1_DP_P33")
-			(pins U9-AJ9 P15-F7))
+			(pins U9-AJ9 P15-F9))
 		(net "ROACH_ADC_1\ZDOK1_DP_P34"
 			(guid "$1I5\ZDOK1_DP_P34")
-			(pins U9-AF11 P15-F9))
+			(pins U9-AF11 P15-F11))
 		(net "ROACH_ADC_1\ZDOK1_DP_P35"
 			(guid "$1I5\ZDOK1_DP_P35")
-			(pins U9-AH9 P15-F11))
+			(pins U9-AH9 P15-F13))
 		(net "ROACH_ADC_1\ZDOK1_DP_P36"
 			(guid "$1I5\ZDOK1_DP_P36")
-			(pins U9-AG8 P15-F13))
+			(pins U9-AG8 P15-F15))
 		(net "ROACH_ADC_1\ZDOK1_DP_P37"
 			(guid "$1I5\ZDOK1_DP_P37")
-			(pins U9-AG10 P15-F15))
+			(pins U9-AG10 P15-F17))
 		(net "ROACH_CONFIG\SX95T_HSWAP_EN"
 			(guid "$1I145\SX95T_HSWAP_EN")
 			(pins R48-2 U9-M23))
@@ -27669,7 +27669,7 @@
 			(pins FB21-2 U9-AG4 C263-1))
 		(net "ROACH_TRANSCEIVERS0_1\MGTAVTTRXC"
 			(guid "$1I2\MGTAVTTRXC")
-			(pins FB25-1 C265-1))
+			(pins FB25-1 U9-V5 C265-1))
 		(net "ROACH_TRANSCEIVERS0_1\MGTAVTTRX_112"
 			(guid "$1I2\MGTAVTTRX_112")
 			(pins FB4-2 U9-N3 C231-1))

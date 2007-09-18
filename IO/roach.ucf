@@ -503,30 +503,9 @@ NET "ddr2_ba<0>" LOC = AF31;#Bank 17
 NET "ddr2_ras_n" LOC = AJ31;#Bank 17
 NET "ddr2_cas_n" LOC = AK31;#Bank 17
 NET "ddr2_we_n" LOC = AF29;#Bank 17
-NET "ddr2_cs_n<0>" LOC = AF30;#Bank 17
-NET "ddr2_odt<0>" LOC = AJ30;#Bank 17
-NET "ddr2_cke<0>" LOC = AH30;#Bank 17
 
 NET "ddr2_reset_n" LOC = AP21;#Bank 25
 
-NET "ddr2_dqs<0>" LOC = AF33;#Bank 13
-NET "ddr2_dqs_n<0>" LOC = AE33;#Bank 13
-NET "ddr2_dqs<1>" LOC = AF34;#Bank 13
-NET "ddr2_dqs_n<1>" LOC = AE34;#Bank 13
-NET "ddr2_dqs<2>" LOC = AH34;#Bank 13
-NET "ddr2_dqs_n<2>" LOC = AJ34;#Bank 13
-NET "ddr2_dqs<3>" LOC = Y28;#Bank 17
-NET "ddr2_dqs_n<3>" LOC = Y29;#Bank 17
-NET "ddr2_dqs<4>" LOC = AB31;#Bank 17
-NET "ddr2_dqs_n<4>" LOC = AA31;#Bank 17
-NET "ddr2_dqs<5>" LOC = AK26;#Bank 21
-NET "ddr2_dqs_n<5>" LOC = AJ27;#Bank 21
-NET "ddr2_dqs<6>" LOC = AK29;#Bank 21
-NET "ddr2_dqs_n<6>" LOC = AJ29;#Bank 21
-NET "ddr2_dqs<7>" LOC = AN25;#Bank 25
-NET "ddr2_dqs_n<7>" LOC = AM25;#Bank 25
-NET "ddr2_dqs<8>" LOC = AM26;#Bank 25
-NET "ddr2_dqs_n<8>" LOC = AL26;#Bank 25
 
 NET "ddr2_dm<0>" LOC = AD32;#Bank 13
 NET "ddr2_dm<1>" LOC = AK34;#Bank 13
@@ -538,8 +517,6 @@ NET "ddr2_dm<6>" LOC = AH27;#Bank 21
 NET "ddr2_dm<7>" LOC = AP26;#Bank 25
 NET "ddr2_dm<8>" LOC = AL25;#Bank 25
 
-NET "ddr2_ck<0>" LOC = AD24;#Bank 21
-NET "ddr2_ck_n<0>" LOC = AE24;#Bank 21
 
 
 ########################################################################
@@ -931,16 +908,8 @@ NET "GPIOLVC33<2>" LOC = H23;#Bank 1
 NET "GPIOLVC33<3>" LOC = K13;#Bank 1
 NET "GPIOLVC33<4>" LOC = K12;#Bank 1
 
-NET "GPIOLVC18<0>" LOC = AE32;#Bank 13
-NET "GPIOLVC18<1>" LOC = AK33;#Bank 13
-NET "GPIOLVC18<2>" LOC = AK32;#Bank 13
-NET "GPIOLVC18<3>" LOC = AC30;#Bank 17
 NET "GPIOLVC18<4>" LOC = AA30;#Bank 17
-NET "GPIOLVC18<5>" LOC = AD31;#Bank 17
-NET "GPIOLVC18<6>" LOC = AE31;#Bank 17
 NET "GPIOLVC18<7>" LOC = AC29;#Bank 17
-NET "GPIOLVC18<8>" LOC = AH29;#Bank 17
-NET "GPIOLVC18<9>" LOC = AG30;#Bank 17
 NET "GPIOLVC18<10>" LOC = AK27;#Bank 21
 NET "GPIOLVC18<11>" LOC = AJ26;#Bank 21
 NET "GPIOLVC18<12>" LOC = AJ25;#Bank 21
@@ -983,10 +952,6 @@ NET "ddr2_a<15>" IOSTANDARD = SSTL18_I;
 NET "ddr2_ba<0>" IOSTANDARD = SSTL18_I;
 NET "ddr2_ba<1>" IOSTANDARD = SSTL18_I;
 NET "ddr2_ba<2>" IOSTANDARD = SSTL18_I;
-NET "ddr2_ck<0>" IOSTANDARD = DIFF_SSTL18_II;
-NET "ddr2_ck_n<0>" IOSTANDARD = DIFF_SSTL18_II;
-NET "ddr2_cke<0>" IOSTANDARD = SSTL18_I;
-NET "ddr2_cs_n<0>" IOSTANDARD = SSTL18_I;
 NET "ddr2_dm<0>" IOSTANDARD = SSTL18_I;
 NET "ddr2_dm<1>" IOSTANDARD = SSTL18_I;
 NET "ddr2_dm<2>" IOSTANDARD = SSTL18_I;
@@ -1068,35 +1033,12 @@ NET "ddr2_dq<68>" IOSTANDARD = SSTL18_II;
 NET "ddr2_dq<69>" IOSTANDARD = SSTL18_II;
 NET "ddr2_dq<70>" IOSTANDARD = SSTL18_II;
 NET "ddr2_dq<71>" IOSTANDARD = SSTL18_II;
-NET "ddr2_dqs<0>" IOSTANDARD = DIFF_SSTL18_II;
-NET "ddr2_dqs<1>" IOSTANDARD = DIFF_SSTL18_II;
-NET "ddr2_dqs<2>" IOSTANDARD = DIFF_SSTL18_II;
-NET "ddr2_dqs<3>" IOSTANDARD = DIFF_SSTL18_II;
-NET "ddr2_dqs<4>" IOSTANDARD = DIFF_SSTL18_II;
-NET "ddr2_dqs<5>" IOSTANDARD = DIFF_SSTL18_II;
-NET "ddr2_dqs<6>" IOSTANDARD = DIFF_SSTL18_II;
-NET "ddr2_dqs<7>" IOSTANDARD = DIFF_SSTL18_II;
-NET "ddr2_dqs<8>" IOSTANDARD = DIFF_SSTL18_II;
-NET "ddr2_dqs_n<0>" IOSTANDARD = DIFF_SSTL18_II;
-NET "ddr2_dqs_n<1>" IOSTANDARD = DIFF_SSTL18_II;
-NET "ddr2_dqs_n<2>" IOSTANDARD = DIFF_SSTL18_II;
-NET "ddr2_dqs_n<3>" IOSTANDARD = DIFF_SSTL18_II;
-NET "ddr2_dqs_n<4>" IOSTANDARD = DIFF_SSTL18_II;
-NET "ddr2_dqs_n<5>" IOSTANDARD = DIFF_SSTL18_II;
-NET "ddr2_dqs_n<6>" IOSTANDARD = DIFF_SSTL18_II;
-NET "ddr2_dqs_n<7>" IOSTANDARD = DIFF_SSTL18_II;
-NET "ddr2_dqs_n<8>" IOSTANDARD = DIFF_SSTL18_II;
 NET "ddr2_error" IOSTANDARD = LVCMOS18 | LOC = AP19;
-NET "ddr2_odt<0>" IOSTANDARD = SSTL18_I;
 NET "ddr2_phy_init_done" IOSTANDARD = LVCMOS18 | LOC = AN19;
 NET "GPIOLVC15<0>" IOSTANDARD = LVCMOS15;
 NET "GPIOLVC15<1>" IOSTANDARD = LVCMOS15;
 NET "GPIOLVC15<2>" IOSTANDARD = LVCMOS15;
 NET "GPIOLVC15<3>" IOSTANDARD = LVCMOS15;
-NET "GPIOLVC18<0>" IOSTANDARD = LVCMOS18;
-NET "GPIOLVC18<1>" IOSTANDARD = LVCMOS18;
-NET "GPIOLVC18<2>" IOSTANDARD = LVCMOS18;
-NET "GPIOLVC18<3>" IOSTANDARD = LVCMOS18;
 NET "GPIOLVC18<4>" IOSTANDARD = LVCMOS18;
 NET "GPIOLVC18<5>" IOSTANDARD = LVCMOS18;
 NET "GPIOLVC18<6>" IOSTANDARD = LVCMOS18;
@@ -1244,8 +1186,6 @@ NET "QSH_B_D_P<15>" IOSTANDARD = LVDS_25;
 NET "QSH_B_D_P<16>" IOSTANDARD = LVDS_25;
 NET "QSH_B_D_P<17>" IOSTANDARD = LVDS_25;
 NET "QSH_B_D_P<18>" IOSTANDARD = LVDS_25;
-NET "sys_clk_sp_N" LOC = H20;
-NET "sys_clk_sp_P" LOC = H19;
 NET "zdok0_dp_n<0>" IOSTANDARD = LVDS_25;
 NET "zdok0_dp_n<1>" IOSTANDARD = LVDS_25;
 NET "zdok0_dp_n<2>" IOSTANDARD = LVDS_25;
@@ -1398,3 +1338,118 @@ NET "zdok1_dp_p<34>" IOSTANDARD = LVDS_25;
 NET "zdok1_dp_p<35>" IOSTANDARD = LVDS_25;
 NET "zdok1_dp_p<36>" IOSTANDARD = LVDS_25;
 NET "zdok1_dp_p<37>" IOSTANDARD = LVDS_25;
+NET "ddr2_ck_0_n" IOSTANDARD = DIFF_SSTL18_II | LOC = AE24;
+NET "ddr2_ck_0_p" IOSTANDARD = DIFF_SSTL18_II | LOC = AD24;
+NET "ddr2_ck_1_n" IOSTANDARD = DIFF_SSTL18_II | LOC = AE31;
+NET "ddr2_ck_1_p" IOSTANDARD = DIFF_SSTL18_II | LOC = AD31;
+NET "ddr2_ck_2_n" IOSTANDARD = DIFF_SSTL18_II | LOC = AG30;
+NET "ddr2_ck_2_p" IOSTANDARD = DIFF_SSTL18_II | LOC = AH29;
+NET "DDR2_CKE_0" IOSTANDARD = SSTL18_I | LOC = AH30;
+NET "DDR2_CKE_1" IOSTANDARD = SSTL18_I | LOC = AK32;
+NET "DDR2_CKE_2" IOSTANDARD = SSTL18_I | LOC = AK33;
+NET "DDR2_CS_N_0" IOSTANDARD = SSTL18_I | LOC = AF30;
+NET "DDR2_CS_N_1" IOSTANDARD = SSTL18_I | LOC = AC30;
+NET "ddr2_dqs_0" IOSTANDARD = DIFF_SSTL18_II | LOC = AF33;
+NET "ddr2_dqs_1" IOSTANDARD = DIFF_SSTL18_II | LOC = AF34;
+NET "ddr2_dqs_2" IOSTANDARD = DIFF_SSTL18_II | LOC = AH34;
+NET "ddr2_dqs_3" IOSTANDARD = DIFF_SSTL18_II | LOC = Y28;
+NET "ddr2_dqs_4" IOSTANDARD = DIFF_SSTL18_II | LOC = AB31;
+NET "ddr2_dqs_5" IOSTANDARD = DIFF_SSTL18_II | LOC = AK26;
+NET "ddr2_dqs_6" IOSTANDARD = DIFF_SSTL18_II | LOC = AK29;
+NET "ddr2_dqs_7" IOSTANDARD = DIFF_SSTL18_II | LOC = AN25;
+NET "ddr2_dqs_8" IOSTANDARD = DIFF_SSTL18_II | LOC = AM26;
+NET "ddr2_dqs_n_0" IOSTANDARD = DIFF_SSTL18_II | LOC = AE33;
+NET "ddr2_dqs_n_1" IOSTANDARD = DIFF_SSTL18_II | LOC = AE34;
+NET "ddr2_dqs_n_2" IOSTANDARD = DIFF_SSTL18_II | LOC = AJ34;
+NET "ddr2_dqs_n_3" IOSTANDARD = DIFF_SSTL18_II | LOC = Y29;
+NET "ddr2_dqs_n_4" IOSTANDARD = DIFF_SSTL18_II | LOC = AA31;
+NET "ddr2_dqs_n_5" IOSTANDARD = DIFF_SSTL18_II | LOC = AJ27;
+NET "ddr2_dqs_n_6" IOSTANDARD = DIFF_SSTL18_II | LOC = AJ29;
+NET "ddr2_dqs_n_7" IOSTANDARD = DIFF_SSTL18_II | LOC = AM25;
+NET "ddr2_dqs_n_8" IOSTANDARD = DIFF_SSTL18_II | LOC = AL26;
+NET "DDR2_ODT_0" IOSTANDARD = SSTL18_I | LOC = AJ30;
+NET "DDR2_ODT_1" IOSTANDARD = SSTL18_I | LOC = AE32;
+NET "gpio_clk0_N" IOSTANDARD = LVPECL_25 | LOC = H20;
+NET "gpio_clk0_P" IOSTANDARD = LVPECL_25 | LOC = H19;
+NET "gpio_clk1_N" LOC = G16;
+NET "gpio_clk1_P" LOC = G15;
+NET "mgt_112_ref_clk_N" LOC = P3;
+NET "mgt_112_ref_clk_P" LOC = P4;
+NET "mgt_114_ref_clk_N" LOC = Y3;
+NET "mgt_114_ref_clk_P" LOC = Y4;
+NET "mgt_116_ref_clk_N" LOC = H3;
+NET "mgt_116_ref_clk_P" LOC = H4;
+NET "mgt_118_ref_clk_N" LOC = AF3;
+NET "mgt_118_ref_clk_P" LOC = AF4;
+NET "mgt_120_ref_clk_N" LOC = D4;
+NET "mgt_120_ref_clk_P" LOC = E4;
+NET "mgt_122_ref_clk_N" LOC = AL4;
+NET "mgt_122_ref_clk_P" LOC = AL5;
+NET "mgt_124_ref_clk_N" LOC = C8;
+NET "mgt_124_ref_clk_P" LOC = D8;
+NET "mgt_126_ref_clk_N" LOC = AM7;
+NET "mgt_126_ref_clk_P" LOC = AL7;
+NET "mgtrx0_112_N" LOC = P1;
+NET "mgtrx0_112_P" LOC = N1;
+NET "mgtrx0_114_N" LOC = Y1;
+NET "mgtrx0_114_P" LOC = W1;
+NET "mgtrx0_116_N" LOC = H1;
+NET "mgtrx0_116_P" LOC = G1;
+NET "mgtrx0_118_N" LOC = AF1;
+NET "mgtrx0_118_P" LOC = AE1;
+NET "mgtrx0_120_N" LOC = A2;
+NET "mgtrx0_120_P" LOC = A3;
+NET "mgtrx0_122_N" LOC = AM1;
+NET "mgtrx0_122_P" LOC = AL1;
+NET "mgtrx0_124_N" LOC = A8;
+NET "mgtrx0_124_P" LOC = A9;
+NET "mgtrx0_126_N" LOC = AP7;
+NET "mgtrx0_126_P" LOC = AP6;
+NET "mgtrx1_112_N" LOC = R1;
+NET "mgtrx1_112_P" LOC = T1;
+NET "mgtrx1_114_N" LOC = AA1;
+NET "mgtrx1_114_P" LOC = AB1;
+NET "mgtrx1_116_N" LOC = J1;
+NET "mgtrx1_116_P" LOC = K1;
+NET "mgtrx1_118_N" LOC = AG1;
+NET "mgtrx1_118_P" LOC = AH1;
+NET "mgtrx1_120_N" LOC = C1;
+NET "mgtrx1_120_P" LOC = D1;
+NET "mgtrx1_122_N" LOC = AP2;
+NET "mgtrx1_122_P" LOC = AP3;
+NET "mgtrx1_124_N" LOC = A7;
+NET "mgtrx1_124_P" LOC = A6;
+NET "mgtrx1_126_N" LOC = AP8;
+NET "mgtrx1_126_P" LOC = AP9;
+NET "mgttx0_112_N" LOC = N2;
+NET "mgttx0_112_P" LOC = M2;
+NET "mgttx0_114_N" LOC = W2;
+NET "mgttx0_114_P" LOC = V2;
+NET "mgttx0_116_N" LOC = G2;
+NET "mgttx0_116_P" LOC = F2;
+NET "mgttx0_118_N" LOC = AE2;
+NET "mgttx0_118_P" LOC = AD2;
+NET "mgttx0_120_N" LOC = B3;
+NET "mgttx0_120_P" LOC = B4;
+NET "mgttx0_122_N" LOC = AL2;
+NET "mgttx0_122_P" LOC = AK2;
+NET "mgttx0_124_N" LOC = B9;
+NET "mgttx0_124_P" LOC = B10;
+NET "mgttx0_126_N" LOC = AN6;
+NET "mgttx0_126_P" LOC = AN5;
+NET "mgttx1_112_N" LOC = T2;
+NET "mgttx1_112_P" LOC = U2;
+NET "mgttx1_114_N" LOC = AB2;
+NET "mgttx1_114_P" LOC = AC2;
+NET "mgttx1_116_N" LOC = K2;
+NET "mgttx1_116_P" LOC = L2;
+NET "mgttx1_118_N" LOC = AH2;
+NET "mgttx1_118_P" LOC = AJ2;
+NET "mgttx1_120_N" LOC = D2;
+NET "mgttx1_120_P" LOC = E2;
+NET "mgttx1_122_N" LOC = AN3;
+NET "mgttx1_122_P" LOC = AN4;
+NET "mgttx1_124_N" LOC = B6;
+NET "mgttx1_124_P" LOC = B5;
+NET "mgttx1_126_N" LOC = AN9;
+NET "mgttx1_126_P" LOC = AN10;
