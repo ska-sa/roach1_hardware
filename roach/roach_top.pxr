@@ -853,8 +853,6 @@ Net_Cross_Reference
 ("ROACH_V5_CLK\GPIO_CLK0_N"    "ROACH_V5_CLK\GPIO_CLK0_N")
 ("ROACH_V5_CLK\DLY_CLK_200_P"    "ROACH_V5_CLK\DLY_CLK_200_P")
 ("ROACH_V5_CLK\DLY_CLK_200_N"    "ROACH_V5_CLK\DLY_CLK_200_N")
-("ROACH_V5_CLK\2V5_3_1"    "ROACH_V5_CLK\2V5_3_1")
-("ROACH_V5_CLK\2V5_3"    "ROACH_V5_CLK\2V5_3")
 ("ROACH_PPC_DDR2\PPC_ECC7"    "ROACH_PPC_DDR2\PPC_ECC7")
 ("ROACH_PPC_DDR2\PPC_ECC6"    "ROACH_PPC_DDR2\PPC_ECC6")
 ("ROACH_PPC_DDR2\PPC_ECC5"    "ROACH_PPC_DDR2\PPC_ECC5")
@@ -1174,6 +1172,7 @@ Net_Cross_Reference
 ("ROACH_PPC_CPLD\CFG_DIP2"    "ROACH_PPC_CPLD\CFG_DIP2")
 ("ROACH_PPC_CPLD\CFG_DIP1"    "ROACH_PPC_CPLD\CFG_DIP1")
 ("ROACH_PPC_CPLD\CFG_DIP0"    "ROACH_PPC_CPLD\CFG_DIP0")
+("ROACH_PPC_CPLD\$1N710"    "ROACH_PPC_CPLD\$1N710")
 ("ROACH_PPC_CPLD\$1N20"    "ROACH_PPC_CPLD\$1N20")
 ("ROACH_TRANSCEIVERS_PSU\MGT_AVTTX_PG"    "ROACH_TRANSCEIVERS_PSU\MGT_AVTTX_PG")
 ("ROACH_TRANSCEIVERS_PSU\MGT_AVTTX_EN"    "ROACH_TRANSCEIVERS_PSU\MGT_AVTTX_EN")
@@ -1463,6 +1462,7 @@ Net_Cross_Reference
 ("2V5"    "$1I116\2V5")
 ("2V5"    "$1I2\2V5")
 ("2V5"    "$1I23\2V5")
+("2V5"    "$1I291\2V5")
 ("2V5"    "$1I3\2V5")
 ("2V5"    "$1I307\2V5")
 ("2V5"    "$1I35\2V5")
@@ -1731,6 +1731,7 @@ Net_Cross_Reference
 ("GND"    "$1I23\GND")
 ("GND"    "$1I258\GND")
 ("GND"    "$1I289\GND")
+("GND"    "$1I291\GND")
 ("GND"    "$1I292\GND")
 ("GND"    "$1I3\GND")
 ("GND"    "$1I307\GND")
@@ -2685,8 +2686,6 @@ Internal_Net_Cross_Reference
 ("$1I291\GPIO_CLK0_N"    "ROACH_V5_CLK\GPIO_CLK0_N")
 ("$1I291\DLY_CLK_200_P"    "ROACH_V5_CLK\DLY_CLK_200_P")
 ("$1I291\DLY_CLK_200_N"    "ROACH_V5_CLK\DLY_CLK_200_N")
-("$1I291\2V5_3_1"    "ROACH_V5_CLK\2V5_3_1")
-("$1I291\2V5_3"    "ROACH_V5_CLK\2V5_3")
 ("$1I289\PPC_ECC7"    "ROACH_PPC_DDR2\PPC_ECC7")
 ("$1I289\PPC_ECC6"    "ROACH_PPC_DDR2\PPC_ECC6")
 ("$1I289\PPC_ECC5"    "ROACH_PPC_DDR2\PPC_ECC5")
@@ -3006,6 +3005,7 @@ Internal_Net_Cross_Reference
 ("$1I210\CFG_DIP2"    "ROACH_PPC_CPLD\CFG_DIP2")
 ("$1I210\CFG_DIP1"    "ROACH_PPC_CPLD\CFG_DIP1")
 ("$1I210\CFG_DIP0"    "ROACH_PPC_CPLD\CFG_DIP0")
+("$1I210\$1N710"    "ROACH_PPC_CPLD\$1N710")
 ("$1I210\$1N20"    "ROACH_PPC_CPLD\$1N20")
 ("$1I21\MGT_AVTTX_PG"    "ROACH_TRANSCEIVERS_PSU\MGT_AVTTX_PG")
 ("$1I21\MGT_AVTTX_EN"    "ROACH_TRANSCEIVERS_PSU\MGT_AVTTX_EN")
@@ -3295,6 +3295,7 @@ Internal_Net_Cross_Reference
 ("2V5"    "$1I116\2V5")
 ("2V5"    "$1I2\2V5")
 ("2V5"    "$1I23\2V5")
+("2V5"    "$1I291\2V5")
 ("2V5"    "$1I3\2V5")
 ("2V5"    "$1I307\2V5")
 ("2V5"    "$1I35\2V5")
@@ -3563,6 +3564,7 @@ Internal_Net_Cross_Reference
 ("GND"    "$1I23\GND")
 ("GND"    "$1I258\GND")
 ("GND"    "$1I289\GND")
+("GND"    "$1I291\GND")
 ("GND"    "$1I292\GND")
 ("GND"    "$1I3\GND")
 ("GND"    "$1I307\GND")
@@ -3899,8 +3901,8 @@ Pin_Cross_Reference
 		(U4    "")
 	)
 	( 9    "ROACH_V5_CLK\$1I10"
-		(D23    "ROACH_V5_CLK\2V5_3")
-		(E20    "ROACH_V5_CLK\2V5_3_1")
+		(D23    "2V5")
+		(E20    "2V5")
 		(L18    "ROACH_V5_CLK\DLY_CLK_200_N")
 		(K17    "ROACH_V5_CLK\DLY_CLK_200_P")
 		(H20    "ROACH_V5_CLK\GPIO_CLK0_N")
@@ -7512,6 +7514,360 @@ Pin_Cross_Reference
 		(2    "GND")
 	)
 )
+("C568"
+	( 1    "ROACH_V5_CLK\$1I29"
+		(1    "2V5")
+		(2    "GND")
+	)
+)
+("C570"
+	( 1    "ROACH_PPC_NVM_SERIAL\$1I788"
+		(1    "3V3")
+		(2    "GND")
+	)
+)
+("C571"
+	( 1    "ROACH_PPC_NVM_SERIAL\$1I789"
+		(1    "3V3")
+		(2    "GND")
+	)
+)
+("C572"
+	( 1    "ROACH_PPC_NVM_SERIAL\$1I794"
+		(1    "3V3")
+		(2    "GND")
+	)
+)
+("C573"
+	( 1    "ROACH_PPC_NVM_SERIAL\$1I795"
+		(1    "3V3")
+		(2    "GND")
+	)
+)
+("C591"
+	( 1    "ROACH_5V_POWER\$1I636"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C592"
+	( 1    "ROACH_5V_POWER\$1I642"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C593"
+	( 1    "ROACH_5V_POWER\$1I643"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C594"
+	( 1    "ROACH_5V_POWER\$1I644"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C595"
+	( 1    "ROACH_5V_POWER\$1I645"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C596"
+	( 1    "ROACH_5V_POWER\$1I646"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C597"
+	( 1    "ROACH_5V_POWER\$1I673"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C598"
+	( 1    "ROACH_5V_POWER\$1I674"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C599"
+	( 1    "ROACH_5V_POWER\$1I675"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C600"
+	( 1    "ROACH_5V_POWER\$1I676"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C601"
+	( 1    "ROACH_5V_POWER\$1I677"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C602"
+	( 1    "ROACH_5V_POWER\$1I678"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C603"
+	( 1    "ROACH_5V_POWER\$1I690"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C604"
+	( 1    "ROACH_5V_POWER\$1I692"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C605"
+	( 1    "ROACH_5V_POWER\$1I693"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C606"
+	( 1    "ROACH_5V_POWER\$1I695"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C607"
+	( 1    "ROACH_5V_POWER\$1I697"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C608"
+	( 1    "ROACH_5V_POWER\$1I698"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C609"
+	( 1    "ROACH_5V_POWER\$1I700"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C610"
+	( 1    "ROACH_5V_POWER\$1I701"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C611"
+	( 1    "ROACH_5V_POWER\$1I702"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C612"
+	( 1    "ROACH_5V_POWER\$1I704"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C613"
+	( 1    "ROACH_5V_POWER\$1I705"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C614"
+	( 1    "ROACH_5V_POWER\$1I707"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C615"
+	( 1    "ROACH_5V_POWER\$1I708"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C616"
+	( 1    "ROACH_5V_POWER\$1I709"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C617"
+	( 1    "ROACH_5V_POWER\$1I710"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C618"
+	( 1    "ROACH_5V_POWER\$1I711"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C619"
+	( 1    "ROACH_5V_POWER\$1I712"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C620"
+	( 1    "ROACH_5V_POWER\$1I713"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C621"
+	( 1    "ROACH_5V_POWER\$1I714"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C622"
+	( 1    "ROACH_5V_POWER\$1I716"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C623"
+	( 1    "ROACH_5V_POWER\$1I717"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C624"
+	( 1    "ROACH_5V_POWER\$1I719"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C625"
+	( 1    "ROACH_5V_POWER\$1I720"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C626"
+	( 1    "ROACH_5V_POWER\$1I721"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C627"
+	( 1    "ROACH_5V_POWER\$1I730"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C628"
+	( 1    "ROACH_5V_POWER\$1I733"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C629"
+	( 1    "ROACH_5V_POWER\$1I734"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C630"
+	( 1    "ROACH_5V_POWER\$1I739"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C631"
+	( 1    "ROACH_5V_POWER\$1I741"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C632"
+	( 1    "ROACH_5V_POWER\$1I742"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C633"
+	( 1    "ROACH_5V_POWER\$1I744"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C634"
+	( 1    "ROACH_5V_POWER\$1I746"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C635"
+	( 1    "ROACH_5V_POWER\$1I747"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C636"
+	( 1    "ROACH_5V_POWER\$1I772"
+		(1    "2V5")
+		(2    "GND")
+	)
+)
+("C637"
+	( 1    "ROACH_5V_POWER\$1I773"
+		(1    "2V5")
+		(2    "GND")
+	)
+)
+("C638"
+	( 1    "ROACH_5V_POWER\$1I774"
+		(1    "2V5")
+		(2    "GND")
+	)
+)
+("C648"
+	( 1    "ROACH_DIFF_GPIO\$1I328"
+		(1    "2V5")
+		(2    "SIGNAL_GND")
+	)
+)
+("C649"
+	( 1    "ROACH_DIFF_GPIO\$1I329"
+		(1    "2V5")
+		(2    "SIGNAL_GND")
+	)
+)
+("C650"
+	( 1    "ROACH_DIFF_GPIO\$1I330"
+		(1    "2V5")
+		(2    "SIGNAL_GND")
+	)
+)
+("C651"
+	( 1    "ROACH_DIFF_GPIO\$1I331"
+		(1    "2V5")
+		(2    "SIGNAL_GND")
+	)
+)
+("C652"
+	( 1    "ROACH_DIFF_GPIO\$1I332"
+		(1    "2V5")
+		(2    "SIGNAL_GND")
+	)
+)
+("C653"
+	( 1    "ROACH_DIFF_GPIO\$1I333"
+		(1    "2V5")
+		(2    "SIGNAL_GND")
+	)
+)
 ("C410"
 	( 1    "ROACH_TRANSCEIVERS2_3\$1I171"
 		(1    "ROACH_TRANSCEIVERS2_3\MGTAVTTRX_120")
@@ -8914,42 +9270,6 @@ Pin_Cross_Reference
 	( 1    "ROACH_DDR2_DIMM\$1I2429"
 		(1    "VREF_0V9")
 		(2    "GND")
-	)
-)
-("C568"
-	( 1    "ROACH_DIFF_GPIO\$1I108"
-		(1    "2V5")
-		(2    "SIGNAL_GND")
-	)
-)
-("C569"
-	( 1    "ROACH_DIFF_GPIO\$1I109"
-		(1    "2V5")
-		(2    "SIGNAL_GND")
-	)
-)
-("C570"
-	( 1    "ROACH_DIFF_GPIO\$1I110"
-		(1    "2V5")
-		(2    "SIGNAL_GND")
-	)
-)
-("C571"
-	( 1    "ROACH_DIFF_GPIO\$1I118"
-		(1    "2V5")
-		(2    "SIGNAL_GND")
-	)
-)
-("C572"
-	( 1    "ROACH_DIFF_GPIO\$1I119"
-		(1    "2V5")
-		(2    "SIGNAL_GND")
-	)
-)
-("C573"
-	( 1    "ROACH_DIFF_GPIO\$1I120"
-		(1    "2V5")
-		(2    "SIGNAL_GND")
 	)
 )
 ("C574"
@@ -11864,6 +12184,13 @@ Pin_Cross_Reference
 		(11    "ROACH_PPC_CPLD\DAT5")
 		(12    "ROACH_PPC_CPLD\DAT6")
 		(13    "ROACH_PPC_CPLD\DAT7")
+		(15    "GND")
+		(16    "GND")
+		(17    "GND")
+		(18    "GND")
+		(19    "")
+		(20    "")
+		(14    "ROACH_PPC_CPLD\$1N710")
 		(4    "3V3")
 		(3    "GND")
 		(6    "GND")
@@ -15439,6 +15766,90 @@ Pin_Cross_Reference
 		(4    "")
 	)
 )
+("C569"
+	( 1    "ROACH_V5_CLK\$1I21"
+		(1    "2V5")
+		(2    "GND")
+	)
+)
+("C589"
+	( 1    "ROACH_PPC_NVM_SERIAL\$1I777"
+		(1    "3V3")
+		(2    "GND")
+	)
+)
+("C590"
+	( 1    "ROACH_PPC_NVM_SERIAL\$1I778"
+		(1    "3V3")
+		(2    "GND")
+	)
+)
+("C645"
+	( 1    "ROACH_5V_POWER\$1I758"
+		(1    "2V5")
+		(2    "GND")
+	)
+)
+("C646"
+	( 1    "ROACH_5V_POWER\$1I759"
+		(1    "2V5")
+		(2    "GND")
+	)
+)
+("C647"
+	( 1    "ROACH_5V_POWER\$1I760"
+		(1    "2V5")
+		(2    "GND")
+	)
+)
+("C654"
+	( 1    "ROACH_DIFF_GPIO\$1I320"
+		(1    "2V5")
+		(2    "SIGNAL_GND")
+	)
+)
+("C655"
+	( 1    "ROACH_DIFF_GPIO\$1I334"
+		(1    "2V5")
+		(2    "SIGNAL_GND")
+	)
+)
+("C639"
+	( 1    "ROACH_5V_POWER\$1I635"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C640"
+	( 1    "ROACH_5V_POWER\$1I637"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C641"
+	( 1    "ROACH_5V_POWER\$1I638"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C642"
+	( 1    "ROACH_5V_POWER\$1I639"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C643"
+	( 1    "ROACH_5V_POWER\$1I640"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
+("C644"
+	( 1    "ROACH_5V_POWER\$1I641"
+		(1    "1V0")
+		(2    "GND")
+	)
+)
 ("U18"
 	( 1    "ROACH_TRANSCEIVERS_PSU\$1I628"
 		(10    "3V3")
@@ -15677,7 +16088,7 @@ Pin_Cross_Reference
 		(P100    "")
 		(P101    "")
 		(P102    "")
-		(P103    "")
+		(P103    "ROACH_PPC_CPLD\$1N710")
 		(P12    "PDATA0")
 		(P104    "ROACH_PPC_CPLD\DAT0/DO")
 		(P105    "ROACH_PPC_CPLD\DAT1")
