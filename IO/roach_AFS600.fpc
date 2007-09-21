@@ -16,50 +16,6 @@
   (LIBRARY_VERSION "Version 0002")
   (SIGNALS
     (SIGNAL
-      (NAME "0V9_0_SLP")
-      (HDL_NAME "0V9_0_SLP")
-      (DIR OUT)
-      (ELEMENTS
-        (SIGNAL
-          (NAME "0V9_0_SLP<0>")
-          (HDL_NAME "0V9_0_SLP<0>")
-          (PIN D7)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-        (SIGNAL
-          (NAME "0V9_0_SLP<1>")
-          (HDL_NAME "0V9_0_SLP<1>")
-          (PIN C7)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-      )
-      (TYPE IO)
-    )
-    (SIGNAL
-      (NAME "0V9_1_SLP")
-      (HDL_NAME "0V9_1_SLP")
-      (DIR OUT)
-      (ELEMENTS
-        (SIGNAL
-          (NAME "0V9_1_SLP<0>")
-          (HDL_NAME "0V9_1_SLP<0>")
-          (PIN B6)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-        (SIGNAL
-          (NAME "0V9_1_SLP<1>")
-          (HDL_NAME "0V9_1_SLP<1>")
-          (PIN C6)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-      )
-      (TYPE IO)
-    )
-    (SIGNAL
       (NAME "1V2_INHIBIT")
       (HDL_NAME "1V2_INHIBIT")
       (DIR OUT)
@@ -545,6 +501,48 @@
       (SWAPGROUP AnalogGND)
     )
     (SIGNAL
+      (NAME MGT_AVCCPLL_EN)
+      (HDL_NAME MGT_AVCCPLL_EN)
+      (DIR OUT)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS33)
+    )
+    (SIGNAL
+      (NAME MGT_AVCCPLL_PG)
+      (HDL_NAME MGT_AVCCPLL_PG)
+      (DIR IN)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS33)
+    )
+    (SIGNAL
+      (NAME MGT_AVCC_EN)
+      (HDL_NAME MGT_AVCC_EN)
+      (DIR OUT)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS33)
+    )
+    (SIGNAL
+      (NAME MGT_AVCC_PG)
+      (HDL_NAME MGT_AVCC_PG)
+      (DIR IN)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS33)
+    )
+    (SIGNAL
+      (NAME MGT_AVTTX_EN)
+      (HDL_NAME MGT_AVTTX_EN)
+      (DIR OUT)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS33)
+    )
+    (SIGNAL
+      (NAME MGT_AVTTX_PG)
+      (HDL_NAME MGT_AVTTX_PG)
+      (DIR IN)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS33)
+    )
+    (SIGNAL
       (NAME "PS_ALERT#")
       (HDL_NAME "PS_ALERT#")
       (DIR OUT)
@@ -879,10 +877,6 @@
       (STANDARD LVCMOS33)
     )
     (IO
-      (PIN B6)
-      (STANDARD LVCMOS33)
-    )
-    (IO
       (PIN B8)
       (STANDARD LVCMOS33)
     )
@@ -896,14 +890,6 @@
     )
     (IO
       (PIN C13)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN C6)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN C7)
       (STANDARD LVCMOS33)
     )
     (IO
@@ -952,10 +938,6 @@
     )
     (IO
       (PIN D6)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN D7)
       (STANDARD LVCMOS33)
     )
     (IO
@@ -1185,10 +1167,6 @@
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
-      (PIN B6)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
       (PIN B8)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
@@ -1202,14 +1180,6 @@
     )
     (SWAP
       (PIN C13)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN C6)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN C7)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
@@ -1258,10 +1228,6 @@
     )
     (SWAP
       (PIN D6)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN D7)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
