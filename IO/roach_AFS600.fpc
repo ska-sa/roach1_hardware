@@ -16,6 +16,13 @@
   (LIBRARY_VERSION "Version 0002")
   (SIGNALS
     (SIGNAL
+      (NAME "1V0_INHIBIT")
+      (HDL_NAME "1V0_INHIBIT")
+      (DIR OUT)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS33)
+    )
+    (SIGNAL
       (NAME "1V2_INHIBIT")
       (HDL_NAME "1V2_INHIBIT")
       (DIR OUT)
@@ -24,50 +31,10 @@
       (IOSTANDARD LVCMOS33)
     )
     (SIGNAL
-      (NAME "1V2_MGT0_EN")
-      (HDL_NAME "1V2_MGT0_EN")
-      (DIR OUT)
-      (PIN A11)
-      (TYPE IO)
-      (IOSTANDARD LVCMOS33)
-    )
-    (SIGNAL
-      (NAME "1V2_MGT0_PG")
-      (HDL_NAME "1V2_MGT0_PG")
-      (DIR IN)
-      (PIN B11)
-      (TYPE IO)
-      (IOSTANDARD LVCMOS33)
-    )
-    (SIGNAL
-      (NAME "1V2_MGT1_EN")
-      (HDL_NAME "1V2_MGT1_EN")
-      (DIR OUT)
-      (PIN B12)
-      (TYPE IO)
-      (IOSTANDARD LVCMOS33)
-    )
-    (SIGNAL
-      (NAME "1V2_MGT1_PG")
-      (HDL_NAME "1V2_MGT1_PG")
-      (DIR IN)
-      (PIN B13)
-      (TYPE IO)
-      (IOSTANDARD LVCMOS33)
-    )
-    (SIGNAL
-      (NAME "1V5_ENABLE")
-      (HDL_NAME "1V5_ENABLE")
+      (NAME "1V5_INHIBIT")
+      (HDL_NAME "1V5_INHIBIT")
       (DIR OUT)
       (PIN C11)
-      (TYPE IO)
-      (IOSTANDARD LVCMOS33)
-    )
-    (SIGNAL
-      (NAME "1V5_PG")
-      (HDL_NAME "1V5_PG")
-      (DIR IN)
-      (PIN D10)
       (TYPE IO)
       (IOSTANDARD LVCMOS33)
     )
@@ -84,22 +51,6 @@
       (HDL_NAME "2V5_INHIBIT")
       (DIR OUT)
       (PIN J4)
-      (TYPE IO)
-      (IOSTANDARD LVCMOS33)
-    )
-    (SIGNAL
-      (NAME "2V5_MARGIN_DOWN")
-      (HDL_NAME "2V5_MARGIN_DOWN")
-      (DIR OUT)
-      (PIN J1)
-      (TYPE IO)
-      (IOSTANDARD LVCMOS33)
-    )
-    (SIGNAL
-      (NAME "2V5_MARGIN_UP")
-      (HDL_NAME "2V5_MARGIN_UP")
-      (DIR OUT)
-      (PIN J2)
       (TYPE IO)
       (IOSTANDARD LVCMOS33)
     )
@@ -135,125 +86,10 @@
       (SWAPGROUP AnalogVCC)
     )
     (SIGNAL
-      (NAME BP_GA)
-      (HDL_NAME BP_GA)
-      (DIR IN)
-      (ELEMENTS
-        (SIGNAL
-          (NAME "BP_GA<0>")
-          (HDL_NAME "BP_GA<0>")
-          (PIN F15)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-        (SIGNAL
-          (NAME "BP_GA<1>")
-          (HDL_NAME "BP_GA<1>")
-          (PIN F16)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-        (SIGNAL
-          (NAME "BP_GA<2>")
-          (HDL_NAME "BP_GA<2>")
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-          (SWAPGROUP CLOCK_Vref_NR_VccIO_3_3)
-        )
-        (SIGNAL
-          (NAME "BP_GA<3>")
-          (HDL_NAME "BP_GA<3>")
-          (PIN G16)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-        (SIGNAL
-          (NAME "BP_GA<4>")
-          (HDL_NAME "BP_GA<4>")
-          (PIN H14)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-      )
-      (TYPE IO)
-    )
-    (SIGNAL
-      (NAME "BP_PERST#")
-      (HDL_NAME "BP_PERST#")
-      (DIR IN)
-      (PIN H13)
-      (TYPE IO)
-      (IOSTANDARD LVCMOS33)
-    )
-    (SIGNAL
       (NAME "BP_PWREN#")
       (HDL_NAME "BP_PWREN#")
       (DIR IN)
       (PIN F3)
-      (TYPE IO)
-      (IOSTANDARD LVCMOS33)
-    )
-    (SIGNAL
-      (NAME BP_SCLI)
-      (HDL_NAME BP_SCLI)
-      (DIR IN)
-      (PIN H15)
-      (TYPE IO)
-      (IOSTANDARD LVCMOS33)
-    )
-    (SIGNAL
-      (NAME BP_SCLO)
-      (HDL_NAME BP_SCLO)
-      (DIR OUT)
-      (PIN H16)
-      (TYPE IO)
-      (IOSTANDARD LVCMOS33)
-    )
-    (SIGNAL
-      (NAME BP_SDAI)
-      (HDL_NAME BP_SDAI)
-      (DIR IN)
-      (PIN J14)
-      (TYPE IO)
-      (IOSTANDARD LVCMOS33)
-    )
-    (SIGNAL
-      (NAME BP_SDAO)
-      (HDL_NAME BP_SDAO)
-      (DIR OUT)
-      (PIN J16)
-      (TYPE IO)
-      (IOSTANDARD LVCMOS33)
-    )
-    (SIGNAL
-      (NAME BRD_TCK)
-      (HDL_NAME BRD_TCK)
-      (DIR IN)
-      (PIN D1)
-      (TYPE IO)
-      (IOSTANDARD LVCMOS33)
-    )
-    (SIGNAL
-      (NAME BRD_TDI)
-      (HDL_NAME BRD_TDI)
-      (DIR IN)
-      (PIN D2)
-      (TYPE IO)
-      (IOSTANDARD LVCMOS33)
-    )
-    (SIGNAL
-      (NAME BRD_TDO)
-      (HDL_NAME BRD_TDO)
-      (DIR OUT)
-      (PIN E2)
-      (TYPE IO)
-      (IOSTANDARD LVCMOS33)
-    )
-    (SIGNAL
-      (NAME BRD_TMS)
-      (HDL_NAME BRD_TMS)
-      (DIR IN)
-      (PIN E3)
       (TYPE IO)
       (IOSTANDARD LVCMOS33)
     )
@@ -397,94 +233,6 @@
       (PIN A4)
       (TYPE IO)
       (IOSTANDARD LVCMOS33)
-    )
-    (SIGNAL
-      (NAME FPGA_TCK)
-      (HDL_NAME FPGA_TCK)
-      (DIR OUT)
-      (ELEMENTS
-        (SIGNAL
-          (NAME "FPGA_TCK<0>")
-          (HDL_NAME "FPGA_TCK<0>")
-          (PIN B8)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-        (SIGNAL
-          (NAME "FPGA_TCK<1>")
-          (HDL_NAME "FPGA_TCK<1>")
-          (PIN B9)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-      )
-      (TYPE IO)
-    )
-    (SIGNAL
-      (NAME FPGA_TDI)
-      (HDL_NAME FPGA_TDI)
-      (DIR OUT)
-      (ELEMENTS
-        (SIGNAL
-          (NAME "FPGA_TDI<0>")
-          (HDL_NAME "FPGA_TDI<0>")
-          (PIN C8)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-        (SIGNAL
-          (NAME "FPGA_TDI<1>")
-          (HDL_NAME "FPGA_TDI<1>")
-          (PIN C9)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-      )
-      (TYPE IO)
-    )
-    (SIGNAL
-      (NAME FPGA_TDO)
-      (HDL_NAME FPGA_TDO)
-      (DIR IN)
-      (ELEMENTS
-        (SIGNAL
-          (NAME "FPGA_TDO<0>")
-          (HDL_NAME "FPGA_TDO<0>")
-          (PIN A8)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-        (SIGNAL
-          (NAME "FPGA_TDO<1>")
-          (HDL_NAME "FPGA_TDO<1>")
-          (PIN A9)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-      )
-      (TYPE IO)
-    )
-    (SIGNAL
-      (NAME FPGA_TMS)
-      (HDL_NAME FPGA_TMS)
-      (DIR OUT)
-      (ELEMENTS
-        (SIGNAL
-          (NAME "FPGA_TMS<0>")
-          (HDL_NAME "FPGA_TMS<0>")
-          (PIN A6)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-        (SIGNAL
-          (NAME "FPGA_TMS<1>")
-          (HDL_NAME "FPGA_TMS<1>")
-          (PIN A7)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-      )
-      (TYPE IO)
     )
     (SIGNAL
       (NAME GND)
@@ -698,126 +446,12 @@
       (TYPE VCCO)
       (SWAPGROUP VCCO_0)
     )
-    (SIGNAL
-      (NAME XMC_PD)
-      (HDL_NAME XMC_PD)
-      (DIR IN)
-      (ELEMENTS
-        (SIGNAL
-          (NAME "XMC_PD<0>")
-          (HDL_NAME "XMC_PD<0>")
-          (PIN D16)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-        (SIGNAL
-          (NAME "XMC_PD<1>")
-          (HDL_NAME "XMC_PD<1>")
-          (PIN D15)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-      )
-      (TYPE IO)
-    )
-    (SIGNAL
-      (NAME XMC_TCK)
-      (HDL_NAME XMC_TCK)
-      (DIR OUT)
-      (ELEMENTS
-        (SIGNAL
-          (NAME "XMC_TCK<0>")
-          (HDL_NAME "XMC_TCK<0>")
-          (PIN D13)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-        (SIGNAL
-          (NAME "XMC_TCK<1>")
-          (HDL_NAME "XMC_TCK<1>")
-          (PIN D14)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-      )
-      (TYPE IO)
-    )
-    (SIGNAL
-      (NAME XMC_TDI)
-      (HDL_NAME XMC_TDI)
-      (DIR OUT)
-      (ELEMENTS
-        (SIGNAL
-          (NAME "XMC_TDI<0>")
-          (HDL_NAME "XMC_TDI<0>")
-          (PIN E14)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-        (SIGNAL
-          (NAME "XMC_TDI<1>")
-          (HDL_NAME "XMC_TDI<1>")
-          (PIN E15)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-      )
-      (TYPE IO)
-    )
-    (SIGNAL
-      (NAME XMC_TDO)
-      (HDL_NAME XMC_TDO)
-      (DIR IN)
-      (ELEMENTS
-        (SIGNAL
-          (NAME "XMC_TDO<0>")
-          (HDL_NAME "XMC_TDO<0>")
-          (PIN G11)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-        (SIGNAL
-          (NAME "XMC_TDO<1>")
-          (HDL_NAME "XMC_TDO<1>")
-          (PIN J11)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-      )
-      (TYPE IO)
-    )
-    (SIGNAL
-      (NAME XMC_TMS)
-      (HDL_NAME XMC_TMS)
-      (DIR OUT)
-      (ELEMENTS
-        (SIGNAL
-          (NAME "XMC_TMS<0>")
-          (HDL_NAME "XMC_TMS<0>")
-          (PIN H11)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-        (SIGNAL
-          (NAME "XMC_TMS<1>")
-          (HDL_NAME "XMC_TMS<1>")
-          (PIN H12)
-          (TYPE IO)
-          (IOSTANDARD LVCMOS33)
-        )
-      )
-      (TYPE IO)
-    )
   )
   (DISABLED_CLOCK_PINS A13 A3 A4 B12 B13 C13 C6 D13 D15 D2 D4 D6 E15 F15 G11 G16 G3 G4 H1 H13 H14 H15 H16 J1 J14 J16 J2 J4 L15 N1)
   (ENABLED_IO_PINS A13 A3 A4 B12 B13 C13 C6 D13 D15 D2 D4 D6 E15 F15 G11 G16 G3 G4 H1 H13 H14 H15 H16 J1 J14 J16 J2 J4 L15 N1)
   (IO_STANDARDS
     (IO
       (PIN A10)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN A11)
       (STANDARD LVCMOS33)
     )
     (IO
@@ -837,34 +471,6 @@
       (STANDARD LVCMOS33)
     )
     (IO
-      (PIN A6)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN A7)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN A8)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN A9)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN B11)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN B12)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN B13)
-      (STANDARD LVCMOS33)
-    )
-    (IO
       (PIN B14)
       (STANDARD LVCMOS33)
     )
@@ -877,55 +483,11 @@
       (STANDARD LVCMOS33)
     )
     (IO
-      (PIN B8)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN B9)
-      (STANDARD LVCMOS33)
-    )
-    (IO
       (PIN C11)
       (STANDARD LVCMOS33)
     )
     (IO
       (PIN C13)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN C8)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN C9)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN D1)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN D10)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN D13)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN D14)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN D15)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN D16)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN D2)
       (STANDARD LVCMOS33)
     )
     (IO
@@ -949,22 +511,6 @@
       (STANDARD LVTTL)
     )
     (IO
-      (PIN E14)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN E15)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN E2)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN E3)
-      (STANDARD LVCMOS33)
-    )
-    (IO
       (PIN E8)
       (STANDARD LVTTL)
     )
@@ -974,14 +520,6 @@
     )
     (IO
       (PIN F1)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN F15)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN F16)
       (STANDARD LVCMOS33)
     )
     (IO
@@ -1005,15 +543,7 @@
       (STANDARD LVCMOS33)
     )
     (IO
-      (PIN G11)
-      (STANDARD LVCMOS33)
-    )
-    (IO
       (PIN G14)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN G16)
       (STANDARD LVCMOS33)
     )
     (IO
@@ -1033,51 +563,7 @@
       (STANDARD LVCMOS33)
     )
     (IO
-      (PIN H11)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN H12)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN H13)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN H14)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN H15)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN H16)
-      (STANDARD LVCMOS33)
-    )
-    (IO
       (PIN H2)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN J1)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN J11)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN J14)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN J16)
-      (STANDARD LVCMOS33)
-    )
-    (IO
-      (PIN J2)
       (STANDARD LVCMOS33)
     )
     (IO
@@ -1107,10 +593,6 @@
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
-      (PIN A11)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
       (PIN A13)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
@@ -1127,34 +609,6 @@
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
-      (PIN A6)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN A7)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN A8)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN A9)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN B11)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN B12)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN B13)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
       (PIN B14)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
@@ -1167,55 +621,11 @@
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
-      (PIN B8)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN B9)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
       (PIN C11)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
       (PIN C13)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN C8)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN C9)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN D1)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN D10)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN D13)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN D14)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN D15)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN D16)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN D2)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
@@ -1239,22 +649,6 @@
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
-      (PIN E14)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN E15)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN E2)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN E3)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
       (PIN E8)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
@@ -1264,14 +658,6 @@
     )
     (SWAP
       (PIN F1)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN F15)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN F16)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
@@ -1295,15 +681,7 @@
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
-      (PIN G11)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
       (PIN G14)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN G16)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
@@ -1323,51 +701,7 @@
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
-      (PIN H11)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN H12)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN H13)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN H14)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN H15)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN H16)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
       (PIN H2)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN J1)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN J11)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN J14)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN J16)
-      (GROUP IO_Vref_NR_VccIO_3_3)
-    )
-    (SWAP
-      (PIN J2)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP

@@ -2,14 +2,13 @@ Viewgen - V3.6.2; DxDesigner 2005.0 (28Jan07)
 c Copyright 1985,2007 by Mentor Graphics Corporation.
 
 Running Viewgen with Command Line Inputs: 
-viewgen roach:roach_5v_power roach:roach_5v_power -makesym -noschem -sympinspc 10 -sympinlth 10 -pinlblsize 10 -symattsize 10 
+viewgen roach_psu roach_psu -makesym -noschem -sympinspc 10 -sympinlth 10 -pinlblsize 10 -symattsize 10 
 
-Schematic Generation Started : 13 Sep 07  8:17 
+Schematic Generation Started : 25 Sep 07 21:42 
 [I] Initializing Library...
 [I] Graphical Libraries Initialized. 
 [I] Library Initialization Complete.
-[I] Reading Netlist: roach:roach_5v_power 
+[I] Reading Netlist: roach_psu 
 [I] Loading Netlist using version: 6.1 
 [I] Netlist Read Complete
-[I] Searching Nets for net alias 
-[W] No Nets found in the netlist 
+[E] Error loading Netlist: roach_psu 
