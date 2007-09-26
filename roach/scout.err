@@ -1,5 +1,6 @@
 scout: Note 115: Using configuration file C:\MentorGraphics\2007PADS\SDD_HOME\standard\scout.ini.
 scout: Note 104: Loading page 1, schematic roach_top.1.
+vgraph: Warning 1236: Symbol not found - roach_ppc_eth2.1
 scout: Note 104: Loading page 2, schematic roach_transceivers0_1.1.
 scout: Note 104: Loading page 3, schematic roach_transceivers2_3.1.
 scout: Note 104: Loading page 4, schematic roach_adc_0.1.
@@ -8,40 +9,146 @@ scout: Note 104: Loading page 6, schematic roach_ddr2_dimm.1.
 scout: Note 104: Loading page 7, schematic roach_diff_gpio.1.
 scout: Note 104: Loading page 8, schematic roach_qdr2p_by0_1.1.
 scout: Note 104: Loading page 9, schematic roach_qdr2p_by2_3.1.
-scout: Note 104: Loading page 10, schematic roach_transceivers_psu.1.
-scout: Note 104: Loading page 11, schematic roach_ppc_eth1.1.
-scout: Note 104: Loading page 12, schematic roach_ppc_eth2.1.
-scout: Note 104: Loading page 13, schematic roach_ppc_usb.1.
-scout: Note 104: Loading page 14, schematic roach_ppc_pci.1.
-scout: Note 104: Loading page 15, schematic roach_ppc_power_1.1.
-scout: Note 104: Loading page 16, schematic roach_ppc_power_2.1.
-scout: Note 104: Loading page 17, schematic roach_gpio_misc.1.
-scout: Note 104: Loading page 18, schematic roach_config.1.
-scout: Note 104: Loading page 19, schematic roach_ppc_cpld.1.
-scout: Note 104: Loading page 20, schematic roach_ppc_tst_clk_io.1.
-scout: Note 104: Loading page 21, schematic roach_ppc_ddr2.1.
-scout: Note 104: Loading page 22, schematic roach_v5_clk.1.
-scout: Note 104: Loading page 23, schematic roach_ppc_nvm_serial.1.
-scout: Note 104: Loading page 24, schematic roach_5v_power.1.
+scout: Note 104: Loading page 10, schematic roach_ppc_eth1.1.
+scout: Note 104: Loading page 11, schematic roach_ppc_usb.1.
+scout: Note 104: Loading page 12, schematic roach_ppc_pci.1.
+scout: Note 104: Loading page 13, schematic roach_ppc_power_1.1.
+scout: Note 104: Loading page 14, schematic roach_ppc_power_2.1.
+scout: Note 104: Loading page 15, schematic roach_gpio_misc.1.
+scout: Note 104: Loading page 16, schematic roach_config.1.
+scout: Note 104: Loading page 17, schematic roach_ppc_tst_clk_io.1.
+scout: Note 104: Loading page 18, schematic roach_ppc_ddr2.1.
+scout: Note 104: Loading page 19, schematic roach_v5_clk.1.
+scout: Note 104: Loading page 20, schematic roach_5v_power.1.
+scout: Note 104: Loading page 21, schematic roach_psu.1.
+scout: Note 104: Loading page 22, schematic roach_transceivers_psu.1.
+scout: Note 104: Loading page 23, schematic roach_ppc_cpld.1.
+scout: Note 104: Loading page 24, schematic roach_ppc_nvm_serial.1.
 scout: Note 136: roach_ppc_eth1.1 net GMCMDIO: Untagged dangling net end on GMCMDIO at 550,770.
 scout: Note 136: roach_ppc_eth1.1 net GMCMDCLK: Untagged dangling net end on GMCMDCLK at 550,710.
-scout: Note 136: roach_ppc_eth2.1 net GMCMDIO: Untagged dangling net end on GMCMDIO at 420,720.
-scout: Note 136: roach_ppc_eth2.1 net GMCMDCLK: Untagged dangling net end on GMCMDCLK at 420,660.
 scout: Note 136: roach_ppc_pci.1 net PCI_INTA#: Untagged dangling net end on PCI_INTA# at 1350,980.
-scout: Note 136: roach_top.1 net CLK_PERCLK: Untagged dangling net end on CLK_PERCLK at 2220,790.
-scout: Note 136: roach_top.1 net FRY_BY#: Untagged dangling net end on FRY_BY# at 2220,800.
-scout: Note 136: roach_top.1 net RESET_POR#: Untagged dangling net end on RESET_POR# at 1790,750.
-scout: Note 136: roach_top.1 net CLK_UART_11.0592MHZ: Untagged dangling net end on CLK_UART_11.0592MHZ at 1790,760.
-scout: Note 136: roach_top.1 net M66EN: Untagged dangling net end on M66EN at 1790,770.
-scout: Note 136: roach_top.1 net BOOT_CFG2: Untagged dangling net end on BOOT_CFG2 at 1790,780.
-scout: Note 136: roach_top.1 net BOOT_CFG0: Untagged dangling net end on BOOT_CFG0 at 1790,790.
-scout: Note 136: roach_top.1 net FWP#: Untagged dangling net end on FWP# at 1790,800.
-scout: Note 136: roach_top.1 net EE1_WP: Untagged dangling net end on EE1_WP at 1790,810.
-scout: Note 136: roach_top.1 net STTM_ALERT: Untagged dangling net end on STTM_ALERT at 2220,810.
-scout: Note 136: roach_top.1 net STTM_AS: Untagged dangling net end on STTM_AS at 1790,820.
-scout: Note 136: roach_top.1 net EE2_BOOT_WP: Untagged dangling net end on EE2_BOOT_WP at 1790,830.
-scout: Note 136: roach_top.1 net BOOT_CFG1: Untagged dangling net end on BOOT_CFG1 at 1790,840.
-scout: Note 136: roach_top.1 net RESET_CPLD#: Untagged dangling net end on RESET_CPLD# at 1790,850.
+scout: Note 136: roach_ppc_nvm_serial.1 net PCS_2: Untagged dangling net end on PCS_2 at 260,1620.
+scout: Note 136: roach_ppc_nvm_serial.1 net PWBE_0#: Untagged dangling net end on PWBE_0# at 260,1520.
+scout: Note 136: roach_ppc_nvm_serial.1 net PR_W#: Untagged dangling net end on PR_W# at 260,1540.
+scout: Note 136: roach_ppc_nvm_serial.1 net PR_W#: Untagged dangling net end on PR_W# at 1330,1440.
+scout: Note 136: roach_ppc_nvm_serial.1 net POE#: Untagged dangling net end on POE# at 1330,1450.
+scout: Note 136: roach_ppc_nvm_serial.1 net POE#: Untagged dangling net end on POE# at 260,1560.
+scout: Note 136: roach_ppc_nvm_serial.1 net POE#: Untagged dangling net end on POE# at 2320,1410.
+scout: Note 136: roach_ppc_nvm_serial.1 net PR_W#: Untagged dangling net end on PR_W# at 2320,1370.
+scout: Note 136: roach_ppc_nvm_serial.1 net PWBE_0#: Untagged dangling net end on PWBE_0# at 2320,1310.
+scout: Note 136: roach_ppc_nvm_serial.1 net PADD[2:31]: Untagged dangling net end on PADD[2:31] at 330,2070.
+scout: Note 136: roach_ppc_nvm_serial.1 net PADD31: Untagged dangling net end on PADD31 at 2320,2070.
+scout: Note 136: roach_top.1 net CLK_UART_11.0592MHZ: Untagged dangling net end on CLK_UART_11.0592MHZ at 1780,750.
+scout: Note 136: roach_top.1 net BOOT_CFG2: Untagged dangling net end on BOOT_CFG2 at 1780,760.
+scout: Note 136: roach_top.1 net BOOT_CFG0: Untagged dangling net end on BOOT_CFG0 at 1780,770.
+scout: Note 136: roach_top.1 net BOOT_CFG1: Untagged dangling net end on BOOT_CFG1 at 1780,780.
+scout: Note 136: roach_top.1 net RESET_CPLD#: Untagged dangling net end on RESET_CPLD# at 1780,790.
+scout: Note 136: roach_top.1 net M66EN: Untagged dangling net end on M66EN at 1780,800.
+scout: Note 136: roach_top.1 net STTM_AS: Untagged dangling net end on STTM_AS at 1780,810.
+scout: Note 136: roach_top.1 net RESET_POR#: Untagged dangling net end on RESET_POR# at 1780,820.
+scout: Note 136: roach_top.1 net EE1_WP: Untagged dangling net end on EE1_WP at 1780,830.
+scout: Note 136: roach_top.1 net PDATA[0:31]: Untagged dangling net end on PDATA[0:31] at 2220,760.
+scout: Note 136: roach_top.1 net PADD[2:31]: Untagged dangling net end on PADD[2:31] at 2220,770.
+scout: Note 136: roach_top.1 net CLK_PERCLK: Untagged dangling net end on CLK_PERCLK at 2220,780.
+scout: Note 136: roach_top.1 net EXT_RESET#: Untagged dangling net end on EXT_RESET# at 2220,790.
+scout: Note 136: roach_top.1 net STTM_ALERT: Untagged dangling net end on STTM_ALERT at 2220,800.
+scout: Note 136: roach_top.1 net EE2_BOOT_WP: Untagged dangling net end on EE2_BOOT_WP at 1780,840.
+scout: Note 136: roach_top.1 net PWBE_0#: Untagged dangling net end on PWBE_0# at 2220,810.
+scout: Note 136: roach_top.1 net PR_W#: Untagged dangling net end on PR_W# at 2220,820.
+scout: Note 136: roach_top.1 net POE#: Untagged dangling net end on POE# at 2220,830.
+scout: Note 136: roach_top.1 net PCS_2: Untagged dangling net end on PCS_2 at 2220,840.
+scout: Note 136: roach_top.1 net FRY_BY#: Untagged dangling net end on FRY_BY# at 2220,850.
+scout: Note 136: roach_top.1 net FWP#: Untagged dangling net end on FWP# at 1780,850.
+scout: Note 136: roach_top.1 net CPU_TRST#: Untagged dangling net end on CPU_TRST# at 1470,560.
+scout: Note 136: roach_top.1 net USB2_VCC_PI: Untagged dangling net end on USB2_VCC_PI at 950,630.
+scout: Note 136: roach_top.1 net USB2_VCC_PE: Untagged dangling net end on USB2_VCC_PE at 950,640.
+scout: Note 136: roach_top.1 net CLK_USB2_CPLD: Untagged dangling net end on CLK_USB2_CPLD at 950,650.
+scout: Note 136: roach_top.1 net USB2_RESET: Untagged dangling net end on USB2_RESET at 1470,570.
+scout: Note 136: roach_top.1 net STTM_AS: Untagged dangling net end on STTM_AS at 1470,580.
+scout: Note 136: roach_top.1 net EE2_BOOT_WP: Untagged dangling net end on EE2_BOOT_WP at 1470,590.
+scout: Note 136: roach_top.1 net EE1_WP: Untagged dangling net end on EE1_WP at 1470,600.
+scout: Note 136: roach_top.1 net FWP#: Untagged dangling net end on FWP# at 1470,610.
+scout: Note 136: roach_top.1 net FRY_BY#: Untagged dangling net end on FRY_BY# at 950,660.
+scout: Note 136: roach_top.1 net SYSERR: Untagged dangling net end on SYSERR at 950,670.
+scout: Note 136: roach_top.1 net SEL_SYSCLK: Untagged dangling net end on SEL_SYSCLK at 1470,620.
+scout: Note 136: roach_top.1 net CLK_SEL_M66EN: Untagged dangling net end on CLK_SEL_M66EN at 1470,630.
+scout: Note 136: roach_top.1 net CLK_TMRCLK: Untagged dangling net end on CLK_TMRCLK at 1470,640.
+scout: Note 136: roach_top.1 net CLK_CPLD_50MHZ: Untagged dangling net end on CLK_CPLD_50MHZ at 950,680.
+scout: Note 136: roach_top.1 net CLK_CPLD_33MHZ: Untagged dangling net end on CLK_CPLD_33MHZ at 950,690.
+scout: Note 136: roach_top.1 net BOOT_CFG2: Untagged dangling net end on BOOT_CFG2 at 1470,650.
+scout: Note 136: roach_top.1 net BOOT_CFG1: Untagged dangling net end on BOOT_CFG1 at 1470,660.
+scout: Note 136: roach_top.1 net BOOT_CFG0: Untagged dangling net end on BOOT_CFG0 at 1470,670.
+scout: Note 136: roach_top.1 net M66EN: Untagged dangling net end on M66EN at 950,700.
+scout: Note 136: roach_top.1 net SX95T_D_OUT_BUSY_0: Untagged dangling net end on SX95T_D_OUT_BUSY_0 at 950,710.
+scout: Note 136: roach_top.1 net SX95T_CS_B_0: Untagged dangling net end on SX95T_CS_B_0 at 1470,680.
+scout: Note 136: roach_top.1 net SX95T_D_IN_0: Untagged dangling net end on SX95T_D_IN_0 at 1470,690.
+scout: Note 136: roach_top.1 net SX95T_PROGRAM_B_0: Untagged dangling net end on SX95T_PROGRAM_B_0 at 1470,700.
+scout: Note 136: roach_top.1 net SX95T_RDWR_B_0: Untagged dangling net end on SX95T_RDWR_B_0 at 1470,710.
+scout: Note 136: roach_top.1 net PADD[27:31]: Untagged dangling net end on PADD[27:31] at 950,720.
+scout: Note 136: roach_top.1 net SX95T_CCLK_0: Untagged dangling net end on SX95T_CCLK_0 at 1470,720.
+scout: Note 136: roach_top.1 net SX95T_DONE_0: Untagged dangling net end on SX95T_DONE_0 at 1470,730.
+scout: Note 136: roach_top.1 net SX95T_INIT_B_0: Untagged dangling net end on SX95T_INIT_B_0 at 1470,740.
+scout: Note 136: roach_top.1 net PWBE_0#: Untagged dangling net end on PWBE_0# at 950,730.
+scout: Note 136: roach_top.1 net PDATA[0:7]: Untagged dangling net end on PDATA[0:7] at 1470,750.
+scout: Note 136: roach_top.1 net RESET_POR#: Untagged dangling net end on RESET_POR# at 950,740.
+scout: Note 136: roach_top.1 net RESET_PB_POR#: Untagged dangling net end on RESET_PB_POR# at 1470,760.
+scout: Note 136: roach_top.1 net DEBUG_TRST#: Untagged dangling net end on DEBUG_TRST# at 950,750.
+scout: Note 136: roach_top.1 net NF_WP#: Untagged dangling net end on NF_WP# at 1470,770.
+scout: Note 136: roach_top.1 net GETH0_RST#: Untagged dangling net end on GETH0_RST# at 1470,780.
+scout: Note 136: roach_top.1 net GETH1_RST#: Untagged dangling net end on GETH1_RST# at 1470,790.
+scout: Note 136: roach_top.1 net GETH0_COMA: Untagged dangling net end on GETH0_COMA at 1470,800.
+scout: Note 136: roach_top.1 net GETH1_COMA: Untagged dangling net end on GETH1_COMA at 1470,810.
+scout: Note 136: roach_top.1 net $1N384: Untagged dangling net end on $1N384 at 1470,820.
+scout: Note 136: roach_top.1 net EBC_SELECT#: Untagged dangling net end on EBC_SELECT# at 1470,830.
+scout: Note 136: roach_top.1 net RESET_CPLD#: Untagged dangling net end on RESET_CPLD# at 1470,840.
+scout: Note 136: roach_top.1 net PWR_GOOD: Untagged dangling net end on PWR_GOOD at 950,760.
+scout: Note 136: roach_top.1 net PCS_2: Untagged dangling net end on PCS_2 at 950,770.
+scout: Note 136: roach_top.1 net POE#: Untagged dangling net end on POE# at 950,780.
+scout: Note 136: roach_top.1 net PR_W#: Untagged dangling net end on PR_W# at 950,790.
+scout: Note 136: roach_top.1 net QDR2_BY0_1_SYS_RST_N: Untagged dangling net end on QDR2_BY0_1_SYS_RST_N at 1470,850.
+scout: Note 136: roach_top.1 net QDR2_BY2_3_SYS_RST_N: Untagged dangling net end on QDR2_BY2_3_SYS_RST_N at 1470,860.
+scout: Note 136: roach_top.1 net PPC_DDR2_RESET_N: Untagged dangling net end on PPC_DDR2_RESET_N at 1470,870.
+scout: Note 136: roach_top.1 net EXT_RESET#: Untagged dangling net end on EXT_RESET# at 950,800.
+scout: Note 136: roach_top.1 net CLK_PERCLK: Untagged dangling net end on CLK_PERCLK at 950,810.
+scout: Note 136: roach_top.1 net MGT_AVCC_EN: Untagged dangling net end on MGT_AVCC_EN at 210,1050.
+scout: Note 136: roach_top.1 net MGT_AVTTX_EN: Untagged dangling net end on MGT_AVTTX_EN at 210,1060.
+scout: Note 136: roach_top.1 net MGT_AVCCPLL_EN: Untagged dangling net end on MGT_AVCCPLL_EN at 210,1070.
+scout: Note 136: roach_top.1 net MGT_AVCC_PG: Untagged dangling net end on MGT_AVCC_PG at 630,1050.
+scout: Note 136: roach_top.1 net MGT_AVTTX_PG: Untagged dangling net end on MGT_AVTTX_PG at 630,1060.
+scout: Note 136: roach_top.1 net MGT_AVCCPLL_PG: Untagged dangling net end on MGT_AVCCPLL_PG at 630,1070.
+scout: Note 136: roach_top.1 net I2V5: Untagged dangling net end on I2V5 at 550,1410.
+scout: Note 136: roach_top.1 net 2V5_INHIBIT: Untagged dangling net end on 2V5_INHIBIT at 190,1330.
+scout: Note 136: roach_top.1 net 2V5_SENS_N: Untagged dangling net end on 2V5_SENS_N at 190,1340.
+scout: Note 136: roach_top.1 net 2V5_TRACK: Untagged dangling net end on 2V5_TRACK at 190,1350.
+scout: Note 136: roach_top.1 net 2V5_SENS_P: Untagged dangling net end on 2V5_SENS_P at 190,1360.
+scout: Note 136: roach_top.1 net 1V8_SENS_P: Untagged dangling net end on 1V8_SENS_P at 190,1370.
+scout: Note 136: roach_top.1 net 1V8_TRACK: Untagged dangling net end on 1V8_TRACK at 190,1380.
+scout: Note 136: roach_top.1 net 1V8_SENS_N: Untagged dangling net end on 1V8_SENS_N at 190,1390.
+scout: Note 136: roach_top.1 net 1V8_INHIBIT: Untagged dangling net end on 1V8_INHIBIT at 190,1400.
+scout: Note 136: roach_top.1 net I1V8: Untagged dangling net end on I1V8 at 550,1420.
+scout: Note 136: roach_top.1 net I1V5: Untagged dangling net end on I1V5 at 550,1430.
+scout: Note 136: roach_top.1 net 1V5_INHIBIT: Untagged dangling net end on 1V5_INHIBIT at 190,1410.
+scout: Note 136: roach_top.1 net 1V5_SENS_N: Untagged dangling net end on 1V5_SENS_N at 190,1420.
+scout: Note 136: roach_top.1 net 1V5_TRACK: Untagged dangling net end on 1V5_TRACK at 190,1430.
+scout: Note 136: roach_top.1 net 1V5_SENS_P: Untagged dangling net end on 1V5_SENS_P at 190,1440.
+scout: Note 136: roach_top.1 net 1V0_SENS_P: Untagged dangling net end on 1V0_SENS_P at 190,1450.
+scout: Note 136: roach_top.1 net 1V0_TRACK: Untagged dangling net end on 1V0_TRACK at 190,1460.
+scout: Note 136: roach_top.1 net 1V0_SENS_N: Untagged dangling net end on 1V0_SENS_N at 190,1470.
+scout: Note 136: roach_top.1 net 1V0_INHIBIT: Untagged dangling net end on 1V0_INHIBIT at 190,1480.
+scout: Note 136: roach_top.1 net I1V0: Untagged dangling net end on I1V0 at 550,1440.
+scout: Note 136: roach_top.1 net 1V2_SENS_P: Untagged dangling net end on 1V2_SENS_P at 190,1490.
+scout: Note 136: roach_top.1 net 1V2_TRACK: Untagged dangling net end on 1V2_TRACK at 190,1500.
+scout: Note 136: roach_top.1 net 1V2_SENS_N: Untagged dangling net end on 1V2_SENS_N at 190,1510.
+scout: Note 136: roach_top.1 net 1V2_INHIBIT: Untagged dangling net end on 1V2_INHIBIT at 190,1520.
+scout: Note 136: roach_top.1 net I1V2: Untagged dangling net end on I1V2 at 550,1450.
+scout: Note 136: roach_top.1 net FAN3_CONTROL: Untagged dangling net end on FAN3_CONTROL at 190,1530.
+scout: Note 136: roach_top.1 net FAN3_SENSE: Untagged dangling net end on FAN3_SENSE at 550,1460.
+scout: Note 136: roach_top.1 net FAN2_SENSE: Untagged dangling net end on FAN2_SENSE at 550,1470.
+scout: Note 136: roach_top.1 net FAN2_CONTROL: Untagged dangling net end on FAN2_CONTROL at 190,1540.
+scout: Note 136: roach_top.1 net PS_ON#: Untagged dangling net end on PS_ON# at 190,1550.
+scout: Note 136: roach_top.1 net PWR_OK: Untagged dangling net end on PWR_OK at 550,1480.
+scout: Note 136: roach_top.1 net FAN1_CONTROL: Untagged dangling net end on FAN1_CONTROL at 190,1560.
+scout: Note 136: roach_top.1 net FAN1_SENSE: Untagged dangling net end on FAN1_SENSE at 550,1490.
 scout: Note 136: roach_top.1 net CLK_SEL_M66EN: Untagged dangling net end on CLK_SEL_M66EN at 980,340.
 scout: Note 136: roach_top.1 net CLK_TMRCLK: Untagged dangling net end on CLK_TMRCLK at 980,350.
 scout: Note 136: roach_top.1 net SX95T_TMS: Untagged dangling net end on SX95T_TMS at 1440,310.
@@ -70,53 +177,6 @@ scout: Note 136: roach_top.1 net SEL_SYSCLK: Untagged dangling net end on SEL_SY
 scout: Note 136: roach_top.1 net CPU_TRST#: Untagged dangling net end on CPU_TRST# at 980,420.
 scout: Note 136: roach_top.1 net PWR_GOOD: Untagged dangling net end on PWR_GOOD at 980,430.
 scout: Note 136: roach_top.1 net RESET_PB_POR#: Untagged dangling net end on RESET_PB_POR# at 980,440.
-scout: Note 136: roach_top.1 net CPU_TRST#: Untagged dangling net end on CPU_TRST# at 1450,560.
-scout: Note 136: roach_top.1 net USB2_VCC_PI: Untagged dangling net end on USB2_VCC_PI at 960,620.
-scout: Note 136: roach_top.1 net USB2_VCC_PE: Untagged dangling net end on USB2_VCC_PE at 960,630.
-scout: Note 136: roach_top.1 net CLK_USB2_CPLD: Untagged dangling net end on CLK_USB2_CPLD at 960,640.
-scout: Note 136: roach_top.1 net USB2_RESET: Untagged dangling net end on USB2_RESET at 1450,570.
-scout: Note 136: roach_top.1 net STTM_AS: Untagged dangling net end on STTM_AS at 1450,580.
-scout: Note 136: roach_top.1 net EE2_BOOT_WP: Untagged dangling net end on EE2_BOOT_WP at 1450,590.
-scout: Note 136: roach_top.1 net EE1_WP: Untagged dangling net end on EE1_WP at 1450,600.
-scout: Note 136: roach_top.1 net FWP#: Untagged dangling net end on FWP# at 1450,610.
-scout: Note 136: roach_top.1 net FRY_BY#: Untagged dangling net end on FRY_BY# at 960,650.
-scout: Note 136: roach_top.1 net SYSERR: Untagged dangling net end on SYSERR at 960,660.
-scout: Note 136: roach_top.1 net SEL_SYSCLK: Untagged dangling net end on SEL_SYSCLK at 1450,620.
-scout: Note 136: roach_top.1 net CLK_SEL_M66EN: Untagged dangling net end on CLK_SEL_M66EN at 1450,630.
-scout: Note 136: roach_top.1 net CLK_TMRCLK: Untagged dangling net end on CLK_TMRCLK at 1450,640.
-scout: Note 136: roach_top.1 net CLK_PERCLK: Untagged dangling net end on CLK_PERCLK at 960,670.
-scout: Note 136: roach_top.1 net CLK_CPLD_50MHZ: Untagged dangling net end on CLK_CPLD_50MHZ at 960,680.
-scout: Note 136: roach_top.1 net CLK_CPLD_33MHZ: Untagged dangling net end on CLK_CPLD_33MHZ at 960,690.
-scout: Note 136: roach_top.1 net M66EN: Untagged dangling net end on M66EN at 960,700.
-scout: Note 136: roach_top.1 net SX95T_D_OUT_BUSY_0: Untagged dangling net end on SX95T_D_OUT_BUSY_0 at 960,710.
-scout: Note 136: roach_top.1 net SX95T_CS_B_0: Untagged dangling net end on SX95T_CS_B_0 at 1450,650.
-scout: Note 136: roach_top.1 net SX95T_D_IN_0: Untagged dangling net end on SX95T_D_IN_0 at 1450,660.
-scout: Note 136: roach_top.1 net SX95T_PROGRAM_B_0: Untagged dangling net end on SX95T_PROGRAM_B_0 at 1450,670.
-scout: Note 136: roach_top.1 net SX95T_RDWR_B_0: Untagged dangling net end on SX95T_RDWR_B_0 at 1450,680.
-scout: Note 136: roach_top.1 net PADD[27:31]: Untagged dangling net end on PADD[27:31] at 960,720.
-scout: Note 136: roach_top.1 net SX95T_CCLK_0: Untagged dangling net end on SX95T_CCLK_0 at 1450,690.
-scout: Note 136: roach_top.1 net SX95T_DONE_0: Untagged dangling net end on SX95T_DONE_0 at 1450,700.
-scout: Note 136: roach_top.1 net SX95T_INIT_B_0: Untagged dangling net end on SX95T_INIT_B_0 at 1450,710.
-scout: Note 136: roach_top.1 net PCS_2: Untagged dangling net end on PCS_2 at 960,730.
-scout: Note 136: roach_top.1 net PR_W#: Untagged dangling net end on PR_W# at 960,740.
-scout: Note 136: roach_top.1 net POE#: Untagged dangling net end on POE# at 960,750.
-scout: Note 136: roach_top.1 net PWBE_0#: Untagged dangling net end on PWBE_0# at 960,760.
-scout: Note 136: roach_top.1 net PDATA[0:7]: Untagged dangling net end on PDATA[0:7] at 1450,720.
-scout: Note 136: roach_top.1 net RESET_POR#: Untagged dangling net end on RESET_POR# at 960,770.
-scout: Note 136: roach_top.1 net RESET_PB_POR#: Untagged dangling net end on RESET_PB_POR# at 1450,730.
-scout: Note 136: roach_top.1 net DEBUG_TRST#: Untagged dangling net end on DEBUG_TRST# at 960,780.
-scout: Note 136: roach_top.1 net NF_WP#: Untagged dangling net end on NF_WP# at 1450,740.
-scout: Note 136: roach_top.1 net GETH0_RST#: Untagged dangling net end on GETH0_RST# at 1450,750.
-scout: Note 136: roach_top.1 net GETH1_RST#: Untagged dangling net end on GETH1_RST# at 1450,760.
-scout: Note 136: roach_top.1 net GETH0_COMA: Untagged dangling net end on GETH0_COMA at 1450,770.
-scout: Note 136: roach_top.1 net GETH1_COMA: Untagged dangling net end on GETH1_COMA at 1450,780.
-scout: Note 136: roach_top.1 net USB_SELECT#: Untagged dangling net end on USB_SELECT# at 1450,790.
-scout: Note 136: roach_top.1 net EBC_SELECT#: Untagged dangling net end on EBC_SELECT# at 1450,800.
-scout: Note 136: roach_top.1 net RESET_CPLD#: Untagged dangling net end on RESET_CPLD# at 1450,810.
-scout: Note 136: roach_top.1 net PWR_GOOD: Untagged dangling net end on PWR_GOOD at 960,790.
-scout: Note 136: roach_top.1 net BOOT_CFG2: Untagged dangling net end on BOOT_CFG2 at 1450,820.
-scout: Note 136: roach_top.1 net BOOT_CFG1: Untagged dangling net end on BOOT_CFG1 at 1450,830.
-scout: Note 136: roach_top.1 net BOOT_CFG0: Untagged dangling net end on BOOT_CFG0 at 1450,840.
 scout: Note 136: roach_top.1 net SX95T_INIT_B_0: Untagged dangling net end on SX95T_INIT_B_0 at 2000,1060.
 scout: Note 136: roach_top.1 net SX95T_CS_B_0: Untagged dangling net end on SX95T_CS_B_0 at 1510,1050.
 scout: Note 136: roach_top.1 net SX95T_D_OUT_BUSY_0: Untagged dangling net end on SX95T_D_OUT_BUSY_0 at 2000,1070.
@@ -137,11 +197,6 @@ scout: Note 136: roach_top.1 net CLK_PCI2_66/33MHZ: Untagged dangling net end on
 scout: Note 136: roach_top.1 net PCI_INTA#: Untagged dangling net end on PCI_INTA# at 1370,220.
 scout: Note 136: roach_top.1 net CLK_USB2.0_48MHZ: Untagged dangling net end on CLK_USB2.0_48MHZ at 270,430.
 scout: Note 136: roach_top.1 net USB2_VCC_PI: Untagged dangling net end on USB2_VCC_PI at 680,430.
-scout: Note 136: roach_top.1 net CLK_GETH1_25MHZ: Untagged dangling net end on CLK_GETH1_25MHZ at 280,690.
-scout: Note 136: roach_top.1 net GMCMDCLK: Untagged dangling net end on GMCMDCLK at 280,700.
-scout: Note 136: roach_top.1 net GETH1_INT#: Untagged dangling net end on GETH1_INT# at 670,700.
-scout: Note 136: roach_top.1 net GETH1_RST#: Untagged dangling net end on GETH1_RST# at 280,710.
-scout: Note 136: roach_top.1 net GMCMDIO: Untagged dangling net end on GMCMDIO at 670,710.
 scout: Note 136: roach_top.1 net GMCMDCLK: Untagged dangling net end on GMCMDCLK at 670,800.
 scout: Note 136: roach_top.1 net GMCMDIO: Untagged dangling net end on GMCMDIO at 670,810.
 scout: Note 136: roach_top.1 net GETH0_RST#: Untagged dangling net end on GETH0_RST# at 280,810.
@@ -157,4 +212,5 @@ scout: Note 136: roach_top.1 net QDR2_BY0_1_TDO: Untagged dangling net end on QD
 scout: Note 136: roach_top.1 net QDR2_TMS: Untagged dangling net end on QDR2_TMS at 1510,1370.
 scout: Note 136: roach_top.1 net QDR2_TDI: Untagged dangling net end on QDR2_TDI at 1510,1380.
 scout: Note 136: roach_top.1 net QDR2_TCK: Untagged dangling net end on QDR2_TCK at 1510,1390.
-scout: Note 137: Finished with 0 errors, 0 warnings, 159 notes.
+scout: Note 136: roach_top.1 net PPC_DDR2_RESET_N: Untagged dangling net end on PPC_DDR2_RESET_N at 280,560.
+scout: Note 137: Finished with 0 errors, 0 warnings, 214 notes.

@@ -20,7 +20,6 @@ AP r 1 #=1
 AP r 2 PINTYPE=BI
 AP r 2 #=2
 |Q jumper3 1
-AS jumper3 REFDES=JP?
 AS jumper3 PREFIX=JP
 AS jumper3 MANUFACTURER
 AS jumper3 DESCRIPTION=3 WAY JUMPER
@@ -29,8 +28,9 @@ AS jumper3 PARTS=1
 AS jumper3 LEVEL=STD
 AS jumper3 P/D_NUM
 AS jumper3 DEVICE=JUMPER3
+AS jumper3 REFDES=JP?
 AS jumper3 PINORDER=P1 P2 P3
-AS jumper3 INOV_VER_REC=14:54_8-29-07
+AS jumper3 INOV_VER_REC=8:35_9-26-07
 AP jumper3 1 #=1
 AP jumper3 1 PINTYPE=BI
 AP jumper3 2 PINTYPE=BI
@@ -107,6 +107,69 @@ AP bi 1 PINTYPE=BI
 AS in IN
 AS in PINORDER=IN
 AP in 1 PINTYPE=IN
+|Q halo_gigabit_fastjack_2led 1
+AS halo_gigabit_fastjack_2led DESCRIPTION=RJ45, INTEGRATED MAGNETICS, 2 LEDS
+AS halo_gigabit_fastjack_2led MANUFACTURER=HALO
+AS halo_gigabit_fastjack_2led DEVICE=CON_RJ45_1X8_F_RA_TH_2LEDGY
+AS halo_gigabit_fastjack_2led PARTS=1
+AS halo_gigabit_fastjack_2led LEVEL=STD
+AS halo_gigabit_fastjack_2led PKG_TYPE=RJ45_8POS
+AS halo_gigabit_fastjack_2led REFDES=J?
+AS halo_gigabit_fastjack_2led P/D_NUM=HFJ11-1G02E-L12
+AS halo_gigabit_fastjack_2led PINORDER=CASE1 CASE2 GND L1_YA_GC L1_YC_GA MNT1 MNT2 R1_YA_GC R1_YC_GA TD0N TD0P TD1N TD1P TD2N TD2P TD3N TD3P VCC
+AS halo_gigabit_fastjack_2led INOV_VER_REC=8:50_9-3-07
+AP halo_gigabit_fastjack_2led 1 #=17
+AP halo_gigabit_fastjack_2led 1 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 2 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 2 #=18
+AP halo_gigabit_fastjack_2led 3 #=10
+AP halo_gigabit_fastjack_2led 3 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 4 #=14
+AP halo_gigabit_fastjack_2led 4 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 5 #=13
+AP halo_gigabit_fastjack_2led 5 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 6 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 6 #=15
+AP halo_gigabit_fastjack_2led 7 #=16
+AP halo_gigabit_fastjack_2led 7 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 8 #=12
+AP halo_gigabit_fastjack_2led 8 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 9 #=11
+AP halo_gigabit_fastjack_2led 9 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 10 #=2
+AP halo_gigabit_fastjack_2led 10 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 11 #=1
+AP halo_gigabit_fastjack_2led 11 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 12 #=6
+AP halo_gigabit_fastjack_2led 12 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 13 #=3
+AP halo_gigabit_fastjack_2led 13 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 14 #=5
+AP halo_gigabit_fastjack_2led 14 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 15 #=4
+AP halo_gigabit_fastjack_2led 15 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 16 #=8
+AP halo_gigabit_fastjack_2led 16 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 17 #=7
+AP halo_gigabit_fastjack_2led 17 PINTYPE=OUT
+AP halo_gigabit_fastjack_2led 18 #=9
+AP halo_gigabit_fastjack_2led 18 PINTYPE=OUT
+|Q jumper 1
+AS jumper LEVEL=STD
+AS jumper MANUFACTURER
+AS jumper PREFIX=JP
+AS jumper PKG_TYPE=RESC1005X40N
+AS jumper DESCRIPTION=STANDARD JUMPER
+AS jumper PARTS=1
+AS jumper P/D_NUM
+AS jumper DEVICE=JUMPER
+AS jumper REFDES=JP?
+AS jumper PINORDER=P1 P2
+AS jumper INOV_VER_REC=7:00_9-26-07
+AP jumper 1 #=1
+AP jumper 1 PINTYPE=BI
+AP jumper 2 PINTYPE=BI
+AP jumper 2 #=2
 |Q dp83865_phy 1
 AS dp83865_phy MANUFACTURER=NATIONAL
 AS dp83865_phy DEVICE=NATSEMI_DP83865DVH
@@ -379,53 +442,6 @@ AP dp83865_phy 127 PINTYPE=IN
 AP dp83865_phy 127 #=36
 AP dp83865_phy 128 #=38
 AP dp83865_phy 128 PINTYPE=IN
-|Q halo_gigabit_fastjack_2led 1
-AS halo_gigabit_fastjack_2led DESCRIPTION=RJ45, INTEGRATED MAGNETICS, 2 LEDS
-AS halo_gigabit_fastjack_2led MANUFACTURER=HALO
-AS halo_gigabit_fastjack_2led DEVICE=CON_RJ45_1X8_F_RA_TH_2LEDGY
-AS halo_gigabit_fastjack_2led PARTS=1
-AS halo_gigabit_fastjack_2led LEVEL=STD
-AS halo_gigabit_fastjack_2led PKG_TYPE=RJ45_8POS
-AS halo_gigabit_fastjack_2led REFDES=J?
-AS halo_gigabit_fastjack_2led P/D_NUM=HFJ11-1G02E-L12
-AS halo_gigabit_fastjack_2led PINORDER=CASE1 CASE2 GND L1_YA_GC L1_YC_GA MNT1 MNT2 R1_YA_GC R1_YC_GA TD0N TD0P TD1N TD1P TD2N TD2P TD3N TD3P VCC
-AS halo_gigabit_fastjack_2led INOV_VER_REC=8:50_9-3-07
-AP halo_gigabit_fastjack_2led 1 #=17
-AP halo_gigabit_fastjack_2led 1 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 2 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 2 #=18
-AP halo_gigabit_fastjack_2led 3 #=10
-AP halo_gigabit_fastjack_2led 3 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 4 #=14
-AP halo_gigabit_fastjack_2led 4 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 5 #=13
-AP halo_gigabit_fastjack_2led 5 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 6 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 6 #=15
-AP halo_gigabit_fastjack_2led 7 #=16
-AP halo_gigabit_fastjack_2led 7 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 8 #=12
-AP halo_gigabit_fastjack_2led 8 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 9 #=11
-AP halo_gigabit_fastjack_2led 9 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 10 #=2
-AP halo_gigabit_fastjack_2led 10 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 11 #=1
-AP halo_gigabit_fastjack_2led 11 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 12 #=6
-AP halo_gigabit_fastjack_2led 12 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 13 #=3
-AP halo_gigabit_fastjack_2led 13 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 14 #=5
-AP halo_gigabit_fastjack_2led 14 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 15 #=4
-AP halo_gigabit_fastjack_2led 15 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 16 #=8
-AP halo_gigabit_fastjack_2led 16 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 17 #=7
-AP halo_gigabit_fastjack_2led 17 PINTYPE=OUT
-AP halo_gigabit_fastjack_2led 18 #=9
-AP halo_gigabit_fastjack_2led 18 PINTYPE=OUT
 |Q ic_cpu_te_pbga680_440epx_grx_h 1
 AS ic_cpu_te_pbga680_440epx_grx_h REFDES=U?
 AS ic_cpu_te_pbga680_440epx_grx_h DEVICE=IC_CPU_TE-PBGA680_440EPX-GRX
@@ -473,22 +489,44 @@ AP ic_cpu_te_pbga680_440epx_grx_h 17 #=AM23
 AP ic_cpu_te_pbga680_440epx_grx_h 17 PINTYPE=OUT
 AP ic_cpu_te_pbga680_440epx_grx_h 18 #=AL23
 AP ic_cpu_te_pbga680_440epx_grx_h 18 PINTYPE=OUT
-|Q jumper 1
-AS jumper LEVEL=STD
-AS jumper MANUFACTURER
-AS jumper PREFIX=JP
-AS jumper REFDES=JP?
-AS jumper PKG_TYPE=RESC1005X40N
-AS jumper DESCRIPTION=STANDARD JUMPER
-AS jumper PARTS=1
-AS jumper P/D_NUM
-AS jumper DEVICE=JUMPER
-AS jumper PINORDER=P1 P2
-AS jumper INOV_VER_REC=14:55_8-29-07
-AP jumper 1 #=1
-AP jumper 1 PINTYPE=BI
-AP jumper 2 PINTYPE=BI
-AP jumper 2 #=2
+|Q ic_cpu_te_pbga680_440epx_grx_j 1
+AS ic_cpu_te_pbga680_440epx_grx_j REFDES=U?
+AS ic_cpu_te_pbga680_440epx_grx_j DEVICE=IC_CPU_TE-PBGA680_440EPX-GRX
+AS ic_cpu_te_pbga680_440epx_grx_j PARTS=1
+AS ic_cpu_te_pbga680_440epx_grx_j LEVEL=STD
+AS ic_cpu_te_pbga680_440epx_grx_j PKG_TYPE=BGA680C100P34X34_3500X3500X265
+AS ic_cpu_te_pbga680_440epx_grx_j P/D_NUM=PPC440EPx-NTA533T
+AS ic_cpu_te_pbga680_440epx_grx_j NOTES=245degC 30sec, max peak process
+AS ic_cpu_te_pbga680_440epx_grx_j VALUE
+AS ic_cpu_te_pbga680_440epx_grx_j HETERO=IC_CPU_TE_PBGA680_440EPX_GRX_A,IC_CPU_TE_PBGA680_440EPX_GRX_B,IC_CPU_TE_PBGA680_440EPX_GRX_C,IC_CPU_TE_PBGA680_440EPX_GRX_D,IC_CPU_TE_PBGA680_440EPX_GRX_E,IC_CPU_TE_PBGA680_440EPX_GRX_F,IC_CPU_TE_PBGA680_440EPX_GRX_G,IC_CPU_TE_PBGA680_440EPX_GRX_H,IC_CPU_TE_PBGA680_440EPX_GRX_I,IC_CPU_TE_PBGA680_440EPX_GRX_J
+AS ic_cpu_te_pbga680_440epx_grx_j PINORDER=GMC1_RXCLK GMC1_RXCTL GMC1_RXD0 GMC1_RXD1 GMC1_RXD2 GMC1_RXD3 GMC1_TXCLK GMC1_TXCTL GMC1_TXD0 GMC1_TXD1 GMC1_TXD2 GMC1_TXD3
+AP ic_cpu_te_pbga680_440epx_grx_j 1 #=AJ32
+AP ic_cpu_te_pbga680_440epx_grx_j 1 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_j 2 #=AL33
+AP ic_cpu_te_pbga680_440epx_grx_j 2 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_j 3 #=AM29
+AP ic_cpu_te_pbga680_440epx_grx_j 3 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_j 4 #=AP30
+AP ic_cpu_te_pbga680_440epx_grx_j 4 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_j 5 #=AP31
+AP ic_cpu_te_pbga680_440epx_grx_j 5 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_j 6 #=AM30
+AP ic_cpu_te_pbga680_440epx_grx_j 6 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_j 7 #=AK32
+AP ic_cpu_te_pbga680_440epx_grx_j 7 PINTYPE=IN
+AP ic_cpu_te_pbga680_440epx_grx_j 8 #=AM24
+AP ic_cpu_te_pbga680_440epx_grx_j 8 PINTYPE=IN
+AP ic_cpu_te_pbga680_440epx_grx_j 9 #=AP26
+AP ic_cpu_te_pbga680_440epx_grx_j 9 PINTYPE=IN
+AP ic_cpu_te_pbga680_440epx_grx_j 10 #=AL26
+AP ic_cpu_te_pbga680_440epx_grx_j 10 PINTYPE=IN
+AP ic_cpu_te_pbga680_440epx_grx_j 11 #=AN26
+AP ic_cpu_te_pbga680_440epx_grx_j 11 PINTYPE=IN
+AP ic_cpu_te_pbga680_440epx_grx_j 12 #=AM26
+AP ic_cpu_te_pbga680_440epx_grx_j 12 PINTYPE=IN
+AN $1N580 NC
+AN $1N701 NC
+AN $1N700 NC
 AN $1N697 NC
 AN $1N673 NC
 AN $1N576 NC
@@ -496,12 +534,25 @@ AN $1N577 NC
 AN $1N578 NC
 AN $1N579 NC
 AN $1N621 NC
-AN $1N580 NC
 AN $1N581 NC
 AN $1N582 NC
 AN $1N583 NC
 AN $1N622 NC
 AN $1N699 NC
+AN $1N702 NC
+AN $1N703 NC
+AN $1N716 NC
+AN $1N715 NC
+AN $1N713 NC
+AN $1N712 NC
+AN $1N711 NC
+AN $1N710 NC
+AN $1N709 NC
+AN $1N708 NC
+AN $1N707 NC
+AN $1N706 NC
+AN $1N705 NC
+AN $1N704 NC
 G 1V8
 G 2V5
 G CHASSIS_GND
@@ -913,30 +964,56 @@ API $1I319 jumper3 1 #=1
 API $1I319 jumper3 2 #=2
 API $1I319 jumper3 3 #=3
 P out GMCMDCLK
-I GMCMDCLK out GMCMDCLK NAME=GMCMDCLK`
-API GMCMDCLK out 1 XREF1=_
+I GMCMDCLK out GMCMDCLK 
 API GMCMDCLK out 1 XREF=_
 P bi GMCMDIO
-I GMCMDIO bi GMCMDIO NAME=GMCMDIO`
+I GMCMDIO bi GMCMDIO 
 |R 7:46_8-30-07
-API GMCMDIO bi 1 XREF1=_
 API GMCMDIO bi 1 XREF=_
 P in GETH0_RST#
-I GETH0_RST# in GETH0_RST# NAME=GETH0_RST#`
+I GETH0_RST# in GETH0_RST# 
 |R 7:39_8-30-07
 API GETH0_RST# in 1 XREF1=_
 API GETH0_RST# in 1 XREF=_
 P out GETH0_INT#
-I GETH0_INT# out GETH0_INT# NAME=GETH0_INT#`
+I GETH0_INT# out GETH0_INT# 
 API GETH0_INT# out 1 XREF1=_
 API GETH0_INT# out 1 XREF=_
 P in CLK_GETH0_25MHZ
-I CLK_GETH0_25MHZ in CLK_GETH0_25MHZ NAME=CLK_GETH0_25MHZ`
+I CLK_GETH0_25MHZ in CLK_GETH0_25MHZ 
 |R 7:39_8-30-07
 API CLK_GETH0_25MHZ in 1 XREF1=_
 API CLK_GETH0_25MHZ in 1 XREF=_
+M halo_gigabit_fastjack_2led $1I167
+I $1I167 halo_gigabit_fastjack_2led CHASSIS_GND CHASSIS_GND GND $1N324 $1N323 $1N621 $1N622 $1N357 $1N358 MDI0_0N MDI0_0P MDI0_1N MDI0_1P MDI0_2N MDI0_2P MDI0_3N MDI0_3P 2V5 GEOMETRY.HEIGHT=1`REFDES=J?`PKG_TYPE=RJ45_8POS`
+API $1I167 halo_gigabit_fastjack_2led 1 #=17
+API $1I167 halo_gigabit_fastjack_2led 2 #=18
+API $1I167 halo_gigabit_fastjack_2led 3 #=10
+API $1I167 halo_gigabit_fastjack_2led 4 #=14
+API $1I167 halo_gigabit_fastjack_2led 5 #=13
+API $1I167 halo_gigabit_fastjack_2led 6 #=15
+API $1I167 halo_gigabit_fastjack_2led 7 #=16
+API $1I167 halo_gigabit_fastjack_2led 8 #=12
+API $1I167 halo_gigabit_fastjack_2led 9 #=11
+API $1I167 halo_gigabit_fastjack_2led 10 #=2
+API $1I167 halo_gigabit_fastjack_2led 11 #=1
+API $1I167 halo_gigabit_fastjack_2led 12 #=6
+API $1I167 halo_gigabit_fastjack_2led 13 #=3
+API $1I167 halo_gigabit_fastjack_2led 14 #=5
+API $1I167 halo_gigabit_fastjack_2led 15 #=4
+API $1I167 halo_gigabit_fastjack_2led 16 #=8
+API $1I167 halo_gigabit_fastjack_2led 17 #=7
+API $1I167 halo_gigabit_fastjack_2led 18 #=9
+M jumper $1I689
+I $1I689 jumper GND GMCMDIO PKG_TYPE=TSM_2X1_SV`REFDES=JP?`GEOMETRY.HEIGHT=1`
+API $1I689 jumper 1 #=1
+API $1I689 jumper 2 #=2
+M jumper $1I690
+I $1I690 jumper GND GMCMDCLK PKG_TYPE=TSM_2X1_SV`REFDES=JP?`GEOMETRY.HEIGHT=1`
+API $1I690 jumper 1 #=1
+API $1I690 jumper 2 #=2
 M dp83865_phy $1I146
-I $1I146 dp83865_phy $1N430 LED0_ACT 2V5 $1N368 2V5 CLK_GETH0_25MHZ $1N673 N27904256 ? 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 ? LED0_DUPLEX GMC0TXCLK GETH0_INT# 2V5 2V5 2V5 2V5 2V5 2V5 2V5 2V5 2V5 2V5 2V5 2V5 LED0_L1000 LED0_L100 LED0_L10 $1N597 GMCMDCLK MDI0_0N MDI0_0P MDI0_1N MDI0_1P MDI0_2N MDI0_2P MDI0_3N MDI0_3P GMCMDIO $1N602 $1N606 ? $1N429 $1N640 $1N642 $1N644 $1N646 ? ? ? GETH0_RST# N27903625 N27903366 N27904057 N27903704 $1N583 $1N582 $1N581 $1N580 N27903590 N27904376 ? 1V8 1V8 1V8 1V8 1V8 $1N578 $1N577 $1N576 $1N579 $1N679 GMC0TXD0 GMC0TXD1 GMC0TXD2 GMC0TXD3 GND GND GND GND ? GMC0TXCTL GND ? GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND #=0`BOARD_OPTION=BASE`REFDES=U?`GEOMETRY.HEIGHT=1`
+I $1I146 dp83865_phy $1N430 LED0_ACT 2V5 $1N368 2V5 CLK_GETH0_25MHZ $1N673 N27904256 $1N702 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 $1N701 LED0_DUPLEX GMC0TXCLK GETH0_INT# 2V5 2V5 2V5 2V5 2V5 2V5 2V5 2V5 2V5 2V5 2V5 2V5 LED0_L1000 LED0_L100 LED0_L10 $1N597 GMCMDCLK MDI0_0N MDI0_0P MDI0_1N MDI0_1P MDI0_2N MDI0_2P MDI0_3N MDI0_3P GMCMDIO $1N602 $1N606 ? $1N429 $1N640 $1N642 $1N644 $1N646 ? ? ? GETH0_RST# N27903625 N27903366 N27904057 N27903704 $1N583 $1N582 $1N581 $1N580 N27903590 N27904376 $1N703 1V8 1V8 1V8 1V8 1V8 $1N578 $1N577 $1N576 $1N579 $1N679 GMC0TXD0 GMC0TXD1 GMC0TXD2 GMC0TXD3 GND GND GND GND $1N700 GMC0TXCTL GND ? GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND #=0`BOARD_OPTION=BASE`REFDES=U?`GEOMETRY.HEIGHT=1`
 API $1I146 dp83865_phy 1 #=100
 API $1I146 dp83865_phy 2 #=7
 API $1I146 dp83865_phy 3 #=96
@@ -1075,26 +1152,6 @@ API $1I146 dp83865_phy 125 #=26
 API $1I146 dp83865_phy 126 #=30
 API $1I146 dp83865_phy 127 #=36
 API $1I146 dp83865_phy 128 #=38
-M halo_gigabit_fastjack_2led $1I167
-I $1I167 halo_gigabit_fastjack_2led CHASSIS_GND CHASSIS_GND GND $1N324 $1N323 $1N621 $1N622 $1N357 $1N358 MDI0_0N MDI0_0P MDI0_1N MDI0_1P MDI0_2N MDI0_2P MDI0_3N MDI0_3P 2V5 GEOMETRY.HEIGHT=1`REFDES=J?`PKG_TYPE=RJ45_8POS`
-API $1I167 halo_gigabit_fastjack_2led 1 #=17
-API $1I167 halo_gigabit_fastjack_2led 2 #=18
-API $1I167 halo_gigabit_fastjack_2led 3 #=10
-API $1I167 halo_gigabit_fastjack_2led 4 #=14
-API $1I167 halo_gigabit_fastjack_2led 5 #=13
-API $1I167 halo_gigabit_fastjack_2led 6 #=15
-API $1I167 halo_gigabit_fastjack_2led 7 #=16
-API $1I167 halo_gigabit_fastjack_2led 8 #=12
-API $1I167 halo_gigabit_fastjack_2led 9 #=11
-API $1I167 halo_gigabit_fastjack_2led 10 #=2
-API $1I167 halo_gigabit_fastjack_2led 11 #=1
-API $1I167 halo_gigabit_fastjack_2led 12 #=6
-API $1I167 halo_gigabit_fastjack_2led 13 #=3
-API $1I167 halo_gigabit_fastjack_2led 14 #=5
-API $1I167 halo_gigabit_fastjack_2led 15 #=4
-API $1I167 halo_gigabit_fastjack_2led 16 #=8
-API $1I167 halo_gigabit_fastjack_2led 17 #=7
-API $1I167 halo_gigabit_fastjack_2led 18 #=9
 M ic_cpu_te_pbga680_440epx_grx_h $1I131
 I $1I131 ic_cpu_te_pbga680_440epx_grx_h GMC0RXCLK GMC0RXCTL GMC0RXD0 GMC0RXD1 GMC0RXD2 GMC0RXD3 N27904117 N27904104 N27903945 N27904001 N27904007 N27904052 GMCMDCLK GMCMDIO GMCREFCLK_125MHZ $1N123 $1N697 $1N699 MANUFACTURER=AMCC`P/D_NUM=PPC440EPX-NTA533T`REFDES=U1`PKG_TYPE=BGA680C100P34X34_3500X3500X265`VALUE=440EPX`
 API $1I131 ic_cpu_te_pbga680_440epx_grx_h 1 #=AN28
@@ -1115,12 +1172,18 @@ API $1I131 ic_cpu_te_pbga680_440epx_grx_h 15 #=AJ33
 API $1I131 ic_cpu_te_pbga680_440epx_grx_h 16 #=AL27
 API $1I131 ic_cpu_te_pbga680_440epx_grx_h 17 #=AM23
 API $1I131 ic_cpu_te_pbga680_440epx_grx_h 18 #=AL23
-M jumper $1I689
-I $1I689 jumper GND GMCMDIO PKG_TYPE=TSM_2X1_SV`REFDES=JP?`GEOMETRY.HEIGHT=1`
-API $1I689 jumper 1 #=1
-API $1I689 jumper 2 #=2
-M jumper $1I690
-I $1I690 jumper GND GMCMDCLK PKG_TYPE=TSM_2X1_SV`REFDES=JP?`GEOMETRY.HEIGHT=1`
-API $1I690 jumper 1 #=1
-API $1I690 jumper 2 #=2
+M ic_cpu_te_pbga680_440epx_grx_j $1I714
+I $1I714 ic_cpu_te_pbga680_440epx_grx_j $1N709 $1N708 $1N705 $1N706 $1N704 $1N707 $1N710 $1N711 $1N715 $1N713 $1N716 $1N712 MANUFACTURER=AMCC`P/D_NUM=PPC440EPX-NTA533T`REFDES=U1`PKG_TYPE=BGA680C100P34X34_3500X3500X265`VALUE=440EPX`
+API $1I714 ic_cpu_te_pbga680_440epx_grx_j 1 #=AJ32
+API $1I714 ic_cpu_te_pbga680_440epx_grx_j 2 #=AL33
+API $1I714 ic_cpu_te_pbga680_440epx_grx_j 3 #=AM29
+API $1I714 ic_cpu_te_pbga680_440epx_grx_j 4 #=AP30
+API $1I714 ic_cpu_te_pbga680_440epx_grx_j 5 #=AP31
+API $1I714 ic_cpu_te_pbga680_440epx_grx_j 6 #=AM30
+API $1I714 ic_cpu_te_pbga680_440epx_grx_j 7 #=AK32
+API $1I714 ic_cpu_te_pbga680_440epx_grx_j 8 #=AM24
+API $1I714 ic_cpu_te_pbga680_440epx_grx_j 9 #=AP26
+API $1I714 ic_cpu_te_pbga680_440epx_grx_j 10 #=AL26
+API $1I714 ic_cpu_te_pbga680_440epx_grx_j 11 #=AN26
+API $1I714 ic_cpu_te_pbga680_440epx_grx_j 12 #=AM26
 EW
