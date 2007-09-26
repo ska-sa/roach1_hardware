@@ -4,7 +4,7 @@
 	(units "basic")
 	(config_properties
 		(attributes
-			(attval "PcbConfigName" "D:\ROACH\elec\pads2007_oats.cfg")
+			(attval "PcbConfigName" "D:\ROACH\elec\roach\roach_pcb.cfg")
 			(attval "CnsFile" "D:\ROACH\elec\roach\pads2007.cns")
 			(attval "BeAdapter" "PADS2007")
 			(attval "FeAdapter" "DxDesigner")
@@ -26,7 +26,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1190816904"))
+		(file_ext "roach_top.pxr" "1190826552"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -1933,7 +1933,7 @@
 			(pin 5  3 "SDPLUS_MMC__MMC_1" 0 "CLK/SCLK" 0))
 		(part "MEMF_512MBX16_BGA64_MBIT_110NS")
 		(logical_part_mapping "MEMF_512MBX16_BGA64_MBIT_110NS"
-			(comp "U56"))
+			(comp "U29"))
 		(logical_part "MEMF_512MBX16_BGA64_MBIT_110NS"
 			(slots
 				(slot
@@ -2073,7 +2073,7 @@
  "MEMF_512MBX16_BGA64_MBIT_110NS__MEMF_512MBX16_BGA64_MBIT_110NS_1" 0 "A0" 0))
 		(part "MEMEE_512MBX8_DBGA8_100KHZ_I2C")
 		(logical_part_mapping "MEMEE_512MBX8_DBGA8_100KHZ_I2C"
-			(comp "U55" "U29" "U18"))
+			(comp "U20" "U19" "U18"))
 		(logical_part "MEMEE_512MBX8_DBGA8_100KHZ_I2C"
 			(slots
 				(slot
@@ -2218,7 +2218,7 @@
 			(pin 1  4 "IND_1R5UH_7MMX7MM_9A_SMT__IND_1R5UH_7MMX7MM_9A_SMT_1" 0 "A" 0))
 		(part "IC_TEMP_SOT23-6_I2C_AD7414-0")
 		(logical_part_mapping "IC_TEMP_SOT23-6_I2C_AD7414-0"
-			(comp "U19"))
+			(comp "U28"))
 		(logical_part "IC_TEMP_SOT23-6_I2C_AD7414-0"
 			(slots
 				(slot "IC_TEMP_SOT23_6_I2C_AD7414_0__IC_TEMP_SOT23-6_I2C_AD7414-0_1"
@@ -2263,7 +2263,7 @@
  "IC_RSTVM_SOT235_2774_THR2R93V__IC_RSTVM_SOT235_2774_THR2R93V_1" 0 "MR/" 0))
 		(part "IC_RS232_SSOP20_3225_E3-5V")
 		(logical_part_mapping "IC_RS232_SSOP20_3225_E3-5V"
-			(comp "U57" "U20"))
+			(comp "U36" "U30"))
 		(logical_part "IC_RS232_SSOP20_3225_E3-5V"
 			(slots
 				(slot "IC_RS232_SSOP20_3225_E3_5V__IC_RS232_SSOP20_3225_E3-5V_1"
@@ -3829,7 +3829,7 @@
 			(pin 3  4 "IC_CLKGEN_SOIC8_0211P21__IC_CLKGEN_SOIC8_0211P21_1" 0 "XTALIN" 0))
 		(part "IC_ANSW_ZDFN6_SPDT_XXX3157")
 		(logical_part_mapping "IC_ANSW_ZDFN6_SPDT_XXX3157"
-			(comp "U59" "U58" "U37" "U36" "U30" "U28"))
+			(comp "U59" "U58" "U57" "U56" "U55" "U37"))
 		(logical_part "IC_ANSW_ZDFN6_SPDT_XXX3157"
 			(slots
 				(slot "IC_ANSW_ZDFN6_SPDT_XXX3157__IC_ANSW_ZDFN6_SPDT_XXX3157_1"
@@ -6533,116 +6533,41 @@
 				(attval "VALUE" "PI5A3157")
 				(attval "DEVICE" "IC_ANSW_ZDFN6_SPDT_XXX3157")
 				(attval "REFDES" "U58")))
-		(component "SOP65P778X200-20N"
+		(component "TDFN_ZA-6"
 			(place "U57" 0.0 0.0 top 0.0
-				(comp_pin "1" 0.0 0.0 "IN")
-				(comp_pin "11" 0.0 0.0 "IN")
-				(comp_pin "14" 0.0 0.0 "OUT")
-				(comp_pin "19" 0.0 0.0 "IN")
-				(comp_pin "18" 0.0 0.0 "IN")
-				(comp_pin "10" 0.0 0.0 "TRI")
-				(comp_pin "15" 0.0 0.0 "TRI")
-				(comp_pin "8" 0.0 0.0 "TRI")
-				(comp_pin "17" 0.0 0.0 "TRI")
-				(comp_pin "7" 0.0 0.0 "OUT")
-				(comp_pin "3" 0.0 0.0 "OUT")
-				(comp_pin "20" 0.0 0.0 "OUT")
-				(comp_pin "9" 0.0 0.0 "OUT")
-				(comp_pin "16" 0.0 0.0 "OUT")
-				(comp_pin "12" 0.0 0.0 "OUT")
-				(comp_pin "13" 0.0 0.0 "OUT")
-				(comp_pin "6" 0.0 0.0 "OUT")
-				(comp_pin "5" 0.0 0.0 "OUT")
+				(comp_pin "2" 0.0 0.0 "IN")
 				(comp_pin "4" 0.0 0.0 "OUT")
-				(comp_pin "2" 0.0 0.0 "OUT"))
-			(attributes
-				(attval "VALUE" "ICL3225ECA")
-				(attval "COST" "1.99")
-				(attval "DEVICE" "IC_RS232_SSOP20_3225_E3-5V")
-				(attval "REFDES" "U57")))
-		(component "BGA64C100P8X8_1100X1300X140"
-			(place "U56" 0.0 0.0 top 0.0
-				(comp_pin "B4" 0.0 0.0 "OUT")
-				(comp_pin "A5" 0.0 0.0 "OUT")
-				(comp_pin "H7" 0.0 0.0 "IN")
-				(comp_pin "H2" 0.0 0.0 "IN")
-				(comp_pin "E8" 0.0 0.0 "IN")
-				(comp_pin "D8" 0.0 0.0 "IN")
-				(comp_pin "F1" 0.0 0.0 "IN")
-				(comp_pin "G5" 0.0 0.0 "IN")
-				(comp_pin "A4" 0.0 0.0 "OPENC")
-				(comp_pin "B5" 0.0 0.0 "OUT")
-				(comp_pin "G2" 0.0 0.0 "OUT")
-				(comp_pin "G1" 0.0 0.0 "OUT")
-				(comp_pin "E1" 0.0 0.0 "OUT")
-				(comp_pin "D1" 0.0 0.0 "OUT")
-				(comp_pin "C1" 0.0 0.0 "OUT")
-				(comp_pin "B1" 0.0 0.0 "OUT")
-				(comp_pin "A8" 0.0 0.0 "OUT")
-				(comp_pin "H8" 0.0 0.0 "OUT")
-				(comp_pin "H1" 0.0 0.0 "OUT")
-				(comp_pin "A1" 0.0 0.0 "OUT")
-				(comp_pin "G3" 0.0 0.0 "BI")
-				(comp_pin "F3" 0.0 0.0 "BI")
-				(comp_pin "E6" 0.0 0.0 "BI")
-				(comp_pin "H6" 0.0 0.0 "BI")
-				(comp_pin "E5" 0.0 0.0 "BI")
-				(comp_pin "H5" 0.0 0.0 "BI")
-				(comp_pin "H4" 0.0 0.0 "BI")
-				(comp_pin "E4" 0.0 0.0 "BI")
-				(comp_pin "G7" 0.0 0.0 "BI")
-				(comp_pin "F6" 0.0 0.0 "BI")
-				(comp_pin "G6" 0.0 0.0 "BI")
-				(comp_pin "F5" 0.0 0.0 "BI")
-				(comp_pin "G4" 0.0 0.0 "BI")
-				(comp_pin "F4" 0.0 0.0 "BI")
-				(comp_pin "H3" 0.0 0.0 "BI")
-				(comp_pin "E3" 0.0 0.0 "BI")
-				(comp_pin "F2" 0.0 0.0 "OUT")
-				(comp_pin "F7" 0.0 0.0 "OUT")
-				(comp_pin "A6" 0.0 0.0 "OUT")
-				(comp_pin "B6" 0.0 0.0 "OUT")
-				(comp_pin "A3" 0.0 0.0 "OUT")
-				(comp_pin "C3" 0.0 0.0 "OUT")
-				(comp_pin "D3" 0.0 0.0 "OUT")
-				(comp_pin "B2" 0.0 0.0 "OUT")
-				(comp_pin "A2" 0.0 0.0 "OUT")
-				(comp_pin "G8" 0.0 0.0 "OUT")
-				(comp_pin "F8" 0.0 0.0 "OUT")
-				(comp_pin "C8" 0.0 0.0 "OUT")
-				(comp_pin "B8" 0.0 0.0 "OUT")
-				(comp_pin "C5" 0.0 0.0 "OUT")
-				(comp_pin "D4" 0.0 0.0 "OUT")
-				(comp_pin "C2" 0.0 0.0 "OUT")
-				(comp_pin "D5" 0.0 0.0 "OUT")
-				(comp_pin "C4" 0.0 0.0 "OUT")
-				(comp_pin "B3" 0.0 0.0 "OUT")
-				(comp_pin "E7" 0.0 0.0 "OUT")
-				(comp_pin "D7" 0.0 0.0 "OUT")
-				(comp_pin "C7" 0.0 0.0 "OUT")
-				(comp_pin "A7" 0.0 0.0 "OUT")
-				(comp_pin "B7" 0.0 0.0 "OUT")
-				(comp_pin "D6" 0.0 0.0 "OUT")
-				(comp_pin "C6" 0.0 0.0 "OUT")
-				(comp_pin "D2" 0.0 0.0 "OUT")
-				(comp_pin "E2" 0.0 0.0 "OUT"))
-			(attributes
-				(attval "VALUE" "32MX16 MIRROR BIT")
-				(attval "DEVICE" "MEMF_512MBX16_BGA64_MBIT_110NS")
-				(attval "REFDES" "U56")))
-		(component "BGA8C50X100P4X2_200X150X91_NUM"
-			(place "U55" 0.0 0.0 top 0.0
-				(comp_pin "4" 0.0 0.0 "IN")
-				(comp_pin "5" 0.0 0.0 "OPENC")
-				(comp_pin "6" 0.0 0.0 "OUT")
+				(comp_pin "5" 0.0 0.0 "IN")
+				(comp_pin "6" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "OUT")
-				(comp_pin "7" 0.0 0.0 "OUT")
-				(comp_pin "2" 0.0 0.0 "OUT")
-				(comp_pin "8" 0.0 0.0 "IN")
 				(comp_pin "3" 0.0 0.0 "OUT"))
 			(attributes
-				(attval "VALUE" "AT24C04")
-				(attval "DEVICE" "MEMEE_512MBX8_DBGA8_100KHZ_I2C")
+				(attval "VALUE" "PI5A3157")
+				(attval "DEVICE" "IC_ANSW_ZDFN6_SPDT_XXX3157")
+				(attval "REFDES" "U57")))
+		(component "TDFN_ZA-6"
+			(place "U56" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "IN")
+				(comp_pin "4" 0.0 0.0 "OUT")
+				(comp_pin "5" 0.0 0.0 "IN")
+				(comp_pin "6" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "OUT")
+				(comp_pin "3" 0.0 0.0 "OUT"))
+			(attributes
+				(attval "VALUE" "PI5A3157")
+				(attval "DEVICE" "IC_ANSW_ZDFN6_SPDT_XXX3157")
+				(attval "REFDES" "U56")))
+		(component "TDFN_ZA-6"
+			(place "U55" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "IN")
+				(comp_pin "4" 0.0 0.0 "OUT")
+				(comp_pin "5" 0.0 0.0 "IN")
+				(comp_pin "6" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "OUT")
+				(comp_pin "3" 0.0 0.0 "OUT"))
+			(attributes
+				(attval "VALUE" "PI5A3157")
+				(attval "DEVICE" "IC_ANSW_ZDFN6_SPDT_XXX3157")
 				(attval "REFDES" "U55")))
 		(component "QFP50P2200X2200X160-144N"
 			(place "U54" 0.0 0.0 top 0.0
@@ -7245,17 +7170,32 @@
 				(attval "VALUE" "PI5A3157")
 				(attval "DEVICE" "IC_ANSW_ZDFN6_SPDT_XXX3157")
 				(attval "REFDES" "U37")))
-		(component "TDFN_ZA-6"
+		(component "SOP65P778X200-20N"
 			(place "U36" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0 "IN")
+				(comp_pin "1" 0.0 0.0 "IN")
+				(comp_pin "11" 0.0 0.0 "IN")
+				(comp_pin "14" 0.0 0.0 "OUT")
+				(comp_pin "19" 0.0 0.0 "IN")
+				(comp_pin "18" 0.0 0.0 "IN")
+				(comp_pin "10" 0.0 0.0 "TRI")
+				(comp_pin "15" 0.0 0.0 "TRI")
+				(comp_pin "8" 0.0 0.0 "TRI")
+				(comp_pin "17" 0.0 0.0 "TRI")
+				(comp_pin "7" 0.0 0.0 "OUT")
+				(comp_pin "3" 0.0 0.0 "OUT")
+				(comp_pin "20" 0.0 0.0 "OUT")
+				(comp_pin "9" 0.0 0.0 "OUT")
+				(comp_pin "16" 0.0 0.0 "OUT")
+				(comp_pin "12" 0.0 0.0 "OUT")
+				(comp_pin "13" 0.0 0.0 "OUT")
+				(comp_pin "6" 0.0 0.0 "OUT")
+				(comp_pin "5" 0.0 0.0 "OUT")
 				(comp_pin "4" 0.0 0.0 "OUT")
-				(comp_pin "5" 0.0 0.0 "IN")
-				(comp_pin "6" 0.0 0.0 "BI")
-				(comp_pin "1" 0.0 0.0 "OUT")
-				(comp_pin "3" 0.0 0.0 "OUT"))
+				(comp_pin "2" 0.0 0.0 "OUT"))
 			(attributes
-				(attval "VALUE" "PI5A3157")
-				(attval "DEVICE" "IC_ANSW_ZDFN6_SPDT_XXX3157")
+				(attval "VALUE" "ICL3225ECA")
+				(attval "COST" "1.99")
+				(attval "DEVICE" "IC_RS232_SSOP20_3225_E3-5V")
 				(attval "REFDES" "U36")))
 		(component "SOT65P210X110-5N"
 			(place "U35" 0.0 0.0 top 0.0
@@ -7352,43 +7292,114 @@
 			(attributes
 				(attval "DEVICE" "SN74AVCH4T245DGV")
 				(attval "REFDES" "U31")))
-		(component "TDFN_ZA-6"
+		(component "SOP65P778X200-20N"
 			(place "U30" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0 "IN")
-				(comp_pin "4" 0.0 0.0 "OUT")
-				(comp_pin "5" 0.0 0.0 "IN")
-				(comp_pin "6" 0.0 0.0 "BI")
-				(comp_pin "1" 0.0 0.0 "OUT")
-				(comp_pin "3" 0.0 0.0 "OUT"))
-			(attributes
-				(attval "VALUE" "PI5A3157")
-				(attval "DEVICE" "IC_ANSW_ZDFN6_SPDT_XXX3157")
-				(attval "REFDES" "U30")))
-		(component "BGA8C50X100P4X2_200X150X91_NUM"
-			(place "U29" 0.0 0.0 top 0.0
-				(comp_pin "4" 0.0 0.0 "IN")
-				(comp_pin "5" 0.0 0.0 "OPENC")
-				(comp_pin "6" 0.0 0.0 "OUT")
-				(comp_pin "1" 0.0 0.0 "OUT")
+				(comp_pin "1" 0.0 0.0 "IN")
+				(comp_pin "11" 0.0 0.0 "IN")
+				(comp_pin "14" 0.0 0.0 "OUT")
+				(comp_pin "19" 0.0 0.0 "IN")
+				(comp_pin "18" 0.0 0.0 "IN")
+				(comp_pin "10" 0.0 0.0 "TRI")
+				(comp_pin "15" 0.0 0.0 "TRI")
+				(comp_pin "8" 0.0 0.0 "TRI")
+				(comp_pin "17" 0.0 0.0 "TRI")
 				(comp_pin "7" 0.0 0.0 "OUT")
-				(comp_pin "2" 0.0 0.0 "OUT")
-				(comp_pin "8" 0.0 0.0 "IN")
-				(comp_pin "3" 0.0 0.0 "OUT"))
+				(comp_pin "3" 0.0 0.0 "OUT")
+				(comp_pin "20" 0.0 0.0 "OUT")
+				(comp_pin "9" 0.0 0.0 "OUT")
+				(comp_pin "16" 0.0 0.0 "OUT")
+				(comp_pin "12" 0.0 0.0 "OUT")
+				(comp_pin "13" 0.0 0.0 "OUT")
+				(comp_pin "6" 0.0 0.0 "OUT")
+				(comp_pin "5" 0.0 0.0 "OUT")
+				(comp_pin "4" 0.0 0.0 "OUT")
+				(comp_pin "2" 0.0 0.0 "OUT"))
 			(attributes
-				(attval "VALUE" "AT24C04")
-				(attval "DEVICE" "MEMEE_512MBX8_DBGA8_100KHZ_I2C")
+				(attval "VALUE" "ICL3225ECA")
+				(attval "COST" "1.99")
+				(attval "DEVICE" "IC_RS232_SSOP20_3225_E3-5V")
+				(attval "REFDES" "U30")))
+		(component "BGA64C100P8X8_1100X1300X140"
+			(place "U29" 0.0 0.0 top 0.0
+				(comp_pin "B4" 0.0 0.0 "OUT")
+				(comp_pin "A5" 0.0 0.0 "OUT")
+				(comp_pin "H7" 0.0 0.0 "IN")
+				(comp_pin "H2" 0.0 0.0 "IN")
+				(comp_pin "E8" 0.0 0.0 "IN")
+				(comp_pin "D8" 0.0 0.0 "IN")
+				(comp_pin "F1" 0.0 0.0 "IN")
+				(comp_pin "G5" 0.0 0.0 "IN")
+				(comp_pin "A4" 0.0 0.0 "OPENC")
+				(comp_pin "B5" 0.0 0.0 "OUT")
+				(comp_pin "G2" 0.0 0.0 "OUT")
+				(comp_pin "G1" 0.0 0.0 "OUT")
+				(comp_pin "E1" 0.0 0.0 "OUT")
+				(comp_pin "D1" 0.0 0.0 "OUT")
+				(comp_pin "C1" 0.0 0.0 "OUT")
+				(comp_pin "B1" 0.0 0.0 "OUT")
+				(comp_pin "A8" 0.0 0.0 "OUT")
+				(comp_pin "H8" 0.0 0.0 "OUT")
+				(comp_pin "H1" 0.0 0.0 "OUT")
+				(comp_pin "A1" 0.0 0.0 "OUT")
+				(comp_pin "G3" 0.0 0.0 "BI")
+				(comp_pin "F3" 0.0 0.0 "BI")
+				(comp_pin "E6" 0.0 0.0 "BI")
+				(comp_pin "H6" 0.0 0.0 "BI")
+				(comp_pin "E5" 0.0 0.0 "BI")
+				(comp_pin "H5" 0.0 0.0 "BI")
+				(comp_pin "H4" 0.0 0.0 "BI")
+				(comp_pin "E4" 0.0 0.0 "BI")
+				(comp_pin "G7" 0.0 0.0 "BI")
+				(comp_pin "F6" 0.0 0.0 "BI")
+				(comp_pin "G6" 0.0 0.0 "BI")
+				(comp_pin "F5" 0.0 0.0 "BI")
+				(comp_pin "G4" 0.0 0.0 "BI")
+				(comp_pin "F4" 0.0 0.0 "BI")
+				(comp_pin "H3" 0.0 0.0 "BI")
+				(comp_pin "E3" 0.0 0.0 "BI")
+				(comp_pin "F2" 0.0 0.0 "OUT")
+				(comp_pin "F7" 0.0 0.0 "OUT")
+				(comp_pin "A6" 0.0 0.0 "OUT")
+				(comp_pin "B6" 0.0 0.0 "OUT")
+				(comp_pin "A3" 0.0 0.0 "OUT")
+				(comp_pin "C3" 0.0 0.0 "OUT")
+				(comp_pin "D3" 0.0 0.0 "OUT")
+				(comp_pin "B2" 0.0 0.0 "OUT")
+				(comp_pin "A2" 0.0 0.0 "OUT")
+				(comp_pin "G8" 0.0 0.0 "OUT")
+				(comp_pin "F8" 0.0 0.0 "OUT")
+				(comp_pin "C8" 0.0 0.0 "OUT")
+				(comp_pin "B8" 0.0 0.0 "OUT")
+				(comp_pin "C5" 0.0 0.0 "OUT")
+				(comp_pin "D4" 0.0 0.0 "OUT")
+				(comp_pin "C2" 0.0 0.0 "OUT")
+				(comp_pin "D5" 0.0 0.0 "OUT")
+				(comp_pin "C4" 0.0 0.0 "OUT")
+				(comp_pin "B3" 0.0 0.0 "OUT")
+				(comp_pin "E7" 0.0 0.0 "OUT")
+				(comp_pin "D7" 0.0 0.0 "OUT")
+				(comp_pin "C7" 0.0 0.0 "OUT")
+				(comp_pin "A7" 0.0 0.0 "OUT")
+				(comp_pin "B7" 0.0 0.0 "OUT")
+				(comp_pin "D6" 0.0 0.0 "OUT")
+				(comp_pin "C6" 0.0 0.0 "OUT")
+				(comp_pin "D2" 0.0 0.0 "OUT")
+				(comp_pin "E2" 0.0 0.0 "OUT"))
+			(attributes
+				(attval "VALUE" "32MX16 MIRROR BIT")
+				(attval "DEVICE" "MEMF_512MBX16_BGA64_MBIT_110NS")
 				(attval "REFDES" "U29")))
-		(component "TDFN_ZA-6"
+		(component "SOT95P284X145-6N"
 			(place "U28" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "IN")
-				(comp_pin "4" 0.0 0.0 "OUT")
 				(comp_pin "5" 0.0 0.0 "IN")
-				(comp_pin "6" 0.0 0.0 "BI")
+				(comp_pin "3" 0.0 0.0 "IN")
 				(comp_pin "1" 0.0 0.0 "OUT")
-				(comp_pin "3" 0.0 0.0 "OUT"))
+				(comp_pin "6" 0.0 0.0 "BI")
+				(comp_pin "4" 0.0 0.0 "OUT"))
 			(attributes
-				(attval "VALUE" "PI5A3157")
-				(attval "DEVICE" "IC_ANSW_ZDFN6_SPDT_XXX3157")
+				(attval "VALUE" "AD7414-0")
+				(attval "DEVICE" "IC_TEMP_SOT23-6_I2C_AD7414-0")
 				(attval "REFDES" "U28")))
 		(component "SOP50P490X110-11N"
 			(place "U27" 0.0 0.0 top 0.0
@@ -7629,44 +7640,33 @@
 			(attributes
 				(attval "DEVICE" "SN74AVCH4T245DGV")
 				(attval "REFDES" "U21")))
-		(component "SOP65P778X200-20N"
+		(component "BGA8C50X100P4X2_200X150X91_NUM"
 			(place "U20" 0.0 0.0 top 0.0
-				(comp_pin "1" 0.0 0.0 "IN")
-				(comp_pin "11" 0.0 0.0 "IN")
-				(comp_pin "14" 0.0 0.0 "OUT")
-				(comp_pin "19" 0.0 0.0 "IN")
-				(comp_pin "18" 0.0 0.0 "IN")
-				(comp_pin "10" 0.0 0.0 "TRI")
-				(comp_pin "15" 0.0 0.0 "TRI")
-				(comp_pin "8" 0.0 0.0 "TRI")
-				(comp_pin "17" 0.0 0.0 "TRI")
-				(comp_pin "7" 0.0 0.0 "OUT")
-				(comp_pin "3" 0.0 0.0 "OUT")
-				(comp_pin "20" 0.0 0.0 "OUT")
-				(comp_pin "9" 0.0 0.0 "OUT")
-				(comp_pin "16" 0.0 0.0 "OUT")
-				(comp_pin "12" 0.0 0.0 "OUT")
-				(comp_pin "13" 0.0 0.0 "OUT")
+				(comp_pin "4" 0.0 0.0 "IN")
+				(comp_pin "5" 0.0 0.0 "OPENC")
 				(comp_pin "6" 0.0 0.0 "OUT")
-				(comp_pin "5" 0.0 0.0 "OUT")
-				(comp_pin "4" 0.0 0.0 "OUT")
-				(comp_pin "2" 0.0 0.0 "OUT"))
-			(attributes
-				(attval "VALUE" "ICL3225ECA")
-				(attval "COST" "1.99")
-				(attval "DEVICE" "IC_RS232_SSOP20_3225_E3-5V")
-				(attval "REFDES" "U20")))
-		(component "SOT95P284X145-6N"
-			(place "U19" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0 "IN")
-				(comp_pin "5" 0.0 0.0 "IN")
-				(comp_pin "3" 0.0 0.0 "IN")
 				(comp_pin "1" 0.0 0.0 "OUT")
-				(comp_pin "6" 0.0 0.0 "BI")
-				(comp_pin "4" 0.0 0.0 "OUT"))
+				(comp_pin "7" 0.0 0.0 "OUT")
+				(comp_pin "2" 0.0 0.0 "OUT")
+				(comp_pin "8" 0.0 0.0 "IN")
+				(comp_pin "3" 0.0 0.0 "OUT"))
 			(attributes
-				(attval "VALUE" "AD7414-0")
-				(attval "DEVICE" "IC_TEMP_SOT23-6_I2C_AD7414-0")
+				(attval "VALUE" "AT24C04")
+				(attval "DEVICE" "MEMEE_512MBX8_DBGA8_100KHZ_I2C")
+				(attval "REFDES" "U20")))
+		(component "BGA8C50X100P4X2_200X150X91_NUM"
+			(place "U19" 0.0 0.0 top 0.0
+				(comp_pin "4" 0.0 0.0 "IN")
+				(comp_pin "5" 0.0 0.0 "OPENC")
+				(comp_pin "6" 0.0 0.0 "OUT")
+				(comp_pin "1" 0.0 0.0 "OUT")
+				(comp_pin "7" 0.0 0.0 "OUT")
+				(comp_pin "2" 0.0 0.0 "OUT")
+				(comp_pin "8" 0.0 0.0 "IN")
+				(comp_pin "3" 0.0 0.0 "OUT"))
+			(attributes
+				(attval "VALUE" "AT24C04")
+				(attval "DEVICE" "MEMEE_512MBX8_DBGA8_100KHZ_I2C")
 				(attval "REFDES" "U19")))
 		(component "BGA8C50X100P4X2_200X150X91_NUM"
 			(place "U18" 0.0 0.0 top 0.0
@@ -23242,11 +23242,11 @@
 		(func "ROACH_TRANSCEIVERS0_1\$1I879" "$1I2\$1I879" "X1" 1)
 		(func "ROACH_PPC_USB\$1I270" "$1I42\$1I270" "VR2" 1)
 		(func "ROACH_PPC_USB\$1I232" "$1I42\$1I232" "VR1" 1)
-		(func "$1I424\$1I352" "" "U59" 1)
-		(func "$1I424\$1I305" "" "U58" 1)
-		(func "$1I424\$1I370" "" "U57" 1)
-		(func "$1I424\$1I365" "" "U56" 1)
-		(func "$1I424\$1I366" "" "U55" 1)
+		(func "$1I447\$1I369" "" "U59" 1)
+		(func "$1I447\$1I353" "" "U58" 1)
+		(func "$1I447\$1I352" "" "U57" 1)
+		(func "$1I447\$1I328" "" "U56" 1)
+		(func "$1I447\$1I324" "" "U55" 1)
 		(func "F3" "$1I372\$1I350" "U54" 1)
 		(func "ROACH_TRANSCEIVERS_PSU\$1I706" "$1I365\$1I706" "U53" 1)
 		(func "ROACH_TRANSCEIVERS_PSU\$1I684" "$1I365\$1I684" "U52" 1)
@@ -23268,26 +23268,26 @@
 		(func "$1I331\$1I302" "" "U40" 1)
 		(func "$1I331\$1I193" "" "U39" 1)
 		(func "$1I331\$1I182" "" "U38" 1)
-		(func "$1I424\$1I353" "" "U37" 1)
-		(func "$1I424\$1I369" "" "U36" 1)
+		(func "$1I447\$1I305" "" "U37" 1)
+		(func "$1I447\$1I370" "" "U36" 1)
 		(func "$1I372\$1I112" "" "U35" 1)
 		(func "$1I331\$1I118" "" "U34" 1)
 		(func "ROACH_GPIO_MISC\$1I91" "$1I144\$1I91" "U33" 1)
 		(func "ROACH_GPIO_MISC\$1I59" "$1I144\$1I59" "U32" 1)
 		(func "ROACH_GPIO_MISC\$1I240" "$1I144\$1I240" "U31" 1)
-		(func "$1I424\$1I328" "" "U30" 1)
-		(func "$1I424\$1I303" "" "U29" 1)
-		(func "$1I424\$1I324" "" "U28" 1)
+		(func "$1I447\$1I327" "" "U30" 1)
+		(func "$1I447\$1I365" "" "U29" 1)
+		(func "$1I447\$1I315" "" "U28" 1)
 		(func "ROACH_PPC_DDR2\$1I1398" "$1I289\$1I1398" "U27" 1)
-		(func "ROACH_PPC_TST_CLK_IO\$1I223" "$1I258\$1I223" "U26" 1)
+		(func "ROACH_PPC_TST_CLK_IO\$1I363" "$1I258\$1I363" "U26" 1)
 		(func "ROACH_PPC_TST_CLK_IO\$1I184" "$1I258\$1I184" "U25" 1)
 		(func "ROACH_PPC_TST_CLK_IO\$1I185" "$1I258\$1I185" "U24" 1)
 		(func "ROACH_PPC_ETH1\$1I146" "$1I23\$1I146" "U23" 1)
 		(func "ROACH_GPIO_MISC\$1I155" "$1I144\$1I155" "U22" 1)
 		(func "ROACH_GPIO_MISC\$1I125" "$1I144\$1I125" "U21" 1)
-		(func "$1I424\$1I327" "" "U20" 1)
-		(func "$1I424\$1I315" "" "U19" 1)
-		(func "$1I424\$1I335" "" "U18" 1)
+		(func "$1I447\$1I366" "" "U20" 1)
+		(func "$1I447\$1I335" "" "U19" 1)
+		(func "$1I447\$1I303" "" "U18" 1)
 		(func "ROACH_TRANSCEIVERS0_1\$1I839" "$1I2\$1I839" "U17" 1)
 		(func "ROACH_TRANSCEIVERS0_1\$1I692" "$1I2\$1I692" "U16" 1)
 		(func "ROACH_TRANSCEIVERS0_1\$1I691" "$1I2\$1I691" "U15" 1)
@@ -23316,8 +23316,8 @@
 		(func "ROACH_PPC_TST_CLK_IO\$1I229" "$1I258\$1I229" "U1" 6)
 		(func "ROACH_PPC_DDR2\$1I630" "$1I289\$1I630" "U1" 7)
 		(func "ROACH_PPC_USB\$1I228" "$1I42\$1I228" "U1" 8)
-		(func "$1I424\$1I354" "" "U1" 9)
-		(func "$1I424\$1I374" "" "U1" 10)
+		(func "$1I447\$1I354" "" "U1" 9)
+		(func "$1I447\$1I374" "" "U1" 10)
 		(func "ROACH_PPC_DDR2\$1I1412" "$1I289\$1I1412" "TP8" 1)
 		(func "ROACH_PPC_DDR2\$1I1409" "$1I289\$1I1409" "TP7" 1)
 		(func "ROACH_QDR2P_BY2_3\$1I2104" "$1I15\$1I2104" "TP6" 1)
@@ -23381,9 +23381,9 @@
 		(func "ROACH_PPC_TST_CLK_IO\$1I219" "$1I258\$1I219" "RO12" 1)
 		(func "ROACH_PPC_TST_CLK_IO\$1I202" "$1I258\$1I202" "RO11" 1)
 		(func "ROACH_PPC_TST_CLK_IO\$1I173" "$1I258\$1I173" "RO10" 1)
-		(func "$1I424\$1I356" "" "RO9" 1)
-		(func "$1I424\$1I359" "" "RO8" 1)
-		(func "$1I424\$1I312" "" "RO7" 1)
+		(func "$1I447\$1I356" "" "RO9" 1)
+		(func "$1I447\$1I359" "" "RO8" 1)
+		(func "$1I447\$1I312" "" "RO7" 1)
 		(func "ROACH_PPC_POWER_1\$1I246" "$1I114\$1I246" "RO6" 1)
 		(func "ROACH_PPC_POWER_1\$1I119" "$1I114\$1I119" "RO5" 1)
 		(func "ROACH_PPC_POWER_1\$1I295" "$1I114\$1I295" "RO4" 1)
@@ -23418,21 +23418,21 @@
 		(func "ROACH_ADC_0\$1I998" "$1I4\$1I998" "R283" 1)
 		(func "ROACH_ADC_0\$1I1019" "$1I4\$1I1019" "R282" 1)
 		(func "ROACH_ADC_0\$1I1018" "$1I4\$1I1018" "R281" 1)
-		(func "$1I424\$1I375" "" "R255" 1)
-		(func "$1I424\$1I367" "" "R254" 1)
-		(func "$1I424\$1I364" "" "R253" 1)
-		(func "$1I424\$1I351" "" "R252" 1)
-		(func "$1I424\$1I348" "" "R251" 1)
-		(func "$1I424\$1I346" "" "R250" 1)
-		(func "$1I424\$1I343" "" "R249" 1)
-		(func "$1I424\$1I333" "" "R248" 1)
-		(func "$1I424\$1I331" "" "R247" 1)
-		(func "$1I424\$1I330" "" "R246" 1)
-		(func "$1I424\$1I325" "" "R245" 1)
-		(func "$1I424\$1I318" "" "R244" 1)
-		(func "$1I424\$1I316" "" "R243" 1)
-		(func "$1I424\$1I307" "" "R242" 1)
-		(func "$1I424\$1I317" "" "R241" 1)
+		(func "$1I447\$1I375" "" "R255" 1)
+		(func "$1I447\$1I367" "" "R254" 1)
+		(func "$1I447\$1I364" "" "R253" 1)
+		(func "$1I447\$1I351" "" "R252" 1)
+		(func "$1I447\$1I348" "" "R251" 1)
+		(func "$1I447\$1I346" "" "R250" 1)
+		(func "$1I447\$1I343" "" "R249" 1)
+		(func "$1I447\$1I333" "" "R248" 1)
+		(func "$1I447\$1I331" "" "R247" 1)
+		(func "$1I447\$1I330" "" "R246" 1)
+		(func "$1I447\$1I325" "" "R245" 1)
+		(func "$1I447\$1I318" "" "R244" 1)
+		(func "$1I447\$1I316" "" "R243" 1)
+		(func "$1I447\$1I307" "" "R242" 1)
+		(func "$1I447\$1I317" "" "R241" 1)
 		(func "$1I372\$1I589" "" "R240" 1)
 		(func "$1I372\$1I588" "" "R239" 1)
 		(func "ROACH_TRANSCEIVERS2_3\$1I698" "$1I3\$1I698" "R238" 1)
@@ -23584,23 +23584,23 @@
 		(func "ROACH_GPIO_MISC\$1I274" "$1I144\$1I274" "R92" 1)
 		(func "ROACH_GPIO_MISC\$1I242" "$1I144\$1I242" "R91" 1)
 		(func "ROACH_GPIO_MISC\$1I154" "$1I144\$1I154" "R90" 1)
-		(func "$1I424\$1I350" "" "R89" 1)
-		(func "$1I424\$1I378" "" "R88" 1)
-		(func "$1I424\$1I372" "" "R87" 1)
-		(func "$1I424\$1I309" "" "R86" 1)
-		(func "$1I424\$1I347" "" "R85" 1)
-		(func "$1I424\$1I320" "" "R84" 1)
-		(func "$1I424\$1I358" "" "R83" 1)
-		(func "$1I424\$1I361" "" "R82" 1)
-		(func "$1I424\$1I310" "" "R81" 1)
-		(func "$1I424\$1I382" "" "R80" 1)
+		(func "$1I447\$1I350" "" "R89" 1)
+		(func "$1I447\$1I378" "" "R88" 1)
+		(func "$1I447\$1I372" "" "R87" 1)
+		(func "$1I447\$1I309" "" "R86" 1)
+		(func "$1I447\$1I347" "" "R85" 1)
+		(func "$1I447\$1I320" "" "R84" 1)
+		(func "$1I447\$1I358" "" "R83" 1)
+		(func "$1I447\$1I361" "" "R82" 1)
+		(func "$1I447\$1I310" "" "R81" 1)
+		(func "$1I447\$1I382" "" "R80" 1)
 		(func "ROACH_GPIO_MISC\$1I143" "$1I144\$1I143" "R79" 1)
-		(func "$1I424\$1I306" "" "R78" 1)
-		(func "$1I424\$1I329" "" "R77" 1)
-		(func "$1I424\$1I308" "" "R76" 1)
-		(func "$1I424\$1I322" "" "R75" 1)
-		(func "$1I424\$1I357" "" "R74" 1)
-		(func "$1I424\$1I341" "" "R73" 1)
+		(func "$1I447\$1I306" "" "R78" 1)
+		(func "$1I447\$1I329" "" "R77" 1)
+		(func "$1I447\$1I308" "" "R76" 1)
+		(func "$1I447\$1I322" "" "R75" 1)
+		(func "$1I447\$1I357" "" "R74" 1)
+		(func "$1I447\$1I341" "" "R73" 1)
 		(func "ROACH_TRANSCEIVERS0_1\$1I862" "$1I2\$1I862" "R72" 1)
 		(func "ROACH_TRANSCEIVERS0_1\$1I672" "$1I2\$1I672" "R71" 1)
 		(func "ROACH_TRANSCEIVERS0_1\$1I832" "$1I2\$1I832" "R70" 1)
@@ -23689,10 +23689,10 @@
 		(func "ROACH_PPC_USB\$1I253" "$1I42\$1I253" "P14" 1)
 		(func "ROACH_ADC_0\$1I170" "$1I4\$1I170" "P13" 1)
 		(func "ROACH_ADC_0\$1I801" "$1I4\$1I801" "P13" 2)
-		(func "$1I424\$1I313" "" "P11" 1)
-		(func "$1I424\$1I360" "" "P10" 1)
-		(func "$1I424\$1I311" "" "P9" 1)
-		(func "$1I424\$1I377" "" "P8" 1)
+		(func "$1I447\$1I313" "" "P11" 1)
+		(func "$1I447\$1I360" "" "P10" 1)
+		(func "$1I447\$1I311" "" "P9" 1)
+		(func "$1I447\$1I377" "" "P8" 1)
 		(func "ROACH_PPC_TST_CLK_IO\$1I237" "$1I258\$1I237" "P7" 1)
 		(func "ROACH_TRANSCEIVERS0_1\$1I416" "$1I2\$1I416" "P6" 1)
 		(func "ROACH_TRANSCEIVERS0_1\$1I466" "$1I2\$1I466" "P6" 2)
@@ -23746,7 +23746,7 @@
 		(func "ROACH_TRANSCEIVERS0_1\$1I826" "$1I2\$1I826" "JP3" 1)
 		(func "ROACH_TRANSCEIVERS0_1\$1I804" "$1I2\$1I804" "JP2" 1)
 		(func "ROACH_QDR2P_BY2_3\$1I1784" "$1I15\$1I1784" "JP1" 1)
-		(func "$1I424\$1I754" "" "J17" 1)
+		(func "$1I447\$1I754" "" "J17" 1)
 		(func "$1I372\$1I292" "" "J16" 1)
 		(func "$1I331\$1I77" "" "J15" 1)
 		(func "$1I331\$1I72" "" "J14" 1)
@@ -23757,7 +23757,7 @@
 		(func "ROACH_DDR2_DIMM\$1I1002" "$1I6\$1I1002" "J9" 1)
 		(func "ROACH_DDR2_DIMM\$1I839" "$1I6\$1I839" "J9" 2)
 		(func "ROACH_GPIO_MISC\$1I158" "$1I144\$1I158" "J8" 1)
-		(func "$1I424\$1I363" "" "J7" 1)
+		(func "$1I447\$1I363" "" "J7" 1)
 		(func "ROACH_PPC_DDR2\$1I1088" "$1I289\$1I1088" "J6" 1)
 		(func "ROACH_PPC_DDR2\$1I1085" "$1I289\$1I1085" "J6" 2)
 		(func "ROACH_PPC_TST_CLK_IO\$1I196" "$1I258\$1I196" "J5" 1)
@@ -23909,17 +23909,17 @@
 		(func "ROACH_DIFF_GPIO\$1I332" "$1I7\$1I332" "C662" 1)
 		(func "ROACH_DIFF_GPIO\$1I331" "$1I7\$1I331" "C661" 1)
 		(func "ROACH_DIFF_GPIO\$1I330" "$1I7\$1I330" "C660" 1)
-		(func "$1I424\$1I379" "" "C659" 1)
-		(func "$1I424\$1I376" "" "C658" 1)
-		(func "$1I424\$1I373" "" "C657" 1)
-		(func "$1I424\$1I355" "" "C656" 1)
-		(func "$1I424\$1I344" "" "C655" 1)
-		(func "$1I424\$1I339" "" "C654" 1)
-		(func "$1I424\$1I336" "" "C653" 1)
-		(func "$1I424\$1I323" "" "C652" 1)
-		(func "$1I424\$1I304" "" "C651" 1)
-		(func "$1I424\$1I302" "" "C650" 1)
-		(func "$1I424\$1I301" "" "C649" 1)
+		(func "$1I447\$1I379" "" "C659" 1)
+		(func "$1I447\$1I376" "" "C658" 1)
+		(func "$1I447\$1I373" "" "C657" 1)
+		(func "$1I447\$1I355" "" "C656" 1)
+		(func "$1I447\$1I344" "" "C655" 1)
+		(func "$1I447\$1I339" "" "C654" 1)
+		(func "$1I447\$1I336" "" "C653" 1)
+		(func "$1I447\$1I323" "" "C652" 1)
+		(func "$1I447\$1I304" "" "C651" 1)
+		(func "$1I447\$1I302" "" "C650" 1)
+		(func "$1I447\$1I301" "" "C649" 1)
 		(func "ROACH_DIFF_GPIO\$1I328" "$1I7\$1I328" "C648" 1)
 		(func "ROACH_5V_POWER\$1I760" "$1I307\$1I760" "C647" 1)
 		(func "ROACH_5V_POWER\$1I759" "$1I307\$1I759" "C646" 1)
@@ -23979,7 +23979,7 @@
 		(func "ROACH_5V_POWER\$1I642" "$1I307\$1I642" "C592" 1)
 		(func "ROACH_5V_POWER\$1I636" "$1I307\$1I636" "C591" 1)
 		(func "ROACH_DIFF_GPIO\$1I329" "$1I7\$1I329" "C590" 1)
-		(func "$1I424\$1I778" "" "C589" 1)
+		(func "$1I447\$1I778" "" "C589" 1)
 		(func "ROACH_QDR2P_BY0_1\$1I1859" "$1I9\$1I1859" "C588" 1)
 		(func "ROACH_QDR2P_BY0_1\$1I1858" "$1I9\$1I1858" "C587" 1)
 		(func "ROACH_QDR2P_BY0_1\$1I1852" "$1I9\$1I1852" "C586" 1)
@@ -23995,10 +23995,10 @@
 		(func "ROACH_QDR2P_BY0_1\$1I1805" "$1I9\$1I1805" "C576" 1)
 		(func "ROACH_QDR2P_BY0_1\$1I1804" "$1I9\$1I1804" "C575" 1)
 		(func "ROACH_QDR2P_BY0_1\$1I1790" "$1I9\$1I1790" "C574" 1)
-		(func "$1I424\$1I777" "" "C573" 1)
-		(func "$1I424\$1I795" "" "C572" 1)
-		(func "$1I424\$1I794" "" "C571" 1)
-		(func "$1I424\$1I789" "" "C570" 1)
+		(func "$1I447\$1I777" "" "C573" 1)
+		(func "$1I447\$1I795" "" "C572" 1)
+		(func "$1I447\$1I794" "" "C571" 1)
+		(func "$1I447\$1I789" "" "C570" 1)
 		(func "ROACH_V5_CLK\$1I21" "$1I291\$1I21" "C569" 1)
 		(func "ROACH_V5_CLK\$1I29" "$1I291\$1I29" "C568" 1)
 		(func "ROACH_DDR2_DIMM\$1I2428" "$1I6\$1I2428" "C567" 1)
@@ -24083,15 +24083,15 @@
 		(func "ROACH_ADC_0\$1I1099" "$1I4\$1I1099" "C488" 1)
 		(func "ROACH_ADC_0\$1I1098" "$1I4\$1I1098" "C487" 1)
 		(func "ROACH_ADC_0\$1I1091" "$1I4\$1I1091" "C486" 1)
-		(func "$1I424\$1I788" "" "C485" 1)
-		(func "$1I424\$1I368" "" "C484" 1)
-		(func "$1I424\$1I362" "" "C483" 1)
-		(func "$1I424\$1I342" "" "C482" 1)
-		(func "$1I424\$1I337" "" "C481" 1)
-		(func "$1I424\$1I334" "" "C480" 1)
-		(func "$1I424\$1I332" "" "C479" 1)
-		(func "$1I424\$1I319" "" "C478" 1)
-		(func "$1I424\$1I314" "" "C477" 1)
+		(func "$1I447\$1I788" "" "C485" 1)
+		(func "$1I447\$1I368" "" "C484" 1)
+		(func "$1I447\$1I362" "" "C483" 1)
+		(func "$1I447\$1I342" "" "C482" 1)
+		(func "$1I447\$1I337" "" "C481" 1)
+		(func "$1I447\$1I334" "" "C480" 1)
+		(func "$1I447\$1I332" "" "C479" 1)
+		(func "$1I447\$1I319" "" "C478" 1)
+		(func "$1I447\$1I314" "" "C477" 1)
 		(func "$1I372\$1I269" "" "C476" 1)
 		(func "$1I372\$1I530" "" "C475" 1)
 		(func "$1I372\$1I527" "" "C474" 1)
@@ -24752,176 +24752,170 @@
 			(pins U54-130 R200-1))
 		(net "$1I372\USER_LED1"
 			(pins U54-129 R201-1))
-		(net "$1I424\$1N90"
+		(net "$1I447\$1N90"
 			(pins U1-D8 R78-2))
-		(net "$1I424\$1N129"
+		(net "$1I447\$1N129"
 			(pins U1-A17 R77-2))
-		(net "$1I424\$1N772"
+		(net "$1I447\$1N772"
 			(pins J17-10))
-		(net "$1I424\$1N773"
+		(net "$1I447\$1N773"
 			(pins J17-9))
-		(net "$1I424\$1N774"
+		(net "$1I447\$1N774"
 			(pins J17-6))
-		(net "$1I424\$1N775"
+		(net "$1I447\$1N775"
 			(pins J17-1))
-		(net "$1I424\$1N798"
+		(net "$1I447\$1N798"
 			(pins U1-B17))
-		(net "$1I424\$1N799"
+		(net "$1I447\$1N799"
 			(pins U1-A18))
-		(net "$1I424\$1N800"
+		(net "$1I447\$1N800"
 			(pins U1-D17))
-		(net "$1I424\$1N801"
+		(net "$1I447\$1N801"
 			(pins U1-A16))
-		(net "$1I424\$1N802"
+		(net "$1I447\$1N802"
 			(pins U1-E3))
-		(net "$1I424\$1N803"
+		(net "$1I447\$1N803"
 			(pins U1-C1))
-		(net "$1I424\$1N804"
+		(net "$1I447\$1N804"
 			(pins U1-D2))
-		(net "$1I424\$1N805"
+		(net "$1I447\$1N805"
 			(pins U1-E4))
-		(net "$1I424\$1N806"
+		(net "$1I447\$1N806"
 			(pins U1-D1))
-		(net "$1I424\$1N807"
+		(net "$1I447\$1N807"
 			(pins U1-E1))
-		(net "$1I424\$1N808"
+		(net "$1I447\$1N808"
 			(pins U1-F4))
-		(net "$1I424\$1N809"
+		(net "$1I447\$1N809"
 			(pins U1-F3))
-		(net "$1I424\$1N810"
+		(net "$1I447\$1N810"
 			(pins U1-F2))
-		(net "$1I424\$1N811"
+		(net "$1I447\$1N811"
 			(pins U1-F1))
-		(net "$1I424\$1N812"
+		(net "$1I447\$1N812"
 			(pins U1-G3))
-		(net "$1I424\$1N813"
+		(net "$1I447\$1N813"
 			(pins U1-G4))
-		(net "$1I424\$1N814"
+		(net "$1I447\$1N814"
 			(pins U1-G2))
-		(net "$1I424\$1N815"
+		(net "$1I447\$1N815"
 			(pins U1-G1))
-		(net "$1I424\$1N816"
+		(net "$1I447\$1N816"
 			(pins U1-H4))
-		(net "$1I424\$1N817"
+		(net "$1I447\$1N817"
 			(pins U1-H3))
-		(net "$1I424\$PIN0"
+		(net "$1I447\$PIN0"
 			(pins R81-2 R80-1))
-		(net "$1I424\BOOT_NOR"
-			(pins R250-2 P9-2 U37-6 U36-6))
-		(net "$1I424\CPU_UART0_DCD#"
-			(pins U1-C28 U28-4))
-		(net "$1I424\CPU_UART0_DSR#"
-			(pins U1-C29 U58-4))
-		(net "$1I424\I2C0_33_DATA"
-			(pins U29-5 R88-1 RO9-1 U30-3))
-		(net "$1I424\I2C0_66_DATA"
-			(pins U18-5 R89-1 U30-1))
-		(net "$1I424\I2C0_SCLK"
-			(pins U29-6 U18-6 U55-6 U19-4 U1-AB32 R74-2 P11-1))
-		(net "$1I424\I2C0_SDATA"
-			(pins U55-5 U19-6 U1-AB33 R73-2 RO9-2 P11-3 U30-4))
-		(net "$1I424\N17928863"
-			(pins C479-2 U57-2))
-		(net "$1I424\N17928905"
-			(pins C478-1 U57-6))
-		(net "$1I424\N17928909"
-			(pins C481-2 U20-2))
-		(net "$1I424\N17928913"
-			(pins C483-1 U20-6))
-		(net "$1I424\N17928985"
-			(pins R87-1 U20-1))
-		(net "$1I424\N17928993"
-			(pins C477-1 U20-3))
-		(net "$1I424\N17929015"
-			(pins C480-1 U20-7))
-		(net "$1I424\N17929025"
-			(pins U20-14 U20-11))
-		(net "$1I424\N17929048"
-			(pins C481-1 U20-4))
-		(net "$1I424\N17929070"
-			(pins C483-2 U20-5))
-		(net "$1I424\N17929344"
-			(pins R86-1 U57-1))
-		(net "$1I424\N17929360"
-			(pins C482-1 U57-3))
-		(net "$1I424\N17929475"
-			(pins C484-1 U57-7))
-		(net "$1I424\N17929517"
-			(pins U57-14 U57-11))
-		(net "$1I424\N17929543"
-			(pins C479-1 U57-4))
-		(net "$1I424\N17929567"
-			(pins C478-2 U57-5))
-		(net "$1I424\NF_CE#"
-			(pins U37-1 U36-3))
-		(net "$1I424\PBLAST#"
+		(net "$1I447\BOOT_NOR"
+			(pins R250-2 P9-2 U58-6 U59-6))
+		(net "$1I447\CPU_UART0_DCD#"
+			(pins U1-C28 U55-4))
+		(net "$1I447\CPU_UART0_DSR#"
+			(pins U1-C29 U37-4))
+		(net "$1I447\I2C0_33_DATA"
+			(pins U18-5 R88-1 RO9-1 U56-3))
+		(net "$1I447\I2C0_66_DATA"
+			(pins U19-5 R89-1 U56-1))
+		(net "$1I447\I2C0_SCLK"
+			(pins U18-6 U19-6 U20-6 U28-4 U1-AB32 R74-2 P11-1))
+		(net "$1I447\I2C0_SDATA"
+			(pins U20-5 U28-6 U1-AB33 R73-2 RO9-2 P11-3 U56-4))
+		(net "$1I447\N17928863"
+			(pins C479-2 U36-2))
+		(net "$1I447\N17928905"
+			(pins C478-1 U36-6))
+		(net "$1I447\N17928909"
+			(pins C481-2 U30-2))
+		(net "$1I447\N17928913"
+			(pins C483-1 U30-6))
+		(net "$1I447\N17928985"
+			(pins R87-1 U30-1))
+		(net "$1I447\N17928993"
+			(pins C477-1 U30-3))
+		(net "$1I447\N17929015"
+			(pins C480-1 U30-7))
+		(net "$1I447\N17929025"
+			(pins U30-14 U30-11))
+		(net "$1I447\N17929048"
+			(pins C481-1 U30-4))
+		(net "$1I447\N17929070"
+			(pins C483-2 U30-5))
+		(net "$1I447\N17929344"
+			(pins R86-1 U36-1))
+		(net "$1I447\N17929360"
+			(pins C482-1 U36-3))
+		(net "$1I447\N17929475"
+			(pins C484-1 U36-7))
+		(net "$1I447\N17929517"
+			(pins U36-14 U36-11))
+		(net "$1I447\N17929543"
+			(pins C479-1 U36-4))
+		(net "$1I447\N17929567"
+			(pins C478-2 U36-5))
+		(net "$1I447\NF_CE#"
+			(pins U58-1 U59-3))
+		(net "$1I447\PBLAST#"
 			(pins U9-AE18 U1-B7 R244-2))
-		(net "$1I424\PCS_0"
-			(pins U1-D10 R246-2 U37-3 U36-1))
-		(net "$1I424\PCS_1"
+		(net "$1I447\PCS_0"
+			(pins U1-D10 R246-2 U58-3 U59-1))
+		(net "$1I447\PCS_1"
 			(pins U9-AE14 U1-B9 R253-2))
-		(net "$1I424\PCS_4_GPIO09"
+		(net "$1I447\PCS_4_GPIO09"
 			(pins U1-A9 R245-2))
-		(net "$1I424\PCS_5_GPIO010"
+		(net "$1I447\PCS_5_GPIO010"
 			(pins U1-A8 R242-2))
-		(net "$1I424\PCS_NAND"
-			(pins U37-4))
-		(net "$1I424\PCS_NOR"
-			(pins U56-F2 U36-4))
-		(net "$1I424\PERERR"
+		(net "$1I447\PCS_NAND"
+			(pins U58-4))
+		(net "$1I447\PCS_NOR"
+			(pins U29-F2 U59-4))
+		(net "$1I447\PERERR"
 			(pins U9-AG17 R85-1 U1-C7))
-		(net "$1I424\PERPAR0_UART1_CTS#"
-			(pins U1-A29 U59-4))
-		(net "$1I424\PERPAR1_UART1_RTS#"
-			(pins U57-12 U1-B29))
-		(net "$1I424\PER_D_PAR0"
+		(net "$1I447\PERPAR0_UART1_CTS#"
+			(pins U1-A29 U57-4))
+		(net "$1I447\PERPAR1_UART1_RTS#"
+			(pins U36-12 U1-B29))
+		(net "$1I447\PER_D_PAR0"
 			(pins U9-AE13))
-		(net "$1I424\PER_D_PAR1"
+		(net "$1I447\PER_D_PAR1"
 			(pins U9-AG21))
-		(net "$1I424\PREADY"
+		(net "$1I447\PREADY"
 			(pins U9-AH18 U1-C17 R248-2))
-		(net "$1I424\PWBE_1#"
+		(net "$1I447\PWBE_1#"
 			(pins U9-AF18 U1-B15 R243-2))
-		(net "$1I424\PWBE_2#"
+		(net "$1I447\PWBE_2#"
 			(pins U1-C15 R255-2))
-		(net "$1I424\PWBE_3#"
+		(net "$1I447\PWBE_3#"
 			(pins U1-D15 R252-2))
-		(net "$1I424\SCPCLK"
-			(pins U1-AC34 R75-2 P10-1))
-		(net "$1I424\SCPDI"
-			(pins U1-AC32 R76-2 P10-3))
-		(net "$1I424\SCPDO"
-			(pins U1-AB31 P10-5))
-		(net "$1I424\UART1_CTS#"
-			(pins U57-10 U59-1))
-		(net "$1I424\UART1_RX"
-			(pins U57-15 U1-C27))
-		(net "$1I424\UART1_TX"
-			(pins U57-13 U1-D27))
-		(net "$1I424\UART2_CTS#"
-			(pins U20-10 U28-1))
-		(net "$1I424\UART2_RTS#"
-			(pins U20-12 U58-1))
-		(net "$1I424\UART2_RX"
-			(pins U20-15 U1-B28))
-		(net "$1I424\UART2_TX"
-			(pins U20-13 U1-D28))
-		(net "$1I424\X_UART1_CTS#"
-			(pins P8-8 U57-9))
-		(net "$1I424\X_UART1_RTS#"
-			(pins P8-7 U57-8))
-		(net "$1I424\X_UART1_RX"
-			(pins P8-2 U57-16))
-		(net "$1I424\X_UART1_TX"
-			(pins P8-3 U57-17))
-		(net "$1I424\X_UART2_CTS#"
-			(pins J17-8 U20-9))
-		(net "$1I424\X_UART2_RTS#"
-			(pins J17-7 U20-8))
-		(net "$1I424\X_UART2_RX"
-			(pins J17-2 U20-16))
-		(net "$1I424\X_UART2_TX"
-			(pins J17-3 U20-17))
+		(net "$1I447\UART1_CTS#"
+			(pins U36-10 U57-1))
+		(net "$1I447\UART1_RX"
+			(pins U36-15 U1-C27))
+		(net "$1I447\UART1_TX"
+			(pins U36-13 U1-D27))
+		(net "$1I447\UART2_CTS#"
+			(pins U30-10 U55-1))
+		(net "$1I447\UART2_RTS#"
+			(pins U30-12 U37-1))
+		(net "$1I447\UART2_RX"
+			(pins U30-15 U1-B28))
+		(net "$1I447\UART2_TX"
+			(pins U30-13 U1-D28))
+		(net "$1I447\X_UART1_CTS#"
+			(pins P8-8 U36-9))
+		(net "$1I447\X_UART1_RTS#"
+			(pins P8-7 U36-8))
+		(net "$1I447\X_UART1_RX"
+			(pins P8-2 U36-16))
+		(net "$1I447\X_UART1_TX"
+			(pins P8-3 U36-17))
+		(net "$1I447\X_UART2_CTS#"
+			(pins J17-8 U30-9))
+		(net "$1I447\X_UART2_RTS#"
+			(pins J17-7 U30-8))
+		(net "$1I447\X_UART2_RX"
+			(pins J17-2 U30-16))
+		(net "$1I447\X_UART2_TX"
+			(pins J17-3 U30-17))
 		(net "$1N384"
 			(pins U54-69))
 		(net "+1.0V"
@@ -25059,13 +25053,13 @@
  C471-1 C472-1 C473-1 C474-1 C475-1 U35-5 C35-1-1 RO17-3 RO19-1 RO20-3 R217-2
  R218-2 U54-8 U54-109 U54-127 U54-141 U54-27 U54-55 U54-73 U54-93 R219-2
  R220-2 R221-2 R222-2 R223-2 R239-2 R240-2 C476-1 CR6-1 CR5-1 J16-13 J2-4
- C494-1 C495-1 P13-W3 P13-X3 P13-Y3 P13-Z3 U29-8 U29-2 U18-8 U18-2 U55-3 U55-8
- U19-3 R89-2 R88-2 U56-F7 U56-G5 U56-F1 U56-D8 RO7-2 R241-2 RO8-2 C649-1
+ C494-1 C495-1 P13-W3 P13-X3 P13-Y3 P13-Z3 U18-8 U18-2 U19-8 U19-2 U20-3 U20-8
+ U28-3 R89-2 R88-2 U29-F7 U29-G5 U29-F1 U29-D8 RO7-2 R241-2 RO8-2 C649-1
  C650-1 C651-1 C652-1 C653-1 C654-1 C655-1 C656-1 C657-1 C658-1 C659-1 U9-D13
- U9-G14 U9-AH21 U9-AM19 U9-AG14 U9-AL12 U20-20 U20-19 U57-20 U57-19 R78-1
+ U9-G14 U9-AH21 U9-AM19 U9-AG14 U9-AL12 U30-20 U30-19 U36-20 U36-19 R78-1
  R242-1 R76-1 R243-1 R244-1 R75-1 R245-1 R77-1 R246-1 R247-1 R248-1 R73-1
  R249-1 R250-1 R251-1 R252-1 R74-1 R253-1 R254-1 R255-1 C485-1 C570-1 C571-1
- C572-1 P11-2 P10-2 U58-5 U28-5 U30-5 U59-5 U37-5 U36-5 C573-1 C589-1 C508-1
+ C572-1 P11-2 P10-2 U37-5 U55-5 U56-5 U57-5 U58-5 U59-5 C573-1 C589-1 C508-1
  C509-1 P15-W3 P15-X3 P15-Y3 P15-Z3))
 		(net "3V3_CPU"
 			(pins RO2-1 C38-1 C52-1 C58-1 C63-1 C64-1 C69-1 C71-1 C77-1 C83-1 C89-1 C94-1
@@ -25099,11 +25093,11 @@
 		(net "12V_PCI1"
 			(pins C5-1 P1-A2 PTC1-1))
 		(net "BOOT_CFG0"
-			(pins RO17-2 U54-133 U59-3))
+			(pins RO17-2 U54-133 U57-3))
 		(net "BOOT_CFG1"
-			(pins RO19-2 U54-132 U58-3))
+			(pins RO19-2 U54-132 U37-3))
 		(net "BOOT_CFG2"
-			(pins RO20-2 U54-131 U28-3))
+			(pins RO20-2 U54-131 U55-3))
 		(net "CHASSIS_GND"
 			(pins J4-17 J4-18 P14-5 P14-6 VR1-1 VR2-2 SP1-3))
 		(net "CLK_CPLD_33MHZ"
@@ -25151,9 +25145,9 @@
 		(net "EBC_SELECT#"
 			(pins U54-70))
 		(net "EE1_WP"
-			(pins U54-52 U55-7))
+			(pins U54-52 U20-7))
 		(net "EE2_BOOT_WP"
-			(pins U54-53 U29-7 U18-7))
+			(pins U54-53 U18-7 U19-7))
 		(net "EXT_RESET#"
 			(pins U54-83 U1-D6))
 		(net "FAN1_CONTROL"
@@ -25169,9 +25163,9 @@
 		(net "FAN3_SENSE"
 			(pins J13-3))
 		(net "FRY_BY#"
-			(pins U54-50 U56-A4 R81-1))
+			(pins U54-50 U29-A4 R81-1))
 		(net "FWP#"
-			(pins U54-51 U56-B4 R80-2))
+			(pins U54-51 U29-B4 R80-2))
 		(net "GETH0_COMA"
 			(pins U54-64))
 		(net "GETH0_INT#"
@@ -25320,11 +25314,11 @@
  U54-108 U54-123 U54-99 U54-144 U54-29 U54-36 U54-47 U54-62 U54-72 U54-89
  U54-90 SW3-2 SW3-4 SW3-6 SW3-8 SW2-2 SW2-4 SW2-6 SW2-8 C476-2 J16-2 J16-4
  J16-6 J16-8 J16-10 J16-14 J16-12 J2-15 J2-16 J2-17 J2-18 J2-3 J2-6 R197-1
- R199-1 R285-2 P14-4 R287-2 VR1-2 U1-N2 RO18-3 U29-3 U29-1 U29-4 U18-3 U18-1
- U18-4 U55-2 U55-1 U55-4 U19-2 J17-5 P8-5 U56-E8 U56-H2 U56-H7 C649-2 C650-2
+ R199-1 R285-2 P14-4 R287-2 VR1-2 U1-N2 RO18-3 U18-3 U18-1 U18-4 U19-3 U19-1
+ U19-4 U20-2 U20-1 U20-4 U28-2 J17-5 P8-5 U29-E8 U29-H2 U29-H7 C649-2 C650-2
  C651-2 C477-2 C652-2 C480-2 C653-2 C654-2 C482-2 C655-2 C656-2 C484-2 C657-2
- C658-2 C659-2 R86-2 R87-2 U20-18 U57-18 R84-2 R85-2 R83-2 R82-2 P9-1 J7-1
- C485-2 C570-2 C571-2 C572-2 P11-4 P10-4 U58-2 U28-2 U30-2 U59-2 U37-2 U36-2
+ C658-2 C659-2 R86-2 R87-2 U30-18 U36-18 R84-2 R85-2 R83-2 R82-2 P9-1 J7-1
+ C485-2 C570-2 C571-2 C572-2 P11-4 P10-4 U37-2 U55-2 U56-2 U57-2 U58-2 U59-2
  C573-2 C589-2 J9-239 J9-240 J9-101 J9-2 J9-29 J9-32 J9-35 J9-38 J9-41 J9-44
  J9-47 J9-50 J9-65 J9-66 J9-5 J9-79 J9-82 J9-85 J9-88 J9-91 J9-94 J9-97 J9-100
  J9-103 J9-106 J9-8 J9-109 J9-112 J9-115 J9-118 J9-121 J9-124 J9-127 J9-130
@@ -25362,7 +25356,7 @@
 		(net "I2V5"
 			(pins C308-1 C387-1 U47-5 U47-9 C397-1))
 		(net "M66EN"
-			(pins C1-1 P1-B49 R23-2 U54-134 SW2-7 U30-6))
+			(pins C1-1 P1-B49 R23-2 U54-134 SW2-7 U56-6))
 		(net "MGT_AVCC"
 			(pins FB1-1 FB2-1 FB11-1 FB12-1 FB17-1 FB18-1 FB21-1 FB22-1 FB27-1 FB28-1
  FB37-1 FB38-1 FB43-1 FB44-1 FB47-1 FB48-1 R216-2 C400-1 U53-20 U53-1 U53-18
@@ -25398,57 +25392,57 @@
 		(net "PADD4"
 			(pins U9-K23 R83-1 U1-A26))
 		(net "PADD5"
-			(pins U56-G8 R241-1 U9-K14 U1-D25))
+			(pins U29-G8 R241-1 U9-K14 U1-D25))
 		(net "PADD6"
-			(pins U56-F8 RO7-1 U9-L14 U1-C25))
+			(pins U29-F8 RO7-1 U9-L14 U1-C25))
 		(net "PADD7"
-			(pins U56-C8 RO8-1 U9-H22 U1-B25))
+			(pins U29-C8 RO8-1 U9-H22 U1-B25))
 		(net "PADD8"
-			(pins U56-B8 U9-J15 U1-A25))
+			(pins U29-B8 U9-J15 U1-A25))
 		(net "PADD9"
-			(pins U56-C5 U9-G22 U1-C24))
+			(pins U29-C5 U9-G22 U1-C24))
 		(net "PADD10"
-			(pins U56-D4 U9-K16 U1-D24))
+			(pins U29-D4 U9-K16 U1-D24))
 		(net "PADD11"
-			(pins U56-D5 U9-K21 U1-B24))
+			(pins U29-D5 U9-K21 U1-B24))
 		(net "PADD12"
-			(pins U56-C4 U9-J22 U1-D23))
+			(pins U29-C4 U9-J22 U1-D23))
 		(net "PADD13"
-			(pins U56-B3 U9-L16 U1-A24))
+			(pins U29-B3 U9-L16 U1-A24))
 		(net "PADD14"
-			(pins U56-E7 U9-L15 U1-C23))
+			(pins U29-E7 U9-L15 U1-C23))
 		(net "PADD15"
-			(pins U56-D7 U9-L20 U1-A23))
+			(pins U29-D7 U9-L20 U1-A23))
 		(net "PADD16"
-			(pins U56-C7 U9-L21 U1-D22))
+			(pins U29-C7 U9-L21 U1-D22))
 		(net "PADD17"
-			(pins U56-A7 U9-AG16 U1-C22))
+			(pins U29-A7 U9-AG16 U1-C22))
 		(net "PADD18"
-			(pins U56-B7 U9-AH17 U1-A22))
+			(pins U29-B7 U9-AH17 U1-A22))
 		(net "PADD19"
-			(pins U56-D6 U9-AF19 U1-D21))
+			(pins U29-D6 U9-AF19 U1-D21))
 		(net "PADD20"
-			(pins U56-C6 U9-AG18 U1-C21))
+			(pins U29-C6 U9-AG18 U1-C21))
 		(net "PADD21"
-			(pins U56-A6 U9-AG15 U1-B21))
+			(pins U29-A6 U9-AG15 U1-B21))
 		(net "PADD22"
-			(pins U56-B6 U9-AH15 U1-A21))
+			(pins U29-B6 U9-AH15 U1-A21))
 		(net "PADD23"
-			(pins U56-A3 U9-AG20 U1-D20))
+			(pins U29-A3 U9-AG20 U1-D20))
 		(net "PADD24"
-			(pins U56-C3 U9-AE23 U1-C20))
+			(pins U29-C3 U9-AE23 U1-C20))
 		(net "PADD25"
-			(pins U56-D3 U9-AE22 U1-B20))
+			(pins U29-D3 U9-AE22 U1-B20))
 		(net "PADD26"
-			(pins U56-B2 U9-AG12 U1-D19))
+			(pins U29-B2 U9-AG12 U1-D19))
 		(net "PADD27"
-			(pins U54-4 U56-A2 U9-AF13 U1-C19))
+			(pins U54-4 U29-A2 U9-AF13 U1-C19))
 		(net "PADD28"
-			(pins U54-7 U56-C2 U9-AG23 U1-A19))
+			(pins U54-7 U29-C2 U9-AG23 U1-A19))
 		(net "PADD29"
-			(pins U54-9 U56-D2 U9-AF23 U1-D18))
+			(pins U54-9 U29-D2 U9-AF23 U1-D18))
 		(net "PADD30"
-			(pins U54-10 U56-E2 U9-AE12 U1-C18))
+			(pins U54-10 U29-E2 U9-AE12 U1-C18))
 		(net "PADD31"
 			(pins U54-11 U1-B18))
 		(net "PCI_INTA#"
@@ -25456,43 +25450,43 @@
 		(net "PCS_2"
 			(pins U54-30 U1-D9 R249-2))
 		(net "PDATA0"
-			(pins U54-12 U56-G7 U9-AH13 U1-C14))
+			(pins U54-12 U29-G7 U9-AH13 U1-C14))
 		(net "PDATA1"
-			(pins U54-13 U56-F6 U9-AH14 U1-D14))
+			(pins U54-13 U29-F6 U9-AH14 U1-D14))
 		(net "PDATA2"
-			(pins U54-14 U56-G6 U9-AH19 U1-A13))
+			(pins U54-14 U29-G6 U9-AH19 U1-A13))
 		(net "PDATA3"
-			(pins U54-15 U56-F5 U9-AH20 U1-B13))
+			(pins U54-15 U29-F5 U9-AH20 U1-B13))
 		(net "PDATA4"
-			(pins U54-16 U56-G4 U9-AG13 U1-C13))
+			(pins U54-16 U29-G4 U9-AG13 U1-C13))
 		(net "PDATA5"
-			(pins U54-17 U56-F4 U9-AH12 U1-D13))
+			(pins U54-17 U29-F4 U9-AH12 U1-D13))
 		(net "PDATA6"
-			(pins U54-18 U56-G3 U9-AH22 U1-A12))
+			(pins U54-18 U29-G3 U9-AH22 U1-A12))
 		(net "PDATA7"
-			(pins U54-19 U56-F3 U9-AG22 U1-C12))
+			(pins U54-19 U29-F3 U9-AG22 U1-C12))
 		(net "PDATA8"
-			(pins U56-E6 U9-AD19 U1-A11))
+			(pins U29-E6 U9-AD19 U1-A11))
 		(net "PDATA9"
-			(pins U56-H6 U9-AE19 U1-D12))
+			(pins U29-H6 U9-AE19 U1-D12))
 		(net "PDATA10"
-			(pins U56-E5 U9-AE17 U1-B11))
+			(pins U29-E5 U9-AE17 U1-B11))
 		(net "PDATA11"
-			(pins U56-H5 U9-AF16 U1-C11))
+			(pins U29-H5 U9-AF16 U1-C11))
 		(net "PDATA12"
-			(pins U56-H4 U9-AD20 U1-D11))
+			(pins U29-H4 U9-AD20 U1-D11))
 		(net "PDATA13"
-			(pins U56-E4 U9-AE21 U1-A10))
+			(pins U29-E4 U9-AE21 U1-A10))
 		(net "PDATA14"
-			(pins U56-H3 U9-AE16 U1-B10))
+			(pins U29-H3 U9-AE16 U1-B10))
 		(net "PDATA15"
-			(pins U56-E3 U9-AF15 U1-C10))
+			(pins U29-E3 U9-AF15 U1-C10))
 		(net "POE#"
-			(pins U54-31 U56-G2 U9-AF21 U1-B14 R254-2))
+			(pins U54-31 U29-G2 U9-AF21 U1-B14 R254-2))
 		(net "PPC_DDR2_RESET_N"
 			(pins J6-18 U54-85))
 		(net "PR_W#"
-			(pins U54-32 U56-A5 U9-AF20 U1-A14 R251-2))
+			(pins U54-32 U29-A5 U9-AF20 U1-A14 R251-2))
 		(net "PS_ON#"
 			(pins J12-16))
 		(net "PWBE_0#"
@@ -25516,11 +25510,11 @@
 		(net "QDR2_TMS"
 			(pins U11-R10 U50-R10))
 		(net "RESET_CPLD#"
-			(pins U54-71 R82-1 U58-6 U28-6 U59-6))
+			(pins U54-71 R82-1 U37-6 U55-6 U57-6))
 		(net "RESET_PB_POR#"
 			(pins R141-2 U25-3 D6-3 C351-1 R184-2 U54-35))
 		(net "RESET_POR#"
-			(pins U1-AD31 R175-2 U25-1 U54-34 U56-B5))
+			(pins U1-AD31 R175-2 U25-1 U54-34 U29-B5))
 		(net "ROACH_ADC_0\VRN_12_GPIOLVC25"
 			(guid "$1I4\VRN_12_GPIOLVC25")
 			(pins R284-2 U9-R9))
@@ -29229,6 +29223,12 @@
 		(net "ROACH_V5_CLK\SYS_CLK_P"
 			(guid "$1I291\SYS_CLK_P")
 			(pins U9-H17))
+		(net "SCPCLK"
+			(pins U1-AC34 R75-2 P10-1))
+		(net "SCPDI"
+			(pins U1-AC32 R76-2 P10-3))
+		(net "SCPDO"
+			(pins U1-AB31 P10-5))
 		(net "SEL_SYSCLK"
 			(pins U24-8 R178-2 U54-48))
 		(net "SIGNAL_GND"
@@ -29248,9 +29248,9 @@
  C516-2 C517-2 R301-2 R302-1 P16-81 P16-82 P16-83 P16-84 P16-85 P16-86 P16-87
  P16-88 C648-2 C590-2 C660-2 C661-2 C662-2 C663-2 C664-2 C665-2))
 		(net "STTM_ALERT"
-			(pins U1-U34 R177-2 U19-5))
+			(pins U1-U34 R177-2 U28-5))
 		(net "STTM_AS"
-			(pins U54-54 U19-1))
+			(pins U54-54 U28-1))
 		(net "SX95T_CCLK_0"
 			(pins U9-N15 U54-125))
 		(net "SX95T_CS_B_0"
@@ -29442,6 +29442,15 @@
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "SEL_SYSCLK"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "SCPDO"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "SCPDI"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "SCPCLK"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "ROACH_V5_CLK\SYS_CLK_P"
@@ -33817,311 +33826,302 @@
 		(net_scalar "$1N384"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\X_UART2_TX"
+		(net_scalar "$1I447\X_UART2_TX"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\X_UART2_RX"
+		(net_scalar "$1I447\X_UART2_RX"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\X_UART2_RTS#"
+		(net_scalar "$1I447\X_UART2_RTS#"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\X_UART2_CTS#"
+		(net_scalar "$1I447\X_UART2_CTS#"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\X_UART1_TX"
+		(net_scalar "$1I447\X_UART1_TX"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\X_UART1_RX"
+		(net_scalar "$1I447\X_UART1_RX"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\X_UART1_RTS#"
+		(net_scalar "$1I447\X_UART1_RTS#"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\X_UART1_CTS#"
+		(net_scalar "$1I447\X_UART1_CTS#"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\UART2_TX"
+		(net_scalar "$1I447\UART2_TX"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\UART2_RX"
+		(net_scalar "$1I447\UART2_RX"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\UART2_RTS#"
+		(net_scalar "$1I447\UART2_RTS#"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\UART2_CTS#"
+		(net_scalar "$1I447\UART2_CTS#"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\UART1_TX"
+		(net_scalar "$1I447\UART1_TX"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\UART1_RX"
+		(net_scalar "$1I447\UART1_RX"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\UART1_CTS#"
+		(net_scalar "$1I447\UART1_CTS#"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\SCPDO"
+		(net_scalar "$1I447\PWBE_3#"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\SCPDI"
+		(net_scalar "$1I447\PWBE_2#"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\SCPCLK"
+		(net_scalar "$1I447\PWBE_1#"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\PWBE_3#"
+		(net_scalar "$1I447\PREADY"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\PWBE_2#"
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\PWBE_1#"
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\PREADY"
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\PER_D_PAR1"
+		(net_scalar "$1I447\PER_D_PAR1"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\PER_D_PAR0"
+		(net_scalar "$1I447\PER_D_PAR0"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\PERPAR1_UART1_RTS#"
+		(net_scalar "$1I447\PERPAR1_UART1_RTS#"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\PERPAR0_UART1_CTS#"
+		(net_scalar "$1I447\PERPAR0_UART1_CTS#"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\PERERR"
+		(net_scalar "$1I447\PERERR"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\PCS_NOR"
+		(net_scalar "$1I447\PCS_NOR"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\PCS_NAND"
+		(net_scalar "$1I447\PCS_NAND"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\PCS_5_GPIO010"
+		(net_scalar "$1I447\PCS_5_GPIO010"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\PCS_4_GPIO09"
+		(net_scalar "$1I447\PCS_4_GPIO09"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\PCS_1"
+		(net_scalar "$1I447\PCS_1"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\PCS_0"
+		(net_scalar "$1I447\PCS_0"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\PBLAST#"
+		(net_scalar "$1I447\PBLAST#"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\NF_CE#"
+		(net_scalar "$1I447\NF_CE#"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\N17929567"
+		(net_scalar "$1I447\N17929567"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\N17929543"
+		(net_scalar "$1I447\N17929543"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\N17929517"
+		(net_scalar "$1I447\N17929517"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\N17929475"
+		(net_scalar "$1I447\N17929475"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\N17929360"
+		(net_scalar "$1I447\N17929360"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\N17929344"
+		(net_scalar "$1I447\N17929344"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\N17929070"
+		(net_scalar "$1I447\N17929070"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\N17929048"
+		(net_scalar "$1I447\N17929048"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\N17929025"
+		(net_scalar "$1I447\N17929025"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\N17929015"
+		(net_scalar "$1I447\N17929015"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\N17928993"
+		(net_scalar "$1I447\N17928993"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\N17928985"
+		(net_scalar "$1I447\N17928985"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\N17928913"
+		(net_scalar "$1I447\N17928913"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\N17928909"
+		(net_scalar "$1I447\N17928909"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\N17928905"
+		(net_scalar "$1I447\N17928905"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\N17928863"
+		(net_scalar "$1I447\N17928863"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\I2C0_SDATA"
+		(net_scalar "$1I447\I2C0_SDATA"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\I2C0_SCLK"
+		(net_scalar "$1I447\I2C0_SCLK"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\I2C0_66_DATA"
+		(net_scalar "$1I447\I2C0_66_DATA"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\I2C0_33_DATA"
+		(net_scalar "$1I447\I2C0_33_DATA"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\CPU_UART0_DSR#"
+		(net_scalar "$1I447\CPU_UART0_DSR#"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\CPU_UART0_DCD#"
+		(net_scalar "$1I447\CPU_UART0_DCD#"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\BOOT_NOR"
+		(net_scalar "$1I447\BOOT_NOR"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$PIN0"
+		(net_scalar "$1I447\$PIN0"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N817"
+		(net_scalar "$1I447\$1N817"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N816"
+		(net_scalar "$1I447\$1N816"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N815"
+		(net_scalar "$1I447\$1N815"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N814"
+		(net_scalar "$1I447\$1N814"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N813"
+		(net_scalar "$1I447\$1N813"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N812"
+		(net_scalar "$1I447\$1N812"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N811"
+		(net_scalar "$1I447\$1N811"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N810"
+		(net_scalar "$1I447\$1N810"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N809"
+		(net_scalar "$1I447\$1N809"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N808"
+		(net_scalar "$1I447\$1N808"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N807"
+		(net_scalar "$1I447\$1N807"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N806"
+		(net_scalar "$1I447\$1N806"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N805"
+		(net_scalar "$1I447\$1N805"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N804"
+		(net_scalar "$1I447\$1N804"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N803"
+		(net_scalar "$1I447\$1N803"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N802"
+		(net_scalar "$1I447\$1N802"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N801"
+		(net_scalar "$1I447\$1N801"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N800"
+		(net_scalar "$1I447\$1N800"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N799"
+		(net_scalar "$1I447\$1N799"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N798"
+		(net_scalar "$1I447\$1N798"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N775"
+		(net_scalar "$1I447\$1N775"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N774"
+		(net_scalar "$1I447\$1N774"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N773"
+		(net_scalar "$1I447\$1N773"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N772"
+		(net_scalar "$1I447\$1N772"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N129"
+		(net_scalar "$1I447\$1N129"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I424\$1N90"
+		(net_scalar "$1I447\$1N90"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I372\USER_LED1"
