@@ -299,6 +299,54 @@
       (IOSTANDARD LVTTL)
     )
     (SIGNAL
+      (NAME FAN1_CONTROL)
+      (HDL_NAME FAN1_CONTROL)
+      (DIR OUT)
+      (PIN H15)
+      (TYPE IO)
+      (IOSTANDARD LVTTL)
+    )
+    (SIGNAL
+      (NAME FAN1_SENSE)
+      (HDL_NAME FAN1_SENSE)
+      (DIR IN)
+      (PIN J15)
+      (TYPE IO)
+      (IOSTANDARD LVTTL)
+    )
+    (SIGNAL
+      (NAME FAN2_CONTROL)
+      (HDL_NAME FAN2_CONTROL)
+      (DIR OUT)
+      (PIN J16)
+      (TYPE IO)
+      (IOSTANDARD LVTTL)
+    )
+    (SIGNAL
+      (NAME FAN2_SENSE)
+      (HDL_NAME FAN2_SENSE)
+      (DIR IN)
+      (PIN L16)
+      (TYPE IO)
+      (IOSTANDARD LVTTL)
+    )
+    (SIGNAL
+      (NAME FAN3_CONTROL)
+      (HDL_NAME FAN3_CONTROL)
+      (DIR OUT)
+      (PIN L14)
+      (TYPE IO)
+      (IOSTANDARD LVTTL)
+    )
+    (SIGNAL
+      (NAME FAN3_SENSE)
+      (HDL_NAME FAN3_SENSE)
+      (DIR IN)
+      (PIN L15)
+      (TYPE IO)
+      (IOSTANDARD LVTTL)
+    )
+    (SIGNAL
       (NAME GND)
       (DIR INOUT)
       (PINS A1 A12 A16 A5 C15 C2 E1 E10 E16 E7 G12 G5 G7 G9 H10 H8 J7 J9 K10 K12 K5 K8 M1 M16 P16 P2 T1 T16)
@@ -1114,7 +1162,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D16,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F1,F10,F11,F12,F13,F14,F15,F16,F2,F3,F4,F5,F6,F7,F9,G1,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H15,H2,J1,J11,J12,J13,J14,J15,J16,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L14,L15,L16,L2,L3,L4,L5,L6,M11,M2,M3,M5,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D16,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F1,F10,F11,F12,F13,F14,F15,F16,F2,F3,F4,F5,F6,F7,F9,G1,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J1,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M5,M7,N3,N6,P12,P4,P5,R13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -1122,6 +1170,21 @@
           (VALUE roach_afs600)
           (OWNER ICDBDXD)
           (LOCKED T)
+        )
+        (ATTRIBUTE
+          (NAME Level)
+          (VALUE std)
+          (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME Type)
+          (VALUE FPGA)
+          (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME "Ref Designator")
+          (VALUE "U?")
+          (OWNER ICDBDXD)
         )
       )
       (INSTANCEATTRIBUTES
@@ -2513,7 +2576,7 @@
           (COLOR Green)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME "12V_IMON")
           (POSITION 0 71120)
           (EXTTYPE IN)
@@ -2573,7 +2636,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME "12V_VMON")
           (POSITION 0 66040)
           (EXTTYPE IN)
@@ -2633,9 +2696,9 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME AG_SP0)
-          (POSITION 106680 177800)
+          (POSITION 106680 167640)
           (EXTTYPE IN)
           (ROTATION 180)
           (LENGTH 5080)
@@ -2690,14 +2753,14 @@
         )
         (TEXT
           (LABEL AG_SP0)
-          (POSITION 100754 177800)
+          (POSITION 100754 167640)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME AG_SP1)
-          (POSITION 106680 182880)
+          (POSITION 106680 172720)
           (EXTTYPE IN)
           (ROTATION 180)
           (LENGTH 5080)
@@ -2752,14 +2815,14 @@
         )
         (TEXT
           (LABEL AG_SP1)
-          (POSITION 100754 182880)
+          (POSITION 100754 172720)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME AV_SP0)
-          (POSITION 106680 162560)
+          (POSITION 106680 157480)
           (EXTTYPE IN)
           (ROTATION 180)
           (LENGTH 5080)
@@ -2814,14 +2877,14 @@
         )
         (TEXT
           (LABEL AV_SP0)
-          (POSITION 100754 162560)
+          (POSITION 100754 157480)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME AV_SP1)
-          (POSITION 106680 167640)
+          (POSITION 106680 162560)
           (EXTTYPE IN)
           (ROTATION 180)
           (LENGTH 5080)
@@ -2876,7 +2939,7 @@
         )
         (TEXT
           (LABEL AV_SP1)
-          (POSITION 100754 167640)
+          (POSITION 100754 162560)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -2943,7 +3006,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME "12V_SW_ON")
           (POSITION 0 76200)
           (EXTTYPE BI)
@@ -3003,7 +3066,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME "1V0_IMON")
           (POSITION 0 218440)
           (EXTTYPE BI)
@@ -3063,7 +3126,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME "1V0_VMON")
           (POSITION 0 213360)
           (EXTTYPE BI)
@@ -3123,7 +3186,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME "1V2_IMON")
           (POSITION 0 198120)
           (EXTTYPE BI)
@@ -3183,7 +3246,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME "1V2_VMON")
           (POSITION 0 193040)
           (EXTTYPE BI)
@@ -3243,7 +3306,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME "1V5_IMON")
           (POSITION 0 177800)
           (EXTTYPE BI)
@@ -3303,7 +3366,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME "1V5_VMON")
           (POSITION 0 172720)
           (EXTTYPE BI)
@@ -3363,7 +3426,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME "1V8_IMON")
           (POSITION 0 157480)
           (EXTTYPE BI)
@@ -3423,7 +3486,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME "1V8_VMON")
           (POSITION 0 152400)
           (EXTTYPE BI)
@@ -3483,7 +3546,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME "2V5_IMON")
           (POSITION 0 132080)
           (EXTTYPE BI)
@@ -3543,7 +3606,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME "2V5_VMON")
           (POSITION 0 127000)
           (EXTTYPE BI)
@@ -3603,7 +3666,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME "3V3_IMON")
           (POSITION 0 111760)
           (EXTTYPE BI)
@@ -3663,7 +3726,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME "3V3_SW_ON")
           (POSITION 0 116840)
           (EXTTYPE BI)
@@ -3723,7 +3786,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME "3V3_VMON")
           (POSITION 0 106680)
           (EXTTYPE BI)
@@ -3783,7 +3846,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME "5V_IMON")
           (POSITION 0 91440)
           (EXTTYPE BI)
@@ -3843,7 +3906,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME "5V_SW_ON")
           (POSITION 0 96520)
           (EXTTYPE BI)
@@ -3903,7 +3966,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME "5V_VMON")
           (POSITION 0 86360)
           (EXTTYPE BI)
@@ -4211,7 +4274,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME TD0)
           (POSITION 106680 71120)
           (EXTTYPE BI)
@@ -4273,7 +4336,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME TD1)
           (POSITION 106680 76200)
           (EXTTYPE BI)
@@ -4335,7 +4398,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME TD2)
           (POSITION 106680 81280)
           (EXTTYPE BI)
@@ -4397,7 +4460,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME TD3)
           (POSITION 106680 86360)
           (EXTTYPE BI)
@@ -4459,7 +4522,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME TD4)
           (POSITION 106680 91440)
           (EXTTYPE BI)
@@ -4521,7 +4584,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME TD5)
           (POSITION 106680 96520)
           (EXTTYPE BI)
@@ -4583,7 +4646,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME TD6)
           (POSITION 106680 101600)
           (EXTTYPE BI)
@@ -4645,7 +4708,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME TD7)
           (POSITION 106680 106680)
           (EXTTYPE BI)
@@ -4707,7 +4770,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME TD8)
           (POSITION 106680 111760)
           (EXTTYPE BI)
@@ -4769,7 +4832,7 @@
           (VALIGN CENTER)
         )
         (PORT
-          (TYPE SIGNAL)
+          (TYPE SIGNALPCB)
           (NAME TD9)
           (POSITION 106680 116840)
           (EXTTYPE BI)
@@ -4904,25 +4967,25 @@
         )
         (TEXT
           (PINNUMBER AG_SP0)
-          (POSITION 106680 177292)
+          (POSITION 106680 167132)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER AG_SP1)
-          (POSITION 106680 182372)
+          (POSITION 106680 172212)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER AV_SP0)
-          (POSITION 106680 162052)
+          (POSITION 106680 156972)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER AV_SP1)
-          (POSITION 106680 167132)
+          (POSITION 106680 162052)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
@@ -5415,7 +5478,7 @@
         (PORT
           (TYPE PIN)
           (NAME H4)
-          (POSITION 106680 208280)
+          (POSITION 106680 213360)
           (ROTATION 180)
           (LENGTH 5080)
           (SLOT 66)
@@ -5469,14 +5532,14 @@
         )
         (TEXT
           (LABEL H4)
-          (POSITION 100754 208280)
+          (POSITION 100754 213360)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME H3)
-          (POSITION 106680 213360)
+          (POSITION 106680 218440)
           (ROTATION 180)
           (LENGTH 5080)
           (SLOT 67)
@@ -5530,7 +5593,379 @@
         )
         (TEXT
           (LABEL H3)
-          (POSITION 100754 213360)
+          (POSITION 100754 218440)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME FAN1_SENSE)
+          (POSITION 106680 182880)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 5080)
+          (SLOT 68)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 5080 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE J15)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE J15)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE J15)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE J15)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE FAN1_SENSE)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE FAN1_SENSE)
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL FAN1_SENSE)
+          (POSITION 100754 182880)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME FAN1_CONTROL)
+          (POSITION 106680 177800)
+          (EXTTYPE OUT)
+          (ROTATION 180)
+          (LENGTH 5080)
+          (SLOT 69)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 5080 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE H15)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE H15)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE H15)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE H15)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE FAN1_CONTROL)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE FAN1_CONTROL)
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL FAN1_CONTROL)
+          (POSITION 100754 177800)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME FAN2_CONTROL)
+          (POSITION 106680 187960)
+          (EXTTYPE OUT)
+          (ROTATION 180)
+          (LENGTH 5080)
+          (SLOT 70)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 5080 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE J16)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE J16)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE J16)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE J16)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE FAN2_CONTROL)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE FAN2_CONTROL)
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL FAN2_CONTROL)
+          (POSITION 100754 187960)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME FAN2_SENSE)
+          (POSITION 106680 193040)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 5080)
+          (SLOT 71)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 5080 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE L16)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE L16)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE L16)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE L16)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE FAN2_SENSE)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE FAN2_SENSE)
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL FAN2_SENSE)
+          (POSITION 100754 193040)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME FAN3_CONTROL)
+          (POSITION 106680 198120)
+          (EXTTYPE OUT)
+          (ROTATION 180)
+          (LENGTH 5080)
+          (SLOT 72)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 5080 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE L14)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE L14)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE L14)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE L14)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE FAN3_CONTROL)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE FAN3_CONTROL)
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL FAN3_CONTROL)
+          (POSITION 100754 198120)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME FAN3_SENSE)
+          (POSITION 106680 203200)
+          (EXTTYPE IN)
+          (ROTATION 180)
+          (LENGTH 5080)
+          (SLOT 73)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 5080 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE L15)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE L15)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE L15)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE L15)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE FAN3_SENSE)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE FAN3_SENSE)
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL FAN3_SENSE)
+          (POSITION 100754 203200)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -5608,12 +6043,12 @@
         )
         (ATTRIBUTE
           (NAME PINSWAP)
-          (VALUE "(ATX_PWR_OK,CHS_SWITCH,MGT_AVCC_PG,MGT_AVCCPLL_PG,MGT_AVTTX_PG,MON_RESET#,SERIAL_IN,1V0_INHIBIT,1V2_INHIBIT,1V5_INHIBIT,2V5_INHIBIT,2V5_TRACK,ATX_PS_ON#,CHS_LED0,CHS_LED1,MGT_AVCC_EN,MGT_AVCCPLL_EN,MGT_AVTTX_EN,SERIAL_OUT,DEBUG_SERIAL_IN,DEBUG_SERIAL_OUT,SERIAL_CP1,SERIAL_CP2,SERIAL_CP3,XPORT_RESET)")
+          (VALUE "(ATX_PWR_OK,CHS_SWITCH,MGT_AVCC_PG,MGT_AVCCPLL_PG,MGT_AVTTX_PG,MON_RESET#,SERIAL_IN,1V0_INHIBIT,1V2_INHIBIT,1V5_INHIBIT,2V5_INHIBIT,2V5_TRACK,ATX_PS_ON#,CHS_LED0,CHS_LED1,MGT_AVCC_EN,MGT_AVCCPLL_EN,MGT_AVTTX_EN,SERIAL_OUT,DEBUG_SERIAL_IN,DEBUG_SERIAL_OUT,SERIAL_CP1,SERIAL_CP2,SERIAL_CP3,XPORT_RESET,FAN1_SENSE,FAN1_CONTROL,FAN2_CONTROL,FAN2_SENSE,FAN3_CONTROL,FAN3_SENSE)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME PINSWAP)
-          (VALUE "(ATX_PWR_OK,CHS_SWITCH,MGT_AVCC_PG,MGT_AVCCPLL_PG,MGT_AVTTX_PG,MON_RESET#,SERIAL_IN,1V0_INHIBIT,1V2_INHIBIT,1V5_INHIBIT,2V5_INHIBIT,2V5_TRACK,ATX_PS_ON#,CHS_LED0,CHS_LED1,MGT_AVCC_EN,MGT_AVCCPLL_EN,MGT_AVTTX_EN,SERIAL_OUT,DEBUG_SERIAL_IN,DEBUG_SERIAL_OUT,SERIAL_CP1,SERIAL_CP2,SERIAL_CP3,XPORT_RESET)")
+          (VALUE "(ATX_PWR_OK,CHS_SWITCH,MGT_AVCC_PG,MGT_AVCCPLL_PG,MGT_AVTTX_PG,MON_RESET#,SERIAL_IN,1V0_INHIBIT,1V2_INHIBIT,1V5_INHIBIT,2V5_INHIBIT,2V5_TRACK,ATX_PS_ON#,CHS_LED0,CHS_LED1,MGT_AVCC_EN,MGT_AVCCPLL_EN,MGT_AVTTX_EN,SERIAL_OUT,DEBUG_SERIAL_IN,DEBUG_SERIAL_OUT,SERIAL_CP1,SERIAL_CP2,SERIAL_CP3,XPORT_RESET,FAN1_SENSE,FAN1_CONTROL,FAN2_CONTROL,FAN2_SENSE,FAN3_CONTROL,FAN3_SENSE)")
           (OWNER ICDBDXD)
         )
         (ATTRIBUTE
@@ -5623,7 +6058,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D16,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F1,F10,F11,F12,F13,F14,F15,F16,F2,F3,F4,F5,F6,F7,F9,G1,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H15,H2,J1,J11,J12,J13,J14,J15,J16,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L14,L15,L16,L2,L3,L4,L5,L6,M11,M2,M3,M5,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D16,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F1,F10,F11,F12,F13,F14,F15,F16,F2,F3,F4,F5,F6,F7,F9,G1,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J1,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M5,M7,N3,N6,P12,P4,P5,R13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -5631,6 +6066,21 @@
           (VALUE roach_afs600)
           (OWNER ICDBDXD)
           (LOCKED T)
+        )
+        (ATTRIBUTE
+          (NAME Level)
+          (VALUE std)
+          (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME Type)
+          (VALUE FPGA)
+          (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME "Ref Designator")
+          (VALUE "U?")
+          (OWNER ICDBDXD)
         )
       )
       (INSTANCEATTRIBUTES
@@ -11519,7 +11969,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D16,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F1,F10,F11,F12,F13,F14,F15,F16,F2,F3,F4,F5,F6,F7,F9,G1,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H15,H2,J1,J11,J12,J13,J14,J15,J16,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L14,L15,L16,L2,L3,L4,L5,L6,M11,M2,M3,M5,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D16,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F1,F10,F11,F12,F13,F14,F15,F16,F2,F3,F4,F5,F6,F7,F9,G1,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J1,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M5,M7,N3,N6,P12,P4,P5,R13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -11527,6 +11977,21 @@
           (VALUE roach_afs600)
           (OWNER ICDBDXD)
           (LOCKED T)
+        )
+        (ATTRIBUTE
+          (NAME Level)
+          (VALUE std)
+          (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME Type)
+          (VALUE FPGA)
+          (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME "Ref Designator")
+          (VALUE "U?")
+          (OWNER ICDBDXD)
         )
       )
       (INSTANCEATTRIBUTES
@@ -11666,12 +12131,36 @@
       (STANDARD LVCMOS33)
     )
     (IO
+      (PIN H15)
+      (STANDARD LVTTL)
+    )
+    (IO
       (PIN H16)
+      (STANDARD LVTTL)
+    )
+    (IO
+      (PIN J15)
+      (STANDARD LVTTL)
+    )
+    (IO
+      (PIN J16)
       (STANDARD LVTTL)
     )
     (IO
       (PIN J4)
       (STANDARD LVCMOS33)
+    )
+    (IO
+      (PIN L14)
+      (STANDARD LVTTL)
+    )
+    (IO
+      (PIN L15)
+      (STANDARD LVTTL)
+    )
+    (IO
+      (PIN L16)
+      (STANDARD LVTTL)
     )
     (IO
       (PIN M6)
@@ -11848,11 +12337,35 @@
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
+      (PIN H15)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
       (PIN H16)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
+      (PIN J15)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
+      (PIN J16)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
       (PIN J4)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
+      (PIN L14)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
+      (PIN L15)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
+      (PIN L16)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
