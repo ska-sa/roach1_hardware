@@ -1,8 +1,20 @@
-pcb: Note 5996: Using Config File D:\ROACH\elec\roach\roach_pcb.cfg
+pcb: Note 5996: Using Config File D:\ROACH\elec\pads2007_oats.cfg
+pcb: Note 6057: roach_top spn XP1001001_03R.MNT1: PINTYPE=ANA: Bad attribute value
+pcb: Error 6039: Illegal value ANA
+pcb: Note 6057: roach_top spn XP1001001_03R.MNT2: PINTYPE=ANA: Bad attribute value
+pcb: Error 6039: Illegal value ANA
+pcb: Note 6057: roach_top sym FJD3076TM: PKG_TYPE=: Bad attribute value
+pcb: Error 6035: Illegal length 0
+pcb: Error 6138: roach_top com ROACH_PPC_POWER_1\$1I130: Multiple symbols CAP_100PF_0402_25V_10__X7R device CAP_100PF_0402_25V_10%_X7R, are inconsistent
+pcb: Error 6138: roach_top com ROACH_PPC_POWER_1\$1I275: Multiple symbols CAP_100PF_0402_25V_10__X7R device CAP_100PF_0402_25V_10%_X7R, are inconsistent
+pcb: Error 6138: roach_top com $1I546\$1I566: Multiple symbols CAP device CAP_100PF_0402_25V_10%_X7R, are inconsistent
 pcb: Note 6085: roach_top pkg D6: 1 empty slot(s), device DIODE_SIG_SOT23_150MA_BAV70
+pcb: Note 6085: roach_top pkg C29: 1 empty slot(s), device CAP_100PF_0402_25V_10%_X7R
+pcb: Note 6085: roach_top pkg C28: 1 empty slot(s), device CAP_100PF_0402_25V_10%_X7R
+pcb: Warning 6083: roach_top pin $1I546\$1I7.DEBUG_SERIAL_OUT: Single pin net: $1I546\DEBUG_SERIAL_OUT
+pcb: Warning 6083: roach_top pin $1I546\$1I7.DEBUG_SERIAL_IN: Single pin net: $1I546\DEBUG_SERIAL_IN
+pcb: Warning 6083: roach_top pin $1I509\$1I6._12V: Single pin net: N12V
 pcb: Warning 6083: roach_top pin $1I447\$1I353.A: Single pin net: $1I447\PCS_NAND
-pcb: Warning 6083: roach_top pin $1I331\$1I6._12V: Single pin net: N12V
-pcb: Warning 6083: roach_top pin $1I331\$1I6.5VSB: Single pin net: 5VAUX
 pcb: Warning 6083: roach_top pin ROACH_V5_CLK\$1I10.SYS_CLK_P: Single pin net: ROACH_V5_CLK\SYS_CLK_P
 pcb: Warning 6083: roach_top pin ROACH_V5_CLK\$1I10.SYS_CLK_N: Single pin net: ROACH_V5_CLK\SYS_CLK_N
 pcb: Warning 6083: roach_top pin ROACH_V5_CLK\$1I1.SX95T_VREF_P: Single pin net: ROACH_V5_CLK\SX95T_VREF_P
@@ -23,42 +35,26 @@ pcb: Warning 6083: roach_top pin $1I372\$1I361.PAD88: Single pin net: USB2_VCC_P
 pcb: Warning 6083: roach_top pin $1I372\$1I361.PAD86: Single pin net: USB2_RESET
 pcb: Warning 6083: roach_top pin ROACH_QDR2P_BY0_1\$1I1222.TDI: Single pin net: QDR2_TDI
 pcb: Warning 6083: roach_top pin ROACH_QDR2P_BY2_3\$1I1222.TDO: Single pin net: QDR2_BY2_3_TDO
-pcb: Warning 6083: roach_top pin $1I331\$1I6.PWR_OK: Single pin net: PWR_OK
-pcb: Warning 6083: roach_top pin $1I331\$1I6.PS_ON#: Single pin net: PS_ON#
 pcb: Warning 6083: roach_top pin $1I372\$1I361.PAD90: Single pin net: NF_WP#
-pcb: Warning 6083: roach_top pin ROACH_TRANSCEIVERS_PSU\$1I684.EN: Single pin net: MGT_AVTTX_EN
-pcb: Warning 6083: roach_top pin ROACH_TRANSCEIVERS_PSU\$1I706.EN: Single pin net: MGT_AVCC_EN
-pcb: Warning 6083: roach_top pin ROACH_TRANSCEIVERS_PSU\$1I628.EN: Single pin net: MGT_AVCCPLL_EN
 pcb: Warning 6083: roach_top pin $1I372\$1I361.PAD105: Single pin net: GETH1_RST#
 pcb: Warning 6083: roach_top pin $1I372\$1I361.PAD95: Single pin net: GETH1_COMA
 pcb: Warning 6083: roach_top pin $1I372\$1I361.PAD100: Single pin net: GETH0_COMA
-pcb: Warning 6083: roach_top pin $1I331\$1I1.SENSE: Single pin net: FAN3_SENSE
-pcb: Warning 6083: roach_top pin $1I331\$1I1.CONTROL: Single pin net: FAN3_CONTROL
-pcb: Warning 6083: roach_top pin $1I331\$1I72.SENSE: Single pin net: FAN2_SENSE
-pcb: Warning 6083: roach_top pin $1I331\$1I72.CONTROL: Single pin net: FAN2_CONTROL
-pcb: Warning 6083: roach_top pin $1I331\$1I77.SENSE: Single pin net: FAN1_SENSE
-pcb: Warning 6083: roach_top pin $1I331\$1I77.CONTROL: Single pin net: FAN1_CONTROL
 pcb: Warning 6083: roach_top pin $1I372\$1I361.PAD108: Single pin net: EBC_SELECT#
 pcb: Warning 6083: roach_top pin $1I372\$1I361.PAD87: Single pin net: CLK_USB2_CPLD
 pcb: Warning 6083: roach_top pin ROACH_PPC_TST_CLK_IO\$1I187.2: Single pin net: CLK_USB2.0_12MHZ
 pcb: Warning 6083: roach_top pin ROACH_PPC_TST_CLK_IO\$1I171.2: Single pin net: CLK_PCI3_66/33MHZ
 pcb: Warning 6083: roach_top pin ROACH_PPC_TST_CLK_IO\$1I214.2: Single pin net: CLK_GETH1_25MHZ
-pcb: Warning 6083: roach_top pin $1I331\$1I304.TRACK: Single pin net: 2V5_TRACK
-pcb: Warning 6083: roach_top pin $1I331\$1I304.SENSE-: Single pin net: 2V5_SENS_N
-pcb: Warning 6083: roach_top pin $1I331\$1I314.G: Single pin net: 2V5_INHIBIT
-pcb: Warning 6083: roach_top pin $1I331\$1I302.TRACK: Single pin net: 1V8_TRACK
-pcb: Warning 6083: roach_top pin $1I331\$1I302.SENSE-: Single pin net: 1V8_SENS_N
-pcb: Warning 6083: roach_top pin $1I331\$1I292.G: Single pin net: 1V8_INHIBIT
-pcb: Warning 6083: roach_top pin $1I331\$1I193.TRACK: Single pin net: 1V5_TRACK
-pcb: Warning 6083: roach_top pin $1I331\$1I193.SENSE-: Single pin net: 1V5_SENS_N
-pcb: Warning 6083: roach_top pin $1I331\$1I203.G: Single pin net: 1V5_INHIBIT
-pcb: Warning 6083: roach_top pin $1I331\$1I118.TRACK: Single pin net: 1V2_TRACK
-pcb: Warning 6083: roach_top pin $1I331\$1I118.SENSE-: Single pin net: 1V2_SENS_N
-pcb: Warning 6083: roach_top pin $1I331\$1I119.G: Single pin net: 1V2_INHIBIT
-pcb: Warning 6083: roach_top pin $1I331\$1I182.TRACK: Single pin net: 1V0_TRACK
-pcb: Warning 6083: roach_top pin $1I331\$1I182.SENSE-: Single pin net: 1V0_SENS_N
-pcb: Warning 6083: roach_top pin $1I331\$1I183.G: Single pin net: 1V0_INHIBIT
+pcb: Warning 6083: roach_top pin $1I509\$1I304.SENSE-: Single pin net: 2V5_SENS_N
+pcb: Warning 6083: roach_top pin $1I509\$1I302.TRACK: Single pin net: 1V8_TRACK
+pcb: Warning 6083: roach_top pin $1I509\$1I302.SENSE-: Single pin net: 1V8_SENS_N
+pcb: Warning 6083: roach_top pin $1I509\$1I193.TRACK: Single pin net: 1V5_TRACK
+pcb: Warning 6083: roach_top pin $1I509\$1I193.SENSE-: Single pin net: 1V5_SENS_N
+pcb: Warning 6083: roach_top pin $1I509\$1I118.TRACK: Single pin net: 1V2_TRACK
+pcb: Warning 6083: roach_top pin $1I509\$1I118.SENSE-: Single pin net: 1V2_SENS_N
+pcb: Warning 6083: roach_top pin $1I509\$1I182.TRACK: Single pin net: 1V0_TRACK
+pcb: Warning 6083: roach_top pin $1I509\$1I182.SENSE-: Single pin net: 1V0_SENS_N
 pcb: Warning 6083: roach_top pin $1I372\$1I361.PAD107: Single pin net: $1N384
+pcb: Warning 6094: roach_top pin $1I546\$1I963.N2: Pin not connected
 pcb: Warning 7203: roach_top pin ROACH_PPC_DDR2\$1I630.BANKSEL#1: NC attribute attached to connected pin
 pcb: Warning 7203: roach_top pin ROACH_PPC_DDR2\$1I630.MEMODT1: NC attribute attached to connected pin
 pcb: Warning 7203: roach_top pin ROACH_PPC_ETH1\$1I146.COL: NC attribute attached to connected pin
@@ -71,5 +67,5 @@ pcb: Warning 7203: roach_top pin ROACH_PPC_ETH1\$1I146.TDI: NC attribute attache
 pcb: Warning 7203: roach_top pin ROACH_PPC_ETH1\$1I146.TDO: NC attribute attached to connected pin
 pcb: Warning 7203: roach_top pin ROACH_PPC_ETH1\$1I146.TMS: NC attribute attached to connected pin
 pcb: Note 5626: Summary of pcb.err
-Status 0, Notes 2, Warnings 70
-Errors 0, Failures 0, Fatals 0, Internals 0
+Status 0, Notes 7, Warnings 55
+Errors 6, Failures 0, Fatals 0, Internals 0
