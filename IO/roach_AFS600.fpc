@@ -144,6 +144,14 @@
       (TYPE ANALOG_IO)
     )
     (SIGNAL
+      (NAME "3V3AUX_PG")
+      (HDL_NAME "3V3AUX_PG")
+      (DIR IN)
+      (PIN M5)
+      (TYPE IO)
+      (IOSTANDARD LVTTL)
+    )
+    (SIGNAL
       (NAME "3V3_IMON")
       (DIR INOUT)
       (PIN M9)
@@ -1168,7 +1176,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D16,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F1,F10,F11,F12,F13,F14,F15,F16,F2,F3,F4,F5,F6,F7,F9,G1,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J1,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M5,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D16,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F1,F10,F11,F12,F13,F14,F15,F16,F2,F3,F4,F5,F6,F7,F9,G1,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J1,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -6093,6 +6101,71 @@
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME "3V3AUX_PG")
+          (POSITION 0 50800)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 74)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE M5)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE M5)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE M5)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE M5)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "3V3AUX_PG")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "3V3AUX_PG")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "3V3AUX_PG")
+          (POSITION 11006 50800)
+          (VALIGN CENTER)
+        )
+        (TEXT
+          (PINNUMBER "3V3AUX_PG")
+          (POSITION 0 50292)
+          (VALIGN BOTTOM)
+        )
       )
       (ATTRIBUTES
         (ATTRIBUTE
@@ -6167,12 +6240,12 @@
         )
         (ATTRIBUTE
           (NAME PINSWAP)
-          (VALUE "(ATX_PWR_OK,CHS_SWITCH,MGT_AVCC_PG,MGT_AVCCPLL_PG,MGT_AVTTX_PG,MON_RESET#,SERIAL_IN,1V0_INHIBIT,1V2_INHIBIT,1V5_INHIBIT,2V5_INHIBIT,2V5_TRACK,ATX_PS_ON#,CHS_LED0,CHS_LED1,MGT_AVCC_EN,MGT_AVCCPLL_EN,MGT_AVTTX_EN,SERIAL_OUT,DEBUG_SERIAL_IN,DEBUG_SERIAL_OUT,SERIAL_CP1,SERIAL_CP2,SERIAL_CP3,XPORT_RESET,FAN1_SENSE,FAN1_CONTROL,FAN2_CONTROL,FAN2_SENSE,FAN3_CONTROL,FAN3_SENSE)")
+          (VALUE "(ATX_PWR_OK,CHS_SWITCH,MGT_AVCC_PG,MGT_AVCCPLL_PG,MGT_AVTTX_PG,MON_RESET#,SERIAL_IN,1V0_INHIBIT,1V2_INHIBIT,1V5_INHIBIT,2V5_INHIBIT,2V5_TRACK,ATX_PS_ON#,CHS_LED0,CHS_LED1,MGT_AVCC_EN,MGT_AVCCPLL_EN,MGT_AVTTX_EN,SERIAL_OUT,DEBUG_SERIAL_IN,DEBUG_SERIAL_OUT,SERIAL_CP1,SERIAL_CP2,SERIAL_CP3,XPORT_RESET,FAN1_SENSE,FAN1_CONTROL,FAN2_CONTROL,FAN2_SENSE,FAN3_CONTROL,FAN3_SENSE,3V3AUX_PG)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME PINSWAP)
-          (VALUE "(ATX_PWR_OK,CHS_SWITCH,MGT_AVCC_PG,MGT_AVCCPLL_PG,MGT_AVTTX_PG,MON_RESET#,SERIAL_IN,1V0_INHIBIT,1V2_INHIBIT,1V5_INHIBIT,2V5_INHIBIT,2V5_TRACK,ATX_PS_ON#,CHS_LED0,CHS_LED1,MGT_AVCC_EN,MGT_AVCCPLL_EN,MGT_AVTTX_EN,SERIAL_OUT,DEBUG_SERIAL_IN,DEBUG_SERIAL_OUT,SERIAL_CP1,SERIAL_CP2,SERIAL_CP3,XPORT_RESET,FAN1_SENSE,FAN1_CONTROL,FAN2_CONTROL,FAN2_SENSE,FAN3_CONTROL,FAN3_SENSE)")
+          (VALUE "(ATX_PWR_OK,CHS_SWITCH,MGT_AVCC_PG,MGT_AVCCPLL_PG,MGT_AVTTX_PG,MON_RESET#,SERIAL_IN,1V0_INHIBIT,1V2_INHIBIT,1V5_INHIBIT,2V5_INHIBIT,2V5_TRACK,ATX_PS_ON#,CHS_LED0,CHS_LED1,MGT_AVCC_EN,MGT_AVCCPLL_EN,MGT_AVTTX_EN,SERIAL_OUT,DEBUG_SERIAL_IN,DEBUG_SERIAL_OUT,SERIAL_CP1,SERIAL_CP2,SERIAL_CP3,XPORT_RESET,FAN1_SENSE,FAN1_CONTROL,FAN2_CONTROL,FAN2_SENSE,FAN3_CONTROL,FAN3_SENSE,3V3AUX_PG)")
           (OWNER ICDBDXD)
         )
         (ATTRIBUTE
@@ -6182,7 +6255,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D16,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F1,F10,F11,F12,F13,F14,F15,F16,F2,F3,F4,F5,F6,F7,F9,G1,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J1,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M5,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D16,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F1,F10,F11,F12,F13,F14,F15,F16,F2,F3,F4,F5,F6,F7,F9,G1,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J1,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -12135,7 +12208,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D16,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F1,F10,F11,F12,F13,F14,F15,F16,F2,F3,F4,F5,F6,F7,F9,G1,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J1,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M5,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D16,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F1,F10,F11,F12,F13,F14,F15,F16,F2,F3,F4,F5,F6,F7,F9,G1,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J1,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -12326,6 +12399,10 @@
     )
     (IO
       (PIN L16)
+      (STANDARD LVTTL)
+    )
+    (IO
+      (PIN M5)
       (STANDARD LVTTL)
     )
     (IO
@@ -12535,6 +12612,10 @@
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
+      (PIN M5)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
       (PIN N1)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
@@ -12544,7 +12625,7 @@
     )
   )
   (SCHEMESETTINGS2006
-    DxDesigner
+    DxDesignerFK
     (SECTION
       Console
       (COLOR BackgroundColor White)
@@ -12707,16 +12788,16 @@
       (BOOL DanglingNets 0)
       (STRING DcDvViewerCommand "designview {$TYPE} {$PATH} {$TOP}")
       (STRING DdpViewerCommand "darchitect {$TYPE} {$PATH} {$TOP}")
-      (STRING DxBorder "builtin:a4sheet.1")
+      (STRING DxBorder "builtin:a2sheet.1")
       (BOOL DxBorderEnabled 0)
-      (STRING DxBorderPath "C:\\MentorGraphics\\2005PADS\\SDD_HOME\\IODesigner\\dxdesigner\\builtin\\sym.lib")
-      (STRING DxExportHkp "C:\\MentorGraphics\\2005PADS\\SDD_HOME\\IODesigner\\dxdesigner\\builtin\\sym.lib")
-      (STRING DxGraphicsFont "C:\\MentorGraphics\\2005PADS\\SDD_HOME\\IODesigner\\dxdesigner\\builtin\\sym.lib")
+      (STRING DxBorderPath "C:\\MentorGraphics\\IOD7.1\\IODesigner\\dxdesigner\\builtin\\sym.lib")
+      (STRING DxExportHkp "C:\\MentorGraphics\\IOD7.1\\IODesigner\\dxdesigner\\builtin\\sym.lib")
+      (STRING DxGraphicsFont "C:\\MentorGraphics\\IOD7.1\\IODesigner\\dxdesigner\\builtin\\sym.lib")
       (STRING DxViewerCommand "dxdesigner {$FILE}")
       (BOOL EnableLMSFixedFlow 0)
       (BOOL ExportDiffPairAttribute 0)
       (BOOL ExportPortDirShape 0)
-      (BOOL ExportSwapGroups 1)
+      (BOOL ExportSwapGroups 0)
       (BOOL ExportUnattpthy 1)
       (STRING FixedFont Curier)
       (BOOL ForceLocalCopyOfLMSSymbols 0)
@@ -12771,7 +12852,7 @@
       ShapeManager
       (STRING FilePath shapes)
       (BOOL ScaleTypeShape 0)
-      (INT TypeShapeSize 2540)
+      (INT TypeShapeSize 1270)
     )
     (SECTION
       SymbolView
@@ -12805,7 +12886,7 @@
       (INT ConfigPortLabelType 0)
       (COLOR CustomLabelColor "255, 207, 0")
       (INT CustomLabelColorId 15)
-      (FONT CustomLabelFont "FONT_0,8,0,0,0,1,50")
+      (FONT CustomLabelFont "SCHEMATIC,10,0,0,0,0,50")
       (INT DefaultAttributesVisibility 0)
       (INT DefaultPinAttributesPosition 2)
       (INT DefaultSymbolAttributesPosition 2)
@@ -12824,7 +12905,7 @@
       (COLOR GraphPenColor Green)
       (INT GraphPenStyle 0)
       (INT GraphPenWidth 1)
-      (FONT GraphicsFont "FONT_0,12,0,0,0,0,35")
+      (FONT GraphicsFont "SCHEMATIC,12,0,0,0,0,50")
       (INT Grid 2540)
       (BOOL GridAutoScrolling 0)
       (COLOR GridColor "192, 192, 192")
@@ -12853,11 +12934,11 @@
       (INT NewSymbolWidth 12)
       (COLOR OutlineColor "192, 192, 192")
       (COLOR PageColor Black)
-      (INT PageHeight 297)
-      (INT PageWidth 210)
+      (INT PageHeight 594)
+      (INT PageWidth 420)
       (COLOR ParentPropertyColor Yellow)
       (INT ParentPropertyColorId 14)
-      (FONT ParentPropertyFont "FONT_0,12,0,0,0,1,35")
+      (FONT ParentPropertyFont "SCHEMATIC,8,0,0,0,0,35")
       (STRING PcbAttributes "")
       (INT PcbInteriorBrushStyle 0)
       (COLOR PcbInteriorFillColor "0, 4, 132")
@@ -12865,18 +12946,18 @@
       (INT PcbInteriorPenWidth 1)
       (INT PcbPortLabelType 1)
       (COLOR PinFunctionColor "255, 207, 0")
-      (FONT PinFunctionFont "FONT_0,8,0,0,0,1,50")
+      (FONT PinFunctionFont "SCHEMATIC,8,0,0,0,0,50")
       (COLOR PinNameColor Yellow)
-      (FONT PinNameFont "FONT_0,8,0,0,0,1,50")
+      (FONT PinNameFont "SCHEMATIC,8,0,0,0,0,50")
       (COLOR PinNumberColor Yellow)
-      (FONT PinNumberFont "FONT_0,8,0,0,0,1,50")
+      (FONT PinNumberFont "SCHEMATIC,8,0,0,0,0,50")
       (STRING Pin_PortAttributes "PINTYPE:?:DXDESIGNER,#::DXDESIGNER")
       (STRING PortAttributes "")
       (COLOR PortBrushColor Cyan)
       (INT PortBrushStyle 3)
       (INT PortColorId 11)
       (INT PortLabelType 1)
-      (INT PortLength 5080)
+      (INT PortLength 10160)
       (COLOR PortPenColor Cyan)
       (INT PortPenStyle 0)
       (INT PortPenWidth 1)
@@ -12888,7 +12969,7 @@
       (COLOR RectPenColor "Mid Green")
       (INT RectPenStyle 0)
       (INT RectPenWidth 1)
-      (FONT RulerFontName "NONFIXED,8,0,0,0,0,50")
+      (FONT RulerFontName "Arial,8,0,0,0,0,50")
       (COLOR RulerTextColor Black)
       (COLOR SelectionColor White)
       (INT SelectionFilter 7)
@@ -12899,7 +12980,7 @@
       (BOOL ShowPage 1)
       (BOOL ShowPinDirection 1)
       (COLOR SignalNameColor White)
-      (FONT SignalNameFont "FONT_0,8,0,0,0,1,50")
+      (FONT SignalNameFont "SCHEMATIC,8,0,0,0,0,50")
       (COLOR SignalPortColor Cyan)
       (INT SignalPortWidth 1)
       (BOOL SnapToGrid 1)
@@ -12912,7 +12993,7 @@
       (INT SymbolMarginX 0)
       (INT SymbolMarginY 0)
       (COLOR SymbolNameColor Green)
-      (FONT SymbolNameFont "FONT_0,12,0,0,0,0,50")
+      (FONT SymbolNameFont "SCHEMATIC,12,0,0,0,0,50")
       (INT TextCursorBlinkRate 500)
       (INT TextCursorWidth 2)
       (STRING Unknown_PortAttributes "")
@@ -12921,7 +13002,7 @@
       (STRING VccioSignals "")
       (COLOR VertexColor "192, 192, 192")
       (INT VertexSize 10)
-      (STRING VoltageSignals "0_6=V_0_6,0_75=V_0_75,0_8=V_0_8,0_9=V_0_9,1_0=V_1_0,1_1=V_1_1,1_2=V_1_2,1_25=V_1_25,1_5=V_1_5,1_65=V_1_65,1_8=V_1_8,2_5=V_2_5,3_3=V_3_3,AnalogGND=AGND,AnalogVCC=AVCC,GND=GND,VCC=VCC,VCCA=VCCA,VCCAUX=VCCAUX,VCCINT=VCCINT,VCCO=VCCO,VccMgtTermination=VCCMGT")
+      (STRING VoltageSignals "0_6=V_0_6,0_75=0V75,0_8=0V8,0_9=V_0_9,1_0=V_1_0,1_1=V_1_1,1_2=V_1_2,1_25=1V25,1_5=1V5,1_65=V_1_65,1_8=1V8,2_5=2V5,3_3=3V3,AnalogGND=AGND,AnalogVCC=AVCC,GND=GND,VCC=VCC,VCCA=VCCA,VCCAUX=VCCAUX,VCCINT=VCCINT,VCCO=VCCO,VccMgtTermination=VCCMGT")
       (STRING VrefSignals "")
     )
   )
