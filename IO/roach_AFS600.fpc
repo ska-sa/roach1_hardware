@@ -9,7 +9,7 @@
   (VENDOR actel)
   (LANGUAGE Vhdl)
   (CELL fbga256)
-  (DX_PROJECT_PATH "..\\roach" 0 1)
+  (DX_PROJECT_PATH "..\\roach" 1190881134 1)
   (SSO_BANK_THRESHOLD 70)
   (CDBFLOW 0)
   (HKP true)
@@ -599,12 +599,6 @@
       (TYPE ANALOG_VREF)
     )
     (SIGNAL
-      (NAME VCC)
-      (DIR INOUT)
-      (PINS B1 B16)
-      (TYPE VCC)
-    )
-    (SIGNAL
       (NAME VCC15A)
       (DIR IN)
       (PIN N5)
@@ -689,6 +683,18 @@
       (TYPE ANALOG_VCC)
     )
     (SIGNAL
+      (NAME VCOMPLA)
+      (DIR IN)
+      (PIN B1)
+      (TYPE VCC)
+    )
+    (SIGNAL
+      (NAME VCOMPLB)
+      (DIR IN)
+      (PIN B16)
+      (TYPE VCC)
+    )
+    (SIGNAL
       (NAME VJTAG)
       (DIR IN)
       (PIN L13)
@@ -730,19 +736,19 @@
       (PCB T)
       (ELEMENTS
         (RECT
-          (POSITION 5080 0 91440 35560)
+          (POSITION 10160 0 91440 35560)
           (BACKGROUND T)
         )
         (PORT
           (TYPE PIN)
           (NAME L12)
           (POSITION 0 10160)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 4)
           (LABEL PINNAME)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -790,19 +796,19 @@
         )
         (TEXT
           (LABEL L12)
-          (POSITION 5926 10160)
+          (POSITION 10160 10160)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME M14)
           (POSITION 0 15240)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 5)
           (LABEL PINNAME)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -850,19 +856,19 @@
         )
         (TEXT
           (LABEL M14)
-          (POSITION 5926 15240)
+          (POSITION 10160 15240)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME M15)
           (POSITION 0 20320)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 6)
           (LABEL PINNAME)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -910,19 +916,19 @@
         )
         (TEXT
           (LABEL M15)
-          (POSITION 5926 20320)
+          (POSITION 10160 20320)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME N15)
           (POSITION 0 25400)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 7)
           (LABEL PINNAME)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -970,19 +976,19 @@
         )
         (TEXT
           (LABEL N15)
-          (POSITION 5926 25400)
+          (POSITION 10160 25400)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME N16)
           (POSITION 0 30480)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 8)
           (LABEL PINNAME)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -1030,7 +1036,7 @@
         )
         (TEXT
           (LABEL N16)
-          (POSITION 5926 30480)
+          (POSITION 10160 30480)
           (VALIGN CENTER)
         )
         (TEXT
@@ -1239,7 +1245,7 @@
       (PCB T)
       (ELEMENTS
         (RECT
-          (POSITION 5080 0 101600 248920)
+          (POSITION 10160 0 96520 248920)
           (BACKGROUND T)
         )
         (PORT
@@ -1247,11 +1253,11 @@
           (NAME ATX_PWR_OK)
           (POSITION 0 15240)
           (EXTTYPE IN)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 1)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -1299,7 +1305,7 @@
         )
         (TEXT
           (LABEL ATX_PWR_OK)
-          (POSITION 5926 15240)
+          (POSITION 10160 15240)
           (VALIGN CENTER)
         )
         (PORT
@@ -1307,11 +1313,11 @@
           (NAME CHS_SWITCH)
           (POSITION 0 25400)
           (EXTTYPE IN)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 2)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -1359,7 +1365,7 @@
         )
         (TEXT
           (LABEL CHS_SWITCH)
-          (POSITION 5926 25400)
+          (POSITION 10160 25400)
           (VALIGN CENTER)
         )
         (PORT
@@ -1367,11 +1373,11 @@
           (NAME MGT_AVCC_PG)
           (POSITION 0 233680)
           (EXTTYPE IN)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 3)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -1419,7 +1425,7 @@
         )
         (TEXT
           (LABEL MGT_AVCC_PG)
-          (POSITION 5926 233680)
+          (POSITION 10160 233680)
           (VALIGN CENTER)
         )
         (PORT
@@ -1427,11 +1433,11 @@
           (NAME MGT_AVCCPLL_PG)
           (POSITION 0 243840)
           (EXTTYPE IN)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 4)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -1479,7 +1485,7 @@
         )
         (TEXT
           (LABEL MGT_AVCCPLL_PG)
-          (POSITION 5926 243840)
+          (POSITION 10160 243840)
           (VALIGN CENTER)
         )
         (PORT
@@ -1487,11 +1493,11 @@
           (NAME MGT_AVTTX_PG)
           (POSITION 0 238760)
           (EXTTYPE IN)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 5)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -1539,7 +1545,7 @@
         )
         (TEXT
           (LABEL MGT_AVTTX_PG)
-          (POSITION 5926 238760)
+          (POSITION 10160 238760)
           (VALIGN CENTER)
         )
         (PORT
@@ -1548,11 +1554,11 @@
           (POSITION 106680 223520)
           (EXTTYPE IN)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 6)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -1600,7 +1606,7 @@
         )
         (TEXT
           (LABEL "MON_RESET#")
-          (POSITION 100754 223520)
+          (POSITION 95674 223520)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -1610,11 +1616,11 @@
           (POSITION 106680 10160)
           (EXTTYPE IN)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 7)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -1662,7 +1668,7 @@
         )
         (TEXT
           (LABEL SERIAL_IN)
-          (POSITION 100754 10160)
+          (POSITION 96520 10160)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -1671,11 +1677,11 @@
           (NAME "1V0_INHIBIT")
           (POSITION 0 223520)
           (EXTTYPE OUT)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 8)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -1723,7 +1729,7 @@
         )
         (TEXT
           (LABEL "1V0_INHIBIT")
-          (POSITION 5926 223520)
+          (POSITION 10160 223520)
           (VALIGN CENTER)
         )
         (PORT
@@ -1731,11 +1737,11 @@
           (NAME "1V2_INHIBIT")
           (POSITION 0 203200)
           (EXTTYPE OUT)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 9)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -1783,7 +1789,7 @@
         )
         (TEXT
           (LABEL "1V2_INHIBIT")
-          (POSITION 5926 203200)
+          (POSITION 10160 203200)
           (VALIGN CENTER)
         )
         (PORT
@@ -1791,11 +1797,11 @@
           (NAME "1V5_INHIBIT")
           (POSITION 0 182880)
           (EXTTYPE OUT)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 10)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -1843,7 +1849,7 @@
         )
         (TEXT
           (LABEL "1V5_INHIBIT")
-          (POSITION 5926 182880)
+          (POSITION 10160 182880)
           (VALIGN CENTER)
         )
         (PORT
@@ -1851,11 +1857,11 @@
           (NAME "1V8_INHIBIT")
           (POSITION 0 162560)
           (EXTTYPE OUT)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 11)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -1903,7 +1909,7 @@
         )
         (TEXT
           (LABEL "1V8_INHIBIT")
-          (POSITION 5926 162560)
+          (POSITION 10160 162560)
           (VALIGN CENTER)
         )
         (PORT
@@ -1911,11 +1917,11 @@
           (NAME "2V5_INHIBIT")
           (POSITION 0 137160)
           (EXTTYPE OUT)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 12)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -1963,7 +1969,7 @@
         )
         (TEXT
           (LABEL "2V5_INHIBIT")
-          (POSITION 5926 137160)
+          (POSITION 10160 137160)
           (VALIGN CENTER)
         )
         (PORT
@@ -1971,11 +1977,11 @@
           (NAME "2V5_TRACK")
           (POSITION 0 142240)
           (EXTTYPE OUT)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 13)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -2023,7 +2029,7 @@
         )
         (TEXT
           (LABEL "2V5_TRACK")
-          (POSITION 5926 142240)
+          (POSITION 10160 142240)
           (VALIGN CENTER)
         )
         (PORT
@@ -2031,11 +2037,11 @@
           (NAME "ATX_PS_ON#")
           (POSITION 0 10160)
           (EXTTYPE OUT)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 14)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -2083,7 +2089,7 @@
         )
         (TEXT
           (LABEL "ATX_PS_ON#")
-          (POSITION 5926 10160)
+          (POSITION 10160 10160)
           (VALIGN CENTER)
         )
         (PORT
@@ -2091,11 +2097,11 @@
           (NAME CHS_LED0)
           (POSITION 0 30480)
           (EXTTYPE OUT)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 15)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -2143,7 +2149,7 @@
         )
         (TEXT
           (LABEL CHS_LED0)
-          (POSITION 5926 30480)
+          (POSITION 10160 30480)
           (VALIGN CENTER)
         )
         (PORT
@@ -2151,11 +2157,11 @@
           (NAME CHS_LED1)
           (POSITION 0 35560)
           (EXTTYPE OUT)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 16)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -2203,7 +2209,7 @@
         )
         (TEXT
           (LABEL CHS_LED1)
-          (POSITION 5926 35560)
+          (POSITION 10160 35560)
           (VALIGN CENTER)
         )
         (PORT
@@ -2212,11 +2218,11 @@
           (POSITION 106680 233680)
           (EXTTYPE OUT)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 17)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -2264,7 +2270,7 @@
         )
         (TEXT
           (LABEL MGT_AVCC_EN)
-          (POSITION 100754 233680)
+          (POSITION 95674 233680)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -2274,11 +2280,11 @@
           (POSITION 106680 243840)
           (EXTTYPE OUT)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 18)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -2326,7 +2332,7 @@
         )
         (TEXT
           (LABEL MGT_AVCCPLL_EN)
-          (POSITION 100754 243840)
+          (POSITION 95674 243840)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -2336,11 +2342,11 @@
           (POSITION 106680 238760)
           (EXTTYPE OUT)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 19)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -2388,7 +2394,7 @@
         )
         (TEXT
           (LABEL MGT_AVTTX_EN)
-          (POSITION 100754 238760)
+          (POSITION 95674 238760)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -2398,11 +2404,11 @@
           (POSITION 106680 15240)
           (EXTTYPE OUT)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 20)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -2450,7 +2456,7 @@
         )
         (TEXT
           (LABEL SERIAL_OUT)
-          (POSITION 100754 15240)
+          (POSITION 96520 15240)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -2580,11 +2586,11 @@
           (NAME "12V_IMON")
           (POSITION 0 71120)
           (EXTTYPE IN)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 21)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -2632,7 +2638,7 @@
         )
         (TEXT
           (LABEL "12V_IMON")
-          (POSITION 5926 71120)
+          (POSITION 10160 71120)
           (VALIGN CENTER)
         )
         (PORT
@@ -2640,11 +2646,11 @@
           (NAME "12V_VMON")
           (POSITION 0 66040)
           (EXTTYPE IN)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 22)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -2692,7 +2698,7 @@
         )
         (TEXT
           (LABEL "12V_VMON")
-          (POSITION 5926 66040)
+          (POSITION 10160 66040)
           (VALIGN CENTER)
         )
         (PORT
@@ -2701,11 +2707,11 @@
           (POSITION 106680 167640)
           (EXTTYPE IN)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 23)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -2753,7 +2759,7 @@
         )
         (TEXT
           (LABEL AG_SP0)
-          (POSITION 100754 167640)
+          (POSITION 96520 167640)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -2763,11 +2769,11 @@
           (POSITION 106680 172720)
           (EXTTYPE IN)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 24)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -2815,7 +2821,7 @@
         )
         (TEXT
           (LABEL AG_SP1)
-          (POSITION 100754 172720)
+          (POSITION 96520 172720)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -2825,11 +2831,11 @@
           (POSITION 106680 157480)
           (EXTTYPE IN)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 25)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -2877,7 +2883,7 @@
         )
         (TEXT
           (LABEL AV_SP0)
-          (POSITION 100754 157480)
+          (POSITION 96520 157480)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -2887,11 +2893,11 @@
           (POSITION 106680 162560)
           (EXTTYPE IN)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 26)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -2939,7 +2945,7 @@
         )
         (TEXT
           (LABEL AV_SP1)
-          (POSITION 100754 162560)
+          (POSITION 96520 162560)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -2949,11 +2955,11 @@
           (POSITION 106680 50800)
           (EXTTYPE IN)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 27)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -3001,7 +3007,7 @@
         )
         (TEXT
           (LABEL DEBUG_SERIAL_IN)
-          (POSITION 100754 50800)
+          (POSITION 96520 50800)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -3010,11 +3016,11 @@
           (NAME "12V_SW_ON")
           (POSITION 0 76200)
           (EXTTYPE BI)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 28)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -3062,7 +3068,7 @@
         )
         (TEXT
           (LABEL "12V_SW_ON")
-          (POSITION 5926 76200)
+          (POSITION 10160 76200)
           (VALIGN CENTER)
         )
         (PORT
@@ -3070,11 +3076,11 @@
           (NAME "1V0_IMON")
           (POSITION 0 218440)
           (EXTTYPE BI)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 29)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -3122,7 +3128,7 @@
         )
         (TEXT
           (LABEL "1V0_IMON")
-          (POSITION 5926 218440)
+          (POSITION 10160 218440)
           (VALIGN CENTER)
         )
         (PORT
@@ -3130,11 +3136,11 @@
           (NAME "1V0_VMON")
           (POSITION 0 213360)
           (EXTTYPE BI)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 30)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -3182,7 +3188,7 @@
         )
         (TEXT
           (LABEL "1V0_VMON")
-          (POSITION 5926 213360)
+          (POSITION 10160 213360)
           (VALIGN CENTER)
         )
         (PORT
@@ -3190,11 +3196,11 @@
           (NAME "1V2_IMON")
           (POSITION 0 198120)
           (EXTTYPE BI)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 31)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -3242,7 +3248,7 @@
         )
         (TEXT
           (LABEL "1V2_IMON")
-          (POSITION 5926 198120)
+          (POSITION 10160 198120)
           (VALIGN CENTER)
         )
         (PORT
@@ -3250,11 +3256,11 @@
           (NAME "1V2_VMON")
           (POSITION 0 193040)
           (EXTTYPE BI)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 32)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -3302,7 +3308,7 @@
         )
         (TEXT
           (LABEL "1V2_VMON")
-          (POSITION 5926 193040)
+          (POSITION 10160 193040)
           (VALIGN CENTER)
         )
         (PORT
@@ -3310,11 +3316,11 @@
           (NAME "1V5_IMON")
           (POSITION 0 177800)
           (EXTTYPE BI)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 33)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -3362,7 +3368,7 @@
         )
         (TEXT
           (LABEL "1V5_IMON")
-          (POSITION 5926 177800)
+          (POSITION 10160 177800)
           (VALIGN CENTER)
         )
         (PORT
@@ -3370,11 +3376,11 @@
           (NAME "1V5_VMON")
           (POSITION 0 172720)
           (EXTTYPE BI)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 34)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -3422,7 +3428,7 @@
         )
         (TEXT
           (LABEL "1V5_VMON")
-          (POSITION 5926 172720)
+          (POSITION 10160 172720)
           (VALIGN CENTER)
         )
         (PORT
@@ -3430,11 +3436,11 @@
           (NAME "1V8_IMON")
           (POSITION 0 157480)
           (EXTTYPE BI)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 35)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -3482,7 +3488,7 @@
         )
         (TEXT
           (LABEL "1V8_IMON")
-          (POSITION 5926 157480)
+          (POSITION 10160 157480)
           (VALIGN CENTER)
         )
         (PORT
@@ -3490,11 +3496,11 @@
           (NAME "1V8_VMON")
           (POSITION 0 152400)
           (EXTTYPE BI)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 36)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -3542,7 +3548,7 @@
         )
         (TEXT
           (LABEL "1V8_VMON")
-          (POSITION 5926 152400)
+          (POSITION 10160 152400)
           (VALIGN CENTER)
         )
         (PORT
@@ -3550,11 +3556,11 @@
           (NAME "2V5_IMON")
           (POSITION 0 132080)
           (EXTTYPE BI)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 37)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -3602,7 +3608,7 @@
         )
         (TEXT
           (LABEL "2V5_IMON")
-          (POSITION 5926 132080)
+          (POSITION 10160 132080)
           (VALIGN CENTER)
         )
         (PORT
@@ -3610,11 +3616,11 @@
           (NAME "2V5_VMON")
           (POSITION 0 127000)
           (EXTTYPE BI)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 38)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -3662,7 +3668,7 @@
         )
         (TEXT
           (LABEL "2V5_VMON")
-          (POSITION 5926 127000)
+          (POSITION 10160 127000)
           (VALIGN CENTER)
         )
         (PORT
@@ -3670,11 +3676,11 @@
           (NAME "3V3_IMON")
           (POSITION 0 111760)
           (EXTTYPE BI)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 39)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -3722,7 +3728,7 @@
         )
         (TEXT
           (LABEL "3V3_IMON")
-          (POSITION 5926 111760)
+          (POSITION 10160 111760)
           (VALIGN CENTER)
         )
         (PORT
@@ -3730,11 +3736,11 @@
           (NAME "3V3_SW_ON")
           (POSITION 0 116840)
           (EXTTYPE BI)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 40)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -3782,7 +3788,7 @@
         )
         (TEXT
           (LABEL "3V3_SW_ON")
-          (POSITION 5926 116840)
+          (POSITION 10160 116840)
           (VALIGN CENTER)
         )
         (PORT
@@ -3790,11 +3796,11 @@
           (NAME "3V3_VMON")
           (POSITION 0 106680)
           (EXTTYPE BI)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 41)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -3842,7 +3848,7 @@
         )
         (TEXT
           (LABEL "3V3_VMON")
-          (POSITION 5926 106680)
+          (POSITION 10160 106680)
           (VALIGN CENTER)
         )
         (PORT
@@ -3850,11 +3856,11 @@
           (NAME "5V_IMON")
           (POSITION 0 91440)
           (EXTTYPE BI)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 42)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -3902,7 +3908,7 @@
         )
         (TEXT
           (LABEL "5V_IMON")
-          (POSITION 5926 91440)
+          (POSITION 10160 91440)
           (VALIGN CENTER)
         )
         (PORT
@@ -3910,11 +3916,11 @@
           (NAME "5V_SW_ON")
           (POSITION 0 96520)
           (EXTTYPE BI)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 43)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -3962,7 +3968,7 @@
         )
         (TEXT
           (LABEL "5V_SW_ON")
-          (POSITION 5926 96520)
+          (POSITION 10160 96520)
           (VALIGN CENTER)
         )
         (PORT
@@ -3970,11 +3976,11 @@
           (NAME "5V_VMON")
           (POSITION 0 86360)
           (EXTTYPE BI)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 44)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -4022,7 +4028,7 @@
         )
         (TEXT
           (LABEL "5V_VMON")
-          (POSITION 5926 86360)
+          (POSITION 10160 86360)
           (VALIGN CENTER)
         )
         (PORT
@@ -4031,11 +4037,11 @@
           (POSITION 106680 55880)
           (EXTTYPE OUT)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 45)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -4083,7 +4089,7 @@
         )
         (TEXT
           (LABEL DEBUG_SERIAL_OUT)
-          (POSITION 100754 55880)
+          (POSITION 96520 55880)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -4093,11 +4099,11 @@
           (POSITION 106680 25400)
           (EXTTYPE BI)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 46)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -4145,7 +4151,7 @@
         )
         (TEXT
           (LABEL SERIAL_CP1)
-          (POSITION 100754 25400)
+          (POSITION 96520 25400)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -4155,11 +4161,11 @@
           (POSITION 106680 30480)
           (EXTTYPE BI)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 47)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -4207,7 +4213,7 @@
         )
         (TEXT
           (LABEL SERIAL_CP2)
-          (POSITION 100754 30480)
+          (POSITION 96520 30480)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -4217,11 +4223,11 @@
           (POSITION 106680 35560)
           (EXTTYPE BI)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 48)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -4269,7 +4275,7 @@
         )
         (TEXT
           (LABEL SERIAL_CP3)
-          (POSITION 100754 35560)
+          (POSITION 96520 35560)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -4279,11 +4285,11 @@
           (POSITION 106680 71120)
           (EXTTYPE BI)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 49)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -4331,7 +4337,7 @@
         )
         (TEXT
           (LABEL TD0)
-          (POSITION 100754 71120)
+          (POSITION 96520 71120)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -4341,11 +4347,11 @@
           (POSITION 106680 76200)
           (EXTTYPE BI)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 50)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -4393,7 +4399,7 @@
         )
         (TEXT
           (LABEL TD1)
-          (POSITION 100754 76200)
+          (POSITION 96520 76200)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -4403,11 +4409,11 @@
           (POSITION 106680 81280)
           (EXTTYPE BI)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 51)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -4455,7 +4461,7 @@
         )
         (TEXT
           (LABEL TD2)
-          (POSITION 100754 81280)
+          (POSITION 96520 81280)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -4465,11 +4471,11 @@
           (POSITION 106680 86360)
           (EXTTYPE BI)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 52)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -4517,7 +4523,7 @@
         )
         (TEXT
           (LABEL TD3)
-          (POSITION 100754 86360)
+          (POSITION 96520 86360)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -4527,11 +4533,11 @@
           (POSITION 106680 91440)
           (EXTTYPE BI)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 53)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -4579,7 +4585,7 @@
         )
         (TEXT
           (LABEL TD4)
-          (POSITION 100754 91440)
+          (POSITION 96520 91440)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -4589,11 +4595,11 @@
           (POSITION 106680 96520)
           (EXTTYPE BI)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 54)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -4641,7 +4647,7 @@
         )
         (TEXT
           (LABEL TD5)
-          (POSITION 100754 96520)
+          (POSITION 96520 96520)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -4651,11 +4657,11 @@
           (POSITION 106680 101600)
           (EXTTYPE BI)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 55)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -4703,7 +4709,7 @@
         )
         (TEXT
           (LABEL TD6)
-          (POSITION 100754 101600)
+          (POSITION 96520 101600)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -4713,11 +4719,11 @@
           (POSITION 106680 106680)
           (EXTTYPE BI)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 56)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -4765,7 +4771,7 @@
         )
         (TEXT
           (LABEL TD7)
-          (POSITION 100754 106680)
+          (POSITION 96520 106680)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -4775,11 +4781,11 @@
           (POSITION 106680 111760)
           (EXTTYPE BI)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 57)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -4827,7 +4833,7 @@
         )
         (TEXT
           (LABEL TD8)
-          (POSITION 100754 111760)
+          (POSITION 96520 111760)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -4837,11 +4843,11 @@
           (POSITION 106680 116840)
           (EXTTYPE BI)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 58)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -4889,7 +4895,7 @@
         )
         (TEXT
           (LABEL TD9)
-          (POSITION 100754 116840)
+          (POSITION 96520 116840)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -4899,11 +4905,11 @@
           (POSITION 106680 40640)
           (EXTTYPE OUT)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 60)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -4951,7 +4957,7 @@
         )
         (TEXT
           (LABEL XPORT_RESET)
-          (POSITION 100754 40640)
+          (POSITION 96520 40640)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -5175,11 +5181,11 @@
           (NAME T4)
           (POSITION 106680 127000)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 61)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -5227,7 +5233,7 @@
         )
         (TEXT
           (LABEL T4)
-          (POSITION 100754 127000)
+          (POSITION 96520 127000)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -5236,11 +5242,11 @@
           (NAME T6)
           (POSITION 106680 132080)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 62)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -5288,7 +5294,7 @@
         )
         (TEXT
           (LABEL T6)
-          (POSITION 100754 132080)
+          (POSITION 96520 132080)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -5297,11 +5303,11 @@
           (NAME T8)
           (POSITION 106680 137160)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 63)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -5349,7 +5355,7 @@
         )
         (TEXT
           (LABEL T8)
-          (POSITION 100754 137160)
+          (POSITION 96520 137160)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -5358,11 +5364,11 @@
           (NAME T10)
           (POSITION 106680 142240)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 64)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -5410,7 +5416,7 @@
         )
         (TEXT
           (LABEL T10)
-          (POSITION 100754 142240)
+          (POSITION 96520 142240)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -5419,11 +5425,11 @@
           (NAME T12)
           (POSITION 106680 147320)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 65)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -5471,7 +5477,7 @@
         )
         (TEXT
           (LABEL T12)
-          (POSITION 100754 147320)
+          (POSITION 96520 147320)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
@@ -5480,11 +5486,11 @@
           (NAME H4)
           (POSITION 106680 213360)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 66)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -5532,8 +5538,7 @@
         )
         (TEXT
           (LABEL H4)
-          (POSITION 100754 213360)
-          (HALIGN RIGHT)
+          (POSITION 86360 213360)
           (VALIGN CENTER)
         )
         (PORT
@@ -5541,11 +5546,11 @@
           (NAME H3)
           (POSITION 106680 218440)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 67)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -5593,8 +5598,7 @@
         )
         (TEXT
           (LABEL H3)
-          (POSITION 100754 218440)
-          (HALIGN RIGHT)
+          (POSITION 86360 218440)
           (VALIGN CENTER)
         )
         (PORT
@@ -5603,11 +5607,11 @@
           (POSITION 106680 182880)
           (EXTTYPE IN)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 68)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -5655,8 +5659,7 @@
         )
         (TEXT
           (LABEL FAN1_SENSE)
-          (POSITION 100754 182880)
-          (HALIGN RIGHT)
+          (POSITION 78740 182880)
           (VALIGN CENTER)
         )
         (PORT
@@ -5665,11 +5668,11 @@
           (POSITION 106680 177800)
           (EXTTYPE OUT)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 69)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -5717,8 +5720,7 @@
         )
         (TEXT
           (LABEL FAN1_CONTROL)
-          (POSITION 100754 177800)
-          (HALIGN RIGHT)
+          (POSITION 76200 177800)
           (VALIGN CENTER)
         )
         (PORT
@@ -5727,11 +5729,11 @@
           (POSITION 106680 187960)
           (EXTTYPE OUT)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 70)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -5779,8 +5781,7 @@
         )
         (TEXT
           (LABEL FAN2_CONTROL)
-          (POSITION 100754 187960)
-          (HALIGN RIGHT)
+          (POSITION 76200 187960)
           (VALIGN CENTER)
         )
         (PORT
@@ -5789,11 +5790,11 @@
           (POSITION 106680 193040)
           (EXTTYPE IN)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 71)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -5841,8 +5842,7 @@
         )
         (TEXT
           (LABEL FAN2_SENSE)
-          (POSITION 100754 193040)
-          (HALIGN RIGHT)
+          (POSITION 78740 193040)
           (VALIGN CENTER)
         )
         (PORT
@@ -5851,11 +5851,11 @@
           (POSITION 106680 198120)
           (EXTTYPE OUT)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 72)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -5903,8 +5903,7 @@
         )
         (TEXT
           (LABEL FAN3_CONTROL)
-          (POSITION 100754 198120)
-          (HALIGN RIGHT)
+          (POSITION 76200 198120)
           (VALIGN CENTER)
         )
         (PORT
@@ -5913,11 +5912,11 @@
           (POSITION 106680 203200)
           (EXTTYPE IN)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 73)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -5965,9 +5964,134 @@
         )
         (TEXT
           (LABEL FAN3_SENSE)
-          (POSITION 100754 203200)
-          (HALIGN RIGHT)
+          (POSITION 78740 203200)
           (VALIGN CENTER)
+        )
+        (TEXT
+          (PORTPROPERTY FAN3_SENSE "#")
+          (POSITION 106680 203708)
+          (HALIGN RIGHT)
+          (HIDDEN T)
+        )
+        (TEXT
+          (PORTPROPERTY FAN2_SENSE "#")
+          (POSITION 106680 193548)
+          (HALIGN RIGHT)
+          (HIDDEN T)
+        )
+        (TEXT
+          (PORTPROPERTY FAN3_CONTROL "#")
+          (POSITION 106680 198628)
+          (HALIGN RIGHT)
+          (HIDDEN T)
+        )
+        (TEXT
+          (PORTPROPERTY FAN2_CONTROL "#")
+          (POSITION 106680 188468)
+          (HALIGN RIGHT)
+          (HIDDEN T)
+        )
+        (TEXT
+          (PORTPROPERTY FAN1_CONTROL "#")
+          (POSITION 106680 178308)
+          (HALIGN RIGHT)
+          (HIDDEN T)
+        )
+        (TEXT
+          (PORTPROPERTY FAN1_SENSE "#")
+          (POSITION 106680 183388)
+          (HALIGN RIGHT)
+          (HIDDEN T)
+        )
+        (TEXT
+          (PORTPROPERTY H3 "#")
+          (POSITION 106680 218948)
+          (HALIGN RIGHT)
+          (HIDDEN T)
+        )
+        (TEXT
+          (PORTPROPERTY H4 "#")
+          (POSITION 106680 213868)
+          (HALIGN RIGHT)
+          (HIDDEN T)
+        )
+        (TEXT
+          (PINNUMBER H4)
+          (POSITION 106680 212852)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER H3)
+          (POSITION 106680 217932)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER FAN1_SENSE)
+          (POSITION 106680 182372)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER FAN1_CONTROL)
+          (POSITION 106680 177292)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER FAN2_CONTROL)
+          (POSITION 106680 187452)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER FAN2_SENSE)
+          (POSITION 106680 192532)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER FAN3_CONTROL)
+          (POSITION 106680 197612)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER FAN3_SENSE)
+          (POSITION 106680 202692)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER T4)
+          (POSITION 106680 126492)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER T6)
+          (POSITION 106680 131572)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER T8)
+          (POSITION 106680 136652)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER T10)
+          (POSITION 106680 141732)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER T12)
+          (POSITION 106680 146812)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
         )
       )
       (ATTRIBUTES
@@ -6131,34 +6255,34 @@
       (NAME roach_AFS600_powerpins)
       (BACKGROUND T)
       (BACKGROUNDNAME Box)
-      (OUTLINE -5080 0 254000 60960)
+      (OUTLINE -5080 0 264160 71120)
       (PCB T)
       (ELEMENTS
         (RECT
-          (POSITION 0 5080 248920 55880)
+          (POSITION 5080 10160 254000 60960)
           (BACKGROUND T)
         )
         (PORT
           (TYPE PIN)
           (NAME B1)
-          (POSITION 5080 0)
-          (ROTATION 90)
-          (LENGTH 5080)
+          (POSITION 10160 71120)
+          (ROTATION 270)
+          (LENGTH 10160)
           (SLOT 1)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE VCC)
+              (VALUE VCOMPLA)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE VCC)
+              (VALUE VCOMPLA)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -6195,32 +6319,31 @@
         )
         (TEXT
           (LABEL B1)
-          (POSITION 5080 5926)
+          (POSITION 10160 60960)
           (ANGLE 270)
-          (HALIGN RIGHT)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME B16)
-          (POSITION 10160 0)
-          (ROTATION 90)
-          (LENGTH 5080)
+          (POSITION 15240 71120)
+          (ROTATION 270)
+          (LENGTH 10160)
           (SLOT 2)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
             (ATTRIBUTE
               (NAME PIN)
-              (VALUE VCC_1)
+              (VALUE VCOMPLB)
               (OWNER DESIGNARCHITECT)
             )
             (ATTRIBUTE
               (NAME "Pin Name")
-              (VALUE VCC_1)
+              (VALUE VCOMPLB)
               (OWNER DESIGNCAPTURE)
             )
             (ATTRIBUTE
@@ -6257,21 +6380,20 @@
         )
         (TEXT
           (LABEL B16)
-          (POSITION 10160 5926)
+          (POSITION 15240 60960)
           (ANGLE 270)
-          (HALIGN RIGHT)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME N5)
-          (POSITION 20320 0)
+          (POSITION 25400 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 3)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -6319,7 +6441,7 @@
         )
         (TEXT
           (LABEL N5)
-          (POSITION 20320 5926)
+          (POSITION 25400 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -6327,13 +6449,13 @@
         (PORT
           (TYPE PIN)
           (NAME N13)
-          (POSITION 25400 0)
+          (POSITION 30480 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 4)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -6381,7 +6503,7 @@
         )
         (TEXT
           (LABEL N13)
-          (POSITION 25400 5926)
+          (POSITION 30480 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -6389,13 +6511,13 @@
         (PORT
           (TYPE PIN)
           (NAME N4)
-          (POSITION 30480 0)
+          (POSITION 35560 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 5)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -6443,7 +6565,7 @@
         )
         (TEXT
           (LABEL N4)
-          (POSITION 30480 5926)
+          (POSITION 35560 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -6451,13 +6573,13 @@
         (PORT
           (TYPE PIN)
           (NAME G8)
-          (POSITION 40640 0)
+          (POSITION 45720 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 6)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -6505,7 +6627,7 @@
         )
         (TEXT
           (LABEL G8)
-          (POSITION 40640 5926)
+          (POSITION 45720 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -6513,13 +6635,13 @@
         (PORT
           (TYPE PIN)
           (NAME G10)
-          (POSITION 45720 0)
+          (POSITION 50800 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 7)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -6567,7 +6689,7 @@
         )
         (TEXT
           (LABEL G10)
-          (POSITION 45720 5926)
+          (POSITION 50800 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -6575,13 +6697,13 @@
         (PORT
           (TYPE PIN)
           (NAME H7)
-          (POSITION 50800 0)
+          (POSITION 55880 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 8)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -6629,7 +6751,7 @@
         )
         (TEXT
           (LABEL H7)
-          (POSITION 50800 5926)
+          (POSITION 55880 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -6637,13 +6759,13 @@
         (PORT
           (TYPE PIN)
           (NAME H9)
-          (POSITION 55880 0)
+          (POSITION 60960 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 9)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -6691,7 +6813,7 @@
         )
         (TEXT
           (LABEL H9)
-          (POSITION 55880 5926)
+          (POSITION 60960 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -6699,13 +6821,13 @@
         (PORT
           (TYPE PIN)
           (NAME J8)
-          (POSITION 60960 0)
+          (POSITION 66040 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 10)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -6753,7 +6875,7 @@
         )
         (TEXT
           (LABEL J8)
-          (POSITION 60960 5926)
+          (POSITION 66040 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -6761,13 +6883,13 @@
         (PORT
           (TYPE PIN)
           (NAME J10)
-          (POSITION 66040 0)
+          (POSITION 71120 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 11)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -6815,7 +6937,7 @@
         )
         (TEXT
           (LABEL J10)
-          (POSITION 66040 5926)
+          (POSITION 71120 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -6823,13 +6945,13 @@
         (PORT
           (TYPE PIN)
           (NAME K7)
-          (POSITION 71120 0)
+          (POSITION 76200 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 12)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -6877,7 +6999,7 @@
         )
         (TEXT
           (LABEL K7)
-          (POSITION 71120 5926)
+          (POSITION 76200 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -6885,13 +7007,13 @@
         (PORT
           (TYPE PIN)
           (NAME K9)
-          (POSITION 76200 0)
+          (POSITION 81280 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 13)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -6939,7 +7061,7 @@
         )
         (TEXT
           (LABEL K9)
-          (POSITION 76200 5926)
+          (POSITION 81280 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -6947,13 +7069,13 @@
         (PORT
           (TYPE PIN)
           (NAME B2)
-          (POSITION 86360 0)
+          (POSITION 10160 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 14)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -7001,7 +7123,7 @@
         )
         (TEXT
           (LABEL B2)
-          (POSITION 86360 5926)
+          (POSITION 10160 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -7009,13 +7131,13 @@
         (PORT
           (TYPE PIN)
           (NAME B15)
-          (POSITION 91440 0)
+          (POSITION 15240 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 15)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -7063,7 +7185,7 @@
         )
         (TEXT
           (LABEL B15)
-          (POSITION 91440 5926)
+          (POSITION 15240 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -7071,13 +7193,13 @@
         (PORT
           (TYPE PIN)
           (NAME A2)
-          (POSITION 101600 0)
+          (POSITION 106680 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 16)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -7125,7 +7247,7 @@
         )
         (TEXT
           (LABEL A2)
-          (POSITION 101600 5926)
+          (POSITION 106680 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -7133,13 +7255,13 @@
         (PORT
           (TYPE PIN)
           (NAME B7)
-          (POSITION 106680 0)
+          (POSITION 111760 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 17)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -7187,7 +7309,7 @@
         )
         (TEXT
           (LABEL B7)
-          (POSITION 106680 5926)
+          (POSITION 111760 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -7195,13 +7317,13 @@
         (PORT
           (TYPE PIN)
           (NAME C4)
-          (POSITION 111760 0)
+          (POSITION 116840 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 18)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -7249,7 +7371,7 @@
         )
         (TEXT
           (LABEL C4)
-          (POSITION 111760 5926)
+          (POSITION 116840 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -7257,13 +7379,13 @@
         (PORT
           (TYPE PIN)
           (NAME C5)
-          (POSITION 116840 0)
+          (POSITION 121920 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 19)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -7311,7 +7433,7 @@
         )
         (TEXT
           (LABEL C5)
-          (POSITION 116840 5926)
+          (POSITION 121920 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -7319,13 +7441,13 @@
         (PORT
           (TYPE PIN)
           (NAME A15)
-          (POSITION 121920 0)
+          (POSITION 127000 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 20)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -7373,7 +7495,7 @@
         )
         (TEXT
           (LABEL A15)
-          (POSITION 121920 5926)
+          (POSITION 127000 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -7381,13 +7503,13 @@
         (PORT
           (TYPE PIN)
           (NAME B10)
-          (POSITION 127000 0)
+          (POSITION 132080 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 21)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -7435,7 +7557,7 @@
         )
         (TEXT
           (LABEL B10)
-          (POSITION 127000 5926)
+          (POSITION 132080 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -7443,13 +7565,13 @@
         (PORT
           (TYPE PIN)
           (NAME C12)
-          (POSITION 132080 0)
+          (POSITION 137160 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 22)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -7497,7 +7619,7 @@
         )
         (TEXT
           (LABEL C12)
-          (POSITION 132080 5926)
+          (POSITION 137160 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -7505,13 +7627,13 @@
         (PORT
           (TYPE PIN)
           (NAME D12)
-          (POSITION 137160 0)
+          (POSITION 142240 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 23)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -7559,7 +7681,7 @@
         )
         (TEXT
           (LABEL D12)
-          (POSITION 137160 5926)
+          (POSITION 142240 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -7567,13 +7689,13 @@
         (PORT
           (TYPE PIN)
           (NAME C14)
-          (POSITION 142240 0)
+          (POSITION 147320 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 24)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -7621,7 +7743,7 @@
         )
         (TEXT
           (LABEL C14)
-          (POSITION 142240 5926)
+          (POSITION 147320 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -7629,13 +7751,13 @@
         (PORT
           (TYPE PIN)
           (NAME C16)
-          (POSITION 147320 0)
+          (POSITION 152400 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 25)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -7683,7 +7805,7 @@
         )
         (TEXT
           (LABEL C16)
-          (POSITION 147320 5926)
+          (POSITION 152400 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -7691,13 +7813,13 @@
         (PORT
           (TYPE PIN)
           (NAME E13)
-          (POSITION 152400 0)
+          (POSITION 157480 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 26)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -7745,7 +7867,7 @@
         )
         (TEXT
           (LABEL E13)
-          (POSITION 152400 5926)
+          (POSITION 157480 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -7753,13 +7875,13 @@
         (PORT
           (TYPE PIN)
           (NAME G15)
-          (POSITION 157480 0)
+          (POSITION 162560 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 27)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -7807,7 +7929,7 @@
         )
         (TEXT
           (LABEL G15)
-          (POSITION 157480 5926)
+          (POSITION 162560 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -7815,13 +7937,13 @@
         (PORT
           (TYPE PIN)
           (NAME K15)
-          (POSITION 162560 0)
+          (POSITION 167640 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 28)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -7869,7 +7991,7 @@
         )
         (TEXT
           (LABEL K15)
-          (POSITION 162560 5926)
+          (POSITION 167640 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -7877,13 +7999,13 @@
         (PORT
           (TYPE PIN)
           (NAME M13)
-          (POSITION 167640 0)
+          (POSITION 172720 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 29)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -7931,7 +8053,7 @@
         )
         (TEXT
           (LABEL M13)
-          (POSITION 167640 5926)
+          (POSITION 172720 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -7939,13 +8061,13 @@
         (PORT
           (TYPE PIN)
           (NAME R16)
-          (POSITION 172720 0)
+          (POSITION 177800 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 30)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -7993,7 +8115,7 @@
         )
         (TEXT
           (LABEL R16)
-          (POSITION 172720 5926)
+          (POSITION 177800 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -8001,13 +8123,13 @@
         (PORT
           (TYPE PIN)
           (NAME C1)
-          (POSITION 177800 0)
+          (POSITION 182880 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 31)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -8055,7 +8177,7 @@
         )
         (TEXT
           (LABEL C1)
-          (POSITION 177800 5926)
+          (POSITION 182880 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -8063,13 +8185,13 @@
         (PORT
           (TYPE PIN)
           (NAME C3)
-          (POSITION 182880 0)
+          (POSITION 187960 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 32)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -8117,7 +8239,7 @@
         )
         (TEXT
           (LABEL C3)
-          (POSITION 182880 5926)
+          (POSITION 187960 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -8125,13 +8247,13 @@
         (PORT
           (TYPE PIN)
           (NAME E4)
-          (POSITION 187960 0)
+          (POSITION 193040 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 33)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -8179,7 +8301,7 @@
         )
         (TEXT
           (LABEL E4)
-          (POSITION 187960 5926)
+          (POSITION 193040 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -8187,13 +8309,13 @@
         (PORT
           (TYPE PIN)
           (NAME G2)
-          (POSITION 193040 0)
+          (POSITION 198120 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 34)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -8241,7 +8363,7 @@
         )
         (TEXT
           (LABEL G2)
-          (POSITION 193040 5926)
+          (POSITION 198120 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -8249,13 +8371,13 @@
         (PORT
           (TYPE PIN)
           (NAME K2)
-          (POSITION 198120 0)
+          (POSITION 203200 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 35)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -8303,7 +8425,7 @@
         )
         (TEXT
           (LABEL K2)
-          (POSITION 198120 5926)
+          (POSITION 203200 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -8311,13 +8433,13 @@
         (PORT
           (TYPE PIN)
           (NAME M4)
-          (POSITION 203200 0)
+          (POSITION 208280 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 36)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -8365,7 +8487,7 @@
         )
         (TEXT
           (LABEL M4)
-          (POSITION 203200 5926)
+          (POSITION 208280 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -8373,13 +8495,13 @@
         (PORT
           (TYPE PIN)
           (NAME R1)
-          (POSITION 208280 0)
+          (POSITION 213360 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 37)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -8427,7 +8549,7 @@
         )
         (TEXT
           (LABEL R1)
-          (POSITION 208280 5926)
+          (POSITION 213360 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -8435,13 +8557,13 @@
         (PORT
           (TYPE PIN)
           (NAME N14)
-          (POSITION 218440 0)
+          (POSITION 223520 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 38)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -8489,7 +8611,7 @@
         )
         (TEXT
           (LABEL N14)
-          (POSITION 218440 5926)
+          (POSITION 223520 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -8497,13 +8619,13 @@
         (PORT
           (TYPE PIN)
           (NAME P1)
-          (POSITION 223520 0)
+          (POSITION 228600 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 39)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -8551,7 +8673,7 @@
         )
         (TEXT
           (LABEL P1)
-          (POSITION 223520 5926)
+          (POSITION 228600 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -8559,13 +8681,13 @@
         (PORT
           (TYPE PIN)
           (NAME H6)
-          (POSITION 228600 0)
+          (POSITION 233680 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 40)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -8613,7 +8735,7 @@
         )
         (TEXT
           (LABEL H6)
-          (POSITION 228600 5926)
+          (POSITION 233680 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -8621,13 +8743,13 @@
         (PORT
           (TYPE PIN)
           (NAME L13)
-          (POSITION 233680 0)
+          (POSITION 238760 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 41)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -8675,7 +8797,7 @@
         )
         (TEXT
           (LABEL L13)
-          (POSITION 233680 5926)
+          (POSITION 238760 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -8683,13 +8805,13 @@
         (PORT
           (TYPE PIN)
           (NAME M12)
-          (POSITION 238760 0)
+          (POSITION 243840 0)
           (ROTATION 90)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 42)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -8737,7 +8859,7 @@
         )
         (TEXT
           (LABEL M12)
-          (POSITION 238760 5926)
+          (POSITION 243840 10160)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN CENTER)
@@ -8745,13 +8867,13 @@
         (PORT
           (TYPE PIN)
           (NAME A1)
-          (POSITION 35560 60960)
+          (POSITION 35560 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 43)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -8799,20 +8921,20 @@
         )
         (TEXT
           (LABEL A1)
-          (POSITION 35560 55034)
+          (POSITION 35560 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME A5)
-          (POSITION 40640 60960)
+          (POSITION 40640 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 44)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -8860,20 +8982,20 @@
         )
         (TEXT
           (LABEL A5)
-          (POSITION 40640 55034)
+          (POSITION 40640 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME A12)
-          (POSITION 45720 60960)
+          (POSITION 45720 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 45)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -8921,20 +9043,20 @@
         )
         (TEXT
           (LABEL A12)
-          (POSITION 45720 55034)
+          (POSITION 45720 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME A16)
-          (POSITION 50800 60960)
+          (POSITION 50800 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 46)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -8982,20 +9104,20 @@
         )
         (TEXT
           (LABEL A16)
-          (POSITION 50800 55034)
+          (POSITION 50800 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME C2)
-          (POSITION 55880 60960)
+          (POSITION 55880 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 47)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -9043,20 +9165,20 @@
         )
         (TEXT
           (LABEL C2)
-          (POSITION 55880 55034)
+          (POSITION 55880 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME C15)
-          (POSITION 60960 60960)
+          (POSITION 60960 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 48)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -9104,20 +9226,20 @@
         )
         (TEXT
           (LABEL C15)
-          (POSITION 60960 55034)
+          (POSITION 60960 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME E1)
-          (POSITION 66040 60960)
+          (POSITION 66040 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 49)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -9165,20 +9287,20 @@
         )
         (TEXT
           (LABEL E1)
-          (POSITION 66040 55034)
+          (POSITION 66040 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME E7)
-          (POSITION 71120 60960)
+          (POSITION 71120 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 50)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -9226,20 +9348,20 @@
         )
         (TEXT
           (LABEL E7)
-          (POSITION 71120 55034)
+          (POSITION 71120 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME E10)
-          (POSITION 76200 60960)
+          (POSITION 76200 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 51)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -9287,20 +9409,20 @@
         )
         (TEXT
           (LABEL E10)
-          (POSITION 76200 55034)
+          (POSITION 76200 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME E16)
-          (POSITION 81280 60960)
+          (POSITION 81280 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 52)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -9348,20 +9470,20 @@
         )
         (TEXT
           (LABEL E16)
-          (POSITION 81280 55034)
+          (POSITION 81280 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME G5)
-          (POSITION 86360 60960)
+          (POSITION 86360 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 53)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -9409,20 +9531,20 @@
         )
         (TEXT
           (LABEL G5)
-          (POSITION 86360 55034)
+          (POSITION 86360 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME G7)
-          (POSITION 91440 60960)
+          (POSITION 91440 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 54)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -9470,20 +9592,20 @@
         )
         (TEXT
           (LABEL G7)
-          (POSITION 91440 55034)
+          (POSITION 91440 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME G9)
-          (POSITION 96520 60960)
+          (POSITION 96520 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 55)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -9531,20 +9653,20 @@
         )
         (TEXT
           (LABEL G9)
-          (POSITION 96520 55034)
+          (POSITION 96520 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME G12)
-          (POSITION 101600 60960)
+          (POSITION 101600 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 56)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -9592,20 +9714,20 @@
         )
         (TEXT
           (LABEL G12)
-          (POSITION 101600 55034)
+          (POSITION 101600 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME H8)
-          (POSITION 106680 60960)
+          (POSITION 106680 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 57)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -9653,20 +9775,20 @@
         )
         (TEXT
           (LABEL H8)
-          (POSITION 106680 55034)
+          (POSITION 106680 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME H10)
-          (POSITION 111760 60960)
+          (POSITION 111760 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 58)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -9714,20 +9836,20 @@
         )
         (TEXT
           (LABEL H10)
-          (POSITION 111760 55034)
+          (POSITION 111760 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME J7)
-          (POSITION 116840 60960)
+          (POSITION 116840 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 59)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -9775,20 +9897,20 @@
         )
         (TEXT
           (LABEL J7)
-          (POSITION 116840 55034)
+          (POSITION 116840 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME J9)
-          (POSITION 121920 60960)
+          (POSITION 121920 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 60)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -9836,20 +9958,20 @@
         )
         (TEXT
           (LABEL J9)
-          (POSITION 121920 55034)
+          (POSITION 121920 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME K5)
-          (POSITION 127000 60960)
+          (POSITION 127000 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 61)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -9897,20 +10019,20 @@
         )
         (TEXT
           (LABEL K5)
-          (POSITION 127000 55034)
+          (POSITION 127000 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME K8)
-          (POSITION 132080 60960)
+          (POSITION 132080 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 62)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -9958,20 +10080,20 @@
         )
         (TEXT
           (LABEL K8)
-          (POSITION 132080 55034)
+          (POSITION 132080 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME K10)
-          (POSITION 137160 60960)
+          (POSITION 137160 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 63)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -10019,20 +10141,20 @@
         )
         (TEXT
           (LABEL K10)
-          (POSITION 137160 55034)
+          (POSITION 137160 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME K12)
-          (POSITION 142240 60960)
+          (POSITION 142240 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 64)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -10080,20 +10202,20 @@
         )
         (TEXT
           (LABEL K12)
-          (POSITION 142240 55034)
+          (POSITION 142240 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME M1)
-          (POSITION 147320 60960)
+          (POSITION 147320 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 65)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -10141,20 +10263,20 @@
         )
         (TEXT
           (LABEL M1)
-          (POSITION 147320 55034)
+          (POSITION 147320 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME M16)
-          (POSITION 152400 60960)
+          (POSITION 152400 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 66)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -10202,20 +10324,20 @@
         )
         (TEXT
           (LABEL M16)
-          (POSITION 152400 55034)
+          (POSITION 152400 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME P2)
-          (POSITION 157480 60960)
+          (POSITION 157480 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 67)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -10263,20 +10385,20 @@
         )
         (TEXT
           (LABEL P2)
-          (POSITION 157480 55034)
+          (POSITION 157480 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME P16)
-          (POSITION 162560 60960)
+          (POSITION 162560 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 68)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -10324,20 +10446,20 @@
         )
         (TEXT
           (LABEL P16)
-          (POSITION 162560 55034)
+          (POSITION 162560 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME T1)
-          (POSITION 167640 60960)
+          (POSITION 167640 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 69)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -10385,20 +10507,20 @@
         )
         (TEXT
           (LABEL T1)
-          (POSITION 167640 55034)
+          (POSITION 167640 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME T16)
-          (POSITION 172720 60960)
+          (POSITION 172720 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 70)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -10446,20 +10568,20 @@
         )
         (TEXT
           (LABEL T16)
-          (POSITION 172720 55034)
+          (POSITION 172720 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME L7)
-          (POSITION 177800 60960)
+          (POSITION 177800 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 71)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -10507,20 +10629,20 @@
         )
         (TEXT
           (LABEL L7)
-          (POSITION 177800 55034)
+          (POSITION 177800 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME N12)
-          (POSITION 182880 60960)
+          (POSITION 182880 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 72)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -10568,20 +10690,20 @@
         )
         (TEXT
           (LABEL N12)
-          (POSITION 182880 55034)
+          (POSITION 182880 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME P3)
-          (POSITION 187960 60960)
+          (POSITION 187960 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 73)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -10629,20 +10751,20 @@
         )
         (TEXT
           (LABEL P3)
-          (POSITION 187960 55034)
+          (POSITION 187960 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME P9)
-          (POSITION 193040 60960)
+          (POSITION 193040 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 74)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -10690,20 +10812,20 @@
         )
         (TEXT
           (LABEL P9)
-          (POSITION 193040 55034)
+          (POSITION 193040 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME P14)
-          (POSITION 198120 60960)
+          (POSITION 198120 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 75)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -10751,20 +10873,20 @@
         )
         (TEXT
           (LABEL P14)
-          (POSITION 198120 55034)
+          (POSITION 198120 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME T13)
-          (POSITION 203200 60960)
+          (POSITION 203200 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 76)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -10812,20 +10934,20 @@
         )
         (TEXT
           (LABEL T13)
-          (POSITION 203200 55034)
+          (POSITION 203200 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME H5)
-          (POSITION 208280 60960)
+          (POSITION 208280 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 77)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -10873,517 +10995,515 @@
         )
         (TEXT
           (LABEL H5)
-          (POSITION 208280 55034)
+          (POSITION 208280 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (TEXT
           (PINNUMBER B1)
-          (POSITION 4572 0)
+          (POSITION 9652 71120)
           (ANGLE 270)
-          (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER B16)
-          (POSITION 9652 0)
+          (POSITION 14732 71120)
           (ANGLE 270)
-          (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER N5)
-          (POSITION 19812 0)
-          (ANGLE 270)
-          (HALIGN RIGHT)
-          (VALIGN BOTTOM)
-        )
-        (TEXT
-          (PINNUMBER N13)
           (POSITION 24892 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER N4)
+          (PINNUMBER N13)
           (POSITION 29972 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER G8)
-          (POSITION 40132 0)
+          (PINNUMBER N4)
+          (POSITION 35052 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER G10)
+          (PINNUMBER G8)
           (POSITION 45212 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER H7)
+          (PINNUMBER G10)
           (POSITION 50292 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER H9)
+          (PINNUMBER H7)
           (POSITION 55372 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER J8)
+          (PINNUMBER H9)
           (POSITION 60452 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER J10)
+          (PINNUMBER J8)
           (POSITION 65532 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER K7)
+          (PINNUMBER J10)
           (POSITION 70612 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER K9)
+          (PINNUMBER K7)
           (POSITION 75692 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
+          (PINNUMBER K9)
+          (POSITION 80772 0)
+          (ANGLE 270)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
           (PINNUMBER B2)
-          (POSITION 85852 0)
+          (POSITION 9652 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER B15)
-          (POSITION 90932 0)
+          (POSITION 14732 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER A2)
-          (POSITION 101092 0)
-          (ANGLE 270)
-          (HALIGN RIGHT)
-          (VALIGN BOTTOM)
-        )
-        (TEXT
-          (PINNUMBER B7)
           (POSITION 106172 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER C4)
+          (PINNUMBER B7)
           (POSITION 111252 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER C5)
+          (PINNUMBER C4)
           (POSITION 116332 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER A15)
+          (PINNUMBER C5)
           (POSITION 121412 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER B10)
+          (PINNUMBER A15)
           (POSITION 126492 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER C12)
+          (PINNUMBER B10)
           (POSITION 131572 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER D12)
+          (PINNUMBER C12)
           (POSITION 136652 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER C14)
+          (PINNUMBER D12)
           (POSITION 141732 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER C16)
+          (PINNUMBER C14)
           (POSITION 146812 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER E13)
+          (PINNUMBER C16)
           (POSITION 151892 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER G15)
+          (PINNUMBER E13)
           (POSITION 156972 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER K15)
+          (PINNUMBER G15)
           (POSITION 162052 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER M13)
+          (PINNUMBER K15)
           (POSITION 167132 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER R16)
+          (PINNUMBER M13)
           (POSITION 172212 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER C1)
+          (PINNUMBER R16)
           (POSITION 177292 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER C3)
+          (PINNUMBER C1)
           (POSITION 182372 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER E4)
+          (PINNUMBER C3)
           (POSITION 187452 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER G2)
+          (PINNUMBER E4)
           (POSITION 192532 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER K2)
+          (PINNUMBER G2)
           (POSITION 197612 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER M4)
+          (PINNUMBER K2)
           (POSITION 202692 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER R1)
+          (PINNUMBER M4)
           (POSITION 207772 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER N14)
-          (POSITION 217932 0)
+          (PINNUMBER R1)
+          (POSITION 212852 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER P1)
+          (PINNUMBER N14)
           (POSITION 223012 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER H6)
+          (PINNUMBER P1)
           (POSITION 228092 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER L13)
+          (PINNUMBER H6)
           (POSITION 233172 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER M12)
+          (PINNUMBER L13)
           (POSITION 238252 0)
           (ANGLE 270)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
+          (PINNUMBER M12)
+          (POSITION 243332 0)
+          (ANGLE 270)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
           (PINNUMBER A1)
-          (POSITION 35052 60960)
+          (POSITION 35052 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER A5)
-          (POSITION 40132 60960)
+          (POSITION 40132 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER A12)
-          (POSITION 45212 60960)
+          (POSITION 45212 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER A16)
-          (POSITION 50292 60960)
+          (POSITION 50292 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER C2)
-          (POSITION 55372 60960)
+          (POSITION 55372 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER C15)
-          (POSITION 60452 60960)
+          (POSITION 60452 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER E1)
-          (POSITION 65532 60960)
+          (POSITION 65532 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER E7)
-          (POSITION 70612 60960)
+          (POSITION 70612 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER E10)
-          (POSITION 75692 60960)
+          (POSITION 75692 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER E16)
-          (POSITION 80772 60960)
+          (POSITION 80772 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER G5)
-          (POSITION 85852 60960)
+          (POSITION 85852 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER G7)
-          (POSITION 90932 60960)
+          (POSITION 90932 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER G9)
-          (POSITION 96012 60960)
+          (POSITION 96012 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER G12)
-          (POSITION 101092 60960)
+          (POSITION 101092 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER H8)
-          (POSITION 106172 60960)
+          (POSITION 106172 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER H10)
-          (POSITION 111252 60960)
+          (POSITION 111252 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER J7)
-          (POSITION 116332 60960)
+          (POSITION 116332 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER J9)
-          (POSITION 121412 60960)
+          (POSITION 121412 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER K5)
-          (POSITION 126492 60960)
+          (POSITION 126492 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER K8)
-          (POSITION 131572 60960)
+          (POSITION 131572 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER K10)
-          (POSITION 136652 60960)
+          (POSITION 136652 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER K12)
-          (POSITION 141732 60960)
+          (POSITION 141732 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER M1)
-          (POSITION 146812 60960)
+          (POSITION 146812 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER M16)
-          (POSITION 151892 60960)
+          (POSITION 151892 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER P2)
-          (POSITION 156972 60960)
+          (POSITION 156972 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER P16)
-          (POSITION 162052 60960)
+          (POSITION 162052 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER T1)
-          (POSITION 167132 60960)
+          (POSITION 167132 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER T16)
-          (POSITION 172212 60960)
+          (POSITION 172212 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER L7)
-          (POSITION 177292 60960)
+          (POSITION 177292 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER N12)
-          (POSITION 182372 60960)
+          (POSITION 182372 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER P3)
-          (POSITION 187452 60960)
+          (POSITION 187452 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER P9)
-          (POSITION 192532 60960)
+          (POSITION 192532 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER P14)
-          (POSITION 197612 60960)
+          (POSITION 197612 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER T13)
-          (POSITION 202692 60960)
+          (POSITION 202692 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (PINNUMBER H5)
-          (POSITION 207772 60960)
+          (POSITION 207772 71120)
           (ANGLE 270)
           (VALIGN BOTTOM)
         )
         (TEXT
           (STRING roach_AFS600_powerpins)
-          (POSITION 124460 30480)
+          (POSITION 129540 30480)
           (HALIGN CENTER)
           (VALIGN BOTTOM)
           (FONT FONT_0 12)
@@ -11399,13 +11519,13 @@
         (PORT
           (TYPE PIN)
           (NAME T14)
-          (POSITION 5080 60960)
+          (POSITION 25400 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 78)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -11453,19 +11573,19 @@
         )
         (TEXT
           (LABEL T14)
-          (POSITION 5080 55034)
+          (POSITION 25400 60960)
           (ANGLE 270)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME R2)
-          (POSITION -5080 20320)
-          (LENGTH 5080)
+          (POSITION -5080 30480)
+          (LENGTH 10160)
           (SLOT 79)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -11513,18 +11633,18 @@
         )
         (TEXT
           (LABEL R2)
-          (POSITION 846 20320)
+          (POSITION 5080 30480)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME T2)
-          (POSITION -5080 30480)
-          (LENGTH 5080)
+          (POSITION -5080 40640)
+          (LENGTH 10160)
           (SLOT 80)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -11572,19 +11692,19 @@
         )
         (TEXT
           (LABEL T2)
-          (POSITION 846 30480)
+          (POSITION 5080 40640)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME P15)
-          (POSITION 254000 30480)
+          (POSITION 264160 30480)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 81)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -11632,20 +11752,20 @@
         )
         (TEXT
           (LABEL P15)
-          (POSITION 248074 30480)
+          (POSITION 254000 30480)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME L11)
-          (POSITION 254000 35560)
+          (POSITION 264160 35560)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 82)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -11693,20 +11813,20 @@
         )
         (TEXT
           (LABEL L11)
-          (POSITION 248074 35560)
+          (POSITION 254000 35560)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME R15)
-          (POSITION 254000 50800)
+          (POSITION 264160 50800)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 83)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -11754,20 +11874,20 @@
         )
         (TEXT
           (LABEL R15)
-          (POSITION 248074 50800)
+          (POSITION 254000 50800)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME T15)
-          (POSITION 254000 15240)
+          (POSITION 264160 15240)
           (ROTATION 180)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 84)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -11815,20 +11935,20 @@
         )
         (TEXT
           (LABEL T15)
-          (POSITION 248074 15240)
+          (POSITION 254000 15240)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE PIN)
           (NAME T3)
-          (POSITION 223520 60960)
+          (POSITION 223520 71120)
           (ROTATION 270)
-          (LENGTH 5080)
+          (LENGTH 10160)
           (SLOT 85)
           (ELEMENTS
             (LINE
-              (POINTS 0 0 5080 0)
+              (POINTS 0 0 10160 0)
             )
           )
           (ATTRIBUTES
@@ -11876,9 +11996,55 @@
         )
         (TEXT
           (LABEL T3)
-          (POSITION 223520 55034)
+          (POSITION 223520 60960)
           (ANGLE 270)
           (VALIGN CENTER)
+        )
+        (TEXT
+          (PINNUMBER P15)
+          (POSITION 264160 29972)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER L11)
+          (POSITION 264160 35052)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER R15)
+          (POSITION 264160 50292)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER T15)
+          (POSITION 264160 14732)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER T3)
+          (POSITION 223012 71120)
+          (ANGLE 270)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER T14)
+          (POSITION 24892 71120)
+          (ANGLE 270)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER R2)
+          (POSITION -5080 29972)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER T2)
+          (POSITION -5080 40132)
+          (VALIGN BOTTOM)
         )
       )
       (ATTRIBUTES
