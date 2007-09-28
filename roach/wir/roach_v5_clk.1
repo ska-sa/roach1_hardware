@@ -1,8 +1,30 @@
 | Wirelist created using version 5.4.
+| Sch_Warning - Component $1I33 (X?), Symbol=clkosc_6pin at (830, 630), is not connected.
 V 5.4
 K 297973648400 roach_v5_clk
 DW roach_v5_clk
 Q Case
+|Q clkosc_6pin 1
+AS clkosc_6pin NC=2
+AS clkosc_6pin PKG_TYPE=SMDCLK
+AS clkosc_6pin LEVEL=STD
+AS clkosc_6pin PARTS=1
+AS clkosc_6pin DEVICE=SMDCLK
+AS clkosc_6pin P/D_NUM=P/D_NUM
+AS clkosc_6pin VALUE=UNKNOWN
+AS clkosc_6pin REFDES=X?
+AS clkosc_6pin PINORDER=GND OE OUT OUT# VCC
+AS clkosc_6pin INOV_VER_REC=7:56_2-1-07
+AP clkosc_6pin 1 #=3
+AP clkosc_6pin 1 PINTYPE=ANALOG
+AP clkosc_6pin 2 #=1
+AP clkosc_6pin 2 PINTYPE=IN
+AP clkosc_6pin 3 #=4
+AP clkosc_6pin 3 PINTYPE=OUT
+AP clkosc_6pin 4 #=5
+AP clkosc_6pin 4 PINTYPE=OUT
+AP clkosc_6pin 5 #=6
+AP clkosc_6pin 5 PINTYPE=ANALOG
 |Q roach_sys_clk 1
 AS roach_sys_clk HETERO_SYMNAME=ROACH
 AS roach_sys_clk HETERO=(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)
@@ -277,6 +299,13 @@ AP c 2 PINTYPE=BI
 AP c 2 #=2
 G GND
 G 2V5
+M clkosc_6pin $1I33
+I $1I33 clkosc_6pin ? ? ? ? ? VALUE=156.25MHZ`REFDES=X?`P/D_NUM=CCLD-023-25-156.250`PKG_TYPE=OSCSC254P525X720X180-6N`MANUFACTURER=CRYSTEK`
+API $1I33 clkosc_6pin 1 #=3
+API $1I33 clkosc_6pin 2 #=1
+API $1I33 clkosc_6pin 3 #=4
+API $1I33 clkosc_6pin 4 #=5
+API $1I33 clkosc_6pin 5 #=6
 M roach_sys_clk $1I10
 I $1I10 roach_sys_clk 2V5 2V5 DLY_CLK_200_N DLY_CLK_200_P GPIO_CLK0_N GPIO_CLK0_P GPIO_CLK1_N GPIO_CLK1_P SYS_CLK_N SYS_CLK_P MANUFACTURER=XILINX`NC=U4,U5`P/D_NUM=XC5VSX95T`PARTS=1`REFDES=U?`
 API $1I10 roach_sys_clk 1 #=D23

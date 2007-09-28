@@ -3,9 +3,6 @@ V 5.4
 K 29591324190 roach_top
 DW roach_top
 Q Case
-|Q roach_v5_clk 1
-AS roach_v5_clk DEVICE=ROACH_V5_CLK
-AS roach_v5_clk INOV_VER_REC=11:38_9-28-07
 |Q roach_adc_1 1
 AS roach_adc_1 DEVICE=ROACH_ADC_1
 AS roach_adc_1 INOV_VER_REC=11:43_9-28-07
@@ -24,9 +21,6 @@ AS roach_ddr2_dimm INOV_VER_REC=11:39_9-28-07
 |Q roach_transceivers2_3 1
 AS roach_transceivers2_3 DEVICE=ROACH_TRANSCEIVERS2_3
 AS roach_transceivers2_3 INOV_VER_REC=11:41_9-28-07
-|Q roach_transceivers0_1 1
-AS roach_transceivers0_1 DEVICE=ROACH_TRANSCEIVERS0_1
-AS roach_transceivers0_1 INOV_VER_REC=11:40_9-28-07
 |Q hole150x288 1
 AS hole150x288 DEVICE=HOLE150X288
 AS hole150x288 PARTS=1
@@ -302,13 +296,17 @@ AP roach_ppc_nvm_serial 24 PINTYPE=OUT
 |Q roach_5v_power 1
 AS roach_5v_power DEVICE=ROACH_5V_POWER
 AS roach_5v_power INOV_VER_REC=11:36_9-28-07
+|Q roach_v5_clk 1
+AS roach_v5_clk DEVICE=ROACH_V5_CLK
+AS roach_v5_clk INOV_VER_REC=11:38_9-28-07
+|Q roach_transceivers0_1 1
+AS roach_transceivers0_1 DEVICE=ROACH_TRANSCEIVERS0_1
+AS roach_transceivers0_1 INOV_VER_REC=11:40_9-28-07
 AN PADD[27:31] VLBUSISONSHEET=1
 AN PDATA[0:7] VLBUSISONSHEET=1
 AN PADD[2:31] VLBUSISONSHEET=1
 AN PDATA[0:31] VLBUSISONSHEET=1
 G GND
-W roach_v5_clk $1I291
-I $1I291 roach_v5_clk LABEL=ROACH_V5_CLK`SHEET=_`
 W roach_adc_1 $1I5
 I $1I5 roach_adc_1 LABEL=ROACH_ADC_1`SHEET=_`
 W roach_adc_0 $1I4
@@ -321,8 +319,6 @@ W roach_ddr2_dimm $1I6
 I $1I6 roach_ddr2_dimm LABEL=ROACH_DDR2_DIMM`SHEET=_`
 W roach_transceivers2_3 $1I3
 I $1I3 roach_transceivers2_3 LABEL=ROACH_TRANSCEIVERS2_3`SHEET=_`
-W roach_transceivers0_1 $1I2
-I $1I2 roach_transceivers0_1 LABEL=ROACH_TRANSCEIVERS0_1`SHEET=_`
 M hole150x288 $1I314
 I $1I314 hole150x288 GND REFDES=H?`
 API $1I314 hole150x288 1 #=1
@@ -382,4 +378,8 @@ W roach_ppc_nvm_serial $1I447
 I $1I447 roach_ppc_nvm_serial CLK_UART_11.0592MHZ RESET_CPLD# M66EN RESET_POR# EXT_RESET# BOOT_CFG2 BOOT_CFG1 BOOT_CFG0 EE2_BOOT_WP EE1_WP PADD[2:31] PDATA[0:31] PCS_2 POE# PR_W# PWBE_0# CLK_PERCLK FWP# FRY_BY# STTM_AS SCPCLK STTM_ALERT SCPDI SCPDO 
 W roach_5v_power $1I307
 I $1I307 roach_5v_power LABEL=ROACH_5V_POWER`SHEET=_`
+W roach_v5_clk $1I291
+I $1I291 roach_v5_clk LABEL=ROACH_V5_CLK`SHEET=_`
+W roach_transceivers0_1 $1I2
+I $1I2 roach_transceivers0_1 LABEL=ROACH_TRANSCEIVERS0_1`SHEET=_`
 EW
