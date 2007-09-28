@@ -1,574 +1,565 @@
 ** ECO In Report **
 
-Thu Sep 27 19:01:43 2007
+Fri Sep 28 11:33:47 2007
 
 Input  File : D:\ROACH\elec\roach\roach_top.eco
 Current Job : default.pcb
 
 
 
-Line 80 , Section *PART*
+Line 11 , Section *PART*
 P1  CON_PCI_F_VT_3R3V_KEY_32BIT
 * Failed to get 145154-4 from library
 
-Line 81 , Section *PART*
-Q10  FDS6675BZ
+Line 12 , Section *PART*
+Q4  FDS6675BZ
 * Failed to get SO-8 from library
 
-Line 82 , Section *PART*
-Q11  FDS6675BZ
+Line 13 , Section *PART*
+Q5  FDS6675BZ
 * Failed to get SO-8 from library
 
-Line 83 , Section *PART*
-Q9  FDS6675BZ
+Line 14 , Section *PART*
+Q6  FDS6675BZ
 * Failed to get SO-8 from library
 
-Line 86 , Section *PART*
+Line 15 , Section *PART*
+J13  HD2X1
+* Failed to get HD_TH_2X1 from library
+
+Line 16 , Section *PART*
+J14  HD2X1
+* Failed to get HD_TH_2X1 from library
+
+Line 17 , Section *PART*
+J15  HD2X1
+* Failed to get HD_TH_2X1 from library
+
+Line 18 , Section *PART*
+J18  HD2X1
+* Failed to get HD_TH_2X1 from library
+
+Line 19 , Section *PART*
+J19  HD2X1
+* Failed to get HD_TH_2X1 from library
+
+Line 20 , Section *PART*
 J20  HD2X1
 * Failed to get HD_TH_2X1 from library
 
-Line 87 , Section *PART*
+Line 21 , Section *PART*
 J21  HD2X1
 * Failed to get HD_TH_2X1 from library
 
-Line 88 , Section *PART*
+Line 22 , Section *PART*
 J22  HD2X1
 * Failed to get HD_TH_2X1 from library
 
-Line 89 , Section *PART*
+Line 23 , Section *PART*
 J23  HD2X1
 * Failed to get HD_TH_2X1 from library
 
-Line 90 , Section *PART*
+Line 24 , Section *PART*
 J24  HD2X1
 * Failed to get HD_TH_2X1 from library
 
-Line 91 , Section *PART*
+Line 25 , Section *PART*
 J25  HD2X1
 * Failed to get HD_TH_2X1 from library
 
-Line 92 , Section *PART*
+Line 26 , Section *PART*
 J26  HD2X1
 * Failed to get HD_TH_2X1 from library
 
-Line 93 , Section *PART*
+Line 27 , Section *PART*
 J27  HD2X1
 * Failed to get HD_TH_2X1 from library
 
-Line 94 , Section *PART*
+Line 28 , Section *PART*
 J28  HD2X1
 * Failed to get HD_TH_2X1 from library
 
-Line 95 , Section *PART*
+Line 29 , Section *PART*
 J29  HD2X1
 * Failed to get HD_TH_2X1 from library
 
-Line 96 , Section *PART*
+Line 30 , Section *PART*
 J30  HD2X1
 * Failed to get HD_TH_2X1 from library
 
-Line 97 , Section *PART*
-J31  HD2X1
-* Failed to get HD_TH_2X1 from library
-
-Line 98 , Section *PART*
-J32  HD2X1
-* Failed to get HD_TH_2X1 from library
-
-Line 99 , Section *PART*
-J33  HD2X1
-* Failed to get HD_TH_2X1 from library
-
-Line 100 , Section *PART*
-J34  HD2X1
-* Failed to get HD_TH_2X1 from library
-
-Line 101 , Section *PART*
-J35  HD2X1
-* Failed to get HD_TH_2X1 from library
-
-Line 102 , Section *PART*
-J36  HD3X1
+Line 31 , Section *PART*
+J31  HD3X1
 * Failed to get HD_TH_3X1 from library
 
-Line 103 , Section *PART*
-J18  JTAG-10PIN
+Line 32 , Section *PART*
+J10  HD5X2
 * Failed to get 3M2510_6002UB from library
 
-Line 111 , Section *PART*
-J11  OST_ED1516
+Line 33 , Section *PART*
+J11  JTAG-10PIN
+* Failed to get 3M2510_6002UB from library
+
+Line 34 , Section *PART*
+J33  OST_ED1516
 * Failed to get OST_ED1516 from library
 
-Line 112 , Section *PART*
+Line 35 , Section *PART*
 TP1  PAD_1MM_SMT
 * Failed to get TP_SMT_1MM from library
 
-Line 137 , Section *PART*
-U61  ROACH_AFS600
-* Failed to get BGA256C100P16X16_1700X1700X170 from library
+Line 36 , Section *PART*
+U38  ROACH_AFS600
+* Component name U38. Decal BGA256C100P16X16_1700X1700X170 doesn't have terminals H3,H4,C7,R12,... presented in Part Type ROACH_AFS600.
 
-Line 145 , Section *PART*
+Line 37 , Section *PART*
 X3  TZ0614A
 * Failed to get OSCCC425P320X500X90-4N from library
 
-Line 146 , Section *PART*
-J19  XPORT
+Line 38 , Section *PART*
+J12  XPORT
 * Failed to get XP100100X_03R from library
 
-Line 166 , Section *SPLITNET*
-* WARNING: Splitting a Net 12V in desired fashion requires deletion of more than one connection
-* Deleting connection L17.1-J12.10 ...
-* Deleting connection J12.11-PTC1.2 ...
-* Deleting connection PTC1.2-FH3.2 ...
-* Deleting connection FH3.2-U7.4 ...
-* WARNING: Added connection between L17.1 PTC1.2 to keep continuity of net 12V
-* WARNING: Added connection between PTC1.2 U7.4 to keep continuity of net 12V
-* WARNING: Added connection between J12.11 FH3.2 to keep continuity of net 12V_ATX
+Line 41 , Section *NET*
+J10.3  U39.9
+* Part name J10 not found
 
-Line 177 , Section *SPLITNET*
-* WARNING: Splitting a Net 5V in desired fashion requires deletion of more than one connection
-* Deleting connection U7.2-FH4.2 ...
-* Deleting connection FH4.2-U2.21 ...
-* Deleting connection U2.21-J12.21 ...
-* Deleting connection J12.23-Q1.3 ...
-* Deleting connection Q2.3-J12.4 ...
-* Deleting connection J12.6-U3.7 ...
-* WARNING: Added connection between U7.2 U2.21 to keep continuity of net 5V
-* WARNING: Added connection between U2.21 Q1.3 to keep continuity of net 5V
-* WARNING: Added connection between Q2.3 U3.7 to keep continuity of net 5V
-* WARNING: Added connection between FH4.2 J12.21 to keep continuity of net 5V_ATX
-* WARNING: Added connection between J12.23 J12.4 to keep continuity of net 5V_ATX
+Line 43 , Section *NET*
+J10.5  U39.8
+* Part name J10 not found
 
-Line 224 , Section *NET*
-FH5.1  J11.3
-* Part name J11 not found
+Line 45 , Section *NET*
+U38.R5
+* Part name U38 not found
 
-Line 226 , Section *NET*
-FH4.1  J11.2
-* Part name J11 not found
-
-Line 228 , Section *NET*
-J11.1  FH3.1
-* Part name J11 not found
-
-Line 246 , Section *NET*
-R266.1  R265.2  U61.R5
-* Part name U61 not found
-
-Line 252 , Section *NET*
-J36.1  R259.1
-* Part name J36 not found
-
-Line 254 , Section *NET*
-J21.1  R261.1
-* Part name J21 not found
-
-Line 256 , Section *NET*
-Q9.1  Q9.2  R262.2  R264.2  Q9.3
-* Part name Q9 not found
-* Part name Q9 not found
-* Part name Q9 not found
-
-Line 258 , Section *NET*
-R264.1  R263.2  U61.L8
-* Part name U61 not found
-
-Line 260 , Section *NET*
-Q9.4  U61.P7
-* Part name Q9 not found
-* Part name U61 not found
-
-Line 262 , Section *NET*
-R258.1  U60.9  U61.M5
-* Part name U61 not found
-
-Line 264 , Section *NET*
-Q11.1  Q11.2  R268.2  Q11.3  U61.M9
-* Part name Q11 not found
-* Part name Q11 not found
-* Part name Q11 not found
-* Part name U61 not found
-
-Line 266 , Section *NET*
-Q11.4  U61.P8
-* Part name Q11 not found
-* Part name U61 not found
-
-Line 268 , Section *NET*
-Q10.1  Q10.2  R267.2  Q10.3  U61.N7
-* Part name Q10 not found
-* Part name Q10 not found
-* Part name Q10 not found
-* Part name U61 not found
-
-Line 270 , Section *NET*
-Q10.4  U61.M8
-* Part name Q10 not found
-* Part name U61 not found
-
-Line 272 , Section *NET*
-J34.1  U61.N8
-* Part name J34 not found
-* Part name U61 not found
-
-Line 274 , Section *NET*
-J35.1  U61.N10
-* Part name J35 not found
-* Part name U61 not found
-
-Line 276 , Section *NET*
-J22.2  J23.2  U61.T4
-* Part name J22 not found
-* Part name J23 not found
-* Part name U61 not found
-
-Line 278 , Section *NET*
-J24.2  J25.2  U61.T6
-* Part name J24 not found
-* Part name J25 not found
-* Part name U61 not found
-
-Line 280 , Section *NET*
-J26.2  J27.2  U61.T8
-* Part name J26 not found
-* Part name J27 not found
-* Part name U61 not found
-
-Line 282 , Section *NET*
-J28.2  J29.2  U61.T10
-* Part name J28 not found
-* Part name J29 not found
-* Part name U61 not found
-
-Line 284 , Section *NET*
-J30.2  J31.2  U61.T12
-* Part name J30 not found
+Line 47 , Section *NET*
+J31.1  R204.1
 * Part name J31 not found
-* Part name U61 not found
 
-Line 286 , Section *NET*
-J32.1  U61.M6
-* Part name J32 not found
-* Part name U61 not found
+Line 49 , Section *NET*
+J14.1  R206.1
+* Part name J14 not found
 
-Line 288 , Section *NET*
-J33.1  U61.P6
-* Part name J33 not found
-* Part name U61 not found
+Line 51 , Section *NET*
+Q4.1  Q4.2  Q4.3
+* Part name Q4 not found
+* Part name Q4 not found
+* Part name Q4 not found
 
-Line 290 , Section *NET*
-J36.3  U61.N2
-* Part name J36 not found
-* Part name U61 not found
+Line 53 , Section *NET*
+U38.L8
+* Part name U38 not found
 
-Line 292 , Section *NET*
-J21.2  U61.D1
-* Part name J21 not found
-* Part name U61 not found
+Line 55 , Section *NET*
+R192.2  Q4.4  U38.P7
+* Part name Q4 not found
+* Part name U38 not found
 
-Line 294 , Section *NET*
-J20.1  R260.1  U61.N1
+Line 57 , Section *NET*
+U38.M5
+* Part name U38 not found
+
+Line 59 , Section *NET*
+Q6.1  Q6.2  Q6.3  U38.M9
+* Part name Q6 not found
+* Part name Q6 not found
+* Part name Q6 not found
+* Part name U38 not found
+
+Line 61 , Section *NET*
+R194.2  Q6.4  U38.P8
+* Part name Q6 not found
+* Part name U38 not found
+
+Line 63 , Section *NET*
+Q5.1  Q5.2  Q5.3  U38.N7
+* Part name Q5 not found
+* Part name Q5 not found
+* Part name Q5 not found
+* Part name U38 not found
+
+Line 65 , Section *NET*
+R193.2  Q5.4  U38.M8
+* Part name Q5 not found
+* Part name U38 not found
+
+Line 67 , Section *NET*
+J29.1  U38.N8
+* Part name J29 not found
+* Part name U38 not found
+
+Line 69 , Section *NET*
+J30.1  U38.N10
+* Part name J30 not found
+* Part name U38 not found
+
+Line 71 , Section *NET*
+J15.2  J18.2  U38.T4
+* Part name J15 not found
+* Part name J18 not found
+* Part name U38 not found
+
+Line 73 , Section *NET*
+J19.2  J20.2  U38.T6
+* Part name J19 not found
 * Part name J20 not found
-* Part name U61 not found
+* Part name U38 not found
 
-Line 296 , Section *NET*
-R274.2  SW6.2  U61.C13
-* Part name U61 not found
-
-Line 298 , Section *NET*
-C671.2  U61.T2
-* Part name U61 not found
-
-Line 300 , Section *NET*
-C671.1  U61.R2
-* Part name U61 not found
-
-Line 302 , Section *NET*
-Q8.1  U61.P15
-* Part name U61 not found
-
-Line 304 , Section *NET*
-SW5.2  U61.R15
-* Part name U61 not found
-
-Line 306 , Section *NET*
-J19.6  U61.D7
-* Part name J19 not found
-* Part name U61 not found
-
-Line 308 , Section *NET*
-J19.7  U61.D6
-* Part name J19 not found
-* Part name U61 not found
-
-Line 310 , Section *NET*
-J19.8  U61.C6
-* Part name J19 not found
-* Part name U61 not found
-
-Line 312 , Section *NET*
-J19.4  U61.D9
-* Part name J19 not found
-* Part name U61 not found
-
-Line 314 , Section *NET*
-J19.5  U61.D8
-* Part name J19 not found
-* Part name U61 not found
-
-Line 316 , Section *NET*
-J18.1  U61.N15
-* Part name J18 not found
-* Part name U61 not found
-
-Line 318 , Section *NET*
-J22.1  U61.R4
+Line 75 , Section *NET*
+J21.2  J22.2  U38.T8
+* Part name J21 not found
 * Part name J22 not found
-* Part name U61 not found
+* Part name U38 not found
 
-Line 320 , Section *NET*
-J23.1  U61.R3
+Line 77 , Section *NET*
+J23.2  J24.2  U38.T10
 * Part name J23 not found
-* Part name U61 not found
-
-Line 322 , Section *NET*
-J24.1  U61.R6
 * Part name J24 not found
-* Part name U61 not found
+* Part name U38 not found
 
-Line 324 , Section *NET*
-J25.1  U61.T5
+Line 79 , Section *NET*
+J25.2  J26.2  U38.T12
 * Part name J25 not found
-* Part name U61 not found
-
-Line 326 , Section *NET*
-J26.1  U61.T7
 * Part name J26 not found
-* Part name U61 not found
+* Part name U38 not found
 
-Line 328 , Section *NET*
-J27.1  U61.R8
+Line 81 , Section *NET*
+J27.1  U38.M6
 * Part name J27 not found
-* Part name U61 not found
+* Part name U38 not found
 
-Line 330 , Section *NET*
-J28.1  U61.T9
+Line 83 , Section *NET*
+J28.1  U38.P6
 * Part name J28 not found
-* Part name U61 not found
+* Part name U38 not found
 
-Line 332 , Section *NET*
-J29.1  U61.R10
-* Part name J29 not found
-* Part name U61 not found
-
-Line 334 , Section *NET*
-J30.1  U61.T11
-* Part name J30 not found
-* Part name U61 not found
-
-Line 336 , Section *NET*
-J31.1  U61.R12
+Line 85 , Section *NET*
+J31.3  U38.N2
 * Part name J31 not found
-* Part name U61 not found
+* Part name U38 not found
 
-Line 338 , Section *NET*
-J18.9  U61.N16
+Line 87 , Section *NET*
+J14.2  U38.D1
+* Part name J14 not found
+* Part name U38 not found
+
+Line 89 , Section *NET*
+J13.1  R205.1  U38.N1
+* Part name J13 not found
+* Part name U38 not found
+
+Line 91 , Section *NET*
+U39.2  U38.G16
+* Part name U38 not found
+
+Line 93 , Section *NET*
+U39.3  U38.H16
+* Part name U38 not found
+
+Line 95 , Section *NET*
+U38.C13
+* Part name U38 not found
+
+Line 97 , Section *NET*
+C300.2  U38.T2
+* Part name U38 not found
+
+Line 99 , Section *NET*
+C300.1  U38.R2
+* Part name U38 not found
+
+Line 101 , Section *NET*
+Q3.1  U38.P15
+* Part name U38 not found
+
+Line 103 , Section *NET*
+SW5.2  U38.R15
+* Part name U38 not found
+
+Line 105 , Section *NET*
+J12.6  U38.D7
+* Part name J12 not found
+* Part name U38 not found
+
+Line 107 , Section *NET*
+J12.7  U38.D6
+* Part name J12 not found
+* Part name U38 not found
+
+Line 109 , Section *NET*
+J12.8  U38.C6
+* Part name J12 not found
+* Part name U38 not found
+
+Line 111 , Section *NET*
+J12.4  U38.D9
+* Part name J12 not found
+* Part name U38 not found
+
+Line 113 , Section *NET*
+J12.5  U38.D8
+* Part name J12 not found
+* Part name U38 not found
+
+Line 115 , Section *NET*
+J11.1  U38.N15
+* Part name J11 not found
+* Part name U38 not found
+
+Line 117 , Section *NET*
+J15.1  U38.R4
+* Part name J15 not found
+* Part name U38 not found
+
+Line 119 , Section *NET*
+J18.1  U38.R3
 * Part name J18 not found
-* Part name U61 not found
+* Part name U38 not found
 
-Line 340 , Section *NET*
-J18.3  U61.L12
-* Part name J18 not found
-* Part name U61 not found
-
-Line 342 , Section *NET*
-J18.5  U61.M14
-* Part name J18 not found
-* Part name U61 not found
-
-Line 344 , Section *NET*
-J18.8  U61.M15
-* Part name J18 not found
-* Part name U61 not found
-
-Line 346 , Section *NET*
-C673.1  U61.T15
-* Part name U61 not found
-
-Line 348 , Section *NET*
-C668.1  U61.T14
-* Part name U61 not found
-
-Line 350 , Section *NET*
-C672.1  U61.T3
-* Part name U61 not found
-
-Line 352 , Section *NET*
-JP26.2  U61.B2
-* Part name U61 not found
-
-Line 354 , Section *NET*
-JP27.2  U61.B15
-* Part name U61 not found
-
-Line 356 , Section *NET*
-JP28.2  J18.7  U61.M12
-* Part name J18 not found
-* Part name U61 not found
-
-Line 358 , Section *NET*
-J19.3  U61.C7
+Line 121 , Section *NET*
+J19.1  U38.R6
 * Part name J19 not found
-* Part name U61 not found
+* Part name U38 not found
 
-Line 360 , Section *NET*
-X3.1  C679.1  U61.H4
+Line 123 , Section *NET*
+J20.1  U38.T5
+* Part name J20 not found
+* Part name U38 not found
+
+Line 125 , Section *NET*
+J21.1  U38.T7
+* Part name J21 not found
+* Part name U38 not found
+
+Line 127 , Section *NET*
+J22.1  U38.R8
+* Part name J22 not found
+* Part name U38 not found
+
+Line 129 , Section *NET*
+J23.1  U38.T9
+* Part name J23 not found
+* Part name U38 not found
+
+Line 131 , Section *NET*
+J24.1  U38.R10
+* Part name J24 not found
+* Part name U38 not found
+
+Line 133 , Section *NET*
+J25.1  U38.T11
+* Part name J25 not found
+* Part name U38 not found
+
+Line 135 , Section *NET*
+J26.1  U38.R12
+* Part name J26 not found
+* Part name U38 not found
+
+Line 137 , Section *NET*
+J11.9  U38.N16
+* Part name J11 not found
+* Part name U38 not found
+
+Line 139 , Section *NET*
+J11.3  U38.L12
+* Part name J11 not found
+* Part name U38 not found
+
+Line 141 , Section *NET*
+J11.5  U38.M14
+* Part name J11 not found
+* Part name U38 not found
+
+Line 143 , Section *NET*
+J11.8  U38.M15
+* Part name J11 not found
+* Part name U38 not found
+
+Line 145 , Section *NET*
+C302.1  U38.T15
+* Part name U38 not found
+
+Line 147 , Section *NET*
+C292.1  U38.T14
+* Part name U38 not found
+
+Line 149 , Section *NET*
+C301.1  U38.T3
+* Part name U38 not found
+
+Line 151 , Section *NET*
+JP26.2  U38.B2
+* Part name U38 not found
+
+Line 153 , Section *NET*
+JP27.2  U38.B15
+* Part name U38 not found
+
+Line 155 , Section *NET*
+JP28.2  J11.7  U38.M12
+* Part name J11 not found
+* Part name U38 not found
+
+Line 157 , Section *NET*
+J12.3  U38.C7
+* Part name J12 not found
+* Part name U38 not found
+
+Line 159 , Section *NET*
+X3.1  C308.1  U38.H4
 * Part name X3 not found
-* Part name U61 not found
+* Part name U38 not found
 
-Line 362 , Section *NET*
-C678.1  X3.3  U61.H3
+Line 161 , Section *NET*
+C307.1  X3.3  U38.H3
 * Part name X3 not found
-* Part name U61 not found
+* Part name U38 not found
 
-Line 364 , Section *NET*
+Line 163 , Section *NET*
+FH5.1  J33.3
+* Part name J33 not found
+
+Line 165 , Section *NET*
+FH4.1  J33.2
+* Part name J33 not found
+
+Line 167 , Section *NET*
+J33.1  FH3.1
+* Part name J33 not found
+
+Line 169 , Section *NET*
 P1.B1
 * Part name P1 not found
 
-Line 366 , Section *NET*
-Q9.5  Q9.6  Q9.7  Q9.8
-* Part name Q9 not found
-* Part name Q9 not found
-* Part name Q9 not found
-* Part name Q9 not found
+Line 171 , Section *NET*
+Q4.5  Q4.6  Q4.7  Q4.8
+* Part name Q4 not found
+* Part name Q4 not found
+* Part name Q4 not found
+* Part name Q4 not found
 
-Line 370 , Section *NET*
+Line 173 , Section *NET*
 P1.A2
 * Part name P1 not found
 
-Line 372 , Section *NET*
-R273.2  U61.L10
-* Part name U61 not found
+Line 175 , Section *NET*
+U38.L10
+* Part name U38 not found
 
-Line 374 , Section *NET*
-Q4.1  U61.A9
-* Part name U61 not found
+Line 177 , Section *NET*
+Q8.1  U38.A9
+* Part name U38 not found
 
-Line 378 , Section *NET*
-R272.2  U61.M10
-* Part name U61 not found
+Line 179 , Section *NET*
+R265.2  U38.M10
+* Part name U38 not found
 
-Line 380 , Section *NET*
-Q3.1  U61.A10
-* Part name U61 not found
+Line 181 , Section *NET*
+Q7.1  U38.A10
+* Part name U38 not found
 
-Line 384 , Section *NET*
-R271.2  U61.P10
-* Part name U61 not found
+Line 183 , Section *NET*
+U38.P10
+* Part name U38 not found
 
-Line 388 , Section *NET*
-Q8.3  U61.G10  U61.G8  U61.H7  U61.H9  U61.J10  U61.J8
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
+Line 185 , Section *NET*
+U38.G10  U38.G8  U38.H7  U38.H9  U38.J10  U38.J8  U38.K7
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
 
-Line 389 , Section *NET*
-U61.K7  U61.K9  U61.L11  U61.N14  U61.N5  U61.P1
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
+Line 186 , Section *NET*
+U38.K9  U38.L11  U38.N14  U38.N5  U38.P1
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
 
-Line 391 , Section *NET*
-Q5.1  U61.C11
-* Part name U61 not found
+Line 188 , Section *NET*
+Q9.1  U38.C11
+* Part name U38 not found
 
-Line 395 , Section *NET*
-R270.2  U61.N11
-* Part name U61 not found
+Line 190 , Section *NET*
+U38.N11
+* Part name U38 not found
 
-Line 397 , Section *NET*
-Q6.1  U61.A8
-* Part name U61 not found
+Line 192 , Section *NET*
+Q10.1  U38.A8
+* Part name U38 not found
 
-Line 401 , Section *NET*
-R269.2  U61.R14
-* Part name U61 not found
+Line 194 , Section *NET*
+U38.R14
+* Part name U38 not found
 
-Line 403 , Section *NET*
-Q7.1  U61.J4
-* Part name U61 not found
+Line 196 , Section *NET*
+Q11.1  U38.J4
+* Part name U38 not found
 
-Line 407 , Section *NET*
-U47.14  U61.H1
-* Part name U61 not found
+Line 198 , Section *NET*
+U62.14  U38.H1
+* Part name U38 not found
 
-Line 409 , Section *NET*
-SW1.1  SW1.3  SW1.5  Q11.5  Q11.6  SW1.7  Q11.7
-* Part name Q11 not found
-* Part name Q11 not found
-* Part name Q11 not found
+Line 200 , Section *NET*
+Q6.5  Q6.6  Q6.7  Q6.8
+* Part name Q6 not found
+* Part name Q6 not found
+* Part name Q6 not found
+* Part name Q6 not found
 
-Line 410 , Section *NET*
-Q11.8
-* Part name Q11 not found
+Line 202 , Section *NET*
+C304.1  J10.10  J12.2  J11.6  U38.A15  U38.A2  U38.B10
+* Part name J10 not found
+* Part name J12 not found
+* Part name J11 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
 
-Line 416 , Section *NET*
-U60.19  Q8.2  J19.2  R257.2  R258.2  R259.2  R260.2
-* Part name J19 not found
+Line 203 , Section *NET*
+U38.B7  U38.C1  U38.C12  U38.C14  U38.C16  U38.C3  U38.C4
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
 
-Line 417 , Section *NET*
-R261.2  U60.20  JP28.3  J18.6  U61.A15  U61.A2  U61.B10
-* Part name J18 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
+Line 204 , Section *NET*
+U38.C5  U38.D12  U38.E13  U38.E4  U38.G15  U38.G2  U38.H6
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
 
-Line 418 , Section *NET*
-U61.B7  U61.C1  U61.C12  U61.C14  U61.C16  U61.C3  U61.C4
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
+Line 205 , Section *NET*
+U38.K15  U38.K2  U38.L13  U38.M13  U38.M4  U38.N13  U38.N4
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
 
-Line 419 , Section *NET*
-U61.C5  U61.D12  U61.E13  U61.E4  U61.G15  U61.G2  U61.H6
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
+Line 206 , Section *NET*
+U38.R1  U38.R16
+* Part name U38 not found
+* Part name U38 not found
 
-Line 420 , Section *NET*
-U61.K15  U61.K2  U61.L13  U61.M13  U61.M4  U61.N13  U61.N4
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
+Line 208 , Section *NET*
+U38.L9
+* Part name U38 not found
 
-Line 421 , Section *NET*
-U61.R1  U61.R16
-* Part name U61 not found
-* Part name U61 not found
-
-Line 423 , Section *NET*
-J12.1  R268.1  J12.12  J12.13  J12.2  FH5.2  U61.L9
-* Part name U61 not found
-
-Line 425 , Section *NET*
+Line 210 , Section *NET*
 P1.A10  P1.A14  P1.A16  P1.A21  P1.A27  P1.A33  P1.A39
 * Part name P1 not found
 * Part name P1 not found
@@ -578,7 +569,7 @@ P1.A10  P1.A14  P1.A16  P1.A21  P1.A27  P1.A33  P1.A39
 * Part name P1 not found
 * Part name P1 not found
 
-Line 426 , Section *NET*
+Line 211 , Section *NET*
 P1.A45  P1.A53  P1.A59  P1.B19  P1.B25  P1.B31  P1.B36
 * Part name P1 not found
 * Part name P1 not found
@@ -588,25 +579,25 @@ P1.A45  P1.A53  P1.A59  P1.B19  P1.B25  P1.B31  P1.B36
 * Part name P1 not found
 * Part name P1 not found
 
-Line 427 , Section *NET*
+Line 212 , Section *NET*
 P1.B41  P1.B43  P1.B54  P1.B59
 * Part name P1 not found
 * Part name P1 not found
 * Part name P1 not found
 * Part name P1 not found
 
-Line 429 , Section *NET*
-Q10.5  Q10.6  Q10.7  Q10.8
-* Part name Q10 not found
-* Part name Q10 not found
-* Part name Q10 not found
-* Part name Q10 not found
+Line 214 , Section *NET*
+Q5.5  Q5.6  Q5.7  Q5.8
+* Part name Q5 not found
+* Part name Q5 not found
+* Part name Q5 not found
+* Part name Q5 not found
 
-Line 434 , Section *NET*
-R267.1  U61.R7
-* Part name U61 not found
+Line 216 , Section *NET*
+U38.R7
+* Part name U38 not found
 
-Line 436 , Section *NET*
+Line 218 , Section *NET*
 P1.A5  P1.A61  P1.A62  P1.A8  P1.B5  P1.B6  P1.B61
 * Part name P1 not found
 * Part name P1 not found
@@ -616,563 +607,562 @@ P1.A5  P1.A61  P1.A62  P1.A8  P1.B5  P1.B6  P1.B61
 * Part name P1 not found
 * Part name P1 not found
 
-Line 437 , Section *NET*
+Line 219 , Section *NET*
 P1.B62
 * Part name P1 not found
 
-Line 439 , Section *NET*
-J19.10  J19.9
-* Part name J19 not found
-* Part name J19 not found
+Line 221 , Section *NET*
+J12.10  J12.9
+* Part name J12 not found
+* Part name J12 not found
 
-Line 441 , Section *NET*
+Line 223 , Section *NET*
 R164.2  P1.B16
 * Part name P1 not found
 
-Line 443 , Section *NET*
-J15.4  U61.H15
-* Part name U61 not found
+Line 225 , Section *NET*
+J37.4  U38.H15
+* Part name U38 not found
 
-Line 445 , Section *NET*
-J15.3  U61.J15
-* Part name U61 not found
+Line 227 , Section *NET*
+J37.3  U38.J15
+* Part name U38 not found
 
-Line 447 , Section *NET*
-J14.4  U61.J16
-* Part name U61 not found
+Line 229 , Section *NET*
+J36.4  U38.J16
+* Part name U38 not found
 
-Line 449 , Section *NET*
-J14.3  U61.L16
-* Part name U61 not found
+Line 231 , Section *NET*
+J36.3  U38.L16
+* Part name U38 not found
 
-Line 451 , Section *NET*
-J13.4  U61.L14
-* Part name U61 not found
+Line 233 , Section *NET*
+J35.4  U38.L14
+* Part name U38 not found
 
-Line 453 , Section *NET*
-J13.3  U61.L15
-* Part name U61 not found
+Line 235 , Section *NET*
+J35.3  U38.L15
+* Part name U38 not found
 
-Line 456 , Section *NET*
-JP28.1  J19.1  R256.1  R263.1  R265.1  SW5.1  SW6.1
-* Part name J19 not found
-
-Line 457 , Section *NET*
-J18.10  U60.12  U60.13  U60.14  U60.17  SW3.2  SW2.2
-* Part name J18 not found
-
-Line 458 , Section *NET*
-J10.2  C668.2  U60.2  J18.2  C669.2  C670.2  C672.2
-* Part name J18 not found
-
-Line 464 , Section *NET*
-C708.2  C709.2  C711.2  C712.2  C713.2  J20.2  J32.2
-* Part name J20 not found
-* Part name J32 not found
-
-Line 465 , Section *NET*
-J33.2  J34.2  J35.2  U60.21  U34.3  U38.3  U39.3
-* Part name J33 not found
-* Part name J34 not found
-* Part name J35 not found
-
-Line 466 , Section *NET*
-U40.3  U47.3  U60.3  SW3.4  SW2.4  J11.4  U34.4
+Line 237 , Section *NET*
+J12.1  J11.10  J11.2  J13.2  J27.2  J28.2  J29.2
+* Part name J12 not found
 * Part name J11 not found
+* Part name J11 not found
+* Part name J13 not found
+* Part name J27 not found
+* Part name J28 not found
+* Part name J29 not found
 
-Line 469 , Section *NET*
-U34.8  U38.8  U39.8  U40.8  U47.8  U61.A1  U61.A12
-* Part name U61 not found
-* Part name U61 not found
+Line 238 , Section *NET*
+J30.2  J33.4  J10.9  U38.A1  U38.A12  U38.A16  P1.A18
+* Part name J30 not found
+* Part name J33 not found
+* Part name J10 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name P1 not found
 
-Line 470 , Section *NET*
-U61.A16  P1.A18  P1.A24  P1.A30  P1.A35  P1.A37  P1.A42
-* Part name U61 not found
+Line 239 , Section *NET*
+P1.A24  P1.A30  P1.A35  P1.A37  P1.A42  P1.A48  U38.A5
 * Part name P1 not found
 * Part name P1 not found
 * Part name P1 not found
 * Part name P1 not found
 * Part name P1 not found
 * Part name P1 not found
+* Part name U38 not found
 
-Line 471 , Section *NET*
-P1.A48  U61.A5  P1.A50  P1.A51  P1.A56  U61.B1  P1.B15
-* Part name P1 not found
-* Part name U61 not found
+Line 240 , Section *NET*
+P1.A50  P1.A51  P1.A56  U38.B1  P1.B15  U38.B16  P1.B17
 * Part name P1 not found
 * Part name P1 not found
 * Part name P1 not found
-* Part name U61 not found
+* Part name U38 not found
+* Part name P1 not found
+* Part name U38 not found
 * Part name P1 not found
 
-Line 472 , Section *NET*
-U61.B16  P1.B17  P1.B22  P1.B28  P1.B3  P1.B34  P1.B38
-* Part name U61 not found
-* Part name P1 not found
-* Part name P1 not found
+Line 241 , Section *NET*
+P1.B22  P1.B28  P1.B3  P1.B34  P1.B38  P1.B46  P1.B50
 * Part name P1 not found
 * Part name P1 not found
 * Part name P1 not found
 * Part name P1 not found
-
-Line 473 , Section *NET*
-P1.B46  P1.B50  P1.B51  P1.B57  U61.C15  U61.C2  U61.E1
 * Part name P1 not found
 * Part name P1 not found
 * Part name P1 not found
+
+Line 242 , Section *NET*
+P1.B51  P1.B57  U38.C15  U38.C2  U38.E1  U38.E10  U38.E16
 * Part name P1 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
+* Part name P1 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
 
-Line 474 , Section *NET*
-U61.E10  U61.E16  U61.E7  U61.G12  U61.G5  U61.G7  U61.G9
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
+Line 243 , Section *NET*
+U38.E7  U38.G12  U38.G5  U38.G7  U38.G9  U38.H10  U38.H5
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
 
-Line 475 , Section *NET*
-U61.H10  U61.H5  U61.H8  U61.J7  U61.J9  U61.K10  U61.K12
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
+Line 244 , Section *NET*
+U38.H8  U38.J7  U38.J9  U38.K10  U38.K12  U38.K5  U38.K8
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
 
-Line 476 , Section *NET*
-U61.K5  U61.K8  U61.L7  U61.M1  U61.M16  U61.N12  U61.P14
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
+Line 245 , Section *NET*
+U38.L7  U38.M1  U38.M16  U38.N12  U38.P14  U38.P16  U38.P2
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
 
-Line 477 , Section *NET*
-U61.P16  U61.P2  U61.P3  U61.P9  U61.T1  U61.T13  U61.T16
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
-* Part name U61 not found
+Line 246 , Section *NET*
+U38.P3  U38.P9  U38.T1  U38.T13  U38.T16
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
+* Part name U38 not found
 
-Line 479 , Section *NET*
-R273.1  U38.5  U38.9  U61.N9
-* Part name U61 not found
+Line 248 , Section *NET*
+U38.N9
+* Part name U38 not found
 
-Line 481 , Section *NET*
-R272.1  U34.5  U34.9  U61.R9
-* Part name U61 not found
+Line 250 , Section *NET*
+U38.R9
+* Part name U38 not found
 
-Line 483 , Section *NET*
-C301.1  R271.1  U39.5  U39.9  U61.R11
-* Part name U61 not found
+Line 252 , Section *NET*
+U38.R11
+* Part name U38 not found
 
-Line 485 , Section *NET*
-R270.1  U40.5  U40.9  U61.P11
-* Part name U61 not found
+Line 254 , Section *NET*
+U38.P11
+* Part name U38 not found
 
-Line 487 , Section *NET*
-C309.1  R269.1  U47.5  U47.9  U61.P13
-* Part name U61 not found
+Line 256 , Section *NET*
+U38.P13
+* Part name U38 not found
 
-Line 489 , Section *NET*
-SW2.7  P1.B49
+Line 258 , Section *NET*
+U38.D16
+* Part name U38 not found
+
+Line 260 , Section *NET*
+P1.B49
 * Part name P1 not found
 
-Line 491 , Section *NET*
-U51.11  U61.A4
-* Part name U61 not found
+Line 262 , Section *NET*
+U51.11  U38.A4
+* Part name U38 not found
 
-Line 493 , Section *NET*
-U61.A3
-* Part name U61 not found
+Line 264 , Section *NET*
+U38.A3
+* Part name U38 not found
 
-Line 495 , Section *NET*
-U53.11  U61.A7
-* Part name U61 not found
+Line 266 , Section *NET*
+U53.11  U38.A7
+* Part name U38 not found
 
-Line 497 , Section *NET*
-U61.A6
-* Part name U61 not found
+Line 268 , Section *NET*
+U38.A6
+* Part name U38 not found
 
-Line 499 , Section *NET*
-U52.11  U61.B4
-* Part name U61 not found
+Line 270 , Section *NET*
+U52.11  U38.B4
+* Part name U38 not found
 
-Line 501 , Section *NET*
-U61.B3
-* Part name U61 not found
+Line 272 , Section *NET*
+U38.B3
+* Part name U38 not found
 
-Line 503 , Section *NET*
+Line 274 , Section *NET*
 P1.A6  P1.A7  P1.B7  P1.B8
 * Part name P1 not found
 * Part name P1 not found
 * Part name P1 not found
 * Part name P1 not found
 
-Line 505 , Section *NET*
-J12.16  U61.E8
-* Part name U61 not found
+Line 276 , Section *NET*
+J34.16  U38.E8
+* Part name U38 not found
 
-Line 507 , Section *NET*
-J12.8  U61.F8
-* Part name U61 not found
+Line 278 , Section *NET*
+J34.8  U38.F8
+* Part name U38 not found
 
-Line 515 , Section *NET*
+Line 280 , Section *NET*
 R24.1  P1.A4
 * Part name P1 not found
 
-Line 517 , Section *NET*
+Line 282 , Section *NET*
 C2.2  P1.B9
 * Part name P1 not found
 
-Line 519 , Section *NET*
+Line 284 , Section *NET*
 C3.2  P1.B11
 * Part name P1 not found
 
-Line 521 , Section *NET*
+Line 286 , Section *NET*
 R7.2  P1.B60
 * Part name P1 not found
 
-Line 523 , Section *NET*
+Line 288 , Section *NET*
 P1.A58  U1.D29
 * Part name P1 not found
 
-Line 525 , Section *NET*
+Line 290 , Section *NET*
 U1.A30  P1.B58
 * Part name P1 not found
 
-Line 527 , Section *NET*
+Line 292 , Section *NET*
 P1.A57  U1.C30
 * Part name P1 not found
 
-Line 529 , Section *NET*
+Line 294 , Section *NET*
 U1.A31  P1.B56
 * Part name P1 not found
 
-Line 531 , Section *NET*
+Line 296 , Section *NET*
 P1.A55  U1.D34
 * Part name P1 not found
 
-Line 533 , Section *NET*
+Line 298 , Section *NET*
 P1.B55  U1.F31
 * Part name P1 not found
 
-Line 535 , Section *NET*
+Line 300 , Section *NET*
 P1.A54  U1.E34
 * Part name P1 not found
 
-Line 537 , Section *NET*
+Line 302 , Section *NET*
 P1.B53  U1.F32
 * Part name P1 not found
 
-Line 539 , Section *NET*
+Line 304 , Section *NET*
 P1.B52  U1.F33
 * Part name P1 not found
 
-Line 541 , Section *NET*
+Line 306 , Section *NET*
 P1.A49  U1.F34
 * Part name P1 not found
 
-Line 543 , Section *NET*
+Line 308 , Section *NET*
 P1.B48  U1.G31
 * Part name P1 not found
 
-Line 545 , Section *NET*
+Line 310 , Section *NET*
 P1.A47  U1.G33
 * Part name P1 not found
 
-Line 547 , Section *NET*
+Line 312 , Section *NET*
 P1.B47  U1.G34
 * Part name P1 not found
 
-Line 549 , Section *NET*
+Line 314 , Section *NET*
 P1.A46  U1.H31
 * Part name P1 not found
 
-Line 551 , Section *NET*
+Line 316 , Section *NET*
 P1.B45  U1.H32
 * Part name P1 not found
 
-Line 553 , Section *NET*
+Line 318 , Section *NET*
 P1.A44  U1.H34
 * Part name P1 not found
 
-Line 555 , Section *NET*
+Line 320 , Section *NET*
 P1.A32  U1.L31
 * Part name P1 not found
 
-Line 557 , Section *NET*
+Line 322 , Section *NET*
 P1.B32  U1.L33
 * Part name P1 not found
 
-Line 559 , Section *NET*
+Line 324 , Section *NET*
 P1.A31  U1.M32
 * Part name P1 not found
 
-Line 561 , Section *NET*
+Line 326 , Section *NET*
 P1.B30  U1.M31
 * Part name P1 not found
 
-Line 563 , Section *NET*
+Line 328 , Section *NET*
 P1.A29  U1.M34
 * Part name P1 not found
 
-Line 565 , Section *NET*
+Line 330 , Section *NET*
 P1.B29  U1.N31
 * Part name P1 not found
 
-Line 567 , Section *NET*
+Line 332 , Section *NET*
 P1.A28
 * Part name P1 not found
 
-Line 569 , Section *NET*
+Line 334 , Section *NET*
 P1.B27  U1.N32
 * Part name P1 not found
 
-Line 571 , Section *NET*
+Line 336 , Section *NET*
 P1.A25  U1.P31
 * Part name P1 not found
 
-Line 573 , Section *NET*
+Line 338 , Section *NET*
 P1.B24  U1.P33
 * Part name P1 not found
 
-Line 575 , Section *NET*
+Line 340 , Section *NET*
 P1.A23  U1.P32
 * Part name P1 not found
 
-Line 577 , Section *NET*
+Line 342 , Section *NET*
 P1.B23  U1.P34
 * Part name P1 not found
 
-Line 579 , Section *NET*
+Line 344 , Section *NET*
 P1.A22  U1.R31
 * Part name P1 not found
 
-Line 581 , Section *NET*
+Line 346 , Section *NET*
 P1.B21  U1.R32
 * Part name P1 not found
 
-Line 583 , Section *NET*
+Line 348 , Section *NET*
 P1.A20  U1.R33
 * Part name P1 not found
 
-Line 585 , Section *NET*
+Line 350 , Section *NET*
 P1.B20  U1.R34
 * Part name P1 not found
 
-Line 587 , Section *NET*
+Line 352 , Section *NET*
 P1.A52
 * Part name P1 not found
 
-Line 589 , Section *NET*
+Line 354 , Section *NET*
 P1.B44
 * Part name P1 not found
 
-Line 591 , Section *NET*
+Line 356 , Section *NET*
 P1.B33
 * Part name P1 not found
 
-Line 593 , Section *NET*
+Line 358 , Section *NET*
 P1.B26
 * Part name P1 not found
 
-Line 595 , Section *NET*
+Line 360 , Section *NET*
 P1.B37
 * Part name P1 not found
 
-Line 597 , Section *NET*
+Line 362 , Section *NET*
 P1.A34
 * Part name P1 not found
 
-Line 599 , Section *NET*
+Line 364 , Section *NET*
 P1.A17
 * Part name P1 not found
 
-Line 601 , Section *NET*
+Line 366 , Section *NET*
 R28.1  P1.A26
 * Part name P1 not found
 
-Line 603 , Section *NET*
+Line 368 , Section *NET*
 P1.B35
 * Part name P1 not found
 
-Line 605 , Section *NET*
+Line 370 , Section *NET*
 R9.2  P1.B39
 * Part name P1 not found
 
-Line 607 , Section *NET*
+Line 372 , Section *NET*
 P1.A43  U1.J32
 * Part name P1 not found
 
-Line 609 , Section *NET*
+Line 374 , Section *NET*
 P1.B40
 * Part name P1 not found
 
-Line 611 , Section *NET*
+Line 376 , Section *NET*
 P1.B18
 * Part name P1 not found
 
-Line 613 , Section *NET*
+Line 378 , Section *NET*
 R19.1  P1.A60
 * Part name P1 not found
 
-Line 615 , Section *NET*
+Line 380 , Section *NET*
 P1.A15  U1.AA31
 * Part name P1 not found
 
-Line 617 , Section *NET*
+Line 382 , Section *NET*
 P1.B42
 * Part name P1 not found
 
-Line 619 , Section *NET*
+Line 384 , Section *NET*
 P1.A38
 * Part name P1 not found
 
-Line 621 , Section *NET*
+Line 386 , Section *NET*
 R4.2  P1.B2
 * Part name P1 not found
 
-Line 623 , Section *NET*
+Line 388 , Section *NET*
 R12.1  P1.A3
 * Part name P1 not found
 
-Line 625 , Section *NET*
+Line 390 , Section *NET*
 P1.A36
 * Part name P1 not found
 
-Line 627 , Section *NET*
+Line 392 , Section *NET*
 R15.1  P1.A1
 * Part name P1 not found
 
-Line 629 , Section *NET*
+Line 394 , Section *NET*
 TP1.1
 * Part name TP1 not found
 
-Line 633 , Section *DEL_ATTRIBUTE*
+Line 399 , Section *DEL_ATTRIBUTE*
 "Decal Builder,Date"
-* WARNING: Processing command to delete attribute "Decal Builder,Date" from Component J12.
+* WARNING: Processing command to delete attribute "Decal Builder,Date" from Component J34.
 *          The attribute is also inherited from Decal MOLEX_44206-0007.
 *          The change is not fully reconciled for cases where the schematic
 *          does not support hierarchical attributes.
 
-Line 634 , Section *DEL_ATTRIBUTE*
+Line 400 , Section *DEL_ATTRIBUTE*
 "Polarity"
-* WARNING: Processing command to delete attribute "Polarity" from Component J12.
+* WARNING: Processing command to delete attribute "Polarity" from Component J34.
 *          The attribute is also inherited from Decal MOLEX_44206-0007.
 *          The change is not fully reconciled for cases where the schematic
 *          does not support hierarchical attributes.
 
-Line 822 , Section *SET_ATTRIBUTE*
+Line 404 , Section *SET_ATTRIBUTE*
 *SET_ATTRIBUTE* PART P1
 * Incorrect object name : P1
 
-Line 829 , Section *SET_ATTRIBUTE*
+Line 406 , Section *SET_ATTRIBUTE*
+*SET_ATTRIBUTE* PART J13
+* Incorrect object name : J13
+
+Line 408 , Section *SET_ATTRIBUTE*
+*SET_ATTRIBUTE* PART J14
+* Incorrect object name : J14
+
+Line 410 , Section *SET_ATTRIBUTE*
+*SET_ATTRIBUTE* PART J15
+* Incorrect object name : J15
+
+Line 412 , Section *SET_ATTRIBUTE*
+*SET_ATTRIBUTE* PART J18
+* Incorrect object name : J18
+
+Line 414 , Section *SET_ATTRIBUTE*
+*SET_ATTRIBUTE* PART J19
+* Incorrect object name : J19
+
+Line 416 , Section *SET_ATTRIBUTE*
 *SET_ATTRIBUTE* PART J20
 * Incorrect object name : J20
 
-Line 831 , Section *SET_ATTRIBUTE*
+Line 418 , Section *SET_ATTRIBUTE*
 *SET_ATTRIBUTE* PART J21
 * Incorrect object name : J21
 
-Line 833 , Section *SET_ATTRIBUTE*
+Line 420 , Section *SET_ATTRIBUTE*
 *SET_ATTRIBUTE* PART J22
 * Incorrect object name : J22
 
-Line 835 , Section *SET_ATTRIBUTE*
+Line 422 , Section *SET_ATTRIBUTE*
 *SET_ATTRIBUTE* PART J23
 * Incorrect object name : J23
 
-Line 837 , Section *SET_ATTRIBUTE*
+Line 424 , Section *SET_ATTRIBUTE*
 *SET_ATTRIBUTE* PART J24
 * Incorrect object name : J24
 
-Line 839 , Section *SET_ATTRIBUTE*
+Line 426 , Section *SET_ATTRIBUTE*
 *SET_ATTRIBUTE* PART J25
 * Incorrect object name : J25
 
-Line 841 , Section *SET_ATTRIBUTE*
+Line 428 , Section *SET_ATTRIBUTE*
 *SET_ATTRIBUTE* PART J26
 * Incorrect object name : J26
 
-Line 843 , Section *SET_ATTRIBUTE*
+Line 430 , Section *SET_ATTRIBUTE*
 *SET_ATTRIBUTE* PART J27
 * Incorrect object name : J27
 
-Line 845 , Section *SET_ATTRIBUTE*
+Line 432 , Section *SET_ATTRIBUTE*
 *SET_ATTRIBUTE* PART J28
 * Incorrect object name : J28
 
-Line 847 , Section *SET_ATTRIBUTE*
+Line 434 , Section *SET_ATTRIBUTE*
 *SET_ATTRIBUTE* PART J29
 * Incorrect object name : J29
 
-Line 849 , Section *SET_ATTRIBUTE*
+Line 436 , Section *SET_ATTRIBUTE*
 *SET_ATTRIBUTE* PART J30
 * Incorrect object name : J30
 
-Line 851 , Section *SET_ATTRIBUTE*
+Line 438 , Section *SET_ATTRIBUTE*
 *SET_ATTRIBUTE* PART J31
 * Incorrect object name : J31
 
-Line 853 , Section *SET_ATTRIBUTE*
-*SET_ATTRIBUTE* PART J32
-* Incorrect object name : J32
+Line 440 , Section *SET_ATTRIBUTE*
+*SET_ATTRIBUTE* PART J10
+* Incorrect object name : J10
 
-Line 855 , Section *SET_ATTRIBUTE*
+Line 442 , Section *SET_ATTRIBUTE*
 *SET_ATTRIBUTE* PART J33
 * Incorrect object name : J33
 
-Line 857 , Section *SET_ATTRIBUTE*
-*SET_ATTRIBUTE* PART J34
-* Incorrect object name : J34
-
-Line 859 , Section *SET_ATTRIBUTE*
-*SET_ATTRIBUTE* PART J35
-* Incorrect object name : J35
-
-Line 861 , Section *SET_ATTRIBUTE*
-*SET_ATTRIBUTE* PART J36
-* Incorrect object name : J36
-
-Line 877 , Section *SET_ATTRIBUTE*
-*SET_ATTRIBUTE* PART J11
-* Incorrect object name : J11
-
-Line 879 , Section *SET_ATTRIBUTE*
+Line 444 , Section *SET_ATTRIBUTE*
 *SET_ATTRIBUTE* PART TP1
 * Incorrect object name : TP1
-* Warning: deleting single-pin signal $1I509\$1N244
-* Warning: deleting single-pin signal $1I509\$1N246
-* Warning: deleting single-pin signal $1I509\$1N248
-* Warning: deleting single-pin signal $1I546\$1N665
-* Warning: deleting single-pin signal $1I546\$1N67
-* Warning: deleting single-pin signal $1I546\3V3_IMON
-* Warning: deleting single-pin signal $1I546\5V_IMON
-* Warning: deleting single-pin signal $1I546\CHS_SWITCH
-* Warning: deleting single-pin signal $1I546\NCAP
-* Warning: deleting single-pin signal $1I546\PCAP
-* Warning: deleting single-pin signal $1I546\PTBASE
-* Warning: deleting single-pin signal $1I546\PUSH_BUTTON
-* Warning: deleting single-pin signal $1I546\VAREF
-* Warning: deleting single-pin signal $1I546\VCC33ACAP
-* Warning: deleting single-pin signal $1I546\VCC33N
-* Warning: deleting single-pin signal $1I546\VCC_PLL_A
-* Warning: deleting single-pin signal $1I546\VCC_PLL_B
-* Warning: deleting single-pin signal $1I546\VPUMP
-* Warning: deleting single-pin signal $1I546\XTAL1
-* Warning: deleting single-pin signal $1I546\XTAL2
+* Warning: deleting single-pin signal $1I575\$1N1071
+* Warning: deleting single-pin signal $1I575\$1N1073
+* Warning: deleting single-pin signal $1I575\$1N665
+* Warning: deleting single-pin signal $1I575\$1N67
+* Warning: deleting single-pin signal $1I575\12V_SW_ON
+* Warning: deleting single-pin signal $1I575\3V3_SW_ON
+* Warning: deleting single-pin signal $1I575\5V_SW_ON
+* Warning: deleting single-pin signal $1I575\CHS_SWITCH
+* Warning: deleting single-pin signal $1I575\DEBUG_SERIAL_IN
+* Warning: deleting single-pin signal $1I575\DEBUG_SERIAL_OUT
+* Warning: deleting single-pin signal $1I575\NCAP
+* Warning: deleting single-pin signal $1I575\PCAP
+* Warning: deleting single-pin signal $1I575\PTBASE
+* Warning: deleting single-pin signal $1I575\PUSH_BUTTON
+* Warning: deleting single-pin signal $1I575\VAREF
+* Warning: deleting single-pin signal $1I575\VCC33ACAP
+* Warning: deleting single-pin signal $1I575\VCC33N
+* Warning: deleting single-pin signal $1I575\VCC_PLL_A
+* Warning: deleting single-pin signal $1I575\VCC_PLL_B
+* Warning: deleting single-pin signal $1I575\VPUMP
+* Warning: deleting single-pin signal $1I575\XTAL1
+* Warning: deleting single-pin signal $1I575\XTAL2
+* Warning: deleting single-pin signal $1I605\$1N244
+* Warning: deleting single-pin signal $1I605\$1N246
+* Warning: deleting single-pin signal $1I605\$1N248
 * Warning: deleting single-pin signal 1V0_INHIBIT
 * Warning: deleting single-pin signal 1V2
 * Warning: deleting single-pin signal 1V2_INHIBIT
