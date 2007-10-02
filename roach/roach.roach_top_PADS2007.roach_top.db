@@ -1,11 +1,13 @@
 
-(pcb "D:\ROACH\elec\roach\roach.roach_top_PADS2007.roach_top.db"
+(pcb
+ "C:\Users\mrevnell\roach\elec\roach\roach.roach_top_PADS2007.roach_top.db"
 	(version "5.0.0")
 	(units "basic")
 	(config_properties
 		(attributes
-			(attval "PcbConfigName" "D:\ROACH\elec\roach\roach_pcb.cfg")
-			(attval "CnsFile" ".\pads2007.cns")
+			(attval "PcbConfigName"
+ "C:\Users\mrevnell\roach\elec\roach\roach_pcb.cfg")
+			(attval "CnsFile" "C:\Users\mrevnell\roach\elec\roach\pads2007.cns")
 			(attval "BeAdapter" "PADS2007")
 			(attval "FeAdapter" "DxDesigner")
 			(attval "SYSCONFIG" "pcbfwd")
@@ -26,7 +28,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1191316944"))
+		(file_ext "roach_top.pxr" "1191352793"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -450,19 +452,6 @@
 						(attval "VALUE" ""))))
 			(pin 2  4 "VAR_5R5V_0603_30A__VAR_5R5V_0603_30A_1" 0 "2" 0)
 			(pin 1  4 "VAR_5R5V_0603_30A__VAR_5R5V_0603_30A_1" 0 "1" 0))
-		(part "TZ0614A")
-		(logical_part_mapping "TZ0614A"
-			(comp "X5"))
-		(logical_part "TZ0614A"
-			(slots
-				(slot "TZ0614A__TZ0614A_1"
-					(attributes
-						(attval "PKG_TYPE" "OSCCC425P320X500X90-4N")
-						(attval "REFDES" "X?"))))
-			(pin 4 2 "power_gate1" 0 "NC" 0)
-			(pin 2 2 "power_gate2" 0 "NC" 0)
-			(pin 3  5 "TZ0614A__TZ0614A_1" 0 "3" 0)
-			(pin 1  5 "TZ0614A__TZ0614A_1" 0 "1" 0))
 		(part "TP_ROUND100")
 		(logical_part_mapping "TP_ROUND100"
 			(comp "TP8" "TP7" "TP6" "TP5" "TP4" "TP3" "TP2"))
@@ -673,8 +662,8 @@
 						(attval "DEVICE" "SN74AHC1G08DCKR")
 						(attval "PKG_TYPE" "SOT95P280X145-5L")
 						(attval "REFDES" "U?"))))
-			(pin 5 2 "power_gate3" 0 "3V3" 0)
-			(pin 3 2 "power_gate4" 0 "GND" 0)
+			(pin 5 2 "power_gate1" 0 "3V3" 0)
+			(pin 3 2 "power_gate2" 0 "GND" 0)
 			(pin 4  4 "SN74AHC1G08DCKR__SN74AHC1G08DCKR_1" 0 "Q" 0)
 			(pin 2  3 "SN74AHC1G08DCKR__SN74AHC1G08DCKR_1" 0 "B" 0)
 			(pin 1  3 "SN74AHC1G08DCKR__SN74AHC1G08DCKR_1" 0 "A" 0))
@@ -689,7 +678,7 @@
 						(attval "PKG_TYPE" "SMDCLK")
 						(attval "REFDES" "X?")
 						(attval "VALUE" "UNKNOWN"))))
-			(pin 2 2 "power_gate5" 0 "NC" 0)
+			(pin 2 2 "power_gate3" 0 "NC" 0)
 			(pin 6  5 "CLKOSC_6PIN__SMDCLK_1" 0 "VCC" 0)
 			(pin 5  4 "CLKOSC_6PIN__SMDCLK_1" 0 "OUT#" 0)
 			(pin 4  4 "CLKOSC_6PIN__SMDCLK_1" 0 "OUT" 0)
@@ -722,98 +711,98 @@
 						(attval "HETERO"
  "(ROACH_AFS600_CONFIGPINS),(ROACH_AFS600_PCB),(ROACH_AFS600_POWERPINS)")
 						(attval "DEVICE" "ROACH_AFS600"))))
-			(pin R13 2 "power_gate6" 0 "NC" 0)
-			(pin P5 2 "power_gate7" 0 "NC" 0)
-			(pin P4 2 "power_gate8" 0 "NC" 0)
-			(pin P12 2 "power_gate9" 0 "NC" 0)
-			(pin N6 2 "power_gate10" 0 "NC" 0)
-			(pin N3 2 "power_gate11" 0 "NC" 0)
-			(pin M7 2 "power_gate12" 0 "NC" 0)
-			(pin M3 2 "power_gate13" 0 "NC" 0)
-			(pin M2 2 "power_gate14" 0 "NC" 0)
-			(pin M11 2 "power_gate15" 0 "NC" 0)
-			(pin L6 2 "power_gate16" 0 "NC" 0)
-			(pin L5 2 "power_gate17" 0 "NC" 0)
-			(pin L4 2 "power_gate18" 0 "NC" 0)
-			(pin L3 2 "power_gate19" 0 "NC" 0)
-			(pin L2 2 "power_gate20" 0 "NC" 0)
-			(pin L1 2 "power_gate21" 0 "NC" 0)
-			(pin K6 2 "power_gate22" 0 "NC" 0)
-			(pin K4 2 "power_gate23" 0 "NC" 0)
-			(pin K3 2 "power_gate24" 0 "NC" 0)
-			(pin K16 2 "power_gate25" 0 "NC" 0)
-			(pin K14 2 "power_gate26" 0 "NC" 0)
-			(pin K13 2 "power_gate27" 0 "NC" 0)
-			(pin K11 2 "power_gate28" 0 "NC" 0)
-			(pin K1 2 "power_gate29" 0 "NC" 0)
-			(pin J6 2 "power_gate30" 0 "NC" 0)
-			(pin J5 2 "power_gate31" 0 "NC" 0)
-			(pin J3 2 "power_gate32" 0 "NC" 0)
-			(pin J2 2 "power_gate33" 0 "NC" 0)
-			(pin J14 2 "power_gate34" 0 "NC" 0)
-			(pin J13 2 "power_gate35" 0 "NC" 0)
-			(pin J12 2 "power_gate36" 0 "NC" 0)
-			(pin J11 2 "power_gate37" 0 "NC" 0)
-			(pin J1 2 "power_gate38" 0 "NC" 0)
-			(pin H2 2 "power_gate39" 0 "NC" 0)
-			(pin H14 2 "power_gate40" 0 "NC" 0)
-			(pin H13 2 "power_gate41" 0 "NC" 0)
-			(pin H12 2 "power_gate42" 0 "NC" 0)
-			(pin H11 2 "power_gate43" 0 "NC" 0)
-			(pin G6 2 "power_gate44" 0 "NC" 0)
-			(pin G4 2 "power_gate45" 0 "NC" 0)
-			(pin G3 2 "power_gate46" 0 "NC" 0)
-			(pin G14 2 "power_gate47" 0 "NC" 0)
-			(pin G13 2 "power_gate48" 0 "NC" 0)
-			(pin G11 2 "power_gate49" 0 "NC" 0)
-			(pin G1 2 "power_gate50" 0 "NC" 0)
-			(pin F9 2 "power_gate51" 0 "NC" 0)
-			(pin F7 2 "power_gate52" 0 "NC" 0)
-			(pin F6 2 "power_gate53" 0 "NC" 0)
-			(pin F5 2 "power_gate54" 0 "NC" 0)
-			(pin F4 2 "power_gate55" 0 "NC" 0)
-			(pin F3 2 "power_gate56" 0 "NC" 0)
-			(pin F2 2 "power_gate57" 0 "NC" 0)
-			(pin F16 2 "power_gate58" 0 "NC" 0)
-			(pin F15 2 "power_gate59" 0 "NC" 0)
-			(pin F14 2 "power_gate60" 0 "NC" 0)
-			(pin F13 2 "power_gate61" 0 "NC" 0)
-			(pin F12 2 "power_gate62" 0 "NC" 0)
-			(pin F11 2 "power_gate63" 0 "NC" 0)
-			(pin F10 2 "power_gate64" 0 "NC" 0)
-			(pin F1 2 "power_gate65" 0 "NC" 0)
-			(pin E9 2 "power_gate66" 0 "NC" 0)
-			(pin E6 2 "power_gate67" 0 "NC" 0)
-			(pin E5 2 "power_gate68" 0 "NC" 0)
-			(pin E3 2 "power_gate69" 0 "NC" 0)
-			(pin E2 2 "power_gate70" 0 "NC" 0)
-			(pin E15 2 "power_gate71" 0 "NC" 0)
-			(pin E14 2 "power_gate72" 0 "NC" 0)
-			(pin E12 2 "power_gate73" 0 "NC" 0)
-			(pin E11 2 "power_gate74" 0 "NC" 0)
-			(pin D5 2 "power_gate75" 0 "NC" 0)
-			(pin D4 2 "power_gate76" 0 "NC" 0)
-			(pin D3 2 "power_gate77" 0 "NC" 0)
-			(pin D2 2 "power_gate78" 0 "NC" 0)
-			(pin D15 2 "power_gate79" 0 "NC" 0)
-			(pin D14 2 "power_gate80" 0 "NC" 0)
-			(pin D13 2 "power_gate81" 0 "NC" 0)
-			(pin D11 2 "power_gate82" 0 "NC" 0)
-			(pin D10 2 "power_gate83" 0 "NC" 0)
-			(pin C9 2 "power_gate84" 0 "NC" 0)
-			(pin C8 2 "power_gate85" 0 "NC" 0)
-			(pin C10 2 "power_gate86" 0 "NC" 0)
-			(pin B9 2 "power_gate87" 0 "NC" 0)
-			(pin B8 2 "power_gate88" 0 "NC" 0)
-			(pin B6 2 "power_gate89" 0 "NC" 0)
-			(pin B5 2 "power_gate90" 0 "NC" 0)
-			(pin B14 2 "power_gate91" 0 "NC" 0)
-			(pin B13 2 "power_gate92" 0 "NC" 0)
-			(pin B12 2 "power_gate93" 0 "NC" 0)
-			(pin B11 2 "power_gate94" 0 "NC" 0)
-			(pin A14 2 "power_gate95" 0 "NC" 0)
-			(pin A13 2 "power_gate96" 0 "NC" 0)
-			(pin A11 2 "power_gate97" 0 "NC" 0)
+			(pin R13 2 "power_gate4" 0 "NC" 0)
+			(pin P5 2 "power_gate5" 0 "NC" 0)
+			(pin P4 2 "power_gate6" 0 "NC" 0)
+			(pin P12 2 "power_gate7" 0 "NC" 0)
+			(pin N6 2 "power_gate8" 0 "NC" 0)
+			(pin N3 2 "power_gate9" 0 "NC" 0)
+			(pin M7 2 "power_gate10" 0 "NC" 0)
+			(pin M3 2 "power_gate11" 0 "NC" 0)
+			(pin M2 2 "power_gate12" 0 "NC" 0)
+			(pin M11 2 "power_gate13" 0 "NC" 0)
+			(pin L6 2 "power_gate14" 0 "NC" 0)
+			(pin L5 2 "power_gate15" 0 "NC" 0)
+			(pin L4 2 "power_gate16" 0 "NC" 0)
+			(pin L3 2 "power_gate17" 0 "NC" 0)
+			(pin L2 2 "power_gate18" 0 "NC" 0)
+			(pin L1 2 "power_gate19" 0 "NC" 0)
+			(pin K6 2 "power_gate20" 0 "NC" 0)
+			(pin K4 2 "power_gate21" 0 "NC" 0)
+			(pin K3 2 "power_gate22" 0 "NC" 0)
+			(pin K16 2 "power_gate23" 0 "NC" 0)
+			(pin K14 2 "power_gate24" 0 "NC" 0)
+			(pin K13 2 "power_gate25" 0 "NC" 0)
+			(pin K11 2 "power_gate26" 0 "NC" 0)
+			(pin K1 2 "power_gate27" 0 "NC" 0)
+			(pin J6 2 "power_gate28" 0 "NC" 0)
+			(pin J5 2 "power_gate29" 0 "NC" 0)
+			(pin J3 2 "power_gate30" 0 "NC" 0)
+			(pin J2 2 "power_gate31" 0 "NC" 0)
+			(pin J14 2 "power_gate32" 0 "NC" 0)
+			(pin J13 2 "power_gate33" 0 "NC" 0)
+			(pin J12 2 "power_gate34" 0 "NC" 0)
+			(pin J11 2 "power_gate35" 0 "NC" 0)
+			(pin J1 2 "power_gate36" 0 "NC" 0)
+			(pin H2 2 "power_gate37" 0 "NC" 0)
+			(pin H14 2 "power_gate38" 0 "NC" 0)
+			(pin H13 2 "power_gate39" 0 "NC" 0)
+			(pin H12 2 "power_gate40" 0 "NC" 0)
+			(pin H11 2 "power_gate41" 0 "NC" 0)
+			(pin G6 2 "power_gate42" 0 "NC" 0)
+			(pin G4 2 "power_gate43" 0 "NC" 0)
+			(pin G3 2 "power_gate44" 0 "NC" 0)
+			(pin G14 2 "power_gate45" 0 "NC" 0)
+			(pin G13 2 "power_gate46" 0 "NC" 0)
+			(pin G11 2 "power_gate47" 0 "NC" 0)
+			(pin G1 2 "power_gate48" 0 "NC" 0)
+			(pin F9 2 "power_gate49" 0 "NC" 0)
+			(pin F7 2 "power_gate50" 0 "NC" 0)
+			(pin F6 2 "power_gate51" 0 "NC" 0)
+			(pin F5 2 "power_gate52" 0 "NC" 0)
+			(pin F4 2 "power_gate53" 0 "NC" 0)
+			(pin F3 2 "power_gate54" 0 "NC" 0)
+			(pin F2 2 "power_gate55" 0 "NC" 0)
+			(pin F16 2 "power_gate56" 0 "NC" 0)
+			(pin F15 2 "power_gate57" 0 "NC" 0)
+			(pin F14 2 "power_gate58" 0 "NC" 0)
+			(pin F13 2 "power_gate59" 0 "NC" 0)
+			(pin F12 2 "power_gate60" 0 "NC" 0)
+			(pin F11 2 "power_gate61" 0 "NC" 0)
+			(pin F10 2 "power_gate62" 0 "NC" 0)
+			(pin F1 2 "power_gate63" 0 "NC" 0)
+			(pin E9 2 "power_gate64" 0 "NC" 0)
+			(pin E6 2 "power_gate65" 0 "NC" 0)
+			(pin E5 2 "power_gate66" 0 "NC" 0)
+			(pin E3 2 "power_gate67" 0 "NC" 0)
+			(pin E2 2 "power_gate68" 0 "NC" 0)
+			(pin E15 2 "power_gate69" 0 "NC" 0)
+			(pin E14 2 "power_gate70" 0 "NC" 0)
+			(pin E12 2 "power_gate71" 0 "NC" 0)
+			(pin E11 2 "power_gate72" 0 "NC" 0)
+			(pin D5 2 "power_gate73" 0 "NC" 0)
+			(pin D4 2 "power_gate74" 0 "NC" 0)
+			(pin D3 2 "power_gate75" 0 "NC" 0)
+			(pin D2 2 "power_gate76" 0 "NC" 0)
+			(pin D15 2 "power_gate77" 0 "NC" 0)
+			(pin D14 2 "power_gate78" 0 "NC" 0)
+			(pin D13 2 "power_gate79" 0 "NC" 0)
+			(pin D11 2 "power_gate80" 0 "NC" 0)
+			(pin D10 2 "power_gate81" 0 "NC" 0)
+			(pin C9 2 "power_gate82" 0 "NC" 0)
+			(pin C8 2 "power_gate83" 0 "NC" 0)
+			(pin C10 2 "power_gate84" 0 "NC" 0)
+			(pin B9 2 "power_gate85" 0 "NC" 0)
+			(pin B8 2 "power_gate86" 0 "NC" 0)
+			(pin B6 2 "power_gate87" 0 "NC" 0)
+			(pin B5 2 "power_gate88" 0 "NC" 0)
+			(pin B14 2 "power_gate89" 0 "NC" 0)
+			(pin B13 2 "power_gate90" 0 "NC" 0)
+			(pin B12 2 "power_gate91" 0 "NC" 0)
+			(pin B11 2 "power_gate92" 0 "NC" 0)
+			(pin A14 2 "power_gate93" 0 "NC" 0)
+			(pin A13 2 "power_gate94" 0 "NC" 0)
+			(pin A11 2 "power_gate95" 0 "NC" 0)
 			(pin N15  5 "ROACH_AFS600__ROACH_AFS600_1" 0 "TCK" 0)
 			(pin N16  5 "ROACH_AFS600__ROACH_AFS600_1" 0 "TDI" 0)
 			(pin L12  5 "ROACH_AFS600__ROACH_AFS600_1" 0 "TDO" 0)
@@ -1828,45 +1817,45 @@
 						(attval "HETERO" "QDR2P_CTRL_DATA,QDR2P_JTAG,QDR2P_POWER")
 						(attval "PKG_TYPE" "BGA165C100P11X15_1500X1700X140")
 						(attval "REFDES" "U?"))))
-			(pin P9 2 "power_gate98" 0 "NC" 0)
-			(pin P2 2 "power_gate99" 0 "NC" 0)
-			(pin P1 2 "power_gate100" 0 "NC" 0)
-			(pin N10 2 "power_gate101" 0 "NC" 0)
-			(pin N9 2 "power_gate102" 0 "NC" 0)
-			(pin N1 2 "power_gate103" 0 "NC" 0)
-			(pin M9 2 "power_gate104" 0 "NC" 0)
-			(pin M2 2 "power_gate105" 0 "NC" 0)
-			(pin M1 2 "power_gate106" 0 "NC" 0)
-			(pin L10 2 "power_gate107" 0 "NC" 0)
-			(pin L9 2 "power_gate108" 0 "NC" 0)
-			(pin L1 2 "power_gate109" 0 "NC" 0)
-			(pin K9 2 "power_gate110" 0 "NC" 0)
-			(pin K2 2 "power_gate111" 0 "NC" 0)
-			(pin K1 2 "power_gate112" 0 "NC" 0)
-			(pin J9 2 "power_gate113" 0 "NC" 0)
-			(pin J2 2 "power_gate114" 0 "NC" 0)
-			(pin J1 2 "power_gate115" 0 "NC" 0)
-			(pin G10 2 "power_gate116" 0 "NC" 0)
-			(pin G9 2 "power_gate117" 0 "NC" 0)
-			(pin G1 2 "power_gate118" 0 "NC" 0)
-			(pin F10 2 "power_gate119" 0 "NC" 0)
-			(pin F9 2 "power_gate120" 0 "NC" 0)
-			(pin F1 2 "power_gate121" 0 "NC" 0)
-			(pin E9 2 "power_gate122" 0 "NC" 0)
-			(pin E2 2 "power_gate123" 0 "NC" 0)
-			(pin E1 2 "power_gate124" 0 "NC" 0)
-			(pin D10 2 "power_gate125" 0 "NC" 0)
-			(pin D9 2 "power_gate126" 0 "NC" 0)
-			(pin D1 2 "power_gate127" 0 "NC" 0)
-			(pin C9 2 "power_gate128" 0 "NC" 0)
-			(pin C6 2 "power_gate129" 0 "NC" 0)
-			(pin C2 2 "power_gate130" 0 "NC" 0)
-			(pin C1 2 "power_gate131" 0 "NC" 0)
-			(pin B10 2 "power_gate132" 0 "NC" 0)
-			(pin B9 2 "power_gate133" 0 "NC" 0)
-			(pin B5 2 "power_gate134" 0 "NC" 0)
-			(pin B1 2 "power_gate135" 0 "NC" 0)
-			(pin A7 2 "power_gate136" 0 "NC" 0)
+			(pin P9 2 "power_gate96" 0 "NC" 0)
+			(pin P2 2 "power_gate97" 0 "NC" 0)
+			(pin P1 2 "power_gate98" 0 "NC" 0)
+			(pin N10 2 "power_gate99" 0 "NC" 0)
+			(pin N9 2 "power_gate100" 0 "NC" 0)
+			(pin N1 2 "power_gate101" 0 "NC" 0)
+			(pin M9 2 "power_gate102" 0 "NC" 0)
+			(pin M2 2 "power_gate103" 0 "NC" 0)
+			(pin M1 2 "power_gate104" 0 "NC" 0)
+			(pin L10 2 "power_gate105" 0 "NC" 0)
+			(pin L9 2 "power_gate106" 0 "NC" 0)
+			(pin L1 2 "power_gate107" 0 "NC" 0)
+			(pin K9 2 "power_gate108" 0 "NC" 0)
+			(pin K2 2 "power_gate109" 0 "NC" 0)
+			(pin K1 2 "power_gate110" 0 "NC" 0)
+			(pin J9 2 "power_gate111" 0 "NC" 0)
+			(pin J2 2 "power_gate112" 0 "NC" 0)
+			(pin J1 2 "power_gate113" 0 "NC" 0)
+			(pin G10 2 "power_gate114" 0 "NC" 0)
+			(pin G9 2 "power_gate115" 0 "NC" 0)
+			(pin G1 2 "power_gate116" 0 "NC" 0)
+			(pin F10 2 "power_gate117" 0 "NC" 0)
+			(pin F9 2 "power_gate118" 0 "NC" 0)
+			(pin F1 2 "power_gate119" 0 "NC" 0)
+			(pin E9 2 "power_gate120" 0 "NC" 0)
+			(pin E2 2 "power_gate121" 0 "NC" 0)
+			(pin E1 2 "power_gate122" 0 "NC" 0)
+			(pin D10 2 "power_gate123" 0 "NC" 0)
+			(pin D9 2 "power_gate124" 0 "NC" 0)
+			(pin D1 2 "power_gate125" 0 "NC" 0)
+			(pin C9 2 "power_gate126" 0 "NC" 0)
+			(pin C6 2 "power_gate127" 0 "NC" 0)
+			(pin C2 2 "power_gate128" 0 "NC" 0)
+			(pin C1 2 "power_gate129" 0 "NC" 0)
+			(pin B10 2 "power_gate130" 0 "NC" 0)
+			(pin B9 2 "power_gate131" 0 "NC" 0)
+			(pin B5 2 "power_gate132" 0 "NC" 0)
+			(pin B1 2 "power_gate133" 0 "NC" 0)
+			(pin A7 2 "power_gate134" 0 "NC" 0)
 			(pin R10  3 "QDR2P_JTAG__QDRIIP_X18_SA21_0_1" 0 "TMS" 0)
 			(pin R1  4 "QDR2P_JTAG__QDRIIP_X18_SA21_0_1" 0 "TDO" 0)
 			(pin R11  3 "QDR2P_JTAG__QDRIIP_X18_SA21_0_1" 0 "TDI" 0)
@@ -2477,8 +2466,8 @@
 						(attval "DEVICE" "MAX9032AKA")
 						(attval "PKG_TYPE" "SOT80P330X140-8M")
 						(attval "REFDES" "U?"))))
-			(pin 8 2 "power_gate137" 0 "3V3" 0)
-			(pin 4 2 "power_gate138" 0 "GND" 0)
+			(pin 8 2 "power_gate135" 0 "3V3" 0)
+			(pin 4 2 "power_gate136" 0 "GND" 0)
 			(pin 1  4 "MAX9032AKA__MAX9032AKA_1" 0 "OUT" 0)
 			(pin 2  3 "MAX9032AKA__MAX9032AKA_1" 0 "IN-" 0)
 			(pin 3  3 "MAX9032AKA__MAX9032AKA_1" 0 "IN+" 0)
@@ -2505,7 +2494,7 @@
 					(attributes
 						(attval "Description" "STANDARD JUMPER")
 						(attval "DEVICE" "JUMPER")
-						(attval "PKG_TYPE" "RESC1005X40N")
+						(attval "PKG_TYPE" "JUMPER")
 						(attval "REFDES" "JP?"))))
 			(pin 2  5 "JUMPER__JUMPER0805_1" 0 "P2" 0)
 			(pin 1  5 "JUMPER__JUMPER0805_1" 0 "P1" 0))
@@ -2533,7 +2522,7 @@
 					(attributes
 						(attval "Description" "STANDARD JUMPER")
 						(attval "DEVICE" "JUMPER")
-						(attval "PKG_TYPE" "RESC1005X40N")
+						(attval "PKG_TYPE" "JUMPER")
 						(attval "REFDES" "JP?"))))
 			(pin 2  5 "JUMPER__JUMPER_1" 0 "P2" 0)
 			(pin 1  5 "JUMPER__JUMPER_1" 0 "P1" 0))
@@ -2547,7 +2536,7 @@
 						(attval "DEVICE" "JTAG-10PIN")
 						(attval "PKG_TYPE" "3M2510_6002UB")
 						(attval "REFDES" "J?"))))
-			(pin 4 2 "power_gate139" 0 "NC" 0)
+			(pin 4 2 "power_gate137" 0 "NC" 0)
 			(pin 7  5 "ACTEL_JTAG_10PIN__JTAG-10PIN_1" 0 "VPUMP" 0)
 			(pin 6  5 "ACTEL_JTAG_10PIN__JTAG-10PIN_1" 0 "VJTAG" 0)
 			(pin 8  4 "ACTEL_JTAG_10PIN__JTAG-10PIN_1" 0 "TRST" 0)
@@ -4423,6 +4412,20 @@
 			(pin 7  5 "FDS6675BZ__FDS6675BZ_1" 0 "D_2" 0)
 			(pin 6  5 "FDS6675BZ__FDS6675BZ_1" 0 "D_1" 0)
 			(pin 5  5 "FDS6675BZ__FDS6675BZ_1" 0 "D_0" 0))
+		(part "ECX-306")
+		(logical_part_mapping "ECX-306"
+			(comp "X5"))
+		(logical_part "ECX-306"
+			(slots
+				(slot "ECX-306__ECX-306_1"
+					(attributes
+						(attval "PKG_TYPE" "OSCL550P340X800X250-4N")
+						(attval "REFDES" "X?")
+						(attval "VALUE" "32.768KHZ"))))
+			(pin 3 2 "power_gate138" 0 "NC" 0)
+			(pin 2 2 "power_gate139" 0 "NC" 0)
+			(pin 4  5 "ECX-306__ECX-306_1" 0 "4" 0)
+			(pin 1  5 "ECX-306__ECX-306_1" 0 "1" 0))
 		(part "DIODE_SIG_SOT23_150MA_BAV70")
 		(logical_part_mapping "DIODE_SIG_SOT23_150MA_BAV70"
 			(comp "D1"))
@@ -7003,14 +7006,15 @@
 				(attval "VALUE" "22.1184MHZ")
 				(attval "DEVICE" "XTAL_22R1184MHZ_SMT6X3_18PF_50P")
 				(attval "REFDES" "Y1")))
-		(component "OSCCC425P320X500X90-4N"
+		(component "OSCL550P340X800X250-4N"
 			(place "X5" 0.0 0.0 top 0.0
-				(comp_pin "3" 0.0 0.0 "BI")
+				(comp_pin "4" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI")
 				(comp_pin "2" 0.0 0.0 "NC")
-				(comp_pin "4" 0.0 0.0 "NC"))
+				(comp_pin "3" 0.0 0.0 "NC"))
 			(attributes
-				(attval "DEVICE" "TZ0614A")
+				(attval "VALUE" "32.768KHZ")
+				(attval "DEVICE" "ECX-306")
 				(attval "REFDES" "X5")))
 		(component "OSCSC254P525X720X180-6N"
 			(place "X4" 0.0 0.0 top 0.0
@@ -15650,7 +15654,7 @@
 				(attval "DESCRIPTION" "3 WAY JUMPER")
 				(attval "DEVICE" "JUMPER3")
 				(attval "REFDES" "JP26")))
-		(component "TSM_2X1_SV"
+		(component "JUMPER"
 			(place "JP25" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
@@ -15659,7 +15663,7 @@
 				(attval "GEOMETRY.HEIGHT" "1")
 				(attval "DEVICE" "JUMPER")
 				(attval "REFDES" "JP25")))
-		(component "TSM_2X1_SV"
+		(component "JUMPER"
 			(place "JP24" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
@@ -15794,7 +15798,7 @@
 				(attval "DESCRIPTION" "3 WAY JUMPER")
 				(attval "DEVICE" "JUMPER3")
 				(attval "REFDES" "JP10")))
-		(component "RESC2012X60N"
+		(component "JUMPER"
 			(place "JP9" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
@@ -15802,7 +15806,7 @@
 				(attval "DESCRIPTION" "STANDARD JUMPER")
 				(attval "DEVICE" "JUMPER0805")
 				(attval "REFDES" "JP9")))
-		(component "RESC2012X60N"
+		(component "JUMPER"
 			(place "JP8" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
@@ -15810,7 +15814,7 @@
 				(attval "DESCRIPTION" "STANDARD JUMPER")
 				(attval "DEVICE" "JUMPER0805")
 				(attval "REFDES" "JP8")))
-		(component "RESC2012X60N"
+		(component "JUMPER"
 			(place "JP7" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
@@ -15818,7 +15822,7 @@
 				(attval "DESCRIPTION" "STANDARD JUMPER")
 				(attval "DEVICE" "JUMPER0805")
 				(attval "REFDES" "JP7")))
-		(component "RESC2012X60N"
+		(component "JUMPER"
 			(place "JP6" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
@@ -15826,7 +15830,7 @@
 				(attval "DESCRIPTION" "STANDARD JUMPER")
 				(attval "DEVICE" "JUMPER0805")
 				(attval "REFDES" "JP6")))
-		(component "RESC2012X60N"
+		(component "JUMPER"
 			(place "JP5" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
@@ -15834,7 +15838,7 @@
 				(attval "DESCRIPTION" "STANDARD JUMPER")
 				(attval "DEVICE" "JUMPER0805")
 				(attval "REFDES" "JP5")))
-		(component "RESC2012X60N"
+		(component "JUMPER"
 			(place "JP4" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
@@ -19178,7 +19182,7 @@
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
 			(attributes
-				(attval "VALUE" "10PF")
+				(attval "VALUE" "22PF")
 				(attval "TOLERANCE" "±5%")
 				(attval "DEVICE" "C")
 				(attval "REFDES" "C555")))
@@ -19187,7 +19191,7 @@
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
 			(attributes
-				(attval "VALUE" "10PF")
+				(attval "VALUE" "22PF")
 				(attval "TOLERANCE" "±5%")
 				(attval "DEVICE" "C")
 				(attval "REFDES" "C554")))
@@ -28000,9 +28004,9 @@
 		(net "$1I821\XPORT_RESET"
 			(pins U60-C7 J28-3))
 		(net "$1I821\XTAL1"
-			(pins X5-1 U60-H4 C555-1))
+			(pins U60-H4 X5-1 C555-1))
 		(net "$1I821\XTAL2"
-			(pins X5-3 U60-H3 C554-1))
+			(pins U60-H3 X5-4 C554-1))
 		(net "$1I860\N14667223"
 			(pins C1P-2-1 C1P-1-1 U1-AP24 L1-2 C1P-3-1))
 		(net "$1I860\N15170531"
@@ -34461,6 +34465,9 @@
 		(net_scalar "DDR_VREF_0V9"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "DDR_VREF_+0.9V"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "CPU_TRST#"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
@@ -34612,6 +34619,75 @@
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "+1.0V"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I860\PWR_OUT2"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I860\PWR_OUT1"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I860\N44102905"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I860\N43189058"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I860\N28645819"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I860\N28645813"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I860\N28612457"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I860\N28519659"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I860\N28516698"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I860\N28513723"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I860\N25329691"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I860\N15171845"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I860\N15171339"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I860\N15171095"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I860\N15170927"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I860\N15170891"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I860\N15170879"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I860\N15170875"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I860\N15170673"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I860\N15170641"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I860\N15170557"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I860\N15170531"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I860\N14667223"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I821\XTAL2"

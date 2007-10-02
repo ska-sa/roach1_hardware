@@ -1,29 +1,11 @@
 *PADS-ECO-V2007.0-MILS*
-*REMARK*  old file: C:\Users\mrevnell\roach\elec\roach\layout\ibo03.asc
+*REMARK*  old file: C:\Users\mrevnell\roach\elec\roach\layout\ibo04.asc
 *REMARK*  new file: C:\Users\mrevnell\roach\elec\roach\roach_top.asc
-*REMARK*  created by ECOGEN (Version 6.4v) on 10/1/2007 12:28:49
-*PART*
-J10  SMA_PCBMOUNT_RECEPTACLE
-J11  SMA_PCBMOUNT_RECEPTACLE
-J40  SMA_PCBMOUNT_RECEPTACLE
-J41  SMA_PCBMOUNT_RECEPTACLE
-*NET*
-*SIGNAL*  $1I144\$1N291
-J40.1  R326.2
-*SIGNAL*  $1I144\$1N305
-J41.1  R327.2
-*SIGNAL*  $1I291\$1N128
-C293.1  J10.1
-*SIGNAL*  $1I291\$1N168
-C294.1  J11.1
-*SIGNAL*  GND
-J40.2  J41.2  J10.2  J11.2  J40.3  J41.3  J10.3
-J11.3  J40.4  J41.4  J10.4  J11.4  J40.5  J41.5
-J10.5  J11.5
-*DEL_ATTRIBUTE*	PART	C302
-"Description"
-"Geometry.Height"
-*DEL_ATTRIBUTE*	PART	J34
+*REMARK*  created by ECOGEN (Version 6.4v) on 10/2/2007 13:20:07
+*CHGPART*
+R185  R@RESC1005X40N  R@VISHAY_AC05
+R187  R@RESC1005X40N  R@VISHAY_AC05
+*DEL_ATTRIBUTE*	PART	J18
 "Decal Builder,Date"
 "Polarity"
 
@@ -43,5 +25,5 @@ VALID_LAYER	1
 VALID_LAYER	2
 VALID_VIA_TYPE	*USE_CURRENT*
 
-*REMARK*  Deleted pins: 0,  Added pins: 24
+*REMARK*  Deleted pins: 0,  Added pins: 0
 *END*
