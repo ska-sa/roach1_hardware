@@ -302,24 +302,6 @@ AP 10pin_ioheader 9 #=8
 AP 10pin_ioheader 9 PINTYPE=IN
 AP 10pin_ioheader 10 #=9
 AP 10pin_ioheader 10 PINTYPE=IN
-|Q con_hdr_1x2_m_vt_0r1_smt 1
-AS con_hdr_1x2_m_vt_0r1_smt REFDES=P?
-AS con_hdr_1x2_m_vt_0r1_smt DEVICE=CON_HDR_1X2_M_VT_0R1_SMT
-AS con_hdr_1x2_m_vt_0r1_smt PARTS=1
-AS con_hdr_1x2_m_vt_0r1_smt PKG_TYPE=TSM_2X1_SV
-AS con_hdr_1x2_m_vt_0r1_smt LEVEL=STD
-AS con_hdr_1x2_m_vt_0r1_smt SHAPE=1x2 VT
-AS con_hdr_1x2_m_vt_0r1_smt ALT_SUP=MET: M650-H102-02-01G
-AS con_hdr_1x2_m_vt_0r1_smt SUP=SAM: TSM-102-01-TM-SV
-AS con_hdr_1x2_m_vt_0r1_smt P/D_NUM=SAM: TSM-102-01-TM-SV
-AS con_hdr_1x2_m_vt_0r1_smt ALT_PART=MET: M650-H102-02-01G
-AS con_hdr_1x2_m_vt_0r1_smt GRN=LHR
-AS con_hdr_1x2_m_vt_0r1_smt VALUE
-AS con_hdr_1x2_m_vt_0r1_smt PINORDER=1 2
-AP con_hdr_1x2_m_vt_0r1_smt 1 #=1
-AP con_hdr_1x2_m_vt_0r1_smt 1 PINTYPE=OUT
-AP con_hdr_1x2_m_vt_0r1_smt 2 #=2
-AP con_hdr_1x2_m_vt_0r1_smt 2 PINTYPE=OUT
 AS out OUT
 AS out PINORDER=OUT
 AP out 1 PINTYPE=OUT
@@ -1575,6 +1557,25 @@ AP ic_cpu_te_pbga680_440epx_grx_e 77 #=C15
 AP ic_cpu_te_pbga680_440epx_grx_e 77 PINTYPE=BI
 AP ic_cpu_te_pbga680_440epx_grx_e 78 #=D15
 AP ic_cpu_te_pbga680_440epx_grx_e 78 PINTYPE=BI
+|Q con_hdr_1x2_m_vt_0r1_smt 1
+AS con_hdr_1x2_m_vt_0r1_smt REFDES=P?
+AS con_hdr_1x2_m_vt_0r1_smt DEVICE=CON_HDR_1X2_M_VT_0R1_SMT
+AS con_hdr_1x2_m_vt_0r1_smt PARTS=1
+AS con_hdr_1x2_m_vt_0r1_smt PKG_TYPE=JUMPER
+AS con_hdr_1x2_m_vt_0r1_smt LEVEL=STD
+AS con_hdr_1x2_m_vt_0r1_smt SHAPE=1X2 VT
+AS con_hdr_1x2_m_vt_0r1_smt ALT_SUP=MET: M650-H102-02-01G
+AS con_hdr_1x2_m_vt_0r1_smt SUP=SAM: TSM-102-01-TM-SV
+AS con_hdr_1x2_m_vt_0r1_smt P/D_NUM=SAM: TSM-102-01-TM-SV
+AS con_hdr_1x2_m_vt_0r1_smt ALT_PART=MET: M650-H102-02-01G
+AS con_hdr_1x2_m_vt_0r1_smt GRN=LHR
+AS con_hdr_1x2_m_vt_0r1_smt VALUE
+AS con_hdr_1x2_m_vt_0r1_smt PINORDER=1 2
+AS con_hdr_1x2_m_vt_0r1_smt INOV_VER_REC=20:58_10-2-07
+AP con_hdr_1x2_m_vt_0r1_smt 1 #=1
+AP con_hdr_1x2_m_vt_0r1_smt 1 PINTYPE=OUT
+AP con_hdr_1x2_m_vt_0r1_smt 2 #=2
+AP con_hdr_1x2_m_vt_0r1_smt 2 PINTYPE=OUT
 AN PADD[2:31] VLBUSISONSHEET=1
 AN PDATA[0:31] VLBUSISONSHEET=1
 AN $1N802 NC
@@ -2041,12 +2042,6 @@ API $1I329 res_3r3k_0402_5_ 1 PINLOC=25F1
 API $1I329 res_3r3k_0402_5_ 1 #=1
 API $1I329 res_3r3k_0402_5_ 2 PINLOC=25F1
 API $1I329 res_3r3k_0402_5_ 2 #=2
-M con_hdr_1x2_m_vt_0r1_smt $1I363
-I $1I363 con_hdr_1x2_m_vt_0r1_smt GND CLK_PERCLK SCHLOC=25E6`MANUFACTURER=SAMTEC`REFDES=J7`PKG_TYPE=TSM_2X1_SV`VALUE=0.1IN M SMT`SHAPE`
-API $1I363 con_hdr_1x2_m_vt_0r1_smt 1 PINLOC=25E6
-API $1I363 con_hdr_1x2_m_vt_0r1_smt 1 #=1
-API $1I363 con_hdr_1x2_m_vt_0r1_smt 2 PINLOC=25E6
-API $1I363 con_hdr_1x2_m_vt_0r1_smt 2 #=2
 M res_1k_0402_5_ $1I358
 I $1I358 res_1k_0402_5_ PADD4 GND SCHLOC=25F7`MANUFACTURER=YAGEO-PHYCOMP`REFDES=R83`BOARD_OPTION=BASE`PKG_TYPE=RESC1005X40N`VALUE=1K`SHAPE`
 API $1I358 res_1k_0402_5_ 1 PINLOC=25F7
@@ -2843,4 +2838,10 @@ I POE# out POE#
 API POE# out 1 XREF2=25-7G,25-7M
 API POE# out 1 XREF1=24-8C,25-7B
 API POE# out 1 XREF=1-2E,1-3M
+M con_hdr_1x2_m_vt_0r1_smt $1I363
+I $1I363 con_hdr_1x2_m_vt_0r1_smt GND CLK_PERCLK SCHLOC=25E6`MANUFACTURER=SAMTEC`REFDES=J7`PKG_TYPE=JUMPER`VALUE=0.1IN M SMT`SHAPE`
+API $1I363 con_hdr_1x2_m_vt_0r1_smt 1 PINLOC=25E6
+API $1I363 con_hdr_1x2_m_vt_0r1_smt 1 #=1
+API $1I363 con_hdr_1x2_m_vt_0r1_smt 2 PINLOC=25E6
+API $1I363 con_hdr_1x2_m_vt_0r1_smt 2 #=2
 EW
