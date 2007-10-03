@@ -1877,6 +1877,7 @@ Net_Cross_Reference
 ("PADD10"    "PADD10")
 ("PADD10"    "$1I863\PADD10")
 ("MONITOR_INT"    "MONITOR_INT")
+("MONITOR_INT"    "$1I1002\MONITOR_INT")
 ("MONITOR_INT"    "$1I967\MONITOR_INT")
 ("MGT_AVTTX_PG"    "MGT_AVTTX_PG")
 ("MGT_AVTTX_PG"    "$1I803\MGT_AVTTX_PG")
@@ -1952,8 +1953,6 @@ Net_Cross_Reference
 ("GMCMDIO"    "$1I810\GMCMDIO")
 ("GMCMDCLK"    "GMCMDCLK")
 ("GMCMDCLK"    "$1I810\GMCMDCLK")
-("GETH1_INT#"    "GETH1_INT#")
-("GETH1_INT#"    "$1I1002\GETH1_INT#")
 ("GETH0_RST#"    "GETH0_RST#")
 ("GETH0_RST#"    "$1I747\GETH0_RST#")
 ("GETH0_RST#"    "$1I810\GETH0_RST#")
@@ -3957,6 +3956,7 @@ Internal_Net_Cross_Reference
 ("PADD10"    "PADD10")
 ("PADD10"    "$1I863\PADD10")
 ("MONITOR_INT"    "MONITOR_INT")
+("MONITOR_INT"    "$1I1002\MONITOR_INT")
 ("MONITOR_INT"    "$1I967\MONITOR_INT")
 ("MGT_AVTTX_PG"    "MGT_AVTTX_PG")
 ("MGT_AVTTX_PG"    "$1I803\MGT_AVTTX_PG")
@@ -4032,8 +4032,6 @@ Internal_Net_Cross_Reference
 ("GMCMDIO"    "$1I810\GMCMDIO")
 ("GMCMDCLK"    "GMCMDCLK")
 ("GMCMDCLK"    "$1I810\GMCMDCLK")
-("GETH1_INT#"    "GETH1_INT#")
-("GETH1_INT#"    "$1I1002\GETH1_INT#")
 ("GETH0_RST#"    "GETH0_RST#")
 ("GETH0_RST#"    "$1I747\GETH0_RST#")
 ("GETH0_RST#"    "$1I810\GETH0_RST#")
@@ -11976,7 +11974,7 @@ Pin_Cross_Reference
 	)
 	( 2    "$1I1002\$1I229"
 		(AD33    "GETH0_INT#")
-		(AC31    "GETH1_INT#")
+		(AC31    "MONITOR_INT")
 		(AD34    "PCI_INTA#")
 		(U34    "STTM_ALERT")
 		(V32    "GPIO44")
@@ -16175,7 +16173,7 @@ Pin_Cross_Reference
 ("R32"
 	( 1    "$1I1002\$1I193"
 		(1    "3V3")
-		(2    "GETH1_INT#")
+		(2    "MONITOR_INT")
 	)
 )
 ("R33"
