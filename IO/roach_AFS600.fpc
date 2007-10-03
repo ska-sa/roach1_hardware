@@ -9,7 +9,10 @@
   (VENDOR actel)
   (LANGUAGE Vhdl)
   (CELL fbga256)
-  (DX_PROJECT_PATH "..\\roach" 1190881134 1)
+  (DX_PROJECT_PATH "..\\roach" 1191310040 1)
+  (DX_OAT_PATH "..\\roach\\sch\\roach_top.oat" 1191310040 1)
+  (DX_TOP_LEVEL_DESIGN roach_top)
+  (EXPEDITION_REFDES U60)
   (SSO_BANK_THRESHOLD 70)
   (CDBFLOW 0)
   (HKP true)
@@ -375,6 +378,22 @@
       (TYPE GND)
     )
     (SIGNAL
+      (NAME I2C0_33_DATA)
+      (HDL_NAME I2C0_33_DATA)
+      (DIR INOUT)
+      (PIN F1)
+      (TYPE IO)
+      (IOSTANDARD LVTTL)
+    )
+    (SIGNAL
+      (NAME I2C0_SCLK)
+      (HDL_NAME I2C0_SCLK)
+      (DIR IN)
+      (PIN G1)
+      (TYPE IO)
+      (IOSTANDARD LVTTL)
+    )
+    (SIGNAL
       (NAME LOAD_RES_OFF)
       (HDL_NAME LOAD_RES_OFF)
       (DIR OUT)
@@ -429,6 +448,14 @@
       (PIN B3)
       (TYPE IO)
       (IOSTANDARD LVCMOS33)
+    )
+    (SIGNAL
+      (NAME MONITOR_INT)
+      (HDL_NAME MONITOR_INT)
+      (DIR OUT)
+      (PIN F2)
+      (TYPE IO)
+      (IOSTANDARD LVTTL)
     )
     (SIGNAL
       (NAME "MON_RESET#")
@@ -1134,7 +1161,7 @@
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_AFS600_configpins),(roach_AFS600_pcb),(roach_AFS600_powerpins)")
+          (VALUE "(roach_AFS600_configpins),(roach_AFS600_pcb),(roach_AFS600_powerpins),(roach_AFS600_ppcif)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -1184,7 +1211,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F1,F10,F11,F12,F13,F14,F15,F16,F2,F3,F4,F5,F6,F7,F9,G1,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J1,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J1,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -6278,7 +6305,7 @@
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_AFS600_configpins),(roach_AFS600_pcb),(roach_AFS600_powerpins)")
+          (VALUE "(roach_AFS600_configpins),(roach_AFS600_pcb),(roach_AFS600_powerpins),(roach_AFS600_ppcif)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -6328,7 +6355,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F1,F10,F11,F12,F13,F14,F15,F16,F2,F3,F4,F5,F6,F7,F9,G1,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J1,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J1,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -12231,7 +12258,7 @@
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_AFS600_configpins),(roach_AFS600_pcb),(roach_AFS600_powerpins)")
+          (VALUE "(roach_AFS600_configpins),(roach_AFS600_pcb),(roach_AFS600_powerpins),(roach_AFS600_ppcif)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -12281,7 +12308,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F1,F10,F11,F12,F13,F14,F15,F16,F2,F3,F4,F5,F6,F7,F9,G1,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J1,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J1,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -12310,6 +12337,355 @@
         (ATTRIBUTE
           (NAME INST)
           (VALUE roach_AFS600_powerpins)
+          (OWNER DESIGNARCHITECT)
+        )
+        (ATTRIBUTE
+          (NAME DEVICE)
+          (VALUE roach_afs600)
+          (OWNER DXDESIGNER)
+          (LOCKED T)
+        )
+        (ATTRIBUTE
+          (NAME "Part Number")
+          (VALUE roach_afs600)
+          (OWNER ICDBDXD)
+          (LOCKED T)
+        )
+        (ATTRIBUTE
+          (NAME PART_NO)
+          (VALUE roach_afs600)
+          (OWNER DESIGNARCHITECT)
+          (LOCKED T)
+        )
+        (ATTRIBUTE
+          (NAME "Part Number")
+          (VALUE roach_afs600)
+          (OWNER DESIGNCAPTURE)
+          (LOCKED T)
+        )
+        (ATTRIBUTE
+          (NAME PKG_TYPE)
+          (VALUE BGA256C100P16X16_1700X1700X170)
+          (OWNER DXDESIGNER)
+          (LOCKED T)
+        )
+        (ATTRIBUTE
+          (NAME GEOM)
+          (VALUE BGA256C100P16X16_1700X1700X170)
+          (OWNER DESIGNARCHITECT)
+          (LOCKED T)
+        )
+      )
+    )
+    (SYMBOL
+      (NAME roach_AFS600_ppcif)
+      (BACKGROUND T)
+      (BACKGROUNDNAME Box)
+      (OUTLINE -10160 -5080 60960 25400)
+      (PCB T)
+      (ELEMENTS
+        (RECT
+          (POSITION 0 -5080 60960 25400)
+          (BACKGROUND T)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME I2C0_33_DATA)
+          (POSITION -10160 5080)
+          (EXTTYPE BI)
+          (LENGTH 10160)
+          (SLOT 1)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE F1)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE F1)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE F1)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE F1)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE I2C0_33_DATA)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE I2C0_33_DATA)
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL I2C0_33_DATA)
+          (POSITION 846 5080)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME I2C0_SCLK)
+          (POSITION -10160 10160)
+          (EXTTYPE IN)
+          (LENGTH 10160)
+          (SLOT 2)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE G1)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE G1)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE G1)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE G1)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IN)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE I2C0_SCLK)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE I2C0_SCLK)
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL I2C0_SCLK)
+          (POSITION 846 10160)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME MONITOR_INT)
+          (POSITION -10160 15240)
+          (EXTTYPE OUT)
+          (LENGTH 10160)
+          (SLOT 3)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE F2)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE F2)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE F2)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE F2)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE MONITOR_INT)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE MONITOR_INT)
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL MONITOR_INT)
+          (POSITION 846 15240)
+          (VALIGN CENTER)
+        )
+        (TEXT
+          (PINNUMBER I2C0_33_DATA)
+          (POSITION -10160 4572)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER I2C0_SCLK)
+          (POSITION -10160 9652)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER MONITOR_INT)
+          (POSITION -10160 14732)
+          (VALIGN BOTTOM)
+        )
+      )
+      (ATTRIBUTES
+        (ATTRIBUTE
+          (NAME "Part Name")
+          (VALUE roach_AFS600_top)
+          (OWNER DESIGNCAPTURE)
+        )
+        (ATTRIBUTE
+          (NAME HETERO_SYMNAME)
+          (VALUE roach_AFS600)
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME HETERO)
+          (VALUE "(roach_AFS600_configpins),(roach_AFS600_pcb),(roach_AFS600_powerpins),(roach_AFS600_ppcif)")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME COMP)
+          (VALUE roach_AFS600_ppcif)
+          (OWNER DESIGNARCHITECT)
+        )
+        (ATTRIBUTE
+          (NAME LEVEL)
+          (VALUE std)
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME REFDES)
+          (VALUE "U?")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME TYPE)
+          (VALUE FPGA)
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME TYPE)
+          (VALUE FPGA)
+          (OWNER DESIGNARCHITECT)
+        )
+        (ATTRIBUTE
+          (NAME PINSWAP)
+          (VALUE "(I2C0_33_DATA,I2C0_SCLK,MONITOR_INT)")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME PINSWAP)
+          (VALUE "(I2C0_33_DATA,I2C0_SCLK,MONITOR_INT)")
+          (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME SIGNAL)
+          (VALUE "")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME NC)
+          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J1,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME DEVICE)
+          (VALUE roach_afs600)
+          (OWNER DXDESIGNER)
+          (LOCKED T)
+        )
+        (ATTRIBUTE
+          (NAME PKG_TYPE)
+          (VALUE BGA256C100P16X16_1700X1700X170)
+          (OWNER DXDESIGNER)
+          (LOCKED T)
+        )
+        (ATTRIBUTE
+          (NAME PART_NO)
+          (VALUE roach_afs600)
+          (OWNER DESIGNARCHITECT)
+          (LOCKED T)
+        )
+        (ATTRIBUTE
+          (NAME GEOM)
+          (VALUE BGA256C100P16X16_1700X1700X170)
+          (OWNER DESIGNARCHITECT)
+          (LOCKED T)
+        )
+        (ATTRIBUTE
+          (NAME "Part Number")
+          (VALUE roach_afs600)
+          (OWNER DESIGNCAPTURE)
+          (LOCKED T)
+        )
+        (ATTRIBUTE
+          (NAME "Part Number")
+          (VALUE roach_afs600)
+          (OWNER ICDBDXD)
+          (LOCKED T)
+        )
+      )
+      (INSTANCEATTRIBUTES
+        (ATTRIBUTE
+          (NAME INST)
+          (VALUE roach_AFS600_ppcif)
           (OWNER DESIGNARCHITECT)
         )
         (ATTRIBUTE
@@ -12435,7 +12811,19 @@
       (STANDARD LVTTL)
     )
     (IO
+      (PIN F1)
+      (STANDARD LVTTL)
+    )
+    (IO
+      (PIN F2)
+      (STANDARD LVTTL)
+    )
+    (IO
       (PIN F8)
+      (STANDARD LVTTL)
+    )
+    (IO
+      (PIN G1)
       (STANDARD LVTTL)
     )
     (IO
@@ -12649,7 +13037,19 @@
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
+      (PIN F1)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
+      (PIN F2)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
       (PIN F8)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
+      (PIN G1)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP

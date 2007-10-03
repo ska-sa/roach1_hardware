@@ -121,70 +121,6 @@ AS roach_ppc_ddr2 DEVICE=ROACH_PPC_DDR2
 AS roach_ppc_ddr2 SHEET
 AS roach_ppc_ddr2 INOV_VER_REC=8:15_10-2-07
 AP roach_ppc_ddr2 1 PINTYPE=IN
-|Q roach_ppc_tst_clk_io 1
-AS roach_ppc_tst_clk_io DEVICE=ROACH_PPC_TST_CLK_IO
-AS roach_ppc_tst_clk_io SHEET
-AS roach_ppc_tst_clk_io PINORDER=CLK_TMRCLK CLK_GETH1_25MHZ CLK_CPLD_33MHZ SEL_SYSCLK CLK_UART_11.0592MHZ SYSERR CLK_USB2.0_12MHZ CLK_CPLD_50MHZ CLK_USB2.0_48MHZ CLK_GETH0_25MHZ CLK_PCI3_66/33MHZ CLK_PCI2_66/33MHZ CLK_SEL_M66EN DEBUG_TRST# CPU_TRST# PWR_GOOD RESET_PB_POR# RESET_POR# SX95T_TDO SX95T_TMS SX95T_TCK SX95T_TDI GPIO44 STTM_ALERT PCI_INTA# GETH1_INT# GETH0_INT# CLK_PCI1_66/33MHZ
-AS roach_ppc_tst_clk_io INOV_VER_REC=8:17_10-2-07
-AP roach_ppc_tst_clk_io 1 PINTYPE=IN
-AP roach_ppc_tst_clk_io 2 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 3 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 4 PINTYPE=IN
-AP roach_ppc_tst_clk_io 5 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 6 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 7 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 8 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 9 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 10 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 11 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 12 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 13 PINTYPE=IN
-AP roach_ppc_tst_clk_io 14 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 15 PINTYPE=IN
-AP roach_ppc_tst_clk_io 16 PINTYPE=IN
-AP roach_ppc_tst_clk_io 17 PINTYPE=IN
-AP roach_ppc_tst_clk_io 18 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 18 IREF=6,11
-AP roach_ppc_tst_clk_io 19 PINTYPE=IN
-AP roach_ppc_tst_clk_io 20 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 21 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 22 PINTYPE=OUT
-AP roach_ppc_tst_clk_io 23 PINTYPE=BI
-AP roach_ppc_tst_clk_io 24 PINTYPE=IN
-AP roach_ppc_tst_clk_io 25 PINTYPE=IN
-AP roach_ppc_tst_clk_io 26 PINTYPE=IN
-AP roach_ppc_tst_clk_io 27 PINTYPE=IN
-AP roach_ppc_tst_clk_io 28 PINTYPE=OUT
-|Q roach_ppc_nvm_serial 1
-AS roach_ppc_nvm_serial DEVICE=ROACH_PPC_NVM_SERIAL
-AS roach_ppc_nvm_serial SHEET
-AS roach_ppc_nvm_serial PINORDER=CLK_UART_11.0592MHZ RESET_CPLD# M66EN RESET_POR# EXT_RESET# BOOT_CFG2 BOOT_CFG1 BOOT_CFG0 EE2_BOOT_WP EE1_WP PADD[2:31] PDATA[0:31] PCS_2 POE# PR_W# PWBE_0# CLK_PERCLK FWP# FRY_BY# STTM_AS SCPCLK STTM_ALERT SCPDI SCPDO
-AS roach_ppc_nvm_serial INOV_VER_REC=8:18_10-2-07
-AP roach_ppc_nvm_serial 1 PINTYPE=IN
-AP roach_ppc_nvm_serial 1 IREF=4
-AP roach_ppc_nvm_serial 2 PINTYPE=IN
-AP roach_ppc_nvm_serial 3 PINTYPE=IN
-AP roach_ppc_nvm_serial 4 PINTYPE=IN
-AP roach_ppc_nvm_serial 5 PINTYPE=OUT
-AP roach_ppc_nvm_serial 6 PINTYPE=IN
-AP roach_ppc_nvm_serial 7 PINTYPE=IN
-AP roach_ppc_nvm_serial 8 PINTYPE=IN
-AP roach_ppc_nvm_serial 9 PINTYPE=IN
-AP roach_ppc_nvm_serial 10 PINTYPE=IN
-AP roach_ppc_nvm_serial 11 PINTYPE=BI
-AP roach_ppc_nvm_serial 12 PINTYPE=BI
-AP roach_ppc_nvm_serial 13 PINTYPE=OUT
-AP roach_ppc_nvm_serial 14 PINTYPE=OUT
-AP roach_ppc_nvm_serial 15 PINTYPE=OUT
-AP roach_ppc_nvm_serial 16 PINTYPE=OUT
-AP roach_ppc_nvm_serial 17 PINTYPE=OUT
-AP roach_ppc_nvm_serial 18 PINTYPE=IN
-AP roach_ppc_nvm_serial 19 PINTYPE=OUT
-AP roach_ppc_nvm_serial 20 PINTYPE=IN
-AP roach_ppc_nvm_serial 21 PINTYPE=OUT
-AP roach_ppc_nvm_serial 22 PINTYPE=OUT
-AP roach_ppc_nvm_serial 23 PINTYPE=BI
-AP roach_ppc_nvm_serial 24 PINTYPE=OUT
 |Q roach_ppc_power_1 1
 AS roach_ppc_power_1 PINORDER= PWR_GOOD DDR_VREF_+0.9V
 AS roach_ppc_power_1 DEVICE=ROACH_PPC_POWER_1
@@ -240,42 +176,6 @@ AP roach_ppc_cpld 39 PINTYPE=OUT
 AP roach_ppc_cpld 40 PINTYPE=OUT
 AP roach_ppc_cpld 41 PINTYPE=IN
 AP roach_ppc_cpld 42 PINTYPE=OUT
-|Q roach_monitor 1
-AS roach_monitor DEVICE=ROACH_MONITOR
-AS roach_monitor SHEET
-AS roach_monitor PINORDER=12V_ATX PWR_OK MGT_AVCCPLL_PG MGT_AVTTX_PG PS_ON# 1V0_INHIBIT 1V2_INHIBIT 1V5_INHIBIT 1V8_INHIBIT MGT_AVCC_PG 5V_ATX I1V0 I1V2 I1V5 I1V8 I2V5 3V3_ATX MGT_AVCC_EN MGT_AVCCPLL_EN MGT_AVTTX_EN FAN3_SENSE FAN2_CONTROL FAN1_SENSE FAN2_SENSE FAN3_CONTROL 2V5_INHIBIT 2V5_TRACK LOAD_RES_OFF FAN1_CONTROL TD0 ATRTN0
-AS roach_monitor INOV_VER_REC=8:10_10-2-07
-AP roach_monitor 1 PINTYPE=IN
-AP roach_monitor 2 PINTYPE=IN
-AP roach_monitor 3 PINTYPE=IN
-AP roach_monitor 4 PINTYPE=IN
-AP roach_monitor 5 PINTYPE=OUT
-AP roach_monitor 6 PINTYPE=OUT
-AP roach_monitor 7 PINTYPE=OUT
-AP roach_monitor 8 PINTYPE=OUT
-AP roach_monitor 9 PINTYPE=OUT
-AP roach_monitor 10 PINTYPE=IN
-AP roach_monitor 11 PINTYPE=IN
-AP roach_monitor 12 PINTYPE=IN
-AP roach_monitor 13 PINTYPE=IN
-AP roach_monitor 14 PINTYPE=IN
-AP roach_monitor 15 PINTYPE=IN
-AP roach_monitor 16 PINTYPE=IN
-AP roach_monitor 17 PINTYPE=IN
-AP roach_monitor 18 PINTYPE=OUT
-AP roach_monitor 19 PINTYPE=OUT
-AP roach_monitor 20 PINTYPE=OUT
-AP roach_monitor 21 PINTYPE=IN
-AP roach_monitor 22 PINTYPE=OUT
-AP roach_monitor 23 PINTYPE=IN
-AP roach_monitor 24 PINTYPE=IN
-AP roach_monitor 25 PINTYPE=OUT
-AP roach_monitor 26 PINTYPE=OUT
-AP roach_monitor 27 PINTYPE=OUT
-AP roach_monitor 28 PINTYPE=OUT
-AP roach_monitor 29 PINTYPE=OUT
-AP roach_monitor 30 PINTYPE=OUT
-AP roach_monitor 31 PINTYPE=OUT
 |Q roach_psu 1
 AS roach_psu DEVICE=ROACH_PSU
 AS roach_psu SHEET
@@ -331,10 +231,114 @@ AS roach_transceivers0_1 INOV_VER_REC=8:12_10-2-07
 AS roach_ddr2_dimm DEVICE=ROACH_DDR2_DIMM
 AS roach_ddr2_dimm SHEET
 AS roach_ddr2_dimm INOV_VER_REC=8:13_10-2-07
-AN PADD[27:31] VLBUSISONSHEET=1
-AN PDATA[0:7] VLBUSISONSHEET=1
+|Q roach_ppc_tst_clk_io 1
+AS roach_ppc_tst_clk_io DEVICE=ROACH_PPC_TST_CLK_IO
+AS roach_ppc_tst_clk_io SHEET
+AS roach_ppc_tst_clk_io PINORDER=CLK_TMRCLK CLK_GETH1_25MHZ CLK_CPLD_33MHZ SEL_SYSCLK CLK_UART_11.0592MHZ SYSERR CLK_USB2.0_12MHZ CLK_CPLD_50MHZ CLK_USB2.0_48MHZ CLK_GETH0_25MHZ CLK_PCI3_66/33MHZ CLK_PCI2_66/33MHZ CLK_SEL_M66EN DEBUG_TRST# CPU_TRST# PWR_GOOD RESET_PB_POR# RESET_POR# SX95T_TDO SX95T_TMS SX95T_TCK SX95T_TDI GPIO44 STTM_ALERT PCI_INTA# GETH1_INT# GETH0_INT# CLK_PCI1_66/33MHZ
+AS roach_ppc_tst_clk_io INOV_VER_REC=8:17_10-2-07
+AP roach_ppc_tst_clk_io 1 PINTYPE=IN
+AP roach_ppc_tst_clk_io 2 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 3 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 4 PINTYPE=IN
+AP roach_ppc_tst_clk_io 5 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 6 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 7 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 8 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 9 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 10 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 11 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 12 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 13 PINTYPE=IN
+AP roach_ppc_tst_clk_io 14 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 15 PINTYPE=IN
+AP roach_ppc_tst_clk_io 16 PINTYPE=IN
+AP roach_ppc_tst_clk_io 17 PINTYPE=IN
+AP roach_ppc_tst_clk_io 18 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 18 IREF=6,11
+AP roach_ppc_tst_clk_io 19 PINTYPE=IN
+AP roach_ppc_tst_clk_io 20 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 21 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 22 PINTYPE=OUT
+AP roach_ppc_tst_clk_io 23 PINTYPE=BI
+AP roach_ppc_tst_clk_io 24 PINTYPE=IN
+AP roach_ppc_tst_clk_io 25 PINTYPE=IN
+AP roach_ppc_tst_clk_io 26 PINTYPE=IN
+AP roach_ppc_tst_clk_io 27 PINTYPE=IN
+AP roach_ppc_tst_clk_io 28 PINTYPE=OUT
+|Q roach_ppc_nvm_serial 1
+AS roach_ppc_nvm_serial DEVICE=ROACH_PPC_NVM_SERIAL
+AS roach_ppc_nvm_serial SHEET
+AS roach_ppc_nvm_serial PINORDER=RESET_CPLD# EXT_RESET# BOOT_CFG2 BOOT_CFG1 BOOT_CFG0 EE2_BOOT_WP PADD[2:31] PDATA[0:31] PCS_2 PR_W# PWBE_0# CLK_PERCLK FWP# FRY_BY# RESET_POR# POE# SCPDO STTM_ALERT SCPCLK SCPDI STTM_AS I2C0_33_DATA I2C0_SCLK EE1_WP M66EN CLK_UART_11.0592MHZ
+AS roach_ppc_nvm_serial INOV_VER_REC=12:39_10-3-07
+AP roach_ppc_nvm_serial 1 PINTYPE=IN
+AP roach_ppc_nvm_serial 2 PINTYPE=OUT
+AP roach_ppc_nvm_serial 3 PINTYPE=IN
+AP roach_ppc_nvm_serial 4 PINTYPE=IN
+AP roach_ppc_nvm_serial 5 PINTYPE=IN
+AP roach_ppc_nvm_serial 6 PINTYPE=IN
+AP roach_ppc_nvm_serial 7 PINTYPE=BI
+AP roach_ppc_nvm_serial 8 PINTYPE=BI
+AP roach_ppc_nvm_serial 9 PINTYPE=OUT
+AP roach_ppc_nvm_serial 10 PINTYPE=OUT
+AP roach_ppc_nvm_serial 11 PINTYPE=OUT
+AP roach_ppc_nvm_serial 12 PINTYPE=OUT
+AP roach_ppc_nvm_serial 13 PINTYPE=IN
+AP roach_ppc_nvm_serial 14 PINTYPE=OUT
+AP roach_ppc_nvm_serial 15 PINTYPE=IN
+AP roach_ppc_nvm_serial 16 PINTYPE=OUT
+AP roach_ppc_nvm_serial 17 PINTYPE=OUT
+AP roach_ppc_nvm_serial 18 PINTYPE=OUT
+AP roach_ppc_nvm_serial 19 PINTYPE=OUT
+AP roach_ppc_nvm_serial 20 PINTYPE=BI
+AP roach_ppc_nvm_serial 21 PINTYPE=IN
+AP roach_ppc_nvm_serial 22 PINTYPE=BI
+AP roach_ppc_nvm_serial 23 PINTYPE=OUT
+AP roach_ppc_nvm_serial 24 PINTYPE=IN
+AP roach_ppc_nvm_serial 25 PINTYPE=IN
+AP roach_ppc_nvm_serial 26 PINTYPE=IN
+|Q roach_monitor 1
+AS roach_monitor DEVICE=ROACH_MONITOR
+AS roach_monitor REFDES=U?
+AS roach_monitor PINORDER=12V_ATX PWR_OK MGT_AVCCPLL_PG MGT_AVTTX_PG 1V0_INHIBIT 1V2_INHIBIT 1V5_INHIBIT 1V8_INHIBIT MGT_AVCC_PG 5V_ATX I1V0 I1V2 I1V5 I1V8 I2V5 3V3_ATX MGT_AVCC_EN MGT_AVCCPLL_EN MGT_AVTTX_EN FAN3_SENSE FAN2_CONTROL FAN1_SENSE FAN2_SENSE FAN3_CONTROL 2V5_INHIBIT 2V5_TRACK LOAD_RES_OFF FAN1_CONTROL TD0 ATRTN0 PS_ON# I2C0_SCLK I2C0_33_DATA MONITOR_INT
+AS roach_monitor INOV_VER_REC=13:18_10-3-07
+AP roach_monitor 1 PINTYPE=IN
+AP roach_monitor 2 PINTYPE=IN
+AP roach_monitor 3 PINTYPE=IN
+AP roach_monitor 4 PINTYPE=IN
+AP roach_monitor 5 PINTYPE=OUT
+AP roach_monitor 6 PINTYPE=OUT
+AP roach_monitor 7 PINTYPE=OUT
+AP roach_monitor 8 PINTYPE=OUT
+AP roach_monitor 9 PINTYPE=IN
+AP roach_monitor 10 PINTYPE=IN
+AP roach_monitor 11 PINTYPE=IN
+AP roach_monitor 12 PINTYPE=IN
+AP roach_monitor 13 PINTYPE=IN
+AP roach_monitor 14 PINTYPE=IN
+AP roach_monitor 15 PINTYPE=IN
+AP roach_monitor 16 PINTYPE=IN
+AP roach_monitor 17 PINTYPE=OUT
+AP roach_monitor 18 PINTYPE=OUT
+AP roach_monitor 19 PINTYPE=OUT
+AP roach_monitor 20 PINTYPE=IN
+AP roach_monitor 21 PINTYPE=OUT
+AP roach_monitor 22 PINTYPE=IN
+AP roach_monitor 23 PINTYPE=IN
+AP roach_monitor 24 PINTYPE=OUT
+AP roach_monitor 25 PINTYPE=OUT
+AP roach_monitor 26 PINTYPE=OUT
+AP roach_monitor 27 PINTYPE=OUT
+AP roach_monitor 28 PINTYPE=OUT
+AP roach_monitor 29 PINTYPE=OUT
+AP roach_monitor 30 PINTYPE=OUT
+AP roach_monitor 31 PINTYPE=OUT
+AP roach_monitor 32 PINTYPE=IN
+AP roach_monitor 33 PINTYPE=BI
+AP roach_monitor 34 PINTYPE=OUT
 AN PADD[2:31] VLBUSISONSHEET=1
 AN PDATA[0:31] VLBUSISONSHEET=1
+AN PADD[27:31] VLBUSISONSHEET=1
+AN PDATA[0:7] VLBUSISONSHEET=1
 G GND
 M hole150x288 $1I314
 I $1I314 hole150x288 GND SCHLOC=1M1`REFDES=H7`
@@ -417,21 +421,12 @@ I $1I42 roach_ppc_usb CLK_USB2.0_48MHZ USB2_VCC_PI SHEET=21`
 W roach_ppc_ddr2 $1I289
 I $1I289 roach_ppc_ddr2 PPC_DDR2_RESET_N SHEET=22`
 |R 8:15_10-2-07
-W roach_ppc_tst_clk_io $1I258
-I $1I258 roach_ppc_tst_clk_io CLK_SEL_M66EN SX95T_TMS SX95T_TCK CLK_TMRCLK SX95T_TDI RESET_POR# SYSERR DEBUG_TRST# CLK_PCI1_66/33MHZ CLK_PCI2_66/33MHZ CLK_PCI3_66/33MHZ CLK_GETH0_25MHZ SX95T_TDO CLK_GETH1_25MHZ STTM_ALERT PCI_INTA# GETH1_INT# CLK_USB2.0_48MHZ GETH0_INT# CLK_CPLD_50MHZ CLK_USB2.0_12MHZ GPIO44 CLK_CPLD_33MHZ SEL_SYSCLK CPU_TRST# PWR_GOOD RESET_PB_POR# CLK_UART_11.0592MHZ SHEET=23`
-|R 8:17_10-2-07
-W roach_ppc_nvm_serial $1I447
-I $1I447 roach_ppc_nvm_serial CLK_UART_11.0592MHZ RESET_CPLD# M66EN RESET_POR# EXT_RESET# BOOT_CFG2 BOOT_CFG1 BOOT_CFG0 EE2_BOOT_WP EE1_WP PADD[2:31] PDATA[0:31] PCS_2 POE# PR_W# PWBE_0# CLK_PERCLK FWP# FRY_BY# STTM_AS SCPCLK STTM_ALERT SCPDI SCPDO SHEET=25`
-|R 8:18_10-2-07
 W roach_ppc_power_1 $1I860
 I $1I860 roach_ppc_power_1 PWR_GOOD DDR_VREF_+0.9V SHEET=17`
 |R 8:28_10-2-07
 W roach_ppc_cpld $1I747
 I $1I747 roach_ppc_cpld BOOT_CFG2 BOOT_CFG1 BOOT_CFG0 M66EN SX95T_D_OUT_BUSY_0 SX95T_CS_B_0 SX95T_D_IN_0 SX95T_PROGRAM_B_0 SX95T_DONE_0 SX95T_INIT_B_0 QDR2_BY0_1_SYS_RST_N RESET_CPLD# FWP# SX95T_RDWR_B_0 PCS_2 POE# PR_W# CLK_CPLD_50MHZ CLK_PERCLK CLK_TMRCLK CLK_SEL_M66EN SEL_SYSCLK DEBUG_TRST# CPU_TRST# CLK_CPLD_33MHZ SYSERR FRY_BY# EE1_WP EE2_BOOT_WP STTM_AS USB2_VCC_PI PADD[27:31] SX95T_CCLK_0 PWBE_0# RESET_POR# RESET_PB_POR# PDATA[0:7] EXT_RESET# QDR2_BY2_3_SYS_RST_N PPC_DDR2_RESET_N PWR_GOOD GETH0_RST# SHEET=24`
 |R 8:17_10-2-07
-W roach_monitor $1I821
-I $1I821 roach_monitor 12V_ATX PWR_OK MGT_AVCCPLL_PG MGT_AVTTX_PG PS_ON# 1V0_INHIBIT 1V2_INHIBIT 1V5_INHIBIT 1V8_INHIBIT MGT_AVCC_PG 5V_ATX I1V0 I1V2 I1V5 I1V8 I2V5 3V3_ATX MGT_AVCC_EN MGT_AVCCPLL_EN MGT_AVTTX_EN FAN3_SENSE FAN2_CONTROL FAN1_SENSE FAN2_SENSE FAN3_CONTROL 2V5_INHIBIT 2V5_TRACK LOAD_RES_OFF FAN1_CONTROL TD0 ATRTN0 SHEET=2`
-|R 8:10_10-2-07
 W roach_psu $1I671
 I $1I671 roach_psu I2V5 2V5_INHIBIT 2V5_TRACK 1V8_INHIBIT I1V8 I1V5 1V5_INHIBIT 1V0_INHIBIT I1V0 1V2_INHIBIT FAN3_CONTROL FAN3_SENSE FAN2_SENSE FAN2_CONTROL PS_ON# FAN1_CONTROL FAN1_SENSE I1V2 PWR_OK 5V_ATX 3V3_ATX 12V_ATX LOAD_RES_OFF SHEET=3`
 |R 8:11_10-2-07
@@ -453,4 +448,13 @@ I $1I2 roach_transceivers0_1 SHEET=8`
 W roach_ddr2_dimm $1I6
 I $1I6 roach_ddr2_dimm SHEET=11`
 |R 8:13_10-2-07
+W roach_ppc_tst_clk_io $1I258
+I $1I258 roach_ppc_tst_clk_io CLK_SEL_M66EN SX95T_TMS SX95T_TCK CLK_TMRCLK SX95T_TDI RESET_POR# SYSERR DEBUG_TRST# CLK_PCI1_66/33MHZ CLK_PCI2_66/33MHZ CLK_PCI3_66/33MHZ CLK_GETH0_25MHZ SX95T_TDO CLK_GETH1_25MHZ STTM_ALERT PCI_INTA# GETH1_INT# CLK_USB2.0_48MHZ GETH0_INT# CLK_CPLD_50MHZ CLK_USB2.0_12MHZ GPIO44 CLK_CPLD_33MHZ SEL_SYSCLK CPU_TRST# PWR_GOOD RESET_PB_POR# CLK_UART_11.0592MHZ SHEET=23`
+|R 8:17_10-2-07
+W roach_ppc_nvm_serial $1I863
+I $1I863 roach_ppc_nvm_serial RESET_CPLD# EXT_RESET# BOOT_CFG2 BOOT_CFG1 BOOT_CFG0 EE2_BOOT_WP PADD[2:31] PDATA[0:31] PCS_2 PR_W# PWBE_0# CLK_PERCLK FWP# FRY_BY# RESET_POR# POE# SCPDO STTM_ALERT SCPCLK SCPDI STTM_AS I2C0_33_DATA I2C0_SCLK EE1_WP M66EN CLK_UART_11.0592MHZ 
+|R 12:39_10-3-07
+W roach_monitor $1I821
+I $1I821 roach_monitor 12V_ATX PWR_OK MGT_AVCCPLL_PG MGT_AVTTX_PG PS_ON# 1V0_INHIBIT 1V2_INHIBIT 1V5_INHIBIT MGT_AVCC_PG 5V_ATX I1V0 I1V2 I1V5 I1V8 I2V5 3V3_ATX 1V8_INHIBIT MGT_AVCC_EN MGT_AVCCPLL_EN FAN3_SENSE MGT_AVTTX_EN FAN1_SENSE FAN2_SENSE FAN2_CONTROL FAN3_CONTROL 2V5_INHIBIT 2V5_TRACK LOAD_RES_OFF FAN1_CONTROL TD0 ATRTN0 ? ? ? SHEET=2`
+|R 12:31_10-3-07
 EW
