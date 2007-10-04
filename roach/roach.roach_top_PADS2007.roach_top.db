@@ -1,11 +1,13 @@
 
-(pcb "D:\ROACH\elec\roach\roach.roach_top_PADS2007.roach_top.db"
+(pcb
+ "C:\Users\mrevnell\roach\elec\roach\roach.roach_top_PADS2007.roach_top.db"
 	(version "5.0.0")
 	(units "basic")
 	(config_properties
 		(attributes
-			(attval "PcbConfigName" "D:\ROACH\elec\roach\roach_pcb.cfg")
-			(attval "CnsFile" ".\pads2007.cns")
+			(attval "PcbConfigName"
+ "C:\Users\mrevnell\roach\elec\roach\roach_pcb.cfg")
+			(attval "CnsFile" "C:\Users\mrevnell\roach\elec\roach\pads2007.cns")
 			(attval "BeAdapter" "PADS2007")
 			(attval "FeAdapter" "DxDesigner")
 			(attval "SYSCONFIG" "pcbfwd")
@@ -26,7 +28,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1191503158"))
+		(file_ext "roach_top.pxr" "1191522160"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -29111,17 +29113,17 @@
 		(net "QDR2_BY0_1_SYS_RST_N"
 			(pins U15-D31 U54-87))
 		(net "QDR2_BY0_1_TDO"
-			(pins U63-R1 U17-R11 TP10-1))
+			(pins U63-R1 TP10-1 U17-R11))
 		(net "QDR2_BY2_3_SYS_RST_N"
 			(pins U15-U26 U54-86))
 		(net "QDR2_BY2_3_TDO"
-			(pins U17-R1 TP13-1))
+			(pins TP13-1 U17-R1))
 		(net "QDR2_TCK"
-			(pins U63-R2 U17-R2 R184-2 TP12-1))
+			(pins U63-R2 R184-2 TP12-1 U17-R2))
 		(net "QDR2_TDI"
-			(pins U63-R11 TP9-1))
+			(pins TP9-1 U63-R11))
 		(net "QDR2_TMS"
-			(pins U63-R10 U17-R10 TP11-1))
+			(pins U63-R10 TP11-1 U17-R10))
 		(net "RESET_CPLD#"
 			(pins U54-71 R82-1 U45-6 U46-6 U48-6))
 		(net "RESET_PB_POR#"
@@ -30826,9 +30828,9 @@
 		(net "VDDQ_QDR2_BY0_1"
 			(pins JP29-2 R301-2 U15-E30 U15-H31 U15-J28 U15-C26 U15-F27 U15-G24 C596-1
  U62-1 U62-2 C599-1 C600-1 C601-1 U63-E4 U63-E8 U63-J4 U63-J8 U63-K4 U63-K8
- U63-L4 U63-L8 U63-F4 U63-F8 U63-G4 U63-G8 U63-H3 U63-H4 U63-H8 U63-H9 CP34-1
- CP34-2 CP34-3 CP34-4 CP35-1 CP35-2 CP35-3 CP35-4 CP36-1 CP36-2 CP36-3 CP36-4
- CP37-1 CP37-2 CP37-3 CP37-4 C602-1 C603-1 R184-1))
+ U63-L4 U63-L8 U63-F4 U63-F8 U63-G4 U63-G8 U63-H3 U63-H4 U63-H8 U63-H9 R184-1
+ CP34-1 CP34-2 CP34-3 CP34-4 CP35-1 CP35-2 CP35-3 CP35-4 CP36-1 CP36-2 CP36-3
+ CP36-4 CP37-1 CP37-2 CP37-3 CP37-4 C602-1 C603-1))
 		(net "VDDQ_QDR2_BY2_3"
 			(pins JP3-2 R52-2 U15-R30 U15-T27 U15-V31 U15-L32 U15-M29 U15-P33 C59-1
  U16-1 U16-2 C85-1 C86-1 C87-1 U17-E4 U17-E8 U17-J4 U17-J8 U17-K4 U17-K8
