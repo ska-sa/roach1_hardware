@@ -1,13 +1,11 @@
 
-(pcb
- "C:\Users\mrevnell\roach\elec\roach\roach.roach_top_PADS2007.roach_top.db"
+(pcb "D:\ROACH\elec\roach\roach.roach_top_PADS2007.roach_top.db"
 	(version "5.0.0")
 	(units "basic")
 	(config_properties
 		(attributes
-			(attval "PcbConfigName"
- "C:\Users\mrevnell\roach\elec\roach\roach_pcb.cfg")
-			(attval "CnsFile" "C:\Users\mrevnell\roach\elec\roach\pads2007.cns")
+			(attval "PcbConfigName" "D:\ROACH\elec\roach\roach_pcb.cfg")
+			(attval "CnsFile" ".\pads2007.cns")
 			(attval "BeAdapter" "PADS2007")
 			(attval "FeAdapter" "DxDesigner")
 			(attval "SYSCONFIG" "pcbfwd")
@@ -28,7 +26,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1191522160"))
+		(file_ext "roach_top.pxr" "1191594950"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -5335,13 +5333,13 @@
 			(pin 1  4 "CON_DSUB_9_M_RA_TH__CON_DSUB_9_M_RA_TH_1" 0 "1" 0))
 		(part "CHIP_CAPACITOR")
 		(logical_part_mapping "CHIP_CAPACITOR"
-			(comp "C613" "C612" "C594" "C593" "C592" "C591" "C590" "C544" "C543" "C542" "C541" "C540" "C534" "C533" "C532"
- "C531" "C530" "C529" "C528" "C527" "C526" "C525" "C524" "C523" "C522" "C521" "C520" "C519" "C518" "C517" "C516"
- "C515" "C514" "C513" "C512" "C511" "C510" "C509" "C508" "C507" "C483" "C482" "C481" "C480" "C479" "C478" "C477"
- "C476" "C475" "C474" "C473" "C460" "C454" "C453" "C452" "C451" "C450" "C449" "C448" "C447" "C446" "C445" "C444"
- "C443" "C442" "C441" "C440" "C439" "C438" "C437" "C436" "C435" "C434" "C433" "C432" "C431" "C430" "C360" "C359"
- "C358" "C357" "C356" "C355" "C354" "C353" "C352" "C343" "C342" "C341" "C340" "C339" "C338" "C337" "C336" "C321"
- "C320" "C319" "C318" "C317" "C316" "C315" "C314" "C154" "C153" "C57" "C56" "C55" "C50" "C46"))
+			(comp "C749" "C748" "C613" "C612" "C594" "C593" "C592" "C591" "C590" "C546" "C544" "C543" "C542" "C541" "C540"
+ "C534" "C533" "C532" "C531" "C530" "C529" "C528" "C527" "C526" "C525" "C524" "C523" "C522" "C521" "C520" "C519"
+ "C518" "C517" "C516" "C515" "C514" "C513" "C512" "C511" "C510" "C509" "C508" "C507" "C483" "C482" "C481" "C480"
+ "C479" "C478" "C477" "C476" "C475" "C474" "C473" "C460" "C454" "C453" "C452" "C451" "C450" "C449" "C448" "C447"
+ "C446" "C445" "C444" "C443" "C442" "C441" "C440" "C439" "C438" "C437" "C436" "C435" "C434" "C433" "C432" "C431"
+ "C430" "C360" "C359" "C358" "C357" "C356" "C355" "C354" "C353" "C352" "C343" "C342" "C341" "C340" "C339" "C338"
+ "C337" "C336" "C321" "C320" "C319" "C318" "C317" "C316" "C315" "C314" "C154" "C153" "C57" "C56" "C55" "C50" "C46"))
 		(logical_part "CHIP_CAPACITOR"
 			(slots
 				(slot "C__CHIP_CAPACITOR_1"
@@ -5401,7 +5399,7 @@
 			(pin 1  5 "C__CHIPCAP0805X1_3_1" 0 "N1" 0))
 		(part "CHIPCAP0603X0_90")
 		(logical_part_mapping "CHIPCAP0603X0_90"
-			(comp "C491" "C490" "C489"))
+			(comp "C506" "C505" "C504" "C491" "C490" "C489"))
 		(logical_part "CHIPCAP0603X0_90"
 			(slots
 				(slot "C__CHIPCAP0603X0_90_1"
@@ -5464,8 +5462,8 @@
 			(pin 1  5 "C__CHIPCAP0402_1" 0 "N1" 0))
 		(part "CAP_POL")
 		(logical_part_mapping "CAP_POL"
-			(comp "C546" "C545" "C415" "C414" "C413" "C412" "C411" "C410" "C409" "C408" "C407" "C406" "C405" "C404" "C403"
- "C402" "C401" "C400" "C399" "C398" "C397" "C396"))
+			(comp "C545" "C415" "C414" "C413" "C412" "C411" "C410" "C409" "C408" "C407" "C406" "C405" "C404" "C403" "C402"
+ "C401" "C400" "C399" "C398" "C397" "C396"))
 		(logical_part "CAP_POL"
 			(slots
 				(slot "CAP_POL__CAP_POL_1"
@@ -5706,7 +5704,7 @@
 			(pin 1  5 "CAP_POL__CAPMP7343X310N_1" 0 "P" 0))
 		(part "CAPMP7343X4_30")
 		(logical_part_mapping "CAPMP7343X4_30"
-			(comp "C506" "C505" "C504" "C503" "C502" "C501"))
+			(comp "C503" "C502" "C501"))
 		(logical_part "CAPMP7343X4_30"
 			(slots
 				(slot "CAP_POL__CAPMP7343X4_30_1"
@@ -18419,6 +18417,28 @@
 				(attval "DEVICE" "CAPCAF50P125X200X100")
 				(attval "REFDES" "CP1")))
 		(component "CAPC1005X55N"
+			(place "C749" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "100NF")
+				(attval "TOLERANCE" "10%")
+				(attval "GEOMETRY.HEIGHT" "0.5")
+				(attval "DESCRIPTION" "CERAMIC CHIP CAPACITOR - 0402")
+				(attval "DEVICE" "CHIP_CAPACITOR")
+				(attval "REFDES" "C749")))
+		(component "CAPC1005X55N"
+			(place "C748" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "100NF")
+				(attval "TOLERANCE" "10%")
+				(attval "GEOMETRY.HEIGHT" "0.5")
+				(attval "DESCRIPTION" "CERAMIC CHIP CAPACITOR - 0402")
+				(attval "DEVICE" "CHIP_CAPACITOR")
+				(attval "REFDES" "C748")))
+		(component "CAPC1005X55N"
 			(place "C747" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "OUT")
 				(comp_pin "1" 0.0 0.0 "OUT"))
@@ -20182,14 +20202,16 @@
 				(attval "TOLERANCE" "±10%")
 				(attval "DEVICE" "CAP0805_135")
 				(attval "REFDES" "C547")))
-		(component "CAPMP7343X430N"
+		(component "CAPC1005X55N"
 			(place "C546" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
 			(attributes
-				(attval "VALUE" "1000UF")
-				(attval "TOLERANCE" "±20%")
-				(attval "DEVICE" "CAP_POL")
+				(attval "VALUE" "100NF")
+				(attval "TOLERANCE" "10%")
+				(attval "GEOMETRY.HEIGHT" "0.5")
+				(attval "DESCRIPTION" "CERAMIC CHIP CAPACITOR - 0402")
+				(attval "DEVICE" "CHIP_CAPACITOR")
 				(attval "REFDES" "C546")))
 		(component "CAPMP7343X310N"
 			(place "C545" 0.0 0.0 top 0.0
@@ -20606,32 +20628,32 @@
 				(attval "DESCRIPTION" "CERAMIC CHIP CAPACITOR - 0402")
 				(attval "DEVICE" "CHIP_CAPACITOR")
 				(attval "REFDES" "C507")))
-		(component "CAPMP7343X430N"
+		(component "CAPC1608X90N"
 			(place "C506" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
 			(attributes
-				(attval "VALUE" "1000UF")
-				(attval "TOLERANCE" "±20%")
-				(attval "DEVICE" "CAPMP7343X4_30")
+				(attval "VALUE" "1UF")
+				(attval "TOLERANCE" "±10%")
+				(attval "DEVICE" "CHIPCAP0603X0_90")
 				(attval "REFDES" "C506")))
-		(component "CAPMP7343X430N"
+		(component "CAPC1608X90N"
 			(place "C505" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
 			(attributes
-				(attval "VALUE" "1000UF")
-				(attval "TOLERANCE" "±20%")
-				(attval "DEVICE" "CAPMP7343X4_30")
+				(attval "VALUE" "1UF")
+				(attval "TOLERANCE" "±10%")
+				(attval "DEVICE" "CHIPCAP0603X0_90")
 				(attval "REFDES" "C505")))
-		(component "CAPMP7343X430N"
+		(component "CAPC1608X90N"
 			(place "C504" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
 			(attributes
-				(attval "VALUE" "1000UF")
-				(attval "TOLERANCE" "±20%")
-				(attval "DEVICE" "CAPMP7343X4_30")
+				(attval "VALUE" "1UF")
+				(attval "TOLERANCE" "±10%")
+				(attval "DEVICE" "CHIPCAP0603X0_90")
 				(attval "REFDES" "C504")))
 		(component "CAPMP7343X430N"
 			(place "C503" 0.0 0.0 top 0.0
@@ -21537,14 +21559,14 @@
 				(attval "GEOMETRY.HEIGHT" "2.2")
 				(attval "DEVICE" "C")
 				(attval "REFDES" "C416")))
-		(component "CAPMP7343X430N"
+		(component "CAPMP7343X400N"
 			(place "C415" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
 			(attributes
-				(attval "VALUE" "1000UF")
+				(attval "VALUE" "470UF")
 				(attval "TOLERANCE" "±20%")
-				(attval "GEOMETRY.HEIGHT" "4.3")
+				(attval "GEOMETRY.HEIGHT" "4.0")
 				(attval "DEVICE" "CAP_POL")
 				(attval "REFDES" "C415")))
 		(component "CAPAE1050X1270N"
@@ -21557,14 +21579,14 @@
 				(attval "GEOMETRY.HEIGHT" "12.7")
 				(attval "DEVICE" "CAP_POL")
 				(attval "REFDES" "C414")))
-		(component "CAPMP7343X430N"
+		(component "CAPMP7343X400N"
 			(place "C413" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
 			(attributes
-				(attval "VALUE" "1000UF")
+				(attval "VALUE" "470UF")
 				(attval "TOLERANCE" "±20%")
-				(attval "GEOMETRY.HEIGHT" "4.3")
+				(attval "GEOMETRY.HEIGHT" "4.0")
 				(attval "DEVICE" "CAP_POL")
 				(attval "REFDES" "C413")))
 		(component "CAPAE1050X1270N"
@@ -26424,6 +26446,8 @@
 		(func "$1I1038\$1I1740" "" "CP3" 1)
 		(func "$1I1038\$1I1739" "" "CP2" 1)
 		(func "$1I1038\$1I1738" "" "CP1" 1)
+		(func "$1I803\$1I760" "" "C749" 1)
+		(func "$1I803\$1I752" "" "C748" 1)
 		(func "$1I860\$1I294" "" "C747" 1)
 		(func "$1I860\$1I278" "" "C746" 1)
 		(func "$1I860\$1I253" "" "C745" 1)
@@ -26625,7 +26649,7 @@
 		(func "$1I967\$1I555" "" "C549" 1)
 		(func "$1I967\$1I570" "" "C548" 1)
 		(func "$1I967\$1I562" "" "C547" 1)
-		(func "$1I967\$1I593" "" "C546" 1)
+		(func "$1I803\$1I745" "" "C546" 1)
 		(func "$1I967\$1I1023" "" "C545" 1)
 		(func "$1I967\$1I1053" "" "C544" 1)
 		(func "$1I967\$1I1052" "" "C543" 1)
@@ -26665,9 +26689,9 @@
 		(func "$1I810\$1I407" "" "C509" 1)
 		(func "$1I810\$1I406" "" "C508" 1)
 		(func "$1I810\$1I405" "" "C507" 1)
-		(func "$1I803\$1I736" "" "C506" 1)
-		(func "$1I803\$1I735" "" "C505" 1)
-		(func "$1I803\$1I699" "" "C504" 1)
+		(func "$1I803\$1I762" "" "C506" 1)
+		(func "$1I803\$1I753" "" "C505" 1)
+		(func "$1I803\$1I744" "" "C504" 1)
 		(func "$1I803\$1I698" "" "C503" 1)
 		(func "$1I803\$1I692" "" "C502" 1)
 		(func "$1I803\$1I620" "" "C501" 1)
@@ -28587,11 +28611,12 @@
  C377-1 C378-1 C379-1 C380-1 C381-1 C382-1 C383-1 C384-1 C385-1 C386-1 C387-1
  C388-1 C389-1 C390-1 C391-1 C392-1 C393-1 C394-1 C395-1 R149-2 U51-14 U52-10
  U54-1 U54-37 U54-84 U55-5 U55-6 U55-7 U55-8 U56-5 U56-6 U56-7 U56-8 U57-5
- U57-6 U57-7 U57-8 C493-1 C494-1 C497-1 C504-1 C505-1 C506-1 C525-1 C526-1
- C527-1 C528-1 C529-1 C530-1 C531-1 C532-1 R262-2 R263-2 U58-11 U58-19 U58-25
- U58-35 U58-48 U58-63 U58-73 U58-92 U58-103 U58-105 U58-111 U58-117 U58-123
- RO42-1 R4-1 C16-1 C9-1 C21-1 C22-1 C734-1 C736-1 C738-1 C741-1 L20-1 C15-1
- C10-1 J4-1 RSET1-1 C25-1 C24-1 U3-2 U3-1 C18-1 U60-N11 R295-2))
+ U57-6 U57-7 U57-8 C493-1 C494-1 C497-1 C525-1 C526-1 C527-1 C528-1 C529-1
+ C530-1 C531-1 C532-1 R262-2 R263-2 U58-11 U58-19 U58-25 U58-35 U58-48 U58-63
+ U58-73 U58-92 U58-103 U58-105 U58-111 U58-117 U58-123 RO42-1 R4-1 C16-1 C9-1
+ C21-1 C22-1 C734-1 C736-1 C738-1 C741-1 L20-1 C15-1 C10-1 J4-1 RSET1-1 C25-1
+ C24-1 U3-2 U3-1 C18-1 U60-N11 R295-2 C504-1 C505-1 C506-1 C546-1 C748-1
+ C749-1))
 		(net "1V8_CPU"
 			(pins RO42-2 C627-1 C636-1 C640-1 C645-1 C660-1 C668-1 C672-1 C677-1 C681-1
  C692-1 C696-1 C700-1 C707-1 C712-1 C730-1 C740-1 L11-1 U1-V5 U1-AK7 U1-AK9
@@ -28678,8 +28703,7 @@
 			(pins C314-1 C315-1 P5-W2 P5-X2 P5-Y2 P5-Z2 C336-1 C337-1 P7-W2 P7-X2 P7-Y2
  P7-Z2))
 		(net "5VAUX"
-			(pins J32-10 R180-1 J18-9 U59-10 U59-11 U59-5 U59-6 U59-7 U59-8 C546-1
- C552-1))
+			(pins J32-10 R180-1 J18-9 U59-10 U59-11 U59-5 U59-6 U59-7 U59-8 C552-1))
 		(net "5V_ATX"
 			(pins J32-6 J18-4 J18-6 J18-21 J18-22 J18-23 R185-2 FH2-2 U60-R7 R292-1))
 		(net "5V_PCI1"
@@ -28890,68 +28914,68 @@
  R214-1 R217-1 R220-1 C489-2 C490-2 C491-2 U55-12 U55-14 U55-2 U55-3 U55-4
  U55-13 U55-17 U55-21 U56-12 U56-14 U56-2 U56-3 U56-4 U56-13 U56-17 U56-21
  U57-12 U57-14 U57-2 U57-3 U57-4 U57-13 U57-17 U57-21 C492-2 C493-2 C494-2
- C495-2 C496-2 C497-2 C498-2 C499-2 C500-2 C501-2 C502-2 C503-2 C504-2 C505-2
- C506-2 JP10-1 JP12-1 JP14-1 JP16-1 JP19-1 JP20-3 JP21-3 JP22-3 JP23-3 C507-2
- C508-2 C509-2 C510-2 C511-2 C512-2 C513-2 C514-2 C515-2 C516-2 C517-2 C518-2
- C519-2 C520-2 C521-2 C522-2 C523-2 C524-2 C525-2 C526-2 C527-2 C528-2 C529-2
- C530-2 C531-2 C532-2 C533-2 C534-2 J25-10 C535-2 C536-2 C537-2 R238-2 R253-1
- R264-1 R265-1 R267-1 U58-68 U58-67 U58-66 U58-65 U58-61 U58-34 U58-5 U58-43
- U58-49 U58-54 U58-59 U58-64 U58-70 U58-74 U58-78 U58-82 U58-91 U58-12 U58-93
- U58-97 U58-99 U58-104 U58-106 U58-107 U58-110 U58-112 U58-113 U58-116
- U58-16 U58-118 U58-119 U58-122 U58-124 U58-125 U58-128 U58-20 U58-22 U58-26
- U58-30 U58-36 U58-38 JP24-1 JP25-1 C63-2 C61-1 C62-1 C64-2 C83-2 C76-2 C65-2
- C77-2 C82-2 P8-B3 P8-B51 P8-B57 P8-A18 P8-A24 P8-A30 P8-A35 P8-A37 P8-A42
- P8-A48 P8-A50 P8-B15 P8-A51 P8-A56 P8-B17 P8-B22 P8-B28 P8-B34 P8-B38 P8-B46
- P8-B50 R169-1 R170-2 C72-2 C81-2 C71-2 C66-2 C74-2 C67-2 C73-2 C78-2 C68-2
- C75-2 C80-2 C70-2 C79-2 C69-2 C616-2 C617-2 C618-2 C619-2 C620-1 C33-1 C6-2
- C2-2 C32-2 C1-2 C621-2 C16-2 C622-2 C623-2 C624-2 C3-2 C625-2 C626-2 C627-2
- C628-2 C629-2 C630-2 C631-2 C632-2 C633-2 C634-2 C635-2 C636-2 C637-2 C638-2
- C639-2 C640-2 C641-2 C29-2 C642-2 C643-2 C644-2 C645-2 C646-2 C647-2 C648-2
- C655-2 C657-2 C660-2 C661-2 C662-2 C663-2 C664-2 C665-2 C666-2 C667-2 C668-2
- C669-2 C670-2 C9-2 C671-2 C672-2 C673-2 C674-2 C8-2 C675-2 C676-2 C677-2
- C678-2 C679-2 C680-2 C681-2 C682-2 C683-2 C684-2 C685-2 C686-2 C687-2 C688-2
- C689-2 C4-2 C690-2 C691-2 C692-2 C693-2 C694-2 C695-2 C696-2 C697-2 C698-2
- C699-2 C700-2 C13-2 C701-2 C702-2 C703-2 C704-2 C705-2 C706-2 C707-2 C708-2
- C709-2 C710-2 C30-2 C711-2 C712-2 C713-2 C714-2 C715-2 C716-2 C238-2 C717-2
- C718-2 C719-2 C720-2 C5-2 C11-2 C721-2 C722-2 C723-2 C724-2 C725-2 C726-2
- C727-2 C728-2 C729-2 C730-2 C731-2 C732-2 C733-2 C734-2 C735-2 C736-2 C737-2
- C738-2 C739-2 C740-2 C741-2 Q2-1 Q1-1 RSET4-2 RSET2-2 R2-2 U2-25 U2-12 U2-16
- U2-20 U2-4 U2-18 U1-AP25 U1-AP27 U1-A1 U1-B3 U1-V16 U1-V17 U1-V18 U1-V19
- U1-V20 U1-V21 U1-V22 U1-V30 U1-W2 U1-W5 U1-B4 U1-W15 U1-W16 U1-W17 U1-W18
- U1-W19 U1-W20 U1-W30 U1-W33 U1-Y13 U1-Y14 U1-B8 U1-Y15 U1-Y16 U1-Y17 U1-Y18
- U1-Y19 U1-Y20 U1-Y21 U1-Y22 U1-AA14 U1-AA15 U1-B16 U1-AA17 U1-AA18 U1-AA20
- U1-AA21 U1-AB13 U1-AB15 U1-AB17 U1-AB18 U1-AB20 U1-AB22 U1-B19 U1-AD1 U1-AE5
- U1-AE30 U1-AG2 U1-AG5 U1-AG30 U1-AG33 U1-AJ1 U1-AK4 U1-AK5 U1-B26 U1-AK8
- U1-AK10 U1-AK16 U1-AK17 U1-AK19 U1-AK25 U1-AK27 U1-AK30 U1-AK31 U1-AL3
- U1-B27 U1-AL4 U1-AL5 U1-AL6 U1-AL29 U1-AL30 U1-AL31 U1-AL32 U1-AM1 U1-AM2
- U1-AM3 U1-B31 U1-AM4 U1-AM31 U1-AM32 U1-AM33 U1-AM34 U1-AN1 U1-AN2 U1-AN3
- U1-AN4 U1-AN8 U1-B32 U1-AN16 U1-AN19 U1-AN27 U1-AN31 U1-AN32 U1-AN33
- U1-AN34 U1-AP1 U1-AP2 U1-AP3 U1-B33 U1-AP32 U1-AP33 U1-AP34 U1-A2 U1-B34
- U1-C2 U1-C3 U1-C4 U1-C31 U1-C32 U1-C33 U1-C34 U1-D3 U1-D4 U1-A3 U1-D5 U1-D30
- U1-D31 U1-D32 U1-D33 U1-E5 U1-E8 U1-E10 U1-E16 U1-E18 U1-A28 U1-E19 U1-E25
- U1-E27 U1-E30 U1-E31 U1-H1 U1-H2 U1-H5 U1-H30 U1-H33 U1-A32 U1-K5 U1-K30
- U1-N1 U1-N4 U1-N13 U1-N15 U1-N17 U1-N18 U1-N20 U1-N22 U1-A33 U1-P14 U1-P15
- U1-P17 U1-P18 U1-P20 U1-P21 U1-R13 U1-R14 U1-R15 U1-R16 U1-A34 U1-R17 U1-R18
- U1-R19 U1-R20 U1-R21 U1-R22 U1-T2 U1-T5 U1-T15 U1-T16 U1-B1 U1-T17 U1-T18
- U1-T19 U1-T20 U1-T30 U1-T33 U1-U5 U1-U13 U1-U14 U1-U15 U1-B2 U1-U16 U1-U17
- U1-U18 U1-U19 U1-U20 U1-U21 U1-U22 U1-V13 U1-V14 U1-V15 U1-M4 U1-M1 U1-J3
- U1-K4 U1-K1 C17-2 C15-2 C742-2 C10-2 C12-2 C743-2 C26-2 C25-2 C28-2 C24-2
- C27-2 C744-2 C745-2 C746-2 C747-2 U3-4 U3-8 U3-11 C31-1 C19-2 C20-2 C23-2
- C7-2 U38-3 U38-1 U38-4 U39-3 U39-1 U39-4 U40-2 U40-1 U40-4 U41-2 J14-5 P2-5
- U42-E8 U42-H2 U42-H7 C649-2 C650-2 C651-2 C197-2 C652-2 C199-2 C653-2 C654-2
- C193-2 C656-2 C195-2 C658-2 C659-2 R86-2 R87-2 U43-18 U44-18 R84-2 R85-2
- R83-2 R82-2 J7-1 C330-2 C331-2 C332-2 C333-2 P11-4 P4-4 U45-2 U46-2 U47-2
- U48-2 C334-2 C335-2 C538-2 J41-1 J41-3 J41-5 J41-7 JP26-1 JP27-1 JP28-1
- J26-9 C543-2 C544-2 C539-2 U59-12 U59-14 U59-2 U59-3 U59-4 U59-13 U59-17
- U59-21 U60-A1 U60-L7 U60-N12 U60-P14 U60-P3 U60-P9 U60-T13 U60-H5 U60-A12
- U60-G12 U60-G5 U60-G7 U60-G9 U60-H10 U60-H8 U60-J7 U60-J9 U60-K10 U60-K12
- U60-A16 U60-K5 U60-K8 U60-M1 U60-M16 U60-P16 U60-P2 U60-T1 U60-T16 U60-A5
- U60-C15 U60-C2 U60-E1 U60-E10 U60-E16 U60-E7 U60-B1 U60-B16 J27-2 J27-10
- J28-1 C545-2 C546-2 U61-6 C548-2 C549-2 C550-2 C551-2 C552-2 C553-2 C554-2
- C555-2 C556-2 C557-2 C558-2 C559-2 C560-2 C561-2 C562-2 C563-2 C564-2 C565-2
- C566-2 C567-2 C568-2 C569-2 C570-2 C571-2 C572-2 C573-2 C574-2 C575-2 C576-2
- C577-2 C578-2 C579-2 C580-2 C581-2 C582-2 C583-2 C584-2 C585-2 C586-2 C587-2
- C588-2 C589-2 J29-2 R281-1 R288-1 R290-1 SW5-1 SW6-1))
+ C495-2 C496-2 C497-2 C498-2 C499-2 C500-2 C501-2 C502-2 C503-2 JP10-1 JP12-1
+ JP14-1 JP16-1 JP19-1 JP20-3 JP21-3 JP22-3 JP23-3 C507-2 C508-2 C509-2 C510-2
+ C511-2 C512-2 C513-2 C514-2 C515-2 C516-2 C517-2 C518-2 C519-2 C520-2 C521-2
+ C522-2 C523-2 C524-2 C525-2 C526-2 C527-2 C528-2 C529-2 C530-2 C531-2 C532-2
+ C533-2 C534-2 J25-10 C535-2 C536-2 C537-2 R238-2 R253-1 R264-1 R265-1 R267-1
+ U58-68 U58-67 U58-66 U58-65 U58-61 U58-34 U58-5 U58-43 U58-49 U58-54 U58-59
+ U58-64 U58-70 U58-74 U58-78 U58-82 U58-91 U58-12 U58-93 U58-97 U58-99
+ U58-104 U58-106 U58-107 U58-110 U58-112 U58-113 U58-116 U58-16 U58-118
+ U58-119 U58-122 U58-124 U58-125 U58-128 U58-20 U58-22 U58-26 U58-30 U58-36
+ U58-38 JP24-1 JP25-1 C63-2 C61-1 C62-1 C64-2 C83-2 C76-2 C65-2 C77-2 C82-2
+ P8-B3 P8-B51 P8-B57 P8-A18 P8-A24 P8-A30 P8-A35 P8-A37 P8-A42 P8-A48 P8-A50
+ P8-B15 P8-A51 P8-A56 P8-B17 P8-B22 P8-B28 P8-B34 P8-B38 P8-B46 P8-B50 R169-1
+ R170-2 C72-2 C81-2 C71-2 C66-2 C74-2 C67-2 C73-2 C78-2 C68-2 C75-2 C80-2 C70-2
+ C79-2 C69-2 C616-2 C617-2 C618-2 C619-2 C620-1 C33-1 C6-2 C2-2 C32-2 C1-2
+ C621-2 C16-2 C622-2 C623-2 C624-2 C3-2 C625-2 C626-2 C627-2 C628-2 C629-2
+ C630-2 C631-2 C632-2 C633-2 C634-2 C635-2 C636-2 C637-2 C638-2 C639-2 C640-2
+ C641-2 C29-2 C642-2 C643-2 C644-2 C645-2 C646-2 C647-2 C648-2 C655-2 C657-2
+ C660-2 C661-2 C662-2 C663-2 C664-2 C665-2 C666-2 C667-2 C668-2 C669-2 C670-2
+ C9-2 C671-2 C672-2 C673-2 C674-2 C8-2 C675-2 C676-2 C677-2 C678-2 C679-2
+ C680-2 C681-2 C682-2 C683-2 C684-2 C685-2 C686-2 C687-2 C688-2 C689-2 C4-2
+ C690-2 C691-2 C692-2 C693-2 C694-2 C695-2 C696-2 C697-2 C698-2 C699-2 C700-2
+ C13-2 C701-2 C702-2 C703-2 C704-2 C705-2 C706-2 C707-2 C708-2 C709-2 C710-2
+ C30-2 C711-2 C712-2 C713-2 C714-2 C715-2 C716-2 C238-2 C717-2 C718-2 C719-2
+ C720-2 C5-2 C11-2 C721-2 C722-2 C723-2 C724-2 C725-2 C726-2 C727-2 C728-2
+ C729-2 C730-2 C731-2 C732-2 C733-2 C734-2 C735-2 C736-2 C737-2 C738-2 C739-2
+ C740-2 C741-2 Q2-1 Q1-1 RSET4-2 RSET2-2 R2-2 U2-25 U2-12 U2-16 U2-20 U2-4
+ U2-18 U1-AP25 U1-AP27 U1-A1 U1-B3 U1-V16 U1-V17 U1-V18 U1-V19 U1-V20 U1-V21
+ U1-V22 U1-V30 U1-W2 U1-W5 U1-B4 U1-W15 U1-W16 U1-W17 U1-W18 U1-W19 U1-W20
+ U1-W30 U1-W33 U1-Y13 U1-Y14 U1-B8 U1-Y15 U1-Y16 U1-Y17 U1-Y18 U1-Y19 U1-Y20
+ U1-Y21 U1-Y22 U1-AA14 U1-AA15 U1-B16 U1-AA17 U1-AA18 U1-AA20 U1-AA21
+ U1-AB13 U1-AB15 U1-AB17 U1-AB18 U1-AB20 U1-AB22 U1-B19 U1-AD1 U1-AE5 U1-AE30
+ U1-AG2 U1-AG5 U1-AG30 U1-AG33 U1-AJ1 U1-AK4 U1-AK5 U1-B26 U1-AK8 U1-AK10
+ U1-AK16 U1-AK17 U1-AK19 U1-AK25 U1-AK27 U1-AK30 U1-AK31 U1-AL3 U1-B27 U1-AL4
+ U1-AL5 U1-AL6 U1-AL29 U1-AL30 U1-AL31 U1-AL32 U1-AM1 U1-AM2 U1-AM3 U1-B31
+ U1-AM4 U1-AM31 U1-AM32 U1-AM33 U1-AM34 U1-AN1 U1-AN2 U1-AN3 U1-AN4 U1-AN8
+ U1-B32 U1-AN16 U1-AN19 U1-AN27 U1-AN31 U1-AN32 U1-AN33 U1-AN34 U1-AP1
+ U1-AP2 U1-AP3 U1-B33 U1-AP32 U1-AP33 U1-AP34 U1-A2 U1-B34 U1-C2 U1-C3 U1-C4
+ U1-C31 U1-C32 U1-C33 U1-C34 U1-D3 U1-D4 U1-A3 U1-D5 U1-D30 U1-D31 U1-D32
+ U1-D33 U1-E5 U1-E8 U1-E10 U1-E16 U1-E18 U1-A28 U1-E19 U1-E25 U1-E27 U1-E30
+ U1-E31 U1-H1 U1-H2 U1-H5 U1-H30 U1-H33 U1-A32 U1-K5 U1-K30 U1-N1 U1-N4 U1-N13
+ U1-N15 U1-N17 U1-N18 U1-N20 U1-N22 U1-A33 U1-P14 U1-P15 U1-P17 U1-P18 U1-P20
+ U1-P21 U1-R13 U1-R14 U1-R15 U1-R16 U1-A34 U1-R17 U1-R18 U1-R19 U1-R20 U1-R21
+ U1-R22 U1-T2 U1-T5 U1-T15 U1-T16 U1-B1 U1-T17 U1-T18 U1-T19 U1-T20 U1-T30
+ U1-T33 U1-U5 U1-U13 U1-U14 U1-U15 U1-B2 U1-U16 U1-U17 U1-U18 U1-U19 U1-U20
+ U1-U21 U1-U22 U1-V13 U1-V14 U1-V15 U1-M4 U1-M1 U1-J3 U1-K4 U1-K1 C17-2 C15-2
+ C742-2 C10-2 C12-2 C743-2 C26-2 C25-2 C28-2 C24-2 C27-2 C744-2 C745-2 C746-2
+ C747-2 U3-4 U3-8 U3-11 C31-1 C19-2 C20-2 C23-2 C7-2 U38-3 U38-1 U38-4 U39-3
+ U39-1 U39-4 U40-2 U40-1 U40-4 U41-2 J14-5 P2-5 U42-E8 U42-H2 U42-H7 C649-2
+ C650-2 C651-2 C197-2 C652-2 C199-2 C653-2 C654-2 C193-2 C656-2 C195-2 C658-2
+ C659-2 R86-2 R87-2 U43-18 U44-18 R84-2 R85-2 R83-2 R82-2 J7-1 C330-2 C331-2
+ C332-2 C333-2 P11-4 P4-4 U45-2 U46-2 U47-2 U48-2 C334-2 C335-2 C538-2 J41-1
+ J41-3 J41-5 J41-7 JP26-1 JP27-1 JP28-1 J26-9 C543-2 C544-2 C539-2 U59-12
+ U59-14 U59-2 U59-3 U59-4 U59-13 U59-17 U59-21 U60-A1 U60-L7 U60-N12 U60-P14
+ U60-P3 U60-P9 U60-T13 U60-H5 U60-A12 U60-G12 U60-G5 U60-G7 U60-G9 U60-H10
+ U60-H8 U60-J7 U60-J9 U60-K10 U60-K12 U60-A16 U60-K5 U60-K8 U60-M1 U60-M16
+ U60-P16 U60-P2 U60-T1 U60-T16 U60-A5 U60-C15 U60-C2 U60-E1 U60-E10 U60-E16
+ U60-E7 U60-B1 U60-B16 J27-2 J27-10 J28-1 C545-2 U61-6 C548-2 C549-2 C550-2
+ C551-2 C552-2 C553-2 C554-2 C555-2 C556-2 C557-2 C558-2 C559-2 C560-2 C561-2
+ C562-2 C563-2 C564-2 C565-2 C566-2 C567-2 C568-2 C569-2 C570-2 C571-2 C572-2
+ C573-2 C574-2 C575-2 C576-2 C577-2 C578-2 C579-2 C580-2 C581-2 C582-2 C583-2
+ C584-2 C585-2 C586-2 C587-2 C588-2 C589-2 J29-2 R281-1 R288-1 R290-1 SW5-1
+ SW6-1 C504-2 C505-2 C506-2 C546-2 C748-2 C749-2))
 		(net "GPIO44"
 			(pins RO5-1 U1-V32))
 		(net "I1V0"
@@ -30989,11 +31013,15 @@
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I291\SYS_CLK_P"
+			(diff_partner "$1I291\SYS_CLK_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I291\SYS_CLK_N,$1I291\SYS_CLK_P")))
 		(net_scalar "$1I291\SYS_CLK_N"
+			(diff_partner "$1I291\SYS_CLK_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I291\SYS_CLK_N,$1I291\SYS_CLK_P")))
 		(net_scalar "$1I291\SX95T_AVSS"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
@@ -31001,32 +31029,48 @@
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I291\GPIO_CLK1_P"
+			(diff_partner "$1I291\GPIO_CLK1_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I291\GPIO_CLK1_N,$1I291\GPIO_CLK1_P")))
 		(net_scalar "$1I291\GPIO_CLK1_N"
+			(diff_partner "$1I291\GPIO_CLK1_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I291\GPIO_CLK1_N,$1I291\GPIO_CLK1_P")))
 		(net_scalar "$1I291\GPIO_CLK0_P"
+			(diff_partner "$1I291\GPIO_CLK0_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I291\GPIO_CLK0_N,$1I291\GPIO_CLK0_P")))
 		(net_scalar "$1I291\GPIO_CLK0_N"
+			(diff_partner "$1I291\GPIO_CLK0_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I291\GPIO_CLK0_N,$1I291\GPIO_CLK0_P")))
 		(net_scalar "$1I291\DLY_CLK_200_P"
+			(diff_partner "$1I291\DLY_CLK_200_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I291\DLY_CLK_200_N,$1I291\DLY_CLK_200_P")))
 		(net_scalar "$1I291\DLY_CLK_200_N"
+			(diff_partner "$1I291\DLY_CLK_200_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I291\DLY_CLK_200_N,$1I291\DLY_CLK_200_P")))
 		(net_scalar "$1I3\ODIS"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I3\MGT_REFCLK_Q2_P"
+			(diff_partner "$1I3\MGT_REFCLK_Q2_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGT_REFCLK_Q2_N,$1I3\MGT_REFCLK_Q2_P")))
 		(net_scalar "$1I3\MGT_REFCLK_Q2_N"
+			(diff_partner "$1I3\MGT_REFCLK_Q2_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGT_REFCLK_Q2_N,$1I3\MGT_REFCLK_Q2_P")))
 		(net_scalar "$1I3\MGT_126_REF_CLK_P"
 			(attributes
 				(attval "NC" ""))
@@ -31058,107 +31102,175 @@
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I3\MGT_120_REF_CLK_P"
+			(diff_partner "$1I3\MGT_120_REF_CLK_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGT_120_REF_CLK_N,$1I3\MGT_120_REF_CLK_P")))
 		(net_scalar "$1I3\MGT_120_REF_CLK_N"
+			(diff_partner "$1I3\MGT_120_REF_CLK_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGT_120_REF_CLK_N,$1I3\MGT_120_REF_CLK_P")))
 		(net_scalar "$1I3\MGTTX1_126_P"
+			(diff_partner "$1I3\MGTTX1_126_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTTX1_126_N,$1I3\MGTTX1_126_P")))
 		(net_scalar "$1I3\MGTTX1_126_N"
+			(diff_partner "$1I3\MGTTX1_126_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTTX1_126_N,$1I3\MGTTX1_126_P")))
 		(net_scalar "$1I3\MGTTX1_124_P"
+			(diff_partner "$1I3\MGTTX1_124_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTTX1_124_N,$1I3\MGTTX1_124_P")))
 		(net_scalar "$1I3\MGTTX1_124_N"
+			(diff_partner "$1I3\MGTTX1_124_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTTX1_124_N,$1I3\MGTTX1_124_P")))
 		(net_scalar "$1I3\MGTTX1_122_P"
+			(diff_partner "$1I3\MGTTX1_122_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTTX1_122_N,$1I3\MGTTX1_122_P")))
 		(net_scalar "$1I3\MGTTX1_122_N"
+			(diff_partner "$1I3\MGTTX1_122_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTTX1_122_N,$1I3\MGTTX1_122_P")))
 		(net_scalar "$1I3\MGTTX1_120_P"
+			(diff_partner "$1I3\MGTTX1_120_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTTX1_120_N,$1I3\MGTTX1_120_P")))
 		(net_scalar "$1I3\MGTTX1_120_N"
+			(diff_partner "$1I3\MGTTX1_120_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTTX1_120_N,$1I3\MGTTX1_120_P")))
 		(net_scalar "$1I3\MGTTX0_126_P"
+			(diff_partner "$1I3\MGTTX0_126_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTTX0_126_N,$1I3\MGTTX0_126_P")))
 		(net_scalar "$1I3\MGTTX0_126_N"
+			(diff_partner "$1I3\MGTTX0_126_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTTX0_126_N,$1I3\MGTTX0_126_P")))
 		(net_scalar "$1I3\MGTTX0_124_P"
+			(diff_partner "$1I3\MGTTX0_124_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTTX0_124_N,$1I3\MGTTX0_124_P")))
 		(net_scalar "$1I3\MGTTX0_124_N"
+			(diff_partner "$1I3\MGTTX0_124_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTTX0_124_N,$1I3\MGTTX0_124_P")))
 		(net_scalar "$1I3\MGTTX0_122_P"
+			(diff_partner "$1I3\MGTTX0_122_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTTX0_122_N,$1I3\MGTTX0_122_P")))
 		(net_scalar "$1I3\MGTTX0_122_N"
+			(diff_partner "$1I3\MGTTX0_122_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTTX0_122_N,$1I3\MGTTX0_122_P")))
 		(net_scalar "$1I3\MGTTX0_120_P"
+			(diff_partner "$1I3\MGTTX0_120_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTTX0_120_N,$1I3\MGTTX0_120_P")))
 		(net_scalar "$1I3\MGTTX0_120_N"
+			(diff_partner "$1I3\MGTTX0_120_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTTX0_120_N,$1I3\MGTTX0_120_P")))
 		(net_scalar "$1I3\MGTRX1_126_P"
+			(diff_partner "$1I3\MGTRX1_126_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTRX1_126_N,$1I3\MGTRX1_126_P")))
 		(net_scalar "$1I3\MGTRX1_126_N"
+			(diff_partner "$1I3\MGTRX1_126_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTRX1_126_N,$1I3\MGTRX1_126_P")))
 		(net_scalar "$1I3\MGTRX1_124_P"
+			(diff_partner "$1I3\MGTRX1_124_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTRX1_124_N,$1I3\MGTRX1_124_P")))
 		(net_scalar "$1I3\MGTRX1_124_N"
+			(diff_partner "$1I3\MGTRX1_124_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTRX1_124_N,$1I3\MGTRX1_124_P")))
 		(net_scalar "$1I3\MGTRX1_122_P"
+			(diff_partner "$1I3\MGTRX1_122_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTRX1_122_N,$1I3\MGTRX1_122_P")))
 		(net_scalar "$1I3\MGTRX1_122_N"
+			(diff_partner "$1I3\MGTRX1_122_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTRX1_122_N,$1I3\MGTRX1_122_P")))
 		(net_scalar "$1I3\MGTRX1_120_P"
+			(diff_partner "$1I3\MGTRX1_120_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTRX1_120_N,$1I3\MGTRX1_120_P")))
 		(net_scalar "$1I3\MGTRX1_120_N"
+			(diff_partner "$1I3\MGTRX1_120_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTRX1_120_N,$1I3\MGTRX1_120_P")))
 		(net_scalar "$1I3\MGTRX0_126_P"
+			(diff_partner "$1I3\MGTRX0_126_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTRX0_126_N,$1I3\MGTRX0_126_P")))
 		(net_scalar "$1I3\MGTRX0_126_N"
+			(diff_partner "$1I3\MGTRX0_126_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTRX0_126_N,$1I3\MGTRX0_126_P")))
 		(net_scalar "$1I3\MGTRX0_124_P"
+			(diff_partner "$1I3\MGTRX0_124_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTRX0_124_N,$1I3\MGTRX0_124_P")))
 		(net_scalar "$1I3\MGTRX0_124_N"
+			(diff_partner "$1I3\MGTRX0_124_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTRX0_124_N,$1I3\MGTRX0_124_P")))
 		(net_scalar "$1I3\MGTRX0_122_P"
+			(diff_partner "$1I3\MGTRX0_122_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTRX0_122_N,$1I3\MGTRX0_122_P")))
 		(net_scalar "$1I3\MGTRX0_122_N"
+			(diff_partner "$1I3\MGTRX0_122_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTRX0_122_N,$1I3\MGTRX0_122_P")))
 		(net_scalar "$1I3\MGTRX0_120_P"
+			(diff_partner "$1I3\MGTRX0_120_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTRX0_120_N,$1I3\MGTRX0_120_P")))
 		(net_scalar "$1I3\MGTRX0_120_N"
+			(diff_partner "$1I3\MGTRX0_120_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGTRX0_120_N,$1I3\MGTRX0_120_P")))
 		(net_scalar "$1I3\MGTAVTTTX_126_1"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
@@ -31299,38 +31411,58 @@
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I3\$1N491"
+			(diff_partner "$1I3\$1N457")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\$1N457,$1I3\$1N491")))
 		(net_scalar "$1I3\$1N457"
+			(diff_partner "$1I3\$1N491")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\$1N457,$1I3\$1N491")))
 		(net_scalar "$1I3\$1N456"
+			(diff_partner "$1I3\$1N455")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\$1N455,$1I3\$1N456")))
 		(net_scalar "$1I3\$1N455"
+			(diff_partner "$1I3\$1N456")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\$1N455,$1I3\$1N456")))
 		(net_scalar "$1I3\$1N268"
+			(diff_partner "$1I3\$1N267")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\$1N267,$1I3\$1N268")))
 		(net_scalar "$1I3\$1N267"
+			(diff_partner "$1I3\$1N268")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\$1N267,$1I3\$1N268")))
 		(net_scalar "$1I3\$1N266"
+			(diff_partner "$1I3\$1N265")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\$1N265,$1I3\$1N266")))
 		(net_scalar "$1I3\$1N265"
+			(diff_partner "$1I3\$1N266")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\$1N265,$1I3\$1N266")))
 		(net_scalar "$1I2\ODIS"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I2\MGT_REFCLK_Q1_P"
+			(diff_partner "$1I2\MGT_REFCLK_Q1_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGT_REFCLK_Q1_N,$1I2\MGT_REFCLK_Q1_P")))
 		(net_scalar "$1I2\MGT_REFCLK_Q1_N"
+			(diff_partner "$1I2\MGT_REFCLK_Q1_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGT_REFCLK_Q1_N,$1I2\MGT_REFCLK_Q1_P")))
 		(net_scalar "$1I2\MGT_118_REF_CLK_P"
 			(attributes
 				(attval "NC" ""))
@@ -31362,107 +31494,175 @@
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I2\MGT_112_REF_CLK_P"
+			(diff_partner "$1I2\MGT_112_REF_CLK_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGT_112_REF_CLK_N,$1I2\MGT_112_REF_CLK_P")))
 		(net_scalar "$1I2\MGT_112_REF_CLK_N"
+			(diff_partner "$1I2\MGT_112_REF_CLK_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGT_112_REF_CLK_N,$1I2\MGT_112_REF_CLK_P")))
 		(net_scalar "$1I2\MGTTX1_118_P"
+			(diff_partner "$1I2\MGTTX1_118_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTTX1_118_N,$1I2\MGTTX1_118_P")))
 		(net_scalar "$1I2\MGTTX1_118_N"
+			(diff_partner "$1I2\MGTTX1_118_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTTX1_118_N,$1I2\MGTTX1_118_P")))
 		(net_scalar "$1I2\MGTTX1_116_P"
+			(diff_partner "$1I2\MGTTX1_116_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTTX1_116_N,$1I2\MGTTX1_116_P")))
 		(net_scalar "$1I2\MGTTX1_116_N"
+			(diff_partner "$1I2\MGTTX1_116_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTTX1_116_N,$1I2\MGTTX1_116_P")))
 		(net_scalar "$1I2\MGTTX1_114_P"
+			(diff_partner "$1I2\MGTTX1_114_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTTX1_114_N,$1I2\MGTTX1_114_P")))
 		(net_scalar "$1I2\MGTTX1_114_N"
+			(diff_partner "$1I2\MGTTX1_114_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTTX1_114_N,$1I2\MGTTX1_114_P")))
 		(net_scalar "$1I2\MGTTX1_112_P"
+			(diff_partner "$1I2\MGTTX1_112_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTTX1_112_N,$1I2\MGTTX1_112_P")))
 		(net_scalar "$1I2\MGTTX1_112_N"
+			(diff_partner "$1I2\MGTTX1_112_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTTX1_112_N,$1I2\MGTTX1_112_P")))
 		(net_scalar "$1I2\MGTTX0_118_P"
+			(diff_partner "$1I2\MGTTX0_118_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTTX0_118_N,$1I2\MGTTX0_118_P")))
 		(net_scalar "$1I2\MGTTX0_118_N"
+			(diff_partner "$1I2\MGTTX0_118_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTTX0_118_N,$1I2\MGTTX0_118_P")))
 		(net_scalar "$1I2\MGTTX0_116_P"
+			(diff_partner "$1I2\MGTTX0_116_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTTX0_116_N,$1I2\MGTTX0_116_P")))
 		(net_scalar "$1I2\MGTTX0_116_N"
+			(diff_partner "$1I2\MGTTX0_116_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTTX0_116_N,$1I2\MGTTX0_116_P")))
 		(net_scalar "$1I2\MGTTX0_114_P"
+			(diff_partner "$1I2\MGTTX0_114_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTTX0_114_N,$1I2\MGTTX0_114_P")))
 		(net_scalar "$1I2\MGTTX0_114_N"
+			(diff_partner "$1I2\MGTTX0_114_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTTX0_114_N,$1I2\MGTTX0_114_P")))
 		(net_scalar "$1I2\MGTTX0_112_P"
+			(diff_partner "$1I2\MGTTX0_112_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTTX0_112_N,$1I2\MGTTX0_112_P")))
 		(net_scalar "$1I2\MGTTX0_112_N"
+			(diff_partner "$1I2\MGTTX0_112_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTTX0_112_N,$1I2\MGTTX0_112_P")))
 		(net_scalar "$1I2\MGTRX1_118_P"
+			(diff_partner "$1I2\MGTRX1_118_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTRX1_118_N,$1I2\MGTRX1_118_P")))
 		(net_scalar "$1I2\MGTRX1_118_N"
+			(diff_partner "$1I2\MGTRX1_118_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTRX1_118_N,$1I2\MGTRX1_118_P")))
 		(net_scalar "$1I2\MGTRX1_116_P"
+			(diff_partner "$1I2\MGTRX1_116_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTRX1_116_N,$1I2\MGTRX1_116_P")))
 		(net_scalar "$1I2\MGTRX1_116_N"
+			(diff_partner "$1I2\MGTRX1_116_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTRX1_116_N,$1I2\MGTRX1_116_P")))
 		(net_scalar "$1I2\MGTRX1_114_P"
+			(diff_partner "$1I2\MGTRX1_114_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTRX1_114_N,$1I2\MGTRX1_114_P")))
 		(net_scalar "$1I2\MGTRX1_114_N"
+			(diff_partner "$1I2\MGTRX1_114_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTRX1_114_N,$1I2\MGTRX1_114_P")))
 		(net_scalar "$1I2\MGTRX1_112_P"
+			(diff_partner "$1I2\MGTRX1_112_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTRX1_112_N,$1I2\MGTRX1_112_P")))
 		(net_scalar "$1I2\MGTRX1_112_N"
+			(diff_partner "$1I2\MGTRX1_112_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTRX1_112_N,$1I2\MGTRX1_112_P")))
 		(net_scalar "$1I2\MGTRX0_118_P"
+			(diff_partner "$1I2\MGTRX0_118_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTRX0_118_N,$1I2\MGTRX0_118_P")))
 		(net_scalar "$1I2\MGTRX0_118_N"
+			(diff_partner "$1I2\MGTRX0_118_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTRX0_118_N,$1I2\MGTRX0_118_P")))
 		(net_scalar "$1I2\MGTRX0_116_P"
+			(diff_partner "$1I2\MGTRX0_116_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTRX0_116_N,$1I2\MGTRX0_116_P")))
 		(net_scalar "$1I2\MGTRX0_116_N"
+			(diff_partner "$1I2\MGTRX0_116_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTRX0_116_N,$1I2\MGTRX0_116_P")))
 		(net_scalar "$1I2\MGTRX0_114_P"
+			(diff_partner "$1I2\MGTRX0_114_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTRX0_114_N,$1I2\MGTRX0_114_P")))
 		(net_scalar "$1I2\MGTRX0_114_N"
+			(diff_partner "$1I2\MGTRX0_114_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTRX0_114_N,$1I2\MGTRX0_114_P")))
 		(net_scalar "$1I2\MGTRX0_112_P"
+			(diff_partner "$1I2\MGTRX0_112_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTRX0_112_N,$1I2\MGTRX0_112_P")))
 		(net_scalar "$1I2\MGTRX0_112_N"
+			(diff_partner "$1I2\MGTRX0_112_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\MGTRX0_112_N,$1I2\MGTRX0_112_P")))
 		(net_scalar "$1I2\MGTRREF"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
@@ -31609,29 +31809,45 @@
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I2\$1N491"
+			(diff_partner "$1I2\$1N457")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\$1N457,$1I2\$1N491")))
 		(net_scalar "$1I2\$1N457"
+			(diff_partner "$1I2\$1N491")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\$1N457,$1I2\$1N491")))
 		(net_scalar "$1I2\$1N456"
+			(diff_partner "$1I2\$1N455")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\$1N455,$1I2\$1N456")))
 		(net_scalar "$1I2\$1N455"
+			(diff_partner "$1I2\$1N456")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\$1N455,$1I2\$1N456")))
 		(net_scalar "$1I2\$1N268"
+			(diff_partner "$1I2\$1N267")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\$1N267,$1I2\$1N268")))
 		(net_scalar "$1I2\$1N267"
+			(diff_partner "$1I2\$1N268")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\$1N267,$1I2\$1N268")))
 		(net_scalar "$1I2\$1N266"
+			(diff_partner "$1I2\$1N265")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\$1N265,$1I2\$1N266")))
 		(net_scalar "$1I2\$1N265"
+			(diff_partner "$1I2\$1N266")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\$1N265,$1I2\$1N266")))
 		(net_scalar "$1I42\USB2_XCVR_D-"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
@@ -36180,53 +36396,85 @@
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I3\$1N64"
+			(diff_partner "$1I3\$1N63")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\$1N63,$1I3\$1N64")))
 		(net_scalar "$1I3\$1N63"
+			(diff_partner "$1I3\$1N64")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\$1N63,$1I3\$1N64")))
 		(net_scalar "$1I3\$1N60"
+			(diff_partner "$1I3\$1N59")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\$1N59,$1I3\$1N60")))
 		(net_scalar "$1I3\$1N59"
+			(diff_partner "$1I3\$1N60")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\$1N59,$1I3\$1N60")))
 		(net_scalar "$1I3\$1N29"
+			(diff_partner "$1I3\$1N28")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\$1N28,$1I3\$1N29")))
 		(net_scalar "$1I3\$1N28"
+			(diff_partner "$1I3\$1N29")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\$1N28,$1I3\$1N29")))
 		(net_scalar "$1I3\$1N27"
+			(diff_partner "$1I3\$1N26")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\$1N26,$1I3\$1N27")))
 		(net_scalar "$1I3\$1N26"
+			(diff_partner "$1I3\$1N27")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\$1N26,$1I3\$1N27")))
 		(net_scalar "$1I2\$1N919"
+			(diff_partner "$1I2\$1N60")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\$1N60,$1I2\$1N919")))
 		(net_scalar "$1I2\$1N917"
+			(diff_partner "$1I2\$1N64")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\$1N64,$1I2\$1N917")))
 		(net_scalar "$1I2\$1N905"
+			(diff_partner "$1I2\$1N904")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\$1N904,$1I2\$1N905")))
 		(net_scalar "$1I2\$1N904"
+			(diff_partner "$1I2\$1N905")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\$1N904,$1I2\$1N905")))
 		(net_scalar "$1I2\$1N903"
+			(diff_partner "$1I2\$1N902")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\$1N902,$1I2\$1N903")))
 		(net_scalar "$1I2\$1N902"
+			(diff_partner "$1I2\$1N903")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\$1N902,$1I2\$1N903")))
 		(net_scalar "$1I2\$1N64"
+			(diff_partner "$1I2\$1N917")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\$1N64,$1I2\$1N917")))
 		(net_scalar "$1I2\$1N60"
+			(diff_partner "$1I2\$1N919")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\$1N60,$1I2\$1N919")))
 		(busses
 			(busext "PDATA[15:0]"
 				(scalars "PDATA0" "PDATA1" "PDATA2" "PDATA3" "PDATA4" "PDATA5" "PDATA6" "PDATA7" "PDATA8" "PDATA9"

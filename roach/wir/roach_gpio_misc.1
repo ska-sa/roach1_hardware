@@ -55,36 +55,6 @@ AP c 1 PINTYPE=BI
 AP c 1 #=1
 AP c 2 PINTYPE=BI
 AP c 2 #=2
-|Q 10pin_ioheader 1
-AS 10pin_ioheader MANUFACTURER=SAMTEC
-AS 10pin_ioheader P/D_NUM=HLE-105-02-G-DV
-AS 10pin_ioheader PKG_TYPE=J_10IO_TBD
-AS 10pin_ioheader LEVEL=STD
-AS 10pin_ioheader PARTS=1
-AS 10pin_ioheader DEVICE=10PIN_IOHEADER
-AS 10pin_ioheader REFDES=J?
-AS 10pin_ioheader PINORDER=P1 P10 P2 P3 P4 P5 P6 P7 P8 P9
-AS 10pin_ioheader INOV_VER_REC=12:38_9-11-07
-AP 10pin_ioheader 1 #=1
-AP 10pin_ioheader 1 PINTYPE=IN
-AP 10pin_ioheader 2 #=10
-AP 10pin_ioheader 2 PINTYPE=BI
-AP 10pin_ioheader 3 #=2
-AP 10pin_ioheader 3 PINTYPE=BI
-AP 10pin_ioheader 4 #=3
-AP 10pin_ioheader 4 PINTYPE=IN
-AP 10pin_ioheader 5 #=4
-AP 10pin_ioheader 5 PINTYPE=IN
-AP 10pin_ioheader 6 #=5
-AP 10pin_ioheader 6 PINTYPE=IN
-AP 10pin_ioheader 7 #=6
-AP 10pin_ioheader 7 PINTYPE=IN
-AP 10pin_ioheader 8 #=7
-AP 10pin_ioheader 8 PINTYPE=IN
-AP 10pin_ioheader 9 #=8
-AP 10pin_ioheader 9 PINTYPE=IN
-AP 10pin_ioheader 10 #=9
-AP 10pin_ioheader 10 PINTYPE=IN
 |Q sn74avch4t245 1
 AS sn74avch4t245 LEVEL=STD
 AS sn74avch4t245 PKG_TYPE=SOP40P640X120-16N
@@ -405,6 +375,36 @@ AP roach_gpio 22 IOD_CUSTOM=GPIOLVC33<4>
 AP roach_gpio 22 IOD_PORTID=GPIOLVC33<4>
 AP roach_gpio 22 IOD_PORTTYPE=SIGNAL
 AP roach_gpio 22 IOD_LABELTYPE=IOD_SIGNALNAME
+|Q 10pin_ioheader 1
+AS 10pin_ioheader MANUFACTURER=SAMTEC
+AS 10pin_ioheader P/D_NUM=HLE-105-02-G-DV
+AS 10pin_ioheader PKG_TYPE=J_10IO_TBD
+AS 10pin_ioheader LEVEL=STD
+AS 10pin_ioheader PARTS=1
+AS 10pin_ioheader DEVICE=10PIN_IOHEADER
+AS 10pin_ioheader REFDES=J?
+AS 10pin_ioheader PINORDER=P1 P10 P2 P3 P4 P5 P6 P7 P8 P9
+AS 10pin_ioheader INOV_VER_REC=12:38_9-11-07
+AP 10pin_ioheader 1 #=1
+AP 10pin_ioheader 1 PINTYPE=IN
+AP 10pin_ioheader 2 #=10
+AP 10pin_ioheader 2 PINTYPE=BI
+AP 10pin_ioheader 3 #=2
+AP 10pin_ioheader 3 PINTYPE=BI
+AP 10pin_ioheader 4 #=3
+AP 10pin_ioheader 4 PINTYPE=IN
+AP 10pin_ioheader 5 #=4
+AP 10pin_ioheader 5 PINTYPE=IN
+AP 10pin_ioheader 6 #=5
+AP 10pin_ioheader 6 PINTYPE=IN
+AP 10pin_ioheader 7 #=6
+AP 10pin_ioheader 7 PINTYPE=IN
+AP 10pin_ioheader 8 #=7
+AP 10pin_ioheader 8 PINTYPE=IN
+AP 10pin_ioheader 9 #=8
+AP 10pin_ioheader 9 PINTYPE=IN
+AP 10pin_ioheader 10 #=9
+AP 10pin_ioheader 10 PINTYPE=IN
 |Q sma_receptacle 1
 AS sma_receptacle PKG_TYPE=AMPHENOL132136
 AS sma_receptacle LEVEL=STD
@@ -535,29 +535,6 @@ API $1I204 c 1 PINLOC=13N4
 API $1I204 c 1 #=1
 API $1I204 c 2 PINLOC=13N4
 API $1I204 c 2 #=2
-M 10pin_ioheader $1I158
-I $1I158 10pin_ioheader $1N128 GND $1N163 $1N165 $1N167 $1N169 $1N178 $1N176 $1N174 $1N172 SCHLOC=13R6`REFDES=J9`
-|R 12:38_9-11-07
-API $1I158 10pin_ioheader 1 PINLOC=13R6
-API $1I158 10pin_ioheader 1 #=1
-API $1I158 10pin_ioheader 2 PINLOC=13R5
-API $1I158 10pin_ioheader 2 #=10
-API $1I158 10pin_ioheader 3 PINLOC=13R6
-API $1I158 10pin_ioheader 3 #=2
-API $1I158 10pin_ioheader 4 PINLOC=13R6
-API $1I158 10pin_ioheader 4 #=3
-API $1I158 10pin_ioheader 5 PINLOC=13R6
-API $1I158 10pin_ioheader 5 #=4
-API $1I158 10pin_ioheader 6 PINLOC=13R6
-API $1I158 10pin_ioheader 6 #=5
-API $1I158 10pin_ioheader 7 PINLOC=13R6
-API $1I158 10pin_ioheader 7 #=6
-API $1I158 10pin_ioheader 8 PINLOC=13R6
-API $1I158 10pin_ioheader 8 #=7
-API $1I158 10pin_ioheader 9 PINLOC=13R6
-API $1I158 10pin_ioheader 9 #=8
-API $1I158 10pin_ioheader 10 PINLOC=13R5
-API $1I158 10pin_ioheader 10 #=9
 M sn74avch4t245 $1I125
 I $1I125 sn74avch4t245 $1N163 $1N165 GPIOLVC18[19] GPIOLVC18[18] GPIOLVC18[20] $1N144 $1N167 $1N169 GPIOLVC18[17] GPIOLVC18[16] GPIOLVC18[20] $1N144 GND GND $1N128 1V8 SCHLOC=13N7`REFDES=U10`
 |R 8:25_9-26-07
@@ -930,4 +907,27 @@ API $1I304 sma_receptacle 4 PINLOC=13R4
 API $1I304 sma_receptacle 4 #=5
 API $1I304 sma_receptacle 5 PINLOC=13R4
 API $1I304 sma_receptacle 5 #=1
+M 10pin_ioheader $1I158
+I $1I158 10pin_ioheader $1N128 GND $1N163 $1N165 $1N167 $1N169 $1N178 $1N176 $1N174 $1N172 SCHLOC=13R6`REFDES=J9`
+|R 12:38_9-11-07
+API $1I158 10pin_ioheader 1 PINLOC=13R6
+API $1I158 10pin_ioheader 1 #=1
+API $1I158 10pin_ioheader 2 PINLOC=13R5
+API $1I158 10pin_ioheader 2 #=10
+API $1I158 10pin_ioheader 3 PINLOC=13R6
+API $1I158 10pin_ioheader 3 #=2
+API $1I158 10pin_ioheader 4 PINLOC=13R6
+API $1I158 10pin_ioheader 4 #=3
+API $1I158 10pin_ioheader 5 PINLOC=13R6
+API $1I158 10pin_ioheader 5 #=4
+API $1I158 10pin_ioheader 6 PINLOC=13R6
+API $1I158 10pin_ioheader 6 #=5
+API $1I158 10pin_ioheader 7 PINLOC=13R6
+API $1I158 10pin_ioheader 7 #=6
+API $1I158 10pin_ioheader 8 PINLOC=13R6
+API $1I158 10pin_ioheader 8 #=7
+API $1I158 10pin_ioheader 9 PINLOC=13R6
+API $1I158 10pin_ioheader 9 #=8
+API $1I158 10pin_ioheader 10 PINLOC=13R5
+API $1I158 10pin_ioheader 10 #=9
 EW
