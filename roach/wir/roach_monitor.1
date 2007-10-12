@@ -1,9 +1,4 @@
 | Wirelist created using version 5.4.
-| Error - Symbol roach_monitor has a pin PPC_THERMONB that is not defined in its pin order file roach_monitor.PIN.
-| Error - Symbol roach_monitor has a pin PPC_THERMONA that is not defined in its pin order file roach_monitor.PIN.
-| Sch_Warning - Symbol roach_sheet_a1 has changed since component $1I1086 was instantiated.
-| Error - Schematic pin PPC_THERMONB at (2010, 950) is in schematic but not in corresponding symbol.
-| Error - Schematic pin PPC_THERMONA at (2010, 1240) is in schematic but not in corresponding symbol.
 V 5.4
 K 124780885400 roach_monitor
 DW roach_monitor
@@ -2506,7 +2501,6 @@ AS header10x2 P/D_NUM=15-91-2200
 AS header10x2 REFDES=J?
 AS header10x2 PINORDER=P1 P10 P11 P12 P13 P14 P15 P16 P17 P18 P19 P2 P20 P3 P4 P5 P6 P7 P8 P9
 AS header10x2 INOV_VER_REC=13:04_10-11-07
-
 AP header10x2 1 PINTYPE=BI
 AP header10x2 1 #=1
 AP header10x2 2 #=10
@@ -2547,8 +2541,6 @@ AP header10x2 19 PINTYPE=BI
 AP header10x2 19 #=8
 AP header10x2 20 PINTYPE=BI
 AP header10x2 20 #=9
-AN PPC_THERMONA NET_ALIAS=TD2
-AN PPC_THERMONB NET_ALIAS=ATRTN1
 G 2V5
 G 1V8
 G 1V5
@@ -3799,7 +3791,7 @@ API $1I663 r 1 #=1
 API $1I663 r 2 PINLOC=2B7
 API $1I663 r 2 #=2
 M header7x2 $1I1130
-I $1I1130 header7x2 CHS_SWITCH ? $1N67 MON_RESET# CHS_LED1 GND PUSH_BUTTON GND GND $1N665 ? ? ? CHS_LED0 REFDES=J?`
+I $1I1130 header7x2 CHS_SWITCH ? $1N67 MON_RESET# CHS_LED1 GND PUSH_BUTTON GND GND $1N665 ? ? ? CHS_LED0 REFDES=J7`
 |R 7:05_10-11-07
 API $1I1130 header7x2 1 #=1
 API $1I1130 header7x2 2 NC
@@ -3829,19 +3821,18 @@ API $1I692 r 2 #=2
 P out ATRTN0
 I ATRTN0 out ATRTN0 
 API ATRTN0 out 1 XREF=7-3L
-P out PPC_THERMONB
-I PPC_THERMONB out ATRTN1 
-API PPC_THERMONB out 1 XREF
+P out ATRTN1
+I ATRTN1 out ATRTN1 
+API ATRTN1 out 1 XREF
 P out TD0
 I TD0 out TD0 
 API TD0 out 1 XREF=7-3L
-P out PPC_THERMONA
-I PPC_THERMONA out TD2 
-API PPC_THERMONA out 1 XREF
+P out TD2
+I TD2 out TD2 
+API TD2 out 1 XREF
 M header10x2 $1I1087
 I $1I1087 header10x2 ATRTN0 TD4 ATRTN2 TD5 ATRTN3 TD6 ATRTN3 TD7 ATRTN4 TD8 ATRTN4 TD0 TD9 ATRTN0 TD1 ATRTN1 TD2 ATRTN1 TD3 ATRTN2 SCHLOC=2J5`REFDES=J31`
 |R 13:04_10-11-07
-
 API $1I1087 header10x2 1 PINLOC=2J6
 API $1I1087 header10x2 1 #=1
 API $1I1087 header10x2 2 PINLOC=2J5
@@ -3883,5 +3874,3 @@ API $1I1087 header10x2 19 #=8
 API $1I1087 header10x2 20 PINLOC=2J5
 API $1I1087 header10x2 20 #=9
 EW
-| Sch_Info - Net PPC_THERMONA has alias of TD2.
-| Sch_Info - Net PPC_THERMONB has alias of ATRTN1.

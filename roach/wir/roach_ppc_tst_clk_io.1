@@ -3,12 +3,15 @@ V 5.4
 K 373810501000 roach_ppc_tst_clk_io
 DW roach_ppc_tst_clk_io
 Q Case
-SA SOURCE_PATH 
-SA SHEET=23 OF 25 
-SA SCOUT_META_FORMAT_PREFIX_0=XREF 
-SA SCOUT_META_FORMAT_PREFIX_1=SCHLOC 
-SA SCOUT_META_FORMAT_PREFIX_2=PINLOC 
 SA SCOUT_META_PAGE_ANNOTATION=SHEET=23 OF 25 
+SA SCOUT_META_FORMAT_PREFIX_2=PINLOC 
+SA SCOUT_META_FORMAT_PREFIX_1=SCHLOC 
+SA SCOUT_META_FORMAT_PREFIX_0=XREF 
+SA SHEET=23 OF 25 
+SA SOURCE_PATH 
+AS out OUT
+AS out PINORDER=OUT
+AP out 1 PINTYPE=OUT
 AS in IN
 AS in PINORDER=IN
 AP in 1 PINTYPE=IN
@@ -360,29 +363,6 @@ AP ic_cpu_te_pbga680_440epx_grx_c 21 #=AH31
 AP ic_cpu_te_pbga680_440epx_grx_c 21 PINTYPE=BI
 AP ic_cpu_te_pbga680_440epx_grx_c 22 #=A6
 AP ic_cpu_te_pbga680_440epx_grx_c 22 PINTYPE=OUT
-|Q switch_push_spst_ra_smt4 1
-AS switch_push_spst_ra_smt4 REFDES=SW?
-AS switch_push_spst_ra_smt4 DEVICE=SWITCH_PUSH_SPST_RA_SMT4
-AS switch_push_spst_ra_smt4 PARTS=1
-AS switch_push_spst_ra_smt4 LEVEL=STD
-AS switch_push_spst_ra_smt4 PKG_TYPE=ITT_KT11B2SAM_T
-AS switch_push_spst_ra_smt4 GRN=LHR
-AS switch_push_spst_ra_smt4 ALT_PART=NA
-AS switch_push_spst_ra_smt4 P/D_NUM=CAN: KT11B2SAM3-LFS
-AS switch_push_spst_ra_smt4 BOARD_OPTION
-AS switch_push_spst_ra_smt4 ALT_SUP=NA
-AS switch_push_spst_ra_smt4 SUP=CAN: KT11B2SAM3-LFS
-AS switch_push_spst_ra_smt4 SHAPE=SMT4
-AS switch_push_spst_ra_smt4 VALUE
-AS switch_push_spst_ra_smt4 PINORDER=1 2 3 4
-AP switch_push_spst_ra_smt4 1 #=1
-AP switch_push_spst_ra_smt4 1 PINTYPE=OUT
-AP switch_push_spst_ra_smt4 2 #=2
-AP switch_push_spst_ra_smt4 2 PINTYPE=OUT
-AP switch_push_spst_ra_smt4 3 #=3
-AP switch_push_spst_ra_smt4 3 PINTYPE=OUT
-AP switch_push_spst_ra_smt4 4 #=4
-AP switch_push_spst_ra_smt4 4 PINTYPE=OUT
 |Q res_15k_0402_5_ 1
 AS res_15k_0402_5_ REFDES=R?
 AS res_15k_0402_5_ DEVICE=RES_15K_0402_5%
@@ -443,56 +423,6 @@ AP diode_sig_sot23_150ma_bav70 1 #=1,2
 AP diode_sig_sot23_150ma_bav70 1 PINTYPE=OUT
 AP diode_sig_sot23_150ma_bav70 2 #=3,3
 AP diode_sig_sot23_150ma_bav70 2 PINTYPE=OUT
-|Q ic_cpu_te_pbga680_440epx_grx_b 1
-AS ic_cpu_te_pbga680_440epx_grx_b REFDES=U?
-AS ic_cpu_te_pbga680_440epx_grx_b DEVICE=IC_CPU_TE-PBGA680_440EPX-GRX
-AS ic_cpu_te_pbga680_440epx_grx_b PARTS=1
-AS ic_cpu_te_pbga680_440epx_grx_b LEVEL=STD
-AS ic_cpu_te_pbga680_440epx_grx_b PKG_TYPE=BGA680C100P34X34_3500X3500X265
-AS ic_cpu_te_pbga680_440epx_grx_b P/D_NUM=PPC440EPx-NTA533T
-AS ic_cpu_te_pbga680_440epx_grx_b NOTES=245degC 30sec, max peak process
-AS ic_cpu_te_pbga680_440epx_grx_b VALUE
-AS ic_cpu_te_pbga680_440epx_grx_b HETERO=IC_CPU_TE_PBGA680_440EPX_GRX_A,IC_CPU_TE_PBGA680_440EPX_GRX_B,IC_CPU_TE_PBGA680_440EPX_GRX_C,IC_CPU_TE_PBGA680_440EPX_GRX_D,IC_CPU_TE_PBGA680_440EPX_GRX_E,IC_CPU_TE_PBGA680_440EPX_GRX_F,IC_CPU_TE_PBGA680_440EPX_GRX_G,IC_CPU_TE_PBGA680_440EPX_GRX_H,IC_CPU_TE_PBGA680_440EPX_GRX_I,IC_CPU_TE_PBGA680_440EPX_GRX_J
-AS ic_cpu_te_pbga680_440epx_grx_b PINORDER=IRQ0 IRQ1 IRQ2 IRQ3 IRQ4_GPIO44_DMAACK1 IRQ5_MODECTRL_DMAREQ1 IRQ6_GPIO45_EOT1_TC1 IRQ7_GPIO46_DMAREQ0 IRQ8_GPIO47_DMAACK0 IRQ9_GPIO48_EOT0_TC0 PSROOUT SYSCLK SYSERR SYSRESET# TESTEN THERMONA THERMONB TMRCLK
-AP ic_cpu_te_pbga680_440epx_grx_b 1 #=AD33
-AP ic_cpu_te_pbga680_440epx_grx_b 1 PINTYPE=OUT
-AP ic_cpu_te_pbga680_440epx_grx_b 2 #=AC31
-AP ic_cpu_te_pbga680_440epx_grx_b 2 PINTYPE=OUT
-AP ic_cpu_te_pbga680_440epx_grx_b 3 #=AD34
-AP ic_cpu_te_pbga680_440epx_grx_b 3 PINTYPE=OUT
-AP ic_cpu_te_pbga680_440epx_grx_b 4 #=U34
-AP ic_cpu_te_pbga680_440epx_grx_b 4 PINTYPE=OUT
-AP ic_cpu_te_pbga680_440epx_grx_b 5 #=V32
-AP ic_cpu_te_pbga680_440epx_grx_b 5 PINTYPE=BI
-AP ic_cpu_te_pbga680_440epx_grx_b 6 #=W34
-AP ic_cpu_te_pbga680_440epx_grx_b 6 PINTYPE=OUT
-AP ic_cpu_te_pbga680_440epx_grx_b 7 #=U33
-AP ic_cpu_te_pbga680_440epx_grx_b 7 PINTYPE=BI
-AP ic_cpu_te_pbga680_440epx_grx_b 8 #=U32
-AP ic_cpu_te_pbga680_440epx_grx_b 8 PINTYPE=BI
-AP ic_cpu_te_pbga680_440epx_grx_b 9 #=T34
-AP ic_cpu_te_pbga680_440epx_grx_b 9 PINTYPE=BI
-AP ic_cpu_te_pbga680_440epx_grx_b 10 #=T32
-AP ic_cpu_te_pbga680_440epx_grx_b 10 PINTYPE=BI
-AP ic_cpu_te_pbga680_440epx_grx_b 11 #=A20
-AP ic_cpu_te_pbga680_440epx_grx_b 11 PINTYPE=IN
-AP ic_cpu_te_pbga680_440epx_grx_b 12 #=AP23
-AP ic_cpu_te_pbga680_440epx_grx_b 12 PINTYPE=OUT
-AP ic_cpu_te_pbga680_440epx_grx_b 13 #=AD32
-AP ic_cpu_te_pbga680_440epx_grx_b 13 PINTYPE=IN
-AP ic_cpu_te_pbga680_440epx_grx_b 14 #=AD31
-AP ic_cpu_te_pbga680_440epx_grx_b 14 PINTYPE=OCL
-AP ic_cpu_te_pbga680_440epx_grx_b 15 #=C9
-AP ic_cpu_te_pbga680_440epx_grx_b 15 PINTYPE=OUT
-AP ic_cpu_te_pbga680_440epx_grx_b 16 #=C16
-AP ic_cpu_te_pbga680_440epx_grx_b 16 PINTYPE=OUT
-AP ic_cpu_te_pbga680_440epx_grx_b 17 #=D16
-AP ic_cpu_te_pbga680_440epx_grx_b 17 PINTYPE=OUT
-AP ic_cpu_te_pbga680_440epx_grx_b 18 #=P3
-AP ic_cpu_te_pbga680_440epx_grx_b 18 PINTYPE=OUT
-AS out OUT
-AS out PINORDER=OUT
-AP out 1 PINTYPE=OUT
 |Q con_mictor_2x19_f_vt_0r25_smt 1
 AS con_mictor_2x19_f_vt_0r25_smt REFDES=J?
 AS con_mictor_2x19_f_vt_0r25_smt DEVICE=CON_MICTOR_2X19_F_VT_0R25_SMT
@@ -679,9 +609,6 @@ AP ic_clkgen_soic8_0211p21 7 #=7
 AP ic_clkgen_soic8_0211p21 7 PINTYPE=IN
 AP ic_clkgen_soic8_0211p21 8 #=2
 AP ic_clkgen_soic8_0211p21 8 PINTYPE=IN
-AS bi BI
-AS bi PINORDER=BI
-AP bi 1 PINTYPE=BI
 |Q ic_clkgen_tssop16_0211p10 1
 AS ic_clkgen_tssop16_0211p10 MANUFACTURER=CYPRESS
 AS ic_clkgen_tssop16_0211p10 REFDES=U?
@@ -729,6 +656,79 @@ AP ic_clkgen_tssop16_0211p10 15 #=3
 AP ic_clkgen_tssop16_0211p10 15 PINTYPE=IN
 AP ic_clkgen_tssop16_0211p10 16 #=11
 AP ic_clkgen_tssop16_0211p10 16 PINTYPE=IN
+AS bi BI
+AS bi PINORDER=BI
+AP bi 1 PINTYPE=BI
+|Q ic_cpu_te_pbga680_440epx_grx_b 1
+AS ic_cpu_te_pbga680_440epx_grx_b REFDES=U?
+AS ic_cpu_te_pbga680_440epx_grx_b DEVICE=IC_CPU_TE-PBGA680_440EPX-GRX
+AS ic_cpu_te_pbga680_440epx_grx_b PARTS=1
+AS ic_cpu_te_pbga680_440epx_grx_b LEVEL=STD
+AS ic_cpu_te_pbga680_440epx_grx_b PKG_TYPE=BGA680C100P34X34_3500X3500X265
+AS ic_cpu_te_pbga680_440epx_grx_b P/D_NUM=PPC440EPx-NTA533T
+AS ic_cpu_te_pbga680_440epx_grx_b NOTES=245degC 30sec, max peak process
+AS ic_cpu_te_pbga680_440epx_grx_b VALUE
+AS ic_cpu_te_pbga680_440epx_grx_b HETERO=IC_CPU_TE_PBGA680_440EPX_GRX_A,IC_CPU_TE_PBGA680_440EPX_GRX_B,IC_CPU_TE_PBGA680_440EPX_GRX_C,IC_CPU_TE_PBGA680_440EPX_GRX_D,IC_CPU_TE_PBGA680_440EPX_GRX_E,IC_CPU_TE_PBGA680_440EPX_GRX_F,IC_CPU_TE_PBGA680_440EPX_GRX_G,IC_CPU_TE_PBGA680_440EPX_GRX_H,IC_CPU_TE_PBGA680_440EPX_GRX_I,IC_CPU_TE_PBGA680_440EPX_GRX_J
+AS ic_cpu_te_pbga680_440epx_grx_b PINORDER=IRQ0 IRQ1 IRQ2 IRQ3 IRQ4_GPIO44_DMAACK1 IRQ5_MODECTRL_DMAREQ1 IRQ6_GPIO45_EOT1_TC1 IRQ7_GPIO46_DMAREQ0 IRQ8_GPIO47_DMAACK0 IRQ9_GPIO48_EOT0_TC0 PSROOUT SYSCLK SYSERR SYSRESET# TESTEN THERMONA THERMONB TMRCLK
+AP ic_cpu_te_pbga680_440epx_grx_b 1 #=AD33
+AP ic_cpu_te_pbga680_440epx_grx_b 1 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_b 2 #=AC31
+AP ic_cpu_te_pbga680_440epx_grx_b 2 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_b 3 #=AD34
+AP ic_cpu_te_pbga680_440epx_grx_b 3 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_b 4 #=U34
+AP ic_cpu_te_pbga680_440epx_grx_b 4 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_b 5 #=V32
+AP ic_cpu_te_pbga680_440epx_grx_b 5 PINTYPE=BI
+AP ic_cpu_te_pbga680_440epx_grx_b 6 #=W34
+AP ic_cpu_te_pbga680_440epx_grx_b 6 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_b 7 #=U33
+AP ic_cpu_te_pbga680_440epx_grx_b 7 PINTYPE=BI
+AP ic_cpu_te_pbga680_440epx_grx_b 8 #=U32
+AP ic_cpu_te_pbga680_440epx_grx_b 8 PINTYPE=BI
+AP ic_cpu_te_pbga680_440epx_grx_b 9 #=T34
+AP ic_cpu_te_pbga680_440epx_grx_b 9 PINTYPE=BI
+AP ic_cpu_te_pbga680_440epx_grx_b 10 #=T32
+AP ic_cpu_te_pbga680_440epx_grx_b 10 PINTYPE=BI
+AP ic_cpu_te_pbga680_440epx_grx_b 11 #=A20
+AP ic_cpu_te_pbga680_440epx_grx_b 11 PINTYPE=IN
+AP ic_cpu_te_pbga680_440epx_grx_b 12 #=AP23
+AP ic_cpu_te_pbga680_440epx_grx_b 12 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_b 13 #=AD32
+AP ic_cpu_te_pbga680_440epx_grx_b 13 PINTYPE=IN
+AP ic_cpu_te_pbga680_440epx_grx_b 14 #=AD31
+AP ic_cpu_te_pbga680_440epx_grx_b 14 PINTYPE=OCL
+AP ic_cpu_te_pbga680_440epx_grx_b 15 #=C9
+AP ic_cpu_te_pbga680_440epx_grx_b 15 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_b 16 #=C16
+AP ic_cpu_te_pbga680_440epx_grx_b 16 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_b 17 #=D16
+AP ic_cpu_te_pbga680_440epx_grx_b 17 PINTYPE=OUT
+AP ic_cpu_te_pbga680_440epx_grx_b 18 #=P3
+AP ic_cpu_te_pbga680_440epx_grx_b 18 PINTYPE=OUT
+|Q switch_push_spst_ra_smt4 1
+AS switch_push_spst_ra_smt4 REFDES=SW?
+AS switch_push_spst_ra_smt4 DEVICE=SWITCH_PUSH_SPST_RA_SMT4
+AS switch_push_spst_ra_smt4 PARTS=1
+AS switch_push_spst_ra_smt4 LEVEL=STD
+AS switch_push_spst_ra_smt4 PKG_TYPE=ITT_KT11B2SAM_T
+AS switch_push_spst_ra_smt4 GRN=LHR
+AS switch_push_spst_ra_smt4 ALT_PART=NA
+AS switch_push_spst_ra_smt4 P/D_NUM=CAN: KT11B2SAM3-LFS
+AS switch_push_spst_ra_smt4 BOARD_OPTION
+AS switch_push_spst_ra_smt4 ALT_SUP=NA
+AS switch_push_spst_ra_smt4 SUP=CAN: KT11B2SAM3-LFS
+AS switch_push_spst_ra_smt4 SHAPE=SMT4
+AS switch_push_spst_ra_smt4 VALUE
+AS switch_push_spst_ra_smt4 PINORDER=1 2 3 4
+AP switch_push_spst_ra_smt4 1 #=1
+AP switch_push_spst_ra_smt4 1 PINTYPE=OUT
+AP switch_push_spst_ra_smt4 2 #=2
+AP switch_push_spst_ra_smt4 2 PINTYPE=OUT
+AP switch_push_spst_ra_smt4 3 #=3
+AP switch_push_spst_ra_smt4 3 PINTYPE=OUT
+AP switch_push_spst_ra_smt4 4 #=4
+AP switch_push_spst_ra_smt4 4 PINTYPE=OUT
 AN $1N369 NC
 AN $1N367 NC
 AN TRC_CLK XREF=23-2E
@@ -775,6 +775,10 @@ AN TRCBS0 XREF=23-2E
 G VCC_JTAG
 G 3V3
 G GND
+P out PPC_THERMONB
+I PPC_THERMONB out PPC_THERMONB 
+|R 7:39_8-30-07
+API PPC_THERMONB out 1 XREF
 P in CLK_TMRCLK
 I CLK_TMRCLK in CLK_TMRCLK 
 |R 7:39_8-30-07
@@ -1159,18 +1163,6 @@ API $1I199 ic_cpu_te_pbga680_440epx_grx_c 21 PINLOC=23F1
 API $1I199 ic_cpu_te_pbga680_440epx_grx_c 21 #=AH31
 API $1I199 ic_cpu_te_pbga680_440epx_grx_c 22 PINLOC=23F2
 API $1I199 ic_cpu_te_pbga680_440epx_grx_c 22 #=A6
-M switch_push_spst_ra_smt4 $1I238
-I $1I238 switch_push_spst_ra_smt4 GND $1N36 ? ? SCHLOC=23F8`P/D_NUM=KT11B2SAM3-LFS`MANUFACTURER=ITT CANNON`REFDES=SW1`BOARD_OPTION=BASE`PKG_TYPE=ITT_KT11B2SAM_T`VALUE=SPST`SHAPE`
-API $1I238 switch_push_spst_ra_smt4 1 PINLOC=23F8
-API $1I238 switch_push_spst_ra_smt4 1 #=1
-API $1I238 switch_push_spst_ra_smt4 2 PINLOC=23F9
-API $1I238 switch_push_spst_ra_smt4 2 #=2
-API $1I238 switch_push_spst_ra_smt4 3 PINLOC=23F8
-API $1I238 switch_push_spst_ra_smt4 3 #=3
-API $1I238 switch_push_spst_ra_smt4 3 NC
-API $1I238 switch_push_spst_ra_smt4 4 PINLOC=23F9
-API $1I238 switch_push_spst_ra_smt4 4 #=4
-API $1I238 switch_push_spst_ra_smt4 4 NC
 M res_15k_0402_5_ $1I182
 I $1I182 res_15k_0402_5_ 3V3 RESET_PB_POR# SCHLOC=23F9`MANUFACTURER=YAGEO-PHYCOMP`REFDES=R41`BOARD_OPTION=BASE`PKG_TYPE=RESC1005X40N`VALUE=15K`SHAPE`
 API $1I182 res_15k_0402_5_ 1 PINLOC=23F9
@@ -1196,55 +1188,12 @@ API $1I206 diode_sig_sot23_150ma_bav70 1 PINLOC=23F9
 API $1I206 diode_sig_sot23_150ma_bav70 1 #=1
 API $1I206 diode_sig_sot23_150ma_bav70 2 PINLOC=23F9
 API $1I206 diode_sig_sot23_150ma_bav70 2 #=3
-M ic_cpu_te_pbga680_440epx_grx_b $1I229
-I $1I229 ic_cpu_te_pbga680_440epx_grx_b GETH0_INT# MONITOR_INT PCI_INTA# STTM_ALERT GPIO44 $1N49 SX95T_TDI SX95T_TCK SX95T_TMS SX95T_TDO $1N30 CLK_SYS_33MHZ SYSERR RESET_POR# $1N38 ? ? CLK_TMRCLK SCHLOC=23K6`MANUFACTURER=AMCC`P/D_NUM=PPC440EPX-NTA533T`VALUE=440EPX`REFDES=U1`PKG_TYPE=BGA680C100P34X34_3500X3500X265`
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 1 PINLOC=23K7
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 1 #=AD33
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 2 PINLOC=23K7
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 2 #=AC31
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 3 PINLOC=23K7
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 3 #=AD34
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 4 PINLOC=23K6
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 4 #=U34
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 5 PINLOC=23K6
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 5 #=V32
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 6 PINLOC=23K6
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 6 #=W34
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 7 PINLOC=23K6
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 7 #=U33
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 8 PINLOC=23K6
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 8 #=U32
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 9 PINLOC=23K6
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 9 #=T34
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 10 PINLOC=23K6
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 10 #=T32
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 11 PINLOC=23J6
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 11 #=A20
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 12 PINLOC=23J7
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 12 #=AP23
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 13 PINLOC=23J6
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 13 #=AD32
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 14 PINLOC=23J7
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 14 #=AD31
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 15 PINLOC=23J6
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 15 #=C9
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 16 PINLOC=23J6
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 16 #=C16
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 16 NC
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 17 PINLOC=23J6
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 17 #=D16
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 17 NC
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 18 PINLOC=23J6
-API $1I229 ic_cpu_te_pbga680_440epx_grx_b 18 #=P3
 M cap_100nf_0402_16v_10__x7r $1I207
 I $1I207 cap_100nf_0402_16v_10__x7r 3V3 GND SCHLOC=23H8`MANUFACTURER=VENKEL`REFDES=C604`PKG_TYPE=CAPC1005X55N`VALUE=0.1UF`SHAPE`
 API $1I207 cap_100nf_0402_16v_10__x7r 1 PINLOC=23H8
 API $1I207 cap_100nf_0402_16v_10__x7r 1 #=1
 API $1I207 cap_100nf_0402_16v_10__x7r 2 PINLOC=23H8
 API $1I207 cap_100nf_0402_16v_10__x7r 2 #=2
-P out CLK_CPLD_33MHZ
-I CLK_CPLD_33MHZ out CLK_CPLD_33MHZ 
-API CLK_CPLD_33MHZ out 1 XREF=1-1G,1-2L,24-7C
 M con_mictor_2x19_f_vt_0r25_smt $1I196
 I $1I196 con_mictor_2x19_f_vt_0r25_smt $1N60 $1N56 CPU_TDO VCC_JTAG $1N42 $1N84 CPU_TCK $1N5 CPU_TMS $1N81 CPU_TDI $1N7 $1N80 DEBUG_TRST# $1N4 $1N55 TRCES4 TRCBS0 TRCTS0 TRCBS1 TRCTS1 TRCBS2 GND TRCTS2 TRCES0 TRCTS3 TRCES1 TRCTS4 TRCES2 TRCTS5 TRCES3 TRCTS6 GND $1N61 GND GND GND GND $1N15 TRC_CLK CPU_HALT# $1N83 $1N77 ? SCHLOC=23J2`MANUFACTURER=TYCO ELECTRONICS`REFDES=J1`PKG_TYPE=767054-1`VALUE=.25IN F SMT`SHAPE`
 |R 6:23_9-26-07
@@ -1343,10 +1292,6 @@ API SEL_SYSCLK in 1 XREF=1-1M,1-3H,24-7C
 P out CLK_UART_11.0592MHZ
 I CLK_UART_11.0592MHZ out CLK_UART_11.0592MHZ 
 API CLK_UART_11.0592MHZ out 1 XREF=1-3L,1-5G,25-3D
-P out SYSERR
-I SYSERR out SYSERR 
-|R 7:39_8-30-07
-API SYSERR out 1 XREF=1-1G,1-3L,24-7C
 P out CLK_CPLD_50MHZ
 I CLK_CPLD_50MHZ out CLK_CPLD_50MHZ 
 API CLK_CPLD_50MHZ out 1 XREF=1-1G,1-3L,24-7C
@@ -1408,7 +1353,7 @@ P out RESET_POR#
 I RESET_POR# out RESET_POR# IREF=6,11`
 API RESET_POR# out 1 XREF=1-2G,1-3L,1-5G,24-8C,25-5G
 M res_3r3k_0402_5_ $1I181
-I $1I181 res_3r3k_0402_5_ 3V3 PCI_INTA# SCHLOC=23L7`MANUFACTURER=YAGEO-PHYCOMP`REFDES=R33`BOARD_OPTION=BASE`PKG_TYPE=RESC1005X40N`VALUE=3.3K`SHAPE`
+I $1I181 res_3r3k_0402_5_ 3V3 V5_INT# SCHLOC=23L7`MANUFACTURER=YAGEO-PHYCOMP`REFDES=R33`BOARD_OPTION=BASE`PKG_TYPE=RESC1005X40N`VALUE=3.3K`SHAPE`
 API $1I181 res_3r3k_0402_5_ 1 PINLOC=23L8
 API $1I181 res_3r3k_0402_5_ 1 #=1
 API $1I181 res_3r3k_0402_5_ 2 PINLOC=23L7
@@ -1419,24 +1364,9 @@ API $1I183 res_3r3k_0402_5_ 1 PINLOC=23L8
 API $1I183 res_3r3k_0402_5_ 1 #=1
 API $1I183 res_3r3k_0402_5_ 2 PINLOC=23L7
 API $1I183 res_3r3k_0402_5_ 2 #=2
-P in SX95T_TDO
-I SX95T_TDO in SX95T_TDO 
-|R 7:39_8-30-07
-API SX95T_TDO in 1 XREF=1-3H,1-7G,16-2L
-P out SX95T_TMS
-I SX95T_TMS out SX95T_TMS 
-API SX95T_TMS out 1 XREF=1-3L,1-7C,16-2L
 P out SX95T_TCK
 I SX95T_TCK out SX95T_TCK 
 API SX95T_TCK out 1 XREF=1-3L,1-7C,16-2L
-P in STTM_ALERT
-I STTM_ALERT in STTM_ALERT 
-|R 7:39_8-30-07
-API STTM_ALERT in 1 XREF=1-3H,1-5L,25-2B
-P in PCI_INTA#
-I PCI_INTA# in PCI_INTA# 
-|R 7:39_8-30-07
-API PCI_INTA# in 1 XREF=1-3H,1-4E,19-4E,19-4G
 P in GETH0_INT#
 I GETH0_INT# in GETH0_INT# 
 |R 7:39_8-30-07
@@ -1501,17 +1431,9 @@ API $1I185 ic_clkgen_soic8_0211p21 7 PINLOC=23F7
 API $1I185 ic_clkgen_soic8_0211p21 7 #=7
 API $1I185 ic_clkgen_soic8_0211p21 8 PINLOC=23F6
 API $1I185 ic_clkgen_soic8_0211p21 8 #=2
-P in MONITOR_INT
-I MONITOR_INT in MONITOR_INT 
-|R 7:39_8-30-07
-API MONITOR_INT in 1 XREF=1-3H,1-9E,2-1P
 P out SX95T_TDI
 I SX95T_TDI out SX95T_TDI 
 API SX95T_TDI out 1 XREF=1-3L,1-7C,16-2L
-P bi GPIO44
-I GPIO44 bi GPIO44 
-|R 11:48_10-3-07
-API GPIO44 bi 1 XREF=1-3L
 P out CLK_PCI1_66/33MHZ
 I CLK_PCI1_66/33MHZ out CLK_PCI1_66/33MHZ 
 API CLK_PCI1_66/33MHZ out 1 XREF=1-3L,1-4B,19-3C
@@ -1560,4 +1482,86 @@ API $1I363 ic_clkgen_tssop16_0211p10 15 PINLOC=23E4
 API $1I363 ic_clkgen_tssop16_0211p10 15 #=3
 API $1I363 ic_clkgen_tssop16_0211p10 16 PINLOC=23E4
 API $1I363 ic_clkgen_tssop16_0211p10 16 #=11
+P in MONITOR_INT
+I MONITOR_INT in MONITOR_INT 
+|R 7:39_8-30-07
+API MONITOR_INT in 1 XREF=1-3H,1-9E,2-1P
+P out SYSERR
+I SYSERR out SYSERR 
+|R 7:39_8-30-07
+API SYSERR out 1 XREF=1-1G,1-3L,24-7C
+P out PPC_THERMONA
+I PPC_THERMONA out PPC_THERMONA 
+|R 7:39_8-30-07
+API PPC_THERMONA out 1 XREF
+P out SX95T_TMS
+I SX95T_TMS out SX95T_TMS 
+API SX95T_TMS out 1 XREF=1-3L,1-7C,16-2L
+P in SX95T_TDO
+I SX95T_TDO in SX95T_TDO 
+|R 7:39_8-30-07
+API SX95T_TDO in 1 XREF=1-3H,1-7G,16-2L
+P in STTM_ALERT
+I STTM_ALERT in STTM_ALERT 
+|R 7:39_8-30-07
+API STTM_ALERT in 1 XREF=1-3H,1-5L,25-2B
+P bi GPIO44
+I GPIO44 bi GPIO44 
+|R 11:48_10-3-07
+API GPIO44 bi 1 XREF=1-3L
+P out CLK_CPLD_33MHZ
+I CLK_CPLD_33MHZ out CLK_CPLD_33MHZ 
+API CLK_CPLD_33MHZ out 1 XREF=1-1G,1-2L,24-7C
+M ic_cpu_te_pbga680_440epx_grx_b $1I229
+I $1I229 ic_cpu_te_pbga680_440epx_grx_b GETH0_INT# MONITOR_INT V5_INT# STTM_ALERT GPIO44 $1N49 SX95T_TDI SX95T_TCK SX95T_TMS SX95T_TDO $1N30 CLK_SYS_33MHZ SYSERR RESET_POR# $1N38 PPC_THERMONA PPC_THERMONB CLK_TMRCLK SCHLOC=23K6`MANUFACTURER=AMCC`P/D_NUM=PPC440EPX-NTA533T`VALUE=440EPX`REFDES=U1`PKG_TYPE=BGA680C100P34X34_3500X3500X265`
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 1 PINLOC=23K7
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 1 #=AD33
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 2 PINLOC=23K7
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 2 #=AC31
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 3 PINLOC=23K7
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 3 #=AD34
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 4 PINLOC=23K6
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 4 #=U34
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 5 PINLOC=23K6
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 5 #=V32
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 6 PINLOC=23K6
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 6 #=W34
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 7 PINLOC=23K6
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 7 #=U33
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 8 PINLOC=23K6
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 8 #=U32
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 9 PINLOC=23K6
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 9 #=T34
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 10 PINLOC=23K6
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 10 #=T32
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 11 PINLOC=23J6
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 11 #=A20
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 12 PINLOC=23J7
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 12 #=AP23
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 13 PINLOC=23J6
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 13 #=AD32
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 14 PINLOC=23J7
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 14 #=AD31
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 15 PINLOC=23J6
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 15 #=C9
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 16 PINLOC=23J6
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 16 #=C16
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 17 PINLOC=23J6
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 17 #=D16
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 18 PINLOC=23J6
+API $1I229 ic_cpu_te_pbga680_440epx_grx_b 18 #=P3
+M switch_push_spst_ra_smt4 $1I238
+I $1I238 switch_push_spst_ra_smt4 GND $1N36 GND $1N36 SUPPLIERPART#=1.14001.5030000CT-ND`SUPPLIER=DIGIKEY`DEVICE=SWITCH_PB_SMT`SUP=N/A`SCHLOC=23F8`P/D_NUM=1.14.001.503/0000`MANUFACTURER=C&K COMPONENTS`REFDES=SW1`PKG_TYPE=CK1140015030000`VALUE=SPST`SHAPE`
+API $1I238 switch_push_spst_ra_smt4 1 PINLOC=23F8
+API $1I238 switch_push_spst_ra_smt4 1 #=1
+API $1I238 switch_push_spst_ra_smt4 2 PINLOC=23F9
+API $1I238 switch_push_spst_ra_smt4 2 #=2
+API $1I238 switch_push_spst_ra_smt4 3 PINLOC=23F8
+API $1I238 switch_push_spst_ra_smt4 3 #=3
+API $1I238 switch_push_spst_ra_smt4 4 PINLOC=23F9
+API $1I238 switch_push_spst_ra_smt4 4 #=4
+P in V5_INT#
+I V5_INT# in V5_INT# 
+|R 7:39_8-30-07
+API V5_INT# in 1 XREF=1-3H,1-4E,19-4E,19-4G
 EW
