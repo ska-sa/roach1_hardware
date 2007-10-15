@@ -478,6 +478,14 @@
       (TYPE CONFIG)
     )
     (SIGNAL
+      (NAME PPC_RESET)
+      (HDL_NAME PPC_RESET)
+      (DIR OUT)
+      (PIN J1)
+      (TYPE IO)
+      (IOSTANDARD LVCMOS33)
+    )
+    (SIGNAL
       (NAME PS_TCK)
       (DIR IN)
       (PIN N15)
@@ -1211,7 +1219,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J1,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -6355,7 +6363,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J1,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -12308,7 +12316,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J1,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -12381,7 +12389,7 @@
       (NAME roach_AFS600_ppcif)
       (BACKGROUND T)
       (BACKGROUNDNAME Box)
-      (OUTLINE -10160 -5080 60960 25400)
+      (OUTLINE -10160 -5080 71120 25400)
       (PCB T)
       (ELEMENTS
         (RECT
@@ -12583,6 +12591,74 @@
           (POSITION -10160 14732)
           (VALIGN BOTTOM)
         )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME PPC_RESET)
+          (POSITION 71120 10160)
+          (EXTTYPE OUT)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 4)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE J1)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE J1)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE J1)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE J1)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE PPC_RESET)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE PPC_RESET)
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL PPC_RESET)
+          (POSITION 60114 10160)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (TEXT
+          (PINNUMBER PPC_RESET)
+          (POSITION 71120 9652)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
       )
       (ATTRIBUTES
         (ATTRIBUTE
@@ -12627,12 +12703,12 @@
         )
         (ATTRIBUTE
           (NAME PINSWAP)
-          (VALUE "(I2C0_33_DATA,I2C0_SCLK,MONITOR_INT)")
+          (VALUE "(I2C0_33_DATA,I2C0_SCLK,MONITOR_INT,PPC_RESET)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME PINSWAP)
-          (VALUE "(I2C0_33_DATA,I2C0_SCLK,MONITOR_INT)")
+          (VALUE "(I2C0_33_DATA,I2C0_SCLK,MONITOR_INT,PPC_RESET)")
           (OWNER ICDBDXD)
         )
         (ATTRIBUTE
@@ -12642,7 +12718,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J1,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -12680,6 +12756,21 @@
           (VALUE roach_afs600)
           (OWNER ICDBDXD)
           (LOCKED T)
+        )
+        (ATTRIBUTE
+          (NAME Level)
+          (VALUE std)
+          (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME Type)
+          (VALUE FPGA)
+          (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME "Ref Designator")
+          (VALUE "U?")
+          (OWNER ICDBDXD)
         )
       )
       (INSTANCEATTRIBUTES
@@ -12841,6 +12932,10 @@
     (IO
       (PIN H16)
       (STANDARD LVTTL)
+    )
+    (IO
+      (PIN J1)
+      (STANDARD LVCMOS33)
     )
     (IO
       (PIN J15)
@@ -13066,6 +13161,10 @@
     )
     (SWAP
       (PIN H16)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
+      (PIN J1)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
