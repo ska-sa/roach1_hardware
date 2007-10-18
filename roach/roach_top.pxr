@@ -849,10 +849,6 @@ Net_Cross_Reference
 ("$1I4\ZDOK0_CLK1_N"    "$1I4\ZDOK0_CLK1_N")
 ("$1I4\ZDOK0_CLK0_P"    "$1I4\ZDOK0_CLK0_P")
 ("$1I4\ZDOK0_CLK0_N"    "$1I4\ZDOK0_CLK0_N")
-("SIGNAL_GND"    "SIGNAL_GND")
-("SIGNAL_GND"    "$1I4\SIGNAL_GND")
-("SIGNAL_GND"    "$1I5\SIGNAL_GND")
-("SIGNAL_GND"    "$1I7\SIGNAL_GND")
 ("5V0"    "5V0")
 ("5V0"    "$1I4\5V0")
 ("5V0"    "$1I5\5V0")
@@ -983,7 +979,6 @@ Net_Cross_Reference
 ("$1I291\$1N311"    "$1I291\$1N311")
 ("$1I291\$1N299"    "$1I291\$1N299")
 ("$1I291\$1N291"    "$1I291\$1N291")
-("$1I291\$1N276"    "$1I291\$1N276")
 ("$1I291\$1N128"    "$1I291\$1N128")
 ("$1I289\PPC_ECC7"    "$1I289\PPC_ECC7")
 ("$1I289\PPC_ECC6"    "$1I289\PPC_ECC6")
@@ -1885,9 +1880,12 @@ Net_Cross_Reference
 ("GND"    "$1I291\GND")
 ("GND"    "$1I3\GND")
 ("GND"    "$1I307\GND")
+("GND"    "$1I4\GND")
 ("GND"    "$1I42\GND")
+("GND"    "$1I5\GND")
 ("GND"    "$1I6\GND")
 ("GND"    "$1I671\GND")
+("GND"    "$1I7\GND")
 ("GND"    "$1I747\GND")
 ("GND"    "$1I790\GND")
 ("GND"    "$1I803\GND")
@@ -2863,10 +2861,6 @@ Internal_Net_Cross_Reference
 ("$1I4\ZDOK0_CLK1_N"    "$1I4\ZDOK0_CLK1_N")
 ("$1I4\ZDOK0_CLK0_P"    "$1I4\ZDOK0_CLK0_P")
 ("$1I4\ZDOK0_CLK0_N"    "$1I4\ZDOK0_CLK0_N")
-("SIGNAL_GND"    "SIGNAL_GND")
-("SIGNAL_GND"    "$1I4\SIGNAL_GND")
-("SIGNAL_GND"    "$1I5\SIGNAL_GND")
-("SIGNAL_GND"    "$1I7\SIGNAL_GND")
 ("5V0"    "5V0")
 ("5V0"    "$1I4\5V0")
 ("5V0"    "$1I5\5V0")
@@ -2997,7 +2991,6 @@ Internal_Net_Cross_Reference
 ("$1I291\$1N311"    "$1I291\$1N311")
 ("$1I291\$1N299"    "$1I291\$1N299")
 ("$1I291\$1N291"    "$1I291\$1N291")
-("$1I291\$1N276"    "$1I291\$1N276")
 ("$1I291\$1N128"    "$1I291\$1N128")
 ("$1I289\PPC_ECC7"    "$1I289\PPC_ECC7")
 ("$1I289\PPC_ECC6"    "$1I289\PPC_ECC6")
@@ -3899,9 +3892,12 @@ Internal_Net_Cross_Reference
 ("GND"    "$1I291\GND")
 ("GND"    "$1I3\GND")
 ("GND"    "$1I307\GND")
+("GND"    "$1I4\GND")
 ("GND"    "$1I42\GND")
+("GND"    "$1I5\GND")
 ("GND"    "$1I6\GND")
 ("GND"    "$1I671\GND")
+("GND"    "$1I7\GND")
 ("GND"    "$1I747\GND")
 ("GND"    "$1I790\GND")
 ("GND"    "$1I803\GND")
@@ -5320,7 +5316,7 @@ Pin_Cross_Reference
 		(12    "$1I291\GPIO_CLK0_P")
 		(10    "$1I291\GPIO_CLK0_N")
 		(7    "$1I291\$1N291")
-		(2    "$1I291\$1N276")
+		(2    "5V")
 		(1    "2V5")
 		(3    "GND")
 		(5    "GND")
@@ -5337,7 +5333,7 @@ Pin_Cross_Reference
 		(12    "$1I291\GPIO_CLK1_P")
 		(10    "$1I291\GPIO_CLK1_N")
 		(7    "$1I291\$1N343")
-		(2    "$1I291\$1N276")
+		(2    "5V")
 		(1    "2V5")
 		(3    "GND")
 		(5    "GND")
@@ -8068,25 +8064,25 @@ Pin_Cross_Reference
 ("C322"
 	( 1    "$1I4\$1I1091"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C323"
 	( 1    "$1I4\$1I1098"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C324"
 	( 1    "$1I4\$1I1099"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C325"
 	( 1    "$1I4\$1I1101"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C330"
@@ -8116,25 +8112,25 @@ Pin_Cross_Reference
 ("C344"
 	( 1    "$1I5\$1I1081"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C345"
 	( 1    "$1I5\$1I1098"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C346"
 	( 1    "$1I5\$1I1099"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C347"
 	( 1    "$1I5\$1I1100"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C361"
@@ -8302,37 +8298,37 @@ Pin_Cross_Reference
 ("C427"
 	( 1    "$1I7\$1I328"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C428"
 	( 1    "$1I7\$1I329"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C429"
 	( 1    "$1I7\$1I330"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C468"
 	( 1    "$1I7\$1I331"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C469"
 	( 1    "$1I7\$1I332"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C470"
 	( 1    "$1I7\$1I333"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C486"
@@ -9015,7 +9011,7 @@ Pin_Cross_Reference
 )
 ("C6"
 	( 1    "$1I291\$1I273"
-		(1    "$1I291\$1N276")
+		(1    "5V")
 		(2    "GND")
 	)
 )
@@ -9039,7 +9035,7 @@ Pin_Cross_Reference
 )
 ("C16"
 	( 1    "$1I291\$1I333"
-		(1    "$1I291\$1N276")
+		(1    "5V")
 		(2    "GND")
 	)
 )
@@ -9094,49 +9090,49 @@ Pin_Cross_Reference
 ("C314"
 	( 1    "$1I4\$1I927"
 		(1    "5V0")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C316"
 	( 1    "$1I4\$1I953"
 		(1    "3V3")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C319"
 	( 1    "$1I4\$1I971"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C320"
 	( 1    "$1I4\$1I986"
 		(1    "1V8")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C336"
 	( 1    "$1I5\$1I927"
 		(1    "5V0")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C338"
 	( 1    "$1I5\$1I953"
 		(1    "3V3")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C341"
 	( 1    "$1I5\$1I971"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C342"
 	( 1    "$1I5\$1I986"
 		(1    "1V8")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C352"
@@ -9676,49 +9672,49 @@ Pin_Cross_Reference
 ("C337"
 	( 1    "$1I5\$1I936"
 		(1    "5V0")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C339"
 	( 1    "$1I5\$1I954"
 		(1    "3V3")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C340"
 	( 1    "$1I5\$1I970"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C343"
 	( 1    "$1I5\$1I988"
 		(1    "1V8")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C315"
 	( 1    "$1I4\$1I936"
 		(1    "5V0")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C317"
 	( 1    "$1I4\$1I954"
 		(1    "3V3")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C318"
 	( 1    "$1I4\$1I970"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C321"
 	( 1    "$1I4\$1I988"
 		(1    "1V8")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("P2"
@@ -10423,7 +10419,7 @@ Pin_Cross_Reference
 		(1    "GND")
 		(2    "$1I291\$1N375")
 		(3    "$1I291\$1N373")
-		(4    "$1I291\$1N276")
+		(4    "5V")
 	)
 )
 ("CR1"
@@ -12045,13 +12041,6 @@ Pin_Cross_Reference
 		(3    "1V5")
 	)
 )
-("JP30"
-	( 1    "$1I291\$1I305"
-		(1    "5V")
-		(2    "$1I291\$1N276")
-		(3    "2V5")
-	)
-)
 ("JP4"
 	( 1    "$1I2\$1I804"
 		(1    "3V3")
@@ -13204,14 +13193,14 @@ Pin_Cross_Reference
 		(35    "$1I7\QSH_A_D_N8")
 		(37    "$1I7\QSH_A_D_P9")
 		(39    "$1I7\QSH_A_D_N9")
-		(81    "SIGNAL_GND")
-		(82    "SIGNAL_GND")
-		(83    "SIGNAL_GND")
-		(84    "SIGNAL_GND")
-		(85    "SIGNAL_GND")
-		(86    "SIGNAL_GND")
-		(87    "SIGNAL_GND")
-		(88    "SIGNAL_GND")
+		(81    "GND")
+		(82    "GND")
+		(83    "GND")
+		(84    "GND")
+		(85    "GND")
+		(86    "GND")
+		(87    "GND")
+		(88    "GND")
 		(89    "$1I7\$1N335")
 		(90    "$1I7\$1N336")
 	)
@@ -13630,7 +13619,7 @@ Pin_Cross_Reference
 ("R103"
 	( 1    "$1I291\$1I352"
 		(1    "$1I291\$1N349")
-		(2    "$1I291\$1N276")
+		(2    "5V")
 	)
 )
 ("R104"
@@ -13654,7 +13643,7 @@ Pin_Cross_Reference
 ("R107"
 	( 1    "$1I291\$1I354"
 		(1    "$1I291\$1N373")
-		(2    "$1I291\$1N276")
+		(2    "5V")
 	)
 )
 ("R108"
@@ -13673,6 +13662,18 @@ Pin_Cross_Reference
 	( 1    "$1I291\$1I55"
 		(1    "$1I291\$1N56")
 		(2    "2V5")
+	)
+)
+("R111"
+	( 1    "$1I291\$1I379"
+		(1    "$1I291\$1N128")
+		(2    "$1I291\$1N375")
+	)
+)
+("R112"
+	( 1    "$1I291\$1I380"
+		(1    "$1I291\$1N327")
+		(2    "$1I291\$1N373")
 	)
 )
 ("R113"
@@ -13702,13 +13703,13 @@ Pin_Cross_Reference
 ("R136"
 	( 1    "$1I291\$1I360"
 		(1    "$1I291\$1N375")
-		(2    "$1I291\$1N276")
+		(2    "5V")
 	)
 )
 ("R137"
 	( 1    "$1I291\$1I361"
 		(1    "$1I291\$1N311")
-		(2    "$1I291\$1N276")
+		(2    "5V")
 	)
 )
 ("R213"
@@ -16346,25 +16347,25 @@ Pin_Cross_Reference
 ("C326"
 	( 1    "$1I4\$1I1093"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C327"
 	( 1    "$1I4\$1I1094"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C328"
 	( 1    "$1I4\$1I1095"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C329"
 	( 1    "$1I4\$1I1096"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C334"
@@ -16382,25 +16383,25 @@ Pin_Cross_Reference
 ("C348"
 	( 1    "$1I5\$1I1080"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C349"
 	( 1    "$1I5\$1I1087"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C350"
 	( 1    "$1I5\$1I1088"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C351"
 	( 1    "$1I5\$1I1089"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C388"
@@ -16454,13 +16455,13 @@ Pin_Cross_Reference
 ("C471"
 	( 1    "$1I7\$1I320"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C472"
 	( 1    "$1I7\$1I334"
 		(1    "2V5")
-		(2    "SIGNAL_GND")
+		(2    "GND")
 	)
 )
 ("C488"
@@ -16981,70 +16982,70 @@ Pin_Cross_Reference
 )
 ("P5"
 	( 1    "$1I4\$1I170"
-		(B1    "SIGNAL_GND")
-		(B10    "SIGNAL_GND")
-		(B11    "SIGNAL_GND")
-		(B12    "SIGNAL_GND")
-		(B13    "SIGNAL_GND")
-		(B14    "SIGNAL_GND")
-		(B15    "SIGNAL_GND")
-		(B16    "SIGNAL_GND")
-		(B17    "SIGNAL_GND")
-		(B18    "SIGNAL_GND")
-		(B19    "SIGNAL_GND")
-		(B2    "SIGNAL_GND")
-		(B20    "SIGNAL_GND")
-		(B3    "SIGNAL_GND")
-		(B4    "SIGNAL_GND")
-		(B5    "SIGNAL_GND")
-		(B6    "SIGNAL_GND")
-		(B7    "SIGNAL_GND")
-		(B8    "SIGNAL_GND")
-		(B9    "SIGNAL_GND")
-		(E1    "SIGNAL_GND")
-		(E10    "SIGNAL_GND")
-		(E11    "SIGNAL_GND")
-		(E12    "SIGNAL_GND")
-		(E13    "SIGNAL_GND")
-		(E14    "SIGNAL_GND")
-		(E15    "SIGNAL_GND")
-		(E16    "SIGNAL_GND")
-		(E17    "SIGNAL_GND")
-		(E18    "SIGNAL_GND")
-		(E19    "SIGNAL_GND")
-		(E2    "SIGNAL_GND")
-		(E20    "SIGNAL_GND")
-		(E3    "SIGNAL_GND")
-		(E4    "SIGNAL_GND")
-		(E5    "SIGNAL_GND")
-		(E6    "SIGNAL_GND")
-		(E7    "SIGNAL_GND")
-		(E8    "SIGNAL_GND")
-		(E9    "SIGNAL_GND")
-		(W1    "SIGNAL_GND")
+		(B1    "GND")
+		(B10    "GND")
+		(B11    "GND")
+		(B12    "GND")
+		(B13    "GND")
+		(B14    "GND")
+		(B15    "GND")
+		(B16    "GND")
+		(B17    "GND")
+		(B18    "GND")
+		(B19    "GND")
+		(B2    "GND")
+		(B20    "GND")
+		(B3    "GND")
+		(B4    "GND")
+		(B5    "GND")
+		(B6    "GND")
+		(B7    "GND")
+		(B8    "GND")
+		(B9    "GND")
+		(E1    "GND")
+		(E10    "GND")
+		(E11    "GND")
+		(E12    "GND")
+		(E13    "GND")
+		(E14    "GND")
+		(E15    "GND")
+		(E16    "GND")
+		(E17    "GND")
+		(E18    "GND")
+		(E19    "GND")
+		(E2    "GND")
+		(E20    "GND")
+		(E3    "GND")
+		(E4    "GND")
+		(E5    "GND")
+		(E6    "GND")
+		(E7    "GND")
+		(E8    "GND")
+		(E9    "GND")
+		(W1    "GND")
 		(W2    "5V0")
 		(W3    "3V3")
 		(W4    "2V5")
 		(W5    "1V8")
-		(W6    "SIGNAL_GND")
-		(X1    "SIGNAL_GND")
+		(W6    "GND")
+		(X1    "GND")
 		(X2    "5V0")
 		(X3    "3V3")
 		(X4    "2V5")
 		(X5    "1V8")
-		(X6    "SIGNAL_GND")
-		(Y1    "SIGNAL_GND")
+		(X6    "GND")
+		(Y1    "GND")
 		(Y2    "5V0")
 		(Y3    "3V3")
 		(Y4    "2V5")
 		(Y5    "1V8")
-		(Y6    "SIGNAL_GND")
-		(Z1    "SIGNAL_GND")
+		(Y6    "GND")
+		(Z1    "GND")
 		(Z2    "5V0")
 		(Z3    "3V3")
 		(Z4    "2V5")
 		(Z5    "1V8")
-		(Z6    "SIGNAL_GND")
+		(Z6    "GND")
 	)
 	( 2    "$1I4\$1I801"
 		(A1    "$1I4\ZDOK0_DP_P0")
@@ -17131,70 +17132,70 @@ Pin_Cross_Reference
 )
 ("P7"
 	( 1    "$1I5\$1I170"
-		(B1    "SIGNAL_GND")
-		(B10    "SIGNAL_GND")
-		(B11    "SIGNAL_GND")
-		(B12    "SIGNAL_GND")
-		(B13    "SIGNAL_GND")
-		(B14    "SIGNAL_GND")
-		(B15    "SIGNAL_GND")
-		(B16    "SIGNAL_GND")
-		(B17    "SIGNAL_GND")
-		(B18    "SIGNAL_GND")
-		(B19    "SIGNAL_GND")
-		(B2    "SIGNAL_GND")
-		(B20    "SIGNAL_GND")
-		(B3    "SIGNAL_GND")
-		(B4    "SIGNAL_GND")
-		(B5    "SIGNAL_GND")
-		(B6    "SIGNAL_GND")
-		(B7    "SIGNAL_GND")
-		(B8    "SIGNAL_GND")
-		(B9    "SIGNAL_GND")
-		(E1    "SIGNAL_GND")
-		(E10    "SIGNAL_GND")
-		(E11    "SIGNAL_GND")
-		(E12    "SIGNAL_GND")
-		(E13    "SIGNAL_GND")
-		(E14    "SIGNAL_GND")
-		(E15    "SIGNAL_GND")
-		(E16    "SIGNAL_GND")
-		(E17    "SIGNAL_GND")
-		(E18    "SIGNAL_GND")
-		(E19    "SIGNAL_GND")
-		(E2    "SIGNAL_GND")
-		(E20    "SIGNAL_GND")
-		(E3    "SIGNAL_GND")
-		(E4    "SIGNAL_GND")
-		(E5    "SIGNAL_GND")
-		(E6    "SIGNAL_GND")
-		(E7    "SIGNAL_GND")
-		(E8    "SIGNAL_GND")
-		(E9    "SIGNAL_GND")
-		(W1    "SIGNAL_GND")
+		(B1    "GND")
+		(B10    "GND")
+		(B11    "GND")
+		(B12    "GND")
+		(B13    "GND")
+		(B14    "GND")
+		(B15    "GND")
+		(B16    "GND")
+		(B17    "GND")
+		(B18    "GND")
+		(B19    "GND")
+		(B2    "GND")
+		(B20    "GND")
+		(B3    "GND")
+		(B4    "GND")
+		(B5    "GND")
+		(B6    "GND")
+		(B7    "GND")
+		(B8    "GND")
+		(B9    "GND")
+		(E1    "GND")
+		(E10    "GND")
+		(E11    "GND")
+		(E12    "GND")
+		(E13    "GND")
+		(E14    "GND")
+		(E15    "GND")
+		(E16    "GND")
+		(E17    "GND")
+		(E18    "GND")
+		(E19    "GND")
+		(E2    "GND")
+		(E20    "GND")
+		(E3    "GND")
+		(E4    "GND")
+		(E5    "GND")
+		(E6    "GND")
+		(E7    "GND")
+		(E8    "GND")
+		(E9    "GND")
+		(W1    "GND")
 		(W2    "5V0")
 		(W3    "3V3")
 		(W4    "2V5")
 		(W5    "1V8")
-		(W6    "SIGNAL_GND")
-		(X1    "SIGNAL_GND")
+		(W6    "GND")
+		(X1    "GND")
 		(X2    "5V0")
 		(X3    "3V3")
 		(X4    "2V5")
 		(X5    "1V8")
-		(X6    "SIGNAL_GND")
-		(Y1    "SIGNAL_GND")
+		(X6    "GND")
+		(Y1    "GND")
 		(Y2    "5V0")
 		(Y3    "3V3")
 		(Y4    "2V5")
 		(Y5    "1V8")
-		(Y6    "SIGNAL_GND")
-		(Z1    "SIGNAL_GND")
+		(Y6    "GND")
+		(Z1    "GND")
 		(Z2    "5V0")
 		(Z3    "3V3")
 		(Z4    "2V5")
 		(Z5    "1V8")
-		(Z6    "SIGNAL_GND")
+		(Z6    "GND")
 	)
 	( 2    "$1I5\$1I801"
 		(A1    "$1I5\ZDOK1_DP_P0")
