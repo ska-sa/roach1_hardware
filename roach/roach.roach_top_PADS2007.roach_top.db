@@ -1,13 +1,11 @@
 
-(pcb
- "C:\Users\mrevnell\roach\elec\roach\roach.roach_top_PADS2007.roach_top.db"
+(pcb "D:\ROACH\elec\roach\roach.roach_top_PADS2007.roach_top.db"
 	(version "5.0.0")
 	(units "basic")
 	(config_properties
 		(attributes
-			(attval "PcbConfigName"
- "C:\Users\mrevnell\roach\elec\roach\roach_pcb.cfg")
-			(attval "CnsFile" "C:\Users\mrevnell\roach\elec\roach\pads2007.cns")
+			(attval "PcbConfigName" "D:\ROACH\elec\roach\roach_pcb.cfg")
+			(attval "CnsFile" ".\pads2007.cns")
 			(attval "BeAdapter" "PADS2007")
 			(attval "FeAdapter" "DxDesigner")
 			(attval "SYSCONFIG" "pcbfwd")
@@ -28,7 +26,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1192731881"))
+		(file_ext "roach_top.pxr" "1193060464"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -756,19 +754,11 @@
 			(pin D11 2 "power_gate76" 0 "NC" 0)
 			(pin D10 2 "power_gate77" 0 "NC" 0)
 			(pin C9 2 "power_gate78" 0 "NC" 0)
-			(pin C8 2 "power_gate79" 0 "NC" 0)
-			(pin C10 2 "power_gate80" 0 "NC" 0)
-			(pin B9 2 "power_gate81" 0 "NC" 0)
-			(pin B8 2 "power_gate82" 0 "NC" 0)
-			(pin B6 2 "power_gate83" 0 "NC" 0)
-			(pin B5 2 "power_gate84" 0 "NC" 0)
-			(pin B14 2 "power_gate85" 0 "NC" 0)
-			(pin B13 2 "power_gate86" 0 "NC" 0)
-			(pin B12 2 "power_gate87" 0 "NC" 0)
-			(pin B11 2 "power_gate88" 0 "NC" 0)
-			(pin A14 2 "power_gate89" 0 "NC" 0)
-			(pin A13 2 "power_gate90" 0 "NC" 0)
-			(pin A11 2 "power_gate91" 0 "NC" 0)
+			(pin C10 2 "power_gate79" 0 "NC" 0)
+			(pin B5 2 "power_gate80" 0 "NC" 0)
+			(pin A14 2 "power_gate81" 0 "NC" 0)
+			(pin A13 2 "power_gate82" 0 "NC" 0)
+			(pin A11 2 "power_gate83" 0 "NC" 0)
 			(pin N15  5 "ROACH_AFS600__ROACH_AFS600_1" 0 "TCK" 0)
 			(pin N16  5 "ROACH_AFS600__ROACH_AFS600_1" 0 "TDI" 0)
 			(pin L12  5 "ROACH_AFS600__ROACH_AFS600_1" 0 "TDO" 0)
@@ -778,6 +768,14 @@
 			(pin G1  3 "ROACH_AFS600__ROACH_AFS600_1" 0 "I2C0_SCLK" 0)
 			(pin F2  4 "ROACH_AFS600__ROACH_AFS600_1" 0 "MONITOR_INT" 0)
 			(pin J1  4 "ROACH_AFS600__ROACH_AFS600_1" 0 "PPC_RESET" 0)
+			(pin C8  4 "ROACH_AFS600__ROACH_AFS600_1" 0 "SYS_CONFIG0" 0)
+			(pin B14  4 "ROACH_AFS600__ROACH_AFS600_1" 0 "SYS_CONFIG1" 0)
+			(pin B13  4 "ROACH_AFS600__ROACH_AFS600_1" 0 "SYS_CONFIG2" 0)
+			(pin B12  4 "ROACH_AFS600__ROACH_AFS600_1" 0 "SYS_CONFIG3" 0)
+			(pin B11  4 "ROACH_AFS600__ROACH_AFS600_1" 0 "SYS_CONFIG4" 0)
+			(pin B9  4 "ROACH_AFS600__ROACH_AFS600_1" 0 "SYS_CONFIG5" 0)
+			(pin B8  4 "ROACH_AFS600__ROACH_AFS600_1" 0 "SYS_CONFIG6" 0)
+			(pin B6  4 "ROACH_AFS600__ROACH_AFS600_1" 0 "SYS_CONFIG7" 0)
 			(pin A1  5 "ROACH_AFS600__ROACH_AFS600_1" 0 "GND" 0)
 			(pin L7  5 "ROACH_AFS600__ROACH_AFS600_1" 0 "GNDA" 0)
 			(pin N12  5 "ROACH_AFS600__ROACH_AFS600_1" 0 "GNDA_1" 0)
@@ -1268,131 +1266,151 @@
 			(comp "P3"))
 		(logical_part "QUAD_CX4_CONNECTOR"
 			(slots
-				(slot "4X_CX4__QUAD_CX4_CONNECTOR_1"
+				(slot "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1"
 					(attributes
-						(attval "Description" "FUJITSU 2X2 CX4 CONNECTOR MODULE")
-						(attval "DEVICE" "QUAD_CX4_CONNECTOR")
+						(attval "REFDES" "P?")
 						(attval "PKG_TYPE" "FUJITSU_FCN_268F036_G_3DB")
-						(attval "REFDES" "P?")))
-				(slot "4X_CX4__QUAD_CX4_CONNECTOR_2"
-					(attributes
-						(attval "Description" "FUJITSU 2X2 CX4 CONNECTOR MODULE")
+						(attval "HETERO" "(4X_CX4_GND) (4X_CX4)")
 						(attval "DEVICE" "QUAD_CX4_CONNECTOR")
-						(attval "PKG_TYPE" "FUJITSU_FCN_268F036_G_3DB")
-						(attval "REFDES" "P?")))
-				(slot "4X_CX4__QUAD_CX4_CONNECTOR_3"
-					(attributes
-						(attval "Description" "FUJITSU 2X2 CX4 CONNECTOR MODULE")
-						(attval "DEVICE" "QUAD_CX4_CONNECTOR")
-						(attval "PKG_TYPE" "FUJITSU_FCN_268F036_G_3DB")
-						(attval "REFDES" "P?")))
-				(slot "4X_CX4__QUAD_CX4_CONNECTOR_4"
-					(attributes
-						(attval "Description" "FUJITSU 2X2 CX4 CONNECTOR MODULE")
-						(attval "DEVICE" "QUAD_CX4_CONNECTOR")
-						(attval "PKG_TYPE" "FUJITSU_FCN_268F036_G_3DB")
-						(attval "REFDES" "P?"))))
-			(pin S10  4 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "SL3P" 0)
-			(pin S9  4 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "SL3N" 0)
-			(pin S12  4 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "SL2P" 0)
-			(pin S11  4 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "SL2N" 0)
-			(pin S14  4 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "SL1P" 0)
-			(pin S13  4 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "SL1N" 0)
-			(pin S16  4 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "SL0P" 0)
-			(pin S15  4 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "SL0N" 0)
-			(pin G9  5 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND9" 0)
-			(pin G8  5 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND8" 0)
-			(pin G7  5 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND7" 0)
-			(pin G6  5 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND6" 0)
-			(pin G5  5 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND5" 0)
-			(pin G4  5 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND4" 0)
-			(pin G3  5 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND3" 0)
-			(pin G2  5 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND2" 0)
-			(pin G19  5 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND10" 0)
-			(pin G1  5 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND1" 0)
-			(pin S7  3 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "DL3P" 0)
-			(pin S8  3 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "DL3N" 0)
-			(pin S5  3 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "DL2P" 0)
-			(pin S6  3 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "DL2N" 0)
-			(pin S3  3 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "DL1P" 0)
-			(pin S4  3 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "DL1N" 0)
-			(pin S1  3 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "DL0P" 0)
-			(pin S2  3 "4X_CX4__QUAD_CX4_CONNECTOR_1" 0 "DL0N" 0)
-			(pin S28  4 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "SL3P" 0)
-			(pin S27  4 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "SL3N" 0)
-			(pin S30  4 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "SL2P" 0)
-			(pin S29  4 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "SL2N" 0)
-			(pin S32  4 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "SL1P" 0)
-			(pin S31  4 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "SL1N" 0)
-			(pin S34  4 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "SL0P" 0)
-			(pin S33  4 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "SL0N" 0)
-			(pin G18  5 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "SIG_GND9" 0)
-			(pin G17  5 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "SIG_GND8" 0)
-			(pin G16  5 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "SIG_GND7" 0)
-			(pin G15  5 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "SIG_GND6" 0)
-			(pin G14  5 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "SIG_GND5" 0)
-			(pin G13  5 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "SIG_GND4" 0)
-			(pin G12  5 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "SIG_GND3" 0)
-			(pin G11  5 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "SIG_GND2" 0)
-			(pin G10  5 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "SIG_GND1" 0)
-			(pin S25  3 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "DL3P" 0)
-			(pin S26  3 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "DL3N" 0)
-			(pin S23  3 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "DL2P" 0)
-			(pin S24  3 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "DL2N" 0)
-			(pin S21  3 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "DL1P" 0)
-			(pin S22  3 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "DL1N" 0)
-			(pin S19  3 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "DL0P" 0)
-			(pin S20  3 "4X_CX4__QUAD_CX4_CONNECTOR_2" 0 "DL0N" 0)
-			(pin S48  4 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "SL3P" 0)
-			(pin S47  4 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "SL3N" 0)
-			(pin S50  4 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "SL2P" 0)
-			(pin S49  4 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "SL2N" 0)
-			(pin S52  4 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "SL1P" 0)
-			(pin S51  4 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "SL1N" 0)
-			(pin S54  4 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "SL0P" 0)
-			(pin S53  4 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "SL0N" 0)
-			(pin G28  5 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "SIG_GND9" 0)
-			(pin G27  5 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "SIG_GND8" 0)
-			(pin G26  5 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "SIG_GND7" 0)
-			(pin G25  5 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "SIG_GND6" 0)
-			(pin G24  5 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "SIG_GND5" 0)
-			(pin G23  5 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "SIG_GND4" 0)
-			(pin G22  5 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "SIG_GND3" 0)
-			(pin G21  5 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "SIG_GND2" 0)
-			(pin G20  5 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "SIG_GND1" 0)
-			(pin S45  3 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "DL3P" 0)
-			(pin S46  3 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "DL3N" 0)
-			(pin S43  3 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "DL2P" 0)
-			(pin S44  3 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "DL2N" 0)
-			(pin S41  3 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "DL1P" 0)
-			(pin S42  3 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "DL1N" 0)
-			(pin S39  3 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "DL0P" 0)
-			(pin S40  3 "4X_CX4__QUAD_CX4_CONNECTOR_3" 0 "DL0N" 0)
-			(pin S66  4 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "SL3P" 0)
-			(pin S65  4 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "SL3N" 0)
-			(pin S68  4 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "SL2P" 0)
-			(pin S67  4 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "SL2N" 0)
-			(pin S70  4 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "SL1P" 0)
-			(pin S69  4 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "SL1N" 0)
-			(pin S72  4 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "SL0P" 0)
-			(pin S71  4 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "SL0N" 0)
-			(pin G37  5 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "SIG_GND9" 0)
-			(pin G36  5 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "SIG_GND8" 0)
-			(pin G35  5 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "SIG_GND7" 0)
-			(pin G34  5 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "SIG_GND6" 0)
-			(pin G33  5 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "SIG_GND5" 0)
-			(pin G32  5 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "SIG_GND4" 0)
-			(pin G31  5 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "SIG_GND3" 0)
-			(pin G30  5 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "SIG_GND2" 0)
-			(pin G29  5 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "SIG_GND1" 0)
-			(pin S63  3 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "DL3P" 0)
-			(pin S64  3 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "DL3N" 0)
-			(pin S61  3 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "DL2P" 0)
-			(pin S62  3 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "DL2N" 0)
-			(pin S59  3 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "DL1P" 0)
-			(pin S60  3 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "DL1N" 0)
-			(pin S57  3 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "DL0P" 0)
-			(pin S58  3 "4X_CX4__QUAD_CX4_CONNECTOR_4" 0 "DL0N" 0))
+						(attval "Description" "FUJITSU 2X2 CX4 CONNECTOR MODULE"))))
+			(pin S2  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL0N1" 0)
+			(pin S20  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL0N2" 0)
+			(pin S40  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL0N3" 0)
+			(pin S58  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL0N4" 0)
+			(pin S1  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL0P1" 0)
+			(pin S19  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL0P2" 0)
+			(pin S39  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL0P3" 0)
+			(pin S57  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL0P4" 0)
+			(pin S4  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL1N1" 0)
+			(pin S22  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL1N2" 0)
+			(pin S42  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL1N3" 0)
+			(pin S60  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL1N4" 0)
+			(pin S3  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL1P1" 0)
+			(pin S21  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL1P2" 0)
+			(pin S41  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL1P3" 0)
+			(pin S59  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL1P4" 0)
+			(pin S6  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL2N1" 0)
+			(pin S24  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL2N2" 0)
+			(pin S44  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL2N3" 0)
+			(pin S62  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL2N4" 0)
+			(pin S5  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL2P1" 0)
+			(pin S23  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL2P2" 0)
+			(pin S43  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL2P3" 0)
+			(pin S61  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL2P4" 0)
+			(pin S8  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL3N1" 0)
+			(pin S26  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL3N2" 0)
+			(pin S46  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL3N3" 0)
+			(pin S64  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL3N4" 0)
+			(pin S7  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL3P1" 0)
+			(pin S25  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL3P2" 0)
+			(pin S45  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL3P3" 0)
+			(pin S63  3 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "DL3P4" 0)
+			(pin G1  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND11" 0)
+			(pin G10  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND12" 0)
+			(pin G20  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND13" 0)
+			(pin G29  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND14" 0)
+			(pin G2  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND21" 0)
+			(pin G11  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND22" 0)
+			(pin G21  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND23" 0)
+			(pin G30  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND24" 0)
+			(pin G3  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND31" 0)
+			(pin G12  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND32" 0)
+			(pin G22  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND33" 0)
+			(pin G31  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND34" 0)
+			(pin G4  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND41" 0)
+			(pin G13  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND42" 0)
+			(pin G23  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND43" 0)
+			(pin G32  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND44" 0)
+			(pin G5  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND51" 0)
+			(pin G14  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND52" 0)
+			(pin G24  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND53" 0)
+			(pin G33  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND54" 0)
+			(pin G6  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND61" 0)
+			(pin G15  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND62" 0)
+			(pin G25  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND63" 0)
+			(pin G34  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND64" 0)
+			(pin G7  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND71" 0)
+			(pin G16  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND72" 0)
+			(pin G26  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND73" 0)
+			(pin G35  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND74" 0)
+			(pin G8  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND81" 0)
+			(pin G17  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND82" 0)
+			(pin G27  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND83" 0)
+			(pin G36  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND84" 0)
+			(pin G9  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND91" 0)
+			(pin G18  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND92" 0)
+			(pin G28  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND93" 0)
+			(pin G37  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND94" 0)
+			(pin S15  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL0N1" 0)
+			(pin S33  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL0N2" 0)
+			(pin S53  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL0N3" 0)
+			(pin S71  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL0N4" 0)
+			(pin S16  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL0P1" 0)
+			(pin S34  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL0P2" 0)
+			(pin S54  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL0P3" 0)
+			(pin S72  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL0P4" 0)
+			(pin S13  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL1N1" 0)
+			(pin S31  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL1N2" 0)
+			(pin S51  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL1N3" 0)
+			(pin S69  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL1N4" 0)
+			(pin S14  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL1P1" 0)
+			(pin S32  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL1P2" 0)
+			(pin S52  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL1P3" 0)
+			(pin S70  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL1P4" 0)
+			(pin S11  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL2N1" 0)
+			(pin S29  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL2N2" 0)
+			(pin S49  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL2N3" 0)
+			(pin S67  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL2N4" 0)
+			(pin S12  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL2P1" 0)
+			(pin S30  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL2P2" 0)
+			(pin S50  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL2P3" 0)
+			(pin S68  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL2P4" 0)
+			(pin S9  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL3N1" 0)
+			(pin S27  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL3N2" 0)
+			(pin S47  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL3N3" 0)
+			(pin S65  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL3N4" 0)
+			(pin S10  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL3P1" 0)
+			(pin S28  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL3P2" 0)
+			(pin S48  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL3P3" 0)
+			(pin S66  4 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SL3P4" 0)
+			(pin G19  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND10" 0)
+			(pin G56  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND19_A" 0)
+			(pin G38  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND1_A" 0)
+			(pin G47  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND1_B" 0)
+			(pin G57  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND1_C" 0)
+			(pin G66  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND1_D" 0)
+			(pin G39  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND2_A" 0)
+			(pin G48  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND2_B" 0)
+			(pin G58  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND2_C" 0)
+			(pin G67  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND2_D" 0)
+			(pin G40  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND3_A" 0)
+			(pin G49  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND3_B" 0)
+			(pin G59  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND3_C" 0)
+			(pin G68  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND3_D" 0)
+			(pin G41  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND4_A" 0)
+			(pin G50  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND4_B" 0)
+			(pin G60  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND4_C" 0)
+			(pin G69  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND4_D" 0)
+			(pin G42  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND5_A" 0)
+			(pin G51  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND5_B" 0)
+			(pin G61  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND5_C" 0)
+			(pin G70  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND5_D" 0)
+			(pin G43  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND6_A" 0)
+			(pin G52  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND6_B" 0)
+			(pin G62  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND6_C" 0)
+			(pin G71  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND6_D" 0)
+			(pin G44  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND7_A" 0)
+			(pin G53  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND7_B" 0)
+			(pin G63  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND7_C" 0)
+			(pin G72  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND7_D" 0)
+			(pin G45  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND8_A" 0)
+			(pin G54  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND8_B" 0)
+			(pin G64  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND8_C" 0)
+			(pin G73  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND8_D" 0)
+			(pin G46  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND9_A" 0)
+			(pin G55  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND9_B" 0)
+			(pin G65  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND9_C" 0)
+			(pin G74  5 "QUAD_CX4_CONNECTOR__QUAD_CX4_CONNECTOR_1" 0 "SIG_GND9_D" 0))
 		(part "QSH040")
 		(logical_part_mapping "QSH040"
 			(comp "P9"))
@@ -1519,45 +1537,45 @@
 						(attval "HETERO" "QDR2P_CTRL_DATA,QDR2P_JTAG,QDR2P_POWER")
 						(attval "PKG_TYPE" "BGA165C100P11X15_1500X1700X140")
 						(attval "REFDES" "U?"))))
-			(pin P9 2 "power_gate92" 0 "NC" 0)
-			(pin P2 2 "power_gate93" 0 "NC" 0)
-			(pin P1 2 "power_gate94" 0 "NC" 0)
-			(pin N10 2 "power_gate95" 0 "NC" 0)
-			(pin N9 2 "power_gate96" 0 "NC" 0)
-			(pin N1 2 "power_gate97" 0 "NC" 0)
-			(pin M9 2 "power_gate98" 0 "NC" 0)
-			(pin M2 2 "power_gate99" 0 "NC" 0)
-			(pin M1 2 "power_gate100" 0 "NC" 0)
-			(pin L10 2 "power_gate101" 0 "NC" 0)
-			(pin L9 2 "power_gate102" 0 "NC" 0)
-			(pin L1 2 "power_gate103" 0 "NC" 0)
-			(pin K9 2 "power_gate104" 0 "NC" 0)
-			(pin K2 2 "power_gate105" 0 "NC" 0)
-			(pin K1 2 "power_gate106" 0 "NC" 0)
-			(pin J9 2 "power_gate107" 0 "NC" 0)
-			(pin J2 2 "power_gate108" 0 "NC" 0)
-			(pin J1 2 "power_gate109" 0 "NC" 0)
-			(pin G10 2 "power_gate110" 0 "NC" 0)
-			(pin G9 2 "power_gate111" 0 "NC" 0)
-			(pin G1 2 "power_gate112" 0 "NC" 0)
-			(pin F10 2 "power_gate113" 0 "NC" 0)
-			(pin F9 2 "power_gate114" 0 "NC" 0)
-			(pin F1 2 "power_gate115" 0 "NC" 0)
-			(pin E9 2 "power_gate116" 0 "NC" 0)
-			(pin E2 2 "power_gate117" 0 "NC" 0)
-			(pin E1 2 "power_gate118" 0 "NC" 0)
-			(pin D10 2 "power_gate119" 0 "NC" 0)
-			(pin D9 2 "power_gate120" 0 "NC" 0)
-			(pin D1 2 "power_gate121" 0 "NC" 0)
-			(pin C9 2 "power_gate122" 0 "NC" 0)
-			(pin C6 2 "power_gate123" 0 "NC" 0)
-			(pin C2 2 "power_gate124" 0 "NC" 0)
-			(pin C1 2 "power_gate125" 0 "NC" 0)
-			(pin B10 2 "power_gate126" 0 "NC" 0)
-			(pin B9 2 "power_gate127" 0 "NC" 0)
-			(pin B5 2 "power_gate128" 0 "NC" 0)
-			(pin B1 2 "power_gate129" 0 "NC" 0)
-			(pin A7 2 "power_gate130" 0 "NC" 0)
+			(pin P9 2 "power_gate84" 0 "NC" 0)
+			(pin P2 2 "power_gate85" 0 "NC" 0)
+			(pin P1 2 "power_gate86" 0 "NC" 0)
+			(pin N10 2 "power_gate87" 0 "NC" 0)
+			(pin N9 2 "power_gate88" 0 "NC" 0)
+			(pin N1 2 "power_gate89" 0 "NC" 0)
+			(pin M9 2 "power_gate90" 0 "NC" 0)
+			(pin M2 2 "power_gate91" 0 "NC" 0)
+			(pin M1 2 "power_gate92" 0 "NC" 0)
+			(pin L10 2 "power_gate93" 0 "NC" 0)
+			(pin L9 2 "power_gate94" 0 "NC" 0)
+			(pin L1 2 "power_gate95" 0 "NC" 0)
+			(pin K9 2 "power_gate96" 0 "NC" 0)
+			(pin K2 2 "power_gate97" 0 "NC" 0)
+			(pin K1 2 "power_gate98" 0 "NC" 0)
+			(pin J9 2 "power_gate99" 0 "NC" 0)
+			(pin J2 2 "power_gate100" 0 "NC" 0)
+			(pin J1 2 "power_gate101" 0 "NC" 0)
+			(pin G10 2 "power_gate102" 0 "NC" 0)
+			(pin G9 2 "power_gate103" 0 "NC" 0)
+			(pin G1 2 "power_gate104" 0 "NC" 0)
+			(pin F10 2 "power_gate105" 0 "NC" 0)
+			(pin F9 2 "power_gate106" 0 "NC" 0)
+			(pin F1 2 "power_gate107" 0 "NC" 0)
+			(pin E9 2 "power_gate108" 0 "NC" 0)
+			(pin E2 2 "power_gate109" 0 "NC" 0)
+			(pin E1 2 "power_gate110" 0 "NC" 0)
+			(pin D10 2 "power_gate111" 0 "NC" 0)
+			(pin D9 2 "power_gate112" 0 "NC" 0)
+			(pin D1 2 "power_gate113" 0 "NC" 0)
+			(pin C9 2 "power_gate114" 0 "NC" 0)
+			(pin C6 2 "power_gate115" 0 "NC" 0)
+			(pin C2 2 "power_gate116" 0 "NC" 0)
+			(pin C1 2 "power_gate117" 0 "NC" 0)
+			(pin B10 2 "power_gate118" 0 "NC" 0)
+			(pin B9 2 "power_gate119" 0 "NC" 0)
+			(pin B5 2 "power_gate120" 0 "NC" 0)
+			(pin B1 2 "power_gate121" 0 "NC" 0)
+			(pin A7 2 "power_gate122" 0 "NC" 0)
 			(pin R10  3 "QDR2P_JTAG__QDRIIP_X18_SA21_0_1" 0 "TMS" 0)
 			(pin R1  4 "QDR2P_JTAG__QDRIIP_X18_SA21_0_1" 0 "TDO" 0)
 			(pin R11  3 "QDR2P_JTAG__QDRIIP_X18_SA21_0_1" 0 "TDI" 0)
@@ -2150,8 +2168,8 @@
 						(attval "DEVICE" "MAX9032AKA")
 						(attval "PKG_TYPE" "SOT80P330X140-8M")
 						(attval "REFDES" "U?"))))
-			(pin 8 2 "power_gate131" 0 "3V3" 0)
-			(pin 4 2 "power_gate132" 0 "GND" 0)
+			(pin 8 2 "power_gate123" 0 "3V3" 0)
+			(pin 4 2 "power_gate124" 0 "GND" 0)
 			(pin 1  4 "MAX9032AKA__MAX9032AKA_1" 0 "OUT" 0)
 			(pin 2  3 "MAX9032AKA__MAX9032AKA_1" 0 "IN-" 0)
 			(pin 3  3 "MAX9032AKA__MAX9032AKA_1" 0 "IN+" 0)
@@ -2220,7 +2238,7 @@
 						(attval "DEVICE" "JTAG-10PIN")
 						(attval "PKG_TYPE" "3M2510_6002UB")
 						(attval "REFDES" "J?"))))
-			(pin 4 2 "power_gate133" 0 "NC" 0)
+			(pin 4 2 "power_gate125" 0 "NC" 0)
 			(pin 7  5 "ACTEL_JTAG_10PIN__JTAG-10PIN_1" 0 "VPUMP" 0)
 			(pin 6  5 "ACTEL_JTAG_10PIN__JTAG-10PIN_1" 0 "VJTAG" 0)
 			(pin 8  4 "ACTEL_JTAG_10PIN__JTAG-10PIN_1" 0 "TRST" 0)
@@ -4153,8 +4171,8 @@
 						(attval "PKG_TYPE" "OSCL550P340X800X250-4N")
 						(attval "REFDES" "X?")
 						(attval "VALUE" "32.768KHZ"))))
-			(pin 3 2 "power_gate134" 0 "NC" 0)
-			(pin 2 2 "power_gate135" 0 "NC" 0)
+			(pin 3 2 "power_gate126" 0 "NC" 0)
+			(pin 2 2 "power_gate127" 0 "NC" 0)
 			(pin 4  5 "ECX-306__ECX-306_1" 0 "4" 0)
 			(pin 1  5 "ECX-306__ECX-306_1" 0 "1" 0))
 		(part "DIODE_SIG_SOT23_150MA_BAV70")
@@ -4238,17 +4256,17 @@
 						(attval "HETERO" "DDR2_DIMM, DDR2_DIMM_POWER")
 						(attval "PKG_TYPE" "MOLEX879160001")
 						(attval "REFDES" "J?"))))
-			(pin 233 2 "power_gate136" 0 "NC" 0)
-			(pin 224 2 "power_gate137" 0 "NC" 0)
-			(pin 212 2 "power_gate138" 0 "NC" 0)
-			(pin 203 2 "power_gate139" 0 "NC" 0)
-			(pin 165 2 "power_gate140" 0 "NC" 0)
-			(pin 156 2 "power_gate141" 0 "NC" 0)
-			(pin 147 2 "power_gate142" 0 "NC" 0)
-			(pin 135 2 "power_gate143" 0 "NC" 0)
-			(pin 126 2 "power_gate144" 0 "NC" 0)
-			(pin 102 2 "power_gate145" 0 "NC" 0)
-			(pin 19 2 "power_gate146" 0 "NC" 0)
+			(pin 233 2 "power_gate128" 0 "NC" 0)
+			(pin 224 2 "power_gate129" 0 "NC" 0)
+			(pin 212 2 "power_gate130" 0 "NC" 0)
+			(pin 203 2 "power_gate131" 0 "NC" 0)
+			(pin 165 2 "power_gate132" 0 "NC" 0)
+			(pin 156 2 "power_gate133" 0 "NC" 0)
+			(pin 147 2 "power_gate134" 0 "NC" 0)
+			(pin 135 2 "power_gate135" 0 "NC" 0)
+			(pin 126 2 "power_gate136" 0 "NC" 0)
+			(pin 102 2 "power_gate137" 0 "NC" 0)
+			(pin 19 2 "power_gate138" 0 "NC" 0)
 			(pin 68  4 "DDR2_DIMM__DDR2_240DIMM_1" 0 "PAR_IN" 0)
 			(pin 55  4 "DDR2_DIMM__DDR2_240DIMM_1" 0 "ERR_OUT" 0)
 			(pin 73  4 "DDR2_DIMM__DDR2_240DIMM_1" 0 "DDR2_DIMM_WE#" 0)
@@ -5312,8 +5330,8 @@
 						(attval "HETERO"
  "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
 						(attval "DEVICE" "5VSX95T"))))
-			(pin U5 2 "power_gate147" 0 "NC" 0)
-			(pin U4 2 "power_gate148" 0 "NC" 0)
+			(pin U5 2 "power_gate139" 0 "NC" 0)
+			(pin U4 2 "power_gate140" 0 "NC" 0)
 			(pin A18  5 "5VSX95T__5VSX95T_1" 0 "0V75_0" 0)
 			(pin A28  5 "5VSX95T__5VSX95T_1" 0 "0V75_0_1" 0)
 			(pin J26  5 "5VSX95T__5VSX95T_1" 0 "0V75_0_2" 0)
@@ -6755,6 +6773,14 @@
 				(comp_pin "G1" 0.0 0.0 "IN")
 				(comp_pin "F2" 0.0 0.0 "OUT")
 				(comp_pin "J1" 0.0 0.0 "OUT")
+				(comp_pin "C8" 0.0 0.0 "OUT")
+				(comp_pin "B14" 0.0 0.0 "OUT")
+				(comp_pin "B13" 0.0 0.0 "OUT")
+				(comp_pin "B12" 0.0 0.0 "OUT")
+				(comp_pin "B11" 0.0 0.0 "OUT")
+				(comp_pin "B9" 0.0 0.0 "OUT")
+				(comp_pin "B8" 0.0 0.0 "OUT")
+				(comp_pin "B6" 0.0 0.0 "OUT")
 				(comp_pin "A1" 0.0 0.0 "BI")
 				(comp_pin "L7" 0.0 0.0 "BI")
 				(comp_pin "N12" 0.0 0.0 "BI")
@@ -6917,16 +6943,8 @@
 				(comp_pin "A11" 0.0 0.0 "NC")
 				(comp_pin "A13" 0.0 0.0 "NC")
 				(comp_pin "A14" 0.0 0.0 "NC")
-				(comp_pin "B11" 0.0 0.0 "NC")
-				(comp_pin "B12" 0.0 0.0 "NC")
-				(comp_pin "B13" 0.0 0.0 "NC")
-				(comp_pin "B14" 0.0 0.0 "NC")
 				(comp_pin "B5" 0.0 0.0 "NC")
-				(comp_pin "B6" 0.0 0.0 "NC")
-				(comp_pin "B8" 0.0 0.0 "NC")
-				(comp_pin "B9" 0.0 0.0 "NC")
 				(comp_pin "C10" 0.0 0.0 "NC")
-				(comp_pin "C8" 0.0 0.0 "NC")
 				(comp_pin "C9" 0.0 0.0 "NC")
 				(comp_pin "D10" 0.0 0.0 "NC")
 				(comp_pin "D11" 0.0 0.0 "NC")
@@ -14116,107 +14134,144 @@
 				(attval "REFDES" "P4")))
 		(component "FUJITSU_FCN_268F036_G_3DB"
 			(place "P3" 0.0 0.0 top 0.0
-				(comp_pin "S66" 0.0 0.0 "OUT")
-				(comp_pin "S65" 0.0 0.0 "OUT")
-				(comp_pin "S68" 0.0 0.0 "OUT")
-				(comp_pin "S67" 0.0 0.0 "OUT")
-				(comp_pin "S70" 0.0 0.0 "OUT")
-				(comp_pin "S69" 0.0 0.0 "OUT")
-				(comp_pin "S72" 0.0 0.0 "OUT")
-				(comp_pin "S71" 0.0 0.0 "OUT")
-				(comp_pin "G37" 0.0 0.0 "BI")
-				(comp_pin "G36" 0.0 0.0 "BI")
-				(comp_pin "G35" 0.0 0.0 "BI")
-				(comp_pin "G34" 0.0 0.0 "BI")
-				(comp_pin "G33" 0.0 0.0 "BI")
-				(comp_pin "G32" 0.0 0.0 "BI")
-				(comp_pin "G31" 0.0 0.0 "BI")
-				(comp_pin "G30" 0.0 0.0 "BI")
-				(comp_pin "G29" 0.0 0.0 "BI")
-				(comp_pin "S63" 0.0 0.0 "IN")
-				(comp_pin "S64" 0.0 0.0 "IN")
-				(comp_pin "S61" 0.0 0.0 "IN")
-				(comp_pin "S62" 0.0 0.0 "IN")
-				(comp_pin "S59" 0.0 0.0 "IN")
-				(comp_pin "S60" 0.0 0.0 "IN")
-				(comp_pin "S57" 0.0 0.0 "IN")
-				(comp_pin "S58" 0.0 0.0 "IN")
-				(comp_pin "S48" 0.0 0.0 "OUT")
-				(comp_pin "S47" 0.0 0.0 "OUT")
-				(comp_pin "S50" 0.0 0.0 "OUT")
-				(comp_pin "S49" 0.0 0.0 "OUT")
-				(comp_pin "S52" 0.0 0.0 "OUT")
-				(comp_pin "S51" 0.0 0.0 "OUT")
-				(comp_pin "S54" 0.0 0.0 "OUT")
-				(comp_pin "S53" 0.0 0.0 "OUT")
-				(comp_pin "G28" 0.0 0.0 "BI")
-				(comp_pin "G27" 0.0 0.0 "BI")
-				(comp_pin "G26" 0.0 0.0 "BI")
-				(comp_pin "G25" 0.0 0.0 "BI")
-				(comp_pin "G24" 0.0 0.0 "BI")
-				(comp_pin "G23" 0.0 0.0 "BI")
-				(comp_pin "G22" 0.0 0.0 "BI")
-				(comp_pin "G21" 0.0 0.0 "BI")
-				(comp_pin "G20" 0.0 0.0 "BI")
-				(comp_pin "S45" 0.0 0.0 "IN")
-				(comp_pin "S46" 0.0 0.0 "IN")
-				(comp_pin "S43" 0.0 0.0 "IN")
-				(comp_pin "S44" 0.0 0.0 "IN")
-				(comp_pin "S41" 0.0 0.0 "IN")
-				(comp_pin "S42" 0.0 0.0 "IN")
-				(comp_pin "S39" 0.0 0.0 "IN")
-				(comp_pin "S40" 0.0 0.0 "IN")
-				(comp_pin "S28" 0.0 0.0 "OUT")
-				(comp_pin "S27" 0.0 0.0 "OUT")
-				(comp_pin "S30" 0.0 0.0 "OUT")
-				(comp_pin "S29" 0.0 0.0 "OUT")
-				(comp_pin "S32" 0.0 0.0 "OUT")
-				(comp_pin "S31" 0.0 0.0 "OUT")
-				(comp_pin "S34" 0.0 0.0 "OUT")
-				(comp_pin "S33" 0.0 0.0 "OUT")
-				(comp_pin "G18" 0.0 0.0 "BI")
-				(comp_pin "G17" 0.0 0.0 "BI")
-				(comp_pin "G16" 0.0 0.0 "BI")
-				(comp_pin "G15" 0.0 0.0 "BI")
-				(comp_pin "G14" 0.0 0.0 "BI")
-				(comp_pin "G13" 0.0 0.0 "BI")
-				(comp_pin "G12" 0.0 0.0 "BI")
-				(comp_pin "G11" 0.0 0.0 "BI")
-				(comp_pin "G10" 0.0 0.0 "BI")
-				(comp_pin "S25" 0.0 0.0 "IN")
-				(comp_pin "S26" 0.0 0.0 "IN")
-				(comp_pin "S23" 0.0 0.0 "IN")
-				(comp_pin "S24" 0.0 0.0 "IN")
-				(comp_pin "S21" 0.0 0.0 "IN")
-				(comp_pin "S22" 0.0 0.0 "IN")
-				(comp_pin "S19" 0.0 0.0 "IN")
+				(comp_pin "S2" 0.0 0.0 "IN")
 				(comp_pin "S20" 0.0 0.0 "IN")
-				(comp_pin "S10" 0.0 0.0 "OUT")
-				(comp_pin "S9" 0.0 0.0 "OUT")
-				(comp_pin "S12" 0.0 0.0 "OUT")
-				(comp_pin "S11" 0.0 0.0 "OUT")
-				(comp_pin "S14" 0.0 0.0 "OUT")
-				(comp_pin "S13" 0.0 0.0 "OUT")
-				(comp_pin "S16" 0.0 0.0 "OUT")
-				(comp_pin "S15" 0.0 0.0 "OUT")
-				(comp_pin "G9" 0.0 0.0 "BI")
-				(comp_pin "G8" 0.0 0.0 "BI")
-				(comp_pin "G7" 0.0 0.0 "BI")
-				(comp_pin "G6" 0.0 0.0 "BI")
-				(comp_pin "G5" 0.0 0.0 "BI")
-				(comp_pin "G4" 0.0 0.0 "BI")
-				(comp_pin "G3" 0.0 0.0 "BI")
-				(comp_pin "G2" 0.0 0.0 "BI")
-				(comp_pin "G19" 0.0 0.0 "BI")
-				(comp_pin "G1" 0.0 0.0 "BI")
-				(comp_pin "S7" 0.0 0.0 "IN")
-				(comp_pin "S8" 0.0 0.0 "IN")
-				(comp_pin "S5" 0.0 0.0 "IN")
-				(comp_pin "S6" 0.0 0.0 "IN")
-				(comp_pin "S3" 0.0 0.0 "IN")
-				(comp_pin "S4" 0.0 0.0 "IN")
+				(comp_pin "S40" 0.0 0.0 "IN")
+				(comp_pin "S58" 0.0 0.0 "IN")
 				(comp_pin "S1" 0.0 0.0 "IN")
-				(comp_pin "S2" 0.0 0.0 "IN"))
+				(comp_pin "S19" 0.0 0.0 "IN")
+				(comp_pin "S39" 0.0 0.0 "IN")
+				(comp_pin "S57" 0.0 0.0 "IN")
+				(comp_pin "S4" 0.0 0.0 "IN")
+				(comp_pin "S22" 0.0 0.0 "IN")
+				(comp_pin "S42" 0.0 0.0 "IN")
+				(comp_pin "S60" 0.0 0.0 "IN")
+				(comp_pin "S3" 0.0 0.0 "IN")
+				(comp_pin "S21" 0.0 0.0 "IN")
+				(comp_pin "S41" 0.0 0.0 "IN")
+				(comp_pin "S59" 0.0 0.0 "IN")
+				(comp_pin "S6" 0.0 0.0 "IN")
+				(comp_pin "S24" 0.0 0.0 "IN")
+				(comp_pin "S44" 0.0 0.0 "IN")
+				(comp_pin "S62" 0.0 0.0 "IN")
+				(comp_pin "S5" 0.0 0.0 "IN")
+				(comp_pin "S23" 0.0 0.0 "IN")
+				(comp_pin "S43" 0.0 0.0 "IN")
+				(comp_pin "S61" 0.0 0.0 "IN")
+				(comp_pin "S8" 0.0 0.0 "IN")
+				(comp_pin "S26" 0.0 0.0 "IN")
+				(comp_pin "S46" 0.0 0.0 "IN")
+				(comp_pin "S64" 0.0 0.0 "IN")
+				(comp_pin "S7" 0.0 0.0 "IN")
+				(comp_pin "S25" 0.0 0.0 "IN")
+				(comp_pin "S45" 0.0 0.0 "IN")
+				(comp_pin "S63" 0.0 0.0 "IN")
+				(comp_pin "G1" 0.0 0.0 "BI")
+				(comp_pin "G10" 0.0 0.0 "BI")
+				(comp_pin "G20" 0.0 0.0 "BI")
+				(comp_pin "G29" 0.0 0.0 "BI")
+				(comp_pin "G2" 0.0 0.0 "BI")
+				(comp_pin "G11" 0.0 0.0 "BI")
+				(comp_pin "G21" 0.0 0.0 "BI")
+				(comp_pin "G30" 0.0 0.0 "BI")
+				(comp_pin "G3" 0.0 0.0 "BI")
+				(comp_pin "G12" 0.0 0.0 "BI")
+				(comp_pin "G22" 0.0 0.0 "BI")
+				(comp_pin "G31" 0.0 0.0 "BI")
+				(comp_pin "G4" 0.0 0.0 "BI")
+				(comp_pin "G13" 0.0 0.0 "BI")
+				(comp_pin "G23" 0.0 0.0 "BI")
+				(comp_pin "G32" 0.0 0.0 "BI")
+				(comp_pin "G5" 0.0 0.0 "BI")
+				(comp_pin "G14" 0.0 0.0 "BI")
+				(comp_pin "G24" 0.0 0.0 "BI")
+				(comp_pin "G33" 0.0 0.0 "BI")
+				(comp_pin "G6" 0.0 0.0 "BI")
+				(comp_pin "G15" 0.0 0.0 "BI")
+				(comp_pin "G25" 0.0 0.0 "BI")
+				(comp_pin "G34" 0.0 0.0 "BI")
+				(comp_pin "G7" 0.0 0.0 "BI")
+				(comp_pin "G16" 0.0 0.0 "BI")
+				(comp_pin "G26" 0.0 0.0 "BI")
+				(comp_pin "G35" 0.0 0.0 "BI")
+				(comp_pin "G8" 0.0 0.0 "BI")
+				(comp_pin "G17" 0.0 0.0 "BI")
+				(comp_pin "G27" 0.0 0.0 "BI")
+				(comp_pin "G36" 0.0 0.0 "BI")
+				(comp_pin "G9" 0.0 0.0 "BI")
+				(comp_pin "G18" 0.0 0.0 "BI")
+				(comp_pin "G28" 0.0 0.0 "BI")
+				(comp_pin "G37" 0.0 0.0 "BI")
+				(comp_pin "S15" 0.0 0.0 "OUT")
+				(comp_pin "S33" 0.0 0.0 "OUT")
+				(comp_pin "S53" 0.0 0.0 "OUT")
+				(comp_pin "S71" 0.0 0.0 "OUT")
+				(comp_pin "S16" 0.0 0.0 "OUT")
+				(comp_pin "S34" 0.0 0.0 "OUT")
+				(comp_pin "S54" 0.0 0.0 "OUT")
+				(comp_pin "S72" 0.0 0.0 "OUT")
+				(comp_pin "S13" 0.0 0.0 "OUT")
+				(comp_pin "S31" 0.0 0.0 "OUT")
+				(comp_pin "S51" 0.0 0.0 "OUT")
+				(comp_pin "S69" 0.0 0.0 "OUT")
+				(comp_pin "S14" 0.0 0.0 "OUT")
+				(comp_pin "S32" 0.0 0.0 "OUT")
+				(comp_pin "S52" 0.0 0.0 "OUT")
+				(comp_pin "S70" 0.0 0.0 "OUT")
+				(comp_pin "S11" 0.0 0.0 "OUT")
+				(comp_pin "S29" 0.0 0.0 "OUT")
+				(comp_pin "S49" 0.0 0.0 "OUT")
+				(comp_pin "S67" 0.0 0.0 "OUT")
+				(comp_pin "S12" 0.0 0.0 "OUT")
+				(comp_pin "S30" 0.0 0.0 "OUT")
+				(comp_pin "S50" 0.0 0.0 "OUT")
+				(comp_pin "S68" 0.0 0.0 "OUT")
+				(comp_pin "S9" 0.0 0.0 "OUT")
+				(comp_pin "S27" 0.0 0.0 "OUT")
+				(comp_pin "S47" 0.0 0.0 "OUT")
+				(comp_pin "S65" 0.0 0.0 "OUT")
+				(comp_pin "S10" 0.0 0.0 "OUT")
+				(comp_pin "S28" 0.0 0.0 "OUT")
+				(comp_pin "S48" 0.0 0.0 "OUT")
+				(comp_pin "S66" 0.0 0.0 "OUT")
+				(comp_pin "G19" 0.0 0.0 "BI")
+				(comp_pin "G56" 0.0 0.0 "BI")
+				(comp_pin "G38" 0.0 0.0 "BI")
+				(comp_pin "G47" 0.0 0.0 "BI")
+				(comp_pin "G57" 0.0 0.0 "BI")
+				(comp_pin "G66" 0.0 0.0 "BI")
+				(comp_pin "G39" 0.0 0.0 "BI")
+				(comp_pin "G48" 0.0 0.0 "BI")
+				(comp_pin "G58" 0.0 0.0 "BI")
+				(comp_pin "G67" 0.0 0.0 "BI")
+				(comp_pin "G40" 0.0 0.0 "BI")
+				(comp_pin "G49" 0.0 0.0 "BI")
+				(comp_pin "G59" 0.0 0.0 "BI")
+				(comp_pin "G68" 0.0 0.0 "BI")
+				(comp_pin "G41" 0.0 0.0 "BI")
+				(comp_pin "G50" 0.0 0.0 "BI")
+				(comp_pin "G60" 0.0 0.0 "BI")
+				(comp_pin "G69" 0.0 0.0 "BI")
+				(comp_pin "G42" 0.0 0.0 "BI")
+				(comp_pin "G51" 0.0 0.0 "BI")
+				(comp_pin "G61" 0.0 0.0 "BI")
+				(comp_pin "G70" 0.0 0.0 "BI")
+				(comp_pin "G43" 0.0 0.0 "BI")
+				(comp_pin "G52" 0.0 0.0 "BI")
+				(comp_pin "G62" 0.0 0.0 "BI")
+				(comp_pin "G71" 0.0 0.0 "BI")
+				(comp_pin "G44" 0.0 0.0 "BI")
+				(comp_pin "G53" 0.0 0.0 "BI")
+				(comp_pin "G63" 0.0 0.0 "BI")
+				(comp_pin "G72" 0.0 0.0 "BI")
+				(comp_pin "G45" 0.0 0.0 "BI")
+				(comp_pin "G54" 0.0 0.0 "BI")
+				(comp_pin "G64" 0.0 0.0 "BI")
+				(comp_pin "G73" 0.0 0.0 "BI")
+				(comp_pin "G46" 0.0 0.0 "BI")
+				(comp_pin "G55" 0.0 0.0 "BI")
+				(comp_pin "G65" 0.0 0.0 "BI")
+				(comp_pin "G74" 0.0 0.0 "BI"))
 			(attributes
 				(attval "DESCRIPTION" "FUJITSU 2X2 CX4 CONNECTOR MODULE")
 				(attval "DEVICE" "QUAD_CX4_CONNECTOR")
@@ -23754,10 +23809,7 @@
 		(func "$1I4\$1I170" "" "P5" 1)
 		(func "$1I4\$1I801" "" "P5" 2)
 		(func "$1I863\$1I360" "" "P4" 1)
-		(func "$1I2\$1I416" "" "P3" 1)
-		(func "$1I2\$1I466" "" "P3" 2)
-		(func "$1I3\$1I416" "" "P3" 3)
-		(func "$1I3\$1I466" "" "P3" 4)
+		(func "F1" "$1I2\$1I416" "P3" 1)
 		(func "$1I863\$1I377" "" "P2" 1)
 		(func "$1I1002\$1I237" "" "P1" 1)
 		(func "$1I671\$1I330" "" "L15" 1)
@@ -26369,26 +26421,10 @@
 			(pins U54-26))
 		(net "$1I747\$1N766"
 			(pins U54-82))
-		(net "$1I747\$1N767"
-			(pins U54-61))
-		(net "$1I747\$1N768"
-			(pins U54-68))
-		(net "$1I747\$1N769"
-			(pins U54-60))
-		(net "$1I747\$1N770"
-			(pins U54-64))
 		(net "$1I747\$1N771"
 			(pins U54-69))
 		(net "$1I747\$1N772"
 			(pins U54-70))
-		(net "$1I747\$1N773"
-			(pins U54-58))
-		(net "$1I747\$1N774"
-			(pins U54-56))
-		(net "$1I747\$1N775"
-			(pins U54-57))
-		(net "$1I747\$1N781"
-			(pins U54-59))
 		(net "$1I747\$1N826"
 			(pins U54-102 J17-15))
 		(net "$1I747\$1N829"
@@ -26461,6 +26497,46 @@
 			(pins R220-2 R221-1 U57-16))
 		(net "$1I803\$1N716"
 			(pins U57-15 C500-1))
+		(net "$1I803\$1N783"
+			(pins P3-G39))
+		(net "$1I803\$1N784"
+			(pins P3-G41))
+		(net "$1I803\$1N785"
+			(pins P3-G43))
+		(net "$1I803\$1N786"
+			(pins P3-G44))
+		(net "$1I803\$1N787"
+			(pins P3-G45))
+		(net "$1I803\$1N788"
+			(pins P3-G48))
+		(net "$1I803\$1N789"
+			(pins P3-G50))
+		(net "$1I803\$1N790"
+			(pins P3-G52))
+		(net "$1I803\$1N791"
+			(pins P3-G53))
+		(net "$1I803\$1N792"
+			(pins P3-G54))
+		(net "$1I803\$1N793"
+			(pins P3-G58))
+		(net "$1I803\$1N794"
+			(pins P3-G60))
+		(net "$1I803\$1N795"
+			(pins P3-G62))
+		(net "$1I803\$1N796"
+			(pins P3-G63))
+		(net "$1I803\$1N797"
+			(pins P3-G64))
+		(net "$1I803\$1N798"
+			(pins P3-G67))
+		(net "$1I803\$1N799"
+			(pins P3-G69))
+		(net "$1I803\$1N800"
+			(pins P3-G71))
+		(net "$1I803\$1N801"
+			(pins P3-G72))
+		(net "$1I803\$1N802"
+			(pins P3-G73))
 		(net "$1I810\$1N123"
 			(pins R267-2 U1-AL27))
 		(net "$1I810\$1N304"
@@ -27700,7 +27776,7 @@
 		(net "GETH0_INT#"
 			(pins U1-AD33 R31-2 U58-3))
 		(net "GETH0_RST#"
-			(pins U54-66 U58-33))
+			(pins U54-68 U58-33))
 		(net "GMCMDCLK"
 			(pins U58-81 U1-AL34 JP25-2))
 		(net "GMCMDIO"
@@ -27736,26 +27812,26 @@
  J9-20 J9-4 J9-6 J9-8 U10-8 U10-9 U11-8 U11-9 U12-8 U12-9 U13-8 U13-9 U14-8
  U14-9 R7-2 R8-2 R9-2 R1-2 R2-1 R47-2 R48-2 C34-2 C35-2 C36-2 C37-2 C38-2 C39-2
  C40-2 C41-2 C42-2 C43-2 C44-2 C45-2 J10-2 J10-3 J10-4 J10-5 J11-2 J11-3 J11-4
- J11-5 X1-3 U18-1 U19-1 R58-1 R90-1 R91-1 R95-1 P3-G1 P3-G19 P3-G3 P3-G5 P3-G9
- P3-G10 P3-G12 P3-G14 P3-G18 C90-2 C91-2 JP6-2 C92-2 C93-2 C94-2 C96-2 C98-2
- C100-2 C101-2 C102-2 C114-2 C115-2 C116-2 C118-2 C119-2 C121-2 C123-2 C125-2
- C126-2 C127-2 C128-2 C129-2 C130-2 C131-2 C132-2 C133-2 C134-2 C135-2 C136-2
- C137-2 C138-2 C139-2 U20-4 U21-4 U22-3 U23-3 R99-1 R100-1 C148-2 J8-2 J8-29
- J8-32 J8-35 J8-38 J8-41 J8-44 J8-47 J8-50 J8-65 J8-66 J8-5 J8-79 J8-82 J8-85
- J8-88 J8-91 J8-94 J8-97 J8-100 J8-103 J8-106 J8-8 J8-109 J8-112 J8-115
- J8-118 J8-121 J8-124 J8-127 J8-130 J8-133 J8-136 J8-11 J8-139 J8-142 J8-145
- J8-148 J8-151 J8-154 J8-157 J8-160 J8-163 J8-166 J8-14 J8-169 J8-198 J8-201
- J8-204 J8-207 J8-210 J8-213 J8-216 J8-219 J8-222 J8-17 J8-225 J8-228 J8-231
- J8-234 J8-237 J8-20 J8-23 J8-26 J8-239 J8-240 J8-101 C430-2 C431-2 C432-2
- C433-2 C434-2 C435-2 C436-2 C437-2 C438-2 C439-2 C440-2 C441-2 C442-2 C443-2
- C444-2 C445-2 C446-2 C447-2 C448-2 C449-2 C450-2 C451-2 C452-2 C453-2 C454-2
- C149-2 C151-2 C152-2 R225-2 R226-2 C459-2 C456-2 C457-2 C458-2 U32-8 U32-4
- CP26-5 CP26-6 CP26-7 CP26-8 CP28-5 CP28-6 CP28-7 CP28-8 CP29-5 CP29-6 CP29-7
- CP29-8 CP30-5 CP30-6 CP30-7 CP30-8 CP31-5 CP31-6 CP31-7 CP31-8 CP32-5 CP32-6
- CP32-7 CP32-8 CP33-5 CP33-6 CP33-7 CP33-8 U4-3 U4-5 U4-9 U4-11 U4-13 U5-3 U5-5
- U5-9 U5-11 U5-13 X2-3 X3-3 C6-2 C14-2 C16-2 C17-2 C20-2 C32-2 FB27-2 R104-1
- R106-1 R108-1 R113-1 R115-1 R116-1 C18-2 C160-2 C19-2 C161-2 C162-2 J12-2
- J12-3 J12-4 J12-5 J13-2 J13-3 J13-4 J13-5 D9-1 C164-2 X4-3 U28-1 U29-1 P3-G20
+ J11-5 X1-3 U18-1 U19-1 R58-1 R90-1 R91-1 R95-1 P3-G1 P3-G3 P3-G5 P3-G9 P3-G10
+ P3-G12 P3-G14 P3-G18 C90-2 C91-2 JP6-2 C92-2 C93-2 C94-2 C96-2 C98-2 C100-2
+ C101-2 C102-2 C114-2 C115-2 C116-2 C118-2 C119-2 C121-2 C123-2 C125-2 C126-2
+ C127-2 C128-2 C129-2 C130-2 C131-2 C132-2 C133-2 C134-2 C135-2 C136-2 C137-2
+ C138-2 C139-2 U20-4 U21-4 U22-3 U23-3 R99-1 R100-1 C148-2 J8-2 J8-29 J8-32
+ J8-35 J8-38 J8-41 J8-44 J8-47 J8-50 J8-65 J8-66 J8-5 J8-79 J8-82 J8-85 J8-88
+ J8-91 J8-94 J8-97 J8-100 J8-103 J8-106 J8-8 J8-109 J8-112 J8-115 J8-118
+ J8-121 J8-124 J8-127 J8-130 J8-133 J8-136 J8-11 J8-139 J8-142 J8-145 J8-148
+ J8-151 J8-154 J8-157 J8-160 J8-163 J8-166 J8-14 J8-169 J8-198 J8-201 J8-204
+ J8-207 J8-210 J8-213 J8-216 J8-219 J8-222 J8-17 J8-225 J8-228 J8-231 J8-234
+ J8-237 J8-20 J8-23 J8-26 J8-239 J8-240 J8-101 C430-2 C431-2 C432-2 C433-2
+ C434-2 C435-2 C436-2 C437-2 C438-2 C439-2 C440-2 C441-2 C442-2 C443-2 C444-2
+ C445-2 C446-2 C447-2 C448-2 C449-2 C450-2 C451-2 C452-2 C453-2 C454-2 C149-2
+ C151-2 C152-2 R225-2 R226-2 C459-2 C456-2 C457-2 C458-2 U32-8 U32-4 CP26-5
+ CP26-6 CP26-7 CP26-8 CP28-5 CP28-6 CP28-7 CP28-8 CP29-5 CP29-6 CP29-7 CP29-8
+ CP30-5 CP30-6 CP30-7 CP30-8 CP31-5 CP31-6 CP31-7 CP31-8 CP32-5 CP32-6 CP32-7
+ CP32-8 CP33-5 CP33-6 CP33-7 CP33-8 U4-3 U4-5 U4-9 U4-11 U4-13 U5-3 U5-5 U5-9
+ U5-11 U5-13 X2-3 X3-3 C6-2 C14-2 C16-2 C17-2 C20-2 C32-2 FB27-2 R104-1 R106-1
+ R108-1 R113-1 R115-1 R116-1 C18-2 C160-2 C19-2 C161-2 C162-2 J12-2 J12-3
+ J12-4 J12-5 J13-2 J13-3 J13-4 J13-5 D9-1 C164-2 X4-3 U28-1 U29-1 P3-G20
  P3-G22 P3-G24 P3-G28 P3-G29 P3-G31 P3-G33 P3-G37 C165-2 C166-2 R117-1 R118-1
  R123-1 R124-1 R129-1 R130-1 JP9-2 C167-2 C168-2 U30-4 U34-4 U36-3 U37-3
  C169-2 C170-2 C171-2 C173-2 C175-2 C177-2 C178-2 C179-2 C191-2 C212-2 C213-2
@@ -27834,61 +27910,62 @@
  C506-2 C546-2 C748-2 C749-2 U55-12 U55-14 U55-2 U55-3 U55-4 U55-13 U55-17
  U55-21 U56-12 U56-14 U56-2 U56-3 U56-4 U56-13 U56-17 U56-21 U57-12 U57-14
  U57-2 U57-3 U57-4 U57-13 U57-17 U57-21 C492-2 C493-2 C494-2 C495-2 C496-2
- C497-2 C498-2 C499-2 C500-2 C501-2 C502-2 C503-2 JP10-1 JP12-1 JP14-1 JP16-1
- JP19-1 JP20-3 JP21-3 JP22-3 JP23-3 C507-2 C508-2 C509-2 C510-2 C511-2 C512-2
- C513-2 C514-2 C515-2 C516-2 C517-2 C518-2 C519-2 C520-2 C521-2 C522-2 C523-2
- C524-2 C525-2 C526-2 C527-2 C528-2 C529-2 C530-2 C531-2 C532-2 C533-2 C534-2
- J25-10 C535-2 C536-2 C537-2 R238-2 R253-1 R264-1 R265-1 R267-1 U58-68 U58-67
- U58-66 U58-65 U58-61 U58-34 U58-5 U58-43 U58-49 U58-54 U58-59 U58-64 U58-70
- U58-74 U58-78 U58-82 U58-91 U58-12 U58-93 U58-97 U58-99 U58-104 U58-106
- U58-107 U58-110 U58-112 U58-113 U58-116 U58-16 U58-118 U58-119 U58-122
- U58-124 U58-125 U58-128 U58-20 U58-22 U58-26 U58-30 U58-36 U58-38 JP24-1
- JP25-1 R3-1 C616-2 C617-2 C618-2 C619-2 C2-2 C1-2 C621-2 C622-2 C623-2 C624-2
- C3-2 C625-2 C626-2 C627-2 C628-2 C629-2 C630-2 C631-2 C632-2 C633-2 C634-2
- C635-2 C636-2 C637-2 C638-2 C639-2 C640-2 C641-2 C29-2 C642-2 C643-2 C644-2
- C645-2 C646-2 C647-2 C648-2 C655-2 C657-2 C660-2 C661-2 C662-2 C663-2 C664-2
- C665-2 C666-2 C667-2 C668-2 C669-2 C670-2 C671-2 C672-2 C673-2 C674-2 C675-2
- C676-2 C677-2 C678-2 C679-2 C680-2 C681-2 C682-2 C683-2 C684-2 C685-2 C686-2
- C687-2 C688-2 C689-2 C4-2 C690-2 C691-2 C692-2 C693-2 C694-2 C695-2 C696-2
- C697-2 C698-2 C699-2 C700-2 C701-2 C702-2 C703-2 C704-2 C705-2 C706-2 C707-2
- C708-2 C709-2 C710-2 C30-2 C711-2 C712-2 C713-2 C714-2 C715-2 C716-2 C717-2
- C718-2 C719-2 C720-2 C721-2 C722-2 C723-2 C724-2 C725-2 C726-2 C727-2 C728-2
- C729-2 C730-2 C731-2 C732-2 C733-2 C735-2 C737-2 C739-2 C740-2 U1-AP25
- U1-AP27 U1-A1 U1-B3 U1-V16 U1-V17 U1-V18 U1-V19 U1-V20 U1-V21 U1-V22 U1-V30
- U1-W2 U1-W5 U1-B4 U1-W15 U1-W16 U1-W17 U1-W18 U1-W19 U1-W20 U1-W30 U1-W33
- U1-Y13 U1-Y14 U1-B8 U1-Y15 U1-Y16 U1-Y17 U1-Y18 U1-Y19 U1-Y20 U1-Y21 U1-Y22
- U1-AA14 U1-AA15 U1-B16 U1-AA17 U1-AA18 U1-AA20 U1-AA21 U1-AB13 U1-AB15
- U1-AB17 U1-AB18 U1-AB20 U1-AB22 U1-B19 U1-AD1 U1-AE5 U1-AE30 U1-AG2 U1-AG5
- U1-AG30 U1-AG33 U1-AJ1 U1-AK4 U1-AK5 U1-B26 U1-AK8 U1-AK10 U1-AK16 U1-AK17
- U1-AK19 U1-AK25 U1-AK27 U1-AK30 U1-AK31 U1-AL3 U1-B27 U1-AL4 U1-AL5 U1-AL6
- U1-AL29 U1-AL30 U1-AL31 U1-AL32 U1-AM1 U1-AM2 U1-AM3 U1-B31 U1-AM4 U1-AM31
- U1-AM32 U1-AM33 U1-AM34 U1-AN1 U1-AN2 U1-AN3 U1-AN4 U1-AN8 U1-B32 U1-AN16
- U1-AN19 U1-AN27 U1-AN31 U1-AN32 U1-AN33 U1-AN34 U1-AP1 U1-AP2 U1-AP3 U1-B33
- U1-AP32 U1-AP33 U1-AP34 U1-A2 U1-B34 U1-C2 U1-C3 U1-C4 U1-C31 U1-C32 U1-C33
- U1-C34 U1-D3 U1-D4 U1-A3 U1-D5 U1-D30 U1-D31 U1-D32 U1-D33 U1-E5 U1-E8 U1-E10
- U1-E16 U1-E18 U1-A28 U1-E19 U1-E25 U1-E27 U1-E30 U1-E31 U1-H1 U1-H2 U1-H5
- U1-H30 U1-H33 U1-A32 U1-K5 U1-K30 U1-N1 U1-N4 U1-N13 U1-N15 U1-N17 U1-N18
- U1-N20 U1-N22 U1-A33 U1-P14 U1-P15 U1-P17 U1-P18 U1-P20 U1-P21 U1-R13 U1-R14
- U1-R15 U1-R16 U1-A34 U1-R17 U1-R18 U1-R19 U1-R20 U1-R21 U1-R22 U1-T2 U1-T5
- U1-T15 U1-T16 U1-B1 U1-T17 U1-T18 U1-T19 U1-T20 U1-T30 U1-T33 U1-U5 U1-U13
- U1-U14 U1-U15 U1-B2 U1-U16 U1-U17 U1-U18 U1-U19 U1-U20 U1-U21 U1-U22 U1-V13
- U1-V14 U1-V15 U1-M4 U1-M1 U1-J3 U1-K4 U1-K1 C742-2 C743-2 C26-2 C25-2 C28-2
- C24-2 C27-2 C744-2 C745-2 C746-2 C747-2 U3-4 U3-8 U3-11 C31-1 C23-2 U38-1
- U38-3 U38-4 U39-1 U39-3 U39-4 U40-1 U40-2 U40-4 U41-2 J14-5 P2-5 U42-E8
- U42-H2 U42-H7 C649-2 C650-2 C651-2 C197-2 C652-2 C199-2 C653-2 C654-2 C193-2
- C656-2 C195-2 C658-2 C659-2 R86-2 R87-2 U43-18 U44-18 R85-2 R82-2 C330-2
- C331-2 C332-2 C333-2 P11-4 P4-4 U45-2 U46-2 U47-2 U48-2 C334-2 C335-2 C538-2
- J41-1 J41-3 J41-5 J41-7 JP26-1 JP27-1 JP28-1 J26-9 J7-14 J7-3 J7-4 C543-2
- C544-2 C539-2 U59-12 U59-14 U59-2 U59-3 U59-4 U59-13 U59-17 U59-21 U60-A1
- U60-L7 U60-N12 U60-P14 U60-P3 U60-P9 U60-T13 U60-H5 U60-A12 U60-G12 U60-G5
- U60-G7 U60-G9 U60-H10 U60-H8 U60-J7 U60-J9 U60-K10 U60-K12 U60-A16 U60-K5
- U60-K8 U60-M1 U60-M16 U60-P16 U60-P2 U60-T1 U60-T16 U60-A5 U60-C15 U60-C2
- U60-E1 U60-E10 U60-E16 U60-E7 U60-B1 U60-B16 J27-2 J27-10 J28-1 C545-2 U61-6
- C548-2 C549-2 C550-2 C551-2 C552-2 C553-2 C554-2 C555-2 C556-2 C557-2 C558-2
- C559-2 C560-2 C561-2 C562-2 C563-2 C564-2 C565-2 C566-2 C567-2 C568-2 C569-2
- C570-2 C571-2 C572-2 C573-2 C574-2 C575-2 C576-2 C577-2 C578-2 C579-2 C580-2
- C581-2 C582-2 C583-2 C584-2 C585-2 C586-2 C587-2 C588-2 C589-2 R281-1 R288-1
- R290-1))
+ C497-2 P3-G19 P3-G56 P3-G38 P3-G47 P3-G57 P3-G66 P3-G40 P3-G49 P3-G59 P3-G68
+ P3-G42 P3-G51 P3-G61 P3-G70 P3-G46 P3-G55 P3-G65 P3-G74 C498-2 C499-2 C500-2
+ C501-2 C502-2 C503-2 JP10-1 JP12-1 JP14-1 JP16-1 JP19-1 JP20-3 JP21-3 JP22-3
+ JP23-3 C507-2 C508-2 C509-2 C510-2 C511-2 C512-2 C513-2 C514-2 C515-2 C516-2
+ C517-2 C518-2 C519-2 C520-2 C521-2 C522-2 C523-2 C524-2 C525-2 C526-2 C527-2
+ C528-2 C529-2 C530-2 C531-2 C532-2 C533-2 C534-2 J25-10 C535-2 C536-2 C537-2
+ R238-2 R253-1 R264-1 R265-1 R267-1 U58-68 U58-67 U58-66 U58-65 U58-61 U58-34
+ U58-5 U58-43 U58-49 U58-54 U58-59 U58-64 U58-70 U58-74 U58-78 U58-82 U58-91
+ U58-12 U58-93 U58-97 U58-99 U58-104 U58-106 U58-107 U58-110 U58-112 U58-113
+ U58-116 U58-16 U58-118 U58-119 U58-122 U58-124 U58-125 U58-128 U58-20 U58-22
+ U58-26 U58-30 U58-36 U58-38 JP24-1 JP25-1 R3-1 C616-2 C617-2 C618-2 C619-2
+ C2-2 C1-2 C621-2 C622-2 C623-2 C624-2 C3-2 C625-2 C626-2 C627-2 C628-2
+ C629-2 C630-2 C631-2 C632-2 C633-2 C634-2 C635-2 C636-2 C637-2 C638-2 C639-2
+ C640-2 C641-2 C29-2 C642-2 C643-2 C644-2 C645-2 C646-2 C647-2 C648-2 C655-2
+ C657-2 C660-2 C661-2 C662-2 C663-2 C664-2 C665-2 C666-2 C667-2 C668-2 C669-2
+ C670-2 C671-2 C672-2 C673-2 C674-2 C675-2 C676-2 C677-2 C678-2 C679-2 C680-2
+ C681-2 C682-2 C683-2 C684-2 C685-2 C686-2 C687-2 C688-2 C689-2 C4-2 C690-2
+ C691-2 C692-2 C693-2 C694-2 C695-2 C696-2 C697-2 C698-2 C699-2 C700-2 C701-2
+ C702-2 C703-2 C704-2 C705-2 C706-2 C707-2 C708-2 C709-2 C710-2 C30-2 C711-2
+ C712-2 C713-2 C714-2 C715-2 C716-2 C717-2 C718-2 C719-2 C720-2 C721-2 C722-2
+ C723-2 C724-2 C725-2 C726-2 C727-2 C728-2 C729-2 C730-2 C731-2 C732-2 C733-2
+ C735-2 C737-2 C739-2 C740-2 U1-AP25 U1-AP27 U1-A1 U1-B3 U1-V16 U1-V17 U1-V18
+ U1-V19 U1-V20 U1-V21 U1-V22 U1-V30 U1-W2 U1-W5 U1-B4 U1-W15 U1-W16 U1-W17
+ U1-W18 U1-W19 U1-W20 U1-W30 U1-W33 U1-Y13 U1-Y14 U1-B8 U1-Y15 U1-Y16 U1-Y17
+ U1-Y18 U1-Y19 U1-Y20 U1-Y21 U1-Y22 U1-AA14 U1-AA15 U1-B16 U1-AA17 U1-AA18
+ U1-AA20 U1-AA21 U1-AB13 U1-AB15 U1-AB17 U1-AB18 U1-AB20 U1-AB22 U1-B19
+ U1-AD1 U1-AE5 U1-AE30 U1-AG2 U1-AG5 U1-AG30 U1-AG33 U1-AJ1 U1-AK4 U1-AK5
+ U1-B26 U1-AK8 U1-AK10 U1-AK16 U1-AK17 U1-AK19 U1-AK25 U1-AK27 U1-AK30
+ U1-AK31 U1-AL3 U1-B27 U1-AL4 U1-AL5 U1-AL6 U1-AL29 U1-AL30 U1-AL31 U1-AL32
+ U1-AM1 U1-AM2 U1-AM3 U1-B31 U1-AM4 U1-AM31 U1-AM32 U1-AM33 U1-AM34 U1-AN1
+ U1-AN2 U1-AN3 U1-AN4 U1-AN8 U1-B32 U1-AN16 U1-AN19 U1-AN27 U1-AN31 U1-AN32
+ U1-AN33 U1-AN34 U1-AP1 U1-AP2 U1-AP3 U1-B33 U1-AP32 U1-AP33 U1-AP34 U1-A2
+ U1-B34 U1-C2 U1-C3 U1-C4 U1-C31 U1-C32 U1-C33 U1-C34 U1-D3 U1-D4 U1-A3 U1-D5
+ U1-D30 U1-D31 U1-D32 U1-D33 U1-E5 U1-E8 U1-E10 U1-E16 U1-E18 U1-A28 U1-E19
+ U1-E25 U1-E27 U1-E30 U1-E31 U1-H1 U1-H2 U1-H5 U1-H30 U1-H33 U1-A32 U1-K5
+ U1-K30 U1-N1 U1-N4 U1-N13 U1-N15 U1-N17 U1-N18 U1-N20 U1-N22 U1-A33 U1-P14
+ U1-P15 U1-P17 U1-P18 U1-P20 U1-P21 U1-R13 U1-R14 U1-R15 U1-R16 U1-A34 U1-R17
+ U1-R18 U1-R19 U1-R20 U1-R21 U1-R22 U1-T2 U1-T5 U1-T15 U1-T16 U1-B1 U1-T17
+ U1-T18 U1-T19 U1-T20 U1-T30 U1-T33 U1-U5 U1-U13 U1-U14 U1-U15 U1-B2 U1-U16
+ U1-U17 U1-U18 U1-U19 U1-U20 U1-U21 U1-U22 U1-V13 U1-V14 U1-V15 U1-M4 U1-M1
+ U1-J3 U1-K4 U1-K1 C742-2 C743-2 C26-2 C25-2 C28-2 C24-2 C27-2 C744-2 C745-2
+ C746-2 C747-2 U3-4 U3-8 U3-11 C31-1 C23-2 U38-1 U38-3 U38-4 U39-1 U39-3 U39-4
+ U40-1 U40-2 U40-4 U41-2 J14-5 P2-5 U42-E8 U42-H2 U42-H7 C649-2 C650-2 C651-2
+ C197-2 C652-2 C199-2 C653-2 C654-2 C193-2 C656-2 C195-2 C658-2 C659-2 R86-2
+ R87-2 U43-18 U44-18 R85-2 R82-2 C330-2 C331-2 C332-2 C333-2 P11-4 P4-4 U45-2
+ U46-2 U47-2 U48-2 C334-2 C335-2 C538-2 J41-1 J41-3 J41-5 J41-7 JP26-1 JP27-1
+ JP28-1 J26-9 J7-14 J7-3 J7-4 C543-2 C544-2 C539-2 U59-12 U59-14 U59-2 U59-3
+ U59-4 U59-13 U59-17 U59-21 U60-A1 U60-L7 U60-N12 U60-P14 U60-P3 U60-P9
+ U60-T13 U60-H5 U60-A12 U60-G12 U60-G5 U60-G7 U60-G9 U60-H10 U60-H8 U60-J7
+ U60-J9 U60-K10 U60-K12 U60-A16 U60-K5 U60-K8 U60-M1 U60-M16 U60-P16 U60-P2
+ U60-T1 U60-T16 U60-A5 U60-C15 U60-C2 U60-E1 U60-E10 U60-E16 U60-E7 U60-B1
+ U60-B16 J27-2 J27-10 J28-1 C545-2 U61-6 C548-2 C549-2 C550-2 C551-2 C552-2
+ C553-2 C554-2 C555-2 C556-2 C557-2 C558-2 C559-2 C560-2 C561-2 C562-2 C563-2
+ C564-2 C565-2 C566-2 C567-2 C568-2 C569-2 C570-2 C571-2 C572-2 C573-2 C574-2
+ C575-2 C576-2 C577-2 C578-2 C579-2 C580-2 C581-2 C582-2 C583-2 C584-2 C585-2
+ C586-2 C587-2 C588-2 C589-2 R281-1 R288-1 R290-1))
 		(net "GPIO44"
 			(pins RO5-1 U1-V32))
 		(net "I1V0"
@@ -28115,6 +28192,22 @@
 			(pins RO2-1 U1-T34 R207-1 U15-AC14 J24-11))
 		(net "SYSERR"
 			(pins U1-AD32 U54-49))
+		(net "SYS_CONFIG0"
+			(pins U54-56 U60-C8))
+		(net "SYS_CONFIG1"
+			(pins U54-57 U60-B14))
+		(net "SYS_CONFIG2"
+			(pins U54-58 U60-B13))
+		(net "SYS_CONFIG3"
+			(pins U54-59 U60-B12))
+		(net "SYS_CONFIG4"
+			(pins U54-60 U60-B11))
+		(net "SYS_CONFIG5"
+			(pins U54-61 U60-B9))
+		(net "SYS_CONFIG6"
+			(pins U54-64 U60-B8))
+		(net "SYS_CONFIG7"
+			(pins U54-66 U60-B6))
 		(net "TD0"
 			(pins U15-W18 U60-R4 J31-2))
 		(net "V5_INT#"
@@ -28209,6 +28302,30 @@
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "TD0"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "SYS_CONFIG7"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "SYS_CONFIG6"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "SYS_CONFIG5"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "SYS_CONFIG4"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "SYS_CONFIG3"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "SYS_CONFIG2"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "SYS_CONFIG1"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "SYS_CONFIG0"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "SYSERR"
@@ -30486,6 +30603,66 @@
 		(net_scalar "$1I810\$1N123"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I803\$1N802"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1I803\$1N801"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1I803\$1N800"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1I803\$1N799"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1I803\$1N798"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1I803\$1N797"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1I803\$1N796"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1I803\$1N795"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1I803\$1N794"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1I803\$1N793"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1I803\$1N792"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1I803\$1N791"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1I803\$1N790"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1I803\$1N789"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1I803\$1N788"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1I803\$1N787"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1I803\$1N786"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1I803\$1N785"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1I803\$1N784"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1I803\$1N783"
+			(attributes
+				(attval "NC" "")))
 		(net_scalar "$1I803\$1N716"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
@@ -30600,52 +30777,12 @@
 		(net_scalar "$1I747\$1N826"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N781"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N775"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N774"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N773"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I747\$1N772"
 			(attributes
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I747\$1N771"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N770"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N769"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N768"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N767"
 			(attributes
 				(attval "NC" ""))
 			(constraints
@@ -33689,6 +33826,9 @@
 				(cnsval "SCHEDULED" "FALSE")
 				(cnsval "DIFF_PAIR" "$1I2\$1N60,$1I2\$1N919")))
 		(busses
+			(busext "SYS_CONFIG[7:0]"
+				(scalars "SYS_CONFIG0" "SYS_CONFIG1" "SYS_CONFIG2" "SYS_CONFIG3" "SYS_CONFIG4"
+ "SYS_CONFIG5" "SYS_CONFIG6" "SYS_CONFIG7"))
 			(busext "PDATA[15:0]"
 				(scalars "PDATA0" "PDATA1" "PDATA2" "PDATA3" "PDATA4" "PDATA5" "PDATA6" "PDATA7" "PDATA8" "PDATA9"
  "PDATA10" "PDATA11" "PDATA12" "PDATA13" "PDATA14" "PDATA15"))
