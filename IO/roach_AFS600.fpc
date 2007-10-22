@@ -574,6 +574,71 @@
       (IOSTANDARD LVTTL)
     )
     (SIGNAL
+      (NAME SYS_CONFIG)
+      (HDL_NAME SYS_CONFIG)
+      (DIR OUT)
+      (ELEMENTS
+        (SIGNAL
+          (NAME "SYS_CONFIG<7>")
+          (HDL_NAME "SYS_CONFIG<7>")
+          (PIN B6)
+          (TYPE IO)
+          (IOSTANDARD LVCMOS33)
+        )
+        (SIGNAL
+          (NAME "SYS_CONFIG<6>")
+          (HDL_NAME "SYS_CONFIG<6>")
+          (PIN B8)
+          (TYPE IO)
+          (IOSTANDARD LVCMOS33)
+        )
+        (SIGNAL
+          (NAME "SYS_CONFIG<5>")
+          (HDL_NAME "SYS_CONFIG<5>")
+          (PIN B9)
+          (TYPE IO)
+          (IOSTANDARD LVCMOS33)
+        )
+        (SIGNAL
+          (NAME "SYS_CONFIG<4>")
+          (HDL_NAME "SYS_CONFIG<4>")
+          (PIN B11)
+          (TYPE IO)
+          (IOSTANDARD LVCMOS33)
+        )
+        (SIGNAL
+          (NAME "SYS_CONFIG<3>")
+          (HDL_NAME "SYS_CONFIG<3>")
+          (PIN B12)
+          (TYPE IO)
+          (IOSTANDARD LVCMOS33)
+        )
+        (SIGNAL
+          (NAME "SYS_CONFIG<2>")
+          (HDL_NAME "SYS_CONFIG<2>")
+          (PIN B13)
+          (TYPE IO)
+          (IOSTANDARD LVCMOS33)
+        )
+        (SIGNAL
+          (NAME "SYS_CONFIG<1>")
+          (HDL_NAME "SYS_CONFIG<1>")
+          (PIN B14)
+          (TYPE IO)
+          (IOSTANDARD LVCMOS33)
+        )
+        (SIGNAL
+          (NAME "SYS_CONFIG<0>")
+          (HDL_NAME "SYS_CONFIG<0>")
+          (PIN C8)
+          (TYPE IO)
+          (IOSTANDARD LVCMOS33)
+        )
+      )
+      (TYPE IO)
+      (IOSTANDARD LVCMOS33)
+    )
+    (SIGNAL
       (NAME TD0)
       (DIR INOUT)
       (PIN R4)
@@ -1219,7 +1284,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A11,A13,A14,B5,C10,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -6363,7 +6428,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A11,A13,A14,B5,C10,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -12316,7 +12381,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A11,A13,A14,B5,C10,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -12389,11 +12454,11 @@
       (NAME roach_AFS600_ppcif)
       (BACKGROUND T)
       (BACKGROUNDNAME Box)
-      (OUTLINE -10160 -5080 71120 25400)
+      (OUTLINE -10160 -5080 71120 55880)
       (PCB T)
       (ELEMENTS
         (RECT
-          (POSITION 0 -5080 60960 25400)
+          (POSITION 0 -5080 60960 55880)
           (BACKGROUND T)
         )
         (PORT
@@ -12659,6 +12724,550 @@
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME "SYS_CONFIG<7>")
+          (POSITION 71120 50800)
+          (EXTTYPE OUT)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 5)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE B6)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE B6)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE B6)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE B6)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "SYS_CONFIG(7)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "SYS_CONFIG(7)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "SYS_CONFIG<7>")
+          (POSITION 60114 50800)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME "SYS_CONFIG<6>")
+          (POSITION 71120 45720)
+          (EXTTYPE OUT)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 6)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE B8)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE B8)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE B8)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE B8)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "SYS_CONFIG(6)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "SYS_CONFIG(6)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "SYS_CONFIG<6>")
+          (POSITION 60114 45720)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME "SYS_CONFIG<5>")
+          (POSITION 71120 40640)
+          (EXTTYPE OUT)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 7)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE B9)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE B9)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE B9)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE B9)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "SYS_CONFIG(5)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "SYS_CONFIG(5)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "SYS_CONFIG<5>")
+          (POSITION 60114 40640)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME "SYS_CONFIG<4>")
+          (POSITION 71120 35560)
+          (EXTTYPE OUT)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 8)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE B11)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE B11)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE B11)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE B11)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "SYS_CONFIG(4)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "SYS_CONFIG(4)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "SYS_CONFIG<4>")
+          (POSITION 60114 35560)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME "SYS_CONFIG<3>")
+          (POSITION 71120 30480)
+          (EXTTYPE OUT)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 9)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE B12)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE B12)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE B12)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE B12)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "SYS_CONFIG(3)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "SYS_CONFIG(3)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "SYS_CONFIG<3>")
+          (POSITION 60114 30480)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME "SYS_CONFIG<2>")
+          (POSITION 71120 25400)
+          (EXTTYPE OUT)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 10)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE B13)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE B13)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE B13)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE B13)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "SYS_CONFIG(2)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "SYS_CONFIG(2)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "SYS_CONFIG<2>")
+          (POSITION 60114 25400)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME "SYS_CONFIG<1>")
+          (POSITION 71120 20320)
+          (EXTTYPE OUT)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 11)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE B14)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE B14)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE B14)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE B14)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "SYS_CONFIG(1)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "SYS_CONFIG(1)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "SYS_CONFIG<1>")
+          (POSITION 60114 20320)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME "SYS_CONFIG<0>")
+          (POSITION 71120 15240)
+          (EXTTYPE OUT)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 12)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE C8)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE C8)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE C8)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE C8)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "SYS_CONFIG(0)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "SYS_CONFIG(0)")
+              (OWNER DESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "SYS_CONFIG<0>")
+          (POSITION 60114 15240)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (TEXT
+          (PINNUMBER "SYS_CONFIG<7>")
+          (POSITION 71120 50292)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER "SYS_CONFIG<6>")
+          (POSITION 71120 45212)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER "SYS_CONFIG<5>")
+          (POSITION 71120 40132)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER "SYS_CONFIG<4>")
+          (POSITION 71120 35052)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER "SYS_CONFIG<3>")
+          (POSITION 71120 29972)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER "SYS_CONFIG<2>")
+          (POSITION 71120 24892)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER "SYS_CONFIG<1>")
+          (POSITION 71120 19812)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER "SYS_CONFIG<0>")
+          (POSITION 71120 14732)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
       )
       (ATTRIBUTES
         (ATTRIBUTE
@@ -12703,12 +13312,12 @@
         )
         (ATTRIBUTE
           (NAME PINSWAP)
-          (VALUE "(I2C0_33_DATA,I2C0_SCLK,MONITOR_INT,PPC_RESET)")
+          (VALUE "(I2C0_33_DATA,I2C0_SCLK,MONITOR_INT,PPC_RESET,SYS_CONFIG7,SYS_CONFIG6,SYS_CONFIG5,SYS_CONFIG4,SYS_CONFIG3,SYS_CONFIG2,SYS_CONFIG1,SYS_CONFIG0)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME PINSWAP)
-          (VALUE "(I2C0_33_DATA,I2C0_SCLK,MONITOR_INT,PPC_RESET)")
+          (VALUE "(I2C0_33_DATA,I2C0_SCLK,MONITOR_INT,PPC_RESET,SYS_CONFIG7,SYS_CONFIG6,SYS_CONFIG5,SYS_CONFIG4,SYS_CONFIG3,SYS_CONFIG2,SYS_CONFIG1,SYS_CONFIG0)")
           (OWNER ICDBDXD)
         )
         (ATTRIBUTE
@@ -12718,7 +13327,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B11,B12,B13,B14,B5,B6,B8,B9,C10,C8,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A11,A13,A14,B5,C10,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -12850,11 +13459,39 @@
       (STANDARD LVCMOS33)
     )
     (IO
+      (PIN B11)
+      (STANDARD LVCMOS33)
+    )
+    (IO
+      (PIN B12)
+      (STANDARD LVCMOS33)
+    )
+    (IO
+      (PIN B13)
+      (STANDARD LVCMOS33)
+    )
+    (IO
+      (PIN B14)
+      (STANDARD LVCMOS33)
+    )
+    (IO
       (PIN B3)
       (STANDARD LVCMOS33)
     )
     (IO
       (PIN B4)
+      (STANDARD LVCMOS33)
+    )
+    (IO
+      (PIN B6)
+      (STANDARD LVCMOS33)
+    )
+    (IO
+      (PIN B8)
+      (STANDARD LVCMOS33)
+    )
+    (IO
+      (PIN B9)
       (STANDARD LVCMOS33)
     )
     (IO
@@ -12872,6 +13509,10 @@
     (IO
       (PIN C7)
       (STANDARD LVTTL)
+    )
+    (IO
+      (PIN C8)
+      (STANDARD LVCMOS33)
     )
     (IO
       (PIN D1)
@@ -13080,11 +13721,39 @@
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
+      (PIN B11)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
+      (PIN B12)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
+      (PIN B13)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
+      (PIN B14)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
       (PIN B3)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
       (PIN B4)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
+      (PIN B6)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
+      (PIN B8)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
+      (PIN B9)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
@@ -13101,6 +13770,10 @@
     )
     (SWAP
       (PIN C7)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
+      (PIN C8)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
