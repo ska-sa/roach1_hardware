@@ -26,7 +26,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1193060464"))
+		(file_ext "roach_top.pxr" "1193063090"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -2176,6 +2176,21 @@
 			(pin 7  4 "MAX9032AKA__MAX9032AKA_2" 0 "OUT" 0)
 			(pin 6  3 "MAX9032AKA__MAX9032AKA_2" 0 "IN-" 0)
 			(pin 5  3 "MAX9032AKA__MAX9032AKA_2" 0 "IN+" 0))
+		(part "MAX3370")
+		(logical_part_mapping "MAX3370"
+			(comp "U7" "U6"))
+		(logical_part "MAX3370"
+			(slots
+				(slot "MAX3370__MAX3370_1"
+					(attributes
+						(attval "DEVICE" "MAX3370")
+						(attval "PKG_TYPE" "SOT65P210X110-5N")
+						(attval "REFDES" "U?"))))
+			(pin 1  3 "MAX3370__MAX3370_1" 0 "VL" 0)
+			(pin 5  3 "MAX3370__MAX3370_1" 0 "VCC" 0)
+			(pin 3  5 "MAX3370__MAX3370_1" 0 "I/O_VL" 0)
+			(pin 4  5 "MAX3370__MAX3370_1" 0 "I/O_VCC" 0)
+			(pin 2  3 "MAX3370__MAX3370_1" 0 "GND" 0))
 		(part "LED1206X1_1")
 		(logical_part_mapping "LED1206X1_1"
 			(comp "D8" "D7" "D6" "D5" "D4" "D3" "D2"))
@@ -4882,8 +4897,8 @@
  "C279" "C278" "C277" "C276" "C275" "C272" "C263" "C262" "C261" "C260" "C259" "C258" "C257" "C162" "C161" "C160"
  "C159" "C158" "C137" "C136" "C135" "C134" "C133" "C132" "C131" "C130" "C129" "C128" "C127" "C126" "C125" "C123"
  "C121" "C119" "C118" "C116" "C115" "C114" "C113" "C112" "C111" "C110" "C109" "C108" "C107" "C106" "C105" "C104"
- "C102" "C101" "C100" "C98" "C96" "C94" "C93" "C92" "C87" "C86" "C85" "C45" "C44" "C43" "C42" "C41" "C40" "C39" "C38" "C37"
- "C36" "C35" "C34" "C19" "C18" "C12" "C11" "C10"))
+ "C102" "C101" "C100" "C98" "C96" "C94" "C93" "C92" "C87" "C86" "C85" "C63" "C62" "C61" "C45" "C44" "C43" "C42" "C41" "C40"
+ "C39" "C38" "C37" "C36" "C35" "C34" "C33" "C19" "C18" "C12" "C11" "C10"))
 		(logical_part "CHIPCAP0402X0_5"
 			(slots
 				(slot "C__CHIPCAP0402X0_5_1"
@@ -9425,6 +9440,26 @@
 				(attval "VALUE" "CY22381FX_0211")
 				(attval "DEVICE" "IC_CLKGEN_SOIC8_0211P21")
 				(attval "REFDES" "U9")))
+		(component "SOT65P210X110-5N"
+			(place "U7" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "IN")
+				(comp_pin "5" 0.0 0.0 "IN")
+				(comp_pin "3" 0.0 0.0 "BI")
+				(comp_pin "4" 0.0 0.0 "BI")
+				(comp_pin "2" 0.0 0.0 "IN"))
+			(attributes
+				(attval "DEVICE" "MAX3370")
+				(attval "REFDES" "U7")))
+		(component "SOT65P210X110-5N"
+			(place "U6" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "IN")
+				(comp_pin "5" 0.0 0.0 "IN")
+				(comp_pin "3" 0.0 0.0 "BI")
+				(comp_pin "4" 0.0 0.0 "BI")
+				(comp_pin "2" 0.0 0.0 "IN"))
+			(attributes
+				(attval "DEVICE" "MAX3370")
+				(attval "REFDES" "U6")))
 		(component "QFN50P300X300X100-13N"
 			(place "U5" 0.0 0.0 top 0.0
 				(comp_pin "4" 0.0 0.0 "IN")
@@ -22778,6 +22813,30 @@
 				(attval "TOLERANCE" "±10%")
 				(attval "DEVICE" "CAP1210_220")
 				(attval "REFDES" "C84")))
+		(component "CAPC1005X55N"
+			(place "C63" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "10NF")
+				(attval "DEVICE" "CHIPCAP0402X0_5")
+				(attval "REFDES" "C63")))
+		(component "CAPC1005X55N"
+			(place "C62" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "10NF")
+				(attval "DEVICE" "CHIPCAP0402X0_5")
+				(attval "REFDES" "C62")))
+		(component "CAPC1005X55N"
+			(place "C61" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "10NF")
+				(attval "DEVICE" "CHIPCAP0402X0_5")
+				(attval "REFDES" "C61")))
 		(component "CAPC3225X220N"
 			(place "C60" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
@@ -23048,6 +23107,14 @@
 				(attval "DESCRIPTION" "CERAMIC CHIP CAPACITOR - 0402")
 				(attval "DEVICE" "CHIPCAP0402X0_5")
 				(attval "REFDES" "C34")))
+		(component "CAPC1005X55N"
+			(place "C33" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "10NF")
+				(attval "DEVICE" "CHIPCAP0402X0_5")
+				(attval "REFDES" "C33")))
 		(component "CAPC1005X55N"
 			(place "C32" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
@@ -23426,6 +23493,8 @@
 		(func "$1I144\$1I155" "" "U11" 1)
 		(func "$1I144\$1I125" "" "U10" 1)
 		(func "$1I1002\$1I185" "" "U9" 1)
+		(func "$1I144\$1I361" "" "U7" 1)
+		(func "$1I144\$1I353" "" "U6" 1)
 		(func "$1I291\$1I342" "" "U5" 1)
 		(func "$1I291\$1I283" "" "U4" 1)
 		(func "$1I860\$1I243" "" "U3" 1)
@@ -24593,6 +24662,9 @@
 		(func "$1I1038\$1I2093" "" "C86" 1)
 		(func "$1I1038\$1I2092" "" "C85" 1)
 		(func "$1I1038\$1I1859" "" "C84" 1)
+		(func "$1I144\$1I380" "" "C63" 1)
+		(func "$1I144\$1I377" "" "C62" 1)
+		(func "$1I144\$1I374" "" "C61" 1)
 		(func "$1I1038\$1I1858" "" "C60" 1)
 		(func "$1I1038\$1I1852" "" "C59" 1)
 		(func "$1I1038\$1I1855" "" "C58" 1)
@@ -24620,6 +24692,7 @@
 		(func "$1I144\$1I182" "" "C36" 1)
 		(func "$1I144\$1I181" "" "C35" 1)
 		(func "$1I144\$1I180" "" "C34" 1)
+		(func "$1I144\$1I369" "" "C33" 1)
 		(func "$1I291\$1I378" "" "C32" 1)
 		(func "$1I860\$1I211" "" "C31" 1)
 		(func "$1I860\$1I287" "" "C30" 1)
@@ -25867,8 +25940,10 @@
 			(pins P6-3 U1-J2 SP2-2))
 		(net "$1I42\USB2_XCVR_D-"
 			(pins P6-2 U1-J1 SP2-1))
+		(net "$1I144\$1N42"
+			(pins U10-2 U10-3 U11-2 U11-3 R2-2 U6-4 C62-2))
 		(net "$1I144\$1N61"
-			(pins J2-1 JP2-2 U13-1 U14-1 C35-1 C36-1 C38-1))
+			(pins J2-1 JP2-2 U13-1 U14-1 C35-1 C36-1 C38-1 U7-5 C33-1))
 		(net "$1I144\$1N67"
 			(pins U13-15 U13-14 R47-1))
 		(net "$1I144\$1N94"
@@ -25890,7 +25965,7 @@
 		(net "$1I144\$1N119"
 			(pins J2-15 U14-6))
 		(net "$1I144\$1N128"
-			(pins J9-1 JP1-2 U10-1 U11-1 C39-1 C42-1 C43-1))
+			(pins J9-1 JP1-2 U10-1 U11-1 C39-1 C42-1 C43-1 U6-5 C62-1))
 		(net "$1I144\$1N144"
 			(pins U10-15 U10-14 R7-1))
 		(net "$1I144\$1N153"
@@ -25933,6 +26008,8 @@
 			(pins R49-2 J10-1))
 		(net "$1I144\$1N305"
 			(pins R50-2 J11-1))
+		(net "$1I144\$1N349"
+			(pins U13-2 U13-3 U14-2 U14-3 R1-1 U7-4 C33-2))
 		(net "$1I144\GPIOLVC150"
 			(pins U14-10 U15-E29))
 		(net "$1I144\GPIOLVC151"
@@ -25942,7 +26019,7 @@
 		(net "$1I144\GPIOLVC153"
 			(pins U14-13 U15-B20))
 		(net "$1I144\GPIOLVC184"
-			(pins U12-7 U13-2 U13-3 U14-2 U14-3 R1-1 U15-AA30))
+			(pins U12-7 U15-AA30 U7-3 C61-2))
 		(net "$1I144\GPIOLVC187"
 			(pins U12-6 U15-AC29))
 		(net "$1I144\GPIOLVC331"
@@ -25974,7 +26051,7 @@
 		(net "$1I144\GPIOLVC1819"
 			(pins U10-13 U15-AP24))
 		(net "$1I144\GPIOLVC1820"
-			(pins U10-2 U10-3 U11-2 U11-3 R2-2 U15-AM20))
+			(pins U15-AM20 U6-3))
 		(net "$1I289\$1N1318"
 			(pins J8-6))
 		(net "$1I289\$1N1319"
@@ -27622,7 +27699,7 @@
  C497-1 C525-1 C526-1 C527-1 C528-1 C529-1 C530-1 C531-1 C532-1 R262-2 R263-2
  U58-11 U58-19 U58-25 U58-35 U58-48 U58-63 U58-73 U58-92 U58-103 U58-105
  U58-111 U58-117 U58-123 RO42-1 C21-1 C22-1 J4-1 C25-1 C24-1 U3-2 U3-1 U60-N11
- R295-2))
+ R295-2 U6-1 U7-1 C61-1 C63-1))
 		(net "1V8_CPU"
 			(pins RO42-2 C627-1 C636-1 C640-1 C645-1 C660-1 C668-1 C672-1 C677-1 C681-1
  C692-1 C696-1 C700-1 C707-1 C712-1 C730-1 C740-1 L11-1 U1-V5 U1-AK7 U1-AK9
@@ -27965,7 +28042,7 @@
  C553-2 C554-2 C555-2 C556-2 C557-2 C558-2 C559-2 C560-2 C561-2 C562-2 C563-2
  C564-2 C565-2 C566-2 C567-2 C568-2 C569-2 C570-2 C571-2 C572-2 C573-2 C574-2
  C575-2 C576-2 C577-2 C578-2 C579-2 C580-2 C581-2 C582-2 C583-2 C584-2 C585-2
- C586-2 C587-2 C588-2 C589-2 R281-1 R288-1 R290-1))
+ C586-2 C587-2 C588-2 C589-2 R281-1 R288-1 R290-1 U6-2 U7-2 C63-2))
 		(net "GPIO44"
 			(pins RO5-1 U1-V32))
 		(net "I1V0"
@@ -30605,64 +30682,104 @@
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I803\$1N802"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I803\$1N801"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I803\$1N800"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I803\$1N799"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I803\$1N798"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I803\$1N797"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I803\$1N796"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I803\$1N795"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I803\$1N794"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I803\$1N793"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I803\$1N792"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I803\$1N791"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I803\$1N790"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I803\$1N789"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I803\$1N788"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I803\$1N787"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I803\$1N786"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I803\$1N785"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I803\$1N784"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I803\$1N783"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I803\$1N716"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
