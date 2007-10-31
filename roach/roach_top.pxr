@@ -764,10 +764,6 @@ Net_Cross_Reference
 ("$1I42\USB2_XCVR_D-"    "$1I42\USB2_XCVR_D-")
 ("$1I42\USB2_XCVR_D+"    "$1I42\USB2_XCVR_D+")
 ("$1I42\N29340527"    "$1I42\N29340527")
-("CHASSIS_GND"    "CHASSIS_GND")
-("CHASSIS_GND"    "$1I42\CHASSIS_GND")
-("CHASSIS_GND"    "$1I810\CHASSIS_GND")
-("CHASSIS_GND"    "$1I967\CHASSIS_GND")
 ("$1I42\$1N414"    "$1I42\$1N414")
 ("$1I42\$1N413"    "$1I42\$1N413")
 ("$1I42\$1N412"    "$1I42\$1N412")
@@ -2821,10 +2817,6 @@ Internal_Net_Cross_Reference
 ("$1I42\USB2_XCVR_D-"    "$1I42\USB2_XCVR_D-")
 ("$1I42\USB2_XCVR_D+"    "$1I42\USB2_XCVR_D+")
 ("$1I42\N29340527"    "$1I42\N29340527")
-("CHASSIS_GND"    "CHASSIS_GND")
-("CHASSIS_GND"    "$1I42\CHASSIS_GND")
-("CHASSIS_GND"    "$1I810\CHASSIS_GND")
-("CHASSIS_GND"    "$1I967\CHASSIS_GND")
 ("$1I42\$1N414"    "$1I42\$1N414")
 ("$1I42\$1N413"    "$1I42\$1N413")
 ("$1I42\$1N412"    "$1I42\$1N412")
@@ -9887,8 +9879,8 @@ Pin_Cross_Reference
 )
 ("J25"
 	( 1    "$1I810\$1I167"
-		(17    "CHASSIS_GND")
-		(18    "CHASSIS_GND")
+		(17    "GND")
+		(18    "GND")
 		(10    "GND")
 		(14    "$1I810\$1N324")
 		(13    "$1I810\$1N323")
@@ -9909,8 +9901,8 @@ Pin_Cross_Reference
 )
 ("P6"
 	( 1    "$1I42\$1I389"
-		(5    "CHASSIS_GND")
-		(6    "CHASSIS_GND")
+		(5    "GND")
+		(6    "GND")
 		(4    "GND")
 		(3    "$1I42\USB2_XCVR_D+")
 		(2    "$1I42\USB2_XCVR_D-")
@@ -16645,11 +16637,11 @@ Pin_Cross_Reference
 ("SP2"
 	( 1    "$1I42\$1I212"
 		(1    "$1I42\USB2_XCVR_D-")
-		(3    "CHASSIS_GND")
+		(3    "GND")
 	)
 	( 2    "$1I42\$1I265"
 		(2    "$1I42\USB2_XCVR_D+")
-		(3    "CHASSIS_GND")
+		(3    "GND")
 	)
 )
 ("SW2"
@@ -17221,13 +17213,13 @@ Pin_Cross_Reference
 ("VR3"
 	( 1    "$1I42\$1I232"
 		(1    "GND")
-		(2    "CHASSIS_GND")
+		(2    "GND")
 	)
 )
 ("VR4"
 	( 1    "$1I42\$1I270"
 		(1    "$1I42\$1N20")
-		(2    "CHASSIS_GND")
+		(2    "GND")
 	)
 )
 ("U54"
@@ -17393,8 +17385,8 @@ Pin_Cross_Reference
 		(11    "")
 		(12    "")
 		(3    "$1I967\XPORT_RESET")
-		(9    "CHASSIS_GND")
-		(10    "CHASSIS_GND")
+		(9    "GND")
+		(10    "GND")
 		(2    "3V3AUX")
 	)
 )
