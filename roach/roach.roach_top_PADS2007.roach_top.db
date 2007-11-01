@@ -1,11 +1,13 @@
 
-(pcb "D:\ROACH\elec\roach\roach.roach_top_PADS2007.roach_top.db"
+(pcb
+ "C:\Users\mrevnell\roach\elec\roach\roach.roach_top_PADS2007.roach_top.db"
 	(version "5.0.0")
 	(units "basic")
 	(config_properties
 		(attributes
-			(attval "PcbConfigName" "D:\ROACH\elec\roach\roach_pcb.cfg")
-			(attval "CnsFile" ".\pads2007.cns")
+			(attval "PcbConfigName"
+ "C:\Users\mrevnell\roach\elec\roach\roach_pcb.cfg")
+			(attval "CnsFile" "C:\Users\mrevnell\roach\elec\roach\pads2007.cns")
 			(attval "BeAdapter" "PADS2007")
 			(attval "FeAdapter" "DxDesigner")
 			(attval "SYSCONFIG" "pcbfwd")
@@ -26,7 +28,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1193835808"))
+		(file_ext "roach_top.pxr" "1193936548"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -25060,25 +25062,23 @@
 		(func "$1I860\$1I179" "" "C1" 1))
 	(network
 		(net "$1I2\$1N60"
-			(pins V24-1 V25-1 P3-S25 C146-1))
+			(pins V24-1 V25-1 P3-S23 C146-1))
 		(net "$1I2\$1N64"
-			(pins V22-1 V23-1 P3-S23 C144-1))
+			(pins V22-1 V23-1 P3-S26 C144-1))
 		(net "$1I2\$1N265"
-			(pins V8-1 V9-1 P3-S1 C106-1))
+			(pins V8-1 V9-1 P3-S3 C106-1))
 		(net "$1I2\$1N266"
-			(pins V8-2 V9-2 P3-S2 C107-1))
+			(pins V8-2 V9-2 P3-S4 C107-1))
 		(net "$1I2\$1N267"
-			(pins V6-1 V7-1 P3-S3 C109-1))
+			(pins V6-1 V7-1 P3-S1 C109-1))
 		(net "$1I2\$1N268"
-			(pins V6-2 V7-2 P3-S4 C108-1))
-		(net "$1I2\$1N455"
-			(pins V18-1 V19-1 P3-S19 C110-1))
+			(pins V6-2 V7-2 P3-S2 C108-1))
 		(net "$1I2\$1N456"
-			(pins V18-2 V19-2 P3-S20 C111-1))
+			(pins V18-2 V19-2 P3-S21 C111-1))
 		(net "$1I2\$1N457"
-			(pins V20-1 V21-1 P3-S21 C112-1))
+			(pins V20-1 V21-1 P3-S19 C112-1))
 		(net "$1I2\$1N491"
-			(pins V20-2 V21-2 P3-S22 C113-1))
+			(pins V20-2 V21-2 P3-S20 C113-1))
 		(net "$1I2\$1N579"
 			(pins P3-G7 C127-1 R97-1 U21-2 U21-5))
 		(net "$1I2\$1N583"
@@ -25120,17 +25120,17 @@
 		(net "$1I2\$1N894"
 			(pins X1-6 FB26-2 R96-2 U8-7 U8-14 C64-1 C65-1 C66-1 C67-1 C137-1))
 		(net "$1I2\$1N902"
-			(pins V4-1 V5-1 P3-S5 C140-1))
+			(pins V4-1 V5-1 P3-S8 C140-1))
 		(net "$1I2\$1N903"
-			(pins V4-2 V5-2 P3-S6 C141-1))
+			(pins V4-2 V5-2 P3-S7 C141-1))
 		(net "$1I2\$1N904"
-			(pins V2-1 V3-1 P3-S7 C142-1))
+			(pins V2-1 V3-1 P3-S5 C142-1))
 		(net "$1I2\$1N905"
-			(pins V2-2 V3-2 P3-S8 C143-1))
+			(pins V2-2 V3-2 P3-S6 C143-1))
 		(net "$1I2\$1N917"
-			(pins V22-2 V23-2 P3-S24 C145-1))
+			(pins V22-2 V23-2 P3-S25 C145-1))
 		(net "$1I2\$1N919"
-			(pins V24-2 V25-2 P3-S26 C147-1))
+			(pins V24-2 V25-2 P3-S24 C147-1))
 		(net "$1I2\$1N1090"
 			(pins U8-10))
 		(net "$1I2\$1N1096"
@@ -25151,6 +25151,8 @@
 			(pins U8-16 C69-1))
 		(net "$1I2\$1N1151"
 			(pins U8-15 C68-1))
+		(net "$1I2\$1N1177"
+			(pins V18-1 V19-1 P3-S22 C110-1))
 		(net "$1I2\FAULT0"
 			(pins P3-G6 C131-1 D2-2))
 		(net "$1I2\FAULT1"
@@ -25220,37 +25222,37 @@
 		(net "$1I2\MGTRX1_118_P"
 			(pins U15-AB1 C146-2))
 		(net "$1I2\MGTTX0_112_N"
-			(pins V12-2 V13-2 P3-S15 U15-AN6))
+			(pins V12-2 V13-2 P3-S11 U15-AN6))
 		(net "$1I2\MGTTX0_112_P"
-			(pins V12-1 V13-1 P3-S16 U15-AN5))
+			(pins V12-1 V13-1 P3-S12 U15-AN5))
 		(net "$1I2\MGTTX0_114_N"
-			(pins V14-2 V15-2 P3-S11 U15-AL2))
+			(pins V14-2 V15-2 P3-S15 U15-AL2))
 		(net "$1I2\MGTTX0_114_P"
-			(pins V14-1 V15-1 P3-S12 U15-AK2))
+			(pins V14-1 V15-1 P3-S16 U15-AK2))
 		(net "$1I2\MGTTX0_116_N"
-			(pins V26-1 V27-1 P3-S33 U15-AE2))
+			(pins V26-1 V27-1 P3-S29 U15-AE2))
 		(net "$1I2\MGTTX0_116_P"
-			(pins V26-2 V27-2 P3-S34 U15-AD2))
+			(pins V26-2 V27-2 P3-S30 U15-AD2))
 		(net "$1I2\MGTTX0_118_N"
-			(pins V30-2 V31-2 P3-S29 U15-W2))
+			(pins V30-2 V31-2 P3-S33 U15-W2))
 		(net "$1I2\MGTTX0_118_P"
-			(pins V30-1 V31-1 P3-S30 U15-V2))
+			(pins V30-1 V31-1 P3-S34 U15-V2))
 		(net "$1I2\MGTTX1_112_N"
-			(pins V10-2 V11-2 P3-S13 U15-AN9))
+			(pins V10-2 V11-2 P3-S10 U15-AN9))
 		(net "$1I2\MGTTX1_112_P"
-			(pins V10-1 V11-1 P3-S14 U15-AN10))
+			(pins V10-1 V11-1 P3-S9 U15-AN10))
 		(net "$1I2\MGTTX1_114_N"
-			(pins V16-2 V17-2 P3-S9 U15-AN3))
+			(pins V16-2 V17-2 P3-S13 U15-AN3))
 		(net "$1I2\MGTTX1_114_P"
-			(pins V16-1 V17-1 P3-S10 U15-AN4))
+			(pins V16-1 V17-1 P3-S14 U15-AN4))
 		(net "$1I2\MGTTX1_116_N"
-			(pins V28-1 V29-1 P3-S31 U15-AH2))
+			(pins V28-1 V29-1 P3-S28 U15-AH2))
 		(net "$1I2\MGTTX1_116_P"
-			(pins V28-2 V29-2 P3-S32 U15-AJ2))
+			(pins V28-2 V29-2 P3-S27 U15-AJ2))
 		(net "$1I2\MGTTX1_118_N"
-			(pins V32-2 V33-2 P3-S27 U15-AB2))
+			(pins V32-2 V33-2 P3-S32 U15-AB2))
 		(net "$1I2\MGTTX1_118_P"
-			(pins V32-1 V33-1 P3-S28 U15-AC2))
+			(pins V32-1 V33-1 P3-S31 U15-AC2))
 		(net "$1I2\MGT_REFCLK_Q1_0_N"
 			(pins U15-AM7 C69-2))
 		(net "$1I2\MGT_REFCLK_Q1_0_P"
@@ -25276,37 +25278,37 @@
 		(net "$1I2\ODIS1"
 			(pins R91-2 P3-G11 JP5-2 C134-1))
 		(net "$1I3\$1N26"
-			(pins V35-2 V36-2 P3-S46 C249-1))
+			(pins V35-2 V36-2 P3-S44 C249-1))
 		(net "$1I3\$1N27"
-			(pins V35-1 V36-1 P3-S45 C250-1))
+			(pins V35-1 V36-1 P3-S43 C250-1))
 		(net "$1I3\$1N28"
-			(pins V1-2 V34-2 P3-S44 C252-1))
+			(pins V1-2 V34-2 P3-S45 C252-1))
 		(net "$1I3\$1N29"
-			(pins V1-1 V34-1 P3-S43 C251-1))
+			(pins V1-1 V34-1 P3-S46 C251-1))
 		(net "$1I3\$1N59"
-			(pins V55-2 V56-2 P3-S64 C253-1))
+			(pins V55-2 V56-2 P3-S62 C253-1))
 		(net "$1I3\$1N60"
-			(pins V55-1 V56-1 P3-S63 C254-1))
+			(pins V55-1 V56-1 P3-S61 C254-1))
 		(net "$1I3\$1N63"
-			(pins V53-2 V54-2 P3-S62 C255-1))
+			(pins V53-2 V54-2 P3-S63 C255-1))
 		(net "$1I3\$1N64"
-			(pins V53-1 V54-1 P3-S61 C256-1))
+			(pins V53-1 V54-1 P3-S64 C256-1))
 		(net "$1I3\$1N265"
-			(pins V39-1 V40-1 P3-S39 C183-1))
+			(pins V39-1 V40-1 P3-S42 C183-1))
 		(net "$1I3\$1N266"
-			(pins V39-2 V40-2 P3-S40 C184-1))
+			(pins V39-2 V40-2 P3-S41 C184-1))
 		(net "$1I3\$1N267"
-			(pins V37-1 V38-1 P3-S41 C186-1))
+			(pins V37-1 V38-1 P3-S39 C186-1))
 		(net "$1I3\$1N268"
-			(pins V37-2 V38-2 P3-S42 C185-1))
+			(pins V37-2 V38-2 P3-S40 C185-1))
 		(net "$1I3\$1N455"
-			(pins V49-1 V50-1 P3-S57 C187-1))
+			(pins V49-1 V50-1 P3-S60 C187-1))
 		(net "$1I3\$1N456"
-			(pins V49-2 V50-2 P3-S58 C188-1))
+			(pins V49-2 V50-2 P3-S59 C188-1))
 		(net "$1I3\$1N457"
-			(pins V51-1 V52-1 P3-S59 C189-1))
+			(pins V51-1 V52-1 P3-S57 C189-1))
 		(net "$1I3\$1N491"
-			(pins V51-2 V52-2 P3-S60 C190-1))
+			(pins V51-2 V52-2 P3-S58 C190-1))
 		(net "$1I3\$1N581"
 			(pins U28-5))
 		(net "$1I3\$1N588"
@@ -25440,37 +25442,37 @@
 		(net "$1I3\MGTRX1_126_P"
 			(pins U15-A6 C254-2))
 		(net "$1I3\MGTTX0_120_N"
-			(pins V43-2 V44-2 P3-S53 U15-N2))
+			(pins V43-2 V44-2 P3-S49 U15-N2))
 		(net "$1I3\MGTTX0_120_P"
-			(pins V43-1 V44-1 P3-S54 U15-M2))
+			(pins V43-1 V44-1 P3-S50 U15-M2))
 		(net "$1I3\MGTTX0_122_N"
-			(pins V45-2 V46-2 P3-S49 U15-G2))
+			(pins V45-2 V46-2 P3-S53 U15-G2))
 		(net "$1I3\MGTTX0_122_P"
-			(pins V45-1 V46-1 P3-S50 U15-F2))
+			(pins V45-1 V46-1 P3-S54 U15-F2))
 		(net "$1I3\MGTTX0_124_N"
-			(pins V57-2 V58-2 P3-S71 U15-B3))
+			(pins V57-2 V58-2 P3-S67 U15-B3))
 		(net "$1I3\MGTTX0_124_P"
-			(pins V57-1 V58-1 P3-S72 U15-B4))
+			(pins V57-1 V58-1 P3-S68 U15-B4))
 		(net "$1I3\MGTTX0_126_N"
-			(pins V61-2 V62-2 P3-S67 U15-B9))
+			(pins V61-2 V62-2 P3-S71 U15-B9))
 		(net "$1I3\MGTTX0_126_P"
-			(pins V61-1 V62-1 P3-S68 U15-B10))
+			(pins V61-1 V62-1 P3-S72 U15-B10))
 		(net "$1I3\MGTTX1_120_N"
-			(pins V41-2 V42-2 P3-S51 U15-T2))
+			(pins V41-2 V42-2 P3-S48 U15-T2))
 		(net "$1I3\MGTTX1_120_P"
-			(pins V41-1 V42-1 P3-S52 U15-U2))
+			(pins V41-1 V42-1 P3-S47 U15-U2))
 		(net "$1I3\MGTTX1_122_N"
-			(pins V47-2 V48-2 P3-S47 U15-K2))
+			(pins V47-2 V48-2 P3-S52 U15-K2))
 		(net "$1I3\MGTTX1_122_P"
-			(pins V47-1 V48-1 P3-S48 U15-L2))
+			(pins V47-1 V48-1 P3-S51 U15-L2))
 		(net "$1I3\MGTTX1_124_N"
-			(pins V59-2 V60-2 P3-S69 U15-D2))
+			(pins V59-2 V60-2 P3-S66 U15-D2))
 		(net "$1I3\MGTTX1_124_P"
-			(pins V59-1 V60-1 P3-S70 U15-E2))
+			(pins V59-1 V60-1 P3-S65 U15-E2))
 		(net "$1I3\MGTTX1_126_N"
-			(pins V63-2 V64-2 P3-S65 U15-B6))
+			(pins V63-2 V64-2 P3-S69 U15-B6))
 		(net "$1I3\MGTTX1_126_P"
-			(pins V63-1 V64-1 P3-S66 U15-B5))
+			(pins V63-1 V64-1 P3-S70 U15-B5))
 		(net "$1I3\MGT_REFCLK_Q2_0_N"
 			(pins U15-P3 C99-2))
 		(net "$1I3\MGT_REFCLK_Q2_0_P"
@@ -27548,9 +27550,9 @@
 		(net "$1I967\TCK"
 			(pins U60-N15 J27-1))
 		(net "$1I967\TD1"
-			(pins U60-R3 J31-4))
+			(pins U60-R3 J31-2))
 		(net "$1I967\TD3"
-			(pins U60-T5 J31-8))
+			(pins U60-T5 J31-6))
 		(net "$1I967\TD4"
 			(pins U60-T7 J31-10))
 		(net "$1I967\TD5"
@@ -28550,7 +28552,7 @@
 		(net "PPC_RESET"
 			(pins U54-38 U60-J1))
 		(net "PPC_THERMONA"
-			(pins U1-C16 U60-R6 J31-6))
+			(pins U1-C16 U60-R6 J31-8))
 		(net "PPC_THERMONB"
 			(pins U1-D16 U60-T6 J31-5 J31-7))
 		(net "PR_W#"
@@ -28646,7 +28648,7 @@
 		(net "SYS_CONFIG7"
 			(pins U54-66 U60-B6))
 		(net "TD0"
-			(pins U15-W18 U60-R4 J31-2))
+			(pins U15-W18 U60-R4 J31-4))
 		(net "V5_INT#"
 			(pins U1-AD34 R33-2 U15-H12))
 		(net "VCC_JTAG"
@@ -34151,6 +34153,11 @@
 		(net_scalar "$1I2\FAULT0"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I2\$1N1177"
+			(diff_partner "$1I2\$1N456")
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I2\$1N455,$1I2\$1N456")))
 		(net_scalar "$1I2\$1N1151"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
@@ -34290,12 +34297,7 @@
 				(cnsval "SCHEDULED" "FALSE")
 				(cnsval "DIFF_PAIR" "$1I2\$1N457,$1I2\$1N491")))
 		(net_scalar "$1I2\$1N456"
-			(diff_partner "$1I2\$1N455")
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFF_PAIR" "$1I2\$1N455,$1I2\$1N456")))
-		(net_scalar "$1I2\$1N455"
-			(diff_partner "$1I2\$1N456")
+			(diff_partner "$1I2\$1N1177")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
 				(cnsval "DIFF_PAIR" "$1I2\$1N455,$1I2\$1N456")))
