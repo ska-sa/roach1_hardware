@@ -1,11 +1,13 @@
 
-(pcb "D:\ROACH\elec\roach\roach.roach_top_PADS2007.roach_top.db"
+(pcb
+ "C:\Users\mrevnell\roach\elec\roach\roach.roach_top_PADS2007.roach_top.db"
 	(version "5.0.0")
 	(units "basic")
 	(config_properties
 		(attributes
-			(attval "PcbConfigName" "D:\ROACH\elec\roach\roach_pcb.cfg")
-			(attval "CnsFile" ".\pads2007.cns")
+			(attval "PcbConfigName"
+ "C:\Users\mrevnell\roach\elec\roach\roach_pcb.cfg")
+			(attval "CnsFile" "C:\Users\mrevnell\roach\elec\roach\pads2007.cns")
 			(attval "BeAdapter" "PADS2007")
 			(attval "FeAdapter" "DxDesigner")
 			(attval "SYSCONFIG" "pcbfwd")
@@ -26,7 +28,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1194000798"))
+		(file_ext "roach_top.pxr" "1194296600"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -28139,7 +28141,7 @@
 		(net "5V"
 			(pins R302-1 R303-1 C595-1 U62-10 R53-1 R54-1 C58-1 U16-10 R229-1 R230-1
  C459-1 U32-10 U4-2 U5-2 U25-2 C6-1 C16-1 R103-2 R107-2 R136-2 R137-2 C158-1
- D9-4 PTC1-1 R235-1 R236-1 C467-1 U33-10 L6-1 C2-1 C1-1 C3-1 C4-1 Q13-5 Q13-6
+ D9-4 PTC1-1 R235-1 R236-1 C467-1 U33-10 C2-1 C1-1 C3-1 C4-1 Q13-5 Q13-6
  Q13-7 Q13-8))
 		(net "5V0"
 			(pins C314-1 C315-1 P5-W2 P5-X2 P5-Y2 P5-Z2 C336-1 C337-1 P7-W2 P7-X2 P7-Y2
@@ -28147,7 +28149,7 @@
 		(net "5VAUX"
 			(pins J32-10 R180-1 J18-9 U59-10 U59-11 U59-5 U59-6 U59-7 U59-8 C552-1))
 		(net "5V_ATX"
-			(pins J32-6 J18-4 J18-6 J18-21 J18-22 J18-23 R185-2 U60-R7 R292-1))
+			(pins J32-6 L6-1 J18-4 J18-6 J18-21 J18-22 J18-23 R185-2 U60-R7 R292-1))
 		(net "5V_VIN"
 			(pins CR1-1 J14-4 P2-4))
 		(net "12V"
