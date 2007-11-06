@@ -1,13 +1,11 @@
 
-(pcb
- "C:\Users\mrevnell\roach\elec\roach\roach.roach_top_PADS2007.roach_top.db"
+(pcb "D:\ROACH\elec\roach\roach.roach_top_PADS2007.roach_top.db"
 	(version "5.0.0")
 	(units "basic")
 	(config_properties
 		(attributes
-			(attval "PcbConfigName"
- "C:\Users\mrevnell\roach\elec\roach\roach_pcb.cfg")
-			(attval "CnsFile" "C:\Users\mrevnell\roach\elec\roach\pads2007.cns")
+			(attval "PcbConfigName" "D:\ROACH\elec\roach\roach_pcb.cfg")
+			(attval "CnsFile" ".\pads2007.cns")
 			(attval "BeAdapter" "PADS2007")
 			(attval "FeAdapter" "DxDesigner")
 			(attval "SYSCONFIG" "pcbfwd")
@@ -28,7 +26,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1194296600"))
+		(file_ext "roach_top.pxr" "1194340090"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -5214,7 +5212,7 @@
 			(pin 3  5 "BSS138__BSS138_1" 0 "D" 0))
 		(part "BLM31PG330SN1PK")
 		(logical_part_mapping "BLM31PG330SN1PK"
-			(comp "L15" "L14" "L7" "L6"))
+			(comp "L16" "L15" "L14" "L7" "L6" "L5"))
 		(logical_part "BLM31PG330SN1PK"
 			(slots
 				(slot "INDUCTOR__BLM31PG330SN1PK_1"
@@ -14769,6 +14767,16 @@
 				(attval "DEVICE" "CON_HDR_2X8_M_VT_0R1_SMT")
 				(attval "REFDES" "P1")))
 		(component "INDC3216X130N"
+			(place "L16" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "BLM31PG121SN1B")
+				(attval "TOLERANCE" "25%")
+				(attval "GEOMETRY.HEIGHT" "1.12")
+				(attval "DEVICE" "BLM31PG330SN1PK")
+				(attval "REFDES" "L16")))
+		(component "INDC3216X130N"
 			(place "L15" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
@@ -14858,6 +14866,16 @@
 				(attval "GEOMETRY.HEIGHT" "1.12")
 				(attval "DEVICE" "BLM31PG330SN1PK")
 				(attval "REFDES" "L6")))
+		(component "INDC3216X130N"
+			(place "L5" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "BLM31PG121SN1B")
+				(attval "TOLERANCE" "25%")
+				(attval "GEOMETRY.HEIGHT" "1.12")
+				(attval "DEVICE" "BLM31PG330SN1PK")
+				(attval "REFDES" "L5")))
 		(component "INDC2012X130N"
 			(place "L4" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "OUT")
@@ -24229,6 +24247,7 @@
 		(func "F1" "$1I2\$1I416" "P3" 1)
 		(func "$1I863\$1I377" "" "P2" 1)
 		(func "$1I1002\$1I237" "" "P1" 1)
+		(func "$1I671\$1I462" "" "L16" 1)
 		(func "$1I671\$1I330" "" "L15" 1)
 		(func "$1I671\$1I276" "" "L14" 1)
 		(func "$1I860\$1I201" "" "L13" 1)
@@ -24239,6 +24258,7 @@
 		(func "$1I860\$1I270" "" "L8" 1)
 		(func "$1I671\$1I219" "" "L7" 1)
 		(func "$1I671\$1I166" "" "L6" 1)
+		(func "$1I671\$1I461" "" "L5" 1)
 		(func "$1I860\$1I160" "" "L4" 1)
 		(func "$1I860\$1I165" "" "L3" 1)
 		(func "$1I860\$1I263" "" "L2" 1)
@@ -26756,7 +26776,7 @@
 		(net "$1I291\SYS_CLK_P"
 			(pins X2-4 U15-H17))
 		(net "$1I671\$1N147"
-			(pins U50-6 U50-2 C401-1 C403-1 C419-1 L6-2))
+			(pins U50-6 U50-2 C401-1 C403-1 C419-1 L6-2 L5-2 L16-2))
 		(net "$1I671\$1N148"
 			(pins U50-1 Q4-3))
 		(net "$1I671\$1N150"
@@ -28141,17 +28161,13 @@
 		(net "5V"
 			(pins R302-1 R303-1 C595-1 U62-10 R53-1 R54-1 C58-1 U16-10 R229-1 R230-1
  C459-1 U32-10 U4-2 U5-2 U25-2 C6-1 C16-1 R103-2 R107-2 R136-2 R137-2 C158-1
- D9-4 PTC1-1 R235-1 R236-1 C467-1 U33-10 C2-1 C1-1 C3-1 C4-1 Q13-5 Q13-6
- Q13-7 Q13-8))
-		(net "5V0"
-			(pins C314-1 C315-1 P5-W2 P5-X2 P5-Y2 P5-Z2 C336-1 C337-1 P7-W2 P7-X2 P7-Y2
- P7-Z2))
+ D9-4 C314-1 C315-1 P5-W2 P5-X2 P5-Y2 P5-Z2 PTC1-1 C336-1 C337-1 P7-W2 P7-X2
+ P7-Y2 P7-Z2 R235-1 R236-1 C467-1 U33-10 L6-1 L5-1 L16-1 CR1-1 C2-1 C1-1 C3-1
+ C4-1 J14-4 P2-4 Q13-5 Q13-6 Q13-7 Q13-8))
 		(net "5VAUX"
 			(pins J32-10 R180-1 J18-9 U59-10 U59-11 U59-5 U59-6 U59-7 U59-8 C552-1))
 		(net "5V_ATX"
-			(pins J32-6 L6-1 J18-4 J18-6 J18-21 J18-22 J18-23 R185-2 U60-R7 R292-1))
-		(net "5V_VIN"
-			(pins CR1-1 J14-4 P2-4))
+			(pins J32-6 J18-4 J18-6 J18-21 J18-22 J18-23 R185-2 U60-R7 R292-1))
 		(net "12V"
 			(pins L7-1 L14-1 L15-1 Q12-5 Q12-6 Q12-7 Q12-8))
 		(net "12V_ATX"
@@ -29193,16 +29209,10 @@
 		(net_scalar "12V"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "5V_VIN"
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "5V_ATX"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "5VAUX"
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "5V0"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "5V"
