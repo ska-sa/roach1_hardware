@@ -340,25 +340,6 @@ AP header5x2 9 PINTYPE=BI
 AP header5x2 9 #=8
 AP header5x2 10 #=9
 AP header5x2 10 PINTYPE=BI
-|Q con_atx_psu4 1
-AS con_atx_psu4 LEVEL=STD
-AS con_atx_psu4 DESCRIPTION=ATX +12V 4 PIN CONNECTOR
-AS con_atx_psu4 PKG_TYPE=MOLEX_39-29-9042
-AS con_atx_psu4 PARTS=1
-AS con_atx_psu4 MANUFACTURER=MOLEX
-AS con_atx_psu4 DEVICE=MOLEX_39-29-9042
-AS con_atx_psu4 P/D_NUM=39-29-9042
-AS con_atx_psu4 REFDES=J?
-AS con_atx_psu4 PINORDER=12V1 12V2 COM1 COM2
-AS con_atx_psu4 INOV_VER_REC=5:45_9-26-07
-AP con_atx_psu4 1 PINTYPE=OUT
-AP con_atx_psu4 1 #=3
-AP con_atx_psu4 2 #=4
-AP con_atx_psu4 2 PINTYPE=OUT
-AP con_atx_psu4 3 PINTYPE=OUT
-AP con_atx_psu4 3 #=1
-AP con_atx_psu4 4 #=2
-AP con_atx_psu4 4 PINTYPE=OUT
 |Q gnd_link 1
 AS gnd_link PKG_TYPE=GND_LINK
 AS gnd_link REFDES=JP?
@@ -1017,20 +998,7 @@ API $1I414 header5x2 9 PINLOC=3H7
 API $1I414 header5x2 9 #=8
 API $1I414 header5x2 10 PINLOC=3H7
 API $1I414 header5x2 10 #=9
-M con_atx_psu4 $1I257
-I $1I257 con_atx_psu4 12V_ATX 12V_ATX ATX_GND ATX_GND SCHLOC=3F5`REFDES=J16`
-|R 5:45_9-26-07
-API $1I257 con_atx_psu4 1 PINLOC=3F5
-API $1I257 con_atx_psu4 1 #=3
-API $1I257 con_atx_psu4 2 PINLOC=3F5
-API $1I257 con_atx_psu4 2 #=4
-API $1I257 con_atx_psu4 3 PINLOC=3E5
-API $1I257 con_atx_psu4 3 #=1
-API $1I257 con_atx_psu4 4 PINLOC=3E5
-API $1I257 con_atx_psu4 4 #=2
 M gnd_link $1I478
 I $1I478 gnd_link GND ATX_GND REFDES=JP30`
 |R 17:12_11-6-07
-API $1I478 gnd_link 1 #=1
-API $1I478 gnd_link 2 #=2
 EW

@@ -28,7 +28,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1194391703"))
+		(file_ext "roach_top.pxr" "1194474798"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -1984,21 +1984,6 @@
 			(pin 1  4 "CON_ATX_PSU24__MOLEX_44206-0007_1" 0 "3V3_1" 0)
 			(pin 11  4 "CON_ATX_PSU24__MOLEX_44206-0007_1" 0 "12V1_2" 0)
 			(pin 10  4 "CON_ATX_PSU24__MOLEX_44206-0007_1" 0 "12V1_1" 0))
-		(part "MOLEX_39-29-9042")
-		(logical_part_mapping "MOLEX_39-29-9042"
-			(comp "J16"))
-		(logical_part "MOLEX_39-29-9042"
-			(slots
-				(slot "CON_ATX_PSU4__MOLEX_39-29-9042_1"
-					(attributes
-						(attval "Description" "ATX +12V 4 PIN CONNECTOR")
-						(attval "DEVICE" "MOLEX_39-29-9042")
-						(attval "PKG_TYPE" "MOLEX_39-29-9042")
-						(attval "REFDES" "J?"))))
-			(pin 2  4 "CON_ATX_PSU4__MOLEX_39-29-9042_1" 0 "COM2" 0)
-			(pin 1  4 "CON_ATX_PSU4__MOLEX_39-29-9042_1" 0 "COM1" 0)
-			(pin 4  4 "CON_ATX_PSU4__MOLEX_39-29-9042_1" 0 "12V2" 0)
-			(pin 3  4 "CON_ATX_PSU4__MOLEX_39-29-9042_1" 0 "12V1" 0))
 		(part "MMC_SD_MS")
 		(logical_part_mapping "MMC_SD_MS"
 			(comp "J17"))
@@ -15418,16 +15403,6 @@
 			(attributes
 				(attval "DEVICE" "MMC_SD_MS")
 				(attval "REFDES" "J17")))
-		(component "MOLEX_39-29-9042"
-			(place "J16" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0 "OUT")
-				(comp_pin "1" 0.0 0.0 "OUT")
-				(comp_pin "4" 0.0 0.0 "OUT")
-				(comp_pin "3" 0.0 0.0 "OUT"))
-			(attributes
-				(attval "DESCRIPTION" "ATX +12V 4 PIN CONNECTOR")
-				(attval "DEVICE" "MOLEX_39-29-9042")
-				(attval "REFDES" "J16")))
 		(component "MOLEX879160001"
 			(place "J15" 0.0 0.0 top 0.0
 				(comp_pin "26" 0.0 0.0 "IN")
@@ -24908,7 +24883,6 @@
 		(func "$1I671\$1I1" "" "J19" 1)
 		(func "$1I671\$1I6" "" "J18" 1)
 		(func "$1I747\$1I824" "" "J17" 1)
-		(func "$1I671\$1I257" "" "J16" 1)
 		(func "$1I6\$1I1002" "" "J15" 1)
 		(func "$1I6\$1I839" "" "J15" 2)
 		(func "$1I863\$1I754" "" "J14" 1)
@@ -27474,8 +27448,7 @@
 		(net "$1I671\$1N454"
 			(pins U53-2 C412-1 C424-1 L15-2))
 		(net "$1I671\ATX_GND"
-			(pins J32-1 J32-3 J32-5 J32-7 J32-9 JP30-2 J16-1 J16-2 Q8-2 Q9-2 Q10-2 J18-3
- J18-5 J18-7))
+			(pins J32-1 J32-3 J32-5 J32-7 J32-9 JP30-2 Q8-2 Q9-2 Q10-2 J18-3 J18-5 J18-7))
 		(net "$1I747\$1N12"
 			(pins CR6-2 R203-2))
 		(net "$1I747\$1N20"
@@ -28838,7 +28811,7 @@
 		(net "12V"
 			(pins L7-1 L14-1 L15-1 Q12-5 Q12-6 Q12-7 Q12-8))
 		(net "12V_ATX"
-			(pins J32-4 J16-3 J16-4 J18-10 J18-11 R187-2 J19-2 J20-2 J21-2 R287-1 R291-2))
+			(pins J32-4 J18-10 J18-11 R187-2 J19-2 J20-2 J21-2 R287-1 R291-2))
 		(net "ATRTN0"
 			(pins U15-W17 U60-T4 J31-1 J31-3))
 		(net "BOOT_CFG0"
