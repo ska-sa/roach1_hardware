@@ -1,11 +1,13 @@
 
-(pcb "D:\ROACH\elec\roach\roach.roach_top_PADS2007.roach_top.db"
+(pcb
+ "C:\Users\mrevnell\roach\elec\roach\roach.roach_top_PADS2007.roach_top.db"
 	(version "5.0.0")
 	(units "basic")
 	(config_properties
 		(attributes
-			(attval "PcbConfigName" "D:\ROACH\elec\roach\roach_pcb.cfg")
-			(attval "CnsFile" ".\pads2007.cns")
+			(attval "PcbConfigName"
+ "C:\Users\mrevnell\roach\elec\roach\roach_pcb.cfg")
+			(attval "CnsFile" "C:\Users\mrevnell\roach\elec\roach\pads2007.cns")
 			(attval "BeAdapter" "PADS2007")
 			(attval "FeAdapter" "DxDesigner")
 			(attval "SYSCONFIG" "pcbfwd")
@@ -26,7 +28,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1194961962"))
+		(file_ext "roach_top.pxr" "1194989093"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -26959,8 +26961,6 @@
 			(pins J8-45))
 		(net "$1I289\$1N1330"
 			(pins J8-171))
-		(net "$1I289\$1N1334"
-			(pins RP19-4))
 		(net "$1I289\$1N1366"
 			(pins J8-138))
 		(net "$1I289\$1N1367"
@@ -26980,49 +26980,49 @@
 		(net "$1I289\DDR_CLKOUT#"
 			(pins J8-186 C455-2 U1-AK1 RO13-1 RO13-2))
 		(net "$1I289\DDR_PA0"
-			(pins J8-188 U1-AM5 RP21-4))
+			(pins J8-188 U1-AM5 RP25-1))
 		(net "$1I289\DDR_PA1"
 			(pins J8-183 U1-AP4 RP21-3))
 		(net "$1I289\DDR_PA2"
-			(pins J8-63 U1-AP5 RP21-2))
+			(pins J8-63 U1-AP5 RP21-4))
 		(net "$1I289\DDR_PA3"
-			(pins J8-182 U1-AM6 RP21-1))
+			(pins J8-182 U1-AM6 RP21-2))
 		(net "$1I289\DDR_PA4"
-			(pins J8-61 U1-AP6 RP22-4))
+			(pins J8-61 U1-AP6 RP21-1))
 		(net "$1I289\DDR_PA5"
-			(pins J8-60 U1-AN6 RP22-3))
+			(pins J8-60 U1-AN6 RP22-4))
 		(net "$1I289\DDR_PA6"
-			(pins J8-180 U1-AL7 RP22-2))
+			(pins J8-180 U1-AL7 RP22-3))
 		(net "$1I289\DDR_PA7"
 			(pins J8-58 U1-AN7 RP22-1))
 		(net "$1I289\DDR_PA8"
-			(pins J8-179 U1-AM7 RP23-4))
+			(pins J8-179 U1-AM7 RP22-2))
 		(net "$1I289\DDR_PA9"
 			(pins J8-177 U1-AP7 RP23-3))
 		(net "$1I289\DDR_PA10"
-			(pins J8-70 U1-AL2 RP23-2))
+			(pins J8-70 U1-AL2 RP25-3))
 		(net "$1I289\DDR_PA11"
-			(pins J8-57 U1-AL8 RP23-1))
+			(pins J8-57 U1-AL8 RP23-2))
 		(net "$1I289\DDR_PA12"
-			(pins J8-176 U1-AM8 RP24-4))
+			(pins J8-176 U1-AM8 RP23-1))
 		(net "$1I289\DDR_PA13"
-			(pins J8-196 U1-AG4 RP24-3))
+			(pins J8-196 U1-AG4 RP19-3))
 		(net "$1I289\DDR_PA14"
-			(pins J8-174 RP24-2))
+			(pins J8-174 RP24-3))
 		(net "$1I289\DDR_PA15"
-			(pins J8-173 RP24-1))
+			(pins J8-173 RP24-2))
 		(net "$1I289\DDR_PBA0"
-			(pins J8-71 U1-AJ3 RP25-3))
+			(pins J8-71 U1-AJ3 RP25-4))
 		(net "$1I289\DDR_PBA1"
-			(pins J8-54 U1-AK3 RP25-1))
+			(pins J8-54 U1-AK3 RP24-4))
 		(net "$1I289\DDR_PBA2"
 			(pins J8-190 U1-AP8 RP25-2))
 		(net "$1I289\DDR_PCAS#"
-			(pins J8-74 U1-AH4 RP25-4))
+			(pins J8-74 U1-AH4 RP26-4))
 		(net "$1I289\DDR_PCKE"
-			(pins J8-52 U1-AN9 RP26-2))
+			(pins J8-52 U1-AN9 RP24-1))
 		(net "$1I289\DDR_PCS0#"
-			(pins J8-193 U1-AH2 RP26-4))
+			(pins J8-193 U1-AH2 RP26-3))
 		(net "$1I289\DDR_PCS1#"
 			(pins J8-76 U1-AH1 RP19-1))
 		(net "$1I289\DDR_PDM0"
@@ -27192,11 +27192,11 @@
 		(net "$1I289\DDR_PODT0"
 			(pins J8-195 R225-1 U1-AH3 RP19-2))
 		(net "$1I289\DDR_PODT1"
-			(pins J8-77 R226-1 U1-AG1 RP19-3))
+			(pins J8-77 R226-1 U1-AG1 RP19-4))
 		(net "$1I289\DDR_PRAS#"
 			(pins J8-192 U1-AJ4 RP26-1))
 		(net "$1I289\DDR_PWE#"
-			(pins J8-73 U1-AJ2 RP26-3))
+			(pins J8-73 U1-AJ2 RP26-2))
 		(net "$1I289\PAR_IN"
 			(pins TP5-1 J8-68))
 		(net "$1I289\PPC_DDR2_DIMM_SCL"
@@ -32440,11 +32440,6 @@
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I289\$1N1366"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I289\$1N1334"
 			(attributes
 				(attval "NC" ""))
 			(constraints

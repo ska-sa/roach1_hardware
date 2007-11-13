@@ -1,12 +1,29 @@
 *PADS-ECO-V2007.0-MILS*
 *REMARK*  old file: C:\Users\mrevnell\roach\elec\roach\layout\ibo03.asc
 *REMARK*  new file: C:\Users\mrevnell\roach\elec\roach\roach_top.asc
-*REMARK*  created by ECOGEN (Version 6.4v) on 11/8/2007 10:17:20
+*REMARK*  created by ECOGEN (Version 6.4v) on 11/13/2007 14:25:08
 *DELPIN*
-C61.2  $1I144\GPIOLVC184
+J8.173  $1I289\DDR_PA15
+J8.174  $1I289\DDR_PA14
+RP23.1  $1I289\DDR_PA11
+RP23.2  $1I289\DDR_PCKE
+RP24.1  $1I289\DDR_PA15
+RP24.2  $1I289\DDR_PA14
+RP24.3  $1I289\DDR_PBA1
+RP24.4  $1I289\DDR_PA12
 *NET*
-*SIGNAL*  GND
-C61.2
+*SIGNAL*  $1I289\DDR_PA11
+RP23.2
+*SIGNAL*  $1I289\DDR_PA12
+RP23.1
+*SIGNAL*  $1I289\DDR_PA14
+J8.174  RP24.3
+*SIGNAL*  $1I289\DDR_PA15
+J8.173  RP24.2
+*SIGNAL*  $1I289\DDR_PBA1
+RP24.4
+*SIGNAL*  $1I289\DDR_PCKE
+RP24.1
 
-*REMARK*  Deleted pins: 1,  Added pins: 1
+*REMARK*  Deleted pins: 8,  Added pins: 8
 *END*
