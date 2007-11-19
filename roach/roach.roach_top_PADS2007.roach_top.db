@@ -28,7 +28,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1195137954"))
+		(file_ext "roach_top.pxr" "1195506504"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -571,19 +571,19 @@
 						(attval "PKG_TYPE" "DIPSW4")
 						(attval "REFDES" "SW?")
 						(attval "VALUE" ""))))
-			(pin 8  4 "SWITCH_DIP_4POLE_0R1_SMT8__SWITCH_DIP_4POLE_0R1_SMT8_1" 0
+			(pin 5  4 "SWITCH_DIP_4POLE_0R1_SMT8__SWITCH_DIP_4POLE_0R1_SMT8_1" 0
  "SW4B" 0)
 			(pin 6  4 "SWITCH_DIP_4POLE_0R1_SMT8__SWITCH_DIP_4POLE_0R1_SMT8_1" 0
  "SW3B" 0)
-			(pin 4  4 "SWITCH_DIP_4POLE_0R1_SMT8__SWITCH_DIP_4POLE_0R1_SMT8_1" 0
- "SW2B" 0)
-			(pin 2  4 "SWITCH_DIP_4POLE_0R1_SMT8__SWITCH_DIP_4POLE_0R1_SMT8_1" 0
- "SW1B" 0)
 			(pin 7  4 "SWITCH_DIP_4POLE_0R1_SMT8__SWITCH_DIP_4POLE_0R1_SMT8_1" 0
+ "SW2B" 0)
+			(pin 8  4 "SWITCH_DIP_4POLE_0R1_SMT8__SWITCH_DIP_4POLE_0R1_SMT8_1" 0
+ "SW1B" 0)
+			(pin 4  4 "SWITCH_DIP_4POLE_0R1_SMT8__SWITCH_DIP_4POLE_0R1_SMT8_1" 0
  "SW4A" 0)
-			(pin 5  4 "SWITCH_DIP_4POLE_0R1_SMT8__SWITCH_DIP_4POLE_0R1_SMT8_1" 0
- "SW3A" 0)
 			(pin 3  4 "SWITCH_DIP_4POLE_0R1_SMT8__SWITCH_DIP_4POLE_0R1_SMT8_1" 0
+ "SW3A" 0)
+			(pin 2  4 "SWITCH_DIP_4POLE_0R1_SMT8__SWITCH_DIP_4POLE_0R1_SMT8_1" 0
  "SW2A" 0)
 			(pin 1  4 "SWITCH_DIP_4POLE_0R1_SMT8__SWITCH_DIP_4POLE_0R1_SMT8_1" 0
  "SW1A" 0))
@@ -10645,13 +10645,13 @@
 				(attval "REFDES" "TP1")))
 		(component "DIPSW4"
 			(place "SW4" 0.0 0.0 top 0.0
-				(comp_pin "8" 0.0 0.0 "OUT")
-				(comp_pin "6" 0.0 0.0 "OUT")
-				(comp_pin "4" 0.0 0.0 "OUT")
-				(comp_pin "2" 0.0 0.0 "OUT")
-				(comp_pin "7" 0.0 0.0 "OUT")
 				(comp_pin "5" 0.0 0.0 "OUT")
+				(comp_pin "6" 0.0 0.0 "OUT")
+				(comp_pin "7" 0.0 0.0 "OUT")
+				(comp_pin "8" 0.0 0.0 "OUT")
+				(comp_pin "4" 0.0 0.0 "OUT")
 				(comp_pin "3" 0.0 0.0 "OUT")
+				(comp_pin "2" 0.0 0.0 "OUT")
 				(comp_pin "1" 0.0 0.0 "OUT"))
 			(attributes
 				(attval "VALUE" "SW4P")
@@ -10659,13 +10659,13 @@
 				(attval "REFDES" "SW4")))
 		(component "90HB_SERIES"
 			(place "SW3" 0.0 0.0 top 0.0
-				(comp_pin "8" 0.0 0.0 "OUT")
-				(comp_pin "6" 0.0 0.0 "OUT")
-				(comp_pin "4" 0.0 0.0 "OUT")
-				(comp_pin "2" 0.0 0.0 "OUT")
-				(comp_pin "7" 0.0 0.0 "OUT")
 				(comp_pin "5" 0.0 0.0 "OUT")
+				(comp_pin "6" 0.0 0.0 "OUT")
+				(comp_pin "7" 0.0 0.0 "OUT")
+				(comp_pin "8" 0.0 0.0 "OUT")
+				(comp_pin "4" 0.0 0.0 "OUT")
 				(comp_pin "3" 0.0 0.0 "OUT")
+				(comp_pin "2" 0.0 0.0 "OUT")
 				(comp_pin "1" 0.0 0.0 "OUT"))
 			(attributes
 				(attval "VALUE" "4POLE")
@@ -10673,13 +10673,13 @@
 				(attval "REFDES" "SW3")))
 		(component "90HB_SERIES"
 			(place "SW2" 0.0 0.0 top 0.0
-				(comp_pin "8" 0.0 0.0 "OUT")
-				(comp_pin "6" 0.0 0.0 "OUT")
-				(comp_pin "4" 0.0 0.0 "OUT")
-				(comp_pin "2" 0.0 0.0 "OUT")
-				(comp_pin "7" 0.0 0.0 "OUT")
 				(comp_pin "5" 0.0 0.0 "OUT")
+				(comp_pin "6" 0.0 0.0 "OUT")
+				(comp_pin "7" 0.0 0.0 "OUT")
+				(comp_pin "8" 0.0 0.0 "OUT")
+				(comp_pin "4" 0.0 0.0 "OUT")
 				(comp_pin "3" 0.0 0.0 "OUT")
+				(comp_pin "2" 0.0 0.0 "OUT")
 				(comp_pin "1" 0.0 0.0 "OUT"))
 			(attributes
 				(attval "VALUE" "4POLE")
@@ -27221,9 +27221,9 @@
 		(net "$1I747\CFG_DIP0"
 			(pins U54-137 R204-1 SW3-1))
 		(net "$1I747\CFG_DIP1"
-			(pins U54-136 R205-1 SW3-3))
+			(pins U54-136 R205-1 SW3-2))
 		(net "$1I747\CFG_DIP2"
-			(pins U54-135 R206-1 SW3-5))
+			(pins U54-135 R206-1 SW3-3))
 		(net "$1I747\CLK/SCLK"
 			(pins U54-114 J17-6))
 		(net "$1I747\CMD/DI"
@@ -27259,17 +27259,17 @@
 		(net "$1I747\USER_DIP0"
 			(pins U54-142 R198-1 SW2-1))
 		(net "$1I747\USER_DIP1"
-			(pins U54-140 R194-1 SW2-3))
+			(pins U54-140 R194-1 SW2-2))
 		(net "$1I747\USER_DIP2"
-			(pins U54-139 R195-1 SW2-5))
+			(pins U54-139 R195-1 SW2-3))
 		(net "$1I747\USER_DIP3"
-			(pins U54-138 R196-1 SW2-7))
+			(pins U54-138 R196-1 SW2-4))
 		(net "$1I747\USER_LED0"
 			(pins U54-130 R200-1))
 		(net "$1I747\USER_LED1"
 			(pins U54-129 R201-1))
 		(net "$1I790\$1N113"
-			(pins SW4-2))
+			(pins SW4-8))
 		(net "$1I790\SX95T_HSWAP_EN"
 			(pins R209-2 U15-M23))
 		(net "$1I803\$1N624"
@@ -28430,7 +28430,7 @@
  C482-1 C483-1 C13-1 U35-5 C615-1 RO10-3 RO11-1 RO14-3 R192-2 R193-2 U54-8
  U54-109 U54-127 U54-141 U54-27 U54-55 U54-73 U54-93 R194-2 R195-2 R196-2
  R198-2 R204-2 R205-2 R206-2 C484-1 CR6-1 CR5-1 J17-7 R135-2 J22-13 R207-2
- R208-2 U15-AA22 U15-AD23 SW4-1 SW4-3 SW4-5 SW4-7 C485-1 C486-1 C487-1 J24-13
+ R208-2 U15-AA22 U15-AD23 SW4-1 SW4-2 SW4-3 SW4-4 C485-1 C486-1 C487-1 J24-13
  C488-1 R213-2 R218-2 R219-2 U55-10 U56-10 U57-10 L13-2 L3-2 L2-2 U38-2 U38-8
  U39-2 U39-8 U40-3 U40-8 U41-3 R89-2 R88-2 U42-F7 U42-G5 U42-F1 U42-D8 C649-1
  C650-1 C651-1 C652-1 C653-1 C654-1 C656-1 C658-1 C659-1 U15-D13 U15-G14
@@ -28663,7 +28663,7 @@
  C428-2 C429-2 C468-2 C469-2 C470-2 C471-2 C472-2 U2-3 C473-2 C474-2 C475-2
  C476-2 C477-2 C478-2 C479-2 C480-2 C481-2 C482-2 C483-2 C13-2 U35-3 C615-2
  RO10-1 RO11-3 RO14-1 U54-108 U54-123 U54-99 U54-144 U54-29 U54-36 U54-47
- U54-62 U54-72 U54-89 U54-90 SW2-2 SW2-4 SW2-6 SW2-8 SW3-2 SW3-4 SW3-6 SW3-8
+ U54-62 U54-72 U54-89 U54-90 SW2-8 SW2-7 SW2-6 SW2-5 SW3-8 SW3-7 SW3-6 SW3-5
  C484-2 J17-16 J17-17 J17-8 J17-4 J22-2 J22-4 J22-6 J22-8 J22-10 J22-14 J22-12
  R197-1 R199-1 R209-1 R210-1 R211-1 R212-1 U15-AC23 U15-AB23 U15-L23 C485-2
  C486-2 C487-2 J24-2 J24-4 J24-6 J24-8 J24-10 J24-14 J24-12 C488-2 R214-1
@@ -28742,7 +28742,7 @@
 		(net "LOAD_RES_OFF"
 			(pins Q8-1 R181-2 U60-D16))
 		(net "M66EN"
-			(pins U54-134 SW3-7 U47-6))
+			(pins U54-134 SW3-4 U47-6))
 		(net "MGT_AVCC"
 			(pins FB1-1 FB11-1 FB17-1 FB22-1 FB28-1 FB38-1 FB44-1 FB49-1 R221-2 C491-1
  U57-20 U57-1 U57-18 U57-19 C496-1 C503-1))
@@ -28930,11 +28930,11 @@
 		(net "SX95T_INIT_B_0"
 			(pins U1-M3 U54-118 U15-N14))
 		(net "SX95T_M0_0"
-			(pins U1-P4 U54-76 R212-2 U15-AD21 SW4-8))
+			(pins U1-P4 U54-76 R212-2 U15-AD21 SW4-5))
 		(net "SX95T_M1_0"
 			(pins U1-R3 U54-77 R211-2 U15-AC22 SW4-6))
 		(net "SX95T_M2_0"
-			(pins U1-R4 U54-78 R210-2 U15-AD22 SW4-4))
+			(pins U1-R4 U54-78 R210-2 U15-AD22 SW4-7))
 		(net "SX95T_PROGRAM_B_0"
 			(pins U1-C5 U54-117 U15-M22))
 		(net "SX95T_RDWR_B_0"
