@@ -1,11 +1,13 @@
 
-(pcb "D:\ROACH\elec\roach\roach.roach_top_PADS2007.roach_top.db"
+(pcb
+ "C:\Users\mrevnell\roach\elec\roach\roach.roach_top_PADS2007.roach_top.db"
 	(version "5.0.0")
 	(units "basic")
 	(config_properties
 		(attributes
-			(attval "PcbConfigName" "D:\ROACH\elec\roach\roach_pcb.cfg")
-			(attval "CnsFile" ".\pads2007.cns")
+			(attval "PcbConfigName"
+ "C:\Users\mrevnell\roach\elec\roach\roach_pcb.cfg")
+			(attval "CnsFile" "C:\Users\mrevnell\roach\elec\roach\pads2007.cns")
 			(attval "BeAdapter" "PADS2007")
 			(attval "FeAdapter" "DxDesigner")
 			(attval "SYSCONFIG" "pcbfwd")
@@ -26,7 +28,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1195558776"))
+		(file_ext "roach_top.pxr" "1195589372"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -4218,9 +4220,8 @@
 			(pin 1  3 "PRTR5V0U2AX__DIODE_ESD_PROT_1" 0 "GND" 0))
 		(part "DIFFVIA")
 		(logical_part_mapping "DIFFVIA"
-			(comp "V64" "V63" "V62" "V61" "V60" "V59" "V58" "V57" "V56" "V55" "V54" "V53" "V52" "V51" "V50" "V49" "V48" "V47" "V46" "V45"
- "V44" "V43" "V42" "V41" "V40" "V39" "V38" "V37" "V36" "V35" "V34" "V33" "V32" "V31" "V30" "V29" "V28" "V27" "V26" "V25" "V24"
- "V23" "V22" "V21" "V20" "V19" "V18" "V17" "V16" "V15" "V14" "V13" "V12" "V11" "V10" "V9" "V8" "V7" "V6" "V5" "V4" "V3" "V2" "V1"))
+			(comp "V56" "V55" "V54" "V53" "V52" "V51" "V50" "V49" "V40" "V39" "V38" "V37" "V36" "V35" "V34" "V25" "V24" "V23" "V22" "V21"
+ "V20" "V19" "V18" "V9" "V8" "V7" "V6" "V5" "V4" "V3" "V2" "V1"))
 		(logical_part "DIFFVIA"
 			(slots
 				(slot "DIFFVIA__DIFFVIA_1"
@@ -6473,62 +6474,6 @@
 				(attval "DEVICE" "VAR_5R5V_0603_30A")
 				(attval "REFDES" "VR4")))
 		(component "DIFFVIA"
-			(place "V64" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V64")))
-		(component "DIFFVIA"
-			(place "V63" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V63")))
-		(component "DIFFVIA"
-			(place "V62" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V62")))
-		(component "DIFFVIA"
-			(place "V61" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V61")))
-		(component "DIFFVIA"
-			(place "V60" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V60")))
-		(component "DIFFVIA"
-			(place "V59" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V59")))
-		(component "DIFFVIA"
-			(place "V58" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V58")))
-		(component "DIFFVIA"
-			(place "V57" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V57")))
-		(component "DIFFVIA"
 			(place "V56" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0)
 				(comp_pin "1" 0.0 0.0))
@@ -6585,62 +6530,6 @@
 				(attval "DEVICE" "DIFFVIA")
 				(attval "REFDES" "V49")))
 		(component "DIFFVIA"
-			(place "V48" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V48")))
-		(component "DIFFVIA"
-			(place "V47" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V47")))
-		(component "DIFFVIA"
-			(place "V46" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V46")))
-		(component "DIFFVIA"
-			(place "V45" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V45")))
-		(component "DIFFVIA"
-			(place "V44" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V44")))
-		(component "DIFFVIA"
-			(place "V43" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V43")))
-		(component "DIFFVIA"
-			(place "V42" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V42")))
-		(component "DIFFVIA"
-			(place "V41" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V41")))
-		(component "DIFFVIA"
 			(place "V40" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0)
 				(comp_pin "1" 0.0 0.0))
@@ -6689,62 +6578,6 @@
 			(attributes
 				(attval "DEVICE" "DIFFVIA")
 				(attval "REFDES" "V34")))
-		(component "DIFFVIA"
-			(place "V33" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V33")))
-		(component "DIFFVIA"
-			(place "V32" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V32")))
-		(component "DIFFVIA"
-			(place "V31" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V31")))
-		(component "DIFFVIA"
-			(place "V30" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V30")))
-		(component "DIFFVIA"
-			(place "V29" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V29")))
-		(component "DIFFVIA"
-			(place "V28" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V28")))
-		(component "DIFFVIA"
-			(place "V27" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V27")))
-		(component "DIFFVIA"
-			(place "V26" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V26")))
 		(component "DIFFVIA"
 			(place "V25" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0)
@@ -6801,62 +6634,6 @@
 			(attributes
 				(attval "DEVICE" "DIFFVIA")
 				(attval "REFDES" "V18")))
-		(component "DIFFVIA"
-			(place "V17" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V17")))
-		(component "DIFFVIA"
-			(place "V16" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V16")))
-		(component "DIFFVIA"
-			(place "V15" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V15")))
-		(component "DIFFVIA"
-			(place "V14" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V14")))
-		(component "DIFFVIA"
-			(place "V13" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V13")))
-		(component "DIFFVIA"
-			(place "V12" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V12")))
-		(component "DIFFVIA"
-			(place "V11" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V11")))
-		(component "DIFFVIA"
-			(place "V10" 0.0 0.0 top 0.0
-				(comp_pin "2" 0.0 0.0)
-				(comp_pin "1" 0.0 0.0))
-			(attributes
-				(attval "DEVICE" "DIFFVIA")
-				(attval "REFDES" "V10")))
 		(component "DIFFVIA"
 			(place "V9" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0)
@@ -24045,14 +23822,6 @@
 		(func "$1I291\$1I33" "" "X2" 1)
 		(func "$1I2\$1I879" "" "X1" 1)
 		(func "$1I42\$1I270" "" "VR4" 1)
-		(func "$1I3\$1I890" "" "V64" 1)
-		(func "$1I3\$1I889" "" "V63" 1)
-		(func "$1I3\$1I888" "" "V62" 1)
-		(func "$1I3\$1I887" "" "V61" 1)
-		(func "$1I3\$1I886" "" "V60" 1)
-		(func "$1I3\$1I885" "" "V59" 1)
-		(func "$1I3\$1I884" "" "V58" 1)
-		(func "$1I3\$1I883" "" "V57" 1)
 		(func "$1I3\$1I882" "" "V56" 1)
 		(func "$1I3\$1I881" "" "V55" 1)
 		(func "$1I3\$1I880" "" "V54" 1)
@@ -24061,14 +23830,6 @@
 		(func "$1I3\$1I877" "" "V51" 1)
 		(func "$1I3\$1I876" "" "V50" 1)
 		(func "$1I3\$1I875" "" "V49" 1)
-		(func "$1I3\$1I854" "" "V48" 1)
-		(func "$1I3\$1I853" "" "V47" 1)
-		(func "$1I3\$1I852" "" "V46" 1)
-		(func "$1I3\$1I851" "" "V45" 1)
-		(func "$1I3\$1I798" "" "V44" 1)
-		(func "$1I3\$1I797" "" "V43" 1)
-		(func "$1I3\$1I796" "" "V42" 1)
-		(func "$1I3\$1I795" "" "V41" 1)
 		(func "$1I3\$1I794" "" "V40" 1)
 		(func "$1I3\$1I793" "" "V39" 1)
 		(func "$1I3\$1I792" "" "V38" 1)
@@ -24076,14 +23837,6 @@
 		(func "$1I3\$1I778" "" "V36" 1)
 		(func "$1I3\$1I777" "" "V35" 1)
 		(func "$1I3\$1I776" "" "V34" 1)
-		(func "$1I2\$1I982" "" "V33" 1)
-		(func "$1I2\$1I981" "" "V32" 1)
-		(func "$1I2\$1I980" "" "V31" 1)
-		(func "$1I2\$1I979" "" "V30" 1)
-		(func "$1I2\$1I978" "" "V29" 1)
-		(func "$1I2\$1I977" "" "V28" 1)
-		(func "$1I2\$1I976" "" "V27" 1)
-		(func "$1I2\$1I975" "" "V26" 1)
 		(func "$1I2\$1I974" "" "V25" 1)
 		(func "$1I2\$1I973" "" "V24" 1)
 		(func "$1I2\$1I972" "" "V23" 1)
@@ -24092,14 +23845,6 @@
 		(func "$1I2\$1I969" "" "V20" 1)
 		(func "$1I2\$1I968" "" "V19" 1)
 		(func "$1I2\$1I967" "" "V18" 1)
-		(func "$1I2\$1I966" "" "V17" 1)
-		(func "$1I2\$1I965" "" "V16" 1)
-		(func "$1I2\$1I964" "" "V15" 1)
-		(func "$1I2\$1I963" "" "V14" 1)
-		(func "$1I2\$1I962" "" "V13" 1)
-		(func "$1I2\$1I961" "" "V12" 1)
-		(func "$1I2\$1I960" "" "V11" 1)
-		(func "$1I2\$1I959" "" "V10" 1)
 		(func "$1I2\$1I958" "" "V9" 1)
 		(func "$1I2\$1I957" "" "V8" 1)
 		(func "$1I2\$1I956" "" "V7" 1)
@@ -25581,37 +25326,37 @@
 		(net "$1I2\MGTRX1_118_P"
 			(pins U15-AB1 C146-2))
 		(net "$1I2\MGTTX0_112_N"
-			(pins V12-2 V13-2 P3-S11 U15-AN6))
+			(pins P3-S11 U15-AN6))
 		(net "$1I2\MGTTX0_112_P"
-			(pins V12-1 V13-1 P3-S12 U15-AN5))
+			(pins P3-S12 U15-AN5))
 		(net "$1I2\MGTTX0_114_N"
-			(pins V14-2 V15-2 P3-S15 U15-AL2))
+			(pins P3-S15 U15-AL2))
 		(net "$1I2\MGTTX0_114_P"
-			(pins V14-1 V15-1 P3-S16 U15-AK2))
+			(pins P3-S16 U15-AK2))
 		(net "$1I2\MGTTX0_116_N"
-			(pins V26-1 V27-1 P3-S29 U15-AE2))
+			(pins P3-S29 U15-AE2))
 		(net "$1I2\MGTTX0_116_P"
-			(pins V26-2 V27-2 P3-S30 U15-AD2))
+			(pins P3-S30 U15-AD2))
 		(net "$1I2\MGTTX0_118_N"
-			(pins V30-2 V31-2 P3-S33 U15-W2))
+			(pins P3-S33 U15-W2))
 		(net "$1I2\MGTTX0_118_P"
-			(pins V30-1 V31-1 P3-S34 U15-V2))
+			(pins P3-S34 U15-V2))
 		(net "$1I2\MGTTX1_112_N"
-			(pins V10-2 V11-2 P3-S10 U15-AN9))
+			(pins P3-S10 U15-AN9))
 		(net "$1I2\MGTTX1_112_P"
-			(pins V10-1 V11-1 P3-S9 U15-AN10))
+			(pins P3-S9 U15-AN10))
 		(net "$1I2\MGTTX1_114_N"
-			(pins V16-2 V17-2 P3-S13 U15-AN3))
+			(pins P3-S13 U15-AN3))
 		(net "$1I2\MGTTX1_114_P"
-			(pins V16-1 V17-1 P3-S14 U15-AN4))
+			(pins P3-S14 U15-AN4))
 		(net "$1I2\MGTTX1_116_N"
-			(pins V28-1 V29-1 P3-S28 U15-AH2))
+			(pins P3-S28 U15-AH2))
 		(net "$1I2\MGTTX1_116_P"
-			(pins V28-2 V29-2 P3-S27 U15-AJ2))
+			(pins P3-S27 U15-AJ2))
 		(net "$1I2\MGTTX1_118_N"
-			(pins V32-2 V33-2 P3-S32 U15-AB2))
+			(pins P3-S32 U15-AB2))
 		(net "$1I2\MGTTX1_118_P"
-			(pins V32-1 V33-1 P3-S31 U15-AC2))
+			(pins P3-S31 U15-AC2))
 		(net "$1I2\MGT_REFCLK_Q1_0_N"
 			(pins U15-AM7 C69-2))
 		(net "$1I2\MGT_REFCLK_Q1_0_P"
@@ -25801,37 +25546,37 @@
 		(net "$1I3\MGTRX1_126_P"
 			(pins U15-A6 C254-2))
 		(net "$1I3\MGTTX0_120_N"
-			(pins V43-2 V44-2 P3-S49 U15-N2))
+			(pins P3-S49 U15-N2))
 		(net "$1I3\MGTTX0_120_P"
-			(pins V43-1 V44-1 P3-S50 U15-M2))
+			(pins P3-S50 U15-M2))
 		(net "$1I3\MGTTX0_122_N"
-			(pins V45-2 V46-2 P3-S53 U15-G2))
+			(pins P3-S53 U15-G2))
 		(net "$1I3\MGTTX0_122_P"
-			(pins V45-1 V46-1 P3-S54 U15-F2))
+			(pins P3-S54 U15-F2))
 		(net "$1I3\MGTTX0_124_N"
-			(pins V57-2 V58-2 P3-S67 U15-B3))
+			(pins P3-S67 U15-B3))
 		(net "$1I3\MGTTX0_124_P"
-			(pins V57-1 V58-1 P3-S68 U15-B4))
+			(pins P3-S68 U15-B4))
 		(net "$1I3\MGTTX0_126_N"
-			(pins V61-2 V62-2 P3-S71 U15-B9))
+			(pins P3-S71 U15-B9))
 		(net "$1I3\MGTTX0_126_P"
-			(pins V61-1 V62-1 P3-S72 U15-B10))
+			(pins P3-S72 U15-B10))
 		(net "$1I3\MGTTX1_120_N"
-			(pins V41-2 V42-2 P3-S48 U15-T2))
+			(pins P3-S48 U15-T2))
 		(net "$1I3\MGTTX1_120_P"
-			(pins V41-1 V42-1 P3-S47 U15-U2))
+			(pins P3-S47 U15-U2))
 		(net "$1I3\MGTTX1_122_N"
-			(pins V47-2 V48-2 P3-S52 U15-K2))
+			(pins P3-S52 U15-K2))
 		(net "$1I3\MGTTX1_122_P"
-			(pins V47-1 V48-1 P3-S51 U15-L2))
+			(pins P3-S51 U15-L2))
 		(net "$1I3\MGTTX1_124_N"
-			(pins V59-2 V60-2 P3-S66 U15-D2))
+			(pins P3-S66 U15-D2))
 		(net "$1I3\MGTTX1_124_P"
-			(pins V59-1 V60-1 P3-S65 U15-E2))
+			(pins P3-S65 U15-E2))
 		(net "$1I3\MGTTX1_126_N"
-			(pins V63-2 V64-2 P3-S69 U15-B6))
+			(pins P3-S69 U15-B6))
 		(net "$1I3\MGTTX1_126_P"
-			(pins V63-1 V64-1 P3-S70 U15-B5))
+			(pins P3-S70 U15-B5))
 		(net "$1I3\MGT_REFCLK_Q2_0_N"
 			(pins U15-P3 C99-2))
 		(net "$1I3\MGT_REFCLK_Q2_0_P"
@@ -28666,83 +28411,83 @@
  J15-166 J15-14 J15-169 J15-198 J15-201 J15-204 J15-207 J15-210 J15-213
  J15-216 J15-219 J15-222 J15-17 J15-225 J15-228 J15-231 J15-234 J15-237
  J15-20 J15-23 J15-26 C352-2 C353-2 C354-2 C355-2 C356-2 C357-2 C358-2 C359-2
- C360-2 C460-2 R140-1 R231-2 R232-2 C467-2 C464-2 C465-2 C466-2 C22-2 U33-8
- U33-4 C361-2 C362-2 C363-2 C364-2 C365-2 C366-2 C367-2 C368-2 C369-2 C370-2
- C371-2 C372-2 C373-2 C374-2 C375-2 C376-2 C377-2 C378-2 C379-2 C380-2 C381-2
- C382-2 C383-2 C384-2 C385-2 C386-2 C387-2 CP20-5 CP20-6 CP20-7 CP20-8 CP21-5
- CP21-6 CP21-7 CP21-8 CP22-5 CP22-6 CP22-7 CP22-8 CP23-5 CP23-6 CP23-7 CP23-8
- CP24-5 CP24-6 CP24-7 CP24-8 CP25-5 CP25-6 CP25-7 CP25-8 CP27-5 CP27-6 CP27-7
- CP27-8 C388-2 C389-2 C390-2 C391-2 C392-2 C393-2 C394-2 C395-2 U50-3 U50-8
- U50-7 U50-4 U50-11 U53-3 U53-6 U53-1 JP30-1 Q4-2 Q5-2 Q6-2 Q7-2 U51-3 U51-4
- U51-7 U51-1 R143-1 R147-1 R148-1 R179-1 R181-1 C400-2 C401-2 C402-2 C403-2
- C404-2 C405-2 C409-2 C410-2 C412-2 C413-2 C104-2 C105-2 C423-2 C424-2 C420-2
- C419-2 C418-2 C421-2 C422-2 C425-2 C426-2 C117-2 U27-3 U27-4 U27-7 U27-1
- J19-1 J20-1 J21-1 P9-81 P9-82 P9-83 P9-84 P9-85 P9-86 P9-87 P9-88 C427-2
- C428-2 C429-2 C468-2 C469-2 C470-2 C471-2 C472-2 U2-3 C473-2 C474-2 C475-2
- C476-2 C477-2 C478-2 C479-2 C480-2 C481-2 C482-2 C483-2 C13-2 U35-3 C615-2
- RO10-1 RO11-3 RO14-1 U54-108 U54-123 U54-99 U54-144 U54-29 U54-36 U54-47
- U54-62 U54-72 U54-89 U54-90 SW2-8 SW2-7 SW2-6 SW2-5 SW3-8 SW3-7 SW3-6 SW3-5
- C484-2 J17-16 J17-17 J17-8 J17-4 J22-2 J22-4 J22-6 J22-8 J22-10 J22-14 J22-12
- R197-1 R199-1 R209-1 R210-1 R211-1 R212-1 U15-AC23 U15-AB23 U15-L23 C485-2
- C486-2 C487-2 J24-2 J24-4 J24-6 J24-8 J24-10 J24-14 J24-12 C488-2 R214-1
- R217-1 R220-1 C489-2 C490-2 C491-2 C504-2 C505-2 C506-2 C546-2 C748-2 C749-2
- U55-12 U55-14 U55-2 U55-3 U55-4 U55-13 U55-17 U55-21 U56-12 U56-14 U56-2
- U56-3 U56-4 U56-13 U56-17 U56-21 U57-12 U57-14 U57-2 U57-3 U57-4 U57-13
- U57-17 U57-21 C492-2 C493-2 C494-2 C495-2 C496-2 C497-2 P3-G19 P3-G56 P3-G38
- P3-G47 P3-G57 P3-G66 P3-G40 P3-G49 P3-G59 P3-G68 P3-G42 P3-G51 P3-G61 P3-G70
- P3-G46 P3-G55 P3-G65 P3-G74 C498-2 C499-2 C500-2 C501-2 C502-2 C503-2 JP10-1
- JP12-1 JP14-1 JP16-1 JP19-1 JP20-3 JP21-3 JP22-3 JP23-3 C507-2 C508-2 C509-2
- C510-2 C511-2 C512-2 C513-2 C514-2 C515-2 C516-2 C517-2 C518-2 C519-2 C520-2
- C521-2 C522-2 C523-2 C524-2 C525-2 C526-2 C527-2 C528-2 C529-2 C530-2 C531-2
- C532-2 C533-2 C534-2 J25-17 J25-18 J25-10 C537-2 R238-2 R253-1 R264-1 R265-1
- R267-1 U58-68 U58-67 U58-66 U58-65 U58-61 U58-34 U58-5 U58-43 U58-49 U58-54
- U58-59 U58-64 U58-70 U58-74 U58-78 U58-82 U58-91 U58-12 U58-93 U58-97 U58-99
- U58-104 U58-106 U58-107 U58-110 U58-112 U58-113 U58-116 U58-16 U58-118
- U58-119 U58-122 U58-124 U58-125 U58-128 U58-20 U58-22 U58-26 U58-30 U58-36
- U58-38 C535-2 C536-2 JP24-1 JP25-1 R3-1 C616-2 C617-2 C618-2 C619-2 C2-2 C1-2
- C621-2 C622-2 C623-2 C624-2 C3-2 C625-2 C626-2 C627-2 C629-2 C630-2 C631-2
- C632-2 C634-2 C636-2 C637-2 C638-2 C639-2 C640-2 C641-2 C642-2 C643-2 C644-2
- C645-2 C647-2 C648-2 C655-2 C657-2 C660-2 C661-2 C662-2 C664-2 C665-2 C666-2
- C667-2 C668-2 C669-2 C670-2 C671-2 C672-2 C673-2 C674-2 C675-2 C677-2 C678-2
- C679-2 C680-2 C681-2 C682-2 C683-2 C684-2 C686-2 C687-2 C688-2 C689-2 C4-2
- C690-2 C691-2 C692-2 C693-2 C694-2 C695-2 C696-2 C697-2 C698-2 C699-2 C700-2
- C702-2 C704-2 C705-2 C706-2 C707-2 C708-2 C709-2 C710-2 C711-2 C712-2 C713-2
- C714-2 C715-2 C716-2 C717-2 C718-2 C719-2 C720-2 C722-2 C723-2 C724-2 C725-2
- C726-2 C729-2 C730-2 C731-2 C732-2 C733-2 C735-2 C737-2 C739-2 C740-2
- U1-AP25 U1-AP27 U1-A1 U1-B3 U1-V16 U1-V17 U1-V18 U1-V19 U1-V20 U1-V21 U1-V22
- U1-V30 U1-W2 U1-W5 U1-B4 U1-W15 U1-W16 U1-W17 U1-W18 U1-W19 U1-W20 U1-W30
- U1-W33 U1-Y13 U1-Y14 U1-B8 U1-Y15 U1-Y16 U1-Y17 U1-Y18 U1-Y19 U1-Y20 U1-Y21
- U1-Y22 U1-AA14 U1-AA15 U1-B16 U1-AA17 U1-AA18 U1-AA20 U1-AA21 U1-AB13
- U1-AB15 U1-AB17 U1-AB18 U1-AB20 U1-AB22 U1-B19 U1-AD1 U1-AE5 U1-AE30 U1-AG2
- U1-AG5 U1-AG30 U1-AG33 U1-AJ1 U1-AK4 U1-AK5 U1-B26 U1-AK8 U1-AK10 U1-AK16
- U1-AK17 U1-AK19 U1-AK25 U1-AK27 U1-AK30 U1-AK31 U1-AL3 U1-B27 U1-AL4 U1-AL5
- U1-AL6 U1-AL29 U1-AL30 U1-AL31 U1-AL32 U1-AM1 U1-AM2 U1-AM3 U1-B31 U1-AM4
- U1-AM31 U1-AM32 U1-AM33 U1-AM34 U1-AN1 U1-AN2 U1-AN3 U1-AN4 U1-AN8 U1-B32
- U1-AN16 U1-AN19 U1-AN27 U1-AN31 U1-AN32 U1-AN33 U1-AN34 U1-AP1 U1-AP2 U1-AP3
- U1-B33 U1-AP32 U1-AP33 U1-AP34 U1-A2 U1-B34 U1-C2 U1-C3 U1-C4 U1-C31 U1-C32
- U1-C33 U1-C34 U1-D3 U1-D4 U1-A3 U1-D5 U1-D30 U1-D31 U1-D32 U1-D33 U1-E5 U1-E8
- U1-E10 U1-E16 U1-E18 U1-A28 U1-E19 U1-E25 U1-E27 U1-E30 U1-E31 U1-H1 U1-H2
- U1-H5 U1-H30 U1-H33 U1-A32 U1-K5 U1-K30 U1-N1 U1-N4 U1-N13 U1-N15 U1-N17
- U1-N18 U1-N20 U1-N22 U1-A33 U1-P14 U1-P15 U1-P17 U1-P18 U1-P20 U1-P21 U1-R13
- U1-R14 U1-R15 U1-R16 U1-A34 U1-R17 U1-R18 U1-R19 U1-R20 U1-R21 U1-R22 U1-T2
- U1-T5 U1-T15 U1-T16 U1-B1 U1-T17 U1-T18 U1-T19 U1-T20 U1-T30 U1-T33 U1-U5
- U1-U13 U1-U14 U1-U15 U1-B2 U1-U16 U1-U17 U1-U18 U1-U19 U1-U20 U1-U21 U1-U22
- U1-V13 U1-V14 U1-V15 U1-M4 U1-M1 U1-J3 U1-K4 U1-K1 C744-2 C745-2 C746-2
- C747-2 U38-1 U38-3 U38-4 U39-1 U39-3 U39-4 U40-1 U40-2 U40-4 U41-2 J14-5 P2-5
- P2-10 P2-11 U42-E8 U42-H2 U42-H7 C649-2 C650-2 C651-2 C197-2 C652-2 C199-2
- C653-2 C654-2 C193-2 C656-2 C195-2 C658-2 C659-2 R86-2 R87-2 U43-18 U44-18
- R85-2 R82-2 C330-2 C331-2 C332-2 C333-2 P11-4 P4-4 U45-2 U46-2 U47-2 U48-2
- C334-2 C335-2 C538-2 J41-1 J41-3 J41-5 J41-7 JP26-1 JP27-1 JP28-1 J26-9 J7-14
- J7-3 J7-4 C543-2 C544-2 C539-2 U59-12 U59-14 U59-2 U59-3 U59-4 U59-13
- U59-17 U59-21 U60-A1 U60-L7 U60-N12 U60-P14 U60-P3 U60-P9 U60-T13 U60-H5
- U60-A12 U60-G12 U60-G5 U60-G7 U60-G9 U60-H10 U60-H8 U60-J7 U60-J9 U60-K10
- U60-K12 U60-A16 U60-K5 U60-K8 U60-M1 U60-M16 U60-P16 U60-P2 U60-T1 U60-T16
- U60-A5 U60-C15 U60-C2 U60-E1 U60-E10 U60-E16 U60-E7 U60-B1 U60-B16 J27-2
- J27-10 J28-1 J28-9 J28-10 C545-2 U61-6 C548-2 C549-2 C550-2 C551-2 C552-2
- C553-2 C554-2 C555-2 C556-2 C557-2 C558-2 C559-2 C560-2 C561-2 C562-2 C563-2
- C564-2 C565-2 C566-2 C567-2 C568-2 C569-2 C570-2 C571-2 C572-2 C573-2 C574-2
- C575-2 C576-2 C577-2 C578-2 C579-2 C580-2 C581-2 C582-2 C583-2 C584-2 C585-2
- C586-2 C587-2 C588-2 C589-2 R281-1 R288-1 R290-1 C270-2 C271-2))
+ C360-2 C460-2 R140-1 R231-2 R232-2 C467-2 C464-2 C465-2 C466-2 C270-2 C271-2
+ C22-2 U33-8 U33-4 C361-2 C362-2 C363-2 C364-2 C365-2 C366-2 C367-2 C368-2
+ C369-2 C370-2 C371-2 C372-2 C373-2 C374-2 C375-2 C376-2 C377-2 C378-2 C379-2
+ C380-2 C381-2 C382-2 C383-2 C384-2 C385-2 C386-2 C387-2 CP20-5 CP20-6 CP20-7
+ CP20-8 CP21-5 CP21-6 CP21-7 CP21-8 CP22-5 CP22-6 CP22-7 CP22-8 CP23-5 CP23-6
+ CP23-7 CP23-8 CP24-5 CP24-6 CP24-7 CP24-8 CP25-5 CP25-6 CP25-7 CP25-8 CP27-5
+ CP27-6 CP27-7 CP27-8 C388-2 C389-2 C390-2 C391-2 C392-2 C393-2 C394-2 C395-2
+ U50-3 U50-8 U50-7 U50-4 U50-11 U53-3 U53-6 U53-1 JP30-1 Q4-2 Q5-2 Q6-2 Q7-2
+ U51-3 U51-4 U51-7 U51-1 R143-1 R147-1 R148-1 R179-1 R181-1 C400-2 C401-2
+ C402-2 C403-2 C404-2 C405-2 C409-2 C410-2 C412-2 C413-2 C104-2 C105-2 C423-2
+ C424-2 C420-2 C419-2 C418-2 C421-2 C422-2 C425-2 C426-2 C117-2 U27-3 U27-4
+ U27-7 U27-1 J19-1 J20-1 J21-1 P9-81 P9-82 P9-83 P9-84 P9-85 P9-86 P9-87 P9-88
+ C427-2 C428-2 C429-2 C468-2 C469-2 C470-2 C471-2 C472-2 U2-3 C473-2 C474-2
+ C475-2 C476-2 C477-2 C478-2 C479-2 C480-2 C481-2 C482-2 C483-2 C13-2 U35-3
+ C615-2 RO10-1 RO11-3 RO14-1 U54-108 U54-123 U54-99 U54-144 U54-29 U54-36
+ U54-47 U54-62 U54-72 U54-89 U54-90 SW2-8 SW2-7 SW2-6 SW2-5 SW3-8 SW3-7 SW3-6
+ SW3-5 C484-2 J17-16 J17-17 J17-8 J17-4 J22-2 J22-4 J22-6 J22-8 J22-10 J22-14
+ J22-12 R197-1 R199-1 R209-1 R210-1 R211-1 R212-1 U15-AC23 U15-AB23 U15-L23
+ C485-2 C486-2 C487-2 J24-2 J24-4 J24-6 J24-8 J24-10 J24-14 J24-12 C488-2
+ R214-1 R217-1 R220-1 C489-2 C490-2 C491-2 C504-2 C505-2 C506-2 C546-2 C748-2
+ C749-2 U55-12 U55-14 U55-2 U55-3 U55-4 U55-13 U55-17 U55-21 U56-12 U56-14
+ U56-2 U56-3 U56-4 U56-13 U56-17 U56-21 U57-12 U57-14 U57-2 U57-3 U57-4
+ U57-13 U57-17 U57-21 C492-2 C493-2 C494-2 C495-2 C496-2 C497-2 P3-G19 P3-G56
+ P3-G38 P3-G47 P3-G57 P3-G66 P3-G40 P3-G49 P3-G59 P3-G68 P3-G42 P3-G51 P3-G61
+ P3-G70 P3-G46 P3-G55 P3-G65 P3-G74 C498-2 C499-2 C500-2 C501-2 C502-2 C503-2
+ JP10-1 JP12-1 JP14-1 JP16-1 JP19-1 JP20-3 JP21-3 JP22-3 JP23-3 C507-2 C508-2
+ C509-2 C510-2 C511-2 C512-2 C513-2 C514-2 C515-2 C516-2 C517-2 C518-2 C519-2
+ C520-2 C521-2 C522-2 C523-2 C524-2 C525-2 C526-2 C527-2 C528-2 C529-2 C530-2
+ C531-2 C532-2 C533-2 C534-2 J25-17 J25-18 J25-10 C537-2 R238-2 R253-1 R264-1
+ R265-1 R267-1 U58-68 U58-67 U58-66 U58-65 U58-61 U58-34 U58-5 U58-43 U58-49
+ U58-54 U58-59 U58-64 U58-70 U58-74 U58-78 U58-82 U58-91 U58-12 U58-93 U58-97
+ U58-99 U58-104 U58-106 U58-107 U58-110 U58-112 U58-113 U58-116 U58-16
+ U58-118 U58-119 U58-122 U58-124 U58-125 U58-128 U58-20 U58-22 U58-26 U58-30
+ U58-36 U58-38 C535-2 C536-2 JP24-1 JP25-1 R3-1 C616-2 C617-2 C618-2 C619-2
+ C2-2 C1-2 C621-2 C622-2 C623-2 C624-2 C3-2 C625-2 C626-2 C627-2 C629-2
+ C630-2 C631-2 C632-2 C634-2 C636-2 C637-2 C638-2 C639-2 C640-2 C641-2 C642-2
+ C643-2 C644-2 C645-2 C647-2 C648-2 C655-2 C657-2 C660-2 C661-2 C662-2 C664-2
+ C665-2 C666-2 C667-2 C668-2 C669-2 C670-2 C671-2 C672-2 C673-2 C674-2 C675-2
+ C677-2 C678-2 C679-2 C680-2 C681-2 C682-2 C683-2 C684-2 C686-2 C687-2 C688-2
+ C689-2 C4-2 C690-2 C691-2 C692-2 C693-2 C694-2 C695-2 C696-2 C697-2 C698-2
+ C699-2 C700-2 C702-2 C704-2 C705-2 C706-2 C707-2 C708-2 C709-2 C710-2 C711-2
+ C712-2 C713-2 C714-2 C715-2 C716-2 C717-2 C718-2 C719-2 C720-2 C722-2 C723-2
+ C724-2 C725-2 C726-2 C729-2 C730-2 C731-2 C732-2 C733-2 C735-2 C737-2 C739-2
+ C740-2 U1-AP25 U1-AP27 U1-A1 U1-B3 U1-V16 U1-V17 U1-V18 U1-V19 U1-V20 U1-V21
+ U1-V22 U1-V30 U1-W2 U1-W5 U1-B4 U1-W15 U1-W16 U1-W17 U1-W18 U1-W19 U1-W20
+ U1-W30 U1-W33 U1-Y13 U1-Y14 U1-B8 U1-Y15 U1-Y16 U1-Y17 U1-Y18 U1-Y19 U1-Y20
+ U1-Y21 U1-Y22 U1-AA14 U1-AA15 U1-B16 U1-AA17 U1-AA18 U1-AA20 U1-AA21
+ U1-AB13 U1-AB15 U1-AB17 U1-AB18 U1-AB20 U1-AB22 U1-B19 U1-AD1 U1-AE5 U1-AE30
+ U1-AG2 U1-AG5 U1-AG30 U1-AG33 U1-AJ1 U1-AK4 U1-AK5 U1-B26 U1-AK8 U1-AK10
+ U1-AK16 U1-AK17 U1-AK19 U1-AK25 U1-AK27 U1-AK30 U1-AK31 U1-AL3 U1-B27 U1-AL4
+ U1-AL5 U1-AL6 U1-AL29 U1-AL30 U1-AL31 U1-AL32 U1-AM1 U1-AM2 U1-AM3 U1-B31
+ U1-AM4 U1-AM31 U1-AM32 U1-AM33 U1-AM34 U1-AN1 U1-AN2 U1-AN3 U1-AN4 U1-AN8
+ U1-B32 U1-AN16 U1-AN19 U1-AN27 U1-AN31 U1-AN32 U1-AN33 U1-AN34 U1-AP1
+ U1-AP2 U1-AP3 U1-B33 U1-AP32 U1-AP33 U1-AP34 U1-A2 U1-B34 U1-C2 U1-C3 U1-C4
+ U1-C31 U1-C32 U1-C33 U1-C34 U1-D3 U1-D4 U1-A3 U1-D5 U1-D30 U1-D31 U1-D32
+ U1-D33 U1-E5 U1-E8 U1-E10 U1-E16 U1-E18 U1-A28 U1-E19 U1-E25 U1-E27 U1-E30
+ U1-E31 U1-H1 U1-H2 U1-H5 U1-H30 U1-H33 U1-A32 U1-K5 U1-K30 U1-N1 U1-N4 U1-N13
+ U1-N15 U1-N17 U1-N18 U1-N20 U1-N22 U1-A33 U1-P14 U1-P15 U1-P17 U1-P18 U1-P20
+ U1-P21 U1-R13 U1-R14 U1-R15 U1-R16 U1-A34 U1-R17 U1-R18 U1-R19 U1-R20 U1-R21
+ U1-R22 U1-T2 U1-T5 U1-T15 U1-T16 U1-B1 U1-T17 U1-T18 U1-T19 U1-T20 U1-T30
+ U1-T33 U1-U5 U1-U13 U1-U14 U1-U15 U1-B2 U1-U16 U1-U17 U1-U18 U1-U19 U1-U20
+ U1-U21 U1-U22 U1-V13 U1-V14 U1-V15 U1-M4 U1-M1 U1-J3 U1-K4 U1-K1 C744-2
+ C745-2 C746-2 C747-2 U38-1 U38-3 U38-4 U39-1 U39-3 U39-4 U40-1 U40-2 U40-4
+ U41-2 J14-5 P2-5 P2-10 P2-11 U42-E8 U42-H2 U42-H7 C649-2 C650-2 C651-2
+ C197-2 C652-2 C199-2 C653-2 C654-2 C193-2 C656-2 C195-2 C658-2 C659-2 R86-2
+ R87-2 U43-18 U44-18 R85-2 R82-2 C330-2 C331-2 C332-2 C333-2 P11-4 P4-4 U45-2
+ U46-2 U47-2 U48-2 C334-2 C335-2 C538-2 J41-1 J41-3 J41-5 J41-7 JP26-1 JP27-1
+ JP28-1 J26-9 J7-14 J7-3 J7-4 C543-2 C544-2 C539-2 U59-12 U59-14 U59-2 U59-3
+ U59-4 U59-13 U59-17 U59-21 U60-A1 U60-L7 U60-N12 U60-P14 U60-P3 U60-P9
+ U60-T13 U60-H5 U60-A12 U60-G12 U60-G5 U60-G7 U60-G9 U60-H10 U60-H8 U60-J7
+ U60-J9 U60-K10 U60-K12 U60-A16 U60-K5 U60-K8 U60-M1 U60-M16 U60-P16 U60-P2
+ U60-T1 U60-T16 U60-A5 U60-C15 U60-C2 U60-E1 U60-E10 U60-E16 U60-E7 U60-B1
+ U60-B16 J27-2 J27-10 J28-1 J28-9 J28-10 C545-2 U61-6 C548-2 C549-2 C550-2
+ C551-2 C552-2 C553-2 C554-2 C555-2 C556-2 C557-2 C558-2 C559-2 C560-2 C561-2
+ C562-2 C563-2 C564-2 C565-2 C566-2 C567-2 C568-2 C569-2 C570-2 C571-2 C572-2
+ C573-2 C574-2 C575-2 C576-2 C577-2 C578-2 C579-2 C580-2 C581-2 C582-2 C583-2
+ C584-2 C585-2 C586-2 C587-2 C588-2 C589-2 R281-1 R288-1 R290-1))
 		(net "GPIO44"
 			(pins RO5-1 U1-V32))
 		(net "I1V0"
@@ -29000,12 +28745,12 @@
 			(pins C46-1 C50-1 C55-1 C56-1 C57-1 U15-H32 U15-K29 U15-N34 U15-T30 U16-6
  U17-H10 U17-H2))
 		(net "VTT_0V9"
-			(pins R138-2 C465-1 C466-1 U33-3 RP13-5 RP13-6 RP13-7 RP13-8 RP14-5 RP14-6
- RP14-7 RP14-8 RP15-5 RP15-6 RP15-7 RP15-8 RP16-5 RP16-6 RP16-7 RP16-8 RP17-5
- RP17-6 RP17-7 RP17-8 RP18-5 RP18-6 RP18-7 RP18-8 RP20-5 RP20-6 RP20-7 RP20-8
- CP20-1 CP20-2 CP20-3 CP20-4 CP21-1 CP21-2 CP21-3 CP21-4 CP22-1 CP22-2 CP22-3
- CP22-4 CP23-1 CP23-2 CP23-3 CP23-4 CP24-1 CP24-2 CP24-3 CP24-4 CP25-1 CP25-2
- CP25-3 CP25-4 CP27-1 CP27-2 CP27-3 CP27-4 C270-1 C271-1))
+			(pins R138-2 C465-1 C466-1 C270-1 C271-1 U33-3 RP13-5 RP13-6 RP13-7 RP13-8
+ RP14-5 RP14-6 RP14-7 RP14-8 RP15-5 RP15-6 RP15-7 RP15-8 RP16-5 RP16-6 RP16-7
+ RP16-8 RP17-5 RP17-6 RP17-7 RP17-8 RP18-5 RP18-6 RP18-7 RP18-8 RP20-5 RP20-6
+ RP20-7 RP20-8 CP20-1 CP20-2 CP20-3 CP20-4 CP21-1 CP21-2 CP21-3 CP21-4 CP22-1
+ CP22-2 CP22-3 CP22-4 CP23-1 CP23-2 CP23-3 CP23-4 CP24-1 CP24-2 CP24-3 CP24-4
+ CP25-1 CP25-2 CP25-3 CP25-4 CP27-1 CP27-2 CP27-3 CP27-4))
 		(net "VTT_QDR_BY0_1"
 			(pins RP27-5 RP27-6 RP27-7 RP27-8 RP28-5 RP28-6 RP28-7 RP28-8 RP29-5 RP29-6
  RP29-7 RP29-8 RP30-5 RP30-6 RP30-7 RP30-8 RP31-5 RP31-6 RP31-7 RP31-8 RP32-5
