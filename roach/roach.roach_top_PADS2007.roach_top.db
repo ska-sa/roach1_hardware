@@ -1,13 +1,11 @@
 
-(pcb
- "C:\Users\mrevnell\roach\elec\roach\roach.roach_top_PADS2007.roach_top.db"
+(pcb "D:\ROACH\elec\roach\roach.roach_top_PADS2007.roach_top.db"
 	(version "5.0.0")
 	(units "basic")
 	(config_properties
 		(attributes
-			(attval "PcbConfigName"
- "C:\Users\mrevnell\roach\elec\roach\roach_pcb.cfg")
-			(attval "CnsFile" "C:\Users\mrevnell\roach\elec\roach\pads2007.cns")
+			(attval "PcbConfigName" "D:\ROACH\elec\roach\roach_pcb.cfg")
+			(attval "CnsFile" ".\pads2007.cns")
 			(attval "BeAdapter" "PADS2007")
 			(attval "FeAdapter" "DxDesigner")
 			(attval "SYSCONFIG" "pcbfwd")
@@ -28,7 +26,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1195506504"))
+		(file_ext "roach_top.pxr" "1195558776"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -5037,7 +5035,7 @@
 			(pin 1  5 "CAP__CAPC1005X55N_1" 0 "N1" 0))
 		(part "CAP1210_220")
 		(logical_part_mapping "CAP1210_220"
-			(comp "C598" "C597" "C596" "C466" "C465" "C464" "C458" "C457" "C456" "C84" "C60" "C59"))
+			(comp "C598" "C597" "C596" "C466" "C465" "C464" "C458" "C457" "C456" "C271" "C270" "C84" "C60" "C59"))
 		(logical_part "CAP1210_220"
 			(slots
 				(slot "C__CAP1210_220_1"
@@ -21322,6 +21320,24 @@
 				(attval "DESCRIPTION" "CERAMIC CHIP CAPACITOR - 0402")
 				(attval "DEVICE" "CHIPCAP0402X0_5")
 				(attval "REFDES" "C272")))
+		(component "CAPC3225X220N"
+			(place "C271" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "10UF")
+				(attval "TOLERANCE" "±10%")
+				(attval "DEVICE" "CAP1210_220")
+				(attval "REFDES" "C271")))
+		(component "CAPC3225X220N"
+			(place "C270" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "10UF")
+				(attval "TOLERANCE" "±10%")
+				(attval "DEVICE" "CAP1210_220")
+				(attval "REFDES" "C270")))
 		(component "CAPC1005X55N"
 			(place "C269" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
@@ -25132,6 +25148,8 @@
 		(func "$1I307\$1I701" "" "C276" 1)
 		(func "$1I307\$1I700" "" "C275" 1)
 		(func "$1I307\$1I695" "" "C272" 1)
+		(func "$1I6\$1I2577" "" "C271" 1)
+		(func "$1I6\$1I2576" "" "C270" 1)
 		(func "$1I307\$1I958" "" "C269" 1)
 		(func "$1I307\$1I957" "" "C268" 1)
 		(func "$1I307\$1I956" "" "C267" 1)
@@ -28724,7 +28742,7 @@
  C553-2 C554-2 C555-2 C556-2 C557-2 C558-2 C559-2 C560-2 C561-2 C562-2 C563-2
  C564-2 C565-2 C566-2 C567-2 C568-2 C569-2 C570-2 C571-2 C572-2 C573-2 C574-2
  C575-2 C576-2 C577-2 C578-2 C579-2 C580-2 C581-2 C582-2 C583-2 C584-2 C585-2
- C586-2 C587-2 C588-2 C589-2 R281-1 R288-1 R290-1))
+ C586-2 C587-2 C588-2 C589-2 R281-1 R288-1 R290-1 C270-2 C271-2))
 		(net "GPIO44"
 			(pins RO5-1 U1-V32))
 		(net "I1V0"
@@ -28987,7 +29005,7 @@
  RP17-6 RP17-7 RP17-8 RP18-5 RP18-6 RP18-7 RP18-8 RP20-5 RP20-6 RP20-7 RP20-8
  CP20-1 CP20-2 CP20-3 CP20-4 CP21-1 CP21-2 CP21-3 CP21-4 CP22-1 CP22-2 CP22-3
  CP22-4 CP23-1 CP23-2 CP23-3 CP23-4 CP24-1 CP24-2 CP24-3 CP24-4 CP25-1 CP25-2
- CP25-3 CP25-4 CP27-1 CP27-2 CP27-3 CP27-4))
+ CP25-3 CP25-4 CP27-1 CP27-2 CP27-3 CP27-4 C270-1 C271-1))
 		(net "VTT_QDR_BY0_1"
 			(pins RP27-5 RP27-6 RP27-7 RP27-8 RP28-5 RP28-6 RP28-7 RP28-8 RP29-5 RP29-6
  RP29-7 RP29-8 RP30-5 RP30-6 RP30-7 RP30-8 RP31-5 RP31-6 RP31-7 RP31-8 RP32-5
