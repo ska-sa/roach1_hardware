@@ -28,7 +28,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1195589372"))
+		(file_ext "roach_top.pxr" "1195681136"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -26918,7 +26918,7 @@
 		(net "$1I747\$1N60"
 			(pins CR1-2 R197-2))
 		(net "$1I747\$1N710"
-			(pins U54-103 J17-14))
+			(pins U54-110 J17-14))
 		(net "$1I747\$1N712"
 			(pins U54-143))
 		(net "$1I747\$1N713"
@@ -26931,66 +26931,18 @@
 			(pins U54-3))
 		(net "$1I747\$1N717"
 			(pins U54-2))
-		(net "$1I747\$1N721"
-			(pins U54-79))
-		(net "$1I747\$1N722"
-			(pins U54-80))
-		(net "$1I747\$1N723"
-			(pins U54-81))
-		(net "$1I747\$1N729"
-			(pins U54-88))
-		(net "$1I747\$1N730"
-			(pins U54-91))
-		(net "$1I747\$1N731"
-			(pins U54-92))
-		(net "$1I747\$1N732"
-			(pins U54-94))
-		(net "$1I747\$1N733"
-			(pins U54-95))
-		(net "$1I747\$1N734"
-			(pins U54-96))
-		(net "$1I747\$1N735"
-			(pins U54-97))
-		(net "$1I747\$1N736"
-			(pins U54-98))
-		(net "$1I747\$1N737"
-			(pins U54-100))
-		(net "$1I747\$1N738"
-			(pins U54-101))
-		(net "$1I747\$1N740"
-			(pins U54-74))
-		(net "$1I747\$1N742"
-			(pins U54-20))
-		(net "$1I747\$1N743"
-			(pins U54-21))
-		(net "$1I747\$1N744"
-			(pins U54-22))
-		(net "$1I747\$1N745"
-			(pins U54-23))
-		(net "$1I747\$1N746"
-			(pins U54-24))
-		(net "$1I747\$1N748"
-			(pins U54-25))
-		(net "$1I747\$1N749"
-			(pins U54-26))
-		(net "$1I747\$1N766"
-			(pins U54-82))
-		(net "$1I747\$1N771"
-			(pins U54-69))
-		(net "$1I747\$1N772"
-			(pins U54-70))
 		(net "$1I747\$1N826"
-			(pins U54-102 J17-15))
+			(pins U54-121 J17-15))
 		(net "$1I747\CFG_DIP0"
-			(pins U54-137 R204-1 SW3-1))
+			(pins U54-92 R204-1 SW3-1))
 		(net "$1I747\CFG_DIP1"
-			(pins U54-136 R205-1 SW3-2))
+			(pins U54-91 R205-1 SW3-2))
 		(net "$1I747\CFG_DIP2"
-			(pins U54-135 R206-1 SW3-3))
+			(pins U54-88 R206-1 SW3-3))
 		(net "$1I747\CLK/SCLK"
-			(pins U54-114 J17-6))
+			(pins U54-116 J17-6))
 		(net "$1I747\CMD/DI"
-			(pins U54-115 J17-10))
+			(pins U54-114 J17-10))
 		(net "$1I747\CPLD_TCK"
 			(pins R192-1 U54-67 J22-9))
 		(net "$1I747\CPLD_TDI"
@@ -26998,41 +26950,39 @@
 		(net "$1I747\CPLD_TMS"
 			(pins R193-1 U54-65 J22-11))
 		(net "$1I747\DAT0/DO"
-			(pins U54-104 J17-2))
+			(pins U54-119 J17-2))
 		(net "$1I747\DAT1"
-			(pins U54-105 J17-1))
+			(pins U54-120 J17-1))
 		(net "$1I747\DAT2"
-			(pins U54-106 J17-13))
+			(pins U54-111 J17-13))
 		(net "$1I747\DAT3"
-			(pins U54-107 J17-12))
+			(pins U54-112 J17-12))
 		(net "$1I747\DAT4"
-			(pins U54-110 J17-11))
+			(pins U54-113 J17-11))
 		(net "$1I747\DAT5"
-			(pins U54-111 J17-9))
+			(pins U54-115 J17-9))
 		(net "$1I747\DAT6"
-			(pins U54-112 J17-5))
+			(pins U54-117 J17-5))
 		(net "$1I747\DAT7"
-			(pins U54-113 J17-3))
+			(pins U54-118 J17-3))
 		(net "$1I747\PER_CCLK_EN#"
-			(pins U2-1 U54-75 R135-1))
+			(pins U2-1 U54-41 R135-1))
 		(net "$1I747\RESET_BUFPOR#"
-			(pins U54-126 R203-1))
+			(pins U54-98 R203-1))
 		(net "$1I747\SYSERR#"
-			(pins U54-128 R202-1))
+			(pins U54-100 R202-1))
 		(net "$1I747\USER_DIP0"
-			(pins U54-142 R198-1 SW2-1))
+			(pins U54-97 R198-1 SW2-1))
 		(net "$1I747\USER_DIP1"
-			(pins U54-140 R194-1 SW2-2))
+			(pins U54-96 R194-1 SW2-2))
 		(net "$1I747\USER_DIP2"
-			(pins U54-139 R195-1 SW2-3))
+			(pins U54-95 R195-1 SW2-3))
 		(net "$1I747\USER_DIP3"
-			(pins U54-138 R196-1 SW2-4))
+			(pins U54-94 R196-1 SW2-4))
 		(net "$1I747\USER_LED0"
-			(pins U54-130 R200-1))
+			(pins U54-102 R200-1))
 		(net "$1I747\USER_LED1"
-			(pins U54-129 R201-1))
-		(net "$1I790\$1N113"
-			(pins SW4-8))
+			(pins U54-101 R201-1))
 		(net "$1I790\SX95T_HSWAP_EN"
 			(pins R209-2 U15-M23))
 		(net "$1I803\$1N624"
@@ -28193,7 +28143,7 @@
  C482-1 C483-1 C13-1 U35-5 C615-1 RO10-3 RO11-1 RO14-3 R192-2 R193-2 U54-8
  U54-109 U54-127 U54-141 U54-27 U54-55 U54-73 U54-93 R194-2 R195-2 R196-2
  R198-2 R204-2 R205-2 R206-2 C484-1 CR6-1 CR5-1 J17-7 R135-2 J22-13 R207-2
- R208-2 U15-AA22 U15-AD23 SW4-1 SW4-2 SW4-3 SW4-4 C485-1 C486-1 C487-1 J24-13
+ R208-2 U15-AA22 U15-AD23 SW4-8 SW4-7 SW4-6 SW4-5 C485-1 C486-1 C487-1 J24-13
  C488-1 R213-2 R218-2 R219-2 U55-10 U56-10 U57-10 L13-2 L3-2 L2-2 U38-2 U38-8
  U39-2 U39-8 U40-3 U40-8 U41-3 R89-2 R88-2 U42-F7 U42-G5 U42-F1 U42-D8 C649-1
  C650-1 C651-1 C652-1 C653-1 C654-1 C656-1 C658-1 C659-1 U15-D13 U15-G14
@@ -28236,29 +28186,29 @@
 		(net "ATRTN0"
 			(pins U15-W17 U60-T4 J31-1 J31-3))
 		(net "BOOT_CFG0"
-			(pins RO10-2 U54-133 U48-3))
+			(pins RO10-2 U54-129 U48-3))
 		(net "BOOT_CFG1"
-			(pins RO11-2 U54-132 U45-3))
+			(pins RO11-2 U54-128 U45-3))
 		(net "BOOT_CFG2"
-			(pins RO14-2 U54-131 U46-3))
+			(pins RO14-2 U54-126 U46-3))
 		(net "CLK_CPLD_33MHZ"
-			(pins RS3-2 U54-42))
+			(pins RS3-2 U54-140))
 		(net "CLK_CPLD_50MHZ"
-			(pins RS10-2 U54-43))
+			(pins RS10-2 U54-142))
 		(net "CLK_GETH0_25MHZ"
 			(pins RS7-2 U58-86))
 		(net "CLK_PERCLK"
-			(pins U2-2 U54-44 R4-2 U15-AG17))
+			(pins U2-2 U54-42 R4-2 U15-AG17))
 		(net "CLK_SEL_M66EN"
-			(pins U24-12 U24-13 U24-15 U54-46))
+			(pins U24-12 U24-13 U24-15 U54-137))
 		(net "CLK_TMRCLK"
-			(pins U1-P3 U54-45))
+			(pins U1-P3 U54-9))
 		(net "CLK_UART_11.0592MHZ"
 			(pins RS1-2 U1-A27))
 		(net "CLK_USB2.0_48MHZ"
 			(pins RS9-2 U1-N3))
 		(net "CPU_TRST#"
-			(pins U1-A6 U54-41))
+			(pins U1-A6 U54-17))
 		(net "DDR_VREF_0V9"
 			(pins C148-1 J8-1 C432-1 C433-1 C453-1 C149-1 C150-2 C151-1 C152-1 U1-Y4
  U1-AL10 U1-AF4 U1-AL19 U32-6))
@@ -28270,13 +28220,13 @@
  CP29-4 CP30-1 CP30-2 CP30-3 CP30-4 CP31-1 CP31-2 CP31-3 CP31-4 CP32-1 CP32-2
  CP32-3 CP32-4 CP33-1 CP33-2 CP33-3 CP33-4))
 		(net "DEBUG_TRST#"
-			(pins J1-21 R36-1 P1-4 U54-40))
+			(pins J1-21 R36-1 P1-4 U54-16))
 		(net "EE1_WP"
-			(pins U54-52 U40-7))
+			(pins U54-46 U40-7))
 		(net "EE2_BOOT_WP"
-			(pins U54-53 U38-7 U39-7))
+			(pins U54-48 U38-7 U39-7))
 		(net "EXT_RESET#"
-			(pins U54-83 U1-D6))
+			(pins U54-11 U1-D6))
 		(net "FAN1_CONTROL"
 			(pins J21-4 U60-H15))
 		(net "FAN1_SENSE"
@@ -28290,13 +28240,13 @@
 		(net "FAN3_SENSE"
 			(pins J19-3 U60-L15))
 		(net "FRY_BY#"
-			(pins U54-50 U42-A4 R81-1))
+			(pins U54-44 U42-A4 R81-1))
 		(net "FWP#"
-			(pins U54-51 U42-B4 R80-2))
+			(pins U54-45 U42-B4 R80-2))
 		(net "GETH0_INT#"
 			(pins U1-AD33 R31-2 U58-3))
 		(net "GETH0_RST#"
-			(pins U54-68 U58-33))
+			(pins U54-139 U58-33))
 		(net "GMCMDCLK"
 			(pins U58-81 JP25-2 U1-AL34))
 		(net "GMCMDIO"
@@ -28505,7 +28455,7 @@
 		(net "LOAD_RES_OFF"
 			(pins Q8-1 R181-2 U60-D16))
 		(net "M66EN"
-			(pins U54-134 SW3-4 U47-6))
+			(pins U54-87 SW3-4 U47-6))
 		(net "MGT_AVCC"
 			(pins FB1-1 FB11-1 FB17-1 FB22-1 FB28-1 FB38-1 FB44-1 FB49-1 R221-2 C491-1
  U57-20 U57-1 U57-18 U57-19 C496-1 C503-1))
@@ -28583,33 +28533,33 @@
 		(net "PADD26"
 			(pins U42-B2 U15-AG12 U1-D19))
 		(net "PADD27"
-			(pins U54-4 U42-A2 U15-AF13 U1-C19))
+			(pins U54-19 U42-A2 U15-AF13 U1-C19))
 		(net "PADD28"
-			(pins U54-7 U42-C2 U15-AG23 U1-A19))
+			(pins U54-20 U42-C2 U15-AG23 U1-A19))
 		(net "PADD29"
-			(pins U54-9 U42-D2 U15-AF23 U1-D18))
+			(pins U54-21 U42-D2 U15-AF23 U1-D18))
 		(net "PADD30"
-			(pins U54-10 U42-E2 U15-AE12 U1-C18))
+			(pins U54-22 U42-E2 U15-AE12 U1-C18))
 		(net "PADD31"
-			(pins U54-11 U1-B18))
+			(pins U54-23 U1-B18))
 		(net "PCS_2"
-			(pins U54-30 U1-D9 R62-2))
+			(pins U54-14 U1-D9 R62-2))
 		(net "PDATA0"
-			(pins U54-12 U42-G7 U15-AH13 U1-C14))
+			(pins U54-24 U42-G7 U15-AH13 U1-C14))
 		(net "PDATA1"
-			(pins U54-13 U42-F6 U15-AH14 U1-D14))
+			(pins U54-25 U42-F6 U15-AH14 U1-D14))
 		(net "PDATA2"
-			(pins U54-14 U42-G6 U15-AH19 U1-A13))
+			(pins U54-26 U42-G6 U15-AH19 U1-A13))
 		(net "PDATA3"
-			(pins U54-15 U42-F5 U15-AH20 U1-B13))
+			(pins U54-28 U42-F5 U15-AH20 U1-B13))
 		(net "PDATA4"
-			(pins U54-16 U42-G4 U15-AG13 U1-C13))
+			(pins U54-30 U42-G4 U15-AG13 U1-C13))
 		(net "PDATA5"
-			(pins U54-17 U42-F4 U15-AH12 U1-D13))
+			(pins U54-31 U42-F4 U15-AH12 U1-D13))
 		(net "PDATA6"
-			(pins U54-18 U42-G3 U15-AH22 U1-A12))
+			(pins U54-32 U42-G3 U15-AH22 U1-A12))
 		(net "PDATA7"
-			(pins U54-19 U42-F3 U15-AG22 U1-C12))
+			(pins U54-33 U42-F3 U15-AG22 U1-C12))
 		(net "PDATA8"
 			(pins U42-E6 U15-AD19 U1-A11))
 		(net "PDATA9"
@@ -28627,31 +28577,31 @@
 		(net "PDATA15"
 			(pins U42-E3 U15-AF15 U1-C10))
 		(net "POE#"
-			(pins U54-31 U42-G2 U15-AF21 U1-B14 R65-2))
+			(pins U54-34 U42-G2 U15-AF21 U1-B14 R65-2))
 		(net "PPC_DDR2_RESET_N"
-			(pins J8-18 U54-85))
+			(pins J8-18 U54-138))
 		(net "PPC_RESET"
-			(pins U54-38 U60-J1))
+			(pins U54-54 U60-J1))
 		(net "PPC_THERMONA"
 			(pins U1-C16 U60-R6 J31-8))
 		(net "PPC_THERMONB"
 			(pins U1-D16 U60-T6 J31-5 J31-7))
 		(net "PR_W#"
-			(pins U54-32 U42-A5 U15-AF20 U1-A14 R66-2))
+			(pins U54-15 U42-A5 U15-AF20 U1-A14 R66-2))
 		(net "PS_ON#"
 			(pins J18-16 U60-E8))
 		(net "PWBE_0#"
-			(pins U54-33 U15-AF14 U1-A15 R67-2))
+			(pins U54-18 U15-AF14 U1-A15 R67-2))
 		(net "PWR_GOOD"
 			(pins R28-2 U31-4 U35-1 U35-2))
 		(net "PWR_OK"
 			(pins J18-8 U60-F8))
 		(net "QDR2_BY0_1_SYS_RST_N"
-			(pins U15-D31 U54-87))
+			(pins U15-D31 U54-53))
 		(net "QDR2_BY0_1_TDO"
 			(pins U63-R1 TP10-1 U17-R11))
 		(net "QDR2_BY2_3_SYS_RST_N"
-			(pins U15-U26 U54-86))
+			(pins U15-U26 U54-51))
 		(net "QDR2_BY2_3_TDO"
 			(pins TP13-1 U17-R1))
 		(net "QDR2_TCK"
@@ -28663,9 +28613,9 @@
 		(net "RESET_CPLD#"
 			(pins U54-71 R82-1 U45-6 U46-6 U48-6))
 		(net "RESET_PB_POR#"
-			(pins R41-2 U31-3 D1-3 C47-1 R42-2 U54-35))
+			(pins R41-2 U31-3 D1-3 C47-1 R42-2 U54-103))
 		(net "RESET_POR#"
-			(pins U1-AD31 R29-2 U31-1 U54-34 U42-B5))
+			(pins U1-AD31 R29-2 U31-1 U54-104 U42-B5))
 		(net "SCPCLK"
 			(pins U1-AC34 R75-2 P4-1))
 		(net "SCPDI"
@@ -28673,35 +28623,35 @@
 		(net "SCPDO"
 			(pins U1-AB31 P4-5))
 		(net "SELECTMAP_CS"
-			(pins U54-28 U1-A9 R63-2))
+			(pins U54-50 U1-A9 R63-2))
 		(net "SEL_SYSCLK"
-			(pins U9-8 R30-2 U54-48))
+			(pins U9-8 R30-2 U54-136))
 		(net "STTM_ALERT"
 			(pins U1-U34 R35-2 U41-5))
 		(net "STTM_AS"
-			(pins U54-54 U41-1))
+			(pins U54-49 U41-1))
 		(net "SX95T_CCLK_0"
-			(pins U2-4 U54-125 U15-N15))
+			(pins U2-4 U54-43 U15-N15))
 		(net "SX95T_CS_B_0"
-			(pins U54-124 U15-N22))
+			(pins U54-52 U15-N22))
 		(net "SX95T_DONE_0"
-			(pins U1-A4 U54-119 U15-M15))
+			(pins U1-A4 U54-13 U15-M15))
 		(net "SX95T_D_IN_0"
-			(pins U54-121 U15-P15))
+			(pins U54-38 U15-P15))
 		(net "SX95T_D_OUT_BUSY_0"
-			(pins U1-C6 U54-120 U15-AD15))
+			(pins U1-C6 U54-40 U15-AD15))
 		(net "SX95T_INIT_B_0"
-			(pins U1-M3 U54-118 U15-N14))
+			(pins U1-M3 U54-131 U15-N14))
 		(net "SX95T_M0_0"
-			(pins U1-P4 U54-76 R212-2 U15-AD21 SW4-5))
+			(pins U1-P4 U54-105 R212-2 U15-AD21 SW4-4))
 		(net "SX95T_M1_0"
-			(pins U1-R3 U54-77 R211-2 U15-AC22 SW4-6))
+			(pins U1-R3 U54-106 R211-2 U15-AC22 SW4-3))
 		(net "SX95T_M2_0"
-			(pins U1-R4 U54-78 R210-2 U15-AD22 SW4-7))
+			(pins U1-R4 U54-107 R210-2 U15-AD22 SW4-2))
 		(net "SX95T_PROGRAM_B_0"
-			(pins U1-C5 U54-117 U15-M22))
+			(pins U1-C5 U54-12 U15-M22))
 		(net "SX95T_RDWR_B_0"
-			(pins U54-116 U15-N23))
+			(pins U54-35 U15-N23))
 		(net "SX95T_TCK"
 			(pins RO3-1 U1-U32 R208-1 U15-AB15 J24-9))
 		(net "SX95T_TDI"
@@ -28711,7 +28661,7 @@
 		(net "SX95T_TMS"
 			(pins RO2-1 U1-T34 R207-1 U15-AC14 J24-11))
 		(net "SYSERR"
-			(pins U1-AD32 U54-49))
+			(pins U1-AD32 U54-10))
 		(net "SYS_CONFIG0"
 			(pins U54-56 U60-C8))
 		(net "SYS_CONFIG1"
@@ -31160,11 +31110,6 @@
 		(net_scalar "$1I790\SX95T_HSWAP_EN"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I790\$1N113"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I747\USER_LED1"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
@@ -31241,126 +31186,6 @@
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I747\$1N826"
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N772"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N771"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N766"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N749"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N748"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N746"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N745"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N744"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N743"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N742"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N740"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N738"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N737"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N736"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N735"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N734"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N733"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N732"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N731"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N730"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N729"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N723"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N722"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N721"
-			(attributes
-				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I747\$1N717"
