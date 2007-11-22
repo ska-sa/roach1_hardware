@@ -1772,7 +1772,7 @@
         )
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE ROACH_CPLD_XC2C256_7VQ100C)
+          (VALUE roach_cpld_XC2C256_7VQ144C)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -1807,7 +1807,7 @@
         )
         (ATTRIBUTE
           (NAME "Part Name")
-          (VALUE roach_cpld_XC2C256_7VQ100C_top)
+          (VALUE roach_cpld_XC2C256_7VQ144C_top)
           (OWNER DESIGNCAPTURE)
         )
         (ATTRIBUTE
@@ -1863,6 +1863,21 @@
           (VALUE XC2C256)
           (OWNER ICDBDXD)
           (LOCKED T)
+        )
+        (ATTRIBUTE
+          (NAME Level)
+          (VALUE std)
+          (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME Type)
+          (VALUE FPGA)
+          (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME "Ref Designator")
+          (VALUE "U?")
+          (OWNER ICDBDXD)
         )
       )
       (INSTANCEATTRIBUTES
@@ -9418,7 +9433,7 @@
         )
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_cpld_XC2C256_7VQ100C)
+          (VALUE roach_cpld_XC2C256_7VQ144C)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -9448,7 +9463,7 @@
         )
         (ATTRIBUTE
           (NAME "Part Name")
-          (VALUE roach_cpld_XC2C256_7VQ100C_top)
+          (VALUE roach_cpld_XC2C256_7VQ144C_top)
           (OWNER DESIGNCAPTURE)
         )
         (ATTRIBUTE
@@ -11121,7 +11136,7 @@
         )
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_cpld_XC2C256_7VQ100C)
+          (VALUE roach_cpld_XC2C256_7VQ144C)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -11151,7 +11166,7 @@
         )
         (ATTRIBUTE
           (NAME "Part Name")
-          (VALUE roach_cpld_XC2C256_7VQ100C_top)
+          (VALUE roach_cpld_XC2C256_7VQ144C_top)
           (OWNER DESIGNCAPTURE)
         )
         (ATTRIBUTE
@@ -12259,9 +12274,9 @@
       (COLOR PLLPinFill "220, 220, 237")
       (COLOR PLLPinOutline "153, 153, 153")
       (COLOR PackageFill "204, 204, 204")
-      (INT PackageFilter 0)
+      (INT PackageFilter 1)
       (COLOR PackageOutline "153, 153, 153")
-      (INT PinLegend 1)
+      (INT PinLegend 0)
       (FONT PinNumberFont "NONFIXED,8,0,0,0,0,50")
       (COLOR ReservedPinFill "140, 155, 145")
       (COLOR ReservedPinOutline "153, 153, 153")
@@ -12465,7 +12480,7 @@
       (COLOR PcbInteriorFillColor "0, 4, 132")
       (COLOR PcbInteriorOutlineColor Green)
       (INT PcbInteriorPenWidth 1)
-      (INT PcbPortLabelType 0)
+      (INT PcbPortLabelType 1)
       (COLOR PinFunctionColor "255, 207, 0")
       (FONT PinFunctionFont "SCHEMATIC,10,0,0,0,0,50")
       (COLOR PinNameColor Yellow)
@@ -12483,7 +12498,7 @@
       (INT PortPenStyle 0)
       (INT PortPenWidth 1)
       (INT PortSpacingFactor 2)
-      (INT PowerPortLabelType 0)
+      (INT PowerPortLabelType 1)
       (COLOR RectBrushColor "Mid Green")
       (INT RectBrushStyle 3)
       (INT RectColorId 2)
@@ -12527,5 +12542,5 @@
       (STRING VrefSignals "")
     )
   )
-  (LAYOUT PINMAP SIGMAP)
+  LAYOUT
 )
