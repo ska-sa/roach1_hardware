@@ -1,0 +1,69 @@
+
+.GLOBAL vss vss! vdd vcco vccaux
+
+
+.PARAM dfln=0.07 dflp=0.07 dflnn=0.07 dflpn=0.07
+.PARAM dflnmlvt=0.1 dfln12=0.12 dflp12=0.12
+.PARAM dfln15=0.12 dflp15=0.12 dflnt=0.24 dflpt=0.24
+.PARAM dflntt=0.27 dflptt=0.27
+.PARAM dfwn=0.2 dfwp=0.2 dfwnlvt=0.15 dfwplvt=0.15
+.PARAM dfwnmlvt=0.16 dfwnmox=0.16 dfwpmox=0.16
+.PARAM dfwnt=0.36 dfwpt=0.36
+
+
+************************************
+** Library name: rnr_spice
+** Cell name: pkg_load
+** View name: schematic
+************************************
+
+.subckt pkg_load pad pin
+
+L0 pad net7   l=800.0p
+TI0 net15 vss pin vss   z0=65 td=50p nl=0.25
+C0 net15 vss   c=500.0f
+R0 net7 net15   r=100.0m
+
+.ends pkg_load
+
+** End of subcircuit definition.
+
+************************************
+** Library name: rnr_spice
+** Cell name: board_load
+** View name: schematic
+************************************
+
+.subckt board_load a_rx b_rx pin_a pin_b term_r=50 c_test_load=0.05p
++dtline=600p ztline=50
+
+txI_tline_b pin_b vss b_rx vss z0=ztline td=dtline
+txI_tline_a pin_a vss a_rx vss z0=ztline td=dtline
+cxC2 a_rx b_rx c_test_load
+rxR83 vnode a_rx term_r
+rxR102 b_rx vnode term_r
+$Carxcap a_rx vss 10p
+$Cbrxcap b_rx vss 10p
+
+.ends board_load
+
+
+** End of subcircuit definition.
+
+************************************
+** Library name: rnr_spice
+** Cell name: top
+** View name: schematic
+************************************
+
+XI0 clkin clkin_b din1 din2 t1 t2 d<30> d_b<30> d<31> d_b<31>
++ lat_en_out s1_out s2_out s3_out s4_out lat_en_trist s1_trist s2_trist
++ s3_trist s4_trist gsr lvds_m<6> lvds_m<5> lvds_m<4> lvds_m<3> lvds_m<2>
++ lvds_m<1> lvds_m<0> lvds_s<8> lvds_s<7> lvds_s<6> lvds_s<5> lvds_s<4>
++ lvds_s<3> lvds_s<2> lvds_s<1> lvds_s<0> pad<0> pad<1> vbg cbit<10>
++ cbit<9> cbit<8> cbit<7> cbit<6> cbit<5> cbit<4> cbit<3> cbit<2> cbit<1>
++ cbit<0> ts_b vcco vccaux lvds
+XI81 pad<1> pin_b pkg_load
+XI51 pad<0> pin_a pkg_load
+XI98 a_rx b_rx pin_a pin_b board_load
+

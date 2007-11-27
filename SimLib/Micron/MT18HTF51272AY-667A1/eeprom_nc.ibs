@@ -1,0 +1,44 @@
+|
+[IBIS ver]       3.2
+[File name]      eeprom_nc.ibs
+[File Rev]       0.5
+[Date]           Thursday, July 16, 1998
+[Source]         Tom Rondeau                
+[Notes]          This is I No Connect model 
+[Disclaimer]     (C) Copyright Micron Technology, Inc. 1999 All Rights Reserved
+                 The user is granted the use of this IBIS model and is not 
+                 granted rights to sell, load, rent, lease, or license this IBIS
+                 model in whole or in part, or in modified form to anyone other 
+                 than the user. Users may modify the IBIS model to suit their
+                 specific application. This IBIS model is provided on an as is"
+                 basis only. 
+[Copyright]      (C) Copyright Micron Technology, Inc. 1999 
+|
+|************************************************************************
+|                            Component eeprom 
+|************************************************************************
+|
+[Component]      eeprom 
+[Manufacturer]   Microchip 
+[Package]
+| variable       typ                 min                 max
+R_pkg            50.00m              40.00m              55.00m
+L_pkg            2.50nH              2.00nH              5.00nH
+C_pkg            0.60pF              0.40pF              0.90pF
+|
+[Pin]  signal_name          model_name           R_pin     L_pin     C_pin
+1      NC                   NC                  55.00m    5.00nH    0.80pF
+2      NC                   NC                  50.00m    4.00nH    0.65pF
+3      NC                   NC                  45.00m    3.00nH    0.55pF
+4      NC                   NC                  40.00m    2.00nH    0.40pF
+5      NC                   NC                  40.00m    2.00nH    0.40pF
+6      NC                   NC                  45.00m    3.00nH    0.55pF
+7      NC                   NC                  50.00m    4.00nH    0.65pF
+8      NC                   NC                  55.00m    5.00nH    0.80pF
+| End [Component] eeprom 
+|
+[End]
+
+
+
+

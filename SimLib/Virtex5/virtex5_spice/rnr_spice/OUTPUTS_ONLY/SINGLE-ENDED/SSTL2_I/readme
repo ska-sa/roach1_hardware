@@ -1,0 +1,24 @@
+Date: 7/21/2006   --  Xilinx Confidential
+Virtex5 : Encrypted Netlist/Model for SSTL ClassI 2.5v
+rev1.0
+
+
+Models  directory for process models
+subcircuits_drv directory has all subcircuit calls
+sstl2c1.sp is the stimulus file
+netlist.main  is the main netlist shell.
+
+Note : In order for simulations to run correctly, the user will
+have to modify the following lines in the ".sp"  appropriately :
+
+.options search='../subcircuits_drv'
+.lib  'models/rx0.20_enc.lib' TT
+
+
+
+
+
+revhistory
+
+7/21/06 : 1.0 - Original models.
+

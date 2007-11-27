@@ -1,0 +1,24 @@
+Date: 9/28/2006   --  Xilinx Confidential
+Virtex5 : Encrypted Netlist/Model for DCI DIFFSSTL ClassI 2.5v
+rev1.0
+
+
+Models  directory for process models
+subcircuits_diff directory has all subcircuit calls
+diffsstl2.sp is the stimulus file
+netlist.main  is the main netlist shell.
+
+Note : In order for simulations to run correctly, the user will
+have to modify the following lines in the ".sp"  appropriately :
+
+.options search='../subcircuits_diff'
+.lib  'models/rx0.20_enc.lib' TT
+
+
+
+
+
+revhistory
+
+9/28/06 : 1.0 - Original models.
+

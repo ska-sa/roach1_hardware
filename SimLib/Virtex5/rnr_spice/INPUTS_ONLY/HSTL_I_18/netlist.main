@@ -1,0 +1,66 @@
+
+.GLOBAL vss vdd vcco vccaux
+
+
+.PARAM dfln=0.07 dflp=0.07 dflnn=0.07 dflpn=0.07
+.PARAM dflnmlvt=0.1 dfln12=0.12 dflp12=0.12
+.PARAM dfln15=0.12 dflp15=0.12 dflnt=0.24 dflpt=0.24
+.PARAM dflntt=0.27 dflptt=0.27
+.PARAM dfwn=0.2 dfwp=0.2 dfwnlvt=0.15 dfwplvt=0.15
+.PARAM dfwnmlvt=0.16 dfwnmox=0.16 dfwpmox=0.16
+.PARAM dfwnt=0.36 dfwpt=0.36
+
+************************************
+** Library name: rnr_spice_sanjay
+** Cell name: pkg_load
+** View name: schematic
+************************************
+
+.subckt pkg_load pad pin
+
+L0 pad net7   l=800.0p
+TI0 net15 vss pin vss   z0=65 td=50p nl=0.25
+C0 net15 vss   c=500.0f
+R0 net7 net15   r=100.0m
+
+.ends pkg_load
+
+************************************
+** Library name: rnr_spice_sanjay
+** Cell name: receiver
+** View name: schematic
+************************************
+
+XI0 in1_int in2_int net67 vcco vccaux lvds_out cmos_out sstl_hstl_out
++ input_optinv_sel in_to_ff cbnet1<39> cbnet1<38> cbnet1<37> cbnet1<36> cbnet1<35>
++ cbnet1<34> cbnet1<33> cbnet1<32> cbnet1<31> cbnet1<30> cbnet1<29> cbnet1<28> cbnet1<27>
++ cbnet1<26> cbnet1<25> cbnet1<24> cbnet1<23> cbnet1<22> cbnet1<21>
++ cbnet1<20> cbnet1<19> cbnet1<18> cbnet1<17> cbnet1<16> cbnet1<15>
++ cbnet1<14> cbnet1<13> cbnet1<12> cbnet1<11> cbnet1<10> cbnet1<9>
++ cbnet1<8> cbnet1<7> cbnet1<6> cbnet1<5> cbnet1<4> cbnet1<3>
++ cbnet1<2> cbnet1<1> cbnet1<0> cnnd1<13> cnnd1<12> cnnd1<11>
++ cnnd1<10> cnnd1<9> cnnd1<8> cnnd1<7> cnnd1<6> cnnd1<5> cnnd1<4>
++ cnnd1<3> cnnd1<2> cnnd1<1> cnnd1<0> cnpd1<19> cnpd1<18> cnpd1<17>
++ cnpd1<16> cnpd1<15> cnpd1<14> cnpd1<13> cnpd1<12> cnpd1<11>
++ cnpd1<10> cnpd1<9> cnpd1<8> cnpd1<7> cnpd1<6> cnpd1<5> cnpd1<4>
++ cnpd1<3> cnpd1<2> cnpd1<1> cnpd1<0>
++ cbnet2<39> cbnet2<38> cbnet2<37> cbnet2<36> cbnet2<35> cbnet2<34> cbnet2<33>
++ cbnet2<32> cbnet2<31> cbnet2<30> cbnet2<29> cbnet2<28> cbnet2<27>
++ cbnet2<26> cbnet2<25> cbnet2<24> cbnet2<23> cbnet2<22> cbnet2<21>
++ cbnet2<20> cbnet2<19> cbnet2<18> cbnet2<17> cbnet2<16> cbnet2<15>
++ cbnet2<14> cbnet2<13> cbnet2<12> cbnet2<11> cbnet2<10> cbnet2<9>
++ cbnet2<8> cbnet2<7> cbnet2<6> cbnet2<5> cbnet2<4> cbnet2<3>
++ cbnet2<2> cbnet2<1> cbnet2<0> cnnd2<13> cnnd2<12> cnnd2<11>
++ cnnd2<10> cnnd2<9> cnnd2<8> cnnd2<7> cnnd2<6> cnnd2<5> cnnd2<4>
++ cnnd2<3> cnnd2<2> cnnd2<1> cnnd2<0> cnpd2<19> cnpd2<18> cnpd2<17>
++ cnpd2<16> cnpd2<15> cnpd2<14> cnpd2<13> cnpd2<12> cnpd2<11>
++ cnpd2<10> cnpd2<9> cnpd2<8> cnpd2<7> cnpd2<6> cnpd2<5> cnpd2<4>
++ cnpd2<3> cnpd2<2> cnpd2<1> cnpd2<0>
++ lvds_m<8> lvds_m<7> lvds_m<6> lvds_m<5> lvds_m<4>
++ lvds_m<3> lvds_m<2> lvds_m<1> lvds_m<0> lvds_s<8> lvds_s<7>
++ lvds_s<6> lvds_s<5> lvds_s<4> lvds_s<3> lvds_s<2> lvds_s<1> lvds_s<0>
++ icbnet<2> icbnet<1> icbnet<0> receiver
+XI2 net67 vref pkg_load
+XI3 in2_int in2 pkg_load
+XI4 in1_int in1 pkg_load
+

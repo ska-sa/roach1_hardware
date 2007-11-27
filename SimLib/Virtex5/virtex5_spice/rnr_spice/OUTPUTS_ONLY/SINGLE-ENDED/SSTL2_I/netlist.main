@@ -1,0 +1,65 @@
+
+.GLOBAL vss vss vdd vccaux vcco
+
+
+.PARAM dfln=0.07 dflp=0.07 dflnn=0.07 dflpn=0.07
+.PARAM dflnmlvt=0.1 dfln12=0.12 dflp12=0.12
+.PARAM dfln15=0.12 dflp15=0.12 dflnt=0.24 dflpt=0.24
+.PARAM dflntt=0.27 dflptt=0.27
+.PARAM dfwn=0.2 dfwp=0.2 dfwnlvt=0.15 dfwplvt=0.15
+.PARAM dfwnmlvt=0.16 dfwnmox=0.16 dfwpmox=0.16
+.PARAM dfwnt=0.36 dfwpt=0.36
+
+************************************
+** Library name: rnr_spice_sanjay
+** Cell name: pkg_load
+** View name: schematic
+************************************
+
+.subckt pkg_load pad pin
+
+L0 pad net7    l=l_pkg
+TI0 net15 vss pin vss   z0=65 td=50p nl=0.25
+C0 net15 vss   c=c_pkg
+R0 net7 net15  r=r_pkg
+
+.ends pkg_load
+
+** End of subcircuit definition.
+
+************************************
+** Library name: rnr_spice_sanjay
+** Cell name: board_load
+** View name: schematic
+************************************
+
+.subckt board_load rx tx vterm
+
+Crxcap rx vss   c=10p
+TI145 net16 vss rx vss   z0=50 td=600.00p nl=0.25
+Rseries tx net16   r=25
+$Rtx vterm net16   r=50
+Rrx vterm rx   r=50
+
+.ends board_load
+
+** End of subcircuit definition.
+
+************************************
+** Library name: Virtex5
+** Cell name: top
+** View name: schematic
+************************************
+
+XI0 clkin clkin_b din1 din2 t1 t2 gsr lat_en_out lat_en_trist s1_out s1_trist s2_out s2_trist
++s3_out s3_trist s4_out s4_trist d<31> d_b<31> d<30> d_b<30> cbnet<38> cbnet<37> cbnet<36> cbnet<35>
++cbnet<34> cbnet<33> cbnet<32> cbnet<31> cbnet<30> cbnet<29> cbnet<28> cbnet<27> cbnet<26>
++cbnet<25> cbnet<24> cbnet<23> cbnet<22> cbnet<21> cbnet<20> cbnet<19> cbnet<18> cbnet<17> cbnet<16>
++cbnet<15> cbnet<14> cbnet<13> cbnet<12> cbnet<11> cbnet<10> cbnet<9> cbnet<8> cbnet<7> cbnet<6> cbnet<5>
++cbnet<4> cbnet<3> cbnet<2> cbnet<1> cbnet<0> vccaux vcco tsb_s<0> cnnd<13> cnnd<12> cnnd<11> cnnd<10>
++cnnd<9> cnnd<8> cnnd<7> cnnd<6> cnnd<5> cnnd<4> cnnd<3> cnnd<2> cnnd<1> cnnd<0> cnpd<19> cnpd<18> cnpd<17>
++cnpd<16> cnpd<15> cnpd<14> cnpd<13> cnpd<12> cnpd<11> cnpd<10> cnpd<9> cnpd<8> cnpd<7> cnpd<6> cnpd<5> cnpd<4>
++cnpd<3> cnpd<2> cnpd<1> cnpd<0> rnr_pad driver
+XI1 rnr_pad rnr_pin pkg_load
+XI2 pin rnr_pin vterm board_load
+

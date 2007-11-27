@@ -1,0 +1,85 @@
+
+.GLOBAL vss vdd vcco vccaux
+
+
+.PARAM dfln=0.07 dflp=0.07 dflnn=0.07 dflpn=0.07
+.PARAM dflnmlvt=0.1 dfln12=0.12 dflp12=0.12
+.PARAM dfln15=0.12 dflp15=0.12 dflnt=0.24 dflpt=0.24
+.PARAM dflntt=0.27 dflptt=0.27
+.PARAM dfwn=0.2 dfwp=0.2 dfwnlvt=0.15 dfwplvt=0.15
+.PARAM dfwnmlvt=0.16 dfwnmox=0.16 dfwpmox=0.16
+.PARAM dfwnt=0.36 dfwpt=0.36
+
+************************************
+** Library name: rnr_spice_sanjay
+** Cell name: pkg_load
+** View name: schematic
+************************************
+
+.subckt pkg_load pad pin
+
+L0 pad net7    l=l_pkg
+TI0 net15 vss pin vss   z0=65 td=50p nl=0.25
+C0 net15 vss   c=c_pkg
+R0 net7 net15  r=r_pkg
+
+.ends pkg_load
+
+** End of subcircuit definition.
+
+************************************
+** Library name: rnr_spice_sanjay
+** Cell name: board_load
+** View name: schematic
+************************************
+
+.subckt board_load rx tx vterm
+
+Crxcap rx vss   c=10p
+TI145 net16 vss rx vss   z0=50 td=600.00p nl=0.25
+Rseries tx net16   r=1.000m
+$Rtx vterm net16   r=50
+Rrx vterm rx   r=50
+
+.ends board_load
+
+** End of subcircuit definition.
+
+************************************
+** Library name: Virtex5
+** Cell name: top
+** View name: schematic
+************************************
+
+XI0 clkina clkina_b din1a din2a t1a t2a gsr lat_en_outa lat_en_trista s1_outa s1_trista
++s2_outa s2_trista s3_outa s3_trista s4_outa s4_trista da<31> da_b<31> da<30> da_b<30>
++cbnet1_drv<38> cbnet1_drv<37> cbnet1_drv<36> cbnet1_drv<35>
++cbnet1_drv<34> cbnet1_drv<33> cbnet1_drv<32> cbnet1_drv<31> cbnet1_drv<30> cbnet1_drv<29> cbnet1_drv<28> cbnet1_drv<27>
++cbnet1_drv<26> cbnet1_drv<25> cbnet1_drv<24> cbnet1_drv<23> cbnet1_drv<22> cbnet1_drv<21>
++cbnet1_drv<20> cbnet1_drv<19> cbnet1_drv<18> cbnet1_drv<17> cbnet1_drv<16> cbnet1_drv<15>
++cbnet1_drv<14> cbnet1_drv<13> cbnet1_drv<12> cbnet1_drv<11> cbnet1_drv<10> cbnet1_drv<9>
++cbnet1_drv<8> cbnet1_drv<7> cbnet1_drv<6> cbnet1_drv<5> cbnet1_drv<4> cbnet1_drv<3>
++cbnet1_drv<2> cbnet1_drv<1> cbnet1_drv<0> tsb_s1<0> cnnd1_drv<13> cnnd1_drv<12> cnnd1_drv<11>
++cnnd1_drv<10> cnnd1_drv<9> cnnd1_drv<8> cnnd1_drv<7> cnnd1_drv<6> cnnd1_drv<5> cnnd1_drv<4>
++cnnd1_drv<3> cnnd1_drv<2> cnnd1_drv<1> cnnd1_drv<0> cnpd1_drv<19> cnpd1_drv<18> cnpd1_drv<17>
++cnpd1_drv<16> cnpd1_drv<15> cnpd1_drv<14> cnpd1_drv<13> cnpd1_drv<12> cnpd1_drv<11>
++cnpd1_drv<10> cnpd1_drv<9> cnpd1_drv<8> cnpd1_drv<7> cnpd1_drv<6> cnpd1_drv<5> cnpd1_drv<4>
++cnpd1_drv<3> cnpd1_drv<2> cnpd1_drv<1> cnpd1_drv<0> rnr_pada
++clkinb clkinb_b din1b din2b t1b t2b lat_en_outb lat_en_tristb s1_outb s1_tristb
++s2_outb s2_tristb s3_outb s3_tristb s4_outb s4_tristb db<31> db_b<31> db<30> db_b<30>
++cbnet2_drv<38> cbnet2_drv<37> cbnet2_drv<36> cbnet2_drv<35> cbnet2_drv<34> cbnet2_drv<33>
++cbnet2_drv<32> cbnet2_drv<31> cbnet2_drv<30> cbnet2_drv<29> cbnet2_drv<28> cbnet2_drv<27>
++cbnet2_drv<26> cbnet2_drv<25> cbnet2_drv<24> cbnet2_drv<23> cbnet2_drv<22> cbnet2_drv<21>
++cbnet2_drv<20> cbnet2_drv<19> cbnet2_drv<18> cbnet2_drv<17> cbnet2_drv<16> cbnet2_drv<15>
++cbnet2_drv<14> cbnet2_drv<13> cbnet2_drv<12> cbnet2_drv<11> cbnet2_drv<10> cbnet2_drv<9>
++cbnet2_drv<8> cbnet2_drv<7> cbnet2_drv<6> cbnet2_drv<5> cbnet2_drv<4> cbnet2_drv<3>
++cbnet2_drv<2> cbnet2_drv<1> cbnet2_drv<0> tsb_s2<0> cnnd2_drv<13> cnnd2_drv<12> cnnd2_drv<11>
++cnnd2_drv<10> cnnd2_drv<9> cnnd2_drv<8> cnnd2_drv<7> cnnd2_drv<6> cnnd2_drv<5> cnnd2_drv<4>
++cnnd2_drv<3> cnnd2_drv<2> cnnd2_drv<1> cnnd2_drv<0> cnpd2_drv<19> cnpd2_drv<18> cnpd2_drv<17>
++cnpd2_drv<16> cnpd2_drv<15> cnpd2_drv<14> cnpd2_drv<13> cnpd2_drv<12> cnpd2_drv<11>
++cnpd2_drv<10> cnpd2_drv<9> cnpd2_drv<8> cnpd2_drv<7> cnpd2_drv<6> cnpd2_drv<5> cnpd2_drv<4>
++cnpd2_drv<3> cnpd2_drv<2> cnpd2_drv<1> cnpd2_drv<0> rnr_padb driver
+XI1 rnr_pada rnr_pina pkg_load
+XI2 rnr_padb rnr_pinb pkg_load
+XI3 pina rnr_pina vterm board_load
+XI4 pinb rnr_pinb vterm board_load

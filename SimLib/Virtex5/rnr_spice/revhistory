@@ -1,0 +1,89 @@
+Virtex5 IOB Spice Encrypted Models.
+
+rev1.0 : 6/16/2006
+
+The driver models for the following IO stds have been released.
+
+- LVDS_25
+- RSDS_25
+- LVDSEXT_25
+- HT_25
+
+rev1.1 : 7/21/2006
+
+The following driver models have been released.
+
+- HSTL ClassI 1.2v, 1.5v, 1.8v
+- HSTL ClassII 1.5v, 1.8v
+- HSTL ClassIII 1.5v, 1.8v
+- HSTL ClassIV 1.5v, 1.8v
+- GTL
+- GTLP
+- SSTL ClassI 1.8v, 2.5v
+- SSTL ClassII 1.8v, 2.5v
+
+rev1.2 : 7/24/2006
+
+The following driver models have been released.
+
+- LVCMOS12 All drive strengths and slew rates.
+- LVMCOS15 All drive strengths and slew rates.
+- LVCMOS18 All drive strengths and slew rates.
+- LVCMOS25 All drive strengths and slew rates.
+- LVCMOS33 All drive strengths and slew rates.
+- LVTTL All drive strengths and slew rates.
+
+rev1.3 : 8/24/2006
+
+The following driver models have been released.
+
+- GTL_DCI, GTLP_DCI
+- HSTL_DCI - 1.5v & 1.8v ; class I,II,III,IV
+- HSTL_T_DCI - 1.5v & 1.8v ; class II
+- SSTL_DCI - 1.8v & 2.5v ; class I,II
+- SSTL_T_DCI - 1.8v & 2.5v ; class II
+- LVDCI - 1.5v,1.8v,2.5v,3.3v
+- LVDCIDV2 - 1.5v,1.8v,2.5v
+- PCI33,PCI66,PCIX
+
+rev1.4 : 8/31/2006
+
+The following receiver models have been released.
+
+- GTL DCI and non-DCI
+- GTLP DCI and non-DCI
+- HSTL 1.2v non-DCI Class I
+- HSTL 1.5v DCI and non-DCI Class I,II,III,IV
+- HSTL 1.8v DCI and non-DCI Class I,II,III,IV
+- SSTL 1.8v DCI and non-DCI Class I,II
+- SSTL 2.5v DCI and non-DCI Class I,II
+
+rev1.5 : 9/22/2006
+
+All receiver models have been released.
+
+
+rev1.6 : 9/28/06
+
+All driver and receiver models have been released. All future revisions will contains
+only changes to the existing Spice models.
+
+rev1.7 : 10/13/06
+
+Corrected the package parasitics in all the receiver models. The correct values are
+
+.param  r_pkg        = 0.1
+.param  l_pkg        = 0.8nH
+.param  c_pkg        = 0.5pF
+
+rev1.8 : 10/26/06
+
+Corrected the Vccint value from 1.2v to 1.0v for the following IO stds.
+- LVDS_25
+- RSDS_25
+- LVDSEXT_25
+- HT_25
+
+rev1.9 : 11/03/06
+
+Corrected the subcircuits_drv directory. 

@@ -1,0 +1,34 @@
+Date: 8/29/2006   Virtex5 Receiver model --  Xilinx Confidential
+Encrypted Netlist/Model for DCI SSTL ClassII 1.8v Receiver
+rev1.0
+
+
+Models   - directory for process models
+subcircuits_rec  - directory contains all subcircuit calls
+sstl18.sp is the stimulus file
+netlist.main  is the main netlist shell.
+
+Ports of interest : 
+
+1). in1 - Input pin 
+2). in1_int - input after the pkg model
+3). sstl_hstl_out : Output of the hstl input buffer ( goes into the Virtex5 core)
+4). in_to_ff : Input to the flipflop in the Virtex5 core.
+
+
+Note : In order for simulations to run correctly, the user will
+have to modify the following lines in the ".sp"  appropriately :
+
+.options search='../subcircuits_rec'
+.lib '../models/rx0.20_enc.lib' TT
+.lib '../models/rx0.20_enc.lib' T_res 
+
+TT corner : vdd=1v, vcco=1.8v, vccaux=2.5v, temp=25c
+SS corner : vdd=0.95v, vcco=1.7v, vccaux=2.375v, temp=85c
+FF corner : vdd=1.05v, vcco=1.9v, vccaux=2.625v, temp=0c
+
+
+revhistory
+
+8/29/06 : 1.0 - Original models.
+

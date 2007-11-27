@@ -1,0 +1,30 @@
+Date: 9/22/2006   Virtex5 Receiver model --  Xilinx Confidential
+Encrypted Netlist/Model for DIFF_HSTL_I 1.5v Receiver
+rev1.0
+
+
+Models   - directory for process models
+subcircuits_rec  - directory contains all subcircuit calls
+diffhstl.sp is the stimulus file
+netlist.main  is the main netlist shell.
+
+Ports of interest : 
+
+1). in1 & in2 - Input pins 
+2). in1_int & in2_int - inputs after the pkg model
+3). lvds_out : Output of the lvds input buffer ( goes into the Virtex5 core)
+4). in_to_ff : Input to the flipflop in the Virtex5 core.
+
+
+Note : In order for simulations to run correctly, the user will
+have to modify the following lines in the ".sp"  appropriately :
+
+.options search='../subcircuits_rec'
+.lib '../models/rx0.20_enc.lib' TT
+.lib '../models/rx0.20_enc.lib' T_res 
+
+
+revhistory
+
+9/22/06 : 1.0 - Original models.
+
