@@ -1,0 +1,41 @@
+**/////////////////////////////////////////////////////////////////////////////
+**$Date: 2007/11/06 18:10:49 $
+**$RCSfile: v5_gtp_refclk_clock_pulse.ckt,v $
+**$Revision: 1.1 $
+**//////////////////////////////////////////////////////////////////////////////
+**   ____  ____ 
+**  /   /\/   / 
+** /___/  \  /    Vendor: Xilinx 
+** \   \   \/     Version : 1.0
+**  \   \         Filename : v5_gtp_refclk_clock_pulse.ckt
+**  /   /         
+** /___/   /\
+** \   \  /  \ 
+**  \___\/\___\ 
+**
+**                VIRTEX-5 FPGA ROCKETIO SIGNAL INTEGRITY KIT
+**
+**
+** Model       : Clock
+** Type        : H-Spice
+** Description : Clock Generator - Trapezoidal Pulse Source
+**//////////////////////////////////////////////////////////////////////////////
+
+.subckt v5_gtp_refclk_clock_pulse
++REFCLK_N
++REFCLK_P
++AVSS
+
+vREFCLK_N  REFCLK_N REFCLK_CM  
++'swing_single_ended_clk'
++pulse('swing_single_ended_clk' '-swing_single_ended_clk' 0.75ns 
++trise_clk tfall_clk pulse_width_clk period_clk)
+
+vREFCLK_P  REFCLK_P REFCLK_CM
++'-swing_single_ended_clk'
++pulse('-swing_single_ended_clk' 'swing_single_ended_clk' 0.75ns 
++trise_clk tfall_clk pulse_width_clk period_clk) 
+
+vREFCLK_CM REFCLK_CM    AVSS   '2*vsuph_refclk_v5_gtp/3'
+
+.ends v5_gtp_refclk_clock_pulse

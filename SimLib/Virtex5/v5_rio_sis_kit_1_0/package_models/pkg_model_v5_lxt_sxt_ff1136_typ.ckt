@@ -1,0 +1,31 @@
+**/////////////////////////////////////////////////////////////////////////////
+**$Date: 2007/11/06 18:10:54 $
+**$RCSfile: pkg_model_v5_lxt_sxt_ff1136_typ.ckt,v $
+**$Revision: 1.1 $
+**//////////////////////////////////////////////////////////////////////////////
+**   ____  ____ 
+**  /   /\/   / 
+** /___/  \  /    Vendor: Xilinx 
+** \   \   \/     Version : 1.0
+**  \   \         Filename : pkg_model_v5_lxt_sxt_ff1136_typ.ckt
+**  /   /         
+** /___/   /\
+** \   \  /  \ 
+**  \___\/\___\ 
+**
+**                VIRTEX-5 FPGA ROCKETIO SIGNAL INTEGRITY KIT
+**
+**
+** Model       : Package
+** Type        : S-Parameter
+** Description : Typical Package Trace Model of a FF1136 Package for the 
+**               Virtex-5 LXT and SXT.
+**
+**//////////////////////////////////////////////////////////////////////////////
+
+.subckt pkg_model_v5_lxt_sxt_ff1136_typ 1 2 3 4 AVSS
+.param fmaxVal = '1/5p'
+.param fbaseVal = '1/500n'
+SNPORT0 1 2 3 4 AVSS mname=s_model intdattyp=ma FMAX=fmaxVal FBASE=fbaseVal
+.model s_model S TSTONEFILE = '$XILINX_V5_RIO_SIS_KIT/package_models/pkg_model_v5_lxt_sxt_ff1136_typ.s4p'
+.ends pkg_model_v5_lxt_sxt_ff1136_typ

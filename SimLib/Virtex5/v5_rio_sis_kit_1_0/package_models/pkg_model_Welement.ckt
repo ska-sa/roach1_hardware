@@ -1,0 +1,57 @@
+**/////////////////////////////////////////////////////////////////////////////
+**$Date: 2007/11/06 18:10:54 $
+**$RCSfile: pkg_model_Welement.ckt,v $
+**$Revision: 1.1 $
+**//////////////////////////////////////////////////////////////////////////////
+**   ____  ____ 
+**  /   /\/   / 
+** /___/  \  /    Vendor: Xilinx 
+** \   \   \/     Version : 1.0
+**  \   \         Filename : pkg_model_Welement.ckt
+**  /   /         
+** /___/   /\
+** \   \  /  \ 
+**  \___\/\___\ 
+**
+**                VIRTEX-5 FPGA ROCKETIO SIGNAL INTEGRITY KIT
+**
+**
+** Model       : Package
+** Type        : Lumped Circuit Model
+** Description : Package Model using lumped circuit elements comprising a 
+**               W element to model the transmission line characteristic of the
+**               trace with discrete capacitors to model the bump and ball 
+**               capacitances
+**//////////////////////////////////////////////////////////////////////////////
+
+********************************
+** PACKAGE MODEL              **
+** Lumped Circuit Element     **
+**                            **
+********************************
+.subckt pkg_model_Welement 1 2 3 4 AVSS
+
+.MODEL sl_ex W MODELTYPE=RLGC, N=2
++ Lo = 2.788354e-007
++      1.062349e-008 2.788354e-007
++ Co = 1.258133e-010
++      -1.086093e-012 1.258133e-010
++ Ro = 1.655078e+002
++      0.000000e+000 1.655078e+002
++ Go = 0.000000e+000
++      0.000000e+000 0.000000e+000
++ Rs = 1.026162e-002
++      1.395722e-003 1.026162e-002
++ Gd = 7.905081e-012
++      -6.824121e-014 7.905081e-012
+
+W1 1 2 0 3 4 0 RLGCmodel=sl_ex  N=2 l=0.015
+.param cbump=50ff
+cbmpp 3 0 c='cbump'
+cbmpn 4 0 c='cbump'
+.param csball=100ff
+csballp 1 0 c='csball'
+csballn 2 0 c='csball'
+.param cpnsball=100f
+cpnsball 1 2 c='cpnsball'
+.ends pkg_model_Welement

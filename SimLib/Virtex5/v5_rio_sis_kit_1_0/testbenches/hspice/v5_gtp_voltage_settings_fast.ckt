@@ -1,0 +1,34 @@
+**/////////////////////////////////////////////////////////////////////////////
+**$Date: 2007/11/06 18:10:54 $
+**$RCSfile: v5_gtp_voltage_settings_fast.ckt,v $
+**$Revision: 1.1 $
+**//////////////////////////////////////////////////////////////////////////////
+**   ____  ____ 
+**  /   /\/   / 
+** /___/  \  /    Vendor: Xilinx 
+** \   \   \/     Version : 1.0
+**  \   \         Filename : v5_gtp_voltage_settings_fast.ckt
+**  /   /         
+** /___/   /\
+** \   \  /  \ 
+**  \___\/\___\ 
+**
+**                VIRTEX-5 FPGA ROCKETIO SIGNAL INTEGRITY KIT
+**
+**
+** Description : Virtex-5 GTP Transmit and Receive Analog and Threshold 
+**               Supply Voltage Settings for fast operating conditions
+**//////////////////////////////////////////////////////////////////////////////
+
+
+** Virtex-5 GTP Transmitter Voltages **
+.param vsup_tx_v5_gtp  = 1.05
+.param vsuph_tx_v5_gtp = 1.26
+
+** Virtex-5 GTP Receiver Voltages **
+.param vsup_rx_v5_gtp  = 1.05
+.param vsuph_rx_v5_gtp = 1.26
+
+** Virtex-5 GTP Refclk Voltages **
+.param vsup_refclk_v5_gtp  = 1.05
+.param vsuph_refclk_v5_gtp = 1.26

@@ -1,0 +1,31 @@
+**/////////////////////////////////////////////////////////////////////////////
+**$Date: 2007/11/06 18:10:49 $
+**$RCSfile: pcb_20in_model.ckt,v $
+**$Revision: 1.1 $
+**//////////////////////////////////////////////////////////////////////////////
+**   ____  ____ 
+**  /   /\/   / 
+** /___/  \  /    Vendor: Xilinx 
+** \   \   \/     Version : 1.0
+**  \   \         Filename : pcb_20in_model.ckt
+**  /   /         
+** /___/   /\
+** \   \  /  \ 
+**  \___\/\___\ 
+**
+**                VIRTEX-5 FPGA ROCKETIO SIGNAL INTEGRITY KIT
+**
+**
+** Model       : Channel
+** Type        : S-Paramter
+** Description : PCB Model of 20 inch microstrip trace with SMA connectors on
+**               each side. Board Material is FR-4
+**//////////////////////////////////////////////////////////////////////////////
+
+.subckt pcb_20in_model inP inN outP outN
+.param fmaxVal = '1/5p'
+.param fbaseVal = '1/500n'
+SPORTP_pcb inP outP 0 mname=s_model_pcb intdattyp=ri FMAX=fmaxVal FBASE=fbaseVal
+SPORTN_pcb inN outN 0 mname=s_model_pcb intdattyp=ri FMAX=fmaxVal FBASE=fbaseVal
+.model s_model_pcb S TSTONEFILE = '$XILINX_V5_RIO_SIS_KIT/channel_models/pcb_20in_model.s2p'
+.ends pcb_20in_model

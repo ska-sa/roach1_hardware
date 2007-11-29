@@ -1,0 +1,30 @@
+**/////////////////////////////////////////////////////////////////////////////
+**$Date: 2007/11/06 18:10:49 $
+**$RCSfile: v5_gtp_prbs7.ckt,v $
+**$Revision: 1.1 $
+**//////////////////////////////////////////////////////////////////////////////
+**   ____  ____ 
+**  /   /\/   / 
+** /___/  \  /    Vendor: Xilinx 
+** \   \   \/     Version : 1.0
+**  \   \         Filename : v5_gtp_prbs7.ckt
+**  /   /         
+** /___/   /\
+** \   \  /  \ 
+**  \___\/\___\ 
+**
+**                VIRTEX-5 FPGA ROCKETIO SIGNAL INTEGRITY KIT
+**
+**
+** Model       : Data Generator
+** Type        : H-Spice
+** Description : PRBS-7 Data Generator
+**//////////////////////////////////////////////////////////////////////////////
+
+.subckt v5_gtp_prbs7
++IP
++AVSS
+
+vIP IP AVSS LFSR(0 'vsup_tx_v5_gtp' 1n 'trise_v5_gtp' 'tfall_v5_gtp' 'data_rate' 1 [7,4,1] rout=0)
+
+.ends v5_gtp_prbs7
