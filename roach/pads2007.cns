@@ -3,1130 +3,1135 @@
 ;; ******************  DO NOT EDIT ******************
 
 (cmsed
- (version  "3.0.0")
- (written  "Tue Mar 04 10:14:36 2003")
- (target_system  PADS2007
-  (version  "8.0")
-  (pcb_class  PADS2007_Rules
-   (default_class  "Default")
-   (class_attribute  PCBCLASS)
-   (class_consdef  PCLASS)))
- (owner_types
-  (owner_type  ELECNET
-   (label  "Signal Quality")
-   (levels
-    (level  "Bus")
-    (level  "Scalar Net"  "Bus"
-     (level_properties  EXPAND_DEFER))
-    (level  "Pinpair"  "Scalar Net")))
-  (owner_type  PHYSNET
-   (label  "Nets")
-   (levels
-    (level  "Bus")
-    (level  "Scalar Net"  "Bus"
-     (level_properties  EXPAND_DEFER))
-    (level  "Fromto"  "Scalar Net"
-     (level_properties  INSERT_ON_IMPORT))))
-  (owner_type  DIFFP
-   (label  "Diff Pairs"))
-  (owner_type  COMP
-   (label  "Components"))
-  (owner_type  PIN
-   (label  "Pins")))
- (constraints
-  (constraint_def  ID
-   (user_disabled  true)
-   (constraint_properties  SYSTEM))
-  (constraint_def  PCLASS
-   (datatype  STR  "Default")
-   (constraint_properties  SYSTEM))
-  (constraint_def  DIFF_PAIR
-   (user_disabled  true)
-   (constraint_properties  SYSTEM))
-  (constraint_def  BoardShapeName
-   (user_disabled  true)
-   (constraint_properties  SYSTEM))
-  (constraint_def  DSN_PCB_DIR
-   (user_disabled  true)
-   (owner  DESIGN)
-   (datatype  STR)
-   (purpose  "Post Layout Extraction Parameter **DO NOT MODIFY**")
-   (ctype  PROPERTY)
-   (title  "DSN_PCB_DIR"))
-  (constraint_def  DSN_PADS_ASC
-   (user_disabled  true)
-   (owner  DESIGN)
-   (datatype  STR)
-   (purpose  "Post Layout Extraction Parameter **DO NOT MODIFY**")
-   (ctype  PROPERTY)
-   (title  "DSN_PADS_ASC"))
-  (constraint_def  MATCH_LENGTH
-   (owner  PHYSNET)
-   (datatype  BOOL  false)
-   (help_text  "Enables length matching for the net")
-   (purpose  "Enables Matched Length")
-   (ctype  CONSTRAINT)
-   (title  "Match Lengths")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  MIN_IMPEDANCE
-   (owner  PHYSNET)
-   (datatype  REAL  50.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text  "Minimum trace impedance")
-   (ctype  CONSTRAINT)
-   (title  "Min")
-   (header  "Impedance")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  MAX_IMPEDANCE
-   (owner  PHYSNET)
-   (datatype  REAL  150.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text  "Maximum trace impedance")
-   (ctype  CONSTRAINT)
-   (title  "Max")
-   (header  "Impedance")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  AGGRESSOR
-   (owner  PHYSNET)
-   (datatype  BOOL  false)
-   (help_text  "Enable to identify this net as noise emitter")
-   (ctype  CONSTRAINT)
-   (title  "Aggressor")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE)))
-   (transforms
-    (transform  CONSEDIT
-     (args  "AGGRESSOR"))))
-  (constraint_def  ROUTE_PRIORITY
-   (owner  PHYSNET)
-   (datatype  INT  3  0  nil)
-   (help_text
-  "Assigns a routing order priority from lowest to highest. This is for use with the SPECCTRA autorouter only")
-   (ctype  CONSTRAINT)
-   (title  "Route Priority")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  MAX_NUMBER_OF_VIAS
-   (owner  PHYSNET)
-   (datatype  INT  -1  -1  50000)
-   (help_text
-  "Specifies the maximum number of vias for a net.")
-   (ctype  CONSTRAINT)
-   (title  "Max Vias")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  LENGTH_MINIMIZATION_TYPE
-   (owner  PHYSNET)
-   (datatype  CHOICE
-    (choices  "PROTECTED"  "MINIMIZED"  "HORIZONTAL"  "VERTICAL"  "SERIAL"  "PARALLEL"  "MID-DRIVEN")
-  "MINIMIZED")
-   (help_text
-  "Defines the pin to pin order for net topology features used in PowerPCB."  ""  "PROTECTED - do not reorder"
-  "MINIMIZED - shortest distance pin to pin"  "HORIZONTAL - obsolete, maps to MINIMIZED"
-  "VERTICAL - obsolete, maps to MINIMIZED"  "SERIAL - from source to load to terminator"
-  "PARALLEL - from source to load to terminator with separate branches for each source"
-  "MID-DRIVEN - source to load to terminator order with the sources at midpoint of the order")
-   (ctype  CONSTRAINT)
-   (title  "Topology")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  VIA_SHARE
-   (owner  PHYSNET)
-   (datatype  BOOL  true)
-   (help_text  "Enables via to be shared by more than one trace")
-   (ctype  CONSTRAINT)
-   (title  "Share Vias")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  TRACE_SHARE
-   (owner  PHYSNET)
-   (datatype  BOOL  true)
-   (help_text  "Enables traces to be shared by more than one trace")
-   (ctype  CONSTRAINT)
-   (title  "Share Traces")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  RIPUP
-   (owner  PHYSNET)
-   (datatype  BOOL  true)
-   (help_text
-  "Enables autorouting operations to unroute a previously completed trace in order to complete another trace")
-   (ctype  CONSTRAINT)
-   (title  "Allow Ripup")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  SHOVE
-   (owner  PHYSNET)
-   (datatype  BOOL  true)
-   (help_text  "")
-   (ctype  CONSTRAINT)
-   (title  "Allow Shove")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  SHOVE_PROTECTED
-   (owner  PHYSNET)
-   (datatype  BOOL  false)
-   (help_text
-  "Enables autorouting operations to push previously completed and protected traces aside in order to complete another trace")
-   (ctype  CONSTRAINT)
-   (title  "Shove Protected")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  VALID_LAYER
-   (owner  PHYSNET)
-   (datatype  STR  "1,2")
-   (help_text
-  "Defines the layers traces are permitted on for the net. Layers not listed, will be restricted")
-   (ctype  CONSTRAINT)
-   (title  "Valid Layer(s)"))
-  (constraint_def  VALID_VIA_TYPE
-   (owner  PHYSNET)
-   (datatype  STR  "*USE_CURRENT*")
-   (help_text
-  "Defines the via types permitted for the net. Via types not listed, will be restricted")
-   (ctype  CONSTRAINT)
-   (title  "Valid Via(s)"))
-  (constraint_def  SAME_NET_SMD_TO_VIA
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent vias and surface mounted component pads of the same net")
-   (ctype  CONSTRAINT)
-   (title  "SMD to Via")
-   (header  "Same Net")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  SAME_NET_SMD_TO_CRN
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between trace corners and surface mounted component pads of the same net")
-   (ctype  CONSTRAINT)
-   (title  "SMD to Corner")
-   (header  "Same Net")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  SAME_NET_VIA_TO_VIA
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent vias of the same net")
-   (ctype  CONSTRAINT)
-   (title  "Via to Via")
-   (header  "Same Net")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  SAME_NET_PAD_TO_CRN
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between trace corners and through hole component pads of the same net")
-   (ctype  CONSTRAINT)
-   (title  "Pad to Corner")
-   (header  "Same Net")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  SAME_NET_TRACK_TO_CRN
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  0.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent trace corners and adjacent trace segments of the same net")
-   (ctype  CONSTRAINT)
-   (title  "Trace to Corner")
-   (header  "Same Net")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  MIN_TRACK_WIDTH
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  12.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text  "Defines the minimum trace width")
-   (ctype  CONSTRAINT)
-   (title  "Min")
-   (header  "Trace Width")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  REC_TRACK_WIDTH
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  12.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text  "Defines the Recommended(default) trace width")
-   (ctype  CONSTRAINT)
-   (title  "Recommended")
-   (header  "Trace Width")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  MAX_TRACK_WIDTH
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  12.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text  "Defines the maximum trace width")
-   (ctype  CONSTRAINT)
-   (title  "Max")
-   (header  "Trace Width")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  DRILL_TO_DRILL
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  12.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (ctype  CONSTRAINT)
-   (title  "to Drill")
-   (header  "Drill")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  DRILL_TO_COPPER
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent copper shapres and drilled holes"  "whenever the drill size is larger than the pad size")
-   (ctype  CONSTRAINT)
-   (title  "to Copper")
-   (header  "Drill")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  BODY_TO_BODY
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  12.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (ctype  CONSTRAINT)
-   (title  "Body to Body")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  TRACK_TO_TRACK
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent trace segments")
-   (ctype  CONSTRAINT)
-   (title  "to Trace")
-   (header  "Trace")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  VIA_TO_TRACK
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent trace segments and vias")
-   (ctype  CONSTRAINT)
-   (title  "to Via")
-   (header  "Trace")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  PAD_TO_TRACK
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent traces and through hole component pads")
-   (ctype  CONSTRAINT)
-   (title  "to Pad")
-   (header  "Trace")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  SMD_TO_TRACK
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent traces and surface mounted component pads")
-   (ctype  CONSTRAINT)
-   (title  "to SMD")
-   (header  "Trace")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  COPPER_TO_TRACK
-   (owner  PHYSNET)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent trace segments and copper shapes")
-   (ctype  CONSTRAINT)
-   (title  "to Copper")
-   (header  "Trace")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  TEXT_TO_TRACK
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent trace segments and text objects")
-   (ctype  CONSTRAINT)
-   (title  "to Text")
-   (header  "Trace")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  OUTLINE_TO_TRACK
-   (owner  PHYSNET)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between trace segments and all board edges")
-   (ctype  CONSTRAINT)
-   (title  "to Board")
-   (header  "Trace")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  DRILL_TO_TRACK
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent trace segments and drilled holes"  "whenever the drill size is larger than the pad size")
-   (ctype  CONSTRAINT)
-   (title  "to Drill")
-   (header  "Trace")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  VIA_TO_VIA
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text  "Defines minimum edge to edge distance between adjacent vias")
-   (ctype  CONSTRAINT)
-   (title  "to Via")
-   (header  "Via")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  PAD_TO_VIA
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent vias and through hole component pads")
-   (ctype  CONSTRAINT)
-   (title  "to Pad")
-   (header  "Via")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  SMD_TO_VIA
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent vias and surface mounted component pads")
-   (ctype  CONSTRAINT)
-   (title  "to SMD")
-   (header  "Via")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  COPPER_TO_VIA
-   (owner  PHYSNET)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent vias and copper shapes")
-   (ctype  CONSTRAINT)
-   (title  "to Copper")
-   (header  "Via")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  TEXT_TO_VIA
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent vias and text objects")
-   (ctype  CONSTRAINT)
-   (title  "to Text")
-   (header  "Via")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  OUTLINE_TO_VIA
-   (owner  PHYSNET)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between vias and all board edges")
-   (ctype  CONSTRAINT)
-   (title  "to Board")
-   (header  "Via")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  DRILL_TO_VIA
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent vias and drilled holes"  "whenever the drill size is larger than the pad size")
-   (ctype  CONSTRAINT)
-   (title  "to Drill")
-   (header  "Via")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  PAD_TO_PAD
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent through hole component pads")
-   (ctype  CONSTRAINT)
-   (title  "to Pad")
-   (header  "Pad")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  SMD_TO_PAD
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent through hole and surface mounted component pads")
-   (ctype  CONSTRAINT)
-   (title  "to Pad")
-   (header  "SMD")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  COPPER_TO_PAD
-   (owner  PHYSNET)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent through hole component pads and copper shapes")
-   (ctype  CONSTRAINT)
-   (title  "to Copper")
-   (header  "Pad")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  COPPER_TO_COPPER
-   (owner  PHYSNET)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent copper shapes")
-   (ctype  CONSTRAINT)
-   (title  "to Copper")
-   (header  "Copper")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  TEXT_TO_PAD
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent through hole component pads and text objects")
-   (ctype  CONSTRAINT)
-   (title  "to Text")
-   (header  "Pad")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  OUTLINE_TO_PAD
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between through hole component pads and all board edges")
-   (ctype  CONSTRAINT)
-   (title  "to Board")
-   (header  "Pad")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  DRILL_TO_PAD
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent through hole component pads"
-  "and drilled holes whenever the drill size is larger than the pad size")
-   (ctype  CONSTRAINT)
-   (title  "to Drill")
-   (header  "Pad")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  SMD_TO_SMD
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent surface mounted component pads")
-   (ctype  CONSTRAINT)
-   (title  "to SMD")
-   (header  "SMD")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  COPPER_TO_SMD
-   (owner  PHYSNET)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent surface mounted component pads and copper shapes")
-   (ctype  CONSTRAINT)
-   (title  "to Copper")
-   (header  "SMD")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  TEXT_TO_SMD
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent surface mounted component pads and text objects")
-   (ctype  CONSTRAINT)
-   (title  "to Text")
-   (header  "SMD")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  OUTLINE_TO_SMD
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between surface mounted component pads and all board edges")
-   (ctype  CONSTRAINT)
-   (title  "to Board")
-   (header  "SMD")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  OUTLINE_TO_COPPER
-   (owner  PHYSNET)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-    (ctype  CONSTRAINT)
-   (title  "to Board")
-   (header  "Copper")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  DRILL_TO_SMD
-   (owner  PHYSNET  COMP)
-   (datatype  REAL  6.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines minimum edge to edge distance between adjacent surface mounted pads and drilled holes"  "whenever the drill size is larger than the pad size")
-   (ctype  CONSTRAINT)
-   (title  "to Drill")
-   (header  "SMD")
-   (levels
-    (level  "Scalar Net"  "PHYSNET"
-     (level_properties  NO_PROPAGATE))))
-  (constraint_def  DIFFPAIR_MIN_LENGTH
-   (owner  DIFFP)
-   (datatype  REAL  0.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines the minimum trace length for both members of the differential pair")
-   (ctype  CONSTRAINT)
-   (title  "Length Min"))
-  (constraint_def  DIFFPAIR_MAX_LENGTH
-   (owner  DIFFP)
-   (datatype  REAL  448000.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines the maximum trace length for both members of the differential pair")
-   (ctype  CONSTRAINT)
-   (title  "Length Max"))
-  (constraint_def  DIFFPAIR_GAP
-   (owner  DIFFP)
-   (datatype  REAL  12.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines the edge to edge distance between adjacent trace segments of the differential pair members")
-   (ctype  CONSTRAINT)
-   (title  "Gap"))
-  (constraint_def  DIFFPAIR_ALLOW_SPLIT_AROUND_OBSTACLES
-   (owner  DIFFP)
-   (datatype  BOOL  false)
-   (help_text  "Allows differential pairs to split around obstacles")
-   (ctype  CONSTRAINT)
-   (title  "Allow Split"))
-  (constraint_def  DIFFPAIR_MAX_OBSTACLE_SIZE
-   (owner  DIFFP)
-   (datatype  REAL  25.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines the maximum size of obstacles a differential pair is allowed to split around")
-   (ctype  CONSTRAINT)
-   (title  "Max Obstacle Size"))
-  (constraint_def  DIFFPAIR_MAX_OBSTACLE_NUMBER
-   (owner  DIFFP)
-   (datatype  INT  3  nil  nil)
-   (help_text
-  "Defines the maximum number of obstacles a differential pair is allowed to split around")
-   (ctype  CONSTRAINT)
-   (title  "Max Obstacle Number"))
-  (constraint_def  DIFFPAIR_WIDTH
-   (owner  DIFFP)
-   (datatype  REAL  12.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text  "Defines the differential pair trace width")
-   (ctype  CONSTRAINT)
-   (title  "Trace Width"))
-  (constraint_def  ACT_NUMBER_VIAS
-   (owner  PHYSNET)
-   (datatype  INT  nil  nil  nil)
-   (ctype  ACTUAL)
-   (title  "Actual Routed Net Number of Vias"))
-  (constraint_def  ACT_LENGTH
-   (owner  PHYSNET)
-   (datatype  REAL  nil  MIN_LENGTH  MAX_LENGTH
-    (format  FMT_FIXED  2))
-   (ctype  ACTUAL)
-   (title  "Actual Routed Net Length"))
-  (constraint_def  MIN_LENGTH
-   (owner  PHYSNET)
-   (datatype  REAL  0.000000  0.000000  nil
-    (format  FMT_FIXED  2))
-   (help_text  "Defines the minimum trace length")
-   (purpose  "Minimum Trace Length")
-   (ctype  CONSTRAINT)
-   (title  "Min")
-   (header  "Length"))
-  (constraint_def  MAX_LENGTH
-   (owner  PHYSNET)
-   (datatype  REAL  50000.000000  0.000000  nil
-    (format  FMT_FIXED  2))
-   (help_text  "Defines the maximum trace length")
-   (purpose  "Maximum Trace Length")
-   (ctype  CONSTRAINT)
-   (title  "Max")
-   (header  "Length"))
-  (constraint_def  MIN_PROPDELAY
-   (owner  PHYSNET)
-   (datatype  REAL  0.000000  0.000000  nil
-    (format  FMT_FIXED  2))
-   (help_text  "Minimum propagation delay")
-   (purpose  "Minimum Trace Delay")
-   (ctype  CONSTRAINT)
-   (title  "Min")
-   (header  "Delay"))
-  (constraint_def  MAX_PROPDELAY
-   (owner  PHYSNET)
-   (datatype  REAL  10.000000  0.000000  nil
-    (format  FMT_FIXED  2))
-   (help_text  "Maximum propagation delay")
-   (purpose  "Maximum Trace Delay")
-   (ctype  CONSTRAINT)
-   (title  "Max")
-   (header  "Delay"))
-  (constraint_def  MATCH_LENGTH_TOLERANCE
-   (owner  PHYSNET)
-   (datatype  REAL  200.000000  0.000000  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines the maximum length differential between the shortest and longest member of a matched length group of nets")
-   (purpose  "Maximum delta between matched trace lengths")
-   (ctype  CONSTRAINT)
-   (title  "Matched Length Tolerance"))
-  (constraint_def  STUB_LENGTH
-   (owner  PHYSNET)
-   (datatype  REAL  1000.000000  0.000000  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Defines the maximum length of shared trace segments at component pins")
-   (purpose  "Maximum Stub Length")
-   (ctype  CONSTRAINT)
-   (title  "Stub Length Max"))
-  (constraint_def  PARALLEL_LENGTH
-   (owner  PHYSNET)
-   (datatype  REAL  1000.000000  0.000000  nil
-    (format  FMT_FIXED  2))
-   (help_text  "Maximum parallel length of adjacent parallel trace segments."
-  "First of the two parameters to define parallelism tolerances")
-   (purpose  "Parallel length for PARALLEL_GAP")
-   (ctype  CONSTRAINT)
-   (title  "Length")
-   (header  "Parallel"))
-  (constraint_def  PARALLEL_GAP
-   (owner  PHYSNET)
-   (datatype  REAL  200.000000  0.000000  nil
-    (format  FMT_FIXED  2))
-   (help_text  "Minimum parallel gap of adjacent parallel trace segments."
-  "Second of the two parameters to define parallelism tolerances")
-   (purpose  "Maximum Distance Considered in PARALLEL_LENGTH")
-   (ctype  CONSTRAINT)
-   (title  "Gap")
-   (header  "Parallel"))
-  (constraint_def  AUTO_ROUTE
-   (owner  PHYSNET)
-   (datatype  BOOL  true)
-   (help_text  "Enables the trace to be autorouted")
-   (purpose  "Allow Autoroute")
-   (ctype  CONSTRAINT)
-   (title  "Autoroute"))
-  (constraint_def  SHIELD_NET
-   (owner  PHYSNET)
-   (datatype  STR  "*")
-   (help_text  "Name of net to be used for shield traces created around nets. * indicates shielding is turned off.")
-   (purpose  "Name of Net to Shield Trace")
-   (ctype  CONSTRAINT)
-   (title  "Net Name")
-   (header  "Shield"))
-  (constraint_def  SHIELD_GAP
-   (owner  PHYSNET)
-   (datatype  REAL  200.000000  0.000000  nil
-    (format  FMT_FIXED  2))
-   (help_text
-  "Minimum edge to edge distance between adjacent trace segments net shielding and shielded net")
-   (purpose  "Fixed Gap CLEARANCE_RULE from Subject Trace")
-   (ctype  CONSTRAINT)
-   (title  "Gap")
-   (header  "Shield"))
-  (constraint_def  TANDEM_LENGTH
-   (owner  PHYSNET)
-   (datatype  REAL  1000.000000  0.000000  nil
-    (format  FMT_FIXED  2))
-   (purpose  "Length at Tandem_Gap Considered Violation")
-   (ctype  CONSTRAINT)
-   (title  "Length")
-   (header  "Tandem"))
-  (constraint_def  TANDEM_GAP
-   (owner  PHYSNET)
-   (datatype  REAL  200.000000  0.000000  nil
-    (format  FMT_FIXED  2))
-   (purpose  "Maximum CLEARANCE_RULE for TANDEM_LENGTH")
-   (ctype  CONSTRAINT)
-   (title  "Gap")
-   (header  "Tandem"))
-  (constraint_def  MIN_CAPACITANCE
-   (owner  PHYSNET)
-   (datatype  REAL  0.000000  nil  nil
-    (format  FMT_FIXED  2))
-   (help_text  "Minimum Trace Capacitance")
-   (purpose  "Minimum Trace Capacitance")
-   (ctype  CONSTRAINT)
-   (title  "Min")
-   (header  "Capacitance"))
-  (constraint_def  MAX_CAPACITANCE
-   (owner  PHYSNET)
-   (datatype  REAL  10.000000  0.000000  nil
-    (format  FMT_FIXED  2))
-   (help_text  "Maximum Trace Capacitance")
-   (purpose  "Maximum Trace Capacitance")
-   (ctype  CONSTRAINT)
-   (title  "Max")
-   (header  "Capacitance"))
-  (constraint_def  DIFFPAIR_RESTRICT_LAYER_CHANGE
-   (owner  DIFFP)
-   (datatype  BOOL  false)
-   (help_text  "Restricts layer changes in differential pairs")
-   (ctype  CONSTRAINT)
-   (title  "Restrict Layer Changes"))
-  (constraint_def  RESTRICTED_VIA_TYPE
-   (owner  COMP)
-   (datatype  STR)
-   (help_text
-  "Defines the via types restricted for the component. Via types not listed, will be permitted.")
-   (ctype  CONSTRAINT)
-   (title  "Restricted Via(s)")))
- (constraint_sets
-  (constraint_setdef  "CLEARANCE_RULE"
-   (owner  PHYSNET)
-   (title  "Clearance")
-   (constraint  TRACK_TO_TRACK
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  VIA_TO_TRACK
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  VIA_TO_VIA
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  PAD_TO_TRACK
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  PAD_TO_VIA
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  PAD_TO_PAD
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  SMD_TO_TRACK
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  SMD_TO_VIA
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  SMD_TO_PAD
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  SMD_TO_SMD
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  COPPER_TO_TRACK
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  COPPER_TO_VIA
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  COPPER_TO_PAD
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  COPPER_TO_SMD
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  COPPER_TO_COPPER
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  TEXT_TO_TRACK
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  TEXT_TO_VIA
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  TEXT_TO_PAD
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  TEXT_TO_SMD
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  OUTLINE_TO_TRACK
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  OUTLINE_TO_VIA
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  OUTLINE_TO_PAD
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  OUTLINE_TO_SMD
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  OUTLINE_TO_COPPER
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  DRILL_TO_TRACK
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  DRILL_TO_VIA
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  DRILL_TO_PAD
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  DRILL_TO_SMD
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  DRILL_TO_COPPER
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  SAME_NET_SMD_TO_VIA
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  SAME_NET_SMD_TO_CRN
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  SAME_NET_VIA_TO_VIA
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  SAME_NET_PAD_TO_CRN
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  SAME_NET_TRACK_TO_CRN
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  MIN_TRACK_WIDTH
-    (datatype  REAL  12.000000  nil  nil))
-   (constraint  REC_TRACK_WIDTH
-    (datatype  REAL  12.000000  nil  nil))
-   (constraint  MAX_TRACK_WIDTH
-    (datatype  REAL  12.000000  nil  nil))
-   (constraint  DRILL_TO_DRILL
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  BODY_TO_BODY
-    (datatype  REAL  6.000000  nil  nil)))
-  (constraint_setdef  "ROUTE_RULE"
-   (owner  PHYSNET)
-   (title  "Route")
-   (constraint  LENGTH_MINIMIZATION_TYPE
-    (datatype  CHOICE
-     (choices  "PROTECTED"  "MINIMIZED"  "HORIZONTAL"  "VERTICAL"  "SERIAL"  "PARALLEL"  "MID-DRIVEN")
-  "MINIMIZED"))
-   (constraint  VIA_SHARE
-    (datatype  BOOL  true))
-   (constraint  MAX_NUMBER_OF_VIAS
-    (datatype  INT  -1  -1  nil))
-   (constraint  TRACE_SHARE
-    (datatype  BOOL  true))
-   (constraint  AUTO_ROUTE
-    (datatype  BOOL  true))
-   (constraint  RIPUP
-    (datatype  BOOL  true))
-   (constraint  SHOVE
-    (datatype  BOOL  true))
-   (constraint  SHOVE_PROTECTED
-    (datatype  BOOL  false))
-   (constraint  ROUTE_PRIORITY
-    (datatype  INT  3  0  nil))
-   (constraint  VALID_LAYER
-    (datatype  STR  "1,2"))
-   (constraint  VALID_VIA_TYPE
-    (datatype  STR  "*USE_CURRENT*")))
-  (constraint_setdef  "HIGH_SPEED_RULE"
-   (owner  PHYSNET)
-   (title  "High Speed")
-   (constraint  AGGRESSOR
-    (datatype  BOOL  false))
-   (constraint  MIN_LENGTH
-    (datatype  REAL  0.000000  0.000000  nil))
-   (constraint  MAX_LENGTH
-    (datatype  REAL  50000.000000  0.000000  nil))
-   (constraint  STUB_LENGTH
-    (datatype  REAL  1000.000000  0.000000  nil))
-   (constraint  PARALLEL_LENGTH
-    (datatype  REAL  1000.000000  0.000000  nil))
-   (constraint  PARALLEL_GAP
-    (datatype  REAL  200.000000  0.000000  nil))
-   (constraint  TANDEM_LENGTH
-    (datatype  REAL  1000.000000  0.000000  nil))
-   (constraint  TANDEM_GAP
-    (datatype  REAL  200.000000  0.000000  nil))
-   (constraint  MIN_PROPDELAY
-    (datatype  REAL  0.000000  0.000000  nil))
-   (constraint  MAX_PROPDELAY
-    (datatype  REAL  10.000000  0.000000  nil))
-   (constraint  MIN_CAPACITANCE
-    (datatype  REAL  0.000000  0.000000  nil))
-   (constraint  MAX_CAPACITANCE
-    (datatype  REAL  10.000000  0.000000  nil))
-   (constraint  MIN_IMPEDANCE
-    (datatype  REAL  50.000000  0.000000  nil))
-   (constraint  MAX_IMPEDANCE
-    (datatype  REAL  150.000000  0.000000  nil))
-   (constraint  SHIELD_NET
-    (datatype  STR  "*"))
-   (constraint  SHIELD_GAP
-    (datatype  REAL  200.000000  0.000000  nil))
-   (constraint  MATCH_LENGTH)
-   (constraint  MATCH_LENGTH_TOLERANCE
-    (datatype  REAL  200.000000  0.000000  nil))
-   (constraint  EP_TOPO_TEMPLATE))
-  (constraint_setdef  "DIFF_PAIR_RULE"
-   (owner  DIFFP)
-   (title  "Differential Pair")
-   (constraint  DIFFPAIR_MIN_LENGTH
-    (datatype  REAL  0.000000  nil  nil))
-   (constraint  DIFFPAIR_MAX_LENGTH
-    (datatype  REAL  448000.000000  nil  nil))
-   (constraint  DIFFPAIR_WIDTH
-    (datatype  REAL  12.000000  nil  nil))
-   (constraint  DIFFPAIR_GAP
-    (datatype  REAL  12.000000  nil  nil))
-   (constraint  DIFFPAIR_MAX_OBSTACLE_SIZE
-    (datatype  REAL  25.000000  nil  nil))
-   (constraint  DIFFPAIR_MAX_OBSTACLE_NUMBER
-    (datatype  INT  3  nil  nil))
-   (constraint  DIFFPAIR_RESTRICT_LAYER_CHANGE
-    (datatype  BOOL  false))
-   (constraint  DIFFPAIR_ALLOW_SPLIT_AROUND_OBSTACLES
-    (datatype  BOOL  false)))
-  (constraint_setdef  "COMPONENT_RULE"
-   (owner  COMP)
-   (title  "Component")
-   (constraint  TRACK_TO_TRACK
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  VIA_TO_TRACK
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  PAD_TO_TRACK
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  PAD_TO_VIA
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  PAD_TO_PAD
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  SMD_TO_TRACK
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  SMD_TO_VIA
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  SMD_TO_PAD
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  SMD_TO_SMD
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  TEXT_TO_TRACK
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  TEXT_TO_VIA
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  TEXT_TO_PAD
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  TEXT_TO_SMD
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  OUTLINE_TO_PAD
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  OUTLINE_TO_SMD
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  DRILL_TO_TRACK
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  DRILL_TO_VIA
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  DRILL_TO_PAD
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  DRILL_TO_SMD
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  SAME_NET_SMD_TO_VIA
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  SAME_NET_SMD_TO_CRN
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  SAME_NET_PAD_TO_CRN
-    (datatype  REAL  6.000000  nil  nil))
-   (constraint  MIN_TRACK_WIDTH
-    (datatype  REAL  12.000000  nil  nil))
-   (constraint  REC_TRACK_WIDTH
-    (datatype  REAL  12.000000  nil  nil))
-   (constraint  MAX_TRACK_WIDTH
-    (datatype  REAL  12.000000  nil  nil))
-   (constraint  RESTRICTED_VIA_TYPE)
-   (constraint  VIA_TO_VIA
-    (datatype  REAL  6.000000  nil  nil))))
- (class_defs
-  (class_def  PADS2007_Rules
-   (owner  PHYSNET  COMP  DIFFP)
-   (help_text
-  "This class definition corresponds to the PowerPCB class definition. It"
-  "is comprised of 5 distinct constraint sets, 3 for nets, one for components"  "and one for differential pairs."  ""
-  "Within the database each net, differential pair, and component will be"
-  "assigned to the default instance of this class named 'Default'. This")
-   (purpose  "Power PCB Rule Sets")
-   (constraint_setref  HIGH_SPEED_RULE)
-   (constraint_setref  ROUTE_RULE)
-   (constraint_setref  CLEARANCE_RULE)
-   (constraint_setref  DIFF_PAIR_RULE)
-   (constraint_setref  COMPONENT_RULE)))
- (classes
-  (class  "Default"  PADS2007_Rules
-   (owner  PHYSNET  COMP  DIFFP)))
- (groups
-  (group  "CLEARANCE_RULE"
-   (owner  PHYSNET)
-   (group_constraints  NAME  SAME_NET_SMD_TO_VIA  SAME_NET_SMD_TO_CRN
-  SAME_NET_VIA_TO_VIA  SAME_NET_PAD_TO_CRN  SAME_NET_TRACK_TO_CRN  MIN_TRACK_WIDTH
-  REC_TRACK_WIDTH  MAX_TRACK_WIDTH  DRILL_TO_DRILL  BODY_TO_BODY  TRACK_TO_TRACK
-  PAD_TO_TRACK  SMD_TO_TRACK  COPPER_TO_TRACK  TEXT_TO_TRACK  OUTLINE_TO_TRACK
-  DRILL_TO_TRACK  VIA_TO_VIA  PAD_TO_VIA  SMD_TO_VIA  COPPER_TO_VIA  TEXT_TO_VIA
-  OUTLINE_TO_VIA  DRILL_TO_VIA  PAD_TO_PAD  SMD_TO_PAD  COPPER_TO_PAD  TEXT_TO_PAD
-  OUTLINE_TO_PAD  DRILL_TO_PAD  SMD_TO_SMD  COPPER_TO_SMD  TEXT_TO_SMD  OUTLINE_TO_SMD
-  OUTLINE_TO_COPPER DRILL_TO_SMD COPPER_TO_COPPER))
-  (group  "ROUTE_RULE"
-   (owner  PHYSNET)
-   (group_constraints  NAME  AUTO_ROUTE  RIPUP  SHOVE  SHOVE_PROTECTED  ROUTE_PRIORITY
-  VALID_LAYER  VALID_VIA_TYPE MAX_NUMBER_OF_VIAS))
-  (group  "HIGH_SPEED_RULE"
-   (owner  PHYSNET)
-   (group_constraints  NAME  MIN_LENGTH  MAX_LENGTH  STUB_LENGTH  PARALLEL_LENGTH
-  PARALLEL_GAP  TANDEM_LENGTH  TANDEM_GAP  MIN_CAPACITANCE  MAX_CAPACITANCE
-  MIN_IMPEDANCE  MAX_IMPEDANCE  SHIELD_NET  SHIELD_GAP  MATCH_LENGTH
-  MATCH_LENGTH_TOLERANCE  AGGRESSOR )))
- (topologies))
+	(version "4.0.0")
+	(written "Fri Nov 30 10:39:53 2007")
+	(target_system PADS2007
+		(version "8.0")
+		(pcb_class PADS2007_Rules
+			(default_class "Default")
+			(class_attribute PCBCLASS)
+			(class_consdef PCLASS)))
+	(owner_types
+		(owner_type ELECNET
+			(label "Signal Quality")
+			(levels
+				(level "Bus"
+					(level_properties))
+				(level "Scalar Net" "Bus"
+					(level_properties EXPAND_DEFER))
+				(level "Pinpair" "Scalar Net")))
+		(owner_type PHYSNET
+			(label "Nets")
+			(levels
+				(level "Bus"
+					(level_properties))
+				(level "Scalar Net" "Bus"
+					(level_properties EXPAND_DEFER))
+				(level "Fromto" "Scalar Net"
+					(level_properties INSERT_ON_IMPORT))))
+		(owner_type DIFFP
+			(label "Diff Pairs"))
+		(owner_type COMP
+			(label "Components"))
+		(owner_type PIN
+			(label "Pins")))
+	(constraints
+		(constraint_def ID
+			(user_disabled true)
+			(constraint_properties SYSTEM))
+		(constraint_def PCLASS
+			(datatype STR "Default")
+			(constraint_properties SYSTEM))
+		(constraint_def DIFF_PAIR
+			(user_disabled true)
+			(constraint_properties SYSTEM))
+		(constraint_def BoardShapeName
+			(user_disabled true)
+			(constraint_properties SYSTEM))
+		(constraint_def DSN_PCB_DIR
+			(user_disabled true)
+			(owner DESIGN)
+			(datatype STR)
+			(purpose "Post Layout Extraction Parameter **DO NOT MODIFY**")
+			(ctype PROPERTY)
+			(title "DSN_PCB_DIR"))
+		(constraint_def DSN_PADS_ASC
+			(user_disabled true)
+			(owner DESIGN)
+			(datatype STR)
+			(purpose "Post Layout Extraction Parameter **DO NOT MODIFY**")
+			(ctype PROPERTY)
+			(title "DSN_PADS_ASC"))
+		(constraint_def MATCH_LENGTH
+			(owner PHYSNET)
+			(datatype BOOL false)
+			(help_text "Enables length matching for the net")
+			(purpose "Enables Matched Length")
+			(ctype CONSTRAINT)
+			(title "Match Lengths")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def MIN_IMPEDANCE
+			(owner PHYSNET)
+			(datatype REAL 50.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text "Minimum trace impedance")
+			(ctype CONSTRAINT)
+			(title "Min")
+			(header "Impedance")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def MAX_IMPEDANCE
+			(owner PHYSNET)
+			(datatype REAL 150.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text "Maximum trace impedance")
+			(ctype CONSTRAINT)
+			(title "Max")
+			(header "Impedance")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def AGGRESSOR
+			(owner PHYSNET)
+			(datatype BOOL false)
+			(help_text "Enable to identify this net as noise emitter")
+			(ctype CONSTRAINT)
+			(title "Aggressor")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE)))
+			(transforms
+				(transform CONSEDIT
+					(args "AGGRESSOR"))))
+		(constraint_def ROUTE_PRIORITY
+			(owner PHYSNET)
+			(datatype INT 3 0 nil)
+			(help_text
+ "Assigns a routing order priority from lowest to highest. This is for use with the SPECCTRA autorouter only")
+			(ctype CONSTRAINT)
+			(title "Route Priority")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def MAX_NUMBER_OF_VIAS
+			(owner PHYSNET)
+			(datatype INT -1 -1 50000)
+			(help_text "Specifies the maximum number of vias for a net.")
+			(ctype CONSTRAINT)
+			(title "Max Vias")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def LENGTH_MINIMIZATION_TYPE
+			(owner PHYSNET)
+			(datatype CHOICE
+				(choices "PROTECTED" "MINIMIZED" "HORIZONTAL" "VERTICAL" "SERIAL" "PARALLEL" "MID-DRIVEN")
+ "MINIMIZED")
+			(help_text
+ "Defines the pin to pin order for net topology features used in PowerPCB." "" "PROTECTED - do not reorder"
+ "MINIMIZED - shortest distance pin to pin" "HORIZONTAL - obsolete, maps to MINIMIZED"
+ "VERTICAL - obsolete, maps to MINIMIZED" "SERIAL - from source to load to terminator"
+ "PARALLEL - from source to load to terminator with separate branches for each source"
+ "MID-DRIVEN - source to load to terminator order with the sources at midpoint of the order")
+			(ctype CONSTRAINT)
+			(title "Topology")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def VIA_SHARE
+			(owner PHYSNET)
+			(datatype BOOL true)
+			(help_text "Enables via to be shared by more than one trace")
+			(ctype CONSTRAINT)
+			(title "Share Vias")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def TRACE_SHARE
+			(owner PHYSNET)
+			(datatype BOOL true)
+			(help_text "Enables traces to be shared by more than one trace")
+			(ctype CONSTRAINT)
+			(title "Share Traces")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def RIPUP
+			(owner PHYSNET)
+			(datatype BOOL true)
+			(help_text
+ "Enables autorouting operations to unroute a previously completed trace in order to complete another trace")
+			(ctype CONSTRAINT)
+			(title "Allow Ripup")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def SHOVE
+			(owner PHYSNET)
+			(datatype BOOL true)
+			(help_text "")
+			(ctype CONSTRAINT)
+			(title "Allow Shove")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def SHOVE_PROTECTED
+			(owner PHYSNET)
+			(datatype BOOL false)
+			(help_text
+ "Enables autorouting operations to push previously completed and protected traces aside in order to complete another trace")
+			(ctype CONSTRAINT)
+			(title "Shove Protected")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def VALID_LAYER
+			(owner PHYSNET)
+			(datatype STR "1,2")
+			(help_text
+ "Defines the layers traces are permitted on for the net. Layers not listed, will be restricted")
+			(ctype CONSTRAINT)
+			(title "Valid Layer(s)"))
+		(constraint_def VALID_VIA_TYPE
+			(owner PHYSNET)
+			(datatype STR "*USE_CURRENT*")
+			(help_text
+ "Defines the via types permitted for the net. Via types not listed, will be restricted")
+			(ctype CONSTRAINT)
+			(title "Valid Via(s)"))
+		(constraint_def SAME_NET_SMD_TO_VIA
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent vias and surface mounted component pads of the same net")
+			(ctype CONSTRAINT)
+			(title "SMD to Via")
+			(header "Same Net")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def SAME_NET_SMD_TO_CRN
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between trace corners and surface mounted component pads of the same net")
+			(ctype CONSTRAINT)
+			(title "SMD to Corner")
+			(header "Same Net")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def SAME_NET_VIA_TO_VIA
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent vias of the same net")
+			(ctype CONSTRAINT)
+			(title "Via to Via")
+			(header "Same Net")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def SAME_NET_PAD_TO_CRN
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between trace corners and through hole component pads of the same net")
+			(ctype CONSTRAINT)
+			(title "Pad to Corner")
+			(header "Same Net")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def SAME_NET_TRACK_TO_CRN
+			(owner PHYSNET COMP)
+			(datatype REAL 0.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent trace corners and adjacent trace segments of the same net")
+			(ctype CONSTRAINT)
+			(title "Trace to Corner")
+			(header "Same Net")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def MIN_TRACK_WIDTH
+			(owner PHYSNET COMP)
+			(datatype REAL 12.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text "Defines the minimum trace width")
+			(ctype CONSTRAINT)
+			(title "Min")
+			(header "Trace Width")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def REC_TRACK_WIDTH
+			(owner PHYSNET COMP)
+			(datatype REAL 12.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text "Defines the Recommended(default) trace width")
+			(ctype CONSTRAINT)
+			(title "Recommended")
+			(header "Trace Width")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def MAX_TRACK_WIDTH
+			(owner PHYSNET COMP)
+			(datatype REAL 12.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text "Defines the maximum trace width")
+			(ctype CONSTRAINT)
+			(title "Max")
+			(header "Trace Width")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def DRILL_TO_DRILL
+			(owner PHYSNET COMP)
+			(datatype REAL 12.0 nil nil
+				(format FMT_FIXED 2))
+			(ctype CONSTRAINT)
+			(title "to Drill")
+			(header "Drill")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def DRILL_TO_COPPER
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent copper shapres and drilled holes" "whenever the drill size is larger than the pad size")
+			(ctype CONSTRAINT)
+			(title "to Copper")
+			(header "Drill")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def BODY_TO_BODY
+			(owner PHYSNET COMP)
+			(datatype REAL 12.0 nil nil
+				(format FMT_FIXED 2))
+			(ctype CONSTRAINT)
+			(title "Body to Body")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def TRACK_TO_TRACK
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent trace segments")
+			(ctype CONSTRAINT)
+			(title "to Trace")
+			(header "Trace")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def VIA_TO_TRACK
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent trace segments and vias")
+			(ctype CONSTRAINT)
+			(title "to Via")
+			(header "Trace")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def PAD_TO_TRACK
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent traces and through hole component pads")
+			(ctype CONSTRAINT)
+			(title "to Pad")
+			(header "Trace")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def SMD_TO_TRACK
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent traces and surface mounted component pads")
+			(ctype CONSTRAINT)
+			(title "to SMD")
+			(header "Trace")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def COPPER_TO_TRACK
+			(owner PHYSNET)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent trace segments and copper shapes")
+			(ctype CONSTRAINT)
+			(title "to Copper")
+			(header "Trace")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def TEXT_TO_TRACK
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent trace segments and text objects")
+			(ctype CONSTRAINT)
+			(title "to Text")
+			(header "Trace")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def OUTLINE_TO_TRACK
+			(owner PHYSNET)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between trace segments and all board edges")
+			(ctype CONSTRAINT)
+			(title "to Board")
+			(header "Trace")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def DRILL_TO_TRACK
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent trace segments and drilled holes" "whenever the drill size is larger than the pad size")
+			(ctype CONSTRAINT)
+			(title "to Drill")
+			(header "Trace")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def VIA_TO_VIA
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text "Defines minimum edge to edge distance between adjacent vias")
+			(ctype CONSTRAINT)
+			(title "to Via")
+			(header "Via")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def PAD_TO_VIA
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent vias and through hole component pads")
+			(ctype CONSTRAINT)
+			(title "to Pad")
+			(header "Via")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def SMD_TO_VIA
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent vias and surface mounted component pads")
+			(ctype CONSTRAINT)
+			(title "to SMD")
+			(header "Via")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def COPPER_TO_VIA
+			(owner PHYSNET)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent vias and copper shapes")
+			(ctype CONSTRAINT)
+			(title "to Copper")
+			(header "Via")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def TEXT_TO_VIA
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent vias and text objects")
+			(ctype CONSTRAINT)
+			(title "to Text")
+			(header "Via")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def OUTLINE_TO_VIA
+			(owner PHYSNET)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between vias and all board edges")
+			(ctype CONSTRAINT)
+			(title "to Board")
+			(header "Via")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def DRILL_TO_VIA
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent vias and drilled holes" "whenever the drill size is larger than the pad size")
+			(ctype CONSTRAINT)
+			(title "to Drill")
+			(header "Via")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def PAD_TO_PAD
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent through hole component pads")
+			(ctype CONSTRAINT)
+			(title "to Pad")
+			(header "Pad")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def SMD_TO_PAD
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent through hole and surface mounted component pads")
+			(ctype CONSTRAINT)
+			(title "to Pad")
+			(header "SMD")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def COPPER_TO_PAD
+			(owner PHYSNET)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent through hole component pads and copper shapes")
+			(ctype CONSTRAINT)
+			(title "to Copper")
+			(header "Pad")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def COPPER_TO_COPPER
+			(owner PHYSNET)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent copper shapes")
+			(ctype CONSTRAINT)
+			(title "to Copper")
+			(header "Copper")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def TEXT_TO_PAD
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent through hole component pads and text objects")
+			(ctype CONSTRAINT)
+			(title "to Text")
+			(header "Pad")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def OUTLINE_TO_PAD
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between through hole component pads and all board edges")
+			(ctype CONSTRAINT)
+			(title "to Board")
+			(header "Pad")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def DRILL_TO_PAD
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent through hole component pads"
+ "and drilled holes whenever the drill size is larger than the pad size")
+			(ctype CONSTRAINT)
+			(title "to Drill")
+			(header "Pad")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def SMD_TO_SMD
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent surface mounted component pads")
+			(ctype CONSTRAINT)
+			(title "to SMD")
+			(header "SMD")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def COPPER_TO_SMD
+			(owner PHYSNET)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent surface mounted component pads and copper shapes")
+			(ctype CONSTRAINT)
+			(title "to Copper")
+			(header "SMD")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def TEXT_TO_SMD
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent surface mounted component pads and text objects")
+			(ctype CONSTRAINT)
+			(title "to Text")
+			(header "SMD")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def OUTLINE_TO_SMD
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between surface mounted component pads and all board edges")
+			(ctype CONSTRAINT)
+			(title "to Board")
+			(header "SMD")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def OUTLINE_TO_COPPER
+			(owner PHYSNET)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(ctype CONSTRAINT)
+			(title "to Board")
+			(header "Copper")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def DRILL_TO_SMD
+			(owner PHYSNET COMP)
+			(datatype REAL 6.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines minimum edge to edge distance between adjacent surface mounted pads and drilled holes" "whenever the drill size is larger than the pad size")
+			(ctype CONSTRAINT)
+			(title "to Drill")
+			(header "SMD")
+			(levels
+				(level "Scalar Net" "PHYSNET"
+					(level_properties NO_PROPAGATE))))
+		(constraint_def DIFFPAIR_MIN_LENGTH
+			(owner DIFFP)
+			(datatype REAL 0.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines the minimum trace length for both members of the differential pair")
+			(ctype CONSTRAINT)
+			(title "Length Min"))
+		(constraint_def DIFFPAIR_MAX_LENGTH
+			(owner DIFFP)
+			(datatype REAL 448000.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines the maximum trace length for both members of the differential pair")
+			(ctype CONSTRAINT)
+			(title "Length Max"))
+		(constraint_def DIFFPAIR_GAP
+			(owner DIFFP)
+			(datatype REAL 12.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines the edge to edge distance between adjacent trace segments of the differential pair members")
+			(ctype CONSTRAINT)
+			(title "Gap"))
+		(constraint_def DIFFPAIR_ALLOW_SPLIT_AROUND_OBSTACLES
+			(owner DIFFP)
+			(datatype BOOL false)
+			(help_text "Allows differential pairs to split around obstacles")
+			(ctype CONSTRAINT)
+			(title "Allow Split"))
+		(constraint_def DIFFPAIR_MAX_OBSTACLE_SIZE
+			(owner DIFFP)
+			(datatype REAL 25.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines the maximum size of obstacles a differential pair is allowed to split around")
+			(ctype CONSTRAINT)
+			(title "Max Obstacle Size"))
+		(constraint_def DIFFPAIR_MAX_OBSTACLE_NUMBER
+			(owner DIFFP)
+			(datatype INT 3 nil nil)
+			(help_text
+ "Defines the maximum number of obstacles a differential pair is allowed to split around")
+			(ctype CONSTRAINT)
+			(title "Max Obstacle Number"))
+		(constraint_def DIFFPAIR_WIDTH
+			(owner DIFFP)
+			(datatype REAL 12.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text "Defines the differential pair trace width")
+			(ctype CONSTRAINT)
+			(title "Trace Width"))
+		(constraint_def ACT_NUMBER_VIAS
+			(owner PHYSNET)
+			(datatype INT nil nil nil)
+			(ctype ACTUAL)
+			(title "Actual Routed Net Number of Vias"))
+		(constraint_def ACT_LENGTH
+			(owner PHYSNET)
+			(datatype REAL nil MIN_LENGTH MAX_LENGTH
+				(format FMT_FIXED 2))
+			(ctype ACTUAL)
+			(title "Actual Routed Net Length"))
+		(constraint_def MIN_LENGTH
+			(owner PHYSNET)
+			(datatype REAL 0.0 0.0 nil
+				(format FMT_FIXED 2))
+			(help_text "Defines the minimum trace length")
+			(purpose "Minimum Trace Length")
+			(ctype CONSTRAINT)
+			(title "Min")
+			(header "Length"))
+		(constraint_def MAX_LENGTH
+			(owner PHYSNET)
+			(datatype REAL 50000.0 0.0 nil
+				(format FMT_FIXED 2))
+			(help_text "Defines the maximum trace length")
+			(purpose "Maximum Trace Length")
+			(ctype CONSTRAINT)
+			(title "Max")
+			(header "Length"))
+		(constraint_def MIN_PROPDELAY
+			(owner PHYSNET)
+			(datatype REAL 0.0 0.0 nil
+				(format FMT_FIXED 2))
+			(help_text "Minimum propagation delay")
+			(purpose "Minimum Trace Delay")
+			(ctype CONSTRAINT)
+			(title "Min")
+			(header "Delay"))
+		(constraint_def MAX_PROPDELAY
+			(owner PHYSNET)
+			(datatype REAL 10.0 0.0 nil
+				(format FMT_FIXED 2))
+			(help_text "Maximum propagation delay")
+			(purpose "Maximum Trace Delay")
+			(ctype CONSTRAINT)
+			(title "Max")
+			(header "Delay"))
+		(constraint_def MATCH_LENGTH_TOLERANCE
+			(owner PHYSNET)
+			(datatype REAL 200.0 0.0 nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines the maximum length differential between the shortest and longest member of a matched length group of nets")
+			(purpose "Maximum delta between matched trace lengths")
+			(ctype CONSTRAINT)
+			(title "Matched Length Tolerance"))
+		(constraint_def STUB_LENGTH
+			(owner PHYSNET)
+			(datatype REAL 1000.0 0.0 nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Defines the maximum length of shared trace segments at component pins")
+			(purpose "Maximum Stub Length")
+			(ctype CONSTRAINT)
+			(title "Stub Length Max"))
+		(constraint_def PARALLEL_LENGTH
+			(owner PHYSNET)
+			(datatype REAL 1000.0 0.0 nil
+				(format FMT_FIXED 2))
+			(help_text "Maximum parallel length of adjacent parallel trace segments."
+ "First of the two parameters to define parallelism tolerances")
+			(purpose "Parallel length for PARALLEL_GAP")
+			(ctype CONSTRAINT)
+			(title "Length")
+			(header "Parallel"))
+		(constraint_def PARALLEL_GAP
+			(owner PHYSNET)
+			(datatype REAL 200.0 0.0 nil
+				(format FMT_FIXED 2))
+			(help_text "Minimum parallel gap of adjacent parallel trace segments."
+ "Second of the two parameters to define parallelism tolerances")
+			(purpose "Maximum Distance Considered in PARALLEL_LENGTH")
+			(ctype CONSTRAINT)
+			(title "Gap")
+			(header "Parallel"))
+		(constraint_def AUTO_ROUTE
+			(owner PHYSNET)
+			(datatype BOOL true)
+			(help_text "Enables the trace to be autorouted")
+			(purpose "Allow Autoroute")
+			(ctype CONSTRAINT)
+			(title "Autoroute"))
+		(constraint_def SHIELD_NET
+			(owner PHYSNET)
+			(datatype STR "*")
+			(help_text
+ "Name of net to be used for shield traces created around nets. * indicates shielding is turned off.")
+			(purpose "Name of Net to Shield Trace")
+			(ctype CONSTRAINT)
+			(title "Net Name")
+			(header "Shield"))
+		(constraint_def SHIELD_GAP
+			(owner PHYSNET)
+			(datatype REAL 200.0 0.0 nil
+				(format FMT_FIXED 2))
+			(help_text
+ "Minimum edge to edge distance between adjacent trace segments net shielding and shielded net")
+			(purpose "Fixed Gap CLEARANCE_RULE from Subject Trace")
+			(ctype CONSTRAINT)
+			(title "Gap")
+			(header "Shield"))
+		(constraint_def TANDEM_LENGTH
+			(owner PHYSNET)
+			(datatype REAL 1000.0 0.0 nil
+				(format FMT_FIXED 2))
+			(purpose "Length at Tandem_Gap Considered Violation")
+			(ctype CONSTRAINT)
+			(title "Length")
+			(header "Tandem"))
+		(constraint_def TANDEM_GAP
+			(owner PHYSNET)
+			(datatype REAL 200.0 0.0 nil
+				(format FMT_FIXED 2))
+			(purpose "Maximum CLEARANCE_RULE for TANDEM_LENGTH")
+			(ctype CONSTRAINT)
+			(title "Gap")
+			(header "Tandem"))
+		(constraint_def MIN_CAPACITANCE
+			(owner PHYSNET)
+			(datatype REAL 0.0 nil nil
+				(format FMT_FIXED 2))
+			(help_text "Minimum Trace Capacitance")
+			(purpose "Minimum Trace Capacitance")
+			(ctype CONSTRAINT)
+			(title "Min")
+			(header "Capacitance"))
+		(constraint_def MAX_CAPACITANCE
+			(owner PHYSNET)
+			(datatype REAL 10.0 0.0 nil
+				(format FMT_FIXED 2))
+			(help_text "Maximum Trace Capacitance")
+			(purpose "Maximum Trace Capacitance")
+			(ctype CONSTRAINT)
+			(title "Max")
+			(header "Capacitance"))
+		(constraint_def DIFFPAIR_RESTRICT_LAYER_CHANGE
+			(owner DIFFP)
+			(datatype BOOL false)
+			(help_text "Restricts layer changes in differential pairs")
+			(ctype CONSTRAINT)
+			(title "Restrict Layer Changes"))
+		(constraint_def RESTRICTED_VIA_TYPE
+			(owner COMP)
+			(datatype STR)
+			(help_text
+ "Defines the via types restricted for the component. Via types not listed, will be permitted.")
+			(ctype CONSTRAINT)
+			(title "Restricted Via(s)")))
+	(constraint_sets
+		(constraint_setdef "CLEARANCE_RULE"
+			(owner PHYSNET)
+			(title "Clearance")
+			(constraint TRACK_TO_TRACK
+				(datatype REAL 6.0 nil nil))
+			(constraint VIA_TO_TRACK
+				(datatype REAL 6.0 nil nil))
+			(constraint VIA_TO_VIA
+				(datatype REAL 6.0 nil nil))
+			(constraint PAD_TO_TRACK
+				(datatype REAL 6.0 nil nil))
+			(constraint PAD_TO_VIA
+				(datatype REAL 6.0 nil nil))
+			(constraint PAD_TO_PAD
+				(datatype REAL 6.0 nil nil))
+			(constraint SMD_TO_TRACK
+				(datatype REAL 6.0 nil nil))
+			(constraint SMD_TO_VIA
+				(datatype REAL 6.0 nil nil))
+			(constraint SMD_TO_PAD
+				(datatype REAL 6.0 nil nil))
+			(constraint SMD_TO_SMD
+				(datatype REAL 6.0 nil nil))
+			(constraint COPPER_TO_TRACK
+				(datatype REAL 6.0 nil nil))
+			(constraint COPPER_TO_VIA
+				(datatype REAL 6.0 nil nil))
+			(constraint COPPER_TO_PAD
+				(datatype REAL 6.0 nil nil))
+			(constraint COPPER_TO_SMD
+				(datatype REAL 6.0 nil nil))
+			(constraint COPPER_TO_COPPER
+				(datatype REAL 6.0 nil nil))
+			(constraint TEXT_TO_TRACK
+				(datatype REAL 6.0 nil nil))
+			(constraint TEXT_TO_VIA
+				(datatype REAL 6.0 nil nil))
+			(constraint TEXT_TO_PAD
+				(datatype REAL 6.0 nil nil))
+			(constraint TEXT_TO_SMD
+				(datatype REAL 6.0 nil nil))
+			(constraint OUTLINE_TO_TRACK
+				(datatype REAL 6.0 nil nil))
+			(constraint OUTLINE_TO_VIA
+				(datatype REAL 6.0 nil nil))
+			(constraint OUTLINE_TO_PAD
+				(datatype REAL 6.0 nil nil))
+			(constraint OUTLINE_TO_SMD
+				(datatype REAL 6.0 nil nil))
+			(constraint OUTLINE_TO_COPPER
+				(datatype REAL 6.0 nil nil))
+			(constraint DRILL_TO_TRACK
+				(datatype REAL 6.0 nil nil))
+			(constraint DRILL_TO_VIA
+				(datatype REAL 6.0 nil nil))
+			(constraint DRILL_TO_PAD
+				(datatype REAL 6.0 nil nil))
+			(constraint DRILL_TO_SMD
+				(datatype REAL 6.0 nil nil))
+			(constraint DRILL_TO_COPPER
+				(datatype REAL 6.0 nil nil))
+			(constraint SAME_NET_SMD_TO_VIA
+				(datatype REAL 6.0 nil nil))
+			(constraint SAME_NET_SMD_TO_CRN
+				(datatype REAL 6.0 nil nil))
+			(constraint SAME_NET_VIA_TO_VIA
+				(datatype REAL 6.0 nil nil))
+			(constraint SAME_NET_PAD_TO_CRN
+				(datatype REAL 6.0 nil nil))
+			(constraint SAME_NET_TRACK_TO_CRN
+				(datatype REAL 6.0 nil nil))
+			(constraint MIN_TRACK_WIDTH
+				(datatype REAL 12.0 nil nil))
+			(constraint REC_TRACK_WIDTH
+				(datatype REAL 12.0 nil nil))
+			(constraint MAX_TRACK_WIDTH
+				(datatype REAL 12.0 nil nil))
+			(constraint DRILL_TO_DRILL
+				(datatype REAL 6.0 nil nil))
+			(constraint BODY_TO_BODY
+				(datatype REAL 6.0 nil nil)))
+		(constraint_setdef "ROUTE_RULE"
+			(owner PHYSNET)
+			(title "Route")
+			(constraint LENGTH_MINIMIZATION_TYPE
+				(datatype CHOICE
+					(choices "PROTECTED" "MINIMIZED" "HORIZONTAL" "VERTICAL" "SERIAL" "PARALLEL" "MID-DRIVEN")
+ "MINIMIZED"))
+			(constraint VIA_SHARE
+				(datatype BOOL true))
+			(constraint MAX_NUMBER_OF_VIAS
+				(datatype INT -1 -1 nil))
+			(constraint TRACE_SHARE
+				(datatype BOOL true))
+			(constraint AUTO_ROUTE
+				(datatype BOOL true))
+			(constraint RIPUP
+				(datatype BOOL true))
+			(constraint SHOVE
+				(datatype BOOL true))
+			(constraint SHOVE_PROTECTED
+				(datatype BOOL false))
+			(constraint ROUTE_PRIORITY
+				(datatype INT 3 0 nil))
+			(constraint VALID_LAYER
+				(datatype STR "1,2"))
+			(constraint VALID_VIA_TYPE
+				(datatype STR "*USE_CURRENT*")))
+		(constraint_setdef "HIGH_SPEED_RULE"
+			(owner PHYSNET)
+			(title "High Speed")
+			(constraint AGGRESSOR
+				(datatype BOOL false))
+			(constraint MIN_LENGTH
+				(datatype REAL 0.0 0.0 nil))
+			(constraint MAX_LENGTH
+				(datatype REAL 50000.0 0.0 nil))
+			(constraint STUB_LENGTH
+				(datatype REAL 1000.0 0.0 nil))
+			(constraint PARALLEL_LENGTH
+				(datatype REAL 1000.0 0.0 nil))
+			(constraint PARALLEL_GAP
+				(datatype REAL 200.0 0.0 nil))
+			(constraint TANDEM_LENGTH
+				(datatype REAL 1000.0 0.0 nil))
+			(constraint TANDEM_GAP
+				(datatype REAL 200.0 0.0 nil))
+			(constraint MIN_PROPDELAY
+				(datatype REAL 0.0 0.0 nil))
+			(constraint MAX_PROPDELAY
+				(datatype REAL 10.0 0.0 nil))
+			(constraint MIN_CAPACITANCE
+				(datatype REAL 0.0 0.0 nil))
+			(constraint MAX_CAPACITANCE
+				(datatype REAL 10.0 0.0 nil))
+			(constraint MIN_IMPEDANCE
+				(datatype REAL 50.0 0.0 nil))
+			(constraint MAX_IMPEDANCE
+				(datatype REAL 150.0 0.0 nil))
+			(constraint SHIELD_NET
+				(datatype STR "*"))
+			(constraint SHIELD_GAP
+				(datatype REAL 200.0 0.0 nil))
+			(constraint MATCH_LENGTH)
+			(constraint MATCH_LENGTH_TOLERANCE
+				(datatype REAL 200.0 0.0 nil))
+			(constraint EP_TOPO_TEMPLATE))
+		(constraint_setdef "DIFF_PAIR_RULE"
+			(owner DIFFP)
+			(title "Differential Pair")
+			(constraint DIFFPAIR_MIN_LENGTH
+				(datatype REAL 0.0 nil nil))
+			(constraint DIFFPAIR_MAX_LENGTH
+				(datatype REAL 448000.0 nil nil))
+			(constraint DIFFPAIR_WIDTH
+				(datatype REAL 12.0 nil nil))
+			(constraint DIFFPAIR_GAP
+				(datatype REAL 12.0 nil nil))
+			(constraint DIFFPAIR_MAX_OBSTACLE_SIZE
+				(datatype REAL 25.0 nil nil))
+			(constraint DIFFPAIR_MAX_OBSTACLE_NUMBER
+				(datatype INT 3 nil nil))
+			(constraint DIFFPAIR_RESTRICT_LAYER_CHANGE
+				(datatype BOOL false))
+			(constraint DIFFPAIR_ALLOW_SPLIT_AROUND_OBSTACLES
+				(datatype BOOL false)))
+		(constraint_setdef "COMPONENT_RULE"
+			(owner COMP)
+			(title "Component")
+			(constraint TRACK_TO_TRACK
+				(datatype REAL 6.0 nil nil))
+			(constraint VIA_TO_TRACK
+				(datatype REAL 6.0 nil nil))
+			(constraint PAD_TO_TRACK
+				(datatype REAL 6.0 nil nil))
+			(constraint PAD_TO_VIA
+				(datatype REAL 6.0 nil nil))
+			(constraint PAD_TO_PAD
+				(datatype REAL 6.0 nil nil))
+			(constraint SMD_TO_TRACK
+				(datatype REAL 6.0 nil nil))
+			(constraint SMD_TO_VIA
+				(datatype REAL 6.0 nil nil))
+			(constraint SMD_TO_PAD
+				(datatype REAL 6.0 nil nil))
+			(constraint SMD_TO_SMD
+				(datatype REAL 6.0 nil nil))
+			(constraint TEXT_TO_TRACK
+				(datatype REAL 6.0 nil nil))
+			(constraint TEXT_TO_VIA
+				(datatype REAL 6.0 nil nil))
+			(constraint TEXT_TO_PAD
+				(datatype REAL 6.0 nil nil))
+			(constraint TEXT_TO_SMD
+				(datatype REAL 6.0 nil nil))
+			(constraint OUTLINE_TO_PAD
+				(datatype REAL 6.0 nil nil))
+			(constraint OUTLINE_TO_SMD
+				(datatype REAL 6.0 nil nil))
+			(constraint DRILL_TO_TRACK
+				(datatype REAL 6.0 nil nil))
+			(constraint DRILL_TO_VIA
+				(datatype REAL 6.0 nil nil))
+			(constraint DRILL_TO_PAD
+				(datatype REAL 6.0 nil nil))
+			(constraint DRILL_TO_SMD
+				(datatype REAL 6.0 nil nil))
+			(constraint SAME_NET_SMD_TO_VIA
+				(datatype REAL 6.0 nil nil))
+			(constraint SAME_NET_SMD_TO_CRN
+				(datatype REAL 6.0 nil nil))
+			(constraint SAME_NET_PAD_TO_CRN
+				(datatype REAL 6.0 nil nil))
+			(constraint MIN_TRACK_WIDTH
+				(datatype REAL 12.0 nil nil))
+			(constraint REC_TRACK_WIDTH
+				(datatype REAL 12.0 nil nil))
+			(constraint MAX_TRACK_WIDTH
+				(datatype REAL 12.0 nil nil))
+			(constraint RESTRICTED_VIA_TYPE)
+			(constraint VIA_TO_VIA
+				(datatype REAL 6.0 nil nil))))
+	(class_defs
+		(class_def PADS2007_Rules
+			(owner PHYSNET COMP DIFFP)
+			(help_text
+ "This class definition corresponds to the PowerPCB class definition. It"
+ "is comprised of 5 distinct constraint sets, 3 for nets, one for components" "and one for differential pairs." ""
+ "Within the database each net, differential pair, and component will be"
+ "assigned to the default instance of this class named 'Default'. This")
+			(purpose "Power PCB Rule Sets")
+			(constraint_setref HIGH_SPEED_RULE)
+			(constraint_setref ROUTE_RULE)
+			(constraint_setref CLEARANCE_RULE)
+			(constraint_setref DIFF_PAIR_RULE)
+			(constraint_setref COMPONENT_RULE)))
+	(classes
+		(class "Default" PADS2007_Rules
+			(owner PHYSNET COMP DIFFP)
+			(constraint_set ROUTE_RULE
+				(constraint VALID_VIA_TYPE
+					(datatype STR "STANDARDVIA,POWERVIA,BGA")))))
+	(groups
+		(group "CLEARANCE_RULE"
+			(owner PHYSNET)
+			(group_constraints NAME SAME_NET_SMD_TO_VIA SAME_NET_SMD_TO_CRN
+ SAME_NET_VIA_TO_VIA SAME_NET_PAD_TO_CRN SAME_NET_TRACK_TO_CRN MIN_TRACK_WIDTH
+ REC_TRACK_WIDTH MAX_TRACK_WIDTH DRILL_TO_DRILL BODY_TO_BODY TRACK_TO_TRACK
+ PAD_TO_TRACK SMD_TO_TRACK COPPER_TO_TRACK TEXT_TO_TRACK OUTLINE_TO_TRACK
+ DRILL_TO_TRACK VIA_TO_VIA PAD_TO_VIA SMD_TO_VIA COPPER_TO_VIA TEXT_TO_VIA
+ OUTLINE_TO_VIA DRILL_TO_VIA PAD_TO_PAD SMD_TO_PAD COPPER_TO_PAD TEXT_TO_PAD
+ OUTLINE_TO_PAD DRILL_TO_PAD SMD_TO_SMD COPPER_TO_SMD TEXT_TO_SMD OUTLINE_TO_SMD
+ OUTLINE_TO_COPPER DRILL_TO_SMD COPPER_TO_COPPER))
+		(group "ROUTE_RULE"
+			(owner PHYSNET)
+			(group_constraints NAME AUTO_ROUTE RIPUP SHOVE SHOVE_PROTECTED ROUTE_PRIORITY
+ VALID_LAYER VALID_VIA_TYPE MAX_NUMBER_OF_VIAS))
+		(group "HIGH_SPEED_RULE"
+			(owner PHYSNET)
+			(group_constraints NAME MIN_LENGTH MAX_LENGTH STUB_LENGTH PARALLEL_LENGTH
+ PARALLEL_GAP TANDEM_LENGTH TANDEM_GAP MIN_CAPACITANCE MAX_CAPACITANCE
+ MIN_IMPEDANCE MAX_IMPEDANCE SHIELD_NET SHIELD_GAP MATCH_LENGTH
+ MATCH_LENGTH_TOLERANCE AGGRESSOR)))
+	(topologies))
