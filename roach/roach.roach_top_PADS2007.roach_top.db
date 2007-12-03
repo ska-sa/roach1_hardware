@@ -1,15 +1,17 @@
 
-(pcb "roach.roach_top_PADS2007.roach_top.db"
+(pcb
+ "C:\Users\mrevnell\roach\elec\roach\roach.roach_top_PADS2007.roach_top.db"
 	(version "5.0.0")
 	(units "basic")
 	(config_properties
 		(attributes
-			(attval "PcbConfigName" "D:\ROACH\elec\roach\roach_pcb.cfg")
-			(attval "CnsFile" "D:\ROACH\elec\roach\pads2007.cns")
+			(attval "PcbConfigName"
+ "C:\Users\mrevnell\roach\elec\roach\roach_pcb.cfg")
+			(attval "CnsFile" "C:\Users\mrevnell\roach\elec\roach\pads2007.cns")
 			(attval "BeAdapter" "PADS2007")
 			(attval "FeAdapter" "DxDesigner")
 			(attval "SYSCONFIG" "pcbfwd")
-			(attval "LASTSYSCONFIG" "pcbbck"))
+			(attval "LASTSYSCONFIG" "pcbfwd"))
 		(constraints
 			(cnsval "U:Velocity" "Unknown:3")
 			(cnsval "U:Time" "Unknown:3")
@@ -26,7 +28,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1196411990"))
+		(file_ext "roach_top.pxr" "1196720659"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -26020,45 +26022,45 @@
 		(net "$1I6\$1N2456"
 			(pins RP20-4))
 		(net "$1I6\DDR2_A0"
-			(pins J15-188 U15-AG27 RP16-4))
+			(pins J15-188 U15-AG27 RP16-3))
 		(net "$1I6\DDR2_A1"
-			(pins J15-183 U15-AF25 RP16-3))
+			(pins J15-183 U15-AF25 RP16-1))
 		(net "$1I6\DDR2_A2"
 			(pins J15-63 U15-AF26 RP16-2))
 		(net "$1I6\DDR2_A3"
-			(pins J15-182 U15-AE27 RP16-1))
+			(pins J15-182 U15-AE27 RP15-4))
 		(net "$1I6\DDR2_A4"
-			(pins J15-61 U15-AE26 RP15-4))
+			(pins J15-61 U15-AE26 RP15-3))
 		(net "$1I6\DDR2_A5"
-			(pins J15-60 U15-AC25 RP15-3))
+			(pins J15-60 U15-AC25 RP15-2))
 		(net "$1I6\DDR2_A6"
-			(pins J15-180 U15-AC24 RP15-2))
+			(pins J15-180 U15-AC24 RP15-1))
 		(net "$1I6\DDR2_A7"
-			(pins J15-58 U15-AD26 RP15-1))
+			(pins J15-58 U15-AD26 RP14-3))
 		(net "$1I6\DDR2_A8"
 			(pins J15-179 U15-AN23 RP14-4))
 		(net "$1I6\DDR2_A9"
-			(pins J15-177 U15-AN20 RP14-3))
+			(pins J15-177 U15-AN20 RP14-2))
 		(net "$1I6\DDR2_A10"
-			(pins J15-70 U15-AP20 RP14-2))
+			(pins J15-70 U15-AP20 RP16-4))
 		(net "$1I6\DDR2_A11"
 			(pins J15-57 U15-AN22 RP14-1))
 		(net "$1I6\DDR2_A12"
 			(pins J15-176 U15-AM22 RP13-4))
 		(net "$1I6\DDR2_A13"
-			(pins J15-196 U15-AN18 RP13-3))
+			(pins J15-196 U15-AN18 RP18-3))
 		(net "$1I6\DDR2_A14"
 			(pins J15-174 U15-AM18 RP13-2))
 		(net "$1I6\DDR2_A15"
 			(pins J15-173 U15-AP22 RP13-1))
 		(net "$1I6\DDR2_BA0"
-			(pins J15-71 U15-AF31 RP17-3))
+			(pins J15-71 U15-AF31 RP17-2))
 		(net "$1I6\DDR2_BA1"
-			(pins J15-190 U15-AE29 RP17-2))
+			(pins J15-190 U15-AE29 RP17-1))
 		(net "$1I6\DDR2_BA2"
-			(pins J15-54 U15-AD29 RP17-1))
+			(pins J15-54 U15-AD29 RP13-3))
 		(net "$1I6\DDR2_CAS_N"
-			(pins J15-74 U15-AK31 RP17-4))
+			(pins J15-74 U15-AK31 RP18-2))
 		(net "$1I6\DDR2_CKE_0"
 			(pins J15-52 U15-AH30 RP20-3))
 		(net "$1I6\DDR2_CKE_1"
@@ -26078,9 +26080,9 @@
 		(net "$1I6\DDR2_CK_2_P"
 			(pins J15-220 C461-1 U15-AH29))
 		(net "$1I6\DDR2_CS_N_0"
-			(pins J15-193 U15-AF30 RP18-4))
+			(pins J15-193 U15-AF30 RP17-4))
 		(net "$1I6\DDR2_CS_N_1"
-			(pins J15-76 U15-AC30 RP18-3))
+			(pins J15-76 U15-AC30 RP18-4))
 		(net "$1I6\DDR2_DIMM_SCL"
 			(pins J15-120 R233-2))
 		(net "$1I6\DDR2_DIMM_SDA"
@@ -26292,11 +26294,11 @@
 		(net "$1I6\DDR2_PHY_INIT_DONE"
 			(pins TP6-1 U15-AN19))
 		(net "$1I6\DDR2_RAS_N"
-			(pins J15-192 U15-AJ31 RP18-1))
+			(pins J15-192 U15-AJ31 RP17-3))
 		(net "$1I6\DDR2_RESET_N"
 			(pins J15-18 U15-AP21))
 		(net "$1I6\DDR2_WE_N"
-			(pins J15-73 U15-AF29 RP18-2))
+			(pins J15-73 U15-AF29 RP18-1))
 		(net "$1I6\PAR_IN"
 			(pins J15-68))
 		(net "$1I7\$1N335"
@@ -29253,8 +29255,8 @@
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "CLK_PERCLK"
 			(constraints
-				(cnsval "LENGTH_MINIMIZATION_TYPE" "SERIAL")
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "LENGTH_MINIMIZATION_TYPE" "SERIAL")))
 		(net_scalar "CLK_GETH0_25MHZ"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))

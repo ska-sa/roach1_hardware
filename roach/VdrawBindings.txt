@@ -1,30 +1,27 @@
 Bindings available in both Schematic and Symbol editor windows
 Key             Command                  Type
 --------------- -----------------------  -------------------
+F6              EditUndo                 Menu
 Ctrl+V          EditPaste                Menu
-Ctrl+Delete     EditDelete               Menu
+F12             WVOProperties            Menu
 Ctrl+X          EditCut                  Menu
-Alt+Backspace   EditUndo                 Menu
 Shift+F1        HelpContext              Menu
+Ctrl+Y          EditRedo                 Menu
 Ctrl+Z          EditUndo                 Menu
 Ctrl+Alt+Space  AddOffPagePin            Menu
+Del             EditDelete               Menu
 Ctrl+Alt+Shift+Space            AddOnPagePin             Menu
-Shift+Insert    EditPaste                Menu
 Ctrl+F1         HelpDxDesignerHelpTopics                         Menu
 Ctrl+N          FileNew                  Menu
-Ctrl+Backspace  EditRedo                 Menu
-Shift+Delete    EditCut                  Menu
 Ctrl+O          FileOpen                 Menu
 Ctrl+P          FilePrint                Menu
 Ctrl+Alt+G      ProjectSettings          Menu
 Ctrl+Q          WVOProperties            Menu
 F1              Help                     Menu
 Alt+Enter       WVOProperties            Menu
-Ctrl+A          EditRedo                 Menu
 Ctrl+S          FileSave                 Menu
 Ctrl+B          EditAttributeVisibility  Menu
 Ctrl+C          EditCopy                 Menu
-Ctrl+Insert     EditCopy                 Menu
 Key             Command                  Type
 --------------- -----------------------  -------------------
 Shift+F4        nexterror                Command Line command
@@ -36,36 +33,33 @@ Key             Command                  Type
 --------------- -----------------------  -------------------
 Shift+Space     AddPowerPin              Menu
 w               FileSaveAndCheck         Menu
-Ctrl+Shift+F    ReflectVertical          Menu
 f               AddFub                   Menu
 Ctrl+D          ViewRefresh              Menu
 Backspace       WVODelete                Menu
 Down            WVODown                  Menu
-F5              ViewRefresh              Menu
+F5              ReflectVertical          Menu
 Ctrl+E          MoveNow                  Menu
-F6              WVOPan                   Menu
 Ctrl+Shift+Space                AddHierIOPin             Menu
 y               WVOPushSymbol            Menu
 h               WVOPushSchematic         Menu
 W               FileSaveAs               Menu
-Ctrl+F          ReflectHorizontal        Menu
 Space           WVOCommandLine           Menu
-Ctrl+W          WVOZoomArea              Menu
+Ctrl+W          ViewZoom                 Menu
 F7              WVOZoomIn                Menu
-z               ViewZoom                 Menu
 i               AddComponent             Menu
 Page Up         WVOPriorPage             Menu
 F8              WVOZoomOut               Menu
-Ctrl+Y          Cycle                    Command Line command
+Ctrl+Y          EditRedo                 Menu
 F9              WVOZoomArea              Menu
 Z               ViewZoomSelected         Menu
+Ctrl+Z          EditUndo                 Menu
 Left            WVOLeft                  Menu
 Shift+F2        WVOLeftButton            Menu
 m               MoveNow                  Menu
+Del             EditDelete               Menu
 Right           WVORight                 Menu
 Ctrl+Shift+F2   WVOLeftButton            Menu
 Insert          WVOPan                   Menu
-End             ViewRefresh              Menu
 n               AddNet                   Menu
 L               AddLine                  Menu
 Page Down       WVONextPage              Menu
@@ -73,7 +67,6 @@ Up              WVOUp                    Menu
 Ctrl+F2         WVOLeftButton            Menu
 Delete          WVODelete                Menu
 Ctrl+Shift+R    Rotate90                 Menu
-r               EditRedo                 Menu
 Shift+F9        ViewSaveZoom             Menu
 s               SelectMode               Menu
 b               AddBus                   Menu
@@ -83,46 +76,41 @@ c               AddComponent             Menu
 A               AddArc                   Menu
 Home            WVOZoomFull              Menu
 F2              WVOLeftButton            Menu
+F3              Rotate90                 Menu
 Ctrl+Space      AddGroundPin             Menu
-u               EditUndo                 Menu
-d               EditDelete               Menu
 B               AddBox                   Menu
-F3              WVOMiddleButton          Menu
+F4              ReflectHorizontal        Menu
 Escape          SelectMode               Menu
 T               AddText                  Menu
 C               AddCircle                Menu
 Shift+F10       ViewRestoreZoom          Menu
-F4              WVOZoomFull              Menu
 
 
 Symbol Editor Bindings
 Key             Command                  Type
 --------------- -----------------------  -------------------
-w               FileSave                 Menu
-Ctrl+Shift+F    ReflectVertical          Menu
 Ctrl+D          ViewRefresh              Menu
 Backspace       WVODelete                Menu
 Down            WVODown                  Menu
-F5              ViewRefresh              Menu
+F5              ReflectVertical          Menu
 Ctrl+E          MoveNow                  Menu
-F6              WVOPan                   Menu
 W               FileSaveAs               Menu
-Ctrl+F          ReflectHorizontal        Menu
 Space           WVOCommandLine           Menu
-Ctrl+W          WVOZoomArea              Menu
+Ctrl+W          ViewZoom                 Menu
 F7              WVOZoomIn                Menu
-z               ViewZoom                 Menu
 Page Up         WVOPriorPage             Menu
 F8              WVOZoomOut               Menu
+Ctrl+Y          EditRedo                 Menu
 F9              WVOZoomArea              Menu
 Z               ViewZoomSelected         Menu
+Ctrl+Z          EditUndo                 Menu
 Left            WVOLeft                  Menu
 Shift+F2        WVOLeftButton            Menu
 m               MoveNow                  Menu
+Del             EditDelete               Menu
 Right           WVORight                 Menu
 Ctrl+Shift+F2   WVOLeftButton            Menu
 Insert          WVOPan                   Menu
-End             ViewRefresh              Menu
 L               AddLine                  Menu
 p               AddPin                   Menu
 Page Down       WVONextPage              Menu
@@ -130,21 +118,19 @@ Up              WVOUp                    Menu
 Ctrl+F2         WVOLeftButton            Menu
 Delete          WVODelete                Menu
 Ctrl+Shift+R    Rotate90                 Menu
-r               EditRedo                 Menu
 Shift+F9        ViewSaveZoom             Menu
 s               SelectMode               Menu
 A               AddArc                   Menu
 Home            WVOZoomFull              Menu
 F2              WVOLeftButton            Menu
-u               EditUndo                 Menu
-d               EditDelete               Menu
+F3              Rotate90                 Menu
+Ctrl+S          FileSave                 Menu
 B               AddBox                   Menu
-F3              WVOMiddleButton          Menu
+F4              ReflectHorizontal        Menu
 Escape          SelectMode               Menu
 T               AddText                  Menu
 C               AddCircle                Menu
 Shift+F10       ViewRestoreZoom          Menu
-F4              WVOZoomFull              Menu
 
 
 Stroke Bindings
