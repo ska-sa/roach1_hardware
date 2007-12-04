@@ -28,7 +28,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1196720659"))
+		(file_ext "roach_top.pxr" "1196783699"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -1140,8 +1140,9 @@
  "R266" "R265" "R264" "R263" "R262" "R261" "R260" "R259" "R258" "R257" "R256" "R255" "R254" "R253" "R252" "R251"
  "R250" "R249" "R248" "R247" "R246" "R245" "R244" "R243" "R242" "R241" "R240" "R239" "R238" "R237" "R236" "R235"
  "R234" "R233" "R232" "R231" "R230" "R229" "R228" "R227" "R226" "R225" "R224" "R223" "R222" "R212" "R211" "R210"
- "R209" "R208" "R207" "R193" "R192" "R183" "R181" "R180" "R179" "R177" "R149" "R148" "R147" "R146" "R144" "R143"
- "R141" "R140" "R138" "R102" "R101" "R54" "R53" "R52" "R51" "R48" "R47" "R46" "R45" "R44" "R43" "R9" "R8" "R7" "R6" "R4" "R2" "R1"))
+ "R209" "R208" "R207" "R193" "R192" "R183" "R181" "R180" "R179" "R177" "R150" "R149" "R148" "R147" "R146" "R145"
+ "R144" "R143" "R142" "R141" "R140" "R139" "R138" "R102" "R101" "R54" "R53" "R52" "R51" "R48" "R47" "R46" "R45" "R44"
+ "R43" "R21" "R20" "R19" "R18" "R17" "R16" "R15" "R14" "R13" "R12" "R11" "R10" "R9" "R8" "R7" "R6" "R4" "R2" "R1"))
 		(logical_part "RES0402_55"
 			(slots
 				(slot "R__RES0402_55_1"
@@ -12394,6 +12395,16 @@
 				(attval "DEVICE" "RES0402_55")
 				(attval "REFDES" "R177")))
 		(component "RESC1005X40N"
+			(place "R150" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "22R")
+				(attval "TOLERANCE" "5%")
+				(attval "GEOMETRY.HEIGHT" "0.35")
+				(attval "DEVICE" "RES0402_55")
+				(attval "REFDES" "R150")))
+		(component "RESC1005X40N"
 			(place "R149" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
@@ -12434,6 +12445,16 @@
 				(attval "DEVICE" "RES0402_55")
 				(attval "REFDES" "R146")))
 		(component "RESC1005X40N"
+			(place "R145" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "22R")
+				(attval "TOLERANCE" "5%")
+				(attval "GEOMETRY.HEIGHT" "0.35")
+				(attval "DEVICE" "RES0402_55")
+				(attval "REFDES" "R145")))
+		(component "RESC1005X40N"
 			(place "R144" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
@@ -12454,6 +12475,16 @@
 				(attval "DEVICE" "RES0402_55")
 				(attval "REFDES" "R143")))
 		(component "RESC1005X40N"
+			(place "R142" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "22R")
+				(attval "TOLERANCE" "5%")
+				(attval "GEOMETRY.HEIGHT" "0.35")
+				(attval "DEVICE" "RES0402_55")
+				(attval "REFDES" "R142")))
+		(component "RESC1005X40N"
 			(place "R141" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
@@ -12471,6 +12502,16 @@
 				(attval "GEOMETRY.HEIGHT" "0.35")
 				(attval "DEVICE" "RES0402_55")
 				(attval "REFDES" "R140")))
+		(component "RESC1005X40N"
+			(place "R139" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "22R")
+				(attval "TOLERANCE" "5%")
+				(attval "GEOMETRY.HEIGHT" "0.35")
+				(attval "DEVICE" "RES0402_55")
+				(attval "REFDES" "R139")))
 		(component "RESC1005X40N"
 			(place "R138" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
@@ -13520,6 +13561,126 @@
 				(attval "VALUE" "1K")
 				(attval "DEVICE" "RES_1K_0402_5%")
 				(attval "REFDES" "R23")))
+		(component "RESC1005X40N"
+			(place "R21" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "22R")
+				(attval "TOLERANCE" "5%")
+				(attval "GEOMETRY.HEIGHT" "0.35")
+				(attval "DEVICE" "RES0402_55")
+				(attval "REFDES" "R21")))
+		(component "RESC1005X40N"
+			(place "R20" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "22R")
+				(attval "TOLERANCE" "5%")
+				(attval "GEOMETRY.HEIGHT" "0.35")
+				(attval "DEVICE" "RES0402_55")
+				(attval "REFDES" "R20")))
+		(component "RESC1005X40N"
+			(place "R19" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "22R")
+				(attval "TOLERANCE" "5%")
+				(attval "GEOMETRY.HEIGHT" "0.35")
+				(attval "DEVICE" "RES0402_55")
+				(attval "REFDES" "R19")))
+		(component "RESC1005X40N"
+			(place "R18" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "22R")
+				(attval "TOLERANCE" "5%")
+				(attval "GEOMETRY.HEIGHT" "0.35")
+				(attval "DEVICE" "RES0402_55")
+				(attval "REFDES" "R18")))
+		(component "RESC1005X40N"
+			(place "R17" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "22R")
+				(attval "TOLERANCE" "5%")
+				(attval "GEOMETRY.HEIGHT" "0.35")
+				(attval "DEVICE" "RES0402_55")
+				(attval "REFDES" "R17")))
+		(component "RESC1005X40N"
+			(place "R16" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "22R")
+				(attval "TOLERANCE" "5%")
+				(attval "GEOMETRY.HEIGHT" "0.35")
+				(attval "DEVICE" "RES0402_55")
+				(attval "REFDES" "R16")))
+		(component "RESC1005X40N"
+			(place "R15" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "22R")
+				(attval "TOLERANCE" "5%")
+				(attval "GEOMETRY.HEIGHT" "0.35")
+				(attval "DEVICE" "RES0402_55")
+				(attval "REFDES" "R15")))
+		(component "RESC1005X40N"
+			(place "R14" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "22R")
+				(attval "TOLERANCE" "5%")
+				(attval "GEOMETRY.HEIGHT" "0.35")
+				(attval "DEVICE" "RES0402_55")
+				(attval "REFDES" "R14")))
+		(component "RESC1005X40N"
+			(place "R13" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "22R")
+				(attval "TOLERANCE" "5%")
+				(attval "GEOMETRY.HEIGHT" "0.35")
+				(attval "DEVICE" "RES0402_55")
+				(attval "REFDES" "R13")))
+		(component "RESC1005X40N"
+			(place "R12" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "22R")
+				(attval "TOLERANCE" "5%")
+				(attval "GEOMETRY.HEIGHT" "0.35")
+				(attval "DEVICE" "RES0402_55")
+				(attval "REFDES" "R12")))
+		(component "RESC1005X40N"
+			(place "R11" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "22R")
+				(attval "TOLERANCE" "5%")
+				(attval "GEOMETRY.HEIGHT" "0.35")
+				(attval "DEVICE" "RES0402_55")
+				(attval "REFDES" "R11")))
+		(component "RESC1005X40N"
+			(place "R10" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "22R")
+				(attval "TOLERANCE" "5%")
+				(attval "GEOMETRY.HEIGHT" "0.35")
+				(attval "DEVICE" "RES0402_55")
+				(attval "REFDES" "R10")))
 		(component "RESC1005X40N"
 			(place "R9" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
@@ -24196,14 +24357,18 @@
 		(func "$1I671\$1I371" "" "R180" 1)
 		(func "$1I671\$1I306" "" "R179" 1)
 		(func "$1I671\$1I305" "" "R177" 1)
+		(func "$1I967\$1I1204" "" "R150" 1)
 		(func "$1I671\$1I301" "" "R149" 1)
 		(func "$1I671\$1I300" "" "R148" 1)
 		(func "$1I671\$1I195" "" "R147" 1)
 		(func "$1I671\$1I194" "" "R146" 1)
+		(func "$1I967\$1I1203" "" "R145" 1)
 		(func "$1I671\$1I191" "" "R144" 1)
 		(func "$1I671\$1I190" "" "R143" 1)
+		(func "$1I967\$1I1202" "" "R142" 1)
 		(func "$1I6\$1I2247" "" "R141" 1)
 		(func "$1I6\$1I2245" "" "R140" 1)
+		(func "$1I967\$1I1201" "" "R139" 1)
 		(func "$1I6\$1I2568" "" "R138" 1)
 		(func "$1I291\$1I361" "" "R137" 1)
 		(func "$1I291\$1I360" "" "R136" 1)
@@ -24319,6 +24484,18 @@
 		(func "$1I1002\$1I194" "" "R25" 1)
 		(func "$1I1002\$1I177" "" "R24" 1)
 		(func "$1I1002\$1I175" "" "R23" 1)
+		(func "$1I967\$1I1180" "" "R21" 1)
+		(func "$1I967\$1I1179" "" "R20" 1)
+		(func "$1I967\$1I1178" "" "R19" 1)
+		(func "$1I967\$1I1177" "" "R18" 1)
+		(func "$1I967\$1I1176" "" "R17" 1)
+		(func "$1I967\$1I1175" "" "R16" 1)
+		(func "$1I967\$1I1167" "" "R15" 1)
+		(func "$1I967\$1I1166" "" "R14" 1)
+		(func "$1I671\$1I495" "" "R13" 1)
+		(func "$1I671\$1I491" "" "R12" 1)
+		(func "$1I671\$1I487" "" "R11" 1)
+		(func "$1I671\$1I483" "" "R10" 1)
 		(func "$1I144\$1I242" "" "R9" 1)
 		(func "$1I144\$1I154" "" "R8" 1)
 		(func "$1I144\$1I143" "" "R7" 1)
@@ -26939,6 +27116,8 @@
 			(pins U50-12 R143-2))
 		(net "$1I671\$1N161"
 			(pins U50-13 R144-1))
+		(net "$1I671\$1N163"
+			(pins U50-10 R144-2 R13-2))
 		(net "$1I671\$1N223"
 			(pins U51-9 R146-1))
 		(net "$1I671\$1N234"
@@ -26953,6 +27132,10 @@
 			(pins R148-2 U27-8))
 		(net "$1I671\$1N273"
 			(pins R149-1 U27-9))
+		(net "$1I671\$1N299"
+			(pins R149-2 R11-2 U27-6))
+		(net "$1I671\$1N307"
+			(pins U53-5 R177-2 R10-2))
 		(net "$1I671\$1N332"
 			(pins U53-9 R183-2 C426-1))
 		(net "$1I671\$1N333"
@@ -26971,6 +27154,8 @@
 			(pins C409-1 C423-1 L14-2 U27-2))
 		(net "$1I671\$1N454"
 			(pins U53-2 C412-1 C424-1 L15-2))
+		(net "$1I671\$1N490"
+			(pins U51-6 R146-2 R12-2))
 		(net "$1I671\ATX_GND"
 			(pins J32-1 J32-3 J32-5 J32-7 J32-9 JP30-2 Q8-2 Q9-2 Q10-2 J18-3 J18-5 J18-7))
 		(net "$1I747\$1N12"
@@ -27569,6 +27754,8 @@
 			(pins J14-2 U43-16))
 		(net "$1I863\X_UART2_TX"
 			(pins J14-3 U43-17))
+		(net "$1I967\$1N51"
+			(pins U60-L10 R14-2))
 		(net "$1I967\$1N58"
 			(pins R290-2 R291-1 U60-R5))
 		(net "$1I967\$1N67"
@@ -27605,14 +27792,36 @@
 			(pins U60-M10))
 		(net "$1I967\$1N1157"
 			(pins U60-R9))
+		(net "$1I967\$1N1172"
+			(pins U60-N9 R15-2))
+		(net "$1I967\$1N1183"
+			(pins U60-P13 R21-2))
+		(net "$1I967\$1N1185"
+			(pins U60-R14 R20-2))
+		(net "$1I967\$1N1187"
+			(pins U60-P11 R19-2))
+		(net "$1I967\$1N1189"
+			(pins U60-N11 R18-2))
+		(net "$1I967\$1N1193"
+			(pins U60-R11 R17-2))
+		(net "$1I967\$1N1195"
+			(pins U60-P10 R16-2))
+		(net "$1I967\$1N1209"
+			(pins U60-R7 R139-2))
+		(net "$1I967\$1N1211"
+			(pins U60-N7 R142-2))
+		(net "$1I967\$1N1213"
+			(pins U60-L9 R145-2))
+		(net "$1I967\$1N1215"
+			(pins U60-M9 R150-2))
 		(net "$1I967\3V3AUX_PG"
 			(pins R283-1 U59-9 U60-M5))
 		(net "$1I967\3V3_IMON"
-			(pins R280-1 R293-2 U60-M9 Q14-1 Q14-2 Q14-3))
+			(pins R280-1 R293-2 R150-1 Q14-1 Q14-2 Q14-3))
 		(net "$1I967\3V3_SW_ON"
 			(pins R280-2 U60-P8 Q14-4))
 		(net "$1I967\5V_IMON"
-			(pins R279-1 R292-2 U60-N7 Q13-1 Q13-2 Q13-3))
+			(pins R279-1 R292-2 R142-1 Q13-1 Q13-2 Q13-3))
 		(net "$1I967\5V_SW_ON"
 			(pins R279-2 U60-M8 Q13-4))
 		(net "$1I967\12V_IMON"
@@ -28117,7 +28326,7 @@
  C12-1 C181-1 C182-1 C200-1 C201-1 C202-1 C203-1 C204-1 C205-1 C206-1 C207-1
  C208-1 C209-1 C210-1 C211-1 C214-1 C216-1 C217-1 C218-1 C219-1 C221-1 C222-1
  C224-1 C228-1 C229-1 C230-1 C231-1 C232-1 C233-1 C234-1 C235-1 C309-1 C310-1
- U50-10 R144-2 R298-2 U60-L10))
+ R13-1 R298-2 R14-1))
 		(net "1V0_INHIBIT"
 			(pins Q4-1 U60-A9))
 		(net "1V5"
@@ -28129,8 +28338,8 @@
  U15-M29 U15-P33 C59-1 U16-1 U16-2 C85-1 C86-1 C87-1 U17-E4 U17-E8 U17-J4
  U17-J8 U17-K4 U17-K8 U17-L4 U17-L8 U17-F4 U17-F8 U17-G4 U17-G8 U17-H3 U17-H4
  U17-H8 U17-H9 CP1-1 CP1-2 CP1-3 CP1-4 CP2-1 CP2-2 CP2-3 CP2-4 CP3-1 CP3-2
- CP3-3 CP3-4 CP4-1 CP4-2 CP4-3 CP4-4 C88-1 C89-1 U14-16 C37-1 U50-14 U51-6
- R146-2 L10-2 L9-2 L8-2 L4-2 L1-1 R296-2 U60-P10))
+ CP3-3 CP3-4 CP4-1 CP4-2 CP4-3 CP4-4 C88-1 C89-1 U14-16 C37-1 U50-14 R12-1
+ L10-2 L9-2 L8-2 L4-2 L1-1 R296-2 R16-1))
 		(net "1V5AUX"
 			(pins JP26-3 JP27-3 C545-1 U60-L11 U60-N5 U60-N14 U60-P1 U60-G10 U60-G8
  U60-H7 U60-H9 U60-J10 U60-J8 U60-K7 U60-K9 Q11-3 C556-1 C557-1 C558-1 C559-1
@@ -28166,12 +28375,12 @@
  U15-AK25 U15-AL22 U15-AN26 C464-1 U33-1 U33-2 C361-1 C362-1 C363-1 C365-1
  C366-1 C367-1 C368-1 C369-1 C370-1 C371-1 C372-1 C373-1 C374-1 C375-1 C376-1
  C377-1 C378-1 C379-1 C380-1 C381-1 C382-1 C383-1 C384-1 C385-1 C386-1 C387-1
- C388-1 C389-1 C390-1 C391-1 C392-1 C393-1 C394-1 C395-1 U51-10 R149-2 U27-6
- U54-1 U54-37 U54-84 C504-1 C505-1 C506-1 C546-1 C748-1 C749-1 U55-5 U55-6
- U55-7 U55-8 U56-5 U56-6 U56-7 U56-8 U57-5 U57-6 U57-7 U57-8 C493-1 C494-1
- C497-1 C525-1 C526-1 C527-1 C528-1 C529-1 C530-1 C531-1 C532-1 R262-2 R263-2
- U58-11 U58-19 U58-25 U58-35 U58-48 U58-63 U58-73 U58-92 U58-103 U58-105
- U58-111 U58-117 U58-123 L11-2 R295-2 U60-N11))
+ C388-1 C389-1 C390-1 C391-1 C392-1 C393-1 C394-1 C395-1 U51-10 R11-1 U54-1
+ U54-37 U54-84 C504-1 C505-1 C506-1 C546-1 C748-1 C749-1 U55-5 U55-6 U55-7
+ U55-8 U56-5 U56-6 U56-7 U56-8 U57-5 U57-6 U57-7 U57-8 C493-1 C494-1 C497-1
+ C525-1 C526-1 C527-1 C528-1 C529-1 C530-1 C531-1 C532-1 R262-2 R263-2 U58-11
+ U58-19 U58-25 U58-35 U58-48 U58-63 U58-73 U58-92 U58-103 U58-105 U58-111
+ U58-117 U58-123 L11-2 R295-2 R18-1))
 		(net "1V8_CPU"
 			(pins C627-1 C636-1 C640-1 C645-1 C660-1 C668-1 C672-1 C677-1 C681-1 C692-1
  C696-1 C700-1 C707-1 C712-1 C730-1 C740-1 L11-1 U1-V5 U1-AK7 U1-AK9 U1-AK18
@@ -28187,14 +28396,14 @@
  C318-1 C319-1 U15-M9 U15-N6 U15-T7 U15-E10 U15-H11 U15-J8 P5-W4 P5-X4 P5-Y4
  P5-Z4 C322-1 C323-1 C324-1 C325-1 C326-1 C327-1 C328-1 C329-1 C340-1 C341-1
  U15-AB9 U15-AC6 U15-W8 U15-AF7 U15-AH11 U15-AJ8 P7-W4 P7-X4 P7-Y4 P7-Z4
- C344-1 C345-1 C346-1 C347-1 C348-1 C349-1 C350-1 C351-1 U53-5 R177-2 U27-10
- U15-B19 U15-C16 U15-F17 U15-AJ18 U15-AK15 U15-AN16 C427-1 C428-1 C429-1
- C468-1 C469-1 C470-1 C471-1 C472-1 JP11-3 JP13-3 JP15-3 JP17-3 JP18-3 JP20-1
- JP21-1 JP22-1 JP23-1 C507-1 C508-1 C509-1 C510-1 C513-1 C514-1 C515-1 C516-1
- C517-1 C518-1 C519-1 C520-1 C521-1 C522-1 C523-1 C524-1 C533-1 C534-1 J25-9
- C537-1 R224-1 R254-2 R255-2 R256-2 R257-2 R258-2 R259-2 R260-2 R261-2 R266-1
- U58-96 U58-101 U58-4 U58-77 U58-83 U58-90 U58-15 U58-21 U58-29 U58-37 U58-42
- U58-53 U58-58 U58-69 L12-2 R294-2 U60-R14))
+ C344-1 C345-1 C346-1 C347-1 C348-1 C349-1 C350-1 C351-1 R10-1 U27-10 U15-B19
+ U15-C16 U15-F17 U15-AJ18 U15-AK15 U15-AN16 C427-1 C428-1 C429-1 C468-1
+ C469-1 C470-1 C471-1 C472-1 JP11-3 JP13-3 JP15-3 JP17-3 JP18-3 JP20-1 JP21-1
+ JP22-1 JP23-1 C507-1 C508-1 C509-1 C510-1 C513-1 C514-1 C515-1 C516-1 C517-1
+ C518-1 C519-1 C520-1 C521-1 C522-1 C523-1 C524-1 C533-1 C534-1 J25-9 C537-1
+ R224-1 R254-2 R255-2 R256-2 R257-2 R258-2 R259-2 R260-2 R261-2 R266-1 U58-96
+ U58-101 U58-4 U58-77 U58-83 U58-90 U58-15 U58-21 U58-29 U58-37 U58-42 U58-53
+ U58-58 U58-69 L12-2 R294-2 R20-1))
 		(net "2V5_CPU"
 			(pins C622-1 C669-1 C673-1 C678-1 C682-1 C688-1 C697-1 C702-1 C708-1 C713-1
  C719-1 C725-1 C733-1 C735-1 L12-1 U1-AA22 U1-AK33 U1-AN23 U1-AN30 U1-AB21
@@ -28233,7 +28442,7 @@
  C572-1 C573-1 C574-1 C575-1 C576-1 C577-1 C578-1 C579-1 C580-1 C581-1 C582-1
  C583-1 C584-1 C585-1 C586-1 C587-1 C588-1 C589-1))
 		(net "3V3_ATX"
-			(pins J32-8 J18-1 J18-2 J18-12 J18-13 R293-1 U60-L9))
+			(pins J32-8 J18-1 J18-2 J18-12 J18-13 R293-1 R145-1))
 		(net "3V3_CPU"
 			(pins C624-1 C637-1 C642-1 C647-1 C648-1 C662-1 C664-1 C670-1 C674-1 C679-1
  C684-1 C689-1 C694-1 C704-1 C709-1 C714-1 C720-1 C726-1 C731-1 C737-1 L13-1
@@ -28250,7 +28459,7 @@
 			(pins J32-10 R180-1 J18-9 U59-10 U59-11 U59-5 U59-6 U59-7 U59-8 C552-1))
 		(net "5V_ATX"
 			(pins J32-6 R185-2 J18-4 J18-6 J18-21 J18-22 J18-23 J18-15 J18-17 J18-18
- J18-19 J18-24 R292-1 U60-R7))
+ J18-19 J18-24 R292-1 R139-1))
 		(net "12V"
 			(pins L7-1 L14-1 L15-1 Q12-5 Q12-6 Q12-7 Q12-8))
 		(net "12V_ATX"
@@ -28518,17 +28727,17 @@
 		(net "GPIO44"
 			(pins RO5-1 U1-V32))
 		(net "I1V0"
-			(pins U50-5 U50-9 C400-1 C402-1 C104-1 C105-1 C418-1 C117-1 R298-1 U60-N9))
+			(pins U50-5 U50-9 C400-1 C402-1 C104-1 C105-1 C418-1 C117-1 R298-1 R15-1))
 		(net "I1V5"
-			(pins C405-1 U51-5 C421-1 R296-1 U60-R11))
+			(pins C405-1 U51-5 C421-1 R296-1 R17-1))
 		(net "I1V8"
-			(pins C410-1 C422-1 U27-5 R295-1 U60-P11))
+			(pins C410-1 C422-1 U27-5 R295-1 R19-1))
 		(net "I2C0_33_DATA"
 			(pins U38-5 R88-1 RO9-1 U47-3 U60-F1))
 		(net "I2C0_SCLK"
 			(pins U38-6 U39-6 U40-6 U41-4 U1-AB32 R74-2 P11-1 U60-G1))
 		(net "I2V5"
-			(pins U53-4 C413-1 C425-1 R294-1 U60-P13))
+			(pins U53-4 C413-1 C425-1 R294-1 R21-1))
 		(net "LOAD_RES_OFF"
 			(pins Q8-1 R181-2 U60-D16))
 		(net "M66EN"
@@ -30105,6 +30314,39 @@
 		(net_scalar "$1I967\3V3AUX_PG"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\$1N1215"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\$1N1213"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\$1N1211"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\$1N1209"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\$1N1195"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\$1N1193"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\$1N1189"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\$1N1187"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\$1N1185"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\$1N1183"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\$1N1172"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I967\$1N1157"
 			(attributes
 				(attval "NC" ""))
@@ -30165,6 +30407,9 @@
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I967\$1N58"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\$1N51"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I863\X_UART2_TX"
@@ -31326,6 +31571,9 @@
 		(net_scalar "$1I671\ATX_GND"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I671\$1N490"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I671\$1N454"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
@@ -31353,6 +31601,12 @@
 		(net_scalar "$1I671\$1N332"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I671\$1N307"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I671\$1N299"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I671\$1N273"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
@@ -31372,6 +31626,9 @@
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I671\$1N223"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I671\$1N163"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I671\$1N161"
