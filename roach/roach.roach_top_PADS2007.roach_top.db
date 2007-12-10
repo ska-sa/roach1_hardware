@@ -28,7 +28,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1196963602"))
+		(file_ext "roach_top.pxr" "1197324746"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -14159,7 +14159,7 @@
 				(comp_pin "6" 0.0 0.0 "OUT")
 				(comp_pin "5" 0.0 0.0 "OUT"))
 			(attributes
-				(attval "VALUE" "")
+				(attval "VALUE" "NONE")
 				(attval "DEVICE" "CON_USBA_1X4_F_RA_TH")
 				(attval "REFDES" "P6")))
 		(component "TYCO6367550"
@@ -16175,7 +16175,7 @@
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "IN"))
 			(attributes
-				(attval "VALUE" "")
+				(attval "VALUE" "NONE")
 				(attval "DEVICE" "DIODE_ESD_PROT")
 				(attval "REFDES" "D9")))
 		(component "LEDC3216X120N"
@@ -28000,14 +28000,14 @@
 			(pins J1-6 U1-AG32))
 		(net "$1I1032\$1N1236"
 			(pins R304-2 U63-H11))
-		(net "$1I1032\$1N1735"
-			(pins RP38-3))
-		(net "$1I1032\$1N1737"
-			(pins RP38-4))
 		(net "$1I1032\$1N1872"
 			(pins R302-2 U62-7))
 		(net "$1I1032\$1N1874"
 			(pins R303-2 U62-9))
+		(net "$1I1032\$1N2078"
+			(pins RP38-4))
+		(net "$1I1032\$1N2123"
+			(pins RP38-3))
 		(net "$1I1032\QDR2_BY0_1_CAL_DONE"
 			(pins TP8-1 U15-D30))
 		(net "$1I1032\QDR2_BY0_1_COMPARE_ERROR"
@@ -28017,43 +28017,43 @@
 		(net "$1I1032\QDR2_BY0_1_CQ_P"
 			(pins U15-H28 U63-A11))
 		(net "$1I1032\QDR2_BY0_1_C_N_COMPAT"
-			(pins RP27-4 U15-A25 U63-R6))
+			(pins RP37-2 U15-A25 U63-R6))
 		(net "$1I1032\QDR2_BY0_1_D0"
-			(pins RP32-2 U15-K24 U63-P10))
+			(pins RP35-1 U15-K24 U63-P10))
 		(net "$1I1032\QDR2_BY0_1_D1"
-			(pins RP32-1 U15-L24 U63-N11))
+			(pins RP33-4 U15-L24 U63-N11))
 		(net "$1I1032\QDR2_BY0_1_D2"
-			(pins RP31-4 U15-L25 U63-M11))
+			(pins RP33-2 U15-L25 U63-M11))
 		(net "$1I1032\QDR2_BY0_1_D3"
-			(pins RP31-3 U15-L26 U63-K10))
+			(pins RP32-4 U15-L26 U63-K10))
 		(net "$1I1032\QDR2_BY0_1_D4"
-			(pins RP31-2 U15-J24 U63-J11))
+			(pins RP32-2 U15-J24 U63-J11))
 		(net "$1I1032\QDR2_BY0_1_D5"
-			(pins RP31-1 U15-J25 U63-G11))
+			(pins RP31-4 U15-J25 U63-G11))
 		(net "$1I1032\QDR2_BY0_1_D6"
-			(pins RP30-4 U15-M25 U63-E10))
+			(pins RP31-2 U15-M25 U63-E10))
 		(net "$1I1032\QDR2_BY0_1_D7"
-			(pins RP30-3 U15-M26 U63-D11))
+			(pins RP30-4 U15-M26 U63-D11))
 		(net "$1I1032\QDR2_BY0_1_D8"
-			(pins RP30-2 U15-J27 U63-C11))
+			(pins RP29-4 U15-J27 U63-C11))
 		(net "$1I1032\QDR2_BY0_1_D9"
-			(pins RP30-1 U15-G25 U63-B3))
+			(pins RP28-4 U15-G25 U63-B3))
 		(net "$1I1032\QDR2_BY0_1_D10"
-			(pins RP29-4 U15-G26 U63-C3))
+			(pins RP30-1 U15-G26 U63-C3))
 		(net "$1I1032\QDR2_BY0_1_D11"
-			(pins RP29-3 U15-H25 U63-D2))
+			(pins RP31-1 U15-H25 U63-D2))
 		(net "$1I1032\QDR2_BY0_1_D12"
-			(pins RP29-2 U15-H24 U63-F3))
+			(pins RP31-3 U15-H24 U63-F3))
 		(net "$1I1032\QDR2_BY0_1_D13"
-			(pins RP29-1 U15-F25 U63-G2))
+			(pins RP32-1 U15-F25 U63-G2))
 		(net "$1I1032\QDR2_BY0_1_D14"
-			(pins RP28-4 U15-F26 U63-J3))
+			(pins RP32-3 U15-F26 U63-J3))
 		(net "$1I1032\QDR2_BY0_1_D15"
-			(pins RP28-3 U15-G27 U63-L3))
+			(pins RP33-1 U15-G27 U63-L3))
 		(net "$1I1032\QDR2_BY0_1_D16"
-			(pins RP28-2 U15-H27 U63-M3))
+			(pins RP33-3 U15-H27 U63-M3))
 		(net "$1I1032\QDR2_BY0_1_D17"
-			(pins RP28-1 U15-E28 U63-N2))
+			(pins RP34-1 U15-E28 U63-N2))
 		(net "$1I1032\QDR2_BY0_1_DLL_OFF"
 			(pins R101-2 U15-A31 U63-H1))
 		(net "$1I1032\QDR2_BY0_1_K_N"
@@ -28097,59 +28097,59 @@
 		(net "$1I1032\QDR2_BY0_1_Q17"
 			(pins U15-T24 U63-P3))
 		(net "$1I1032\QDR2_BY0_1_QVLD"
-			(pins RP27-3 U15-B26 U63-P6))
+			(pins RP35-4 U15-B26 U63-P6))
 		(net "$1I1032\QDR2_BY0_1_R"
-			(pins RP32-4 U15-C30 U63-A8))
+			(pins RP28-2 U15-C30 U63-A8))
 		(net "$1I1032\QDR2_BY0_1_SA0"
-			(pins RP38-2 U15-D27 U63-A3))
+			(pins RP27-3 U15-D27 U63-A3))
 		(net "$1I1032\QDR2_BY0_1_SA1"
-			(pins RP38-1 U15-C28 U63-A9))
+			(pins RP28-3 U15-C28 U63-A9))
 		(net "$1I1032\QDR2_BY0_1_SA2"
-			(pins RP37-4 U15-A29 U63-B4))
+			(pins RP29-1 U15-A29 U63-B4))
 		(net "$1I1032\QDR2_BY0_1_SA3"
-			(pins RP37-3 U15-C27 U63-B8))
+			(pins RP29-3 U15-C27 U63-B8))
 		(net "$1I1032\QDR2_BY0_1_SA4"
-			(pins RP37-2 U15-D26 U63-C5))
+			(pins RP30-2 U15-D26 U63-C5))
 		(net "$1I1032\QDR2_BY0_1_SA5"
-			(pins RP37-1 U15-C25 U63-C7))
+			(pins RP30-3 U15-C25 U63-C7))
 		(net "$1I1032\QDR2_BY0_1_SA6"
-			(pins RP36-4 U15-B25 U63-N5))
+			(pins RP34-2 U15-B25 U63-N5))
 		(net "$1I1032\QDR2_BY0_1_SA7"
-			(pins RP36-3 U15-A26 U63-N6))
+			(pins RP34-3 U15-A26 U63-N6))
 		(net "$1I1032\QDR2_BY0_1_SA8"
-			(pins RP36-2 U15-B27 U63-N7))
+			(pins RP34-4 U15-B27 U63-N7))
 		(net "$1I1032\QDR2_BY0_1_SA9"
-			(pins RP36-1 U15-A24 U63-P4))
+			(pins RP35-2 U15-A24 U63-P4))
 		(net "$1I1032\QDR2_BY0_1_SA10"
-			(pins RP35-4 U15-A23 U63-P5))
+			(pins RP35-3 U15-A23 U63-P5))
 		(net "$1I1032\QDR2_BY0_1_SA11"
-			(pins RP35-3 U15-A20 U63-P7))
+			(pins RP36-1 U15-A20 U63-P7))
 		(net "$1I1032\QDR2_BY0_1_SA12"
-			(pins RP35-2 U15-A19 U63-P8))
+			(pins RP36-2 U15-A19 U63-P8))
 		(net "$1I1032\QDR2_BY0_1_SA13"
-			(pins RP35-1 U15-B23 U63-R3))
+			(pins RP36-3 U15-B23 U63-R3))
 		(net "$1I1032\QDR2_BY0_1_SA14"
-			(pins RP34-4 U15-C23 U63-R4))
+			(pins RP36-4 U15-C23 U63-R4))
 		(net "$1I1032\QDR2_BY0_1_SA15"
-			(pins RP34-3 U15-B18 U63-R5))
+			(pins RP37-1 U15-B18 U63-R5))
 		(net "$1I1032\QDR2_BY0_1_SA16"
-			(pins RP34-2 U15-B22 U63-R7))
+			(pins RP37-3 U15-B22 U63-R7))
 		(net "$1I1032\QDR2_BY0_1_SA17"
-			(pins RP34-1 U15-C22 U63-R8))
+			(pins RP37-4 U15-C22 U63-R8))
 		(net "$1I1032\QDR2_BY0_1_SA18"
-			(pins RP33-4 U15-C18 U63-R9))
+			(pins RP38-1 U15-C18 U63-R9))
 		(net "$1I1032\QDR2_BY0_1_SA19"
-			(pins RP33-3 U15-C19 U63-A10))
+			(pins RP27-1 U15-C19 U63-A10))
 		(net "$1I1032\QDR2_BY0_1_SA20"
-			(pins RP33-2 U15-A21 U63-A2))
+			(pins RP27-2 U15-A21 U63-A2))
 		(net "$1I1032\QDR2_BY0_1_SA21"
-			(pins RP33-1 U15-B21))
+			(pins RP38-2 U15-B21))
 		(net "$1I1032\QDR2_BY0_1_W"
-			(pins RP32-3 U15-B31 U63-A4))
+			(pins RP27-4 U15-B31 U63-A4))
 		(net "$1I1032\QDR2_BY0_BW"
-			(pins RP27-1 U15-A30 U63-B7))
+			(pins RP29-2 U15-A30 U63-B7))
 		(net "$1I1032\QDR2_BY1_BW"
-			(pins RP27-2 U15-B30 U63-A5))
+			(pins RP28-1 U15-B30 U63-A5))
 		(net "$1I1032\VRN_23"
 			(pins R301-1 U15-C29))
 		(net "$1I1032\VRP_23"
@@ -30013,20 +30013,16 @@
 		(net_scalar "$1I1032\QDR2_BY0_1_CAL_DONE"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I1032\$1N2123"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1I1032\$1N2078"
+			(attributes
+				(attval "NC" "")))
 		(net_scalar "$1I1032\$1N1874"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I1032\$1N1872"
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I1032\$1N1737"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I1032\$1N1735"
-			(attributes
-				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I1032\$1N1236"

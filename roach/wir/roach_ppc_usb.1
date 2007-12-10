@@ -3,12 +3,12 @@ V 5.4
 K 47050922290 roach_ppc_usb
 DW roach_ppc_usb
 Q Case
-SA SOURCE_PATH 
-SA SHEET=21 OF 25 
-SA SCOUT_META_FORMAT_PREFIX_0=XREF 
-SA SCOUT_META_FORMAT_PREFIX_1=SCHLOC 
-SA SCOUT_META_FORMAT_PREFIX_2=PINLOC 
 SA SCOUT_META_PAGE_ANNOTATION=SHEET=21 OF 25 
+SA SCOUT_META_FORMAT_PREFIX_2=PINLOC 
+SA SCOUT_META_FORMAT_PREFIX_1=SCHLOC 
+SA SCOUT_META_FORMAT_PREFIX_0=XREF 
+SA SHEET=21 OF 25 
+SA SOURCE_PATH 
 |Q IOD_Schematic:sup_esd_sot23_1kv 1
 AS IOD_Schematic:sup_esd_sot23_1kv REFDES=SP?
 AS IOD_Schematic:sup_esd_sot23_1kv DEVICE=SUP_ESD_SOT23_1KV
@@ -98,34 +98,6 @@ AP IOD_Schematic:cap_pol 1 PINTYPE=BI
 AP IOD_Schematic:cap_pol 1 #=1
 AP IOD_Schematic:cap_pol 2 PINTYPE=BI
 AP IOD_Schematic:cap_pol 2 #=2
-|Q IOD_Schematic:con_usba_1x4_f_ra_th 1
-AS IOD_Schematic:con_usba_1x4_f_ra_th MANUFACTURER=TYCO ELECTRONICS
-AS IOD_Schematic:con_usba_1x4_f_ra_th DEVICE=CON_USBA_1X4_F_RA_TH
-AS IOD_Schematic:con_usba_1x4_f_ra_th PARTS=1
-AS IOD_Schematic:con_usba_1x4_f_ra_th PKG_TYPE=787616_TH
-AS IOD_Schematic:con_usba_1x4_f_ra_th LEVEL=STD
-AS IOD_Schematic:con_usba_1x4_f_ra_th ALT_PART=NA
-AS IOD_Schematic:con_usba_1x4_f_ra_th ALT_SUP=ADA: USB-A-S-RA-RC
-AS IOD_Schematic:con_usba_1x4_f_ra_th SUP=AMP: 292303-1
-AS IOD_Schematic:con_usba_1x4_f_ra_th GRN=LHR
-AS IOD_Schematic:con_usba_1x4_f_ra_th VALUE
-AS IOD_Schematic:con_usba_1x4_f_ra_th PINORDER=5 6 4 3 2 1
-AS IOD_Schematic:con_usba_1x4_f_ra_th REFDES=P?
-AS IOD_Schematic:con_usba_1x4_f_ra_th P/D_NUM=292303-1
-AS IOD_Schematic:con_usba_1x4_f_ra_th SHAPE=1X4 USBA
-AS IOD_Schematic:con_usba_1x4_f_ra_th INOV_VER_REC=8:22_10-4-07
-AP IOD_Schematic:con_usba_1x4_f_ra_th 1 #=5
-AP IOD_Schematic:con_usba_1x4_f_ra_th 1 PINTYPE=OUT
-AP IOD_Schematic:con_usba_1x4_f_ra_th 2 #=6
-AP IOD_Schematic:con_usba_1x4_f_ra_th 2 PINTYPE=OUT
-AP IOD_Schematic:con_usba_1x4_f_ra_th 3 #=4
-AP IOD_Schematic:con_usba_1x4_f_ra_th 3 PINTYPE=OUT
-AP IOD_Schematic:con_usba_1x4_f_ra_th 4 #=3
-AP IOD_Schematic:con_usba_1x4_f_ra_th 4 PINTYPE=OUT
-AP IOD_Schematic:con_usba_1x4_f_ra_th 5 #=2
-AP IOD_Schematic:con_usba_1x4_f_ra_th 5 PINTYPE=OUT
-AP IOD_Schematic:con_usba_1x4_f_ra_th 6 #=1
-AP IOD_Schematic:con_usba_1x4_f_ra_th 6 PINTYPE=OUT
 |Q IOD_Schematic:fuse_500ma_1206_smt_ptc 1
 AS IOD_Schematic:fuse_500ma_1206_smt_ptc MANUFACTURER=LITTELFUSE
 AS IOD_Schematic:fuse_500ma_1206_smt_ptc DEVICE=FUSE_500MA_1206_SMT_PTC
@@ -204,6 +176,34 @@ AP IOD_Schematic:bi 1 PINTYPE=BI
 AS IOD_Schematic:out OUT
 AS IOD_Schematic:out PINORDER=OUT
 AP IOD_Schematic:out 1 PINTYPE=OUT
+|Q IOD_Schematic:con_usba_1x4_f_ra_th 1
+AS IOD_Schematic:con_usba_1x4_f_ra_th MANUFACTURER=TYCO ELECTRONICS
+AS IOD_Schematic:con_usba_1x4_f_ra_th DEVICE=CON_USBA_1X4_F_RA_TH
+AS IOD_Schematic:con_usba_1x4_f_ra_th PARTS=1
+AS IOD_Schematic:con_usba_1x4_f_ra_th PKG_TYPE=787616_TH
+AS IOD_Schematic:con_usba_1x4_f_ra_th LEVEL=STD
+AS IOD_Schematic:con_usba_1x4_f_ra_th ALT_PART=NA
+AS IOD_Schematic:con_usba_1x4_f_ra_th ALT_SUP=ADA: USB-A-S-RA-RC
+AS IOD_Schematic:con_usba_1x4_f_ra_th SUP=AMP: 292303-1
+AS IOD_Schematic:con_usba_1x4_f_ra_th GRN=LHR
+AS IOD_Schematic:con_usba_1x4_f_ra_th VALUE
+AS IOD_Schematic:con_usba_1x4_f_ra_th PINORDER=5 6 4 3 2 1
+AS IOD_Schematic:con_usba_1x4_f_ra_th REFDES=P?
+AS IOD_Schematic:con_usba_1x4_f_ra_th P/D_NUM=292303-1
+AS IOD_Schematic:con_usba_1x4_f_ra_th SHAPE=1X4 USBA
+AS IOD_Schematic:con_usba_1x4_f_ra_th INOV_VER_REC=8:22_10-4-07
+AP IOD_Schematic:con_usba_1x4_f_ra_th 1 #=5
+AP IOD_Schematic:con_usba_1x4_f_ra_th 1 PINTYPE=OUT
+AP IOD_Schematic:con_usba_1x4_f_ra_th 2 #=6
+AP IOD_Schematic:con_usba_1x4_f_ra_th 2 PINTYPE=OUT
+AP IOD_Schematic:con_usba_1x4_f_ra_th 3 #=4
+AP IOD_Schematic:con_usba_1x4_f_ra_th 3 PINTYPE=OUT
+AP IOD_Schematic:con_usba_1x4_f_ra_th 4 #=3
+AP IOD_Schematic:con_usba_1x4_f_ra_th 4 PINTYPE=OUT
+AP IOD_Schematic:con_usba_1x4_f_ra_th 5 #=2
+AP IOD_Schematic:con_usba_1x4_f_ra_th 5 PINTYPE=OUT
+AP IOD_Schematic:con_usba_1x4_f_ra_th 6 #=1
+AP IOD_Schematic:con_usba_1x4_f_ra_th 6 PINTYPE=OUT
 AN $1N409 NC
 AN $1N410 NC
 AN $1N411 NC
@@ -262,21 +262,6 @@ API $1I403 IOD_Schematic:cap_pol 1 PINLOC=21G4
 API $1I403 IOD_Schematic:cap_pol 1 #=1
 API $1I403 IOD_Schematic:cap_pol 2 PINLOC=21G4
 API $1I403 IOD_Schematic:cap_pol 2 #=2
-M IOD_Schematic:con_usba_1x4_f_ra_th $1I389
-I $1I389 IOD_Schematic:con_usba_1x4_f_ra_th GND GND GND USB2_XCVR_D+ USB2_XCVR_D- $1N20 SCHLOC=21J3`REFDES=P6`
-|R 8:22_10-4-07
-API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 1 PINLOC=21J3
-API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 1 #=5
-API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 2 PINLOC=21J3
-API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 2 #=6
-API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 3 PINLOC=21J3
-API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 3 #=4
-API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 4 PINLOC=21J3
-API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 4 #=3
-API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 5 PINLOC=21J3
-API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 5 #=2
-API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 6 PINLOC=21J3
-API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 6 #=1
 M IOD_Schematic:fuse_500ma_1206_smt_ptc $1I399
 I $1I399 IOD_Schematic:fuse_500ma_1206_smt_ptc 5V $1N20 SCHLOC=21G4`PKG_TYPE=FUSC3216X75N`REFDES=PTC1`
 |R 8:42_10-4-07
@@ -350,4 +335,19 @@ P IOD_Schematic:in SX95T_M2_0
 I SX95T_M2_0 IOD_Schematic:in SX95T_M2_0 
 |R 7:39_8-30-07
 API SX95T_M2_0 IOD_Schematic:in 1 XREF=1-1G,1-3F,1-7G,16-3B,24-5J
+M IOD_Schematic:con_usba_1x4_f_ra_th $1I389
+I $1I389 IOD_Schematic:con_usba_1x4_f_ra_th GND GND GND USB2_XCVR_D+ USB2_XCVR_D- $1N20 VALUE=NONE`SCHLOC=21J3`REFDES=P6`
+|R 8:22_10-4-07
+API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 1 PINLOC=21J3
+API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 1 #=5
+API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 2 PINLOC=21J3
+API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 2 #=6
+API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 3 PINLOC=21J3
+API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 3 #=4
+API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 4 PINLOC=21J3
+API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 4 #=3
+API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 5 PINLOC=21J3
+API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 5 #=2
+API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 6 PINLOC=21J3
+API $1I389 IOD_Schematic:con_usba_1x4_f_ra_th 6 #=1
 EW
