@@ -59,15 +59,11 @@ NET "qdr2_by0_1_r" IOSTANDARD = HSTL_I;
 NET "qdr2_by0_1_dll_off" IOSTANDARD = HSTL_I;
 NET "qdr2_by0_bw" IOSTANDARD = HSTL_I;
 NET "qdr2_by1_bw" IOSTANDARD = HSTL_I;
-NET "qdr2_by0_1_compare_error" IOSTANDARD = LVCMOS15;
-NET "qdr2_by0_1_sys_rst_n" IOSTANDARD = LVCMOS15;
-NET "qdr2_by0_1_cal_done" IOSTANDARD = LVCMOS15;
 NET "qdr2_by0_1_cq_p" IOSTANDARD = HSTL_I;
 NET "qdr2_by0_1_cq_n" IOSTANDARD = HSTL_I;
 NET "qdr2_by0_1_k_p" IOSTANDARD = HSTL_II;
 NET "qdr2_by0_1_k_n" IOSTANDARD = HSTL_II;
 NET "qdr2_by0_1_qvld" IOSTANDARD = HSTL_II;
-NET "qdr2_by0_1_c_n_compat" IOSTANDARD = HSTL_II;
 NET "qdr2_by0_1_d<0>" IOSTANDARD = HSTL_I;
 NET "qdr2_by0_1_d<1>" IOSTANDARD = HSTL_I;
 NET "qdr2_by0_1_d<2>" IOSTANDARD = HSTL_I;
@@ -142,15 +138,11 @@ NET "qdr2_by2_3_r" IOSTANDARD = HSTL_I;
 NET "qdr2_by2_3_dll_off" IOSTANDARD = HSTL_I;
 NET "qdr2_by2_bw" IOSTANDARD = HSTL_I;
 NET "qdr2_by3_bw" IOSTANDARD = HSTL_I;
-NET "qdr2_by2_3_compare_error" IOSTANDARD = LVCMOS15;
-NET "qdr2_by2_3_sys_rst_n" IOSTANDARD = LVCMOS15;
-NET "qdr2_by2_3_cal_done" IOSTANDARD = LVCMOS15;
 NET "qdr2_by2_3_cq_p" IOSTANDARD = HSTL_I;
 NET "qdr2_by2_3_cq_n" IOSTANDARD = HSTL_I;
 NET "qdr2_by2_3_k_p" IOSTANDARD = HSTL_II;
 NET "qdr2_by2_3_k_n" IOSTANDARD = HSTL_II;
 NET "qdr2_by2_3_qvld" IOSTANDARD = HSTL_II;
-NET "qdr2_by2_3_c_n_compat" IOSTANDARD = HSTL_II;
 NET "qdr2_by2_3_d<0>" IOSTANDARD = HSTL_I;
 NET "qdr2_by2_3_d<1>" IOSTANDARD = HSTL_I;
 NET "qdr2_by2_3_d<2>" IOSTANDARD = HSTL_I;
@@ -228,78 +220,74 @@ NET "dly_clk_200_n" LOC = L18;#Bank 3	IO_L1N_CC_GC_3
 # QDR2_BY0_1
 #
 
-NET "qdr2_by0_1_d<0>" LOC = K24;#Bank	19		IO_L0P_19
-NET "qdr2_by0_1_d<1>" LOC = L24;#Bank	19		IO_L0N_19
-NET "qdr2_by0_1_d<2>" LOC = L25;#Bank	19		IO_L1P_19
-NET "qdr2_by0_1_d<3>" LOC = L26;#Bank	19		IO_L1N_19
-NET "qdr2_by0_1_d<4>" LOC = J24;#Bank	19		IO_L2P_19
-NET "qdr2_by0_1_d<5>" LOC = J25;#Bank	19		IO_L2N_19
-NET "qdr2_by0_1_d<6>" LOC = M25;#Bank	19		IO_L3P_19
-NET "qdr2_by0_1_d<7>" LOC = M26;#Bank	19		IO_L3N_19
-NET "qdr2_by0_1_d<8>" LOC = J27;#Bank	19		IO_L4P_19
-NET "qdr2_by0_1_d<9>" LOC = G25;#Bank	19		IO_L5P_19
-NET "qdr2_by0_1_d<10>" LOC = G26;#Bank	19		IO_L5N_19
-NET "qdr2_by0_1_d<11>" LOC = H25;#Bank	19		IO_L6P_19
-NET "qdr2_by0_1_d<12>" LOC = H24;#Bank	19		IO_L6N_19
-NET "qdr2_by0_1_d<13>" LOC = F25;#Bank	19		IO_L7P_19
-NET "qdr2_by0_1_d<14>" LOC = F26;#Bank	19		IO_L7N_19
-NET "qdr2_by0_1_d<15>" LOC = G27;#Bank	19		IO_L8P_CC_19
-NET "qdr2_by0_1_d<16>" LOC = H27;#Bank	19		IO_L8N_CC_19
-NET "qdr2_by0_1_d<17>" LOC = E28;#Bank	19		IO_L10P_CC_19
-NET "qdr2_by0_1_q<0>" LOC = F28;#Bank	19		IO_L10N_CC_19
-NET "qdr2_by0_1_q<1>" LOC = E26;#Bank	19		IO_L11P_CC_19
-NET "qdr2_by0_1_q<2>" LOC = E27;#Bank	19		IO_L11N_CC_19
-NET "qdr2_by0_1_q<3>" LOC = N27;#Bank	19		IO_L12P_VRN_19
-NET "qdr2_by0_1_q<4>" LOC = M27;#Bank	19		IO_L12N_VRP_19
-NET "qdr2_by0_1_q<5>" LOC = K28;#Bank	19		IO_L13P_19
-NET "qdr2_by0_1_q<6>" LOC = L28;#Bank	19		IO_L13N_19
-NET "qdr2_by0_1_q<7>" LOC = K27;#Bank	19		IO_L14P_19
-NET "qdr2_by0_1_q<8>" LOC = M28;#Bank	19		IO_L15P_19
-NET "qdr2_by0_1_q<9>" LOC = N28;#Bank	19		IO_L15N_19
-NET "qdr2_by0_1_q<10>" LOC = P26;#Bank	19		IO_L16P_19
-NET "qdr2_by0_1_q<11>" LOC = P27;#Bank	19		IO_L16N_19
-NET "qdr2_by0_1_q<12>" LOC = N24;#Bank	19		IO_L17P_19
-NET "qdr2_by0_1_q<13>" LOC = P24;#Bank	19		IO_L17N_19
-NET "qdr2_by0_1_q<14>" LOC = P25;#Bank	19		IO_L18P_19
-NET "qdr2_by0_1_q<15>" LOC = N25;#Bank	19		IO_L18N_19
-NET "qdr2_by0_1_q<16>" LOC = R24;#Bank	19		IO_L19P_19
-NET "qdr2_by0_1_q<17>" LOC = T24;#Bank	19		IO_L19N_19
-NET "qdr2_by0_1_sa<21>" LOC = B21;#Bank	23		IO_L1P_23
-NET "qdr2_by0_1_sa<20>" LOC = A21;#Bank	23		IO_L1N_23
-NET "qdr2_by0_1_sa<19>" LOC = C19;#Bank	23		IO_L2P_23
-NET "qdr2_by0_1_sa<18>" LOC = C18;#Bank	23		IO_L2N_23
-NET "qdr2_by0_1_sa<17>" LOC = C22;#Bank	23		IO_L3P_23
-NET "qdr2_by0_1_sa<16>" LOC = B22;#Bank	23		IO_L3N_23
-NET "qdr2_by0_1_sa<15>" LOC = B18;#Bank	23		IO_L4P_23
-NET "qdr2_by0_1_sa<14>" LOC = C23;#Bank	23		IO_L5P_23
-NET "qdr2_by0_1_sa<13>" LOC = B23;#Bank	23		IO_L5N_23
-NET "qdr2_by0_1_sa<12>" LOC = A19;#Bank	23		IO_L6P_23
-NET "qdr2_by0_1_sa<11>" LOC = A20;#Bank	23		IO_L6N_23
-NET "qdr2_by0_1_sa<10>" LOC = A23;#Bank	23		IO_L7P_23
-NET "qdr2_by0_1_sa<9>" LOC = A24;#Bank	23		IO_L7N_23
-NET "qdr2_by0_1_sa<8>" LOC = B27;#Bank	23		IO_L10P_CC_23
-NET "qdr2_by0_1_sa<7>" LOC = A26;#Bank	23		IO_L10N_CC_23
-NET "qdr2_by0_1_sa<6>" LOC = B25;#Bank	23		IO_L11P_CC_23
-NET "qdr2_by0_1_sa<5>" LOC = C25;#Bank	23		IO_L11N_CC_23
-NET "qdr2_by0_1_sa<4>" LOC = D26;#Bank	23		IO_L13P_23
-NET "qdr2_by0_1_sa<3>" LOC = C27;#Bank	23		IO_L13N_23
-NET "qdr2_by0_1_sa<2>" LOC = A29;#Bank	23		IO_L14P_23
-NET "qdr2_by0_1_sa<1>" LOC = C28;#Bank	23		IO_L15P_23
-NET "qdr2_by0_1_sa<0>" LOC = D27;#Bank	23		IO_L15N_23
-NET "qdr2_by0_1_w" LOC = B31;#Bank	23		IO_L16P_23
-NET "qdr2_by0_1_r" LOC = C30;#Bank	23		IO_L17P_23
-NET "qdr2_by0_1_dll_off" LOC = A31;#Bank	23		IO_L16N_23
-NET "qdr2_by0_bw" LOC = A30;#Bank	23		IO_L19P_23
-NET "qdr2_by1_bw" LOC = B30;#Bank	23		IO_L19N_23
-NET "qdr2_by0_1_compare_error" LOC = D29;#Bank	23		IO_L17N_23
-NET "qdr2_by0_1_sys_rst_n" LOC = D31;#Bank	23		IO_L18P_23
-NET "qdr2_by0_1_cal_done" LOC = D30;#Bank	23		IO_L18N_23
-NET "qdr2_by0_1_cq_p" LOC = H28;#Bank	19		IO_L9P_CC_19
-NET "qdr2_by0_1_cq_n" LOC = G28;#Bank	19		IO_L9N_CC_19
-NET "qdr2_by0_1_k_p" LOC = C24;#Bank	23		IO_L8P_CC_23
-NET "qdr2_by0_1_k_n" LOC = D25;#Bank	23		IO_L8N_CC_23
-NET "qdr2_by0_1_qvld" LOC = B26;#Bank	23		IO_L9P_CC_23
-NET "qdr2_by0_1_c_n_compat" LOC = A25;#Bank	23		IO_L9N_CC_23
+NET "qdr2_by0_1_d<0>" LOC = R11;#Bank	19		IO_L0P_19
+NET "qdr2_by0_1_d<1>" LOC = T11;#Bank	19		IO_L0N_19
+NET "qdr2_by0_1_d<2>" LOC = T9;#Bank	19		IO_L1P_19
+NET "qdr2_by0_1_d<3>" LOC = T8;#Bank	19		IO_L1N_19
+NET "qdr2_by0_1_d<4>" LOC = E7;#Bank	19		IO_L2P_19
+NET "qdr2_by0_1_d<5>" LOC = K7;#Bank	19		IO_L2N_19
+NET "qdr2_by0_1_d<6>" LOC = P7;#Bank	19		IO_L3P_19
+NET "qdr2_by0_1_d<7>" LOC = R7;#Bank	19		IO_L3N_19
+NET "qdr2_by0_1_d<8>" LOC = E6;#Bank	19		IO_L4P_19
+NET "qdr2_by0_1_d<9>" LOC = P6;#Bank	19		IO_L5P_19
+NET "qdr2_by0_1_d<10>" LOC = J6;#Bank	19		IO_L5N_19
+NET "qdr2_by0_1_d<11>" LOC = U7;#Bank	19		IO_L6P_19
+NET "qdr2_by0_1_d<12>" LOC = N7;#Bank	19		IO_L6N_19
+NET "qdr2_by0_1_d<13>" LOC = M7;#Bank	19		IO_L7P_19
+NET "qdr2_by0_1_d<14>" LOC = G7;#Bank	19		IO_L7N_19
+NET "qdr2_by0_1_d<15>" LOC = R8;#Bank	19		IO_L8P_CC_19
+NET "qdr2_by0_1_d<16>" LOC = N8;#Bank	19		IO_L8N_CC_19
+NET "qdr2_by0_1_d<17>" LOC = T10;#Bank	19		IO_L10P_CC_19
+NET "qdr2_by0_1_q<0>" LOC = E11;#Bank	19		IO_L10N_CC_19
+NET "qdr2_by0_1_q<1>" LOC = K11;#Bank	19		IO_L11P_CC_19
+NET "qdr2_by0_1_q<2>" LOC = F10;#Bank	19		IO_L11N_CC_19
+NET "qdr2_by0_1_q<3>" LOC = H10;#Bank	19		IO_L12P_VRN_19
+NET "qdr2_by0_1_q<4>" LOC = N10;#Bank	19		IO_L12N_VRP_19
+NET "qdr2_by0_1_q<5>" LOC = H9;#Bank	19		IO_L13P_19
+NET "qdr2_by0_1_q<6>" LOC = N9;#Bank	19		IO_L13N_19
+NET "qdr2_by0_1_q<7>" LOC = G8;#Bank	19		IO_L14P_19
+NET "qdr2_by0_1_q<8>" LOC = H8;#Bank	19		IO_L15P_19
+NET "qdr2_by0_1_q<9>" LOC = M8;#Bank	19		IO_L15N_19
+NET "qdr2_by0_1_q<10>" LOC = F8;#Bank	19		IO_L16P_19
+NET "qdr2_by0_1_q<11>" LOC = E8;#Bank	19		IO_L16N_19
+NET "qdr2_by0_1_q<12>" LOC = L9;#Bank	19		IO_L17P_19
+NET "qdr2_by0_1_q<13>" LOC = F9;#Bank	19		IO_L17N_19
+NET "qdr2_by0_1_q<14>" LOC = M10;#Bank	19		IO_L18P_19
+NET "qdr2_by0_1_q<15>" LOC = G10;#Bank	19		IO_L18N_19
+NET "qdr2_by0_1_q<16>" LOC = J11;#Bank	19		IO_L19P_19
+NET "qdr2_by0_1_q<17>" LOC = G11;#Bank	19		IO_L19N_19
+NET "qdr2_by0_1_sa<21>" LOC = L4;#Bank	23		IO_L1P_23
+NET "qdr2_by0_1_sa<20>" LOC = P5;#Bank	23		IO_L1N_23
+NET "qdr2_by0_1_sa<19>" LOC = R6;#Bank	23		IO_L2P_23
+NET "qdr2_by0_1_sa<18>" LOC = A13;#Bank	23		IO_L2N_23
+NET "qdr2_by0_1_sa<17>" LOC = B13;#Bank	23		IO_L3P_23
+NET "qdr2_by0_1_sa<16>" LOC = C13;#Bank	23		IO_L3N_23
+NET "qdr2_by0_1_sa<15>" LOC = E13;#Bank	23		IO_L4P_23
+NET "qdr2_by0_1_sa<14>" LOC = F13;#Bank	23		IO_L5P_23
+NET "qdr2_by0_1_sa<13>" LOC = G13;#Bank	23		IO_L5N_23
+NET "qdr2_by0_1_sa<12>" LOC = B12;#Bank	23		IO_L6P_23
+NET "qdr2_by0_1_sa<11>" LOC = C12;#Bank	23		IO_L6N_23
+NET "qdr2_by0_1_sa<10>" LOC = D12;#Bank	23		IO_L7P_23
+NET "qdr2_by0_1_sa<9>" LOC = E12;#Bank	23		IO_L7N_23
+NET "qdr2_by0_1_sa<8>" LOC = D11;#Bank	23		IO_L10P_CC_23
+NET "qdr2_by0_1_sa<7>" LOC = G12;#Bank	23		IO_L10N_CC_23
+NET "qdr2_by0_1_sa<6>" LOC = U10;#Bank	23		IO_L11P_CC_23
+NET "qdr2_by0_1_sa<5>" LOC = F6;#Bank	23		IO_L11N_CC_23
+NET "qdr2_by0_1_sa<4>" LOC = G6;#Bank	23		IO_L13P_23
+NET "qdr2_by0_1_sa<3>" LOC = K6;#Bank	23		IO_L13N_23
+NET "qdr2_by0_1_sa<2>" LOC = M6;#Bank	23		IO_L14P_23
+NET "qdr2_by0_1_sa<1>" LOC = T6;#Bank	23		IO_L15P_23
+NET "qdr2_by0_1_sa<0>" LOC = N5;#Bank	23		IO_L15N_23
+NET "qdr2_by0_1_w" LOC = M5;#Bank	23		IO_L16P_23
+NET "qdr2_by0_1_r" LOC = F5;#Bank	23		IO_L17P_23
+NET "qdr2_by0_1_dll_off" LOC = E9;#Bank	23		IO_L16N_23
+NET "qdr2_by0_bw" LOC = L6;#Bank	23		IO_L19P_23
+NET "qdr2_by1_bw" LOC = J5;#Bank	23		IO_L19N_23
+NET "qdr2_by0_1_cq_p" LOC = K8;#Bank	19		IO_L9P_CC_19
+NET "qdr2_by0_1_cq_n" LOC = K9;#Bank	19		IO_L9N_CC_19
+NET "qdr2_by0_1_k_p" LOC = H5;#Bank	23		IO_L8P_CC_23
+NET "qdr2_by0_1_k_n" LOC = G5;#Bank	23		IO_L8N_CC_23
+NET "qdr2_by0_1_qvld" LOC = F11;#Bank	23		IO_L9P_CC_23
 
 
 
@@ -307,78 +295,74 @@ NET "qdr2_by0_1_c_n_compat" LOC = A25;#Bank	23		IO_L9N_CC_23
 # QDR2_BY2_3
 #
 
-NET "qdr2_by2_3_d<0>" LOC = B32;#Bank	11		IO_L0P_11
-NET "qdr2_by2_3_d<1>" LOC = A33;#Bank	11		IO_L0N_11
-NET "qdr2_by2_3_d<2>" LOC = B33;#Bank	11		IO_L1P_11
-NET "qdr2_by2_3_d<3>" LOC = C33;#Bank	11		IO_L1N_11
-NET "qdr2_by2_3_d<4>" LOC = C32;#Bank	11		IO_L2P_11
-NET "qdr2_by2_3_d<5>" LOC = D32;#Bank	11		IO_L2N_11
-NET "qdr2_by2_3_d<6>" LOC = C34;#Bank	11		IO_L3P_11
-NET "qdr2_by2_3_d<7>" LOC = D34;#Bank	11		IO_L3N_11
-NET "qdr2_by2_3_d<8>" LOC = G32;#Bank	11		IO_L4P_11
-NET "qdr2_by2_3_d<9>" LOC = F33;#Bank	11		IO_L5P_11
-NET "qdr2_by2_3_d<10>" LOC = E34;#Bank	11		IO_L5N_11
-NET "qdr2_by2_3_d<11>" LOC = E32;#Bank	11		IO_L6P_11
-NET "qdr2_by2_3_d<12>" LOC = E33;#Bank	11		IO_L6N_11
-NET "qdr2_by2_3_d<13>" LOC = G33;#Bank	11		IO_L7P_11
-NET "qdr2_by2_3_d<14>" LOC = F34;#Bank	11		IO_L7N_11
-NET "qdr2_by2_3_d<15>" LOC = J32;#Bank	11		IO_L8P_CC_11
-NET "qdr2_by2_3_d<16>" LOC = H33;#Bank	11		IO_L8N_CC_11
-NET "qdr2_by2_3_d<17>" LOC = L34;#Bank	11		IO_L10N_CC_SM15N_11
-NET "qdr2_by2_3_q<0>" LOC = K34;#Bank	11		IO_L11P_CC_SM14P_11
-NET "qdr2_by2_3_q<1>" LOC = K33;#Bank	11		IO_L11N_CC_SM14N_11
-NET "qdr2_by2_3_q<2>" LOC = K32;#Bank	11		IO_L10P_CC_SM15P_11
-NET "qdr2_by2_3_q<3>" LOC = N33;#Bank	11		IO_L12P_VRN_11
-NET "qdr2_by2_3_q<4>" LOC = M33;#Bank	11		IO_L12N_VRP_11
-NET "qdr2_by2_3_q<5>" LOC = L33;#Bank	11		IO_L13P_11
-NET "qdr2_by2_3_q<6>" LOC = M32;#Bank	11		IO_L13N_11
-NET "qdr2_by2_3_q<7>" LOC = P34;#Bank	11		IO_L14P_11
-NET "qdr2_by2_3_q<8>" LOC = P32;#Bank	11		IO_L15N_SM13N_11
-NET "qdr2_by2_3_q<9>" LOC = N32;#Bank	11		IO_L14P_6
-NET "qdr2_by2_3_q<10>" LOC = T33;#Bank	11		IO_L16N_SM12N_11
-NET "qdr2_by2_3_q<11>" LOC = R34;#Bank	11		IO_L15P_SM13P_11
-NET "qdr2_by2_3_q<12>" LOC = R33;#Bank	11		IO_L17N_SM11N_11
-NET "qdr2_by2_3_q<13>" LOC = R32;#Bank	11		IO_L16P_SM12P_11
-NET "qdr2_by2_3_q<14>" LOC = U33;#Bank	11		IO_L18N_SM10N_11
-NET "qdr2_by2_3_q<15>" LOC = T34;#Bank	11		IO_L17P_SM11P_11
-NET "qdr2_by2_3_q<16>" LOC = U32;#Bank	11		IO_L19N_SM9N_11
-NET "qdr2_by2_3_q<17>" LOC = U31;#Bank	11		IO_L18P_SM10P_11
-NET "qdr2_by2_3_sa<21>" LOC = G30;#Bank	15		IO_L1P_15
-NET "qdr2_by2_3_sa<20>" LOC = F30;#Bank	15		IO_L1N_15
-NET "qdr2_by2_3_sa<19>" LOC = H29;#Bank	15		IO_L2P_15
-NET "qdr2_by2_3_sa<18>" LOC = J29;#Bank	15		IO_L2N_15
-NET "qdr2_by2_3_sa<17>" LOC = F31;#Bank	15		IO_L3P_15
-NET "qdr2_by2_3_sa<16>" LOC = E31;#Bank	15		IO_L3N_15
-NET "qdr2_by2_3_sa<15>" LOC = L29;#Bank	15		IO_L4P_15
-NET "qdr2_by2_3_sa<14>" LOC = H30;#Bank	15		IO_L5P_15
-NET "qdr2_by2_3_sa<13>" LOC = G31;#Bank	15		IO_L5N_15
-NET "qdr2_by2_3_sa<12>" LOC = J30;#Bank	15		IO_L6P_15
-NET "qdr2_by2_3_sa<11>" LOC = J31;#Bank	15		IO_L6N_15
-NET "qdr2_by2_3_sa<10>" LOC = L30;#Bank	15		IO_L7P_15
-NET "qdr2_by2_3_sa<9>" LOC = M30;#Bank	15		IO_L7N_15
-NET "qdr2_by2_3_sa<8>" LOC = P31;#Bank	15		IO_L10P_CC_15
-NET "qdr2_by2_3_sa<7>" LOC = P30;#Bank	15		IO_L10N_CC_15
-NET "qdr2_by2_3_sa<6>" LOC = M31;#Bank	15		IO_L11P_CC_15
-NET "qdr2_by2_3_sa<5>" LOC = N30;#Bank	15		IO_L11N_CC_15
-NET "qdr2_by2_3_sa<4>" LOC = T31;#Bank	15		IO_L13P_15
-NET "qdr2_by2_3_sa<3>" LOC = R31;#Bank	15		IO_L13N_15
-NET "qdr2_by2_3_sa<2>" LOC = U30;#Bank	15		IO_L14P_15
-NET "qdr2_by2_3_sa<1>" LOC = T28;#Bank	15		IO_L15P_15
-NET "qdr2_by2_3_sa<0>" LOC = T29;#Bank	15		IO_L15N_15
-NET "qdr2_by2_3_w" LOC = U27;#Bank	15		IO_L16P_15
-NET "qdr2_by2_3_r" LOC = R26;#Bank	15		IO_L17P_15
-NET "qdr2_by2_3_dll_off" LOC = U28;#Bank	15		IO_L16N_15
-NET "qdr2_by2_bw" LOC = U25;#Bank	15		IO_L19P_15
-NET "qdr2_by3_bw" LOC = T25;#Bank	15		IO_L19N_15
-NET "qdr2_by2_3_compare_error" LOC = R27;#Bank	15		IO_L17N_15
-NET "qdr2_by2_3_sys_rst_n" LOC = U26;#Bank	15		IO_L18P_15
-NET "qdr2_by2_3_cal_done" LOC = T26;#Bank	15		IO_L18N_15
-NET "qdr2_by2_3_cq_p" LOC = H34;#Bank	11		IO_L9P_CC_11
-NET "qdr2_by2_3_cq_n" LOC = J34;#Bank	11		IO_L9N_CC_11
-NET "qdr2_by2_3_k_p" LOC = N29;#Bank	15		IO_L8P_CC_15
-NET "qdr2_by2_3_k_n" LOC = P29;#Bank	15		IO_L8N_CC_15
-NET "qdr2_by2_3_qvld" LOC = K31;#Bank	15		IO_L9P_CC_15
-NET "qdr2_by2_3_c_n_compat" LOC = L31;#Bank	15		IO_L9N_CC_15
+NET "qdr2_by2_3_d<0>" LOC = F24;#Bank	11		IO_L0P_11
+NET "qdr2_by2_3_d<1>" LOC = E23;#Bank	11		IO_L0N_11
+NET "qdr2_by2_3_d<2>" LOC = D22;#Bank	11		IO_L1P_11
+NET "qdr2_by2_3_d<3>" LOC = E21;#Bank	11		IO_L1N_11
+NET "qdr2_by2_3_d<4>" LOC = F21;#Bank	11		IO_L2P_11
+NET "qdr2_by2_3_d<5>" LOC = F20;#Bank	11		IO_L2N_11
+NET "qdr2_by2_3_d<6>" LOC = F18;#Bank	11		IO_L3P_11
+NET "qdr2_by2_3_d<7>" LOC = B17;#Bank	11		IO_L3N_11
+NET "qdr2_by2_3_d<8>" LOC = D17;#Bank	11		IO_L4P_11
+NET "qdr2_by2_3_d<9>" LOC = F16;#Bank	11		IO_L5P_11
+NET "qdr2_by2_3_d<10>" LOC = A16;#Bank	11		IO_L5N_11
+NET "qdr2_by2_3_d<11>" LOC = C17;#Bank	11		IO_L6P_11
+NET "qdr2_by2_3_d<12>" LOC = E19;#Bank	11		IO_L6N_11
+NET "qdr2_by2_3_d<13>" LOC = G20;#Bank	11		IO_L7P_11
+NET "qdr2_by2_3_d<14>" LOC = G21;#Bank	11		IO_L7N_11
+NET "qdr2_by2_3_d<15>" LOC = D21;#Bank	11		IO_L8P_CC_11
+NET "qdr2_by2_3_d<16>" LOC = E22;#Bank	11		IO_L8N_CC_11
+NET "qdr2_by2_3_d<17>" LOC = F23;#Bank	11		IO_L10N_CC_SM15N_11
+NET "qdr2_by2_3_q<0>" LOC = D26;#Bank	11		IO_L11P_CC_SM14P_11
+NET "qdr2_by2_3_q<1>" LOC = A24;#Bank	11		IO_L11N_CC_SM14N_11
+NET "qdr2_by2_3_q<2>" LOC = A23;#Bank	11		IO_L10P_CC_SM15P_11
+NET "qdr2_by2_3_q<3>" LOC = C23;#Bank	11		IO_L12P_VRN_11
+NET "qdr2_by2_3_q<4>" LOC = C22;#Bank	11		IO_L12N_VRP_11
+NET "qdr2_by2_3_q<5>" LOC = B21;#Bank	11		IO_L13P_11
+NET "qdr2_by2_3_q<6>" LOC = B20;#Bank	11		IO_L13N_11
+NET "qdr2_by2_3_q<7>" LOC = C19;#Bank	11		IO_L14P_11
+NET "qdr2_by2_3_q<8>" LOC = B18;#Bank	11		IO_L15N_SM13N_11
+NET "qdr2_by2_3_q<9>" LOC = C18;#Bank	11		IO_L14P_6
+NET "qdr2_by2_3_q<10>" LOC = A19;#Bank	11		IO_L16N_SM12N_11
+NET "qdr2_by2_3_q<11>" LOC = C20;#Bank	11		IO_L15P_SM13P_11
+NET "qdr2_by2_3_q<12>" LOC = A20;#Bank	11		IO_L17N_SM11N_11
+NET "qdr2_by2_3_q<13>" LOC = A21;#Bank	11		IO_L16P_SM12P_11
+NET "qdr2_by2_3_q<14>" LOC = B22;#Bank	11		IO_L18N_SM10N_11
+NET "qdr2_by2_3_q<15>" LOC = B23;#Bank	11		IO_L17P_SM11P_11
+NET "qdr2_by2_3_q<16>" LOC = C25;#Bank	11		IO_L19N_SM9N_11
+NET "qdr2_by2_3_q<17>" LOC = B25;#Bank	11		IO_L18P_SM10P_11
+NET "qdr2_by2_3_sa<21>" LOC = F14;#Bank	15		IO_L1P_15
+NET "qdr2_by2_3_sa<20>" LOC = C14;#Bank	15		IO_L1N_15
+NET "qdr2_by2_3_sa<19>" LOC = A15;#Bank	15		IO_L2P_15
+NET "qdr2_by2_3_sa<18>" LOC = A31;#Bank	15		IO_L2N_15
+NET "qdr2_by2_3_sa<17>" LOC = B31;#Bank	15		IO_L3P_15
+NET "qdr2_by2_3_sa<16>" LOC = D31;#Bank	15		IO_L3N_15
+NET "qdr2_by2_3_sa<15>" LOC = A30;#Bank	15		IO_L4P_15
+NET "qdr2_by2_3_sa<14>" LOC = B30;#Bank	15		IO_L5P_15
+NET "qdr2_by2_3_sa<13>" LOC = C30;#Bank	15		IO_L5N_15
+NET "qdr2_by2_3_sa<12>" LOC = D30;#Bank	15		IO_L6P_15
+NET "qdr2_by2_3_sa<11>" LOC = A29;#Bank	15		IO_L6N_15
+NET "qdr2_by2_3_sa<10>" LOC = D29;#Bank	15		IO_L7P_15
+NET "qdr2_by2_3_sa<9>" LOC = C28;#Bank	15		IO_L7N_15
+NET "qdr2_by2_3_sa<8>" LOC = C27;#Bank	15		IO_L10P_CC_15
+NET "qdr2_by2_3_sa<7>" LOC = D27;#Bank	15		IO_L10N_CC_15
+NET "qdr2_by2_3_sa<6>" LOC = B26;#Bank	15		IO_L11P_CC_15
+NET "qdr2_by2_3_sa<5>" LOC = E17;#Bank	15		IO_L11N_CC_15
+NET "qdr2_by2_3_sa<4>" LOC = G17;#Bank	15		IO_L13P_15
+NET "qdr2_by2_3_sa<3>" LOC = B16;#Bank	15		IO_L13N_15
+NET "qdr2_by2_3_sa<2>" LOC = E16;#Bank	15		IO_L14P_15
+NET "qdr2_by2_3_sa<1>" LOC = B15;#Bank	15		IO_L15P_15
+NET "qdr2_by2_3_sa<0>" LOC = A14;#Bank	15		IO_L15N_15
+NET "qdr2_by2_3_w" LOC = F15;#Bank	15		IO_L16P_15
+NET "qdr2_by2_3_r" LOC = C15;#Bank	15		IO_L17P_15
+NET "qdr2_by2_3_dll_off" LOC = D20;#Bank	15		IO_L16N_15
+NET "qdr2_by2_bw" LOC = D16;#Bank	15		IO_L19P_15
+NET "qdr2_by3_bw" LOC = D15;#Bank	15		IO_L19N_15
+NET "qdr2_by2_3_cq_p" LOC = C24;#Bank	11		IO_L9P_CC_11
+NET "qdr2_by2_3_cq_n" LOC = D25;#Bank	11		IO_L9N_CC_11
+NET "qdr2_by2_3_k_p" LOC = D14;#Bank	15		IO_L8P_CC_15
+NET "qdr2_by2_3_k_n" LOC = E14;#Bank	15		IO_L8N_CC_15
+NET "qdr2_by2_3_qvld" LOC = A25;#Bank	15		IO_L9P_CC_15
 
 
 
@@ -400,122 +384,122 @@ CONFIG DCI_CASCADE = "13 17 21 25";
 NET "ddr2_ras_n" IOSTANDARD = SSTL18_I;
 NET "ddr2_cas_n" IOSTANDARD = SSTL18_I;
 NET "ddr2_we_n" IOSTANDARD = SSTL18_I;
-NET "ddr2_reset_n" IOSTANDARD = LVCMOS18;
+NET "ddr2_reset_n" IOSTANDARD = SSTL18_I;
 
 ################################################################################
 # Location Constraints
 ################################################################################
 
-NET "ddr2_dq<0>" LOC = V32;#Bank 13
-NET "ddr2_dq<1>" LOC = V33;#Bank 13
-NET "ddr2_dq<2>" LOC = W34;#Bank 13
-NET "ddr2_dq<3>" LOC = V34;#Bank 13
-NET "ddr2_dq<4>" LOC = Y33;#Bank 13
-NET "ddr2_dq<5>" LOC = AA33;#Bank 13
-NET "ddr2_dq<6>" LOC = AA34;#Bank 13
-NET "ddr2_dq<7>" LOC = Y34;#Bank 13
-NET "ddr2_dq<8>" LOC = Y32;#Bank 13
-NET "ddr2_dq<9>" LOC = AC34;#Bank 13
-NET "ddr2_dq<10>" LOC = AD34;#Bank 13
-NET "ddr2_dq<11>" LOC = AC32;#Bank 13
-NET "ddr2_dq<12>" LOC = AB32;#Bank 13
-NET "ddr2_dq<13>" LOC = AC33;#Bank 13
-NET "ddr2_dq<14>" LOC = AB33;#Bank 13
-NET "ddr2_dq<15>" LOC = AG32;#Bank 13
-NET "ddr2_dq<16>" LOC = AL34;#Bank 13
-NET "ddr2_dq<17>" LOC = AL33;#Bank 13
-NET "ddr2_dq<18>" LOC = AM33;#Bank 13
-NET "ddr2_dq<19>" LOC = AM32;#Bank 13
-NET "ddr2_dq<20>" LOC = AN34;#Bank 13
-NET "ddr2_dq<21>" LOC = AN33;#Bank 13
-NET "ddr2_dq<22>" LOC = AN32;#Bank 13
-NET "ddr2_dq<23>" LOC = AP32;#Bank 13
-NET "ddr2_dq<24>" LOC = W24;#Bank 17
-NET "ddr2_dq<25>" LOC = V24;#Bank 17
-NET "ddr2_dq<26>" LOC = Y26;#Bank 17
-NET "ddr2_dq<27>" LOC = W26;#Bank 17
-NET "ddr2_dq<28>" LOC = V25;#Bank 17
-NET "ddr2_dq<29>" LOC = W25;#Bank 17
-NET "ddr2_dq<30>" LOC = Y27;#Bank 17
-NET "ddr2_dq<31>" LOC = W27;#Bank 17
-NET "ddr2_dq<32>" LOC = V30;#Bank 17
-NET "ddr2_dq<33>" LOC = V28;#Bank 17
-NET "ddr2_dq<34>" LOC = V27;#Bank 17
-NET "ddr2_dq<35>" LOC = W31;#Bank 17
-NET "ddr2_dq<36>" LOC = Y31;#Bank 17
-NET "ddr2_dq<37>" LOC = W29;#Bank 17
-NET "ddr2_dq<38>" LOC = V29;#Bank 17
-NET "ddr2_dq<39>" LOC = AD30;#Bank 17
-NET "ddr2_dq<40>" LOC = AA25;#Bank 21
-NET "ddr2_dq<41>" LOC = AA26;#Bank 21
-NET "ddr2_dq<42>" LOC = AB27;#Bank 21
-NET "ddr2_dq<43>" LOC = AC27;#Bank 21
-NET "ddr2_dq<44>" LOC = Y24;#Bank 21
-NET "ddr2_dq<45>" LOC = AA24;#Bank 21
-NET "ddr2_dq<46>" LOC = AB25;#Bank 21
-NET "ddr2_dq<47>" LOC = AB26;#Bank 21
-NET "ddr2_dq<48>" LOC = AC28;#Bank 21
-NET "ddr2_dq<49>" LOC = AB28;#Bank 21
-NET "ddr2_dq<50>" LOC = AA28;#Bank 21
-NET "ddr2_dq<51>" LOC = AG28;#Bank 21
-NET "ddr2_dq<52>" LOC = AH28;#Bank 21
-NET "ddr2_dq<53>" LOC = AE28;#Bank 21
-NET "ddr2_dq<54>" LOC = AF28;#Bank 21
-NET "ddr2_dq<55>" LOC = AF24;#Bank 21
-NET "ddr2_dq<56>" LOC = AL29;#Bank 25
-NET "ddr2_dq<57>" LOC = AL30;#Bank 25
-NET "ddr2_dq<58>" LOC = AM31;#Bank 25
-NET "ddr2_dq<59>" LOC = AL31;#Bank 25
-NET "ddr2_dq<60>" LOC = AN30;#Bank 25
-NET "ddr2_dq<61>" LOC = AM30;#Bank 25
-NET "ddr2_dq<62>" LOC = AP30;#Bank 25
-NET "ddr2_dq<63>" LOC = AP31;#Bank 25
-NET "ddr2_dq<64>" LOC = AM27;#Bank 25
-NET "ddr2_dq<65>" LOC = AP29;#Bank 25
-NET "ddr2_dq<66>" LOC = AN29;#Bank 25
-NET "ddr2_dq<67>" LOC = AP27;#Bank 25
-NET "ddr2_dq<68>" LOC = AN27;#Bank 25
-NET "ddr2_dq<69>" LOC = AN28;#Bank 25
-NET "ddr2_dq<70>" LOC = AM28;#Bank 25
-NET "ddr2_dq<71>" LOC = AM21;#Bank 25
+NET "ddr2_dq<0>" LOC = AM31;#Bank 13
+NET "ddr2_dq<1>" LOC = AL30;#Bank 13
+NET "ddr2_dq<2>" LOC = AP30;#Bank 13
+NET "ddr2_dq<3>" LOC = AN29;#Bank 13
+NET "ddr2_dq<4>" LOC = AL31;#Bank 13
+NET "ddr2_dq<5>" LOC = AP31;#Bank 13
+NET "ddr2_dq<6>" LOC = AN30;#Bank 13
+NET "ddr2_dq<7>" LOC = AL29;#Bank 13
+NET "ddr2_dq<8>" LOC = AM28;#Bank 13
+NET "ddr2_dq<9>" LOC = AM27;#Bank 13
+NET "ddr2_dq<10>" LOC = AN23;#Bank 13
+NET "ddr2_dq<11>" LOC = AN22;#Bank 13
+NET "ddr2_dq<12>" LOC = AP29;#Bank 13
+NET "ddr2_dq<13>" LOC = AN28;#Bank 13
+NET "ddr2_dq<14>" LOC = AP27;#Bank 13
+NET "ddr2_dq<15>" LOC = AM22;#Bank 13
+NET "ddr2_dq<16>" LOC = AJ24;#Bank 13
+NET "ddr2_dq<17>" LOC = AH23;#Bank 13
+NET "ddr2_dq<18>" LOC = AK22;#Bank 13
+NET "ddr2_dq<19>" LOC = AJ19;#Bank 13
+NET "ddr2_dq<20>" LOC = AH24;#Bank 13
+NET "ddr2_dq<21>" LOC = AK24;#Bank 13
+NET "ddr2_dq<22>" LOC = AJ22;#Bank 13
+NET "ddr2_dq<23>" LOC = AL20;#Bank 13
+NET "ddr2_dq<24>" LOC = AL19;#Bank 17
+NET "ddr2_dq<25>" LOC = AM17;#Bank 17
+NET "ddr2_dq<26>" LOC = AM16;#Bank 17
+NET "ddr2_dq<27>" LOC = AL15;#Bank 17
+NET "ddr2_dq<28>" LOC = AK19;#Bank 17
+NET "ddr2_dq<29>" LOC = AK18;#Bank 17
+NET "ddr2_dq<30>" LOC = AP17;#Bank 17
+NET "ddr2_dq<31>" LOC = AP16;#Bank 17
+NET "ddr2_dq<32>" LOC = AP14;#Bank 17
+NET "ddr2_dq<33>" LOC = AN13;#Bank 17
+NET "ddr2_dq<34>" LOC = AE11;#Bank 17
+NET "ddr2_dq<35>" LOC = AG11;#Bank 17
+NET "ddr2_dq<36>" LOC = AN14;#Bank 17
+NET "ddr2_dq<37>" LOC = AM13;#Bank 17
+NET "ddr2_dq<38>" LOC = AP12;#Bank 17
+NET "ddr2_dq<39>" LOC = AF11;#Bank 17
+NET "ddr2_dq<40>" LOC = AA10;#Bank 21
+NET "ddr2_dq<41>" LOC = AC10;#Bank 21
+NET "ddr2_dq<42>" LOC = AJ10;#Bank 21
+NET "ddr2_dq<43>" LOC = AC9;#Bank 21
+NET "ddr2_dq<44>" LOC = AM11;#Bank 21
+NET "ddr2_dq<45>" LOC = AB10;#Bank 21
+NET "ddr2_dq<46>" LOC = AH10;#Bank 21
+NET "ddr2_dq<47>" LOC = AA9;#Bank 21
+NET "ddr2_dq<48>" LOC = AH9;#Bank 21
+NET "ddr2_dq<49>" LOC = AK9;#Bank 21
+NET "ddr2_dq<50>" LOC = AC8;#Bank 21
+NET "ddr2_dq<51>" LOC = AL10;#Bank 21
+NET "ddr2_dq<52>" LOC = AF9;#Bank 21
+NET "ddr2_dq<53>" LOC = AJ9;#Bank 21
+NET "ddr2_dq<54>" LOC = AB8;#Bank 21
+NET "ddr2_dq<55>" LOC = AK8;#Bank 21
+NET "ddr2_dq<56>" LOC = Y11;#Bank 25
+NET "ddr2_dq<57>" LOC = W10;#Bank 25
+NET "ddr2_dq<58>" LOC = U8;#Bank 25
+NET "ddr2_dq<59>" LOC = Y8;#Bank 25
+NET "ddr2_dq<60>" LOC = W11;#Bank 25
+NET "ddr2_dq<61>" LOC = V10;#Bank 25
+NET "ddr2_dq<62>" LOC = W9;#Bank 25
+NET "ddr2_dq<63>" LOC = V8;#Bank 25
+NET "ddr2_dq<64>" LOC = AN15;#Bank 25
+NET "ddr2_dq<65>" LOC = AJ14;#Bank 25
+NET "ddr2_dq<66>" LOC = AK13;#Bank 25
+NET "ddr2_dq<67>" LOC = AJ12;#Bank 25
+NET "ddr2_dq<68>" LOC = AM15;#Bank 25
+NET "ddr2_dq<69>" LOC = AP15;#Bank 25
+NET "ddr2_dq<70>" LOC = AL14;#Bank 25
+NET "ddr2_dq<71>" LOC = AL13;#Bank 25
 
-NET "ddr2_a<15>" LOC = AP22;#Bank 25
-NET "ddr2_a<14>" LOC = AM18;#Bank 25
-NET "ddr2_a<13>" LOC = AN18;#Bank 25
-NET "ddr2_a<12>" LOC = AM22;#Bank 25
-NET "ddr2_a<11>" LOC = AN22;#Bank 25
-NET "ddr2_a<10>" LOC = AP20;#Bank 25
-NET "ddr2_a<9>" LOC = AN20;#Bank 25
-NET "ddr2_a<8>" LOC = AN23;#Bank 25
-NET "ddr2_a<7>" LOC = AD26;#Bank 21
-NET "ddr2_a<6>" LOC = AC24;#Bank 21
-NET "ddr2_a<5>" LOC = AC25;#Bank 21
-NET "ddr2_a<4>" LOC = AE26;#Bank 21
-NET "ddr2_a<3>" LOC = AE27;#Bank 21
-NET "ddr2_a<2>" LOC = AF26;#Bank 21
-NET "ddr2_a<1>" LOC = AF25;#Bank 21
-NET "ddr2_a<0>" LOC = AG27;#Bank 21
+NET "ddr2_a<15>" LOC = Y7;#Bank 25
+NET "ddr2_a<14>" LOC = AC7;#Bank 25
+NET "ddr2_a<13>" LOC = AC4;#Bank 25
+NET "ddr2_a<12>" LOC = AE7;#Bank 25
+NET "ddr2_a<11>" LOC = AH7;#Bank 25
+NET "ddr2_a<10>" LOC = AK6;#Bank 25
+NET "ddr2_a<9>" LOC = AJ7;#Bank 25
+NET "ddr2_a<8>" LOC = W6;#Bank 25
+NET "ddr2_a<7>" LOC = AK7;#Bank 21
+NET "ddr2_a<6>" LOC = AA6;#Bank 21
+NET "ddr2_a<5>" LOC = Y6;#Bank 21
+NET "ddr2_a<4>" LOC = AB6;#Bank 21
+NET "ddr2_a<3>" LOC = AD6;#Bank 21
+NET "ddr2_a<2>" LOC = AE6;#Bank 21
+NET "ddr2_a<1>" LOC = AF6;#Bank 21
+NET "ddr2_a<0>" LOC = AJ6;#Bank 21
 
-NET "ddr2_ba<2>" LOC = AD29;#Bank 17
-NET "ddr2_ba<1>" LOC = AE29;#Bank 17
-NET "ddr2_ba<0>" LOC = AF31;#Bank 17
+NET "ddr2_ba<2>" LOC = AB7;#Bank 17
+NET "ddr2_ba<1>" LOC = AA5;#Bank 17
+NET "ddr2_ba<0>" LOC = AB5;#Bank 17
 
-NET "ddr2_ras_n" LOC = AJ31;#Bank 17
-NET "ddr2_cas_n" LOC = AK31;#Bank 17
-NET "ddr2_we_n" LOC = AF29;#Bank 17
+NET "ddr2_ras_n" LOC = AC5;#Bank 17
+NET "ddr2_cas_n" LOC = AD4;#Bank 17
+NET "ddr2_we_n" LOC = AD5;#Bank 17
 
-NET "ddr2_reset_n" LOC = AP21;#Bank 25
+NET "ddr2_reset_n" LOC = AN19;#Bank 25
 
 
-NET "ddr2_dm<0>" LOC = AD32;#Bank 13
-NET "ddr2_dm<1>" LOC = AK34;#Bank 13
-NET "ddr2_dm<2>" LOC = AJ32;#Bank 13
-NET "ddr2_dm<3>" LOC = AB30;#Bank 17
-NET "ddr2_dm<4>" LOC = AA29;#Bank 17
-NET "ddr2_dm<5>" LOC = AK28;#Bank 21
-NET "ddr2_dm<6>" LOC = AH27;#Bank 21
-NET "ddr2_dm<7>" LOC = AP26;#Bank 25
-NET "ddr2_dm<8>" LOC = AL25;#Bank 25
+NET "ddr2_dm<0>" LOC = AM30;#Bank 13
+NET "ddr2_dm<1>" LOC = AN27;#Bank 13
+NET "ddr2_dm<2>" LOC = AK23;#Bank 13
+NET "ddr2_dm<3>" LOC = AN17;#Bank 17
+NET "ddr2_dm<4>" LOC = AM12;#Bank 17
+NET "ddr2_dm<5>" LOC = AG10;#Bank 21
+NET "ddr2_dm<6>" LOC = AA8;#Bank 21
+NET "ddr2_dm<7>" LOC = V9;#Bank 25
+NET "ddr2_dm<8>" LOC = AK14;#Bank 25
 
 
 
@@ -539,88 +523,64 @@ NET "QSH_B_CLK_N" IOSTANDARD = LVDS_25;
 ################################################################################
 
 # QSH A Differential pairs
-NET "QSH_A_D_P<0>" LOC = B16;#Bank 5 IO_L0P_5
-NET "QSH_A_D_N<0>" LOC = B15;#Bank 5 IO_L0N_5
-NET "QSH_A_D_P<1>" LOC = A15;#Bank 5 IO_L1P_5
-NET "QSH_A_D_N<1>" LOC = A14;#Bank 5 IO_L1N_5
-NET "QSH_A_D_P<2>" LOC = B17;#Bank 5 IO_L2P_5
-NET "QSH_A_D_N<2>" LOC = A16;#Bank 5 IO_L2N_5
-NET "QSH_A_D_P<3>" LOC = C14;#Bank 5 IO_L3P_5
-NET "QSH_A_D_N<3>" LOC = C15;#Bank 5 IO_L3N_5
-NET "QSH_A_D_P<4>" LOC = E19;#Bank 5 IO_L4P_5
-NET "QSH_A_D_N<4>" LOC = F19;#Bank 5 IO_L4N_VREF_5
-NET "QSH_A_D_P<5>" LOC = C17;#Bank 5 IO_L5P_5
-NET "QSH_A_D_N<5>" LOC = D17;#Bank 5 IO_L5N_5
-NET "QSH_A_D_P<6>" LOC = E21;#Bank 5 IO_L6P_5
-NET "QSH_A_D_N<6>" LOC = D20;#Bank 5 IO_L6N_5
-NET "QSH_A_D_P<7>" LOC = D16;#Bank 5 IO_L7P_5
-NET "QSH_A_D_N<7>" LOC = D15;#Bank 5 IO_L7N_5
-NET "QSH_A_D_P<8>" LOC = G20;#Bank 5 IO_L8P_CC_5
-NET "QSH_A_D_N<8>" LOC = F20;#Bank 5 IO_L8N_CC_5
-NET "QSH_A_D_P<9>" LOC = D14;#Bank 5 IO_L9P_CC_5
-NET "QSH_A_D_N<9>" LOC = E14;#Bank 5 IO_L9N_CC_5
-NET "QSH_A_D_P<10>" LOC = E17;#Bank 5 IO_L10P_CC_5
-NET "QSH_A_D_N<10>" LOC = E16;#Bank 5 IO_L10N_CC_5
-NET "QSH_A_D_P<11>" LOC = F21;#Bank 5 IO_L11P_CC_5
-NET "QSH_A_D_N<11>" LOC = G21;#Bank 5 IO_L11N_CC_5
-NET "QSH_A_D_P<12>" LOC = D21;#Bank 5 IO_L13P_5
-NET "QSH_A_D_N<12>" LOC = D22;#Bank 5 IO_L13N_5
-NET "QSH_A_D_P<13>" LOC = F18;#Bank 5 IO_L14P_5
-NET "QSH_A_D_N<13>" LOC = G18;#Bank 5 IO_L14N_VREF_5
-NET "QSH_A_D_P<14>" LOC = E22;#Bank 5 IO_L15P_5
-NET "QSH_A_D_N<14>" LOC = F23;#Bank 5 IO_L15N_5
-NET "QSH_A_D_P<15>" LOC = G17;#Bank 5 IO_L16P_5
-NET "QSH_A_D_N<15>" LOC = F16;#Bank 5 IO_L16N_5
-NET "QSH_A_D_P<16>" LOC = D24;#Bank 5 IO_L17P_5
-NET "QSH_A_D_N<16>" LOC = E23;#Bank 5 IO_L17N_5
-NET "QSH_A_D_P<17>" LOC = F14;#Bank 5 IO_L18P_5
-NET "QSH_A_D_N<17>" LOC = F15;#Bank 5 IO_L18N_5
-NET "QSH_A_D_P<18>" LOC = F24;#Bank 5 IO_L19P_5
-NET "QSH_A_D_N<18>" LOC = E24;#Bank 5 IO_L19N_5
+NET "QSH_A_D_P<0>" LOC = AC33;#Bank 5 IO_L0P_5
+NET "QSH_A_D_N<0>" LOC = AB33;#Bank 5 IO_L0N_5
+NET "QSH_A_D_P<1>" LOC = AA25;#Bank 5 IO_L1P_5
+NET "QSH_A_D_N<1>" LOC = AA26;#Bank 5 IO_L1N_5
+NET "QSH_A_D_P<2>" LOC = AA29;#Bank 5 IO_L2P_5
+NET "QSH_A_D_N<2>" LOC = AA30;#Bank 5 IO_L2N_5
+NET "QSH_A_D_P<3>" LOC = Y33;#Bank 5 IO_L3P_5
+NET "QSH_A_D_N<3>" LOC = AA33;#Bank 5 IO_L3N_5
+NET "QSH_A_D_P<4>" LOC = Y24;#Bank 5 IO_L4P_5
+NET "QSH_A_D_N<4>" LOC = AA24;#Bank 5 IO_L4N_VREF_5
+NET "QSH_A_D_P<5>" LOC = Y27;#Bank 5 IO_L5P_5
+NET "QSH_A_D_N<5>" LOC = W27;#Bank 5 IO_L5N_5
+NET "QSH_A_D_P<6>" LOC = W31;#Bank 5 IO_L6P_5
+NET "QSH_A_D_N<6>" LOC = Y31;#Bank 5 IO_L6N_5
+NET "QSH_A_D_P<7>" LOC = W24;#Bank 5 IO_L7P_5
+NET "QSH_A_D_N<7>" LOC = V24;#Bank 5 IO_L7N_5
+NET "QSH_A_D_P<8>" LOC = W29;#Bank 5 IO_L8P_CC_5
+NET "QSH_A_D_N<8>" LOC = V29;#Bank 5 IO_L8N_CC_5
+NET "QSH_A_D_P<9>" LOC = V32;#Bank 5 IO_L9P_CC_5
+NET "QSH_A_D_N<9>" LOC = V33;#Bank 5 IO_L9N_CC_5
+NET "QSH_A_D_P<10>" LOC = V28;#Bank 5 IO_L10P_CC_5
+NET "QSH_A_D_N<10>" LOC = V27;#Bank 5 IO_L10N_CC_5
+NET "QSH_A_D_P<14>" LOC = R24;#Bank 5 IO_L15P_5
+NET "QSH_A_D_N<14>" LOC = T24;#Bank 5 IO_L15N_5
+NET "QSH_A_D_P<17>" LOC = P25;#Bank 5 IO_L18P_5
+NET "QSH_A_D_N<17>" LOC = N25;#Bank 5 IO_L18N_5
 
 # QSH A Clock
 NET "QSH_A_CLK_P" LOC = J20;#Bank 3 IO_L7P_GC_3
 NET "QSH_A_CLK_N" LOC = J21;#Bank 3 IO_L7N_GC_3
 
 # QSH B Differential pairs
-NET "QSH_B_D_P<0>" LOC = AH24;#Bank 6 IO_L0P_6
-NET "QSH_B_D_N<0>" LOC = AJ24;#Bank 6 IO_L0N_6
-NET "QSH_B_D_P<1>" LOC = AK12;#Bank 6 IO_L1P_6
-NET "QSH_B_D_N<1>" LOC = AJ12;#Bank 6 IO_L1N_6
-NET "QSH_B_D_P<2>" LOC = AH23;#Bank 6 IO_L2P_6
-NET "QSH_B_D_N<2>" LOC = AJ22;#Bank 6 IO_L2N_6
-NET "QSH_B_D_P<3>" LOC = AL13;#Bank 6 IO_L3P_6
-NET "QSH_B_D_N<3>" LOC = AK13;#Bank 6 IO_L3N_6
-NET "QSH_B_D_P<4>" LOC = AK24;#Bank 6 IO_L4P_6
-NET "QSH_B_D_N<4>" LOC = AL23;#Bank 6 IO_L4N_VREF_6
-NET "QSH_B_D_P<5>" LOC = AJ14;#Bank 6 IO_L5P_6
-NET "QSH_B_D_N<5>" LOC = AK14;#Bank 6 IO_L5N_6
-NET "QSH_B_D_P<6>" LOC = AK23;#Bank 6 IO_L6P_6
-NET "QSH_B_D_N<6>" LOC = AK22;#Bank 6 IO_L6N_6
-NET "QSH_B_D_P<7>" LOC = AL15;#Bank 6 IO_L7P_6
-NET "QSH_B_D_N<7>" LOC = AL14;#Bank 6 IO_L7N_6
-NET "QSH_B_D_P<8>" LOC = AJ21;#Bank 6 IO_L8P_CC_6
-NET "QSH_B_D_N<8>" LOC = AJ20;#Bank 6 IO_L8N_CC_6
-NET "QSH_B_D_P<9>" LOC = AJ16;#Bank 6 IO_L9P_CC_6
-NET "QSH_B_D_N<9>" LOC = AJ15;#Bank 6 IO_L9N_CC_6
-NET "QSH_B_D_P<10>" LOC = AK16;#Bank 6 IO_L10P_CC_6
-NET "QSH_B_D_N<10>" LOC = AL16;#Bank 6 IO_L10N_CC_6
-NET "QSH_B_D_P<11>" LOC = AL21;#Bank 6 IO_L11P_CC_6
-NET "QSH_B_D_N<11>" LOC = AK21;#Bank 6 IO_L11N_CC_6
-NET "QSH_B_D_P<12>" LOC = AL19;#Bank 6 IO_L13P_6
-NET "QSH_B_D_N<12>" LOC = AL20;#Bank 6 IO_L13N_6
-NET "QSH_B_D_P<13>" LOC = AK18;#Bank 6 IO_L14P_6
-NET "QSH_B_D_N<13>" LOC = AL18;#Bank 6 IO_L14N_VREF_6
-NET "QSH_B_D_P<14>" LOC = AJ19;#Bank 6 IO_L15P_6
-NET "QSH_B_D_N<14>" LOC = AK19;#Bank 6 IO_L15N_6
-NET "QSH_B_D_P<15>" LOC = AM15;#Bank 6 IO_L16P_6
-NET "QSH_B_D_N<15>" LOC = AM16;#Bank 6 IO_L16N_6
-NET "QSH_B_D_P<16>" LOC = AP16;#Bank 6 IO_L17P_6
-NET "QSH_B_D_N<16>" LOC = AP17;#Bank 6 IO_L17N_6
-NET "QSH_B_D_P<17>" LOC = AN15;#Bank 6 IO_L18P_6
-NET "QSH_B_D_N<17>" LOC = AP15;#Bank 6 IO_L18N_6
-NET "QSH_B_D_P<18>" LOC = AM17;#Bank 6 IO_L19P_6
-NET "QSH_B_D_N<18>" LOC = AN17;#Bank 6 IO_L19N_6
+NET "QSH_B_D_P<0>" LOC = AC32;#Bank 6 IO_L0P_6
+NET "QSH_B_D_N<0>" LOC = AB32;#Bank 6 IO_L0N_6
+NET "QSH_B_D_P<1>" LOC = AB25;#Bank 6 IO_L1P_6
+NET "QSH_B_D_N<1>" LOC = AB26;#Bank 6 IO_L1N_6
+NET "QSH_B_D_P<2>" LOC = AB28;#Bank 6 IO_L2P_6
+NET "QSH_B_D_N<2>" LOC = AA28;#Bank 6 IO_L2N_6
+NET "QSH_B_D_P<3>" LOC = AB31;#Bank 6 IO_L3P_6
+NET "QSH_B_D_N<3>" LOC = AA31;#Bank 6 IO_L3N_6
+NET "QSH_B_D_P<4>" LOC = AA34;#Bank 6 IO_L4P_6
+NET "QSH_B_D_N<4>" LOC = Y34;#Bank 6 IO_L4N_VREF_6
+NET "QSH_B_D_P<5>" LOC = Y26;#Bank 6 IO_L5P_6
+NET "QSH_B_D_N<5>" LOC = W26;#Bank 6 IO_L5N_6
+NET "QSH_B_D_P<6>" LOC = Y28;#Bank 6 IO_L6P_6
+NET "QSH_B_D_N<6>" LOC = Y29;#Bank 6 IO_L6N_6
+NET "QSH_B_D_P<7>" LOC = Y32;#Bank 6 IO_L7P_6
+NET "QSH_B_D_N<7>" LOC = W32;#Bank 6 IO_L7N_6
+NET "QSH_B_D_P<8>" LOC = V25;#Bank 6 IO_L8P_CC_6
+NET "QSH_B_D_N<8>" LOC = W25;#Bank 6 IO_L8N_CC_6
+NET "QSH_B_D_P<9>" LOC = V30;#Bank 6 IO_L9P_CC_6
+NET "QSH_B_D_N<9>" LOC = W30;#Bank 6 IO_L9N_CC_6
+NET "QSH_B_D_P<10>" LOC = W34;#Bank 6 IO_L10P_CC_6
+NET "QSH_B_D_N<10>" LOC = V34;#Bank 6 IO_L10N_CC_6
+NET "QSH_B_D_P<17>" LOC = N24;#Bank 6 IO_L18P_6
+NET "QSH_B_D_N<17>" LOC = P24;#Bank 6 IO_L18N_6
+NET "QSH_B_D_P<18>" LOC = P26;#Bank 6 IO_L19P_6
+NET "QSH_B_D_N<18>" LOC = P27;#Bank 6 IO_L19N_6
 
 # QSH B Clock
 NET "QSH_B_CLK_P" LOC = J14;#Bank 3 IO_L8P_GC_3
@@ -656,164 +616,120 @@ CONFIG DCI_CASCADE = "18 22";
 # Location Constraints
 ################################################################################
 
-NET "zdok0_dp_p<0>" LOC = E9;#Bank 20 IO_L0P_20
-NET "zdok0_dp_n<0>" LOC = E8;#Bank 20 IO_L0N_20
-NET "zdok0_dp_p<1>" LOC = F9;#Bank 20 IO_L1P_20
-NET "zdok0_dp_n<1>" LOC = F8;#Bank 20 IO_L1N_20
-NET "zdok0_dp_p<2>" LOC = F10;#Bank 20 IO_L2P_20
-NET "zdok0_dp_n<2>" LOC = G10;#Bank 20 IO_L2N_20
-NET "zdok0_dp_p<3>" LOC = G8;#Bank 20 IO_L3P_20
-NET "zdok0_dp_n<3>" LOC = H8;#Bank 20 IO_L3N_20
-NET "zdok0_dp_p<4>" LOC = D11;#Bank 20 IO_L4P_20
-NET "zdok0_dp_n<4>" LOC = D10;#Bank 20 IO_L4N_20
-NET "zdok0_dp_p<5>" LOC = K11;#Bank 20 IO_L5P_20
-NET "zdok0_dp_n<5>" LOC = J11;#Bank 20 IO_L5N_20
-NET "zdok0_dp_p<6>" LOC = D12;#Bank 20 IO_L6P_20
-NET "zdok0_dp_n<6>" LOC = C12;#Bank 20 IO_L6N_20
-NET "zdok0_dp_p<7>" LOC = H10;#Bank 20 IO_L7P_20
-NET "zdok0_dp_n<7>" LOC = H9;#Bank 20 IO_L7N_20
-NET "zdok0_dp_p<8>" LOC = A13;#Bank 20 IO_L8P_CC_20
-NET "zdok0_dp_n<8>" LOC = B12;#Bank 20 IO_L8N_CC_20
-NET "zdok0_dp_p<9>" LOC = J10;#Bank 20 IO_L9P_CC_20
-NET "zdok0_dp_n<9>" LOC = J9;#Bank 20 IO_L9N_CC_20
-NET "zdok0_dp_p<10>" LOC = K8;#Bank 20 IO_L10P_CC_20
-NET "zdok0_dp_n<10>" LOC = K9;#Bank 20 IO_L10N_CC_20
-NET "zdok0_dp_p<11>" LOC = B13;#Bank 20 IO_L11P_CC_20
-NET "zdok0_dp_n<11>" LOC = C13;#Bank 20 IO_L11N_CC_20
-NET "zdok0_dp_p<12>" LOC = G11;#Bank 20 IO_L13P_20
-NET "zdok0_dp_n<12>" LOC = G12;#Bank 20 IO_L13N_20
-NET "zdok0_dp_p<13>" LOC = M8;#Bank 20 IO_L14P_20
-NET "zdok0_dp_n<13>" LOC = L8;#Bank 20 IO_L14N_20
-NET "zdok0_dp_p<14>" LOC = F11;#Bank 20 IO_L15P_20
-NET "zdok0_dp_n<14>" LOC = E11;#Bank 20 IO_L15N_20
-NET "zdok0_dp_p<15>" LOC = M10;#Bank 20 IO_L16P_20
-NET "zdok0_dp_n<15>" LOC = L9;#Bank 20 IO_L16N_20
-NET "zdok0_dp_p<16>" LOC = E12;#Bank 20 IO_L17P_20
-NET "zdok0_dp_n<16>" LOC = E13;#Bank 20 IO_L17N_20
-NET "zdok0_dp_p<17>" LOC = N10;#Bank 20 IO_L18P_20
-NET "zdok0_dp_n<17>" LOC = N9;#Bank 20 IO_L18N_20
-NET "zdok0_dp_p<18>" LOC = F13;#Bank 20 IO_L19P_20
-NET "zdok0_dp_n<18>" LOC = G13;#Bank 20 IO_L19N_20
-NET "zdok0_dp_p<19>" LOC = M6;#Bank 12 IO_L0P_12
-NET "zdok0_dp_n<19>" LOC = M5;#Bank 12 IO_L0N_12
-NET "zdok0_dp_p<20>" LOC = N8;#Bank 12 IO_L1P_12
-NET "zdok0_dp_n<20>" LOC = N7;#Bank 12 IO_L1N_12
-NET "zdok0_dp_p<21>" LOC = M7;#Bank 12 IO_L2P_12
-NET "zdok0_dp_n<21>" LOC = L6;#Bank 12 IO_L2N_12
-NET "zdok0_dp_p<22>" LOC = N5;#Bank 12 IO_L3P_12
-NET "zdok0_dp_n<22>" LOC = P5;#Bank 12 IO_L3N_12
-NET "zdok0_dp_p<23>" LOC = L4;#Bank 12 IO_L4P_12
-NET "zdok0_dp_n<23>" LOC = L5;#Bank 12 IO_L4N_12
-NET "zdok0_dp_p<24>" LOC = P7;#Bank 12 IO_L5P_12
-NET "zdok0_dp_n<24>" LOC = P6;#Bank 12 IO_L5N_12
-NET "zdok0_dp_p<25>" LOC = K7;#Bank 12 IO_L6P_12
-NET "zdok0_dp_n<25>" LOC = K6;#Bank 12 IO_L6N_12
-NET "zdok0_dp_p<26>" LOC = R6;#Bank 12 IO_L7P_12
-NET "zdok0_dp_n<26>" LOC = T6;#Bank 12 IO_L7N_12
-NET "zdok0_dp_p<27>" LOC = J6;#Bank 12 IO_L8P_CC_12
-NET "zdok0_dp_n<27>" LOC = J5;#Bank 12 IO_L8N_CC_12
-NET "zdok0_dp_p<28>" LOC = R7;#Bank 12 IO_L9P_CC_12
-NET "zdok0_dp_n<28>" LOC = R8;#Bank 12 IO_L9N_CC_12
-NET "zdok0_dp_p<29>" LOC = T8;#Bank 12 IO_L10P_CC_12
-NET "zdok0_dp_n<29>" LOC = U7;#Bank 12 IO_L10N_CC_12
-NET "zdok0_dp_p<30>" LOC = H7;#Bank 12 IO_L11P_CC_12
-NET "zdok0_dp_n<30>" LOC = J7;#Bank 12 IO_L11N_CC_12
-NET "zdok0_dp_p<31>" LOC = H5;#Bank 12 IO_L13P_12
-NET "zdok0_dp_n<31>" LOC = G5;#Bank 12 IO_L13N_12
-NET "zdok0_dp_p<32>" LOC = R11;#Bank 12 IO_L14P_12
-NET "zdok0_dp_n<32>" LOC = P10;#Bank 12 IO_L14N_12
-NET "zdok0_dp_p<33>" LOC = F5;#Bank 12 IO_L15P_12
-NET "zdok0_dp_n<33>" LOC = F6;#Bank 12 IO_L15N_12
-NET "zdok0_dp_p<34>" LOC = T10;#Bank 12 IO_L16P_12
-NET "zdok0_dp_n<34>" LOC = T11;#Bank 12 IO_L16N_12
-NET "zdok0_dp_p<35>" LOC = G6;#Bank 12 IO_L17P_12
-NET "zdok0_dp_n<35>" LOC = G7;#Bank 12 IO_L17N_12
-NET "zdok0_dp_p<36>" LOC = T9;#Bank 12 IO_L18P_12
-NET "zdok0_dp_n<36>" LOC = U10;#Bank 12 IO_L18N_12
-NET "zdok0_dp_p<37>" LOC = E6;#Bank 12 IO_L19P_12
-NET "zdok0_dp_n<37>" LOC = E7;#Bank 12 IO_L19N_12
+NET "zdok0_dp_p<3>" LOC = K24;#Bank 20 IO_L3P_20
+NET "zdok0_dp_n<3>" LOC = L24;#Bank 20 IO_L3N_20
+NET "zdok0_dp_p<4>" LOC = J27;#Bank 20 IO_L4P_20
+NET "zdok0_dp_n<4>" LOC = J26;#Bank 20 IO_L4N_20
+NET "zdok0_dp_p<6>" LOC = H28;#Bank 20 IO_L6P_20
+NET "zdok0_dp_n<6>" LOC = G28;#Bank 20 IO_L6N_20
+NET "zdok0_dp_p<8>" LOC = E28;#Bank 20 IO_L8P_CC_20
+NET "zdok0_dp_n<8>" LOC = F28;#Bank 20 IO_L8N_CC_20
+NET "zdok0_dp_p<10>" LOC = M28;#Bank 20 IO_L10P_CC_20
+NET "zdok0_dp_n<10>" LOC = N28;#Bank 20 IO_L10N_CC_20
+NET "zdok0_dp_p<11>" LOC = L25;#Bank 20 IO_L11P_CC_20
+NET "zdok0_dp_n<11>" LOC = L26;#Bank 20 IO_L11N_CC_20
+NET "zdok0_dp_p<14>" LOC = J24;#Bank 20 IO_L15P_20
+NET "zdok0_dp_n<14>" LOC = J25;#Bank 20 IO_L15N_20
+NET "zdok0_dp_p<15>" LOC = H25;#Bank 20 IO_L16P_20
+NET "zdok0_dp_n<15>" LOC = H24;#Bank 20 IO_L16N_20
+NET "zdok0_dp_p<16>" LOC = G27;#Bank 20 IO_L17P_20
+NET "zdok0_dp_n<16>" LOC = H27;#Bank 20 IO_L17N_20
+NET "zdok0_dp_p<18>" LOC = E26;#Bank 20 IO_L19P_20
+NET "zdok0_dp_n<18>" LOC = E27;#Bank 20 IO_L19N_20
+NET "zdok0_dp_p<20>" LOC = N27;#Bank 12 IO_L1P_12
+NET "zdok0_dp_n<20>" LOC = M27;#Bank 12 IO_L1N_12
+NET "zdok0_dp_p<22>" LOC = K28;#Bank 12 IO_L3P_12
+NET "zdok0_dp_n<22>" LOC = L28;#Bank 12 IO_L3N_12
+NET "zdok0_dp_p<26>" LOC = G25;#Bank 12 IO_L7P_12
+NET "zdok0_dp_n<26>" LOC = G26;#Bank 12 IO_L7N_12
+NET "zdok0_dp_p<29>" LOC = M25;#Bank 12 IO_L10P_CC_12
+NET "zdok0_dp_n<29>" LOC = M26;#Bank 12 IO_L10N_CC_12
+NET "zdok0_dp_p<31>" LOC = K27;#Bank 12 IO_L13P_12
+NET "zdok0_dp_n<31>" LOC = K26;#Bank 12 IO_L13N_12
+NET "zdok0_dp_p<35>" LOC = F25;#Bank 12 IO_L17P_12
+NET "zdok0_dp_n<35>" LOC = F26;#Bank 12 IO_L17N_12
 
 NET "zdok0_clk0_p" LOC = K18;#Bank 3 IO_L3P_GC_3
 NET "zdok0_clk0_n" LOC = J19;#Bank 3 IO_L3N_GC_3
 NET "zdok0_clk1_p" LOC = J16;#Bank 3 IO_L4P_GC_3
 NET "zdok0_clk1_n" LOC = J17;#Bank 3 IO_L4N_GC_VREF_3
 
-NET "zdok1_dp_p<0>" LOC = AC4;#Bank 18 IO_L0P_18
-NET "zdok1_dp_n<0>" LOC = AC5;#Bank 18 IO_L0N_18
-NET "zdok1_dp_p<1>" LOC = AB6;#Bank 18 IO_L1P_18
-NET "zdok1_dp_n<1>" LOC = AB7;#Bank 18 IO_L1N_18
-NET "zdok1_dp_p<2>" LOC = AA5;#Bank 18 IO_L2P_18
-NET "zdok1_dp_n<2>" LOC = AB5;#Bank 18 IO_L2N_18
-NET "zdok1_dp_p<3>" LOC = AC7;#Bank 18 IO_L3P_18
-NET "zdok1_dp_n<3>" LOC = AD7;#Bank 18 IO_L3N_18
-NET "zdok1_dp_p<4>" LOC = Y8;#Bank 18 IO_L4P_18
-NET "zdok1_dp_n<4>" LOC = Y9;#Bank 18 IO_L4N_18
-NET "zdok1_dp_p<5>" LOC = AD4;#Bank 18 IO_L5P_18
-NET "zdok1_dp_n<5>" LOC = AD5;#Bank 18 IO_L5N_18
-NET "zdok1_dp_p<6>" LOC = AA6;#Bank 18 IO_L6P_18
-NET "zdok1_dp_n<6>" LOC = Y7;#Bank 18 IO_L6N_18
-NET "zdok1_dp_p<7>" LOC = AD6;#Bank 18 IO_L7P_18
-NET "zdok1_dp_n<7>" LOC = AE6;#Bank 18 IO_L7N_18
-NET "zdok1_dp_p<8>" LOC = W6;#Bank 18 IO_L8P_CC_18
-NET "zdok1_dp_n<8>" LOC = Y6;#Bank 18 IO_L8N_CC_18
-NET "zdok1_dp_p<9>" LOC = AE7;#Bank 18 IO_L9P_CC_18
-NET "zdok1_dp_n<9>" LOC = AF6;#Bank 18 IO_L9N_CC_18
-NET "zdok1_dp_p<10>" LOC = AG5;#Bank 18 IO_L10P_CC_18
-NET "zdok1_dp_n<10>" LOC = AF5;#Bank 18 IO_L10N_CC_18
-NET "zdok1_dp_p<11>" LOC = W7;#Bank 18 IO_L11P_CC_18
-NET "zdok1_dp_n<11>" LOC = V7;#Bank 18 IO_L11N_CC_18
-NET "zdok1_dp_p<12>" LOC = Y11;#Bank 18 IO_L13P_18
-NET "zdok1_dp_n<12>" LOC = W11;#Bank 18 IO_L13N_18
-NET "zdok1_dp_p<13>" LOC = AH7;#Bank 18 IO_L14P_18
-NET "zdok1_dp_n<13>" LOC = AG7;#Bank 18 IO_L14N_18
-NET "zdok1_dp_p<14>" LOC = W10;#Bank 18 IO_L15P_18
-NET "zdok1_dp_n<14>" LOC = W9;#Bank 18 IO_L15N_18
-NET "zdok1_dp_p<15>" LOC = AJ7;#Bank 18 IO_L16P_18
-NET "zdok1_dp_n<15>" LOC = AJ6;#Bank 18 IO_L16N_18
-NET "zdok1_dp_p<16>" LOC = V8;#Bank 18 IO_L17P_18
-NET "zdok1_dp_n<16>" LOC = U8;#Bank 18 IO_L17N_18
-NET "zdok1_dp_p<17>" LOC = AK7;#Bank 18 IO_L18P_18
-NET "zdok1_dp_n<17>" LOC = AK6;#Bank 18 IO_L18N_18
-NET "zdok1_dp_p<18>" LOC = V10;#Bank 18 IO_L19P_18
-NET "zdok1_dp_n<18>" LOC = V9;#Bank 18 IO_L19N_18
-NET "zdok1_dp_p<19>" LOC = AN14;#Bank 22 IO_L0P_22
-NET "zdok1_dp_n<19>" LOC = AP14;#Bank 22 IO_L0N_22
-NET "zdok1_dp_p<20>" LOC = AB10;#Bank 22 IO_L1P_22
-NET "zdok1_dp_n<20>" LOC = AA10;#Bank 22 IO_L1N_22
-NET "zdok1_dp_p<21>" LOC = AN13;#Bank 22 IO_L2P_22
-NET "zdok1_dp_n<21>" LOC = AM13;#Bank 22 IO_L2N_22
-NET "zdok1_dp_p<22>" LOC = AA8;#Bank 22 IO_L3P_22
-NET "zdok1_dp_n<22>" LOC = AA9;#Bank 22 IO_L3N_22
-NET "zdok1_dp_p<23>" LOC = AP12;#Bank 22 IO_L4P_22
-NET "zdok1_dp_n<23>" LOC = AN12;#Bank 22 IO_L4N_22
-NET "zdok1_dp_p<24>" LOC = AC8;#Bank 22 IO_L5P_22
-NET "zdok1_dp_n<24>" LOC = AB8;#Bank 22 IO_L5N_22
-NET "zdok1_dp_p<25>" LOC = AM12;#Bank 22 IO_L6P_22
-NET "zdok1_dp_n<25>" LOC = AM11;#Bank 22 IO_L6N_22
-NET "zdok1_dp_p<26>" LOC = AC10;#Bank 22 IO_L7P_22
-NET "zdok1_dp_n<26>" LOC = AC9;#Bank 22 IO_L7N_22
-NET "zdok1_dp_p<27>" LOC = AL11;#Bank 22 IO_L8P_CC_22
-NET "zdok1_dp_n<27>" LOC = AL10;#Bank 22 IO_L8N_CC_22
-NET "zdok1_dp_p<28>" LOC = AE8;#Bank 22 IO_L9P_CC_22
-NET "zdok1_dp_n<28>" LOC = AD9;#Bank 22 IO_L9N_CC_22
-NET "zdok1_dp_p<29>" LOC = AD10;#Bank 22 IO_L10P_CC_22
-NET "zdok1_dp_n<29>" LOC = AD11;#Bank 22 IO_L10N_CC_22
-NET "zdok1_dp_p<30>" LOC = AK11;#Bank 22 IO_L11P_CC_22
-NET "zdok1_dp_n<30>" LOC = AJ11;#Bank 22 IO_L11N_CC_22
-NET "zdok1_dp_p<31>" LOC = AK8;#Bank 22 IO_L13P_22
-NET "zdok1_dp_n<31>" LOC = AK9;#Bank 22 IO_L13N_22
-NET "zdok1_dp_p<32>" LOC = AF9;#Bank 22 IO_L14P_22
-NET "zdok1_dp_n<32>" LOC = AF10;#Bank 22 IO_L14N_22
-NET "zdok1_dp_p<33>" LOC = AJ9;#Bank 22 IO_L15P_22
-NET "zdok1_dp_n<33>" LOC = AJ10;#Bank 22 IO_L15N_22
-NET "zdok1_dp_p<34>" LOC = AF11;#Bank 22 IO_L16P_22
-NET "zdok1_dp_n<34>" LOC = AE11;#Bank 22 IO_L16N_22
-NET "zdok1_dp_p<35>" LOC = AH9;#Bank 22 IO_L17P_22
-NET "zdok1_dp_n<35>" LOC = AH10;#Bank 22 IO_L17N_22
-NET "zdok1_dp_p<36>" LOC = AG8;#Bank 22 IO_L18P_22
-NET "zdok1_dp_n<36>" LOC = AH8;#Bank 22 IO_L18N_22
-NET "zdok1_dp_p<37>" LOC = AG10;#Bank 22 IO_L19P_22
-NET "zdok1_dp_n<37>" LOC = AG11;#Bank 22 IO_L19N_22
+NET "zdok1_dp_p<0>" LOC = AN34;#Bank 18 IO_L0P_18
+NET "zdok1_dp_n<0>" LOC = AN33;#Bank 18 IO_L0N_18
+NET "zdok1_dp_p<1>" LOC = AK28;#Bank 18 IO_L1P_18
+NET "zdok1_dp_n<1>" LOC = AK27;#Bank 18 IO_L1N_18
+NET "zdok1_dp_p<2>" LOC = AJ32;#Bank 18 IO_L2P_18
+NET "zdok1_dp_n<2>" LOC = AK32;#Bank 18 IO_L2N_18
+NET "zdok1_dp_p<3>" LOC = AH27;#Bank 18 IO_L3P_18
+NET "zdok1_dp_n<3>" LOC = AJ26;#Bank 18 IO_L3N_18
+NET "zdok1_dp_p<4>" LOC = AG33;#Bank 18 IO_L4P_18
+NET "zdok1_dp_n<4>" LOC = AH33;#Bank 18 IO_L4N_18
+NET "zdok1_dp_p<5>" LOC = AE28;#Bank 18 IO_L5P_18
+NET "zdok1_dp_n<5>" LOC = AF28;#Bank 18 IO_L5N_18
+NET "zdok1_dp_p<6>" LOC = AF34;#Bank 18 IO_L6P_18
+NET "zdok1_dp_n<6>" LOC = AE34;#Bank 18 IO_L6N_18
+NET "zdok1_dp_p<7>" LOC = AD31;#Bank 18 IO_L7P_18
+NET "zdok1_dp_n<7>" LOC = AE31;#Bank 18 IO_L7N_18
+NET "zdok1_dp_p<8>" LOC = AC28;#Bank 18 IO_L8P_CC_18
+NET "zdok1_dp_n<8>" LOC = AD27;#Bank 18 IO_L8N_CC_18
+NET "zdok1_dp_p<9>" LOC = AB30;#Bank 18 IO_L9P_CC_18
+NET "zdok1_dp_n<9>" LOC = AC30;#Bank 18 IO_L9N_CC_18
+NET "zdok1_dp_p<10>" LOC = AN32;#Bank 18 IO_L10P_CC_18
+NET "zdok1_dp_n<10>" LOC = AP32;#Bank 18 IO_L10N_CC_18
+NET "zdok1_dp_p<11>" LOC = AK26;#Bank 18 IO_L11P_CC_18
+NET "zdok1_dp_n<11>" LOC = AJ27;#Bank 18 IO_L11N_CC_18
+NET "zdok1_dp_p<12>" LOC = AJ31;#Bank 18 IO_L13P_18
+NET "zdok1_dp_n<12>" LOC = AK31;#Bank 18 IO_L13N_18
+NET "zdok1_dp_p<13>" LOC = AJ25;#Bank 18 IO_L14P_18
+NET "zdok1_dp_n<13>" LOC = AH25;#Bank 18 IO_L14N_18
+NET "zdok1_dp_p<14>" LOC = AG32;#Bank 18 IO_L15P_18
+NET "zdok1_dp_n<14>" LOC = AH32;#Bank 18 IO_L15N_18
+NET "zdok1_dp_p<15>" LOC = AF25;#Bank 18 IO_L16P_18
+NET "zdok1_dp_n<15>" LOC = AF26;#Bank 18 IO_L16N_18
+NET "zdok1_dp_p<16>" LOC = AF33;#Bank 18 IO_L17P_18
+NET "zdok1_dp_n<16>" LOC = AE33;#Bank 18 IO_L17N_18
+NET "zdok1_dp_p<17>" LOC = AE29;#Bank 18 IO_L18P_18
+NET "zdok1_dp_n<17>" LOC = AD29;#Bank 18 IO_L18N_18
+NET "zdok1_dp_p<18>" LOC = AD26;#Bank 18 IO_L19P_18
+NET "zdok1_dp_n<18>" LOC = AD25;#Bank 18 IO_L19N_18
+NET "zdok1_dp_p<19>" LOC = AB27;#Bank 22 IO_L0P_22
+NET "zdok1_dp_n<19>" LOC = AC27;#Bank 22 IO_L0N_22
+NET "zdok1_dp_p<20>" LOC = AL34;#Bank 22 IO_L1P_22
+NET "zdok1_dp_n<20>" LOC = AL33;#Bank 22 IO_L1N_22
+NET "zdok1_dp_p<21>" LOC = AJ30;#Bank 22 IO_L2P_22
+NET "zdok1_dp_n<21>" LOC = AH30;#Bank 22 IO_L2N_22
+NET "zdok1_dp_p<22>" LOC = AH34;#Bank 22 IO_L3P_22
+NET "zdok1_dp_n<22>" LOC = AJ34;#Bank 22 IO_L3N_22
+NET "zdok1_dp_p<23>" LOC = AH29;#Bank 22 IO_L4P_22
+NET "zdok1_dp_n<23>" LOC = AG30;#Bank 22 IO_L4N_22
+NET "zdok1_dp_p<24>" LOC = AG27;#Bank 22 IO_L5P_22
+NET "zdok1_dp_n<24>" LOC = AG26;#Bank 22 IO_L5N_22
+NET "zdok1_dp_p<25>" LOC = AF31;#Bank 22 IO_L6P_22
+NET "zdok1_dp_n<25>" LOC = AG31;#Bank 22 IO_L6N_22
+NET "zdok1_dp_p<26>" LOC = AE27;#Bank 22 IO_L7P_22
+NET "zdok1_dp_n<26>" LOC = AE26;#Bank 22 IO_L7N_22
+NET "zdok1_dp_p<27>" LOC = AC34;#Bank 22 IO_L8P_CC_22
+NET "zdok1_dp_n<27>" LOC = AD34;#Bank 22 IO_L8N_CC_22
+NET "zdok1_dp_p<28>" LOC = AC25;#Bank 22 IO_L9P_CC_22
+NET "zdok1_dp_n<28>" LOC = AC24;#Bank 22 IO_L9N_CC_22
+NET "zdok1_dp_p<29>" LOC = AM33;#Bank 22 IO_L10P_CC_22
+NET "zdok1_dp_n<29>" LOC = AM32;#Bank 22 IO_L10N_CC_22
+NET "zdok1_dp_p<30>" LOC = AK29;#Bank 22 IO_L11P_CC_22
+NET "zdok1_dp_n<30>" LOC = AJ29;#Bank 22 IO_L11N_CC_22
+NET "zdok1_dp_p<31>" LOC = AK34;#Bank 22 IO_L13P_22
+NET "zdok1_dp_n<31>" LOC = AK33;#Bank 22 IO_L13N_22
+NET "zdok1_dp_p<32>" LOC = AG28;#Bank 22 IO_L14P_22
+NET "zdok1_dp_n<32>" LOC = AH28;#Bank 22 IO_L14N_22
+NET "zdok1_dp_p<33>" LOC = AF24;#Bank 22 IO_L15P_22
+NET "zdok1_dp_n<33>" LOC = AG25;#Bank 22 IO_L15N_22
+NET "zdok1_dp_p<34>" LOC = AF29;#Bank 22 IO_L16P_22
+NET "zdok1_dp_n<34>" LOC = AF30;#Bank 22 IO_L16N_22
+NET "zdok1_dp_p<35>" LOC = AD24;#Bank 22 IO_L17P_22
+NET "zdok1_dp_n<35>" LOC = AE24;#Bank 22 IO_L17N_22
+NET "zdok1_dp_p<36>" LOC = AD32;#Bank 22 IO_L18P_22
+NET "zdok1_dp_n<36>" LOC = AE32;#Bank 22 IO_L18N_22
+NET "zdok1_dp_p<37>" LOC = AD30;#Bank 22 IO_L19P_22
+NET "zdok1_dp_n<37>" LOC = AC29;#Bank 22 IO_L19N_22
 
 NET "zdok1_clk0_p" LOC = L19;#Bank 3 IO_L5P_GC_3
 NET "zdok1_clk0_n" LOC = K19;#Bank 3 IO_L5N_GC_3
@@ -905,24 +821,12 @@ NET "GPIOLVC33<2>" LOC = H23;#Bank 1
 NET "GPIOLVC33<3>" LOC = K13;#Bank 1
 NET "GPIOLVC33<4>" LOC = K12;#Bank 1
 
-NET "GPIOLVC18<4>" LOC = AA30;#Bank 17
-NET "GPIOLVC18<7>" LOC = AC29;#Bank 17
-NET "GPIOLVC18<10>" LOC = AK27;#Bank 21
-NET "GPIOLVC18<11>" LOC = AJ26;#Bank 21
-NET "GPIOLVC18<12>" LOC = AJ25;#Bank 21
-NET "GPIOLVC18<13>" LOC = AH25;#Bank 21
-NET "GPIOLVC18<14>" LOC = AG25;#Bank 21
-NET "GPIOLVC18<15>" LOC = AD25;#Bank 21
-NET "GPIOLVC18<16>" LOC = AP25;#Bank 25
-NET "GPIOLVC18<17>" LOC = AL24;#Bank 25
-NET "GPIOLVC18<18>" LOC = AN24;#Bank 25
-NET "GPIOLVC18<19>" LOC = AP24;#Bank 25
-NET "GPIOLVC18<20>" LOC = AM20;#Bank 25
+NET "GPIOLVC18<4>" LOC = AP22;#Bank 17
 
-NET "GPIOLVC15<0>" LOC = E29;#Bank 15		Spare QDRII+ SA23
-NET "GPIOLVC15<1>" LOC = F29;#Bank 15		Spare QDRII+ SA22
-NET "GPIOLVC15<2>" LOC = C20;#Bank 23		Spare QDRII+ SA23
-NET "GPIOLVC15<3>" LOC = B20;#Bank 23		Spare QDRII+ SA22
+NET "GPIOLVC15<0>" LOC = A26;#Bank 15		Spare QDRII+ SA23
+NET "GPIOLVC15<1>" LOC = B27;#Bank 15		Spare QDRII+ SA22
+NET "GPIOLVC15<2>" LOC = D24;#Bank 23		Spare QDRII+ SA23
+NET "GPIOLVC15<3>" LOC = E24;#Bank 23		Spare QDRII+ SA22
 
 #
 #
@@ -1030,25 +934,11 @@ NET "ddr2_dq<68>" IOSTANDARD = SSTL18_II;
 NET "ddr2_dq<69>" IOSTANDARD = SSTL18_II;
 NET "ddr2_dq<70>" IOSTANDARD = SSTL18_II;
 NET "ddr2_dq<71>" IOSTANDARD = SSTL18_II;
-NET "ddr2_error" IOSTANDARD = LVCMOS18 | LOC = AP19;
-NET "ddr2_phy_init_done" IOSTANDARD = LVCMOS18 | LOC = AN19;
 NET "GPIOLVC15<0>" IOSTANDARD = LVCMOS15;
 NET "GPIOLVC15<1>" IOSTANDARD = LVCMOS15;
 NET "GPIOLVC15<2>" IOSTANDARD = LVCMOS15;
 NET "GPIOLVC15<3>" IOSTANDARD = LVCMOS15;
 NET "GPIOLVC18<4>" IOSTANDARD = LVCMOS18;
-NET "GPIOLVC18<7>" IOSTANDARD = LVCMOS18;
-NET "GPIOLVC18<10>" IOSTANDARD = LVCMOS18;
-NET "GPIOLVC18<11>" IOSTANDARD = LVCMOS18;
-NET "GPIOLVC18<12>" IOSTANDARD = LVCMOS18;
-NET "GPIOLVC18<13>" IOSTANDARD = LVCMOS18;
-NET "GPIOLVC18<14>" IOSTANDARD = LVCMOS18;
-NET "GPIOLVC18<15>" IOSTANDARD = LVCMOS18;
-NET "GPIOLVC18<16>" IOSTANDARD = LVCMOS18;
-NET "GPIOLVC18<17>" IOSTANDARD = LVCMOS18;
-NET "GPIOLVC18<18>" IOSTANDARD = LVCMOS18;
-NET "GPIOLVC18<19>" IOSTANDARD = LVCMOS18;
-NET "GPIOLVC18<20>" IOSTANDARD = LVCMOS18;
 NET "GPIOLVC33<1>" IOSTANDARD = LVCMOS33;
 NET "GPIOLVC33<2>" IOSTANDARD = LVCMOS33;
 NET "GPIOLVC33<3>" IOSTANDARD = LVCMOS33;
@@ -1330,37 +1220,36 @@ NET "zdok1_dp_p<34>" IOSTANDARD = LVDS_25;
 NET "zdok1_dp_p<35>" IOSTANDARD = LVDS_25;
 NET "zdok1_dp_p<36>" IOSTANDARD = LVDS_25;
 NET "zdok1_dp_p<37>" IOSTANDARD = LVDS_25;
-NET "ddr2_ck_0_n" IOSTANDARD = DIFF_SSTL18_II | LOC = AE24;
-NET "ddr2_ck_0_p" IOSTANDARD = DIFF_SSTL18_II | LOC = AD24;
-NET "ddr2_ck_1_n" IOSTANDARD = DIFF_SSTL18_II | LOC = AE31;
-NET "ddr2_ck_1_p" IOSTANDARD = DIFF_SSTL18_II | LOC = AD31;
-NET "ddr2_ck_2_n" IOSTANDARD = DIFF_SSTL18_II | LOC = AG30;
-NET "ddr2_ck_2_p" IOSTANDARD = DIFF_SSTL18_II | LOC = AH29;
-NET "DDR2_CKE_0" IOSTANDARD = SSTL18_I | LOC = AH30;
-NET "DDR2_CKE_1" IOSTANDARD = SSTL18_I | LOC = AK32;
-NET "DDR2_CKE_2" IOSTANDARD = SSTL18_I | LOC = AK33;
-NET "DDR2_CS_N_0" IOSTANDARD = SSTL18_I | LOC = AF30;
-NET "DDR2_CS_N_1" IOSTANDARD = SSTL18_I | LOC = AC30;
-NET "ddr2_dqs_0" IOSTANDARD = DIFF_SSTL18_II | LOC = AF33;
-NET "ddr2_dqs_1" IOSTANDARD = DIFF_SSTL18_II | LOC = AF34;
-NET "ddr2_dqs_2" IOSTANDARD = DIFF_SSTL18_II | LOC = AH34;
-NET "ddr2_dqs_3" IOSTANDARD = DIFF_SSTL18_II | LOC = Y28;
-NET "ddr2_dqs_4" IOSTANDARD = DIFF_SSTL18_II | LOC = AB31;
-NET "ddr2_dqs_5" IOSTANDARD = DIFF_SSTL18_II | LOC = AK26;
-NET "ddr2_dqs_6" IOSTANDARD = DIFF_SSTL18_II | LOC = AK29;
-NET "ddr2_dqs_7" IOSTANDARD = DIFF_SSTL18_II | LOC = AN25;
-NET "ddr2_dqs_8" IOSTANDARD = DIFF_SSTL18_II | LOC = AM26;
-NET "ddr2_dqs_n_0" IOSTANDARD = DIFF_SSTL18_II | LOC = AE33;
-NET "ddr2_dqs_n_1" IOSTANDARD = DIFF_SSTL18_II | LOC = AE34;
-NET "ddr2_dqs_n_2" IOSTANDARD = DIFF_SSTL18_II | LOC = AJ34;
-NET "ddr2_dqs_n_3" IOSTANDARD = DIFF_SSTL18_II | LOC = Y29;
-NET "ddr2_dqs_n_4" IOSTANDARD = DIFF_SSTL18_II | LOC = AA31;
-NET "ddr2_dqs_n_5" IOSTANDARD = DIFF_SSTL18_II | LOC = AJ27;
-NET "ddr2_dqs_n_6" IOSTANDARD = DIFF_SSTL18_II | LOC = AJ29;
-NET "ddr2_dqs_n_7" IOSTANDARD = DIFF_SSTL18_II | LOC = AM25;
-NET "ddr2_dqs_n_8" IOSTANDARD = DIFF_SSTL18_II | LOC = AL26;
-NET "DDR2_ODT_0" IOSTANDARD = SSTL18_I | LOC = AJ30;
-NET "DDR2_ODT_1" IOSTANDARD = SSTL18_I | LOC = AE32;
+NET "ddr2_ck_0_n" IOSTANDARD = DIFF_SSTL18_II | LOC = AF5;
+NET "ddr2_ck_0_p" IOSTANDARD = DIFF_SSTL18_II | LOC = AG5;
+NET "ddr2_ck_1_n" IOSTANDARD = DIFF_SSTL18_II | LOC = AL16;
+NET "ddr2_ck_1_p" IOSTANDARD = DIFF_SSTL18_II | LOC = AK16;
+NET "ddr2_ck_2_n" IOSTANDARD = DIFF_SSTL18_II | LOC = AH8;
+NET "ddr2_ck_2_p" IOSTANDARD = DIFF_SSTL18_II | LOC = AG8;
+NET "DDR2_CKE_0" IOSTANDARD = SSTL18_I | LOC = AL11;
+NET "DDR2_CKE_1" IOSTANDARD = SSTL18_I | LOC = AK12;
+NET "DDR2_CS_N_0" IOSTANDARD = SSTL18_I | LOC = AM21;
+NET "DDR2_CS_N_1" IOSTANDARD = SSTL18_I | LOC = AM18;
+NET "ddr2_dqs_0" IOSTANDARD = DIFF_SSTL18_II | LOC = AM26;
+NET "ddr2_dqs_1" IOSTANDARD = DIFF_SSTL18_II | LOC = AN25;
+NET "ddr2_dqs_2" IOSTANDARD = DIFF_SSTL18_II | LOC = AJ21;
+NET "ddr2_dqs_3" IOSTANDARD = DIFF_SSTL18_II | LOC = AL21;
+NET "ddr2_dqs_4" IOSTANDARD = DIFF_SSTL18_II | LOC = AD10;
+NET "ddr2_dqs_5" IOSTANDARD = DIFF_SSTL18_II | LOC = AK11;
+NET "ddr2_dqs_6" IOSTANDARD = DIFF_SSTL18_II | LOC = AE8;
+NET "ddr2_dqs_7" IOSTANDARD = DIFF_SSTL18_II | LOC = W7;
+NET "ddr2_dqs_8" IOSTANDARD = DIFF_SSTL18_II | LOC = AJ16;
+NET "ddr2_dqs_n_0" IOSTANDARD = DIFF_SSTL18_II | LOC = AL26;
+NET "ddr2_dqs_n_1" IOSTANDARD = DIFF_SSTL18_II | LOC = AM25;
+NET "ddr2_dqs_n_2" IOSTANDARD = DIFF_SSTL18_II | LOC = AJ20;
+NET "ddr2_dqs_n_3" IOSTANDARD = DIFF_SSTL18_II | LOC = AK21;
+NET "ddr2_dqs_n_4" IOSTANDARD = DIFF_SSTL18_II | LOC = AD11;
+NET "ddr2_dqs_n_5" IOSTANDARD = DIFF_SSTL18_II | LOC = AJ11;
+NET "ddr2_dqs_n_6" IOSTANDARD = DIFF_SSTL18_II | LOC = AD9;
+NET "ddr2_dqs_n_7" IOSTANDARD = DIFF_SSTL18_II | LOC = V7;
+NET "ddr2_dqs_n_8" IOSTANDARD = DIFF_SSTL18_II | LOC = AJ15;
+NET "DDR2_ODT_0" IOSTANDARD = SSTL18_I | LOC = AM20;
+NET "DDR2_ODT_1" IOSTANDARD = SSTL18_I | LOC = AN20;
 NET "gpio_clk0_N" IOSTANDARD = LVPECL_25 | LOC = H20;
 NET "gpio_clk0_P" IOSTANDARD = LVPECL_25 | LOC = H19;
 NET "gpio_clk1_N" LOC = G16;
@@ -1447,3 +1336,28 @@ NET "mgttx1_126_N" LOC = AN9;
 NET "mgttx1_126_P" LOC = AN10;
 NET "PER_CLK" IOSTANDARD = LVCMOS33 | LOC = AG17;
 NET "PER_INT" IOSTANDARD = LVCMOS33 | LOC = H12;
+NET "ddr2_par_in" IOSTANDARD = SSTL18_I | LOC = AN18;
+NET "ddr2_par_out" IOSTANDARD = SSTL18_I | LOC = AD7;
+NET "ddr2_scl" IOSTANDARD = LVCMOS18 | LOC = AP19;
+NET "ddr2_sda" IOSTANDARD = LVCMOS18 | LOC = AP20;
+NET "GPIOLVC15<4>" IOSTANDARD = LVCMOS15 | LOC = J10;
+NET "GPIOLVC15<5>" IOSTANDARD = LVCMOS15 | LOC = J9;
+NET "GPIOLVC15<6>" IOSTANDARD = LVCMOS15 | LOC = H7;
+NET "GPIOLVC15<7>" IOSTANDARD = LVCMOS15 | LOC = J7;
+NET "GPIOLVC18<0>" IOSTANDARD = LVCMOS18 | LOC = AP26;
+NET "GPIOLVC18<1>" IOSTANDARD = LVCMOS18 | LOC = AP25;
+NET "GPIOLVC18<2>" IOSTANDARD = LVCMOS18 | LOC = AL25;
+NET "GPIOLVC18<3>" IOSTANDARD = LVCMOS18 | LOC = AL24;
+NET "GPIOLVC18<5>" IOSTANDARD = LVCMOS18 | LOC = AP21;
+NET "GPIOLVC25<0>" IOSTANDARD = LVCMOS25 | LOC = N34;
+NET "GPIOLVC25<1>" IOSTANDARD = LVCMOS25 | LOC = P34;
+NET "GPIOLVC25<2>" IOSTANDARD = LVCMOS25 | LOC = M33;
+NET "GPIOLVC25<3>" IOSTANDARD = LVCMOS25 | LOC = N33;
+NET "GPIOLVC25<4>" IOSTANDARD = LVCMOS25 | LOC = L33;
+NET "GPIOLVC25<5>" IOSTANDARD = LVCMOS25 | LOC = M32;
+NET "GPIOLVC25<6>" IOSTANDARD = LVCMOS25 | LOC = N32;
+NET "GPIOLVC25<7>" IOSTANDARD = LVCMOS25 | LOC = P32;
+NET "GPIOLVC25<8>" IOSTANDARD = LVCMOS25 | LOC = R33;
+NET "GPIOLVC25<9>" IOSTANDARD = LVCMOS25 | LOC = R32;
+NET "GPIOLVC25<10>" IOSTANDARD = LVCMOS25 | LOC = P31;
+NET "GPIOLVC25<11>" IOSTANDARD = LVCMOS25 | LOC = P30;

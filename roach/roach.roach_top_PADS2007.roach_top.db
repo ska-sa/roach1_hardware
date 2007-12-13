@@ -5,7 +5,7 @@
 	(config_properties
 		(attributes
 			(attval "PcbConfigName" "D:\ROACH\elec\roach\roach_pcb.cfg")
-			(attval "CnsFile" ".\pads2007.cns")
+			(attval "CnsFile" "D:\ROACH\elec\roach\pads2007.cns")
 			(attval "BeAdapter" "PADS2007")
 			(attval "FeAdapter" "DxDesigner")
 			(attval "SYSCONFIG" "pcbfwd")
@@ -26,7 +26,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1197553066"))
+		(file_ext "roach_top.pxr" "1197562808"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -5246,18 +5246,18 @@
 			(pin 1  3 "10PIN_IOHEADER__10PIN_IOHEADER_1" 0 "P1" 0))
 		(part "5VSX95T")
 		(logical_part_mapping "5VSX95T"
-			(comp "U15" "U3"))
+			(comp "U15"))
 		(logical_part "5VSX95T"
 			(slots
 				(slot "5VSX95T__5VSX95T_1"
 					(attributes
 						(attval "REFDES" "U?")
 						(attval "PKG_TYPE" "BGA1136C100P34X34_3500X3500X340")
+						(attval "Hyperlynx.Model File" "VIRTEX5.IBS")
+						(attval "Hyperlynx.Model" "FF1136")
 						(attval "HETERO"
  "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
-						(attval "DEVICE" "5VSX95T")
-						(attval "Hyperlynx.Model File" "VIRTEX5.IBS")
-						(attval "Hyperlynx.Model" "FF1136"))))
+						(attval "DEVICE" "5VSX95T"))))
 			(pin U5 2 "power_gate140" 0 "NC" 0)
 			(pin U4 2 "power_gate141" 0 "NC" 0)
 			(pin M9  5 "5VSX95T__5VSX95T_1" 0 "1V5_12" 0)
@@ -9502,6 +9502,8 @@
 				(comp_pin "U4" 0.0 0.0 "NC")
 				(comp_pin "U5" 0.0 0.0 "NC"))
 			(attributes
+				(attval "IBIS" "FF1136")
+				(attval "Hyperlynx.Model File" "VIRTEX5.IBS")
 				(attval "DEVICE" "5VSX95T")
 				(attval "REFDES" "U15")))
 		(component "SOP40P640X120-16N"
@@ -9701,1149 +9703,6 @@
 			(attributes
 				(attval "DEVICE" "ADCMP605")
 				(attval "REFDES" "U4")))
-		(component "BGA1136C100P34X34_3500X3500X340"
-			(place "U3" 0.0 0.0 top 0.0
-				(comp_pin "M9" 0.0 0.0 "BI")
-				(comp_pin "N6" 0.0 0.0 "BI")
-				(comp_pin "T7" 0.0 0.0 "BI")
-				(comp_pin "E10" 0.0 0.0 "BI")
-				(comp_pin "H11" 0.0 0.0 "BI")
-				(comp_pin "J8" 0.0 0.0 "BI")
-				(comp_pin "K9" 0.0 0.0 "BI")
-				(comp_pin "K8" 0.0 0.0 "BI")
-				(comp_pin "E9" 0.0 0.0 "BI")
-				(comp_pin "R11" 0.0 0.0 "BI")
-				(comp_pin "J6" 0.0 0.0 "BI")
-				(comp_pin "U7" 0.0 0.0 "BI")
-				(comp_pin "N7" 0.0 0.0 "BI")
-				(comp_pin "M7" 0.0 0.0 "BI")
-				(comp_pin "G7" 0.0 0.0 "BI")
-				(comp_pin "R8" 0.0 0.0 "BI")
-				(comp_pin "N8" 0.0 0.0 "BI")
-				(comp_pin "T10" 0.0 0.0 "BI")
-				(comp_pin "T11" 0.0 0.0 "BI")
-				(comp_pin "T9" 0.0 0.0 "BI")
-				(comp_pin "T8" 0.0 0.0 "BI")
-				(comp_pin "E7" 0.0 0.0 "BI")
-				(comp_pin "K7" 0.0 0.0 "BI")
-				(comp_pin "P7" 0.0 0.0 "BI")
-				(comp_pin "R7" 0.0 0.0 "BI")
-				(comp_pin "E6" 0.0 0.0 "BI")
-				(comp_pin "P6" 0.0 0.0 "BI")
-				(comp_pin "G5" 0.0 0.0 "BI")
-				(comp_pin "H5" 0.0 0.0 "BI")
-				(comp_pin "F11" 0.0 0.0 "BI")
-				(comp_pin "E11" 0.0 0.0 "BI")
-				(comp_pin "F8" 0.0 0.0 "BI")
-				(comp_pin "E8" 0.0 0.0 "BI")
-				(comp_pin "L9" 0.0 0.0 "BI")
-				(comp_pin "F9" 0.0 0.0 "BI")
-				(comp_pin "M10" 0.0 0.0 "BI")
-				(comp_pin "G10" 0.0 0.0 "BI")
-				(comp_pin "J11" 0.0 0.0 "BI")
-				(comp_pin "G11" 0.0 0.0 "BI")
-				(comp_pin "K11" 0.0 0.0 "BI")
-				(comp_pin "F10" 0.0 0.0 "BI")
-				(comp_pin "H10" 0.0 0.0 "BI")
-				(comp_pin "N10" 0.0 0.0 "BI")
-				(comp_pin "H9" 0.0 0.0 "BI")
-				(comp_pin "N9" 0.0 0.0 "BI")
-				(comp_pin "G8" 0.0 0.0 "BI")
-				(comp_pin "H8" 0.0 0.0 "BI")
-				(comp_pin "M8" 0.0 0.0 "BI")
-				(comp_pin "F5" 0.0 0.0 "BI")
-				(comp_pin "N5" 0.0 0.0 "BI")
-				(comp_pin "D12" 0.0 0.0 "BI")
-				(comp_pin "C12" 0.0 0.0 "BI")
-				(comp_pin "B12" 0.0 0.0 "BI")
-				(comp_pin "G13" 0.0 0.0 "BI")
-				(comp_pin "F13" 0.0 0.0 "BI")
-				(comp_pin "E13" 0.0 0.0 "BI")
-				(comp_pin "C13" 0.0 0.0 "BI")
-				(comp_pin "B13" 0.0 0.0 "BI")
-				(comp_pin "A13" 0.0 0.0 "BI")
-				(comp_pin "R6" 0.0 0.0 "BI")
-				(comp_pin "T6" 0.0 0.0 "BI")
-				(comp_pin "P5" 0.0 0.0 "BI")
-				(comp_pin "L4" 0.0 0.0 "BI")
-				(comp_pin "M6" 0.0 0.0 "BI")
-				(comp_pin "K6" 0.0 0.0 "BI")
-				(comp_pin "G6" 0.0 0.0 "BI")
-				(comp_pin "F6" 0.0 0.0 "BI")
-				(comp_pin "U10" 0.0 0.0 "BI")
-				(comp_pin "G12" 0.0 0.0 "BI")
-				(comp_pin "D11" 0.0 0.0 "BI")
-				(comp_pin "E12" 0.0 0.0 "BI")
-				(comp_pin "M5" 0.0 0.0 "BI")
-				(comp_pin "L6" 0.0 0.0 "BI")
-				(comp_pin "J5" 0.0 0.0 "BI")
-				(comp_pin "D10" 0.0 0.0 "BI")
-				(comp_pin "L5" 0.0 0.0 "BI")
-				(comp_pin "L8" 0.0 0.0 "BI")
-				(comp_pin "P10" 0.0 0.0 "BI")
-				(comp_pin "R9" 0.0 0.0 "BI")
-				(comp_pin "L10" 0.0 0.0 "BI")
-				(comp_pin "P9" 0.0 0.0 "BI")
-				(comp_pin "L11" 0.0 0.0 "BI")
-				(comp_pin "C26" 0.0 0.0 "BI")
-				(comp_pin "F27" 0.0 0.0 "BI")
-				(comp_pin "G24" 0.0 0.0 "BI")
-				(comp_pin "B19" 0.0 0.0 "BI")
-				(comp_pin "C16" 0.0 0.0 "BI")
-				(comp_pin "F17" 0.0 0.0 "BI")
-				(comp_pin "D25" 0.0 0.0 "BI")
-				(comp_pin "C24" 0.0 0.0 "BI")
-				(comp_pin "D20" 0.0 0.0 "BI")
-				(comp_pin "F24" 0.0 0.0 "BI")
-				(comp_pin "A16" 0.0 0.0 "BI")
-				(comp_pin "C17" 0.0 0.0 "BI")
-				(comp_pin "E19" 0.0 0.0 "BI")
-				(comp_pin "G20" 0.0 0.0 "BI")
-				(comp_pin "G21" 0.0 0.0 "BI")
-				(comp_pin "D21" 0.0 0.0 "BI")
-				(comp_pin "E22" 0.0 0.0 "BI")
-				(comp_pin "F23" 0.0 0.0 "BI")
-				(comp_pin "E23" 0.0 0.0 "BI")
-				(comp_pin "D22" 0.0 0.0 "BI")
-				(comp_pin "E21" 0.0 0.0 "BI")
-				(comp_pin "F21" 0.0 0.0 "BI")
-				(comp_pin "F20" 0.0 0.0 "BI")
-				(comp_pin "F18" 0.0 0.0 "BI")
-				(comp_pin "B17" 0.0 0.0 "BI")
-				(comp_pin "D17" 0.0 0.0 "BI")
-				(comp_pin "F16" 0.0 0.0 "BI")
-				(comp_pin "E14" 0.0 0.0 "BI")
-				(comp_pin "D14" 0.0 0.0 "BI")
-				(comp_pin "A25" 0.0 0.0 "BI")
-				(comp_pin "D26" 0.0 0.0 "BI")
-				(comp_pin "A19" 0.0 0.0 "BI")
-				(comp_pin "C20" 0.0 0.0 "BI")
-				(comp_pin "A20" 0.0 0.0 "BI")
-				(comp_pin "A21" 0.0 0.0 "BI")
-				(comp_pin "B22" 0.0 0.0 "BI")
-				(comp_pin "B23" 0.0 0.0 "BI")
-				(comp_pin "C25" 0.0 0.0 "BI")
-				(comp_pin "B25" 0.0 0.0 "BI")
-				(comp_pin "A24" 0.0 0.0 "BI")
-				(comp_pin "A23" 0.0 0.0 "BI")
-				(comp_pin "C23" 0.0 0.0 "BI")
-				(comp_pin "C22" 0.0 0.0 "BI")
-				(comp_pin "B21" 0.0 0.0 "BI")
-				(comp_pin "B20" 0.0 0.0 "BI")
-				(comp_pin "C19" 0.0 0.0 "BI")
-				(comp_pin "B18" 0.0 0.0 "BI")
-				(comp_pin "C18" 0.0 0.0 "BI")
-				(comp_pin "C15" 0.0 0.0 "BI")
-				(comp_pin "A14" 0.0 0.0 "BI")
-				(comp_pin "D29" 0.0 0.0 "BI")
-				(comp_pin "A29" 0.0 0.0 "BI")
-				(comp_pin "D30" 0.0 0.0 "BI")
-				(comp_pin "C30" 0.0 0.0 "BI")
-				(comp_pin "B30" 0.0 0.0 "BI")
-				(comp_pin "A30" 0.0 0.0 "BI")
-				(comp_pin "D31" 0.0 0.0 "BI")
-				(comp_pin "B31" 0.0 0.0 "BI")
-				(comp_pin "A31" 0.0 0.0 "BI")
-				(comp_pin "A15" 0.0 0.0 "BI")
-				(comp_pin "B15" 0.0 0.0 "BI")
-				(comp_pin "C14" 0.0 0.0 "BI")
-				(comp_pin "F14" 0.0 0.0 "BI")
-				(comp_pin "E16" 0.0 0.0 "BI")
-				(comp_pin "B16" 0.0 0.0 "BI")
-				(comp_pin "G17" 0.0 0.0 "BI")
-				(comp_pin "E17" 0.0 0.0 "BI")
-				(comp_pin "B26" 0.0 0.0 "BI")
-				(comp_pin "D27" 0.0 0.0 "BI")
-				(comp_pin "C27" 0.0 0.0 "BI")
-				(comp_pin "C28" 0.0 0.0 "BI")
-				(comp_pin "F15" 0.0 0.0 "BI")
-				(comp_pin "D16" 0.0 0.0 "BI")
-				(comp_pin "D15" 0.0 0.0 "BI")
-				(comp_pin "A18" 0.0 0.0 "BI")
-				(comp_pin "A28" 0.0 0.0 "BI")
-				(comp_pin "F19" 0.0 0.0 "BI")
-				(comp_pin "G18" 0.0 0.0 "BI")
-				(comp_pin "C29" 0.0 0.0 "BI")
-				(comp_pin "E18" 0.0 0.0 "BI")
-				(comp_pin "B28" 0.0 0.0 "BI")
-				(comp_pin "D19" 0.0 0.0 "BI")
-				(comp_pin "A26" 0.0 0.0 "BI")
-				(comp_pin "B27" 0.0 0.0 "BI")
-				(comp_pin "D24" 0.0 0.0 "BI")
-				(comp_pin "E24" 0.0 0.0 "BI")
-				(comp_pin "J10" 0.0 0.0 "BI")
-				(comp_pin "J9" 0.0 0.0 "BI")
-				(comp_pin "H7" 0.0 0.0 "BI")
-				(comp_pin "J7" 0.0 0.0 "BI")
-				(comp_pin "AP26" 0.0 0.0 "BI")
-				(comp_pin "AP25" 0.0 0.0 "BI")
-				(comp_pin "AL25" 0.0 0.0 "BI")
-				(comp_pin "AL24" 0.0 0.0 "BI")
-				(comp_pin "AP22" 0.0 0.0 "BI")
-				(comp_pin "AP21" 0.0 0.0 "BI")
-				(comp_pin "N34" 0.0 0.0 "OUT")
-				(comp_pin "P31" 0.0 0.0 "OUT")
-				(comp_pin "P30" 0.0 0.0 "OUT")
-				(comp_pin "P34" 0.0 0.0 "OUT")
-				(comp_pin "M33" 0.0 0.0 "OUT")
-				(comp_pin "N33" 0.0 0.0 "OUT")
-				(comp_pin "L33" 0.0 0.0 "OUT")
-				(comp_pin "M32" 0.0 0.0 "OUT")
-				(comp_pin "N32" 0.0 0.0 "OUT")
-				(comp_pin "P32" 0.0 0.0 "OUT")
-				(comp_pin "R33" 0.0 0.0 "OUT")
-				(comp_pin "R32" 0.0 0.0 "OUT")
-				(comp_pin "G23" 0.0 0.0 "BI")
-				(comp_pin "H23" 0.0 0.0 "BI")
-				(comp_pin "K13" 0.0 0.0 "BI")
-				(comp_pin "K12" 0.0 0.0 "BI")
-				(comp_pin "AM9" 0.0 0.0 "BI")
-				(comp_pin "AL8" 0.0 0.0 "BI")
-				(comp_pin "AM8" 0.0 0.0 "BI")
-				(comp_pin "AM6" 0.0 0.0 "BI")
-				(comp_pin "AM10" 0.0 0.0 "BI")
-				(comp_pin "AM5" 0.0 0.0 "BI")
-				(comp_pin "AP7" 0.0 0.0 "IN")
-				(comp_pin "AP6" 0.0 0.0 "IN")
-				(comp_pin "AP8" 0.0 0.0 "IN")
-				(comp_pin "AP9" 0.0 0.0 "IN")
-				(comp_pin "AN6" 0.0 0.0 "OUT")
-				(comp_pin "AN5" 0.0 0.0 "OUT")
-				(comp_pin "AN9" 0.0 0.0 "OUT")
-				(comp_pin "AN10" 0.0 0.0 "OUT")
-				(comp_pin "AM7" 0.0 0.0 "IN")
-				(comp_pin "AL7" 0.0 0.0 "IN")
-				(comp_pin "AM4" 0.0 0.0 "BI")
-				(comp_pin "AJ4" 0.0 0.0 "BI")
-				(comp_pin "AK5" 0.0 0.0 "BI")
-				(comp_pin "AL3" 0.0 0.0 "BI")
-				(comp_pin "AK3" 0.0 0.0 "BI")
-				(comp_pin "AM3" 0.0 0.0 "BI")
-				(comp_pin "AM1" 0.0 0.0 "IN")
-				(comp_pin "AL1" 0.0 0.0 "IN")
-				(comp_pin "AP2" 0.0 0.0 "IN")
-				(comp_pin "AP3" 0.0 0.0 "IN")
-				(comp_pin "AL2" 0.0 0.0 "OUT")
-				(comp_pin "AK2" 0.0 0.0 "OUT")
-				(comp_pin "AN3" 0.0 0.0 "OUT")
-				(comp_pin "AN4" 0.0 0.0 "OUT")
-				(comp_pin "AL4" 0.0 0.0 "IN")
-				(comp_pin "AL5" 0.0 0.0 "IN")
-				(comp_pin "AH3" 0.0 0.0 "BI")
-				(comp_pin "AG3" 0.0 0.0 "BI")
-				(comp_pin "AG4" 0.0 0.0 "BI")
-				(comp_pin "AE3" 0.0 0.0 "BI")
-				(comp_pin "AD3" 0.0 0.0 "BI")
-				(comp_pin "AJ3" 0.0 0.0 "BI")
-				(comp_pin "AF1" 0.0 0.0 "IN")
-				(comp_pin "AE1" 0.0 0.0 "IN")
-				(comp_pin "AG1" 0.0 0.0 "IN")
-				(comp_pin "AH1" 0.0 0.0 "IN")
-				(comp_pin "AE2" 0.0 0.0 "OUT")
-				(comp_pin "AD2" 0.0 0.0 "OUT")
-				(comp_pin "AH2" 0.0 0.0 "OUT")
-				(comp_pin "AJ2" 0.0 0.0 "OUT")
-				(comp_pin "AF3" 0.0 0.0 "IN")
-				(comp_pin "AF4" 0.0 0.0 "IN")
-				(comp_pin "AB3" 0.0 0.0 "BI")
-				(comp_pin "AA3" 0.0 0.0 "BI")
-				(comp_pin "AA4" 0.0 0.0 "BI")
-				(comp_pin "W3" 0.0 0.0 "BI")
-				(comp_pin "AC3" 0.0 0.0 "BI")
-				(comp_pin "V3" 0.0 0.0 "BI")
-				(comp_pin "Y1" 0.0 0.0 "IN")
-				(comp_pin "W1" 0.0 0.0 "IN")
-				(comp_pin "AA1" 0.0 0.0 "IN")
-				(comp_pin "AB1" 0.0 0.0 "IN")
-				(comp_pin "W2" 0.0 0.0 "OUT")
-				(comp_pin "V2" 0.0 0.0 "OUT")
-				(comp_pin "AB2" 0.0 0.0 "OUT")
-				(comp_pin "AC2" 0.0 0.0 "OUT")
-				(comp_pin "Y3" 0.0 0.0 "IN")
-				(comp_pin "Y4" 0.0 0.0 "IN")
-				(comp_pin "T18" 0.0 0.0 "BI")
-				(comp_pin "T17" 0.0 0.0 "BI")
-				(comp_pin "W17" 0.0 0.0 "BI")
-				(comp_pin "W18" 0.0 0.0 "BI")
-				(comp_pin "V17" 0.0 0.0 "BI")
-				(comp_pin "U18" 0.0 0.0 "BI")
-				(comp_pin "U17" 0.0 0.0 "BI")
-				(comp_pin "V18" 0.0 0.0 "BI")
-				(comp_pin "D23" 0.0 0.0 "BI")
-				(comp_pin "E20" 0.0 0.0 "BI")
-				(comp_pin "L18" 0.0 0.0 "BI")
-				(comp_pin "K17" 0.0 0.0 "BI")
-				(comp_pin "H20" 0.0 0.0 "IN")
-				(comp_pin "H19" 0.0 0.0 "IN")
-				(comp_pin "G16" 0.0 0.0 "IN")
-				(comp_pin "G15" 0.0 0.0 "IN")
-				(comp_pin "H18" 0.0 0.0 "BI")
-				(comp_pin "H17" 0.0 0.0 "BI")
-				(comp_pin "C6" 0.0 0.0 "BI")
-				(comp_pin "C7" 0.0 0.0 "BI")
-				(comp_pin "D7" 0.0 0.0 "BI")
-				(comp_pin "C9" 0.0 0.0 "BI")
-				(comp_pin "C10" 0.0 0.0 "BI")
-				(comp_pin "C5" 0.0 0.0 "BI")
-				(comp_pin "A8" 0.0 0.0 "IN")
-				(comp_pin "A9" 0.0 0.0 "IN")
-				(comp_pin "A7" 0.0 0.0 "IN")
-				(comp_pin "A6" 0.0 0.0 "IN")
-				(comp_pin "B9" 0.0 0.0 "OUT")
-				(comp_pin "B10" 0.0 0.0 "OUT")
-				(comp_pin "B6" 0.0 0.0 "OUT")
-				(comp_pin "B5" 0.0 0.0 "OUT")
-				(comp_pin "C8" 0.0 0.0 "IN")
-				(comp_pin "D8" 0.0 0.0 "IN")
-				(comp_pin "T3" 0.0 0.0 "BI")
-				(comp_pin "R3" 0.0 0.0 "BI")
-				(comp_pin "R4" 0.0 0.0 "BI")
-				(comp_pin "N3" 0.0 0.0 "BI")
-				(comp_pin "M3" 0.0 0.0 "BI")
-				(comp_pin "U3" 0.0 0.0 "BI")
-				(comp_pin "V4" 0.0 0.0 "IN")
-				(comp_pin "P1" 0.0 0.0 "IN")
-				(comp_pin "N1" 0.0 0.0 "IN")
-				(comp_pin "R1" 0.0 0.0 "IN")
-				(comp_pin "T1" 0.0 0.0 "IN")
-				(comp_pin "N2" 0.0 0.0 "OUT")
-				(comp_pin "M2" 0.0 0.0 "OUT")
-				(comp_pin "T2" 0.0 0.0 "OUT")
-				(comp_pin "U2" 0.0 0.0 "OUT")
-				(comp_pin "P3" 0.0 0.0 "IN")
-				(comp_pin "P4" 0.0 0.0 "IN")
-				(comp_pin "V5" 0.0 0.0 "BI")
-				(comp_pin "D3" 0.0 0.0 "BI")
-				(comp_pin "D5" 0.0 0.0 "BI")
-				(comp_pin "F4" 0.0 0.0 "BI")
-				(comp_pin "C3" 0.0 0.0 "BI")
-				(comp_pin "C4" 0.0 0.0 "BI")
-				(comp_pin "E3" 0.0 0.0 "BI")
-				(comp_pin "A2" 0.0 0.0 "IN")
-				(comp_pin "A3" 0.0 0.0 "IN")
-				(comp_pin "C1" 0.0 0.0 "IN")
-				(comp_pin "D1" 0.0 0.0 "IN")
-				(comp_pin "B3" 0.0 0.0 "OUT")
-				(comp_pin "B4" 0.0 0.0 "OUT")
-				(comp_pin "D2" 0.0 0.0 "OUT")
-				(comp_pin "E2" 0.0 0.0 "OUT")
-				(comp_pin "D4" 0.0 0.0 "IN")
-				(comp_pin "E4" 0.0 0.0 "IN")
-				(comp_pin "K3" 0.0 0.0 "BI")
-				(comp_pin "J3" 0.0 0.0 "BI")
-				(comp_pin "J4" 0.0 0.0 "BI")
-				(comp_pin "G3" 0.0 0.0 "BI")
-				(comp_pin "F3" 0.0 0.0 "BI")
-				(comp_pin "L3" 0.0 0.0 "BI")
-				(comp_pin "H1" 0.0 0.0 "IN")
-				(comp_pin "G1" 0.0 0.0 "IN")
-				(comp_pin "J1" 0.0 0.0 "IN")
-				(comp_pin "K1" 0.0 0.0 "IN")
-				(comp_pin "G2" 0.0 0.0 "OUT")
-				(comp_pin "F2" 0.0 0.0 "OUT")
-				(comp_pin "K2" 0.0 0.0 "OUT")
-				(comp_pin "L2" 0.0 0.0 "OUT")
-				(comp_pin "H3" 0.0 0.0 "IN")
-				(comp_pin "H4" 0.0 0.0 "IN")
-				(comp_pin "AB11" 0.0 0.0 "BI")
-				(comp_pin "AC12" 0.0 0.0 "BI")
-				(comp_pin "V23" 0.0 0.0 "BI")
-				(comp_pin "Y23" 0.0 0.0 "BI")
-				(comp_pin "L12" 0.0 0.0 "BI")
-				(comp_pin "M11" 0.0 0.0 "BI")
-				(comp_pin "M21" 0.0 0.0 "BI")
-				(comp_pin "P11" 0.0 0.0 "BI")
-				(comp_pin "P23" 0.0 0.0 "BI")
-				(comp_pin "T23" 0.0 0.0 "BI")
-				(comp_pin "U24" 0.0 0.0 "BI")
-				(comp_pin "V11" 0.0 0.0 "BI")
-				(comp_pin "AA12" 0.0 0.0 "BI")
-				(comp_pin "AA14" 0.0 0.0 "BI")
-				(comp_pin "AC18" 0.0 0.0 "BI")
-				(comp_pin "AC20" 0.0 0.0 "BI")
-				(comp_pin "AD13" 0.0 0.0 "BI")
-				(comp_pin "AD17" 0.0 0.0 "BI")
-				(comp_pin "M13" 0.0 0.0 "BI")
-				(comp_pin "M17" 0.0 0.0 "BI")
-				(comp_pin "M19" 0.0 0.0 "BI")
-				(comp_pin "N12" 0.0 0.0 "BI")
-				(comp_pin "N16" 0.0 0.0 "BI")
-				(comp_pin "N18" 0.0 0.0 "BI")
-				(comp_pin "AA16" 0.0 0.0 "BI")
-				(comp_pin "N20" 0.0 0.0 "BI")
-				(comp_pin "P13" 0.0 0.0 "BI")
-				(comp_pin "P17" 0.0 0.0 "BI")
-				(comp_pin "P19" 0.0 0.0 "BI")
-				(comp_pin "P21" 0.0 0.0 "BI")
-				(comp_pin "R12" 0.0 0.0 "BI")
-				(comp_pin "R14" 0.0 0.0 "BI")
-				(comp_pin "R16" 0.0 0.0 "BI")
-				(comp_pin "R18" 0.0 0.0 "BI")
-				(comp_pin "R20" 0.0 0.0 "BI")
-				(comp_pin "AA18" 0.0 0.0 "BI")
-				(comp_pin "R22" 0.0 0.0 "BI")
-				(comp_pin "T13" 0.0 0.0 "BI")
-				(comp_pin "T15" 0.0 0.0 "BI")
-				(comp_pin "T19" 0.0 0.0 "BI")
-				(comp_pin "T21" 0.0 0.0 "BI")
-				(comp_pin "U12" 0.0 0.0 "BI")
-				(comp_pin "U14" 0.0 0.0 "BI")
-				(comp_pin "U16" 0.0 0.0 "BI")
-				(comp_pin "U20" 0.0 0.0 "BI")
-				(comp_pin "U22" 0.0 0.0 "BI")
-				(comp_pin "AA20" 0.0 0.0 "BI")
-				(comp_pin "V13" 0.0 0.0 "BI")
-				(comp_pin "V15" 0.0 0.0 "BI")
-				(comp_pin "V19" 0.0 0.0 "BI")
-				(comp_pin "V21" 0.0 0.0 "BI")
-				(comp_pin "W12" 0.0 0.0 "BI")
-				(comp_pin "W14" 0.0 0.0 "BI")
-				(comp_pin "W16" 0.0 0.0 "BI")
-				(comp_pin "W20" 0.0 0.0 "BI")
-				(comp_pin "W22" 0.0 0.0 "BI")
-				(comp_pin "Y13" 0.0 0.0 "BI")
-				(comp_pin "AB13" 0.0 0.0 "BI")
-				(comp_pin "Y15" 0.0 0.0 "BI")
-				(comp_pin "Y17" 0.0 0.0 "BI")
-				(comp_pin "Y19" 0.0 0.0 "BI")
-				(comp_pin "Y21" 0.0 0.0 "BI")
-				(comp_pin "AB17" 0.0 0.0 "BI")
-				(comp_pin "AB19" 0.0 0.0 "BI")
-				(comp_pin "AB21" 0.0 0.0 "BI")
-				(comp_pin "AC16" 0.0 0.0 "BI")
-				(comp_pin "A11" 0.0 0.0 "BI")
-				(comp_pin "A12" 0.0 0.0 "BI")
-				(comp_pin "AA19" 0.0 0.0 "BI")
-				(comp_pin "C31" 0.0 0.0 "BI")
-				(comp_pin "D18" 0.0 0.0 "BI")
-				(comp_pin "D28" 0.0 0.0 "BI")
-				(comp_pin "D33" 0.0 0.0 "BI")
-				(comp_pin "D6" 0.0 0.0 "BI")
-				(comp_pin "D9" 0.0 0.0 "BI")
-				(comp_pin "E15" 0.0 0.0 "BI")
-				(comp_pin "E25" 0.0 0.0 "BI")
-				(comp_pin "E5" 0.0 0.0 "BI")
-				(comp_pin "F12" 0.0 0.0 "BI")
-				(comp_pin "AA2" 0.0 0.0 "BI")
-				(comp_pin "F22" 0.0 0.0 "BI")
-				(comp_pin "F32" 0.0 0.0 "BI")
-				(comp_pin "F7" 0.0 0.0 "BI")
-				(comp_pin "G19" 0.0 0.0 "BI")
-				(comp_pin "G29" 0.0 0.0 "BI")
-				(comp_pin "G34" 0.0 0.0 "BI")
-				(comp_pin "G4" 0.0 0.0 "BI")
-				(comp_pin "G9" 0.0 0.0 "BI")
-				(comp_pin "H16" 0.0 0.0 "BI")
-				(comp_pin "H2" 0.0 0.0 "BI")
-				(comp_pin "AA21" 0.0 0.0 "BI")
-				(comp_pin "H21" 0.0 0.0 "BI")
-				(comp_pin "H26" 0.0 0.0 "BI")
-				(comp_pin "H6" 0.0 0.0 "BI")
-				(comp_pin "J13" 0.0 0.0 "BI")
-				(comp_pin "J18" 0.0 0.0 "BI")
-				(comp_pin "J2" 0.0 0.0 "BI")
-				(comp_pin "J23" 0.0 0.0 "BI")
-				(comp_pin "J33" 0.0 0.0 "BI")
-				(comp_pin "K10" 0.0 0.0 "BI")
-				(comp_pin "K15" 0.0 0.0 "BI")
-				(comp_pin "AA23" 0.0 0.0 "BI")
-				(comp_pin "K20" 0.0 0.0 "BI")
-				(comp_pin "K25" 0.0 0.0 "BI")
-				(comp_pin "K30" 0.0 0.0 "BI")
-				(comp_pin "K4" 0.0 0.0 "BI")
-				(comp_pin "K5" 0.0 0.0 "BI")
-				(comp_pin "L13" 0.0 0.0 "BI")
-				(comp_pin "L17" 0.0 0.0 "BI")
-				(comp_pin "L22" 0.0 0.0 "BI")
-				(comp_pin "L27" 0.0 0.0 "BI")
-				(comp_pin "L7" 0.0 0.0 "BI")
-				(comp_pin "AA27" 0.0 0.0 "BI")
-				(comp_pin "M12" 0.0 0.0 "BI")
-				(comp_pin "M14" 0.0 0.0 "BI")
-				(comp_pin "M16" 0.0 0.0 "BI")
-				(comp_pin "M18" 0.0 0.0 "BI")
-				(comp_pin "M20" 0.0 0.0 "BI")
-				(comp_pin "M24" 0.0 0.0 "BI")
-				(comp_pin "M34" 0.0 0.0 "BI")
-				(comp_pin "M4" 0.0 0.0 "BI")
-				(comp_pin "N11" 0.0 0.0 "BI")
-				(comp_pin "N13" 0.0 0.0 "BI")
-				(comp_pin "AA7" 0.0 0.0 "BI")
-				(comp_pin "N17" 0.0 0.0 "BI")
-				(comp_pin "N19" 0.0 0.0 "BI")
-				(comp_pin "N21" 0.0 0.0 "BI")
-				(comp_pin "N26" 0.0 0.0 "BI")
-				(comp_pin "N31" 0.0 0.0 "BI")
-				(comp_pin "N4" 0.0 0.0 "BI")
-				(comp_pin "P12" 0.0 0.0 "BI")
-				(comp_pin "P14" 0.0 0.0 "BI")
-				(comp_pin "P16" 0.0 0.0 "BI")
-				(comp_pin "P18" 0.0 0.0 "BI")
-				(comp_pin "AB12" 0.0 0.0 "BI")
-				(comp_pin "P2" 0.0 0.0 "BI")
-				(comp_pin "P20" 0.0 0.0 "BI")
-				(comp_pin "P22" 0.0 0.0 "BI")
-				(comp_pin "P28" 0.0 0.0 "BI")
-				(comp_pin "P8" 0.0 0.0 "BI")
-				(comp_pin "R10" 0.0 0.0 "BI")
-				(comp_pin "R13" 0.0 0.0 "BI")
-				(comp_pin "R15" 0.0 0.0 "BI")
-				(comp_pin "R17" 0.0 0.0 "BI")
-				(comp_pin "R19" 0.0 0.0 "BI")
-				(comp_pin "AB14" 0.0 0.0 "BI")
-				(comp_pin "R2" 0.0 0.0 "BI")
-				(comp_pin "R21" 0.0 0.0 "BI")
-				(comp_pin "R23" 0.0 0.0 "BI")
-				(comp_pin "R25" 0.0 0.0 "BI")
-				(comp_pin "R5" 0.0 0.0 "BI")
-				(comp_pin "T12" 0.0 0.0 "BI")
-				(comp_pin "T14" 0.0 0.0 "BI")
-				(comp_pin "T16" 0.0 0.0 "BI")
-				(comp_pin "T20" 0.0 0.0 "BI")
-				(comp_pin "T22" 0.0 0.0 "BI")
-				(comp_pin "AB16" 0.0 0.0 "BI")
-				(comp_pin "T32" 0.0 0.0 "BI")
-				(comp_pin "T4" 0.0 0.0 "BI")
-				(comp_pin "T5" 0.0 0.0 "BI")
-				(comp_pin "U11" 0.0 0.0 "BI")
-				(comp_pin "U13" 0.0 0.0 "BI")
-				(comp_pin "U15" 0.0 0.0 "BI")
-				(comp_pin "U19" 0.0 0.0 "BI")
-				(comp_pin "U21" 0.0 0.0 "BI")
-				(comp_pin "U23" 0.0 0.0 "BI")
-				(comp_pin "U29" 0.0 0.0 "BI")
-				(comp_pin "AB18" 0.0 0.0 "BI")
-				(comp_pin "U34" 0.0 0.0 "BI")
-				(comp_pin "U6" 0.0 0.0 "BI")
-				(comp_pin "U9" 0.0 0.0 "BI")
-				(comp_pin "V12" 0.0 0.0 "BI")
-				(comp_pin "V14" 0.0 0.0 "BI")
-				(comp_pin "V16" 0.0 0.0 "BI")
-				(comp_pin "V20" 0.0 0.0 "BI")
-				(comp_pin "V22" 0.0 0.0 "BI")
-				(comp_pin "V26" 0.0 0.0 "BI")
-				(comp_pin "V6" 0.0 0.0 "BI")
-				(comp_pin "A17" 0.0 0.0 "BI")
-				(comp_pin "AB20" 0.0 0.0 "BI")
-				(comp_pin "W13" 0.0 0.0 "BI")
-				(comp_pin "W15" 0.0 0.0 "BI")
-				(comp_pin "W19" 0.0 0.0 "BI")
-				(comp_pin "W21" 0.0 0.0 "BI")
-				(comp_pin "W23" 0.0 0.0 "BI")
-				(comp_pin "W33" 0.0 0.0 "BI")
-				(comp_pin "W4" 0.0 0.0 "BI")
-				(comp_pin "W5" 0.0 0.0 "BI")
-				(comp_pin "Y10" 0.0 0.0 "BI")
-				(comp_pin "Y12" 0.0 0.0 "BI")
-				(comp_pin "AB22" 0.0 0.0 "BI")
-				(comp_pin "Y14" 0.0 0.0 "BI")
-				(comp_pin "Y16" 0.0 0.0 "BI")
-				(comp_pin "Y18" 0.0 0.0 "BI")
-				(comp_pin "Y2" 0.0 0.0 "BI")
-				(comp_pin "Y20" 0.0 0.0 "BI")
-				(comp_pin "Y22" 0.0 0.0 "BI")
-				(comp_pin "Y25" 0.0 0.0 "BI")
-				(comp_pin "Y30" 0.0 0.0 "BI")
-				(comp_pin "Y5" 0.0 0.0 "BI")
-				(comp_pin "AB24" 0.0 0.0 "BI")
-				(comp_pin "AB34" 0.0 0.0 "BI")
-				(comp_pin "AB4" 0.0 0.0 "BI")
-				(comp_pin "AC11" 0.0 0.0 "BI")
-				(comp_pin "AC13" 0.0 0.0 "BI")
-				(comp_pin "AC17" 0.0 0.0 "BI")
-				(comp_pin "AC19" 0.0 0.0 "BI")
-				(comp_pin "AC21" 0.0 0.0 "BI")
-				(comp_pin "A22" 0.0 0.0 "BI")
-				(comp_pin "AC26" 0.0 0.0 "BI")
-				(comp_pin "AC31" 0.0 0.0 "BI")
-				(comp_pin "AD12" 0.0 0.0 "BI")
-				(comp_pin "AD16" 0.0 0.0 "BI")
-				(comp_pin "AD18" 0.0 0.0 "BI")
-				(comp_pin "AD28" 0.0 0.0 "BI")
-				(comp_pin "AD8" 0.0 0.0 "BI")
-				(comp_pin "AE10" 0.0 0.0 "BI")
-				(comp_pin "AE15" 0.0 0.0 "BI")
-				(comp_pin "AE20" 0.0 0.0 "BI")
-				(comp_pin "A27" 0.0 0.0 "BI")
-				(comp_pin "AE25" 0.0 0.0 "BI")
-				(comp_pin "AE4" 0.0 0.0 "BI")
-				(comp_pin "AE5" 0.0 0.0 "BI")
-				(comp_pin "AF12" 0.0 0.0 "BI")
-				(comp_pin "AF17" 0.0 0.0 "BI")
-				(comp_pin "AF2" 0.0 0.0 "BI")
-				(comp_pin "AF22" 0.0 0.0 "BI")
-				(comp_pin "AF27" 0.0 0.0 "BI")
-				(comp_pin "AF32" 0.0 0.0 "BI")
-				(comp_pin "AG19" 0.0 0.0 "BI")
-				(comp_pin "A32" 0.0 0.0 "BI")
-				(comp_pin "AG2" 0.0 0.0 "BI")
-				(comp_pin "AG24" 0.0 0.0 "BI")
-				(comp_pin "AG29" 0.0 0.0 "BI")
-				(comp_pin "AG34" 0.0 0.0 "BI")
-				(comp_pin "AG9" 0.0 0.0 "BI")
-				(comp_pin "AH16" 0.0 0.0 "BI")
-				(comp_pin "AH26" 0.0 0.0 "BI")
-				(comp_pin "AH4" 0.0 0.0 "BI")
-				(comp_pin "AH6" 0.0 0.0 "BI")
-				(comp_pin "AJ13" 0.0 0.0 "BI")
-				(comp_pin "AA11" 0.0 0.0 "BI")
-				(comp_pin "AJ23" 0.0 0.0 "BI")
-				(comp_pin "AJ33" 0.0 0.0 "BI")
-				(comp_pin "AJ5" 0.0 0.0 "BI")
-				(comp_pin "AK10" 0.0 0.0 "BI")
-				(comp_pin "AK20" 0.0 0.0 "BI")
-				(comp_pin "AK30" 0.0 0.0 "BI")
-				(comp_pin "AK4" 0.0 0.0 "BI")
-				(comp_pin "AL17" 0.0 0.0 "BI")
-				(comp_pin "AL27" 0.0 0.0 "BI")
-				(comp_pin "AL6" 0.0 0.0 "BI")
-				(comp_pin "AA13" 0.0 0.0 "BI")
-				(comp_pin "AL9" 0.0 0.0 "BI")
-				(comp_pin "AM14" 0.0 0.0 "BI")
-				(comp_pin "AM2" 0.0 0.0 "BI")
-				(comp_pin "AM24" 0.0 0.0 "BI")
-				(comp_pin "AM34" 0.0 0.0 "BI")
-				(comp_pin "AN1" 0.0 0.0 "BI")
-				(comp_pin "AN11" 0.0 0.0 "BI")
-				(comp_pin "AN2" 0.0 0.0 "BI")
-				(comp_pin "AN21" 0.0 0.0 "BI")
-				(comp_pin "AN31" 0.0 0.0 "BI")
-				(comp_pin "AA15" 0.0 0.0 "BI")
-				(comp_pin "AN7" 0.0 0.0 "BI")
-				(comp_pin "AN8" 0.0 0.0 "BI")
-				(comp_pin "AP11" 0.0 0.0 "BI")
-				(comp_pin "AP13" 0.0 0.0 "BI")
-				(comp_pin "AP18" 0.0 0.0 "BI")
-				(comp_pin "AP23" 0.0 0.0 "BI")
-				(comp_pin "AP28" 0.0 0.0 "BI")
-				(comp_pin "AP33" 0.0 0.0 "BI")
-				(comp_pin "B1" 0.0 0.0 "BI")
-				(comp_pin "B11" 0.0 0.0 "BI")
-				(comp_pin "AA17" 0.0 0.0 "BI")
-				(comp_pin "B14" 0.0 0.0 "BI")
-				(comp_pin "B2" 0.0 0.0 "BI")
-				(comp_pin "B24" 0.0 0.0 "BI")
-				(comp_pin "B29" 0.0 0.0 "BI")
-				(comp_pin "B34" 0.0 0.0 "BI")
-				(comp_pin "B7" 0.0 0.0 "BI")
-				(comp_pin "B8" 0.0 0.0 "BI")
-				(comp_pin "C11" 0.0 0.0 "BI")
-				(comp_pin "C2" 0.0 0.0 "BI")
-				(comp_pin "C21" 0.0 0.0 "BI")
-				(comp_pin "AA32" 0.0 0.0 "BI")
-				(comp_pin "AB29" 0.0 0.0 "BI")
-				(comp_pin "J28" 0.0 0.0 "BI")
-				(comp_pin "L32" 0.0 0.0 "BI")
-				(comp_pin "M29" 0.0 0.0 "BI")
-				(comp_pin "P33" 0.0 0.0 "BI")
-				(comp_pin "R30" 0.0 0.0 "BI")
-				(comp_pin "T27" 0.0 0.0 "BI")
-				(comp_pin "V31" 0.0 0.0 "BI")
-				(comp_pin "W28" 0.0 0.0 "BI")
-				(comp_pin "AD33" 0.0 0.0 "BI")
-				(comp_pin "AE30" 0.0 0.0 "BI")
-				(comp_pin "AH31" 0.0 0.0 "BI")
-				(comp_pin "AJ28" 0.0 0.0 "BI")
-				(comp_pin "AL32" 0.0 0.0 "BI")
-				(comp_pin "AM29" 0.0 0.0 "BI")
-				(comp_pin "E30" 0.0 0.0 "BI")
-				(comp_pin "H31" 0.0 0.0 "BI")
-				(comp_pin "J19" 0.0 0.0 "BI")
-				(comp_pin "K18" 0.0 0.0 "BI")
-				(comp_pin "J17" 0.0 0.0 "BI")
-				(comp_pin "J16" 0.0 0.0 "BI")
-				(comp_pin "N30" 0.0 0.0 "BI")
-				(comp_pin "N28" 0.0 0.0 "BI")
-				(comp_pin "L26" 0.0 0.0 "BI")
-				(comp_pin "K29" 0.0 0.0 "BI")
-				(comp_pin "J34" 0.0 0.0 "BI")
-				(comp_pin "J25" 0.0 0.0 "BI")
-				(comp_pin "H24" 0.0 0.0 "BI")
-				(comp_pin "H27" 0.0 0.0 "BI")
-				(comp_pin "E33" 0.0 0.0 "BI")
-				(comp_pin "E27" 0.0 0.0 "BI")
-				(comp_pin "A33" 0.0 0.0 "BI")
-				(comp_pin "M30" 0.0 0.0 "BI")
-				(comp_pin "M27" 0.0 0.0 "BI")
-				(comp_pin "K34" 0.0 0.0 "BI")
-				(comp_pin "L28" 0.0 0.0 "BI")
-				(comp_pin "J31" 0.0 0.0 "BI")
-				(comp_pin "H33" 0.0 0.0 "BI")
-				(comp_pin "F34" 0.0 0.0 "BI")
-				(comp_pin "G26" 0.0 0.0 "BI")
-				(comp_pin "E31" 0.0 0.0 "BI")
-				(comp_pin "D34" 0.0 0.0 "BI")
-				(comp_pin "M26" 0.0 0.0 "BI")
-				(comp_pin "L31" 0.0 0.0 "BI")
-				(comp_pin "K32" 0.0 0.0 "BI")
-				(comp_pin "K26" 0.0 0.0 "BI")
-				(comp_pin "J29" 0.0 0.0 "BI")
-				(comp_pin "H32" 0.0 0.0 "BI")
-				(comp_pin "F30" 0.0 0.0 "BI")
-				(comp_pin "F26" 0.0 0.0 "BI")
-				(comp_pin "F29" 0.0 0.0 "BI")
-				(comp_pin "D32" 0.0 0.0 "BI")
-				(comp_pin "L24" 0.0 0.0 "BI")
-				(comp_pin "J26" 0.0 0.0 "BI")
-				(comp_pin "G31" 0.0 0.0 "BI")
-				(comp_pin "G28" 0.0 0.0 "BI")
-				(comp_pin "E34" 0.0 0.0 "BI")
-				(comp_pin "F28" 0.0 0.0 "BI")
-				(comp_pin "C33" 0.0 0.0 "BI")
-				(comp_pin "M31" 0.0 0.0 "BI")
-				(comp_pin "M28" 0.0 0.0 "BI")
-				(comp_pin "L25" 0.0 0.0 "BI")
-				(comp_pin "L29" 0.0 0.0 "BI")
-				(comp_pin "H34" 0.0 0.0 "BI")
-				(comp_pin "J24" 0.0 0.0 "BI")
-				(comp_pin "H25" 0.0 0.0 "BI")
-				(comp_pin "G27" 0.0 0.0 "BI")
-				(comp_pin "E32" 0.0 0.0 "BI")
-				(comp_pin "E26" 0.0 0.0 "BI")
-				(comp_pin "B32" 0.0 0.0 "BI")
-				(comp_pin "L30" 0.0 0.0 "BI")
-				(comp_pin "N27" 0.0 0.0 "BI")
-				(comp_pin "L34" 0.0 0.0 "BI")
-				(comp_pin "K28" 0.0 0.0 "BI")
-				(comp_pin "J30" 0.0 0.0 "BI")
-				(comp_pin "J32" 0.0 0.0 "BI")
-				(comp_pin "G33" 0.0 0.0 "BI")
-				(comp_pin "G25" 0.0 0.0 "BI")
-				(comp_pin "F31" 0.0 0.0 "BI")
-				(comp_pin "C34" 0.0 0.0 "BI")
-				(comp_pin "M25" 0.0 0.0 "BI")
-				(comp_pin "K31" 0.0 0.0 "BI")
-				(comp_pin "K33" 0.0 0.0 "BI")
-				(comp_pin "K27" 0.0 0.0 "BI")
-				(comp_pin "H29" 0.0 0.0 "BI")
-				(comp_pin "G32" 0.0 0.0 "BI")
-				(comp_pin "G30" 0.0 0.0 "BI")
-				(comp_pin "F25" 0.0 0.0 "BI")
-				(comp_pin "E29" 0.0 0.0 "BI")
-				(comp_pin "C32" 0.0 0.0 "BI")
-				(comp_pin "K24" 0.0 0.0 "BI")
-				(comp_pin "J27" 0.0 0.0 "BI")
-				(comp_pin "H30" 0.0 0.0 "BI")
-				(comp_pin "H28" 0.0 0.0 "BI")
-				(comp_pin "F33" 0.0 0.0 "BI")
-				(comp_pin "E28" 0.0 0.0 "BI")
-				(comp_pin "B33" 0.0 0.0 "BI")
-				(comp_pin "K19" 0.0 0.0 "BI")
-				(comp_pin "L19" 0.0 0.0 "BI")
-				(comp_pin "H15" 0.0 0.0 "BI")
-				(comp_pin "H14" 0.0 0.0 "BI")
-				(comp_pin "AN33" 0.0 0.0 "BI")
-				(comp_pin "AP32" 0.0 0.0 "BI")
-				(comp_pin "AJ27" 0.0 0.0 "BI")
-				(comp_pin "AK31" 0.0 0.0 "BI")
-				(comp_pin "AH25" 0.0 0.0 "BI")
-				(comp_pin "AH32" 0.0 0.0 "BI")
-				(comp_pin "AF26" 0.0 0.0 "BI")
-				(comp_pin "AE33" 0.0 0.0 "BI")
-				(comp_pin "AD29" 0.0 0.0 "BI")
-				(comp_pin "AD25" 0.0 0.0 "BI")
-				(comp_pin "AC27" 0.0 0.0 "BI")
-				(comp_pin "AK27" 0.0 0.0 "BI")
-				(comp_pin "AL33" 0.0 0.0 "BI")
-				(comp_pin "AH30" 0.0 0.0 "BI")
-				(comp_pin "AJ34" 0.0 0.0 "BI")
-				(comp_pin "AG30" 0.0 0.0 "BI")
-				(comp_pin "AG26" 0.0 0.0 "BI")
-				(comp_pin "AG31" 0.0 0.0 "BI")
-				(comp_pin "AE26" 0.0 0.0 "BI")
-				(comp_pin "AD34" 0.0 0.0 "BI")
-				(comp_pin "AC24" 0.0 0.0 "BI")
-				(comp_pin "AM32" 0.0 0.0 "BI")
-				(comp_pin "AK32" 0.0 0.0 "BI")
-				(comp_pin "AJ29" 0.0 0.0 "BI")
-				(comp_pin "AK33" 0.0 0.0 "BI")
-				(comp_pin "AH28" 0.0 0.0 "BI")
-				(comp_pin "AG25" 0.0 0.0 "BI")
-				(comp_pin "AF30" 0.0 0.0 "BI")
-				(comp_pin "AE24" 0.0 0.0 "BI")
-				(comp_pin "AE32" 0.0 0.0 "BI")
-				(comp_pin "AC29" 0.0 0.0 "BI")
-				(comp_pin "AJ26" 0.0 0.0 "BI")
-				(comp_pin "AH33" 0.0 0.0 "BI")
-				(comp_pin "AF28" 0.0 0.0 "BI")
-				(comp_pin "AE34" 0.0 0.0 "BI")
-				(comp_pin "AE31" 0.0 0.0 "BI")
-				(comp_pin "AD27" 0.0 0.0 "BI")
-				(comp_pin "AC30" 0.0 0.0 "BI")
-				(comp_pin "AN34" 0.0 0.0 "BI")
-				(comp_pin "AN32" 0.0 0.0 "BI")
-				(comp_pin "AK26" 0.0 0.0 "BI")
-				(comp_pin "AJ31" 0.0 0.0 "BI")
-				(comp_pin "AJ25" 0.0 0.0 "BI")
-				(comp_pin "AG32" 0.0 0.0 "BI")
-				(comp_pin "AF25" 0.0 0.0 "BI")
-				(comp_pin "AF33" 0.0 0.0 "BI")
-				(comp_pin "AE29" 0.0 0.0 "BI")
-				(comp_pin "AD26" 0.0 0.0 "BI")
-				(comp_pin "AB27" 0.0 0.0 "BI")
-				(comp_pin "AK28" 0.0 0.0 "BI")
-				(comp_pin "AL34" 0.0 0.0 "BI")
-				(comp_pin "AJ30" 0.0 0.0 "BI")
-				(comp_pin "AH34" 0.0 0.0 "BI")
-				(comp_pin "AH29" 0.0 0.0 "BI")
-				(comp_pin "AG27" 0.0 0.0 "BI")
-				(comp_pin "AF31" 0.0 0.0 "BI")
-				(comp_pin "AE27" 0.0 0.0 "BI")
-				(comp_pin "AC34" 0.0 0.0 "BI")
-				(comp_pin "AC25" 0.0 0.0 "BI")
-				(comp_pin "AM33" 0.0 0.0 "BI")
-				(comp_pin "AJ32" 0.0 0.0 "BI")
-				(comp_pin "AK29" 0.0 0.0 "BI")
-				(comp_pin "AK34" 0.0 0.0 "BI")
-				(comp_pin "AG28" 0.0 0.0 "BI")
-				(comp_pin "AF24" 0.0 0.0 "BI")
-				(comp_pin "AF29" 0.0 0.0 "BI")
-				(comp_pin "AD24" 0.0 0.0 "BI")
-				(comp_pin "AD32" 0.0 0.0 "BI")
-				(comp_pin "AD30" 0.0 0.0 "BI")
-				(comp_pin "AH27" 0.0 0.0 "BI")
-				(comp_pin "AG33" 0.0 0.0 "BI")
-				(comp_pin "AE28" 0.0 0.0 "BI")
-				(comp_pin "AF34" 0.0 0.0 "BI")
-				(comp_pin "AD31" 0.0 0.0 "BI")
-				(comp_pin "AC28" 0.0 0.0 "BI")
-				(comp_pin "AB30" 0.0 0.0 "BI")
-				(comp_pin "AF10" 0.0 0.0 "BI")
-				(comp_pin "AG7" 0.0 0.0 "BI")
-				(comp_pin "AL18" 0.0 0.0 "BI")
-				(comp_pin "AL23" 0.0 0.0 "BI")
-				(comp_pin "AL28" 0.0 0.0 "BI")
-				(comp_pin "AM23" 0.0 0.0 "BI")
-				(comp_pin "AN12" 0.0 0.0 "BI")
-				(comp_pin "Y9" 0.0 0.0 "BI")
-				(comp_pin "AB9" 0.0 0.0 "BI")
-				(comp_pin "AC6" 0.0 0.0 "BI")
-				(comp_pin "W8" 0.0 0.0 "BI")
-				(comp_pin "AF7" 0.0 0.0 "BI")
-				(comp_pin "AH11" 0.0 0.0 "BI")
-				(comp_pin "AJ8" 0.0 0.0 "BI")
-				(comp_pin "AK25" 0.0 0.0 "BI")
-				(comp_pin "AL22" 0.0 0.0 "BI")
-				(comp_pin "AN26" 0.0 0.0 "BI")
-				(comp_pin "AJ18" 0.0 0.0 "BI")
-				(comp_pin "AK15" 0.0 0.0 "BI")
-				(comp_pin "AN16" 0.0 0.0 "BI")
-				(comp_pin "AJ6" 0.0 0.0 "BI")
-				(comp_pin "AK6" 0.0 0.0 "BI")
-				(comp_pin "AH7" 0.0 0.0 "BI")
-				(comp_pin "AE7" 0.0 0.0 "BI")
-				(comp_pin "AC4" 0.0 0.0 "BI")
-				(comp_pin "AC7" 0.0 0.0 "BI")
-				(comp_pin "Y7" 0.0 0.0 "BI")
-				(comp_pin "AF6" 0.0 0.0 "BI")
-				(comp_pin "AE6" 0.0 0.0 "BI")
-				(comp_pin "AD6" 0.0 0.0 "BI")
-				(comp_pin "AB6" 0.0 0.0 "BI")
-				(comp_pin "Y6" 0.0 0.0 "BI")
-				(comp_pin "AA6" 0.0 0.0 "BI")
-				(comp_pin "AK7" 0.0 0.0 "BI")
-				(comp_pin "W6" 0.0 0.0 "BI")
-				(comp_pin "AJ7" 0.0 0.0 "BI")
-				(comp_pin "AB5" 0.0 0.0 "BI")
-				(comp_pin "AA5" 0.0 0.0 "BI")
-				(comp_pin "AB7" 0.0 0.0 "BI")
-				(comp_pin "AD4" 0.0 0.0 "BI")
-				(comp_pin "AL11" 0.0 0.0 "BI")
-				(comp_pin "AK12" 0.0 0.0 "OUT")
-				(comp_pin "AF5" 0.0 0.0 "BI")
-				(comp_pin "AG5" 0.0 0.0 "BI")
-				(comp_pin "AL16" 0.0 0.0 "BI")
-				(comp_pin "AK16" 0.0 0.0 "BI")
-				(comp_pin "AH8" 0.0 0.0 "BI")
-				(comp_pin "AG8" 0.0 0.0 "BI")
-				(comp_pin "AM21" 0.0 0.0 "BI")
-				(comp_pin "AM18" 0.0 0.0 "IN")
-				(comp_pin "AM30" 0.0 0.0 "BI")
-				(comp_pin "AN27" 0.0 0.0 "BI")
-				(comp_pin "AK23" 0.0 0.0 "BI")
-				(comp_pin "AN17" 0.0 0.0 "BI")
-				(comp_pin "AM12" 0.0 0.0 "BI")
-				(comp_pin "AG10" 0.0 0.0 "BI")
-				(comp_pin "AA8" 0.0 0.0 "BI")
-				(comp_pin "V9" 0.0 0.0 "BI")
-				(comp_pin "AK14" 0.0 0.0 "BI")
-				(comp_pin "AM26" 0.0 0.0 "BI")
-				(comp_pin "AN25" 0.0 0.0 "BI")
-				(comp_pin "AJ21" 0.0 0.0 "BI")
-				(comp_pin "AL21" 0.0 0.0 "BI")
-				(comp_pin "AD10" 0.0 0.0 "BI")
-				(comp_pin "AK11" 0.0 0.0 "BI")
-				(comp_pin "AE8" 0.0 0.0 "BI")
-				(comp_pin "W7" 0.0 0.0 "BI")
-				(comp_pin "AJ16" 0.0 0.0 "BI")
-				(comp_pin "AL26" 0.0 0.0 "BI")
-				(comp_pin "AM25" 0.0 0.0 "BI")
-				(comp_pin "AJ20" 0.0 0.0 "BI")
-				(comp_pin "AK21" 0.0 0.0 "BI")
-				(comp_pin "AD11" 0.0 0.0 "BI")
-				(comp_pin "AJ11" 0.0 0.0 "BI")
-				(comp_pin "AD9" 0.0 0.0 "BI")
-				(comp_pin "V7" 0.0 0.0 "BI")
-				(comp_pin "AJ15" 0.0 0.0 "BI")
-				(comp_pin "AM31" 0.0 0.0 "BI")
-				(comp_pin "AN23" 0.0 0.0 "BI")
-				(comp_pin "AN22" 0.0 0.0 "BI")
-				(comp_pin "AP29" 0.0 0.0 "BI")
-				(comp_pin "AN28" 0.0 0.0 "BI")
-				(comp_pin "AP27" 0.0 0.0 "BI")
-				(comp_pin "AM22" 0.0 0.0 "BI")
-				(comp_pin "AJ24" 0.0 0.0 "BI")
-				(comp_pin "AH23" 0.0 0.0 "BI")
-				(comp_pin "AK22" 0.0 0.0 "BI")
-				(comp_pin "AJ19" 0.0 0.0 "BI")
-				(comp_pin "AL30" 0.0 0.0 "BI")
-				(comp_pin "AH24" 0.0 0.0 "BI")
-				(comp_pin "AK24" 0.0 0.0 "BI")
-				(comp_pin "AJ22" 0.0 0.0 "BI")
-				(comp_pin "AL20" 0.0 0.0 "BI")
-				(comp_pin "AL19" 0.0 0.0 "BI")
-				(comp_pin "AM17" 0.0 0.0 "BI")
-				(comp_pin "AM16" 0.0 0.0 "BI")
-				(comp_pin "AL15" 0.0 0.0 "BI")
-				(comp_pin "AK19" 0.0 0.0 "BI")
-				(comp_pin "AK18" 0.0 0.0 "BI")
-				(comp_pin "AP30" 0.0 0.0 "BI")
-				(comp_pin "AP17" 0.0 0.0 "BI")
-				(comp_pin "AP16" 0.0 0.0 "BI")
-				(comp_pin "AP14" 0.0 0.0 "BI")
-				(comp_pin "AN13" 0.0 0.0 "BI")
-				(comp_pin "AE11" 0.0 0.0 "BI")
-				(comp_pin "AG11" 0.0 0.0 "BI")
-				(comp_pin "AN14" 0.0 0.0 "BI")
-				(comp_pin "AM13" 0.0 0.0 "BI")
-				(comp_pin "AP12" 0.0 0.0 "BI")
-				(comp_pin "AF11" 0.0 0.0 "BI")
-				(comp_pin "AN29" 0.0 0.0 "BI")
-				(comp_pin "AA10" 0.0 0.0 "BI")
-				(comp_pin "AC10" 0.0 0.0 "BI")
-				(comp_pin "AJ10" 0.0 0.0 "BI")
-				(comp_pin "AC9" 0.0 0.0 "BI")
-				(comp_pin "AM11" 0.0 0.0 "BI")
-				(comp_pin "AB10" 0.0 0.0 "BI")
-				(comp_pin "AH10" 0.0 0.0 "BI")
-				(comp_pin "AA9" 0.0 0.0 "BI")
-				(comp_pin "AH9" 0.0 0.0 "BI")
-				(comp_pin "AK9" 0.0 0.0 "BI")
-				(comp_pin "AL31" 0.0 0.0 "BI")
-				(comp_pin "AC8" 0.0 0.0 "BI")
-				(comp_pin "AL10" 0.0 0.0 "BI")
-				(comp_pin "AF9" 0.0 0.0 "BI")
-				(comp_pin "AJ9" 0.0 0.0 "BI")
-				(comp_pin "AB8" 0.0 0.0 "BI")
-				(comp_pin "AK8" 0.0 0.0 "BI")
-				(comp_pin "Y11" 0.0 0.0 "BI")
-				(comp_pin "W10" 0.0 0.0 "BI")
-				(comp_pin "U8" 0.0 0.0 "BI")
-				(comp_pin "Y8" 0.0 0.0 "BI")
-				(comp_pin "AP31" 0.0 0.0 "BI")
-				(comp_pin "W11" 0.0 0.0 "BI")
-				(comp_pin "V10" 0.0 0.0 "BI")
-				(comp_pin "W9" 0.0 0.0 "BI")
-				(comp_pin "V8" 0.0 0.0 "BI")
-				(comp_pin "AN15" 0.0 0.0 "BI")
-				(comp_pin "AJ14" 0.0 0.0 "BI")
-				(comp_pin "AK13" 0.0 0.0 "BI")
-				(comp_pin "AJ12" 0.0 0.0 "BI")
-				(comp_pin "AM15" 0.0 0.0 "BI")
-				(comp_pin "AP15" 0.0 0.0 "BI")
-				(comp_pin "AN30" 0.0 0.0 "BI")
-				(comp_pin "AL14" 0.0 0.0 "BI")
-				(comp_pin "AL13" 0.0 0.0 "BI")
-				(comp_pin "AL29" 0.0 0.0 "BI")
-				(comp_pin "AM28" 0.0 0.0 "BI")
-				(comp_pin "AM27" 0.0 0.0 "BI")
-				(comp_pin "AM20" 0.0 0.0 "BI")
-				(comp_pin "AN20" 0.0 0.0 "OUT")
-				(comp_pin "AN18" 0.0 0.0 "IN")
-				(comp_pin "AD7" 0.0 0.0 "OUT")
-				(comp_pin "AC5" 0.0 0.0 "BI")
-				(comp_pin "AN19" 0.0 0.0 "BI")
-				(comp_pin "AP19" 0.0 0.0 "OUT")
-				(comp_pin "AP20" 0.0 0.0 "BI")
-				(comp_pin "AD5" 0.0 0.0 "BI")
-				(comp_pin "AH5" 0.0 0.0 "BI")
-				(comp_pin "AF8" 0.0 0.0 "BI")
-				(comp_pin "AN24" 0.0 0.0 "BI")
-				(comp_pin "AK17" 0.0 0.0 "BI")
-				(comp_pin "AG6" 0.0 0.0 "BI")
-				(comp_pin "AE9" 0.0 0.0 "BI")
-				(comp_pin "AP24" 0.0 0.0 "BI")
-				(comp_pin "AJ17" 0.0 0.0 "BI")
-				(comp_pin "J21" 0.0 0.0 "BI")
-				(comp_pin "J20" 0.0 0.0 "BI")
-				(comp_pin "AB33" 0.0 0.0 "BI")
-				(comp_pin "V27" 0.0 0.0 "BI")
-				(comp_pin "T26" 0.0 0.0 "BI")
-				(comp_pin "T29" 0.0 0.0 "BI")
-				(comp_pin "U31" 0.0 0.0 "BI")
-				(comp_pin "T24" 0.0 0.0 "BI")
-				(comp_pin "R29" 0.0 0.0 "BI")
-				(comp_pin "R34" 0.0 0.0 "BI")
-				(comp_pin "N25" 0.0 0.0 "BI")
-				(comp_pin "P29" 0.0 0.0 "BI")
-				(comp_pin "AA26" 0.0 0.0 "BI")
-				(comp_pin "AA30" 0.0 0.0 "BI")
-				(comp_pin "AA33" 0.0 0.0 "BI")
-				(comp_pin "AA24" 0.0 0.0 "BI")
-				(comp_pin "W27" 0.0 0.0 "BI")
-				(comp_pin "Y31" 0.0 0.0 "BI")
-				(comp_pin "V24" 0.0 0.0 "BI")
-				(comp_pin "V29" 0.0 0.0 "BI")
-				(comp_pin "V33" 0.0 0.0 "BI")
-				(comp_pin "AC33" 0.0 0.0 "BI")
-				(comp_pin "V28" 0.0 0.0 "BI")
-				(comp_pin "U26" 0.0 0.0 "BI")
-				(comp_pin "T28" 0.0 0.0 "BI")
-				(comp_pin "U32" 0.0 0.0 "BI")
-				(comp_pin "R24" 0.0 0.0 "BI")
-				(comp_pin "R28" 0.0 0.0 "BI")
-				(comp_pin "T33" 0.0 0.0 "BI")
-				(comp_pin "P25" 0.0 0.0 "BI")
-				(comp_pin "N29" 0.0 0.0 "BI")
-				(comp_pin "AA25" 0.0 0.0 "BI")
-				(comp_pin "AA29" 0.0 0.0 "BI")
-				(comp_pin "Y33" 0.0 0.0 "BI")
-				(comp_pin "Y24" 0.0 0.0 "BI")
-				(comp_pin "Y27" 0.0 0.0 "BI")
-				(comp_pin "W31" 0.0 0.0 "BI")
-				(comp_pin "W24" 0.0 0.0 "BI")
-				(comp_pin "W29" 0.0 0.0 "BI")
-				(comp_pin "V32" 0.0 0.0 "BI")
-				(comp_pin "H13" 0.0 0.0 "BI")
-				(comp_pin "J14" 0.0 0.0 "BI")
-				(comp_pin "AB32" 0.0 0.0 "BI")
-				(comp_pin "V34" 0.0 0.0 "BI")
-				(comp_pin "T25" 0.0 0.0 "BI")
-				(comp_pin "U28" 0.0 0.0 "BI")
-				(comp_pin "T30" 0.0 0.0 "BI")
-				(comp_pin "T34" 0.0 0.0 "BI")
-				(comp_pin "R27" 0.0 0.0 "BI")
-				(comp_pin "R31" 0.0 0.0 "BI")
-				(comp_pin "P24" 0.0 0.0 "BI")
-				(comp_pin "P27" 0.0 0.0 "BI")
-				(comp_pin "AB26" 0.0 0.0 "BI")
-				(comp_pin "AA28" 0.0 0.0 "BI")
-				(comp_pin "AA31" 0.0 0.0 "BI")
-				(comp_pin "Y34" 0.0 0.0 "BI")
-				(comp_pin "W26" 0.0 0.0 "BI")
-				(comp_pin "Y29" 0.0 0.0 "BI")
-				(comp_pin "W32" 0.0 0.0 "BI")
-				(comp_pin "W25" 0.0 0.0 "BI")
-				(comp_pin "W30" 0.0 0.0 "BI")
-				(comp_pin "AC32" 0.0 0.0 "BI")
-				(comp_pin "W34" 0.0 0.0 "BI")
-				(comp_pin "U25" 0.0 0.0 "BI")
-				(comp_pin "U27" 0.0 0.0 "BI")
-				(comp_pin "U30" 0.0 0.0 "BI")
-				(comp_pin "U33" 0.0 0.0 "BI")
-				(comp_pin "R26" 0.0 0.0 "BI")
-				(comp_pin "T31" 0.0 0.0 "BI")
-				(comp_pin "N24" 0.0 0.0 "BI")
-				(comp_pin "P26" 0.0 0.0 "BI")
-				(comp_pin "AB25" 0.0 0.0 "BI")
-				(comp_pin "AB28" 0.0 0.0 "BI")
-				(comp_pin "AB31" 0.0 0.0 "BI")
-				(comp_pin "AA34" 0.0 0.0 "BI")
-				(comp_pin "Y26" 0.0 0.0 "BI")
-				(comp_pin "Y28" 0.0 0.0 "BI")
-				(comp_pin "Y32" 0.0 0.0 "BI")
-				(comp_pin "V25" 0.0 0.0 "BI")
-				(comp_pin "V30" 0.0 0.0 "BI")
-				(comp_pin "AA22" 0.0 0.0 "BI")
-				(comp_pin "AD23" 0.0 0.0 "BI")
-				(comp_pin "N15" 0.0 0.0 "BI")
-				(comp_pin "N22" 0.0 0.0 "BI")
-				(comp_pin "M15" 0.0 0.0 "BI")
-				(comp_pin "P15" 0.0 0.0 "BI")
-				(comp_pin "AD15" 0.0 0.0 "BI")
-				(comp_pin "M23" 0.0 0.0 "BI")
-				(comp_pin "N14" 0.0 0.0 "BI")
-				(comp_pin "AD21" 0.0 0.0 "BI")
-				(comp_pin "AC22" 0.0 0.0 "BI")
-				(comp_pin "AD22" 0.0 0.0 "BI")
-				(comp_pin "M22" 0.0 0.0 "BI")
-				(comp_pin "N23" 0.0 0.0 "BI")
-				(comp_pin "AC23" 0.0 0.0 "BI")
-				(comp_pin "AB15" 0.0 0.0 "BI")
-				(comp_pin "AC15" 0.0 0.0 "BI")
-				(comp_pin "AD14" 0.0 0.0 "BI")
-				(comp_pin "AC14" 0.0 0.0 "BI")
-				(comp_pin "AB23" 0.0 0.0 "BI")
-				(comp_pin "L23" 0.0 0.0 "BI")
-				(comp_pin "D13" 0.0 0.0 "BI")
-				(comp_pin "G14" 0.0 0.0 "BI")
-				(comp_pin "AH21" 0.0 0.0 "BI")
-				(comp_pin "AM19" 0.0 0.0 "BI")
-				(comp_pin "AG14" 0.0 0.0 "BI")
-				(comp_pin "AL12" 0.0 0.0 "BI")
-				(comp_pin "AG16" 0.0 0.0 "BI")
-				(comp_pin "AH17" 0.0 0.0 "BI")
-				(comp_pin "AF19" 0.0 0.0 "BI")
-				(comp_pin "AG18" 0.0 0.0 "BI")
-				(comp_pin "AG15" 0.0 0.0 "BI")
-				(comp_pin "AH15" 0.0 0.0 "BI")
-				(comp_pin "AG20" 0.0 0.0 "BI")
-				(comp_pin "AE23" 0.0 0.0 "BI")
-				(comp_pin "AE22" 0.0 0.0 "BI")
-				(comp_pin "AG12" 0.0 0.0 "BI")
-				(comp_pin "AF13" 0.0 0.0 "BI")
-				(comp_pin "AG23" 0.0 0.0 "BI")
-				(comp_pin "AF23" 0.0 0.0 "BI")
-				(comp_pin "AE12" 0.0 0.0 "BI")
-				(comp_pin "AE18" 0.0 0.0 "BI")
-				(comp_pin "AG17" 0.0 0.0 "BI")
-				(comp_pin "AE14" 0.0 0.0 "BI")
-				(comp_pin "AH13" 0.0 0.0 "BI")
-				(comp_pin "AE17" 0.0 0.0 "BI")
-				(comp_pin "AF16" 0.0 0.0 "BI")
-				(comp_pin "AD20" 0.0 0.0 "BI")
-				(comp_pin "AE21" 0.0 0.0 "BI")
-				(comp_pin "AE16" 0.0 0.0 "BI")
-				(comp_pin "AF15" 0.0 0.0 "BI")
-				(comp_pin "AH14" 0.0 0.0 "BI")
-				(comp_pin "AH19" 0.0 0.0 "BI")
-				(comp_pin "AH20" 0.0 0.0 "BI")
-				(comp_pin "AG13" 0.0 0.0 "BI")
-				(comp_pin "AH12" 0.0 0.0 "BI")
-				(comp_pin "AH22" 0.0 0.0 "BI")
-				(comp_pin "AG22" 0.0 0.0 "BI")
-				(comp_pin "AD19" 0.0 0.0 "BI")
-				(comp_pin "AE19" 0.0 0.0 "BI")
-				(comp_pin "AE13" 0.0 0.0 "BI")
-				(comp_pin "AG21" 0.0 0.0 "BI")
-				(comp_pin "H12" 0.0 0.0 "OUT")
-				(comp_pin "AF21" 0.0 0.0 "IN")
-				(comp_pin "AH18" 0.0 0.0 "BI")
-				(comp_pin "AF20" 0.0 0.0 "IN")
-				(comp_pin "K16" 0.0 0.0 "BI")
-				(comp_pin "K21" 0.0 0.0 "BI")
-				(comp_pin "J22" 0.0 0.0 "BI")
-				(comp_pin "L16" 0.0 0.0 "BI")
-				(comp_pin "L15" 0.0 0.0 "BI")
-				(comp_pin "L20" 0.0 0.0 "BI")
-				(comp_pin "L21" 0.0 0.0 "BI")
-				(comp_pin "J12" 0.0 0.0 "BI")
-				(comp_pin "K22" 0.0 0.0 "BI")
-				(comp_pin "K23" 0.0 0.0 "BI")
-				(comp_pin "K14" 0.0 0.0 "BI")
-				(comp_pin "L14" 0.0 0.0 "BI")
-				(comp_pin "H22" 0.0 0.0 "BI")
-				(comp_pin "G22" 0.0 0.0 "BI")
-				(comp_pin "J15" 0.0 0.0 "BI")
-				(comp_pin "AF14" 0.0 0.0 "BI")
-				(comp_pin "AF18" 0.0 0.0 "BI")
-				(comp_pin "U4" 0.0 0.0 "NC")
-				(comp_pin "U5" 0.0 0.0 "NC"))
-			(attributes
-				(attval "IBIS" "FF1136")
-				(attval "Hyperlynx.Model File" "VIRTEX5.IBS")
-				(attval "DEVICE" "5VSX95T")
-				(attval "REFDES" "U3")))
 		(component "SOT65P210X110-5N"
 			(place "U2" 0.0 0.0 top 0.0
 				(comp_pin "4" 0.0 0.0 "OUT")
@@ -25404,7 +24263,7 @@
 		(func "$1I1038\$1I1571" "" "U17" 2)
 		(func "$1I1038\$1I1710" "" "U17" 3)
 		(func "$1I1038\$1I1851" "" "U16" 1)
-		(func "F29" "$1I1032\$1I1401" "U15" 1)
+		(func "F35" "$1I1032\$1I1401" "U15" 1)
 		(func "$1I144\$1I91" "" "U14" 1)
 		(func "$1I144\$1I59" "" "U13" 1)
 		(func "$1I144\$1I240" "" "U12" 1)
@@ -25416,7 +24275,6 @@
 		(func "$1I144\$1I353" "" "U6" 1)
 		(func "$1I291\$1I342" "" "U5" 1)
 		(func "$1I291\$1I283" "" "U4" 1)
-		(func "F2" "$1I307\$1I985" "U3" 1)
 		(func "$1I747\$1I800" "" "U2" 1)
 		(func "$1I1002\$1I199" "" "U1" 1)
 		(func "$1I1002\$1I229" "" "U1" 2)
@@ -25794,7 +24652,7 @@
 		(func "$1I4\$1I170" "" "P5" 1)
 		(func "$1I4\$1I801" "" "P5" 2)
 		(func "$1I863\$1I360" "" "P4" 1)
-		(func "F1" "$1I2\$1I416" "P3" 1)
+		(func "F15" "$1I2\$1I416" "P3" 1)
 		(func "$1I863\$1I377" "" "P2" 1)
 		(func "$1I1002\$1I237" "" "P1" 1)
 		(func "$1I671\$1I462" "" "L16" 1)
@@ -27458,17 +26316,17 @@
 		(net "$1I6\$1N2456"
 			(pins RP20-4))
 		(net "$1I6\$1N2719"
-			(pins U15-AK17 R155-2))
+			(pins R155-2 U15-AK17))
 		(net "$1I6\$1N2721"
-			(pins U15-AJ17 R156-2))
+			(pins R156-2 U15-AJ17))
 		(net "$1I6\$1N2725"
-			(pins U15-AF8 R153-2))
+			(pins R153-2 U15-AF8))
 		(net "$1I6\$1N2727"
-			(pins U15-AE9 R154-2))
+			(pins R154-2 U15-AE9))
 		(net "$1I6\$1N2729"
-			(pins U15-AN24 R157-2))
+			(pins R157-2 U15-AN24))
 		(net "$1I6\$1N2731"
-			(pins U15-AP24 R158-2))
+			(pins R158-2 U15-AP24))
 		(net "$1I6\DDR2_A0"
 			(pins J15-188 U15-AJ6 RP16-3))
 		(net "$1I6\DDR2_A1"
@@ -29288,9 +28146,9 @@
 		(net "$1I1032\$1N2123"
 			(pins RP38-3))
 		(net "$1I1032\$1N2138"
-			(pins U15-L11 R22-1))
+			(pins R22-1 U15-L11))
 		(net "$1I1032\$1N2140"
-			(pins U15-L10 R40-1))
+			(pins R40-1 U15-L10))
 		(net "$1I1032\$1N2142"
 			(pins R300-1 U15-R9))
 		(net "$1I1032\$1N2143"
@@ -29446,9 +28304,9 @@
 		(net "$1I1038\$1N1874"
 			(pins R54-2 U16-9))
 		(net "$1I1038\$1N2130"
-			(pins U15-C29 R152-1))
+			(pins R152-1 U15-C29))
 		(net "$1I1038\$1N2132"
-			(pins U15-B28 R151-1))
+			(pins R151-1 U15-B28))
 		(net "$1I1038\$1N2134"
 			(pins R51-1 U15-D19))
 		(net "$1I1038\$1N2135"
@@ -29609,16 +28467,16 @@
 		(net "1V0_INHIBIT"
 			(pins Q4-1 U60-A9))
 		(net "1V5"
-			(pins R300-2 U15-M9 U15-N6 U15-T7 U15-E10 U15-H11 U15-J8 C596-1 U62-1 U62-2
- C599-1 C600-1 C601-1 U63-E4 U63-E8 U63-J4 U63-J8 U63-K4 U63-K8 U63-L4 U63-L8
- U63-F4 U63-F8 U63-G4 U63-G8 U63-H3 U63-H4 U63-H8 U63-H9 CP34-1 CP34-2 CP34-3
- CP34-4 CP35-1 CP35-2 CP35-3 CP35-4 CP36-1 CP36-2 CP36-3 CP36-4 CP37-1 CP37-2
- CP37-3 CP37-4 C602-1 C603-1 R52-2 U15-C26 U15-F27 U15-G24 U15-B19 U15-C16
- U15-F17 C59-1 U16-1 U16-2 C85-1 C86-1 C87-1 U17-E4 U17-E8 U17-J4 U17-J8 U17-K4
- U17-K8 U17-L4 U17-L8 U17-F4 U17-F8 U17-G4 U17-G8 U17-H3 U17-H4 U17-H8 U17-H9
- CP1-1 CP1-2 CP1-3 CP1-4 CP2-1 CP2-2 CP2-3 CP2-4 CP3-1 CP3-2 CP3-3 CP3-4 CP4-1
- CP4-2 CP4-3 CP4-4 C88-1 C89-1 U14-16 C37-1 U50-14 R12-1 L10-2 L9-2 L8-2 L4-2
- L1-1 R296-2 R16-1 R40-2 R152-2))
+			(pins R300-2 R40-2 U15-M9 U15-N6 U15-T7 U15-E10 U15-H11 U15-J8 C596-1 U62-1
+ U62-2 C599-1 C600-1 C601-1 U63-E4 U63-E8 U63-J4 U63-J8 U63-K4 U63-K8 U63-L4
+ U63-L8 U63-F4 U63-F8 U63-G4 U63-G8 U63-H3 U63-H4 U63-H8 U63-H9 CP34-1 CP34-2
+ CP34-3 CP34-4 CP35-1 CP35-2 CP35-3 CP35-4 CP36-1 CP36-2 CP36-3 CP36-4 CP37-1
+ CP37-2 CP37-3 CP37-4 C602-1 C603-1 R52-2 R152-2 U15-C26 U15-F27 U15-G24
+ U15-B19 U15-C16 U15-F17 C59-1 U16-1 U16-2 C85-1 C86-1 C87-1 U17-E4 U17-E8
+ U17-J4 U17-J8 U17-K4 U17-K8 U17-L4 U17-L8 U17-F4 U17-F8 U17-G4 U17-G8 U17-H3
+ U17-H4 U17-H8 U17-H9 CP1-1 CP1-2 CP1-3 CP1-4 CP2-1 CP2-2 CP2-3 CP2-4 CP3-1
+ CP3-2 CP3-3 CP3-4 CP4-1 CP4-2 CP4-3 CP4-4 C88-1 C89-1 U14-16 C37-1 U50-14
+ R12-1 L10-2 L9-2 L8-2 L4-2 L1-1 R296-2 R16-1))
 		(net "1V5AUX"
 			(pins JP26-3 JP27-3 C545-1 U60-L11 U60-N5 U60-N14 U60-P1 U60-G10 U60-G8
  U60-H7 U60-H9 U60-J10 U60-J8 U60-K7 U60-K9 Q11-3 C556-1 C557-1 C558-1 C559-1
@@ -29649,17 +28507,17 @@
  P5-W5 P5-X5 P5-Y5 P5-Z5 C342-1 C343-1 P7-W5 P7-X5 P7-Y5 P7-Z5 J15-51 J15-191
  J15-194 J15-56 J15-62 J15-72 J15-75 J15-78 J15-170 J15-175 J15-181 J15-238
  J15-53 J15-189 J15-197 J15-59 J15-64 J15-67 J15-69 J15-172 J15-178 J15-184
- J15-187 R141-1 R233-1 R234-1 U15-AB9 U15-AC6 U15-W8 U15-AF7 U15-AH11 U15-AJ8
- U15-AK25 U15-AL22 U15-AN26 U15-AJ18 U15-AK15 U15-AN16 C464-1 U33-1 U33-2
- C361-1 C362-1 C363-1 C365-1 C366-1 C367-1 C368-1 C369-1 C370-1 C371-1 C372-1
- C373-1 C374-1 C375-1 C376-1 C377-1 C378-1 C379-1 C380-1 C381-1 C382-1 C383-1
- C384-1 C385-1 C386-1 C387-1 C388-1 C389-1 C390-1 C391-1 C392-1 C393-1 C394-1
- C395-1 U51-10 R11-1 U54-1 U54-37 U54-84 C504-1 C505-1 C506-1 C546-1 C748-1
- C749-1 U55-5 U55-6 U55-7 U55-8 U56-5 U56-6 U56-7 U56-8 U57-5 U57-6 U57-7 U57-8
- C493-1 C494-1 C497-1 C525-1 C526-1 C527-1 C528-1 C529-1 C530-1 C531-1 C532-1
- R262-2 R263-2 U58-11 U58-19 U58-25 U58-35 U58-48 U58-63 U58-73 U58-92
- U58-103 U58-105 U58-111 U58-117 U58-123 L11-2 R295-2 R18-1 R153-1 R155-1
- R157-1))
+ J15-187 R141-1 R233-1 R234-1 R153-1 R155-1 R157-1 U15-AB9 U15-AC6 U15-W8
+ U15-AF7 U15-AH11 U15-AJ8 U15-AK25 U15-AL22 U15-AN26 U15-AJ18 U15-AK15
+ U15-AN16 C464-1 U33-1 U33-2 C361-1 C362-1 C363-1 C365-1 C366-1 C367-1 C368-1
+ C369-1 C370-1 C371-1 C372-1 C373-1 C374-1 C375-1 C376-1 C377-1 C378-1 C379-1
+ C380-1 C381-1 C382-1 C383-1 C384-1 C385-1 C386-1 C387-1 C388-1 C389-1 C390-1
+ C391-1 C392-1 C393-1 C394-1 C395-1 U51-10 R11-1 U54-1 U54-37 U54-84 C504-1
+ C505-1 C506-1 C546-1 C748-1 C749-1 U55-5 U55-6 U55-7 U55-8 U56-5 U56-6 U56-7
+ U56-8 U57-5 U57-6 U57-7 U57-8 C493-1 C494-1 C497-1 C525-1 C526-1 C527-1
+ C528-1 C529-1 C530-1 C531-1 C532-1 R262-2 R263-2 U58-11 U58-19 U58-25 U58-35
+ U58-48 U58-63 U58-73 U58-92 U58-103 U58-105 U58-111 U58-117 U58-123 L11-2
+ R295-2 R18-1))
 		(net "1V8_CPU"
 			(pins C627-1 C636-1 C640-1 C645-1 C660-1 C668-1 C672-1 C677-1 C681-1 C692-1
  C696-1 C700-1 C707-1 C712-1 C730-1 C740-1 L11-1 U1-V5 U1-AK7 U1-AK9 U1-AK18
@@ -29670,20 +28528,20 @@
 			(pins JP1-3 JP2-3 U10-16 U11-16 U6-1 C40-1 C41-1 C63-1 FB26-1 U4-1 U5-1 X2-6
  X3-6 C14-1 C17-1 R105-2 R114-2 R109-2 R110-2 U15-D23 U15-E20 C18-1 C160-1
  C19-1 C161-1 C162-1 C164-1 FB52-1 U15-AB11 U15-AC12 U15-V23 U15-Y23
- U15-L12 U15-M11 U15-M21 U15-P11 U15-P23 U15-T23 U15-U24 U15-V11 C172-1
- C174-1 C176-1 C180-1 C345-1 C346-1 C347-1 C344-1 C322-1 C323-1 C324-1 C325-1
- C470-1 C469-1 C468-1 C427-1 C428-1 C429-1 C302-1 C303-1 C304-1 C236-1 C237-1
- C238-1 C264-1 C265-1 C266-1 C267-1 C268-1 C269-1 C326-1 C327-1 C328-1 C350-1
- C349-1 C348-1 C311-1 C312-1 C318-1 C319-1 P5-W4 P5-X4 P5-Y4 P5-Z4 C340-1
- C341-1 P7-W4 P7-X4 P7-Y4 P7-Z4 R10-1 U27-10 JP11-3 JP13-3 JP15-3 JP17-3
- JP18-3 JP20-1 JP21-1 JP22-1 JP23-1 C507-1 C508-1 C509-1 C510-1 C513-1 C514-1
- C515-1 C516-1 C517-1 C518-1 C519-1 C520-1 C521-1 C522-1 C523-1 C524-1 C533-1
- C534-1 J25-9 C537-1 R224-1 R254-2 R255-2 R256-2 R257-2 R258-2 R259-2 R260-2
- R261-2 R266-1 U58-96 U58-101 U58-4 U58-77 U58-83 U58-90 U58-15 U58-21 U58-29
- U58-37 U58-42 U58-53 U58-58 U58-69 L12-2 R294-2 R20-1 U3-AA32 U3-AB29 U3-J28
- U3-L32 U3-M29 U3-P33 U3-R30 U3-T27 U3-V31 U3-W28 U3-AD33 U3-AE30 U3-AH31
- U3-AJ28 U3-AL32 U3-AM29 U3-E30 U3-H31 C273-1 C274-1 C281-1 C282-1 C283-1
- C284-1 C285-1 C293-1 C294-1 C295-1))
+ U15-L12 U15-M11 U15-M21 U15-P11 U15-P23 U15-T23 U15-U24 U15-V11 U15-AA32
+ U15-AB29 U15-J28 U15-L32 U15-M29 U15-P33 U15-R30 U15-T27 U15-V31 U15-W28
+ U15-AD33 U15-AE30 U15-AH31 U15-AJ28 U15-AL32 U15-AM29 U15-E30 U15-H31 C273-1
+ C274-1 C281-1 C282-1 C283-1 C284-1 C172-1 C174-1 C176-1 C180-1 C345-1 C346-1
+ C347-1 C344-1 C322-1 C323-1 C324-1 C325-1 C470-1 C469-1 C468-1 C427-1 C428-1
+ C429-1 C285-1 C293-1 C294-1 C295-1 C302-1 C303-1 C304-1 C236-1 C237-1 C238-1
+ C264-1 C265-1 C266-1 C267-1 C268-1 C269-1 C326-1 C327-1 C328-1 C350-1 C349-1
+ C348-1 C311-1 C312-1 C318-1 C319-1 P5-W4 P5-X4 P5-Y4 P5-Z4 C340-1 C341-1
+ P7-W4 P7-X4 P7-Y4 P7-Z4 R10-1 U27-10 JP11-3 JP13-3 JP15-3 JP17-3 JP18-3
+ JP20-1 JP21-1 JP22-1 JP23-1 C507-1 C508-1 C509-1 C510-1 C513-1 C514-1 C515-1
+ C516-1 C517-1 C518-1 C519-1 C520-1 C521-1 C522-1 C523-1 C524-1 C533-1 C534-1
+ J25-9 C537-1 R224-1 R254-2 R255-2 R256-2 R257-2 R258-2 R259-2 R260-2 R261-2
+ R266-1 U58-96 U58-101 U58-4 U58-77 U58-83 U58-90 U58-15 U58-21 U58-29 U58-37
+ U58-42 U58-53 U58-58 U58-69 L12-2 R294-2 R20-1))
 		(net "2V5_CPU"
 			(pins C622-1 C669-1 C673-1 C678-1 C682-1 C688-1 C697-1 C702-1 C708-1 C713-1
  C719-1 C725-1 C733-1 C735-1 L12-1 U1-AA22 U1-AK33 U1-AN23 U1-AN30 U1-AB21
@@ -29818,77 +28676,77 @@
  J1-14 J1-16 J1-18 J1-2 J1-20 J1-22 J1-23 J1-3 J1-39 J1-4 J1-40 J1-41 J1-42
  J1-43 J1-5 J1-8 J1-9 R23-2 R24-1 R25-2 U31-2 U24-3 U24-11 C49-1 C51-1 C48-1
  C52-1 C47-2 P1-16 R184-1 C590-2 C591-2 C592-2 C593-2 C594-2 R301-2 R101-1
- R304-1 C595-2 C596-2 C597-2 C598-2 U62-8 U62-4 C599-2 C600-2 C601-2 U63-C4
- U63-C8 U63-F6 U63-G6 U63-H6 U63-J6 U63-K6 U63-L5 U63-L6 U63-L7 U63-M4 U63-M5
- U63-D4 U63-M6 U63-M7 U63-M8 U63-N4 U63-N8 U63-D5 U63-D6 U63-D7 U63-D8 U63-E5
- U63-E6 U63-E7 CP34-5 CP34-6 CP34-7 CP34-8 CP35-5 CP35-6 CP35-7 CP35-8 CP36-5
- CP36-6 CP36-7 CP36-8 CP37-5 CP37-6 CP37-7 CP37-8 CP38-5 CP38-6 CP38-7 CP38-8
- CP39-5 CP39-6 CP39-7 CP39-8 CP40-5 CP40-6 CP40-7 CP40-8 CP41-5 CP41-6 CP41-7
- CP41-8 CP42-5 CP42-6 CP42-7 CP42-8 CP43-5 CP43-6 CP43-7 CP43-8 CP44-5 CP44-6
- CP44-7 CP44-8 CP45-5 CP45-6 CP45-7 CP45-8 CP46-5 CP46-6 CP46-7 CP46-8 CP47-5
- CP47-6 CP47-7 CP47-8 CP48-5 CP48-6 CP48-7 CP48-8 CP49-5 CP49-6 CP49-7 CP49-8
- CP50-5 CP50-6 CP50-7 CP50-8 CP51-5 CP51-6 CP51-7 CP51-8 CP52-5 CP52-6 CP52-7
- CP52-8 C602-2 C603-2 C57-2 R51-2 R102-1 R55-1 C58-2 C59-2 C60-2 C84-2 U16-8
- U16-4 C85-2 C86-2 C87-2 U17-C4 U17-C8 U17-F6 U17-G6 U17-H6 U17-J6 U17-K6
- U17-L5 U17-L6 U17-L7 U17-M4 U17-M5 U17-D4 U17-M6 U17-M7 U17-M8 U17-N4 U17-N8
- U17-D5 U17-D6 U17-D7 U17-D8 U17-E5 U17-E6 U17-E7 CP1-5 CP1-6 CP1-7 CP1-8
- CP2-5 CP2-6 CP2-7 CP2-8 CP3-5 CP3-6 CP3-7 CP3-8 CP4-5 CP4-6 CP4-7 CP4-8 CP5-5
- CP5-6 CP5-7 CP5-8 CP6-5 CP6-6 CP6-7 CP6-8 CP7-5 CP7-6 CP7-7 CP7-8 CP8-5 CP8-6
- CP8-7 CP8-8 CP9-5 CP9-6 CP9-7 CP9-8 CP10-5 CP10-6 CP10-7 CP10-8 CP11-5
- CP11-6 CP11-7 CP11-8 CP12-5 CP12-6 CP12-7 CP12-8 CP13-5 CP13-6 CP13-7 CP13-8
- CP14-5 CP14-6 CP14-7 CP14-8 CP15-5 CP15-6 CP15-7 CP15-8 CP16-5 CP16-6 CP16-7
- CP16-8 CP17-5 CP17-6 CP17-7 CP17-8 CP18-5 CP18-6 CP18-7 CP18-8 CP19-5 CP19-6
- CP19-7 CP19-8 C88-2 C89-2 C608-2 C609-2 C610-2 C611-2 J2-10 J2-12 J2-14 J2-16
- J2-18 J2-19 J2-2 J2-20 J2-4 J2-6 J2-8 J9-10 J9-12 J9-14 J9-16 J9-18 J9-19 J9-2
- J9-20 J9-4 J9-6 J9-8 U10-8 U10-9 U11-8 U11-9 U12-8 U12-9 U13-8 U13-9 U14-8
- U14-9 R7-2 R8-2 R9-2 R1-2 R2-1 R47-2 R48-2 U6-2 U7-2 C34-2 C35-2 C36-2 C37-2
- C38-2 C39-2 C40-2 C41-2 C42-2 C43-2 C44-2 C45-2 C61-2 C63-2 J10-2 J10-3 J10-4
- J10-5 J11-2 J11-3 J11-4 J11-5 X1-3 V2-3 V2-4 V3-3 V3-4 V4-3 V4-4 V5-3 V5-4 V6-3
- V6-4 V7-3 V7-4 V8-3 V8-4 V9-3 V9-4 V18-3 V18-4 V19-3 V19-4 V20-3 V20-4 V21-3
- V21-4 V22-3 V22-4 V23-3 V23-4 V24-3 V24-4 V25-3 V25-4 U18-1 U19-1 R58-1 R90-1
- R91-1 R95-1 P3-G1 P3-G3 P3-G5 P3-G9 P3-G10 P3-G12 P3-G14 P3-G18 C90-2 C91-2
- JP6-2 U8-17 U8-13 C64-2 C65-2 C66-2 C67-2 C92-2 C93-2 C94-2 C96-2 C98-2
- C100-2 C101-2 C102-2 C114-2 C115-2 C116-2 C118-2 C119-2 C121-2 C123-2 C125-2
- C127-2 C128-2 C129-2 C130-2 C131-2 C132-2 C133-2 C134-2 C135-2 C136-2 C137-2
- R99-1 R100-1 C138-2 C139-2 U20-4 U21-4 U22-3 U23-3 C148-2 J8-2 J8-29 J8-32
- J8-35 J8-38 J8-41 J8-44 J8-47 J8-50 J8-65 J8-66 J8-5 J8-79 J8-82 J8-85 J8-88
- J8-91 J8-94 J8-97 J8-100 J8-103 J8-106 J8-8 J8-109 J8-112 J8-115 J8-118
- J8-121 J8-124 J8-127 J8-130 J8-133 J8-136 J8-11 J8-139 J8-142 J8-145 J8-148
- J8-151 J8-154 J8-157 J8-160 J8-163 J8-166 J8-14 J8-169 J8-198 J8-201 J8-204
- J8-207 J8-210 J8-213 J8-216 J8-219 J8-222 J8-17 J8-225 J8-228 J8-231 J8-234
- J8-237 J8-20 J8-23 J8-26 J8-239 J8-240 J8-101 C430-2 C431-2 C432-2 C433-2
- C434-2 C435-2 C436-2 C437-2 C438-2 C439-2 C440-2 C441-2 C442-2 C443-2 C444-2
- C445-2 C446-2 C447-2 C448-2 C449-2 C450-2 C451-2 C452-2 C453-2 C454-2 C149-2
- C151-2 C152-2 R225-2 R226-2 C21-2 C459-2 C456-2 C457-2 C458-2 U32-8 U32-4
- CP26-5 CP26-6 CP26-7 CP26-8 CP28-5 CP28-6 CP28-7 CP28-8 CP29-5 CP29-6 CP29-7
- CP29-8 CP30-5 CP30-6 CP30-7 CP30-8 CP31-5 CP31-6 CP31-7 CP31-8 CP32-5 CP32-6
- CP32-7 CP32-8 CP33-5 CP33-6 CP33-7 CP33-8 U4-3 U4-5 U4-9 U4-11 U4-13 U5-3 U5-5
- U5-9 U5-11 U5-13 X2-3 X3-3 C6-2 C14-2 C16-2 C17-2 C20-2 C32-2 FB27-2 R104-1
- R106-1 R108-1 R113-1 R115-1 R116-1 C18-2 C160-2 C19-2 C161-2 C162-2 J12-2
- J12-3 J12-4 J12-5 J13-2 J13-3 J13-4 J13-5 D9-1 C164-2 X4-3 V1-3 V1-4 V34-3
- V34-4 V35-3 V35-4 V36-3 V36-4 V37-3 V37-4 V38-3 V38-4 V39-3 V39-4 V40-3 V40-4
- V49-3 V49-4 V50-3 V50-4 V51-3 V51-4 V52-3 V52-4 V53-3 V53-4 V54-3 V54-4 V55-3
- V55-4 V56-3 V56-4 U28-1 U29-1 P3-G20 P3-G22 P3-G24 P3-G28 P3-G29 P3-G31
- P3-G33 P3-G37 C165-2 C166-2 R117-1 R118-1 R123-1 R124-1 R129-1 R130-1 JP9-2
- U26-17 U26-13 C76-2 C77-2 C126-2 C78-2 C79-2 C167-2 C168-2 U30-4 U34-4 U36-3
- U37-3 C169-2 C170-2 C171-2 C173-2 C175-2 C177-2 C178-2 C179-2 C191-2 C212-2
- C213-2 C215-2 C220-2 C223-2 C225-2 C226-2 C227-2 C239-2 C240-2 C241-2 C242-2
- C243-2 C244-2 C245-2 C246-2 C247-2 C248-2 U15-A11 U15-A12 U15-AA19 U15-C31
- U15-D18 U15-D28 U15-D33 U15-D6 U15-D9 U15-E15 U15-E25 U15-E5 U15-F12 U15-AA2
- U15-F22 U15-F32 U15-F7 U15-G19 U15-G29 U15-G34 U15-G4 U15-G9 U15-H16 U15-H2
- U15-AA21 U15-H21 U15-H26 U15-H6 U15-J13 U15-J18 U15-J2 U15-J23 U15-J33
- U15-K10 U15-K15 U15-AA23 U15-K20 U15-K25 U15-K30 U15-K4 U15-K5 U15-L13
- U15-L17 U15-L22 U15-L27 U15-L7 U15-AA27 U15-M12 U15-M14 U15-M16 U15-M18
- U15-M20 U15-M24 U15-M34 U15-M4 U15-N11 U15-N13 U15-AA7 U15-N17 U15-N19
- U15-N21 U15-N26 U15-N31 U15-N4 U15-P12 U15-P14 U15-P16 U15-P18 U15-AB12
- U15-P2 U15-P20 U15-P22 U15-P28 U15-P8 U15-R10 U15-R13 U15-R15 U15-R17
- U15-R19 U15-AB14 U15-R2 U15-R21 U15-R23 U15-R25 U15-R5 U15-T12 U15-T14
- U15-T16 U15-T20 U15-T22 U15-AB16 U15-T32 U15-T4 U15-T5 U15-U11 U15-U13
- U15-U15 U15-U19 U15-U21 U15-U23 U15-U29 U15-AB18 U15-U34 U15-U6 U15-U9
- U15-V12 U15-V14 U15-V16 U15-V20 U15-V22 U15-V26 U15-V6 U15-A17 U15-AB20
- U15-W13 U15-W15 U15-W19 U15-W21 U15-W23 U15-W33 U15-W4 U15-W5 U15-Y10
- U15-Y12 U15-AB22 U15-Y14 U15-Y16 U15-Y18 U15-Y2 U15-Y20 U15-Y22 U15-Y25
- U15-Y30 U15-Y5 U15-AB24 U15-AB34 U15-AB4 U15-AC11 U15-AC13 U15-AC17
+ R22-2 R304-1 C595-2 C596-2 C597-2 C598-2 U62-8 U62-4 C599-2 C600-2 C601-2
+ U63-C4 U63-C8 U63-F6 U63-G6 U63-H6 U63-J6 U63-K6 U63-L5 U63-L6 U63-L7 U63-M4
+ U63-M5 U63-D4 U63-M6 U63-M7 U63-M8 U63-N4 U63-N8 U63-D5 U63-D6 U63-D7 U63-D8
+ U63-E5 U63-E6 U63-E7 CP34-5 CP34-6 CP34-7 CP34-8 CP35-5 CP35-6 CP35-7 CP35-8
+ CP36-5 CP36-6 CP36-7 CP36-8 CP37-5 CP37-6 CP37-7 CP37-8 CP38-5 CP38-6 CP38-7
+ CP38-8 CP39-5 CP39-6 CP39-7 CP39-8 CP40-5 CP40-6 CP40-7 CP40-8 CP41-5 CP41-6
+ CP41-7 CP41-8 CP42-5 CP42-6 CP42-7 CP42-8 CP43-5 CP43-6 CP43-7 CP43-8 CP44-5
+ CP44-6 CP44-7 CP44-8 CP45-5 CP45-6 CP45-7 CP45-8 CP46-5 CP46-6 CP46-7 CP46-8
+ CP47-5 CP47-6 CP47-7 CP47-8 CP48-5 CP48-6 CP48-7 CP48-8 CP49-5 CP49-6 CP49-7
+ CP49-8 CP50-5 CP50-6 CP50-7 CP50-8 CP51-5 CP51-6 CP51-7 CP51-8 CP52-5 CP52-6
+ CP52-7 CP52-8 C602-2 C603-2 C57-2 R51-2 R102-1 R151-2 R55-1 C58-2 C59-2 C60-2
+ C84-2 U16-8 U16-4 C85-2 C86-2 C87-2 U17-C4 U17-C8 U17-F6 U17-G6 U17-H6
+ U17-J6 U17-K6 U17-L5 U17-L6 U17-L7 U17-M4 U17-M5 U17-D4 U17-M6 U17-M7 U17-M8
+ U17-N4 U17-N8 U17-D5 U17-D6 U17-D7 U17-D8 U17-E5 U17-E6 U17-E7 CP1-5 CP1-6
+ CP1-7 CP1-8 CP2-5 CP2-6 CP2-7 CP2-8 CP3-5 CP3-6 CP3-7 CP3-8 CP4-5 CP4-6 CP4-7
+ CP4-8 CP5-5 CP5-6 CP5-7 CP5-8 CP6-5 CP6-6 CP6-7 CP6-8 CP7-5 CP7-6 CP7-7 CP7-8
+ CP8-5 CP8-6 CP8-7 CP8-8 CP9-5 CP9-6 CP9-7 CP9-8 CP10-5 CP10-6 CP10-7 CP10-8
+ CP11-5 CP11-6 CP11-7 CP11-8 CP12-5 CP12-6 CP12-7 CP12-8 CP13-5 CP13-6 CP13-7
+ CP13-8 CP14-5 CP14-6 CP14-7 CP14-8 CP15-5 CP15-6 CP15-7 CP15-8 CP16-5 CP16-6
+ CP16-7 CP16-8 CP17-5 CP17-6 CP17-7 CP17-8 CP18-5 CP18-6 CP18-7 CP18-8 CP19-5
+ CP19-6 CP19-7 CP19-8 C88-2 C89-2 C608-2 C609-2 C610-2 C611-2 J2-10 J2-12
+ J2-14 J2-16 J2-18 J2-19 J2-2 J2-20 J2-4 J2-6 J2-8 J9-10 J9-12 J9-14 J9-16
+ J9-18 J9-19 J9-2 J9-20 J9-4 J9-6 J9-8 U10-8 U10-9 U11-8 U11-9 U12-8 U12-9
+ U13-8 U13-9 U14-8 U14-9 R7-2 R8-2 R9-2 R1-2 R2-1 R47-2 R48-2 U6-2 U7-2 C34-2
+ C35-2 C36-2 C37-2 C38-2 C39-2 C40-2 C41-2 C42-2 C43-2 C44-2 C45-2 C61-2 C63-2
+ J10-2 J10-3 J10-4 J10-5 J11-2 J11-3 J11-4 J11-5 X1-3 V2-3 V2-4 V3-3 V3-4 V4-3
+ V4-4 V5-3 V5-4 V6-3 V6-4 V7-3 V7-4 V8-3 V8-4 V9-3 V9-4 V18-3 V18-4 V19-3 V19-4
+ V20-3 V20-4 V21-3 V21-4 V22-3 V22-4 V23-3 V23-4 V24-3 V24-4 V25-3 V25-4 U18-1
+ U19-1 R58-1 R90-1 R91-1 R95-1 P3-G1 P3-G3 P3-G5 P3-G9 P3-G10 P3-G12 P3-G14
+ P3-G18 C90-2 C91-2 JP6-2 U8-17 U8-13 C64-2 C65-2 C66-2 C67-2 C92-2 C93-2 C94-2
+ C96-2 C98-2 C100-2 C101-2 C102-2 C114-2 C115-2 C116-2 C118-2 C119-2 C121-2
+ C123-2 C125-2 C127-2 C128-2 C129-2 C130-2 C131-2 C132-2 C133-2 C134-2 C135-2
+ C136-2 C137-2 R99-1 R100-1 C138-2 C139-2 U20-4 U21-4 U22-3 U23-3 C148-2 J8-2
+ J8-29 J8-32 J8-35 J8-38 J8-41 J8-44 J8-47 J8-50 J8-65 J8-66 J8-5 J8-79 J8-82
+ J8-85 J8-88 J8-91 J8-94 J8-97 J8-100 J8-103 J8-106 J8-8 J8-109 J8-112 J8-115
+ J8-118 J8-121 J8-124 J8-127 J8-130 J8-133 J8-136 J8-11 J8-139 J8-142 J8-145
+ J8-148 J8-151 J8-154 J8-157 J8-160 J8-163 J8-166 J8-14 J8-169 J8-198 J8-201
+ J8-204 J8-207 J8-210 J8-213 J8-216 J8-219 J8-222 J8-17 J8-225 J8-228 J8-231
+ J8-234 J8-237 J8-20 J8-23 J8-26 J8-239 J8-240 J8-101 C430-2 C431-2 C432-2
+ C433-2 C434-2 C435-2 C436-2 C437-2 C438-2 C439-2 C440-2 C441-2 C442-2 C443-2
+ C444-2 C445-2 C446-2 C447-2 C448-2 C449-2 C450-2 C451-2 C452-2 C453-2 C454-2
+ C149-2 C151-2 C152-2 R225-2 R226-2 C21-2 C459-2 C456-2 C457-2 C458-2 U32-8
+ U32-4 CP26-5 CP26-6 CP26-7 CP26-8 CP28-5 CP28-6 CP28-7 CP28-8 CP29-5 CP29-6
+ CP29-7 CP29-8 CP30-5 CP30-6 CP30-7 CP30-8 CP31-5 CP31-6 CP31-7 CP31-8 CP32-5
+ CP32-6 CP32-7 CP32-8 CP33-5 CP33-6 CP33-7 CP33-8 U4-3 U4-5 U4-9 U4-11 U4-13
+ U5-3 U5-5 U5-9 U5-11 U5-13 X2-3 X3-3 C6-2 C14-2 C16-2 C17-2 C20-2 C32-2
+ FB27-2 R104-1 R106-1 R108-1 R113-1 R115-1 R116-1 C18-2 C160-2 C19-2 C161-2
+ C162-2 J12-2 J12-3 J12-4 J12-5 J13-2 J13-3 J13-4 J13-5 D9-1 C164-2 X4-3 V1-3
+ V1-4 V34-3 V34-4 V35-3 V35-4 V36-3 V36-4 V37-3 V37-4 V38-3 V38-4 V39-3 V39-4
+ V40-3 V40-4 V49-3 V49-4 V50-3 V50-4 V51-3 V51-4 V52-3 V52-4 V53-3 V53-4 V54-3
+ V54-4 V55-3 V55-4 V56-3 V56-4 U28-1 U29-1 P3-G20 P3-G22 P3-G24 P3-G28 P3-G29
+ P3-G31 P3-G33 P3-G37 C165-2 C166-2 R117-1 R118-1 R123-1 R124-1 R129-1 R130-1
+ JP9-2 U26-17 U26-13 C76-2 C77-2 C126-2 C78-2 C79-2 C167-2 C168-2 U30-4 U34-4
+ U36-3 U37-3 C169-2 C170-2 C171-2 C173-2 C175-2 C177-2 C178-2 C179-2 C191-2
+ C212-2 C213-2 C215-2 C220-2 C223-2 C225-2 C226-2 C227-2 C239-2 C240-2 C241-2
+ C242-2 C243-2 C244-2 C245-2 C246-2 C247-2 C248-2 U15-A11 U15-A12 U15-AA19
+ U15-C31 U15-D18 U15-D28 U15-D33 U15-D6 U15-D9 U15-E15 U15-E25 U15-E5 U15-F12
+ U15-AA2 U15-F22 U15-F32 U15-F7 U15-G19 U15-G29 U15-G34 U15-G4 U15-G9 U15-H16
+ U15-H2 U15-AA21 U15-H21 U15-H26 U15-H6 U15-J13 U15-J18 U15-J2 U15-J23
+ U15-J33 U15-K10 U15-K15 U15-AA23 U15-K20 U15-K25 U15-K30 U15-K4 U15-K5
+ U15-L13 U15-L17 U15-L22 U15-L27 U15-L7 U15-AA27 U15-M12 U15-M14 U15-M16
+ U15-M18 U15-M20 U15-M24 U15-M34 U15-M4 U15-N11 U15-N13 U15-AA7 U15-N17
+ U15-N19 U15-N21 U15-N26 U15-N31 U15-N4 U15-P12 U15-P14 U15-P16 U15-P18
+ U15-AB12 U15-P2 U15-P20 U15-P22 U15-P28 U15-P8 U15-R10 U15-R13 U15-R15
+ U15-R17 U15-R19 U15-AB14 U15-R2 U15-R21 U15-R23 U15-R25 U15-R5 U15-T12
+ U15-T14 U15-T16 U15-T20 U15-T22 U15-AB16 U15-T32 U15-T4 U15-T5 U15-U11
+ U15-U13 U15-U15 U15-U19 U15-U21 U15-U23 U15-U29 U15-AB18 U15-U34 U15-U6
+ U15-U9 U15-V12 U15-V14 U15-V16 U15-V20 U15-V22 U15-V26 U15-V6 U15-A17
+ U15-AB20 U15-W13 U15-W15 U15-W19 U15-W21 U15-W23 U15-W33 U15-W4 U15-W5
+ U15-Y10 U15-Y12 U15-AB22 U15-Y14 U15-Y16 U15-Y18 U15-Y2 U15-Y20 U15-Y22
+ U15-Y25 U15-Y30 U15-Y5 U15-AB24 U15-AB34 U15-AB4 U15-AC11 U15-AC13 U15-AC17
  U15-AC19 U15-AC21 U15-A22 U15-AC26 U15-AC31 U15-AD12 U15-AD16 U15-AD18
  U15-AD28 U15-AD8 U15-AE10 U15-AE15 U15-AE20 U15-A27 U15-AE25 U15-AE4 U15-AE5
  U15-AF12 U15-AF17 U15-AF2 U15-AF22 U15-AF27 U15-AF32 U15-AG19 U15-A32
@@ -29898,22 +28756,23 @@
  U15-AM24 U15-AM34 U15-AN1 U15-AN11 U15-AN2 U15-AN21 U15-AN31 U15-AA15
  U15-AN7 U15-AN8 U15-AP11 U15-AP13 U15-AP18 U15-AP23 U15-AP28 U15-AP33
  U15-B1 U15-B11 U15-AA17 U15-B14 U15-B2 U15-B24 U15-B29 U15-B34 U15-B7
- U15-B8 U15-C11 U15-C2 U15-C21 C9-2 C7-2 C8-2 C23-2 C24-2 C25-2 C26-2 C27-2
- C28-2 C29-2 C30-2 C31-2 C120-2 C122-2 C124-2 C153-2 C154-2 C155-2 C156-2
- C157-2 C163-2 C172-2 C174-2 C176-2 C180-2 C345-2 C346-2 C347-2 C344-2 C322-2
- C323-2 C324-2 C325-2 C470-2 C469-2 C468-2 C427-2 C428-2 C429-2 C257-2 C258-2
- C259-2 C260-2 C261-2 C262-2 C263-2 C272-2 C275-2 C276-2 C277-2 C278-2 C279-2
- C280-2 C286-2 C287-2 C288-2 C289-2 C290-2 C291-2 C292-2 C302-2 C303-2 C304-2
- C10-2 C11-2 C12-2 C181-2 C182-2 C200-2 C201-2 C202-2 C203-2 C204-2 C205-2
- C206-2 C207-2 C208-2 C209-2 C210-2 C211-2 C214-2 C216-2 C217-2 C218-2 C219-2
- C221-2 C222-2 C224-2 C228-2 C229-2 C230-2 C231-2 C232-2 C233-2 C234-2 C235-2
- C236-2 C237-2 C238-2 C264-2 C265-2 C266-2 C267-2 C268-2 C269-2 C326-2 C327-2
- C328-2 C350-2 C349-2 C348-2 C309-2 C310-2 C311-2 C312-2 C314-2 C315-2 C316-2
- C317-2 C318-2 C319-2 C320-2 C321-2 P5-B1 P5-B10 P5-B11 P5-B12 P5-B13 P5-B14
- P5-B15 P5-B16 P5-B17 P5-B18 P5-B19 P5-B2 P5-B20 P5-B3 P5-B4 P5-B5 P5-B6 P5-B7
- P5-B8 P5-B9 P5-E1 P5-E10 P5-E11 P5-E12 P5-E13 P5-E14 P5-E15 P5-E16 P5-E17
- P5-E18 P5-E19 P5-E2 P5-E20 P5-E3 P5-E4 P5-E5 P5-E6 P5-E7 P5-E8 P5-E9 P5-W1
- P5-W6 P5-X1 P5-X6 P5-Y1 P5-Y6 P5-Z1 P5-Z6 C612-2 C613-2 P6-5 P6-6 P6-4 C614-2
+ U15-B8 U15-C11 U15-C2 U15-C21 C273-2 C274-2 C281-2 C282-2 C283-2 C284-2 C9-2
+ C7-2 C8-2 C23-2 C24-2 C25-2 C26-2 C27-2 C28-2 C29-2 C30-2 C31-2 C120-2
+ C122-2 C124-2 C153-2 C154-2 C155-2 C156-2 C157-2 C163-2 C172-2 C174-2 C176-2
+ C180-2 C345-2 C346-2 C347-2 C344-2 C322-2 C323-2 C324-2 C325-2 C470-2 C469-2
+ C468-2 C427-2 C428-2 C429-2 C285-2 C293-2 C294-2 C295-2 C257-2 C258-2 C259-2
+ C260-2 C261-2 C262-2 C263-2 C272-2 C275-2 C276-2 C277-2 C278-2 C279-2 C280-2
+ C286-2 C287-2 C288-2 C289-2 C290-2 C291-2 C292-2 C302-2 C303-2 C304-2 C10-2
+ C11-2 C12-2 C181-2 C182-2 C200-2 C201-2 C202-2 C203-2 C204-2 C205-2 C206-2
+ C207-2 C208-2 C209-2 C210-2 C211-2 C214-2 C216-2 C217-2 C218-2 C219-2 C221-2
+ C222-2 C224-2 C228-2 C229-2 C230-2 C231-2 C232-2 C233-2 C234-2 C235-2 C236-2
+ C237-2 C238-2 C264-2 C265-2 C266-2 C267-2 C268-2 C269-2 C326-2 C327-2 C328-2
+ C350-2 C349-2 C348-2 C309-2 C310-2 C311-2 C312-2 C314-2 C315-2 C316-2 C317-2
+ C318-2 C319-2 C320-2 C321-2 P5-B1 P5-B10 P5-B11 P5-B12 P5-B13 P5-B14 P5-B15
+ P5-B16 P5-B17 P5-B18 P5-B19 P5-B2 P5-B20 P5-B3 P5-B4 P5-B5 P5-B6 P5-B7 P5-B8
+ P5-B9 P5-E1 P5-E10 P5-E11 P5-E12 P5-E13 P5-E14 P5-E15 P5-E16 P5-E17 P5-E18
+ P5-E19 P5-E2 P5-E20 P5-E3 P5-E4 P5-E5 P5-E6 P5-E7 P5-E8 P5-E9 P5-W1 P5-W6
+ P5-X1 P5-X6 P5-Y1 P5-Y6 P5-Z1 P5-Z6 C612-2 C613-2 P6-5 P6-6 P6-4 C614-2
  R182-2 VR4-2 U1-N2 SP2-3 C336-2 C337-2 C338-2 C339-2 C340-2 C341-2 C342-2
  C343-2 P7-B1 P7-B10 P7-B11 P7-B12 P7-B13 P7-B14 P7-B15 P7-B16 P7-B17 P7-B18
  P7-B19 P7-B2 P7-B20 P7-B3 P7-B4 P7-B5 P7-B6 P7-B7 P7-B8 P7-B9 P7-E1 P7-E10
@@ -29927,23 +28786,23 @@
  J15-14 J15-169 J15-198 J15-201 J15-204 J15-207 J15-210 J15-213 J15-216
  J15-219 J15-222 J15-17 J15-225 J15-228 J15-231 J15-234 J15-237 J15-20 J15-23
  J15-26 C352-2 C353-2 C354-2 C355-2 C356-2 C357-2 C358-2 C359-2 C360-2 C460-2
- R140-1 R231-2 R232-2 C22-2 C467-2 C464-2 C465-2 C466-2 C270-2 C271-2 U33-8
- U33-4 C361-2 C362-2 C363-2 C364-2 C365-2 C366-2 C367-2 C368-2 C369-2 C370-2
- C371-2 C372-2 C373-2 C374-2 C375-2 C376-2 C377-2 C378-2 C379-2 C380-2 C381-2
- C382-2 C383-2 C384-2 C385-2 C386-2 C387-2 CP20-5 CP20-6 CP20-7 CP20-8 CP21-5
- CP21-6 CP21-7 CP21-8 CP22-5 CP22-6 CP22-7 CP22-8 CP23-5 CP23-6 CP23-7 CP23-8
- CP24-5 CP24-6 CP24-7 CP24-8 CP25-5 CP25-6 CP25-7 CP25-8 CP27-5 CP27-6 CP27-7
- CP27-8 C388-2 C389-2 C390-2 C391-2 C392-2 C393-2 C394-2 C395-2 U50-3 U50-8
- U50-7 U50-4 U50-11 U53-3 U53-6 U53-1 C400-2 C401-2 C402-2 C403-2 C404-2
- C405-2 C409-2 C410-2 C412-2 C413-2 C104-2 C105-2 JP30-1 Q4-2 Q5-2 Q6-2 Q7-2
- U51-3 U51-4 U51-7 U51-1 R143-1 R147-1 R148-1 R179-1 R181-1 C423-2 C424-2
- C420-2 C419-2 C418-2 C421-2 C422-2 C425-2 C426-2 C117-2 U27-3 U27-4 U27-7
- U27-1 J19-1 J20-1 J21-1 P9-81 P9-82 P9-83 P9-84 P9-85 P9-86 P9-87 P9-88 U2-3
- C473-2 C474-2 C475-2 C476-2 C477-2 C478-2 C479-2 C480-2 C481-2 C482-2 C483-2
- C13-2 U35-3 C615-2 RO10-1 RO11-3 RO14-1 U54-108 U54-123 U54-99 U54-144
- U54-29 U54-36 U54-47 U54-62 U54-72 U54-89 U54-90 SW2-8 SW2-7 SW2-6 SW2-5
- SW3-8 SW3-7 SW3-6 SW3-5 C484-2 J17-16 J17-17 J17-8 J17-4 J22-2 J22-4 J22-6
- J22-8 J22-10 J22-14 J22-12 R197-1 R199-1 R209-1 R210-1 R211-1 R212-1
+ R140-1 R231-2 R232-2 R154-1 R156-1 R158-1 C22-2 C467-2 C464-2 C465-2 C466-2
+ C270-2 C271-2 U33-8 U33-4 C361-2 C362-2 C363-2 C364-2 C365-2 C366-2 C367-2
+ C368-2 C369-2 C370-2 C371-2 C372-2 C373-2 C374-2 C375-2 C376-2 C377-2 C378-2
+ C379-2 C380-2 C381-2 C382-2 C383-2 C384-2 C385-2 C386-2 C387-2 CP20-5 CP20-6
+ CP20-7 CP20-8 CP21-5 CP21-6 CP21-7 CP21-8 CP22-5 CP22-6 CP22-7 CP22-8 CP23-5
+ CP23-6 CP23-7 CP23-8 CP24-5 CP24-6 CP24-7 CP24-8 CP25-5 CP25-6 CP25-7 CP25-8
+ CP27-5 CP27-6 CP27-7 CP27-8 C388-2 C389-2 C390-2 C391-2 C392-2 C393-2 C394-2
+ C395-2 U50-3 U50-8 U50-7 U50-4 U50-11 U53-3 U53-6 U53-1 C400-2 C401-2 C402-2
+ C403-2 C404-2 C405-2 C409-2 C410-2 C412-2 C413-2 C104-2 C105-2 JP30-1 Q4-2
+ Q5-2 Q6-2 Q7-2 U51-3 U51-4 U51-7 U51-1 R143-1 R147-1 R148-1 R179-1 R181-1
+ C423-2 C424-2 C420-2 C419-2 C418-2 C421-2 C422-2 C425-2 C426-2 C117-2 U27-3
+ U27-4 U27-7 U27-1 J19-1 J20-1 J21-1 P9-81 P9-82 P9-83 P9-84 P9-85 P9-86 P9-87
+ P9-88 U2-3 C473-2 C474-2 C475-2 C476-2 C477-2 C478-2 C479-2 C480-2 C481-2
+ C482-2 C483-2 C13-2 U35-3 C615-2 RO10-1 RO11-3 RO14-1 U54-108 U54-123 U54-99
+ U54-144 U54-29 U54-36 U54-47 U54-62 U54-72 U54-89 U54-90 SW2-8 SW2-7 SW2-6
+ SW2-5 SW3-8 SW3-7 SW3-6 SW3-5 C484-2 J17-16 J17-17 J17-8 J17-4 J22-2 J22-4
+ J22-6 J22-8 J22-10 J22-14 J22-12 R197-1 R199-1 R209-1 R210-1 R211-1 R212-1
  U15-AC23 U15-AB23 U15-L23 C485-2 C486-2 C487-2 J24-2 J24-4 J24-6 J24-8 J24-10
  J24-14 J24-12 C488-2 R214-1 R217-1 R220-1 C489-2 C490-2 C491-2 C504-2 C505-2
  C506-2 C546-2 C748-2 C749-2 U55-12 U55-14 U55-2 U55-3 U55-4 U55-13 U55-17
@@ -30002,9 +28861,7 @@
  C550-2 C551-2 C552-2 C553-2 C554-2 C555-2 C548-2 C556-2 C557-2 C558-2 C559-2
  C560-2 C561-2 C562-2 C563-2 C564-2 C565-2 C566-2 C567-2 C568-2 C569-2 C570-2
  C571-2 C572-2 C573-2 C574-2 C575-2 C576-2 C577-2 C578-2 C579-2 C580-2 C581-2
- C582-2 C583-2 C584-2 C585-2 C586-2 C587-2 C588-2 C589-2 R22-2 R151-2 C273-2
- C274-2 C281-2 C282-2 C283-2 C284-2 C285-2 C293-2 C294-2 C295-2 R154-1 R156-1
- R158-1))
+ C582-2 C583-2 C584-2 C585-2 C586-2 C587-2 C588-2 C589-2))
 		(net "GPIO44"
 			(pins RO5-1 U1-V32))
 		(net "I1V0"

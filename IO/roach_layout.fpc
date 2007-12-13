@@ -9,15 +9,15 @@
   (VENDOR xilinx)
   (LANGUAGE Vhdl)
   (CELL BGA1136C100P34X34_3500X3500X340)
-  (DX_PROJECT_PATH "..\\roach" 1196316576)
-  (DX_OAT_PATH "..\\roach\\sch\\roach_top.OAT" 1196316576)
+  (DX_PROJECT_PATH "..\\roach" 1197558218)
+  (DX_OAT_PATH "..\\roach\\sch\\roach_top.OAT" 1197558218)
   (DX_TOP_LEVEL_DESIGN roach_top)
-  (CONSTRAINTS_FILE "./roach.ucf" 1193383770 1)
+  (CONSTRAINTS_FILE "./roach.ucf" 1197558868 1)
   (CONSTRAINTS_FILE_FORMAT ise_ucf)
   (EXPEDITION_LAYOUT "..\\roach\\layout\\ibob2.pcb" 1197355318)
   (EXPEDITION_REFDES U15)
   (SSO_BANK_THRESHOLD 70)
-  (CES_DATABASE_FILE "..\\roach\\roach.roach_top_PADS2007.roach_top.db" 1196316590 1)
+  (CES_DATABASE_FILE "..\\roach\\roach.roach_top_PADS2007.roach_top.db" 1197553916 1)
   (CDBFLOW 0)
   (HKP true)
   (LIBRARY_VERSION "Version 0002")
@@ -900,7 +900,7 @@
     (SIGNAL
       (NAME QSH_A_D)
       (HDL_NAME QSH_A_D)
-      (DIR NONE)
+      (DIR IN)
       (ELEMENTS
         (SIGNAL
           (NAME "QSH_A_D<18>")
@@ -1091,7 +1091,7 @@
     (SIGNAL
       (NAME QSH_B_D)
       (HDL_NAME QSH_B_D)
-      (DIR NONE)
+      (DIR IN)
       (ELEMENTS
         (SIGNAL
           (NAME "QSH_B_D<0>")
@@ -4074,7 +4074,7 @@
     (SIGNAL
       (NAME zdok0_dp)
       (HDL_NAME zdok0_dp)
-      (DIR NONE)
+      (DIR IN)
       (ELEMENTS
         (SIGNAL
           (NAME "zdok0_dp<0>")
@@ -4135,7 +4135,6 @@
           (HDL_NAME "zdok0_dp<6>")
           (PIN H28 G28)
           (TYPE DIFF)
-          (IOSTANDARD LVDS_25)
           (SIG_P "zdok0_dp_p<6>")
           (SIG_N "zdok0_dp_n<6>")
         )
@@ -4153,7 +4152,6 @@
           (HDL_NAME "zdok0_dp<8>")
           (PIN E28 F28)
           (TYPE DIFF)
-          (IOSTANDARD LVDS_25)
           (SIG_P "zdok0_dp_p<8>")
           (SIG_N "zdok0_dp_n<8>")
         )
@@ -4225,7 +4223,6 @@
           (HDL_NAME "zdok0_dp<16>")
           (PIN G27 H27)
           (TYPE DIFF)
-          (IOSTANDARD LVDS_25)
           (SIG_P "zdok0_dp_p<16>")
           (SIG_N "zdok0_dp_n<16>")
         )
@@ -4243,7 +4240,6 @@
           (HDL_NAME "zdok0_dp<18>")
           (PIN E26 E27)
           (TYPE DIFF)
-          (IOSTANDARD LVDS_25)
           (SIG_P "zdok0_dp_p<18>")
           (SIG_N "zdok0_dp_n<18>")
         )
@@ -4261,7 +4257,6 @@
           (HDL_NAME "zdok0_dp<20>")
           (PIN N27 M27)
           (TYPE DIFF)
-          (IOSTANDARD LVDS_25)
           (SIG_P "zdok0_dp_p<20>")
           (SIG_N "zdok0_dp_n<20>")
         )
@@ -11608,7 +11603,7 @@
           (POSITION -10160 147320)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 90)
+          (SLOT 106)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -11681,7 +11676,7 @@
           (POSITION -10160 152400)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 91)
+          (SLOT 107)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -11754,7 +11749,7 @@
           (POSITION -10160 157480)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 92)
+          (SLOT 104)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -11827,7 +11822,7 @@
           (POSITION -10160 162560)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 93)
+          (SLOT 105)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -13914,7 +13909,7 @@
           (POSITION 60960 406400)
           (ROTATION 270)
           (LENGTH 10160)
-          (SLOT 160)
+          (SLOT 138)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -13960,6 +13955,11 @@
               (NAME "Pin Name")
               (VALUE "0v9")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -13976,7 +13976,7 @@
           (POSITION 66040 406400)
           (ROTATION 270)
           (LENGTH 10160)
-          (SLOT 161)
+          (SLOT 137)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -14022,6 +14022,11 @@
               (NAME "Pin Name")
               (VALUE "0v9_1")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -14038,7 +14043,7 @@
           (POSITION 71120 406400)
           (ROTATION 270)
           (LENGTH 10160)
-          (SLOT 162)
+          (SLOT 136)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -14084,6 +14089,11 @@
               (NAME "Pin Name")
               (VALUE "0v9_2")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -14100,7 +14110,7 @@
           (POSITION 76200 406400)
           (ROTATION 270)
           (LENGTH 10160)
-          (SLOT 163)
+          (SLOT 135)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -14146,6 +14156,11 @@
               (NAME "Pin Name")
               (VALUE "0v9_3")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -14162,7 +14177,7 @@
           (POSITION 81280 406400)
           (ROTATION 270)
           (LENGTH 10160)
-          (SLOT 164)
+          (SLOT 134)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -14208,6 +14223,11 @@
               (NAME "Pin Name")
               (VALUE "0v9_4")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -14224,7 +14244,7 @@
           (POSITION 86360 406400)
           (ROTATION 270)
           (LENGTH 10160)
-          (SLOT 165)
+          (SLOT 133)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -14270,6 +14290,11 @@
               (NAME "Pin Name")
               (VALUE "0v9_5")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -14286,7 +14311,7 @@
           (POSITION 91440 406400)
           (ROTATION 270)
           (LENGTH 10160)
-          (SLOT 166)
+          (SLOT 132)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -14332,6 +14357,11 @@
               (NAME "Pin Name")
               (VALUE "0v9_6")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -14348,7 +14378,7 @@
           (POSITION 96520 406400)
           (ROTATION 270)
           (LENGTH 10160)
-          (SLOT 167)
+          (SLOT 131)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -14394,6 +14424,11 @@
               (NAME "Pin Name")
               (VALUE "0v9_7")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -14410,7 +14445,7 @@
           (POSITION 40640 406400)
           (ROTATION 270)
           (LENGTH 10160)
-          (SLOT 168)
+          (SLOT 160)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -14456,6 +14491,11 @@
               (NAME "Pin Name")
               (VALUE vrn_18)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -14472,7 +14512,7 @@
           (POSITION 30480 406400)
           (ROTATION 270)
           (LENGTH 10160)
-          (SLOT 169)
+          (SLOT 161)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -14518,6 +14558,11 @@
               (NAME "Pin Name")
               (VALUE vrn_22)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -14534,7 +14579,7 @@
           (POSITION 20320 406400)
           (ROTATION 270)
           (LENGTH 10160)
-          (SLOT 170)
+          (SLOT 162)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -14580,6 +14625,11 @@
               (NAME "Pin Name")
               (VALUE vrn_25)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -14596,7 +14646,7 @@
           (POSITION 50800 406400)
           (ROTATION 270)
           (LENGTH 10160)
-          (SLOT 171)
+          (SLOT 163)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -14642,6 +14692,11 @@
               (NAME "Pin Name")
               (VALUE vrn_6)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -14658,7 +14713,7 @@
           (POSITION 35560 406400)
           (ROTATION 270)
           (LENGTH 10160)
-          (SLOT 172)
+          (SLOT 164)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -14704,6 +14759,11 @@
               (NAME "Pin Name")
               (VALUE vrp_18)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -14720,7 +14780,7 @@
           (POSITION 25400 406400)
           (ROTATION 270)
           (LENGTH 10160)
-          (SLOT 173)
+          (SLOT 165)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -14766,6 +14826,11 @@
               (NAME "Pin Name")
               (VALUE vrp_22)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -14782,7 +14847,7 @@
           (POSITION 15240 406400)
           (ROTATION 270)
           (LENGTH 10160)
-          (SLOT 174)
+          (SLOT 166)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -14828,6 +14893,11 @@
               (NAME "Pin Name")
               (VALUE vrp_25)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -14844,7 +14914,7 @@
           (POSITION 45720 406400)
           (ROTATION 270)
           (LENGTH 10160)
-          (SLOT 175)
+          (SLOT 167)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -14890,6 +14960,11 @@
               (NAME "Pin Name")
               (VALUE vrp_6)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -14906,7 +14981,7 @@
           (POSITION 55880 -10160)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 176)
+          (SLOT 168)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -14952,6 +15027,11 @@
               (NAME "Pin Name")
               (VALUE "1v8_22")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -14969,7 +15049,7 @@
           (POSITION 50800 -10160)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 177)
+          (SLOT 169)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -15015,6 +15095,11 @@
               (NAME "Pin Name")
               (VALUE "1v8_22_1")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -15032,7 +15117,7 @@
           (POSITION 45720 -10160)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 178)
+          (SLOT 170)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -15078,6 +15163,11 @@
               (NAME "Pin Name")
               (VALUE "1v8_22_2")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -15095,7 +15185,7 @@
           (POSITION 71120 -10160)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 179)
+          (SLOT 171)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -15141,6 +15231,11 @@
               (NAME "Pin Name")
               (VALUE "1v8_18")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -15158,7 +15253,7 @@
           (POSITION 66040 -10160)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 180)
+          (SLOT 172)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -15204,6 +15299,11 @@
               (NAME "Pin Name")
               (VALUE "1v8_18_1")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -15221,7 +15321,7 @@
           (POSITION 60960 -10160)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 181)
+          (SLOT 173)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -15267,6 +15367,11 @@
               (NAME "Pin Name")
               (VALUE "1v8_18_2")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -15284,7 +15389,7 @@
           (POSITION 86360 -10160)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 182)
+          (SLOT 174)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -15330,6 +15435,11 @@
               (NAME "Pin Name")
               (VALUE "1v8_6")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -15347,7 +15457,7 @@
           (POSITION 81280 -10160)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 183)
+          (SLOT 175)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -15393,6 +15503,11 @@
               (NAME "Pin Name")
               (VALUE "1v8_6_1")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -15410,7 +15525,7 @@
           (POSITION 76200 -10160)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 184)
+          (SLOT 176)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -15456,6 +15571,11 @@
               (NAME "Pin Name")
               (VALUE "1v8_6_2")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -15473,7 +15593,7 @@
           (POSITION 40640 -10160)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 185)
+          (SLOT 126)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -15519,6 +15639,11 @@
               (NAME "Pin Name")
               (VALUE "1v8_25")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -15536,7 +15661,7 @@
           (POSITION 35560 -10160)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 186)
+          (SLOT 130)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -15582,6 +15707,11 @@
               (NAME "Pin Name")
               (VALUE "1v8_25_1")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -15599,7 +15729,7 @@
           (POSITION 30480 -10160)
           (ROTATION 90)
           (LENGTH 10160)
-          (SLOT 187)
+          (SLOT 127)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -15645,6 +15775,11 @@
               (NAME "Pin Name")
               (VALUE "1v8_25_2")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -15871,7 +16006,7 @@
           (EXTTYPE OUT)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 188)
+          (SLOT 177)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -15918,6 +16053,11 @@
               (VALUE ddr2_scl)
               (OWNER DESIGNCAPTURE)
             )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
           )
         )
         (TEXT
@@ -15934,7 +16074,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 189)
+          (SLOT 178)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -15980,6 +16120,11 @@
               (NAME "Pin Name")
               (VALUE ddr2_sda)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -16010,7 +16155,7 @@
           (POSITION -10160 167640)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 190)
+          (SLOT 102)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -16057,6 +16202,11 @@
               (NAME "Pin Name")
               (VALUE ddr2_dqs_2)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -16072,7 +16222,7 @@
           (POSITION -10160 172720)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 191)
+          (SLOT 103)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -16120,6 +16270,11 @@
               (VALUE ddr2_dqs_n_2)
               (OWNER DESIGNCAPTURE)
             )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
           )
         )
         (TEXT
@@ -16134,7 +16289,7 @@
           (POSITION -10160 177800)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 192)
+          (SLOT 100)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -16181,6 +16336,11 @@
               (NAME "Pin Name")
               (VALUE ddr2_dqs_3)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -16196,7 +16356,7 @@
           (POSITION -10160 182880)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 193)
+          (SLOT 101)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -16244,6 +16404,11 @@
               (VALUE ddr2_dqs_n_3)
               (OWNER DESIGNCAPTURE)
             )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
           )
         )
         (TEXT
@@ -16258,7 +16423,7 @@
           (POSITION -10160 187960)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 194)
+          (SLOT 98)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -16305,6 +16470,11 @@
               (NAME "Pin Name")
               (VALUE ddr2_dqs_4)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -16320,7 +16490,7 @@
           (POSITION -10160 193040)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 195)
+          (SLOT 99)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -16368,6 +16538,11 @@
               (VALUE ddr2_dqs_n_4)
               (OWNER DESIGNCAPTURE)
             )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
           )
         )
         (TEXT
@@ -16382,7 +16557,7 @@
           (POSITION -10160 198120)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 196)
+          (SLOT 96)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -16429,6 +16604,11 @@
               (NAME "Pin Name")
               (VALUE ddr2_dqs_5)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -16444,7 +16624,7 @@
           (POSITION -10160 203200)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 197)
+          (SLOT 97)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -16492,6 +16672,11 @@
               (VALUE ddr2_dqs_n_5)
               (OWNER DESIGNCAPTURE)
             )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
           )
         )
         (TEXT
@@ -16506,7 +16691,7 @@
           (POSITION -10160 208280)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 198)
+          (SLOT 94)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -16553,6 +16738,11 @@
               (NAME "Pin Name")
               (VALUE ddr2_dqs_6)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -16568,7 +16758,7 @@
           (POSITION -10160 213360)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 199)
+          (SLOT 95)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -16616,6 +16806,11 @@
               (VALUE ddr2_dqs_n_6)
               (OWNER DESIGNCAPTURE)
             )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
           )
         )
         (TEXT
@@ -16630,7 +16825,7 @@
           (POSITION -10160 218440)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 200)
+          (SLOT 92)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -16677,6 +16872,11 @@
               (NAME "Pin Name")
               (VALUE ddr2_dqs_7)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -16692,7 +16892,7 @@
           (POSITION -10160 223520)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 201)
+          (SLOT 93)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -16740,6 +16940,11 @@
               (VALUE ddr2_dqs_n_7)
               (OWNER DESIGNCAPTURE)
             )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
           )
         )
         (TEXT
@@ -16754,7 +16959,7 @@
           (POSITION -10160 228600)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 202)
+          (SLOT 90)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -16801,6 +17006,11 @@
               (NAME "Pin Name")
               (VALUE ddr2_dqs_8)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -16816,7 +17026,7 @@
           (POSITION -10160 233680)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 203)
+          (SLOT 91)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -16863,6 +17073,11 @@
               (NAME "Pin Name")
               (VALUE ddr2_dqs_n_8)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -16962,7 +17177,7 @@
           (POSITION -10160 375920)
           (EXTTYPE IN)
           (LENGTH 10160)
-          (SLOT 204)
+          (SLOT 179)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -17008,6 +17223,11 @@
               (NAME "Pin Name")
               (VALUE ddr2_par_in)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -17023,7 +17243,7 @@
           (POSITION -10160 381000)
           (EXTTYPE OUT)
           (LENGTH 10160)
-          (SLOT 205)
+          (SLOT 180)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -17069,6 +17289,11 @@
               (NAME "Pin Name")
               (VALUE ddr2_par_out)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -17094,12 +17319,12 @@
       (ATTRIBUTES
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_layout)
+          (VALUE ROACH_LAYOUT)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(roach_gpio),(roach_jtag_conf),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_mixed2v5_vcco),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(roach_sys_mon),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -17126,17 +17351,15 @@
           (NAME DEVICE)
           (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME PKG_TYPE)
           (VALUE BGA1136C100P34X34_3500X3500X340)
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME TIME_STAMP)
-          (VALUE "2007/9/13")
+          (VALUE "2007/12/13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -17227,6 +17450,21 @@
           (NAME "Ref Designator")
           (VALUE "U?")
           (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD)
+          (VALUE FF1136)
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD_FILE)
+          (VALUE "VIRTEX5.IBS")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME FPCPATH)
+          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH_LAYOUT.FPC")
+          (OWNER DXDESIGNER)
         )
       )
       (INSTANCEATTRIBUTES
@@ -34245,12 +34483,12 @@
       (ATTRIBUTES
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_layout)
+          (VALUE ROACH_LAYOUT)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(roach_gpio),(roach_jtag_conf),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_mixed2v5_vcco),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(roach_sys_mon),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -34277,17 +34515,15 @@
           (NAME DEVICE)
           (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME PKG_TYPE)
           (VALUE BGA1136C100P34X34_3500X3500X340)
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME TIME_STAMP)
-          (VALUE "2007/9/13")
+          (VALUE "2007/12/13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -34352,6 +34588,21 @@
           (NAME "Ref Designator")
           (VALUE "U?")
           (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME FPCPATH)
+          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH_LAYOUT.FPC")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD)
+          (VALUE FF1136)
+          (OWNER "")
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD_FILE)
+          (VALUE "VIRTEX5.IBS")
+          (OWNER "")
         )
       )
       (INSTANCEATTRIBUTES
@@ -35002,6 +35253,11 @@
               (VALUE "GPIOLVC18(5)")
               (OWNER DESIGNCAPTURE)
             )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
           )
         )
         (TEXT
@@ -35017,7 +35273,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 402)
+          (SLOT 375)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -35063,6 +35319,11 @@
               (NAME "Pin Name")
               (VALUE "GPIOLVC18(4)")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -35079,7 +35340,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 403)
+          (SLOT 402)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -35125,6 +35386,11 @@
               (NAME "Pin Name")
               (VALUE "GPIOLVC18(3)")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -35141,7 +35407,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 404)
+          (SLOT 403)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -35187,6 +35453,11 @@
               (NAME "Pin Name")
               (VALUE "GPIOLVC18(2)")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -35203,7 +35474,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 405)
+          (SLOT 404)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -35249,6 +35520,11 @@
               (NAME "Pin Name")
               (VALUE "GPIOLVC18(1)")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -35265,7 +35541,7 @@
           (EXTTYPE BI)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 406)
+          (SLOT 405)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -35311,6 +35587,11 @@
               (NAME "Pin Name")
               (VALUE "GPIOLVC18(0)")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -35326,7 +35607,7 @@
           (POSITION -10160 40640)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 407)
+          (SLOT 406)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -35372,6 +35653,11 @@
               (NAME "Pin Name")
               (VALUE "GPIOLVC15(7)")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -35386,7 +35672,7 @@
           (POSITION -10160 45720)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 408)
+          (SLOT 407)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -35432,6 +35718,11 @@
               (NAME "Pin Name")
               (VALUE "GPIOLVC15(6)")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -35446,7 +35737,7 @@
           (POSITION -10160 50800)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 409)
+          (SLOT 408)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -35492,6 +35783,11 @@
               (NAME "Pin Name")
               (VALUE "GPIOLVC15(5)")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -35506,7 +35802,7 @@
           (POSITION -10160 55880)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 410)
+          (SLOT 409)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -35552,6 +35848,11 @@
               (NAME "Pin Name")
               (VALUE "GPIOLVC15(4)")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -35567,7 +35868,7 @@
           (EXTTYPE OUT)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 411)
+          (SLOT 410)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -35613,6 +35914,11 @@
               (NAME "Pin Name")
               (VALUE "GPIOLVC25(11)")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -35629,7 +35935,7 @@
           (EXTTYPE OUT)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 412)
+          (SLOT 411)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -35675,6 +35981,11 @@
               (NAME "Pin Name")
               (VALUE "GPIOLVC25(10)")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -35691,7 +36002,7 @@
           (EXTTYPE OUT)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 413)
+          (SLOT 412)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -35737,6 +36048,11 @@
               (NAME "Pin Name")
               (VALUE "GPIOLVC25(9)")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -35753,7 +36069,7 @@
           (EXTTYPE OUT)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 414)
+          (SLOT 413)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -35799,6 +36115,11 @@
               (NAME "Pin Name")
               (VALUE "GPIOLVC25(8)")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -35815,7 +36136,7 @@
           (EXTTYPE OUT)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 415)
+          (SLOT 414)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -35861,6 +36182,11 @@
               (NAME "Pin Name")
               (VALUE "GPIOLVC25(7)")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -35877,7 +36203,7 @@
           (EXTTYPE OUT)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 416)
+          (SLOT 415)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -35923,6 +36249,11 @@
               (NAME "Pin Name")
               (VALUE "GPIOLVC25(6)")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -35939,7 +36270,7 @@
           (EXTTYPE OUT)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 417)
+          (SLOT 416)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -35985,6 +36316,11 @@
               (NAME "Pin Name")
               (VALUE "GPIOLVC25(5)")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -36001,7 +36337,7 @@
           (EXTTYPE OUT)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 418)
+          (SLOT 417)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -36047,6 +36383,11 @@
               (NAME "Pin Name")
               (VALUE "GPIOLVC25(4)")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -36063,7 +36404,7 @@
           (EXTTYPE OUT)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 419)
+          (SLOT 418)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -36109,6 +36450,11 @@
               (NAME "Pin Name")
               (VALUE "GPIOLVC25(3)")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -36125,7 +36471,7 @@
           (EXTTYPE OUT)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 420)
+          (SLOT 419)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -36171,6 +36517,11 @@
               (NAME "Pin Name")
               (VALUE "GPIOLVC25(2)")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -36187,7 +36538,7 @@
           (EXTTYPE OUT)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 421)
+          (SLOT 420)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -36233,6 +36584,11 @@
               (NAME "Pin Name")
               (VALUE "GPIOLVC25(1)")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -36249,7 +36605,7 @@
           (EXTTYPE OUT)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 422)
+          (SLOT 421)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -36295,6 +36651,11 @@
               (NAME "Pin Name")
               (VALUE "GPIOLVC25(0)")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -36440,12 +36801,12 @@
       (ATTRIBUTES
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_layout)
+          (VALUE ROACH_LAYOUT)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(roach_gpio),(roach_jtag_conf),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_mixed2v5_vcco),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(roach_sys_mon),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -36472,22 +36833,20 @@
           (NAME DEVICE)
           (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME PKG_TYPE)
           (VALUE BGA1136C100P34X34_3500X3500X340)
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME TIME_STAMP)
-          (VALUE "2007/10/12")
+          (VALUE "2007/12/13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME FPCPATH)
-          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH.FPC")
+          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH_LAYOUT.FPC")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -36558,6 +36917,21 @@
           (VALUE "1, 5, 11, 12, 15, 20, 23, 25")
           (OWNER "")
           (VISIBILITY Both)
+        )
+        (ATTRIBUTE
+          (NAME BANKS)
+          (VALUE "1, 5, 11, 12, 15, 20, 23, 25")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD)
+          (VALUE FF1136)
+          (OWNER "")
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD_FILE)
+          (VALUE "VIRTEX5.IBS")
+          (OWNER "")
         )
       )
       (INSTANCEATTRIBUTES
@@ -38145,12 +38519,12 @@
       (ATTRIBUTES
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_layout)
+          (VALUE ROACH_LAYOUT)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(roach_gpio),(roach_jtag_conf),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_mixed2v5_vcco),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(roach_sys_mon),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -38177,17 +38551,15 @@
           (NAME DEVICE)
           (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME PKG_TYPE)
           (VALUE BGA1136C100P34X34_3500X3500X340)
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME TIME_STAMP)
-          (VALUE "2007/9/13")
+          (VALUE "2007/12/13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -38252,6 +38624,21 @@
           (NAME "Ref Designator")
           (VALUE "U?")
           (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME FPCPATH)
+          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH_LAYOUT.FPC")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD)
+          (VALUE FF1136)
+          (OWNER "")
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD_FILE)
+          (VALUE "VIRTEX5.IBS")
+          (OWNER "")
         )
       )
       (INSTANCEATTRIBUTES
@@ -39642,12 +40029,12 @@
       (ATTRIBUTES
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_layout)
+          (VALUE ROACH_LAYOUT)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(roach_gpio),(roach_jtag_conf),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_mixed2v5_vcco),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(roach_sys_mon),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -39674,22 +40061,20 @@
           (NAME DEVICE)
           (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME PKG_TYPE)
           (VALUE BGA1136C100P34X34_3500X3500X340)
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME TIME_STAMP)
-          (VALUE "2007/9/18")
+          (VALUE "2007/12/13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME FPCPATH)
-          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH.FPC")
+          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH_LAYOUT.FPC")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -39754,6 +40139,16 @@
           (NAME "Ref Designator")
           (VALUE "U?")
           (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD)
+          (VALUE FF1136)
+          (OWNER "")
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD_FILE)
+          (VALUE "VIRTEX5.IBS")
+          (OWNER "")
         )
       )
       (INSTANCEATTRIBUTES
@@ -40990,12 +41385,12 @@
       (ATTRIBUTES
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_layout)
+          (VALUE ROACH_LAYOUT)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(roach_gpio),(roach_jtag_conf),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_mixed2v5_vcco),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(roach_sys_mon),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -41022,17 +41417,15 @@
           (NAME DEVICE)
           (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME PKG_TYPE)
           (VALUE BGA1136C100P34X34_3500X3500X340)
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME TIME_STAMP)
-          (VALUE "2007/9/13")
+          (VALUE "2007/12/13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -41097,6 +41490,21 @@
           (NAME "Ref Designator")
           (VALUE "U?")
           (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME FPCPATH)
+          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH_LAYOUT.FPC")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD)
+          (VALUE FF1136)
+          (OWNER "")
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD_FILE)
+          (VALUE "VIRTEX5.IBS")
+          (OWNER "")
         )
       )
       (INSTANCEATTRIBUTES
@@ -42333,12 +42741,12 @@
       (ATTRIBUTES
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_layout)
+          (VALUE ROACH_LAYOUT)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(roach_gpio),(roach_jtag_conf),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_mixed2v5_vcco),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(roach_sys_mon),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -42365,17 +42773,15 @@
           (NAME DEVICE)
           (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME PKG_TYPE)
           (VALUE BGA1136C100P34X34_3500X3500X340)
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME TIME_STAMP)
-          (VALUE "2007/9/13")
+          (VALUE "2007/12/13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -42440,6 +42846,21 @@
           (NAME "Ref Designator")
           (VALUE "U?")
           (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME FPCPATH)
+          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH_LAYOUT.FPC")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD)
+          (VALUE FF1136)
+          (OWNER "")
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD_FILE)
+          (VALUE "VIRTEX5.IBS")
+          (OWNER "")
         )
       )
       (INSTANCEATTRIBUTES
@@ -43676,12 +44097,12 @@
       (ATTRIBUTES
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_layout)
+          (VALUE ROACH_LAYOUT)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(roach_gpio),(roach_jtag_conf),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_mixed2v5_vcco),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(roach_sys_mon),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -43708,17 +44129,15 @@
           (NAME DEVICE)
           (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME PKG_TYPE)
           (VALUE BGA1136C100P34X34_3500X3500X340)
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME TIME_STAMP)
-          (VALUE "2007/9/13")
+          (VALUE "2007/12/13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -43783,6 +44202,21 @@
           (NAME "Ref Designator")
           (VALUE "U?")
           (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME FPCPATH)
+          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH_LAYOUT.FPC")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD)
+          (VALUE FF1136)
+          (OWNER "")
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD_FILE)
+          (VALUE "VIRTEX5.IBS")
+          (OWNER "")
         )
       )
       (INSTANCEATTRIBUTES
@@ -45019,12 +45453,12 @@
       (ATTRIBUTES
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_layout)
+          (VALUE ROACH_LAYOUT)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(roach_gpio),(roach_jtag_conf),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_mixed2v5_vcco),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(roach_sys_mon),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -45051,17 +45485,15 @@
           (NAME DEVICE)
           (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME PKG_TYPE)
           (VALUE BGA1136C100P34X34_3500X3500X340)
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME TIME_STAMP)
-          (VALUE "2007/9/13")
+          (VALUE "2007/12/13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -45126,6 +45558,21 @@
           (NAME "Ref Designator")
           (VALUE "U?")
           (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME FPCPATH)
+          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH_LAYOUT.FPC")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD)
+          (VALUE FF1136)
+          (OWNER "")
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD_FILE)
+          (VALUE "VIRTEX5.IBS")
+          (OWNER "")
         )
       )
       (INSTANCEATTRIBUTES
@@ -46362,12 +46809,12 @@
       (ATTRIBUTES
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_layout)
+          (VALUE ROACH_LAYOUT)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(roach_gpio),(roach_jtag_conf),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_mixed2v5_vcco),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(roach_sys_mon),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -46394,17 +46841,15 @@
           (NAME DEVICE)
           (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME PKG_TYPE)
           (VALUE BGA1136C100P34X34_3500X3500X340)
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME TIME_STAMP)
-          (VALUE "2007/9/13")
+          (VALUE "2007/12/13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -46469,6 +46914,21 @@
           (NAME "Ref Designator")
           (VALUE "U?")
           (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME FPCPATH)
+          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH_LAYOUT.FPC")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD)
+          (VALUE FF1136)
+          (OWNER "")
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD_FILE)
+          (VALUE "VIRTEX5.IBS")
+          (OWNER "")
         )
       )
       (INSTANCEATTRIBUTES
@@ -47705,12 +48165,12 @@
       (ATTRIBUTES
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_layout)
+          (VALUE ROACH_LAYOUT)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(roach_gpio),(roach_jtag_conf),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_mixed2v5_vcco),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(roach_sys_mon),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -47737,17 +48197,15 @@
           (NAME DEVICE)
           (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME PKG_TYPE)
           (VALUE BGA1136C100P34X34_3500X3500X340)
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME TIME_STAMP)
-          (VALUE "2007/9/13")
+          (VALUE "2007/12/13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -47812,6 +48270,21 @@
           (NAME "Ref Designator")
           (VALUE "U?")
           (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME FPCPATH)
+          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH_LAYOUT.FPC")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD)
+          (VALUE FF1136)
+          (OWNER "")
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD_FILE)
+          (VALUE "VIRTEX5.IBS")
+          (OWNER "")
         )
       )
       (INSTANCEATTRIBUTES
@@ -49048,12 +49521,12 @@
       (ATTRIBUTES
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_layout)
+          (VALUE ROACH_LAYOUT)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(roach_gpio),(roach_jtag_conf),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_mixed2v5_vcco),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(roach_sys_mon),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -49080,17 +49553,15 @@
           (NAME DEVICE)
           (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME PKG_TYPE)
           (VALUE BGA1136C100P34X34_3500X3500X340)
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME TIME_STAMP)
-          (VALUE "2007/9/13")
+          (VALUE "2007/12/13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -49156,6 +49627,21 @@
           (VALUE "U?")
           (OWNER ICDBDXD)
         )
+        (ATTRIBUTE
+          (NAME FPCPATH)
+          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH_LAYOUT.FPC")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD)
+          (VALUE FF1136)
+          (OWNER "")
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD_FILE)
+          (VALUE "VIRTEX5.IBS")
+          (OWNER "")
+        )
       )
       (INSTANCEATTRIBUTES
         (ATTRIBUTE
@@ -49182,7 +49668,7 @@
           (NAME AA32)
           (POSITION -10160 25400)
           (LENGTH 10160)
-          (SLOT 1)
+          (SLOT 552)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -49228,6 +49714,11 @@
               (NAME "Pin Name")
               (VALUE "2V5")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -49241,7 +49732,7 @@
           (NAME AB29)
           (POSITION -10160 15240)
           (LENGTH 10160)
-          (SLOT 2)
+          (SLOT 553)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -49287,6 +49778,11 @@
               (NAME "Pin Name")
               (VALUE "2V5_1")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -49300,7 +49796,7 @@
           (NAME AD33)
           (POSITION -10160 101600)
           (LENGTH 10160)
-          (SLOT 3)
+          (SLOT 554)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -49346,6 +49842,11 @@
               (NAME "Pin Name")
               (VALUE "2V5_2")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -49359,7 +49860,7 @@
           (NAME AE30)
           (POSITION -10160 96520)
           (LENGTH 10160)
-          (SLOT 4)
+          (SLOT 555)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -49405,6 +49906,11 @@
               (NAME "Pin Name")
               (VALUE "2V5_3")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -49418,7 +49924,7 @@
           (NAME AH31)
           (POSITION -10160 91440)
           (LENGTH 10160)
-          (SLOT 5)
+          (SLOT 556)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -49464,6 +49970,11 @@
               (NAME "Pin Name")
               (VALUE "2V5_4")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -49477,7 +49988,7 @@
           (NAME AJ28)
           (POSITION -10160 30480)
           (LENGTH 10160)
-          (SLOT 6)
+          (SLOT 557)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -49523,6 +50034,11 @@
               (NAME "Pin Name")
               (VALUE "2V5_5")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -49536,7 +50052,7 @@
           (NAME AL32)
           (POSITION -10160 35560)
           (LENGTH 10160)
-          (SLOT 7)
+          (SLOT 558)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -49582,6 +50098,11 @@
               (NAME "Pin Name")
               (VALUE "2V5_6")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -49595,7 +50116,7 @@
           (NAME AM29)
           (POSITION -10160 40640)
           (LENGTH 10160)
-          (SLOT 8)
+          (SLOT 559)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -49641,6 +50162,11 @@
               (NAME "Pin Name")
               (VALUE "2V5_7")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -49654,7 +50180,7 @@
           (NAME E30)
           (POSITION -10160 45720)
           (LENGTH 10160)
-          (SLOT 9)
+          (SLOT 560)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -49700,6 +50226,11 @@
               (NAME "Pin Name")
               (VALUE "2V5_8")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -49713,7 +50244,7 @@
           (NAME H31)
           (POSITION -10160 50800)
           (LENGTH 10160)
-          (SLOT 10)
+          (SLOT 561)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -49759,6 +50290,11 @@
               (NAME "Pin Name")
               (VALUE "2V5_9")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -49772,7 +50308,7 @@
           (NAME J28)
           (POSITION -10160 55880)
           (LENGTH 10160)
-          (SLOT 11)
+          (SLOT 562)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -49818,6 +50354,11 @@
               (NAME "Pin Name")
               (VALUE "2V5_10")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -49831,7 +50372,7 @@
           (NAME L32)
           (POSITION -10160 60960)
           (LENGTH 10160)
-          (SLOT 12)
+          (SLOT 563)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -49877,6 +50418,11 @@
               (NAME "Pin Name")
               (VALUE "2V5_11")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -49890,7 +50436,7 @@
           (NAME M29)
           (POSITION -10160 66040)
           (LENGTH 10160)
-          (SLOT 13)
+          (SLOT 564)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -49936,6 +50482,11 @@
               (NAME "Pin Name")
               (VALUE "2V5_12")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -49949,7 +50500,7 @@
           (NAME P33)
           (POSITION -10160 71120)
           (LENGTH 10160)
-          (SLOT 14)
+          (SLOT 565)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -49995,6 +50546,11 @@
               (NAME "Pin Name")
               (VALUE "2V5_13")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -50008,7 +50564,7 @@
           (NAME R30)
           (POSITION -10160 76200)
           (LENGTH 10160)
-          (SLOT 15)
+          (SLOT 566)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -50054,6 +50610,11 @@
               (NAME "Pin Name")
               (VALUE "2V5_14")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -50067,7 +50628,7 @@
           (NAME T27)
           (POSITION -10160 81280)
           (LENGTH 10160)
-          (SLOT 16)
+          (SLOT 567)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -50113,6 +50674,11 @@
               (NAME "Pin Name")
               (VALUE "2V5_15")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -50126,7 +50692,7 @@
           (NAME V31)
           (POSITION -10160 86360)
           (LENGTH 10160)
-          (SLOT 17)
+          (SLOT 568)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -50172,6 +50738,11 @@
               (NAME "Pin Name")
               (VALUE "2V5_16")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -50185,7 +50756,7 @@
           (NAME W28)
           (POSITION -10160 20320)
           (LENGTH 10160)
-          (SLOT 18)
+          (SLOT 569)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -50232,6 +50803,11 @@
               (VALUE "2V5_17")
               (OWNER DESIGNCAPTURE)
             )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
           )
         )
         (TEXT
@@ -50243,19 +50819,112 @@
           (PROPERTY BANKS)
           (POSITION 0 107950)
         )
+        (TEXT
+          (PROPERTY HYPER_MOD)
+          (POSITION 0 111950)
+          (HIDDEN T)
+        )
+        (TEXT
+          (PINNUMBER AA32)
+          (POSITION -10160 24892)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER AB29)
+          (POSITION -10160 14732)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER AD33)
+          (POSITION -10160 101092)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER AE30)
+          (POSITION -10160 96012)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER AH31)
+          (POSITION -10160 90932)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER AJ28)
+          (POSITION -10160 29972)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER AL32)
+          (POSITION -10160 35052)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER AM29)
+          (POSITION -10160 40132)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER E30)
+          (POSITION -10160 45212)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER H31)
+          (POSITION -10160 50292)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER J28)
+          (POSITION -10160 55372)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER L32)
+          (POSITION -10160 60452)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER M29)
+          (POSITION -10160 65532)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER P33)
+          (POSITION -10160 70612)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER R30)
+          (POSITION -10160 75692)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER T27)
+          (POSITION -10160 80772)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER V31)
+          (POSITION -10160 85852)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER W28)
+          (POSITION -10160 19812)
+          (VALIGN BOTTOM)
+        )
       )
       (ATTRIBUTES
         (ATTRIBUTE
           (NAME HYPER_MOD)
-          (VALUE ff1136)
+          (VALUE FF1136)
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME HYPER_MOD_FILE)
-          (VALUE "virtex5.ibs")
+          (VALUE "VIRTEX5.IBS")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME "Part Name")
@@ -50264,12 +50933,12 @@
         )
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_layout)
+          (VALUE ROACH_LAYOUT)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(roach_gpio),(roach_jtag_conf),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_mixed2v5_vcco),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(roach_sys_mon),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -50279,7 +50948,7 @@
         )
         (ATTRIBUTE
           (NAME LEVEL)
-          (VALUE std)
+          (VALUE STD)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -50319,7 +50988,7 @@
         )
         (ATTRIBUTE
           (NAME DEVICE)
-          (VALUE "5vsx95t")
+          (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -50347,6 +51016,37 @@
           (VALUE "11, 13, 15, 17, 19, 21")
           (OWNER "")
           (VISIBILITY Both)
+        )
+        (ATTRIBUTE
+          (NAME Level)
+          (VALUE std)
+          (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME Type)
+          (VALUE FPGA)
+          (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME "Ref Designator")
+          (VALUE "U?")
+          (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME BANKS)
+          (VALUE "11, 13, 15, 17, 19, 21")
+          (OWNER DXDESIGNER)
+          (VISIBILITY Both)
+        )
+        (ATTRIBUTE
+          (NAME FPCPATH)
+          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH_LAYOUT.FPC")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME TIME_STAMP)
+          (VALUE "2007/12/13")
+          (OWNER DXDESIGNER)
         )
       )
       (INSTANCEATTRIBUTES
@@ -55059,12 +55759,12 @@
       (ATTRIBUTES
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_layout)
+          (VALUE ROACH_LAYOUT)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(roach_gpio),(roach_jtag_conf),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_mixed2v5_vcco),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(roach_sys_mon),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -55091,13 +55791,11 @@
           (NAME DEVICE)
           (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME PKG_TYPE)
           (VALUE BGA1136C100P34X34_3500X3500X340)
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME BANKS)
@@ -55107,12 +55805,12 @@
         )
         (ATTRIBUTE
           (NAME TIME_STAMP)
-          (VALUE "2007/10/12")
+          (VALUE "2007/12/13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME FPCPATH)
-          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH.FPC")
+          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH_LAYOUT.FPC")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -55177,6 +55875,16 @@
           (NAME "Ref Designator")
           (VALUE "U?")
           (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD)
+          (VALUE FF1136)
+          (OWNER "")
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD_FILE)
+          (VALUE "VIRTEX5.IBS")
+          (OWNER "")
         )
       )
       (INSTANCEATTRIBUTES
@@ -60007,6 +60715,11 @@
               (VALUE qdr2_by0_1_cq_p)
               (OWNER DESIGNCAPTURE)
             )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
           )
         )
         (TEXT
@@ -60020,7 +60733,7 @@
           (POSITION -10160 111760)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 697)
+          (SLOT 618)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -60067,6 +60780,11 @@
               (NAME "Pin Name")
               (VALUE qdr2_by0_1_cq_n)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -60129,6 +60847,11 @@
               (VALUE qdr2_by0_1_k_p)
               (OWNER DESIGNCAPTURE)
             )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
           )
         )
         (TEXT
@@ -60142,7 +60865,7 @@
           (POSITION -10160 127000)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 698)
+          (SLOT 620)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -60190,6 +60913,11 @@
               (VALUE qdr2_by0_1_k_n)
               (OWNER DESIGNCAPTURE)
             )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
           )
         )
         (TEXT
@@ -60227,7 +60955,7 @@
           (POSITION 111760 238760)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 699)
+          (SLOT 697)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -60273,6 +61001,11 @@
               (NAME "Pin Name")
               (VALUE "1V5_12")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -60289,7 +61022,7 @@
           (POSITION 111760 233680)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 700)
+          (SLOT 698)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -60335,6 +61068,11 @@
               (NAME "Pin Name")
               (VALUE "1V5_12_1")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -60351,7 +61089,7 @@
           (POSITION 111760 228600)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 701)
+          (SLOT 699)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -60397,6 +61135,11 @@
               (NAME "Pin Name")
               (VALUE "1V5_12_2")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -60413,7 +61156,7 @@
           (POSITION 111760 223520)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 702)
+          (SLOT 700)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -60459,6 +61202,11 @@
               (NAME "Pin Name")
               (VALUE "1V5_20")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -60475,7 +61223,7 @@
           (POSITION 111760 218440)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 703)
+          (SLOT 701)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -60521,6 +61269,11 @@
               (NAME "Pin Name")
               (VALUE "1V5_20_1")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -60537,7 +61290,7 @@
           (POSITION 111760 213360)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 704)
+          (SLOT 702)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -60583,6 +61336,11 @@
               (NAME "Pin Name")
               (VALUE "1V5_20_2")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -60641,7 +61399,7 @@
           (POSITION 111760 167640)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 705)
+          (SLOT 711)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -60687,6 +61445,11 @@
               (NAME "Pin Name")
               (VALUE qdr_by0_1_vref)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -60703,7 +61466,7 @@
           (POSITION 111760 162560)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 706)
+          (SLOT 712)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -60749,6 +61512,11 @@
               (NAME "Pin Name")
               (VALUE qdr_by0_1_vref_1)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -60765,7 +61533,7 @@
           (POSITION 111760 157480)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 707)
+          (SLOT 713)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -60811,6 +61579,11 @@
               (NAME "Pin Name")
               (VALUE qdr_by0_1_vref_2)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -60827,7 +61600,7 @@
           (POSITION 111760 152400)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 708)
+          (SLOT 714)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -60873,6 +61646,11 @@
               (NAME "Pin Name")
               (VALUE qdr_by0_1_vref_3)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -60917,7 +61695,7 @@
           (POSITION 111760 198120)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 709)
+          (SLOT 707)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -60963,6 +61741,11 @@
               (NAME "Pin Name")
               (VALUE vrn_12)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -60979,7 +61762,7 @@
           (POSITION 111760 187960)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 710)
+          (SLOT 708)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -61025,6 +61808,11 @@
               (NAME "Pin Name")
               (VALUE vrn_20)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -61041,7 +61829,7 @@
           (POSITION 111760 193040)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 711)
+          (SLOT 709)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -61087,6 +61875,11 @@
               (NAME "Pin Name")
               (VALUE vrp_12)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -61103,7 +61896,7 @@
           (POSITION 111760 182880)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 712)
+          (SLOT 710)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -61149,6 +61942,11 @@
               (NAME "Pin Name")
               (VALUE vrp_20)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -61191,12 +61989,12 @@
       (ATTRIBUTES
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_layout)
+          (VALUE ROACH_LAYOUT)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(roach_gpio),(roach_jtag_conf),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_mixed2v5_vcco),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(roach_sys_mon),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -61223,17 +62021,15 @@
           (NAME DEVICE)
           (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME PKG_TYPE)
           (VALUE BGA1136C100P34X34_3500X3500X340)
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME TIME_STAMP)
-          (VALUE "2007/9/13")
+          (VALUE "2007/12/13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -61304,6 +62100,21 @@
           (NAME "Ref Designator")
           (VALUE "U?")
           (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME FPCPATH)
+          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH_LAYOUT.FPC")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD)
+          (VALUE FF1136)
+          (OWNER "")
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD_FILE)
+          (VALUE "VIRTEX5.IBS")
+          (OWNER "")
         )
       )
       (INSTANCEATTRIBUTES
@@ -66176,6 +66987,11 @@
               (VALUE qdr2_by2_3_cq_p)
               (OWNER DESIGNCAPTURE)
             )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
           )
         )
         (TEXT
@@ -66190,7 +67006,7 @@
           (POSITION -10160 111760)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 781)
+          (SLOT 733)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -66237,6 +67053,11 @@
               (NAME "Pin Name")
               (VALUE qdr2_by2_3_cq_n)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -66300,6 +67121,11 @@
               (VALUE qdr2_by2_3_k_p)
               (OWNER DESIGNCAPTURE)
             )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
           )
         )
         (TEXT
@@ -66314,7 +67140,7 @@
           (POSITION -10160 127000)
           (EXTTYPE BI)
           (LENGTH 10160)
-          (SLOT 782)
+          (SLOT 735)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -66362,6 +67188,11 @@
               (VALUE qdr2_by2_3_k_n)
               (OWNER DESIGNCAPTURE)
             )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
+            )
           )
         )
         (TEXT
@@ -66400,7 +67231,7 @@
           (POSITION 111760 167640)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 783)
+          (SLOT 781)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -66446,6 +67277,11 @@
               (NAME "Pin Name")
               (VALUE qdr_by2_3_vref)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -66462,7 +67298,7 @@
           (POSITION 111760 162560)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 784)
+          (SLOT 782)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -66508,6 +67344,11 @@
               (NAME "Pin Name")
               (VALUE qdr_by2_3_vref_1)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -66524,7 +67365,7 @@
           (POSITION 111760 157480)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 785)
+          (SLOT 783)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -66570,6 +67411,11 @@
               (NAME "Pin Name")
               (VALUE qdr_by2_3_vref_2)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -66586,7 +67432,7 @@
           (POSITION 111760 152400)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 786)
+          (SLOT 784)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -66632,6 +67478,11 @@
               (NAME "Pin Name")
               (VALUE qdr_by2_3_vref_3)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -66676,7 +67527,7 @@
           (POSITION 111760 238760)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 787)
+          (SLOT 785)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -66722,6 +67573,11 @@
               (NAME "Pin Name")
               (VALUE "1v5_23")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -66737,7 +67593,7 @@
           (POSITION 111760 233680)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 788)
+          (SLOT 786)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -66783,6 +67639,11 @@
               (NAME "Pin Name")
               (VALUE "1v5_23_1")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -66798,7 +67659,7 @@
           (POSITION 111760 228600)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 789)
+          (SLOT 787)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -66844,6 +67705,11 @@
               (NAME "Pin Name")
               (VALUE "1v5_23_2")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -66859,7 +67725,7 @@
           (POSITION 111760 223520)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 790)
+          (SLOT 788)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -66905,6 +67771,11 @@
               (NAME "Pin Name")
               (VALUE "1v5_5")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -66920,7 +67791,7 @@
           (POSITION 111760 218440)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 791)
+          (SLOT 789)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -66966,6 +67837,11 @@
               (NAME "Pin Name")
               (VALUE "1v5_5_1")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -66981,7 +67857,7 @@
           (POSITION 111760 213360)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 792)
+          (SLOT 790)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -67027,6 +67903,11 @@
               (NAME "Pin Name")
               (VALUE "1v5_5_2")
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -67078,7 +67959,7 @@
           (POSITION 111760 187960)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 793)
+          (SLOT 791)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -67124,6 +68005,11 @@
               (NAME "Pin Name")
               (VALUE vrn_5)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -67139,7 +68025,7 @@
           (POSITION 111760 182880)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 794)
+          (SLOT 792)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -67185,6 +68071,11 @@
               (NAME "Pin Name")
               (VALUE vrp_5)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -67200,7 +68091,7 @@
           (POSITION 111760 198120)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 795)
+          (SLOT 793)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -67246,6 +68137,11 @@
               (NAME "Pin Name")
               (VALUE vrn_23)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -67261,7 +68157,7 @@
           (POSITION 111760 193040)
           (ROTATION 180)
           (LENGTH 10160)
-          (SLOT 796)
+          (SLOT 794)
           (ELEMENTS
             (LINE
               (POINTS 0 0 10160 0)
@@ -67307,6 +68203,11 @@
               (NAME "Pin Name")
               (VALUE vrp_23)
               (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME NO_CONNECT)
+              (VALUE NO)
+              (OWNER DXDESIGNER)
             )
           )
         )
@@ -67344,12 +68245,12 @@
       (ATTRIBUTES
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_layout)
+          (VALUE ROACH_LAYOUT)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(roach_gpio),(roach_jtag_conf),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_mixed2v5_vcco),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(roach_sys_mon),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -67376,17 +68277,15 @@
           (NAME DEVICE)
           (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME PKG_TYPE)
           (VALUE BGA1136C100P34X34_3500X3500X340)
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME TIME_STAMP)
-          (VALUE "2007/9/13")
+          (VALUE "2007/12/13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -67457,6 +68356,21 @@
           (NAME "Ref Designator")
           (VALUE "U?")
           (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME FPCPATH)
+          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH_LAYOUT.FPC")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD)
+          (VALUE FF1136)
+          (OWNER "")
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD_FILE)
+          (VALUE "VIRTEX5.IBS")
+          (OWNER "")
         )
       )
       (INSTANCEATTRIBUTES
@@ -73617,12 +74531,12 @@
       (ATTRIBUTES
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_layout)
+          (VALUE ROACH_LAYOUT)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(roach_gpio),(roach_jtag_conf),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_mixed2v5_vcco),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(roach_sys_mon),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -73649,17 +74563,15 @@
           (NAME DEVICE)
           (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME PKG_TYPE)
           (VALUE BGA1136C100P34X34_3500X3500X340)
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME TIME_STAMP)
-          (VALUE "2007/9/13")
+          (VALUE "2007/12/13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -73740,6 +74652,26 @@
           (VALUE "11, 13, 15, 17")
           (OWNER "")
           (VISIBILITY Both)
+        )
+        (ATTRIBUTE
+          (NAME BANKS)
+          (VALUE "11, 13, 15, 17")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME FPCPATH)
+          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH_LAYOUT.FPC")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD)
+          (VALUE FF1136)
+          (OWNER "")
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD_FILE)
+          (VALUE "VIRTEX5.IBS")
+          (OWNER "")
         )
       )
       (INSTANCEATTRIBUTES
@@ -74543,12 +75475,12 @@
       (ATTRIBUTES
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_layout)
+          (VALUE ROACH_LAYOUT)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(roach_gpio),(roach_jtag_conf),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_mixed2v5_vcco),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(roach_sys_mon),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -74575,13 +75507,11 @@
           (NAME DEVICE)
           (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME PKG_TYPE)
           (VALUE BGA1136C100P34X34_3500X3500X340)
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME BANKS)
@@ -74591,7 +75521,7 @@
         )
         (ATTRIBUTE
           (NAME TIME_STAMP)
-          (VALUE "2007/9/13")
+          (VALUE "2007/12/13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -74656,6 +75586,21 @@
           (NAME "Ref Designator")
           (VALUE "U?")
           (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME FPCPATH)
+          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH_LAYOUT.FPC")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD)
+          (VALUE FF1136)
+          (OWNER "")
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD_FILE)
+          (VALUE "VIRTEX5.IBS")
+          (OWNER "")
         )
       )
       (INSTANCEATTRIBUTES
@@ -75278,12 +76223,12 @@
       (ATTRIBUTES
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_layout)
+          (VALUE ROACH_LAYOUT)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(roach_gpio),(roach_jtag_conf),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_mixed2v5_vcco),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(roach_sys_mon),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -75310,17 +76255,15 @@
           (NAME DEVICE)
           (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME PKG_TYPE)
           (VALUE BGA1136C100P34X34_3500X3500X340)
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME TIME_STAMP)
-          (VALUE "2007/9/13")
+          (VALUE "2007/12/13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -75385,6 +76328,21 @@
           (NAME "Ref Designator")
           (VALUE "U?")
           (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME FPCPATH)
+          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH_LAYOUT.FPC")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD)
+          (VALUE FF1136)
+          (OWNER "")
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD_FILE)
+          (VALUE "VIRTEX5.IBS")
+          (OWNER "")
         )
       )
       (INSTANCEATTRIBUTES
@@ -76297,12 +77255,12 @@
       (ATTRIBUTES
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_layout)
+          (VALUE ROACH_LAYOUT)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(roach_gpio),(roach_jtag_conf),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_mixed2v5_vcco),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(roach_sys_mon),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -76329,17 +77287,15 @@
           (NAME DEVICE)
           (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME PKG_TYPE)
           (VALUE BGA1136C100P34X34_3500X3500X340)
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME TIME_STAMP)
-          (VALUE "2007/9/13")
+          (VALUE "2007/12/13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -76404,6 +77360,21 @@
           (NAME "Ref Designator")
           (VALUE "U?")
           (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME FPCPATH)
+          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH_LAYOUT.FPC")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD)
+          (VALUE FF1136)
+          (OWNER "")
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD_FILE)
+          (VALUE "VIRTEX5.IBS")
+          (OWNER "")
         )
       )
       (INSTANCEATTRIBUTES
@@ -80694,12 +81665,12 @@
       (ATTRIBUTES
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_layout)
+          (VALUE ROACH_LAYOUT)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(roach_gpio),(roach_jtag_conf),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_mixed2v5_vcco),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(roach_sys_mon),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -80726,17 +81697,15 @@
           (NAME DEVICE)
           (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME PKG_TYPE)
           (VALUE BGA1136C100P34X34_3500X3500X340)
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME TIME_STAMP)
-          (VALUE "2007/9/13")
+          (VALUE "2007/12/13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -80801,6 +81770,21 @@
           (NAME "Ref Designator")
           (VALUE "U?")
           (OWNER ICDBDXD)
+        )
+        (ATTRIBUTE
+          (NAME FPCPATH)
+          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH_LAYOUT.FPC")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD)
+          (VALUE FF1136)
+          (OWNER "")
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD_FILE)
+          (VALUE "VIRTEX5.IBS")
+          (OWNER "")
         )
       )
       (INSTANCEATTRIBUTES
@@ -87069,12 +88053,12 @@
       (ATTRIBUTES
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_layout)
+          (VALUE ROACH_LAYOUT)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(roach_gpio),(roach_jtag_conf),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_mixed2v5_vcco),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(roach_sys_mon),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -87101,17 +88085,15 @@
           (NAME DEVICE)
           (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME PKG_TYPE)
           (VALUE BGA1136C100P34X34_3500X3500X340)
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME TIME_STAMP)
-          (VALUE "2007/9/13")
+          (VALUE "2007/12/13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -87131,22 +88113,22 @@
         )
         (ATTRIBUTE
           (NAME PINSWAP)
-          (VALUE "([zdok0_dp_p0,zdok0_dp_n0],[zdok0_dp_p1,zdok0_dp_n1],[zdok0_dp_p2,zdok0_dp_n2],[zdok0_dp_p3,zdok0_dp_n3],[zdok0_dp_p4,zdok0_dp_n4],[zdok0_dp_p5,zdok0_dp_n5],[zdok0_dp_p6,zdok0_dp_n6],[zdok0_dp_p7,zdok0_dp_n7],[zdok0_dp_p8,zdok0_dp_n8],[zdok0_dp_p9,zdok0_dp_n9],[zdok0_dp_p10,zdok0_dp_n10],[zdok0_dp_p11,zdok0_dp_n11],[zdok0_dp_p12,zdok0_dp_n12],[zdok0_dp_p13,zdok0_dp_n13],[zdok0_dp_p14,zdok0_dp_n14],[zdok0_dp_p15,zdok0_dp_n15],[zdok0_dp_p16,zdok0_dp_n16],[zdok0_dp_p17,zdok0_dp_n17],[zdok0_dp_p18,zdok0_dp_n18],[zdok0_dp_p19,zdok0_dp_n19],[zdok0_dp_p20,zdok0_dp_n20],[zdok0_dp_p21,zdok0_dp_n21],[zdok0_dp_p22,zdok0_dp_n22],[zdok0_dp_p23,zdok0_dp_n23],[zdok0_dp_p24,zdok0_dp_n24],[zdok0_dp_p25,zdok0_dp_n25],[zdok0_dp_p26,zdok0_dp_n26],[zdok0_dp_p27,zdok0_dp_n27],[zdok0_dp_p28,zdok0_dp_n28],[zdok0_dp_p29,zdok0_dp_n29],[zdok0_dp_p30,zdok0_dp_n30],[zdok0_dp_p31,zdok0_dp_n31],[zdok0_dp_p32,zdok0_dp_n32],[zdok0_dp_p33,zdok0_dp_n33],[zdok0_dp_p34,zdok0_dp_n34],[zdok0_dp_p35,zdok0_dp_n35])")
+          (VALUE "([zdok0_dp_p6,zdok0_dp_n6],[zdok0_dp_p8,zdok0_dp_n8],[zdok0_dp_p16,zdok0_dp_n16],[zdok0_dp_p18,zdok0_dp_n18],[zdok0_dp_p20,zdok0_dp_n20])")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME PINSWAP)
-          (VALUE "([zdok0_dp_p36,zdok0_dp_n36],[zdok0_dp_p37,zdok0_dp_n37]),([zdok0_clk0_p,zdok0_clk0_n],[zdok0_clk1_p,zdok0_clk1_n])")
+          (VALUE "([zdok0_dp_p0,zdok0_dp_n0],[zdok0_dp_p1,zdok0_dp_n1],[zdok0_dp_p2,zdok0_dp_n2],[zdok0_dp_p3,zdok0_dp_n3],[zdok0_dp_p4,zdok0_dp_n4],[zdok0_dp_p5,zdok0_dp_n5],[zdok0_dp_p7,zdok0_dp_n7],[zdok0_dp_p9,zdok0_dp_n9],[zdok0_dp_p10,zdok0_dp_n10],[zdok0_dp_p11,zdok0_dp_n11],[zdok0_dp_p12,zdok0_dp_n12],[zdok0_dp_p13,zdok0_dp_n13],[zdok0_dp_p14,zdok0_dp_n14],[zdok0_dp_p15,zdok0_dp_n15],[zdok0_dp_p17,zdok0_dp_n17],[zdok0_dp_p19,zdok0_dp_n19],[zdok0_dp_p21,zdok0_dp_n21],[zdok0_dp_p22,zdok0_dp_n22],[zdok0_dp_p23,zdok0_dp_n23],[zdok0_dp_p24,zdok0_dp_n24],[zdok0_dp_p25,zdok0_dp_n25],[zdok0_dp_p26,zdok0_dp_n26],[zdok0_dp_p27,zdok0_dp_n27],[zdok0_dp_p28,zdok0_dp_n28],[zdok0_dp_p29,zdok0_dp_n29],[zdok0_dp_p30,zdok0_dp_n30],[zdok0_dp_p31,zdok0_dp_n31],[zdok0_dp_p32,zdok0_dp_n32],[zdok0_dp_p33,zdok0_dp_n33],[zdok0_dp_p34,zdok0_dp_n34],[zdok0_dp_p35,zdok0_dp_n35],[zdok0_dp_p36,zdok0_dp_n36],[zdok0_dp_p37,zdok0_dp_n37]),([zdok0_clk0_p,zdok0_clk0_n],[zdok0_clk1_p,zdok0_clk1_n])")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME PINSWAP)
-          (VALUE "([zdok0_dp_p0,zdok0_dp_n0],[zdok0_dp_p1,zdok0_dp_n1],[zdok0_dp_p2,zdok0_dp_n2],[zdok0_dp_p3,zdok0_dp_n3],[zdok0_dp_p4,zdok0_dp_n4],[zdok0_dp_p5,zdok0_dp_n5],[zdok0_dp_p6,zdok0_dp_n6],[zdok0_dp_p7,zdok0_dp_n7],[zdok0_dp_p8,zdok0_dp_n8],[zdok0_dp_p9,zdok0_dp_n9],[zdok0_dp_p10,zdok0_dp_n10],[zdok0_dp_p11,zdok0_dp_n11],[zdok0_dp_p12,zdok0_dp_n12],[zdok0_dp_p13,zdok0_dp_n13],[zdok0_dp_p14,zdok0_dp_n14],[zdok0_dp_p15,zdok0_dp_n15],[zdok0_dp_p16,zdok0_dp_n16],[zdok0_dp_p17,zdok0_dp_n17],[zdok0_dp_p18,zdok0_dp_n18],[zdok0_dp_p19,zdok0_dp_n19],[zdok0_dp_p20,zdok0_dp_n20],[zdok0_dp_p21,zdok0_dp_n21],[zdok0_dp_p22,zdok0_dp_n22],[zdok0_dp_p23,zdok0_dp_n23],[zdok0_dp_p24,zdok0_dp_n24],[zdok0_dp_p25,zdok0_dp_n25],[zdok0_dp_p26,zdok0_dp_n26],[zdok0_dp_p27,zdok0_dp_n27],[zdok0_dp_p28,zdok0_dp_n28],[zdok0_dp_p29,zdok0_dp_n29],[zdok0_dp_p30,zdok0_dp_n30],[zdok0_dp_p31,zdok0_dp_n31],[zdok0_dp_p32,zdok0_dp_n32],[zdok0_dp_p33,zdok0_dp_n33],[zdok0_dp_p34,zdok0_dp_n34],[zdok0_dp_p35,zdok0_dp_n35])")
+          (VALUE "([zdok0_dp_p6,zdok0_dp_n6],[zdok0_dp_p8,zdok0_dp_n8],[zdok0_dp_p16,zdok0_dp_n16],[zdok0_dp_p18,zdok0_dp_n18],[zdok0_dp_p20,zdok0_dp_n20])")
           (OWNER ICDBDXD)
         )
         (ATTRIBUTE
           (NAME PINSWAP)
-          (VALUE "([zdok0_dp_p36,zdok0_dp_n36],[zdok0_dp_p37,zdok0_dp_n37]),([zdok0_clk0_p,zdok0_clk0_n],[zdok0_clk1_p,zdok0_clk1_n])")
+          (VALUE "([zdok0_dp_p0,zdok0_dp_n0],[zdok0_dp_p1,zdok0_dp_n1],[zdok0_dp_p2,zdok0_dp_n2],[zdok0_dp_p3,zdok0_dp_n3],[zdok0_dp_p4,zdok0_dp_n4],[zdok0_dp_p5,zdok0_dp_n5],[zdok0_dp_p7,zdok0_dp_n7],[zdok0_dp_p9,zdok0_dp_n9],[zdok0_dp_p10,zdok0_dp_n10],[zdok0_dp_p11,zdok0_dp_n11],[zdok0_dp_p12,zdok0_dp_n12],[zdok0_dp_p13,zdok0_dp_n13],[zdok0_dp_p14,zdok0_dp_n14],[zdok0_dp_p15,zdok0_dp_n15],[zdok0_dp_p17,zdok0_dp_n17],[zdok0_dp_p19,zdok0_dp_n19],[zdok0_dp_p21,zdok0_dp_n21],[zdok0_dp_p22,zdok0_dp_n22],[zdok0_dp_p23,zdok0_dp_n23],[zdok0_dp_p24,zdok0_dp_n24],[zdok0_dp_p25,zdok0_dp_n25],[zdok0_dp_p26,zdok0_dp_n26],[zdok0_dp_p27,zdok0_dp_n27],[zdok0_dp_p28,zdok0_dp_n28],[zdok0_dp_p29,zdok0_dp_n29],[zdok0_dp_p30,zdok0_dp_n30],[zdok0_dp_p31,zdok0_dp_n31],[zdok0_dp_p32,zdok0_dp_n32],[zdok0_dp_p33,zdok0_dp_n33],[zdok0_dp_p34,zdok0_dp_n34],[zdok0_dp_p35,zdok0_dp_n35],[zdok0_dp_p36,zdok0_dp_n36],[zdok0_dp_p37,zdok0_dp_n37]),([zdok0_clk0_p,zdok0_clk0_n],[zdok0_clk1_p,zdok0_clk1_n])")
           (OWNER ICDBDXD)
         )
         (ATTRIBUTE
@@ -87192,6 +88174,26 @@
           (VALUE "11, 13, 15, 17, 19, 21")
           (OWNER "")
           (VISIBILITY Both)
+        )
+        (ATTRIBUTE
+          (NAME BANKS)
+          (VALUE "11, 13, 15, 17, 19, 21")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME FPCPATH)
+          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH_LAYOUT.FPC")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD)
+          (VALUE FF1136)
+          (OWNER "")
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD_FILE)
+          (VALUE "VIRTEX5.IBS")
+          (OWNER "")
         )
       )
       (INSTANCEATTRIBUTES
@@ -93457,16 +94459,21 @@
           (VALIGN BOTTOM)
           (FONT FONT_0 10)
         )
+        (TEXT
+          (PROPERTY PINSWAP)
+          (POSITION 0 407088)
+          (HIDDEN T)
+        )
       )
       (ATTRIBUTES
         (ATTRIBUTE
           (NAME HETERO_SYMNAME)
-          (VALUE roach_layout)
+          (VALUE ROACH_LAYOUT)
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME HETERO)
-          (VALUE "(roach_ddr2),(roach_gnd),(roach_gpio),(roach_jtag_conf),(roach_mgt112),(roach_mgt114),(roach_mgt116),(roach_mgt118),(roach_mgt120),(roach_mgt122),(roach_mgt124),(roach_mgt126),(roach_mixed2v5_vcco),(roach_per),(roach_qdr2_by0_1),(roach_qdr2_by2_3),(roach_qsh),(roach_sys_clk),(roach_sys_mon),(roach_vccaux),(roach_vccint),(roach_zdok0),(roach_zdok1)")
+          (VALUE "(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -93493,17 +94500,15 @@
           (NAME DEVICE)
           (VALUE "5VSX95T")
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME PKG_TYPE)
           (VALUE BGA1136C100P34X34_3500X3500X340)
           (OWNER DXDESIGNER)
-          (LOCKED T)
         )
         (ATTRIBUTE
           (NAME TIME_STAMP)
-          (VALUE "2007/9/13")
+          (VALUE "2007/12/13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -93584,6 +94589,21 @@
           (VALUE "11, 13, 15, 17, 19, 21")
           (OWNER DXDESIGNER)
           (VISIBILITY Both)
+        )
+        (ATTRIBUTE
+          (NAME FPCPATH)
+          (VALUE "D:\\ROACH\\ELEC\\IO\\ROACH_LAYOUT.FPC")
+          (OWNER DXDESIGNER)
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD)
+          (VALUE FF1136)
+          (OWNER "")
+        )
+        (ATTRIBUTE
+          (NAME HYPER_MOD_FILE)
+          (VALUE "VIRTEX5.IBS")
+          (OWNER "")
         )
       )
       (INSTANCEATTRIBUTES
@@ -94956,18 +95976,6 @@
       (STANDARD LVCMOS15)
     )
     (IO
-      (PIN E26)
-      (STANDARD LVDS_25)
-    )
-    (IO
-      (PIN E27)
-      (STANDARD LVDS_25)
-    )
-    (IO
-      (PIN E28)
-      (STANDARD LVDS_25)
-    )
-    (IO
       (PIN E29)
       (STANDARD LVDS_25)
     )
@@ -95056,10 +96064,6 @@
       (STANDARD LVDS_25)
     )
     (IO
-      (PIN F28)
-      (STANDARD LVDS_25)
-    )
-    (IO
       (PIN F29)
       (STANDARD LVDS_25)
     )
@@ -95140,14 +96144,6 @@
       (STANDARD LVDS_25)
     )
     (IO
-      (PIN G27)
-      (STANDARD LVDS_25)
-    )
-    (IO
-      (PIN G28)
-      (STANDARD LVDS_25)
-    )
-    (IO
       (PIN G30)
       (STANDARD LVDS_25)
     )
@@ -95225,14 +96221,6 @@
     )
     (IO
       (PIN H25)
-      (STANDARD LVDS_25)
-    )
-    (IO
-      (PIN H27)
-      (STANDARD LVDS_25)
-    )
-    (IO
-      (PIN H28)
       (STANDARD LVDS_25)
     )
     (IO
@@ -95540,10 +96528,6 @@
       (STANDARD LVDS_25)
     )
     (IO
-      (PIN M27)
-      (STANDARD LVDS_25)
-    )
-    (IO
       (PIN M28)
       (STANDARD LVDS_25)
     )
@@ -95589,10 +96573,6 @@
     )
     (IO
       (PIN N25)
-      (STANDARD LVDS_25)
-    )
-    (IO
-      (PIN N27)
       (STANDARD LVDS_25)
     )
     (IO
@@ -97579,15 +98559,15 @@
     )
     (SWAP
       (PIN E26)
-      (GROUP DIFF_Vref_NR_VccIO_2_5)
+      (GROUP DIFF_19)
     )
     (SWAP
       (PIN E27)
-      (GROUP DIFF_Vref_NR_VccIO_2_5)
+      (GROUP DIFF_19)
     )
     (SWAP
       (PIN E28)
-      (GROUP DIFF_Vref_NR_VccIO_2_5)
+      (GROUP DIFF_19)
     )
     (SWAP
       (PIN E29)
@@ -97687,7 +98667,7 @@
     )
     (SWAP
       (PIN F28)
-      (GROUP DIFF_Vref_NR_VccIO_2_5)
+      (GROUP DIFF_19)
     )
     (SWAP
       (PIN F29)
@@ -97787,11 +98767,11 @@
     )
     (SWAP
       (PIN G27)
-      (GROUP DIFF_Vref_NR_VccIO_2_5)
+      (GROUP DIFF_19)
     )
     (SWAP
       (PIN G28)
-      (GROUP DIFF_Vref_NR_VccIO_2_5)
+      (GROUP DIFF_19)
     )
     (SWAP
       (PIN G30)
@@ -97883,11 +98863,11 @@
     )
     (SWAP
       (PIN H27)
-      (GROUP DIFF_Vref_NR_VccIO_2_5)
+      (GROUP DIFF_19)
     )
     (SWAP
       (PIN H28)
-      (GROUP DIFF_Vref_NR_VccIO_2_5)
+      (GROUP DIFF_19)
     )
     (SWAP
       (PIN H29)
@@ -98235,7 +99215,7 @@
     )
     (SWAP
       (PIN M27)
-      (GROUP DIFF_Vref_NR_VccIO_2_5)
+      (GROUP DIFF_19)
     )
     (SWAP
       (PIN M28)
@@ -98295,7 +99275,7 @@
     )
     (SWAP
       (PIN N27)
-      (GROUP DIFF_Vref_NR_VccIO_2_5)
+      (GROUP DIFF_19)
     )
     (SWAP
       (PIN N28)
@@ -99161,6 +100141,5 @@
       (PAIR "$1I7_QSH_B_D_N6" AL20)
       (PAIR "$1I7_QSH_B_D_P14" AK19)
     )
-    SIGMAP
   )
 )
