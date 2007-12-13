@@ -1,6 +1,4 @@
 | Wirelist created using version 5.4.
-| Error - Symbol IOD_Schematic:roach_qdr2p_by0_1 is expected to have pin QDR2_BY0_1_SYS_RST_N according to its PINORDER attribute.
-| Error - Symbol IOD_Schematic:roach_qdr2p_by2_3 is expected to have pin QDR2_BY2_3_SYS_RST_N according to its PINORDER attribute.
 V 5.4
 K 29591324190 roach_top
 DW roach_top
@@ -271,15 +269,6 @@ AS IOD_Schematic:roach_gpio_misc INOV_VER_REC=8:13_10-2-07
 AS IOD_Schematic:roach_ddr2_dimm DEVICE=ROACH_DDR2_DIMM
 AS IOD_Schematic:roach_ddr2_dimm SHEET
 AS IOD_Schematic:roach_ddr2_dimm INOV_VER_REC=8:13_10-2-07
-|Q IOD_Schematic:roach_qdr2p_by0_1 1
-AS IOD_Schematic:roach_qdr2p_by0_1 PINORDER= QDR2_BY0_1_SYS_RST_N QDR2_BY0_1_TDO QDR2_TMS QDR2_TCK QDR2_TDI
-AS IOD_Schematic:roach_qdr2p_by0_1 DEVICE=ROACH_QDR2P_BY0_1
-AS IOD_Schematic:roach_qdr2p_by0_1 SHEET
-AS IOD_Schematic:roach_qdr2p_by0_1 INOV_VER_REC=14:11_12-12-07
-AP IOD_Schematic:roach_qdr2p_by0_1 2 PINTYPE=OUT
-AP IOD_Schematic:roach_qdr2p_by0_1 3 PINTYPE=IN
-AP IOD_Schematic:roach_qdr2p_by0_1 4 PINTYPE=IN
-AP IOD_Schematic:roach_qdr2p_by0_1 5 PINTYPE=IN
 |Q IOD_Schematic:roach_ppc_cpld 1
 AS IOD_Schematic:roach_ppc_cpld DEVICE=ROACH_PPC_CPLD
 AS IOD_Schematic:roach_ppc_cpld SHEET
@@ -330,15 +319,24 @@ AP IOD_Schematic:roach_ppc_cpld 42 PINTYPE=OUT
 AP IOD_Schematic:roach_ppc_cpld 43 PINTYPE=OUT
 AP IOD_Schematic:roach_ppc_cpld 44 PINTYPE=IN
 AP IOD_Schematic:roach_ppc_cpld 45 PINTYPE=IN
+|Q IOD_Schematic:roach_qdr2p_by0_1 1
+AS IOD_Schematic:roach_qdr2p_by0_1 PINORDER=QDR2_BY0_1_TDO QDR2_TMS QDR2_TCK QDR2_TDI
+AS IOD_Schematic:roach_qdr2p_by0_1 DEVICE=ROACH_QDR2P_BY0_1
+AS IOD_Schematic:roach_qdr2p_by0_1 SHEET
+AS IOD_Schematic:roach_qdr2p_by0_1 INOV_VER_REC=12:34_12-13-07
+AP IOD_Schematic:roach_qdr2p_by0_1 1 PINTYPE=OUT
+AP IOD_Schematic:roach_qdr2p_by0_1 2 PINTYPE=IN
+AP IOD_Schematic:roach_qdr2p_by0_1 3 PINTYPE=IN
+AP IOD_Schematic:roach_qdr2p_by0_1 4 PINTYPE=IN
 |Q IOD_Schematic:roach_qdr2p_by2_3 1
-AS IOD_Schematic:roach_qdr2p_by2_3 PINORDER= QDR2_BY2_3_SYS_RST_N QDR2_BY2_3_TDO QDR2_TCK QDR2_TMS QDR2_BY0_1_TDO
+AS IOD_Schematic:roach_qdr2p_by2_3 PINORDER=QDR2_BY2_3_TDO QDR2_TCK QDR2_TMS QDR2_BY0_1_TDO
 AS IOD_Schematic:roach_qdr2p_by2_3 DEVICE=ROACH_QDR2P_BY2_3
 AS IOD_Schematic:roach_qdr2p_by2_3 SHEET
-AS IOD_Schematic:roach_qdr2p_by2_3 INOV_VER_REC=14:12_12-12-07
-AP IOD_Schematic:roach_qdr2p_by2_3 2 PINTYPE=OUT
+AS IOD_Schematic:roach_qdr2p_by2_3 INOV_VER_REC=12:34_12-13-07
+AP IOD_Schematic:roach_qdr2p_by2_3 1 PINTYPE=OUT
+AP IOD_Schematic:roach_qdr2p_by2_3 2 PINTYPE=IN
 AP IOD_Schematic:roach_qdr2p_by2_3 3 PINTYPE=IN
 AP IOD_Schematic:roach_qdr2p_by2_3 4 PINTYPE=IN
-AP IOD_Schematic:roach_qdr2p_by2_3 5 PINTYPE=IN
 AN PADD[2:31] VLBUSISONSHEET=1
 AN PDATA[0:7] VLBUSISONSHEET=1
 AN PDATA[0:31] VLBUSISONSHEET=1
@@ -644,13 +642,13 @@ I $1I144 IOD_Schematic:roach_gpio_misc SHEET=13`
 W IOD_Schematic:roach_ddr2_dimm $1I6
 I $1I6 IOD_Schematic:roach_ddr2_dimm SHEET=11`
 |R 8:13_10-2-07
-W IOD_Schematic:roach_qdr2p_by0_1 $1I1032
-I $1I1032 IOD_Schematic:roach_qdr2p_by0_1 ? QDR2_BY0_1_TDO QDR2_TMS QDR2_TCK QDR2_TDI SHEET=14`
-|R 8:14_10-2-07
 W IOD_Schematic:roach_ppc_cpld $1I747
 I $1I747 IOD_Schematic:roach_ppc_cpld BOOT_CFG0 BOOT_CFG1 BOOT_CFG2 CLK_CPLD_33MHZ CLK_CPLD_50MHZ CLK_PERCLK CLK_SEL_M66EN CLK_TMRCLK CPU_TRST# DEBUG_TRST# EE1_WP EE2_BOOT_WP EXT_RESET# FRY_BY# FWP# GETH0_RST# M66EN PADD[27:31] PCS_2 PDATA[0:7] POE# PPC_DDR2_RESET_N PPC_RESET PR_W# PWBE_0# PWR_GOOD RESET_CPLD# RESET_PB_POR# RESET_POR# SELECTMAP_CS SEL_SYSCLK STTM_AS SX95T_CCLK_0 SX95T_CS_B_0 SX95T_DONE_0 SX95T_D_IN_0 SX95T_D_OUT_BUSY_0 SX95T_INIT_B_0 SX95T_M2_0 SX95T_M1_0 SX95T_M0_0 SX95T_PROGRAM_B_0 SX95T_RDWR_B_0 SYSERR SYS_CONFIG[0:7] SHEET=24`
-|R 12:57_10-22-07
+|R 14:11_12-12-07
+W IOD_Schematic:roach_qdr2p_by0_1 $1I1032
+I $1I1032 IOD_Schematic:roach_qdr2p_by0_1 QDR2_BY0_1_TDO QDR2_TMS QDR2_TCK QDR2_TDI SHEET=14`
+|R 12:34_12-13-07
 W IOD_Schematic:roach_qdr2p_by2_3 $1I1038
-I $1I1038 IOD_Schematic:roach_qdr2p_by2_3 ? QDR2_BY2_3_TDO QDR2_TCK QDR2_TMS QDR2_BY0_1_TDO SHEET=15`
-|R 8:15_10-2-07
+I $1I1038 IOD_Schematic:roach_qdr2p_by2_3 QDR2_BY2_3_TDO QDR2_TCK QDR2_TMS QDR2_BY0_1_TDO SHEET=15`
+|R 12:34_12-13-07
 EW
