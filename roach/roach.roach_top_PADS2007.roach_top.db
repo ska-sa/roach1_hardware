@@ -28,7 +28,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1197923899"))
+		(file_ext "roach_top.pxr" "1198021068"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -28143,10 +28143,6 @@
 			(pins R302-2 U62-7))
 		(net "$1I1032\$1N1874"
 			(pins R303-2 U62-9))
-		(net "$1I1032\$1N2078"
-			(pins RP38-4))
-		(net "$1I1032\$1N2123"
-			(pins RP38-3))
 		(net "$1I1032\$1N2138"
 			(pins R22-1 U15-L11))
 		(net "$1I1032\$1N2140"
@@ -28155,14 +28151,18 @@
 			(pins R300-1 U15-R9))
 		(net "$1I1032\$1N2143"
 			(pins R301-1 U15-P9))
+		(net "$1I1032\$1N2172"
+			(pins RP38-3))
+		(net "$1I1032\$1N2173"
+			(pins RP38-4))
 		(net "$1I1032\QDR2_BY0_1_CQ_N"
 			(pins U15-K9 U63-A1))
 		(net "$1I1032\QDR2_BY0_1_CQ_P"
 			(pins U15-K8 U63-A11))
 		(net "$1I1032\QDR2_BY0_1_C_N_COMPAT"
-			(pins RP37-2))
+			(pins RP38-2))
 		(net "$1I1032\QDR2_BY0_1_D0"
-			(pins RP35-1 U15-R11 U63-P10))
+			(pins RP37-1 U15-R11 U63-P10))
 		(net "$1I1032\QDR2_BY0_1_D1"
 			(pins RP33-4 U15-T11 U63-N11))
 		(net "$1I1032\QDR2_BY0_1_D2"
@@ -28180,7 +28180,7 @@
 		(net "$1I1032\QDR2_BY0_1_D8"
 			(pins RP29-4 U15-E6 U63-C11))
 		(net "$1I1032\QDR2_BY0_1_D9"
-			(pins RP28-4 U15-P6 U63-B3))
+			(pins RP27-3 U15-P6 U63-B3))
 		(net "$1I1032\QDR2_BY0_1_D10"
 			(pins RP30-1 U15-J6 U63-C3))
 		(net "$1I1032\QDR2_BY0_1_D11"
@@ -28240,17 +28240,17 @@
 		(net "$1I1032\QDR2_BY0_1_Q17"
 			(pins U15-G11 U63-P3))
 		(net "$1I1032\QDR2_BY0_1_QVLD"
-			(pins RP35-4 U15-F11 U63-P6))
+			(pins RP36-3 U15-F11 U63-P6))
 		(net "$1I1032\QDR2_BY0_1_R"
-			(pins RP28-2 U15-F5 U63-A8))
+			(pins RP28-4 U15-F5 U63-A8))
 		(net "$1I1032\QDR2_BY0_1_SA0"
-			(pins RP27-3 U15-N5 U63-A3))
+			(pins RP27-2 U15-N5 U63-A3))
 		(net "$1I1032\QDR2_BY0_1_SA1"
-			(pins RP28-3 U15-T6 U63-A9))
+			(pins RP29-2 U15-T6 U63-A9))
 		(net "$1I1032\QDR2_BY0_1_SA2"
-			(pins RP29-1 U15-M6 U63-B4))
+			(pins RP28-1 U15-M6 U63-B4))
 		(net "$1I1032\QDR2_BY0_1_SA3"
-			(pins RP29-3 U15-K6 U63-B8))
+			(pins RP29-1 U15-K6 U63-B8))
 		(net "$1I1032\QDR2_BY0_1_SA4"
 			(pins RP30-2 U15-G6 U63-C5))
 		(net "$1I1032\QDR2_BY0_1_SA5"
@@ -28264,35 +28264,35 @@
 		(net "$1I1032\QDR2_BY0_1_SA9"
 			(pins RP35-2 U15-E12 U63-P4))
 		(net "$1I1032\QDR2_BY0_1_SA10"
-			(pins RP35-3 U15-D12 U63-P5))
+			(pins RP36-4 U15-D12 U63-P5))
 		(net "$1I1032\QDR2_BY0_1_SA11"
 			(pins RP36-1 U15-C12 U63-P7))
 		(net "$1I1032\QDR2_BY0_1_SA12"
-			(pins RP36-2 U15-B12 U63-P8))
+			(pins RP37-3 U15-B12 U63-P8))
 		(net "$1I1032\QDR2_BY0_1_SA13"
-			(pins RP36-3 U15-G13 U63-R3))
+			(pins RP35-4 U15-G13 U63-R3))
 		(net "$1I1032\QDR2_BY0_1_SA14"
-			(pins RP36-4 U15-F13 U63-R4))
+			(pins RP35-3 U15-F13 U63-R4))
 		(net "$1I1032\QDR2_BY0_1_SA15"
-			(pins RP37-1 U15-E13 U63-R5))
+			(pins RP35-1 U15-E13 U63-R5))
 		(net "$1I1032\QDR2_BY0_1_SA16"
-			(pins RP37-3 U15-C13 U63-R7))
+			(pins RP36-2 U15-C13 U63-R7))
 		(net "$1I1032\QDR2_BY0_1_SA17"
 			(pins RP37-4 U15-B13 U63-R8))
 		(net "$1I1032\QDR2_BY0_1_SA18"
-			(pins RP38-1 U15-A13 U63-R9))
+			(pins RP37-2 U15-A13 U63-R9))
 		(net "$1I1032\QDR2_BY0_1_SA19"
-			(pins RP27-1 U15-R6 U63-A10))
+			(pins RP29-3 U15-R6 U63-A10))
 		(net "$1I1032\QDR2_BY0_1_SA20"
-			(pins RP27-2 U15-P5 U63-A2))
+			(pins RP27-1 U15-P5 U63-A2))
 		(net "$1I1032\QDR2_BY0_1_SA21"
-			(pins RP38-2 U15-L4))
+			(pins RP38-1 U15-L4))
 		(net "$1I1032\QDR2_BY0_1_W"
 			(pins RP27-4 U15-M5 U63-A4))
 		(net "$1I1032\QDR2_BY0_BW"
-			(pins RP29-2 U15-L6 U63-B7))
+			(pins RP28-3 U15-L6 U63-B7))
 		(net "$1I1032\QDR2_BY1_BW"
-			(pins RP28-1 U15-J5 U63-A5))
+			(pins RP28-2 U15-J5 U63-A5))
 		(net "$1I1038\$1N1236"
 			(pins R55-2 U17-H11))
 		(net "$1I1038\$1N1735"
@@ -30131,6 +30131,12 @@
 		(net_scalar "$1I1032\QDR2_BY0_1_CQ_N"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I1032\$1N2173"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1I1032\$1N2172"
+			(attributes
+				(attval "NC" "")))
 		(net_scalar "$1I1032\$1N2143"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
@@ -30141,16 +30147,6 @@
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I1032\$1N2138"
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I1032\$1N2123"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I1032\$1N2078"
-			(attributes
-				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I1032\$1N1874"
