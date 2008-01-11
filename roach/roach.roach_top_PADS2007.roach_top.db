@@ -28,7 +28,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1198103573"))
+		(file_ext "roach_top.pxr" "1199996491"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -29892,10 +29892,14 @@
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I1038\$1N2189"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I1038\$1N2166"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I1038\$1N2135"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
