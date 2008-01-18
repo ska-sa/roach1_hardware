@@ -475,7 +475,6 @@ Net_Cross_Reference
 ("$1I7\$1N335"    "$1I7\$1N335")
 ("N12V"    "N12V")
 ("N12V"    "$1I671\N12V")
-("$1I671\ATX_GND"    "$1I671\ATX_GND")
 ("5VAUX"    "5VAUX")
 ("5VAUX"    "$1I671\5VAUX")
 ("5VAUX"    "$1I967\5VAUX")
@@ -2489,7 +2488,6 @@ Internal_Net_Cross_Reference
 ("$1I7\$1N335"    "$1I7\$1N335")
 ("N12V"    "N12V")
 ("N12V"    "$1I671\N12V")
-("$1I671\ATX_GND"    "$1I671\ATX_GND")
 ("5VAUX"    "5VAUX")
 ("5VAUX"    "$1I671\5VAUX")
 ("5VAUX"    "$1I967\5VAUX")
@@ -5473,7 +5471,7 @@ Pin_Cross_Reference
 	( 1    "$1I671\$1I378"
 		(3    "$1I671\$1N370")
 		(1    "LOAD_RES_OFF")
-		(2    "$1I671\ATX_GND")
+		(2    "GND")
 	)
 )
 ("C21"
@@ -11404,12 +11402,6 @@ Pin_Cross_Reference
 		(2    "$1I42\$1N20")
 	)
 )
-("JP30"
-	( 1    "$1I671\$1I478"
-		(1    "GND")
-		(2    "$1I671\ATX_GND")
-	)
-)
 ("C537"
 	( 1    "$1I810\$1I584"
 		(1    "2V5")
@@ -11430,16 +11422,16 @@ Pin_Cross_Reference
 )
 ("J32"
 	( 1    "$1I671\$1I414"
-		(1    "$1I671\ATX_GND")
+		(1    "GND")
 		(10    "5VAUX")
 		(2    "N12V")
-		(3    "$1I671\ATX_GND")
+		(3    "GND")
 		(4    "12V_ATX")
-		(5    "$1I671\ATX_GND")
+		(5    "GND")
 		(6    "5V_ATX")
-		(7    "$1I671\ATX_GND")
+		(7    "GND")
 		(8    "3V3_ATX")
-		(9    "$1I671\ATX_GND")
+		(9    "GND")
 	)
 )
 ("J26"
@@ -12959,9 +12951,9 @@ Pin_Cross_Reference
 		(21    "5V_ATX")
 		(22    "5V_ATX")
 		(23    "5V_ATX")
-		(3    "$1I671\ATX_GND")
-		(5    "$1I671\ATX_GND")
-		(7    "$1I671\ATX_GND")
+		(3    "GND")
+		(5    "GND")
+		(7    "GND")
 		(15    "5V_ATX")
 		(17    "5V_ATX")
 		(18    "5V_ATX")
@@ -13133,14 +13125,14 @@ Pin_Cross_Reference
 	( 1    "$1I671\$1I357"
 		(3    "$1I671\$1N358")
 		(1    "$1I671\$1N370")
-		(2    "$1I671\ATX_GND")
+		(2    "GND")
 	)
 )
 ("Q10"
 	( 1    "$1I671\$1I360"
 		(3    "$1I671\$1N361")
 		(1    "$1I671\$1N370")
-		(2    "$1I671\ATX_GND")
+		(2    "GND")
 	)
 )
 ("TP1"

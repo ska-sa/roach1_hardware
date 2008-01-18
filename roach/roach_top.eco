@@ -1,13 +1,31 @@
 *PADS-ECO-V2007.0-MILS*
 *REMARK*  old file: C:\Users\mrevnell\roach\elec\roach\layout\ibo03.asc
 *REMARK*  new file: C:\Users\mrevnell\roach\elec\roach\roach_top.asc
-*REMARK*  created by ECOGEN (Version 6.4v) on 1/16/2008 7:57:37
+*REMARK*  created by ECOGEN (Version 6.4v) on 1/18/2008 9:11:10
 *DELPIN*
-U15.F14  $1I1038\QDR2_BY2_3_SA21
-RP12.1  $1I1038\QDR2_BY2_3_SA21
+Q8.2  $1I671\ATX_GND
+JP30.1  GND
+JP30.2  $1I671\ATX_GND
+J32.1  $1I671\ATX_GND
+J32.3  $1I671\ATX_GND
+J32.5  $1I671\ATX_GND
+J32.7  $1I671\ATX_GND
+J32.9  $1I671\ATX_GND
+J18.3  $1I671\ATX_GND
+J18.5  $1I671\ATX_GND
+J18.7  $1I671\ATX_GND
+Q10.2  $1I671\ATX_GND
+Q9.2  $1I671\ATX_GND
+*DELPART*
+JP30  GND_LINK
+U3  HEATSINKHOLE
+U49  HEATSINKHOLE
 *NET*
-*SIGNAL*  $1I1038\QDR2_BY2_3_SA21
-RP8.1  U15.F14
+*SIGNAL*  GND
+J32.1  Q8.2  Q9.2  Q10.2  J32.3  J18.3  J32.5
+J18.5  J32.7  J18.7  J32.9
+*DEL_ATTRIBUTE*	PCB	DEFAULT
+"CAM.Apply Oversize To All Pads"
 
-*REMARK*  Deleted pins: 2,  Added pins: 2
+*REMARK*  Deleted pins: 13,  Added pins: 11
 *END*
