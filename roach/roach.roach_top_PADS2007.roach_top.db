@@ -1,11 +1,13 @@
 
-(pcb "D:\ROACH\elec\roach\roach.roach_top_PADS2007.roach_top.db"
+(pcb
+ "C:\Users\mrevnell\roach\elec\roach\roach.roach_top_PADS2007.roach_top.db"
 	(version "5.0.0")
 	(units "basic")
 	(config_properties
 		(attributes
-			(attval "PcbConfigName" "D:\ROACH\elec\roach\roach_pcb.cfg")
-			(attval "CnsFile" "D:\ROACH\elec\roach\pads2007.cns")
+			(attval "PcbConfigName"
+ "C:\Users\mrevnell\roach\elec\roach\roach_pcb.cfg")
+			(attval "CnsFile" "C:\Users\mrevnell\roach\elec\roach\pads2007.cns")
 			(attval "BeAdapter" "PADS2007")
 			(attval "FeAdapter" "DxDesigner")
 			(attval "SYSCONFIG" "pcbfwd")
@@ -26,7 +28,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1200913982"))
+		(file_ext "roach_top.pxr" "1201043851"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -3930,6 +3932,15 @@
 						(attval "PKG_TYPE" "HOLE150X288")
 						(attval "REFDES" "H?"))))
 			(pin 1  4 "HOLE150X288__HOLE150X288_1" 0 "H1" 0))
+		(part "HEATSINKHOLE")
+		(logical_part_mapping "HEATSINKHOLE"
+			(comp "U49" "U3"))
+		(logical_part "HEATSINKHOLE"
+			(slots
+				(slot "HEATSINKHOLE__HEATSINKHOLE_1"
+					(attributes
+						(attval "PKG_TYPE" "HEATSINKHOLE")
+						(attval "REFDES" "U?")))))
 		(part "HD10X2SHROUDED")
 		(logical_part_mapping "HD10X2SHROUDED"
 			(comp "J9" "J2"))
@@ -7665,6 +7676,11 @@
 				(attval "GEOMETRY.HEIGHT" "8.5")
 				(attval "DEVICE" "PTH05T210WAD")
 				(attval "REFDES" "U50")))
+		(component "HEATSINKHOLE"
+			(place "U49" 0.0 0.0 top 0.0)
+			(attributes
+				(attval "DEVICE" "HEATSINKHOLE")
+				(attval "REFDES" "U49")))
 		(component "TDFN_ZA-6"
 			(place "U48" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "IN")
@@ -9692,6 +9708,11 @@
 			(attributes
 				(attval "DEVICE" "ADCMP605")
 				(attval "REFDES" "U4")))
+		(component "HEATSINKHOLE"
+			(place "U3" 0.0 0.0 top 0.0)
+			(attributes
+				(attval "DEVICE" "HEATSINKHOLE")
+				(attval "REFDES" "U3")))
 		(component "SOT65P210X110-5N"
 			(place "U2" 0.0 0.0 top 0.0
 				(comp_pin "4" 0.0 0.0 "OUT")
@@ -24206,6 +24227,7 @@
 		(func "$1I671\$1I452" "" "U53" 1)
 		(func "$1I671\$1I443" "" "U51" 1)
 		(func "$1I671\$1I182" "" "U50" 1)
+		(func "$1I1075" "" "U49" 1)
 		(func "$1I863\$1I352" "" "U48" 1)
 		(func "$1I863\$1I328" "" "U47" 1)
 		(func "$1I863\$1I324" "" "U46" 1)
@@ -24257,6 +24279,7 @@
 		(func "$1I144\$1I353" "" "U6" 1)
 		(func "$1I291\$1I342" "" "U5" 1)
 		(func "$1I291\$1I283" "" "U4" 1)
+		(func "$1I1074" "" "U3" 1)
 		(func "$1I747\$1I800" "" "U2" 1)
 		(func "$1I1002\$1I199" "" "U1" 1)
 		(func "$1I1002\$1I229" "" "U1" 2)
@@ -32544,239 +32567,395 @@
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I7\QSH_B_D_P18"
+			(diff_partner "$1I7\QSH_B_D_N18")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N18,$1I7\QSH_B_D_P18")))
 		(net_scalar "$1I7\QSH_B_D_P17"
+			(diff_partner "$1I7\QSH_B_D_N17")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N17,$1I7\QSH_B_D_P17")))
 		(net_scalar "$1I7\QSH_B_D_P16"
+			(diff_partner "$1I7\QSH_B_D_N16")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N16,$1I7\QSH_B_D_P16")))
 		(net_scalar "$1I7\QSH_B_D_P15"
+			(diff_partner "$1I7\QSH_B_D_N15")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N15,$1I7\QSH_B_D_P15")))
 		(net_scalar "$1I7\QSH_B_D_P14"
+			(diff_partner "$1I7\QSH_B_D_N14")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N14,$1I7\QSH_B_D_P14")))
 		(net_scalar "$1I7\QSH_B_D_P13"
+			(diff_partner "$1I7\QSH_B_D_N13")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N13,$1I7\QSH_B_D_P13")))
 		(net_scalar "$1I7\QSH_B_D_P12"
+			(diff_partner "$1I7\QSH_B_D_N12")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N12,$1I7\QSH_B_D_P12")))
 		(net_scalar "$1I7\QSH_B_D_P11"
+			(diff_partner "$1I7\QSH_B_D_N11")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N11,$1I7\QSH_B_D_P11")))
 		(net_scalar "$1I7\QSH_B_D_P10"
+			(diff_partner "$1I7\QSH_B_D_N10")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N10,$1I7\QSH_B_D_P10")))
 		(net_scalar "$1I7\QSH_B_D_P9"
+			(diff_partner "$1I7\QSH_B_D_N9")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N9,$1I7\QSH_B_D_P9")))
 		(net_scalar "$1I7\QSH_B_D_P8"
+			(diff_partner "$1I7\QSH_B_D_N8")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N8,$1I7\QSH_B_D_P8")))
 		(net_scalar "$1I7\QSH_B_D_P7"
+			(diff_partner "$1I7\QSH_B_D_N7")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N7,$1I7\QSH_B_D_P7")))
 		(net_scalar "$1I7\QSH_B_D_P6"
+			(diff_partner "$1I7\QSH_B_D_N6")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N6,$1I7\QSH_B_D_P6")))
 		(net_scalar "$1I7\QSH_B_D_P5"
+			(diff_partner "$1I7\QSH_B_D_N5")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N5,$1I7\QSH_B_D_P5")))
 		(net_scalar "$1I7\QSH_B_D_P4"
+			(diff_partner "$1I7\QSH_B_D_N4")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N4,$1I7\QSH_B_D_P4")))
 		(net_scalar "$1I7\QSH_B_D_P3"
+			(diff_partner "$1I7\QSH_B_D_N3")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N3,$1I7\QSH_B_D_P3")))
 		(net_scalar "$1I7\QSH_B_D_P2"
+			(diff_partner "$1I7\QSH_B_D_N2")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N2,$1I7\QSH_B_D_P2")))
 		(net_scalar "$1I7\QSH_B_D_P1"
+			(diff_partner "$1I7\QSH_B_D_N1")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N1,$1I7\QSH_B_D_P1")))
 		(net_scalar "$1I7\QSH_B_D_P0"
+			(diff_partner "$1I7\QSH_B_D_N0")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N0,$1I7\QSH_B_D_P0")))
 		(net_scalar "$1I7\QSH_B_D_N18"
+			(diff_partner "$1I7\QSH_B_D_P18")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N18,$1I7\QSH_B_D_P18")))
 		(net_scalar "$1I7\QSH_B_D_N17"
+			(diff_partner "$1I7\QSH_B_D_P17")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N17,$1I7\QSH_B_D_P17")))
 		(net_scalar "$1I7\QSH_B_D_N16"
+			(diff_partner "$1I7\QSH_B_D_P16")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N16,$1I7\QSH_B_D_P16")))
 		(net_scalar "$1I7\QSH_B_D_N15"
+			(diff_partner "$1I7\QSH_B_D_P15")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N15,$1I7\QSH_B_D_P15")))
 		(net_scalar "$1I7\QSH_B_D_N14"
+			(diff_partner "$1I7\QSH_B_D_P14")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N14,$1I7\QSH_B_D_P14")))
 		(net_scalar "$1I7\QSH_B_D_N13"
+			(diff_partner "$1I7\QSH_B_D_P13")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N13,$1I7\QSH_B_D_P13")))
 		(net_scalar "$1I7\QSH_B_D_N12"
+			(diff_partner "$1I7\QSH_B_D_P12")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N12,$1I7\QSH_B_D_P12")))
 		(net_scalar "$1I7\QSH_B_D_N11"
+			(diff_partner "$1I7\QSH_B_D_P11")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N11,$1I7\QSH_B_D_P11")))
 		(net_scalar "$1I7\QSH_B_D_N10"
+			(diff_partner "$1I7\QSH_B_D_P10")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N10,$1I7\QSH_B_D_P10")))
 		(net_scalar "$1I7\QSH_B_D_N9"
+			(diff_partner "$1I7\QSH_B_D_P9")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N9,$1I7\QSH_B_D_P9")))
 		(net_scalar "$1I7\QSH_B_D_N8"
+			(diff_partner "$1I7\QSH_B_D_P8")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N8,$1I7\QSH_B_D_P8")))
 		(net_scalar "$1I7\QSH_B_D_N7"
+			(diff_partner "$1I7\QSH_B_D_P7")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N7,$1I7\QSH_B_D_P7")))
 		(net_scalar "$1I7\QSH_B_D_N6"
+			(diff_partner "$1I7\QSH_B_D_P6")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N6,$1I7\QSH_B_D_P6")))
 		(net_scalar "$1I7\QSH_B_D_N5"
+			(diff_partner "$1I7\QSH_B_D_P5")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N5,$1I7\QSH_B_D_P5")))
 		(net_scalar "$1I7\QSH_B_D_N4"
+			(diff_partner "$1I7\QSH_B_D_P4")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N4,$1I7\QSH_B_D_P4")))
 		(net_scalar "$1I7\QSH_B_D_N3"
+			(diff_partner "$1I7\QSH_B_D_P3")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N3,$1I7\QSH_B_D_P3")))
 		(net_scalar "$1I7\QSH_B_D_N2"
+			(diff_partner "$1I7\QSH_B_D_P2")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N2,$1I7\QSH_B_D_P2")))
 		(net_scalar "$1I7\QSH_B_D_N1"
+			(diff_partner "$1I7\QSH_B_D_P1")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N1,$1I7\QSH_B_D_P1")))
 		(net_scalar "$1I7\QSH_B_D_N0"
+			(diff_partner "$1I7\QSH_B_D_P0")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N0,$1I7\QSH_B_D_P0")))
 		(net_scalar "$1I7\QSH_B_CLK_P"
+			(diff_partner "$1I7\QSH_B_CLK_N")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_CLK_N,$1I7\QSH_B_CLK_P")))
 		(net_scalar "$1I7\QSH_B_CLK_N"
+			(diff_partner "$1I7\QSH_B_CLK_P")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_B_CLK_N,$1I7\QSH_B_CLK_P")))
 		(net_scalar "$1I7\QSH_A_D_P18"
+			(diff_partner "$1I7\QSH_A_D_N18")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N18,$1I7\QSH_A_D_P18")))
 		(net_scalar "$1I7\QSH_A_D_P17"
+			(diff_partner "$1I7\QSH_A_D_N17")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N17,$1I7\QSH_A_D_P17")))
 		(net_scalar "$1I7\QSH_A_D_P16"
+			(diff_partner "$1I7\QSH_A_D_N16")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N16,$1I7\QSH_A_D_P16")))
 		(net_scalar "$1I7\QSH_A_D_P15"
+			(diff_partner "$1I7\QSH_A_D_N15")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N15,$1I7\QSH_A_D_P15")))
 		(net_scalar "$1I7\QSH_A_D_P14"
+			(diff_partner "$1I7\QSH_A_D_N14")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N14,$1I7\QSH_A_D_P14")))
 		(net_scalar "$1I7\QSH_A_D_P13"
+			(diff_partner "$1I7\QSH_A_D_N13")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N13,$1I7\QSH_A_D_P13")))
 		(net_scalar "$1I7\QSH_A_D_P12"
+			(diff_partner "$1I7\QSH_A_D_N12")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N12,$1I7\QSH_A_D_P12")))
 		(net_scalar "$1I7\QSH_A_D_P11"
+			(diff_partner "$1I7\QSH_A_D_N11")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N11,$1I7\QSH_A_D_P11")))
 		(net_scalar "$1I7\QSH_A_D_P10"
+			(diff_partner "$1I7\QSH_A_D_N10")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N10,$1I7\QSH_A_D_P10")))
 		(net_scalar "$1I7\QSH_A_D_P9"
+			(diff_partner "$1I7\QSH_A_D_N9")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N9,$1I7\QSH_A_D_P9")))
 		(net_scalar "$1I7\QSH_A_D_P8"
+			(diff_partner "$1I7\QSH_A_D_N8")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N8,$1I7\QSH_A_D_P8")))
 		(net_scalar "$1I7\QSH_A_D_P7"
+			(diff_partner "$1I7\QSH_A_D_N7")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N7,$1I7\QSH_A_D_P7")))
 		(net_scalar "$1I7\QSH_A_D_P6"
+			(diff_partner "$1I7\QSH_A_D_N6")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N6,$1I7\QSH_A_D_P6")))
 		(net_scalar "$1I7\QSH_A_D_P5"
+			(diff_partner "$1I7\QSH_A_D_N5")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N5,$1I7\QSH_A_D_P5")))
 		(net_scalar "$1I7\QSH_A_D_P4"
+			(diff_partner "$1I7\QSH_A_D_N4")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N4,$1I7\QSH_A_D_P4")))
 		(net_scalar "$1I7\QSH_A_D_P3"
+			(diff_partner "$1I7\QSH_A_D_N3")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N3,$1I7\QSH_A_D_P3")))
 		(net_scalar "$1I7\QSH_A_D_P2"
+			(diff_partner "$1I7\QSH_A_D_N2")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N2,$1I7\QSH_A_D_P2")))
 		(net_scalar "$1I7\QSH_A_D_P1"
+			(diff_partner "$1I7\QSH_A_D_N1")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N1,$1I7\QSH_A_D_P1")))
 		(net_scalar "$1I7\QSH_A_D_P0"
+			(diff_partner "$1I7\QSH_A_D_N0")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N0,$1I7\QSH_A_D_P0")))
 		(net_scalar "$1I7\QSH_A_D_N18"
+			(diff_partner "$1I7\QSH_A_D_P18")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N18,$1I7\QSH_A_D_P18")))
 		(net_scalar "$1I7\QSH_A_D_N17"
+			(diff_partner "$1I7\QSH_A_D_P17")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N17,$1I7\QSH_A_D_P17")))
 		(net_scalar "$1I7\QSH_A_D_N16"
+			(diff_partner "$1I7\QSH_A_D_P16")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N16,$1I7\QSH_A_D_P16")))
 		(net_scalar "$1I7\QSH_A_D_N15"
+			(diff_partner "$1I7\QSH_A_D_P15")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N15,$1I7\QSH_A_D_P15")))
 		(net_scalar "$1I7\QSH_A_D_N14"
+			(diff_partner "$1I7\QSH_A_D_P14")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N14,$1I7\QSH_A_D_P14")))
 		(net_scalar "$1I7\QSH_A_D_N13"
+			(diff_partner "$1I7\QSH_A_D_P13")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N13,$1I7\QSH_A_D_P13")))
 		(net_scalar "$1I7\QSH_A_D_N12"
+			(diff_partner "$1I7\QSH_A_D_P12")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N12,$1I7\QSH_A_D_P12")))
 		(net_scalar "$1I7\QSH_A_D_N11"
+			(diff_partner "$1I7\QSH_A_D_P11")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N11,$1I7\QSH_A_D_P11")))
 		(net_scalar "$1I7\QSH_A_D_N10"
+			(diff_partner "$1I7\QSH_A_D_P10")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N10,$1I7\QSH_A_D_P10")))
 		(net_scalar "$1I7\QSH_A_D_N9"
+			(diff_partner "$1I7\QSH_A_D_P9")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N9,$1I7\QSH_A_D_P9")))
 		(net_scalar "$1I7\QSH_A_D_N8"
+			(diff_partner "$1I7\QSH_A_D_P8")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N8,$1I7\QSH_A_D_P8")))
 		(net_scalar "$1I7\QSH_A_D_N7"
+			(diff_partner "$1I7\QSH_A_D_P7")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N7,$1I7\QSH_A_D_P7")))
 		(net_scalar "$1I7\QSH_A_D_N6"
+			(diff_partner "$1I7\QSH_A_D_P6")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N6,$1I7\QSH_A_D_P6")))
 		(net_scalar "$1I7\QSH_A_D_N5"
+			(diff_partner "$1I7\QSH_A_D_P5")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N5,$1I7\QSH_A_D_P5")))
 		(net_scalar "$1I7\QSH_A_D_N4"
+			(diff_partner "$1I7\QSH_A_D_P4")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N4,$1I7\QSH_A_D_P4")))
 		(net_scalar "$1I7\QSH_A_D_N3"
+			(diff_partner "$1I7\QSH_A_D_P3")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N3,$1I7\QSH_A_D_P3")))
 		(net_scalar "$1I7\QSH_A_D_N2"
+			(diff_partner "$1I7\QSH_A_D_P2")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N2,$1I7\QSH_A_D_P2")))
 		(net_scalar "$1I7\QSH_A_D_N1"
+			(diff_partner "$1I7\QSH_A_D_P1")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N1,$1I7\QSH_A_D_P1")))
 		(net_scalar "$1I7\QSH_A_D_N0"
+			(diff_partner "$1I7\QSH_A_D_P0")
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N0,$1I7\QSH_A_D_P0")))
 		(net_scalar "$1I7\QSH_A_CLK_P"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
