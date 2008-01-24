@@ -4,7 +4,7 @@
 
 (cmsed
 	(version "4.0.0")
-	(written "Wed Jan 23 14:57:57 2008")
+	(written "Wed Jan 23 15:54:38 2008")
 	(target_system PADS2007
 		(version "8.0")
 		(pcb_class PADS2007_Rules
@@ -1108,148 +1108,6 @@
 			(constraint_setref DIFF_PAIR_RULE)
 			(constraint_setref COMPONENT_RULE)))
 	(classes
-		(class "Default" PADS2007_Rules
-			(owner PHYSNET COMP DIFFP)
-			(constraint_set ROUTE_RULE
-				(constraint VALID_VIA_TYPE
-					(datatype STR "STANDARDVIA,POWERVIA,BGA")))
-			(constraint_set CLEARANCE_RULE
-				(constraint TRACK_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
-				(constraint VIA_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
-				(constraint VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))
-				(constraint PAD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
-				(constraint PAD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
-				(constraint PAD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
-				(constraint SMD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
-				(constraint SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
-				(constraint SMD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
-				(constraint SMD_TO_SMD
-					(datatype REAL 3.940000 nil nil))
-				(constraint COPPER_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
-				(constraint COPPER_TO_VIA
-					(datatype REAL 3.940000 nil nil))
-				(constraint COPPER_TO_PAD
-					(datatype REAL 3.940000 nil nil))
-				(constraint COPPER_TO_SMD
-					(datatype REAL 3.940000 nil nil))
-				(constraint COPPER_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
-				(constraint TEXT_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
-				(constraint TEXT_TO_VIA
-					(datatype REAL 3.940000 nil nil))
-				(constraint TEXT_TO_PAD
-					(datatype REAL 3.940000 nil nil))
-				(constraint TEXT_TO_SMD
-					(datatype REAL 3.940000 nil nil))
-				(constraint OUTLINE_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
-				(constraint OUTLINE_TO_VIA
-					(datatype REAL 3.940000 nil nil))
-				(constraint OUTLINE_TO_PAD
-					(datatype REAL 3.940000 nil nil))
-				(constraint OUTLINE_TO_SMD
-					(datatype REAL 3.940000 nil nil))
-				(constraint OUTLINE_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
-				(constraint DRILL_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
-				(constraint DRILL_TO_VIA
-					(datatype REAL 3.940000 nil nil))
-				(constraint DRILL_TO_PAD
-					(datatype REAL 3.940000 nil nil))
-				(constraint DRILL_TO_SMD
-					(datatype REAL 3.940000 nil nil))
-				(constraint DRILL_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
-				(constraint SAME_NET_SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
-				(constraint SAME_NET_SMD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
-				(constraint SAME_NET_VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))
-				(constraint SAME_NET_PAD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
-				(constraint SAME_NET_TRACK_TO_CRN
-					(datatype REAL 3.940000 nil nil))
-				(constraint MIN_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
-				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
-				(constraint MAX_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
-				(constraint DRILL_TO_DRILL
-					(datatype REAL 3.940000 nil nil))
-				(constraint BODY_TO_BODY
-					(datatype REAL 3.940000 nil nil)))
-			(constraint_set DIFF_PAIR_RULE
-				(constraint DIFFPAIR_WIDTH
-					(datatype REAL 3.940000 nil nil))
-				(constraint DIFFPAIR_GAP
-					(datatype REAL 3.940000 nil nil)))
-			(constraint_set COMPONENT_RULE
-				(constraint TRACK_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
-				(constraint VIA_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
-				(constraint PAD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
-				(constraint PAD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
-				(constraint PAD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
-				(constraint SMD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
-				(constraint SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
-				(constraint SMD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
-				(constraint SMD_TO_SMD
-					(datatype REAL 3.940000 nil nil))
-				(constraint TEXT_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
-				(constraint TEXT_TO_VIA
-					(datatype REAL 3.940000 nil nil))
-				(constraint TEXT_TO_PAD
-					(datatype REAL 3.940000 nil nil))
-				(constraint TEXT_TO_SMD
-					(datatype REAL 3.940000 nil nil))
-				(constraint OUTLINE_TO_PAD
-					(datatype REAL 3.940000 nil nil))
-				(constraint OUTLINE_TO_SMD
-					(datatype REAL 3.940000 nil nil))
-				(constraint DRILL_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
-				(constraint DRILL_TO_VIA
-					(datatype REAL 3.940000 nil nil))
-				(constraint DRILL_TO_PAD
-					(datatype REAL 3.940000 nil nil))
-				(constraint DRILL_TO_SMD
-					(datatype REAL 3.940000 nil nil))
-				(constraint SAME_NET_SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
-				(constraint SAME_NET_SMD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
-				(constraint SAME_NET_PAD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
-				(constraint MIN_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
-				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
-				(constraint MAX_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
-				(constraint VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))))
 		(class "ZDOK0A" PADS2007_Rules
 			(owner PHYSNET COMP DIFFP)
 			(constraint_set ROUTE_RULE
@@ -1257,141 +1115,141 @@
 					(datatype STR "STANDARDVIA,POWERVIA,BGA")))
 			(constraint_set CLEARANCE_RULE
 				(constraint TRACK_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_PAD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_TRACK_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint MIN_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.937000 nil nil))
 				(constraint MAX_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 4.000000 nil nil))
 				(constraint DRILL_TO_DRILL
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint BODY_TO_BODY
-					(datatype REAL 3.940000 nil nil)))
+					(datatype REAL 3.930000 nil nil)))
 			(constraint_set DIFF_PAIR_RULE
 				(constraint DIFFPAIR_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DIFFPAIR_GAP
-					(datatype REAL 3.940000 nil nil)))
+					(datatype REAL 3.930000 nil nil)))
 			(constraint_set COMPONENT_RULE
 				(constraint TRACK_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_PAD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint MIN_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.937000 nil nil))
 				(constraint MAX_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 4.000000 nil nil))
 				(constraint VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))))
+					(datatype REAL 3.930000 nil nil))))
 		(class "ZDOK1A" PADS2007_Rules
 			(owner PHYSNET COMP DIFFP)
 			(constraint_set HIGH_SPEED_RULE
@@ -1402,141 +1260,141 @@
 					(datatype STR "STANDARDVIA,POWERVIA,BGA")))
 			(constraint_set CLEARANCE_RULE
 				(constraint TRACK_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_PAD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_TRACK_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint MIN_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.937000 nil nil))
 				(constraint MAX_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 4.000000 nil nil))
 				(constraint DRILL_TO_DRILL
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint BODY_TO_BODY
-					(datatype REAL 3.940000 nil nil)))
+					(datatype REAL 3.930000 nil nil)))
 			(constraint_set DIFF_PAIR_RULE
 				(constraint DIFFPAIR_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DIFFPAIR_GAP
-					(datatype REAL 3.940000 nil nil)))
+					(datatype REAL 3.930000 nil nil)))
 			(constraint_set COMPONENT_RULE
 				(constraint TRACK_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_PAD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint MIN_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.937000 nil nil))
 				(constraint MAX_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 4.000000 nil nil))
 				(constraint VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))))
+					(datatype REAL 3.930000 nil nil))))
 		(class "QSHA" PADS2007_Rules
 			(owner PHYSNET COMP DIFFP)
 			(constraint_set HIGH_SPEED_RULE
@@ -1547,141 +1405,141 @@
 					(datatype STR "STANDARDVIA,POWERVIA,BGA")))
 			(constraint_set CLEARANCE_RULE
 				(constraint TRACK_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_PAD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_TRACK_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint MIN_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.937000 nil nil))
 				(constraint MAX_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 4.000000 nil nil))
 				(constraint DRILL_TO_DRILL
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint BODY_TO_BODY
-					(datatype REAL 3.940000 nil nil)))
+					(datatype REAL 3.930000 nil nil)))
 			(constraint_set DIFF_PAIR_RULE
 				(constraint DIFFPAIR_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DIFFPAIR_GAP
-					(datatype REAL 3.940000 nil nil)))
+					(datatype REAL 3.930000 nil nil)))
 			(constraint_set COMPONENT_RULE
 				(constraint TRACK_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_PAD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint MIN_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.937000 nil nil))
 				(constraint MAX_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 4.000000 nil nil))
 				(constraint VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))))
+					(datatype REAL 3.930000 nil nil))))
 		(class "QSHB" PADS2007_Rules
 			(owner PHYSNET COMP DIFFP)
 			(constraint_set HIGH_SPEED_RULE
@@ -1692,141 +1550,141 @@
 					(datatype STR "STANDARDVIA,POWERVIA,BGA")))
 			(constraint_set CLEARANCE_RULE
 				(constraint TRACK_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_PAD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_TRACK_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint MIN_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.937000 nil nil))
 				(constraint MAX_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 4.000000 nil nil))
 				(constraint DRILL_TO_DRILL
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint BODY_TO_BODY
-					(datatype REAL 3.940000 nil nil)))
+					(datatype REAL 3.930000 nil nil)))
 			(constraint_set DIFF_PAIR_RULE
 				(constraint DIFFPAIR_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DIFFPAIR_GAP
-					(datatype REAL 3.940000 nil nil)))
+					(datatype REAL 3.930000 nil nil)))
 			(constraint_set COMPONENT_RULE
 				(constraint TRACK_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_PAD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint MIN_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.937000 nil nil))
 				(constraint MAX_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 4.000000 nil nil))
 				(constraint VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))))
+					(datatype REAL 3.930000 nil nil))))
 		(class "QDR1" PADS2007_Rules
 			(owner PHYSNET COMP DIFFP)
 			(constraint_set HIGH_SPEED_RULE
@@ -1837,141 +1695,141 @@
 					(datatype STR "STANDARDVIA,POWERVIA,BGA")))
 			(constraint_set CLEARANCE_RULE
 				(constraint TRACK_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_PAD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_TRACK_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint MIN_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.937000 nil nil))
 				(constraint MAX_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 4.000000 nil nil))
 				(constraint DRILL_TO_DRILL
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint BODY_TO_BODY
-					(datatype REAL 3.940000 nil nil)))
+					(datatype REAL 3.930000 nil nil)))
 			(constraint_set DIFF_PAIR_RULE
 				(constraint DIFFPAIR_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DIFFPAIR_GAP
-					(datatype REAL 3.940000 nil nil)))
+					(datatype REAL 3.930000 nil nil)))
 			(constraint_set COMPONENT_RULE
 				(constraint TRACK_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_PAD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint MIN_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.937000 nil nil))
 				(constraint MAX_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 4.000000 nil nil))
 				(constraint VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))))
+					(datatype REAL 3.930000 nil nil))))
 		(class "QDR3" PADS2007_Rules
 			(owner PHYSNET COMP DIFFP)
 			(constraint_set HIGH_SPEED_RULE
@@ -1982,141 +1840,141 @@
 					(datatype STR "STANDARDVIA,POWERVIA,BGA")))
 			(constraint_set CLEARANCE_RULE
 				(constraint TRACK_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_PAD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_TRACK_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint MIN_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.937000 nil nil))
 				(constraint MAX_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 4.000000 nil nil))
 				(constraint DRILL_TO_DRILL
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint BODY_TO_BODY
-					(datatype REAL 3.940000 nil nil)))
+					(datatype REAL 3.930000 nil nil)))
 			(constraint_set DIFF_PAIR_RULE
 				(constraint DIFFPAIR_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DIFFPAIR_GAP
-					(datatype REAL 3.940000 nil nil)))
+					(datatype REAL 3.930000 nil nil)))
 			(constraint_set COMPONENT_RULE
 				(constraint TRACK_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_PAD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint MIN_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.937000 nil nil))
 				(constraint MAX_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 4.000000 nil nil))
 				(constraint VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))))
+					(datatype REAL 3.930000 nil nil))))
 		(class "PPCDDR" PADS2007_Rules
 			(owner PHYSNET COMP DIFFP)
 			(constraint_set HIGH_SPEED_RULE
@@ -2127,141 +1985,141 @@
 					(datatype STR "STANDARDVIA,POWERVIA,BGA")))
 			(constraint_set CLEARANCE_RULE
 				(constraint TRACK_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_PAD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_TRACK_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint MIN_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.937000 nil nil))
 				(constraint MAX_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 4.000000 nil nil))
 				(constraint DRILL_TO_DRILL
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint BODY_TO_BODY
-					(datatype REAL 3.940000 nil nil)))
+					(datatype REAL 3.930000 nil nil)))
 			(constraint_set DIFF_PAIR_RULE
 				(constraint DIFFPAIR_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DIFFPAIR_GAP
-					(datatype REAL 3.940000 nil nil)))
+					(datatype REAL 3.930000 nil nil)))
 			(constraint_set COMPONENT_RULE
 				(constraint TRACK_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_PAD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint MIN_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.937000 nil nil))
 				(constraint MAX_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 4.000000 nil nil))
 				(constraint VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))))
+					(datatype REAL 3.930000 nil nil))))
 		(class "FPGADDR" PADS2007_Rules
 			(owner PHYSNET COMP DIFFP)
 			(constraint_set HIGH_SPEED_RULE
@@ -2272,141 +2130,283 @@
 					(datatype STR "STANDARDVIA,POWERVIA,BGA")))
 			(constraint_set CLEARANCE_RULE
 				(constraint TRACK_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint COPPER_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_COPPER
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_PAD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_TRACK_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint MIN_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.937000 nil nil))
 				(constraint MAX_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 4.000000 nil nil))
 				(constraint DRILL_TO_DRILL
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint BODY_TO_BODY
-					(datatype REAL 3.940000 nil nil)))
+					(datatype REAL 3.930000 nil nil)))
 			(constraint_set DIFF_PAIR_RULE
 				(constraint DIFFPAIR_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DIFFPAIR_GAP
-					(datatype REAL 3.940000 nil nil)))
+					(datatype REAL 3.930000 nil nil)))
 			(constraint_set COMPONENT_RULE
 				(constraint TRACK_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint VIA_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint PAD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SMD_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint TEXT_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint OUTLINE_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_TRACK
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_PAD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint DRILL_TO_SMD
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_VIA
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_SMD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint SAME_NET_PAD_TO_CRN
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint MIN_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 3.937000 nil nil))
 				(constraint MAX_TRACK_WIDTH
-					(datatype REAL 3.940000 nil nil))
+					(datatype REAL 4.000000 nil nil))
 				(constraint VIA_TO_VIA
-					(datatype REAL 3.940000 nil nil)))))
+					(datatype REAL 3.930000 nil nil))))
+		(class "Default" PADS2007_Rules
+			(owner PHYSNET COMP DIFFP)
+			(constraint_set ROUTE_RULE
+				(constraint VALID_VIA_TYPE
+					(datatype STR "STANDARDVIA,POWERVIA,BGA")))
+			(constraint_set CLEARANCE_RULE
+				(constraint TRACK_TO_TRACK
+					(datatype REAL 3.930000 nil nil))
+				(constraint VIA_TO_TRACK
+					(datatype REAL 3.930000 nil nil))
+				(constraint VIA_TO_VIA
+					(datatype REAL 3.930000 nil nil))
+				(constraint PAD_TO_TRACK
+					(datatype REAL 3.930000 nil nil))
+				(constraint PAD_TO_VIA
+					(datatype REAL 3.930000 nil nil))
+				(constraint PAD_TO_PAD
+					(datatype REAL 3.930000 nil nil))
+				(constraint SMD_TO_TRACK
+					(datatype REAL 3.930000 nil nil))
+				(constraint SMD_TO_VIA
+					(datatype REAL 3.930000 nil nil))
+				(constraint SMD_TO_PAD
+					(datatype REAL 3.930000 nil nil))
+				(constraint SMD_TO_SMD
+					(datatype REAL 3.930000 nil nil))
+				(constraint COPPER_TO_TRACK
+					(datatype REAL 3.930000 nil nil))
+				(constraint COPPER_TO_VIA
+					(datatype REAL 3.930000 nil nil))
+				(constraint COPPER_TO_PAD
+					(datatype REAL 3.930000 nil nil))
+				(constraint COPPER_TO_SMD
+					(datatype REAL 3.930000 nil nil))
+				(constraint COPPER_TO_COPPER
+					(datatype REAL 3.930000 nil nil))
+				(constraint TEXT_TO_TRACK
+					(datatype REAL 3.930000 nil nil))
+				(constraint TEXT_TO_VIA
+					(datatype REAL 3.930000 nil nil))
+				(constraint TEXT_TO_PAD
+					(datatype REAL 3.930000 nil nil))
+				(constraint TEXT_TO_SMD
+					(datatype REAL 3.930000 nil nil))
+				(constraint OUTLINE_TO_TRACK
+					(datatype REAL 3.930000 nil nil))
+				(constraint OUTLINE_TO_VIA
+					(datatype REAL 3.930000 nil nil))
+				(constraint OUTLINE_TO_PAD
+					(datatype REAL 3.930000 nil nil))
+				(constraint OUTLINE_TO_SMD
+					(datatype REAL 3.930000 nil nil))
+				(constraint OUTLINE_TO_COPPER
+					(datatype REAL 3.930000 nil nil))
+				(constraint DRILL_TO_TRACK
+					(datatype REAL 3.930000 nil nil))
+				(constraint DRILL_TO_VIA
+					(datatype REAL 3.930000 nil nil))
+				(constraint DRILL_TO_PAD
+					(datatype REAL 3.930000 nil nil))
+				(constraint DRILL_TO_SMD
+					(datatype REAL 3.930000 nil nil))
+				(constraint DRILL_TO_COPPER
+					(datatype REAL 3.930000 nil nil))
+				(constraint SAME_NET_SMD_TO_VIA
+					(datatype REAL 3.930000 nil nil))
+				(constraint SAME_NET_SMD_TO_CRN
+					(datatype REAL 3.930000 nil nil))
+				(constraint SAME_NET_VIA_TO_VIA
+					(datatype REAL 3.930000 nil nil))
+				(constraint SAME_NET_PAD_TO_CRN
+					(datatype REAL 3.930000 nil nil))
+				(constraint SAME_NET_TRACK_TO_CRN
+					(datatype REAL 3.930000 nil nil))
+				(constraint MIN_TRACK_WIDTH
+					(datatype REAL 3.930000 nil nil))
+				(constraint REC_TRACK_WIDTH
+					(datatype REAL 3.937000 nil nil))
+				(constraint MAX_TRACK_WIDTH
+					(datatype REAL 4.0 nil nil))
+				(constraint DRILL_TO_DRILL
+					(datatype REAL 3.930000 nil nil))
+				(constraint BODY_TO_BODY
+					(datatype REAL 3.930000 nil nil)))
+			(constraint_set DIFF_PAIR_RULE
+				(constraint DIFFPAIR_WIDTH
+					(datatype REAL 3.930000 nil nil))
+				(constraint DIFFPAIR_GAP
+					(datatype REAL 3.930000 nil nil)))
+			(constraint_set COMPONENT_RULE
+				(constraint TRACK_TO_TRACK
+					(datatype REAL 3.930000 nil nil))
+				(constraint VIA_TO_TRACK
+					(datatype REAL 3.930000 nil nil))
+				(constraint PAD_TO_TRACK
+					(datatype REAL 3.930000 nil nil))
+				(constraint PAD_TO_VIA
+					(datatype REAL 3.930000 nil nil))
+				(constraint PAD_TO_PAD
+					(datatype REAL 3.930000 nil nil))
+				(constraint SMD_TO_TRACK
+					(datatype REAL 3.930000 nil nil))
+				(constraint SMD_TO_VIA
+					(datatype REAL 3.930000 nil nil))
+				(constraint SMD_TO_PAD
+					(datatype REAL 3.930000 nil nil))
+				(constraint SMD_TO_SMD
+					(datatype REAL 3.930000 nil nil))
+				(constraint TEXT_TO_TRACK
+					(datatype REAL 3.930000 nil nil))
+				(constraint TEXT_TO_VIA
+					(datatype REAL 3.930000 nil nil))
+				(constraint TEXT_TO_PAD
+					(datatype REAL 3.930000 nil nil))
+				(constraint TEXT_TO_SMD
+					(datatype REAL 3.930000 nil nil))
+				(constraint OUTLINE_TO_PAD
+					(datatype REAL 3.930000 nil nil))
+				(constraint OUTLINE_TO_SMD
+					(datatype REAL 3.930000 nil nil))
+				(constraint DRILL_TO_TRACK
+					(datatype REAL 3.930000 nil nil))
+				(constraint DRILL_TO_VIA
+					(datatype REAL 3.930000 nil nil))
+				(constraint DRILL_TO_PAD
+					(datatype REAL 3.930000 nil nil))
+				(constraint DRILL_TO_SMD
+					(datatype REAL 3.930000 nil nil))
+				(constraint SAME_NET_SMD_TO_VIA
+					(datatype REAL 3.930000 nil nil))
+				(constraint SAME_NET_SMD_TO_CRN
+					(datatype REAL 3.930000 nil nil))
+				(constraint SAME_NET_PAD_TO_CRN
+					(datatype REAL 3.930000 nil nil))
+				(constraint MIN_TRACK_WIDTH
+					(datatype REAL 3.930000 nil nil))
+				(constraint REC_TRACK_WIDTH
+					(datatype REAL 3.937000 nil nil))
+				(constraint MAX_TRACK_WIDTH
+					(datatype REAL 4.0 nil nil))
+				(constraint VIA_TO_VIA
+					(datatype REAL 3.930000 nil nil)))))
 	(groups
 		(group "CLEARANCE_RULE"
 			(owner PHYSNET)
