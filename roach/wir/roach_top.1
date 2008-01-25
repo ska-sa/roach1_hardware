@@ -172,10 +172,6 @@ AP IOD_Schematic:roach_config 12 PINTYPE=IN
 AP IOD_Schematic:roach_config 13 PINTYPE=IN
 AP IOD_Schematic:roach_config 14 PINTYPE=OUT
 AP IOD_Schematic:roach_config 15 PINTYPE=IN
-|Q IOD_Schematic:roach_diff_gpio 1
-AS IOD_Schematic:roach_diff_gpio DEVICE=ROACH_DIFF_GPIO
-AS IOD_Schematic:roach_diff_gpio SHEET
-AS IOD_Schematic:roach_diff_gpio INOV_VER_REC=8:13_10-2-07
 |Q IOD_Schematic:roach_gpio_misc 1
 AS IOD_Schematic:roach_gpio_misc DEVICE=ROACH_GPIO_MISC
 AS IOD_Schematic:roach_gpio_misc SHEET
@@ -337,6 +333,10 @@ AP IOD_Schematic:roach_ppc_usb 8 PINTYPE=OUT
 AS IOD_Schematic:roach_adc_1 DEVICE=ROACH_ADC_1
 AS IOD_Schematic:roach_adc_1 SHEET
 AS IOD_Schematic:roach_adc_1 INOV_VER_REC=8:12_10-2-07
+|Q IOD_Schematic:roach_diff_gpio 1
+AS IOD_Schematic:roach_diff_gpio DEVICE=ROACH_DIFF_GPIO
+AS IOD_Schematic:roach_diff_gpio SHEET
+AS IOD_Schematic:roach_diff_gpio INOV_VER_REC=8:13_10-2-07
 |Q IOD_Schematic:roach_adc_0 1
 AS IOD_Schematic:roach_adc_0 DEVICE=ROACH_ADC_0
 AS IOD_Schematic:roach_adc_0 SHEET
@@ -347,6 +347,7 @@ AN PDATA[0:31] VLBUSISONSHEET=1
 AN PADD[27:31] VLBUSISONSHEET=1
 AN SYS_CONFIG[0:7] VLBUSISONSHEET=1
 AN SYS_CONFIG[0:7] VLBUSISONSHEET=1
+AN SX95T_M1_0 XREF=1-1G,1-3F,16-3B,21-4D,24-7F
 AN SELECTMAP_CS XREF=1-5L,24-6C,25-7B
 AN CLK_USB2_48MHZ XREF=1-3B,21-2C,23-4G
 AN CLK_UART_11_0592MHZ XREF=1-5G,23-7G,25-3D
@@ -398,7 +399,6 @@ AN PPC_THERMONA XREF=1-9E,2-6L,23-6H
 AN PPC_THERMONB XREF=1-9E,2-4L,23-6H
 AN V5_INT# XREF=1-5L,23-7N,25-8Q
 AN SX95T_M2_0 XREF=1-1G,1-3F,16-3B,21-4D,24-7F
-AN SX95T_M1_0 XREF=1-1G,1-3F,16-3B,21-4D,24-7F
 AN SX95T_M0_0 XREF=1-1G,1-3F,16-3B,21-4D,24-7F
 AN SX95T_DONE_0 XREF=1-1M,1-3F,21-5D
 AN QDR2_TDI XREF=14-5F
@@ -622,9 +622,6 @@ I $1I860 IOD_Schematic:roach_ppc_power_1 SHEET=17`
 W IOD_Schematic:roach_config $1I790
 I $1I790 IOD_Schematic:roach_config SX95T_CCLK_0 SX95T_CS_B_0 SX95T_DONE_0 SX95T_D_IN_0 SX95T_D_OUT_BUSY_0 SX95T_INIT_B_0 SX95T_M0_0 SX95T_M1_0 SX95T_M2_0 SX95T_PROGRAM_B_0 SX95T_RDWR_B_0 SX95T_TCK SX95T_TDI SX95T_TDO SX95T_TMS SHEET=16`
 |R 9:31_10-11-07
-W IOD_Schematic:roach_diff_gpio $1I7
-I $1I7 IOD_Schematic:roach_diff_gpio SHEET=12`
-|R 8:13_10-2-07
 W IOD_Schematic:roach_gpio_misc $1I144
 I $1I144 IOD_Schematic:roach_gpio_misc SHEET=13`
 |R 8:13_10-2-07
@@ -658,6 +655,9 @@ I $1I42 IOD_Schematic:roach_ppc_usb CLK_USB2_48MHZ SX95T_DONE_0 SX95T_D_OUT_BUSY
 W IOD_Schematic:roach_adc_1 $1I5
 I $1I5 IOD_Schematic:roach_adc_1 SHEET=6`
 |R 8:12_10-2-07
+W IOD_Schematic:roach_diff_gpio $1I7
+I $1I7 IOD_Schematic:roach_diff_gpio SHEET=12`
+|R 8:13_10-2-07
 W IOD_Schematic:roach_adc_0 $1I4
 I $1I4 IOD_Schematic:roach_adc_0 SHEET=5`
 |R 8:11_10-2-07
