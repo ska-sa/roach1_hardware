@@ -5,7 +5,7 @@
 	(config_properties
 		(attributes
 			(attval "PcbConfigName" "D:\ROACH\elec\roach\roach_pcb.cfg")
-			(attval "CnsFile" ".\pads2007.cns")
+			(attval "CnsFile" "D:\ROACH\elec\roach\pads2007.cns")
 			(attval "BeAdapter" "PADS2007")
 			(attval "FeAdapter" "DxDesigner")
 			(attval "SYSCONFIG" "pcbfwd")
@@ -26,7 +26,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1201251784"))
+		(file_ext "roach_top.pxr" "1201261566"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -29222,7 +29222,8 @@
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "V5_INT#"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "TD0"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
@@ -29351,13 +29352,15 @@
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "PWBE_0#"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PS_ON#"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "PR_W#"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PPC_THERMONB"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
@@ -29372,55 +29375,72 @@
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "POE#"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PDATA15"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PDATA14"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PDATA13"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PDATA12"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PDATA11"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PDATA10"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PDATA9"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PDATA8"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PDATA7"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PDATA6"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PDATA5"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PDATA4"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PDATA3"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PDATA2"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PDATA1"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PDATA0"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PCS_2"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
@@ -29429,91 +29449,120 @@
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "PADD30"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD29"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD28"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD27"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD26"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD25"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD24"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD23"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD22"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD21"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD20"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD19"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD18"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD17"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD16"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD15"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD14"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD13"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD12"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD11"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD10"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD9"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD8"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD7"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD6"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD5"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD4"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD3"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "PADD2"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "N12V"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
@@ -29649,7 +29698,8 @@
 		(net_scalar "CLK_PERCLK"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "LENGTH_MINIMIZATION_TYPE" "SERIAL")))
+				(cnsval "LENGTH_MINIMIZATION_TYPE" "SERIAL")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "CLK_GETH0_25MHZ"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
@@ -30789,10 +30839,12 @@
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I863\PWBE_1#"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "$1I863\PREADY"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "$1I863\PER_D_PAR1"
 			(attributes
 				(attval "NC" ""))
@@ -30817,13 +30869,15 @@
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I863\PCS_1"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "$1I863\PCS_0"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I863\PBLAST#"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCPBUS")))
 		(net_scalar "$1I863\N17929567"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
