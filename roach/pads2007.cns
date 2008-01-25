@@ -4,7 +4,7 @@
 
 (cmsed
 	(version "4.0.0")
-	(written "Fri Jan 25 13:31:20 2008")
+	(written "Fri Jan 25 14:25:31 2008")
 	(target_system PADS2007
 		(version "8.0")
 		(pcb_class PADS2007_Rules
@@ -190,7 +190,7 @@
 					(level_properties NO_PROPAGATE))))
 		(constraint_def VALID_LAYER
 			(owner PHYSNET)
-			(datatype STR "1,2")
+			(datatype STR "1,3,5,7,10,12,14,16")
 			(help_text
  "Defines the layers traces are permitted on for the net. Layers not listed, will be restricted")
 			(ctype CONSTRAINT)
@@ -976,7 +976,7 @@
 			(constraint ROUTE_PRIORITY
 				(datatype INT 3 0 nil))
 			(constraint VALID_LAYER
-				(datatype STR "1,2"))
+				(datatype STR "1,3,5,7,10,12,14,16"))
 			(constraint VALID_VIA_TYPE
 				(datatype STR "*USE_CURRENT*")))
 		(constraint_setdef "HIGH_SPEED_RULE"
@@ -1115,7 +1115,7 @@
 					(datatype BOOL true)))
 			(constraint_set ROUTE_RULE
 				(constraint VALID_VIA_TYPE
-					(datatype STR "STANDARDVIA,POWERVIA,BGA")))
+					(datatype STR "STANDARDVIA,BGA")))
 			(constraint_set CLEARANCE_RULE
 				(constraint TRACK_TO_TRACK
 					(datatype REAL 3.930000 nil nil))
@@ -1188,7 +1188,7 @@
 				(constraint MIN_TRACK_WIDTH
 					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.937000 nil nil))
+					(datatype REAL 3.940000 nil nil))
 				(constraint MAX_TRACK_WIDTH
 					(datatype REAL 4.0 nil nil))
 				(constraint DRILL_TO_DRILL
@@ -1260,7 +1260,7 @@
 					(datatype BOOL true)))
 			(constraint_set ROUTE_RULE
 				(constraint VALID_VIA_TYPE
-					(datatype STR "STANDARDVIA,POWERVIA,BGA")))
+					(datatype STR "STANDARDVIA,BGA")))
 			(constraint_set CLEARANCE_RULE
 				(constraint TRACK_TO_TRACK
 					(datatype REAL 3.930000 nil nil))
@@ -1333,7 +1333,7 @@
 				(constraint MIN_TRACK_WIDTH
 					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.937000 nil nil))
+					(datatype REAL 3.940000 nil nil))
 				(constraint MAX_TRACK_WIDTH
 					(datatype REAL 4.0 nil nil))
 				(constraint DRILL_TO_DRILL
@@ -1405,7 +1405,7 @@
 					(datatype BOOL true)))
 			(constraint_set ROUTE_RULE
 				(constraint VALID_VIA_TYPE
-					(datatype STR "STANDARDVIA,POWERVIA,BGA")))
+					(datatype STR "STANDARDVIA,BGA")))
 			(constraint_set CLEARANCE_RULE
 				(constraint TRACK_TO_TRACK
 					(datatype REAL 3.930000 nil nil))
@@ -1478,7 +1478,7 @@
 				(constraint MIN_TRACK_WIDTH
 					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.937000 nil nil))
+					(datatype REAL 3.940000 nil nil))
 				(constraint MAX_TRACK_WIDTH
 					(datatype REAL 4.0 nil nil))
 				(constraint DRILL_TO_DRILL
@@ -1550,7 +1550,9 @@
 					(datatype BOOL true)))
 			(constraint_set ROUTE_RULE
 				(constraint VALID_VIA_TYPE
-					(datatype STR "STANDARDVIA,POWERVIA,BGA")))
+					(datatype STR "STANDARDVIA,BGA"))
+				(constraint VALID_LAYER
+					(datatype STR "1,3,5,7,10,12,14,16")))
 			(constraint_set CLEARANCE_RULE
 				(constraint TRACK_TO_TRACK
 					(datatype REAL 3.930000 nil nil))
@@ -1623,7 +1625,7 @@
 				(constraint MIN_TRACK_WIDTH
 					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.937000 nil nil))
+					(datatype REAL 3.940000 nil nil))
 				(constraint MAX_TRACK_WIDTH
 					(datatype REAL 4.0 nil nil))
 				(constraint DRILL_TO_DRILL
@@ -1767,7 +1769,7 @@
 				(constraint MIN_TRACK_WIDTH
 					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.937000 nil nil))
+					(datatype REAL 3.940000 nil nil))
 				(constraint MAX_TRACK_WIDTH
 					(datatype REAL 200.0 nil nil))
 				(constraint DRILL_TO_DRILL
@@ -1838,7 +1840,7 @@
 				(constraint VALID_LAYER
 					(datatype STR "1,3,5,7,10,12,14,16"))
 				(constraint VALID_VIA_TYPE
-					(datatype STR "STANDARDVIA,POWERVIA,BGA")))
+					(datatype STR "STANDARDVIA,BGA")))
 			(constraint_set CLEARANCE_RULE
 				(constraint TRACK_TO_TRACK
 					(datatype REAL 3.930000 nil nil))
@@ -1911,7 +1913,7 @@
 				(constraint MIN_TRACK_WIDTH
 					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.937000 nil nil))
+					(datatype REAL 3.940000 nil nil))
 				(constraint MAX_TRACK_WIDTH
 					(datatype REAL 3.940000 nil nil))
 				(constraint DRILL_TO_DRILL
@@ -1980,7 +1982,7 @@
 			(owner PHYSNET COMP DIFFP)
 			(constraint_set ROUTE_RULE
 				(constraint VALID_VIA_TYPE
-					(datatype STR "STANDARDVIA,POWERVIA,BGA")))
+					(datatype STR "STANDARDVIA,BGA")))
 			(constraint_set CLEARANCE_RULE
 				(constraint TRACK_TO_TRACK
 					(datatype REAL 3.930000 nil nil))
@@ -2053,7 +2055,7 @@
 				(constraint MIN_TRACK_WIDTH
 					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.937000 nil nil))
+					(datatype REAL 3.940000 nil nil))
 				(constraint MAX_TRACK_WIDTH
 					(datatype REAL 3.940000 nil nil))
 				(constraint DRILL_TO_DRILL
@@ -2125,7 +2127,7 @@
 					(datatype BOOL true)))
 			(constraint_set ROUTE_RULE
 				(constraint VALID_VIA_TYPE
-					(datatype STR "STANDARDVIA,POWERVIA,BGA")))
+					(datatype STR "STANDARDVIA,BGA")))
 			(constraint_set CLEARANCE_RULE
 				(constraint TRACK_TO_TRACK
 					(datatype REAL 3.930000 nil nil))
@@ -2198,7 +2200,7 @@
 				(constraint MIN_TRACK_WIDTH
 					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.937000 nil nil))
+					(datatype REAL 3.940000 nil nil))
 				(constraint MAX_TRACK_WIDTH
 					(datatype REAL 3.940000 nil nil))
 				(constraint DRILL_TO_DRILL
@@ -2270,7 +2272,7 @@
 					(datatype BOOL true)))
 			(constraint_set ROUTE_RULE
 				(constraint VALID_VIA_TYPE
-					(datatype STR "STANDARDVIA,POWERVIA,BGA")))
+					(datatype STR "STANDARDVIA,BGA")))
 			(constraint_set CLEARANCE_RULE
 				(constraint TRACK_TO_TRACK
 					(datatype REAL 3.930000 nil nil))
@@ -2343,7 +2345,7 @@
 				(constraint MIN_TRACK_WIDTH
 					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.937000 nil nil))
+					(datatype REAL 3.940000 nil nil))
 				(constraint MAX_TRACK_WIDTH
 					(datatype REAL 3.940000 nil nil))
 				(constraint DRILL_TO_DRILL
@@ -2417,7 +2419,7 @@
 				(constraint VALID_LAYER
 					(datatype STR "1,3,5,7,10,12,14,16"))
 				(constraint VALID_VIA_TYPE
-					(datatype STR "STANDARDVIA,POWERVIA,BGA")))
+					(datatype STR "STANDARDVIA,BGA")))
 			(constraint_set CLEARANCE_RULE
 				(constraint TRACK_TO_TRACK
 					(datatype REAL 3.930000 nil nil))
@@ -2490,7 +2492,7 @@
 				(constraint MIN_TRACK_WIDTH
 					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.937000 nil nil))
+					(datatype REAL 3.940000 nil nil))
 				(constraint MAX_TRACK_WIDTH
 					(datatype REAL 3.940000 nil nil))
 				(constraint DRILL_TO_DRILL
@@ -2705,7 +2707,7 @@
 				(constraint VALID_LAYER
 					(datatype STR "1,3,5,7,10,12,14,16"))
 				(constraint VALID_VIA_TYPE
-					(datatype STR "STANDARDVIA,POWERVIA,BGA")))
+					(datatype STR "STANDARDVIA,BGA")))
 			(constraint_set CLEARANCE_RULE
 				(constraint TRACK_TO_TRACK
 					(datatype REAL 3.930000 nil nil))
@@ -2778,7 +2780,7 @@
 				(constraint MIN_TRACK_WIDTH
 					(datatype REAL 3.930000 nil nil))
 				(constraint REC_TRACK_WIDTH
-					(datatype REAL 3.937000 nil nil))
+					(datatype REAL 3.940000 nil nil))
 				(constraint MAX_TRACK_WIDTH
 					(datatype REAL 200.0 nil nil))
 				(constraint DRILL_TO_DRILL
