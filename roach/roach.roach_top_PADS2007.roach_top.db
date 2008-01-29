@@ -28,7 +28,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1201553118"))
+		(file_ext "roach_top.pxr" "1201627214"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -1742,6 +1742,15 @@
 						(attval "REFDES" "TP?")
 						(attval "VALUE" ""))))
 			(pin 1  4 "PAD_1MM_SMT__PAD_1MM_SMT_1" 0 "H1" 0))
+		(part "NRAOLOGO")
+		(logical_part_mapping "NRAOLOGO"
+			(comp "U52"))
+		(logical_part "NRAOLOGO"
+			(slots
+				(slot "NRAOLOGO__NRAOLOGO_1"
+					(attributes
+						(attval "PKG_TYPE" "LOGO")
+						(attval "REFDES" "U?")))))
 		(part "NDS331N")
 		(logical_part_mapping "NDS331N"
 			(comp "Q10" "Q9"))
@@ -5528,14 +5537,14 @@
 			(pin V18  5 "5VSX95T__5VSX95T_1" 0 "SX95T_VREF_P" 0)
 			(pin D23  5 "5VSX95T__5VSX95T_1" 0 "2V5_31" 0)
 			(pin E20  5 "5VSX95T__5VSX95T_1" 0 "2V5_3_1" 0)
-			(pin L18  5 "5VSX95T__5VSX95T_1" 0 "DLY_CLK_200_N" 0)
-			(pin K17  5 "5VSX95T__5VSX95T_1" 0 "DLY_CLK_200_P" 0)
-			(pin H18  3 "5VSX95T__5VSX95T_1" 0 "GPIO_CLK0_N" 0)
-			(pin H17  3 "5VSX95T__5VSX95T_1" 0 "GPIO_CLK0_P" 0)
-			(pin G16  3 "5VSX95T__5VSX95T_1" 0 "GPIO_CLK1_N" 0)
-			(pin G15  3 "5VSX95T__5VSX95T_1" 0 "GPIO_CLK1_P" 0)
-			(pin J21  5 "5VSX95T__5VSX95T_1" 0 "SYS_CLK_N" 0)
-			(pin J20  5 "5VSX95T__5VSX95T_1" 0 "SYS_CLK_P" 0)
+			(pin J17  5 "5VSX95T__5VSX95T_1" 0 "DLY_CLK_200_N" 0)
+			(pin J16  5 "5VSX95T__5VSX95T_1" 0 "DLY_CLK_200_P" 0)
+			(pin G16  3 "5VSX95T__5VSX95T_1" 0 "GPIO_CLK0_N" 0)
+			(pin G15  3 "5VSX95T__5VSX95T_1" 0 "GPIO_CLK0_P" 0)
+			(pin H15  3 "5VSX95T__5VSX95T_1" 0 "GPIO_CLK1_N" 0)
+			(pin H14  3 "5VSX95T__5VSX95T_1" 0 "GPIO_CLK1_P" 0)
+			(pin H13  5 "5VSX95T__5VSX95T_1" 0 "SYS_CLK_N" 0)
+			(pin J14  5 "5VSX95T__5VSX95T_1" 0 "SYS_CLK_P" 0)
 			(pin C6  5 "5VSX95T__5VSX95T_1" 0 "MGTAVCCPLL_124" 0)
 			(pin C7  5 "5VSX95T__5VSX95T_1" 0 "MGTAVCC_124" 0)
 			(pin D7  5 "5VSX95T__5VSX95T_1" 0 "MGTAVCC_124_1" 0)
@@ -5905,10 +5914,10 @@
 			(pin AM29  5 "5VSX95T__5VSX95T_1" 0 "2V5_7" 0)
 			(pin E30  5 "5VSX95T__5VSX95T_1" 0 "2V5_8" 0)
 			(pin H31  5 "5VSX95T__5VSX95T_1" 0 "2V5_9" 0)
-			(pin H13  5 "5VSX95T__5VSX95T_1" 0 "ZDOK0_CLK0_N" 0)
-			(pin J14  5 "5VSX95T__5VSX95T_1" 0 "ZDOK0_CLK0_P" 0)
-			(pin K19  5 "5VSX95T__5VSX95T_1" 0 "ZDOK0_CLK1_N" 0)
-			(pin L19  5 "5VSX95T__5VSX95T_1" 0 "ZDOK0_CLK1_P" 0)
+			(pin J21  5 "5VSX95T__5VSX95T_1" 0 "ZDOK0_CLK0_N" 0)
+			(pin J20  5 "5VSX95T__5VSX95T_1" 0 "ZDOK0_CLK0_P" 0)
+			(pin H20  5 "5VSX95T__5VSX95T_1" 0 "ZDOK0_CLK1_N" 0)
+			(pin H19  5 "5VSX95T__5VSX95T_1" 0 "ZDOK0_CLK1_P" 0)
 			(pin N30  5 "5VSX95T__5VSX95T_1" 0 "ZDOK0_DP_N0" 0)
 			(pin K34  5 "5VSX95T__5VSX95T_1" 0 "ZDOK0_DP_N10" 0)
 			(pin K32  5 "5VSX95T__5VSX95T_1" 0 "ZDOK0_DP_N11" 0)
@@ -5985,10 +5994,10 @@
 			(pin F31  5 "5VSX95T__5VSX95T_1" 0 "ZDOK0_DP_P7" 0)
 			(pin E28  5 "5VSX95T__5VSX95T_1" 0 "ZDOK0_DP_P8" 0)
 			(pin C32  5 "5VSX95T__5VSX95T_1" 0 "ZDOK0_DP_P9" 0)
-			(pin J17  5 "5VSX95T__5VSX95T_1" 0 "ZDOK1_CLK0_N" 0)
-			(pin J16  5 "5VSX95T__5VSX95T_1" 0 "ZDOK1_CLK0_P" 0)
-			(pin H15  5 "5VSX95T__5VSX95T_1" 0 "ZDOK1_CLK1_N" 0)
-			(pin H14  5 "5VSX95T__5VSX95T_1" 0 "ZDOK1_CLK1_P" 0)
+			(pin H18  5 "5VSX95T__5VSX95T_1" 0 "ZDOK1_CLK0_N" 0)
+			(pin H17  5 "5VSX95T__5VSX95T_1" 0 "ZDOK1_CLK0_P" 0)
+			(pin L18  5 "5VSX95T__5VSX95T_1" 0 "ZDOK1_CLK1_N" 0)
+			(pin K17  5 "5VSX95T__5VSX95T_1" 0 "ZDOK1_CLK1_P" 0)
 			(pin AN33  5 "5VSX95T__5VSX95T_1" 0 "ZDOK1_DP_N0" 0)
 			(pin AP32  5 "5VSX95T__5VSX95T_1" 0 "ZDOK1_DP_N10" 0)
 			(pin AM32  5 "5VSX95T__5VSX95T_1" 0 "ZDOK1_DP_N11" 0)
@@ -6231,8 +6240,8 @@
 			(pin AE9  5 "5VSX95T__5VSX95T_1" 0 "VRP_22" 0)
 			(pin AP24  5 "5VSX95T__5VSX95T_1" 0 "VRP_25" 0)
 			(pin AJ17  5 "5VSX95T__5VSX95T_1" 0 "VRP_6" 0)
-			(pin H20  5 "5VSX95T__5VSX95T_1" 0 "QSH_A_CLK_N" 0)
-			(pin H19  5 "5VSX95T__5VSX95T_1" 0 "QSH_A_CLK_P" 0)
+			(pin K19  5 "5VSX95T__5VSX95T_1" 0 "QSH_A_CLK_N" 0)
+			(pin L19  5 "5VSX95T__5VSX95T_1" 0 "QSH_A_CLK_P" 0)
 			(pin AB33  5 "5VSX95T__5VSX95T_1" 0 "QSH_A_D_N0" 0)
 			(pin V33  5 "5VSX95T__5VSX95T_1" 0 "QSH_A_D_N10" 0)
 			(pin T26  5 "5VSX95T__5VSX95T_1" 0 "QSH_A_D_N11" 0)
@@ -7638,6 +7647,11 @@
 				(attval "GEOMETRY.HEIGHT" "8.5")
 				(attval "DEVICE" "PTH08T230WAD")
 				(attval "REFDES" "U53")))
+		(component "LOGO"
+			(place "U52" 0.0 0.0 top 0.0)
+			(attributes
+				(attval "DEVICE" "NRAOLOGO")
+				(attval "REFDES" "U52")))
 		(component "PTH08T240W_EBS"
 			(place "U51" 0.0 0.0 top 0.0
 				(comp_pin "8" 0.0 0.0 "IN")
@@ -8638,14 +8652,14 @@
 				(comp_pin "V18" 0.0 0.0 "BI")
 				(comp_pin "D23" 0.0 0.0 "BI")
 				(comp_pin "E20" 0.0 0.0 "BI")
-				(comp_pin "L18" 0.0 0.0 "BI")
-				(comp_pin "K17" 0.0 0.0 "BI")
-				(comp_pin "H18" 0.0 0.0 "IN")
-				(comp_pin "H17" 0.0 0.0 "IN")
+				(comp_pin "J17" 0.0 0.0 "BI")
+				(comp_pin "J16" 0.0 0.0 "BI")
 				(comp_pin "G16" 0.0 0.0 "IN")
 				(comp_pin "G15" 0.0 0.0 "IN")
-				(comp_pin "J21" 0.0 0.0 "BI")
-				(comp_pin "J20" 0.0 0.0 "BI")
+				(comp_pin "H15" 0.0 0.0 "IN")
+				(comp_pin "H14" 0.0 0.0 "IN")
+				(comp_pin "H13" 0.0 0.0 "BI")
+				(comp_pin "J14" 0.0 0.0 "BI")
 				(comp_pin "C6" 0.0 0.0 "BI")
 				(comp_pin "C7" 0.0 0.0 "BI")
 				(comp_pin "D7" 0.0 0.0 "BI")
@@ -9015,10 +9029,10 @@
 				(comp_pin "AM29" 0.0 0.0 "BI")
 				(comp_pin "E30" 0.0 0.0 "BI")
 				(comp_pin "H31" 0.0 0.0 "BI")
-				(comp_pin "H13" 0.0 0.0 "BI")
-				(comp_pin "J14" 0.0 0.0 "BI")
-				(comp_pin "K19" 0.0 0.0 "BI")
-				(comp_pin "L19" 0.0 0.0 "BI")
+				(comp_pin "J21" 0.0 0.0 "BI")
+				(comp_pin "J20" 0.0 0.0 "BI")
+				(comp_pin "H20" 0.0 0.0 "BI")
+				(comp_pin "H19" 0.0 0.0 "BI")
 				(comp_pin "N30" 0.0 0.0 "BI")
 				(comp_pin "K34" 0.0 0.0 "BI")
 				(comp_pin "K32" 0.0 0.0 "BI")
@@ -9095,10 +9109,10 @@
 				(comp_pin "F31" 0.0 0.0 "BI")
 				(comp_pin "E28" 0.0 0.0 "BI")
 				(comp_pin "C32" 0.0 0.0 "BI")
-				(comp_pin "J17" 0.0 0.0 "BI")
-				(comp_pin "J16" 0.0 0.0 "BI")
-				(comp_pin "H15" 0.0 0.0 "BI")
-				(comp_pin "H14" 0.0 0.0 "BI")
+				(comp_pin "H18" 0.0 0.0 "BI")
+				(comp_pin "H17" 0.0 0.0 "BI")
+				(comp_pin "L18" 0.0 0.0 "BI")
+				(comp_pin "K17" 0.0 0.0 "BI")
 				(comp_pin "AN33" 0.0 0.0 "BI")
 				(comp_pin "AP32" 0.0 0.0 "BI")
 				(comp_pin "AM32" 0.0 0.0 "BI")
@@ -9341,8 +9355,8 @@
 				(comp_pin "AE9" 0.0 0.0 "BI")
 				(comp_pin "AP24" 0.0 0.0 "BI")
 				(comp_pin "AJ17" 0.0 0.0 "BI")
-				(comp_pin "H20" 0.0 0.0 "BI")
-				(comp_pin "H19" 0.0 0.0 "BI")
+				(comp_pin "K19" 0.0 0.0 "BI")
+				(comp_pin "L19" 0.0 0.0 "BI")
 				(comp_pin "AB33" 0.0 0.0 "BI")
 				(comp_pin "V33" 0.0 0.0 "BI")
 				(comp_pin "T26" 0.0 0.0 "BI")
@@ -24279,6 +24293,7 @@
 		(func "$1I803\$1I628" "" "U55" 1)
 		(func "F7" "$1I747\$1I350" "U54" 1)
 		(func "$1I671\$1I452" "" "U53" 1)
+		(func "$1I1076" "" "U52" 1)
 		(func "$1I671\$1I443" "" "U51" 1)
 		(func "$1I671\$1I182" "" "U50" 1)
 		(func "$1I1075" "" "U49" 1)
@@ -26042,13 +26057,13 @@
 		(net "$1I3\ODIS3"
 			(pins P3-G30 R124-2 JP8-2 C245-1))
 		(net "$1I4\ZDOK0_CLK0_N"
-			(pins U15-H13 P5-C20))
+			(pins U15-J21 P5-C20))
 		(net "$1I4\ZDOK0_CLK0_P"
-			(pins U15-J14 P5-C19))
+			(pins U15-J20 P5-C19))
 		(net "$1I4\ZDOK0_CLK1_N"
-			(pins U15-K19 P5-F20))
+			(pins U15-H20 P5-F20))
 		(net "$1I4\ZDOK0_CLK1_P"
-			(pins U15-L19 P5-F19))
+			(pins U15-H19 P5-F19))
 		(net "$1I4\ZDOK0_DP_N0"
 			(pins U15-N30 P5-A2))
 		(net "$1I4\ZDOK0_DP_N1"
@@ -26202,13 +26217,13 @@
 		(net "$1I4\ZDOK0_DP_P37"
 			(pins U15-B33 P5-F17))
 		(net "$1I5\ZDOK1_CLK0_N"
-			(pins U15-J17 P7-C20))
+			(pins U15-H18 P7-C20))
 		(net "$1I5\ZDOK1_CLK0_P"
-			(pins U15-J16 P7-C19))
+			(pins U15-H17 P7-C19))
 		(net "$1I5\ZDOK1_CLK1_N"
-			(pins U15-H15 P7-F20))
+			(pins U15-L18 P7-F20))
 		(net "$1I5\ZDOK1_CLK1_P"
-			(pins U15-H14 P7-F19))
+			(pins U15-K17 P7-F19))
 		(net "$1I5\ZDOK1_DP_N0"
 			(pins U15-AN33 P7-A2))
 		(net "$1I5\ZDOK1_DP_N1"
@@ -26668,9 +26683,9 @@
 		(net "$1I7\$1N336"
 			(pins P9-90))
 		(net "$1I7\QSH_A_CLK_N"
-			(pins U15-H20 P9-79))
+			(pins U15-K19 P9-79))
 		(net "$1I7\QSH_A_CLK_P"
-			(pins U15-H19 P9-77))
+			(pins U15-L19 P9-77))
 		(net "$1I7\QSH_A_D_N0"
 			(pins U15-AB33 P9-3))
 		(net "$1I7\QSH_A_D_N1"
@@ -27284,25 +27299,25 @@
 		(net "$1I291\$1N375"
 			(pins U4-4 C5-2 R116-2 R136-1 R111-2 D9-2))
 		(net "$1I291\DLY_CLK_200_N"
-			(pins X3-4 U15-L18))
+			(pins X3-4 U15-J17))
 		(net "$1I291\DLY_CLK_200_P"
-			(pins X3-5 U15-K17))
+			(pins X3-5 U15-J16))
 		(net "$1I291\GPIO_CLK0_N"
-			(pins U4-12 U15-H18))
+			(pins U4-12 U15-G16))
 		(net "$1I291\GPIO_CLK0_P"
-			(pins U4-10 U15-H17))
+			(pins U4-10 U15-G15))
 		(net "$1I291\GPIO_CLK1_N"
-			(pins U5-12 U15-G16))
+			(pins U5-12 U15-H15))
 		(net "$1I291\GPIO_CLK1_P"
-			(pins U5-10 U15-G15))
+			(pins U5-10 U15-H14))
 		(net "$1I291\SX95T_AVDD"
 			(pins U25-6 U15-T18 U15-V18 C159-1))
 		(net "$1I291\SX95T_AVSS"
 			(pins U25-4 FB27-1 U15-T17 U15-V17 U15-U18 U15-U17 C158-2 C159-2))
 		(net "$1I291\SYS_CLK_N"
-			(pins X2-5 U15-J21))
+			(pins X2-5 U15-H13))
 		(net "$1I291\SYS_CLK_P"
-			(pins X2-4 U15-J20))
+			(pins X2-4 U15-J14))
 		(net "$1I671\$1N147"
 			(pins U50-6 U50-2 C401-1 C403-1 C419-1 L6-2 L5-2 L16-2))
 		(net "$1I671\$1N148"
@@ -33525,16 +33540,12 @@
 			(diff_partner "$1I7\QSH_B_CLK_N")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_MAX_LENGTH" "4016")
-				(cnsval "DIFFPAIR_MIN_LENGTH" "3820")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_CLK_N,$1I7\QSH_B_CLK_P")
 				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_CLK_N"
 			(diff_partner "$1I7\QSH_B_CLK_P")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_MAX_LENGTH" "4016")
-				(cnsval "DIFFPAIR_MIN_LENGTH" "3820")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_CLK_N,$1I7\QSH_B_CLK_P")
 				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_A_D_P18"
@@ -34413,7 +34424,6 @@
 		(net_scalar "$1I6\DDR2_A15"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "MATCH_LENGTH" "TRUE")
 				(cnsval "PCLASS" "FPGADDR")))
 		(net_scalar "$1I6\DDR2_A14"
 			(constraints

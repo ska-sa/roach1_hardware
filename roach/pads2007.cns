@@ -4,7 +4,7 @@
 
 (cmsed
 	(version "4.0.0")
-	(written "Mon Jan 28 13:43:23 2008")
+	(written "Tue Jan 29 09:35:32 2008")
 	(target_system PADS2007
 		(version "8.0")
 		(pcb_class PADS2007_Rules
@@ -2419,9 +2419,6 @@
 					(datatype REAL 3.930000 nil nil))))
 		(class "ZDOK1A" PADS2007_Rules
 			(owner PHYSNET COMP DIFFP)
-			(constraint_set HIGH_SPEED_RULE
-				(constraint MATCH_LENGTH
-					(datatype BOOL true)))
 			(constraint_set ROUTE_RULE
 				(constraint VALID_VIA_TYPE
 					(datatype STR "STANDARDVIA,BGA")))
@@ -2570,9 +2567,6 @@
 					(datatype REAL 3.930000 nil nil))))
 		(class "QSHB" PADS2007_Rules
 			(owner PHYSNET COMP DIFFP)
-			(constraint_set HIGH_SPEED_RULE
-				(constraint MATCH_LENGTH
-					(datatype BOOL true)))
 			(constraint_set ROUTE_RULE
 				(constraint VALID_VIA_TYPE
 					(datatype STR "STANDARDVIA,BGA")))
@@ -2657,9 +2651,9 @@
 					(datatype REAL 3.930000 nil nil)))
 			(constraint_set DIFF_PAIR_RULE
 				(constraint DIFFPAIR_MIN_LENGTH
-					(datatype REAL 97.0 nil nil))
+					(datatype REAL 3820.0 nil nil))
 				(constraint DIFFPAIR_MAX_LENGTH
-					(datatype REAL 102.0 nil nil))
+					(datatype REAL 4016.0 nil nil))
 				(constraint DIFFPAIR_WIDTH
 					(datatype REAL 3.940000 nil nil))
 				(constraint DIFFPAIR_GAP
@@ -2721,9 +2715,6 @@
 					(datatype REAL 3.930000 nil nil))))
 		(class "QSHA" PADS2007_Rules
 			(owner PHYSNET COMP DIFFP)
-			(constraint_set HIGH_SPEED_RULE
-				(constraint MATCH_LENGTH
-					(datatype BOOL true)))
 			(constraint_set ROUTE_RULE
 				(constraint VALID_VIA_TYPE
 					(datatype STR "STANDARDVIA,BGA")))

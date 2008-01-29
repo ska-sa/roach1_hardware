@@ -341,6 +341,9 @@ AP IOD_Schematic:roach_ppc_nvm_serial 25 PINTYPE=OUT
 AP IOD_Schematic:roach_ppc_nvm_serial 26 PINTYPE=OUT
 AP IOD_Schematic:roach_ppc_nvm_serial 27 PINTYPE=IN
 AP IOD_Schematic:roach_ppc_nvm_serial 28 PINTYPE=OUT
+|Q IOD_Schematic:nraologo 1
+AS IOD_Schematic:nraologo PKG_TYPE=LOGO
+AS IOD_Schematic:nraologo INOV_VER_REC=16:01_1-29-08
 AN PADD[2:31] VLBUSISONSHEET=1
 AN PDATA[0:7] VLBUSISONSHEET=1
 AN PDATA[0:31] VLBUSISONSHEET=1
@@ -666,4 +669,7 @@ I $1I4 IOD_Schematic:roach_adc_0 SHEET=5`
 W IOD_Schematic:roach_ppc_nvm_serial $1I863
 I $1I863 IOD_Schematic:roach_ppc_nvm_serial BOOT_CFG0 BOOT_CFG1 BOOT_CFG2 CLK_PERCLK CLK_UART_11_0592MHZ EE1_WP EE2_BOOT_WP EXT_RESET# FRY_BY# FWP# I2C0_33_DATA I2C0_SCLK M66EN PADD[2:31] PCS_2 PDATA[0:31] POE# PR_W# PWBE_0# RESET_CPLD# RESET_POR# SCPCLK SCPDI SCPDO SELECTMAP_CS STTM_ALERT STTM_AS V5_INT# SHEET=25`
 |R 11:47_1-24-08
+M IOD_Schematic:nraologo $1I1076
+I $1I1076 IOD_Schematic:nraologo REFDES=U52`
+|R 16:01_1-29-08
 EW
