@@ -28,7 +28,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1201639483"))
+		(file_ext "roach_top.pxr" "1201712016"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -1192,8 +1192,9 @@
 			(pin 1  5 "R__RES0402X0_35_1" 0 "N1" 0))
 		(part "R")
 		(logical_part_mapping "R"
-			(comp "R299" "R298" "R296" "R295" "R294" "R293" "R292" "R291" "R290" "R289" "R288" "R287" "R286" "R285" "R284"
- "R283" "R282" "R281" "R280" "R279" "R278" "R187" "R185" "R184" "R135" "R134" "R133" "R132" "R84" "R83" "R5" "R3"))
+			(comp "R306" "R305" "R299" "R298" "R296" "R295" "R294" "R293" "R292" "R291" "R290" "R289" "R288" "R287" "R286"
+ "R285" "R284" "R283" "R282" "R281" "R280" "R279" "R278" "R187" "R185" "R184" "R135" "R134" "R133" "R132" "R84"
+ "R83" "R5" "R3"))
 		(logical_part "R"
 			(slots
 				(slot "R__R_1"
@@ -11251,6 +11252,24 @@
 				(attval "VALUE" "1K")
 				(attval "DEVICE" "RES_1K_0402_5%_OPT")
 				(attval "REFDES" "RO1")))
+		(component "RESC1005X40N"
+			(place "R306" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "240R")
+				(attval "TOLERANCE" "1%")
+				(attval "DEVICE" "R")
+				(attval "REFDES" "R306")))
+		(component "RESC1005X40N"
+			(place "R305" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "330R")
+				(attval "TOLERANCE" "1%")
+				(attval "DEVICE" "R")
+				(attval "REFDES" "R305")))
 		(component "RESC1005X40N"
 			(place "R304" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
@@ -24427,6 +24446,8 @@
 		(func "$1I1002\$1I233" "" "RO3" 1)
 		(func "$1I1002\$1I219" "" "RO2" 1)
 		(func "$1I1002\$1I228" "" "RO1" 1)
+		(func "$1I747\$1I1177" "" "R306" 1)
+		(func "$1I747\$1I1176" "" "R305" 1)
 		(func "$1I1032\$1I1235" "" "R304" 1)
 		(func "$1I1032\$1I1873" "" "R303" 1)
 		(func "$1I1032\$1I1871" "" "R302" 1)
@@ -28682,20 +28703,20 @@
  R45-2 R46-2 C34-1 C45-1 U18-2 U18-3 U19-2 U19-3 R57-2 R79-2 R92-2 R93-2 R97-2
  R98-2 JP4-1 JP5-1 U20-8 U21-8 U22-5 U23-5 U28-2 U28-3 U29-2 U29-3 R120-2
  R121-2 R122-2 R125-2 R126-2 R127-2 JP7-1 JP8-1 U30-8 U34-8 U36-5 U37-5 C316-1
- C317-1 P5-W3 P5-X3 P5-Y3 P5-Z3 C338-1 C339-1 P7-W3 P7-X3 P7-Y3 P7-Z3 R135-2
- CR3-1 CR4-1 U2-5 C473-1 C474-1 C475-1 C476-1 C477-1 C478-1 C479-1 C480-1
- C481-1 C482-1 C483-1 C13-1 U35-5 C615-1 RO10-3 RO11-1 RO14-3 R192-2 R193-2
- U54-8 U54-109 U54-127 U54-141 U54-27 U54-55 U54-73 U54-93 R194-2 R195-2
- R196-2 R198-2 R204-2 R205-2 R206-2 C484-1 CR6-1 CR5-1 J17-7 J22-13 R207-2
- R208-2 U15-AA22 U15-AD23 SW4-8 SW4-7 SW4-6 SW4-5 C485-1 C486-1 C487-1 J24-13
- C488-1 R213-2 R218-2 R219-2 U55-10 U56-10 U57-10 L13-2 L3-2 L2-2 U38-2 U38-8
- U39-2 U39-8 U40-3 U40-8 R5-1 R83-1 R84-1 R132-1 R133-1 R134-1 U41-3 R89-2
- R88-2 U42-F7 U42-G5 U42-F1 U42-D8 C649-1 C650-1 C651-1 C652-1 C653-1 C654-1
- C656-1 C658-1 C659-1 U15-D13 U15-G14 U15-AH21 U15-AM19 U15-AG14 U15-AL12
- U43-20 U43-19 U44-20 U44-19 R78-1 R64-1 R76-1 R68-1 R72-1 R75-1 R63-1 R77-1
- R60-1 R67-1 R71-1 R73-1 R62-1 R66-1 R70-1 R74-1 R61-1 R65-1 R69-1 C330-1
- C331-1 C332-1 C333-1 P11-2 P4-2 U45-5 U46-5 U47-5 U48-5 C334-1 C335-1 Q14-5
- Q14-6 Q14-7 Q14-8))
+ C317-1 P5-W3 P5-X3 P5-Y3 P5-Z3 C338-1 C339-1 P7-W3 P7-X3 P7-Y3 P7-Z3 R305-2
+ R135-2 CR3-1 CR4-1 U2-5 C473-1 C474-1 C475-1 C476-1 C477-1 C478-1 C479-1
+ C480-1 C481-1 C482-1 C483-1 C13-1 U35-5 C615-1 RO10-3 RO11-1 RO14-3 R192-2
+ R193-2 U54-8 U54-109 U54-127 U54-141 U54-27 U54-55 U54-73 U54-93 R194-2
+ R195-2 R196-2 R198-2 R204-2 R205-2 R206-2 C484-1 CR6-1 CR5-1 J17-7 J22-13
+ R207-2 R208-2 U15-AA22 U15-AD23 SW4-8 SW4-7 SW4-6 SW4-5 C485-1 C486-1 C487-1
+ J24-13 C488-1 R213-2 R218-2 R219-2 U55-10 U56-10 U57-10 L13-2 L3-2 L2-2 U38-2
+ U38-8 U39-2 U39-8 U40-3 U40-8 R5-1 R83-1 R84-1 R132-1 R133-1 R134-1 U41-3
+ R89-2 R88-2 U42-F7 U42-G5 U42-F1 U42-D8 C649-1 C650-1 C651-1 C652-1 C653-1
+ C654-1 C656-1 C658-1 C659-1 U15-D13 U15-G14 U15-AH21 U15-AM19 U15-AG14
+ U15-AL12 U43-20 U43-19 U44-20 U44-19 R78-1 R64-1 R76-1 R68-1 R72-1 R75-1 R63-1
+ R77-1 R60-1 R67-1 R71-1 R73-1 R62-1 R66-1 R70-1 R74-1 R61-1 R65-1 R69-1
+ C330-1 C331-1 C332-1 C333-1 P11-2 P4-2 U45-5 U46-5 U47-5 U48-5 C334-1 C335-1
+ Q14-5 Q14-6 Q14-7 Q14-8))
 		(net "3V3AUX"
 			(pins C538-1 JP28-3 J26-10 R282-2 R283-2 R284-2 R285-2 R286-2 R299-1 C542-1
  C543-1 U59-20 U59-1 U59-18 U59-19 U60-N13 U60-N4 U60-A2 U60-B7 U60-C4 U60-C5
@@ -28742,7 +28763,7 @@
 		(net "CLK_GETH0_25MHZ"
 			(pins RS7-2 U58-86))
 		(net "CLK_PERCLK"
-			(pins U2-2 U54-42 R4-2 U15-H12))
+			(pins R305-1 R306-2 U2-2 U54-42 R4-2 U15-H12))
 		(net "CLK_SEL_M66EN"
 			(pins U24-12 U24-13 U24-15 U54-137))
 		(net "CLK_TMRCLK"
@@ -28924,41 +28945,41 @@
  C413-2 C104-2 C105-2 Q4-2 Q5-2 Q6-2 Q7-2 Q8-2 U51-3 U51-4 U51-7 U51-1 R143-1
  R147-1 R148-1 R179-1 R181-1 Q9-2 Q10-2 C423-2 C424-2 C420-2 C419-2 C418-2
  C421-2 C422-2 C425-2 C426-2 C117-2 J18-3 J18-5 J18-7 U27-3 U27-4 U27-7 U27-1
- J19-1 J20-1 J21-1 P9-81 P9-82 P9-83 P9-84 P9-85 P9-86 P9-87 P9-88 U2-3 C473-2
- C474-2 C475-2 C476-2 C477-2 C478-2 C479-2 C480-2 C481-2 C482-2 C483-2 C13-2
- U35-3 C615-2 RO10-1 RO11-3 RO14-1 U54-108 U54-123 U54-99 U54-144 U54-29
- U54-36 U54-47 U54-62 U54-72 U54-89 U54-90 SW2-8 SW2-7 SW2-6 SW2-5 SW3-8 SW3-7
- SW3-6 SW3-5 C484-2 J17-16 J17-17 J17-8 J17-4 J22-2 J22-4 J22-6 J22-8 J22-10
- J22-14 J22-12 R197-1 R199-1 R209-1 R210-1 R211-1 R212-1 U15-AC23 U15-AB23
- U15-L23 C485-2 C486-2 C487-2 J24-2 J24-4 J24-6 J24-8 J24-10 J24-14 J24-12
- C488-2 R214-1 R217-1 R220-1 C489-2 C490-2 C491-2 C504-2 C505-2 C506-2 C546-2
- C748-2 C749-2 U55-12 U55-14 U55-2 U55-3 U55-4 U55-13 U55-17 U55-21 U56-12
- U56-14 U56-2 U56-3 U56-4 U56-13 U56-17 U56-21 U57-12 U57-14 U57-2 U57-3 U57-4
- U57-13 U57-17 U57-21 C492-2 C493-2 C494-2 C495-2 C496-2 C497-2 P3-G19 P3-G56
- P3-G38 P3-G47 P3-G57 P3-G66 P3-G40 P3-G49 P3-G59 P3-G68 P3-G42 P3-G51 P3-G61
- P3-G70 P3-G46 P3-G55 P3-G65 P3-G74 C498-2 C499-2 C500-2 C501-2 C502-2 C503-2
- JP10-1 JP12-1 JP14-1 JP16-1 JP19-1 JP20-3 JP21-3 JP22-3 JP23-3 C507-2 C508-2
- C509-2 C510-2 C511-2 C512-2 C513-2 C514-2 C515-2 C516-2 C517-2 C518-2 C519-2
- C520-2 C521-2 C522-2 C523-2 C524-2 C525-2 C526-2 C527-2 C528-2 C529-2 C530-2
- C531-2 C532-2 C533-2 C534-2 J25-17 J25-18 J25-10 C537-2 R238-2 R253-1 R264-1
- R265-1 R267-1 U58-68 U58-67 U58-66 U58-65 U58-61 U58-34 U58-5 U58-43 U58-49
- U58-54 U58-59 U58-64 U58-70 U58-74 U58-78 U58-82 U58-91 U58-12 U58-93 U58-97
- U58-99 U58-104 U58-106 U58-107 U58-110 U58-112 U58-113 U58-116 U58-16
- U58-118 U58-119 U58-122 U58-124 U58-125 U58-128 U58-20 U58-22 U58-26 U58-30
- U58-36 U58-38 C535-2 C536-2 JP24-1 JP25-1 R3-1 C616-2 C617-2 C618-2 C619-2
- C2-2 C1-2 C621-2 C622-2 C623-2 C624-2 C3-2 C625-2 C626-2 C627-2 C629-2
- C630-2 C631-2 C632-2 C634-2 C636-2 C637-2 C638-2 C639-2 C640-2 C641-2 C642-2
- C643-2 C644-2 C645-2 C647-2 C648-2 C655-2 C657-2 C660-2 C661-2 C662-2 C664-2
- C665-2 C666-2 C667-2 C668-2 C669-2 C670-2 C671-2 C672-2 C673-2 C674-2 C675-2
- C677-2 C678-2 C679-2 C680-2 C681-2 C682-2 C683-2 C684-2 C686-2 C687-2 C688-2
- C689-2 C4-2 C690-2 C691-2 C692-2 C693-2 C694-2 C695-2 C696-2 C697-2 C698-2
- C699-2 C700-2 C702-2 C704-2 C705-2 C706-2 C707-2 C708-2 C709-2 C710-2 C711-2
- C712-2 C713-2 C714-2 C715-2 C716-2 C717-2 C718-2 C719-2 C720-2 C722-2 C723-2
- C724-2 C725-2 C726-2 C729-2 C730-2 C731-2 C732-2 C733-2 C735-2 C737-2 C739-2
- C740-2 U1-AP25 U1-AP27 U1-A1 U1-B3 U1-V16 U1-V17 U1-V18 U1-V19 U1-V20 U1-V21
- U1-V22 U1-V30 U1-W2 U1-W5 U1-B4 U1-W15 U1-W16 U1-W17 U1-W18 U1-W19 U1-W20
- U1-W30 U1-W33 U1-Y13 U1-Y14 U1-B8 U1-Y15 U1-Y16 U1-Y17 U1-Y18 U1-Y19 U1-Y20
- U1-Y21 U1-Y22 U1-AA14 U1-AA15 U1-B16 U1-AA17 U1-AA18 U1-AA20 U1-AA21
+ J19-1 J20-1 J21-1 P9-81 P9-82 P9-83 P9-84 P9-85 P9-86 P9-87 P9-88 R306-1 U2-3
+ C473-2 C474-2 C475-2 C476-2 C477-2 C478-2 C479-2 C480-2 C481-2 C482-2 C483-2
+ C13-2 U35-3 C615-2 RO10-1 RO11-3 RO14-1 U54-108 U54-123 U54-99 U54-144
+ U54-29 U54-36 U54-47 U54-62 U54-72 U54-89 U54-90 SW2-8 SW2-7 SW2-6 SW2-5
+ SW3-8 SW3-7 SW3-6 SW3-5 C484-2 J17-16 J17-17 J17-8 J17-4 J22-2 J22-4 J22-6
+ J22-8 J22-10 J22-14 J22-12 R197-1 R199-1 R209-1 R210-1 R211-1 R212-1
+ U15-AC23 U15-AB23 U15-L23 C485-2 C486-2 C487-2 J24-2 J24-4 J24-6 J24-8 J24-10
+ J24-14 J24-12 C488-2 R214-1 R217-1 R220-1 C489-2 C490-2 C491-2 C504-2 C505-2
+ C506-2 C546-2 C748-2 C749-2 U55-12 U55-14 U55-2 U55-3 U55-4 U55-13 U55-17
+ U55-21 U56-12 U56-14 U56-2 U56-3 U56-4 U56-13 U56-17 U56-21 U57-12 U57-14
+ U57-2 U57-3 U57-4 U57-13 U57-17 U57-21 C492-2 C493-2 C494-2 C495-2 C496-2
+ C497-2 P3-G19 P3-G56 P3-G38 P3-G47 P3-G57 P3-G66 P3-G40 P3-G49 P3-G59 P3-G68
+ P3-G42 P3-G51 P3-G61 P3-G70 P3-G46 P3-G55 P3-G65 P3-G74 C498-2 C499-2 C500-2
+ C501-2 C502-2 C503-2 JP10-1 JP12-1 JP14-1 JP16-1 JP19-1 JP20-3 JP21-3 JP22-3
+ JP23-3 C507-2 C508-2 C509-2 C510-2 C511-2 C512-2 C513-2 C514-2 C515-2 C516-2
+ C517-2 C518-2 C519-2 C520-2 C521-2 C522-2 C523-2 C524-2 C525-2 C526-2 C527-2
+ C528-2 C529-2 C530-2 C531-2 C532-2 C533-2 C534-2 J25-17 J25-18 J25-10 C537-2
+ R238-2 R253-1 R264-1 R265-1 R267-1 U58-68 U58-67 U58-66 U58-65 U58-61 U58-34
+ U58-5 U58-43 U58-49 U58-54 U58-59 U58-64 U58-70 U58-74 U58-78 U58-82 U58-91
+ U58-12 U58-93 U58-97 U58-99 U58-104 U58-106 U58-107 U58-110 U58-112 U58-113
+ U58-116 U58-16 U58-118 U58-119 U58-122 U58-124 U58-125 U58-128 U58-20 U58-22
+ U58-26 U58-30 U58-36 U58-38 C535-2 C536-2 JP24-1 JP25-1 R3-1 C616-2 C617-2
+ C618-2 C619-2 C2-2 C1-2 C621-2 C622-2 C623-2 C624-2 C3-2 C625-2 C626-2 C627-2
+ C629-2 C630-2 C631-2 C632-2 C634-2 C636-2 C637-2 C638-2 C639-2 C640-2 C641-2
+ C642-2 C643-2 C644-2 C645-2 C647-2 C648-2 C655-2 C657-2 C660-2 C661-2 C662-2
+ C664-2 C665-2 C666-2 C667-2 C668-2 C669-2 C670-2 C671-2 C672-2 C673-2 C674-2
+ C675-2 C677-2 C678-2 C679-2 C680-2 C681-2 C682-2 C683-2 C684-2 C686-2 C687-2
+ C688-2 C689-2 C4-2 C690-2 C691-2 C692-2 C693-2 C694-2 C695-2 C696-2 C697-2
+ C698-2 C699-2 C700-2 C702-2 C704-2 C705-2 C706-2 C707-2 C708-2 C709-2 C710-2
+ C711-2 C712-2 C713-2 C714-2 C715-2 C716-2 C717-2 C718-2 C719-2 C720-2 C722-2
+ C723-2 C724-2 C725-2 C726-2 C729-2 C730-2 C731-2 C732-2 C733-2 C735-2 C737-2
+ C739-2 C740-2 U1-AP25 U1-AP27 U1-A1 U1-B3 U1-V16 U1-V17 U1-V18 U1-V19 U1-V20
+ U1-V21 U1-V22 U1-V30 U1-W2 U1-W5 U1-B4 U1-W15 U1-W16 U1-W17 U1-W18 U1-W19
+ U1-W20 U1-W30 U1-W33 U1-Y13 U1-Y14 U1-B8 U1-Y15 U1-Y16 U1-Y17 U1-Y18 U1-Y19
+ U1-Y20 U1-Y21 U1-Y22 U1-AA14 U1-AA15 U1-B16 U1-AA17 U1-AA18 U1-AA20 U1-AA21
  U1-AB13 U1-AB15 U1-AB17 U1-AB18 U1-AB20 U1-AB22 U1-B19 U1-AD1 U1-AE5 U1-AE30
  U1-AG2 U1-AG5 U1-AG30 U1-AG33 U1-AJ1 U1-AK4 U1-AK5 U1-B26 U1-AK8 U1-AK10
  U1-AK16 U1-AK17 U1-AK19 U1-AK25 U1-AK27 U1-AK30 U1-AK31 U1-AL3 U1-B27 U1-AL4
@@ -33161,181 +33182,110 @@
 			(diff_partner "$1I7\QSH_B_D_N17")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N17,$1I7\QSH_B_D_P17")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_P16"
 			(diff_partner "$1I7\QSH_B_D_N16")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N16,$1I7\QSH_B_D_P16")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_P15"
 			(diff_partner "$1I7\QSH_B_D_N15")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N15,$1I7\QSH_B_D_P15")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_P14"
 			(diff_partner "$1I7\QSH_B_D_N14")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N14,$1I7\QSH_B_D_P14")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_P13"
 			(diff_partner "$1I7\QSH_B_D_N13")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N13,$1I7\QSH_B_D_P13")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_P12"
 			(diff_partner "$1I7\QSH_B_D_N12")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N12,$1I7\QSH_B_D_P12")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_P11"
 			(diff_partner "$1I7\QSH_B_D_N11")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N11,$1I7\QSH_B_D_P11")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_P10"
 			(diff_partner "$1I7\QSH_B_D_N10")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N10,$1I7\QSH_B_D_P10")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_P9"
 			(diff_partner "$1I7\QSH_B_D_N9")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N9,$1I7\QSH_B_D_P9")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_P8"
 			(diff_partner "$1I7\QSH_B_D_N8")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N8,$1I7\QSH_B_D_P8")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_P7"
 			(diff_partner "$1I7\QSH_B_D_N7")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N7,$1I7\QSH_B_D_P7")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_P6"
 			(diff_partner "$1I7\QSH_B_D_N6")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N6,$1I7\QSH_B_D_P6")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_P5"
 			(diff_partner "$1I7\QSH_B_D_N5")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N5,$1I7\QSH_B_D_P5")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_P4"
 			(diff_partner "$1I7\QSH_B_D_N4")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N4,$1I7\QSH_B_D_P4")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_P3"
 			(diff_partner "$1I7\QSH_B_D_N3")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N3,$1I7\QSH_B_D_P3")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_P2"
 			(diff_partner "$1I7\QSH_B_D_N2")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N2,$1I7\QSH_B_D_P2")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_P1"
 			(diff_partner "$1I7\QSH_B_D_N1")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N1,$1I7\QSH_B_D_P1")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_P0"
 			(diff_partner "$1I7\QSH_B_D_N0")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N0,$1I7\QSH_B_D_P0")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_N18"
 			(diff_partner "$1I7\QSH_B_D_P18")
 			(constraints
@@ -33346,196 +33296,110 @@
 			(diff_partner "$1I7\QSH_B_D_P17")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N17,$1I7\QSH_B_D_P17")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_N16"
 			(diff_partner "$1I7\QSH_B_D_P16")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N16,$1I7\QSH_B_D_P16")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_N15"
 			(diff_partner "$1I7\QSH_B_D_P15")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N15,$1I7\QSH_B_D_P15")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_N14"
 			(diff_partner "$1I7\QSH_B_D_P14")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N14,$1I7\QSH_B_D_P14")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_N13"
 			(diff_partner "$1I7\QSH_B_D_P13")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N13,$1I7\QSH_B_D_P13")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_N12"
 			(diff_partner "$1I7\QSH_B_D_P12")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N12,$1I7\QSH_B_D_P12")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_N11"
 			(diff_partner "$1I7\QSH_B_D_P11")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N11,$1I7\QSH_B_D_P11")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_N10"
 			(diff_partner "$1I7\QSH_B_D_P10")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N10,$1I7\QSH_B_D_P10")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_N9"
 			(diff_partner "$1I7\QSH_B_D_P9")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N9,$1I7\QSH_B_D_P9")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_N8"
 			(diff_partner "$1I7\QSH_B_D_P8")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N8,$1I7\QSH_B_D_P8")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_N7"
 			(diff_partner "$1I7\QSH_B_D_P7")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N7,$1I7\QSH_B_D_P7")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_N6"
 			(diff_partner "$1I7\QSH_B_D_P6")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N6,$1I7\QSH_B_D_P6")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_N5"
 			(diff_partner "$1I7\QSH_B_D_P5")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N5,$1I7\QSH_B_D_P5")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_N4"
 			(diff_partner "$1I7\QSH_B_D_P4")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N4,$1I7\QSH_B_D_P4")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_N3"
 			(diff_partner "$1I7\QSH_B_D_P3")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N3,$1I7\QSH_B_D_P3")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_N2"
 			(diff_partner "$1I7\QSH_B_D_P2")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N2,$1I7\QSH_B_D_P2")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_N1"
 			(diff_partner "$1I7\QSH_B_D_P1")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N1,$1I7\QSH_B_D_P1")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_D_N0"
 			(diff_partner "$1I7\QSH_B_D_P0")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_B_D_N0,$1I7\QSH_B_D_P0")
-				(cnsval "PCLASS" "QSHB")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "QSHB")))
 		(net_scalar "$1I7\QSH_B_CLK_P"
 			(diff_partner "$1I7\QSH_B_CLK_N")
 			(constraints
@@ -33558,178 +33422,108 @@
 			(diff_partner "$1I7\QSH_A_D_N17")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N17,$1I7\QSH_A_D_P17")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_P16"
 			(diff_partner "$1I7\QSH_A_D_N16")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N16,$1I7\QSH_A_D_P16")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_P15"
 			(diff_partner "$1I7\QSH_A_D_N15")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N15,$1I7\QSH_A_D_P15")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_P14"
 			(diff_partner "$1I7\QSH_A_D_N14")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N14,$1I7\QSH_A_D_P14")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_P13"
 			(diff_partner "$1I7\QSH_A_D_N13")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N13,$1I7\QSH_A_D_P13")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_P12"
 			(diff_partner "$1I7\QSH_A_D_N12")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N12,$1I7\QSH_A_D_P12")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_P11"
 			(diff_partner "$1I7\QSH_A_D_N11")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N11,$1I7\QSH_A_D_P11")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_P10"
 			(diff_partner "$1I7\QSH_A_D_N10")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N10,$1I7\QSH_A_D_P10")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_P9"
 			(diff_partner "$1I7\QSH_A_D_N9")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N9,$1I7\QSH_A_D_P9")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_P8"
 			(diff_partner "$1I7\QSH_A_D_N8")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N8,$1I7\QSH_A_D_P8")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_P7"
 			(diff_partner "$1I7\QSH_A_D_N7")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N7,$1I7\QSH_A_D_P7")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_P6"
 			(diff_partner "$1I7\QSH_A_D_N6")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N6,$1I7\QSH_A_D_P6")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_P5"
 			(diff_partner "$1I7\QSH_A_D_N5")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N5,$1I7\QSH_A_D_P5")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_P4"
 			(diff_partner "$1I7\QSH_A_D_N4")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N4,$1I7\QSH_A_D_P4")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_P3"
 			(diff_partner "$1I7\QSH_A_D_N3")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N3,$1I7\QSH_A_D_P3")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_P2"
 			(diff_partner "$1I7\QSH_A_D_N2")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N2,$1I7\QSH_A_D_P2")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_P1"
 			(diff_partner "$1I7\QSH_A_D_N1")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N1,$1I7\QSH_A_D_P1")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_P0"
 			(diff_partner "$1I7\QSH_A_D_N0")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N0,$1I7\QSH_A_D_P0")
 				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_N18"
@@ -33742,178 +33536,108 @@
 			(diff_partner "$1I7\QSH_A_D_P17")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N17,$1I7\QSH_A_D_P17")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_N16"
 			(diff_partner "$1I7\QSH_A_D_P16")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N16,$1I7\QSH_A_D_P16")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_N15"
 			(diff_partner "$1I7\QSH_A_D_P15")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N15,$1I7\QSH_A_D_P15")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_N14"
 			(diff_partner "$1I7\QSH_A_D_P14")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N14,$1I7\QSH_A_D_P14")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_N13"
 			(diff_partner "$1I7\QSH_A_D_P13")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N13,$1I7\QSH_A_D_P13")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_N12"
 			(diff_partner "$1I7\QSH_A_D_P12")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N12,$1I7\QSH_A_D_P12")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_N11"
 			(diff_partner "$1I7\QSH_A_D_P11")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N11,$1I7\QSH_A_D_P11")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_N10"
 			(diff_partner "$1I7\QSH_A_D_P10")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N10,$1I7\QSH_A_D_P10")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_N9"
 			(diff_partner "$1I7\QSH_A_D_P9")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N9,$1I7\QSH_A_D_P9")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_N8"
 			(diff_partner "$1I7\QSH_A_D_P8")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N8,$1I7\QSH_A_D_P8")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_N7"
 			(diff_partner "$1I7\QSH_A_D_P7")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N7,$1I7\QSH_A_D_P7")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_N6"
 			(diff_partner "$1I7\QSH_A_D_P6")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N6,$1I7\QSH_A_D_P6")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_N5"
 			(diff_partner "$1I7\QSH_A_D_P5")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N5,$1I7\QSH_A_D_P5")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_N4"
 			(diff_partner "$1I7\QSH_A_D_P4")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N4,$1I7\QSH_A_D_P4")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_N3"
 			(diff_partner "$1I7\QSH_A_D_P3")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N3,$1I7\QSH_A_D_P3")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_N2"
 			(diff_partner "$1I7\QSH_A_D_P2")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N2,$1I7\QSH_A_D_P2")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_N1"
 			(diff_partner "$1I7\QSH_A_D_P1")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N1,$1I7\QSH_A_D_P1")
-				(cnsval "MAX_TRACK_WIDTH" "3.94")
-				(cnsval "PCLASS" "QSHA")
-				(cnsval "REC_TRACK_WIDTH" "3.940000")))
+				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_D_N0"
 			(diff_partner "$1I7\QSH_A_D_P0")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I7\QSH_A_D_N0,$1I7\QSH_A_D_P0")
 				(cnsval "PCLASS" "QSHA")))
 		(net_scalar "$1I7\QSH_A_CLK_P"
@@ -34538,326 +34262,218 @@
 			(diff_partner "$1I5\ZDOK1_DP_N36")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N36,$1I5\ZDOK1_DP_P36")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P35"
 			(diff_partner "$1I5\ZDOK1_DP_N35")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N35,$1I5\ZDOK1_DP_P35")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P34"
 			(diff_partner "$1I5\ZDOK1_DP_N34")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N34,$1I5\ZDOK1_DP_P34")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P33"
 			(diff_partner "$1I5\ZDOK1_DP_N33")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N33,$1I5\ZDOK1_DP_P33")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P32"
 			(diff_partner "$1I5\ZDOK1_DP_N32")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N32,$1I5\ZDOK1_DP_P32")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P31"
 			(diff_partner "$1I5\ZDOK1_DP_N31")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N31,$1I5\ZDOK1_DP_P31")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P30"
 			(diff_partner "$1I5\ZDOK1_DP_N30")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N30,$1I5\ZDOK1_DP_P30")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P29"
 			(diff_partner "$1I5\ZDOK1_DP_N29")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N29,$1I5\ZDOK1_DP_P29")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P28"
 			(diff_partner "$1I5\ZDOK1_DP_N28")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N28,$1I5\ZDOK1_DP_P28")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P27"
 			(diff_partner "$1I5\ZDOK1_DP_N27")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N27,$1I5\ZDOK1_DP_P27")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P26"
 			(diff_partner "$1I5\ZDOK1_DP_N26")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N26,$1I5\ZDOK1_DP_P26")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P25"
 			(diff_partner "$1I5\ZDOK1_DP_N25")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N25,$1I5\ZDOK1_DP_P25")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P24"
 			(diff_partner "$1I5\ZDOK1_DP_N24")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N24,$1I5\ZDOK1_DP_P24")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P23"
 			(diff_partner "$1I5\ZDOK1_DP_N23")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N23,$1I5\ZDOK1_DP_P23")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P22"
 			(diff_partner "$1I5\ZDOK1_DP_N22")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N22,$1I5\ZDOK1_DP_P22")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P21"
 			(diff_partner "$1I5\ZDOK1_DP_N21")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N21,$1I5\ZDOK1_DP_P21")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P20"
 			(diff_partner "$1I5\ZDOK1_DP_N20")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N20,$1I5\ZDOK1_DP_P20")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P19"
 			(diff_partner "$1I5\ZDOK1_DP_N19")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N19,$1I5\ZDOK1_DP_P19")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P18"
 			(diff_partner "$1I5\ZDOK1_DP_N18")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N18,$1I5\ZDOK1_DP_P18")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P17"
 			(diff_partner "$1I5\ZDOK1_DP_N17")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N17,$1I5\ZDOK1_DP_P17")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P16"
 			(diff_partner "$1I5\ZDOK1_DP_N16")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N16,$1I5\ZDOK1_DP_P16")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P15"
 			(diff_partner "$1I5\ZDOK1_DP_N15")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N15,$1I5\ZDOK1_DP_P15")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P14"
 			(diff_partner "$1I5\ZDOK1_DP_N14")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N14,$1I5\ZDOK1_DP_P14")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P13"
 			(diff_partner "$1I5\ZDOK1_DP_N13")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N13,$1I5\ZDOK1_DP_P13")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P12"
 			(diff_partner "$1I5\ZDOK1_DP_N12")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N12,$1I5\ZDOK1_DP_P12")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P11"
 			(diff_partner "$1I5\ZDOK1_DP_N11")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N11,$1I5\ZDOK1_DP_P11")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P10"
 			(diff_partner "$1I5\ZDOK1_DP_N10")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N10,$1I5\ZDOK1_DP_P10")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P9"
 			(diff_partner "$1I5\ZDOK1_DP_N9")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N9,$1I5\ZDOK1_DP_P9")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P8"
 			(diff_partner "$1I5\ZDOK1_DP_N8")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N8,$1I5\ZDOK1_DP_P8")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P7"
 			(diff_partner "$1I5\ZDOK1_DP_N7")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N7,$1I5\ZDOK1_DP_P7")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P6"
 			(diff_partner "$1I5\ZDOK1_DP_N6")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N6,$1I5\ZDOK1_DP_P6")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P5"
 			(diff_partner "$1I5\ZDOK1_DP_N5")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N5,$1I5\ZDOK1_DP_P5")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P4"
 			(diff_partner "$1I5\ZDOK1_DP_N4")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N4,$1I5\ZDOK1_DP_P4")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P3"
 			(diff_partner "$1I5\ZDOK1_DP_N3")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N3,$1I5\ZDOK1_DP_P3")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P2"
 			(diff_partner "$1I5\ZDOK1_DP_N2")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N2,$1I5\ZDOK1_DP_P2")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P1"
 			(diff_partner "$1I5\ZDOK1_DP_N1")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N1,$1I5\ZDOK1_DP_P1")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_P0"
 			(diff_partner "$1I5\ZDOK1_DP_N0")
 			(constraints
@@ -34874,326 +34490,218 @@
 			(diff_partner "$1I5\ZDOK1_DP_P36")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N36,$1I5\ZDOK1_DP_P36")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N35"
 			(diff_partner "$1I5\ZDOK1_DP_P35")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N35,$1I5\ZDOK1_DP_P35")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N34"
 			(diff_partner "$1I5\ZDOK1_DP_P34")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N34,$1I5\ZDOK1_DP_P34")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N33"
 			(diff_partner "$1I5\ZDOK1_DP_P33")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N33,$1I5\ZDOK1_DP_P33")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N32"
 			(diff_partner "$1I5\ZDOK1_DP_P32")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N32,$1I5\ZDOK1_DP_P32")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N31"
 			(diff_partner "$1I5\ZDOK1_DP_P31")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N31,$1I5\ZDOK1_DP_P31")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N30"
 			(diff_partner "$1I5\ZDOK1_DP_P30")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N30,$1I5\ZDOK1_DP_P30")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N29"
 			(diff_partner "$1I5\ZDOK1_DP_P29")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N29,$1I5\ZDOK1_DP_P29")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N28"
 			(diff_partner "$1I5\ZDOK1_DP_P28")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N28,$1I5\ZDOK1_DP_P28")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N27"
 			(diff_partner "$1I5\ZDOK1_DP_P27")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N27,$1I5\ZDOK1_DP_P27")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N26"
 			(diff_partner "$1I5\ZDOK1_DP_P26")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N26,$1I5\ZDOK1_DP_P26")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N25"
 			(diff_partner "$1I5\ZDOK1_DP_P25")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N25,$1I5\ZDOK1_DP_P25")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N24"
 			(diff_partner "$1I5\ZDOK1_DP_P24")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N24,$1I5\ZDOK1_DP_P24")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N23"
 			(diff_partner "$1I5\ZDOK1_DP_P23")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N23,$1I5\ZDOK1_DP_P23")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N22"
 			(diff_partner "$1I5\ZDOK1_DP_P22")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N22,$1I5\ZDOK1_DP_P22")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N21"
 			(diff_partner "$1I5\ZDOK1_DP_P21")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N21,$1I5\ZDOK1_DP_P21")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N20"
 			(diff_partner "$1I5\ZDOK1_DP_P20")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N20,$1I5\ZDOK1_DP_P20")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N19"
 			(diff_partner "$1I5\ZDOK1_DP_P19")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N19,$1I5\ZDOK1_DP_P19")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N18"
 			(diff_partner "$1I5\ZDOK1_DP_P18")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N18,$1I5\ZDOK1_DP_P18")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N17"
 			(diff_partner "$1I5\ZDOK1_DP_P17")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N17,$1I5\ZDOK1_DP_P17")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N16"
 			(diff_partner "$1I5\ZDOK1_DP_P16")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N16,$1I5\ZDOK1_DP_P16")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N15"
 			(diff_partner "$1I5\ZDOK1_DP_P15")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N15,$1I5\ZDOK1_DP_P15")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N14"
 			(diff_partner "$1I5\ZDOK1_DP_P14")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N14,$1I5\ZDOK1_DP_P14")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N13"
 			(diff_partner "$1I5\ZDOK1_DP_P13")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N13,$1I5\ZDOK1_DP_P13")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N12"
 			(diff_partner "$1I5\ZDOK1_DP_P12")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N12,$1I5\ZDOK1_DP_P12")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N11"
 			(diff_partner "$1I5\ZDOK1_DP_P11")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N11,$1I5\ZDOK1_DP_P11")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N10"
 			(diff_partner "$1I5\ZDOK1_DP_P10")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N10,$1I5\ZDOK1_DP_P10")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N9"
 			(diff_partner "$1I5\ZDOK1_DP_P9")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N9,$1I5\ZDOK1_DP_P9")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N8"
 			(diff_partner "$1I5\ZDOK1_DP_P8")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N8,$1I5\ZDOK1_DP_P8")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N7"
 			(diff_partner "$1I5\ZDOK1_DP_P7")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N7,$1I5\ZDOK1_DP_P7")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N6"
 			(diff_partner "$1I5\ZDOK1_DP_P6")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N6,$1I5\ZDOK1_DP_P6")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N5"
 			(diff_partner "$1I5\ZDOK1_DP_P5")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N5,$1I5\ZDOK1_DP_P5")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N4"
 			(diff_partner "$1I5\ZDOK1_DP_P4")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N4,$1I5\ZDOK1_DP_P4")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N3"
 			(diff_partner "$1I5\ZDOK1_DP_P3")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N3,$1I5\ZDOK1_DP_P3")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N2"
 			(diff_partner "$1I5\ZDOK1_DP_P2")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N2,$1I5\ZDOK1_DP_P2")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N1"
 			(diff_partner "$1I5\ZDOK1_DP_P1")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_DP_N1,$1I5\ZDOK1_DP_P1")
-				(cnsval "PCLASS" "ZDOK1A")
-				(cnsval "VALID_LAYER" "1,3,5,7,10,12,14,16")))
+				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_DP_N0"
 			(diff_partner "$1I5\ZDOK1_DP_P0")
 			(constraints
@@ -35204,32 +34712,24 @@
 			(diff_partner "$1I5\ZDOK1_CLK1_N")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_CLK1_N,$1I5\ZDOK1_CLK1_P")
 				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_CLK1_N"
 			(diff_partner "$1I5\ZDOK1_CLK1_P")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_CLK1_N,$1I5\ZDOK1_CLK1_P")
 				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_CLK0_P"
 			(diff_partner "$1I5\ZDOK1_CLK0_N")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_CLK0_N,$1I5\ZDOK1_CLK0_P")
 				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I5\ZDOK1_CLK0_N"
 			(diff_partner "$1I5\ZDOK1_CLK0_P")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
-				(cnsval "DIFFPAIR_GAP" "3.940000")
-				(cnsval "DIFFPAIR_WIDTH" "3.940000")
 				(cnsval "DIFF_PAIR" "$1I5\ZDOK1_CLK0_N,$1I5\ZDOK1_CLK0_P")
 				(cnsval "PCLASS" "ZDOK1A")))
 		(net_scalar "$1I4\ZDOK0_DP_P37"
