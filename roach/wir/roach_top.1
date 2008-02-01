@@ -1,14 +1,13 @@
 | Wirelist created using version 5.4.
-| Error - Symbol IOD_Schematic:nraologo not found or empty.
 V 5.4
 K 29591324190 roach_top
 DW roach_top
 Q Case
-SA SHEET=1 OF 25 
-SA SCOUT_META_FORMAT_PREFIX_0=XREF 
-SA SCOUT_META_FORMAT_PREFIX_1=SCHLOC 
-SA SCOUT_META_FORMAT_PREFIX_2=PINLOC 
 SA SCOUT_META_PAGE_ANNOTATION=SHEET=1 OF 25 
+SA SCOUT_META_FORMAT_PREFIX_2=PINLOC 
+SA SCOUT_META_FORMAT_PREFIX_1=SCHLOC 
+SA SCOUT_META_FORMAT_PREFIX_0=XREF 
+SA SHEET=1 OF 25 
 |Q IOD_Schematic:hole150x288 1
 AS IOD_Schematic:hole150x288 DEVICE=HOLE150X288
 AS IOD_Schematic:hole150x288 PARTS=1
@@ -244,7 +243,6 @@ AS IOD_Schematic:roach_diff_gpio INOV_VER_REC=8:13_10-2-07
 AS IOD_Schematic:roach_adc_0 DEVICE=ROACH_ADC_0
 AS IOD_Schematic:roach_adc_0 SHEET
 AS IOD_Schematic:roach_adc_0 INOV_VER_REC=8:11_10-2-07
-|Q IOD_Schematic:nraologo 1
 |Q IOD_Schematic:roach_transceivers0_1 1
 AS IOD_Schematic:roach_transceivers0_1 DEVICE=ROACH_TRANSCEIVERS0_1
 AS IOD_Schematic:roach_transceivers0_1 SHEET
@@ -343,6 +341,9 @@ AP IOD_Schematic:roach_ppc_cpld 42 PINTYPE=OUT
 AP IOD_Schematic:roach_ppc_cpld 43 PINTYPE=OUT
 AP IOD_Schematic:roach_ppc_cpld 44 PINTYPE=IN
 AP IOD_Schematic:roach_ppc_cpld 45 PINTYPE=IN
+|Q IOD_Schematic:nraologo 1
+AS IOD_Schematic:nraologo PKG_TYPE=LOGO
+AS IOD_Schematic:nraologo INOV_VER_REC=16:01_1-29-08
 AN PADD[2:31] VLBUSISONSHEET=1
 AN PDATA[0:7] VLBUSISONSHEET=1
 AN PDATA[0:31] VLBUSISONSHEET=1
@@ -656,8 +657,6 @@ I $1I7 IOD_Schematic:roach_diff_gpio SHEET=12`
 W IOD_Schematic:roach_adc_0 $1I4
 I $1I4 IOD_Schematic:roach_adc_0 SHEET=5`
 |R 8:11_10-2-07
-M IOD_Schematic:nraologo $1I1076
-I $1I1076 IOD_Schematic:nraologo REFDES=U52`
 W IOD_Schematic:roach_transceivers0_1 $1I2
 I $1I2 IOD_Schematic:roach_transceivers0_1 SHEET=8`
 |R 8:12_10-2-07
@@ -670,4 +669,7 @@ I $1I863 IOD_Schematic:roach_ppc_nvm_serial BOOT_CFG0 BOOT_CFG1 BOOT_CFG2 CLK_PE
 W IOD_Schematic:roach_ppc_cpld $1I747
 I $1I747 IOD_Schematic:roach_ppc_cpld BOOT_CFG0 BOOT_CFG1 BOOT_CFG2 CLK_CPLD_33MHZ CLK_CPLD_50MHZ CLK_PERCLK CLK_SEL_M66EN CLK_TMRCLK CPU_TRST# DEBUG_TRST# EE1_WP EE2_BOOT_WP EXT_RESET# FRY_BY# FWP# GETH0_RST# M66EN PADD[27:31] PCS_2 PDATA[0:7] POE# PPC_DDR2_RESET_N PPC_RESET PR_W# PWBE_0# PWR_GOOD RESET_CPLD# RESET_PB_POR# RESET_POR# SELECTMAP_CS SEL_SYSCLK STTM_AS SX95T_CCLK_0 SX95T_CS_B_0 SX95T_DONE_0 SX95T_D_IN_0 SX95T_D_OUT_BUSY_0 SX95T_INIT_B_0 SX95T_M2_0 SX95T_M1_0 SX95T_M0_0 SX95T_PROGRAM_B_0 SX95T_RDWR_B_0 SYSERR SYS_CONFIG[0:7] SHEET=24`
 |R 14:11_12-12-07
+M IOD_Schematic:nraologo $1I1076
+I $1I1076 IOD_Schematic:nraologo REFDES=U52`
+|R 16:01_1-29-08
 EW
