@@ -28,7 +28,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1201712016"))
+		(file_ext "roach_top.pxr" "1201897738"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -13836,7 +13836,7 @@
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
 			(attributes
-				(attval "VALUE" "22R")
+				(attval "VALUE" "0R")
 				(attval "GEOMETRY.HEIGHT" "0.35")
 				(attval "DEVICE" "RES0402_55")
 				(attval "REFDES" "R4")))
@@ -32765,10 +32765,12 @@
 				(cnsval "PCLASS" "PPCDDR")))
 		(net_scalar "$1I289\DDR_PA15"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCDDR")))
 		(net_scalar "$1I289\DDR_PA14"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "PPCDDR")))
 		(net_scalar "$1I289\DDR_PA13"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
@@ -32827,10 +32829,14 @@
 				(cnsval "PCLASS" "PPCDDR")))
 		(net_scalar "$1I289\DDR_CLKOUT#"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "MAX_LENGTH" "7160")
+				(cnsval "MIN_LENGTH" "7000")))
 		(net_scalar "$1I289\DDR_CLKOUT"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "MAX_LENGTH" "7160")
+				(cnsval "MIN_LENGTH" "7000")))
 		(net_scalar "$1I289\$1N1471"
 			(attributes
 				(attval "NC" ""))
@@ -33675,10 +33681,12 @@
 				(cnsval "PCLASS" "FPGADDR")))
 		(net_scalar "$1I6\DDR2_PAR_OUT"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "FPGADDR")))
 		(net_scalar "$1I6\DDR2_PAR_IN"
 			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
+				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "PCLASS" "FPGADDR")))
 		(net_scalar "$1I6\DDR2_ODT_1"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
@@ -35607,36 +35615,52 @@
 				(cnsval "SCHEDULED" "FALSE")
 				(cnsval "DIFF_PAIR" "$1I3\MGT_REFCLK_Q2_N,$1I3\MGT_REFCLK_Q2_P")))
 		(net_scalar "$1I3\MGT_REFCLK_Q2_3_P"
+			(diff_partner "$1I3\MGT_REFCLK_Q2_3_N")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGT_REFCLK_Q2_3_N,$1I3\MGT_REFCLK_Q2_3_P")
 				(cnsval "PCLASS" "DIFF")))
 		(net_scalar "$1I3\MGT_REFCLK_Q2_3_N"
+			(diff_partner "$1I3\MGT_REFCLK_Q2_3_P")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGT_REFCLK_Q2_3_N,$1I3\MGT_REFCLK_Q2_3_P")
 				(cnsval "PCLASS" "DIFF")))
 		(net_scalar "$1I3\MGT_REFCLK_Q2_2_P"
+			(diff_partner "$1I3\MGT_REFCLK_Q2_2_N")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGT_REFCLK_Q2_2_N,$1I3\MGT_REFCLK_Q2_2_P")
 				(cnsval "PCLASS" "DIFF")))
 		(net_scalar "$1I3\MGT_REFCLK_Q2_2_N"
+			(diff_partner "$1I3\MGT_REFCLK_Q2_2_P")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGT_REFCLK_Q2_2_N,$1I3\MGT_REFCLK_Q2_2_P")
 				(cnsval "PCLASS" "DIFF")))
 		(net_scalar "$1I3\MGT_REFCLK_Q2_1_P"
+			(diff_partner "$1I3\MGT_REFCLK_Q2_1_N")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGT_REFCLK_Q2_1_N,$1I3\MGT_REFCLK_Q2_1_P")
 				(cnsval "PCLASS" "DIFF")))
 		(net_scalar "$1I3\MGT_REFCLK_Q2_1_N"
+			(diff_partner "$1I3\MGT_REFCLK_Q2_1_P")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGT_REFCLK_Q2_1_N,$1I3\MGT_REFCLK_Q2_1_P")
 				(cnsval "PCLASS" "DIFF")))
 		(net_scalar "$1I3\MGT_REFCLK_Q2_0_P"
+			(diff_partner "$1I3\MGT_REFCLK_Q2_0_N")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGT_REFCLK_Q2_0_N,$1I3\MGT_REFCLK_Q2_0_P")
 				(cnsval "PCLASS" "DIFF")))
 		(net_scalar "$1I3\MGT_REFCLK_Q2_0_N"
+			(diff_partner "$1I3\MGT_REFCLK_Q2_0_P")
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
+				(cnsval "DIFF_PAIR" "$1I3\MGT_REFCLK_Q2_0_N,$1I3\MGT_REFCLK_Q2_0_P")
 				(cnsval "PCLASS" "DIFF")))
 		(net_scalar "$1I3\MGTTX1_126_P"
 			(diff_partner "$1I3\MGTTX1_126_N")
