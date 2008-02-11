@@ -1,0 +1,122 @@
+* AD810S SPICE Macro-model              12/93, Rev. A
+*                                       ARG / PMI
+*
+* This version of the AD810 model simulates the worst-case 
+* parameters of the 'S' grade.  The worst-case parameters
+* used correspond to those in the data sheet. This model
+* was developed using the +-5V specifications.
+*
+* Copyright 1990 by Analog Devices, Inc.
+*
+* Refer to "README.DOC" file for License Statement.
+* Use of this model indicates your acceptance with
+* the terms and provisions in the License Statement.
+*
+* Node assignments
+*              non-inverting input
+*              | inverting input
+*              | | positive supply
+*              | | |  negative supply
+*              | | |  |  output
+*              | | |  |  |  DISABLE pin
+*              | | |  |  |  |     
+.SUBCKT AD810S 1 2 99 50 41 33
+*
+* INPUT STAGE
+*
+R1   99   8    680
+R2   10   50   680
+V1   99   9    0.5
+D1   9    8    DX
+V2   11   50   0.5
+D2   10   11   DX
+F1   99   5    VD2 1
+F2   4    50   VD2 1
+Q1   50   3    5    QP
+Q2   99   3    4    QN
+Q3   8    5    2    QN
+Q4   10   4    2    QP
+R3   99   5    0.4E8
+R4   50   4    0.4E8
+*
+* INPUT ERROR SOURCES
+*
+GB1  1    99   POLY(1) (1,22) 7.5E-6 0.1E-6
+GB2  2    99   POLY(1) (1,22) 5E-6 0.1E-6
+EOS  3    1    POLY(1) (17,22) 6E-3 25.119E-3
+CS1  99   2    0.75E-12
+CS2  99   1    2E-12
+*
+* TRANSCONDUCTANCE STAGE
+*
+EREF 98   0    (22,0) 1
+R5   12   98   0.3E6
+C3   12   98   4.15E-12
+G1   98   12   (99,8) 1.471E-3
+G2   12   98   (10,50) 1.471E-3
+V3   99   13   3
+V4   14   50   3
+D3   12   13   DX
+D4   14   12   DX
+*
+* COMMON MODE STAGE WITH ZERO AT 2.512MHZ
+*
+E2   16   98   (1,22) 1
+R12  16   17   10
+R13  17   98   1
+C6   16   17   6.336E-9
+*
+* POLE AT 90MHZ
+*
+R6   21   98   1E6
+C4   21   98   1.768E-15
+G3   98   21   (12,22) 1E-6
+*
+* OUTPUT STAGE
+*
+FSY  99   50   POLY(1) VD2 2.177E-3 2.707
+FSY1 99   0    V7 1
+FSY2 0    50   V8 1
+R9   22   99   40.625E3
+R10  22   50   40.625E3
+E1   25   98   21 22 1
+H1   26   25   POLY(1) VD3 0.7 10E3
+H2   25   27   POLY(1) VD3 0.7 10E3
+RH1  40   50   1E10
+R7   28   40   10
+R8   40   29   10
+D7   26   28   DX
+D8   29   27   DX
+VS   40   41   DC 0
+CL   41   50   10E-12
+V5   23   40   0.5
+V6   40   24   0.5
+D5   21   23   DX
+D6   24   21   DX
+F10  98   70   VS  1
+D9   70   71   DX
+D10  72   70   DX
+V7   71   98   DC 0
+V8   98   72   DC 0
+*
+* DISABLE FUNCTION
+*
+VD1  99   31   DC 1.8
+RD1  31   32   35E3
+RD2  33   99   1E12
+DD1  32   33   DX
+FD   98   34   POLY(1) VD1 0.8E-3 -18.0203
+DD3  36   34   DX
+DD2  34   35   DX
+VD2  37   98   DC 0
+VD3  38   98   DC 0
+RD3  35   37   1E3
+RD4  36   38   1E3
+CD1  34   98   10E-12
+*
+* MODELS USED
+*
+.MODEL QN NPN(BF=200 IS=1E-15)
+.MODEL QP PNP(BF=200 IS=1E-15)
+.MODEL DX D(IS=1E-15)
+.ENDS AD810S

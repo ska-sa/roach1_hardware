@@ -1,0 +1,141 @@
+*  AD9632an Spice Macro-model                  3/7/97,SMR,Rev A
+*
+*  Copyright 1997 by Analog Devices, Inc.
+*
+* Refer to "README.DOC" file for License Statement.
+* Use of this model indicates your acceptance with
+* the terms and provisions in the License Statement.
+*
+* The following parameters are modeled;
+*
+*    open loop gain and phase vs frequency
+*    output clamping voltage and current
+*    input common mode range
+*    CMRR vs freq
+*    Slew rate
+*    Output currents are reflected to V supplies
+*    I bias is static and will not vary with Vcm
+*    Vos is static and will not vary with Vcm 
+*    Step response is modeled at gain of 2 w/1k load 
+*    Slew rate is based on 10-90% change in output step
+*
+*    Node assignments
+*                non-inverting input
+*                | inverting input
+*                | | positive supply
+*                | | |  negative supply
+*                | | |  |  output
+*                | | |  |  |
+.SUBCKT AD9632an 1 2 99 50 61   
+
+
+* input stage *
+
+gn 99 2 (36,98) 1
+r1 1 18 250k
+r2 2 18 250k
+cin1 1 98 1.2e-12
+cin2 2 98 1.2e-12
+ibias1 50 1 8e-6
+ibias2 99 2 8e-6
+q1 5 17 6 qn1
+q2 7 2 8 qn1
+eos 17 1 poly(2) (23,98) (34,98) 2e-3 1 0
+r3 99 5 50.23
+r4 99 7 50.23
+r5 6 9 47.63
+r6 8 9 47.63
+c2 5 7 2.26pf
+itail 9 50 0.02
+irev 50 99 0.019
+
+* vnoise generation
+
+dn1 30 31 dn
+vn1 31 98 0
+rn1 31 98 100e-5
+vn2 30 98 0.4
+
+hn1 34 98 vn1 1
+rn2 34 98 1
+
+* inoise generation
+
+vn3 35 98 0
+rn3 35 98 4k
+
+hn2 36 98 vn3 1
+rn4 36 98 1e-6
+
+* gain stage,clamping - open loop gain=64dB * 
+
+* pd at 105khz *
+
+gm1 99 10 poly(1) 7 5 0 0.02 0 2.3e-3
+gm2 50 10 poly(1) 7 5 0 0.02 0 2.3e-3
+r7  99 10 79617
+r8  10 50 79617
+c3  99 10 13.33pf
+c4  10 50 13.33pf
+vcl1 99 14 1.65
+vcl2 15 50 1.65
+d1 10 14 dx
+d2 15 10 dx
+
+******** frequency shaping stage ********
+***** zero at 200mhz, pole at 600mhz ****
+
+e1 11 98 10 98 3
+rz1 11 12 2
+rz2 12 13 1
+l1 13 98 0.8e-9
+
+***** common mode reference
+
+eref 98 0 poly(2) 99 0 50 0 0 0.5 0.5
+
+***** vcm generation
+
+ecm1 19 98 18 98 38e-5 
+rvcm1 19 20 1.9e-9
+rvcm2 20 21 1e-12
+lcm1 21 98 1.516e-18
+
+ecm2 22 98 20 98 25000
+rvcm3 22 23 25e-8
+rvcm4 23 24 1e-12
+lcm2 24 98 1.990e-18
+
+***** buffer to output stage
+
+gbuf 98 16 12 98 1e-2
+rbuf1 98 16 100
+
+***** output current mirrored to supplies
+
+fo1 98 110 vcd 1
+do1 110 111 dx
+do2 112 110 dx
+vi1 111 98 0
+vi2 98 112 0
+fsy 99 50 poly(2) vi1 vi2 4.73e-3 1 1
+iq 99 50 11e-3
+
+***** output stage
+
+go3 60 99 99 16 0.1
+go4 50 60 16 50 0.1
+r03 60 99 10
+r04 60 50 10
+vcd 60 62 0
+lo1 62 61 0.75e-7
+ro2 61 98 1e9
+do5 16 70 dx
+do6 71 16 dx
+vo1 70 60 0.27
+vo2 60 71 0.27
+
+.model dx d(is=1e-15)
+.model dn d(af=0.6 kf=1.4e-10 is=1e-15)
+.model qn1 npn(af=0 kf=1e-30 is=1e-15 bf=1000)
+.ends AD9632an

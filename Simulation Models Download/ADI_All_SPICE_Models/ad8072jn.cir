@@ -1,0 +1,131 @@
+* AD8072jn SPICE Macro-model       rev B; 6/6/97,SMR,ADI
+                                          
+
+* Copyright 1997 by Analog Devices, Inc.
+
+* Refer to "README.DOC" file for License Statement.  Use of this model
+* indicates your acceptance with the terms and provisions in the License Statement.
+
+* This model will give typical performance characteristics
+* for the following parameters;
+
+*     closed loop gain and phase vs bandwidth
+*     output current and voltage limiting
+*     offset voltage (is static, will not vary with vcm)
+*     ibias (again, is static, will not vary with vcm)
+*     slew rate and step response performance
+*     (slew rate is based on 10-90% of step response)
+*     current on output will be reflected to the supplies 
+*     vnoise, referred to the input
+*     inoise, referred to the input
+
+*     distortion is not characterized
+
+* Node assignments
+*                non-inverting input
+*                | inverting input
+*                | | positive supply
+*                | | |  negative supply
+*                | | |  |  output
+*                | | |  |  |
+.SUBCKT AD8072jn 1 2 99 50 24   
+
+* INPUT STAGE
+
+v1   8 2 0
+i1   99 5 108e-6
+i2   4 50 108e-6
+q1   50 3 5 qp1
+q2   99 3 4 qn1
+q3   99 5 8 qn2
+q4   50 4 8 qp2
+
+* input error sources
+ 
+fn   99  2 vn4 1e-3
+ib1  99  2     2.87e-6
+ib2  99  3     4e-6
+eos  3 1 poly(1) (32,98) 0 1
+cs3  98  2     1.6e-12
+cs4  98  3     1.6e-12
+
+* slew rate limiting stage
+
+fl1 98 70 v1 1
+dl1 70 98 dx
+dl2 98 70 dx
+dl3 70 72 dx
+dl4 72 70 dx
+vl1 72 73 0
+rl1 73 98 27
+
+* first gain stage and dominant pole
+
+fgain 98 12 vl1 2
+r5   12 98 300k
+c4   12 98 1.7e-12
+v3   99 13 2.54
+v4   14 50 2.84
+d3   12 13 dx
+d4   14 12 dx
+
+* v noise generator
+
+vn1 30 98 0.555
+dn1 30 31 dn1
+rn1 31 98 1.84e-3
+vn2 31 98 0 
+
+fn1 32 98 vn2 1
+rn2 32 98 1
+
+* i noise generation
+
+vn3 33 98 0.595
+dn2 33 34 dn1
+rn3 34 98 0.46e-3
+vn4 34 98 0
+
+fn2 35 98 vn4 1
+rn4 35 98 1
+
+* buffer stage
+
+g13 98 17 12 98 1e-2 
+rbuf 17 98 100
+
+* reference stage
+
+eref1 98 0 poly(2) 99 0 50 0 0 0.5 0.5 
+
+* current mirroring on supplies
+
+fo1 98 300 vcd 1
+vi1 311 98 0
+vi2 98 312 0
+dm1 300 311 dx
+dm2 312 300 dx
+fsy 99 50 poly(2) vi1 vi2 7e-3 1 1
+
+* output stage
+
+r15 23 99  2
+r16 23 50  2
+vcd 23 24   0
+rl  24 98  1e6
+g11 99 23  17 99  0.5
+g12 23 50  50 17  0.5
+v5  23 19  -0.666
+v6  20 23  -0.668
+d5  19 17  dx
+d6  17 20  dx
+
+* models
+
+.model qn1 npn(bf=1e3)
+.model qp1 pnp(bf=1e3)
+.model qn2 npn(bf=1e3)
+.model qp2 pnp(bf=1e3)
+.model dx  d()
+.model dn1 d(af=1 kf=1e-10)
+.ends ad8072jn

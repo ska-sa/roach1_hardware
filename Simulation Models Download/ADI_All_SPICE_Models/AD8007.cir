@@ -1,0 +1,118 @@
+*       AD8007/AD8008 Spice Model   Rev 0 VWC/ADI 6-19-02
+*
+*       Copyright 2002 by Analog Devices, Inc.
+*
+*       Refer to "README.DOC" file for License Statement.
+*       Use of this model indicates your acceptance with
+*       the terms and provisions in the License Statement
+*
+*       The following parameters are accurately modeled
+*
+*       Open loop gain and phase vs. frequency
+*       Inverting terminal input resistance
+*       Output clamping voltage and current
+*       Slew rate
+*       Output currents are reflected to V supplies
+*       Vos is static and will not vary
+*       Common mode rejection ratio is not modeled
+*       Distortion is not characterized       
+*
+*     Node assignments
+*              Non-Inverting Input
+*              | Inverting Input 
+*              | | positive supply
+*              | | |  negative supply
+*              | | |  |  output
+*              | | |  |  | 
+*              | | |  |  |
+.SUBCKT AD8007 1 2 99 50 45
+* INPUT STAGE
+VL1 8 2 0
+I1 99 5 .075m
+I2 4 50 .075m
+Q1 50 3 5 QP1
+Q2 99 3 4 QN1
+Q3 99 5 8 QN2
+Q4 50 4 8 QP2
+
+* INPUT ERROR SOURCES
+IB1 2 98 0.2e-6
+IB2 3 98 2e-6
+VOS2 3 1 4m
+Cin 3 0 1p
+
+* SLEW RATE LIMITING STAGE
+FL1 98 40 VL1 1
+DL1 40 98 DX
+DL2 98 40 DX
+DL3 40 42 DX
+DL4 42 40 DX
+VL2 42 44 0
+RL1 44 98 90
+
+* GAIN STAGE & POLE AT 245 kHz
+Eref 98 0 POLY(2) 99 0 50 0 0 .5 .5 
+F1 98 13 VL2 2.1
+R7 98 13 1e6
+C3 98 13 .65e-12
+V1 99 14 1.71
+V2 16 50 1.71
+D1 13 14 DX
+D2 16 13 DX
+
+* 2nd POLE AT 1.6 GHz
+G2 98 23 13 98 1e-6
+R8 98 23 1e6
+C4 98 23 99e-19
+
+* 3rd POLE AT 1.6 GHz
+G3 98 33 23 98 1
+R10 98 33 1
+C5 98 33 99p
+
+* 4th POLE AT 1.7 GHz
+G4 98 43 33 98 1
+R11 98 43 1
+C6 98 43 94p
+
+* 5th POLE AT 1.7 GHz
+G5 98 53 43 98 1
+R12 98 53 1
+C7 98 53 94p
+
+* BUFFER STAGE
+Gbuf 98 32 53 98 1e-2
+Rbuf 98 32 1e2
+
+* OUTPUT STAGE
+Vo1 99 90 0
+Vo2 51 50 0
+R18 25 90 0.2
+R19 25 51 0.2
+Vcd 25 45 0
+G6 25 90 99 32 5
+G7 51 25 32 50 5
+V4 26 25 -.805
+V5 25 27 -.805
+D5 32 26 DX
+D6 27 32 DX
+
+Fo1 98 70 vcd 1
+D7 70 71 DX
+D8 72 70 DX
+Vi1 71 98 0
+Vi2 98 72 0
+
+Erefq 96 0 45 0 1 
+Iq 99 50 8.8m
+Fq1 96 99 POLY(2) Vo1 Vi1 0 1 -1
+Fq2 50 96 POLY(2) Vo2 Vi2 0 1 -1
+
+.MODEL QN1 NPN(BF=32 VA=20 IS=0.5E-19)
+.MODEL QN2 NPN(BF=1000 VA=20 IS=0.5E-19)
+.MODEL QP1 PNP(BF=32 VA=20 IS=0.5E-19)
+.MODEL QP2 PNP(BF=1000 VA=20 IS=0.5E-19)
+.MODEL DX D(IS=1e-15)
+.ENDS
+
+

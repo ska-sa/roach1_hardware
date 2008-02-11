@@ -1,0 +1,94 @@
+* OP462 SPICE Macro-model
+* 7/96, Ver. 1
+* TAM / ADSC
+*
+* Copyright 1996 by Analog Devices
+*
+* Refer to "README.DOC" file for License Statement.  Use of this model
+* indicates your acceptance of the terms and provisions in the License
+* Statement.
+*
+* Node Assignments
+*		noninverting input
+*		|	inverting input
+*		|	|	positive supply
+*		|	|	|	negative supply
+*		|	|	|	|	output
+*		|	|	|	|	|
+*		|	|	|	|	|
+.SUBCKT OP462	1	2	99	50	45
+*
+*INPUT STAGE
+*
+Q1   5  7 3 PIX 5
+Q2   6  2 4 PIX 5
+Ios  1  2 1.25E-9
+I1  99 15 85E-6
+EOS  7  1 POLY(1) (14,20) 45E-6 1
+RC1  5 50 3.035E+3
+RC2  6 50 3.035E+3
+RE1  3 15 607
+RE2  4 15 607
+C1   5  6 600E-15
+D1   3  8 DX
+D2   4  9 DX
+V1  99  8 DC 1
+V2  99  9 DC 1
+*
+* 1st GAIN STAGE
+*
+EREF 98  0 (20,0) 1
+G1   98 10 (5,6) 10.5
+R1   10 98 1
+C2   10 98 3.3E-9
+*
+* COMMON-MODE STAGE WITH ZERO AT 4kHz
+*
+ECM 13 98 POLY(2) (1,98) (2,98) 0 0.5 0.5
+R2  13 14 1E+6
+R3  14 98 70
+C3  13 14 80E-12
+*
+* POLE AT 1.5MHz, ZERO AT 3MHz
+*
+G2 21 98 (10,98) .588E-6
+R4 21 98 1.7E+6
+R5 21 22 1.7E+6
+C4 22 98 31.21E-15
+*
+* POLE AT 6MHz, ZERO AT 3MHz
+*
+E1  23 98 (21,98) 2
+R6  23 24 53E+3
+R7  24 98 53E+3
+C5  23 24 1E-12
+*
+* SECOND GAIN STAGE
+*
+G3  25 98 (24,98) 40E-6
+R8 25 98 1.65E+6
+D3  25 99 DX
+D4  50 25 DX
+*
+* OUTPUT STAGE
+*
+GSY  99 50 POLY(1) (99,50) 277.5E-6 7.5E-6
+R9   99 20 100E3
+R10  20 50 100E3
+Q3   45 41 99 POUT 4
+Q4   45 43 50 NOUT 2
+EB1  99 40 POLY(1) (98,25) 0.70366  1
+EB2  42 50 POLY(1) (25,98) 0.73419  1
+RB1  40 41 500
+RB2  42 43 500
+CF   45 25 11E-12
+D5   46 99 DX
+D6   47 43 DX
+V3   46 41 0.7
+V4   47 50 0.7
+
+.MODEL PIX PNP (Bf=117.7)
+.MODEL POUT PNP (BF=119, IS=2.782E-17, VAF=28, KF=3E-7)
+.MODEL NOUT NPN (BF=110, IS=1.786E-17, VAF=90, KF=3E-7)
+.MODEL DX D()
+.ENDS OP462

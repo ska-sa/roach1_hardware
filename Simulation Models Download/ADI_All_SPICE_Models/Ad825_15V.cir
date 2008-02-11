@@ -1,0 +1,88 @@
+* AD825  SPICE Macro-model                  11/19/99, Rev. B
+*                                           JCH / ADI Cent Apps
+*
+* Copyright 1999 by Analog Devices, Inc.
+*
+* Refer to "README.DOC" file for License Statement.  Use of this model
+* indicates your acceptance with the terms and provisions in the License Statement.
+*
+* THIS MODEL ONLY WORKS FOR POWER SUPPLIES OF +/-15V.  FOR POWER SUPPLIES OF
+* LOWER VALUE, USE THE AD825_5V PART.  PARAMETERS FOR THIS MODEL MATCH THE 
+* PARAMETERS SPECIFIED UNDER +/-15V CHARACTERIZATION ON THE DATA SHEET.
+*
+* Node assignments
+*                    non-inverting input
+*                    | inverting input
+*                    | | positive supply
+*                    | | |  negative supply
+*                    | | |  |  output
+*                    | | |  |  |
+.SUBCKT AD825_15V    1 2 99 50 30
+*
+* INPUT STAGE & POLE AT 245 MHZ
+*
+R3   5  50   725
+R4   6  50   725
+C2   5   6   0.3E-12
+I1   99  4   1.0E-3
+J1   5   2   4   JX
+J2   6   3   4   JX
+Cin1 1   0   3E-12
+Cin2 2   0   3E-12
+Ios  1   2   20p
+Vos  1   3   1mV
+*
+EREF1 98 97  99 0 0.5
+EREF2 97  0  50 0 0.5
+*
+* GAIN STAGE & POLE AT 5.1 KHZ 
+*
+R5    9 98   6.5E6
+C3    9 98   4.6p
+G1   98  9   5  6  9.2E-4
+V2   99  8   2.3
+V3   10 50   2.25
+D1    9  8   DX
+D2   10  9   DX
+*
+* POLE AT 200 MHZ 
+R9   23 98   1E6
+C8   23 98   0.8E-15
+G5   98 23   9 98 1E-6
+*
+* OUTPUT STAGE
+*
+R15  29 40   16
+R16  29 41   16
+L1   29 31   6E-12
+V6   31 30   0
+G7   29 40   99 23  6.25E-2
+G8   41 29   23 50  6.25E-2
+V4   25 29   0.2
+V5   29 26   0.2
+D3   23 25   DX
+D4   26 23   DX
+Vt1  99 40   0
+Vt2  41 50   0
+*
+*SUPPLY CURRENT CORRECTION
+*
+ISY   99  50 5.5m
+
+Fo1   98 110 V6 1
+Do1  110 111 dx
+Do2  112 110 dx
+Vi1  111  98 0
+Vi2   98 112 0
+
+Fsy1   0  99 Vt1  1
+Fsy2  99   0 Vi1  1
+Fsy3  50   0 Vt2 1
+Fsy4   0  50 Vi2 1
+*
+* MODELS USED
+*
+.MODEL JX  PJF(BETA=1.1E-3 VTO=-2.000  IS=5E-12)
+.MODEL DX  D(IS=1E-15)
+.ENDS
+

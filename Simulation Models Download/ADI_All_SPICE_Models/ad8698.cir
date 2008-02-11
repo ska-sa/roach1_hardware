@@ -1,0 +1,111 @@
+AD8698 SPICE Macro-model
+* Typical Values at Vs=±15V
+* 05/04, Ver. 1.0
+* Soufiane Bendaoud, ADSiV apps
+*
+* Copyright 2004 by Analog Devices
+*
+* Refer to "README.DOC" file for License Statement.  Use of this
+* model indicates your acceptance of the terms and provisions in
+* the License Statement.
+*
+* Node Assignments
+*		        noninverting input
+*	            	|	inverting input
+*		            |	|	positive supply
+*		            |	|	|	negative supply
+*		            |	|	|	|	output
+*		            |	|	|	|	|
+*		            |	|	|	|	|
+.SUBCKT AD8698	1	2	99	50	45
+*
+*INPUT STAGE
+*
+Q1   5  7 15 PIX
+Q2   6  2 15 PIX
+IOS  1  2 350E-12
+I1  99 15 100E-6
+EOS  7  1 POLY(4) (14,98) (73,98) (81,98) (70,98)  20E-6 1 1 1 1
+RC1  5 50 6E3
+RC2  6 50 6E3
+C1   5  6 6.5E-12
+D1  15  8 DX
+V1  99  8 DC 0.9
+*
+
+
+* CMRR=100dB
+*
+ECM   13 98 POLY(2) (1,98) (2,98) 0 0.0075 0.0075
+RCM1  13 14 1.59E1
+RCM2  14 98 1.06E-2
+CCM1  13 14 1E-6
+*
+
+* PSRR=85dB
+*
+EPSY 98 72 POLY(1) (99,50) 0 0.56234
+CPS3 72 73 1E-12
+RPS3 72 73 1.59e3
+RPS4 73 98 1.59E-1
+*
+* POLE AT 20MHz, ZERO AT 60MHz
+*
+G1 21 98 (5,6) 5.88E-6
+R1 21 98 170E3
+R2 21 22 85E3
+C2 22 98 40E-15
+*
+
+* VOLTAGE NOISE REFERENCE OF 8nV/rt(Hz)
+*
+VN1 80 98 0
+RN1 80 98 20E-3
+HN  81 98 VN1 6.5
+RN2 81 98 1
+
+*flicker noise 
+
+D5 69 98 DNOISE
+VSN 69 98 DC .6551
+H1 70 98 VSN 80
+RN 70 98 1
+
+
+* INTERNAL VOLTAGE REFERENCE
+*
+
+EREF 98  0 POLY(2) (99,0) (50,0) 0 .5 .5
+GSY  99 50  (99,50) 60E-6  
+EVP  97 98 POLY(1) (99,50) -0.6 0.5
+EVN  51 98 POLY(1) (50,99) 0.6 0.5
+
+*
+* GAIN STAGE
+*
+G2  25 98 (21,98) 3.33E-6
+R5  25 98 5.75E9
+CF  45 25 5E-12
+D3  25 99 DX
+D4  50 25 DX
+
+*
+* OUTPUT STAGE
+*
+Q3   45 41 99 POUT
+Q4   45 43 50 NOUT
+EB1  99 40 POLY(1) (98,25) 0.6535  1
+EB2  42 50 POLY(1) (25,98) 0.6535  1
+RB1  40 41 200
+RB2  42 43 200
+*
+* MODELS
+*
+.MODEL PIX PNP (BF=71429,IS=1E-16,KF=10E-16,AF=.5)
+.MODEL POUT PNP (BF=100,IS=1E-14,BR=1.689)
+.MODEL NOUT NPN (BF=100,IS=1E-14,BR=2.112)
+.MODEL DX D(IS=1E-14,CJO=1E-15)
+.MODEL DNOISE D(IS=1E-14,RS=0,KF=1E-15)
+
+.ENDS AD8698
+*$

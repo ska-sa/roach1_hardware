@@ -1,0 +1,151 @@
+* AD636P Spice Model  Rev. O, 11/2006
+*
+* This model was developed for Analog Devices by:
+* AEI Systems, LLC
+* 5777 W. Century Blvd., Suite 876
+* Los Angeles, California  90045-5677
+*
+* The model is ©2006, AEi Systems, LLC. All rights reserved. 
+*
+* Users may not directly or indirectly display, re-sell or 
+* re-distribute this model or any derivative work therefore 
+* without the prior written consent of both AEi Systems and 
+* Analog Devices. This model is subject to change without 
+* notice. Neither Analog Devices nor AEi Systems is responsible 
+* for updating this model.
+*
+* For more information regarding modeling services, model 
+* libraries and simulation products, please call AEi Systems 
+* at (310) 216-1144, or contact AEi Systems by 
+* email: info@aeng.com. Or visit AEi Systems on the web 
+* at http://www.AENG.com
+
+*$
+.SUBCKT AD636 VIN NVS CAV DBOUT BUFFOUT BUFFIN IOUT RL COM VS
+R4 VIN 13 20K
+R3 VIN 24 10K
+R5 24 15 8K
+X1 24 0 6 VS NVS OPAMP0 
+Q1 VS 6 15 NPN
+.MODEL NPN NPN
+R6 4 13 8K
+R1 8 CAV 25K
+GB3 CAV COM Value = {I(V4)*I(V4)}
+X2 7 11 BUFFOUT VS NVS AEIOPAMP
+VIREF DBOUT 19 DC=23M
+RF 7 BUFFOUT 10K
+V5 VS 8
+GBIOUT COM IOUT Value = {2*SQRT(I(V5))}
+R2 IOUT RL 10K
+Q2 VS 6 4 NPN
+V4 13 COM
+EB4 19 COM Value = {IF (I(V4)<100N, 0.026*(Log(I(VIREF))-Log(1U)), 0.026*(Log(I(VIREF))-Log(I(V4)*2)))}
+RBUFFIN BUFFIN COM 100MEG
+VBUFFIN BUFFIN 11
+.ENDS
+*$
+.SUBCKT OPAMP0 2    3  6   7  4
+* NODES:      - IN + OUT VCC VEE
+QNI1 10 2 13 QNI1
+QNI2 12 300 13 QNI1
+IOFST 2 3 1.0000N
+VOFST 300 3 2.0000U
+.MODEL QNI1 NPN(NF=843.33M BF=6.2000K IS=8E-16 CJE=3PF)
+Q3 13 14 4 QN741
+IEE 4 14 310.00N
+CCM 13 4 2.5PF
+RCM 13 4 10MEG
+RC1 11 10 1K
+RC2 11 12 1K
+CHF 10 12 18.333P
+D1 7 11 D741
+RP 7 4 10K
+GA 0 15 12 10 .9MMHO
+GCM 0 15 13 0 6.3NMHOS
+R2 15 0 100K
+D2 15 0 D741
+D3 0 15 D741
+C2 15 16 30PF
+GB 16 0 15 0 45.000M
+RO2 16 0 1000
+D4 16 17 D741P
+*EP 17 0 7 0 -1.8 1
+EP 17 0 Value = {V(7)-1.8}
+D5 18 16 D741P
+*EN 0 18 0 4 -2.3 1
+EN 0 18 Value = {-V(4)-2.3}
+.MODEL D741P D(RS=1M)
+D6 19 16 D741
+D7 16 20 D741
+IRO 20 19 170UA
+RR0 16 21 .1MEG
+Q4 7 19 21 QNO
+Q5 4 20 21 QPO
+.MODEL QNO NPN(BF=150 CJC=3P IS=1E-14)
+.MODEL QPO PNP(BF=150 CJC=3P IS=1E-14)
+L1 21 6 10.0000U
+RL1 21 6 1K
+.MODEL D741 D(CJO=3PF)
+.MODEL QN741 NPN
+.ENDS
+*$
+.SUBCKT AEIOPAMP 2    3  6   7   4
+*             - IN + OUT VCC VEE
+RP 4 7 10K
+IB 3 90 95.000N
+VIB 90 4
+IO 3 2 50.000P
+RIP 3 4 1G
+CIP 3 4 1.4PF
+FIBN 2 4 VIB 1
+RIN 2 4 1G
+CIN 2 4 1.4PF
+VOFST 2 10 1.7000M
+RID 10 3 1G
+EA 11 4 10 3 1
+R1 11 12 5K
+R2 12 13 50K
+C1 12 4 16.250F
+GA 4 14 4 13 10.800 
+C2 13 14 3.3750F
+RO 14 4A 75
+EBAL 4A 4 2A 4 1
+RBAL1 7 2A 1MEG
+RBAL2 2A 4 1MEG
+L 14 6 37.500N
+RL 14 6 1000
+CL 6 4 3PF
+D1 6 70 DN
+VSAT 70 7 -2.9100 
+D2 40 6 DN
+VSAT2 40 4 0
+.MODEL DN D
+.ENDS
+*$
+.SUBCKT AD636_Converter VIN NVS CAV DBOUT IOUT RL COM VS
+R4 VIN 13 20K
+R3 VIN 24 10K
+R5 24 15 8K
+X1 24 0 6 VS NVS OPAMP0 
+Q1 VS 6 15 NPN
+.MODEL NPN NPN
+R6 4 13 8K
+R1 8 CAV 25K
+GB3 CAV COM Value = {I(V4)*I(V4)}
+VIREF DBOUT 19 DC=23M
+V5 VS 8
+GBIOUT COM IOUT Value = {2*SQRT(I(V5))}
+R2 IOUT RL 10K
+Q2 VS 6 4 NPN
+V4 13 COM
+EB4 19 COM Value = {IF (I(V4)<100N, 0.026*(Log(I(VIREF))-Log(1U)), 0.026*(Log(I(VIREF))-Log(I(V4)*2)))}
+.ENDS
+*$
+.SUBCKT AD636_Buffer VS NVS COM BUFFOUT BUFFIN
+RBUFFIN BUFFIN COM 100MEG
+VBUFFIN BUFFIN 11
+X2 7 11 BUFFOUT VS NVS AEIOPAMP
+RF 7 BUFFOUT 10K
+.ENDS
+*$
+

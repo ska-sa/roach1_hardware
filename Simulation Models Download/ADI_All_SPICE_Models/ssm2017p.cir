@@ -1,0 +1,122 @@
+* SSM2017P SPICE Macro-model           4/92, Rev. A
+*                                       ARG / PMI
+*
+* Copyright 1990 by Analog Devices, Inc.
+*
+* Refer to "README.DOC" file for License Statement.  Use of this model
+* indicates your acceptance with the terms and provisions in the License Statement.
+*
+* Node assignments
+*                 non-inverting input
+*                 |  inverting input
+*                 |  |  positive supply
+*                 |  |  |  negative supply
+*                 |  |  |  |  output
+*                 |  |  |  |  |  ref
+*                 |  |  |  |  |  |  rg1
+*                 |  |  |  |  |  |  |  rg2
+*                 |  |  |  |  |  |  |  |
+.SUBCKT SSM2017P  1  2  99 50 45 19 5  6
+*
+* INPUT STAGE
+*
+I1   5    51   2E-3
+I2   6    51   2E-3
+IOS  1    2    1.25E-6
+CIN  1    2    40E-12
+VIOS 7    1    1.2E-3
+Q1   3    2    5    QN
+Q2   4    7    6    QN
+D1   5    2    DX
+D2   6    7    DX
+R1   97   3    250
+R2   97   4    250
+R3   5    8    5E3
+R4   6    9    5E3
+E1   8    45   11 3 10E3
+E2   9    45   11 4 10E3
+V1   97   11   0.5
+R13  97   11   1E6
+CC1  3    8    28E-12
+CC2  4    9    28E-12
+*
+* DIFFERENCE AMPLIFIER AND POLE AT 7MHZ
+*
+I3   97   12   7E-6
+R5   21   14   4E3
+R6   14   19   5E3
+R7   17   20   4E3
+R8   17   45   5E3
+R9   12   13   15.347E3
+R10  12   16   15.347E3
+Q3   15   14   13   QP
+Q4   18   17   16   QP
+R11  15   51   22.736E3
+R12  18   51   22.736E3
+R14  20   8    1E3
+R15  21   24   1E3
+C1   15   18   500E-15
+EOOS 24   9    POLY(1) 38 39 500E-3 1
+V2   97   22   4.6
+V3   23   51   4.6
+D3   21   22   DX
+D4   23   21   DX
+D5   20   22   DX
+D6   23   20   DX
+EPOS 97   0    99 0 1
+ENEG 51   0    50 0 1
+EREF 98   0    39 0 1
+RMP1 97   39   1
+RMP2 39   51   1
+*
+* GAIN STAGE AND DOMINANT POLE AT 100HZ
+*
+R16  25   98   2.274E9
+C2   25   98   700E-15E
+G1   98   25   18 15 43.982E-6
+V6   97   26   4.3
+V7   27   51   4.3
+D7   25   26   DX
+D8   27   25   DX
+*
+* POLE AT 2MHZ
+*
+R17  40   98   1
+C3   40   98   79.578E-9
+G2   98   40   25 39 1
+*
+* COMMON MODE STAGE WITH ZERO AT 50KHZ
+*
+E3   36   37   1 39 .5
+E4   37   98   2 39 .5
+R18  36   38   1
+R19  38   98   50.119E-3
+C5   36   38   3.183E-6
+*
+* OUTPUT STAGE
+*
+GSY  99   50   POLY(1) 99 50 12E-3 66.667E-6
+RO1  99   45   70
+RO2  45   50   70
+GO1  45   99   99 40 14.286E-3
+GO2  50   45   40 50 14.286E-3
+F1   45   0    V4 1
+F2   0    45   V5 1
+V4   41   45   .862
+V5   45   42   .862
+GC1  43   50   40 45 14.286E-3
+GC2  44   50   45 40 14.286E-3
+D9   50   43   DY
+D10  50   44   DY
+D11  99   43   DX
+D12  99   44   DX
+D13  40   41   DX
+D14  42   40   DX
+*
+* MODELS USED
+*
+.MODEL DX D
+.MODEL DY D(BV=50)
+.MODEL QN NPN(BF=80 RB=15 KF=2.788E-15 AF=1)
+.MODEL QP PNP(BF=350)
+.ENDS

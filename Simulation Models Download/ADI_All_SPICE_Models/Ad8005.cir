@@ -1,0 +1,153 @@
+*AD8005  SPICE model
+
+*      Node assignments
+*		   				 non-inverting input
+*			   			 |  inverting input
+*				   		 |  |  positive supply
+*					   	 |	 |  |   negative supply
+*						    |	 |	 |	  |  output
+* 							 |  |  |   |  |
+.SUBCKT AD8005 		 1  2  99  50 28
+
+
+***** Input stage 
+
+q1  50  3  5  qp1
+q2  99  5  4  qn1
+q3  99  3  6  qn1
+q4  50  6  4  qp1
+v1   4  2  0
+i1  99  5  0.26e-3
+i2   6  50 0.26e-3
+
+*cin1  1  98 1e-12
+*cin2  2  98 1.6e-12
+
+
+***** Input error sources
+
+*Vos    3  1  5e-3
+Vos    3  1  0 
+*fbn   2  98 poly(1) vnoise3 5e-6 1e-3
+*fbp   1  98 poly(1) vnoise3 5e-6 1e-3
+
+* slew limiting stage *
+
+fsl 98 100 v1 1
+dsl1 98 100 d1
+dsl2 100 98 d1
+dsl3 100 101 d1
+dsl4 101 100 d1
+rsl  101 102 160
+vsl  102 98 0
+
+****** CMRR *********
+
+*CCM 220 230 2.273642e-10 
+*RCM2 98 230 1 
+*RCM1 230 220 1e4 
+*ECM 220 98 98 1 100
+
+
+***** Gain stage Pole at 100KHz
+
+f1    98  7 poly(1) vsl 0 1.12 0 100
+rgain 7  98 1.8e6
+cgain 7  98 0.8e-12
+
+vcl1  99 8  1.1
+vcl2  9  50 1.1
+dcl1  7  8  d1
+dcl2  9  7  d1
+
+gcm 98 7 poly(2) 98 0 30 0 0 1e-5 1e-5
+
+
+***** Second Pole at 300MHz
+
+epole2 14 98 7 98 1
+rpole2 14 15 1
+cpole2 15 98 1.5e-10
+
+***** Third Pole
+
+epole3 17 98 15 98 1
+rpole3 17 16 1
+cpole3 16 98 25e-11
+
+***** Fourth Pole
+
+epole4 170 98 16 98 1
+rpole4 170 160 1
+cpole4 160 98 25e-11
+
+***** Buffer stage
+
+gbuf 98 13 160 98 1e-2
+rbuf 98 13 1e2
+
+***** Reference stage
+
+eref   98 0 poly(2) 99 0 50 0 0 0.5 0.5
+ecmref 30 0 poly(2) 1 0 2 0 0 0.5 0.5
+
+
+***** VNoise stage
+
+*rnoise1 19 98 10.6e-3
+*vnoise1 19 98 0
+*vnoise2  21 98 0.53
+*dnoise1 21 19 dn
+
+*fnoise1 20 98 vnoise3 1
+*rnoise2 23 98 1
+
+
+***** INoise stage
+
+*rnoise3 22 98 0.46e-3
+*vnoise3 22 98 0
+*vnoise4 24 98 0.6
+*dnoise2 24 22 dn
+
+*fnoise2 23 98 vnoise3 1
+*rnoise4 23 98 1
+
+
+
+***** Output current reflected to supplies
+
+fcurr 98 40 voc 1
+vcur1 26 98 0
+vcur2 98 27 0
+dcur1 40 26 d1
+dcur2 27 40 d1
+
+fout1 0  99 poly(2) vo1 vcur1 0 1 -1
+fout2 50 0  poly(2) vo2 vcur2 0 1 -1
+
+
+***** Output stage
+
+rout1 10 90 2
+rout2 10 91 2
+vo1 99 90 0
+vo2 91 50 0
+voc 10 28 0
+
+rout3 28 98 1e6
+gout1 10 90 99 13 0.5
+gout2 10 91 50 13 0.5
+
+vcl3 10 11 -1.3
+vcl4 12 10 -1.3
+dcl4 11 13 d1
+dcl3 13 12 d1
+
+				  
+
+.model qp1 pnp()
+.model qn1 npn(BF=100)
+.model d1 d()
+.model dn d()
+.ends ad8005

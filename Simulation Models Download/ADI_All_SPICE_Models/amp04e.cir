@@ -1,0 +1,133 @@
+* AMP04E  SPICE Macro-model             Rev. A, 5/94
+*                                       JCB / PMI
+*
+* This version of the AMP04 model simulates the worst case 
+* parameters of the 'E' grade over temperature.  The worst 
+* case parameters used correspond to those in the data sheet.
+*
+* Copyright 1994 by Analog Devices
+*
+* Refer to "README.DOC" file for License Statement.  Use of
+* this model indicates your acceptance of the terms and pro-
+* visions in the License Statement.
+*
+* Node assignments
+*                Rgain1
+*                |  IN-
+*                |  |  IN+
+*                |  |  |  V-
+*                |  |  |  |  REF
+*                |  |  |  |  |  Vout
+*                |  |  |  |  |  |  V+
+*                |  |  |  |  |  |  |  Rgain2
+*                |  |  |  |  |  |  |  |
+.SUBCKT AMP04E   1  2  3  4  5  6  7  8
+*
+* INPUT STAGE
+*
+R1   2    9    2E3
+R2   9   11    2E9
+R3   11  12    2E9
+R4   3   12    2E3
+IB1  2   98    50E-9
+IB2  3   98    40E-9
+VOS  12  13    33E-6
+D1   9   10    DY
+D2   1   10    DY
+D3   12  14    DY
+D4   8   14    DY
+*
+* 1ST AMP GAIN STAGE, POLE AT 0.44 HZ
+*
+EREF 98   0    (60,0) 1
+G1   98  15    9   1   1E-3
+R5   98  15    1E9
+C1   98  15    362E-12
+* SECOND POLE AT 1 MHZ 
+G3   98  16    15  98  1E-6
+R6   98  16    1E6
+C2   98  16    159E-15
+* OUTPUT STAGE
+E2   22  98    16  98  1
+R14  22   1    200
+*
+* 2ND AMP GAIN STAGE, POLE AT 0.44 HZ
+*
+G2   98  17    13  23  1E-3
+R7   98  17    1E9
+C3   98  17    362E-12
+* SECOND POLE AT 1 MHZ 
+G4   98  18    17  98  1E-6
+R8   98  18    1E6
+C4   98  18    159E-15
+* CMRR STAGE
+E1   98  19    POLY(2) (2,98) (3,98) 0 28 28
+R9   19  20    1E6
+R10  20  98    1
+* OUTPUT STAGE
+E3   21  98    18  98  1
+R11  21   8    11E3
+R12  21  23    11E3
+R13  23   5    100.8E3
+*
+* OUTPUT AMPLIFIER INPUT STAGE & POLE AT 10 KHZ
+*
+R15  29   4    5.16E3
+R16  28   4    5.16E3
+I1   7   30    10UA
+EOS  27   3    POLY(1)  20  98  300E-6   1
+Q1   29   8    30  QX
+Q2   28  27    30  QX
+R20  8    6    100.8E3
+CIN  28  29    20E-12
+*
+* SECOND GAIN STAGE AND SLEW CLAMP
+*
+R71  31  98     1E6
+G71  98  31     28  29  48.2E-6
+D30  31  32     DX
+D40  33  31     DX
+E10  7   32     POLY(1) 7  98  -0.5  1
+E20  33   4     POLY(1) 98  4  -0.5  1
+*
+* OUTPUT STAGE
+*
+RS1  7   60    1E6
+RS2  60   4    1E6
+ISY  7    4    0.424E-3
+*
+G7   34  36    31  98  5.5E-06
+V3   35   4    DC  6
+D7   36  35    DX
+VB2  34   4    1.6
+R22  37  36    1E3
+R23  38  36    500
+C6   37   6    50E-12
+C7   38  39    50E-12
+M1   39  36    4   4   MN  L=9E-6  W=1000E-6  AD=15E-9 AS=15E-9
+M2   45  36    4   4   MN  L=9E-6  W=1000E-6  AD=15E-9 AS=15E-9
+V02  39  61    0.2
+D8   61  47    DX
+D9   47  45    DX
+Q3   39  40    41  QPA  8
+VB   7   40    DC  0.761
+R24  7   41    375
+Q4   41   7    43  QNA  1
+R25  7   43    50
+Q5   43  39    62  QNA  20
+V01  62   6    0.2
+Q6   46  45    6   QPA  20
+R26  46   4    23
+Q7   36  46    4   QNA  1 
+M3   63  36    4   4   MN  L=9E-6  W=2000E-6  AD=30E-9 AS=30E-9
+V03  6   63    2E-3
+*
+.MODEL QNA NPN(BF=253)
+.MODEL MN NMOS(LEVEL=3 VTO=1.3 RS=0.3 RD=0.3 TOX=8.5E-8 
++ LD=1.48E-6 WD=1E-6 NSUB=1.53E16 UO=650 DELTA=10 VMAX=2E5
++ XJ=1.75E-6 KAPPA=0.8 ETA=0.066 CJ=0 L=9E-6 W=2000E-6)
+.MODEL QPA PNP(BF=61.5)
+.MODEL QX PNP(BF=12500)
+.MODEL DX D
+.MODEL DY D(BV=6.0)
+.ENDS

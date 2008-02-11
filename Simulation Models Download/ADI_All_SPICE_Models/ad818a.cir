@@ -1,0 +1,106 @@
+* AD818A SPICE Model                    Rev. A, 8/94
+*                                       ARG / PMI
+*
+* Revision History:
+*
+* - Changed EOS multiplier from 5 to 0.1; changed R9 from 10 ohms to
+*   500 ohms; changed C3 from 31.381E-9 to 31.381E-12, all in order
+*   to fix common mode rejection stage (and thereby, fix open-loop gain
+*   near 0dB crossing).
+*
+*
+* This version of the AD818 model simulates the worst case
+* parameters of the 'A' grade.  The worst case parameters
+* used correspond to those in the data sheet.
+*
+* Copyright 1993 by Analog Devices
+*
+* Refer to "README.DOC" file for License Statement.  Use of
+* this model indicates your acceptance of the terms and pro-
+* visions in the License Statement.
+*
+* Node assignments
+*                non-inverting input
+*                |  inverting input
+*                |  |  positive supply
+*                |  |  |  negative supply
+*                |  |  |  |  output
+*                |  |  |  |  |
+.SUBCKT AD818A   2  1  99 50 45
+*
+* INPUT STAGE AND POLE AT 400MHZ
+*
+I1   4    50   1E-3
+CIN  1    2    1.5E-12
+IOS  2    1    100E-9
+Q1   5    1    7    QN
+Q2   6    3    8    QN
+R3   99   5    750
+R4   99   6    750
+R5   7    4    698
+R6   8    4    698
+C1   5    6    239E-15
+EOS  3    2    POLY(1) (13,98) 2E-3 0.1
+*
+* GAIN STAGE AND DOMINANT POLE AT 15.9KHZ
+*
+EREF 98   0    (39,0) 1
+G1   98   9    (5,6) 1.333E-3
+R7   9    98   4.5E6
+C2   9    98   2.222E-12
+D1   9    10   DX
+D2   11   9    DX
+V1   99   10   2.2
+V2   11   50   2.2
+*
+* COMMON MODE GAIN STAGE WITH ZERO AT 5KHZ
+*
+ECM  12   98   POLY(2) (1,39) (2,39) 0 0.5 0.5
+R8   12   13   1E6
+R9   13   98   500
+C3   12   13   31.831E-12
+*
+* NEGATIVE ZERO AT 150MHZ
+*
+E1   14   98   (9,39) 1E6
+R11  14   15   1
+R12  15   98   1E-6
+FNZ  14   15   VNZ -1
+ENZ  16   98   (14,15) 1
+VNZ  17   98   DC 0
+CNZ  16   17   1.061E-9
+*
+* ZERO/POLE AT 20MHZ/25MHZ
+*
+E2   18   98   (15,39) 1.25
+R13  18   19   1
+R14  19   98   4
+C5   18   19   7.958E-9
+*
+* POLE AT 400MHZ
+*
+G2   98   40   (19,39) 1E-6
+R10  40   98   1E6
+C4   40   98   .398E-15
+*
+* OUTPUT STAGE
+*
+RS1  99   39   65E3
+RS2  39   50   65E3
+RO1  99   45   16
+RO2  45   50   16
+G7   45   99   (99,40) 62.5E-3
+G8   50   45   (40,50) 62.5E-3
+G9   98   60   (45,40) 62.5E-3
+D7   60   61   DX
+D8   62   60   DX
+V7   61   98   DC 0
+V8   98   62   DC 0
+FSY  99   50   POLY(2) V7 V8 6.27E-3 1 1
+D9   41   45   DX
+D10  45   42   DX
+V5   40   41   0.18
+V6   42   40   0.18
+.MODEL QN NPN(BF=75.758)
+.MODEL DX D()
+.ENDS AD818A

@@ -1,0 +1,209 @@
+
+**** AD8170 buffered mux macro-model **** rev B   SMR/ADI 8-29-97
+                                                  TRW/ADI 10-4-01
+* copyright 1997 by Analog Devices, Inc.
+
+* Refer to "README.DOC" file for License Statement.  Use of this model
+* indicates your acceptance with the terms and provisions in the License
+* Statement.
+
+* This model will give typical performance characteristics
+* for the following parameters;
+
+*                select
+*                | input 0
+*                | |  input 1
+*                | |  | inverting input
+*                | |  | | V+
+*                | |  | | |  V-
+*                | |  | | |  |  Vout
+.subckt ad8170an 1 13 3 7 99 50 31
+
+*** input mux/buffer ***
+
+* input 1 stage
+
+eos1 103 3 poly(1) 60 98 5e-3 1
+x1 1 10 buf
+rx1 10 2 1k
+cx1 2 0 1e-12
+g1 99 4 poly(1) 2 0 -3.426e-6 38.12e-6
+g2 5 50 poly(1) 2 0 -3.426e-6 38.12e-6
+q1 50 103 4 qp1
+q2 99 4 6 qn1
+q3 99 103 5 qn1
+q4 50 5 6 qp1
+
+* input 0 stage
+
+eos0 113 13 poly(1) 60 98 5e-3 1
+g3 99 14 poly(1) 2 0 133.453e-6 -38.12e-6
+g4 15 50 poly(1) 2 0 133.453e-6 -38.12e-6
+q5 50 113 14 qp1
+q6 99 14 6 qn1
+q7 99 113 15 qn1
+q8 50 15 6 qp1
+vin 6 7 0
+
+* input bias currents
+
+fb0 13 98 poly(1) vnoise1 7e-6 0.15e-3
+fb1 3  98 poly(1) vnoise1 7e-6 0.15e-3
+fbm 7  98 poly(1) vnoise1 3e-6 0.8e-3
+
+* common mode reference
+
+eref 98 0 poly(2) 99 0 50 0 0 0.5 0.5
+
+* slew limiting 
+
+fslew 98 20 vin 1
+dslew1 20 98 d1 
+dslew2 98 20 d1
+dslew3 20 21 d1
+dslew4 21 20 d1
+rslew  21 22 60
+vslew  22 98 0
+
+* gain/bw/vout limiting
+
+fgain 98 23 vslew 2
+rgain 98 23 600k
+cgain 98 23 1.1e-12
+vclamp1 99 34 0.7
+vclamp2 35 50 0.7
+dclamp1 23 34 d1
+dclamp2 35 23 d1
+
+gpole1 98 36 23 98 1e-3
+rpole1 36 98 1e3
+cpole1 36 98 2.5e-13
+
+* vnoise
+
+rnoise1 69 98 0.166e-3
+vnoise1 69 98 0
+vnoise2 61 98 0.518
+dnoise1 61 69 dn
+
+fnoise1 60 98 vnoise1 1
+rnoise2 60 98 1
+
+* inoise
+
+rnoise3 62 98 0.166e-3
+vnoise3 62 98 0
+vnoise4 64 98 0.526
+dnoise2 64 62 dn
+
+fnoise2 63 98 vnoise3 1
+rnoise4 63 98 1
+
+* buffer
+
+gbuf 98 24 36 0 1e-2
+rbuf 98 24 100
+
+* output current reflected to supplies
+
+fcurr 98 25 vout 0.1
+vcur1 26 98 0
+vcur2 98 27 0
+dcur1 25 26 d1
+dcur2 27 25 d1
+
+* output stage
+
+vo1 99 28 0
+vo2 29 50 0
+fout1 0 99 poly(2) vo1 vcur1 0 1 -10
+fout2 50 0 poly(2) vo2 vcur2 0 1 -10
+gout1 28 30 24 99 1
+gout2 29 30 24 50 1
+rout1 28 30 1
+rout2 29 30 1
+vout  30 31 0
+viclmp1 24 32 0.687
+viclmp2 33 24 0.687
+diclmp1 30 32 d1
+diclmp2 33 30 d1
+
+.model d1 d()
+.model qp1 pnp()
+.model qn1 npn()
+.model dn d(af=1 kf=1e-8)
+
+.ends ad8170an
+
+.subckt buf 1 2 
++   optional: dpwr=$g_dpwr dgnd=$g_dgnd
++   params: mntymxdly=0 io_level=0
+u1 buf dpwr dgnd
++   1 2
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={io_level}
+.ends buf
+
+.subckt AtoD_STD a d dpwr dgnd params: CAPACITANCE=0
+O0  A DGND DO74 DGTLNET=D IO_STD
+C1  A DGND {CAPACITANCE+0.1pF}
+D0      DGND    a       D74CLMP
+D1      1       2       D74
+D2      2       DGND    D74
+R1      DPWR    3       4k
+Q1      1       3       A       0       Q74 ; substrate should be DGND
+
+.model d74 d()
+.model d74clmp d()
+.model q74 pnp()
+.model DO74 doutput (
++       s0name="X"      s0vlo=0.8       s0vhi=2.0
++       s1name="0"      s1vlo=-1.5      s1vhi=0.8
++       s2name="R"      s2vlo=0.8       s2vhi=1.4
++       s3name="R"      s3vlo=1.3       s3vhi=2.0
++       s4name="X"      s4vlo=0.8       s4vhi=2.0
++       s5name="1"      s5vlo=2.0       s5vhi=7.0
++       s6name="F"      s6vlo=1.3       s6vhi=2.0
++       s7name="F"      s7vlo=0.8       s7vhi=1.4
++       )
+.ends atod_std
+
+.subckt DtoA_STD  D A  DPWR DGND
++       params: DRVL=0 DRVH=0 CAPACITANCE=0
+*
+N1  A DGND DPWR DIN74 DGTLNET=D IO_STD
+C1  A DGND {CAPACITANCE+0.1pF}
+.model DIN74 dinput (
++       s0name="0"      s0tsw=3.5ns     s0rlo=7.13      s0rhi=389 ; 7ohm,    0.09v
++       s1name="1"      s1tsw=5.5ns     s1rlo=467       s1rhi=200 ; 140ohm,  3.5v
++       s2name="X"      s2tsw=3.5ns     s2rlo=42.9      s2rhi=116 ; 31.3ohm, 1.35v
++       s3name="R"      s3tsw=3.5ns     s3rlo=42.9      s3rhi=116 ; 31.3ohm, 1.35v
++       s4name="F"      s4tsw=3.5ns     s4rlo=42.9      s4rhi=116 ; 31.3ohm, 1.35v
++       s5name="Z"      s5tsw=3.5ns     s5rlo=200K      s5rhi=200K
++       )
+.ends
+
+.subckt DIGIFPWR  AGND
++       optional: DPWR=$G_DPWR DGND=$G_DGND
++       params:   VOLTAGE=5.0v REFERENCE=0v
+*
+VDPWR  DPWR DGND  {VOLTAGE}
+R1     DPWR AGND  1MEG
+VDGND  DGND AGND  {REFERENCE}
+R2     DGND AGND  1MEG
+.model do74 d()
+.ends digifpwr
+
+.model D_00 ugate (tplhty=11ns tplhmx=22ns tphlty=7ns tphlmx=15ns)
+.model IO_STD uio (
++       drvh=96.4       drvl=104
++       AtoD1="AtoD_STD"        AtoD2="AtoD_STD_NX"
++       AtoD3="AtoD_STD"        AtoD4="AtoD_STD_NX"
++       DtoA1="DtoA_STD"        DtoA2="DtoA_STD"
++       DtoA3="DtoA_STD"        DtoA4="DtoA_STD"
++       tswhl1=1ms          tswlh1=1ms
++       tswhl2=1ms          tswlh2=1ms
++       tswhl3=1ms          tswlh3=1ms
++       tswhl4=1ms          tswlh4=1ms
++       DIGPOWER="DIGIFPWR"
++       )
+.ends

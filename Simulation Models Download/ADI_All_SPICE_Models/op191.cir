@@ -1,0 +1,111 @@
+* OP191 SPICE Macro-model               Rev. B, 11/04
+*                                       ARG / PMI
+*					TRW / ADI
+* Copyright 1994 by Analog Devices
+*
+* Refer to "README.DOC" file for License Statement. Use of
+* this model indicates your acceptance of the terms and pro-
+* visions in the License Statement.
+*
+* Node assignments
+*                non-inverting input
+*                |  inverting input
+*                |  |  positive supply
+*                |  |  |  negative supply
+*                |  |  |  |  output
+*                |  |  |  |  |
+.SUBCKT OP191    1  2  99 50 45
+*
+* INPUT STAGE
+*
+I1   99   7    8.06E-6
+Q1   6    4    7    QP
+Q2   5    3    7    QP
+D1   3    99   DX
+D2   4    99   DX
+D3   3    4    DX
+D4   4    3    DX
+R1   3    8    5E3
+R2   4    2    5E3
+R3   5    50   6.4654E3
+R4   6    50   6.4654E3
+EOS  8    1    POLY(1) 16 39 -80E-6 1
+IOS  3    4    50E-12
+GB1  3    98   21 98 50E-9
+GB2  4    98   21 98 50E-9
+CIN  1    2    1E-12
+*
+* 1ST GAIN STAGE
+*
+EREF 98   0    39 0 1
+G1   98   9    6 5 31.667E-6
+R7   9    98   1E6
+EC1  99   10   POLY(1) 99 39  -0.52 1
+EC2  11   50   POLY(1) 39 50 -0.52 1
+D5   9    10   DX
+D6   11   9    DX
+*
+* 2ND GAIN STAGE AND DOMINANT POLE AT 36HZ
+*
+G2   98   12   9 39 8E-6
+R8   12   98   276.311E6
+C2   12   98   16E-12
+D7   12   13   DX
+D8   14   12   DX
+V1   99   13   0.58
+V2   14   50   0.58
+*
+* COMMON MODE STAGE
+*
+ECM  15   98   POLY(2) 1 39 2 39 0 0.5 0.5
+R9   15   16   1E6
+R10  16   98   10
+*
+* POLE AT 2.5MHZ
+*
+G3   98   18   12 39 1E-6
+R11  18   98   1E6
+C4   18   98   63.662E-15
+*
+* BIAS CURRENT-VS-COMMON MODE VOLTAGE
+*
+EP   97   0    99 0 1
+VB   99   17   1.3
+RB   17   50   1E9
+E3   19   0    15 17 16
+D13  19   20   DX
+R12  20   0    1E6
+G4   98   21   20 0 1E-3
+R13  21   98   5E3
+D14  21   22   DY
+E4   97   22   POLY(1) 99 98 -0.765 1
+*
+* POLE AT 100MHZ
+*
+G6   98   40   18 39 1E-6
+R20  40   98   1E6
+C10  40   98   1.592E-15
+*
+* OUTPUT STAGE
+*
+RS1  99   39   109.375E3
+RS2  39   50   109.375E3
+RO1  99   45   41.667
+RO2  45   50   41.667
+G7   45   99   99 40 24E-3
+G8   50   45   40 50 24E-3
+G9   98   60   45 40 24E-3
+D9   60   61   DX
+D10  62   60   DX
+V7   61   98   DC 0
+V8   98   62   DC 0
+FSY  99   50   POLY(2) V7 V8 0.207E-3  1  1
+D11  41   45   DZ
+D12  45   42   DZ
+V5   40   41   0.131
+V6   42   40   0.131
+.MODEL DX D()
+.MODEL DY D(IS=1E-9)
+.MODEL DZ D(IS=1E-6)
+.MODEL QP PNP(BF=133.333)
+.ENDS

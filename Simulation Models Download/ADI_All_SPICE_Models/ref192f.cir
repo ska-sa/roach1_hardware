@@ -1,0 +1,85 @@
+* REF192F SPICE MACROMODEL                 12/95, Rev. A
+*                                            (AAG /ADSC)
+*
+* Copyright 1995 by Analog Devices, Inc.
+*
+* This version of the REF192 model simulates the worst-case
+* parameters of the 'F' grade.  The worst-case parameters
+* used correspond to those in the data sheet at room temperature
+*
+* Refer to "README.DOC" file for License Statement.
+* Use of this model indicates your acceptance with
+* the terms and provisions in the License Statement.
+*
+*  NODE NUMBERS
+*                VIN
+*                |  SHUTDOWN
+*                |  |  GND
+*                |  |  |  VOUT
+*                |  |  |  |
+.SUBCKT REF192F  2  3  4  6
+*
+* 1.23V REFERENCE
+*
+I1 4 10 DC 5.79709E-8
+R1 10 4 21.18E6 TC=8.909E-6
+GLR 4 10 2 4 4.6384E-13
+GLDR 4 10 22 6 2.405E-10
+C1 4 10 4.7214E-13
+*
+* OPEN-LOOP GAIN
+*
+G2 4 11 10 21 1E-4
+R2 4 11 1E6
+*
+* 3 POLES AT 2 MHZ
+*
+G3 4 12 11 4 1E-6
+R3 4 12 1E6
+C2 4 12 0.0796E-12
+*
+G4 4 13 12 4 1E-6
+R4 4 13 1E6
+C3 4 13 0.0796E-12
+*
+GX5 4 17 13 4 1E-6
+RX5 4 17 1E6
+CX3 4 17 0.0796E-12
+*
+* SHORT CIRCUIT LIMIT
+*
+G5 14 4 17 4 1E-4
+R10 14 4 1E4
+D1 4 14 DX
+G6 15 4 4 14 100E-6
+GSC 4 15 22 6 51E-6
+D2 16 15 DX
+V1 4 16 DC 0
+D3 15 4 DX
+F1 4 15 V3 100
+*
+* SHUTDOWN CIRCUIT
+*
+R12 2 3 10E6
+Q2 2 3 30 QN
+V2 30 31 DC 0
+R11 31 4 1.97E5
+F3 4 32 POLY(1) V2 5E-6 -1000
+D4 32 33 DX
+V3 33 4 DC 0
+D5 4 32 DX
+*
+* OUTPUT STAGE
+*
+ISY 2 4 DC 14.67E-6
+F2 20 4 V1 1
+R5 2 20 200E3
+Q1 22 20 2 QP 80
+R6 6 21 87.765E3
+R7 21 4 85E3
+RDO 22 6 27
+*
+.MODEL QP PNP(IS=1E-15 BF=10000)
+.MODEL QN NPN(BF=100000)
+.MODEL DX D(IS=1E-15)
+.ENDS

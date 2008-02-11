@@ -1,0 +1,148 @@
+*  AD9631an Spice Macro-model                  2/17/97,SMR,REV A
+*
+*  Copyright 1997 by Analog Devices, Inc.
+*
+* Refer to "README.DOC" file for License Statement.
+* Use of this model indicates your acceptance with
+* the terms and provisions in the License Statement.
+*
+* This is a second generation model of the AD9631a. In this
+* rev, voltage and current noise are modeled. Both of these 
+* noise sources are referred to the inputs.
+* 
+* The following parameters are also accurately modeled;
+*
+*    open loop gain and phase vs frequency
+*    output clamping voltage and current
+*    CMRR vs freq
+*    Slew rate
+*    Output currents are reflected to V supplies
+*
+*    Vos and Ibias are static and will not vary with Vcm.
+*    Step response is modeled at unity gain w/100 ohm load 
+*    and Rf =250 ohms.
+*
+*    Distortion is not characterized
+*
+*    Node assignments
+*                non-inverting input
+*                | inverting input
+*                | | positive supply
+*                | | |  negative supply
+*                | | |  |  output
+*                | | |  |  |
+.SUBCKT AD9631an 1 2 99 50 61   
+
+
+* input stage *
+
+r1 1 2 500k
+cin1 1 98 1.2e-12
+cin2 2 98 1.2e-12
+q1 5 17 6 qn
+q2 7 2 8 qn
+eos 17 89 poly(1) (23,98) 3.3e-3 1
+enoise 89 1 31 0 1 
+gnoise 99 2 36 0 1
+r3 99 5 12.94
+r4 99 7 12.94
+r5 6 9 12.42
+r6 8 9 12.42
+c2 5 7 10.26pf
+itail 9 50 0.1
+
+** v noise generation **
+
+dn1 80 81 dn 
+dn2 81 82 dn
+vn3 82 0 0
+rn1 82 0 340e-6
+vn1 80 0 0.4
+
+hn1 84 0 vn3 2.5
+rn2 84 85 1.5
+rn3 85 86 1
+ln1 86 0 1.25e-9
+
+en  30 0 85 0 1
+rn4 30 31 1 
+cn1 31 0 0.3nf
+
+** i noise generation **
+
+vn4 87 0 0
+rn5 87 0 2.92k
+
+hn2 35 0 vn4 1
+rn6 35 36 1e-6
+cn2 36 0 1e-1
+
+* gain stage,clamping - open loop gain=52dB * 
+* pd at 100khz *
+
+gm1 99 10 poly(1) 7 5 0 0.077 0 1e-3
+gm2 50 10 poly(1) 7 5 0 0.077 0 1e-3
+r7  99 10 10350
+r8  10 50 10350 
+c3  99 10 76.9pf
+c4  10 50 76.9pf
+vcl1 99 14 1.77
+vcl2 15 50 1.77
+d1 10 14 dx
+d2 15 10 dx
+
+***** frequency shaping stage, zero at 200mhz
+
+e1 11 98 10 98 10
+rz1 11 12 0.9 
+rz2 12 13 0.1
+l1 13 98 8e-11
+
+***** common mode reference
+
+ecmref 98 0 poly(2) 99 0 50 0 0 0.5 0.5
+einref 18 0 poly(2) 1 0 2 0 0 0.5 0.5
+
+***** vcm generation
+
+ecm1 19 98 18 98 27e-6
+rvcm1 19 20 666e-6
+rvcm2 20 21 1e-6
+lcm1 21 98 1.06e-12
+
+ecm2 22 98 20 98 833
+rvcm3 22 23 832e-6
+rvcm4 23 24 1e-6
+lcm2 24 98 1.3e-12
+
+***** buffer to output stage
+
+gbuf 98 16 12 98 1e-2
+rbuf1 98 16 1e2
+
+***** output stage
+
+fo1 98 110 vcd 1
+do1 110 111 dx
+do2 112 110 dx
+vi1 111 98 0
+vi2 98 112 0
+fsy 99 50 poly(2) vi1 vi2 -0.094 1 1
+iq 99 50 11e-3
+
+go3 60 99 99 16 0.1
+go4 50 60 16 50 0.1
+r03 60 99 10
+r04 60 50 10
+vcd 60 62 0
+lo1 62 61 4e-8
+ro2 61 98 1e9
+do5 16 70 dx
+do6 71 16 dx
+vo1 70 60 0.27
+vo2 60 71 0.27
+
+.model dx d(kf=1e-30 af=0 is=1e-15)
+.model dn d(kf=1.16e-13 af=0 is=1e-15) 
+.model qn npn(kf=1e-30 bf=6750 vaf=100 af=0)
+.ends AD9631an

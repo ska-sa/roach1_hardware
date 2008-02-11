@@ -1,0 +1,64 @@
+* AD8564 SPICE Macro-Model Typical Values
+* 11/98, Ver. 2.1
+* TAM / ADSC
+*
+* Node assignments
+*		non-inverting input
+*		|	inverting input
+*		|	|	positive supply
+*		|	|	|	negative supply
+*		|	|	|	|	ground
+*		|	|	|	|	|	output
+*		|	|	|	|	|	|
+.SUBCKT AD8564	1	2	99	50	51	45
+*
+* INPUT STAGE
+*
+*
+Q1  4  3 5 PIX
+Q2  6  2 5 PIX
+IBIAS 99 5 800E-6 
+RC1 4 50 1E3
+RC2 6 50 1E3
+CL1 4  6 2.5E-12
+CIN 1  2 3E-12
+EOS 3  1 (4,6) 1E-3
+*
+* Reference Voltage
+*
+EREF 98 0 POLY(2) (99,0) (50,0) 0 0.5 0.5
+RDUM 98 0 100E3
+GSY  99 50 POLY(1) (99,50) 8E-3 -2.6E-3 
+*
+* Gain Stage Av=250 fp=100MHz
+*
+G1 98 20 (4,6) 0.25
+R1 20 98 1E3
+C1 20 98 10E-13
+E3 97  0 (99,0) 1
+E4 52  0 (51,0) 1
+V1 97 21 DC 0.8
+V2 22 52 DC 0.8
+D1 20 21 DX
+D2 22 20 DX
+*
+* Output Stage
+*
+Q3  99 41 46 NOX
+Q4  47 42 51 NOX
+RB1 43 41 200
+RB2 40 42 200
+CB1 99 41 10E-12
+CB2 42 51 100E-12
+RO1 46 44 1
+D4  44 45 DX
+RO2 47 45 500
+EO1 97 43 (20,51) 1
+EO2 40 52 (20,51) 1
+*
+* MODELS
+*
+.MODEL PIX PNP(BF=100,VAF=130,IS=1E-14)
+.MODEL NOX NPN(BF=100,VAF=130,IS=1E-14)
+.MODEL DX D(IS=1E-14,CJO=1E-15)
+.ENDS AD8564

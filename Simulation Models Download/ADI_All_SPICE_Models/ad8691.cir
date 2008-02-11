@@ -1,0 +1,99 @@
+* AD8691 SPICE Macro-model
+* Typical Values
+* 02/07, Version 0
+* RM
+*
+* Copyright 2007 by Analog Devices
+*
+* Refer to "README.DOC" file for License Statement.  Use of this
+* model indicates your acceptance of the terms and provisions in
+* the License Statement.
+*
+* Node Assignments
+*                       noninverting input
+*                       |   inverting input
+*                       |   |    positive supply
+*                       |   |    |   negative supply
+*                       |   |    |   |   output
+*                       |   |    |   |   |
+*                       |   |    |   |   |
+.SUBCKT AD8691          1   2   99  50  45
+*
+* INPUT STAGE
+*
+M1  14  7  8  8 PIX L=1E-6 W=1.12E-02
+M2  16  2  8  8 PIX L=1E-6 W=1.12E-02
+RC5 14 50 8.00E+02
+RC6 16 50 8.00E+02
+C1  14 16 6.29E-12
+I1  99  8 5.00E-04
+V1  99  9 1.233E+00
+D1   8  9 DX
+EOS  7  1 POLY(4) (22,98) (73,98) (81,98) (70,98) 4.00E-04 1 1 1 1
+IOS  1  2 5.00E-14
+*
+* CMRR=95dB, POLE AT 10000 Hz
+*
+E1  21 98 POLY(2) (1,98) (2,98) 0 1.58E-03 1.58E-03
+R10 21 22 2.59E+01
+R20 22 98 1.59E-01
+C10 21 22 1.00E-06
+*
+* PSRR=85dB, POLE AT 4000 Hz
+*
+EPSY 72 98 POLY(1) (99,50) -7.03E-02 1.41E-02
+CPS3 72 73 1.00E-06
+RPS3 72 73 3.98E+01
+RPS4 73 98 1.59E-01
+*
+* VOLTAGE NOISE REFERENCE OF 8nV/rt(Hz)
+*
+VN1 80 98 0
+RN1 80 98 16.45E-3
+HN  81 98 VN1 7.94E+00
+RN2 81 98 1
+*
+* FLICKER NOISE CORNER = 300 Hz
+*
+D5  69 98 DNOISE
+VSN 69 98 DC 0.6551
+H1  70 98 POLY(1) VSN 1.00E-03 1.00E+00
+RN  70 98 1
+*
+* INTERNAL VOLTAGE REFERENCE
+*
+EREF 98  0 POLY(2) (99,0) (50,0) 0 0.5 0.5
+GSY  99 50 POLY(1) (99,50) -3.32E-04 2.50E-05
+EVP  97 98 POLY(1) (99,50) 0 0.5
+EVN  51 98 POLY(1) (50,99) 0 0.5
+*
+* GAIN STAGE
+*
+G1 98 30 POLY(1) (14,16)  0 1.67E-02
+R1 30 98 1.00E+06
+RZ 30 31 9.82E+01
+CF 45 31 1.34E-09
+V3 32 30 1.01E+00
+V4 30 33 2.74E-01
+D3 32 97 DX
+D4 51 33 DX
+*
+* OUTPUT STAGE
+*
+M5  45 46 99 99 POX L=1E-6 W=1.56E-03
+M6  45 47 50 50 NOX L=1E-6 W=2.78E-03
+EG1 99 46 POLY(1) (98,30) 6.023E-01 1
+EG2 47 50 POLY(1) (30,98) 5.337E-01 1
+*
+* MODELS
+*
+.MODEL POX PMOS (LEVEL=2,KP=1.00E-05,VTO=-0.328,LAMBDA=0.01,RD=0)
+.MODEL NOX NMOS (LEVEL=2,KP=1.00E-05,VTO=+0.328,LAMBDA=0.01,RD=0)
+.MODEL PIX PMOS (LEVEL=2,KP=1.00E-05,VTO=-5.00E-01,LAMBDA=0.01)
+.MODEL DX D(IS=1E-14,RS=5)
+.MODEL DNOISE D(IS=1E-14,RS=0,KF=1.92E-11)
+*
+*
+.ENDS AD8691
+*
+$

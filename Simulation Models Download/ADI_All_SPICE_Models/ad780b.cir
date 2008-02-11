@@ -1,0 +1,92 @@
+* AD780B SPICE Macromodel 5/93, Rev. A
+* AAG / PMI
+*
+* This version of the AD780 voltage reference model simulates the worst case
+* parameters of the 'B' grade.  The worst case parameters used
+* correspond to those in the data sheet.
+*
+* Copyright 1993 by Analog Devices, Inc.
+*
+* Refer to "README.DOC" file for License Statement.  Use of this model
+* indicates your acceptance with the terms and provisions in the License Statement.
+*
+*  NODE NUMBERS
+*              VIN
+*               |  TEMP
+*               |  |  GND
+*               |  |  |  TRIM
+*               |  |  |  |  VOUT
+*               |  |  |  |  |  RANGE
+*               |  |  |  |  |  |
+.SUBCKT AD780B  2  3  4  5  6  8
+*
+* BANDGAP REFERENCE
+*
+I1 4 40 DC 1.21369E-3
+R1 40 4 1E3 TC=3E-6
+EN 10 40 42 0 1
+G1 4 10 2 4 4.85668E-9
+F1 4 10 POLY(2) VS1 VS2 (0,2.42834E-5,3.8E-5)
+Q1 2 10 11 QT
+I2 11 4 DC 12.84E-6
+R2 11 3 1E3
+I3 3 4 DC 0
+*
+* NOISE VOLTAGE GENERATOR
+*
+VN1 41 0 DC 2
+DN1 41 42 DEN
+DN2 42 43 DEN
+VN2 0 43 DC 2
+*
+* INTERNAL OP AMP
+*
+G2 4 12 10 20 1.93522E-4
+R3 12 4 2.5837E9
+C1 12 4 6.8444E-11
+D1 12 13 DX
+V1 2 13 DC 1.2
+*
+* SECONDARY POLE @ 508 kHz
+*
+G3 4 14 12 4 1E-6
+R4 14 4 1E6
+C2 14 4 3.1831E-13
+*
+* OUTPUT STAGE
+*
+ISY 2 4 6.8282E-4
+FSY 2 4 V1 -1
+RSY 2 4 500E3
+*
+G4 4 15 14 4 25E-6
+R5 15 4 40E3
+Q2 4 15 16 QP
+I4 2 16 DC 100E-6
+Q3 4 16 18 QP
+R6 18 23 15
+R7 16 21 150E3
+R8 2 17 34.6
+Q4 17 16 19 QN
+R9 21 20 6.46E3
+R10 20 4 6.1E3
+R11 20 5 53E3
+R12 20 8 15.6E3
+I5 5 4 DC 0
+I6 8 4 DC 0
+VS1 21 19 DC 0
+VS2 23 21 DC 0
+L1 21 6 1E-7
+*
+* OUTPUT CURRENT LIMIT
+*
+FSC 15 4 VSC 1
+VSC 2 22 DC 0
+QSC 22 2 17 QN
+*
+.MODEL QT NPN(IS=1.56E-16 BF=1E4)
+.MODEL QN NPN(IS=1E-15 BF=1E3)
+.MODEL QP PNP(IS=1E-15 BF=1E3)
+.MODEL DX D(IS=1E-15)
+.MODEL DEN D(IS=1E-12 RS=2.425E+05 AF=1 KF=6.969E-16)
+.ENDS AD780B

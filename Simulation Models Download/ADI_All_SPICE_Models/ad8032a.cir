@@ -1,0 +1,173 @@
+*  AD8032a Spice Macro-model           ADI/SMR 8/96, Rev C
+*
+*  Copyright 1996 by Analog Devices, Inc.
+*
+* Refer to "README.DOC" file for License Statement.
+* Use of this model indicates your acceptance with
+* the terms and provisions in the License Statement.
+*
+* The following parameters are accurately modeled;
+*
+*    open loop gain and phase vs frequency
+*    output clamping voltage and current
+*    input common mode range
+*    CMRR vs freq
+*    I bias vs Vcm in    
+*    Slew rate
+*    Output currents are reflected to V supplies
+*
+*    Vos is static and will not vary with Vcm in
+*    Step response is modeled at unity gain w/1k load 
+*
+*    Distortion and noise are not characterized
+*
+*    Node assignments
+*                non-inverting input
+*                | inverting input
+*                | | positive supply
+*                | | |  negative supply
+*                | | |  |  output
+*                | | |  |  |
+.SUBCKT AD8032a  1 2 99 50 61   
+
+***** Input bias current source
+
+ecm 20 0 3 97 1 
+d1 20 21 dx
+d2 23 20 dx
+v3 21 22 -0.9
+v4 24 23 -0.9
+r20 22 0 100
+r21 24 0 100
+f1 0 25 v3 1 
+f2 25 0 v4 1
+r22 25 0 1k
+d3 25 26 dx
+d4 27 25 dx
+v5 26 0 0.2
+v6 0 27 0.3
+g1 1 0 25 0 400e-9
+g2 2 0 25 0 400e-9
+
+***** Input Stage
+
+R1 1 3 140k
+R2 3 2 140k
+C1 1 2 1.6pf
+R3 1 98 40e6
+R4 2 98 40e6 
+r9 15 7 1015
+r10 16 7 1015
+q1 5 1 15 qn1
+q2 6 4 16 qn1
+r5 99 5 1515
+r6 99 6 1515
+cp 5 6 0.657p
+ib3 7 50 1e-4
+eos 2 4 poly(1) (105,98) 0.55e-3 1 
+*Vos 2 4 0
+
+***** dummy first stage (pnp) for correct bias current
+
+ib4 81 99 1e-4
+r11 82 81 1015
+r12 83 81 1015
+q3 84 1 82 qp1 
+q4 85 4 83 qp1
+r13 50 84 1515
+r14 50 85 1515
+
+***** gain stage/pole at 3000hz/clamp circuitry
+
+g3 99 31 6 5 .820
+g4 31 50 5 6 .820
+r7 99 31 16076
+r8 31 50 16076
+c3 99 31 3.3n
+c4 31 50 3.3n
+
+vc1 99 45 0.66
+vc2 46 50 1.11
+dc1 31 45 dx
+dc2 46 31 dx
+
+***** pole 100MHz
+
+g100 99 42 31 0 1u
+g101 42 50 0 31 1u
+r300 99 42 1e6
+r301 42 50 1e6
+C300 99 42 1.59f
+C301 42 50 1.59f
+
+
+***** zero/pole 25MHz/60MHz
+
+g5 99 33 42 0 1u
+g6 33 50 0 42 1u
+Rg1 99 34 1.4e6
+Rg2 34 33 1e6 
+Rg3 35 33 1e6
+Rg4 35 50 1.4e6
+Lg1 99 34 3.71m
+Lg2 35 50 3.71m
+
+***** internal reference
+
+rdiv1 99 97 100k
+rdiv2 97 50 100k
+Eref 98 0 97 0 1
+rref 98 0 1e6
+
+***** Common mode gain network
+
+gacm1 99 100 3 98 7.94e-13
+gacm2 100 50 98 3 7.94e-13
+racm1 99 100 1e4
+racm2 100 50 1e4
+
+***** Common mode gain network/zero at 2530hz 
+
+ecm1  101 98 100 98 1e6 
+racm3 101 102 1e6
+racm4 102 103 1
+lacm1 103 98 62.9u
+
+***** Common mode gain network/zero at 450hz/pole at 1mhz
+
+ecm2  104 98 102 98 6000
+racm5 104 105 6000
+racm6 105 106 1
+lacm2 106 98 354u
+
+***** buffer to output stage
+
+gbuf 98 32 33 98 1e-4
+re1 32 98 10k
+
+***** output stage
+
+fo1 98 110 vcd 1
+do1 110 111 dx
+do2 112 110 dx
+vi1 111 98 0
+vi2 98 112 0
+
+fsy 99 50 poly(2) vi1 vi2 5.61e-4 1 1
+
+go3 60 99 99 32 0.5
+go4 50 60 32 50 0.5
+r03 60 99 2
+r04 60 50 2
+vcd 60 62 0
+lo1 62 61 2u
+ro2 61 98 1e9
+do5 32 70 dx
+do6 71 32 dx
+vo1 70 60 -0.642
+vo2 60 71 -0.628
+
+.model dx d(is=1e-15)
+.model qn1 npn(bf=2500 vaf=100)
+.model qp1 pnp(bf=2500 vaf=60)
+.ends ad8032a

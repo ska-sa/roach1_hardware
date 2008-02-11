@@ -1,0 +1,122 @@
+* AD8225 SPICE Macro-model              7/02, Rev. B
+*                                       SPL
+*
+* This model simulates the worst-case
+* parameters of the AD8225. The worst-case parameters used 
+* correspond to the following, as specified in the data sheet: 
+*
+*      Differential Gain and Bandwidth
+*      Common-Mode Gain and Bandwidth
+*      Gain Error
+*      Supply Current
+*      Vos
+*      Ios
+*      Ibias
+*
+*
+* Copyright 2002 by Analog Devices, Inc.
+*
+* Refer to "README.DOC" file for License Statement. Use of this model
+* indicates your acceptance with the terms and provisions in the License
+* Statement.
+*
+* Node assignments
+*                 non-inverting input
+*                 |  inverting input
+*                 |  |  positive supply
+*                 |  |  |  negative supply
+*                 |  |  |  |  output
+*                 |  |  |  |  |  ref
+*                 |  |  |  |  |  |  
+*                 |  |  |  |  |  |  
+*                 |  |  |  |  |  |  
+*
+.SUBCKT AD8225    1  2  99 50 46 20  
+D1         7 4 DX 
+Q3         12 13 14 QN2 
+IOS         3 4 DC 0.5e-9Adc  
+D7         25 26 DX 
+E3         36 98 Poly(2) 1 98 2 98 0 0.5 0.5
+D14         42 40 DX 
+GSY         99 50 Poly(1) 99 50 609e-6 16.2e-6
+R8         99 15  11.937e3  
+CCM         3 4  2e-12  
+C2         25 98  7.167e-12  
+R19         38 98  1  
+R12         13 46  10e3  
+GO1         45 99 99 40 4e-3
+R2         2 4  400  
+V7         27 50 1.33Vdc
+I4         50 3 DC 1.08nAdc  
+R18         36 38  1e6  
+D15         53 13 DX 
+RO2         45 50  250  
+R6         8 10  24.7e3  
+D8         27 25 DX 
+C5         36 38  224.812e-13  
+R14         16 20  10e3  
+D12         99 44 DX 
+R3         99 5  100e3  
+G1         98 25 12 15 83.776e-6
+C1         12 15  6.667e-13  
+E_E2         10 46 11 6 375e6
+V6         99 26 1.53Vdc
+Q4         15 16 17 QN2 
+D2         8 21 DX 
+R16         25 98  35.810e9  
+V3         99 52 0.7Vdc
+Q2         6 21 8 QN1 
+R11         9 13  10e3  
+R4         99 6  100e3  
+GC2         44 50 45 40 4e-3
+R13         16 19  10e3  
+CD2         4 0  2e-12  
+D16         54 16 DX 
+VIOS         21 3 125e-6Vdc
+R10         17 18  1.592e3  
+RO1         99 45  250  
+RV1         99 11  1e3  
+I5         50 4 DC 0.52nAdc  
+C3         40 98  15.916e-9  
+EREF         98 0 Poly(2) 99 0 50 0 0 0.5 0.5
+D3         13 51 DX 
+D13         40 41 DX 
+Q1         5 4 7 QN1 
+R1         1 3  400  
+R17         40 98  1  
+GO2         50 45 40 50 4e-3
+R9         14 18  1.592e3  
+R7         99 12  11.937e3  
+D9         50 43 DY 
+CD1         3 0  2e-12  
+CC2         6 10  4e-12  
+G2         98 40 25 98 1
+GC1         43 50 40 45 4e-3
+EOOS         19 10 Poly(1) 38 98 1.2e-3 223.872
+I3         18 50 DC 5e-6Adc  
+V1         99 11 0.5Vdc
+I2         8 50 DC 5.002e-6Adc  
+V13         54 50 0.7Vdc
+L_L1         45 46  1e-6  
+V2         99 51 0.7Vdc
+CC1         5 9  4e-12  
+E_E1         9 46 11 5 375e6
+V12         53 50 0.7Vdc
+D11         99 43 DX 
+D4         16 52 DX 
+I1         7 50 DC 5.002e-6Adc  
+R5         7 9  24.7e3  
+R15         7 8  12.395k  
+D10         50 44 DY 
+F1   45   0    VF1 1
+F2   0    45   VF2 1
+VF1   41   45   1.65
+VF2   45   42   1.65
+
+.model DX D Is=1e-12 Cjo=.1pF Rs=.1
+.model DY D IS=1e-12 BV=50
+.model QN1 NPN (BF=2.5e3 KF=0.7e-15 AF=1)
+.model QN2 NPN (BF=250 KF=0.5e-14 AF=1)
+
+.ENDS AD8225
+

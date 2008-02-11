@@ -1,0 +1,95 @@
+* Refer to "README.DOC" file for License Statement.
+* Use of this model indicates your acceptance with
+* the terms and provisions in the License Statement.
+*
+* The following parameters are accurately modeled;
+*
+*       open loop gain and phase vs. frequency
+*       output impedance vs. frequency
+*       output clamping voltage and current
+*       input common mode range
+*       slew rate
+*       output currents are reflected to V supplies
+*
+*       Vos is static and will not vary
+*       step response is modeled at
+*       distortion is not characterized       
+*
+*
+*    Node assignments
+*              non-inverting input
+*              | inverting input
+*              | | positive supply
+*              | | |  negative supply
+*              | | |  |  output
+*              | | |  |  |
+.SUBCKT AD8057 1 2 99 50 30
+
+
+* COMMON-MODE GAIN NETW0RK
+Ecm 20 15 POLY(2) 2 15 1 15 0 .5 .5 
+Gcm 15 21 20 15 .4e-6
+L4 21 23 1e-3
+R9 23 15 1k
+
+* INPUT STAGE
+Eos 9 2 POLY(1) 21 15 2.5e-3 1
+Ios 2 1 0.75e-6
+Cin 1 0 2e-12
+Q1 5 1 10 QIN
+Q2 6 9 11 QIN
+R3 99 5 2573 
+R4 99 6 2573
+R5 10 4 2538
+R6 11 4 2538
+I1 4 50 1.5e-3
+
+* GAIN STAGE & POLE AT 220 kHz
+Eref 15 0 POLY(2) 99 0 50 0 0 .5 .5 
+G1 13 15 5 6 0.3m
+R7 13 15 1.4Meg
+C3 13 15 0.5p
+V1 99 14 0.7
+V2 16 50 0.7
+D1 13 14 DX
+D2 16 13 DX
+
+*POLE AT 2200 MHz
+G2 15 43 13 15 9.3m
+R10 15 43 145
+C5 15 43 0.5p
+
+*POLE AT 2200 MHz
+G3 15 53 43 15 9.3m
+R11 15 53 145
+C6 15 53 0.5p
+
+* BUFFER STAGE
+Gbuf 15 32 53 15 1e-3
+Rbuf 32 15 1000
+
+* OUTPUT STAGE
+R18 25 99 .34
+R19 25 50 .34
+Vcd 30 25 0
+G6 25 99 99 32 2.94
+G7 50 25 32 50  2.94
+V4 26 25 -0.758
+V5 25 27 -0.758
+D5 32 26 Dx
+D6 27 32 DX
+
+Fo1 15 70 vcd 1
+D7 70 71 DX
+D8 72 70 DX
+Vi1 15 71 0
+Vi2 72 15 0
+
+Erefq 96 0 30 0 1 
+Iq 99 50 -.859m
+Fq1 99 96 POLY(2) Vi2 Vcd 0 -1 0.5
+Fq2 96 50 POLY(2) Vi1 Vcd 0 -1 -0.5
+
+.MODEL QIN NPN(BF=1000 VA=200 IS=0.5E-16)
+.MODEL DX D(IS=1e-15) 
+.ENDS

@@ -1,0 +1,109 @@
+* AD8614/AD8644 SPICE Macro-model
+* Typical Values
+* 11/99, Ver. 1.1
+* Troy Murphy / ADSC
+*
+* Copyright 1996 by Analog Devices
+*
+* Refer to "README.DOC" file for License Statement.  Use of this model
+* indicates your acceptance of the terms and provisions in the License
+* Statement.
+*
+* Node Assignments
+*                      noninverting input
+*                      |       inverting input
+*                      |       |       positive supply
+*                      |       |       |       negative supply
+*                      |       |       |       |       output
+*                      |       |       |       |       |
+*                      |       |       |       |       |
+.SUBCKT AD8614         1       2       99      50      45
+*
+* RAIL-TO-RAIL INPUT STAGE
+*
+Q1    5  7  3 PIX
+Q2    6  2  4 PIX
+Q3   11  7 13 NIX
+Q4   12  2 14 NIX
+RC1   5 50 2310
+RC2   6 50 2310
+RC3  99 11 2310
+RC4  99 12 2310
+RE1   3 10 620
+RE2   4 10 620
+RE3  13 15 620
+RE4  14 15 620
+I1   99 10 300E-6
+I2   15 50 300E-6
+RCM1 10 99 5.58E+5
+RCM2 15 50 5.58E+5
+CCM1 10 99 1.43E-11
+CCM2 15 50 1.43E-11
+C1    5  6 1.19E-12
+C2   11 12 1.19E-12
+D1    3  8 DX
+D2    4  9 DX
+D3   16 13 DX
+D4   17 14 DX
+V1   99  8 DC 0.7
+V2   99  9 DC 0.7
+V3   16 50 DC 0.7
+V4   17 50 DC 0.7
+EOS   7  1 POLY(2) (73,98) (81,98) 1E-3 1 1
+IOS   1  2 10E-9
+*
+* PSRR=100dB, ZERO AT 100Hz
+*
+RPS1 70  0 1E+6
+RPS2 71  0 1E+6
+CPS1 99 70 1E-5
+CPS2 50 71 1E-5
+EPSY 98 72 POLY(2) (70,0) (0,71) 0 1 1
+RPS3 72 73 15.9E+6
+CPS3 72 73 50E-12
+RPS4 73 98 159
+*
+* VOLTAGE NOISE REFERENCE OF 10nV/rt(Hz)
+*
+VN1 80 98 0
+RN1 80 98 16.45E-3
+HN  81 98 VN1 10
+RN2 81 98 1
+*
+* INTERNAL VOLTAGE REFERENCE
+*
+EREF 98  0 POLY(2) (99,0) (50,0) 0 .5 .5
+GSY  99 50 POLY(1) (99,50) 41.121E-6 5E-6
+EVP  97 98 (99,50) 0.5
+EVN  51 98 (50,99) 0.5
+*
+* GAIN STAGE
+*
+G1   98 30 POLY(2) (5,6) (11,12) 0 3.125E-4 3.125E-4
+R1   30 98 2.25E+6
+CF   30 45 49E-12
+D5   30 97 DX
+D6   51 30 DX
+*
+* RAIL-TO-RAIL OUTPUT STAGE
+*
+Q5   45 41 99 POUT
+Q6   45 43 50 NOUT
+EB1  99 40 POLY(1) (98,30) 0.7129 1
+EB2  42 50 POLY(1) (30,98) 0.7129 1
+RB1  40 41 500
+RB2  42 43 500
+D7   46 99 DX
+D8   47 43 DX
+V5   46 41 0.5
+V6   47 50 0.5
+*
+.MODEL NIX NPN (BF=220,IS=1E-16,VAF=130,KF=2.5E-14)
+.MODEL PIX PNP (BF=220,IS=1E-16,VAF=130,KF=2.5E-14)
+.MODEL POUT PNP (BF=100,IS=1E-16,VAF=200,RC=4)
+.MODEL NOUT NPN (BF=100,IS=1E-16,VAF=200,RC=4)
+.MODEL DX D(IS=1E-16,RS=5)
+.ENDS AD8614
+
+
+
