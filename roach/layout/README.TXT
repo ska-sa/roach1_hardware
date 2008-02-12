@@ -77,8 +77,8 @@ Socorro New Mexico USA
 mrevnell@nrao.edu
 
 Francois Kapp
-South African Square Kilometere Array
+South African Square Kilometre Array
 Capetown South Africa
 
-+27 (0)21 531 7282
++27 21 531 7282
 francois.kapp@ska.ac.za
