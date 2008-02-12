@@ -28,7 +28,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1202327693"))
+		(file_ext "roach_top.pxr" "1202832375"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -607,6 +607,15 @@
 			(pin 3  4 "SUP_ESD_SOT23_1KV__SUP_ESD_SOT23_1KV_1" 0 "C2" 0)
 			(pin 1  4 "SUP_ESD_SOT23_1KV__SUP_ESD_SOT23_1KV_1" 0 "A2" 0)
 			(pin 2  4 "SUP_ESD_SOT23_1KV__SUP_ESD_SOT23_1KV_2" 0 "A2" 0))
+		(part "SNPATCH")
+		(logical_part_mapping "SNPATCH"
+			(comp "U65"))
+		(logical_part "SNPATCH"
+			(slots
+				(slot "SNPATCH__SNPATCH_1"
+					(attributes
+						(attval "PKG_TYPE" "SNPATCH")
+						(attval "REFDES" "U?")))))
 		(part "SN74AVCH4T245DGV")
 		(logical_part_mapping "SN74AVCH4T245DGV"
 			(comp "U14" "U13" "U12" "U11" "U10"))
@@ -6784,6 +6793,11 @@
 			(attributes
 				(attval "DEVICE" "DIFFVIA")
 				(attval "REFDES" "V1")))
+		(component "SNPATCH"
+			(place "U65" 0.0 0.0 top 0.0)
+			(attributes
+				(attval "DEVICE" "SNPATCH")
+				(attval "REFDES" "U65")))
 		(component "MEERKATLOGO"
 			(place "U64" 0.0 0.0 top 0.0)
 			(attributes
@@ -24313,6 +24327,7 @@
 		(func "$1I2\$1I952" "" "V3" 1)
 		(func "$1I2\$1I951" "" "V2" 1)
 		(func "$1I3\$1I775" "" "V1" 1)
+		(func "$1I1078" "" "U65" 1)
 		(func "$1I1077" "" "U64" 1)
 		(func "$1I1032\$1I1222" "" "U63" 1)
 		(func "$1I1032\$1I1571" "" "U63" 2)
