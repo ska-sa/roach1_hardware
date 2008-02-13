@@ -28,7 +28,7 @@ top silk                 --  sst001026.pho
 top mask                 --  sm001021.pho
 top                      .5  art001.pho
              4 mil prepreg
-ground1                  .5  pgp002.pho
+ground1                  .5  art002.pho
              4 mil panel
 route2                   .5  art003.pho
              4 mil prepreg
@@ -54,7 +54,7 @@ route6                   .5  art012.pho
              4 mil prepreg
 route7                   .5  art15.pho
              4 mil panel
-ground8                  .5  pgp015.pho
+ground8                  .5  art015.pho
              4 mil prepreg
 bottom                   .5  art016.pho
 bottom mask              --  sm016028.pho
