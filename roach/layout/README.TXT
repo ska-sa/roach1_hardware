@@ -1,7 +1,7 @@
 Board specifications for ibob2 / roach.
 
 1. Bare board workmanship and finish in accordance with the latest revision of
-IPC-6012: Performance Specification for Rigit Printed Boards.
+IPC-6012: Performance Specification for Rigid Printed Boards.
 
 2. Assembled board in accordance with latest revision of 
 ANSI-J-STD-001: Requirements for Soldered Electrical and Electronic Assemblies.
@@ -12,7 +12,7 @@ ANSI-J-STD-001: Requirements for Soldered Electrical and Electronic Assemblies.
 
 5. Silk screen legends to be white.
 
-6. All dielectric layers to be Isola 360HR high temp laminate.
+6. All dielectric layers to be Isola 370HR high temp laminate.
 
 7. All conductor layers copper thickness specified in table below.
 
@@ -29,31 +29,31 @@ top mask                 --  sm001021.pho
 top                      .5  art001.pho
              4 mil prepreg
 ground1                  .5  art002.pho
-             4 mil panel
+             5 mil panel
 route2                   .5  art003.pho
-             4 mil prepreg
+             5 mil prepreg
 2.5v                     .5  art004.pho
-             4 mil panel
+             5 mil panel
 route3                   .5  art005.pho
-             4 mil prepreg
+             5 mil prepreg
 ground3                  .5  art006.pho
-             4 mil panel
+             5 mil panel
 route4                   .5  art007.pho
-             4 mil prepreg
+             5 mil prepreg
 assorted                 .5  art008.pho
-             see note. panel
+             see * note. panel
 3.3v 1.5vaux             .5  art009.pho
-             4 mil prepreg
+             5 mil prepreg
 route5                   .5  art010.pho
-             4 mil panel
+             5 mil panel
 1.0v 3.3vaux             .5  art011.pho
-             4 mil prepreg
+             5 mil prepreg
 route6                   .5  art012.pho
-             4 mil panel
+             5 mil panel
 1.8v                     .5  art013.pho
-             4 mil prepreg
+             5 mil prepreg
 route7                   .5  art15.pho
-             4 mil panel
+             5 mil panel
 ground8                  .5  art015.pho
              4 mil prepreg
 bottom                   .5  art016.pho
@@ -61,10 +61,24 @@ bottom mask              --  sm016028.pho
 bottom silk              --  ssb016029.pho
 bottom paste             --  smd016022.pho
 
+* note -- adjust to obtain a nominal finished board thickness of 93 mil.
 
-10 Target impedances. 
 
-note -- adjust to obtain a nominal finished board thickness of 62 mil.
+10. Target impedances.  
+** 	Differential refers to 100micron spacing, 136micron width pairs on outer layers.
+*** 	Single ended refers to 100micron width trace.
+****	Route7 layer to be 100 Ohm differential for width/gap = 100/118micron.
+
+LAYER		TARGET IMPEDANCE
+top		100 Ohm differential **
+route2		50 Ohm single ended ***
+route3		50 Ohm single ended ***
+route4		50 Ohm single ended ***
+route5		50 Ohm single ended ***
+route6		50 Ohm single ended ***
+route7		100 Ohm differential ****
+bottom		100 Ohm differential **
+
 
 Please direct technical questions or issues to one of--
 Technical points of contact.
