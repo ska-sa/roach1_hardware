@@ -1,0 +1,95 @@
+* OP196 SPICE Macro-model               Rev. A, 5/95
+*                                       ARG / ADSC
+*
+* Copyright 1995 by Analog Devices
+*
+* Refer to "README.DOC" file for License Statement. Use of
+* this model indicates your acceptance of the terms and pro-
+* visions in the License Statement.
+*
+* Node assignments
+*                non-inverting input
+*                |  inverting input
+*                |  |  positive supply
+*                |  |  |  negative supply
+*                |  |  |  |  output
+*                |  |  |  |  |
+.SUBCKT OP196    1  2  99 50 49
+*
+* INPUT STAGE
+*
+IREF 21 50 1U
+QB1 21 21 99 99 QP 1
+QB2 22 21 99 99 QP 1
+QB3 4 21 99 99 QP 1.5
+QB4 22 22 50 50 QN 2
+QB5 11 22 50 50 QN 3
+Q1 5 4 7 50 QN 2
+Q2 6 4 8 50 QN 2
+Q3 4 4 7 50 QN 1
+Q4 4 4 8 50 QN 1
+Q5 50 1 7 99 QP 2
+Q6 50 3 8 99 QP 2
+EOS 3 2 POLY(1) (17,98) 35U 1
+Q7 99 1 9 50 QN 2
+Q8 99 3 10 50 QN 2
+Q9 12 11 9 99 QP 2
+Q10 13 11 10 99 QP 2
+Q11 11 11 9 99 QP 1
+Q12 11 11 10 99 QP 1
+R1 99 5 50K
+R2 99 6 50K
+R3 12 50 50K
+R4 13 50 50K
+IOS 1 2 0.75N
+C10 5 6 3.183P
+C11 12 13 3.183P
+CIN 1 2 1P
+*
+* GAIN STAGE
+*
+EREF 98 0 POLY(2) (99,0) (50,0) 0 0.5 0.5
+G1 98 15 POLY(2) (6,5) (13,12) 0 10U 10U
+R10 15 98 251.641MEG
+CC 15 49 8P
+D1 15 99 DX
+D2 50 15 DX
+*
+* COMMON MODE STAGE
+*
+ECM 16 98 POLY(2) (1,98) (2,98) 0 0.5 0.5
+R11 16 17 1E6
+R12 17 98 10
+*
+* OUTPUT STAGE
+*
+ISY 99 50 20E-6
+EIN 35 50 POLY(1) (15,98) 1.42735 1
+Q24 37 35 36 50 QN 1
+QD4 37 37 38 99 QP 1
+Q27 40 37 38 99 QP 1
+R5 36 39 150K
+R6 99 38 45K
+Q26 39 42 50 50 QN 3
+QD5 40 40 39 50 QN 1
+Q28 41 40 44 50 QN 1
+QL1 37 41 99 99 QP 1
+R7 99 41 10.7K
+I4 99 43 2U
+QD7 42 42 50 50 QN 2
+QD6 43 43 42 50 QN 2
+Q29 47 43 44 50 QN 1
+Q30 44 45 50 50 QN 1.5
+QD10 45 46 50 50 QN 1
+R9 45 46 175
+Q31 46 47 48 99 QP 1
+QD8 47 47 48 99 QP 1
+QD9 48 48 51 99 QP 5
+R8 99 51 2.9K
+I5 99 46 1U
+Q32 49 48 99 99 QP 10
+Q33 49 44 50 50 QN 4
+.MODEL DX D()
+.MODEL QN NPN(BF=120 VAF=100)
+.MODEL QP PNP(BF=80 VAF=60)
+.ENDS

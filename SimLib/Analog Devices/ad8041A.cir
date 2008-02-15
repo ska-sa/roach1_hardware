@@ -1,0 +1,149 @@
+*  AD8041a Spice Macro-model                  9/96, Rev A
+*
+*  Copyright 1996 by Analog Devices, Inc.
+*
+* Refer to "README.DOC" file for License Statement.
+* Use of this model indicates your acceptance with
+* the terms and provisions in the License Statement.
+*
+* The following parameters are accurately modeled;
+*
+*    open loop gain and phase vs frequency
+*    output clamping voltage and current
+*    input common mode range
+*    CMRR vs freq
+*    I bias vs Vcm in    
+*    Slew rate
+*    Output currents are reflected to V supplies
+*
+*    Vos is static and will not vary with Vcm in
+*    Step response is modeled at unity gain w/1k load 
+*
+*    Distortion and noise are not characterized
+*
+*    Node assignments
+*                non-inverting input
+*                | inverting input
+*                | | positive supply
+*                | | |  negative supply
+*                | | |  |  output
+*                | | |  |  |
+.SUBCKT AD8041a  1 2 99 50 61 
+
+***** Input bias current source
+
+ecm 20 0 99 3 1 
+d1 20 21 dx
+v3 21 22 0.2
+r20 22 0 100
+f1 0 25 v3 1 
+r22 25 0 1k
+r23 26 28 8
+d3 25 26 dx
+v5 28 0 .3
+g1 1 0 0 25 400e-9
+g2 2 0 0 25 400e-9
+
+***** Input Stage
+
+R1 1 3 80k
+R2 3 2 80k
+C1 1 2 1.8pf
+rcm1 1 0 5e6
+rcm2 2 0 5e6
+R3 1 98 40e6
+R4 2 98 40e6 
+r9 15 7 764
+r10 16 7 764
+q1 5 1 15 qp1
+q2 6 4 16 qp1
+r5 50 5 1254
+r6 50 6 1254
+ib3 99 7 1e-4
+eos 2 4 poly(1) (108,98) 2e-3 1
+
+***** gain stage/pole at 3200hz/clamp circuitry
+
+g3 99 31 6 5 7.97e-4
+g4 31 50 5 6 7.97e-4
+r7 99 31 63e6
+r8 31 50 63e6
+c3 99 31 0.635e-12
+c4 31 50 0.635e-12
+
+vc1 99 45 0.72
+vc2 46 50 0.72
+dc1 31 45 dx
+dc2 46 31 dx
+
+***** pole at 200mhz
+
+e1 32 98 31 98 1
+rflt 32 33 1k
+cflt 33 98 0.796e-12
+
+***** internal reference
+
+rdiv1 99 97 100k
+rdiv2 97 50 100k
+Eref 98 0 97 0 1
+rref 98 0 1e6
+
+***** Common mode gain network
+
+gacm1 99 100 3 98 2e-13
+gacm2 100 50 98 3 2e-13
+racm1 99 100 1e4
+racm2 100 50 1e4
+
+***** Common mode gain network/zero at 3200hz 
+
+ecm1  101 98 100 98 1e6 
+racm3 101 102 1e6
+racm4 102 103 1
+lacm1 103 98 40u
+
+***** Common mode gain network/zero at 100khz/pole at 60mhz
+
+ecm2  104 98 102 98 300
+racm5 104 105 300
+racm6 105 106 1
+lacm2 106 98 .78u
+
+***** Common mode gain network/pole at 60mhz
+
+ecm3 107 98 105 98 1 
+racm7 107 108 10k
+cacm1 108 98 0.265e-12
+
+***** buffer to output stage
+
+gbuf 98 34 33 98 1e-4
+re1 34 98 10k
+
+***** output stage
+
+fo1 98 110 vcd 1
+do1 110 111 dx
+do2 112 110 dx
+vi1 111 98 0
+vi2 98 112 0
+
+fsy 99 50 poly(2) vi1 vi2 4.73e-3 1 1
+
+go3 60 99 99 34 0.1
+go4 50 60 34 50 0.1
+r03 60 99 10
+r04 60 50 10
+vcd 60 62 0
+lo1 62 61 2n
+ro2 61 98 1e9
+do5 34 70 dx
+do6 71 34 dx
+vo1 70 60 -0.31
+vo2 60 71 -0.05
+
+.model dx d(is=1e-15)
+.model qn1 npn(bf=500 vaf=100)
+.model qp1 pnp(bf=500 vaf=60)
+.ends ad8041a

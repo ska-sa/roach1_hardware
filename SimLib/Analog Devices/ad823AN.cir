@@ -1,0 +1,148 @@
+*  AD823an Spice Macro-model                  4/16/97, Rev C, SMR
+*
+*  Copyright 1996 by Analog Devices, Inc.
+*
+* Refer to "README.DOC" file for License Statement.
+* Use of this model indicates your acceptance with
+* the terms and provisions in the License Statement.
+*
+* The following parameters are accurately modeled;
+*
+*    open loop gain and phase vs frequency
+*    output clamping voltage and current
+*    input common mode range
+*    CMRR vs freq
+*    I bias vs Vcm in    
+*    Slew rate
+*    Output currents are reflected to V supplies
+*    Voltage and current noise density are accurate
+*    for the entire bandwidth of the AD823
+*
+*    Vos is static and will not vary with Vcm input
+*
+*    Step response is modeled at unity gain w/1k load 
+*
+*    Distortion is not characterized
+*
+*    This model of the AD823 works at 3.3v
+*
+*    Node assignments
+*                non-inverting input
+*                | inverting input
+*                | | positive supply
+*                | | |  negative supply
+*                | | |  |  output
+*                | | |  |  |
+.SUBCKT AD823an  1 2 99 50 11  
+
+***** Input Stage/pole at 50mhz
+
+R1 1 13 5e12
+R2 13 2 5e12
+fn1 98 1 vn2 1
+fn2 98 2 vn2 1
+cin1 1 98 1.8e-12
+cin2 2 98 1.8e-12
+J1 24 1 25 jx
+J2 24 14 26 jx
+R3 99 25 708
+R4 99 26 708
+Cp 25 26 0.65pf
+Ibt 24 50 0.62ma
+Ib1 1 98 5p
+Ib2 2 98 5p
+Eos 2 12 poly(1) 34 98 0.2e-3 1
+Enoise 12 14 36 98 1
+
+***** Input V noise source
+
+dn1 35 98 dn1
+rn1 35 98 6.5e-5
+vn1 35 98 0
+
+hn1 36 98 vn1 1
+rn2 36 98 1
+
+***** Input I noise source
+
+rn3 37 98 1.6e10
+vn2 37 98 0
+
+hn2 38 98 vn2 1
+rn4 38 98 1
+
+***** Gain Stage & Pole @ 300Hz
+
+Vd1 99 3 0.91
+Vd2 4 50 0.91
+Gg1 99 5 (26,25) 1.413e-3
+Gg2 5 50 (25,26) 1.413e-3
+D1 5 3 dx
+D2 4 5 dx
+Rg1 99 5 21.23e6
+Rg2 50 5 21.23e6
+Cdp1 99 5 25pf
+Cdp2 50 5 25pf
+
+***** Internal Reference
+
+Eref1 98 0 poly(2) (99,0) (50,0) 0 0.5 0.5  
+Eref2 97 0 poly(2) (1,0) (2,0) 0 0.5 0.5
+
+***** Common Mode Gain Network/Pole at 10khz
+
+Gacm1 15 98 98 97 1.4
+Lacm2 15 29 10e-9
+Racm2 29 98 1e-3
+
+***** Common Mode Gain Network/Zero at 300hz
+
+Ecm1  30 98 15 98 70e-3
+Racm3 30 31 1.67e3
+Racm4 31 32 100e-3
+Lacm3 32 98 53e-6
+
+***** Common Mode Gain Network/Pole at 5mhz
+
+Ecm2  33 98 31 98 1
+Lacm4 33 34 31.8u
+Racm 34 98 1k 
+
+***** Zero/Pole Stages (20MHz/50MHz))
+
+ezp  16 98 5 98 2.5
+rzp1 16 17 188
+rzp2 17 18 126
+lzp  18 98 1u
+
+***** Buffer to output stage
+
+gbuf  98 19 17 98 1e-4
+Rbuf  19 98 10k
+
+***** Output Stage
+
+fo1 98 90 vcd 1
+Do1 90 91 dx
+Do2 92 90 dx
+vi1 91 98 0
+vi2 98 92 0
+
+fsy 99 50 poly(2) vi1 vi2 5.7e-3 1 1 
+
+Go3 10 99 99 19 50m
+Go4 50 10 19 50 50m
+Ro3 99 10 20
+Ro4 10 50 20
+vcd 10 95 0
+lo1 95 11 1e-10
+ro 11 98 1e6
+Do5 19 20 dx
+Do6 21 19 dx
+Vo1 20 10 -0.3
+Vo2 10 21 -0.4
+
+.model dx d(IS=1e-15) 
+.model dn1 d(is=1e-15 af=0 kf=1e-12)
+.model jx njf(beta=3e-3 vto=-1 Is=1e-12) 
+.ends ad823an

@@ -1,0 +1,118 @@
+* AD627B SPICE Macro-model              2/2001, Rev. A
+*                                       SPL / ADI
+*
+* This version of the AD627 model simulates the worst-case
+* Gain, Frequency Response, CMRR, Slew and RTI Voltage Noise
+* of the 'B' grade. These worst-case parameters
+* correspond to those in the data sheet.
+*
+*
+* Copyright 2001 by Analog Devices, Inc.
+*
+* Refer to "README.DOC" file for License Statement. Use of this model
+* indicates your acceptance with the terms and provisions in the License
+* Statement.
+*
+* Node assignments
+*                 non-inverting input
+*                 |  inverting input
+*                 |  |   output
+*                 |  |   |   ref
+*                 |  |   |   |  rg1
+*                 |  |   |   |   |   rg2
+*                 |  |   |   |   |   |   positive supply
+*                 |  |   |   |   |   |   |  negative supply
+*                 |  |   |   |   |   |   |  |
+.SUBCKT AD627B    In+ In- Out Ref Rg+ Rg- Vs+ Vs-  
+*Input Stage
+D1         4 VS+ DX 
+D2         VS- 4 DX 
+D3         7 VS+ DX 
+D4         VS- 7 DX 
+R5         IN- 4  2k  
+R6         8 7  2k  
+R7         VS- 3  200k  
+R8         VS- 6  200k  
+Q1         3 4 RG- QPI 
+Q2         6 7 RG+ QPI 
+
+*Frequency Response
+C1         3 9  10p  
+C2         9 6  9.58p  
+C3         6 11  5p  
+X_U1       10 3 9 VS+ VS- internalopamp  
+X_U2       10 6 11 VS+ VS- internalopamp  
+
+*Resistor Network
+R1         REF RG-  100k  
+R2         RG- 9  25k  
+R3         9 RG+  25k  
+R4         RG+ 11  100.0911k  
+
+*Vos and Ibias
+I2         7 IN- DC 1nAdc  
+V4         OUT 11 500uV
+V5         8 IN+ 150uV
+
+*Ref Voltage
+V1         10 VS- 0.1Vdc
+
+.model QPI PNP
+.model DX D
+.ENDS AD627B
+
+
+.SUBCKT internalopamp OpAmpIn+ OpAmpIn- OpAmpOut Vs+ Vs-  
+*Input Stage and Secondary Pole
+I1         VS+ 4 DC 2uAdc  
+Q1         8 5 4 QPI 
+Q2         9 OPAMPIN+ 4 QPI 
+R1         VS- 8  100k  
+R2         VS- 9  100k  
+C2         8 9  7.96e-19  
+
+*Primary Gain Stage
+Ggain         98 12 8 9 1e-3
+R11         98 12  1e8  
+
+*OpAmp Dominant Pole and Voltage Limiting Clamps
+Gdp         98 13 12 98 1e-6
+R8         98 13  1e6  
+C1         98 13  3.957e-7  
+D5         13 20 DX 
+D6         21 13 DX 
+V1         VS+ 20 0.670Vdc
+V2         21 VS- 0.625Vdc
+
+*Output Stage
+G2         98 OPAMPOUT 13 98 2e-2
+R9         OPAMPOUT VS+  150k  
+R10         VS- OPAMPOUT  150k  
+V5         VS+ 15 0.670v
+V6         14 VS- 0.625
+D3         OPAMPOUT 15 DX 
+D4         14 OPAMPOUT DX 
+
+*VOS
+V7         VS+ 11 .8Vdc
+V8         10 VS- .8Vdc
+D7         7 11 DX 
+D8         10 7 DX 
+EOS         5 OPAMPIN- Poly(1) 7 98 4e-6 1
+
+*Common-Mode Rejection Stage
+R3         6 OPAMPIN-  5e6  
+R4         OPAMPIN+ 6  5e6  
+R7         7 2  1  
+Gcm         98 7 6 98 1e-9
+L1         2 98  7.957e-3H  
+
+* Reference Voltage
+R5         3 VS+  211.7647k  
+R6         VS- 3  211.7647k  
+E1         98 VS- 3 VS- 1
+
+.model QPI PNP
+.model DX D 
+.ENDS internalopamp
+

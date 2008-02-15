@@ -1,0 +1,253 @@
+* ADG409B SPICE Macro-model                10/95, Rev. A
+*                                           JOM / ADSC
+*
+* Revision History: NONE
+*
+*	NOTE: This model was setup with typical leakage currents
+*		at -40C to +85 for ADG409B 
+*
+* Copyright 1995 by Analog Devices, Inc.
+*
+* Refer to "README.DOC" file for License Statement.  Use of this 
+* model indicates your acceptance with the terms and provisions 
+* in the License Statement.
+*
+* Node assignments
+* 4 - S1A, 5 - S2A, 6 - S3A, 7 - S4A, 13 - S1B, 12 - S2B, 11 - S3B
+* 10 - S4B, 16 - A1, 1 - A0, 2 - EN
+* 8 - DA, 9 - DB, 14 - VDD, 15 - GND, 3 - VSS
+*                    
+.SUBCKT ADG409B 4 5 6 7 13 12 11 10 16 1 2 8 9 14 15 3
+*
+* DEMUX SWITCHES (S1-8 ---> D)
+*
+*     First Section is for control line A0
+*
+
+E_A0_2	  200 15   1 15    1
+E_A0_1     30 40 201 40   -1
+R_A0_1    200 201         1000
+C_A0_X2   201 15          100E-12
+
+V_AX_1     40  15          1.6
+
+S_A0_4B     10 34 201 15   Sdemux
+S_A0_3B     11 34 30  15   Sdemux		
+S_A0_2B     12 33 201 15   Sdemux
+S_A0_1B     13 33 30  15   Sdemux
+
+S_A0_4A      7 32 201 15   Sdemux
+S_A0_3A      6 32 30  15   Sdemux
+S_A0_2A      5 31 201 15   Sdemux
+S_A0_1A      4 31 30  15   Sdemux
+
+C_A0_X1     1 15          4E-12
+C_A0_DA      1 43          2E-12
+C_A0_DB      1 42          2E-12
+
+*          Input capacitances
+
+C_A0_1A      4  15         8E-12
+C_A0_2A      5  15         8E-12
+C_A0_3A      6  15	   8E-12
+C_A0_4A      7  15         8E-12
+
+C_A0_1B     13  15         8E-12
+C_A0_2B     12  15         8E-12
+C_A0_3B     11  15         8E-12
+C_A0_4B     10  15         8E-12
+
+C_DA_1       8  15         80E-12
+C_DB_2       9  15         80E-12
+
+*
+*	Leakage Current (SX and D ON only) 
+*
+
+R_ON_SA1     4 500    1.5E12
+R_ON_SA2    5 500    1.5E12
+R_ON_SA3     6 500    1.5E12
+R_ON_SA4     7 500    1.5E12
+
+R_ON_SB1    13 500    1.5E12
+R_ON_SB2    12 500    1.5E12
+R_ON_SB3    11 500    1.5E12
+R_ON_SB4    10 500    1.5E12
+
+SLEAK_ON_DA  8 500    8 500  SLEAK
+ILEAK_ON_DA  8 500    10E-12 		  
+
+
+SLEAK_ON_DB  9 500    9 500  SLEAK
+ILEAK_ON_DB  9 500    10E-12
+*
+*	Leakage Current (SX OFF only)
+*
+*	Leakage Current (D OFF only)
+*
+
+S_OFF_DA     8  58 80 15	  Sdemux
+R_OFF_DA    58  15         1E12 
+G_OFF_DA     8  15 58 15   0.75E-12
+
+S_OFF_DB     9  59 80 15	  Sdemux
+R_OFF_DB    59  15         1E12 
+G_OFF_DB     9  15 59 15   0.75E-12
+*C_OFF_D     59  15                0E-12   
+*
+*     Second Section is for control line A1
+*
+
+E_A1_2	  170 15 16  15    1
+E_A1_1     41 40 171 40   -1
+R_A1_1    170 171         1000
+C_A1_X2   171 15          100E-12
+
+S_A1_2B     34 42 171 15     Sdemux
+S_A1_1B     33 42 41  15     Sdemux
+
+S_A1_2A     32 43 171 15    Sdemux
+S_A1_1A     31 43 41  15    Sdemux
+
+C_A1_X     16 15           4E-12
+C_A1_DA    16 43           2E-12
+C_A1_DB    16 42           2E-12
+
+*
+*     Main Series Switch combination - A
+*
+*
+
+V_1_A     419   15  15
+V_1_B     420   15  -15
+V_1_C     421   14  -1        ;sets pos main offset
+V_1_D     422    3  2		;sets neg main offset
+R_1_C      43   0         1E13
+S_1_A     425  43 420  73 SNCM
+R_1_A     412 425         29		;sets neg at max d
+S_1_B     426  43 419  73 SPCM
+R_1_B      73 426         50            ;sets pos at max d
+S_1_C      73 412 611  15 SMAINP
+S_1_D     412 411  15 612 SMAINN
+E_1_E     611  15         VALUE = {(10*V(73,500))/(V(421,500)+0.005)}
+E_1_F     612  15         VALUE = {(10*V(73,500))/(V(500,422)+0.005)}
+S_1_G     411  43  99   3 SBASE
+*
+*	Main Series Switch Combination -B	
+*
+V_1_AB     519   15  15
+V_1_BB     520   15  -15
+V_1_CB     521   14  -1        ;sets pos main offset
+V_1_DB     522    3  2		;sets neg main offset
+R_1_CB      42   0         1E13
+S_1_AB     525  42 520  83 SNCM
+R_1_AB     512 525         29		;sets neg at max d
+S_1_BB     526  42 519  83 SPCM
+R_1_BB      83 526         50            ;sets pos at max d
+S_1_CB      83 512 711  15 SMAINP
+S_1_DB     512 511  15 712 SMAINN
+E_1_EB     711  15         VALUE = {(10*V(73,500))/(V(521,500)+0.005)}
+E_1_FB     712  15         VALUE = {(10*V(73,500))/(V(500,522)+0.005)}
+S_1_GB     511  42  99   3 SBASE
+*
+*	Voltage Clamp 
+*
+
+D_1_POSA     43  14          DClamp  .001
+G_1_POSA     43  14  43  14  -1E-12
+D_2_NEGA      3  43          DClamp  .001
+G_2_NEGA      3  43   3  43  1E-12
+
+D_1_POSB     42  14          DClamp  .001
+G_1_POSB     42  14  42  14  -1E-12
+D_2_NEGB      3  42          DClamp  .001
+G_2_NEGB      3  42   3  42  1E-12
+*
+*     Enable Switch section
+*
+
+S_EN_1B    83  9  2  15    Sdemux
+S_EN_1A    73  8  2  15    Sdemux
+C_EN_1A     2  8           4.2E-12  ; SETS CHARGE INJECTION 
+C_EN_1B     2  9           4.2E-12
+
+*     Invert Enable Switch section
+
+E_EN0_1     80  15 2 82    -2
+V_EN0_1	    82  15          2.5
+
+*
+*     Power Supply Current Correction
+*
+
+I_PS_1     14  15           80E-6
+I_PS_2     15   3           0.0001E-6
+E_PS_1     99  15  14  15   1
+E_PS_2    500   3  14   3   .5
+
+*
+*	Crosstalk 
+*
+
+RXT_1A      4 52           1E13
+RXT_2A      5 52           1E13
+RXT_3A      6 52           1E13
+RXT_4A      7 52           1E13
+
+RXT_1B     13 52           1E13
+RXT_2B     12 52           1E13
+RXT_3B     11 52           1E13
+RXT_4B     10 52           1E13
+
+CXT_1A      4 52           1E-12
+CXT_2A      5 52           1E-12
+CXT_3A      6 52           1E-12
+CXT_4A      7 52           1E-12
+
+CXT_1B     13 52           1E-12
+CXT_2B     12 52           1E-12
+CXT_3B     11 52           1E-12
+CXT_4B     10 52           1E-12
+*
+*	OFF Isolation
+*
+COI_1AX      4  8           1E-13
+COI_2AX      5  8           1E-13
+COI_3AX      6  8           1E-13
+COI_4AX      7  8           1E-13
+
+COI_1BX     13  9          1E-13
+COI_2BX     12  9           1E-13
+COI_3BX     11  9           1E-13
+COI_4BX     10  9           1E-13
+
+ROI_1A        4 1901         1.6E9
+COI_1A    1901    8         10E-12
+ROI_2A        5 1902         1.6E9
+COI_2A    1902    8         10E-12
+ROI_3A        6 1903         1.6E9
+COI_3A    1903    8         10E-12
+ROI_4A        7 1904         1.6E9
+COI_4A    1904    8         10E-12
+
+ROI_1B       13 1905         1.6E9
+COI_1B    1905    9         10E-12
+ROI_2B       12 1906         1.6E9
+COI_2B    1906    9         10E-12
+ROI_3B       11 1907         1.6E9
+COI_3B    1907    9         10E-12
+ROI_4B       10 1908         1.6E9
+COI_4B    1908    9         10E-12
+*
+* MODELS USED
+*
+.MODEL SNCM  VSWITCH (RON=5 ROFF=400001 VON=18 VOFF=-60)
+.MODEL SPCM  VSWITCH (RON=450000 ROFF=5 VON=50 VOFF=-13.5)
+.MODEL SBASE VSWITCH (RON=30 ROFF=1400 VON=28 VOFF=-10)
+.MODEL SMAINP VSWITCH (RON=250001 ROFF=17 VON=24.5 VOFF=0)
+.MODEL SMAINN VSWITCH (RON=250001 ROFF=8 VON=24.5 VOFF=0)
+.MODEL Sdemux VSWITCH (RON=1 ROFF=1E12 VON=2.0 VOFF=1.4)
+.MODEL DClamp D(IS=1E-15 IBV=1E-13 CJO=1E-12)
+.MODEL SLEAK VSWITCH (RON=750E9 ROFF=150E9 VON=-15 VOFF=15)
+.PARAM GMIN=1E-14
+.ENDS ADG409B

@@ -1,0 +1,62 @@
+* REF10 SPICE MACROMODEL                     5/91, Rev. A
+*                                            (JCB / PMI)    
+*
+* Copyright 1991 by Analog Devices, Inc.
+*
+* Refer to "README.DOC" file for License Statement.  Use of this model
+* indicates your acceptance with the terms and provisions in the License Statement.
+*
+*  NODE NUMBERS
+*               VIN
+*               |  GND
+*               |  |  TRIM
+*               |  |  |  VOUT
+*               |  |  |  |
+.SUBCKT REF10   2  4  5  6
+*
+* 1.23V REFERENCE
+*
+I1     4  10   1.22889E-6
+R1     10  4   1000E3  TC=3E-6
+G1     4  10   2  4  73.9E-12
+F1     4  10   VS  61.5E-9
+*
+* INTERNAL OP AMP
+*
+G2     4  11   10  19  2E-3
+R2     4  11   150E6
+C1     4  11   2.1E-10
+D1     11 12   DX
+V1     2  12   1.3
+*
+* SECONDARY POLE
+*
+G3     4  13   11  4  1E-6
+R3     4  13   1E6
+C2     4  13   1.2E-13
+*
+* OUTPUT STAGE
+*
+ISY    2   4   0.38E-3
+FSY    2   4   V1  -1 
+G4     4  14   13  4  25E-6
+R4     4  14   40E3
+R7     17 19   14.2602E3
+R8     19  4   2E3
+R9     19  5   50E3
+R10    5   4   1E12
+Q1     16 14   17   QN
+VS     18 17   DC 0
+L1     18  6   1E-7
+*
+* OUTPUT CURRENT LIMIT
+*
+Q2     15  2   16  QN
+R6     2  16   21
+R5     2  15   18E3
+C3     2  15   1E-6
+G5     14  4   2  15  1
+*
+.MODEL  QN  NPN(IS=1E-15  BF=1000)
+.MODEL  DX  D(IS=1E-15)
+.ENDS

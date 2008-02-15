@@ -1,0 +1,47 @@
+* MAT04 SPICE Macro-model                 4/90, Rev. A
+*                                          DFB / PMI
+*
+* Copyright 1990 by Analog Devices, Inc.
+*
+* Refer to "README.DOC" file for License Statement.  Use of this model
+* indicates your acceptance with the terms and provisions in the License Statement.
+*
+* Node assignments
+*              C1
+*              | B1
+*              | | E1
+*              | | | SUBSTRATE (MAY BE FLOATED,OR
+*              | | | | E2       PREFERABLY, CONNECTED
+*              | | | | | B2     TO V-)
+*              | | | | | | C2
+*              | | | | | | | C3
+*              | | | | | | | | B3
+*              | | | | | | | | | E3
+*              | | | | | | | | | |  E4
+*              | | | | | | | | | |  |  B4
+*              | | | | | | | | | |  |  |  C4
+*              | | | | | | | | | |  |  |  |
+.SUBCKT MAT04  1 2 3 4 5 6 7 8 9 10 12 13 14
+Q1   1  2  3   NMAT
+Q2   7  6  5   NMAT
+Q3   8  9  10  NMAT
+Q4   14 13 12  NMAT
+D1   3  2      DMAT1
+D2   5  6      DMAT1
+D3   10 9      DMAT1
+D4   12 13     DMAT1
+D5   4  3      DMAT1
+D6   4  5      DMAT1
+D7   4 10      DMAT1
+D8   4 12      DMAT1
+D9   4  1      DMAT2
+D10  4  7      DMAT2
+D11  4  8      DMAT2
+D12  4  14     DMAT2
+.MODEL    DMAT1  D(IS=2E-16 RS=20)
+.MODEL    DMAT2  D(IS=5E-15 VJ=0.6 CJO=25E-12)
+.MODEL    NMAT NPN(BF=500 IS=3E-13 VAF=150 BR=0.5 VAR=7 
++ RB=26 RC=16 RE=0.4 CJE=41E-12 VJE=0.7 MJE=0.4 TF=0.3E-9 
++ TR=5E-9 CJC=17E-12 VJC=0.55 MJC=0.5 CJS=0 IKF=0.150
++ PTF=25)
+.ENDS

@@ -1,0 +1,140 @@
+*  AD815 Spice Macro-model                  9/96, Rev A
+*
+*  Copyright 1996 by Analog Devices, Inc.
+*
+* Refer to "README.DOC" file for License Statement.
+* Use of this model indicates your acceptance with
+* the terms and provisions in the License Statement.
+
+* This model will give typical performance characteristics
+* for the following parameters;
+
+*     closed loop gain and phase vs bandwidth
+*     output current and voltage limiting
+*     offset voltage (is static, will not vary with vcm)
+*     ibias (again, is static, will not vary with vcm)
+*     slew rate and step response performance
+*     (slew rate is based on 10-90% of step response)
+*     current on output will be reflected to the supplies
+*     vnoise, referred to the input
+*     inoise, referred to the input
+
+*     distortion is not characterized
+
+* Node assignments
+*                non-inverting input
+*                | inverting input
+*                | | positive supply
+*                | | |  negative supply
+*                | | |  |  output
+*                | | |  |  |
+.SUBCKT AD815an  1 2 99 50 61
+
+
+***** Input Stage
+
+q1 50 41 4 qp1 
+q2 99 41 3 qn1
+i1 99 4 1e-4
+i2 3 50 1e-4
+
+fni 99 2 vn2 1
+fnn 99 1 vn2 0.1
+
+*ibneg 2 99 10e-6
+*ibpos 1 99 2e-6
+
+cin1 4 88 1.4pf
+cin2 2 88 1.4pf
+
+q3 9 4 2 qn2
+q4 10 3 2 qp2
+
+rxxa 99 4 28k
+rxxb 3 50 28k
+  
+
+VT1 99 9 0   ;ammeters for monitoring
+VT2 50 10 0  ;current thru Q3, Q4
+eos 41 1 poly(1) 43 88 5e-3 1
+
+***** internal vnoise source
+
+dn1 42 88 dnv
+rn1 42 88 5e-3
+vn1 42 88 0
+
+hn1 43 88 vn1 1
+rn2 43 88 1
+
+***** internal inoise source
+
+dn2 72 88 dniinv
+rn3 72 88 50
+vn2 72 88 0
+
+hn2 73 88 vn2 1
+rn4 73 88 1
+
+***** internal reference
+
+Eref 88 0 poly(2) 99 0 50 0 0 0.5 0.5
+
+***** gain stage/dominant pole/clamp circuitry
+
+f3 88 31 vt1 0.7e-4
+f4 88 31 vt2 0.7e-4
+dgain1 88 31 dy
+dgain2 31 88 dy
+
+egain1 28 88 31 88 143000
+r3 28 29 5
+c1 29 88 4500nf
+
+vc1 99 45 3.65
+vc2 46 50 3.65
+dc1 29 45 dx
+dc2 46 29 dx
+
+***** pole at 100MHz
+
+egain2 32 88 88 29 1
+r4 32 44 0.001
+c3 44 88 1500000p
+
+***** buffer to output stage
+
+gbuf 34 88 44 88 1e-2
+re1 34 88 100
+
+***** output stage
+
+fo1 88 110 vcd 1
+do1 110 111 dx
+do2 112 110 dx
+vi1 111 88 0
+vi2 88 112 0
+
+fsy 99 50 poly(2) vi1 vi2 5.61e-4 1 1
+
+go3 60 99 99 34 0.385
+go4 50 60 34 50 0.385
+r03 60 99 2.6 
+r04 60 50 2.6 
+vcd 60 62 0   
+lo1 62 61 1e-10
+ro2 61 88 1e9
+do5 34 70 dx
+do6 71 34 dx
+vo1 70 60 0.45
+vo2 60 71 0.45
+
+.model dx d(is=1e-13 kf=1e-30 af=0)
+.model dy d(is=26e-9 kf=1e-30 af=0)
+.model dnv d(is=1e-15 kf=2e-15 af=0)
+.model dniinv d(is=1e-15 kf=1e-19 af=0)
+.model qn1 npn(bf=200 kf=1e-30 af=0)
+.model qn2 npn(bf=200 kf=1e-30 af=0)
+.model qp1 pnp(bf=200 kf=1e-30 af=0)
+.model qp2 pnp(bf=200 kf=1e-30 af=0)
+.ends ad815an

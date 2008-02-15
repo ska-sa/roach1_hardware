@@ -1,0 +1,114 @@
+* AD826A SPICE Macro-model              Rev. A, 11/92
+*                                       ARG / ADI
+*
+* This version of the AD826 model simulates the worst-case 
+* parameters of the 'A' grade.  The worst-case parameters
+* used correspond to those in the data sheet.
+*
+*
+* Copyright 1993 by Analog Devices
+*
+* Refer to "README.DOC" file for License Statement.  Use of
+* this model indicates your acceptance of the terms and pro-
+* visions in the License Statement.
+*
+* Node assignments
+*                non-inverting input
+*                |  inverting input
+*                |  |  positive supply
+*                |  |  |  negative supply
+*                |  |  |  |  output
+*                |  |  |  |  |
+.SUBCKT AD826A   2  1  99 50 46
+*
+* INPUT STAGE AND POLE AT 160MHZ
+*
+I1   8    50   1E-3
+Q1   4    1    6    QN
+Q2   5    3    7    QN
+CD   1    2    1.5E-12
+CC1  1    0    2.4E-12
+CC2  2    0    2.4E-12
+R1   99   4    955
+R2   99   5    955
+C1   4    5    .521E-12
+R3   6    8    903
+R4   7    8    903
+IOS  1    2   150E-9
+EOS  3    2    POLY(1) (15,39) 2E-3 5
+*
+* GAIN STAGE AND DOMINANT POLE AT 12.5KHZ
+*
+EREF 98   0    (39,0) 1
+G1   98   9    (4,5) 1.047E-3
+R5   9    98   3.820E6
+C2   9    98   3.333E-12
+D1   9    10   DX
+D2   11   9    DX
+V1   99   10   2.25
+V2   11   50   2.25
+*
+* COMMON MODE STAGE WITH ZERO AT 15.811KHZ
+*
+ECM  14   98   POLY(2) (1,39) (2,39) 0 0.5 0.5
+R7   14   15   1E6
+C4   14   15   10.066E-12
+R8   15   98   10
+*
+*POLE AT 120MHZ
+*
+GP2  98   31   (9,39) 1E-6
+RP2  31   98   1E6
+CP2  31   98   1.326E-15
+*
+*ZERO AT 75MHZ
+*
+EZ1  32   98   (31,39) 1E6
+RZ1  32   33   1E6   
+RZ2  33   98   1
+CZ1  32   33   2.12E-15
+*
+*ZERO AT 100MHZ
+*
+EZ2  34   98   (33,39) 1E6
+RZ3  34   35   1E6
+RZ4  35   98   1
+CZ2  34   35   1.59E-15
+*
+*POLE AT 160MHZ
+*
+GP3  98   36   (35,39) 1E-6
+RP3  36   98   1E6
+CP3  36   98   .995E-15
+*
+*POLE AT 160MHZ
+*
+GP10 98   40   (36,39) 1E-6
+RP10 40   98   1E6
+CP10 40   98   .995E-15
+*
+* OUTPUT STAGE
+*
+RS1  99   39   20.548E3
+RS2  39   50   20.548E3
+RO1  99   45   16
+RO2  45   50   16
+G7   45   99   (99,40) 62.5E-3
+G8   50   45   (40,50) 62.5E-3
+G9   98   60   (45,40) 62.5E-3
+D7   60   61   DX
+D8   62   60   DX
+V7   61   98   DC 0
+V8   98   62   DC 0
+FSY  99   50   POLY(2) V7 V8 5.77E-3 1 1
+D9   41   45   DX
+D10  45   42   DX
+V5   40   41   0.4
+V6   42   40   0.4
+LO   45   46   .06E-9
+*
+* MODELS USED
+*
+.MODEL DX D(IS=1E-12)
+.MODEL QN NPN(BF=74.76)
+.ENDS AD826A

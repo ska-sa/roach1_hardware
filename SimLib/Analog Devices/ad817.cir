@@ -1,0 +1,106 @@
+* AD817 SPICE Macro-model               Rev. A, 11/92
+*                                       ARG / ADI
+*
+* Copyright 1993 by Analog Devices
+*
+* Refer to "README.DOC" file for License Statement.  Use of
+* this model indicates your acceptance of the terms and pro-
+* visions in the License Statement.
+*
+* Node assignments
+*                non-inverting input
+*                |  inverting input
+*                |  |  positive supply
+*                |  |  |  negative supply
+*                |  |  |  |  output
+*                |  |  |  |  |
+.SUBCKT AD817    2  1  99 50 46
+*
+* INPUT STAGE AND POLE AT 160MHZ
+*
+I1   8    50   1E-3
+Q1   4    1    6    QN
+Q2   5    3    7    QN
+CIN  1    2    1.5PF
+R1   99   4    1.188K
+R2   99   5    1.188K
+C1   4    5    4.187E-13
+R3   6    8    1.137K
+R4   7    8    1.137K
+IOS  1    2    12.5E-9
+EOS  3    2    POLY(1) (15,98) 0.5E-3 10
+*
+* GAIN STAGE AND DOMINANT POLE AT 8.8KHZ
+*
+EREF 98   0    POLY(2) (99,0) (50,0) 0 0.5 0.5
+G1   98   9    (4,5) .8415E-3
+R5   9    98   5.942E6
+C2   9    98   3.045E-12
+D1   9    10   DX
+D2   11   9    DX
+V1   99   10   1.83
+V2   11   50   1.83
+*
+* COMMON MODE STAGE WITH ZERO AT 3.16KHZ
+*
+ECM  14   98   POLY(2) (1,98) (2,98) 0 0.5 0.5
+R7   14   15   1E6
+C4   14   15   5.036E-11
+R8   15   98   1
+*
+*POLE AT 120MHZ
+*
+GP2  98   31   (9,98) 1E-6
+RP2  31   98   1E6
+CP2  31   98   1.326E-15
+*
+*ZERO AT 60MHZ
+*
+EZ1  32   98   (31,98) 1E6
+RZ1  32   33   1E6   
+RZ2  33   98   1
+CZ1  32   33   2.65E-15
+*
+*ZERO AT 100MHZ
+*
+EZ2  34   98   (33,98) 1E6
+RZ3  34   35   1E6
+RZ4  35   98   1
+CZ2  34   35   1.59E-15
+*
+*POLE AT 120MHZ
+*
+GP3  98   36   (35,98) 1E-6
+RP3  36   98   1E6
+CP3  36   98   1.326E-15
+*
+*POLE AT 160MHZ
+*
+GP10  98   40   (36,98) 1E-6
+RP10  40   98   1E6
+CP10  40   98   .995E-15
+*
+* OUTPUT STAGE
+*
+RO1  99   45   16
+RO2  45   50   16
+G7   45   99   (99,40) 62.5E-3
+G8   50   45   (40,50) 62.5E-3
+G9   98   60   (45,40) 62.5E-3
+D7   60   61   DX
+D8   62   60   DX
+V7   61   98   DC 0
+V8   98   62   DC 0
+GSY  99   50   (99,50) 7.692E-6
+FSY  99   50   POLY(2) V7 V8 5.77E-3  1  1
+D9   41   45   DX
+D10  45   42   DX
+V5   40   41   0.04
+V6   42   40   0.04
+LO   45   46   .06E-9
+*
+* MODELS USED
+*
+.MODEL DX D
+.MODEL QN NPN(BF=151.52)
+.ENDS

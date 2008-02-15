@@ -1,0 +1,87 @@
+* AD8519/AD8529 SPICE Macro-model
+* 10/98, Ver. 1
+* TAM / ADSC
+*
+* Copyright 1998 by Analog Devices
+*
+* Refer to "README.DOC" file for License Statement.  Use of this model
+* indicates your acceptance of the terms and provisions in the License
+* Statement.
+*
+* Node Assignments
+*		noninverting input
+*		|	inverting input
+*		|	|	positive supply
+*		|	|	|	negative supply
+*		|	|	|	|	output
+*		|	|	|	|	|
+*		|	|	|	|	|
+.SUBCKT AD8519	1	2	99	50	45
+*
+*INPUT STAGE
+*
+Q1   5  7 15 PIX
+Q2   6  2 15 PIX
+IOS  1  2 1.25E-9
+I1  99 15 200E-6
+EOS  7  1 POLY(2) (14,98) (73,98) 1E-3 1 1
+RC1  5 50 2E3
+RC2  6 50 2E3
+C1   5  6 1.3E-12
+D1  15  8 DX
+V1  99  8 DC 0.9
+*
+* INTERNAL VOLTAGE REFERENCE
+*
+EREF 98  0 POLY(2) (99,0) (50,0) 0 .5 .5
+ISY  99 50 300E-6
+*
+* CMRR=100dB, ZERO AT 1kHz
+*
+ECM   13 98 POLY(2) (1,98) (2,98) 0 0.5 0.5
+RCM1  13 14 1E6
+RCM2  14 98 10
+CCM1  13 14 240E-12
+*
+* PSRR=100dB, ZERO AT 200Hz
+*
+RPS1 70  0 1E6
+RPS2 71  0 1E6
+CPS1 99 70 1E-5
+CPS2 50 71 1E-5
+EPSY 98 72 POLY(2) (70,0) (0,71) 0 1 1
+RPS3 72 73 1.59E6
+CPS3 72 73 500E-12
+RPS4 73 98 15.9
+*
+* POLE AT 20MHz, ZERO AT 60MHz
+*
+G1 21 98 (5,6) 5.88E-6
+R1 21 98 170E3
+R2 21 22 85E3
+C2 22 98 40E-15
+*
+* GAIN STAGE
+*
+G2  25 98 (21,98) 37.5E-6
+R5  25 98 1E7
+CF  45 25 5E-12
+D3  25 99 DX
+D4  50 25 DX
+*
+* OUTPUT STAGE
+*
+Q3   45 41 99 POUT
+Q4   45 43 50 NOUT
+EB1  99 40 POLY(1) (98,25) 0.594  1
+EB2  42 50 POLY(1) (25,98) 0.594  1
+RB1  40 41 500
+RB2  42 43 500
+*
+* MODELS
+*
+.MODEL PIX PNP (BF=500,IS=1E-14,KF=5E-6)
+.MODEL POUT PNP (BF=100,IS=1E-14,BR=0.517)
+.MODEL NOUT NPN (BF=100,IS=1E-14,BR=0.413)
+.MODEL DX D(IS=1E-14,CJO=1E-15)
+.ENDS AD8519

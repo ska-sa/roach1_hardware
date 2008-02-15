@@ -1,0 +1,163 @@
+*****************
+* This model was developed for Analog Devices by:
+* AEI Systems, LLC
+* 
+*
+* The model is Copyright © 2007, AEi Systems, LLC. All Rights Reserved. 
+*
+* Users may not directly or indirectly display, re-sell or 
+* re-distribute this model or any derivative work therefore 
+* without the prior written consent of both AEi Systems and 
+* Analog Devices. This model is subject to change without 
+* notice. Neither Analog Devices nor AEi Systems is responsible 
+* for updating this model.
+*
+* 
+*     closed loop gain and phase vs bandwidth
+*     output current and voltage limiting
+*     offset voltage (is static, will not vary with vcm)
+*     ibias (again, is static, will not vary with vcm)
+*     slew rate and step response performance
+*     (slew rate is based on 10-90% of step response)
+*     current on output will be reflected to the supplies 
+*     vnoise, referred to the input
+*     
+
+*     distortion is not characterized
+
+* Node assignments
+*                non-inverting input
+*                | inverting input
+*                | | positive supply
+*                | | |  negative supply
+*                | | |  |    output
+*                | | |  |    |     Power down
+*                | | |  |    |     |
+.SUBCKT AD8003   1 2 Vcc Vee Vout  PD
+
+* Input Stage
+Q1 34 3 5 _Q 
+.MODEL _Q PNP
+Q2 43 5 4 _Q1 
+.MODEL _Q1 NPN
+Q4 34 6 4 _Q 
+Q3 43 3 6 _Q1 
+Cin1 1 98 0.9p
+Cin2 2 98 1p
+V1 4 2 DC=0
+Vcmm 34 Vee DC=1.4
+Vcmp Vcc 43 DC=1.4
+GBbias1 43 5 Value = {IF(V(PDOWN) < .75*V(VCC) , 0 , 1.625m)}
+GBbias2 6 34 Value = {IF(V(PDOWN) < .75*V(VCC) , 0 , 1.625m)}
+
+* Input Error Source
+EBeos 3 1 Value = {V(20,98) + 0.7m}
+GBfbn 2 98 Value = {I(VNOISE3)*1M + 7U}
+GBfbp 1 98 Value = {I(VNOISE3)*1M + 7U}
+
+* Gain Stage
+f1 98 7 vsl 2
+Rgain 7 98 2.5e5
+Cgain 7 98 0.500p
+dcl1 7 8 _D6_modX 
+.MODEL _D6_modX D N=1
+dcl2 9 7 _D6_modX 
+Vcl1 Vcc 8 DC=1.87
+Vcl2 9 Vee DC=1.87
+GBgcm 98 7 Value = {V(98)*10U + V(30)*10U}
+
+* Slew Limiting Stage
+dsl1 98 16 _D1_mod 
+.MODEL _D1_mod D
+Fsl 98 16 v1 1
+dsl2 16 98 _D1_mod 
+dsl3 16 17 _D1_mod 
+dsl4 17 16 _D1_mod 
+rsl 17 18 0.22
+Vsl 18 98 DC=0
+
+* Vnoise Stage
+rnoise1 19 98 5.5m
+vnoise1 19 98 DC=0
+vnoise2 21 98 DC=0.53
+dnoise1 21 19 _D8_modX 
+.MODEL _D8_modX D KF=8e-9
+fnoise1 20 98 Vnoise1 1
+rnoise2 20 98 1
+
+* INoise Stage
+rnoise4 23 98 1
+rnoise3 22 98 14.5u
+vnoise3 22 98 DC=0
+vnoise4 24 98 DC=0.575
+dnoise2 24 22 _D8_mod 
+.MODEL _D8_mod D KF=7e-7
+fnoise2 23 98 vnoise3 1
+
+* Power Down
+X1 Vcc Pdown Pd 0 46 28 SWhyste3
+R15 Pdown 0 1meg
+Vh 28 0 DC=1m
+Vt Vcc 46 DC=2.5
+GBIpowdn Vee Vcc Value = {IF(V(PDOWN) < .75*V(VCC) , 6.1M , 0)}
+
+* Reference Stage
+EBeref 98 0 Value = {V(VCC)*0.5 + V(VEE)*0.5}
+EBecmref 30 0 Value = {V(1)*0.5 + V(2)*0.5}
+
+* Buffer Stage
+gbuf 98 13 15 98 0.01
+rbuf 98 13 100
+
+* Second Pole
+Epole 14 98 7 98 1
+rpole 14 15 1
+cpole 15 98 450p
+
+* Output Current Reflection
+fcurr 98 40 voc 1
+vcur1 26 98 DC=0
+vcur2 98 27 DC=0
+dcur2 27 40 _D1_mod 
+dcur1 40 26 _D1_mod 
+
+* Output Stage
+vo1 Vcc 90 DC=0
+vo2 Vee 91 DC=0
+gout1 90 11 13 Vcc 0.5
+gout2 91 11 13 Vee 0.5
+rout1 11 90 2
+rout2 11 91 2
+Voc 11 47 DC=0
+rout3 47 98 1meg
+dcl3 13 10 _D1_mod 
+dcl4 12 13 _D1_mod 
+Vcl3 10 11 DC=-0.445
+Vcl4 11 12 DC=-0.445
+GBfout1 0 Vcc Value = {I(VO1) - I(VCUR1) - 4.7m}
+GBfout2 Vee 0 Value = {I(VO2) - I(VCUR2) - 4.7m}
+ERout VRVAR 0 Value={ IF (v(pdown) < .75*V(Vcc) , 1Meg , 1m)}
+XRout 47 Vout VRVAR 0 Rvar
+Cg10 2 Vout 0.9p
+.ENDS
+*$
+.SUBCKT SWHYSTE3 NODEMINUS NODEPLUS PLUS MINUS VT VH
+S5 NODEPLUS NODEMINUS 8 0 SMOOTHSW
+EBCRTL 8 0 Value = {IF(V(PLUS)-V(MINUS) > V(REF) , 1 , 0)}
+EBREF REF1 0 Value = {IF(V(8) > 0.5 , V(VT)-V(VH) , V(VT)+V(VH))}
+RDEL REF1 REF 100
+CDEL REF 0 100P  IC=1.0000 
+RCONV1 8 0 10MEG
+RCONV2 PLUS 0 50MEG
+RCONV3 MINUS 0 10MEG
+.MODEL SMOOTHSW VSWITCH (RON=1.0000  ROFF=1.0000MEG VON=1 VOFF=0)
+.ENDS 
+*$
+.subckt Rvar 101 102 201 202 
+rin 201 202 1G
+r 301 0 1
+fcopy 0 301 vsense 1
+eout 101 106 poly(2) 201 202 301 0 0 0 0 0 1
+vsense 106 102 0; sense iout
+.ends
+*$

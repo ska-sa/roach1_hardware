@@ -1,0 +1,167 @@
+* ADG509F SPICE Macro-model                5/95, Rev. B
+*                                          JOM / ADSC
+*
+* Revision History:
+*     Rev A. S1-S8 label correction
+*     Rev B. Leakage Currents
+*     Rev C. Switching Times and Break before Make
+*
+*	NOTE: This model was setup with typical leakage currents
+*		at +25 for ADG509F 
+*
+*        This model does not include the write and reset function.
+*
+* Copyright 1995 by Analog Devices, Inc.
+*
+* Refer to "README.DOC" file for License Statement.  Use of this 
+* model indicates your acceptance with the terms and provisions 
+* in the License Statement.
+*
+* Node assignments
+* 4 - S1A, 5 - S2A, 6 - S3A, 7 - S4A, 13 - S1B, 12 - S2B, 11 - S3B
+* 10 - S4B, 16 - A1, 1 - A0, 2 - Enable, 8 - DA, 9 - DB,
+* 14 - Vdd, 15 - GND, 3 - Vss
+*                    
+.SUBCKT ADG509F 4 5 6 7 13 12 11 10 16 1 2 8 9 14 15 3
+*
+* DEMUX SWITCHES (S1A-4A ---> DA and S1B-4B ---> DB)
+*
+*     First Section is for control line A0
+*          All nodes in this section are in the 30's unless
+*          they are I/O nodes
+*
+E_A0_2	  200  0  1  0    1
+E_A0_1     30 40 201 40   -1
+R_A0_1    200 201         1000
+C_A0_X2   201  0          130E-12
+
+V_AX_1     40  0          1.6
+
+S_A0_4B     10 31 201 0	  Sdemux
+S_A0_3B     11 31 30  0	  Sdemux		
+S_A0_2B     12 32 201 0    Sdemux
+S_A0_1B     13 32 30  0    Sdemux
+
+S_A0_4A      7 33 201 0    Sdemux
+S_A0_3A      6 33 30  0    Sdemux
+S_A0_2A      5 34 201 0    Sdemux
+S_A0_1A      4 34 30  0    Sdemux
+
+C_A0_X1     1  0          1E-12
+C_A0_DA     1 36          1E-12
+C_A0_DB     1 35          1E-12
+
+*          Input capacitances
+
+C_A0_1A      4  0          5E-12
+C_A0_2A      5  0          5E-12
+C_A0_3A      6  0          5E-12
+C_A0_4A      7  0          5E-12
+
+C_A0_1B     13  0          5E-12
+C_A0_2B     12  0          5E-12
+C_A0_3B     11  0          5E-12
+C_A0_4B     10  0          5E-12
+
+C_DA_1       8  0          25E-12
+C_DB_1       9  0          25E-12
+*
+*	Leakage Current (SX and D ON only) 
+*
+
+G_ON_S1     4  0  4  0    2E-12
+G_ON_S2	    5  0  5  0    2E-12
+G_ON_S3     6  0  6  0    2E-12
+G_ON_S4     7  0  7  0    2E-12
+
+G_ON_S5    13  0 13  0    2E-12
+G_ON_S6    12  0 12  0    2E-12
+G_ON_S7    11  0 11  0    2E-12
+G_ON_S8    10  0 10  0    2E-12
+
+G_ON_DA     8  0  8  0    2E-12
+G_ON_DB	    9  0  9  0    2E-12		  
+
+*
+*	Leakage Current (SX OFF only
+*
+*	Leakage Current (D OFF only)
+*
+
+S_OFF_DA     8  58 80  0   Sdemux
+R_OFF_DA     58  0         1E12 
+G_OFF_DA     8   0 58  0   2E-12
+
+S_OFF_DB     9   580  80  0   Sdemux
+R_OFF_DB     580   0         1E12 
+G_OFF_DB     9     0 580  0   2E-12
+
+*
+*     Second Section is for control line A1
+*
+
+E_A1_2	  170  0 16  0    1
+E_A1_1     37 40 171 40   -1
+R_A1_1    170 171         1000
+C_A1_X2   171  0          130E-12
+
+S_A1_1B     31 35 171 0     Sdemux
+S_A1_2B     32 35 37  0     Sdemux
+
+S_A1_1A     33 36 171 0     Sdemux
+S_A1_2A     34 36 37  0     Sdemux
+
+C_A1_X     16  0           1E-12
+C_A1_DA     16 36           1E-12
+C_A1_DB    16 35           1E-12
+
+*
+*     Main A Series Switch combination
+*
+
+S_1_EA     41  73 611 0     SMAINP
+S_1_FA     380  41 612 0     SMAINN
+
+E_1_EA     611 0   VALUE = {(10*V(8,0))/(V(14,15)+0.15)}
+E_1_FA     612 0   VALUE = {(10*V(8,0))/(V(3,15)+0.15)}
+
+SBASEA     36  380  14  4  SBASE
+
+*
+*     Main B Series Switch combination
+*
+
+S_1_EB      42  74 613 0     SMAINP
+S_1_FB     381  42 614 0     SMAINN
+
+E_1_EB     613 0   VALUE = {(10*V(9,0))/(V(14,15)+0.15)}
+E_1_FB     614 0   VALUE = {(10*V(9,0))/(V(3,15)+0.15)}
+
+SBASEB     35  381  14  3  SBASE
+*
+*     Enable Switch section
+*
+
+S_EN_1A     73  8  2  0     Sdemux
+C_EN_1A      2 73           3E-12
+S_EN_1B     74  9  2  0     Sdemux
+C_EN_1B      2 74           3E-12
+
+*     Invert Enable Switch section
+
+E_EN0_1     80  0  2  81   -2
+V_EN0_1	    81  0          2.5
+
+*
+*     Power Supply Current Correction
+*
+I_PS_1     14  0           0.05E-3
+I_PS_2      0  3           0.01E-3
+*
+* MODELS USED
+*
+.MODEL SBASE  VSWITCH(RON=260 ROFF=1200 VON=30 VOFF=-10)
+.MODEL SMAINN VSWITCH(RON=10000 ROFF=3 VON=13 VOFF=0)
+.MODEL SMAINP VSWITCH(RON=10000 ROFF=3 VON=13 VOFF=0)
+.MODEL Sdemux VSWITCH (RON=1 ROFF=1E12 VON=2.0 VOFF=1.4)
+.ENDS ADG509F

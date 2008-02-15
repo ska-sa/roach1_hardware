@@ -1,0 +1,189 @@
+*$
+*==========================================================
+* Analog Devices Linear ICs
+*
+* These models were developed by:
+* AEI Systems, LLC
+* 5777 W. Century Blvd. Suite 876
+* Los Angeles, California 90045
+* Copyright 2002, all rights reserved.
+*
+* This model is subject to change without notice.
+* Users may not directly or indirectly re-sell or 
+* re-distribute this model. This model may not 
+* be used, modified, or altered 
+* without the consent of AEi Systems. 
+*
+* For more information regarding modeling services,
+* model libraries and simulation products, please
+* call AEi Systems at (310) 216-1144, or contact 
+* AEi by email: info@aeng.com. http://www.AENG.com
+*
+*==========================================================
+*$
+.SUBCKT AD8333 PH12 PH13 COMM LO4P LO4N LODC PH23 PH22 PH21 PH20 VPOS RF2P RF2N VPOS2 RSET I2NO I2PO Q2PO Q2NO 
++ COMM2 VNEG Q1NO Q1PO I1PO I1NO ENBL VPOS3 RF1N RF1P VPOS4 PH10 PH11
+*
+* |=======================================================
+* |                    AD8333        REV -   DATE 6/5/07
+* |                ANALOG DEVICES
+* |     I/Q DEMODULATOR AND PHASE SHIFTER MACRO-MODEL
+* |=======================================================
+*
+EB1 SQ1 0 Value = {IF(V(LO4P1) - V(LO4N1) < 0 , 0 , 1)}
+EB2 Q1 0 Value = {IF(V(RSET1) > 0.5 , 0 , IF(V(SQ1) < 0.5 , V(F1O1) , IF(V(F1O2) > 0.5 , 0 , 1)))}
+EB3 Q2 0 Value = {IF(V(RSET1) > 0.5 , 0 , IF(V(SQ1) > 0.5 , V(F1O2) , IF(V(F1O1) > 0.5 , 1 , 0)))}
+EB4 Q3 0 Value = {IF(V(RSET1) > 0.5 , 0 , IF( V(Q1) < 0.5 , V(F1O3) , IF(V(F1O4) > 0.5 , 0 , 1)))}
+R1 Q1 F1O1 100
+C1 F1O1 0 10P IC=0
+R2 Q2 F1O2 100
+C2 F1O2 0 10P IC=0
+G3 0 I1PO IT1 0 1.75M
+G4 0 I1NO 0 IT1 1.75M
+R3 Q3 F1O3 100
+C3 F1O3 0 10P IC=0
+EB5 Q4 0 Value = {IF(V(RSET1) > 0.5 , 0 , IF( V(Q1) > 0.5 , V(F1O4) , IF(V(F1O3) > 0.5 , 1 , 0)))}
+R4 Q4 F1O4 100
+C4 F1O4 0 10P IC=0
+EB6 PH2 0 Value = {IF(V(ENBL1) < 0.5 , 0 , IF(V(Q3) > 0.5 , 1 , -1))}
+EB7 PH1 0 Value = {IF(V(ENBL1) < 0.5 , 0 , IF(V(Q4) > 0.5 , 1 , -1))}
+GB8 0 RF1 Value = {(V(RF1P) - V(RF1N))*1U}
+R35 RF1 0 1MEG
+D21 16 RF1 _DLIM 
+V5 0 16 DC=1.34
+D22 RF1 17 _DLIM 
+V6 17 0 DC=1.34
+GB9 0 RF2 Value = {(V(RF2P) - V(RF2N))*1U}
+R36 RF2 0 1MEG
+D23 18 RF2 _DLIM 
+V7 0 18 DC=1.34
+D24 RF2 19 _DLIM 
+V8 19 0 DC=1.34
+EB10 CH1I 0 Value = {V(RF1) * V(PH1)}
+EB11 CH1Q 0 Value = {V(RF1) * V(PH2)}
+EB12 CH2I 0 Value = {V(RF2) * V(PH1)}
+EB13 CH2Q 0 Value = {V(RF2) * V(PH2)}
+EB14 W11 0 Value = {IF(V(P11) < 0.5 & V(P10) < 0.5 , 1 , IF(V(P11) < 0.5 , 0.9238795 , IF(V(P10) < 0.5 , 0.70710678 , 0.3826834)))}
+EB15 W12 0 Value = {IF(V(P11) < 0.5 & V(P10) < 0.5 , 0 , IF(V(P11) < 0.5 , 0.3826834 , IF(V(P10) < 0.5 , 0.70710678 , 0.9238795)))}
+I11 VPOS RF2N DC=70U
+EB16 G11 0 Value = {IF(V(P13) < 0.5 , V(W11) , -V(W11))}
+EB17 G12 0 Value = {IF(V(P13) < 0.5 , V(W12) , -V(W12))}
+R5 LODC 15 1K
+V1 15 0 DC=2.5
+RLODC LODC 0 1G
+G1 VPOS COMM ENBL1 0 42.75M
+G2 COMM VNEG ENBL1 0 19.8M
+I9 VPOS COMM DC=-40.036M
+I10 COMM VNEG DC=-39.8M
+R21 COMM COMM2 1U
+V4 VTH2 COMM DC=0.8
+EB34 IT2 0 Value = {IF(V(P22) < 0.5 , V(IA2) , V(QA2))}
+EB35 QT2 0 Value = {IF(V(P22) < 0.5 , V(QA2) , -V(IA2))}
+G7 0 I2PO IT2 0 1.75M
+EB18 IA1 0 Value = {V(G11) * V(CH1I) + V(G12) * V(CH1Q)}
+EB19 QA1 0 Value = {V(G11) * V(CH1Q) - V(G12) * V(CH1I)}
+EB20 IT1 0 Value = {IF(V(P12) < 0.5 , V(IA1) , V(QA1))}
+EB21 QT1 0 Value = {IF(V(P12) < 0.5 , V(QA1) , -V(IA1))}
+V2 5 COMM DC=0.8
+V3 6 COMM DC=0.8
+R14 VPOS 3 5K
+C6 RF1P RF1N 6.5P
+R8 PH10 VTH2 60K
+R9 PH11 VTH2 60K
+R10 PH12 VTH2 60K
+R11 PH13 VTH2 60K
+R16 ENBL 5 60K
+R17 RSET 6 20K
+EB22 P10 0 Value = {IF(V(PH10) - V(COMM) < 1.5 , 0 , 1)}
+R15 3 COMM 5K
+R12 RF1P 3 3.35K
+R13 RF1N 3 3.35K
+EB23 P11 0 Value = {IF(V(PH11) - V(COMM) < 1.5 , 0 , 1)}
+EB24 P12 0 Value = {IF(V(PH12) - V(COMM) < 1.5 , 0 , 1)}
+EB25 P13 0 Value = {IF(V(PH13) - V(COMM) < 1.5 , 0 , 1)}
+EB26 ENBL2 0 Value = {IF(V(ENBL) - V(COMM) < 1.5 , 0 , 1)}
+R38 ENBL2 ENBL1 1K
+C9 ENBL1 0 350P
+EB27 20 0 Value = {IF(V(ENBL2) < 0.5 , 1 , IF(V(RSET) - V(COMM) < 1.5 , 0 , 1))}
+R37 20 RSET1 1K
+C8 RSET1 0 350P
+I1 VPOS RF1P DC=70U
+I2 VPOS RF1N DC=70U
+R18 LO4P LO4P1 100
+R19 LO4N LO4N1 100
+I12 VPOS RF2P DC=70U
+R6 RF2N 4 3.35K
+D1 LO4P1 2 _DDEF 
+D2 2 LO4N1 _DDEF 
+R20 LO4P1 LO4N1 1MEG
+I3 VPOS LO4P DC=3U
+I4 VPOS LO4N DC=3U
+D3 1 LO4P1 _DDEF 
+D4 LO4N1 1 _DDEF 
+F1 I1PO VNEG VSI1 1
+D5 I1NO COMM _DDEF 
+D6 I1PO COMM _DDEF 
+D7 I1NO I1PO _DDEF 
+D8 I1NO 8 _DDEF 
+R22 8 7 300
+VSI1 7 VNEG DC=0
+G5 0 Q1PO QT1 0 1.75M
+G6 0 Q1NO 0 QT1 1.75M
+I5 VPOS I1NO DC=5M
+I6 VPOS I1PO DC=5M
+F2 Q1PO VNEG VSQ1 1
+D9 Q1NO COMM _DDEF 
+D10 Q1PO COMM _DDEF 
+D11 Q1NO Q1PO _DDEF 
+D12 Q1NO 10 _DDEF 
+R23 10 9 300
+VSQ1 9 VNEG DC=0
+I7 VPOS Q1NO DC=5M
+I8 VPOS Q1PO DC=5M
+R7 RF2P 4 3.35K
+R26 4 COMM 5K
+C7 RF2P RF2N 6.5P
+R27 VPOS 4 5K
+G8 0 I2NO 0 IT2 1.75M
+F3 I2PO VNEG VSI2 1
+D13 I2NO COMM _DDEF 
+D14 I2PO COMM _DDEF 
+D15 I2NO I2PO _DDEF 
+D16 I2NO 12 _DDEF 
+R24 12 11 300
+VSI2 11 VNEG DC=0
+I13 VPOS I2NO DC=5M
+I14 VPOS I2PO DC=5M
+G9 0 Q2PO QT2 0 1.75M
+G10 0 Q2NO 0 QT2 1.75M
+F4 Q2PO VNEG VSQ2 1
+D17 Q2NO COMM _DDEF 
+D18 Q2PO COMM _DDEF 
+D19 Q2NO Q2PO _DDEF 
+D20 Q2NO 14 _DDEF 
+R28 PH20 VTH2 60K
+R29 PH21 VTH2 60K
+R30 PH22 VTH2 60K
+R31 PH23 VTH2 60K
+EB39 P23 0 Value = {IF(V(PH23) - V(COMM) < 1.5 , 0 , 1)}
+EB38 P22 0 Value = {IF(V(PH22) - V(COMM) < 1.5 , 0 , 1)}
+EB37 P21 0 Value = {IF(V(PH21) - V(COMM) < 1.5 , 0 , 1)}
+EB36 P20 0 Value = {IF(V(PH20) - V(COMM) < 1.5 , 0 , 1)}
+EB28 W21 0 Value = {IF(V(P21) < 0.5 & V(P20) < 0.5 , 1 , IF(V(P21) < 0.5 , 0.9238795 , IF(V(P20) < 0.5 , 0.70710678 , 0.3826834)))}
+EB29 W22 0 Value = {IF(V(P21) < 0.5 & V(P20) < 0.5 , 0 , IF(V(P21) < 0.5 , 0.3826834 , IF(V(P20) < 0.5 , 0.70710678 , 0.9238795)))}
+EB31 G22 0 Value = {IF(V(P23) < 0.5 , V(W22) , -V(W22))}
+EB30 G21 0 Value = {IF(V(P23) < 0.5 , V(W21) , -V(W21))}
+EB32 IA2 0 Value = {V(G21) * V(CH2I) + V(G22) * V(CH2Q)}
+EB33 QA2 0 Value = {V(G21) * V(CH2Q) - V(G22) * V(CH2I)}
+R25 14 13 300
+VSQ2 13 VNEG DC=0
+I15 VPOS Q2NO DC=5M
+I16 VPOS Q2PO DC=5M
+C5 LO4P LO4N 0.6P
+R32 VPOS VPOS2 1U
+R33 VPOS VPOS3 1U
+R34 VPOS VPOS4 1U
+.MODEL _DDEF D
+.MODEL _DLIM D EG=.222 N=.2
+.ENDS 
+*$

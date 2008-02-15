@@ -1,0 +1,859 @@
+**** AD8116 spice model **** rev A/SMR/ADI 2-98
+
+* Copyright 1998 by Analog Devices, Inc.
+
+* This file models many of the characteristics, both analog 
+* and digital, of the AD8116 16x16 crosspoint switch. The
+* following is a brief list of these characteristics;
+
+* bandwidth
+* slewrate
+* disabled channel high z output impedance
+* output voltage limiting
+* input impedance
+* power supply current relative to disabled channels
+* digital logic inputs, note: the digital logic section is
+* modeled very close to that of the real part. However, if
+* the model is used with near minimum timing specs, errors
+* may occur. 
+
+* For ease of AC analysis, a feature has been added to the
+* model that does not exist on the real AD8116. This is a
+* mux which allows the user to program the 80 bit channel
+* select word in a parallel format, without having to use the
+* shiftregister. Bringing the sel pin in the model (which does
+* not exist on the real part) to a logic low allows the user 
+* to preset the 16x16 matrix.This is defined by pins b1 to b80
+* and is set by standard logic levels.
+
+* This model is somewhat complex and does take some time to
+* complete a simulation. As a benchmark, this model was tested
+* on a 200MHz PC, with the test circuit included at the end of
+* this file, and took 2-12 minutes to do a simulation depending
+* on how many points were taken.
+
+* A sample test circuit has been added at the end of this file,
+* which will allow the user to do a simple transient/AC analysis.
+
+*                    dataclk
+*                     |  serdatain
+*                     |   |     serialdataout
+*                     |   |      |   update
+*                     |   |      |    |     reset
+*                     |   |      |    |     |     ce
+*                     |   |      |    |     |     |
+.subckt ad8116 99 50 clk datain ql80 update reset ce
+
+**** 16 input channels ****
+
++ ch1in ch2in ch3in ch4in ch5in ch6in ch7in ch8in
++ ch9in ch10in ch11in ch12in ch13in ch14in ch15in ch16in
+
+**** 16 output channels ****
+
++ out1 out2 out3 out4 out5 out6 out7 out8
++ out9 out10 out11 out12 out13 out14 out15 out16
+
+**** optional use parallel inputs
+
+* ( format is lsb,a,b,msb,en, for each set of 5 bits)
+
++ b1 b2 b3 b4 b5 b6 b7 b8 b9 b10
++ b11 b12 b13 b14 b15 b16 b17 b18 b19 b20
++ b21 b22 b23 b24 b25 b26 b27 b28 b29 b30
++ b31 b32 b33 b34 b35 b36 b37 b38 b39 b40
++ b41 b42 b43 b44 b45 b46 b47 b48 b49 b50
++ b51 b52 b53 b54 b55 b56 b57 b58 b59 b60
++ b61 b62 b63 b64 b65 b66 b67 b68 b69 b70
++ b71 b72 b73 b74 b75 b76 b77 b78 b79 b80
++ sel
+
+**** input r/c ****
+
+r1 ch1in 0 10e6
+r2 ch2in 0 10e6
+r3 ch3in 0 10e6
+r4 ch4in 0 10e6
+r5 ch5in 0 10e6
+r6 ch6in 0 10e6
+r7 ch7in 0 10e6
+r8 ch8in 0 10e6
+r9 ch9in 0 10e6
+r10 ch10in 0 10e6
+r11 ch11in 0 10e6
+r12 ch12in 0 10e6
+r13 ch13in 0 10e6
+r14 ch14in 0 10e6
+r15 ch15in 0 10e6
+r16 ch16in 0 10e6
+c1 ch1in 0 5e-12
+c2 ch2in 0 5e-12
+c3 ch3in 0 5e-12
+c4 ch4in 0 5e-12
+c5 ch5in 0 5e-12
+c6 ch6in 0 5e-12
+c7 ch7in 0 5e-12
+c8 ch8in 0 5e-12
+c9 ch9in 0 5e-12
+c10 ch10in 0 5e-12
+c11 ch11in 0 5e-12
+c12 ch12in 0 5e-12
+c13 ch13in 0 5e-12
+c14 ch14in 0 5e-12
+c15 ch15in 0 5e-12
+c16 ch16in 0 5e-12
+
+**** digital logic section ****
+
+x1 clk ce clkb nor
+x2 update ce updateb nor
+x3 clkb datain reset updateb 
++ql1 ql2 ql3 ql4 ql5 ql6 ql7 ql8 ql9 ql10
++ql11 ql12 ql13 ql14 ql15 ql16 ql17 ql18 ql19 ql20
++ql21 ql22 ql23 ql24 ql25 ql26 ql27 ql28 ql29 ql30
++ql31 ql32 ql33 ql34 ql35 ql36 ql37 ql38 ql39 ql40
++ql41 ql42 ql43 ql44 ql45 ql46 ql47 ql48 ql49 ql50
++ql51 ql52 ql53 ql54 ql55 ql56 ql57 ql58 ql59 ql60
++ql61 ql62 ql63 ql64 ql65 ql66 ql67 ql68 ql69 ql70
++ql71 ql72 ql73 ql74 ql75 ql76 ql77 ql78 ql79 ql80 
++shiftreg
+
+x4 ql1 b1 qlb1 ql2 b2 qlb2 ql3 b3 qlb3 ql4 b4 qlb4 ql5 b5 qlb5 sel mux
+x5 ql6 b6 qlb6 ql7 b7 qlb7 ql8 b8 qlb8 ql9 b9 qlb9 ql10 b10 qlb10 sel mux
+x6 ql11 b11 qlb11 ql12 b12 qlb12 ql13 b13 qlb13 ql14 b14 qlb14 ql15 b15 qlb15 sel mux
+x7 ql16 b16 qlb16 ql17 b17 qlb17 ql18 b18 qlb18 ql19 b19 qlb19 ql20 b20 qlb20 sel mux
+x8 ql21 b21 qlb21 ql22 b22 qlb22 ql23 b23 qlb23 ql24 b24 qlb24 ql25 b25 qlb25 sel mux
+x9 ql26 b26 qlb26 ql27 b27 qlb27 ql28 b28 qlb28 ql29 b29 qlb29 ql30 b30 qlb30 sel mux
+x10 ql31 b31 qlb31 ql32 b32 qlb32 ql33 b33 qlb33 ql34 b34 qlb34 ql35 b35 qlb35 sel mux
+x11 ql36 b36 qlb36 ql37 b37 qlb37 ql38 b38 qlb38 ql39 b39 qlb39 ql40 b40 qlb40 sel mux
+x12 ql41 b41 qlb41 ql42 b42 qlb42 ql43 b43 qlb43 ql44 b44 qlb44 ql45 b45 qlb45 sel mux
+x13 ql46 b46 qlb46 ql47 b47 qlb47 ql48 b48 qlb48 ql49 b49 qlb49 ql50 b50 qlb50 sel mux
+x14 ql51 b51 qlb51 ql52 b52 qlb52 ql53 b53 qlb53 ql54 b54 qlb54 ql55 b55 qlb55 sel mux
+x15 ql56 b56 qlb56 ql57 b57 qlb57 ql58 b58 qlb58 ql59 b59 qlb59 ql60 b60 qlb60 sel mux
+x16 ql61 b61 qlb61 ql62 b62 qlb62 ql63 b63 qlb63 ql64 b64 qlb64 ql65 b65 qlb65 sel mux
+x17 ql66 b66 qlb66 ql67 b67 qlb67 ql68 b68 qlb68 ql69 b69 qlb69 ql70 b70 qlb70 sel mux
+x18 ql71 b71 qlb71 ql72 b72 qlb72 ql73 b73 qlb73 ql74 b74 qlb74 ql75 b75 qlb75 sel mux
+x19 ql76 b76 qlb76 ql77 b77 qlb77 ql78 b78 qlb78 ql79 b79 qlb79 ql80 b80 qlb80 sel mux
+
+x20 qlb1 qlb2 qlb3 qlb4 qlb5 z0 z1 z2 z3 z4 z5 z6 z7
++ z8 z9 z10 z11 z12 z13 z14 z15 99 decoder
+x21 qlb6 qlb7 qlb8 qlb9 qlb10 z16 z17 z18 z19 z20 z21 z22 z23
++ z24 z25 z26 z27 z28 z29 z30 z31 99 decoder
+x22 qlb11 qlb12 qlb13 qlb14 qlb15 z32 z33 z34 z35 z36 z37 z38 z39
++ z40 z41 z42 z43 z44 z45 z46 z47 99 decoder
+x23 qlb16 qlb17 qlb18 qlb19 qlb20 z48 z49 z50 z51 z52 z53 z54 z55
++ z56 z57 z58 z59 z60 z61 z62 z63 99 decoder
+x24 qlb21 qlb22 qlb23 qlb24 qlb25 z64 z65 z66 z67 z68 z69 z70 z71
++ z72 z73 z74 z75 z76 z77 z78 z79 99 decoder
+x25 qlb26 qlb27 qlb28 qlb29 qlb30 z80 z81 z82 z83 z84 z85 z86 z87
++ z88 z89 z90 z91 z92 z93 z94 z95 99 decoder
+x26 qlb31 qlb32 qlb33 qlb34 qlb35 z96 z97 z98 z99 z100 z101 z102 z103
++ z104 z105 z106 z107 z108 z109 z110 z111 99 decoder
+x27 qlb36 qlb37 qlb38 qlb39 qlb40 z112 z113 z114 z115 z116 z117 z118 z119
++ z120 z121 z122 z123 z124 z125 z126 z127 99 decoder
+x28 qlb41 qlb42 qlb43 qlb44 qlb45 z128 z129 z130 z131 z132 z133 z134 z135
++ z136 z137 z138 z139 z140 z141 z142 z143 99 decoder
+x29 qlb46 qlb47 qlb48 qlb49 qlb50 z144 z145 z146 z147 z148 z149 z150 z151
++ z152 z153 z154 z155 z156 z157 z158 z159 99 decoder
+x30 qlb51 qlb52 qlb53 qlb54 qlb55 z160 z161 z162 z163 z164 z165 z166 z167
++ z168 z169 z170 z171 z172 z173 z174 z175 99 decoder
+x31 qlb56 qlb57 qlb58 qlb59 qlb60 z176 z177 z178 z179 z180 z181 z182 z183
++ z184 z185 z186 z187 z188 z189 z190 z191 99 decoder
+x32 qlb61 qlb62 qlb63 qlb64 qlb65 z192 z193 z194 z195 z196 z197 z198 z199
++ z200 z201 z202 z203 z204 z205 z206 z207 99 decoder
+x33 qlb66 qlb67 qlb68 qlb69 qlb70 z208 z209 z210 z211 z212 z213 z214 z215
++ z216 z217 z218 z219 z220 z221 z222 z223 99 decoder
+x34 qlb71 qlb72 qlb73 qlb74 qlb75 z224 z225 z226 z227 z228 z229 z230 z231
++ z232 z233 z234 z235 z236 z237 z238 z239 99 decoder
+x35 qlb76 qlb77 qlb78 qlb79 qlb80 z240 z241 z242 z243 z244 z245 z246 z247
++ z248 z249 z250 z251 z252 z253 z254 z255 99 decoder
+
+**** analog section ****
+
+x36 ch1in ch2in ch3in ch4in ch5in ch6in ch7in ch8in
++ ch9in ch10in ch11in ch12in ch13in ch14in ch15in ch16in 
++ out1 z0 z1 z2 z3 z4 z5 z6 z7 z8
++ z9 z10 z11 z12 z13 z14 z15 qlb5 99 50 switch
+x37 ch1in ch2in ch3in ch4in ch5in ch6in ch7in ch8in
++ ch9in ch10in ch11in ch12in ch13in ch14in ch15in ch16in 
++ out2 z16 z17 z18 z19 z20 z21 z22 z23
++ z24 z25 z26 z27 z28 z29 z30 z31 qlb10 99 50 switch
+x38 ch1in ch2in ch3in ch4in ch5in ch6in ch7in ch8in
++ ch9in ch10in ch11in ch12in ch13in ch14in ch15in ch16in 
++ out3 z32 z33 z34 z35 z36 z37 z38 z39
++ z40 z41 z42 z43 z44 z45 z46 z47 qlb15 99 50 switch
+x39 ch1in ch2in ch3in ch4in ch5in ch6in ch7in ch8in
++ ch9in ch10in ch11in ch12in ch13in ch14in ch15in ch16in 
++ out4 z48 z49 z50 z51 z52 z53 z54 z55
++ z56 z57 z58 z59 z60 z61 z62 z63 qlb20 99 50 switch
+x40 ch1in ch2in ch3in ch4in ch5in ch6in ch7in ch8in
++ ch9in ch10in ch11in ch12in ch13in ch14in ch15in ch16in 
++out5 z64 z65 z66 z67 z68 z69 z70 z71
++ z72 z73 z74 z75 z76 z77 z78 z79 qlb25 99 50 switch
+x41 ch1in ch2in ch3in ch4in ch5in ch6in ch7in ch8in
++ ch9in ch10in ch11in ch12in ch13in ch14in ch15in ch16in 
++ out6 z80 z81 z82 z83 z84 z85 z86 z87
++ z88 z89 z90 z91 z92 z93 z94 z95 qlb30 99 50 switch
+x42 ch1in ch2in ch3in ch4in ch5in ch6in ch7in ch8in
++ ch9in ch10in ch11in ch12in ch13in ch14in ch15in ch16in 
++ out7 z96 z97 z98 z99 z100 z101 z102 z103
++ z104 z105 z106 z107 z108 z109 z110 z111 qlb35 99 50 switch
+x43 ch1in ch2in ch3in ch4in ch5in ch6in ch7in ch8in
++ ch9in ch10in ch11in ch12in ch13in ch14in ch15in ch16in 
++ out8 z112 z113 z114 z115 z116 z117 z118 z119
++ z120 z121 z122 z123 z124 z125 z126 z127 qlb40 99 50 switch
+x44 ch1in ch2in ch3in ch4in ch5in ch6in ch7in ch8in
++ ch9in ch10in ch11in ch12in ch13in ch14in ch15in ch16in 
++ out9 z128 z129 z130 z131 z132 z133 z134 z135
++ z136 z137 z138 z139 z140 z141 z142 z143 qlb45 99 50 switch
+x45 ch1in ch2in ch3in ch4in ch5in ch6in ch7in ch8in
++ ch9in ch10in ch11in ch12in ch13in ch14in ch15in ch16in 
++ out10 z144 z145 z146 z147 z148 z149 z150 z151
++ z152 z153 z154 z155 z156 z157 z158 z159 qlb50 99 50 switch
+x46 ch1in ch2in ch3in ch4in ch5in ch6in ch7in ch8in
++ ch9in ch10in ch11in ch12in ch13in ch14in ch15in ch16in 
++ out11 z160 z161 z162 z163 z164 z165 z166 z167
++ z168 z169 z170 z171 z172 z173 z174 z175 qlb55 99 50 switch
+x47 ch1in ch2in ch3in ch4in ch5in ch6in ch7in ch8in
++ ch9in ch10in ch11in ch12in ch13in ch14in ch15in ch16in 
++ out12 z176 z177 z178 z179 z180 z181 z182 z183
++ z184 z185 z186 z187 z188 z189 z190 z191 qlb60 99 50 switch
+x48 ch1in ch2in ch3in ch4in ch5in ch6in ch7in ch8in
++ ch9in ch10in ch11in ch12in ch13in ch14in ch15in ch16in 
++ out13 z192 z193 z194 z195 z196 z197 z198 z199
++ z200 z201 z202 z203 z204 z205 z206 z207 qlb65 99 50 switch
+x49 ch1in ch2in ch3in ch4in ch5in ch6in ch7in ch8in
++ ch9in ch10in ch11in ch12in ch13in ch14in ch15in ch16in 
++ out14 z208 z209 z210 z211 z212 z213 z214 z215
++ z216 z217 z218 z219 z220 z221 z222 z223 qlb70 99 50 switch
+x50 ch1in ch2in ch3in ch4in ch5in ch6in ch7in ch8in
++ ch9in ch10in ch11in ch12in ch13in ch14in ch15in ch16in 
++ out15 z224 z225 z226 z227 z228 z229 z230 z231
++ z232 z233 z234 z235 z236 z237 z238 z239 qlb75 99 50 switch
+x51 ch1in ch2in ch3in ch4in ch5in ch6in ch7in ch8in
++ ch9in ch10in ch11in ch12in ch13in ch14in ch15in ch16in 
++ out16 z240 z241 z242 z243 z244 z245 z246 z247
++ z248 z249 z250 z251 z252 z253 z254 z255 qlb80 99 50 switch
+
+.ends ad8116
+
+.subckt switch in1 in2 in3 in4 in5 in6 in7 in8
++ in9 in10 in11 in12 in13 in14 in15 in16
++ 3
++ c1 c2 c3 c4 c5 c6 c7 c8
++ c9 c10 c11 c12 c13 c14 c15 c16 en 99 50
++   optional: dpwr=$g_dpwr dgnd=$g_dgnd
++   params: mntymxdly=0 io_level=0
+gswch1 0 outp poly(2) in1 0 c1 0 0 0 0 0 1e-3
+gswch2 0 outp poly(2) in2 0 c2 0 0 0 0 0 1e-3
+gswch3 0 outp poly(2) in3 0 c3 0 0 0 0 0 1e-3
+gswch4 0 outp poly(2) in4 0 c4 0 0 0 0 0 1e-3
+gswch5 0 outp poly(2) in5 0 c5 0 0 0 0 0 1e-3
+gswch6 0 outp poly(2) in6 0 c6 0 0 0 0 0 1e-3
+gswch7 0 outp poly(2) in7 0 c7 0 0 0 0 0 1e-3
+gswch8 0 outp poly(2) in8 0 c8 0 0 0 0 0 1e-3
+gswch9 0 outp poly(2) in9 0 c9 0 0 0 0 0 1e-3
+gswch10 0 outp poly(2) in10 0 c10 0 0 0 0 0 1e-3
+gswch11 0 outp poly(2) in11 0 c11 0 0 0 0 0 1e-3
+gswch12 0 outp poly(2) in12 0 c12 0 0 0 0 0 1e-3
+gswch13 0 outp poly(2) in13 0 c13 0 0 0 0 0 1e-3
+gswch14 0 outp poly(2) in14 0 c14 0 0 0 0 0 1e-3
+gswch15 0 outp poly(2) in15 0 c15 0 0 0 0 0 1e-3
+gswch16 0 outp poly(2) in16 0 c16 0 0 0 0 0 1e-3
+routp outp 0 1e3
+
+* feedback / slew limiting stage *
+
+gsl 0 16 poly(2) outp 0 3 0 0 1 -1
+dsl1 0 16 dx
+dsl2 16 0 dx
+dsl3 16 17 dx
+dsl4 17 16 dx
+rsl  17 18 0.35
+vsl  18 0 0
+
+ffc 99 9 vsl 20 
+ffd 50 9 vsl 20
+rfa 99 9 1e3
+rfb 50 9 1e3
+cfa 99 9 8e-9
+cfb 50 9 8e-9
+vcl1 99 cl1 2.91
+dcl1 9 cl1 dx
+vcl2 cl2 50 2.91
+dcl2 cl2 9 dx
+
+* output current reflected to supplies *
+
+fcurr 0 8 voc 1
+vcur1 6 0 0
+vcur2 0 7 0
+dcur1 8 6 dx
+dcur2 7 8 dx
+
+* output stage *
+vo1 99 90 0
+vo2 91 50 0
+fout1 0 99 poly(2) vo1 vcur1 -3.125e-3 1 -1
+gout3 50 99 poly(1) en 0 79.2e-6 -0.88e-3 
+fout3 50 0 poly(2) vo2 vcur2 -1.9e-3 1 -1
+gout1 90 2 poly(2) 9 99 enbuf 0 0 0 0 0 0.033
+gout2 91 2 poly(2) 9 50 enbuf 0 0 0 0 0 0.033
+q1 90 12 10 qn
+q2 91 13 11 qp 
+r1 10 2 30
+r2 2 11 30
+voc 2 3 0
+rout3 3 0 1e6
+et1 90 12 poly(1) enbuf 0 10 -10
+et2 13 91 poly(1) enbuf 0 10 -10
+u1 buf dpwr dgnd
++   en enbuf
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={2}
+.model qn npn(bf=100)
+.model qp pnp(bf=100)
+.model dx d()
+.ends switch
+
+.subckt shiftreg clkb datain reset update
++ql1 ql2 ql3 ql4 ql5 ql6 ql7 ql8 ql9 ql10
++ql11 ql12 ql13 ql14 ql15 ql16 ql17 ql18 ql19 ql20
++ql21 ql22 ql23 ql24 ql25 ql26 ql27 ql28 ql29 ql30
++ql31 ql32 ql33 ql34 ql35 ql36 ql37 ql38 ql39 ql40
++ql41 ql42 ql43 ql44 ql45 ql46 ql47 ql48 ql49 ql50
++ql51 ql52 ql53 ql54 ql55 ql56 ql57 ql58 ql59 ql60
++ql61 ql62 ql63 ql64 ql65 ql66 ql67 ql68 ql69 ql70
++ql71 ql72 ql73 ql74 ql75 ql76 ql77 ql78 ql79 ql80
++   optional: dpwr=$g_dpwr dgnd=$g_dgnd
++   params: mntymxdly=0 io_level=0
+u1 dff(80) dpwr dgnd
++   dpwr dpwr clkb datain d2 d3 d4 d5 d6 d7 d8
++d9 d10 d11 d12 d13 d14 d15 d16
++d17 d18 d19 d20 d21 d22 d23 d24
++d25 d26 d27 d28 d29 d30 d31 d32
++d33 d34 d35 d36 d37 d38 d39 d40
++d41 d42 d43 d44 d45 d46 d47 d48
++d49 d50 d51 d52 d53 d54 d55 d56
++d57 d58 d59 d60 d61 d62 d63 d64
++d65 d66 d67 d68 d69 d70 d71 d72
++d73 d74 d75 d76 d77 d78 d79 d80
++
++d2 d3 d4 d5 d6 d7 d8
++d9 d10 d11 d12 d13 d14 d15 d16
++d17 d18 d19 d20 d21 d22 d23 d24
++d25 d26 d27 d28 d29 d30 d31 d32
++d33 d34 d35 d36 d37 d38 d39 d40
++d41 d42 d43 d44 d45 d46 d47 d48
++d49 d50 d51 d52 d53 d54 d55 d56
++d57 d58 d59 d60 d61 d62 d63 d64
++d65 d66 d67 d68 d69 d70 d71 d72
++d73 d74 d75 d76 d77 d78 d79 d80 q80
+
++qb1 qb2 qb3 qb4 qb5 qb6 qb7 qb8 qb9 qb10
++qb11 qb12 qb13 qb14 qb15 qb16 qb17 qb18 qb19 qb20
++qb21 qb22 qb23 qb24 qb25 qb26 qb27 qb28 qb29 qb30
++qb31 qb32 qb33 qb34 qb35 qb36 qb37 qb38 qb39 qb40
++qb41 qb42 qb43 qb44 qb45 qb46 qb47 qb48 qb49 qb50
++qb51 qb52 qb53 qb54 qb55 qb56 qb57 qb58 qb59 qb60
++qb61 qb62 qb63 qb64 qb65 qb66 qb67 qb68 qb69 qb70
++qb71 qb72 qb73 qb74 qb75 qb76 qb77 qb78 qb79 qb80
++t_dff IO_STD mntymxdly={mntymxdly} io_level={io_level}
+
+u2 dltch(80) dpwr dgnd dpwr reset update
++d2 d3 d4 d5 d6 d7 d8
++d9 d10 d11 d12 d13 d14 d15 d16
++d17 d18 d19 d20 d21 d22 d23 d24
++d25 d26 d27 d28 d29 d30 d31 d32
++d33 d34 d35 d36 d37 d38 d39 d40
++d41 d42 d43 d44 d45 d46 d47 d48
++d49 d50 d51 d52 d53 d54 d55 d56
++d57 d58 d59 d60 d61 d62 d63 d64
++d65 d66 d67 d68 d69 d70 d71 d72
++d73 d74 d75 d76 d77 d78 d79 d80 q80
+
++ql1 ql2 ql3 ql4 ql5 ql6 ql7 ql8 ql9 ql10
++ql11 ql12 ql13 ql14 ql15 ql16 ql17 ql18 ql19 ql20
++ql21 ql22 ql23 ql24 ql25 ql26 ql27 ql28 ql29 ql30
++ql31 ql32 ql33 ql34 ql35 ql36 ql37 ql38 ql39 ql40
++ql41 ql42 ql43 ql44 ql45 ql46 ql47 ql48 ql49 ql50
++ql51 ql52 ql53 ql54 ql55 ql56 ql57 ql58 ql59 ql60
++ql61 ql62 ql63 ql64 ql65 ql66 ql67 ql68 ql69 ql70
++ql71 ql72 ql73 ql74 ql75 ql76 ql77 ql78 ql79 ql80
+
++qbl1 qbl2 qbl3 qbl4 qbl5 qbl6 qbl7 qbl8 qbl9 qbl10
++qbl11 qbl12 qbl13 qbl14 qbl15 qbl16 qbl17 qbl18 qbl19 qbl20
++qbl21 qbl22 qbl23 qbl24 qbl25 qbl26 qbl27 qbl28 qbl29 qbl30
++qbl31 qbl32 qbl33 qbl34 qbl35 qbl36 qbl37 qbl38 qbl39 qbl40
++qbl41 qbl42 qbl43 qbl44 qbl45 qbl46 qbl47 qbl48 qbl49 qbl50
++qbl51 qbl52 qbl53 qbl54 qbl55 qbl56 qbl57 qbl58 qbl59 qbl60
++qbl61 qbl62 qbl63 qbl64 qbl65 qbl66 qbl67 qbl68 qbl69 qbl70
++qbl71 qbl72 qbl73 qbl74 qbl75 qbl76 qbl77 qbl78 qbl79 qbl80
++t_dltch IO_STD mntymxdly={mntymxdly} io_level={io_level}
+.ends shiftreg
+
+.subckt mux in1a in1b out1 in2a in2b out2 in3a in3b out3
++ in4a in4b out4 in5a in5b out5 sel 
++   optional: dpwr=$g_dpwr dgnd=$g_dgnd
++   params: mntymxdly=0 io_level=0
+u1 nand(2) dpwr dgnd
++   in1a sel x1
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={io_level}
+u2 nand(2) dpwr dgnd
++   in1b selb y1
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={io_level}
+u3 nand(2) dpwr dgnd
++   x1 y1 out1
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={io_level}
+u4 nand(2) dpwr dgnd
++   in2a sel x2
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={io_level}
+u5 nand(2) dpwr dgnd
++   in2b selb y2
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={io_level}
+u6 nand(2) dpwr dgnd
++   x2 y2 out2
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={io_level}
+u7 nand(2) dpwr dgnd
++   in3a sel x3
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={io_level}
+u8 nand(2) dpwr dgnd
++   in3b selb y3
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={io_level}
+u9 nand(2) dpwr dgnd
++   x3 y3 out3
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={io_level}
+u10 nand(2) dpwr dgnd
++   in4a sel x4
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={io_level}
+u11 nand(2) dpwr dgnd
++   in4b selb y4
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={io_level}
+u12 nand(2) dpwr dgnd
++   x4 y4 out4
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={io_level}
+u13 nand(2) dpwr dgnd
++   in5a sel x5
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={io_level}
+u14 nand(2) dpwr dgnd
++   in5b selb y5
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={io_level}
+u15 nand(2) dpwr dgnd
++   x5 y5 out5
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={io_level}
+u16 inv dpwr dgnd
++   sel selb 
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={io_level}
+.ends mux
+
+.subckt decoder a b c d en 
++ z1 z2 z3 z4 z5 z6 z7 z8
++ z9 z10 z11 z12 z13 z14 z15 z16 99
++   optional: dpwr=$g_dpwr dgnd=$g_dgnd 
++   params: mntymxdly=0 io_level=2
+v11 1 0 5
+r11 1 11 1k
+d11 11 ab dx
+d12 11 bb dx
+d13 11 cb dx
+d14 11 db dx
+d15 11 en dx
+u1 buf dpwr dgnd
++   11 z1
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={2}
+
+r21 1 21 1k    
+d21 21 a  dx
+d22 21 bb dx
+d23 21 cb dx
+d24 21 db dx
+d25 21 en dx
+u2 buf dpwr dgnd
++   21 z2
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={2}
+ 
+r31 1 31 1k       
+d31 31 ab dx
+d32 31 b  dx
+d33 31 cb dx
+d34 31 db dx
+d35 31 en dx
+u3 buf dpwr dgnd
++   31 z3
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={2}
+
+r41 1 41 1k
+d41 41 a dx
+d42 41 b dx
+d43 41 cb  dx
+d44 41 db dx
+d45 41 en dx
+u4 buf dpwr dgnd
++   41 z4
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={2}
+
+r51 1 51 1k        
+d51 51 ab dx
+d52 51 bb dx
+d53 51 c  dx
+d54 51 db dx
+d55 51 en dx
+u5 buf dpwr dgnd
++   51 z5
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={2}
+
+r61 1 61 1k
+d61 61 a  dx
+d62 61 bb dx
+d63 61 c  dx
+d64 61 db dx
+d65 61 en dx
+u6 buf dpwr dgnd
++   61 z6
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={2}
+
+r71 1 71 1k
+d71 71 ab dx
+d72 71 b  dx
+d73 71 c  dx
+d74 71 db dx
+d75 71 en dx
+u7 buf dpwr dgnd
++   71 z7
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={2}
+
+r81 1 81 1k
+d81 81 a  dx
+d82 81 b  dx
+d83 81 c  dx
+d84 81 db dx
+d85 81 en dx
+u8 buf dpwr dgnd
++   81 z8
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={2}
+
+r91 1 91 1k
+d91 91 ab dx
+d92 91 bb dx
+d93 91 cb dx
+d94 91 d  dx
+d95 91 en dx
+u9 buf dpwr dgnd
++  91 z9
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={2}
+
+r101 1 101 1k
+d101 101 a  dx
+d102 101 bb dx
+d103 101 cb dx
+d104 101 d  dx
+d105 101 en dx
+u10 buf dpwr dgnd
++   101 z10
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={2}
+
+r111 1 111 1k
+d111 111 ab dx
+d112 111 b  dx
+d113 111 cb dx
+d114 111 d  dx
+d115 111 en dx
+u11 buf dpwr dgnd
++   111 z11
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={2}
+
+r121 1 121 1k
+d121 121 a  dx
+d122 121 b  dx
+d123 121 cb dx
+d124 121 d  dx
+d125 121 en dx
+u12 buf dpwr dgnd
++   121 z12
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={2}
+
+r131 1 131 1k
+d131 131 ab dx
+d132 131 bb dx
+d133 131 c dx
+d134 131 d  dx
+d135 131 en dx
+u13 buf dpwr dgnd
++   131 z13
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={2}
+
+r141 1 141 1k
+d141 141 a  dx
+d142 141 bb dx
+d143 141 c  dx
+d144 141 d  dx
+d145 141 en dx
+u14 buf dpwr dgnd
++   141 z14
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={2}
+
+r151 1 151 1k
+d151 151 ab dx
+d152 151 b  dx
+d153 151 c  dx
+d154 151 d  dx
+d155 151 en dx
+u15 buf dpwr dgnd
++   151 z15
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={2}
+
+r161 1 161 1k
+d161 161 a  dx
+d162 161 b  dx
+d163 161 c  dx
+d164 161 d  dx
+d165 161 en dx
+u16 buf dpwr dgnd
++   161 z16
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={2}
+
+x17  a a ab nand
+x18  b b bb nand
+x19  c c cb nand
+x20  d d db nand
+
+.ends decoder
+
+.subckt nand a b out
++   optional: dpwr=$g_dpwr dgnd=$g_dgnd
++   params: mntymxdly=0 io_level=0
+u1 nand(2) dpwr dgnd
++   a b out
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={1}
+.ends nand
+
+.subckt nor a b out
++   optional: dpwr=$g_dpwr dgnd=$g_dgnd
++   params: mntymxdly=0 io_level=0
+u1 nor(2) dpwr dgnd
++   a b out
++   D_00 IO_STD mntymxdly={mntymxdly} io_level={1}
+.ends nor
+
+.subckt DIGIFPWR  AGND
++       optional: DPWR=$G_DPWR DGND=$G_DGND
++       params:   VOLTAGE=5.0v REFERENCE=0v
+
+VDPWR  DPWR DGND  {VOLTAGE}
+R1     DPWR AGND  1MEG
+VDGND  DGND AGND  {REFERENCE}
+R2     DGND AGND  1e-3
+.model do74 d()
+.ends digifpwr
+
+.model D_00 ugate (tplhty=2ns tplhmx=2ns tphlty=2ns tphlmx=2ns)
+
+.model IO_STD uio (
++       drvh=96.4       drvl=104
++       AtoD1="AtoD_STD"        AtoD2="AtoD_STD_1"
++       DtoA1="DtoA_STD"        DtoA2="DtoA_STD_1"
++       tswhl1=1ms          tswlh1=1ms
++       tswhl2=1ms          tswlh2=1ms
++       tswhl3=1ms          tswlh3=1ms
++       tswhl4=1ms          tswlh4=1ms
++       DIGPOWER="DIGIFPWR"
++       )
+
+.subckt AtoD_STD a d dpwr dgnd params: CAPACITANCE=0
+O0  A DGND DO1 DGTLNET=D IO_STD
+C1  A DGND {CAPACITANCE+0.1pF}
+D0      DGND    a       Dx
+D1      1       2       Dx
+D2      2       DGND    Dx
+R1      DPWR    3       4k
+Q1      1       3       A       0       qx
+
+.model dx d()
+.model qx pnp()
+.model DO1 doutput (
++       s0name="X"      s0vlo=0.8       s0vhi=2.0
++       s1name="0"      s1vlo=-1.5      s1vhi=0.8
++       s2name="R"      s2vlo=0.8       s2vhi=1.4
++       s3name="R"      s3vlo=1.3       s3vhi=2.0
++       s4name="X"      s4vlo=0.8       s4vhi=2.0
++       s5name="1"      s5vlo=2.0       s5vhi=7.0
++       s6name="F"      s6vlo=1.3       s6vhi=2.0
++       s7name="F"      s7vlo=0.8       s7vhi=1.4
++       )
+.ends atod_std
+
+.subckt AtoD_STD_1 a d dpwr dgnd params: CAPACITANCE=0
+O0  A DGND DO1 DGTLNET=D IO_STD
+C1  A DGND {CAPACITANCE+0.1pF}
+D0      DGND    a       dx
+D1      1       2       dx
+D2      2       DGND    dx
+R1      DPWR    3       4k
+Qx      1       3       A       0       Qx
+
+.model dx d() 
+.model qx pnp()
+.model DO1 doutput (
++       s1name="0"      s1vlo=-1.5      s1vhi=1.0
++       s5name="1"      s5vlo=1.0       s5vhi=7.0
++       )
+.ends atod_std_1
+
+.subckt DtoA_STD  D A  DPWR DGND
++       params: DRVL=0 DRVH=0 CAPACITANCE=0
+
+N1  A DGND DPWR dinx DGTLNET=D IO_STD
+C1  A DGND {CAPACITANCE+0.1pF}
+.model dinx dinput (
++       s0name="0"      s0tsw=3.5ns     s0rlo=7.13      s0rhi=389 ; 7ohm,    0.09v
++       s1name="1"      s1tsw=5.5ns     s1rlo=467       s1rhi=200 ; 140ohm,  3.5v
++       s2name="X"      s2tsw=3.5ns     s2rlo=42.9      s2rhi=116 ; 31.3ohm, 1.35v
++       s3name="R"      s3tsw=3.5ns     s3rlo=42.9      s3rhi=116 ; 31.3ohm, 1.35v
++       s4name="F"      s4tsw=3.5ns     s4rlo=42.9      s4rhi=116 ; 31.3ohm, 1.35v
++       s5name="Z"      s5tsw=3.5ns     s5rlo=200K      s5rhi=200K
++       )
+.ends  DtoA_STD
+
+.subckt DtoA_STD_1  D A  DPWR DGND
++       params: DRVL=0 DRVH=0 CAPACITANCE=0
+
+N1  A DGND DPWR dinx DGTLNET=D IO_STD
+C1  A DGND {CAPACITANCE+0.1pF}
+.model dinx dinput (
++       s0name="0"      s0tsw=3.5ns     s0rlo=1e-6      s0rhi=1e6 ; 0.0v
++       s1name="1"      s1tsw=5.5ns     s1rlo=200       s1rhi=800 ; 1.0v
++       s2name="X"      s2tsw=3.5ns     s2rlo=42.9      s2rhi=116 ; 31.3ohm, 1.35v
++       s3name="R"      s3tsw=3.5ns     s3rlo=42.9      s3rhi=116 ; 31.3ohm, 1.35v
++       s4name="F"      s4tsw=3.5ns     s4rlo=42.9      s4rhi=116 ; 31.3ohm, 1.35v
++       s5name="Z"      s5tsw=3.5ns     s5rlo=200K      s5rhi=200K
++       )
+.ends  DtoA_STD_1
+
+.model t_dff ueff(
++ tpclkqlhmn=2ns tpclkqlhty=2ns tpclkqlhmx=2ns
++ tpclkqhlmn=2ns tpclkqhlty=2ns tpclkqhlmx=2ns
+                                                  
+.model t_dltch ugff (
++       twghmx=2ns     tsudgmx=2ns
++       thdgmx=5ns     tpgqlhty=2ns
++       tpgqlhmx=3ns   tpgqhlty=1ns
++       tpgqhlmx=2ns   tpdqlhty=2ns
++       tpdqlhmx=3ns   tpdqhlty=1ns
++       tpdqhlmx=3ns
++       )
+
+.model dx d()
+
+**** ad8116 test circuit ****
+
+*.lib c:\(place your directory here)
+
+*vpos 99 0 5
+*vlogh hi 0 3.5
+*vlogl lo 0 0.09
+*vneg 0 50 5
+*vd1 11 0 pulse(0 5 36e-9 1e-9 1e-9 17e-9 100e-6)
+*vd2 12 0 pulse(0 0 68e-9 1e-9 1e-9 17e-9 100e-6)
+*vd3 13 0 pulse(0 0 100e-9 1e-9 1e-9 17e-9 100e-6)
+*vd4 14 0 pulse(0 0 132e-9 1e-9 1e-9 17e-9 100e-6)
+*vd5 15 0 pulse(0 5 164e-9 1e-9 1e-9 17e-9 100e-6)
+*vd6 16 0 pulse(0 5 196e-9 1e-9 1e-9 17e-9 100e-6)
+*vd7 17 0 pulse(0 0 228e-9 1e-9 1e-9 17e-9 100e-6)
+*vd8 18 0 pulse(0 5 260e-9 1e-9 1e-9 17e-9 100e-6)
+*vd9 111 0 pulse(0 0 292e-9 1e-9 1e-9 17e-9 100e-6)
+*vd10 112 0 pulse(0 0 324e-9 1e-9 1e-9 17e-9 100e-6)
+*vd11 113 0 pulse(0 5 356e-9 1e-9 1e-9 17e-9 100e-6)
+*vd12 114 0 pulse(0 0 388e-9 1e-9 1e-9 17e-9 100e-6)
+*vd13 115 0 pulse(0 5 420e-9 1e-9 1e-9 17e-9 100e-6)
+*vd14 116 0 pulse(0 5 452e-9 1e-9 1e-9 17e-9 100e-6)
+*vd15 117 0 pulse(0 5 484e-9 1e-9 1e-9 17e-9 100e-6)
+                                                     
+*esdi sdi 0 poly(15) 11 0 12 0 13 0 14 0 15 0 16 0 17 0 18 0
+*+ 111 0 112 0 113 0 114 0 115 0 116 0 117 0  
+*+ 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+
+*         dataclk
+*         |   serdatain
+*         |   |   serialdataout
+*         |   |   |   update
+*         |   |   |   |   reset
+*         |   |   |   |   |     ce
+*         |   |   |   |   |     |
+*x4 99 50 clk sdi sdo upd reset ce
+*+ 201 202 203 204 205 206 207 208 
+*+ 209 210 211 212 213 214 215 216 
+*+ 301 302 303 304 305 306 307 308
+*+ 309 310 311 312 313 314 315 316
+*+ hi lo lo lo hi lo lo hi lo hi
+*+ hi lo hi hi hi lo lo hi hi hi
+*+ hi hi lo hi hi lo hi lo hi hi
+*+ hi lo lo hi hi lo lo lo hi hi
+*+ hi hi hi lo lo lo hi hi lo lo
+*+ hi lo hi lo lo lo lo hi lo lo
+*+ lo lo hi hi hi lo hi hi hi hi
+*+ lo lo lo hi hi lo lo lo lo hi
+
+*+ hi 
+*+ ad8116 
+
+*vclk clk 0 pulse( 5 0 10e-9 1e-9 1e-9 12e-9 32e-9)
+*vupd upd 0 pulse(5 0 342e-9 1e-9 1e-9 10e-9 1e-6)
+*vres reset 0 pulse(0 5 20e-9 1e-9 1e-9 460e-9 1e-6)
+*vce ce 0 pulse(5 0 30e-9 1e-9 1e-9 1e-6 1e-6)
+*v1 201 0 ac 1 sin(0 2.0 10e6)
+*v2 202 0 ac 1 sin(0 0.2 10e6)
+*v3 203 0 ac 1 sin(0 0.3 10e6)
+*v4 204 0 ac 1 sin(0 0.4 10e6)
+*v5 205 0 ac 1 sin(0 0.5 10e6)
+*v6 206 0 ac 1 sin(0 0.6 10e6)
+*v7 207 0 ac 1 sin(0 0.7 10e6)
+*v8 208 0 ac 1 sin(0 0.8 10e6)
+*v9 209 0 ac 1 sin(0 0.9 10e6)
+*v10 210 0 ac 1 sin(0 1.0 10e6)
+*v11 211 0 ac 1 sin(0 1.1 10e6)
+*v12 212 0 ac 1 sin(0 1.2 10e6)
+*v13 213 0 ac 1 sin(0 1.3 10e6)
+*v14 214 0 ac 1 sin(0 1.4 10e6)
+*v15 215 0 ac 1 sin(0 4.0 10e6)
+*v16 216 0 ac 1 pulse(-1 1 5e-9 0.1e-9 0.1e-9 50e-9)
+
+
+*rl1a 301 99 1k
+*rl1b 301 0 1k
+*rl2a 302 99 1k
+*rl2b 302 0 1k
+*rl3a 303 99 1k
+*rl3b 303 0 1k
+*rl4a 304 99 1k
+*rl4b 304 0 1k
+*rl5a 305 99 1k
+*rl5b 305 0 1k
+*rl6a 306 99 1k
+*rl6b 306 0 1k
+*rl7a 307 99 1k
+*rl7b 307 0 1k
+*rl8a 308 99 1k
+*rl8b 308 0 1k
+*rl9a 309 99 1k
+*rl9b 309 0 1k
+*rl10a 310 99 1k
+*rl10b 310 0 1k
+*rl11a 311 99 1k
+*rl11b 311 0 1k
+*rl12a 312 99 1k
+*rl12b 312 0 1k
+*rl13a 313 99 1k
+*rl13b 313 0 1k
+*rl14a 314 99 1k
+*rl14b 314 0 1k
+*rl15a 315 99 1k
+*rl15b 315 0 1k
+*rl16a 316 99 1k
+*rl16b 316 0 1k
+
+*.ac dec 100 1e5 1e9
+*.tran 5e-9 500e-9 0 5e-10
+*.tran 10e-9 3000e-9 0 1e-9
+
+*.probe
+
+**** end of ad8116 test circuit ****

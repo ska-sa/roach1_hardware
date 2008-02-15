@@ -1,0 +1,139 @@
+***** AD8036an SPICE model       Rev A SMR/ADI 8-26-97
+
+* Copyright 1997 by Analog Devices, Inc.
+
+* Refer to "README.DOC" file for License Statement.  Use of this model
+* indicates your acceptance with the terms and provisions in the License
+* Statement.
+
+* This model will give typical performance characteristics
+* for the following parameters;
+
+*     pos and neg clamp voltages
+*     closed loop gain and phase vs bandwidth
+*     output current and voltage limiting
+*     offset voltage (is static, will not vary with vcm)
+*     ibias (again, is static, will not vary with vcm)
+*     slew rate and step response performance
+*     (slew rate is based on 10-90% of step response)
+*     current on output will be reflected to the supplies 
+*     vnoise, referred to the input
+*     inoise, referred to the input
+*     distortion is not characterized
+
+* Node assignments
+
+*                non-inverting input
+*                | inverting input
+*                | |     positive supply
+*                | |VH VL|  negative supply
+*                | | | | |  |  output
+*                | | | | |  |  |
+.SUBCKT AD8036an 1 2 3 4 99 50 21
+
+* input stage *
+
+eos 1 13 poly(2) 29 98 34 98 -2e-3 1 50e-9
+rnon 13 98 500e3
+ibnon 13 98 4e-6
+ibinv 2 98 3.5e-6
+
+cinnon 1 98 1.2e-12
+cininv 2 98 1.2e-12
+
+rinh 3 99 1e6
+rinl 4 50 1e6
+cinh 3 99 1e-12
+cinl 4 50 1e-12
+
+gincl 98 5 13 98 1e-2
+rincl 98 5 1e2
+dcl1 5 6 d1
+dcl2 7 5 d1
+eclH 6 98 poly(1) 3 98 -0.675 1
+eclL 7 98 poly(1) 4 98 0.675 1
+
+q1 11 2 8 qn1
+q2 12 5 9 qn1
+i1 10 50 0.1
+i2 50 99 0.1
+r3 99 11 12.8
+r4 99 12 12.8
+cpole 11 12 26.47e-12
+r5 8 10 12.28
+r6 9 10 12.28
+
+* gain/bw stage
+
+ggain1 99 14 11 12 0.078
+ggain2 50 14 11 12 0.078
+cgain1 99 14 67e-12
+cgain2 50 14 67e-12
+rgain1 99 14 10163
+rgain2 50 14 10163
+vclgn1 99 17 1.75
+vclgn2 18 50 1.75
+dclgn1 14 17 d1
+dclgn2 18 14 d1
+
+* reference stage
+
+eref1 98 0 poly(2) 99 0 50 0 0 0.5 0.5
+eref2 97 0 poly(2) 1 0 2 0 0 0.5 0.5
+
+* common mode rejection
+
+ecm1 30 98 97 98 4255
+rcm1 30 31 4255
+rcm2 31 32 1
+lcm1 32 98 0.68e-6
+
+ecm2 33 98 31 98 20k
+rcm3 33 34 20k
+rcm4 34 35 1
+lcm2 35 98 3.18e-6
+
+* vnoise
+
+rnoise1 27 98 0.37e-3
+vnoise1 27 98 0
+vnoise2 28 98 0.475
+dnoise1 28 27 dn
+
+fnoise1 29 98 vnoise1 1
+rnoise2 29 98 1
+
+* buffer stage
+
+gbuf 98 15 14 98 1e-2
+rbuf 98 15 100
+
+* output current reflected to supplies *
+
+fcurr 98 24 vout 1
+vcur1 25 98 0
+vcur2 98 26 0
+dcur1 24 25 d1
+dcur2 26 24 d1
+
+* output stage
+
+vo1 99 19 0
+vo2 20 50 0
+fout1 0 99 poly(2) vo1 vcur1 -20.5e-3 1 -1
+fout2 50 0 poly(2) vo2 vcur2 -20.5e-3 1 -1
+gout1 19 16 15 99 1 
+gout2 20 16 15 50 1
+rout1 19 16 1
+rout2 16 20 1
+vout 16 21 0
+rload 21 98 1e6
+viclmp1 15 22 0.645
+viclmp2 23 15 0.645
+diclmp1 16 22 d1
+diclmp2 23 16 d1
+.model qn1 npn(bf=1e5)
+.model d1 d()
+.model dn d(af=1 kf=1e-8)
+.ends ad8036an 
+

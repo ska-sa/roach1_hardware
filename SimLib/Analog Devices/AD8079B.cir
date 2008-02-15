@@ -1,0 +1,95 @@
+*       AD8079B Spice Model
+*
+*       Copyright 2000 by Analog Devices, Inc.
+*
+*       Refer to "README.DOC" file for License Statement.
+*       Use of this model indicates your acceptance with
+*       the terms and provisions in the License Statement
+*
+*       The following parameters are accurately modeled
+*
+*       closed loop gain vs. frequency
+*       output clamping voltage and current
+*       slew rate
+*       output currents are reflected to V supplies
+*
+*       Vos is static and will not vary
+*       step response is modeled at 1 V and 100 mV
+*       distortion is not characterized       
+*
+*
+*     Node assignments
+*               Non-Inverting Input
+*               |   GND 
+*               |   |   positive supply
+*               |   |   |  negative supply
+*               |   |   |  |  output
+*               |   |   |  |  | 
+*               |   |   |  |  |
+.SUBCKT AD8079B +IN GND 99 50 OUT
+X1 +IN 2 99 50 OUT AD8079
+
+* Closed-Loop G=2.2
+RF OUT 2 750
+RI GND 2 625
+
+.ENDS
+
+
+.SUBCKT AD8079 1 2 99 50 30
+* INPUT STAGE
+Vos 9 2 5m
+Ib1 0 1 3e-6
+Ib2 0 9 3e-6
+Q1 5 1 10 QIN
+Q2 6 9 11 QIN
+R3 99 5 809
+R4 99 6 809
+R5 10 4 705
+R6 11 4 705
+I1 4 50 0.5e-3
+
+* GAIN STAGE & POLE AT 700 KHz
+Eref 98 0 POLY(2) 99 0 50 0 0 .5 .5 
+G1 98 13 5 6 1.24m
+R7 98 13 455k
+C3 98 13 0.5p
+V1 99 14 1.9
+V2 16 50 1.9
+D1 13 14 DX
+D2 16 13 DX
+
+* POLE AT 280 MHz
+G2 98 23 13 98 .88m
+R10 98 23 1140
+C5 98 23 0.5p
+
+* BUFFER STAGE
+Gbuf 32 98 23 98 1e-3
+Rbuf 98 32 1000
+
+* OUTPUT STAGE
+R18 25 99 .34
+R19 25 50 .34
+Vcd 30 25 0
+G6 25 99 99 32 2.94
+G7 50 25 32 50 2.94
+V4 26 25 -0.728
+V5 25 27 -0.728
+D5 32 26 Dx
+D6 27 32 DX
+
+Fo1 98 70 vcd 1
+D7 70 71 DX
+D8 72 70 DX
+Vi1 98 71 0
+Vi2 72 98 0
+
+Erefq 96 0 30 0 1 
+Iq 99 50 -1m
+Fq1 99 96 POLY(2) Vi2 Vcd 0 -1 0.5
+Fq2 96 50 POLY(2) Vi1 Vcd 0 -1 -0.5
+
+.MODEL QIN NPN(BF=1000 VA=200 IS=0.5E-16)
+.MODEL DX D(IS=1e-15) 
+.ENDS

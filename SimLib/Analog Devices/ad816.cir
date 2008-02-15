@@ -1,0 +1,236 @@
+*  AD816an Spice Macro-model                  3/20/97,SMR,REV A
+*
+*  Copyright 1997 by Analog Devices, Inc.
+*
+* Refer to "README.DOC" file for License Statement.
+* Use of this model indicates your acceptance with
+* the terms and provisions in the License Statement.
+*
+* 
+*   The following parameters are also accurately modeled
+*   for the driver and receiver sections.
+*
+*    Closed loop gain and phase vs frequency. This model 
+*    accurately reflects small and large signal closed 
+*    loop gain vs bw. It was written using fig 16 and fig
+*    32 from the rev 0 datasheet as a reference.
+*
+*    output clamping voltage and current
+*
+*    Slew rate
+*
+*    Output currents are reflected to V supplies
+*
+*    Input referred voltage and current noise 
+*
+*    Vos and Ibias match the specs given in the data- 
+*    sheet. They do not, however, vary with Vcm in.
+*
+*    Distortion is not characterized
+*
+*    Node assignments
+*
+*                 Receiver     Driver          
+*
+*                n-inv input  n-inv input
+*                |            |
+*                | inv input  |  inv input   +supply
+*                |  |         |   |          |
+*                |  | output  |   | output   | -supply
+*                |  |  |      |   |   |      |   |
+.SUBCKT AD816an  1  2  61     101 102 124    99 50
+
+
+* RECEIVER SECTION
+
+* input stage *
+
+r1 1 2 300k
+cin1 1 98 1.5e-12
+cin2 2 98 1.5e-12
+ib1 99 1 5e-6
+ib2 99 2 5e-6
+fn 99 2 vn4 1
+q1 5 57 6 qn
+q2 7 2 8 qn
+eosr 57 1 poly(2) (23,98) (84,98) 7.5e-3 1.59e-9 1  
+r3 99 5  13.27
+r4 99 7  13.27
+r5 6 9  10.67
+r6 8 9  10.67
+c2 5 7 65pf
+itail 9 50 20e-3
+
+** v noise generation **
+
+vn1 80 98 0
+dn2 80 98 dn1
+
+rn1 83 98 1.1e-3
+vn3 83 98 0
+
+fn2 84 98 vn1 1
+fn1 84 98 vn3 1
+rn2 84 98 1
+
+** i noise generation **
+
+vn4 87 98 0
+rn5 87 98 4k
+
+hn2 35 98 vn4 1
+rn6 35 98 1
+
+
+* gain stage,clamping - open loop gain=76dB * 
+* pd at 100khz *
+
+gm1 99 10 poly(1) 7 5 0 0.075 0 -0.6
+gm2 50 10 poly(1) 7 5 0 0.075 0 -0.6
+r7  99 10  79617                   
+r8  10 50  79617
+c3  99 10 40pf
+c4  10 50 40pf
+vcl1 99 25 3.3
+vcl2 26 50 3.3
+d1 10 25 dx
+d2 26 10 dx
+
+***** common mode reference
+
+ecmref  98 0 poly(2) 99 0 50 0 0 0.5 0.5
+einref1 18 0 poly(2) 1 0 2 0 0 0.5 0.5
+
+***** vcm generation
+
+ecm1 19 98 18 98 2000
+rvcm1 19 20 1999
+rvcm2 20 21 1
+lcm1 21 98 3.18e-6
+
+ecm2 22 98 20 98 37037
+rvcm3 22 23 37036
+rvcm4 23 24 1
+lcm2 24 98 59e-6
+
+***** buffer to output stage
+
+gbuf 98 17 10 98 0.002
+rbufr 98 17 500
+
+***** current mirroring on supplies
+***** includes Iout driver and rvcr
+
+fo1 98 210 vcd1 1
+fo2 98 210 vcd2 1
+do1 210 211 dx
+do2 212 210 dx
+vi1 211 98 0
+vi2 98 212 0
+fsy 99 50 poly(2) vi1 vi2 0.032 1 1
+
+***** receiver output stage
+
+go3 60 99 99 17 1
+go4 50 60 17 50 1
+r03 60 99 1
+r04 60 50 1
+vcd1 60 62 0
+lo1 62 61 1e-20
+rlr 61 98 1e6
+do5 17 70 dx
+do6 71 17 dx
+vo1 70 60 -0.759
+vo2 60 71 -0.759
+
+
+* DRIVER SECTION
+
+* INPUT STAGE
+
+v101   102 108 0
+i101   99 105 100e-6
+i102   104 50 100e-6
+q101   50 103 105 qp1
+q102   99 103 104 qn1
+q103   99 105 108 qn1
+q104   50 104 108 qp1
+r103a  99 105 20k
+r104a  50 104 20k
+
+* input error sources
+ 
+fn105   99  101  poly(2) vn103 vn104 0 1 1
+fn106   99  102  poly(2) vn103 vn104 0 10 10
+ib101   99  102  20.135e-6
+ib102   99  103  2e-6
+eosd    103 101 poly(1) (134,98) 5e-3 1
+cin101  99  103     1.4e-12
+cin102  50  103     1.4e-12
+
+* first gain stage and dominant pole
+
+r105   112 99  2e6
+r106   112 50  2e6
+c103   112 99  2.7e-12
+c104   112 50  2.7e-12
+f101   112 99 poly(1) v101 0 1 40   
+f102   112 50 poly(1) v101 0 1 40
+v103   99 113  3.3
+v104   114 50  3.3
+d103   112 113 dx
+d104   114 112 dx
+
+* v noise generator
+
+dn101 130 98 dn2
+vn101 130 98 0 
+
+rn102 132 98 5.3e-3
+vn102 132 98 0
+
+fn101 134 98 vn101 1.
+fn102 134 98 vn102 1
+rn201 134 98 1
+
+* i noise generation
+
+dn103 140 98 dn3
+vn103 140 98 0
+
+rn104 142 98 5.5e3
+vn104 142 98 0
+
+fn103 135 98 vn103 1000  
+fn104 135 98 vn104 1000
+rn105 135 98 1
+
+* buffer stage
+
+g113 98 117 112 98 1e-2    
+cbufd 117 98 15pf
+rbufd 117 98 100
+
+* output stage
+
+r115 123 99   2
+r116 123 50   2
+vcd2 123 125  0
+l101 125 124  1e-20
+rld  124 98   1e6
+g111 99 123   117 99  0.5
+g112 123 50   50 117  0.5
+v105 123 119  -0.05
+v106 120 123  -0.05
+d105 117 119   dx
+d106 120 117   dx
+
+
+.model qn npn(kf=1e-30 af=0 bf=1e3 is=1e-15)
+.model qn1 npn(kf=1e-30 af=0 bf=1e3 is=1e-15)
+.model qp1 pnp(kf=1e-30 af=0 bf=1e3 is=1e-15)
+.model dx d(kf=1e-30 af=0 is=1e-15)
+.model dn1  d(kf=7e-5 af=0.5 is=1e-15)
+.model dn2  d(kf=0.5e-12 af=0 is=1e-15)
+.model dn3  d(kf=5e-19 af=0 is=1e-15)
+.ends ad816an

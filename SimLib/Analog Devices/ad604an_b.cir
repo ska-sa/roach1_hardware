@@ -1,0 +1,229 @@
+
+*** AD604an SPICE model, rev A, 12/97
+
+* written by Steve Reine/Eberhard Brunner 12/97  
+
+*node assignments
+
+*               in  fbk pao vgn vref vocm +dsx -dsx vout v+ v-
+
+.SUBCKT ad604an 251 254 253  1  150  256   101  102  30  99 50
+
+* preamp including noise vs Vgn
+
+enoise 251 252 poly(2) 601 0 604 0 0 1 1 
+rin 252 0 300e3
+epao 253 0 poly(2) 252 0 255 0 0 1e6 -1e6 
+rinfb1 253 254 40
+rinfb2 254 255 32 
+rinfb3 255 0 8
+
+rn1 600 0 0.034
+vn1 600 0 0
+
+fn1 601 0 vn1 1
+rn2 601 0 1
+
+en2 602 0 poly(1) 1 0 0.67 -0.1 
+dn1 602 603 dn
+vn3 603 0 0
+
+fn2 604 0 vn3 1
+rn3 604 0 1
+
+* vref inverter
+
+vinv   202 0 1
+einv   201 0 202 203 10e6
+evmult 203 0 poly(2) 201 0 150 0 0 0 0 0 1
+ 
+* vocm input
+
+rvocm1 99 256 200k
+rvocm2 256 0 200k
+eocm 100 0 256 0 1
+
+* R/1.5R attenuation ladder
+
+ra1  101 103 96 
+ra2  103 100 144
+ra3  100 104 144
+ra4  102 104 96
+ra5  103 105 96 
+ra6  105 100 144
+ra7  100 106 144
+ra8  104 106 96
+ra9  105 107 96
+ra10 107 100 144
+ra11 100 108 144
+ra12 106 108 96
+ra13 107 109 96
+ra14 109 100 144
+ra15 100 110 144
+ra16 108 110 96
+ra17 109 111 96
+ra18 111 100 144
+ra19 100 112 144
+ra20 110 112 96
+ra21 111 113 96
+ra22 113 100 144
+ra23 100 114 144
+ra24 112 114 96
+ra25 113 115 96
+ra26 115 100 144
+ra27 100 116 144
+ra28 114 116 96
+ra29 115 100 175
+ra30 100 116 175
+
+* input tanh pairs with gain controlled
+* by current steering ladder
+
+q11 21 101 22 qn1  
+q12 20 102 22 qn1 4
+q13 21 101 42 qn1 4
+q14 20 102 42 qn1
+f22a 22 50 vl2 4
+f22b 42 50 vl2 4
+q21 21 103 23 qn1
+q22 20 104 23 qn1 4
+q23 21 103 43 qn1 4
+q24 20 104 43 qn1
+f23a 23 50 vl3 4
+f23b 43 50 vl3 4
+q31 21 105 24 qn1
+q32 20 106 24 qn1 4
+q33 21 105 44 qn1 4
+q34 20 106 44 qn1
+f24a 24 50 vl4 4
+f24b 44 50 vl4 4
+q41 21 107 25 qn1
+q42 20 108 25 qn1 4
+q43 21 107 45 qn1 4
+q44 20 108 45 qn1
+f25a 25 50 vl5 4
+f25b 45 50 vl5 4
+q51 21 109 26 qn1
+q52 20 110 26 qn1 4
+q53 21 109 46 qn1 4
+q54 20 110 46 qn1
+f26a 26 50 vl6 4
+f26b 46 50 vl6 4
+q61 21 111 27 qn1
+q62 20 112 27 qn1 4
+q63 21 111 47 qn1 4
+q64 20 112 47 qn1
+f27a 27 50 vl7 4
+f27b 47 50 vl7 4
+q71 21 113 28 qn1
+q72 20 114 28 qn1 4
+q73 21 113 48 qn1 4
+q74 20 114 48 qn1
+f28a 28 50 vl8 4
+f28b 48 50 vl8 4
+q81 21 115 29 qn1
+q82 20 116 29 qn1 4
+q75 21 115 49 qn1 4
+q76 20 116 49 qn1
+f29a 29 50 vl9 4
+f29b 49 50 vl9 4
+
+* gaussian transistor current steering ladder
+
+ib1 2 50 495e-6
+ib2 9 50 495e-6
+
+ggn 9 2 poly(2) 201 0 1 0 -430e-6 0 0 0 680e-6 
+
+i1 19 50 350e-6
+
+i2 0 2 100e-6
+i3 0 3 51e-6
+i4 0 4 51e-6
+i5 0 5 51e-6
+i6 0 6 51e-6
+i7 0 7 51e-6
+i8 0 8 51e-6
+i9 0 9 100e-6
+
+rl1 99 2 8k
+rl2 99 9 8k
+
+rl3 2 3 1.8k
+rl4 3 4 1.8k
+rl5 4 5 1.8k
+rl6 5 6 1.8k
+rl7 6 7 1.8k
+rl8 7 8 1.8k
+rl9 8 9 1.8k
+
+ql2 32 2 19 qn1 
+ql3 33 3 19 qn1
+ql4 34 4 19 qn1
+ql5 35 5 19 qn1
+ql6 36 6 19 qn1
+ql7 37 7 19 qn1
+ql8 38 8 19 qn1
+ql9 39 9 19 qn1
+
+vl2 99 32 0
+vl3 99 33 0
+vl4 99 34 0
+vl5 99 35 0
+vl6 99 36 0
+vl7 99 37 0
+vl8 99 38 0
+vl9 99 39 0
+
+* feedback gm stage
+
+q01 921 900 302 qn1  
+q02 920 60  302 qn1 4
+q03 921 900 303 qn1 4
+q04 920 60  303 qn1
+io1a 302 50 1.068e-3 
+io2a 303 50 1.068e-3
+
+* distributed and feedback gain stages are summed together
+
+vgain1 99 20 0
+vgain2 99 21 0
+vgain3 99 920 0
+vgain4 99 921 0
+
+* and added to create fgm1 stage 
+
+fgm1 99 31 vgain2 0.94 
+fgm2 99 31 vgain1 -0.94 
+fgm3 99 31 vgain4 1
+fgm4 99 31 vgain3 -1
+
+* second gm stage + output stage
+
+cgm 31 100 2.45e-12
+rgm 31 100 92k
+dbuf1 31 52 dg
+dbuf2 53 31 dg
+vcl1 99 52 1.55
+vcl2 53 50 1.55
+
+gbuf 100 51 31 100 1e-2
+
+rbuf 100 51 1e2
+dcl1 51 54 dg 
+dcl2 55 51 dg
+vcl3 30 54 0.716
+vcl4 55 30 0.716
+gout1 30 99 99 51 0.5
+gout2 30 50 50 51 0.5
+rout1 30 99 2
+rout2 30 50 2
+
+rfb1 30 60 820
+rfb2 60 100 20
+rfb2a 900 100 1e-3
+
+.model dg d()
+.model dn d(af=1 kf=1e-8)
+.model qn1 npn(bf=1e6)
+.ends ad604an

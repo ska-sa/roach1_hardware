@@ -1,0 +1,116 @@
+* AD629B--Typical values  SPICE Macro-model,        07/19/2000, JG , ADI
+*                                               rev B; 11/2003, TRW, ADI
+                                          
+
+* Copyright 2000 by Analog Devices, Inc.
+
+* Refer to "README.DOC" file for License Statement.  Use of this model
+* Indicates your acceptance with the terms and provisions in the License *Statement.
+
+* This model will give typical performance characteristics
+* for the following parameters;
+*		nominal Gain
+*		CMRR vs. Frequency
+*		Output Voltage Swing
+*		Iquicent Swing
+*     closed loop gain and phase vs bandwidth
+*     output current and voltage limiting
+*     offset voltage (is  non-static, will  vary with gain)
+*     ibias (again, is static, will not vary with vcm)
+*     slew rate and step response performance
+*     (slew rate is based on 10-90% of step response)
+*     current on output will be reflected to the supplies 
+*     vnoise, not included in this version
+*     inoise, not included in this version
+*     distortion is not characterized
+*     cmrr is   characterized in this version.
+* Node assignments
+*                non-inverting input
+*                | inverting input
+*                | |  positive supply
+*                | |  |  negative supply
+*                | |  |  |  output 
+*                | |  |  |  |   REF(-)
+*                | |  |  |  |   |   REF(+)
+*                | |  |  |  |   |   |
+.SUBCKT ad629   20 10 99 98 70  1   5
+
+
+***EXTERNAL RESISTORS( INTERNAL TO DEVICE)***
+
+RF1 2 70 380E3
+RG1 10  2 378.7E3
+Rneg 2 1 21.11111E3
+RG2 20 9 378.7063E3
+RpoS 9 5 20E3
+
+***input Stage***
+
+Ccmmr 2 0 25E-14
+
+***negative input right side***
+
+Rc1 99 5a 2.54091E3
+Q1 5a 2 7 QX
+
+***positive input left side***
+
+Rrc2 99 6a 2.54091E3
+Q2 6a 9b 7 QX
+
+***BIAS CURRENT SOURCE***
+
+IEE 7 98 20E-6
+
+***GAIN STAGE***
+
+GM1  1ref 76   5a  6a  3.52E-4
+
+***ZERO/POLE***
+
+RG 76 1ref  8.52273E11
+
+CPZ 76 1ref 5.6E-12
+
+***ZERO/POLE ENDS***
+
+***rail_to_rail clamps***
+
+v1 99 13 1.600000
+d1 76 13 dx
+v2 12 98 2.210000
+d2 12 76 dx
+
+***rail_to_rail clamps ENDS***
+
+***MID POINT REFERENCE RESISTORS***
+
+Rref1 99   1mid 17E3
+Rref2 1mid 98   17E3
+Eref 1ref 0 1mid 0 1
+
+***MID POINT REFERENCE RESISTORS ENDS***
+
+***INPUT OFFSET VOLTAGE***
+
+Vos 9b 9 .005E-3 
+
+*** END OF INPUT OFFSET VOLTAGE***
+
+***OUTPUT STAGE***
+
+D17 76 84 DX 
+VO1  84 70 .20300V
+VO2  70 85 .20300V
+D16 85 76  DX
+G30 70 99 99 76  20E-3
+G31 98 70 76 98  20E-3
+RO30 70 99 50
+RO31 98 70 50
+
+
+.MODEL QX NPN ( VA=10000,BF=5000)
+.MODEL DX D(IS=1E-12)
+.ENDS
+
+

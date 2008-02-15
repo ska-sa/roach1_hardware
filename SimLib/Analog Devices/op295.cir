@@ -1,0 +1,99 @@
+* OP295 SPICE Macro-model               2/95, Rev. B
+*                                       ARG / ADSC
+*
+* Revision History:
+*
+* Rev. B
+*	Added common mode stage to base model.
+*	Changed G1 to a polynomial source to correct output stage offset.
+*
+*
+* Copyright 1995 by Analog Devices, Inc.
+*
+* Refer to "README.DOC" file for License Statement. Use of this model
+* indicates your acceptance with the terms and provisions in the License
+* Statement.
+*
+* Node assignments
+*                non-inverting input
+*                |  inverting input
+*                |  |  positive supply
+*                |  |  |  negative supply
+*                |  |  |  |  output
+*                |  |  |  |  |
+.SUBCKT OP295    1  2  99 50 20
+*
+* INPUT STAGE
+*
+I1   99   4    2E-6
+R1   1    6    5E3
+R2   2    5    5E3
+CIN  1    2    2E-12
+IOS  1    2    0.5E-9
+D1   5    3    DZ
+D2   6    3    DZ
+EOS  7    6    POLY(1) (31,39) 30E-6 0.024
+Q1   8    5    4   QP
+Q2   9    7    4   QP
+R3   8    50   25.8E3
+R4   9    50   25.8E3
+*
+* GAIN STAGE
+*
+R7   10   98   270E6
+G1   98   10   POLY(1) (9,8) -4.26712E-9 27.8E-6
+EREF 98   0    (39,0) 1
+R5   99   39   100E3
+R6   39   50   100E3
+*
+* COMMON MODE STAGE
+*
+ECM 30 98 POLY(2) (1,39) (2,39) 0 0.5 0.5
+R12 30 31 1E6
+R13 31 98 100
+*
+* OUTPUT STAGE
+*
+I2   18   50   1.59E-6
+V2   99   12   DC 2.2763
+Q4   10   14   50   QNA  1.0
+R11  14   50   33
+M3   15   10   13   13   MN  L=9E-6 W=102E-6 AD=15E-10 AS=15E-10
+M4   13   10   50   50   MN  L=9E-6 W=50E-6 AD=75E-11 AS=75E-11
+D8   10   22   DX
+V3   22   50   DC 6
+M2   20   10   14   14   MN  L=9E-6 W=2000E-6 AD=30E-9 AS=30E-9
+Q5   17   17   99   QPA  1.0
+Q6   18   17   99   QPA  4.0
+R8   18   99   2.2E6
+Q7   18   19   99   QPA  1.0
+R9   99   19   8
+C2   18   99   20E-12
+M6   15   12   17   99   MP  L=9E-6 W=27E-6 AD=405E-12 AS=405E-12
+M1   20   18   19   99   MP  L=9E-6 W=2000E-6 AD=30E-9 AS=30E-9
+D4   21   18   DX
+V4   99   21   DC 6
+R10  10   11   6E3
+C3   11   20   50E-12
+.MODEL QNA NPN(IS=1.19E-16 BF=253 NF=0.99 VAF=193 IKF=2.76E-3
++ ISE=2.57E-13 NE=5 BR=0.4 NR=0.988 VAR=15 IKR=1.465E-4
++ ISC=6.9E-16 NC=0.99 RB=2.0E3 IRB=7.73E-6 RBM=132.8 RE=4 RC=209
++ CJE=2.1E-13 VJE=0.573 MJE=0.364 FC=0.5 CJC=1.64E-13 VJC=0.534 MJC=0.5
++ CJS=1.37E-12 VJS=0.59 MJS=0.5 TF=0.43E-9 PTF=30)
+.MODEL QPA PNP(IS=5.21E-17 BF=131 NF=0.99 VAF=62 IKF=8.35E-4
++ ISE=1.09E-14 NE=2.61 BR=0.5 NR=0.984 VAR=15 IKR=3.96E-5
++ ISC=7.58E-16 NC=0.985 RB=1.52E3 IRB=1.67E-5 RBM=368.5 RE=6.31 RC=354.4
++ CJE=1.1E-13 VJE=0.745 MJE=0.33 FC=0.5 CJC=2.37E-13 VJC=0.762 MJC=0.4
++ CJS=7.11E-13 VJS=0.45 MJS=0.412 TF=1.0E-9 PTF=30) 
+.MODEL MN NMOS(LEVEL=3 VTO=1.3 RS=0.3 RD=0.3 
++ TOX=8.5E-8 LD=1.48E-6 NSUB=1.53E16 UO=650 DELTA=10 VMAX=2E5
++ XJ=1.75E-6 KAPPA=0.8 ETA=0.066 THETA=0.01 TPG=1 CJ=2.9E-4 PB=0.837
++ MJ=0.407 CJSW=0.5E-9 MJSW=0.33)
+.MODEL MP PMOS(LEVEL=3 VTO=-1.1 RS=0.7 RD=0.7 
++ TOX=9.5E-8 LD=1.4E-6 NSUB=2.4E15 UO=650 DELTA=5.6 VMAX=1E5
++ XJ=1.75E-6 KAPPA=1.7 ETA=0.71 THETA=5.9E-3 TPG=-1 CJ=1.55E-4 PB=0.56
++ MJ=0.442 CJSW=0.4E-9 MJSW=0.33)
+.MODEL DX D(IS=1E-15)
+.MODEL DZ D(IS=1E-15, BV=7)
+.MODEL QP PNP(BF=125)
+.ENDS
