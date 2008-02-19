@@ -52,7 +52,7 @@ route6                   .5  art012.pho
              5 mil panel
 1.8v                     .5  art013.pho
              5 mil prepreg
-route7                   .5  art15.pho
+route7                   .5  art014.pho
              5 mil panel
 ground8                  .5  art015.pho
              4 mil prepreg
