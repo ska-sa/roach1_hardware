@@ -1,0 +1,131 @@
+Rev 2.6 (10/10/07)
+  - Updated LVPEC_25 params
+    Vmeas = 1.25
+    Vinl and Vinh to be 0.3Vcco and 0.7Vcco respectively. Min and Max values to be +/- 5%.
+
+  - Updated DCI I/O combined standards (Pullup issue). 
+    HSTL_II_DCI
+	HSTL_II_DCI_18
+	HSTL_IV_DCI
+	HSTL_IV_DCI_18
+	SSTL18_II_DCI
+	SSTL2_II_DCI
+	
+Rev 2.5 (08/22/07)
+  - Generate all IBIS models using silicon based process model. 
+
+Rev 2.4 (08/10/07)
+  - Added in new package data (Rev date: 8/07/07)
+   typ/min/max RLC values for all V5 packages (FF324, FF665, FF676, FF1136, FF1153, FF1738, and FF1760)
+   Extracted package data generated since 8/26/06 added to previous data which resulted in updated typ/min/max numbers
+
+Rev 2.3 (08/03/07)
+  - Fix typo for package name FF1153
+
+Rev 2.2 (08/02/07)
+  - Combined input and output for 8 standards 
+    GTL_DCI,GTLP_DCI,HSTL_II_DCI,HSTL_II_DCI_18,
+    HSTL_IV_DCI,HSTL_IV_DCI_18,SSTL2_II_DCI,SSTL18_II_DCI.
+  - Regenerate all the standards's IBIS models using finer time step 
+    for VT transient simulation
+
+Rev 2.1 (05/31/07)
+  - Added the following standards
+     HSLVDCI_15
+     HSLVDCI_18
+     HSLVDCI_25
+     HSLVDCI_33
+  - Regenerate all the standards's IBIS models using finer time step 
+    for VT transient simulation
+
+Rev 2.0 (05/07/07)
+  - Fixed a bug for pin 141N(pin names of both differential pair labeled with "_P")
+
+Rev 1.9 (03/20/07)
+  - Added the following 2 standards
+    RSDS_25
+    LVDS_25_DT
+
+
+Rev 1.8 (12/21/06)
+  - the following models have been updated
+    (fixed some minor power voltage mismatch)
+    HSTL_I_12
+    GTLP
+    LVDCI_33
+    LVDS_25
+    LVDSEXT_25
+    HT_25
+
+
+Rev 1.7 (11/14/06)
+  - Added DCI SSTL output models (missing in model_selector in Rev1.3 release)
+  - Added Split-Thevenin Termination standards
+      SSTL2_II_T_DCI_I
+      SSTL2_II_T_DCI_O
+      SSTL18_II_T_DCI_I
+      SSTL18_II_T_DCI_O
+      HSTL_II_T_18_DCI_I
+      HSTL_II_T_18_DCI_O
+      HSTL_II_T_DCI_I
+      HSTL_II_T_DCI_O
+
+
+Rev 1.6 (11/13/06)
+  - Added HT_25, BLVDS_25 and LVPECL_25
+
+Rev 1.5 (10/17/06)
+  - Fixed a bug in LVTTL_F_8
+
+Rev 1.4 (10/10/06)
+  - Added Spice-to-IBIS converter revision
+  - Added spice lib revision
+
+Rev 1.3 (10/03/06)
+ - All standards are included except for HT_25, BLVDS_25, LVPECL_25, and DT
+ - [Model Spec] included
+ - Level 0 compliant
+ - Pass ibischk4 (version 4.2)
+
+Rev 1.2 (08/25/06)
+ -LVDS_25
+ -LVDSEXT_25
+
+
+Rev 1.1 (08/11/06)
+ -LVCMOS25 (all drive strength and slew rate)
+ -LVCMOS18 (all drive strength and slew rate)
+ -LVCMOS15 (all drive strength and slew rate)
+ -LVCMOS12 (all drive strength and slew rate)
+
+
+Rev 1.0 (08/01/06)
+ Initial release 
+  --Terminated standards:
+    GTL
+    GTLP
+    HSTL1_12
+    HSTL1_15
+    HSTL1_18
+    HSTL2_15
+    HSTL2_18
+    HSTL3_15
+    HSTL3_18
+    HSTL4_15
+    HSTL4_18
+    SSTL1_18
+    SSTL1_25
+    SSTL2_18
+    SSTL2_25
+
+ --Differential HSTL
+   HSTL_I
+   HSTL_II
+   HSTL_I_18
+   HSTL_II_18
+
+--Differential SSTL
+  SSTL18_I
+  SSTL18_II
+  SSTL2_I
+  SSTL2_II
