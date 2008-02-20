@@ -1,0 +1,1078 @@
+|******************************************************************************
+| ticu877ar2p3.ibs - Micron MDG Simulation Model
+|
+| Component           VDD        Package
+| TICDCU877AGQL_R2P3  1.8        52-Ball uBGA
+| TICDCU877ARTB_R2P3  1.8        40-pin  MLF
+|
+|==============================================================================|
+|                 This file is an IBIS representation of the                   |
+|                    CDCU877A provided by Texas Instruments                    |
+|==============================================================================|
+|
+| This file contains preliminary package information for the following types:
+|  uBGA 52-ball (GQL) package as [Component] cdcu877agql
+|   MLF 40-pin  (RTB) package as [Component] cdcu877artb
+|
+|=================== Header Section -------------------------------------------|
+[IBIS Ver]      3.2
+[File Name]     ticu877ar2p3_mt.ibs
+[File Rev]      2.3
+[Date]          16 Apr 2004 | Last modified
+|               20 Aug 2002 | Created
+|
+[Source]        This file originated at Texas Instruments
+|               this file was generated based on simulation results of TI-Spice
+|
+|REVISON LOG:02 initial version
+|            03 completely revised new model by Product Engineering
+|            04 added package designator for bga, mlf package and combined them
+|               to one model. Corrected CK/CK- to reflect passive pull-down.
+|            05 added rising and falling waveforms.
+|            06 new ouput buffers.
+|            07 corrected ramp rates
+|            08 CDCU877 PLL revised for A-DIE and C-DIE characteristics
+|               Package parasitics added for BGA package.
+|            09 Added per pin package paracitics for uBGA and MLF package,
+|               changed componnent name to "RTB" for MLF-package,
+|               corrected differential pin assignment.
+|               Removed A-DIE references.
+|            12 Correlated to real silicon with 2pF load und lossy option 
+|               enabled in linesim.
+|            14 Corrected slew rate to latest CHAR-DATA
+|
+[Notes]      Micron Changes: 11/07/2007 (jdbutterfiel x82742)
+              - Removed transistor leakage current from Input model
+                POWER Clamp curves
+              - Corrected pin mapping for FBGA ball out as per the
+                datasheet
+              - Corrected Rising Waveform to start at t=0
+|
+[Disclaimer]    
+(C) Copyright Texas Instruments Incorporated 2003
+                All rights reserved
+
+  Texas Instruments Incorporated hereby grants the user of this IBIS 
+model a non-exclusive, nontransferable license to use this IBIS model 
+under the following terms.  Before using this IBIS model, the user 
+should read this license.  If the user does not accept these terms, 
+the IBIS model should be returned to Texas Instruments within 30 days.
+
+  The user is granted this license only to use the IBIS model and
+is not granted rights to sell, load, rent, lease or license the IBIS
+model in whole or in part, or in modified form to anyone other than
+user.  User may modify the IBIS model to suit its specific applications
+but rights to derivative works and such modifications shall belong to 
+Texas Instruments.
+
+  This IBIS model is provided on an "AS IS" basis and Texas Instruments
+makes absolutely no warranty with respect to the information contained 
+herein.  TEXAS INSTRUMENTS DISCLAIMS AND CUSTOMER WAIVES ALL WARRANTIES, 
+EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY OR FITNESS 
+FOR A PARTICULAR PURPOSE. The entire risk as to quality and performance
+is with the Customer. ACCORDINGLY, IN NO EVENT SHALL THE COMPANY BE LIABLE
+FOR ANY DAMAGES, WHETHER IN CONTRACT OR TORT,INCLUDING ANY LOST PROFITS 
+OR OTHER INCIDENTAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES ARISING
+OUT OF THE USE OR APPLICATION OF THE IBIS model provided in this package.
+Further, Texas Instruments reserves the right to discontinue or make changes
+without notice to any product herein to improve reliability, function, or 
+design. Texas Instruments does not convey any license under patent rights 
+or any other intellectual property rights, including those of third parties.
+
+Contact Texas Instruments at ATTN: HPA-High Speed Communication & Control, HSCC
+|
+[Copyright]     Copyright (C)2003 Texas Instruments, All Rights Reserved
+|
+|------------------- End of Header Section ====================================|
+|
+|
+|=================== Component Section ----------------------------------------|
+|
+|******************************************************************************
+| Component: TICDCU877AGQL_R2P3, 52-ball, uBGA
+|******************************************************************************
+|
+[Component]     TICDCU877AGQL_R2P3                 |Name of Device
+[Manufacturer]  Texas Instruments
+[Package]
+|                        typ         min         max
+R_pkg                   0.12Ohm     0.05Ohm     0.30Ohm
+L_pkg                   2.38nH      1.13nH      5.66nH
+C_pkg                   0.11pF      0.04pF      0.47pF
+|
+|pinout for uBGA package
+|
+[Pin] signal_name  model_name   R_pin           L_pin           C_pin 
+|
+A1      Y1         Outbuf1      0.131Ohm        2.474nH         0.052pF
+A2      Y0         Outbuf1      0.124Ohm        2.345nH         0.061pF
+A3      Y0-        Outbuf1      0.122Ohm        2.306nH         0.061pF
+A4      Y5-        Outbuf1      0.123Ohm        2.322nH         0.061pF
+A5      Y5         Outbuf1      0.125Ohm        2.367nH         0.060pF
+A6      Y6         Outbuf1      0.136Ohm        2.555nH         0.052pF
+B1      Y1-        Outbuf1      0.129Ohm        2.444nH         0.052pF
+B2      GND        GND          0.122Ohm        2.311nH         0.053pF
+B3      GND        GND          0.071Ohm        1.447nH         0.220pF
+B4      GND        GND          0.162Ohm        3.098nH         0.120pF
+B5      GND        GND          0.123Ohm        2.340nH         0.053pF
+B6      Y6-        Outbuf1      0.134Ohm        2.524nH         0.053pF
+C1      Y2-        Outbuf1      0.114Ohm        2.285nH         0.085pF
+C2      GND        GND          0.080Ohm        2.098nH         0.257pF
+C3      NC         NC                   
+C4      NC         NC                   
+C5      GND        GND          0.088Ohm        1.872nH         0.139pF
+C6      Y7-        Outbuf1      0.106Ohm        2.129nH         0.083pF
+D1      Y2         Outbuf1      0.094Ohm        1.872nH         0.079pF
+D2      VDDQ       POWER        0.114Ohm        2.881nH         0.188pF
+D3      VDDQ       POWER        0.159Ohm        3.476nH         0.128pF
+D4      VDDQ       POWER        0.134Ohm        3.050nH         0.200pF
+D5      OS         Control      0.300Ohm        5.663nH         0.467pF
+D6      Y7         Outbuf1      0.095Ohm        1.887nH         0.079pF
+E1      CK         Inbuf_PD     0.087Ohm        1.754nH         0.074pF
+E2      VDDQ       POWER        0.163Ohm        3.559nH         0.133pF
+E3      NC         NC                   
+E4      NC         NC                   
+E5      VDDQ       POWER        0.108Ohm        2.318nH         0.122pF
+E6      FBIN       Inbuf        0.088Ohm        1.784nH         0.078pF
+F1      CK-        Inbuf_PD     0.088Ohm        1.761nH         0.078pF
+F2      VDDQ       POWER        0.112Ohm        2.382nH         0.127pF
+F3      NC         NC                   
+F4      NC         NC                   
+F5      OE         Control      0.122Ohm        2.504nH         0.346pF
+F6      FBIN-      Inbuf        0.089Ohm        1.779nH         0.075pF
+G1      AGND       GND          0.051Ohm        1.129nH         0.079pF
+G2      VDDQ       POWER        0.102Ohm        2.270nH         0.164pF
+G3      VDDQ       POWER        0.163Ohm        3.559nH         0.133pF
+G4      VDDQ       POWER        0.165Ohm        2.258nH         0.300pF
+G5      VDDQ       POWER        0.159Ohm        3.476nH         0.128pF
+G6      FBOUT-     Outbuf1      0.100Ohm        1.961nH         0.074pF
+H1      AVDD       POWER        0.058Ohm        1.250nH         0.088pF
+H2      GND        GND          0.162Ohm        3.098nH         0.120pF
+H3      NC         NC                   
+H4      NC         NC                   
+H5      GND        GND          0.153Ohm        3.024nH         0.173pF
+H6      FBOUT      Outbuf1      0.110Ohm        2.156nH         0.104pF
+J1      Y3         Outbuf1      0.134Ohm        2.519nH         0.052pF
+J2      GND        GND          0.122Ohm        2.311nH         0.053pF
+J3      GND        GND          0.162Ohm        3.098nH         0.120pF
+J4      GND        GND          0.122Ohm        2.311nH         0.053pF
+J5      GND        GND          0.071Ohm        1.447nH         0.220pF
+J6      Y8         Outbuf1      0.136Ohm        2.481nH         0.044pF
+K1      Y3-        Outbuf1      0.134Ohm        2.519nH         0.052pF
+K2      Y4-        Outbuf1      0.124Ohm        2.347nH         0.060pF
+K3      Y4         Outbuf1      0.122Ohm        2.307nH         0.060pF
+K4      Y9         Outbuf1      0.123Ohm        2.322nH         0.060pF
+K5      Y9-        Outbuf1      0.126Ohm        2.381nH         0.060pF
+K6      Y8-        Outbuf1      0.140Ohm        2.627nH         0.051pF 
+|
+[Diff_Pin]  inv_pin  vdiff   tdelay_typ  tdelay_min  tdelay_max    
+|            
+| The '+' pin is   Diff_pin,   the '-' pin is the   Inv_pin       
+|
+| Receiver Pins  |  Receiver Vth = +/-300mV (DC, AC=0.6V)
+|
+E1      F1      0.3V     0ns     0ns     0ns    | CK  / CK- 
+E6      F6      0.3V     0ns     0ns     0ns    | FBIN/ FBIN- 
+|         
+| Driver Pins    |  Rload = xx ohm at xx termination    
+|      
+D1      C1      NA      0ns     0ns     0ns     | Y2 / Y2-                
+A1      B1      NA      0ns     0ns     0ns     | Y1 / Y1-    
+J1      K1      NA      0ns     0ns     0ns     | Y3 / Y3-
+A2      A3      NA      0ns     0ns     0ns     | Y0 / Y0-
+A5      A4      NA      0ns     0ns     0ns     | Y5 / Y5-
+A6      B6      NA      0ns     0ns     0ns     | Y6 / Y6- 
+D6      C6      NA      0ns     0ns     0ns     | Y7 / Y7-
+J6      K6      NA      0ns     0ns     0ns     | Y8 / Y8-
+K4      K5      NA      0ns     0ns     0ns     | Y9 / Y9-
+K3      K2      NA      0ns     0ns     0ns     | Y4 / Y4-
+H6      G6      NA      0ns     0ns     0ns     | FBOUT / FBOUT-
+|
+[Model Selector]        Outbuf1
+|
+CDCU877C1_PLL C-DIE PLL_MODE (no buffer delay, no shift between splits in VT)
+|
+|******************************************************************************
+| Component: TICDCU877ARTB_R2P3 40-pin MLF
+|******************************************************************************
+|
+[Component]     TICDCU877ARTB_R2P3                 |Name of Device 
+[Manufacturer]  Texas Instruments
+[Package]
+|                        typ         min         max
+R_pkg                   0.12Ohm     0.06Ohm     0.15Ohm
+L_pkg                   1.17nH      0.59nH      1.50nH
+C_pkg                   0.07pF      0.03pF      0.11pF
+|
+|pinning for MLF40 package
+|
+[Pin] signal_name  model_name          R_pin          L_pin         C_pin 
+|
+  1       VDDQ     POWER               0.071Ohm       0.706nH        0.095pF
+  2       Y2-      Outbuf2             0.133Ohm       1.319nH        0.080pF
+  3       Y2       Outbuf2             0.124Ohm       1.229nH        0.111pF
+  4       CK       Inbuf_PD            0.121Ohm       1.194nH        0.099pF
+  5       CK-      Inbuf_PD            0.117Ohm       1.156nH        0.060pF
+  6       VDDQ     POWER               0.117Ohm       1.157nH        0.070pF
+  7       AGND     GND                 0.060Ohm       0.592nH        0.071pF
+  8       AVDD     POWER               0.062Ohm       0.609nH        0.072pF
+  9       VDDQ     POWER               0.064Ohm       0.632nH        0.074pF
+ 10       GND      GND                 0.143Ohm       1.419nH        0.078pF
+ 11       Y3       Outbuf2             0.146Ohm       1.442nH        0.071pF
+ 12       Y3-      Outbuf2             0.133Ohm       1.321nH        0.048pF
+ 13       Y4-      Outbuf2             0.128Ohm       1.267nH        0.085pF
+ 14       Y4       Outbuf2             0.121Ohm       1.195nH        0.063pF
+ 15       VDDQ     POWER               0.117Ohm       1.157nH        0.056pF
+ 16       Y9       Outbuf2             0.117Ohm       1.156nH        0.055pF
+ 17       Y9-      Outbuf2             0.121Ohm       1.195nH        0.056pF
+ 18       Y8-      Outbuf2             0.125Ohm       1.233nH        0.057pF
+ 19       Y8       Outbuf2             0.134Ohm       1.325nH        0.054pF
+ 20       VDDQ     POWER               0.071Ohm       0.700nH        0.076pF
+ 21       OS       Control             0.145Ohm       1.439nH        0.077pF
+ 22       OE       Control             0.133Ohm       1.318nH        0.084pF
+ 23       VDDQ     POWER               0.124Ohm       1.229nH        0.073pF
+ 24       FBOUT    Outbuf2             0.118Ohm       1.173nH        0.061pF
+ 25       FBOUT-   Outbuf2             0.116Ohm       1.152nH        0.073pF
+ 26       FBIN-    Inbuf               0.117Ohm       1.157nH        0.070pF
+ 27       FBIN     Inbuf               0.121Ohm       1.196nH        0.074pF
+ 28       VDDQ     POWER               0.128Ohm       1.272nH        0.075pF
+ 29       Y7       Outbuf2             0.139Ohm       1.375nH        0.081pF
+ 30       Y7-      Outbuf2             0.151Ohm       1.500nH        0.041pF
+ 31       VDDQ     POWER               0.071Ohm       0.705nH        0.081pF
+ 32       Y6-      Outbuf2             0.133Ohm       1.316nH        0.097pF
+ 33       Y6       Outbuf2             0.124Ohm       1.227nH        0.060pF
+ 34       Y5       Outbuf2             0.120Ohm       1.192nH        0.049pF
+ 35       Y5-      Outbuf2             0.117Ohm       1.156nH        0.054pF
+ 36       VDDQ     POWER               0.117Ohm       1.158nH        0.049pF
+ 37       Y0-      Outbuf2             0.121Ohm       1.198nH        0.033pF
+ 38       Y0       Outbuf2             0.129Ohm       1.274nH        0.025pF
+ 39       Y1       Outbuf2             0.134Ohm       1.330nH        0.101pF
+ 40       Y1-      Outbuf2             0.146Ohm       1.447nH        0.084pF
+Pad       GND      GND                 0.007Ohm       0.064nH        0.355pF
+
+|
+[Diff_Pin]  inv_pin  vdiff   tdelay_typ  tdelay_min  tdelay_max
+|
+| The '+' pin is   Diff_pin,   the '-' pin is the   Inv_pin
+|
+| Receiver Pins  |  Receiver Vth = +/-300mV (DC, AC=0.6V)
+|
+4       5       0.3V      0ns     0ns     0ns     | CK  / CK-               
+27      26      0.3V      0ns     0ns     0ns     | FBIN/ FBIN- 
+|
+| Driver Pins    |  Rload = xx ohm at xx termination
+| 
+3       2       NA      0ns     0ns     0ns     | Y2 / Y2-                
+11      12      NA      0ns     0ns     0ns     | Y3 / Y3-     
+14      13      NA      0ns     0ns     0ns     | Y4 / Y4-
+16      17      NA      0ns     0ns     0ns     | Y9 / Y9-
+19      18      NA      0ns     0ns     0ns     | Y8 / Y8-
+24      25      NA      0ns     0ns     0ns     | FBOUT / FBOUT-
+29      30      NA      0ns     0ns     0ns     | Y7 / Y7-
+33      32      NA      0ns     0ns     0ns     | Y6 / Y6-
+34      35      NA      0ns     0ns     0ns     | Y5 / Y5-
+38      37      NA      0ns     0ns     0ns     | Y0 / Y0-
+39      40      NA      0ns     0ns     0ns     | Y1 / Y1-
+|
+|------------------- End of Component Section ==============================
+|
+|
+
+[Model Selector]        Outbuf2
+|
+CDCU877C1_PLL C-DIE PLL_MODE (no buffer delay, no shift between splits in VT)
+|
+|=================== Models Section ----------------------------------------
+|
+|****************************************************************************
+|
+[Model]         Inbuf                                                    
+Model_type      Input                                                        
+|Signals        FBIN, FBIN-                                 
+Vinh = 1.105                                                                  
+Vinl = 0.665
+|
+|SiSoft Hspice_diff tt tiu877ar2p3_sia_fb.mod tiu877ar2p3_sia_fb_typ
+|SiSoft Hspice_diff ff riu877ar2p3_sia_fb.mod tiu877ar2p3_sia_fb_min
+|SiSoft Hspice_diff ss tiu877ar2p3_sia_fb.mod tiu877ar2p3_sia_fb_max
+|
+|SiSoft include $SSTL_18/sstl_18.inc
+|                                                                  
+|                       typ             min             max                  
+C_comp                 2.27pF             NA              NA
+|                                                                            
+|                       typ             min             max                  
+[Temperature Range]     40              105             0                  
+[Voltage range]         1.8             1.7             1.9                 
+|                                                                            
+|****************************************************************************
+|                                                                            
+[Power Clamp]
+|   Voltage             I(typ)             I(min)          I(max)
+    -1.90V            0.0000E+00A       0.0000E+00A       0.0000E+00A       
+     0.00V            0.0000E+00A       0.0000E+00A       0.0000E+00A      
+     3.80V            0.0000E+00A       0.0000E+00A       0.0000E+00A       
+|
+[GND Clamp]
+|   Voltage              I(typ)            I(min)           I(max)
+|
+    -1.90V            -7.8496E-01A      -6.4255E-01A      -9.8260E-01A      
+    -1.85V            -7.4924E-01A      -6.1508E-01A      -9.3617E-01A      
+    -1.80V            -7.1353E-01A      -5.8760E-01A      -8.8974E-01A      
+    -1.75V            -6.7782E-01A      -5.6013E-01A      -8.4331E-01A      
+    -1.70V            -6.4210E-01A      -5.3266E-01A      -7.9688E-01A      
+    -1.65V            -6.0639E-01A      -5.0519E-01A      -7.5045E-01A      
+    -1.60V            -5.7067E-01A      -4.7771E-01A      -7.0403E-01A      
+    -1.55V            -5.3496E-01A      -4.5024E-01A      -6.5760E-01A      
+    -1.50V            -4.9924E-01A      -4.2277E-01A      -6.1117E-01A      
+    -1.45V            -4.6353E-01A      -3.9530E-01A      -5.6474E-01A      
+    -1.40V            -4.2782E-01A      -3.6782E-01A      -5.1831E-01A      
+    -1.35V            -3.9210E-01A      -3.4035E-01A      -4.7188E-01A      
+    -1.30V            -3.5639E-01A      -3.1288E-01A      -4.2545E-01A      
+    -1.25V            -3.2067E-01A      -2.8541E-01A      -3.7903E-01A      
+    -1.20V            -2.8496E-01A      -2.5793E-01A      -3.3260E-01A      
+    -1.15V            -2.4924E-01A      -2.3046E-01A      -2.8617E-01A      
+    -1.10V            -2.1353E-01A      -2.0299E-01A      -2.3975E-01A      
+    -1.05V            -1.7784E-01A      -1.7552E-01A      -1.9340E-01A      
+    -1.00V            -1.4224E-01A      -1.4806E-01A      -1.4762E-01A      
+    -0.95V            -1.0725E-01A      -1.2066E-01A      -1.0581E-01A      
+    -0.90V            -7.5444E-02A      -9.3503E-02A      -7.7356E-02A      
+    -0.85V            -5.2799E-02A      -6.7407E-02A      -6.0576E-02A      
+    -0.80V            -3.9077E-02A      -4.4919E-02A      -4.7049E-02A      
+    -0.75V            -2.8781E-02A      -2.9345E-02A      -3.4654E-02A      
+    -0.70V            -1.9926E-02A      -1.9637E-02A      -2.3440E-02A      
+    -0.65V            -1.2442E-02A      -1.2804E-02A      -1.3951E-02A      
+    -0.60V            -6.7052E-03A      -7.6406E-03A      -6.9249E-03A      
+    -0.55V            -3.0000E-03A      -3.9841E-03A      -2.7593E-03A      
+    -0.50V            -1.1056E-03A      -1.7713E-03A      -8.9183E-04A      
+    -0.45V            -3.4339E-04A      -6.7728E-04A      -2.3840E-04A      
+    -0.40V            -9.1103E-05A      -2.2896E-04A      -5.1853E-05A      
+    -0.35V            -2.0753E-05A      -6.9604E-05A      -9.2336E-06A      
+    -0.30V            -4.1642E-06A      -1.9197E-05A      -1.4186E-06A      
+    -0.25V            -7.6236E-07A      -4.8714E-06A      -1.9828E-07A      
+    -0.20V            -1.3060E-07A      -1.1559E-06A      -2.5985E-08A      
+    -0.15V            -2.1172E-08A      -2.5896E-07A      -3.2322E-09A      
+    -0.10V            -3.2336E-09A      -5.4354E-08A      -3.8408E-10A      
+    -0.05V            -4.3410E-10A      -9.6615E-09A      -4.3709E-11A      
+     0.00V             0.0000E+00A       0.0000E+00A       0.0000E+00A       
+     3.80V             0.0000E+00A       0.0000E+00A       0.0000E+00A       
+|
+|****************************************************************************
+|
+[Model]         Inbuf_PD                                                    
+Model_type      Input                                                        
+|Signals        CK, CK-                                 
+Vinh = 1.105                                                                  
+Vinl = 0.665                                                                  
+|
+|SiSoft Hspice_diff tt tiu877ar2p3_sia_input.mod tiu877ar2p3_sia_input_typ
+|SiSoft Hspice_diff ss tiu877ar2p3_sia_input.mod tiu877ar2p3_sia_input_max
+|SiSoft Hspice_diff ff tiu877ar2p3_sia_input.mod tiu877ar2p3_sia_input_min
+|
+|SiSoft include $SSTL_18/sstl_18.inc
+|                                                                  
+|                       typ             min             max                  
+C_comp                 2.27pF             NA              NA
+|                                                                            
+|                       typ             min             max                  
+[Temperature Range]     40              105             0                  
+[Voltage range]         1.8             1.7             1.9                 
+|                                                                            
+|****************************************************************************
+|                                                                            
+[Power Clamp]
+|   Voltage             I(typ)             I(min)          I(max)
+|
+    -1.90V             0.0000E+00A       0.0000E+00A       0.0000E+00A    
+     0.00V             0.0000E+00A       0.0000E+00A       0.0000E+00A     
+     3.80V             0.0000E+00A       0.0000E+00A       0.0000E+00A      
+|
+[GND Clamp]
+|
+|   Voltage              I(typ)            I(min)           I(max)
+|
+    -1.90V            -7.2078E-01A      -5.9667E-01A      -8.9464E-01A      
+    -1.85V            -6.8506E-01A      -5.6919E-01A      -8.4821E-01A      
+    -1.80V            -6.4935E-01A      -5.4172E-01A      -8.0178E-01A      
+    -1.75V            -6.1363E-01A      -5.1425E-01A      -7.5536E-01A      
+    -1.70V            -5.7792E-01A      -4.8678E-01A      -7.0893E-01A      
+    -1.65V            -5.4220E-01A      -4.5930E-01A      -6.6250E-01A      
+    -1.60V            -5.0649E-01A      -4.3183E-01A      -6.1607E-01A      
+    -1.55V            -4.7078E-01A      -4.0436E-01A      -5.6964E-01A      
+    -1.50V            -4.3506E-01A      -3.7689E-01A      -5.2321E-01A      
+    -1.45V            -3.9935E-01A      -3.4941E-01A      -4.7678E-01A      
+    -1.40V            -3.6363E-01A      -3.2194E-01A      -4.3036E-01A      
+    -1.35V            -3.2792E-01A      -2.9447E-01A      -3.8393E-01A      
+    -1.30V            -2.9220E-01A      -2.6700E-01A      -3.3750E-01A      
+    -1.25V            -2.5649E-01A      -2.3952E-01A      -2.9107E-01A      
+    -1.20V            -2.2078E-01A      -2.1205E-01A      -2.4464E-01A      
+    -1.15V            -1.8506E-01A      -1.8458E-01A      -1.9822E-01A      
+    -1.10V            -1.4936E-01A      -1.5711E-01A      -1.5184E-01A      
+    -1.05V            -1.1373E-01A      -1.2965E-01A      -1.0577E-01A      
+    -1.00V            -7.8558E-02A      -1.0225E-01A      -6.2202E-02A      
+    -0.95V            -4.5957E-02A      -7.5097E-02A      -3.1104E-02A      
+    -0.90V            -2.2996E-02A      -4.9035E-02A      -1.9507E-02A      
+    -0.85V            -1.3500E-02A      -2.6926E-02A      -1.5375E-02A      
+    -0.80V            -9.9387E-03A      -1.3329E-02A      -1.2528E-02A      
+    -0.75V            -7.7243E-03A      -7.5823E-03A      -9.9853E-03A      
+    -0.70V            -5.8696E-03A      -5.1210E-03A      -7.6534E-03A      
+    -0.65V            -4.2372E-03A      -3.6266E-03A      -5.5520E-03A      
+    -0.60V            -2.8378E-03A      -2.4784E-03A      -3.7307E-03A      
+    -0.55V            -1.7098E-03A      -1.5594E-03A      -2.2551E-03A      
+    -0.50V            -8.9184E-04A      -8.7027E-04A      -1.1773E-03A      
+    -0.45V            -3.8746E-04A      -4.1749E-04A      -5.0421E-04A      
+    -0.40V            -1.3888E-04A      -1.7031E-04A      -1.7329E-04A      
+    -0.35V            -4.3854E-05A      -6.1052E-05A      -5.1546E-05A      
+    -0.30V            -1.4254E-05A      -2.0812E-05A      -1.6087E-05A      
+    -0.25V            -6.0205E-06A      -7.5878E-06A      -7.0553E-06A      
+    -0.20V            -3.5886E-06A      -3.4060E-06A      -4.5200E-06A      
+    -0.15V            -2.4754E-06A      -1.9189E-06A      -3.2320E-06A      
+    -0.10V            -1.6183E-06A      -1.1503E-06A      -2.1365E-06A      
+    -0.05V            -8.0559E-07A      -5.5569E-07A      -1.0667E-06A      
+     0.00V            -2.0375E-11A      -4.2375E-10A      -3.0575E-12A      
+     0.05V             8.0451E-07A       5.4642E-07A       1.0663E-06A      
+     0.10V             1.6089E-06A       1.0916E-06A       2.1326E-06A      
+     0.15V             2.4132E-06A       1.6363E-06A       3.1989E-06A      
+     0.20V             3.2176E-06A       2.1810E-06A       4.2652E-06A      
+     0.25V             4.0219E-06A       2.7256E-06A       5.3315E-06A      
+     0.30V             4.8263E-06A       3.2702E-06A       6.3978E-06A      
+     0.35V             5.6306E-06A       3.8148E-06A       7.4641E-06A      
+     0.40V             6.4349E-06A       4.3594E-06A       8.5304E-06A      
+     0.45V             7.2393E-06A       4.9040E-06A       9.5967E-06A      
+     0.50V             8.0436E-06A       5.4486E-06A       1.0663E-05A      
+     0.55V             8.8479E-06A       5.9932E-06A       1.1729E-05A      
+     0.60V             9.6523E-06A       6.5378E-06A       1.2796E-05A      
+     0.65V             1.0457E-05A       7.0824E-06A       1.3862E-05A      
+     0.70V             1.1261E-05A       7.6270E-06A       1.4928E-05A      
+     0.75V             1.2065E-05A       8.1716E-06A       1.5994E-05A      
+     0.80V             1.2870E-05A       8.7162E-06A       1.7061E-05A      
+     0.85V             1.3674E-05A       9.2608E-06A       1.8127E-05A      
+     0.90V             1.4478E-05A       9.8054E-06A       1.9193E-05A      
+     0.95V             1.5283E-05A       1.0350E-05A       2.0260E-05A      
+     1.00V             1.6087E-05A       1.0895E-05A       2.1326E-05A      
+     1.05V             1.6891E-05A       1.1439E-05A       2.2392E-05A      
+     1.10V             1.7696E-05A       1.1984E-05A       2.3459E-05A      
+     1.15V             1.8500E-05A       1.2528E-05A       2.4525E-05A      
+     1.20V             1.9304E-05A       1.3073E-05A       2.5591E-05A      
+     1.25V             2.0109E-05A       1.3617E-05A       2.6657E-05A      
+     1.30V             2.0913E-05A       1.4162E-05A       2.7724E-05A      
+     1.35V             2.1717E-05A       1.4707E-05A       2.8790E-05A      
+     1.40V             2.2522E-05A       1.5251E-05A       2.9856E-05A      
+     1.45V             2.3326E-05A       1.5796E-05A       3.0923E-05A      
+     1.50V             2.4130E-05A       1.6340E-05A       3.1989E-05A      
+     1.55V             2.4935E-05A       1.6885E-05A       3.3055E-05A      
+     1.60V             2.5739E-05A       1.7430E-05A       3.4121E-05A      
+     1.65V             2.6543E-05A       1.7974E-05A       3.5188E-05A      
+     1.70V             2.7348E-05A       1.8519E-05A       3.6254E-05A      
+     1.75V             2.8152E-05A       1.9063E-05A       3.7320E-05A      
+     1.80V             2.8956E-05A       1.9608E-05A       3.8387E-05A      
+     1.85V             2.9761E-05A       2.0153E-05A       3.9453E-05A      
+     1.90V             3.0565E-05A       2.0697E-05A       4.0519E-05A      
+     1.95V             3.1369E-05A       2.1242E-05A       4.1586E-05A      
+     2.00V             3.2174E-05A       2.1786E-05A       4.2652E-05A      
+     2.05V             3.2978E-05A       2.2331E-05A       4.3718E-05A      
+     2.10V             3.3782E-05A       2.2876E-05A       4.4784E-05A      
+     2.15V             3.4587E-05A       2.3420E-05A       4.5851E-05A      
+     2.20V             3.5391E-05A       2.3965E-05A       4.6917E-05A      
+     2.25V             3.6195E-05A       2.4509E-05A       4.7983E-05A      
+     2.30V             3.7000E-05A       2.5054E-05A       4.9050E-05A      
+     2.40V             3.8608E-05A       2.6143E-05A       5.1182E-05A      
+     2.50V             4.0217E-05A       2.7232E-05A       5.3315E-05A      
+     2.60V             4.1826E-05A       2.8322E-05A       5.5447E-05A      
+     2.70V             4.3434E-05A       2.9411E-05A       5.7580E-05A      
+     2.80V             4.5043E-05A       3.0500E-05A       5.9712E-05A      
+     2.90V             4.6652E-05A       3.1589E-05A       6.1845E-05A      
+     3.00V             4.8260E-05A       3.2679E-05A       6.3978E-05A      
+     3.10V             4.9869E-05A       3.3768E-05A       6.6110E-05A      
+     3.20V             5.1478E-05A       3.4857E-05A       6.8243E-05A      
+     3.30V             5.3087E-05A       3.5947E-05A       7.0375E-05A      
+     3.40V             5.4695E-05A       3.7036E-05A       7.2508E-05A      
+     3.50V             5.6304E-05A       3.8125E-05A       7.4640E-05A      
+     3.60V             5.7913E-05A       3.9215E-05A       7.6773E-05A      
+     3.70V             5.9521E-05A       4.0304E-05A       7.8906E-05A      
+     3.80V             6.1130E-05A       4.1394E-05A       8.1038E-05A      
+|
+|****************************************************************************
+|
+[Model]         Control                                                    
+Model_type      Input                                                        
+|Signals        OS, OE                                 
+Vinh = 1.105V                                                                  
+Vinl = 0.665V                                                                 
+|
+|SiSoft include $SSTL_18/sstl_18.inc
+|                                                                  
+|                       typ             min             max                  
+C_comp                  1.13pF           NA              NA   
+|                                                                            
+|                       typ             min             max                  
+[Temperature Range]     40              105             0                  
+[Voltage range]         1.8             1.7             1.9                 
+|                                                                            
+|****************************************************************************
+|                                                                            
+[Power Clamp]
+|   Voltage              I(typ)            I(min)           I(max)
+|
+    -1.90V             0.0000E+00A       0.0000E+00A       0.0000E+00A    
+     0.00V             0.0000E+00A       0.0000E+00A       0.0000E+00A     
+     3.80V             0.0000E+00A       0.0000E+00A       0.0000E+00A  
+| 
+[GND Clamp]
+|   Voltage              I(typ)            I(min)           I(max)
+|
+    -1.90V            -7.8419E-01A      -6.4208E-01A      -9.8144E-01A      
+    -1.85V            -7.4847E-01A      -6.1461E-01A      -9.3502E-01A      
+    -1.80V            -7.1276E-01A      -5.8714E-01A      -8.8859E-01A      
+    -1.75V            -6.7704E-01A      -5.5966E-01A      -8.4216E-01A      
+    -1.70V            -6.4133E-01A      -5.3219E-01A      -7.9573E-01A      
+    -1.65V            -6.0562E-01A      -5.0472E-01A      -7.4930E-01A      
+    -1.60V            -5.6990E-01A      -4.7725E-01A      -7.0287E-01A      
+    -1.55V            -5.3419E-01A      -4.4977E-01A      -6.5644E-01A      
+    -1.50V            -4.9847E-01A      -4.2230E-01A      -6.1002E-01A      
+    -1.45V            -4.6276E-01A      -3.9483E-01A      -5.6359E-01A      
+    -1.40V            -4.2704E-01A      -3.6736E-01A      -5.1716E-01A      
+    -1.35V            -3.9133E-01A      -3.3988E-01A      -4.7073E-01A      
+    -1.30V            -3.5562E-01A      -3.1241E-01A      -4.2430E-01A      
+    -1.25V            -3.1990E-01A      -2.8494E-01A      -3.7787E-01A      
+    -1.20V            -2.8419E-01A      -2.5747E-01A      -3.3144E-01A      
+    -1.15V            -2.4847E-01A      -2.2999E-01A      -2.8502E-01A      
+    -1.10V            -2.1276E-01A      -2.0252E-01A      -2.3860E-01A      
+    -1.05V            -1.7707E-01A      -1.7505E-01A      -1.9225E-01A      
+    -1.00V            -1.4147E-01A      -1.4759E-01A      -1.4647E-01A      
+    -0.95V            -1.0648E-01A      -1.2019E-01A      -1.0467E-01A      
+    -0.90V            -7.4678E-02A      -9.3036E-02A      -7.6267E-02A      
+    -0.85V            -5.2071E-02A      -6.6940E-02A      -5.9635E-02A      
+    -0.80V            -3.8450E-02A      -4.4459E-02A      -4.6281E-02A      
+    -0.75V            -2.8277E-02A      -2.8920E-02A      -3.4053E-02A      
+    -0.70V            -1.9546E-02A      -1.9282E-02A      -2.2992E-02A      
+    -0.65V            -1.2177E-02A      -1.2532E-02A      -1.3645E-02A      
+    -0.60V            -6.5397E-03A      -7.4525E-03A      -6.7449E-03A      
+    -0.55V            -2.9132E-03A      -3.8709E-03A      -2.6749E-03A      
+    -0.50V            -1.0694E-03A      -1.7145E-03A      -8.6147E-04A      
+    -0.45V            -3.3137E-04A      -6.5370E-04A      -2.2988E-04A      
+    -0.40V            -8.7828E-05A      -2.2065E-04A      -4.9970E-05A      
+    -0.35V            -2.0000E-05A      -6.7040E-05A      -8.8967E-06A      
+    -0.30V            -4.0128E-06A      -1.8486E-05A      -1.3667E-06A      
+    -0.25V            -7.3457E-07A      -4.6906E-06A      -1.9102E-07A      
+    -0.20V            -1.2580E-07A      -1.1125E-06A      -2.5023E-08A      
+    -0.15V            -2.0367E-08A      -2.4886E-07A      -3.1048E-09A      
+    -0.10V            -3.0920E-09A      -5.1953E-08A      -3.6373E-10A      
+    -0.05V            -4.0256E-10A      -9.0223E-09A      -3.8415E-11A      
+     0.00V             0.0000E+00A       0.0000E+00A       0.0000E+00A       
+     1.90V             0.0000E+00A       0.0000E+00A       0.0000E+00A       
+     3.80V             0.0000E+00A       0.0000E+00A       0.0000E+00A       
+|  
+|****************************************************************************
+|
+|
+[Model]         CDCU877C1_PLL  
+Model_type      Output 
+|    
+|SiSoft Hspice_diff tt tiu877ar2p3_sia_driver.mod tiu877ar2p3_sia_driver_typ
+|SiSoft Hspice_diff ss tiu877ar2p3_sia_driver.mod tiu877ar2p3_sia_driver_max
+|SiSoft Hspice_diff ff tiu877ar2p3_sia_driver.mod tiu877ar2p3_sia_driver_min
+|                                               
+Vmeas =   0.905V    
+Cref  =   10pF  
+Rref  =   60.000Ohm   |Diff Termination 120ohm, or 60 ohms to Vref
+Vref  =   0.905V                 
+|                       typ            min             max
+C_comp                 1.44pF         1.38pF          1.64pF  
+|
+[Model Spec]
+|  subparameter         typ            min             max
+Vmeas                 0.905V         0.869V          0.970V     
+|                                                   
+|                       typ            min             max                  
+[Temperature Range]     40             105             0                  
+[Voltage Range]        1.8V            1.7V            1.9V
+|                     
+|****************************************************************************
+|
+[Pullup]
+|
+|  Voltage             I(typ)            I(min)            I(max)
+|           
+    -1.90V             4.8295E-02A       3.2718E-02A       6.4118E-02A      
+    -1.80V             4.6258E-02A       3.1302E-02A       6.1426E-02A      
+    -1.70V             4.4180E-02A       2.9860E-02A       5.8678E-02A      
+    -1.60V             4.2056E-02A       2.8390E-02A       5.5870E-02A      
+    -1.50V             3.9887E-02A       2.6892E-02A       5.3000E-02A      
+    -1.40V             3.7670E-02A       2.5364E-02A       5.0066E-02A      
+    -1.30V             3.5403E-02A       2.3805E-02A       4.7063E-02A      
+    -1.20V             3.3082E-02A       2.2214E-02A       4.3990E-02A      
+    -1.15V             3.1902E-02A       2.1406E-02A       4.2425E-02A      
+    -1.10V             3.0707E-02A       2.0589E-02A       4.0842E-02A      
+    -1.05V             2.9498E-02A       1.9763E-02A       3.9239E-02A      
+    -1.00V             2.8274E-02A       1.8929E-02A       3.7616E-02A      
+    -0.95V             2.7035E-02A       1.8085E-02A       3.5973E-02A      
+    -0.90V             2.5780E-02A       1.7232E-02A       3.4308E-02A      
+    -0.85V             2.4510E-02A       1.6370E-02A       3.2622E-02A      
+    -0.80V             2.3223E-02A       1.5498E-02A       3.0914E-02A      
+    -0.75V             2.1919E-02A       1.4615E-02A       2.9183E-02A      
+    -0.70V             2.0598E-02A       1.3723E-02A       2.7428E-02A      
+    -0.65V             1.9260E-02A       1.2820E-02A       2.5650E-02A      
+    -0.60V             1.7903E-02A       1.1906E-02A       2.3847E-02A      
+    -0.55V             1.6528E-02A       1.0981E-02A       2.2018E-02A      
+    -0.50V             1.5133E-02A       1.0045E-02A       2.0164E-02A      
+    -0.45V             1.3719E-02A       9.0978E-03A       1.8282E-02A      
+    -0.40V             1.2284E-02A       8.1384E-03A       1.6374E-02A      
+    -0.35V             1.0829E-02A       7.1670E-03A       1.4436E-02A      
+    -0.30V             9.3516E-03A       6.1831E-03A       1.2469E-02A      
+    -0.25V             7.8525E-03A       5.1865E-03A       1.0472E-02A      
+    -0.20V             6.3306E-03A       4.1768E-03A       8.4444E-03A      
+    -0.15V             4.7851E-03A       3.1537E-03A       6.3841E-03A      
+    -0.10V             3.2154E-03A       2.1167E-03A       4.2907E-03A      
+    -0.05V             1.6206E-03A       1.0657E-03A       2.1631E-03A      
+     0.00V             4.6719E-10A       6.8568E-09A       1.7990E-10A      
+     0.05V            -1.6355E-03A      -1.0724E-03A      -2.1883E-03A      
+     0.10V            -3.2565E-03A      -2.1367E-03A      -4.3585E-03A      
+     0.15V            -4.8628E-03A      -3.1928E-03A      -6.5101E-03A      
+     0.20V            -6.4538E-03A      -4.2404E-03A      -8.6425E-03A      
+     0.25V            -8.0291E-03A      -5.2792E-03A      -1.0755E-02A      
+     0.30V            -9.5882E-03A      -6.3089E-03A      -1.2848E-02A      
+     0.35V            -1.1131E-02A      -7.3293E-03A      -1.4919E-02A      
+     0.40V            -1.2656E-02A      -8.3400E-03A      -1.6970E-02A      
+     0.45V            -1.4163E-02A      -9.3408E-03A      -1.8997E-02A      
+     0.50V            -1.5651E-02A      -1.0331E-02A      -2.1002E-02A      
+     0.55V            -1.7120E-02A      -1.1311E-02A      -2.2982E-02A      
+     0.60V            -1.8568E-02A      -1.2279E-02A      -2.4937E-02A      
+     0.65V            -1.9994E-02A      -1.3235E-02A      -2.6864E-02A      
+     0.70V            -2.1396E-02A      -1.4179E-02A      -2.8761E-02A      
+     0.75V            -2.2770E-02A      -1.5109E-02A      -3.0623E-02A      
+     0.80V            -2.4112E-02A      -1.6024E-02A      -3.2443E-02A      
+     0.85V            -2.5414E-02A      -1.6922E-02A      -3.4213E-02A      
+     0.90V            -2.6668E-02A      -1.7800E-02A      -3.5919E-02A      
+     0.95V            -2.7867E-02A      -1.8655E-02A      -3.7551E-02A      
+     1.00V            -2.9003E-02A      -1.9481E-02A      -3.9098E-02A      
+     1.05V            -3.0072E-02A      -2.0275E-02A      -4.0554E-02A      
+     1.10V            -3.1073E-02A      -2.1033E-02A      -4.1917E-02A      
+     1.15V            -3.2006E-02A      -2.1752E-02A      -4.3188E-02A      
+     1.20V            -3.2875E-02A      -2.2431E-02A      -4.4370E-02A      
+     1.25V            -3.3683E-02A      -2.3071E-02A      -4.5469E-02A      
+     1.30V            -3.4433E-02A      -2.3672E-02A      -4.6488E-02A      
+     1.35V            -3.5129E-02A      -2.4235E-02A      -4.7435E-02A      
+     1.40V            -3.5776E-02A      -2.4763E-02A      -4.8314E-02A      
+     1.45V            -3.6378E-02A      -2.5256E-02A      -4.9132E-02A      
+     1.50V            -3.6937E-02A      -2.5717E-02A      -4.9893E-02A      
+     1.55V            -3.7458E-02A      -2.6148E-02A      -5.0602E-02A      
+     1.60V            -3.7945E-02A      -2.6552E-02A      -5.1264E-02A      
+     1.65V            -3.8399E-02A      -2.6929E-02A      -5.1883E-02A      
+     1.70V            -3.8824E-02A      -2.7283E-02A      -5.2462E-02A      
+     1.75V            -3.9222E-02A      -2.7614E-02A      -5.3006E-02A      
+     1.80V            -3.9596E-02A      -2.7925E-02A      -5.3517E-02A      
+     1.85V            -3.9947E-02A      -2.8217E-02A      -5.3997E-02A      
+     1.90V            -4.0278E-02A      -2.8492E-02A      -5.4451E-02A      
+     1.95V            -4.0590E-02A      -2.8754E-02A      -5.4879E-02A      
+     2.00V            -4.0885E-02A      -2.9011E-02A      -5.5284E-02A      
+     2.05V            -4.1164E-02A      -2.9264E-02A      -5.5667E-02A      
+     2.10V            -4.1431E-02A      -2.9513E-02A      -5.6032E-02A      
+     2.15V            -4.1695E-02A      -2.9758E-02A      -5.6378E-02A      
+     2.20V            -4.1958E-02A      -2.9998E-02A      -5.6709E-02A      
+     2.25V            -4.2217E-02A      -3.0236E-02A      -5.7035E-02A      
+     2.30V            -4.2473E-02A      -3.0469E-02A      -5.7353E-02A      
+     2.35V            -4.2725E-02A      -3.0699E-02A      -5.7666E-02A      
+     2.40V            -4.2975E-02A      -3.0926E-02A      -5.7976E-02A      
+     2.45V            -4.3221E-02A      -3.1149E-02A      -5.8283E-02A      
+     2.50V            -4.3465E-02A      -3.1370E-02A      -5.8586E-02A      
+     2.55V            -4.3705E-02A      -3.1587E-02A      -5.8885E-02A      
+     2.60V            -4.3943E-02A      -3.1801E-02A      -5.9181E-02A      
+     2.65V            -4.4177E-02A      -3.2012E-02A      -5.9473E-02A      
+     2.70V            -4.4409E-02A      -3.2220E-02A      -5.9763E-02A      
+     2.75V            -4.4639E-02A      -3.2426E-02A      -6.0049E-02A      
+     2.80V            -4.4866E-02A      -3.2628E-02A      -6.0332E-02A      
+     2.85V            -4.5090E-02A      -3.2829E-02A      -6.0612E-02A      
+     2.90V            -4.5312E-02A      -3.3026E-02A      -6.0889E-02A      
+     3.00V            -4.5748E-02A      -3.3414E-02A      -6.1434E-02A      
+     3.05V            -4.5963E-02A      -3.3604E-02A      -6.1702E-02A      
+     3.10V            -4.6175E-02A      -3.3792E-02A      -6.1968E-02A      
+     3.20V            -4.6593E-02A      -3.4161E-02A      -6.2491E-02A      
+     3.30V            -4.7003E-02A      -3.4522E-02A      -6.3004E-02A      
+     3.40V            -4.7404E-02A      -3.4874E-02A      -6.3507E-02A      
+     3.50V            -4.7797E-02A      -3.5220E-02A      -6.4001E-02A      
+     3.60V            -4.8183E-02A      -3.5566E-02A      -6.4485E-02A      
+     3.70V            -4.8562E-02A      -3.5913E-02A      -6.4960E-02A      
+     3.80V            -6.3116E-02A      -4.6608E-02A      -8.4293E-02A      
+|                                                                               
+[Pulldown]                                                                      
+|                       
+|  Voltage              I(typ)            I(min)            I(max)
+|
+    -1.90V            -3.6132E-02A      -2.3805E-02A      -4.8376E-02A      
+    -1.80V            -3.5196E-02A      -2.3137E-02A      -4.7149E-02A      
+    -1.70V            -3.4215E-02A      -2.2439E-02A      -4.5861E-02A      
+    -1.60V            -3.3182E-02A      -2.1708E-02A      -4.4506E-02A      
+    -1.50V            -3.2094E-02A      -2.0940E-02A      -4.3076E-02A      
+    -1.40V            -3.0943E-02A      -2.0131E-02A      -4.1564E-02A      
+    -1.30V            -2.9721E-02A      -1.9278E-02A      -3.9958E-02A      
+    -1.20V            -2.8420E-02A      -1.8375E-02A      -3.8246E-02A      
+    -1.15V            -2.7736E-02A      -1.7903E-02A      -3.7345E-02A      
+    -1.10V            -2.7029E-02A      -1.7416E-02A      -3.6413E-02A      
+    -1.05V            -2.6295E-02A      -1.6912E-02A      -3.5446E-02A      
+    -1.00V            -2.5533E-02A      -1.6392E-02A      -3.4441E-02A      
+    -0.95V            -2.4741E-02A      -1.5854E-02A      -3.3397E-02A      
+    -0.90V            -2.3916E-02A      -1.5296E-02A      -3.2308E-02A      
+    -0.85V            -2.3056E-02A      -1.4717E-02A      -3.1172E-02A      
+    -0.80V            -2.2158E-02A      -1.4115E-02A      -2.9984E-02A      
+    -0.75V            -2.1217E-02A      -1.3489E-02A      -2.8739E-02A      
+    -0.70V            -2.0229E-02A      -1.2837E-02A      -2.7431E-02A      
+    -0.65V            -1.9190E-02A      -1.2155E-02A      -2.6054E-02A      
+    -0.60V            -1.8095E-02A      -1.1442E-02A      -2.4600E-02A      
+    -0.55V            -1.6935E-02A      -1.0694E-02A      -2.3060E-02A      
+    -0.50V            -1.5705E-02A      -9.9080E-03A      -2.1424E-02A      
+    -0.45V            -1.4394E-02A      -9.0797E-03A      -1.9677E-02A      
+    -0.40V            -1.2991E-02A      -8.2043E-03A      -1.7804E-02A      
+    -0.35V            -1.1482E-02A      -7.2760E-03A      -1.5786E-02A      
+    -0.30V            -9.9724E-03A      -6.2881E-03A      -1.3747E-02A      
+    -0.25V            -8.3402E-03A      -5.2324E-03A      -1.1535E-02A      
+    -0.20V            -6.6979E-03A      -4.1854E-03A      -9.2932E-03A      
+    -0.15V            -5.0432E-03A      -3.1400E-03A      -7.0195E-03A      
+    -0.10V            -3.3756E-03A      -2.0941E-03A      -4.7133E-03A      
+    -0.05V            -1.6946E-03A      -1.0475E-03A      -2.3737E-03A      
+     0.00V            -2.9097E-10A      -3.6950E-09A      -9.0004E-11A      
+     0.05V             1.6781E-03A       1.0365E-03A       2.3556E-03A      
+     0.10V             3.3084E-03A       2.0497E-03A       4.6387E-03A      
+     0.15V             4.8891E-03A       3.0388E-03A       6.8470E-03A      
+     0.20V             6.4188E-03A       4.0029E-03A       8.9781E-03A      
+     0.25V             7.8955E-03A       4.9408E-03A       1.1030E-02A      
+     0.30V             9.3176E-03A       5.8518E-03A       1.2999E-02A      
+     0.35V             1.0683E-02A       6.7345E-03A       1.4885E-02A      
+     0.40V             1.1991E-02A       7.5880E-03A       1.6683E-02A      
+     0.45V             1.3238E-02A       8.4111E-03A       1.8393E-02A      
+     0.50V             1.4423E-02A       9.2024E-03A       2.0010E-02A      
+     0.55V             1.5544E-02A       9.9608E-03A       2.1533E-02A      
+     0.60V             1.6599E-02A       1.0685E-02A       2.2957E-02A      
+     0.65V             1.7585E-02A       1.1373E-02A       2.4278E-02A      
+     0.70V             1.8499E-02A       1.2024E-02A       2.5491E-02A      
+     0.75V             1.9338E-02A       1.2636E-02A       2.6589E-02A      
+     0.80V             2.0099E-02A       1.3207E-02A       2.7565E-02A      
+     0.85V             2.0777E-02A       1.3736E-02A       2.8412E-02A      
+     0.90V             2.1369E-02A       1.4220E-02A       2.9130E-02A      
+     0.95V             2.1876E-02A       1.4658E-02A       2.9725E-02A      
+     1.00V             2.2303E-02A       1.5048E-02A       3.0213E-02A      
+     1.05V             2.2658E-02A       1.5389E-02A       3.0613E-02A      
+     1.10V             2.2953E-02A       1.5684E-02A       3.0943E-02A      
+     1.15V             2.3200E-02A       1.5936E-02A       3.1220E-02A      
+     1.20V             2.3410E-02A       1.6151E-02A       3.1457E-02A      
+     1.25V             2.3590E-02A       1.6334E-02A       3.1662E-02A      
+     1.30V             2.3747E-02A       1.6491E-02A       3.1842E-02A      
+     1.35V             2.3887E-02A       1.6628E-02A       3.2004E-02A      
+     1.40V             2.4012E-02A       1.6748E-02A       3.2151E-02A      
+     1.45V             2.4126E-02A       1.6855E-02A       3.2286E-02A      
+     1.50V             2.4231E-02A       1.6952E-02A       3.2411E-02A      
+     1.55V             2.4328E-02A       1.7039E-02A       3.2528E-02A      
+     1.60V             2.4419E-02A       1.7120E-02A       3.2638E-02A      
+     1.65V             2.4504E-02A       1.7195E-02A       3.2742E-02A      
+     1.70V             2.4586E-02A       1.7264E-02A       3.2842E-02A      
+     1.75V             2.4663E-02A       1.7330E-02A       3.2938E-02A      
+     1.80V             2.4738E-02A       1.7392E-02A       3.3031E-02A      
+     1.85V             2.4809E-02A       1.7451E-02A       3.3121E-02A      
+     1.90V             2.4879E-02A       1.7508E-02A       3.3208E-02A      
+     1.95V             2.4946E-02A       1.7563E-02A       3.3292E-02A      
+     2.00V             2.5011E-02A       1.7615E-02A       3.3375E-02A      
+     2.05V             2.5075E-02A       1.7666E-02A       3.3456E-02A      
+     2.10V             2.5138E-02A       1.7715E-02A       3.3536E-02A      
+     2.15V             2.5199E-02A       1.7764E-02A       3.3614E-02A      
+     2.20V             2.5259E-02A       1.7811E-02A       3.3691E-02A      
+     2.25V             2.5319E-02A       1.7859E-02A       3.3768E-02A      
+     2.30V             2.5377E-02A       1.7906E-02A       3.3844E-02A      
+     2.35V             2.5435E-02A       1.7954E-02A       3.3919E-02A      
+     2.40V             2.5493E-02A       1.8001E-02A       3.3994E-02A      
+     2.45V             2.5552E-02A       1.8049E-02A       3.4069E-02A      
+     2.50V             2.5609E-02A       1.8096E-02A       3.4144E-02A      
+     2.55V             2.5667E-02A       1.8143E-02A       3.4218E-02A      
+     2.60V             2.5725E-02A       1.8191E-02A       3.4293E-02A      
+     2.65V             2.5783E-02A       1.8238E-02A       3.4368E-02A      
+     2.70V             2.5841E-02A       1.8285E-02A       3.4442E-02A      
+     2.75V             2.5899E-02A       1.8333E-02A       3.4517E-02A      
+     2.80V             2.5957E-02A       1.8380E-02A       3.4592E-02A      
+     2.85V             2.6014E-02A       1.8427E-02A       3.4666E-02A      
+     2.90V             2.6072E-02A       1.8474E-02A       3.4741E-02A      
+     2.95V             2.6130E-02A       1.8521E-02A       3.4815E-02A      
+     3.00V             2.6187E-02A       1.8569E-02A       3.4890E-02A      
+     3.10V             2.6303E-02A       1.8663E-02A       3.5038E-02A      
+     3.20V             2.6418E-02A       1.8757E-02A       3.5187E-02A      
+     3.30V             2.6533E-02A       1.8851E-02A       3.5335E-02A      
+     3.40V             2.6647E-02A       1.8944E-02A       3.5483E-02A      
+     3.50V             2.6762E-02A       1.9038E-02A       3.5631E-02A      
+     3.60V             2.6877E-02A       1.9132E-02A       3.5779E-02A      
+     3.70V             2.6991E-02A       1.9225E-02A       3.5927E-02A      
+     3.80V             2.7105E-02A       1.9318E-02A       3.6074E-02A      
+|
+[Power Clamp]
+|
+|  Voltage              I(typ)            I(min)            I(max)
+|
+    -1.90V             5.8124E-02A       3.7616E-02A       7.6791E-02A      
+    -1.85V             5.5244E-02A       3.5907E-02A       7.2780E-02A      
+    -1.80V             5.2368E-02A       3.4202E-02A       6.8777E-02A      
+    -1.75V             4.9500E-02A       3.2501E-02A       6.4783E-02A      
+    -1.70V             4.6639E-02A       3.0804E-02A       6.0801E-02A      
+    -1.65V             4.3787E-02A       2.9111E-02A       5.6831E-02A      
+    -1.60V             4.0945E-02A       2.7425E-02A       5.2875E-02A      
+    -1.55V             3.8114E-02A       2.5744E-02A       4.8938E-02A      
+    -1.50V             3.5298E-02A       2.4071E-02A       4.5021E-02A      
+    -1.45V             3.2498E-02A       2.2407E-02A       4.1132E-02A      
+    -1.40V             2.9719E-02A       2.0753E-02A       3.7276E-02A      
+    -1.35V             2.6966E-02A       1.9110E-02A       3.3463E-02A      
+    -1.30V             2.4245E-02A       1.7483E-02A       2.9709E-02A      
+    -1.25V             2.1568E-02A       1.5873E-02A       2.6037E-02A      
+    -1.20V             1.8949E-02A       1.4286E-02A       2.2484E-02A      
+    -1.15V             1.6413E-02A       1.2727E-02A       1.9117E-02A      
+    -1.10V             1.3998E-02A       1.1206E-02A       1.6049E-02A      
+    -1.05V             1.1763E-02A       9.7364E-03A       1.3449E-02A      
+    -1.00V             9.7955E-03A       8.3351E-03A       1.1422E-02A      
+    -0.95V             8.1659E-03A       7.0281E-03A       9.8225E-03A      
+    -0.90V             6.8481E-03A       5.8453E-03A       8.4225E-03A      
+    -0.85V             5.7276E-03A       4.8110E-03A       7.1133E-03A      
+    -0.80V             4.7134E-03A       3.9244E-03A       5.8689E-03A      
+    -0.75V             3.7706E-03A       3.1575E-03A       4.6926E-03A      
+    -0.70V             2.8961E-03A       2.4777E-03A       3.5962E-03A      
+    -0.65V             2.1025E-03A       1.8679E-03A       2.5961E-03A      
+    -0.60V             1.4097E-03A       1.3279E-03A       1.7191E-03A      
+    -0.55V             8.4399E-04A       8.6948E-04A       1.0046E-03A      
+    -0.50V             4.3316E-04A       5.0953E-04A       4.9341E-04A      
+    -0.45V             1.8464E-04A       2.5984E-04A       1.9557E-04A      
+    -0.40V             6.5456E-05A       1.1407E-04A       6.2141E-05A      
+    -0.35V             1.9778E-05A       4.3805E-05A       1.6073E-05A      
+    -0.30V             5.1925E-06A       1.5056E-05A       3.4531E-06A      
+    -0.25V             1.2062E-06A       4.6843E-06A       6.3862E-07A      
+    -0.20V             2.5322E-07A       1.3289E-06A       1.0567E-07A      
+    -0.15V             4.8799E-08A       3.4699E-07A       1.6082E-08A      
+    -0.10V             8.7959E-09A       8.5015E-08A       2.3798E-09A      
+    -0.05V             1.6566E-09A       2.1115E-08A       4.7048E-10A      
+     0.00V             5.4935E-10A       7.4743E-09A       2.3635E-10A      
+     0.05V             3.4219E-10A       4.1525E-09A       1.9622E-10A      
+     0.10V             2.5248E-10A       2.6885E-09A       1.7572E-10A      
+     0.15V             1.9996E-10A       1.8985E-09A       1.6090E-10A      
+     0.20V             1.6075E-10A       1.3570E-09A       1.4811E-10A      
+     0.25V             1.2778E-10A       9.3176E-10A       1.3629E-10A      
+     0.30V             9.8283E-11A       5.7050E-10A       1.2507E-10A      
+     0.35V             7.0962E-11A       2.4851E-10A       1.1421E-10A      
+     0.40V             4.5131E-11A       0.0000E+00A       1.0364E-10A      
+     0.45V             2.0387E-11A       0.0000E+00A       9.3272E-11A      
+     0.50V             0.0000E+00A       0.0000E+00A       8.3082E-11A      
+     0.55V             0.0000E+00A       0.0000E+00A       7.3029E-11A      
+     0.60V             0.0000E+00A       0.0000E+00A       6.3100E-11A      
+     0.65V             0.0000E+00A       0.0000E+00A       5.3271E-11A      
+     0.70V             0.0000E+00A       0.0000E+00A       4.3534E-11A      
+     0.75V             0.0000E+00A       0.0000E+00A       3.3876E-11A      
+     0.80V             0.0000E+00A       0.0000E+00A       2.4289E-11A      
+     0.85V             0.0000E+00A       0.0000E+00A       1.4766E-11A      
+     0.90V             0.0000E+00A       0.0000E+00A       0.0000E+00A      
+     0.95V             0.0000E+00A       0.0000E+00A       0.0000E+00A      
+     3.80V             0.0000E+00A       0.0000E+00A       0.0000E+00A      
+|
+[GND Clamp]
+|
+|  Voltage              I(typ)            I(min)            I(max)
+|
+    -1.90V            -4.5904E-01A      -3.7272E-01A      -5.7817E-01A      
+    -1.85V            -4.3904E-01A      -3.5733E-01A      -5.5217E-01A      
+    -1.80V            -4.1904E-01A      -3.4195E-01A      -5.2617E-01A      
+    -1.75V            -3.9904E-01A      -3.2656E-01A      -5.0017E-01A      
+    -1.70V            -3.7904E-01A      -3.1118E-01A      -4.7417E-01A      
+    -1.65V            -3.5904E-01A      -2.9579E-01A      -4.4817E-01A      
+    -1.60V            -3.3904E-01A      -2.8041E-01A      -4.2217E-01A      
+    -1.55V            -3.1904E-01A      -2.6502E-01A      -3.9617E-01A      
+    -1.50V            -2.9904E-01A      -2.4964E-01A      -3.7017E-01A      
+    -1.45V            -2.7904E-01A      -2.3425E-01A      -3.4417E-01A      
+    -1.40V            -2.5904E-01A      -2.1887E-01A      -3.1817E-01A      
+    -1.35V            -2.3904E-01A      -2.0349E-01A      -2.9217E-01A      
+    -1.30V            -2.1904E-01A      -1.8810E-01A      -2.6617E-01A      
+    -1.25V            -1.9904E-01A      -1.7272E-01A      -2.4017E-01A      
+    -1.20V            -1.7904E-01A      -1.5733E-01A      -2.1417E-01A      
+    -1.15V            -1.5904E-01A      -1.4195E-01A      -1.8817E-01A      
+    -1.10V            -1.3904E-01A      -1.2656E-01A      -1.6217E-01A      
+    -1.05V            -1.1905E-01A      -1.1118E-01A      -1.3619E-01A      
+    -1.00V            -9.9076E-02A      -9.5799E-02A      -1.1035E-01A      
+    -0.95V            -7.9264E-02A      -8.0433E-02A      -8.5570E-02A      
+    -0.90V            -6.0362E-02A      -6.5135E-02A      -6.5898E-02A      
+    -0.85V            -4.4951E-02A      -5.0139E-02A      -5.2694E-02A      
+    -0.80V            -3.4293E-02A      -3.6304E-02A      -4.1575E-02A      
+    -0.75V            -2.5809E-02A      -2.5369E-02A      -3.1215E-02A      
+    -0.70V            -1.8307E-02A      -1.7684E-02A      -2.1668E-02A      
+    -0.65V            -1.1786E-02A      -1.1897E-02A      -1.3360E-02A      
+    -0.60V            -6.5914E-03A      -7.3275E-03A      -6.9355E-03A      
+    -0.55V            -3.0670E-03A      -3.9493E-03A      -2.8988E-03A      
+    -0.50V            -1.1697E-03A      -1.8098E-03A      -9.7675E-04A      
+    -0.45V            -3.7324E-04A      -7.0803E-04A      -2.7091E-04A      
+    -0.40V            -1.0145E-04A      -2.4317E-04A      -6.1576E-05A      
+    -0.35V            -2.3687E-05A      -7.4854E-05A      -1.1525E-05A      
+    -0.30V            -4.8572E-06A      -2.0886E-05A      -1.8430E-06A      
+    -0.25V            -9.0314E-07A      -5.3497E-06A      -2.6402E-07A      
+    -0.20V            -1.5671E-07A      -1.2831E-06A      -3.5212E-08A      
+    -0.15V            -2.6055E-08A      -2.9460E-07A      -4.5776E-09A      
+    -0.10V            -4.4923E-09A      -6.8094E-08A      -7.1219E-10A      
+    -0.05V            -1.1130E-09A      -1.8537E-08A      -2.4584E-10A      
+     0.00V            -6.1218E-10A      -8.3399E-09A      -1.8722E-10A      
+     0.05V            -5.2408E-10A      -6.1311E-09A      -1.7248E-10A      
+     0.10V            -4.9120E-10A      -5.4434E-09A      -1.6214E-10A      
+     0.15V            -4.6895E-10A      -5.1235E-09A      -1.5255E-10A      
+     0.20V            -4.4899E-10A      -4.8846E-09A      -1.4316E-10A      
+     0.25V            -4.2974E-10A      -4.6704E-09A      -1.3385E-10A      
+     0.30V            -4.1075E-10A      -4.4658E-09A      -1.2457E-10A      
+     0.35V            -3.9185E-10A      -4.2652E-09A      -1.1532E-10A      
+     0.40V            -3.7295E-10A      -4.0663E-09A      -1.0609E-10A      
+     0.45V            -3.5400E-10A      -3.8675E-09A      -9.6865E-11A      
+     0.50V            -3.3497E-10A      -3.6681E-09A      -8.7644E-11A      
+     0.55V            -3.1583E-10A      -3.4676E-09A      -7.8424E-11A      
+     0.60V            -2.9657E-10A      -3.2655E-09A      -6.9199E-11A      
+     0.65V            -2.7717E-10A      -3.0615E-09A      -5.9965E-11A      
+     0.70V            -2.5761E-10A      -2.8553E-09A      -5.0718E-11A      
+     0.75V            -2.3788E-10A      -2.6467E-09A      -4.1455E-11A      
+     0.80V            -2.1796E-10A      -2.4352E-09A      -3.2168E-11A      
+     0.85V            -1.9784E-10A      -2.2206E-09A      -2.2855E-11A      
+     0.90V            -1.7750E-10A      -2.0026E-09A      -1.3510E-11A      
+     0.95V            -1.5692E-10A      -1.7807E-09A      -4.1289E-12A      
+     1.00V            -1.3607E-10A      -1.5543E-09A       0.0000E+00A      
+     1.05V            -1.1494E-10A      -1.3229E-09A       0.0000E+00A      
+     1.10V            -9.3484E-11A      -1.0855E-09A       0.0000E+00A      
+     1.15V            -7.1673E-11A      -8.4116E-10A       0.0000E+00A      
+     1.20V            -4.9453E-11A      -5.8825E-10A       0.0000E+00A      
+     1.25V            -2.6764E-11A      -3.2468E-10A       0.0000E+00A      
+     1.30V             0.0000E+00A       0.0000E+00A       0.0000E+00A      
+     1.35V             0.0000E+00A       0.0000E+00A       0.0000E+00A      
+     3.80V             0.0000E+00A       0.0000E+00A       0.0000E+00A      
+|                                                                         
+[Ramp]                                                           
+|                                                               
+|                  typ                    min                    max  
+|dV/dt_r       0.7054/6.5305E-11      0.5547/9.5372E-11      0.7967/4.6725E-11
+|dV/dt_f       0.7054/6.8631E-11      0.5547/8.9905E-11      0.7967/5.2828E-11
+|
+dV/dt_r       0.7054/2.0895E-10      0.5547/3.0534E-10      0.7967/1.4784E-10
+dV/dt_f       0.7054/2.1966E-10      0.5547/2.8713E-10      0.7967/1.6919E-10
+|
+R_load = 152ohms  |120ohms + 1x channel impedance (HIGH+LOW)/2= 31.85ohms
+|
+| R_load = differential termination 120ohm channel to channel, 
+|          or single-ended with Rload to common mode voltage.
+|                                                                
+[Rising Waveform]                                                
+R_fixture = 60.0            | 1/2 of differential resistor
+V_fixture = 0.905           | common mode voltage NOM 
+V_fixture_min = 0.869       | common mode voltage WEAK
+V_fixture_max = 0.970       | common mode voltage STRONG
+|                                                                
+| time          V(typ)        V(min)            V(max)       
+|                                                                
+0.00E+00s       0.3176V       0.4070V           0.2833V
+3.20E-11s       0.3173V       0.4097V           0.2832V
+6.40E-11s       0.3170V       0.4146V           0.2831V
+9.60E-11s       0.3169V       0.4271V           0.2830V
+1.28E-10s       0.3181V       0.4437V           0.2828V
+1.60E-10s       0.3199V       0.4641V           0.2831V
+1.92E-10s       0.3337V       0.4885V           0.2839V
+2.24E-10s       0.3558V       0.5167V           0.2957V
+2.56E-10s       0.3863V       0.5496V           0.3202V
+2.88E-10s       0.4260V       0.5883V           0.3637V
+3.20E-10s       0.4769V       0.6337V           0.4364V
+3.52E-10s       0.5465V       0.6887V           0.5554V
+3.84E-10s       0.6381V       0.7519V           0.7223V
+4.16E-10s       0.7540V       0.8172V           0.9217V
+4.48E-10s       0.8810V       0.8838V           1.1189V
+4.80E-10s       1.0050V       0.9531V           1.2817V
+5.12E-10s       1.1199V       1.0131V           1.4025V
+5.44E-10s       1.2130V       1.0693V           1.4799V
+5.76E-10s       1.2885V       1.1202V           1.5240V
+6.08E-10s       1.3465V       1.1626V           1.5495V
+6.40E-10s       1.3870V       1.1984V           1.5617V
+6.72E-10s       1.4177V       1.2284V           1.5684V
+7.04E-10s       1.4389V       1.2528V           1.5733V
+7.36E-10s       1.4493V       1.2714V           1.5743V
+7.68E-10s       1.4600V       1.2858V           1.5776V
+8.00E-10s       1.4668V       1.2988V           1.5802V
+8.32E-10s       1.4691V       1.3084V           1.5822V
+8.64E-10s       1.4693V       1.3145V           1.5852V
+8.96E-10s       1.4710V       1.3177V           1.5883V
+9.28E-10s       1.4714V       1.3225V           1.5915V
+9.60E-10s       1.4704V       1.3260V           1.5949V
+9.97E-10s       1.4704V       1.3280V           1.5980V
+1.03E-09s       1.4707V       1.3287V           1.6012V
+1.06E-09s       1.4708V       1.3279V           1.6043V
+1.09E-09s       1.4709V       1.3281V           1.6075V
+1.12E-09s       1.4710V       1.3285V           1.6107V
+1.16E-09s       1.4714V       1.3284V           1.6135V
+1.19E-09s       1.4718V       1.3280V           1.6162V
+1.22E-09s       1.4724V       1.3271V           1.6187V
+1.25E-09s       1.4730V       1.3264V           1.6211V
+1.28E-09s       1.4738V       1.3261V           1.6235V
+1.32E-09s       1.4745V       1.3258V           1.6256V
+1.35E-09s       1.4752V       1.3256V           1.6277V
+1.38E-09s       1.4758V       1.3253V           1.6296V
+1.41E-09s       1.4765V       1.3250V           1.6314V
+1.44E-09s       1.4772V       1.3247V           1.6330V
+1.48E-09s       1.4779V       1.3245V           1.6346V
+1.51E-09s       1.4786V       1.3244V           1.6360V
+1.54E-09s       1.4794V       1.3243V           1.6372V
+1.57E-09s       1.4801V       1.3243V           1.6384V
+1.60E-09s       1.4807V       1.3243V           1.6394V
+1.64E-09s       1.4813V       1.3244V           1.6404V
+|
+|                                                                
+[Falling Waveform]                                               
+R_fixture = 60.0           | 1/2 of differential resistor
+V_fixture = 0.905          | common mode voltage NOM 
+V_fixture_min = 0.869      | common mode voltage WEAK
+V_fixture_max = 0.970      | common mode voltage STRONG
+|                                                                
+|      time             V(typ)         V(min)         V(max)       
+|                                                             
+      0.000E+00s        1.4932V        1.3315V        1.6342V
+      3.200E-11s        1.4935V        1.3328V        1.6341V
+      6.400E-11s        1.4940V        1.3334V        1.6342V
+      9.600E-11s        1.4949V        1.3300V        1.6347V
+      1.280E-10s        1.4972V        1.3249V        1.6355V
+      1.600E-10s        1.5002V        1.3180V        1.6379V
+      1.920E-10s        1.4973V        1.3041V        1.6428V
+      2.240E-10s        1.4904V        1.2812V        1.6408V
+      2.560E-10s        1.4715V        1.2484V        1.6306V
+      2.880E-10s        1.4341V        1.2007V        1.5914V
+      3.200E-10s        1.3690V        1.1420V        1.5083V
+      3.520E-10s        1.2742V        1.0750V        1.3711V
+      3.840E-10s        1.1561V        0.9984V        1.1994V
+      4.160E-10s        1.0271V        0.9240V        1.0176V
+      4.480E-10s        0.9030V        0.8531V        0.8501V
+      4.800E-10s        0.7908V        0.7828V        0.7106V
+      5.120E-10s        0.6944V        0.7240V        0.5980V
+      5.440E-10s        0.6153V        0.6717V        0.5117V
+      5.760E-10s        0.5527V        0.6261V        0.4466V
+      6.080E-10s        0.5015V        0.5879V        0.3973V
+      6.400E-10s        0.4632V        0.5568V        0.3618V
+      6.720E-10s        0.4319V        0.5303V        0.3350V
+      7.040E-10s        0.4075V        0.5082V        0.3150V
+      7.360E-10s        0.3910V        0.4911V        0.3026V
+      7.680E-10s        0.3755V        0.4774V        0.2911V
+      8.000E-10s        0.3637V        0.4646V        0.2838V
+      8.320E-10s        0.3559V        0.4546V        0.2801V
+      8.640E-10s        0.3504V        0.4473V        0.2756V
+      8.960E-10s        0.3449V        0.4424V        0.2726V
+      9.280E-10s        0.3411V        0.4364V        0.2712V
+      9.600E-10s        0.3392V        0.4316V        0.2712V
+      9.920E-10s        0.3369V        0.4280V        0.2701V
+      1.024E-09s        0.3349V        0.4256V        0.2693V
+      1.056E-09s        0.3336V        0.4244V        0.2690V
+      1.088E-09s        0.3328V        0.4227V        0.2692V
+      1.120E-09s        0.3324V        0.4210V        0.2698V
+      1.152E-09s        0.3315V        0.4197V        0.2699V
+      1.184E-09s        0.3308V        0.4189V        0.2699V
+      1.216E-09s        0.3303V        0.4186V        0.2699V
+      1.248E-09s        0.3300V        0.4183V        0.2700V
+      1.280E-09s        0.3298V        0.4177V        0.2702V
+      1.312E-09s        0.3297V        0.4171V        0.2705V
+      1.344E-09s        0.3294V        0.4167V        0.2707V
+      1.376E-09s        0.3291V        0.4164V        0.2707V
+      1.408E-09s        0.3289V        0.4162V        0.2708V
+      1.440E-09s        0.3286V        0.4162V        0.2708V
+      1.472E-09s        0.3284V        0.4160V        0.2708V
+      1.504E-09s        0.3283V        0.4158V        0.2708V
+      1.536E-09s        0.3282V        0.4155V        0.2707V
+      1.568E-09s        0.3281V        0.4153V        0.2707V
+      1.600E-09s        0.3279V        0.4151V        0.2706V
+      1.632E-09s        0.3277V        0.4149V        0.2705V
+      1.664E-09s        0.3276V        0.4147V        0.2705V
+      1.696E-09s        0.3274V        0.4146V        0.2704V
+|
+[End]
