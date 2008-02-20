@@ -67,7 +67,6 @@ bottom paste             --  smd016022.pho
 10. Target impedances.  
 ** 	Differential refers to 100micron spacing, 136micron width pairs on outer layers.
 *** 	Single ended refers to 100micron width trace.
-****	Route7 layer to be 100 Ohm differential for width/gap = 100/118micron.
 
 LAYER		TARGET IMPEDANCE
 top		100 Ohm differential **
@@ -76,7 +75,7 @@ route3		50 Ohm single ended ***
 route4		50 Ohm single ended ***
 route5		50 Ohm single ended ***
 route6		50 Ohm single ended ***
-route7		100 Ohm differential ****
+route7		50 Ohm single ended ***
 bottom		100 Ohm differential **
 
 
