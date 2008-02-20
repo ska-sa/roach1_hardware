@@ -3,11 +3,14 @@ V 5.4
 K 29591324190 roach_top
 DW roach_top
 Q Case
-SA SHEET=1 OF 25 
-SA SCOUT_META_FORMAT_PREFIX_0=XREF 
-SA SCOUT_META_FORMAT_PREFIX_1=SCHLOC 
-SA SCOUT_META_FORMAT_PREFIX_2=PINLOC 
 SA SCOUT_META_PAGE_ANNOTATION=SHEET=1 OF 25 
+SA SCOUT_META_FORMAT_PREFIX_2=PINLOC 
+SA SCOUT_META_FORMAT_PREFIX_1=SCHLOC 
+SA SCOUT_META_FORMAT_PREFIX_0=XREF 
+SA SHEET=1 OF 25 
+|Q IOD_Schematic:cockroach 1
+AS IOD_Schematic:cockroach PKG_TYPE=CUCARACA
+AS IOD_Schematic:cockroach INOV_VER_REC=21:18_2-20-08
 |Q IOD_Schematic:hole150x288 1
 AS IOD_Schematic:hole150x288 DEVICE=HOLE150X288
 AS IOD_Schematic:hole150x288 PARTS=1
@@ -347,12 +350,12 @@ AS IOD_Schematic:snpatch INOV_VER_REC=16:00_2-12-08
 |Q IOD_Schematic:nraologo 1
 AS IOD_Schematic:nraologo PKG_TYPE=LOGO
 AS IOD_Schematic:nraologo INOV_VER_REC=16:01_1-29-08
-|Q IOD_Schematic:meerkatlogo 1
-AS IOD_Schematic:meerkatlogo PKG_TYPE=MEERKATLOGO
-AS IOD_Schematic:meerkatlogo INOV_VER_REC=11:06_2-5-08
 |Q IOD_Schematic:casperlogo 1
 AS IOD_Schematic:casperlogo PKG_TYPE=CASPERLOGO
 AS IOD_Schematic:casperlogo INOV_VER_REC=6:59_2-14-08
+|Q IOD_Schematic:meerkatlogo 1
+AS IOD_Schematic:meerkatlogo PKG_TYPE=MEERKATLOGO
+AS IOD_Schematic:meerkatlogo INOV_VER_REC=11:06_2-5-08
 AN PADD[2:31] VLBUSISONSHEET=1
 AN PDATA[0:7] VLBUSISONSHEET=1
 AN PDATA[0:31] VLBUSISONSHEET=1
@@ -570,6 +573,9 @@ AN CLK_CPLD_33MHZ XREF=1-1G,23-6G,24-10F
 AN CLK_TMRCLK XREF=1-1M,23-6H,24-10C
 AN PADD[2:31] XREF=1-2G,24-9B,25-10B
 G GND
+M IOD_Schematic:cockroach $1I1081
+I $1I1081 IOD_Schematic:cockroach REFDES=U67`
+|R 21:18_2-20-08
 M IOD_Schematic:hole150x288 $1I314
 I $1I314 IOD_Schematic:hole150x288 GND SCHLOC=1Q4`P/D_NUM=NA`MANUFACTURER=NA`REFDES=H7`
 |R 20:28_9-18-07
@@ -699,10 +705,10 @@ I $1I1078 IOD_Schematic:snpatch REFDES=U65`
 M IOD_Schematic:nraologo $1I1076
 I $1I1076 IOD_Schematic:nraologo REFDES=U52`
 |R 16:01_1-29-08
-M IOD_Schematic:meerkatlogo $1I1077
-I $1I1077 IOD_Schematic:meerkatlogo REFDES=U64`
-|R 11:06_2-5-08
 M IOD_Schematic:casperlogo $1I1079
 I $1I1079 IOD_Schematic:casperlogo REFDES=U66`
 |R 6:59_2-14-08
+M IOD_Schematic:meerkatlogo $1I1077
+I $1I1077 IOD_Schematic:meerkatlogo REFDES=U64`
+|R 11:06_2-5-08
 EW

@@ -28,7 +28,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1203362776"))
+		(file_ext "roach_top.pxr" "1203542353"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -4746,6 +4746,15 @@
 			(pin 3  4 "CON_DSUB_9_M_RA_TH__CON_DSUB_9_M_RA_TH_1" 0 "3" 0)
 			(pin 2  4 "CON_DSUB_9_M_RA_TH__CON_DSUB_9_M_RA_TH_1" 0 "2" 0)
 			(pin 1  4 "CON_DSUB_9_M_RA_TH__CON_DSUB_9_M_RA_TH_1" 0 "1" 0))
+		(part "COCKROACH")
+		(logical_part_mapping "COCKROACH"
+			(comp "U67"))
+		(logical_part "COCKROACH"
+			(slots
+				(slot "COCKROACH__COCKROACH_1"
+					(attributes
+						(attval "PKG_TYPE" "CUCARACA")
+						(attval "REFDES" "U?")))))
 		(part "CHIP_CAPACITOR")
 		(logical_part_mapping "CHIP_CAPACITOR"
 			(comp "C749" "C748" "C613" "C612" "C594" "C593" "C592" "C591" "C590" "C546" "C544" "C543" "C542" "C541" "C540"
@@ -6802,6 +6811,11 @@
 			(attributes
 				(attval "DEVICE" "DIFFVIA")
 				(attval "REFDES" "V1")))
+		(component "CUCARACA"
+			(place "U67" 0.0 0.0 top 0.0)
+			(attributes
+				(attval "DEVICE" "COCKROACH")
+				(attval "REFDES" "U67")))
 		(component "CASPERLOGO"
 			(place "U66" 0.0 0.0 top 0.0)
 			(attributes
@@ -24341,6 +24355,7 @@
 		(func "$1I2\$1I952" "" "V3" 1)
 		(func "$1I2\$1I951" "" "V2" 1)
 		(func "$1I3\$1I775" "" "V1" 1)
+		(func "$1I1081" "" "U67" 1)
 		(func "$1I1079" "" "U66" 1)
 		(func "$1I1078" "" "U65" 1)
 		(func "$1I1077" "" "U64" 1)
