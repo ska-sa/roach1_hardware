@@ -14,10 +14,10 @@
   (DX_TOP_LEVEL_DESIGN roach_top)
   (CONSTRAINTS_FILE "./roach.ucf" 1200902840 1)
   (CONSTRAINTS_FILE_FORMAT ise_ucf)
-  (EXPEDITION_LAYOUT "..\\roach\\layout\\ibob2.pcb" 1201152052)
+  (EXPEDITION_LAYOUT "..\\roach\\layout\\ibob2.pcb" 1203056720)
   (EXPEDITION_REFDES U15)
   (SSO_BANK_THRESHOLD 70)
-  (CES_DATABASE_FILE "..\\roach\\roach.roach_top_PADS2007.roach_top.db" 1200903388)
+  (CES_DATABASE_FILE "..\\roach\\roach.roach_top_PADS2007.roach_top.db" 1200903388 1)
   (CDBFLOW 0)
   (HKP true)
   (LIBRARY_VERSION "Version 0002")
@@ -1450,7 +1450,7 @@
       (DIR OUT)
       (PIN AG5 AF5)
       (TYPE DIFF)
-      (IOSTANDARD DIFF_SSTL18_II)
+      (IOSTANDARD DIFF_SSTL18_II_DCI)
       (SIG_P ddr2_ck_0_p)
       (SIG_N ddr2_ck_0_n)
     )
@@ -1460,7 +1460,7 @@
       (DIR OUT)
       (PIN AK16 AL16)
       (TYPE DIFF)
-      (IOSTANDARD DIFF_SSTL18_II)
+      (IOSTANDARD DIFF_SSTL18_II_DCI)
       (SIG_P ddr2_ck_1_p)
       (SIG_N ddr2_ck_1_n)
     )
@@ -1470,7 +1470,7 @@
       (DIR OUT)
       (PIN AG8 AH8)
       (TYPE DIFF)
-      (IOSTANDARD DIFF_SSTL18_II)
+      (IOSTANDARD DIFF_SSTL18_II_DCI)
       (SIG_P ddr2_ck_2_p)
       (SIG_N ddr2_ck_2_n)
     )
@@ -95759,7 +95759,7 @@
     )
     (IO
       (PIN AF5)
-      (STANDARD DIFF_SSTL18_II)
+      (STANDARD DIFF_SSTL18_II_DCI)
     )
     (IO
       (PIN AF6)
@@ -95851,11 +95851,11 @@
     )
     (IO
       (PIN AG5)
-      (STANDARD DIFF_SSTL18_II)
+      (STANDARD DIFF_SSTL18_II_DCI)
     )
     (IO
       (PIN AG8)
-      (STANDARD DIFF_SSTL18_II)
+      (STANDARD DIFF_SSTL18_II_DCI)
     )
     (IO
       (PIN AH10)
@@ -95943,7 +95943,7 @@
     )
     (IO
       (PIN AH8)
-      (STANDARD DIFF_SSTL18_II)
+      (STANDARD DIFF_SSTL18_II_DCI)
     )
     (IO
       (PIN AH9)
@@ -96055,7 +96055,7 @@
     )
     (IO
       (PIN AK16)
-      (STANDARD DIFF_SSTL18_II)
+      (STANDARD DIFF_SSTL18_II_DCI)
     )
     (IO
       (PIN AK18)
@@ -96151,7 +96151,7 @@
     )
     (IO
       (PIN AL16)
-      (STANDARD DIFF_SSTL18_II)
+      (STANDARD DIFF_SSTL18_II_DCI)
     )
     (IO
       (PIN AL19)
