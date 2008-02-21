@@ -1,11 +1,20 @@
 *PADS-ECO-V2007.0-MILS*
 *REMARK*  old file: C:\Users\mrevnell\roach\elec\roach\layout\ibob2_wor04.asc
 *REMARK*  new file: C:\Users\mrevnell\roach\elec\roach\roach_top.asc
-*REMARK*  created by ECOGEN (Version 6.4v) on 2/20/2008 14:19:42
-*PART*
-U67  COCKROACH@CUCARACA
-*DEL_ATTRIBUTE*	PCB	DEFAULT
-"CAM.Apply Oversize To All Pads"
+*REMARK*  created by ECOGEN (Version 6.4v) on 2/21/2008 14:04:34
+*DELPIN*
+J18.15  5V_ATX
+J18.17  5V_ATX
+J18.18  5V_ATX
+J18.19  5V_ATX
+J18.24  5V_ATX
+*NET*
+*SIGNAL*  GND
+J18.15  J18.17  J18.18  J18.19  J18.24
+
+*DELETE_GENERAL_RULES*	ROUTING
+
+HIERARCHY_OBJECT	NET:$1I42\USB2_XCVR_D+
 
 *DELETE_DIFFERENTIAL_PAIR*	 NET:$1I7\QSH_B_D_N8 NET:$1I7\QSH_B_D_P8
 
@@ -1685,5 +1694,5 @@ WIDTH	3.930000
 GAP	3.930000
 RESTRICT_LAYER_CHANGE	ON
 
-*REMARK*  Deleted pins: 0,  Added pins: 0
+*REMARK*  Deleted pins: 5,  Added pins: 5
 *END*
