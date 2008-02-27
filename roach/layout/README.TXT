@@ -26,37 +26,37 @@ LAYER         DIELECTRIC cu. FILE
 top paste                --  smd001023.pho
 top silk                 --  sst001026.pho
 top mask                 --  sm001021.pho
-top                      .5  art001.pho
+top                      1.0  art001.pho
              4 mil prepreg
-ground1                  .5  art002.pho
+ground1                  1.0  art002.pho
              5 mil panel
-route2                   .5  art003.pho
+route2                   1.0  art003.pho
              5 mil prepreg
-2.5v                     .5  art004.pho
+2.5v                     1.0  art004.pho
              5 mil panel
-route3                   .5  art005.pho
+route3                   1.0  art005.pho
              5 mil prepreg
-ground3                  .5  art006.pho
+ground3                  1.0  art006.pho
              5 mil panel
-route4                   .5  art007.pho
+route4                   1.0  art007.pho
              5 mil prepreg
-assorted                 .5  art008.pho
+assorted                 1.0  art008.pho
              see * note. panel
-3.3v 1.5vaux             .5  art009.pho
+3.3v 1.5vaux             1.0  art009.pho
              5 mil prepreg
-route5                   .5  art010.pho
+route5                   1.0  art010.pho
              5 mil panel
-1.0v 3.3vaux             .5  art011.pho
+1.0v 3.3vaux             1.0  art011.pho
              5 mil prepreg
-route6                   .5  art012.pho
+route6                   1.0  art012.pho
              5 mil panel
-1.8v                     .5  art013.pho
+1.8v                     1.0  art013.pho
              5 mil prepreg
-route7                   .5  art014.pho
+route7                   1.0  art014.pho
              5 mil panel
-ground8                  .5  art015.pho
+ground8                  1.0  art015.pho
              4 mil prepreg
-bottom                   .5  art016.pho
+bottom                   1.0  art016.pho
 bottom mask              --  sm016028.pho
 bottom silk              --  ssb016029.pho
 bottom paste             --  smd016022.pho
