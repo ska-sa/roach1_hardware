@@ -1,13 +1,11 @@
 
-(pcb
- "C:\Users\mrevnell\roach\elec\roach\roach.roach_top_PADS2007.roach_top.db"
+(pcb "D:\ROACH\elec\roach\roach.roach_top_PADS2007.roach_top.db"
 	(version "5.0.0")
 	(units "basic")
 	(config_properties
 		(attributes
-			(attval "PcbConfigName"
- "C:\Users\mrevnell\roach\elec\roach\roach_pcb.cfg")
-			(attval "CnsFile" "C:\Users\mrevnell\roach\elec\roach\pads2007.cns")
+			(attval "PcbConfigName" "D:\ROACH\elec\roach\roach_pcb.cfg")
+			(attval "CnsFile" ".\pads2007.cns")
 			(attval "BeAdapter" "PADS2007")
 			(attval "FeAdapter" "DxDesigner")
 			(attval "SYSCONFIG" "pcbfwd")
@@ -28,7 +26,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1203627851"))
+		(file_ext "roach_top.pxr" "1204104432"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -27465,8 +27463,6 @@
 			(pins CR1-2 R197-2))
 		(net "$1I747\$1N710"
 			(pins U54-110 J17-14))
-		(net "$1I747\$1N712"
-			(pins U54-143))
 		(net "$1I747\$1N713"
 			(pins U54-39))
 		(net "$1I747\$1N714"
@@ -27479,10 +27475,6 @@
 			(pins U54-2))
 		(net "$1I747\$1N826"
 			(pins U54-121 J17-15))
-		(net "$1I747\$1N1150"
-			(pins U54-4))
-		(net "$1I747\$1N1151"
-			(pins U54-7))
 		(net "$1I747\$1N1152"
 			(pins U54-135))
 		(net "$1I747\$1N1153"
@@ -27531,6 +27523,12 @@
 			(pins U54-77))
 		(net "$1I747\$1N1175"
 			(pins U54-76))
+		(net "$1I747\$1N1231"
+			(pins U54-104))
+		(net "$1I747\$1N1232"
+			(pins U54-140))
+		(net "$1I747\$1N1233"
+			(pins U54-142))
 		(net "$1I747\CFG_DIP0"
 			(pins U54-92 R204-1 SW3-1))
 		(net "$1I747\CFG_DIP1"
@@ -28812,9 +28810,9 @@
 		(net "BOOT_CFG2"
 			(pins RO14-2 U54-126 U46-3))
 		(net "CLK_CPLD_33MHZ"
-			(pins RS3-2 U54-140))
+			(pins RS3-2 U54-30))
 		(net "CLK_CPLD_50MHZ"
-			(pins RS10-2 U54-142))
+			(pins RS10-2 U54-38))
 		(net "CLK_GETH0_25MHZ"
 			(pins RS7-2 U58-86))
 		(net "CLK_PERCLK"
@@ -28822,13 +28820,13 @@
 		(net "CLK_SEL_M66EN"
 			(pins U24-12 U24-13 U24-15 U54-137))
 		(net "CLK_TMRCLK"
-			(pins U1-P3 U54-9))
+			(pins U1-P3 U54-4))
 		(net "CLK_UART_11_0592MHZ"
 			(pins RS1-2 U1-A27))
 		(net "CLK_USB2_48MHZ"
 			(pins RS9-2 U1-N3))
 		(net "CPU_TRST#"
-			(pins U1-A6 U54-17))
+			(pins U1-A6 U54-15))
 		(net "DDR_VREF_0V9"
 			(pins C148-1 J8-1 C432-1 C433-1 C453-1 C149-1 C150-2 C151-1 C152-1 U1-Y4
  U1-AL10 U1-AF4 U1-AL19 U32-6))
@@ -28840,13 +28838,13 @@
  CP29-4 CP30-1 CP30-2 CP30-3 CP30-4 CP31-1 CP31-2 CP31-3 CP31-4 CP32-1 CP32-2
  CP32-3 CP32-4 CP33-1 CP33-2 CP33-3 CP33-4))
 		(net "DEBUG_TRST#"
-			(pins J1-21 R36-1 P1-4 U54-16))
+			(pins J1-21 R36-1 P1-4 U54-14))
 		(net "EE1_WP"
 			(pins U54-46 U40-7))
 		(net "EE2_BOOT_WP"
 			(pins U54-48 U38-7 U39-7))
 		(net "EXT_RESET#"
-			(pins U54-11 U1-D6))
+			(pins U54-9 U1-D6))
 		(net "FAN1_CONTROL"
 			(pins J21-4 U60-H15))
 		(net "FAN1_SENSE"
@@ -29161,33 +29159,33 @@
 		(net "PADD26"
 			(pins U42-B2 U15-AG15 U1-D19))
 		(net "PADD27"
-			(pins U54-19 U42-A2 U15-AG12 U1-C19))
+			(pins U54-17 U42-A2 U15-AG12 U1-C19))
 		(net "PADD28"
-			(pins U54-20 U42-C2 U15-AG18 U1-A19))
+			(pins U54-18 U42-C2 U15-AG18 U1-A19))
 		(net "PADD29"
-			(pins U54-21 U42-D2 U15-AE22 U1-D18))
+			(pins U54-19 U42-D2 U15-AE22 U1-D18))
 		(net "PADD30"
-			(pins U54-22 U42-E2 U15-AE23 U1-C18))
+			(pins U54-20 U42-E2 U15-AE23 U1-C18))
 		(net "PADD31"
-			(pins U54-23 U1-B18))
+			(pins U54-21 U1-B18))
 		(net "PCS_2"
-			(pins U54-14 U1-D9 R62-2))
+			(pins U54-12 U1-D9 R62-2))
 		(net "PDATA0"
-			(pins U54-24 U42-G7 U15-AD19 U1-C14))
+			(pins U54-22 U42-G7 U15-AD19 U1-C14))
 		(net "PDATA1"
-			(pins U54-25 U42-F6 U15-AF15 U1-D14))
+			(pins U54-23 U42-F6 U15-AF15 U1-D14))
 		(net "PDATA2"
-			(pins U54-26 U42-G6 U15-AE19 U1-A13))
+			(pins U54-24 U42-G6 U15-AE19 U1-A13))
 		(net "PDATA3"
-			(pins U54-28 U42-F5 U15-AE16 U1-B13))
+			(pins U54-25 U42-F5 U15-AE16 U1-B13))
 		(net "PDATA4"
-			(pins U54-30 U42-G4 U15-AH19 U1-C13))
+			(pins U54-26 U42-G4 U15-AH19 U1-C13))
 		(net "PDATA5"
-			(pins U54-33 U42-F4 U15-AF16 U1-D13))
+			(pins U54-32 U42-F4 U15-AF16 U1-D13))
 		(net "PDATA6"
-			(pins U54-32 U42-G3 U15-AD20 U1-A12))
+			(pins U54-31 U42-G3 U15-AD20 U1-A12))
 		(net "PDATA7"
-			(pins U54-31 U42-F3 U15-AE17 U1-C12))
+			(pins U54-28 U42-F3 U15-AE17 U1-C12))
 		(net "PDATA8"
 			(pins U42-E6 U15-AH12 U1-A11))
 		(net "PDATA9"
@@ -29205,7 +29203,7 @@
 		(net "PDATA15"
 			(pins U42-E3 U15-AH14 U1-C10))
 		(net "POE#"
-			(pins U54-34 U42-G2 U15-AF21 U1-B14 R65-2))
+			(pins U54-33 U42-G2 U15-AF21 U1-B14 R65-2))
 		(net "PPC_DDR2_RESET_N"
 			(pins J8-18 U54-138))
 		(net "PPC_RESET"
@@ -29215,11 +29213,11 @@
 		(net "PPC_THERMONB"
 			(pins U1-D16 U60-T6 J31-5 J31-7))
 		(net "PR_W#"
-			(pins U54-15 U42-A5 U15-AF20 U1-A14 R66-2))
+			(pins U54-13 U42-A5 U15-AF20 U1-A14 R66-2))
 		(net "PS_ON#"
 			(pins J18-16 U60-E8))
 		(net "PWBE_0#"
-			(pins U54-18 U15-AF18 U1-A15 R67-2))
+			(pins U54-16 U15-AF18 U1-A15 R67-2))
 		(net "PWR_GOOD"
 			(pins R28-2 U31-4 U35-1 U35-2))
 		(net "PWR_OK"
@@ -29239,7 +29237,7 @@
 		(net "RESET_PB_POR#"
 			(pins R41-2 U31-3 D1-3 C47-1 R42-2 U54-103))
 		(net "RESET_POR#"
-			(pins U1-AD31 R29-2 U31-1 U54-104 U42-B5))
+			(pins U1-AD31 R29-2 U31-1 U54-143 U42-B5))
 		(net "SCPCLK"
 			(pins U1-AC34 R75-2 P4-1))
 		(net "SCPDI"
@@ -29259,9 +29257,9 @@
 		(net "SX95T_CS_B_0"
 			(pins U54-52 U15-N22))
 		(net "SX95T_DONE_0"
-			(pins U1-A4 U54-13 U15-M15))
+			(pins U1-A4 U54-11 U15-M15))
 		(net "SX95T_D_IN_0"
-			(pins U54-38 U15-P15))
+			(pins U54-35 U15-P15))
 		(net "SX95T_D_OUT_BUSY_0"
 			(pins U1-C6 U54-40 U15-AD15))
 		(net "SX95T_INIT_B_0"
@@ -29273,9 +29271,9 @@
 		(net "SX95T_M2_0"
 			(pins U1-R4 U54-107 R210-2 U15-AD22 SW4-2))
 		(net "SX95T_PROGRAM_B_0"
-			(pins U1-C5 U54-12 U15-M22))
+			(pins U1-C5 U54-10 U15-M22))
 		(net "SX95T_RDWR_B_0"
-			(pins U54-35 U15-N23))
+			(pins U54-34 U15-N23))
 		(net "SX95T_TCK"
 			(pins RO3-1 U1-U32 R208-1 U15-AB15 J24-9))
 		(net "SX95T_TDI"
@@ -29285,7 +29283,7 @@
 		(net "SX95T_TMS"
 			(pins RO2-1 U1-T34 R207-1 U15-AC14 J24-11))
 		(net "SYSERR"
-			(pins U1-AD32 U54-10))
+			(pins U1-AD32 U54-7))
 		(net "SYS_CONFIG0"
 			(pins U54-56 U60-C8))
 		(net "SYS_CONFIG1"
@@ -32046,6 +32044,15 @@
 		(net_scalar "$1I747\CFG_DIP0"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I747\$1N1233"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1I747\$1N1232"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1I747\$1N1231"
+			(attributes
+				(attval "NC" "")))
 		(net_scalar "$1I747\$1N1175"
 			(attributes
 				(attval "NC" ""))
@@ -32166,16 +32173,6 @@
 				(attval "NC" ""))
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N1151"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N1150"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I747\$1N826"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
@@ -32200,11 +32197,6 @@
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I747\$1N713"
-			(attributes
-				(attval "NC" ""))
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I747\$1N712"
 			(attributes
 				(attval "NC" ""))
 			(constraints
