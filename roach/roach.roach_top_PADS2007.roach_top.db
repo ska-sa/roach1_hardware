@@ -1,11 +1,13 @@
 
-(pcb "D:\ROACH\elec\roach\roach.roach_top_PADS2007.roach_top.db"
+(pcb
+ "C:\Users\mrevnell\roach\elec\roach\roach.roach_top_PADS2007.roach_top.db"
 	(version "5.0.0")
 	(units "basic")
 	(config_properties
 		(attributes
-			(attval "PcbConfigName" "D:\ROACH\elec\roach\roach_pcb.cfg")
-			(attval "CnsFile" ".\pads2007.cns")
+			(attval "PcbConfigName"
+ "C:\Users\mrevnell\roach\elec\roach\roach_pcb.cfg")
+			(attval "CnsFile" "C:\Users\mrevnell\roach\elec\roach\pads2007.cns")
 			(attval "BeAdapter" "PADS2007")
 			(attval "FeAdapter" "DxDesigner")
 			(attval "SYSCONFIG" "pcbfwd")
@@ -26,7 +28,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1204104432"))
+		(file_ext "roach_top.pxr" "1204132290"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -5144,6 +5146,16 @@
 						(attval "VALUE" ""))))
 			(pin 2  5 "INDUCTOR__BLM31PG330SN1PK_1" 0 "N2" 0)
 			(pin 1  5 "INDUCTOR__BLM31PG330SN1PK_1" 0 "N1" 0))
+		(part "BIGPAD")
+		(logical_part_mapping "BIGPAD"
+			(comp "U69" "U68"))
+		(logical_part "BIGPAD"
+			(slots
+				(slot "BIGPAD__BIGPAD_1"
+					(attributes
+						(attval "PKG_TYPE" "BIGPAD")
+						(attval "REFDES" "U?"))))
+			(pin 1  0 "BIGPAD__BIGPAD_1" 0 "1" 0))
 		(part "ADR03")
 		(logical_part_mapping "ADR03"
 			(comp "U25"))
@@ -6809,6 +6821,18 @@
 			(attributes
 				(attval "DEVICE" "DIFFVIA")
 				(attval "REFDES" "V1")))
+		(component "BIGPAD"
+			(place "U69" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0))
+			(attributes
+				(attval "DEVICE" "BIGPAD")
+				(attval "REFDES" "U69")))
+		(component "BIGPAD"
+			(place "U68" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0))
+			(attributes
+				(attval "DEVICE" "BIGPAD")
+				(attval "REFDES" "U68")))
 		(component "CUCARACA"
 			(place "U67" 0.0 0.0 top 0.0)
 			(attributes
@@ -24353,6 +24377,8 @@
 		(func "$1I2\$1I952" "" "V3" 1)
 		(func "$1I2\$1I951" "" "V2" 1)
 		(func "$1I3\$1I775" "" "V1" 1)
+		(func "$1I1083" "" "U69" 1)
+		(func "$1I1082" "" "U68" 1)
 		(func "$1I1081" "" "U67" 1)
 		(func "$1I1079" "" "U66" 1)
 		(func "$1I1078" "" "U65" 1)
@@ -29063,7 +29089,7 @@
  C553-2 C554-2 C555-2 C548-2 C556-2 C557-2 C558-2 C559-2 C560-2 C561-2 C562-2
  C563-2 C564-2 C565-2 C566-2 C567-2 C568-2 C569-2 C570-2 C571-2 C572-2 C573-2
  C574-2 C575-2 C576-2 C577-2 C578-2 C579-2 C580-2 C581-2 C582-2 C583-2 C584-2
- C585-2 C586-2 C587-2 C588-2 C589-2))
+ C585-2 C586-2 C587-2 C588-2 C589-2 U68-1 U69-1))
 		(net "GPIO44"
 			(pins RO5-1 U1-V32))
 		(net "I1V0"
@@ -32046,13 +32072,19 @@
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I747\$1N1233"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I747\$1N1232"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I747\$1N1231"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I747\$1N1175"
 			(attributes
 				(attval "NC" ""))
