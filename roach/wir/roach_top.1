@@ -3,11 +3,11 @@ V 5.4
 K 29591324190 roach_top
 DW roach_top
 Q Case
-SA SHEET=1 OF 25 
-SA SCOUT_META_FORMAT_PREFIX_0=XREF 
-SA SCOUT_META_FORMAT_PREFIX_1=SCHLOC 
-SA SCOUT_META_FORMAT_PREFIX_2=PINLOC 
 SA SCOUT_META_PAGE_ANNOTATION=SHEET=1 OF 25 
+SA SCOUT_META_FORMAT_PREFIX_2=PINLOC 
+SA SCOUT_META_FORMAT_PREFIX_1=SCHLOC 
+SA SCOUT_META_FORMAT_PREFIX_0=XREF 
+SA SHEET=1 OF 25 
 |Q IOD_Schematic:cockroach 1
 AS IOD_Schematic:cockroach PKG_TYPE=CUCARACA
 AS IOD_Schematic:cockroach INOV_VER_REC=21:18_2-20-08
@@ -30,24 +30,10 @@ AS IOD_Schematic:hole150x288 PINORDER=H1
 AS IOD_Schematic:hole150x288 INOV_VER_REC=20:28_9-18-07
 AP IOD_Schematic:hole150x288 1 #=1
 AP IOD_Schematic:hole150x288 1 PINTYPE=OUT
-|Q IOD_Schematic:roach_ppc_eth1 1
-AS IOD_Schematic:roach_ppc_eth1 PINORDER= CLK_GETH0_25MHZ GETH0_INT# GETH0_RST# GMCMDCLK GMCMDIO
-AS IOD_Schematic:roach_ppc_eth1 DEVICE=ROACH_PPC_ETH1
-AS IOD_Schematic:roach_ppc_eth1 SHEET
-AS IOD_Schematic:roach_ppc_eth1 INOV_VER_REC=8:15_10-2-07
-AP IOD_Schematic:roach_ppc_eth1 1 PINTYPE=IN
-AP IOD_Schematic:roach_ppc_eth1 2 PINTYPE=OUT
-AP IOD_Schematic:roach_ppc_eth1 3 PINTYPE=IN
-AP IOD_Schematic:roach_ppc_eth1 4 PINTYPE=OUT
-AP IOD_Schematic:roach_ppc_eth1 5 PINTYPE=BI
 |Q IOD_Schematic:roach_5v_power 1
 AS IOD_Schematic:roach_5v_power DEVICE=ROACH_5V_POWER
 AS IOD_Schematic:roach_5v_power SHEET
 AS IOD_Schematic:roach_5v_power INOV_VER_REC=8:11_10-2-07
-|Q IOD_Schematic:roach_ppc_pci 1
-AS IOD_Schematic:roach_ppc_pci DEVICE=ROACH_PPC_PCI
-AS IOD_Schematic:roach_ppc_pci SHEET
-AS IOD_Schematic:roach_ppc_pci INOV_VER_REC=15:00_10-12-07
 |Q IOD_Schematic:roach_v5_clk 1
 AS IOD_Schematic:roach_v5_clk PINORDER= SX95T_DXP SX95T_DXN
 AS IOD_Schematic:roach_v5_clk DEVICE=ROACH_V5_CLK
@@ -59,51 +45,6 @@ AP IOD_Schematic:roach_v5_clk 2 PINTYPE=OUT
 AS IOD_Schematic:roach_transceivers2_3 DEVICE=ROACH_TRANSCEIVERS2_3
 AS IOD_Schematic:roach_transceivers2_3 SHEET
 AS IOD_Schematic:roach_transceivers2_3 INOV_VER_REC=8:14_10-2-07
-|Q IOD_Schematic:roach_monitor 1
-AS IOD_Schematic:roach_monitor SHEET
-AS IOD_Schematic:roach_monitor DEVICE=ROACH_MONITOR
-AS IOD_Schematic:roach_monitor PINORDER=12V_ATX 1V0_INHIBIT 1V5_INHIBIT 1V8_INHIBIT 2V5_INHIBIT 2V5_TRACK 3V3_ATX 5V_ATX ATRTN0 ATRTN1 FAN1_CONTROL FAN1_SENSE FAN2_CONTROL FAN2_SENSE FAN3_CONTROL FAN3_SENSE I1V0 I1V5 I1V8 I2C0_33_DATA I2C0_SCLK I2V5 LOAD_RES_OFF MGT_AVCCPLL_EN MGT_AVCCPLL_PG MGT_AVCC_EN MGT_AVCC_PG MGT_AVTTX_EN MGT_AVTTX_PG MONITOR_INT PPC_RESET PS_ON# PWR_OK SYS_CONFIG[0:7] TD0 TD2
-AS IOD_Schematic:roach_monitor INOV_VER_REC=7:42_10-25-07
-AP IOD_Schematic:roach_monitor 1 PINTYPE=IN
-AP IOD_Schematic:roach_monitor 2 PINTYPE=OUT
-AP IOD_Schematic:roach_monitor 3 PINTYPE=OUT
-AP IOD_Schematic:roach_monitor 4 PINTYPE=OUT
-AP IOD_Schematic:roach_monitor 5 PINTYPE=OUT
-AP IOD_Schematic:roach_monitor 6 PINTYPE=OUT
-AP IOD_Schematic:roach_monitor 7 PINTYPE=IN
-AP IOD_Schematic:roach_monitor 8 PINTYPE=IN
-AP IOD_Schematic:roach_monitor 9 PINTYPE=OUT
-AP IOD_Schematic:roach_monitor 10 PINTYPE=OUT
-AP IOD_Schematic:roach_monitor 11 PINTYPE=OUT
-AP IOD_Schematic:roach_monitor 12 PINTYPE=IN
-AP IOD_Schematic:roach_monitor 13 PINTYPE=OUT
-AP IOD_Schematic:roach_monitor 14 PINTYPE=IN
-AP IOD_Schematic:roach_monitor 15 PINTYPE=OUT
-AP IOD_Schematic:roach_monitor 16 PINTYPE=IN
-AP IOD_Schematic:roach_monitor 17 PINTYPE=IN
-AP IOD_Schematic:roach_monitor 18 PINTYPE=IN
-AP IOD_Schematic:roach_monitor 19 PINTYPE=IN
-AP IOD_Schematic:roach_monitor 20 PINTYPE=BI
-AP IOD_Schematic:roach_monitor 21 PINTYPE=IN
-AP IOD_Schematic:roach_monitor 22 PINTYPE=IN
-AP IOD_Schematic:roach_monitor 23 PINTYPE=OUT
-AP IOD_Schematic:roach_monitor 24 PINTYPE=OUT
-AP IOD_Schematic:roach_monitor 25 PINTYPE=IN
-AP IOD_Schematic:roach_monitor 26 PINTYPE=OUT
-AP IOD_Schematic:roach_monitor 27 PINTYPE=IN
-AP IOD_Schematic:roach_monitor 28 PINTYPE=OUT
-AP IOD_Schematic:roach_monitor 29 PINTYPE=IN
-AP IOD_Schematic:roach_monitor 30 PINTYPE=OUT
-AP IOD_Schematic:roach_monitor 31 PINTYPE=OUT
-AP IOD_Schematic:roach_monitor 32 PINTYPE=OUT
-AP IOD_Schematic:roach_monitor 33 PINTYPE=IN
-AP IOD_Schematic:roach_monitor 34 PINTYPE=OUT
-AP IOD_Schematic:roach_monitor 35 PINTYPE=OUT
-AP IOD_Schematic:roach_monitor 36 PINTYPE=OUT
-|Q IOD_Schematic:roach_ppc_power_2 1
-AS IOD_Schematic:roach_ppc_power_2 DEVICE=ROACH_PPC_POWER_2
-AS IOD_Schematic:roach_ppc_power_2 SHEET
-AS IOD_Schematic:roach_ppc_power_2 INOV_VER_REC=15:00_10-12-07
 |Q IOD_Schematic:roach_psu 1
 AS IOD_Schematic:roach_psu DEVICE=ROACH_PSU
 AS IOD_Schematic:roach_psu SHEET
@@ -130,36 +71,6 @@ AP IOD_Schematic:roach_psu 18 PINTYPE=OUT
 AP IOD_Schematic:roach_psu 19 PINTYPE=IN
 AP IOD_Schematic:roach_psu 20 PINTYPE=IN
 AP IOD_Schematic:roach_psu 21 PINTYPE=OUT
-|Q IOD_Schematic:roach_ppc_ddr2 1
-AS IOD_Schematic:roach_ppc_ddr2 PINORDER= PPC_DDR2_RESET_N
-AS IOD_Schematic:roach_ppc_ddr2 DEVICE=ROACH_PPC_DDR2
-AS IOD_Schematic:roach_ppc_ddr2 SHEET
-AS IOD_Schematic:roach_ppc_ddr2 INOV_VER_REC=8:15_10-2-07
-AP IOD_Schematic:roach_ppc_ddr2 1 PINTYPE=IN
-|Q IOD_Schematic:roach_ppc_power_1 1
-AS IOD_Schematic:roach_ppc_power_1 DEVICE=ROACH_PPC_POWER_1
-AS IOD_Schematic:roach_ppc_power_1 SHEET
-AS IOD_Schematic:roach_ppc_power_1 INOV_VER_REC=12:16_10-25-07
-|Q IOD_Schematic:roach_config 1
-AS IOD_Schematic:roach_config SHEET
-AS IOD_Schematic:roach_config DEVICE=ROACH_CONFIG
-AS IOD_Schematic:roach_config PINORDER=SX95T_CCLK_0 SX95T_CS_B_0 SX95T_DONE_0 SX95T_D_IN_0 SX95T_D_OUT_BUSY_0 SX95T_INIT_B_0 SX95T_M0_0 SX95T_M1_0 SX95T_M2_0 SX95T_PROGRAM_B_0 SX95T_RDWR_B_0 SX95T_TCK SX95T_TDI SX95T_TDO SX95T_TMS
-AS IOD_Schematic:roach_config INOV_VER_REC=9:31_10-11-07
-AP IOD_Schematic:roach_config 1 PINTYPE=BI
-AP IOD_Schematic:roach_config 2 PINTYPE=IN
-AP IOD_Schematic:roach_config 3 PINTYPE=BI
-AP IOD_Schematic:roach_config 4 PINTYPE=IN
-AP IOD_Schematic:roach_config 5 PINTYPE=OUT
-AP IOD_Schematic:roach_config 6 PINTYPE=BI
-AP IOD_Schematic:roach_config 7 PINTYPE=BI
-AP IOD_Schematic:roach_config 8 PINTYPE=BI
-AP IOD_Schematic:roach_config 9 PINTYPE=BI
-AP IOD_Schematic:roach_config 10 PINTYPE=IN
-AP IOD_Schematic:roach_config 11 PINTYPE=IN
-AP IOD_Schematic:roach_config 12 PINTYPE=IN
-AP IOD_Schematic:roach_config 13 PINTYPE=IN
-AP IOD_Schematic:roach_config 14 PINTYPE=OUT
-AP IOD_Schematic:roach_config 15 PINTYPE=IN
 |Q IOD_Schematic:roach_gpio_misc 1
 AS IOD_Schematic:roach_gpio_misc DEVICE=ROACH_GPIO_MISC
 AS IOD_Schematic:roach_gpio_misc SHEET
@@ -221,19 +132,6 @@ AP IOD_Schematic:roach_ppc_tst_clk_io 22 PINTYPE=IN
 AP IOD_Schematic:roach_ppc_tst_clk_io 23 PINTYPE=OUT
 AP IOD_Schematic:roach_ppc_tst_clk_io 24 PINTYPE=OUT
 AP IOD_Schematic:roach_ppc_tst_clk_io 25 PINTYPE=IN
-|Q IOD_Schematic:roach_ppc_usb 1
-AS IOD_Schematic:roach_ppc_usb SHEET
-AS IOD_Schematic:roach_ppc_usb DEVICE=ROACH_PPC_USB
-AS IOD_Schematic:roach_ppc_usb PINORDER=CLK_USB2_48MHZ SX95T_DONE_0 SX95T_D_OUT_BUSY_0 SX95T_INIT_B_0 SX95T_M0_0 SX95T_M1_0 SX95T_M2_0 SX95T_PROGRAM_B_0
-AS IOD_Schematic:roach_ppc_usb INOV_VER_REC=11:46_1-24-08
-AP IOD_Schematic:roach_ppc_usb 1 PINTYPE=IN
-AP IOD_Schematic:roach_ppc_usb 2 PINTYPE=OUT
-AP IOD_Schematic:roach_ppc_usb 3 PINTYPE=IN
-AP IOD_Schematic:roach_ppc_usb 4 PINTYPE=OUT
-AP IOD_Schematic:roach_ppc_usb 5 PINTYPE=IN
-AP IOD_Schematic:roach_ppc_usb 6 PINTYPE=IN
-AP IOD_Schematic:roach_ppc_usb 7 PINTYPE=IN
-AP IOD_Schematic:roach_ppc_usb 8 PINTYPE=OUT
 |Q IOD_Schematic:roach_adc_1 1
 AS IOD_Schematic:roach_adc_1 DEVICE=ROACH_ADC_1
 AS IOD_Schematic:roach_adc_1 SHEET
@@ -261,39 +159,38 @@ AP IOD_Schematic:roach_transceivers_psu 3 PINTYPE=OUT
 AP IOD_Schematic:roach_transceivers_psu 4 PINTYPE=IN
 AP IOD_Schematic:roach_transceivers_psu 5 PINTYPE=IN
 AP IOD_Schematic:roach_transceivers_psu 6 PINTYPE=IN
-|Q IOD_Schematic:roach_ppc_nvm_serial 1
-AS IOD_Schematic:roach_ppc_nvm_serial SHEET
-AS IOD_Schematic:roach_ppc_nvm_serial DEVICE=ROACH_PPC_NVM_SERIAL
-AS IOD_Schematic:roach_ppc_nvm_serial PINORDER=BOOT_CFG0 BOOT_CFG1 BOOT_CFG2 CLK_PERCLK CLK_UART_11_0592MHZ EE1_WP EE2_BOOT_WP EXT_RESET# FRY_BY# FWP# I2C0_33_DATA I2C0_SCLK M66EN PADD[2:31] PCS_2 PDATA[0:31] POE# PR_W# PWBE_0# RESET_CPLD# RESET_POR# SCPCLK SCPDI SCPDO SELECTMAP_CS STTM_ALERT STTM_AS V5_INT#
-AS IOD_Schematic:roach_ppc_nvm_serial INOV_VER_REC=11:47_1-24-08
-AP IOD_Schematic:roach_ppc_nvm_serial 1 PINTYPE=IN
-AP IOD_Schematic:roach_ppc_nvm_serial 2 PINTYPE=IN
-AP IOD_Schematic:roach_ppc_nvm_serial 3 PINTYPE=IN
-AP IOD_Schematic:roach_ppc_nvm_serial 4 PINTYPE=OUT
-AP IOD_Schematic:roach_ppc_nvm_serial 5 PINTYPE=IN
-AP IOD_Schematic:roach_ppc_nvm_serial 6 PINTYPE=IN
-AP IOD_Schematic:roach_ppc_nvm_serial 7 PINTYPE=IN
-AP IOD_Schematic:roach_ppc_nvm_serial 8 PINTYPE=OUT
-AP IOD_Schematic:roach_ppc_nvm_serial 9 PINTYPE=OUT
-AP IOD_Schematic:roach_ppc_nvm_serial 10 PINTYPE=IN
-AP IOD_Schematic:roach_ppc_nvm_serial 11 PINTYPE=BI
-AP IOD_Schematic:roach_ppc_nvm_serial 12 PINTYPE=OUT
-AP IOD_Schematic:roach_ppc_nvm_serial 13 PINTYPE=IN
-AP IOD_Schematic:roach_ppc_nvm_serial 14 PINTYPE=BI
-AP IOD_Schematic:roach_ppc_nvm_serial 15 PINTYPE=OUT
-AP IOD_Schematic:roach_ppc_nvm_serial 16 PINTYPE=BI
-AP IOD_Schematic:roach_ppc_nvm_serial 17 PINTYPE=OUT
-AP IOD_Schematic:roach_ppc_nvm_serial 18 PINTYPE=OUT
-AP IOD_Schematic:roach_ppc_nvm_serial 19 PINTYPE=OUT
-AP IOD_Schematic:roach_ppc_nvm_serial 20 PINTYPE=IN
-AP IOD_Schematic:roach_ppc_nvm_serial 21 PINTYPE=IN
-AP IOD_Schematic:roach_ppc_nvm_serial 22 PINTYPE=OUT
-AP IOD_Schematic:roach_ppc_nvm_serial 23 PINTYPE=BI
-AP IOD_Schematic:roach_ppc_nvm_serial 24 PINTYPE=OUT
-AP IOD_Schematic:roach_ppc_nvm_serial 25 PINTYPE=OUT
-AP IOD_Schematic:roach_ppc_nvm_serial 26 PINTYPE=OUT
-AP IOD_Schematic:roach_ppc_nvm_serial 27 PINTYPE=IN
-AP IOD_Schematic:roach_ppc_nvm_serial 28 PINTYPE=OUT
+|Q IOD_Schematic:snpatch 1
+AS IOD_Schematic:snpatch PKG_TYPE=SNPATCH
+AS IOD_Schematic:snpatch INOV_VER_REC=16:00_2-12-08
+|Q IOD_Schematic:nraologo 1
+AS IOD_Schematic:nraologo PKG_TYPE=LOGO
+AS IOD_Schematic:nraologo INOV_VER_REC=16:01_1-29-08
+|Q IOD_Schematic:casperlogo 1
+AS IOD_Schematic:casperlogo PKG_TYPE=CASPERLOGO
+AS IOD_Schematic:casperlogo INOV_VER_REC=6:59_2-14-08
+|Q IOD_Schematic:meerkatlogo 1
+AS IOD_Schematic:meerkatlogo PKG_TYPE=MEERKATLOGO
+AS IOD_Schematic:meerkatlogo INOV_VER_REC=11:06_2-5-08
+|Q IOD_Schematic:roach_config 1
+AS IOD_Schematic:roach_config SHEET
+AS IOD_Schematic:roach_config DEVICE=ROACH_CONFIG
+AS IOD_Schematic:roach_config PINORDER=SX95T_CCLK_0 SX95T_CS_B_0 SX95T_DONE_0 SX95T_D_IN_0 SX95T_D_OUT_BUSY_0 SX95T_INIT_B_0 SX95T_M0_0 SX95T_M1_0 SX95T_M2_0 SX95T_PROGRAM_B_0 SX95T_RDWR_B_0 SX95T_TCK SX95T_TDI SX95T_TDO SX95T_TMS
+AS IOD_Schematic:roach_config INOV_VER_REC=9:31_10-11-07
+AP IOD_Schematic:roach_config 1 PINTYPE=BI
+AP IOD_Schematic:roach_config 2 PINTYPE=IN
+AP IOD_Schematic:roach_config 3 PINTYPE=BI
+AP IOD_Schematic:roach_config 4 PINTYPE=IN
+AP IOD_Schematic:roach_config 5 PINTYPE=OUT
+AP IOD_Schematic:roach_config 6 PINTYPE=BI
+AP IOD_Schematic:roach_config 7 PINTYPE=BI
+AP IOD_Schematic:roach_config 8 PINTYPE=BI
+AP IOD_Schematic:roach_config 9 PINTYPE=BI
+AP IOD_Schematic:roach_config 10 PINTYPE=IN
+AP IOD_Schematic:roach_config 11 PINTYPE=IN
+AP IOD_Schematic:roach_config 12 PINTYPE=IN
+AP IOD_Schematic:roach_config 13 PINTYPE=IN
+AP IOD_Schematic:roach_config 14 PINTYPE=OUT
+AP IOD_Schematic:roach_config 15 PINTYPE=IN
 |Q IOD_Schematic:roach_ppc_cpld 1
 AS IOD_Schematic:roach_ppc_cpld DEVICE=ROACH_PPC_CPLD
 AS IOD_Schematic:roach_ppc_cpld SHEET
@@ -344,24 +241,134 @@ AP IOD_Schematic:roach_ppc_cpld 42 PINTYPE=OUT
 AP IOD_Schematic:roach_ppc_cpld 43 PINTYPE=OUT
 AP IOD_Schematic:roach_ppc_cpld 44 PINTYPE=IN
 AP IOD_Schematic:roach_ppc_cpld 45 PINTYPE=IN
-|Q IOD_Schematic:snpatch 1
-AS IOD_Schematic:snpatch PKG_TYPE=SNPATCH
-AS IOD_Schematic:snpatch INOV_VER_REC=16:00_2-12-08
-|Q IOD_Schematic:nraologo 1
-AS IOD_Schematic:nraologo PKG_TYPE=LOGO
-AS IOD_Schematic:nraologo INOV_VER_REC=16:01_1-29-08
-|Q IOD_Schematic:casperlogo 1
-AS IOD_Schematic:casperlogo PKG_TYPE=CASPERLOGO
-AS IOD_Schematic:casperlogo INOV_VER_REC=6:59_2-14-08
-|Q IOD_Schematic:meerkatlogo 1
-AS IOD_Schematic:meerkatlogo PKG_TYPE=MEERKATLOGO
-AS IOD_Schematic:meerkatlogo INOV_VER_REC=11:06_2-5-08
+|Q IOD_Schematic:roach_monitor 1
+AS IOD_Schematic:roach_monitor SHEET
+AS IOD_Schematic:roach_monitor DEVICE=ROACH_MONITOR
+AS IOD_Schematic:roach_monitor PINORDER=12V_ATX 1V0_INHIBIT 1V5_INHIBIT 1V8_INHIBIT 2V5_INHIBIT 2V5_TRACK 3V3_ATX 5V_ATX ATRTN0 ATRTN1 FAN1_CONTROL FAN1_SENSE FAN2_CONTROL FAN2_SENSE FAN3_CONTROL FAN3_SENSE I1V0 I1V5 I1V8 I2C0_33_DATA I2C0_SCLK I2V5 LOAD_RES_OFF MGT_AVCCPLL_EN MGT_AVCCPLL_PG MGT_AVCC_EN MGT_AVCC_PG MGT_AVTTX_EN MGT_AVTTX_PG MONITOR_INT PPC_RESET PS_ON# PWR_OK SYS_CONFIG[0:7] TD0 TD2
+AS IOD_Schematic:roach_monitor INOV_VER_REC=7:42_10-25-07
+AP IOD_Schematic:roach_monitor 1 PINTYPE=IN
+AP IOD_Schematic:roach_monitor 2 PINTYPE=OUT
+AP IOD_Schematic:roach_monitor 3 PINTYPE=OUT
+AP IOD_Schematic:roach_monitor 4 PINTYPE=OUT
+AP IOD_Schematic:roach_monitor 5 PINTYPE=OUT
+AP IOD_Schematic:roach_monitor 6 PINTYPE=OUT
+AP IOD_Schematic:roach_monitor 7 PINTYPE=IN
+AP IOD_Schematic:roach_monitor 8 PINTYPE=IN
+AP IOD_Schematic:roach_monitor 9 PINTYPE=OUT
+AP IOD_Schematic:roach_monitor 10 PINTYPE=OUT
+AP IOD_Schematic:roach_monitor 11 PINTYPE=OUT
+AP IOD_Schematic:roach_monitor 12 PINTYPE=IN
+AP IOD_Schematic:roach_monitor 13 PINTYPE=OUT
+AP IOD_Schematic:roach_monitor 14 PINTYPE=IN
+AP IOD_Schematic:roach_monitor 15 PINTYPE=OUT
+AP IOD_Schematic:roach_monitor 16 PINTYPE=IN
+AP IOD_Schematic:roach_monitor 17 PINTYPE=IN
+AP IOD_Schematic:roach_monitor 18 PINTYPE=IN
+AP IOD_Schematic:roach_monitor 19 PINTYPE=IN
+AP IOD_Schematic:roach_monitor 20 PINTYPE=BI
+AP IOD_Schematic:roach_monitor 21 PINTYPE=IN
+AP IOD_Schematic:roach_monitor 22 PINTYPE=IN
+AP IOD_Schematic:roach_monitor 23 PINTYPE=OUT
+AP IOD_Schematic:roach_monitor 24 PINTYPE=OUT
+AP IOD_Schematic:roach_monitor 25 PINTYPE=IN
+AP IOD_Schematic:roach_monitor 26 PINTYPE=OUT
+AP IOD_Schematic:roach_monitor 27 PINTYPE=IN
+AP IOD_Schematic:roach_monitor 28 PINTYPE=OUT
+AP IOD_Schematic:roach_monitor 29 PINTYPE=IN
+AP IOD_Schematic:roach_monitor 30 PINTYPE=OUT
+AP IOD_Schematic:roach_monitor 31 PINTYPE=OUT
+AP IOD_Schematic:roach_monitor 32 PINTYPE=OUT
+AP IOD_Schematic:roach_monitor 33 PINTYPE=IN
+AP IOD_Schematic:roach_monitor 34 PINTYPE=OUT
+AP IOD_Schematic:roach_monitor 35 PINTYPE=OUT
+AP IOD_Schematic:roach_monitor 36 PINTYPE=OUT
+|Q IOD_Schematic:roach_ppc_usb 1
+AS IOD_Schematic:roach_ppc_usb SHEET
+AS IOD_Schematic:roach_ppc_usb DEVICE=ROACH_PPC_USB
+AS IOD_Schematic:roach_ppc_usb PINORDER=CLK_USB2_48MHZ SX95T_DONE_0 SX95T_D_OUT_BUSY_0 SX95T_INIT_B_0 SX95T_M0_0 SX95T_M1_0 SX95T_M2_0 SX95T_PROGRAM_B_0
+AS IOD_Schematic:roach_ppc_usb INOV_VER_REC=7:10_3-4-08
+AP IOD_Schematic:roach_ppc_usb 1 PINTYPE=IN
+AP IOD_Schematic:roach_ppc_usb 2 PINTYPE=OUT
+AP IOD_Schematic:roach_ppc_usb 3 PINTYPE=IN
+AP IOD_Schematic:roach_ppc_usb 4 PINTYPE=OUT
+AP IOD_Schematic:roach_ppc_usb 5 PINTYPE=IN
+AP IOD_Schematic:roach_ppc_usb 6 PINTYPE=IN
+AP IOD_Schematic:roach_ppc_usb 7 PINTYPE=IN
+AP IOD_Schematic:roach_ppc_usb 8 PINTYPE=OUT
+|Q IOD_Schematic:roach_ppc_ddr2 1
+AS IOD_Schematic:roach_ppc_ddr2 PINORDER= PPC_DDR2_RESET_N
+AS IOD_Schematic:roach_ppc_ddr2 DEVICE=ROACH_PPC_DDR2
+AS IOD_Schematic:roach_ppc_ddr2 SHEET
+AS IOD_Schematic:roach_ppc_ddr2 INOV_VER_REC=8:15_10-2-07
+AP IOD_Schematic:roach_ppc_ddr2 1 PINTYPE=IN
+|Q IOD_Schematic:roach_ppc_eth1 1
+AS IOD_Schematic:roach_ppc_eth1 PINORDER= CLK_GETH0_25MHZ GETH0_INT# GETH0_RST# GMCMDCLK GMCMDIO
+AS IOD_Schematic:roach_ppc_eth1 DEVICE=ROACH_PPC_ETH1
+AS IOD_Schematic:roach_ppc_eth1 SHEET
+AS IOD_Schematic:roach_ppc_eth1 INOV_VER_REC=8:15_10-2-07
+AP IOD_Schematic:roach_ppc_eth1 1 PINTYPE=IN
+AP IOD_Schematic:roach_ppc_eth1 2 PINTYPE=OUT
+AP IOD_Schematic:roach_ppc_eth1 3 PINTYPE=IN
+AP IOD_Schematic:roach_ppc_eth1 4 PINTYPE=OUT
+AP IOD_Schematic:roach_ppc_eth1 5 PINTYPE=BI
+|Q IOD_Schematic:roach_ppc_pci 1
+AS IOD_Schematic:roach_ppc_pci DEVICE=ROACH_PPC_PCI
+AS IOD_Schematic:roach_ppc_pci SHEET
+AS IOD_Schematic:roach_ppc_pci INOV_VER_REC=15:00_10-12-07
+|Q IOD_Schematic:roach_ppc_power_2 1
+AS IOD_Schematic:roach_ppc_power_2 DEVICE=ROACH_PPC_POWER_2
+AS IOD_Schematic:roach_ppc_power_2 SHEET
+AS IOD_Schematic:roach_ppc_power_2 INOV_VER_REC=15:00_10-12-07
+|Q IOD_Schematic:roach_ppc_power_1 1
+AS IOD_Schematic:roach_ppc_power_1 DEVICE=ROACH_PPC_POWER_1
+AS IOD_Schematic:roach_ppc_power_1 SHEET
+AS IOD_Schematic:roach_ppc_power_1 INOV_VER_REC=12:16_10-25-07
+|Q IOD_Schematic:roach_ppc_nvm_serial 1
+AS IOD_Schematic:roach_ppc_nvm_serial SHEET
+AS IOD_Schematic:roach_ppc_nvm_serial DEVICE=ROACH_PPC_NVM_SERIAL
+AS IOD_Schematic:roach_ppc_nvm_serial PINORDER=BOOT_CFG0 BOOT_CFG1 BOOT_CFG2 CLK_PERCLK CLK_UART_11_0592MHZ EE1_WP EE2_BOOT_WP EXT_RESET# FRY_BY# FWP# I2C0_33_DATA I2C0_SCLK M66EN PADD[2:31] PCS_2 PDATA[0:31] POE# PR_W# PWBE_0# RESET_CPLD# RESET_POR# SCPCLK SCPDI SCPDO SELECTMAP_CS STTM_ALERT STTM_AS SX95T_D_IN_0 V5_INT#
+AS IOD_Schematic:roach_ppc_nvm_serial INOV_VER_REC=7:10_3-4-08
+AP IOD_Schematic:roach_ppc_nvm_serial 1 PINTYPE=IN
+AP IOD_Schematic:roach_ppc_nvm_serial 2 PINTYPE=IN
+AP IOD_Schematic:roach_ppc_nvm_serial 3 PINTYPE=IN
+AP IOD_Schematic:roach_ppc_nvm_serial 4 PINTYPE=OUT
+AP IOD_Schematic:roach_ppc_nvm_serial 5 PINTYPE=IN
+AP IOD_Schematic:roach_ppc_nvm_serial 6 PINTYPE=IN
+AP IOD_Schematic:roach_ppc_nvm_serial 7 PINTYPE=IN
+AP IOD_Schematic:roach_ppc_nvm_serial 8 PINTYPE=OUT
+AP IOD_Schematic:roach_ppc_nvm_serial 9 PINTYPE=OUT
+AP IOD_Schematic:roach_ppc_nvm_serial 10 PINTYPE=IN
+AP IOD_Schematic:roach_ppc_nvm_serial 11 PINTYPE=BI
+AP IOD_Schematic:roach_ppc_nvm_serial 12 PINTYPE=OUT
+AP IOD_Schematic:roach_ppc_nvm_serial 13 PINTYPE=IN
+AP IOD_Schematic:roach_ppc_nvm_serial 14 PINTYPE=BI
+AP IOD_Schematic:roach_ppc_nvm_serial 15 PINTYPE=OUT
+AP IOD_Schematic:roach_ppc_nvm_serial 16 PINTYPE=BI
+AP IOD_Schematic:roach_ppc_nvm_serial 17 PINTYPE=OUT
+AP IOD_Schematic:roach_ppc_nvm_serial 18 PINTYPE=OUT
+AP IOD_Schematic:roach_ppc_nvm_serial 19 PINTYPE=OUT
+AP IOD_Schematic:roach_ppc_nvm_serial 20 PINTYPE=IN
+AP IOD_Schematic:roach_ppc_nvm_serial 21 PINTYPE=IN
+AP IOD_Schematic:roach_ppc_nvm_serial 22 PINTYPE=OUT
+AP IOD_Schematic:roach_ppc_nvm_serial 23 PINTYPE=BI
+AP IOD_Schematic:roach_ppc_nvm_serial 24 PINTYPE=OUT
+AP IOD_Schematic:roach_ppc_nvm_serial 25 PINTYPE=OUT
+AP IOD_Schematic:roach_ppc_nvm_serial 26 PINTYPE=OUT
+AP IOD_Schematic:roach_ppc_nvm_serial 27 PINTYPE=IN
+AP IOD_Schematic:roach_ppc_nvm_serial 28 PINTYPE=IN
+AP IOD_Schematic:roach_ppc_nvm_serial 29 PINTYPE=OUT
 AN PADD[2:31] VLBUSISONSHEET=1
 AN PDATA[0:7] VLBUSISONSHEET=1
 AN PDATA[0:31] VLBUSISONSHEET=1
 AN PADD[27:31] VLBUSISONSHEET=1
 AN SYS_CONFIG[0:7] VLBUSISONSHEET=1
 AN SYS_CONFIG[0:7] VLBUSISONSHEET=1
+AN SX95T_D_IN_0 PCBCLASS=PPCPBUS
+AN SX95T_D_IN_0 XREF=1-1M,1-7C,16-4B,24-7C,25-7B,25-10B
+AN SX95T_D_IN_0 PCBCLASS=PPCPBUS
+AN SX95T_D_IN_0 XREF=1-5G,1-7C,16-4B,24-7C,25-7B,25-10B
+AN PCS_2 XREF=1-4L,24-10C,25-7B
+AN SX95T_D_OUT_BUSY_0 XREF=1-3F,1-7G,16-4B,21-5D,24-7C
 AN SX95T_M1_0 PCBCLASS=PPCPBUS
 AN SX95T_M1_0 XREF=1-1G,1-3F,16-3B,21-4D,24-7F
 AN SELECTMAP_CS PCBCLASS=PPCPBUS
@@ -378,7 +385,6 @@ AN SX95T_M1_0 XREF=1-3F,1-7G,16-3B,21-4D,24-7F
 AN SX95T_M2_0 PCBCLASS=PPCPBUS
 AN SX95T_M2_0 XREF=1-3F,1-7G,16-3B,21-4D,24-7F
 AN M66EN XREF=1-5G,24-5H,25-3B
-AN PCS_2 XREF=1-4L,24-10C,25-7B
 AN POE# PCBCLASS=PPCPBUS
 AN POE# XREF=1-5L,24-8C,25-5G,25-7B,25-7M,25-10B
 AN DEBUG_TRST# PCBCLASS=PPCPBUS
@@ -410,15 +416,12 @@ AN SX95T_D_OUT_BUSY_0 XREF=1-1G,1-7G,16-4B,21-5D,24-7C
 AN SX95T_DONE_0 PCBCLASS=PPCPBUS
 AN SX95T_DONE_0 XREF=1-1M,1-7G,21-5D
 AN SX95T_PROGRAM_B_0 XREF=1-1M,1-7C,16-3B,21-4D,24-10C
-AN SX95T_D_OUT_BUSY_0 XREF=1-3F,1-7G,16-4B,21-5D,24-7C
 AN SX95T_M0_0 XREF=1-3F,1-7G,16-3B,21-4D,24-7F
 AN SX95T_CCLK_0 PCBCLASS=PPCPBUS
 AN SX95T_CCLK_0 XREF=1-7G,24-4F,24-7C
 AN SX95T_INIT_B_0 XREF=1-3F,1-7G,21-4D,24-9F
 AN SX95T_DONE_0 XREF=1-3F,1-7G,21-5D
 AN SX95T_PROGRAM_B_0 XREF=1-3F,1-7C,16-3B,21-4D,24-10C
-AN SX95T_D_IN_0 PCBCLASS=PPCPBUS
-AN SX95T_D_IN_0 XREF=1-7C,16-4B,24-7C
 AN SX95T_CS_B_0 XREF=1-6C,16-4B,24-6C
 AN I2C0_SCLK XREF=1-9B,2-2P,25-5A
 AN MGT_AVCCPLL_EN XREF=1-9L,2-1M,10-8B
@@ -485,7 +488,7 @@ AN FWP# XREF=1-4G,24-7C,25-8J
 AN BOOT_CFG0 XREF=1-4G,24-11M,25-1J
 AN BOOT_CFG1 XREF=1-4G,24-11M,25-1J
 AN BOOT_CFG2 XREF=1-4G,24-10M,25-1J
-AN SX95T_D_IN_0 XREF=1-1M,16-4B,24-7C
+AN SX95T_D_IN_0 XREF=1-1M,1-5G,16-4B,24-7C,25-7B,25-10B
 AN SX95T_CCLK_0 XREF=1-2M,24-4F,24-7C
 AN SX95T_D_OUT_BUSY_0 XREF=1-1G,1-3F,16-4B,21-5D,24-7C
 AN SX95T_INIT_B_0 XREF=1-1M,1-3F,21-4D,24-9F
@@ -621,39 +624,18 @@ I $1I315 IOD_Schematic:hole150x288 GND SCHLOC=1Q4`P/D_NUM=NA`MANUFACTURER=NA`REF
 |R 20:28_9-18-07
 API $1I315 IOD_Schematic:hole150x288 1 PINLOC=1P4
 API $1I315 IOD_Schematic:hole150x288 1 #=1
-W IOD_Schematic:roach_ppc_eth1 $1I810
-I $1I810 IOD_Schematic:roach_ppc_eth1 CLK_GETH0_25MHZ GETH0_INT# GETH0_RST# GMCMDCLK GMCMDIO SHEET=20`
-|R 8:15_10-2-07
 W IOD_Schematic:roach_5v_power $1I307
 I $1I307 IOD_Schematic:roach_5v_power SHEET=4`
 |R 8:11_10-2-07
-W IOD_Schematic:roach_ppc_pci $1I816
-I $1I816 IOD_Schematic:roach_ppc_pci SHEET=19`
-|R 15:00_10-12-07
 W IOD_Schematic:roach_v5_clk $1I291
 I $1I291 IOD_Schematic:roach_v5_clk TD0 ATRTN0 SHEET=7`
 |R 8:12_10-2-07
 W IOD_Schematic:roach_transceivers2_3 $1I3
 I $1I3 IOD_Schematic:roach_transceivers2_3 SHEET=9`
 |R 8:14_10-2-07
-W IOD_Schematic:roach_monitor $1I967
-I $1I967 IOD_Schematic:roach_monitor 12V_ATX 1V0_INHIBIT 1V5_INHIBIT 1V8_INHIBIT 2V5_INHIBIT 2V5_TRACK 3V3_ATX 5V_ATX ATRTN0 PPC_THERMONB FAN1_CONTROL FAN1_SENSE FAN2_CONTROL FAN2_SENSE FAN3_CONTROL FAN3_SENSE I1V0 I1V5 I1V8 I2C0_33_DATA I2C0_SCLK I2V5 LOAD_RES_OFF MGT_AVCCPLL_EN MGT_AVCCPLL_PG MGT_AVCC_EN MGT_AVCC_PG MGT_AVTTX_EN MGT_AVTTX_PG MONITOR_INT PPC_RESET PS_ON# PWR_OK SYS_CONFIG[0:7] TD0 PPC_THERMONA SHEET=2`
-|R 7:42_10-25-07
-W IOD_Schematic:roach_ppc_power_2 $1I116
-I $1I116 IOD_Schematic:roach_ppc_power_2 SHEET=18`
-|R 15:00_10-12-07
 W IOD_Schematic:roach_psu $1I671
 I $1I671 IOD_Schematic:roach_psu 12V_ATX 1V0_INHIBIT 1V5_INHIBIT 1V8_INHIBIT 2V5_INHIBIT 2V5_TRACK 3V3_ATX 5V_ATX FAN1_CONTROL FAN1_SENSE FAN2_CONTROL FAN2_SENSE FAN3_CONTROL FAN3_SENSE I1V0 I1V5 I1V8 I2V5 LOAD_RES_OFF PS_ON# PWR_OK SHEET=3`
 |R 7:42_10-25-07
-W IOD_Schematic:roach_ppc_ddr2 $1I289
-I $1I289 IOD_Schematic:roach_ppc_ddr2 PPC_DDR2_RESET_N SHEET=22`
-|R 8:15_10-2-07
-W IOD_Schematic:roach_ppc_power_1 $1I860
-I $1I860 IOD_Schematic:roach_ppc_power_1 SHEET=17`
-|R 12:16_10-25-07
-W IOD_Schematic:roach_config $1I790
-I $1I790 IOD_Schematic:roach_config SX95T_CCLK_0 SX95T_CS_B_0 SX95T_DONE_0 SX95T_D_IN_0 SX95T_D_OUT_BUSY_0 SX95T_INIT_B_0 SX95T_M0_0 SX95T_M1_0 SX95T_M2_0 SX95T_PROGRAM_B_0 SX95T_RDWR_B_0 SX95T_TCK SX95T_TDI SX95T_TDO SX95T_TMS SHEET=16`
-|R 9:31_10-11-07
 W IOD_Schematic:roach_gpio_misc $1I144
 I $1I144 IOD_Schematic:roach_gpio_misc SHEET=13`
 |R 8:13_10-2-07
@@ -675,9 +657,6 @@ I $1I1074 IOD_Schematic:heatsinkhole SCHLOC=1Q5`REFDES=U3`
 W IOD_Schematic:roach_ppc_tst_clk_io $1I1002
 I $1I1002 IOD_Schematic:roach_ppc_tst_clk_io CLK_CPLD_33MHZ CLK_CPLD_50MHZ CLK_GETH0_25MHZ CLK_SEL_M66EN CLK_TMRCLK CLK_UART_11_0592MHZ CLK_USB2_48MHZ CPU_TRST# DEBUG_TRST# GETH0_INT# GPIO44 MONITOR_INT PPC_THERMONA PPC_THERMONB PWR_GOOD RESET_PB_POR# RESET_POR# SEL_SYSCLK STTM_ALERT SX95T_TCK SX95T_TDI SX95T_TDO SX95T_TMS SYSERR V5_INT# SHEET=23`
 |R 11:45_1-24-08
-W IOD_Schematic:roach_ppc_usb $1I42
-I $1I42 IOD_Schematic:roach_ppc_usb CLK_USB2_48MHZ SX95T_DONE_0 SX95T_D_OUT_BUSY_0 SX95T_INIT_B_0 SX95T_M0_0 SX95T_M1_0 SX95T_M2_0 SX95T_PROGRAM_B_0 SHEET=21`
-|R 11:46_1-24-08
 W IOD_Schematic:roach_adc_1 $1I5
 I $1I5 IOD_Schematic:roach_adc_1 SHEET=6`
 |R 8:12_10-2-07
@@ -693,12 +672,6 @@ I $1I2 IOD_Schematic:roach_transceivers0_1 SHEET=8`
 W IOD_Schematic:roach_transceivers_psu $1I803
 I $1I803 IOD_Schematic:roach_transceivers_psu MGT_AVCCPLL_PG MGT_AVTTX_PG MGT_AVCC_PG MGT_AVTTX_EN MGT_AVCCPLL_EN MGT_AVCC_EN SHEET=10`
 |R 8:14_10-2-07
-W IOD_Schematic:roach_ppc_nvm_serial $1I863
-I $1I863 IOD_Schematic:roach_ppc_nvm_serial BOOT_CFG0 BOOT_CFG1 BOOT_CFG2 CLK_PERCLK CLK_UART_11_0592MHZ EE1_WP EE2_BOOT_WP EXT_RESET# FRY_BY# FWP# I2C0_33_DATA I2C0_SCLK M66EN PADD[2:31] PCS_2 PDATA[0:31] POE# PR_W# PWBE_0# RESET_CPLD# RESET_POR# SCPCLK SCPDI SCPDO SELECTMAP_CS STTM_ALERT STTM_AS V5_INT# SHEET=25`
-|R 11:47_1-24-08
-W IOD_Schematic:roach_ppc_cpld $1I747
-I $1I747 IOD_Schematic:roach_ppc_cpld BOOT_CFG0 BOOT_CFG1 BOOT_CFG2 CLK_CPLD_33MHZ CLK_CPLD_50MHZ CLK_PERCLK CLK_SEL_M66EN CLK_TMRCLK CPU_TRST# DEBUG_TRST# EE1_WP EE2_BOOT_WP EXT_RESET# FRY_BY# FWP# GETH0_RST# M66EN PADD[27:31] PCS_2 PDATA[0:7] POE# PPC_DDR2_RESET_N PPC_RESET PR_W# PWBE_0# PWR_GOOD RESET_CPLD# RESET_PB_POR# RESET_POR# SELECTMAP_CS SEL_SYSCLK STTM_AS SX95T_CCLK_0 SX95T_CS_B_0 SX95T_DONE_0 SX95T_D_IN_0 SX95T_D_OUT_BUSY_0 SX95T_INIT_B_0 SX95T_M2_0 SX95T_M1_0 SX95T_M0_0 SX95T_PROGRAM_B_0 SX95T_RDWR_B_0 SYSERR SYS_CONFIG[0:7] SHEET=24`
-|R 14:11_12-12-07
 M IOD_Schematic:snpatch $1I1078
 I $1I1078 IOD_Schematic:snpatch SCHLOC=1Q2`REFDES=U65`
 |R 16:00_2-12-08
@@ -711,4 +684,34 @@ I $1I1079 IOD_Schematic:casperlogo SCHLOC=1Q2`REFDES=U66`
 M IOD_Schematic:meerkatlogo $1I1077
 I $1I1077 IOD_Schematic:meerkatlogo SCHLOC=1P2`REFDES=U64`
 |R 11:06_2-5-08
+W IOD_Schematic:roach_config $1I790
+I $1I790 IOD_Schematic:roach_config SX95T_CCLK_0 SX95T_CS_B_0 SX95T_DONE_0 SX95T_D_IN_0 SX95T_D_OUT_BUSY_0 SX95T_INIT_B_0 SX95T_M0_0 SX95T_M1_0 SX95T_M2_0 SX95T_PROGRAM_B_0 SX95T_RDWR_B_0 SX95T_TCK SX95T_TDI SX95T_TDO SX95T_TMS SHEET=16`
+|R 9:31_10-11-07
+W IOD_Schematic:roach_ppc_cpld $1I747
+I $1I747 IOD_Schematic:roach_ppc_cpld BOOT_CFG0 BOOT_CFG1 BOOT_CFG2 CLK_CPLD_33MHZ CLK_CPLD_50MHZ CLK_PERCLK CLK_SEL_M66EN CLK_TMRCLK CPU_TRST# DEBUG_TRST# EE1_WP EE2_BOOT_WP EXT_RESET# FRY_BY# FWP# GETH0_RST# M66EN PADD[27:31] PCS_2 PDATA[0:7] POE# PPC_DDR2_RESET_N PPC_RESET PR_W# PWBE_0# PWR_GOOD RESET_CPLD# RESET_PB_POR# RESET_POR# SELECTMAP_CS SEL_SYSCLK STTM_AS SX95T_CCLK_0 SX95T_CS_B_0 SX95T_DONE_0 SX95T_D_IN_0 SX95T_D_OUT_BUSY_0 SX95T_INIT_B_0 SX95T_M2_0 SX95T_M1_0 SX95T_M0_0 SX95T_PROGRAM_B_0 SX95T_RDWR_B_0 SYSERR SYS_CONFIG[0:7] SHEET=24`
+|R 14:11_12-12-07
+W IOD_Schematic:roach_monitor $1I967
+I $1I967 IOD_Schematic:roach_monitor 12V_ATX 1V0_INHIBIT 1V5_INHIBIT 1V8_INHIBIT 2V5_INHIBIT 2V5_TRACK 3V3_ATX 5V_ATX ATRTN0 PPC_THERMONB FAN1_CONTROL FAN1_SENSE FAN2_CONTROL FAN2_SENSE FAN3_CONTROL FAN3_SENSE I1V0 I1V5 I1V8 I2C0_33_DATA I2C0_SCLK I2V5 LOAD_RES_OFF MGT_AVCCPLL_EN MGT_AVCCPLL_PG MGT_AVCC_EN MGT_AVCC_PG MGT_AVTTX_EN MGT_AVTTX_PG MONITOR_INT PPC_RESET PS_ON# PWR_OK SYS_CONFIG[0:7] TD0 PPC_THERMONA SHEET=2`
+|R 7:42_10-25-07
+W IOD_Schematic:roach_ppc_usb $1I42
+I $1I42 IOD_Schematic:roach_ppc_usb CLK_USB2_48MHZ SX95T_DONE_0 SX95T_D_OUT_BUSY_0 SX95T_INIT_B_0 SX95T_M0_0 SX95T_M1_0 SX95T_M2_0 SX95T_PROGRAM_B_0 SHEET=21`
+|R 7:10_3-4-08
+W IOD_Schematic:roach_ppc_ddr2 $1I289
+I $1I289 IOD_Schematic:roach_ppc_ddr2 PPC_DDR2_RESET_N SHEET=22`
+|R 8:15_10-2-07
+W IOD_Schematic:roach_ppc_eth1 $1I810
+I $1I810 IOD_Schematic:roach_ppc_eth1 CLK_GETH0_25MHZ GETH0_INT# GETH0_RST# GMCMDCLK GMCMDIO SHEET=20`
+|R 8:15_10-2-07
+W IOD_Schematic:roach_ppc_pci $1I816
+I $1I816 IOD_Schematic:roach_ppc_pci SHEET=19`
+|R 15:00_10-12-07
+W IOD_Schematic:roach_ppc_power_2 $1I116
+I $1I116 IOD_Schematic:roach_ppc_power_2 SHEET=18`
+|R 15:00_10-12-07
+W IOD_Schematic:roach_ppc_power_1 $1I860
+I $1I860 IOD_Schematic:roach_ppc_power_1 SHEET=17`
+|R 12:16_10-25-07
+W IOD_Schematic:roach_ppc_nvm_serial $1I863
+I $1I863 IOD_Schematic:roach_ppc_nvm_serial BOOT_CFG0 BOOT_CFG1 BOOT_CFG2 CLK_PERCLK CLK_UART_11_0592MHZ EE1_WP EE2_BOOT_WP EXT_RESET# FRY_BY# FWP# I2C0_33_DATA I2C0_SCLK M66EN PADD[2:31] PCS_2 PDATA[0:31] POE# PR_W# PWBE_0# RESET_CPLD# RESET_POR# SCPCLK SCPDI SCPDO SELECTMAP_CS STTM_ALERT STTM_AS SX95T_D_IN_0 V5_INT# SHEET=25`
+|R 7:10_3-4-08
 EW

@@ -1,13 +1,11 @@
 
-(pcb
- "C:\Users\mrevnell\roach\elec\roach\roach.roach_top_PADS2007.roach_top.db"
+(pcb "C:\Roach\elec\roach\roach.roach_top_PADS2007.roach_top.db"
 	(version "5.0.0")
 	(units "basic")
 	(config_properties
 		(attributes
-			(attval "PcbConfigName"
- "C:\Users\mrevnell\roach\elec\roach\roach_pcb.cfg")
-			(attval "CnsFile" "C:\Users\mrevnell\roach\elec\roach\pads2007.cns")
+			(attval "PcbConfigName" "C:\Roach\elec\roach\roach_pcb.cfg")
+			(attval "CnsFile" ".\pads2007.cns")
 			(attval "BeAdapter" "PADS2007")
 			(attval "FeAdapter" "DxDesigner")
 			(attval "SYSCONFIG" "pcbfwd")
@@ -28,7 +26,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1204565030"))
+		(file_ext "roach_top.pxr" "1204617351"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -27529,6 +27527,8 @@
 			(pins U54-140))
 		(net "$1I747\$1N1233"
 			(pins U54-142))
+		(net "$1I747\$1N1278"
+			(pins U54-51))
 		(net "$1I747\CFG_DIP0"
 			(pins U54-92 R204-1 SW3-1))
 		(net "$1I747\CFG_DIP1"
@@ -28045,8 +28045,6 @@
 			(pins U42-F2 U1-D10 R60-2))
 		(net "$1I863\PCS_1"
 			(pins U15-K13 U1-B9 R61-2))
-		(net "$1I863\PCS_5_GPIO010"
-			(pins U1-A8 R64-2))
 		(net "$1I863\PERERR"
 			(pins R85-1 U1-C7))
 		(net "$1I863\PERPAR0_UART1_CTS#"
@@ -29259,7 +29257,7 @@
 		(net "SX95T_DONE_0"
 			(pins U1-A4 U54-11 U15-M15))
 		(net "SX95T_D_IN_0"
-			(pins U54-40 U15-P15))
+			(pins U54-40 U15-P15 U1-A8 R64-2))
 		(net "SX95T_D_OUT_BUSY_0"
 			(pins U1-C6 U54-41 U15-AD15))
 		(net "SX95T_INIT_B_0"
@@ -31016,9 +31014,6 @@
 		(net_scalar "$1I863\PERERR"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
-		(net_scalar "$1I863\PCS_5_GPIO010"
-			(constraints
-				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I863\PCS_1"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
@@ -32044,6 +32039,9 @@
 		(net_scalar "$1I747\CFG_DIP0"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I747\$1N1278"
+			(attributes
+				(attval "NC" "")))
 		(net_scalar "$1I747\$1N1233"
 			(attributes
 				(attval "NC" ""))
