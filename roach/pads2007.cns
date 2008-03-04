@@ -4,7 +4,7 @@
 
 (cmsed
 	(version "4.0.0")
-	(written "Mon Mar 03 08:49:22 2008")
+	(written "Tue Mar 04 08:11:07 2008")
 	(target_system PADS2007
 		(version "8.0")
 		(pcb_class PADS2007_Rules
@@ -2866,6 +2866,12 @@
 		(class "GTP" PADS2007_Rules
 			(owner PHYSNET COMP DIFFP)
 			(constraint_set ROUTE_RULE
+				(constraint AUTO_ROUTE
+					(datatype BOOL false))
+				(constraint RIPUP
+					(datatype BOOL false))
+				(constraint SHOVE
+					(datatype BOOL false))
 				(constraint VALID_VIA_TYPE
 					(datatype STR "STANDARDVIA,BGA")))
 			(constraint_set CLEARANCE_RULE
