@@ -3,7 +3,7 @@ Board specifications for ibob2 / roach.
 1. Bare board workmanship and finish in accordance with the latest revision of
 IPC-6012: Performance Specification for Rigid Printed Boards.
 
-2. Assembled board in accordance with latest revision of 
+2. Assembled board in accordance with latest revision of
 ANSI-J-STD-001: Requirements for Soldered Electrical and Electronic Assemblies.
 
 3. Pad finish to be HASL or white tin.
@@ -64,19 +64,19 @@ bottom paste             --  smd016022.pho
 * note -- adjust to obtain a nominal finished board thickness of 93 mil.
 
 
-10. Target impedances.  
+10. Impedance control
 ** 	Differential refers to 100micron spacing, 136micron width pairs on outer layers.
 *** 	Single ended refers to 100micron width trace.
 
 LAYER		TARGET IMPEDANCE
-top		100 Ohm differential **
-route2		50 Ohm single ended ***
-route3		50 Ohm single ended ***
-route4		50 Ohm single ended ***
-route5		50 Ohm single ended ***
-route6		50 Ohm single ended ***
-route7		50 Ohm single ended ***
-bottom		100 Ohm differential **
+top		100 Ohm +/- 10% differential **
+route2		50 Ohm +/- 10% single ended ***
+route3		50 Ohm +/- 10% single ended ***
+route4		50 Ohm +/- 10% single ended ***
+route5		50 Ohm +/- 10% single ended ***
+route6		50 Ohm +/- 10% single ended ***
+route7		50 Ohm +/- 10% single ended ***
+bottom		100 Ohm +/- 10% differential **
 
 
 Please direct technical questions or issues to one of--
@@ -91,7 +91,7 @@ mrevnell@nrao.edu
 
 Francois Kapp
 South African Square Kilometre Array
-Capetown South Africa
+Cape Town South Africa
 
 +27 21 531 7282
 francois.kapp@ska.ac.za
