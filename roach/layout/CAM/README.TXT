@@ -61,6 +61,8 @@ bottom mask              --  sm016028.pho
 bottom silk              --  ssb016029.pho
 bottom paste             --  smd016022.pho
 
+fabrication drawing      --  dd001024.pho
+
 * note -- adjust to obtain a nominal finished board thickness of 93 mil.
 
 
