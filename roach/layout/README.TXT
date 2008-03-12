@@ -61,6 +61,8 @@ bottom mask              --  sm016028.pho
 bottom silk              --  ssb016029.pho
 bottom paste             --  smd016022.pho
 
+fabrication drawing      --  dd001024.pho
+
 * note -- adjust to obtain a nominal finished board thickness of 93 mil.
 
 
@@ -78,6 +80,7 @@ route6		50 Ohm +/- 10% single ended ***
 route7		50 Ohm +/- 10% single ended ***
 bottom		100 Ohm +/- 10% differential **
 
+11. Bids shall include fees for electrical test of bare boards as a separate line item.
 
 Please direct technical questions or issues to one of--
 Technical points of contact.

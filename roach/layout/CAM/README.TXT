@@ -80,6 +80,7 @@ route6		50 Ohm +/- 10% single ended ***
 route7		50 Ohm +/- 10% single ended ***
 bottom		100 Ohm +/- 10% differential **
 
+11. Bids shall include fees for electrical test of bare boards as a separate line item.
 
 Please direct technical questions or issues to one of--
 Technical points of contact.
