@@ -3,12 +3,12 @@ V 5.4
 K 373810501000 roach_ppc_tst_clk_io
 DW roach_ppc_tst_clk_io
 Q Case
-SA SOURCE_PATH 
-SA SHEET=23 OF 25 
-SA SCOUT_META_FORMAT_PREFIX_0=XREF 
-SA SCOUT_META_FORMAT_PREFIX_1=SCHLOC 
-SA SCOUT_META_FORMAT_PREFIX_2=PINLOC 
 SA SCOUT_META_PAGE_ANNOTATION=SHEET=23 OF 25 
+SA SCOUT_META_FORMAT_PREFIX_2=PINLOC 
+SA SCOUT_META_FORMAT_PREFIX_1=SCHLOC 
+SA SCOUT_META_FORMAT_PREFIX_0=XREF 
+SA SHEET=23 OF 25 
+SA SOURCE_PATH 
 |Q IOD_Schematic:diode_sig_sot23_150ma_bav70 1
 AS IOD_Schematic:diode_sig_sot23_150ma_bav70 REFDES=D?
 AS IOD_Schematic:diode_sig_sot23_150ma_bav70 DEVICE=DIODE_SIG_SOT23_150MA_BAV70
@@ -626,6 +626,44 @@ AP IOD_Schematic:switch_push_spst_ra_smt4 3 #=3
 AP IOD_Schematic:switch_push_spst_ra_smt4 3 PINTYPE=OUT
 AP IOD_Schematic:switch_push_spst_ra_smt4 4 #=4
 AP IOD_Schematic:switch_push_spst_ra_smt4 4 PINTYPE=OUT
+|Q IOD_Schematic:pad_1mm_smt 1
+AS IOD_Schematic:pad_1mm_smt REFDES=TP?
+AS IOD_Schematic:pad_1mm_smt DEVICE=PAD_1MM_SMT
+AS IOD_Schematic:pad_1mm_smt PARTS=1
+AS IOD_Schematic:pad_1mm_smt PKG_TYPE=TP_SMT_1MM
+AS IOD_Schematic:pad_1mm_smt LEVEL=STD
+AS IOD_Schematic:pad_1mm_smt GRN=LHRG
+AS IOD_Schematic:pad_1mm_smt SHAPE=1mm
+AS IOD_Schematic:pad_1mm_smt BOARD_OPTION
+AS IOD_Schematic:pad_1mm_smt ALT_SUP=NA
+AS IOD_Schematic:pad_1mm_smt SUP=NA
+AS IOD_Schematic:pad_1mm_smt P/D_NUM=NA
+AS IOD_Schematic:pad_1mm_smt EP#=NA
+AS IOD_Schematic:pad_1mm_smt ALT_PART=NA
+AS IOD_Schematic:pad_1mm_smt EPI#=NA
+AS IOD_Schematic:pad_1mm_smt VALUE
+AS IOD_Schematic:pad_1mm_smt PINORDER=H1
+AP IOD_Schematic:pad_1mm_smt 1 #=1
+AP IOD_Schematic:pad_1mm_smt 1 PINTYPE=OUT
+|Q IOD_Schematic:cap_100nf_0402_16v_10__x7r 2
+AS IOD_Schematic:cap_100nf_0402_16v_10__x7r REFDES=C?
+AS IOD_Schematic:cap_100nf_0402_16v_10__x7r DEVICE=CAP_100NF_0402_16V_10%_X7R
+AS IOD_Schematic:cap_100nf_0402_16v_10__x7r PARTS=1
+AS IOD_Schematic:cap_100nf_0402_16v_10__x7r PKG_TYPE=C_0402_IPC
+AS IOD_Schematic:cap_100nf_0402_16v_10__x7r LEVEL=STD
+AS IOD_Schematic:cap_100nf_0402_16v_10__x7r GRN=LHR
+AS IOD_Schematic:cap_100nf_0402_16v_10__x7r ALT_PART=NA
+AS IOD_Schematic:cap_100nf_0402_16v_10__x7r P/D_NUM=VEN: C0402X7R160-104KN
+AS IOD_Schematic:cap_100nf_0402_16v_10__x7r ALT_SUP=NA
+AS IOD_Schematic:cap_100nf_0402_16v_10__x7r SUP=VEN: C0402X7R160-104KN
+AS IOD_Schematic:cap_100nf_0402_16v_10__x7r SHAPE=0402
+AS IOD_Schematic:cap_100nf_0402_16v_10__x7r TYPE=X7R
+AS IOD_Schematic:cap_100nf_0402_16v_10__x7r VALUE
+AS IOD_Schematic:cap_100nf_0402_16v_10__x7r PINORDER=1 2
+AP IOD_Schematic:cap_100nf_0402_16v_10__x7r 1 #=1
+AP IOD_Schematic:cap_100nf_0402_16v_10__x7r 1 PINTYPE=OUT
+AP IOD_Schematic:cap_100nf_0402_16v_10__x7r 2 #=2
+AP IOD_Schematic:cap_100nf_0402_16v_10__x7r 2 PINTYPE=OUT
 |Q IOD_Schematic:ic_clkgen_tssop16_0211p10 1
 AS IOD_Schematic:ic_clkgen_tssop16_0211p10 MANUFACTURER=CYPRESS
 AS IOD_Schematic:ic_clkgen_tssop16_0211p10 REFDES=U?
@@ -673,44 +711,6 @@ AP IOD_Schematic:ic_clkgen_tssop16_0211p10 15 #=3
 AP IOD_Schematic:ic_clkgen_tssop16_0211p10 15 PINTYPE=IN
 AP IOD_Schematic:ic_clkgen_tssop16_0211p10 16 #=11
 AP IOD_Schematic:ic_clkgen_tssop16_0211p10 16 PINTYPE=IN
-|Q IOD_Schematic:pad_1mm_smt 1
-AS IOD_Schematic:pad_1mm_smt REFDES=TP?
-AS IOD_Schematic:pad_1mm_smt DEVICE=PAD_1MM_SMT
-AS IOD_Schematic:pad_1mm_smt PARTS=1
-AS IOD_Schematic:pad_1mm_smt PKG_TYPE=TP_SMT_1MM
-AS IOD_Schematic:pad_1mm_smt LEVEL=STD
-AS IOD_Schematic:pad_1mm_smt GRN=LHRG
-AS IOD_Schematic:pad_1mm_smt SHAPE=1mm
-AS IOD_Schematic:pad_1mm_smt BOARD_OPTION
-AS IOD_Schematic:pad_1mm_smt ALT_SUP=NA
-AS IOD_Schematic:pad_1mm_smt SUP=NA
-AS IOD_Schematic:pad_1mm_smt P/D_NUM=NA
-AS IOD_Schematic:pad_1mm_smt EP#=NA
-AS IOD_Schematic:pad_1mm_smt ALT_PART=NA
-AS IOD_Schematic:pad_1mm_smt EPI#=NA
-AS IOD_Schematic:pad_1mm_smt VALUE
-AS IOD_Schematic:pad_1mm_smt PINORDER=H1
-AP IOD_Schematic:pad_1mm_smt 1 #=1
-AP IOD_Schematic:pad_1mm_smt 1 PINTYPE=OUT
-|Q IOD_Schematic:cap_100nf_0402_16v_10__x7r 2
-AS IOD_Schematic:cap_100nf_0402_16v_10__x7r REFDES=C?
-AS IOD_Schematic:cap_100nf_0402_16v_10__x7r DEVICE=CAP_100NF_0402_16V_10%_X7R
-AS IOD_Schematic:cap_100nf_0402_16v_10__x7r PARTS=1
-AS IOD_Schematic:cap_100nf_0402_16v_10__x7r PKG_TYPE=C_0402_IPC
-AS IOD_Schematic:cap_100nf_0402_16v_10__x7r LEVEL=STD
-AS IOD_Schematic:cap_100nf_0402_16v_10__x7r GRN=LHR
-AS IOD_Schematic:cap_100nf_0402_16v_10__x7r ALT_PART=NA
-AS IOD_Schematic:cap_100nf_0402_16v_10__x7r P/D_NUM=VEN: C0402X7R160-104KN
-AS IOD_Schematic:cap_100nf_0402_16v_10__x7r ALT_SUP=NA
-AS IOD_Schematic:cap_100nf_0402_16v_10__x7r SUP=VEN: C0402X7R160-104KN
-AS IOD_Schematic:cap_100nf_0402_16v_10__x7r SHAPE=0402
-AS IOD_Schematic:cap_100nf_0402_16v_10__x7r TYPE=X7R
-AS IOD_Schematic:cap_100nf_0402_16v_10__x7r VALUE
-AS IOD_Schematic:cap_100nf_0402_16v_10__x7r PINORDER=1 2
-AP IOD_Schematic:cap_100nf_0402_16v_10__x7r 1 #=1
-AP IOD_Schematic:cap_100nf_0402_16v_10__x7r 1 PINTYPE=OUT
-AP IOD_Schematic:cap_100nf_0402_16v_10__x7r 2 #=2
-AP IOD_Schematic:cap_100nf_0402_16v_10__x7r 2 PINTYPE=OUT
 AN $1N382 NC
 AN CPU_TDO XREF=23-2G,23-3H
 AN CPU_TDI XREF=23-2G
@@ -1380,8 +1380,30 @@ P IOD_Schematic:in V5_INT#
 I V5_INT# IOD_Schematic:in V5_INT# 
 |R 7:39_8-30-07
 API V5_INT# IOD_Schematic:in 1 XREF=1-3H,1-5L,25-8Q
+M IOD_Schematic:pad_1mm_smt $1I190
+I $1I190 IOD_Schematic:pad_1mm_smt $1N30 GEOMETRY.HEIGHT=0`SCHLOC=23J6`MANUFACTURER=NA`REFDES=TP1`BOARD_OPTION=NA`PKG_TYPE=TP_SMT_1MM`VALUE=TEST POINT`SHAPE`
+API $1I190 IOD_Schematic:pad_1mm_smt 1 PINLOC=23J6
+API $1I190 IOD_Schematic:pad_1mm_smt 1 #=1
+P IOD_Schematic:in CPU_TRST#
+I CPU_TRST# IOD_Schematic:in CPU_TRST# 
+|R 7:39_8-30-07
+API CPU_TRST# IOD_Schematic:in 1 XREF=1-2M,1-3H,24-9C
+|N 2
+M IOD_Schematic:cap_100nf_0402_16v_10__x7r $1I205
+I $1I205 IOD_Schematic:cap_100nf_0402_16v_10__x7r GND $1N60 GEOMETRY.HEIGHT=0.55MM`SCHLOC=23H3`MANUFACTURER=VENKEL`REFDES=C54`PKG_TYPE=CAPC1005X55N`VALUE=0.1UF`SHAPE`
+API $1I205 IOD_Schematic:cap_100nf_0402_16v_10__x7r 1 PINLOC=23H3
+API $1I205 IOD_Schematic:cap_100nf_0402_16v_10__x7r 1 #=1
+API $1I205 IOD_Schematic:cap_100nf_0402_16v_10__x7r 2 PINLOC=23H3
+API $1I205 IOD_Schematic:cap_100nf_0402_16v_10__x7r 2 #=2
+M IOD_Schematic:diode_sig_sot23_150ma_bav70 $1I206
+I $1I206 IOD_Schematic:diode_sig_sot23_150ma_bav70 $1N36 RESET_PB_POR# GEOMETRY.HEIGHT=1.15MM`SCHLOC=23F9`P/D_NUM=BAV70-V`MANUFACTURER=VISHAY`PKG_TYPE=SOT95P248X115-3N`REFDES=D1`SLOT=1`VALUE=BAV70`
+|R 6:49_9-4-07
+API $1I206 IOD_Schematic:diode_sig_sot23_150ma_bav70 1 PINLOC=23F9
+API $1I206 IOD_Schematic:diode_sig_sot23_150ma_bav70 1 #=1
+API $1I206 IOD_Schematic:diode_sig_sot23_150ma_bav70 2 PINLOC=23F9
+API $1I206 IOD_Schematic:diode_sig_sot23_150ma_bav70 2 #=3
 M IOD_Schematic:ic_clkgen_tssop16_0211p10 $1I363
-I $1I363 IOD_Schematic:ic_clkgen_tssop16_0211p10 $1N63 $1N369 $1N379 CLK_6 CLK_7 CLK_8 $1N367 $1N57 CLK_SEL_M66EN CLK_SEL_M66EN CLK_SEL_M66EN $1N75 3V3 3V3 GND GND GEOMETRY.HEIGHT=1.1MM`SCHLOC=23F5`REFDES=U24`BOARD_OPTION=BASE`PKG_TYPE=SOP65P640X110-16N`VALUE=CY2292FZX_0211`SHAPE`
+I $1I363 IOD_Schematic:ic_clkgen_tssop16_0211p10 $1N63 $1N369 $1N379 CLK_6 CLK_7 CLK_8 $1N367 $1N57 CLK_SEL_M66EN CLK_SEL_M66EN CLK_SEL_M66EN $1N75 3V3 3V3 GND GND GEOMETRY.HEIGHT=1.1MM`SCHLOC=23F5`REFDES=U24`BOARD_OPTION=BASE`PKG_TYPE=SOIC127P600X173-16N`VALUE=CY2292FZX_0211`SHAPE`
 |R 16:46_9-26-07
 API $1I363 IOD_Schematic:ic_clkgen_tssop16_0211p10 1 PINLOC=23E5
 API $1I363 IOD_Schematic:ic_clkgen_tssop16_0211p10 1 #=4
@@ -1415,26 +1437,4 @@ API $1I363 IOD_Schematic:ic_clkgen_tssop16_0211p10 15 PINLOC=23E4
 API $1I363 IOD_Schematic:ic_clkgen_tssop16_0211p10 15 #=3
 API $1I363 IOD_Schematic:ic_clkgen_tssop16_0211p10 16 PINLOC=23E4
 API $1I363 IOD_Schematic:ic_clkgen_tssop16_0211p10 16 #=11
-M IOD_Schematic:pad_1mm_smt $1I190
-I $1I190 IOD_Schematic:pad_1mm_smt $1N30 GEOMETRY.HEIGHT=0`SCHLOC=23J6`MANUFACTURER=NA`REFDES=TP1`BOARD_OPTION=NA`PKG_TYPE=TP_SMT_1MM`VALUE=TEST POINT`SHAPE`
-API $1I190 IOD_Schematic:pad_1mm_smt 1 PINLOC=23J6
-API $1I190 IOD_Schematic:pad_1mm_smt 1 #=1
-P IOD_Schematic:in CPU_TRST#
-I CPU_TRST# IOD_Schematic:in CPU_TRST# 
-|R 7:39_8-30-07
-API CPU_TRST# IOD_Schematic:in 1 XREF=1-2M,1-3H,24-9C
-|N 2
-M IOD_Schematic:cap_100nf_0402_16v_10__x7r $1I205
-I $1I205 IOD_Schematic:cap_100nf_0402_16v_10__x7r GND $1N60 GEOMETRY.HEIGHT=0.55MM`SCHLOC=23H3`MANUFACTURER=VENKEL`REFDES=C54`PKG_TYPE=CAPC1005X55N`VALUE=0.1UF`SHAPE`
-API $1I205 IOD_Schematic:cap_100nf_0402_16v_10__x7r 1 PINLOC=23H3
-API $1I205 IOD_Schematic:cap_100nf_0402_16v_10__x7r 1 #=1
-API $1I205 IOD_Schematic:cap_100nf_0402_16v_10__x7r 2 PINLOC=23H3
-API $1I205 IOD_Schematic:cap_100nf_0402_16v_10__x7r 2 #=2
-M IOD_Schematic:diode_sig_sot23_150ma_bav70 $1I206
-I $1I206 IOD_Schematic:diode_sig_sot23_150ma_bav70 $1N36 RESET_PB_POR# GEOMETRY.HEIGHT=1.15MM`SCHLOC=23F9`P/D_NUM=BAV70-V`MANUFACTURER=VISHAY`PKG_TYPE=SOT95P248X115-3N`REFDES=D1`SLOT=1`VALUE=BAV70`
-|R 6:49_9-4-07
-API $1I206 IOD_Schematic:diode_sig_sot23_150ma_bav70 1 PINLOC=23F9
-API $1I206 IOD_Schematic:diode_sig_sot23_150ma_bav70 1 #=1
-API $1I206 IOD_Schematic:diode_sig_sot23_150ma_bav70 2 PINLOC=23F9
-API $1I206 IOD_Schematic:diode_sig_sot23_150ma_bav70 2 #=3
 EW
