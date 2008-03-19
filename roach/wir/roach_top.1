@@ -8,9 +8,6 @@ SA SCOUT_META_FORMAT_PREFIX_2=PINLOC
 SA SCOUT_META_FORMAT_PREFIX_1=SCHLOC 
 SA SCOUT_META_FORMAT_PREFIX_0=XREF 
 SA SHEET=1 OF 25 
-|Q IOD_Schematic:cockroach 1
-AS IOD_Schematic:cockroach PKG_TYPE=CUCARACA
-AS IOD_Schematic:cockroach INOV_VER_REC=21:18_2-20-08
 |Q IOD_Schematic:hole150x288 1
 AS IOD_Schematic:hole150x288 DEVICE=HOLE150X288
 AS IOD_Schematic:hole150x288 PARTS=1
@@ -159,18 +156,6 @@ AP IOD_Schematic:roach_transceivers_psu 3 PINTYPE=OUT
 AP IOD_Schematic:roach_transceivers_psu 4 PINTYPE=IN
 AP IOD_Schematic:roach_transceivers_psu 5 PINTYPE=IN
 AP IOD_Schematic:roach_transceivers_psu 6 PINTYPE=IN
-|Q IOD_Schematic:snpatch 1
-AS IOD_Schematic:snpatch PKG_TYPE=SNPATCH
-AS IOD_Schematic:snpatch INOV_VER_REC=16:00_2-12-08
-|Q IOD_Schematic:nraologo 1
-AS IOD_Schematic:nraologo PKG_TYPE=LOGO
-AS IOD_Schematic:nraologo INOV_VER_REC=16:01_1-29-08
-|Q IOD_Schematic:casperlogo 1
-AS IOD_Schematic:casperlogo PKG_TYPE=CASPERLOGO
-AS IOD_Schematic:casperlogo INOV_VER_REC=6:59_2-14-08
-|Q IOD_Schematic:meerkatlogo 1
-AS IOD_Schematic:meerkatlogo PKG_TYPE=MEERKATLOGO
-AS IOD_Schematic:meerkatlogo INOV_VER_REC=11:06_2-5-08
 |Q IOD_Schematic:roach_config 1
 AS IOD_Schematic:roach_config SHEET
 AS IOD_Schematic:roach_config DEVICE=ROACH_CONFIG
@@ -373,6 +358,21 @@ AP IOD_Schematic:c 1 PINTYPE=BI
 AP IOD_Schematic:c 1 #=1
 AP IOD_Schematic:c 2 PINTYPE=BI
 AP IOD_Schematic:c 2 #=2
+|Q IOD_Schematic:meerkatlogo 1
+AS IOD_Schematic:meerkatlogo PKG_TYPE=MEERKATLOGO
+AS IOD_Schematic:meerkatlogo INOV_VER_REC=11:06_2-5-08
+|Q IOD_Schematic:nraologo 1
+AS IOD_Schematic:nraologo PKG_TYPE=LOGO
+AS IOD_Schematic:nraologo INOV_VER_REC=16:01_1-29-08
+|Q IOD_Schematic:casperlogo 1
+AS IOD_Schematic:casperlogo PKG_TYPE=CASPERLOGO
+AS IOD_Schematic:casperlogo INOV_VER_REC=6:59_2-14-08
+|Q IOD_Schematic:snpatch 1
+AS IOD_Schematic:snpatch PKG_TYPE=SNPATCH
+AS IOD_Schematic:snpatch INOV_VER_REC=16:00_2-12-08
+|Q IOD_Schematic:cockroach 1
+AS IOD_Schematic:cockroach PKG_TYPE=CUCARACA
+AS IOD_Schematic:cockroach INOV_VER_REC=21:18_2-20-08
 AN PADD[2:31] VLBUSISONSHEET=1
 AN PDATA[0:7] VLBUSISONSHEET=1
 AN PDATA[0:31] VLBUSISONSHEET=1
@@ -601,9 +601,6 @@ G 5V
 G 1V8
 G 2V5
 G GND
-M IOD_Schematic:cockroach $1I1081
-I $1I1081 IOD_Schematic:cockroach GEOMETRY.HEIGHT=0`SCHLOC=1R3`REFDES=U67`
-|R 21:18_2-20-08
 M IOD_Schematic:hole150x288 $1I314
 I $1I314 IOD_Schematic:hole150x288 GND GEOMETRY.HEIGHT=0`SCHLOC=1Q4`P/D_NUM=NA`MANUFACTURER=NA`REFDES=H7`
 |R 20:28_9-18-07
@@ -697,18 +694,6 @@ I $1I2 IOD_Schematic:roach_transceivers0_1 SHEET=8`
 W IOD_Schematic:roach_transceivers_psu $1I803
 I $1I803 IOD_Schematic:roach_transceivers_psu MGT_AVCCPLL_PG MGT_AVTTX_PG MGT_AVCC_PG MGT_AVTTX_EN MGT_AVCCPLL_EN MGT_AVCC_EN SHEET=10`
 |R 8:14_10-2-07
-M IOD_Schematic:snpatch $1I1078
-I $1I1078 IOD_Schematic:snpatch GEOMETRY.HEIGHT=0`SCHLOC=1Q2`REFDES=U65`
-|R 16:00_2-12-08
-M IOD_Schematic:nraologo $1I1076
-I $1I1076 IOD_Schematic:nraologo GEOMETRY.HEIGHT=0`SCHLOC=1P1`REFDES=U52`
-|R 16:01_1-29-08
-M IOD_Schematic:casperlogo $1I1079
-I $1I1079 IOD_Schematic:casperlogo GEOMETRY.HEIGHT=0`SCHLOC=1Q2`REFDES=U66`
-|R 6:59_2-14-08
-M IOD_Schematic:meerkatlogo $1I1077
-I $1I1077 IOD_Schematic:meerkatlogo GEOMETRY.HEIGHT=0`SCHLOC=1P2`REFDES=U64`
-|R 11:06_2-5-08
 W IOD_Schematic:roach_config $1I790
 I $1I790 IOD_Schematic:roach_config SX95T_CCLK_0 SX95T_CS_B_0 SX95T_DONE_0 SX95T_D_IN_0 SX95T_D_OUT_BUSY_0 SX95T_INIT_B_0 SX95T_M0_0 SX95T_M1_0 SX95T_M2_0 SX95T_PROGRAM_B_0 SX95T_RDWR_B_0 SX95T_TCK SX95T_TDI SX95T_TDO SX95T_TMS SHEET=16`
 |R 9:31_10-11-07
@@ -879,4 +864,19 @@ API $1I1115 IOD_Schematic:c 1 PINLOC=5G7
 API $1I1115 IOD_Schematic:c 1 #=1
 API $1I1115 IOD_Schematic:c 2 PINLOC=5G6
 API $1I1115 IOD_Schematic:c 2 #=2
+M IOD_Schematic:meerkatlogo $1I1077
+I $1I1077 IOD_Schematic:meerkatlogo GEOMETRY.HEIGHT=0`SCHLOC=1P2`REFDES=LOGO2`
+|R 11:06_2-5-08
+M IOD_Schematic:nraologo $1I1076
+I $1I1076 IOD_Schematic:nraologo GEOMETRY.HEIGHT=0`SCHLOC=1P1`REFDES=LOGO1`
+|R 16:01_1-29-08
+M IOD_Schematic:casperlogo $1I1079
+I $1I1079 IOD_Schematic:casperlogo GEOMETRY.HEIGHT=0`SCHLOC=1Q2`REFDES=LOGO3`
+|R 6:59_2-14-08
+M IOD_Schematic:snpatch $1I1078
+I $1I1078 IOD_Schematic:snpatch GEOMETRY.HEIGHT=0`SCHLOC=1Q2`REFDES=SNP1`
+|R 16:00_2-12-08
+M IOD_Schematic:cockroach $1I1081
+I $1I1081 IOD_Schematic:cockroach GEOMETRY.HEIGHT=0`SCHLOC=1R3`REFDES=LOGO4`
+|R 21:18_2-20-08
 EW
