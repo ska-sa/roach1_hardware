@@ -94,10 +94,6 @@ AP IOD_Schematic:roach_qdr2p_by2_3 1 PINTYPE=OUT
 AP IOD_Schematic:roach_qdr2p_by2_3 2 PINTYPE=IN
 AP IOD_Schematic:roach_qdr2p_by2_3 3 PINTYPE=IN
 AP IOD_Schematic:roach_qdr2p_by2_3 4 PINTYPE=IN
-|Q IOD_Schematic:heatsinkhole 1
-AS IOD_Schematic:heatsinkhole REFDES=U?
-AS IOD_Schematic:heatsinkhole PKG_TYPE=HEATSINKHOLE
-AS IOD_Schematic:heatsinkhole INOV_VER_REC=15:52_1-22-08
 |Q IOD_Schematic:roach_ppc_tst_clk_io 1
 AS IOD_Schematic:roach_ppc_tst_clk_io SHEET
 AS IOD_Schematic:roach_ppc_tst_clk_io DEVICE=ROACH_PPC_TST_CLK_IO
@@ -373,6 +369,10 @@ AS IOD_Schematic:snpatch INOV_VER_REC=16:00_2-12-08
 |Q IOD_Schematic:cockroach 1
 AS IOD_Schematic:cockroach PKG_TYPE=CUCARACA
 AS IOD_Schematic:cockroach INOV_VER_REC=21:18_2-20-08
+|Q IOD_Schematic:heatsinkhole 1
+AS IOD_Schematic:heatsinkhole REFDES=U?
+AS IOD_Schematic:heatsinkhole PKG_TYPE=HEATSINKHOLE
+AS IOD_Schematic:heatsinkhole INOV_VER_REC=15:52_1-22-08
 AN PADD[2:31] VLBUSISONSHEET=1
 AN PDATA[0:7] VLBUSISONSHEET=1
 AN PDATA[0:31] VLBUSISONSHEET=1
@@ -670,12 +670,6 @@ I $1I1032 IOD_Schematic:roach_qdr2p_by0_1 QDR2_BY0_1_TDO QDR2_TMS QDR2_TCK QDR2_
 W IOD_Schematic:roach_qdr2p_by2_3 $1I1038
 I $1I1038 IOD_Schematic:roach_qdr2p_by2_3 QDR2_BY2_3_TDO QDR2_TCK QDR2_TMS QDR2_BY0_1_TDO SHEET=15`
 |R 12:34_12-13-07
-M IOD_Schematic:heatsinkhole $1I1075
-I $1I1075 IOD_Schematic:heatsinkhole SCHLOC=1Q4`GEOMETRY.HEIGHT=0`REFDES=U49`
-|R 15:52_1-22-08
-M IOD_Schematic:heatsinkhole $1I1074
-I $1I1074 IOD_Schematic:heatsinkhole SCHLOC=1Q5`GEOMETRY.HEIGHT=0`REFDES=U3`
-|R 15:52_1-22-08
 W IOD_Schematic:roach_ppc_tst_clk_io $1I1002
 I $1I1002 IOD_Schematic:roach_ppc_tst_clk_io CLK_CPLD_33MHZ CLK_CPLD_50MHZ CLK_GETH0_25MHZ CLK_SEL_M66EN CLK_TMRCLK CLK_UART_11_0592MHZ CLK_USB2_48MHZ CPU_TRST# DEBUG_TRST# GETH0_INT# GPIO44 MONITOR_INT PPC_THERMONA PPC_THERMONB PWR_GOOD RESET_PB_POR# RESET_POR# SEL_SYSCLK STTM_ALERT SX95T_TCK SX95T_TDI SX95T_TDO SX95T_TMS SYSERR V5_INT# SHEET=23`
 |R 11:45_1-24-08
@@ -879,4 +873,10 @@ I $1I1078 IOD_Schematic:snpatch SCHLOC=1Q2`GEOMETRY.HEIGHT=0`REFDES=SNP1`
 M IOD_Schematic:cockroach $1I1081
 I $1I1081 IOD_Schematic:cockroach SCHLOC=1R3`GEOMETRY.HEIGHT=0`REFDES=LOGO4`
 |R 21:18_2-20-08
+M IOD_Schematic:heatsinkhole $1I1074
+I $1I1074 IOD_Schematic:heatsinkhole DEVICE=HSHOLE_3.5D3.2_NP`SCHLOC=1Q5`GEOMETRY.HEIGHT=0`REFDES=H10`
+|R 15:52_1-22-08
+M IOD_Schematic:heatsinkhole $1I1075
+I $1I1075 IOD_Schematic:heatsinkhole DEVICE=HSHOLE_3.5D3.2_NP`SCHLOC=1Q4`GEOMETRY.HEIGHT=0`REFDES=H11`
+|R 15:52_1-22-08
 EW
