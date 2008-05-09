@@ -3,12 +3,12 @@ V 5.4
 K 11537160090 roach_ppc_cpld
 DW roach_ppc_cpld
 Q Case
-SA SOURCE_PATH 
-SA SHEET=24 OF 25 
-SA SCOUT_META_FORMAT_PREFIX_0=XREF 
-SA SCOUT_META_FORMAT_PREFIX_1=SCHLOC 
-SA SCOUT_META_FORMAT_PREFIX_2=PINLOC 
 SA SCOUT_META_PAGE_ANNOTATION=SHEET=24 OF 25 
+SA SCOUT_META_FORMAT_PREFIX_2=PINLOC 
+SA SCOUT_META_FORMAT_PREFIX_1=SCHLOC 
+SA SCOUT_META_FORMAT_PREFIX_0=XREF 
+SA SHEET=24 OF 25 
+SA SOURCE_PATH 
 AS IOD_Schematic:in IN
 AS IOD_Schematic:in PINORDER=IN
 AP IOD_Schematic:in 1 PINTYPE=IN
@@ -166,45 +166,6 @@ AP IOD_Schematic:diode_led_0805_red 1 #=1
 AP IOD_Schematic:diode_led_0805_red 1 PINTYPE=OUT
 AP IOD_Schematic:diode_led_0805_red 2 #=2
 AP IOD_Schematic:diode_led_0805_red 2 PINTYPE=OUT
-|Q IOD_Schematic:xilinx_14_pin_jtag 1
-AS IOD_Schematic:xilinx_14_pin_jtag PKG_TYPE=JTAG-14
-AS IOD_Schematic:xilinx_14_pin_jtag LEVEL=STD
-AS IOD_Schematic:xilinx_14_pin_jtag PARTS=1
-AS IOD_Schematic:xilinx_14_pin_jtag DEVICE=14-PIN_JTAG
-AS IOD_Schematic:xilinx_14_pin_jtag P/D_NUM=JTAG-14
-AS IOD_Schematic:xilinx_14_pin_jtag REFDES=J?
-AS IOD_Schematic:xilinx_14_pin_jtag PINORDER=GND_0 GND_1 GND_2 GND_3 GND_4 GND_6 GND_7 NC_0 NC_1 TCK TDI TDO TMS VREF
-AS IOD_Schematic:xilinx_14_pin_jtag INOV_VER_REC=9:09_8-23-07
-AP IOD_Schematic:xilinx_14_pin_jtag 1 #=2
-AP IOD_Schematic:xilinx_14_pin_jtag 1 PINTYPE=ANALOG
-AP IOD_Schematic:xilinx_14_pin_jtag 2 #=4
-AP IOD_Schematic:xilinx_14_pin_jtag 2 PINTYPE=ANALOG
-AP IOD_Schematic:xilinx_14_pin_jtag 3 #=6
-AP IOD_Schematic:xilinx_14_pin_jtag 3 PINTYPE=ANALOG
-AP IOD_Schematic:xilinx_14_pin_jtag 4 #=8
-AP IOD_Schematic:xilinx_14_pin_jtag 4 PINTYPE=ANALOG
-AP IOD_Schematic:xilinx_14_pin_jtag 5 #=10
-AP IOD_Schematic:xilinx_14_pin_jtag 5 PINTYPE=ANALOG
-AP IOD_Schematic:xilinx_14_pin_jtag 6 #=14
-AP IOD_Schematic:xilinx_14_pin_jtag 6 PINTYPE=ANALOG
-AP IOD_Schematic:xilinx_14_pin_jtag 7 #=12
-AP IOD_Schematic:xilinx_14_pin_jtag 7 PINTYPE=IN
-AP IOD_Schematic:xilinx_14_pin_jtag 8 NC
-AP IOD_Schematic:xilinx_14_pin_jtag 8 #=1
-AP IOD_Schematic:xilinx_14_pin_jtag 8 PINTYPE=ANALOG
-AP IOD_Schematic:xilinx_14_pin_jtag 9 NC
-AP IOD_Schematic:xilinx_14_pin_jtag 9 #=3
-AP IOD_Schematic:xilinx_14_pin_jtag 9 PINTYPE=ANALOG
-AP IOD_Schematic:xilinx_14_pin_jtag 10 #=9
-AP IOD_Schematic:xilinx_14_pin_jtag 10 PINTYPE=OUT
-AP IOD_Schematic:xilinx_14_pin_jtag 11 #=5
-AP IOD_Schematic:xilinx_14_pin_jtag 11 PINTYPE=OUT
-AP IOD_Schematic:xilinx_14_pin_jtag 12 #=7
-AP IOD_Schematic:xilinx_14_pin_jtag 12 PINTYPE=IN
-AP IOD_Schematic:xilinx_14_pin_jtag 13 #=11
-AP IOD_Schematic:xilinx_14_pin_jtag 13 PINTYPE=OUT
-AP IOD_Schematic:xilinx_14_pin_jtag 14 #=13
-AP IOD_Schematic:xilinx_14_pin_jtag 14 PINTYPE=ANALOG
 |Q IOD_Schematic:diode_led_0805_grn 1
 AS IOD_Schematic:diode_led_0805_grn MANUFACTURER=AVAGO
 AS IOD_Schematic:diode_led_0805_grn DEVICE=DIODE_LED_0805_GRN
@@ -2128,6 +2089,45 @@ AP IOD_Schematic:roach_cpld_xc2c256_7vq100c_pcb 112 IOD_CUSTOM=
 AP IOD_Schematic:roach_cpld_xc2c256_7vq100c_pcb 112 IOD_PORTID=61
 AP IOD_Schematic:roach_cpld_xc2c256_7vq100c_pcb 112 IOD_PORTTYPE=PIN
 AP IOD_Schematic:roach_cpld_xc2c256_7vq100c_pcb 112 IOD_LABELTYPE=IOD_PINNAME
+|Q IOD_Schematic:xilinx_14_pin_jtag 1
+AS IOD_Schematic:xilinx_14_pin_jtag PKG_TYPE=JTAG-14
+AS IOD_Schematic:xilinx_14_pin_jtag LEVEL=STD
+AS IOD_Schematic:xilinx_14_pin_jtag PARTS=1
+AS IOD_Schematic:xilinx_14_pin_jtag DEVICE=14-PIN_JTAG
+AS IOD_Schematic:xilinx_14_pin_jtag P/D_NUM=JTAG-14
+AS IOD_Schematic:xilinx_14_pin_jtag REFDES=J?
+AS IOD_Schematic:xilinx_14_pin_jtag PINORDER=GND_0 GND_1 GND_2 GND_3 GND_4 GND_6 GND_7 NC_0 NC_1 TCK TDI TDO TMS VREF
+AS IOD_Schematic:xilinx_14_pin_jtag INOV_VER_REC=8:29_5-9-08
+AP IOD_Schematic:xilinx_14_pin_jtag 1 #=1
+AP IOD_Schematic:xilinx_14_pin_jtag 1 PINTYPE=ANALOG
+AP IOD_Schematic:xilinx_14_pin_jtag 2 #=3
+AP IOD_Schematic:xilinx_14_pin_jtag 2 PINTYPE=ANALOG
+AP IOD_Schematic:xilinx_14_pin_jtag 3 #=5
+AP IOD_Schematic:xilinx_14_pin_jtag 3 PINTYPE=ANALOG
+AP IOD_Schematic:xilinx_14_pin_jtag 4 #=7
+AP IOD_Schematic:xilinx_14_pin_jtag 4 PINTYPE=ANALOG
+AP IOD_Schematic:xilinx_14_pin_jtag 5 #=9
+AP IOD_Schematic:xilinx_14_pin_jtag 5 PINTYPE=ANALOG
+AP IOD_Schematic:xilinx_14_pin_jtag 6 #=11
+AP IOD_Schematic:xilinx_14_pin_jtag 6 PINTYPE=ANALOG
+AP IOD_Schematic:xilinx_14_pin_jtag 7 #=13
+AP IOD_Schematic:xilinx_14_pin_jtag 7 PINTYPE=ANALOG
+AP IOD_Schematic:xilinx_14_pin_jtag 8 NC
+AP IOD_Schematic:xilinx_14_pin_jtag 8 #=12
+AP IOD_Schematic:xilinx_14_pin_jtag 8 PINTYPE=ANALOG
+AP IOD_Schematic:xilinx_14_pin_jtag 9 NC
+AP IOD_Schematic:xilinx_14_pin_jtag 9 #=14
+AP IOD_Schematic:xilinx_14_pin_jtag 9 PINTYPE=ANALOG
+AP IOD_Schematic:xilinx_14_pin_jtag 10 #=6
+AP IOD_Schematic:xilinx_14_pin_jtag 10 PINTYPE=OUT
+AP IOD_Schematic:xilinx_14_pin_jtag 11 #=10
+AP IOD_Schematic:xilinx_14_pin_jtag 11 PINTYPE=OUT
+AP IOD_Schematic:xilinx_14_pin_jtag 12 #=8
+AP IOD_Schematic:xilinx_14_pin_jtag 12 PINTYPE=IN
+AP IOD_Schematic:xilinx_14_pin_jtag 13 #=4
+AP IOD_Schematic:xilinx_14_pin_jtag 13 PINTYPE=OUT
+AP IOD_Schematic:xilinx_14_pin_jtag 14 #=2
+AP IOD_Schematic:xilinx_14_pin_jtag 14 PINTYPE=ANALOG
 AN PADD[27:31] VLBUSISONSHEET=1
 AN SYS_CONFIG[0:7] VLBUSISONSHEET=1
 AN PDATA[0:7] VLBUSISONSHEET=1
@@ -2467,37 +2467,6 @@ M IOD_Schematic:res_180_0402_5_ $1I119
 I $1I119 IOD_Schematic:res_180_0402_5_ GND $1N60 SCHLOC=24P8`GEOMETRY.HEIGHT=0.4MM`SUP=AVNET`P/D_NUM=0402WGF0181T1E`MANUFACTURER=ROYAL OHM`REFDES=R197`PKG_TYPE=RESC1005X40N`BOARD_OPTION=BASE`VALUE=180R`
 API $1I119 IOD_Schematic:res_180_0402_5_ 1 PINLOC=24P8
 API $1I119 IOD_Schematic:res_180_0402_5_ 2 PINLOC=24P8
-M IOD_Schematic:xilinx_14_pin_jtag $1I292
-I $1I292 IOD_Schematic:xilinx_14_pin_jtag GND GND GND GND GND GND GND ? ? CPLD_TCK CPLD_TDI $1N20 CPLD_TMS 3V3 SCHLOC=24P4`DESCRIP=J-TAG CONNECTOR`MANUFACTURER=MOLEX`REFDES=J22`P/D_NUM=87832-1420`PKG_TYPE=CON7X2_87832_P2_H11_SMD`PARTNUMBERID=7931`DATASOURCEFILE=NONE`DATAURL=WWW.MOLEX.COM`WIDTH=0`LENGTH=0`GEOMETRY.HEIGHT=7.6MM`MANPARTPACKAGE=JTAG : 14-PIN`OPERATINGVOLTAGE=150V`RATING=2A`MANPARTDESCRIPTION=STAIGHT SMD, DUAL ROW HEADER - ROHS`PARTTYPE=CONNECTORS`PRODUCTCODE=PI-0103-7931`
-|R 9:09_8-23-07
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 1 PINLOC=24P3
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 1 #=2
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 2 PINLOC=24P3
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 2 #=4
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 3 PINLOC=24P3
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 3 #=6
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 4 PINLOC=24P3
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 4 #=8
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 5 PINLOC=24P3
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 5 #=10
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 6 PINLOC=24N3
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 6 #=14
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 7 PINLOC=24N3
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 7 #=12
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 8 PINLOC=24P4
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 8 #=1
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 9 PINLOC=24P4
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 9 #=3
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 10 PINLOC=24P4
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 10 #=9
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 11 PINLOC=24P4
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 11 #=5
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 12 PINLOC=24N4
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 12 #=7
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 13 PINLOC=24P4
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 13 #=11
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 14 PINLOC=24N4
-API $1I292 IOD_Schematic:xilinx_14_pin_jtag 14 #=13
 M IOD_Schematic:diode_led_0805_grn $1I132
 I $1I132 IOD_Schematic:diode_led_0805_grn 5V $1N60 SCHLOC=24Q8`GEOMETRY.HEIGHT=1.2MM`MANUFACTURER=FAIRCHILD`REFDES=CR1`PKG_TYPE=LEDC2012X120N`NEED_TO_MIRROR/ROTATE_PIN_DISPLAY_PROPERTIES`VALUE=GRN`SHAPE`
 |R 9:12_9-26-07
@@ -3053,4 +3022,35 @@ P IOD_Schematic:out SX95T_D_IN_0
 I SX95T_D_IN_0 IOD_Schematic:out SX95T_D_IN_0 
 |R 7:39_8-30-07
 API SX95T_D_IN_0 IOD_Schematic:out 1 XREF=1-1M,1-5G,1-7C,16-4B,25-7B,25-10B
+M IOD_Schematic:xilinx_14_pin_jtag $1I292
+I $1I292 IOD_Schematic:xilinx_14_pin_jtag GND GND GND GND GND GND GND ? ? CPLD_TCK CPLD_TDI $1N20 CPLD_TMS 3V3 SCHLOC=24P4`DESCRIP=J-TAG CONNECTOR`MANUFACTURER=MOLEX`REFDES=J22`P/D_NUM=87832-1420`PKG_TYPE=CON7X2_87832_P2_H11_SMD`PARTNUMBERID=7931`DATASOURCEFILE=NONE`DATAURL=WWW.MOLEX.COM`WIDTH=0`LENGTH=0`GEOMETRY.HEIGHT=7.6MM`MANPARTPACKAGE=JTAG : 14-PIN`OPERATINGVOLTAGE=150V`RATING=2A`MANPARTDESCRIPTION=STAIGHT SMD, DUAL ROW HEADER - ROHS`PARTTYPE=CONNECTORS`PRODUCTCODE=PI-0103-7931`
+|R 8:29_5-9-08
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 1 PINLOC=24P3
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 1 #=1
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 2 PINLOC=24P3
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 2 #=3
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 3 PINLOC=24P3
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 3 #=5
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 4 PINLOC=24P3
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 4 #=7
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 5 PINLOC=24P3
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 5 #=9
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 6 PINLOC=24N3
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 6 #=11
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 7 PINLOC=24N3
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 7 #=13
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 8 PINLOC=24P4
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 8 #=12
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 9 PINLOC=24P4
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 9 #=14
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 10 PINLOC=24P4
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 10 #=6
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 11 PINLOC=24P4
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 11 #=10
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 12 PINLOC=24N4
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 12 #=8
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 13 PINLOC=24P4
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 13 #=4
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 14 PINLOC=24N4
+API $1I292 IOD_Schematic:xilinx_14_pin_jtag 14 #=2
 EW
