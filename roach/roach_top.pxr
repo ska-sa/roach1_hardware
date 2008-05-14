@@ -100,6 +100,9 @@ Net_Cross_Reference
 ("$1I863\UART1_TX"    "$1I863\UART1_TX")
 ("$1I863\UART1_RX"    "$1I863\UART1_RX")
 ("$1I863\UART1_CTS#"    "$1I863\UART1_CTS#")
+("$1I863\SCPDO"    "$1I863\SCPDO")
+("$1I863\SCPDI"    "$1I863\SCPDI")
+("$1I863\SCPCLK"    "$1I863\SCPCLK")
 ("$1I863\PWBE_3#"    "$1I863\PWBE_3#")
 ("$1I863\PWBE_2#"    "$1I863\PWBE_2#")
 ("$1I863\PWBE_1#"    "$1I863\PWBE_1#")
@@ -128,8 +131,6 @@ Net_Cross_Reference
 ("$1I863\N17928909"    "$1I863\N17928909")
 ("$1I863\N17928905"    "$1I863\N17928905")
 ("$1I863\N17928863"    "$1I863\N17928863")
-("$1I863\I2C0_SDATA"    "$1I863\I2C0_SDATA")
-("$1I863\I2C0_66_DATA"    "$1I863\I2C0_66_DATA")
 ("$1I863\CPU_UART0_DSR#"    "$1I863\CPU_UART0_DSR#")
 ("$1I863\CPU_UART0_DCD#"    "$1I863\CPU_UART0_DCD#")
 ("$1I863\$PIN0"    "$1I863\$PIN0")
@@ -1616,12 +1617,6 @@ Net_Cross_Reference
 ("SELECTMAP_CS"    "SELECTMAP_CS")
 ("SELECTMAP_CS"    "$1I747\SELECTMAP_CS")
 ("SELECTMAP_CS"    "$1I863\SELECTMAP_CS")
-("SCPDO"    "SCPDO")
-("SCPDO"    "$1I863\SCPDO")
-("SCPDI"    "SCPDI")
-("SCPDI"    "$1I863\SCPDI")
-("SCPCLK"    "SCPCLK")
-("SCPCLK"    "$1I863\SCPCLK")
 ("RESET_POR#"    "RESET_POR#")
 ("RESET_POR#"    "$1I1002\RESET_POR#")
 ("RESET_POR#"    "$1I747\RESET_POR#")
@@ -1806,7 +1801,6 @@ Net_Cross_Reference
 ("MGT_AVCCPLL_EN"    "$1I967\MGT_AVCCPLL_EN")
 ("M66EN"    "M66EN")
 ("M66EN"    "$1I747\M66EN")
-("M66EN"    "$1I863\M66EN")
 ("LOAD_RES_OFF"    "LOAD_RES_OFF")
 ("LOAD_RES_OFF"    "$1I671\LOAD_RES_OFF")
 ("LOAD_RES_OFF"    "$1I967\LOAD_RES_OFF")
@@ -1817,7 +1811,7 @@ Net_Cross_Reference
 ("I2C0_SCLK"    "$1I863\I2C0_SCLK")
 ("I2C0_SCLK"    "$1I967\I2C0_SCLK")
 ("I2C0_33_DATA"    "I2C0_33_DATA")
-("I2C0_33_DATA"    "$1I863\I2C0_33_DATA")
+("I2C0_33_DATA"    "$1I863\I2C0_SDATA")
 ("I2C0_33_DATA"    "$1I967\I2C0_33_DATA")
 ("I1V8"    "I1V8")
 ("I1V8"    "$1I671\I1V8")
@@ -2139,6 +2133,9 @@ Internal_Net_Cross_Reference
 ("$1I863\UART1_TX"    "$1I863\UART1_TX")
 ("$1I863\UART1_RX"    "$1I863\UART1_RX")
 ("$1I863\UART1_CTS#"    "$1I863\UART1_CTS#")
+("$1I863\SCPDO"    "$1I863\SCPDO")
+("$1I863\SCPDI"    "$1I863\SCPDI")
+("$1I863\SCPCLK"    "$1I863\SCPCLK")
 ("$1I863\PWBE_3#"    "$1I863\PWBE_3#")
 ("$1I863\PWBE_2#"    "$1I863\PWBE_2#")
 ("$1I863\PWBE_1#"    "$1I863\PWBE_1#")
@@ -2167,8 +2164,6 @@ Internal_Net_Cross_Reference
 ("$1I863\N17928909"    "$1I863\N17928909")
 ("$1I863\N17928905"    "$1I863\N17928905")
 ("$1I863\N17928863"    "$1I863\N17928863")
-("$1I863\I2C0_SDATA"    "$1I863\I2C0_SDATA")
-("$1I863\I2C0_66_DATA"    "$1I863\I2C0_66_DATA")
 ("$1I863\CPU_UART0_DSR#"    "$1I863\CPU_UART0_DSR#")
 ("$1I863\CPU_UART0_DCD#"    "$1I863\CPU_UART0_DCD#")
 ("$1I863\$PIN0"    "$1I863\$PIN0")
@@ -3655,12 +3650,6 @@ Internal_Net_Cross_Reference
 ("SELECTMAP_CS"    "SELECTMAP_CS")
 ("SELECTMAP_CS"    "$1I747\SELECTMAP_CS")
 ("SELECTMAP_CS"    "$1I863\SELECTMAP_CS")
-("SCPDO"    "SCPDO")
-("SCPDO"    "$1I863\SCPDO")
-("SCPDI"    "SCPDI")
-("SCPDI"    "$1I863\SCPDI")
-("SCPCLK"    "SCPCLK")
-("SCPCLK"    "$1I863\SCPCLK")
 ("RESET_POR#"    "RESET_POR#")
 ("RESET_POR#"    "$1I1002\RESET_POR#")
 ("RESET_POR#"    "$1I747\RESET_POR#")
@@ -3845,7 +3834,6 @@ Internal_Net_Cross_Reference
 ("MGT_AVCCPLL_EN"    "$1I967\MGT_AVCCPLL_EN")
 ("M66EN"    "M66EN")
 ("M66EN"    "$1I747\M66EN")
-("M66EN"    "$1I863\M66EN")
 ("LOAD_RES_OFF"    "LOAD_RES_OFF")
 ("LOAD_RES_OFF"    "$1I671\LOAD_RES_OFF")
 ("LOAD_RES_OFF"    "$1I967\LOAD_RES_OFF")
@@ -3856,7 +3844,7 @@ Internal_Net_Cross_Reference
 ("I2C0_SCLK"    "$1I863\I2C0_SCLK")
 ("I2C0_SCLK"    "$1I967\I2C0_SCLK")
 ("I2C0_33_DATA"    "I2C0_33_DATA")
-("I2C0_33_DATA"    "$1I863\I2C0_33_DATA")
+("I2C0_33_DATA"    "$1I863\I2C0_SDATA")
 ("I2C0_33_DATA"    "$1I967\I2C0_33_DATA")
 ("I1V8"    "I1V8")
 ("I1V8"    "$1I671\I1V8")
@@ -5322,38 +5310,38 @@ Pin_Cross_Reference
 )
 ("J22"
 	( 1    "$1I747\$1I292"
-		(2    "GND")
-		(4    "GND")
-		(6    "GND")
-		(8    "GND")
-		(10    "GND")
-		(14    "GND")
-		(12    "GND")
-		(1    "")
-		(3    "")
-		(9    "$1I747\CPLD_TCK")
-		(5    "$1I747\CPLD_TDI")
-		(7    "$1I747\$1N20")
-		(11    "$1I747\CPLD_TMS")
-		(13    "3V3")
+		(1    "GND")
+		(3    "GND")
+		(5    "GND")
+		(7    "GND")
+		(9    "GND")
+		(11    "GND")
+		(13    "GND")
+		(12    "")
+		(14    "")
+		(6    "$1I747\CPLD_TCK")
+		(10    "$1I747\CPLD_TDI")
+		(8    "$1I747\$1N20")
+		(4    "$1I747\CPLD_TMS")
+		(2    "3V3")
 	)
 )
 ("J24"
 	( 1    "$1I790\$1I8"
-		(2    "GND")
-		(4    "GND")
-		(6    "GND")
-		(8    "GND")
-		(10    "GND")
-		(14    "GND")
-		(12    "GND")
-		(1    "")
-		(3    "")
-		(9    "SX95T_TCK")
-		(5    "SX95T_TDI")
-		(7    "SX95T_TDO")
-		(11    "SX95T_TMS")
-		(13    "3V3")
+		(1    "GND")
+		(3    "GND")
+		(5    "GND")
+		(7    "GND")
+		(9    "GND")
+		(11    "GND")
+		(13    "GND")
+		(12    "")
+		(14    "")
+		(6    "SX95T_TCK")
+		(10    "SX95T_TDI")
+		(8    "SX95T_TDO")
+		(4    "SX95T_TMS")
+		(2    "3V3")
 	)
 )
 ("R55"
@@ -10345,17 +10333,17 @@ Pin_Cross_Reference
 )
 ("P4"
 	( 1    "$1I863\$1I360"
-		(1    "SCPCLK")
-		(3    "SCPDI")
+		(1    "$1I863\SCPCLK")
+		(3    "$1I863\SCPDI")
 		(2    "3V3")
 		(4    "GND")
-		(5    "SCPDO")
+		(5    "$1I863\SCPDO")
 	)
 )
 ("P11"
 	( 1    "$1I863\$1I313"
 		(1    "I2C0_SCLK")
-		(3    "$1I863\I2C0_SDATA")
+		(3    "I2C0_33_DATA")
 		(2    "3V3")
 		(4    "GND")
 		(5    "")
@@ -11241,50 +11229,50 @@ Pin_Cross_Reference
 )
 ("CR1"
 	( 1    "$1I747\$1I132"
-		(1    "5V")
-		(2    "$1I747\$1N60")
+		(2    "5V")
+		(1    "$1I747\$1N60")
 	)
 )
 ("CR2"
 	( 1    "$1I747\$1I135"
-		(1    "$1I747\$1N39")
-		(2    "$1I747\$1N42")
+		(2    "$1I747\$1N39")
+		(1    "$1I747\$1N42")
 	)
 )
 ("CR3"
 	( 1    "$1I747\$1I138"
-		(1    "3V3")
-		(2    "$1I747\$1N34")
+		(2    "3V3")
+		(1    "$1I747\$1N34")
 	)
 )
 ("CR4"
 	( 1    "$1I747\$1I146"
-		(1    "3V3")
-		(2    "$1I747\$1N58")
+		(2    "3V3")
+		(1    "$1I747\$1N58")
 	)
 )
 ("CR7"
 	( 1    "$1I144\$1I252"
-		(1    "$1I144\$1N276")
-		(2    "$1I144\$1N264")
+		(2    "$1I144\$1N276")
+		(1    "$1I144\$1N264")
 	)
 )
 ("CR8"
 	( 1    "$1I144\$1I253"
-		(1    "$1I144\$1N277")
-		(2    "$1I144\$1N266")
+		(2    "$1I144\$1N277")
+		(1    "$1I144\$1N266")
 	)
 )
 ("CR9"
 	( 1    "$1I144\$1I254"
-		(1    "$1I144\$1N279")
-		(2    "$1I144\$1N268")
+		(2    "$1I144\$1N279")
+		(1    "$1I144\$1N268")
 	)
 )
 ("CR10"
 	( 1    "$1I144\$1I255"
-		(1    "$1I144\$1N281")
-		(2    "$1I144\$1N270")
+		(2    "$1I144\$1N281")
+		(1    "$1I144\$1N270")
 	)
 )
 ("CR5"
@@ -11718,14 +11706,6 @@ Pin_Cross_Reference
 		(9    "$1I144\$1N163")
 	)
 )
-("U3"
-	( 1    "$1I1074"
-	)
-)
-("U49"
-	( 1    "$1I1075"
-	)
-)
 ("H1"
 	( 1    "$1I308"
 		(1    "GND")
@@ -11771,6 +11751,14 @@ Pin_Cross_Reference
 		(1    "GND")
 	)
 )
+("H10"
+	( 1    "$1I1074"
+	)
+)
+("H11"
+	( 1    "$1I1075"
+	)
+)
 ("U35"
 	( 1    "$1I747\$1I112"
 		(1    "PWR_GOOD")
@@ -11797,16 +11785,6 @@ Pin_Cross_Reference
 		(6    "RESET_CPLD#")
 		(5    "3V3")
 		(4    "$1I863\CPU_UART0_DCD#")
-		(2    "GND")
-	)
-)
-("U47"
-	( 1    "$1I863\$1I328"
-		(3    "I2C0_33_DATA")
-		(1    "$1I863\I2C0_66_DATA")
-		(6    "M66EN")
-		(5    "3V3")
-		(4    "$1I863\I2C0_SDATA")
 		(2    "GND")
 	)
 )
@@ -12453,16 +12431,16 @@ Pin_Cross_Reference
 	)
 	( 9    "$1I863\$1I354"
 		(AB32    "I2C0_SCLK")
-		(AB33    "$1I863\I2C0_SDATA")
+		(AB33    "I2C0_33_DATA")
 		(B17    "$1I863\$1N798")
 		(D8    "$1I863\$1N90")
 		(A18    "$1I863\$1N799")
 		(A17    "$1I863\$1N129")
 		(D17    "$1I863\$1N800")
 		(A16    "$1I863\$1N801")
-		(AC34    "SCPCLK")
-		(AC32    "SCPDI")
-		(AB31    "SCPDO")
+		(AC34    "$1I863\SCPCLK")
+		(AC32    "$1I863\SCPDI")
+		(AB31    "$1I863\SCPDO")
 		(A29    "$1I863\PERPAR0_UART1_CTS#")
 		(B29    "$1I863\PERPAR1_UART1_RTS#")
 		(C27    "$1I863\UART1_RX")
@@ -12614,7 +12592,7 @@ Pin_Cross_Reference
 ("U41"
 	( 1    "$1I863\$1I315"
 		(4    "I2C0_SCLK")
-		(6    "$1I863\I2C0_SDATA")
+		(6    "I2C0_33_DATA")
 		(1    "STTM_AS")
 		(3    "3V3")
 		(5    "STTM_ALERT")
@@ -12878,44 +12856,44 @@ Pin_Cross_Reference
 )
 ("D2"
 	( 1    "$1I2\$1I900"
-		(1    "$1I2\$1N799")
-		(2    "$1I2\FAULT0")
+		(1    "$1I2\FAULT0")
+		(2    "$1I2\$1N799")
 	)
 )
 ("D3"
 	( 1    "$1I2\$1I901"
-		(1    "$1I2\$1N853")
-		(2    "$1I2\FAULT1")
+		(1    "$1I2\FAULT1")
+		(2    "$1I2\$1N853")
 	)
 )
 ("D4"
 	( 1    "$1I3\$1I625"
-		(1    "$1I3\$1N594")
-		(2    "$1I3\FAULT2")
+		(1    "$1I3\FAULT2")
+		(2    "$1I3\$1N594")
 	)
 )
 ("D5"
 	( 1    "$1I3\$1I702"
-		(1    "$1I3\$1N675")
-		(2    "$1I3\FAULT3")
+		(1    "$1I3\FAULT3")
+		(2    "$1I3\$1N675")
 	)
 )
 ("D6"
 	( 1    "$1I810\$1I258"
-		(1    "$1I810\$1N307")
-		(2    "$1I810\$1N308")
+		(1    "$1I810\$1N308")
+		(2    "$1I810\$1N307")
 	)
 )
 ("D7"
 	( 1    "$1I810\$1I329"
-		(1    "$1I810\$1N336")
-		(2    "$1I810\$1N337")
+		(1    "$1I810\$1N337")
+		(2    "$1I810\$1N336")
 	)
 )
 ("D8"
 	( 1    "$1I810\$1I342"
-		(1    "$1I810\$1N349")
-		(2    "$1I810\$1N350")
+		(1    "$1I810\$1N350")
+		(2    "$1I810\$1N349")
 	)
 )
 ("U6"
@@ -13016,18 +12994,6 @@ Pin_Cross_Reference
 		(7    "EE2_BOOT_WP")
 	)
 )
-("U39"
-	( 1    "$1I863\$1I335"
-		(1    "GND")
-		(2    "3V3")
-		(3    "GND")
-		(4    "GND")
-		(6    "I2C0_SCLK")
-		(5    "$1I863\I2C0_66_DATA")
-		(8    "3V3")
-		(7    "EE2_BOOT_WP")
-	)
-)
 ("U40"
 	( 1    "$1I863\$1I366"
 		(1    "GND")
@@ -13035,7 +13001,7 @@ Pin_Cross_Reference
 		(3    "3V3")
 		(4    "GND")
 		(6    "I2C0_SCLK")
-		(5    "$1I863\I2C0_SDATA")
+		(5    "I2C0_33_DATA")
 		(8    "3V3")
 		(7    "EE1_WP")
 	)
@@ -14858,6 +14824,12 @@ Pin_Cross_Reference
 		(2    "$1I1038\$1N1874")
 	)
 )
+("R89"
+	( 1    "$1I790\$1I142"
+		(1    "SX95T_DONE_0")
+		(2    "3V3")
+	)
+)
 ("R101"
 	( 1    "$1I1032\$1I2054"
 		(1    "GND")
@@ -15890,12 +15862,6 @@ Pin_Cross_Reference
 		(8    "VTT_QDR_BY0_1")
 	)
 )
-("RO9"
-	( 1    "$1I863\$1I356"
-		(1    "I2C0_33_DATA")
-		(2    "$1I863\I2C0_SDATA")
-	)
-)
 ("R23"
 	( 1    "$1I1002\$1I175"
 		(1    "$1I1002\$1N49")
@@ -16085,7 +16051,7 @@ Pin_Cross_Reference
 ("R73"
 	( 1    "$1I863\$1I341"
 		(1    "3V3")
-		(2    "$1I863\I2C0_SDATA")
+		(2    "I2C0_33_DATA")
 	)
 )
 ("R74"
@@ -16097,13 +16063,13 @@ Pin_Cross_Reference
 ("R75"
 	( 1    "$1I863\$1I322"
 		(1    "3V3")
-		(2    "SCPCLK")
+		(2    "$1I863\SCPCLK")
 	)
 )
 ("R76"
 	( 1    "$1I863\$1I308"
 		(1    "3V3")
-		(2    "SCPDI")
+		(2    "$1I863\SCPDI")
 	)
 )
 ("R77"
@@ -16250,12 +16216,6 @@ Pin_Cross_Reference
 ("R88"
 	( 1    "$1I863\$1I378"
 		(1    "I2C0_33_DATA")
-		(2    "3V3")
-	)
-)
-("R89"
-	( 1    "$1I863\$1I350"
-		(1    "$1I863\I2C0_66_DATA")
 		(2    "3V3")
 	)
 )
