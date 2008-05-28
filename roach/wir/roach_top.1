@@ -1,4 +1,7 @@
 | Wirelist created using version 5.4.
+| Sch_Warning - Component $1I1217 (FU3), Symbol=IOD_Schematic:fiducial at (2490, 330), is not connected.
+| Sch_Warning - Component $1I1216 (FU2), Symbol=IOD_Schematic:fiducial at (2490, 450), is not connected.
+| Sch_Warning - Component $1I1215 (FU1), Symbol=IOD_Schematic:fiducial at (2490, 570), is not connected.
 V 5.4
 K 29591324190 roach_top
 DW roach_top
@@ -8,6 +11,12 @@ SA SCOUT_META_FORMAT_PREFIX_0=XREF
 SA SCOUT_META_FORMAT_PREFIX_1=SCHLOC 
 SA SCOUT_META_FORMAT_PREFIX_2=PINLOC 
 SA SCOUT_META_PAGE_ANNOTATION=SHEET=1 OF 25 
+|Q IOD_Schematic:fiducial 1
+AS IOD_Schematic:fiducial REFDES=FU?
+AS IOD_Schematic:fiducial PKG_TYPE=FIDUCIAL
+AS IOD_Schematic:fiducial PINORDER=1
+AS IOD_Schematic:fiducial INOV_VER_REC=14:13_5-28-08
+AP IOD_Schematic:fiducial 1 #=1
 |Q IOD_Schematic:hole150x288 1
 AS IOD_Schematic:hole150x288 DEVICE=HOLE150X288
 AS IOD_Schematic:hole150x288 PARTS=1
@@ -281,9 +290,6 @@ AP IOD_Schematic:c 1 PINTYPE=BI
 AP IOD_Schematic:c 1 #=1
 AP IOD_Schematic:c 2 PINTYPE=BI
 AP IOD_Schematic:c 2 #=2
-|Q IOD_Schematic:meerkatlogo 1
-AS IOD_Schematic:meerkatlogo PKG_TYPE=MEERKATLOGO
-AS IOD_Schematic:meerkatlogo INOV_VER_REC=11:06_2-5-08
 |Q IOD_Schematic:nraologo 1
 AS IOD_Schematic:nraologo PKG_TYPE=LOGO
 AS IOD_Schematic:nraologo INOV_VER_REC=16:01_1-29-08
@@ -369,6 +375,9 @@ AS IOD_Schematic:casperlogo INOV_VER_REC=6:59_2-14-08
 AS IOD_Schematic:heatsinkhole REFDES=U?
 AS IOD_Schematic:heatsinkhole PKG_TYPE=HEATSINKHOLE
 AS IOD_Schematic:heatsinkhole INOV_VER_REC=15:52_1-22-08
+|Q IOD_Schematic:meerkatlogo 1
+AS IOD_Schematic:meerkatlogo PKG_TYPE=MEERKATLOGO
+AS IOD_Schematic:meerkatlogo INOV_VER_REC=11:06_2-5-08
 AN PADD[2:31] VLBUSISONSHEET=1
 AN PDATA[0:7] VLBUSISONSHEET=1
 AN PDATA[0:31] VLBUSISONSHEET=1
@@ -594,6 +603,18 @@ G 5V
 G 1V8
 G 2V5
 G GND
+M IOD_Schematic:fiducial $1I1217
+I $1I1217 IOD_Schematic:fiducial ? REFDES=FU3`
+|R 14:13_5-28-08
+API $1I1217 IOD_Schematic:fiducial 1 #=1
+M IOD_Schematic:fiducial $1I1216
+I $1I1216 IOD_Schematic:fiducial ? REFDES=FU2`
+|R 14:13_5-28-08
+API $1I1216 IOD_Schematic:fiducial 1 #=1
+M IOD_Schematic:fiducial $1I1215
+I $1I1215 IOD_Schematic:fiducial ? REFDES=FU1`
+|R 14:13_5-28-08
+API $1I1215 IOD_Schematic:fiducial 1 #=1
 M IOD_Schematic:hole150x288 $1I314
 I $1I314 IOD_Schematic:hole150x288 GND SCHLOC=1Q4`GEOMETRY.HEIGHT=0`P/D_NUM=NA`MANUFACTURER=NA`REFDES=H7`
 |R 20:28_9-18-07
@@ -836,9 +857,6 @@ API $1I1115 IOD_Schematic:c 1 PINLOC=1B2
 API $1I1115 IOD_Schematic:c 1 #=1
 API $1I1115 IOD_Schematic:c 2 PINLOC=1B1
 API $1I1115 IOD_Schematic:c 2 #=2
-M IOD_Schematic:meerkatlogo $1I1077
-I $1I1077 IOD_Schematic:meerkatlogo SCHLOC=1P2`GEOMETRY.HEIGHT=0`REFDES=LOGO2`
-|R 11:06_2-5-08
 M IOD_Schematic:nraologo $1I1076
 I $1I1076 IOD_Schematic:nraologo SCHLOC=1P1`GEOMETRY.HEIGHT=0`REFDES=LOGO1`
 |R 16:01_1-29-08
@@ -872,4 +890,7 @@ I $1I1074 IOD_Schematic:heatsinkhole DEVICE=HSHOLE_3_5D3_2_NP`SCHLOC=1Q5`GEOMETR
 M IOD_Schematic:heatsinkhole $1I1075
 I $1I1075 IOD_Schematic:heatsinkhole DEVICE=HSHOLE_3_5D3_2_NP`SCHLOC=1Q4`GEOMETRY.HEIGHT=0.01`REFDES=H11`
 |R 15:52_1-22-08
+M IOD_Schematic:meerkatlogo $1I1077
+I $1I1077 IOD_Schematic:meerkatlogo SCHLOC=1P2`GEOMETRY.HEIGHT=0`REFDES=LOGO2`
+|R 11:06_2-5-08
 EW
