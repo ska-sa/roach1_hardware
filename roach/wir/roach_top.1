@@ -40,13 +40,6 @@ AP IOD_Schematic:hole150x288 1 PINTYPE=OUT
 AS IOD_Schematic:roach_5v_power DEVICE=ROACH_5V_POWER
 AS IOD_Schematic:roach_5v_power SHEET
 AS IOD_Schematic:roach_5v_power INOV_VER_REC=8:11_10-2-07
-|Q IOD_Schematic:roach_v5_clk 1
-AS IOD_Schematic:roach_v5_clk PINORDER= SX95T_DXP SX95T_DXN
-AS IOD_Schematic:roach_v5_clk DEVICE=ROACH_V5_CLK
-AS IOD_Schematic:roach_v5_clk SHEET
-AS IOD_Schematic:roach_v5_clk INOV_VER_REC=8:12_10-2-07
-AP IOD_Schematic:roach_v5_clk 1 PINTYPE=OUT
-AP IOD_Schematic:roach_v5_clk 2 PINTYPE=OUT
 |Q IOD_Schematic:roach_psu 1
 AS IOD_Schematic:roach_psu DEVICE=ROACH_PSU
 AS IOD_Schematic:roach_psu SHEET
@@ -73,10 +66,6 @@ AP IOD_Schematic:roach_psu 18 PINTYPE=OUT
 AP IOD_Schematic:roach_psu 19 PINTYPE=IN
 AP IOD_Schematic:roach_psu 20 PINTYPE=IN
 AP IOD_Schematic:roach_psu 21 PINTYPE=OUT
-|Q IOD_Schematic:roach_gpio_misc 1
-AS IOD_Schematic:roach_gpio_misc DEVICE=ROACH_GPIO_MISC
-AS IOD_Schematic:roach_gpio_misc SHEET
-AS IOD_Schematic:roach_gpio_misc INOV_VER_REC=8:13_10-2-07
 |Q IOD_Schematic:roach_ddr2_dimm 1
 AS IOD_Schematic:roach_ddr2_dimm DEVICE=ROACH_DDR2_DIMM
 AS IOD_Schematic:roach_ddr2_dimm SHEET
@@ -378,6 +367,17 @@ AS IOD_Schematic:heatsinkhole INOV_VER_REC=15:52_1-22-08
 |Q IOD_Schematic:meerkatlogo 1
 AS IOD_Schematic:meerkatlogo PKG_TYPE=MEERKATLOGO
 AS IOD_Schematic:meerkatlogo INOV_VER_REC=11:06_2-5-08
+|Q IOD_Schematic:roach_v5_clk 1
+AS IOD_Schematic:roach_v5_clk PINORDER= SX95T_DXP SX95T_DXN
+AS IOD_Schematic:roach_v5_clk DEVICE=ROACH_V5_CLK
+AS IOD_Schematic:roach_v5_clk SHEET
+AS IOD_Schematic:roach_v5_clk INOV_VER_REC=8:12_10-2-07
+AP IOD_Schematic:roach_v5_clk 1 PINTYPE=OUT
+AP IOD_Schematic:roach_v5_clk 2 PINTYPE=OUT
+|Q IOD_Schematic:roach_gpio_misc 1
+AS IOD_Schematic:roach_gpio_misc DEVICE=ROACH_GPIO_MISC
+AS IOD_Schematic:roach_gpio_misc SHEET
+AS IOD_Schematic:roach_gpio_misc INOV_VER_REC=8:13_10-2-07
 AN PADD[2:31] VLBUSISONSHEET=1
 AN PDATA[0:7] VLBUSISONSHEET=1
 AN PDATA[0:31] VLBUSISONSHEET=1
@@ -663,15 +663,9 @@ API $1I315 IOD_Schematic:hole150x288 1 #=1
 W IOD_Schematic:roach_5v_power $1I307
 I $1I307 IOD_Schematic:roach_5v_power SHEET=4`
 |R 8:11_10-2-07
-W IOD_Schematic:roach_v5_clk $1I291
-I $1I291 IOD_Schematic:roach_v5_clk TD0 ATRTN0 SHEET=7`
-|R 8:12_10-2-07
 W IOD_Schematic:roach_psu $1I671
 I $1I671 IOD_Schematic:roach_psu 12V_ATX 1V0_INHIBIT 1V5_INHIBIT 1V8_INHIBIT 2V5_INHIBIT 2V5_TRACK 3V3_ATX 5V_ATX FAN1_CONTROL FAN1_SENSE FAN2_CONTROL FAN2_SENSE FAN3_CONTROL FAN3_SENSE I1V0 I1V5 I1V8 I2V5 LOAD_RES_OFF PS_ON# PWR_OK SHEET=3`
 |R 7:42_10-25-07
-W IOD_Schematic:roach_gpio_misc $1I144
-I $1I144 IOD_Schematic:roach_gpio_misc SHEET=13`
-|R 8:13_10-2-07
 W IOD_Schematic:roach_ddr2_dimm $1I6
 I $1I6 IOD_Schematic:roach_ddr2_dimm SHEET=11`
 |R 8:13_10-2-07
@@ -893,4 +887,10 @@ I $1I1075 IOD_Schematic:heatsinkhole DEVICE=HSHOLE_3_5D3_2_NP`SCHLOC=1Q4`GEOMETR
 M IOD_Schematic:meerkatlogo $1I1077
 I $1I1077 IOD_Schematic:meerkatlogo SCHLOC=1P2`GEOMETRY.HEIGHT=0`REFDES=LOGO2`
 |R 11:06_2-5-08
+W IOD_Schematic:roach_v5_clk $1I291
+I $1I291 IOD_Schematic:roach_v5_clk TD0 ATRTN0 SHEET=7`
+|R 8:12_10-2-07
+W IOD_Schematic:roach_gpio_misc $1I144
+I $1I144 IOD_Schematic:roach_gpio_misc SHEET=13`
+|R 8:13_10-2-07
 EW
