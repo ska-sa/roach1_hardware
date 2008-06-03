@@ -3,30 +3,12 @@ V 5.4
 K 373810501000 roach_ppc_tst_clk_io
 DW roach_ppc_tst_clk_io
 Q Case
-SA SCOUT_META_PAGE_ANNOTATION=SHEET=23 OF 25 
-SA SCOUT_META_FORMAT_PREFIX_2=PINLOC 
-SA SCOUT_META_FORMAT_PREFIX_1=SCHLOC 
-SA SCOUT_META_FORMAT_PREFIX_0=XREF 
-SA SHEET=23 OF 25 
 SA SOURCE_PATH 
-|Q IOD_Schematic:diode_sig_sot23_150ma_bav70 1
-AS IOD_Schematic:diode_sig_sot23_150ma_bav70 REFDES=D?
-AS IOD_Schematic:diode_sig_sot23_150ma_bav70 DEVICE=DIODE_SIG_SOT23_150MA_BAV70
-AS IOD_Schematic:diode_sig_sot23_150ma_bav70 PARTS=2
-AS IOD_Schematic:diode_sig_sot23_150ma_bav70 PKG_TYPE=SOT95P248X115-3N
-AS IOD_Schematic:diode_sig_sot23_150ma_bav70 LEVEL=STD
-AS IOD_Schematic:diode_sig_sot23_150ma_bav70 ALT_PART=FAI: BAV70NL
-AS IOD_Schematic:diode_sig_sot23_150ma_bav70 SUP=VIS: BAV70-V
-AS IOD_Schematic:diode_sig_sot23_150ma_bav70 ALT_SUP=FAI: BAV70NL
-AS IOD_Schematic:diode_sig_sot23_150ma_bav70 P/D_NUM=VIS: BAV70-V
-AS IOD_Schematic:diode_sig_sot23_150ma_bav70 GRN=LHR
-AS IOD_Schematic:diode_sig_sot23_150ma_bav70 VALUE
-AS IOD_Schematic:diode_sig_sot23_150ma_bav70 PINORDER=A2 C2
-AS IOD_Schematic:diode_sig_sot23_150ma_bav70 INOV_VER_REC=6:49_9-4-07
-AP IOD_Schematic:diode_sig_sot23_150ma_bav70 1 #=1,2
-AP IOD_Schematic:diode_sig_sot23_150ma_bav70 1 PINTYPE=OUT
-AP IOD_Schematic:diode_sig_sot23_150ma_bav70 2 #=3,3
-AP IOD_Schematic:diode_sig_sot23_150ma_bav70 2 PINTYPE=OUT
+SA SHEET=23 OF 25 
+SA SCOUT_META_FORMAT_PREFIX_0=XREF 
+SA SCOUT_META_FORMAT_PREFIX_1=SCHLOC 
+SA SCOUT_META_FORMAT_PREFIX_2=PINLOC 
+SA SCOUT_META_PAGE_ANNOTATION=SHEET=23 OF 25 
 AS IOD_Schematic:out OUT
 AS IOD_Schematic:out PINORDER=OUT
 AP IOD_Schematic:out 1 PINTYPE=OUT
@@ -664,6 +646,24 @@ AP IOD_Schematic:cap_100nf_0402_16v_10__x7r 1 #=1
 AP IOD_Schematic:cap_100nf_0402_16v_10__x7r 1 PINTYPE=OUT
 AP IOD_Schematic:cap_100nf_0402_16v_10__x7r 2 #=2
 AP IOD_Schematic:cap_100nf_0402_16v_10__x7r 2 PINTYPE=OUT
+|Q IOD_Schematic:diode_sig_sot23_150ma_bav70 1
+AS IOD_Schematic:diode_sig_sot23_150ma_bav70 REFDES=D?
+AS IOD_Schematic:diode_sig_sot23_150ma_bav70 DEVICE=DIODE_SIG_SOT23_150MA_BAV70
+AS IOD_Schematic:diode_sig_sot23_150ma_bav70 PARTS=2
+AS IOD_Schematic:diode_sig_sot23_150ma_bav70 PKG_TYPE=SOT95P248X115-3N
+AS IOD_Schematic:diode_sig_sot23_150ma_bav70 LEVEL=STD
+AS IOD_Schematic:diode_sig_sot23_150ma_bav70 ALT_PART=FAI: BAV70NL
+AS IOD_Schematic:diode_sig_sot23_150ma_bav70 SUP=VIS: BAV70-V
+AS IOD_Schematic:diode_sig_sot23_150ma_bav70 ALT_SUP=FAI: BAV70NL
+AS IOD_Schematic:diode_sig_sot23_150ma_bav70 P/D_NUM=VIS: BAV70-V
+AS IOD_Schematic:diode_sig_sot23_150ma_bav70 GRN=LHR
+AS IOD_Schematic:diode_sig_sot23_150ma_bav70 VALUE
+AS IOD_Schematic:diode_sig_sot23_150ma_bav70 PINORDER=A2 C2
+AS IOD_Schematic:diode_sig_sot23_150ma_bav70 INOV_VER_REC=6:49_9-4-07
+AP IOD_Schematic:diode_sig_sot23_150ma_bav70 1 #=1,2
+AP IOD_Schematic:diode_sig_sot23_150ma_bav70 1 PINTYPE=OUT
+AP IOD_Schematic:diode_sig_sot23_150ma_bav70 2 #=3,3
+AP IOD_Schematic:diode_sig_sot23_150ma_bav70 2 PINTYPE=OUT
 |Q IOD_Schematic:ic_clkgen_tssop16_0211p10 1
 AS IOD_Schematic:ic_clkgen_tssop16_0211p10 MANUFACTURER=CYPRESS
 AS IOD_Schematic:ic_clkgen_tssop16_0211p10 REFDES=U?
@@ -759,13 +759,6 @@ AN $1N379 NC
 G VCC_JTAG
 G 3V3
 G GND
-M IOD_Schematic:diode_sig_sot23_150ma_bav70 $1I380
-I $1I380 IOD_Schematic:diode_sig_sot23_150ma_bav70 $1N382 RESET_PB_POR# SCHLOC=23F9`GEOMETRY.HEIGHT=1.15MM`VALUE=BAV70`SLOT=1`REFDES=D1`PKG_TYPE=SOT95P248X115-3N`MANUFACTURER=VISHAY`P/D_NUM=BAV70-V`
-|R 6:49_9-4-07
-API $1I380 IOD_Schematic:diode_sig_sot23_150ma_bav70 1 PINLOC=23F9
-API $1I380 IOD_Schematic:diode_sig_sot23_150ma_bav70 1 #=2
-API $1I380 IOD_Schematic:diode_sig_sot23_150ma_bav70 2 PINLOC=23F9
-API $1I380 IOD_Schematic:diode_sig_sot23_150ma_bav70 2 #=3
 P IOD_Schematic:out PPC_THERMONB
 I PPC_THERMONB IOD_Schematic:out PPC_THERMONB 
 |R 7:39_8-30-07
@@ -1437,4 +1430,11 @@ API $1I363 IOD_Schematic:ic_clkgen_tssop16_0211p10 15 PINLOC=23E4
 API $1I363 IOD_Schematic:ic_clkgen_tssop16_0211p10 15 #=3
 API $1I363 IOD_Schematic:ic_clkgen_tssop16_0211p10 16 PINLOC=23E4
 API $1I363 IOD_Schematic:ic_clkgen_tssop16_0211p10 16 #=11
+M IOD_Schematic:diode_sig_sot23_150ma_bav70 $1I380
+I $1I380 IOD_Schematic:diode_sig_sot23_150ma_bav70 $1N382 RESET_PB_POR# SCHLOC=23F9`GEOMETRY.HEIGHT=1.15MM`VALUE=BAV70`SLOT=1`REFDES=D1`PKG_TYPE=SOT95P248X115-3N`MANUFACTURER=VISHAY`P/D_NUM=BAV70-V`
+|R 6:49_9-4-07
+API $1I380 IOD_Schematic:diode_sig_sot23_150ma_bav70 1 PINLOC=23F9
+API $1I380 IOD_Schematic:diode_sig_sot23_150ma_bav70 1 #=2
+API $1I380 IOD_Schematic:diode_sig_sot23_150ma_bav70 2 PINLOC=23F9
+API $1I380 IOD_Schematic:diode_sig_sot23_150ma_bav70 2 #=3
 EW
