@@ -3,11 +3,11 @@ V 5.4
 K 29591324190 roach_top
 DW roach_top
 Q Case
-SA SCOUT_META_PAGE_ANNOTATION=SHEET=1 OF 25 
-SA SCOUT_META_FORMAT_PREFIX_2=PINLOC 
-SA SCOUT_META_FORMAT_PREFIX_1=SCHLOC 
-SA SCOUT_META_FORMAT_PREFIX_0=XREF 
 SA SHEET=1 OF 25 
+SA SCOUT_META_FORMAT_PREFIX_0=XREF 
+SA SCOUT_META_FORMAT_PREFIX_1=SCHLOC 
+SA SCOUT_META_FORMAT_PREFIX_2=PINLOC 
+SA SCOUT_META_PAGE_ANNOTATION=SHEET=1 OF 25 
 |Q IOD_Schematic:r 1
 AS IOD_Schematic:r PKG_TYPE=RES
 AS IOD_Schematic:r PINOFF
@@ -23,12 +23,6 @@ AP IOD_Schematic:r 1 PINTYPE=BI
 AP IOD_Schematic:r 1 #=1
 AP IOD_Schematic:r 2 PINTYPE=BI
 AP IOD_Schematic:r 2 #=2
-|Q IOD_Schematic:fiducial 1
-AS IOD_Schematic:fiducial REFDES=FU?
-AS IOD_Schematic:fiducial PKG_TYPE=FIDUCIAL
-AS IOD_Schematic:fiducial PINORDER=1
-AS IOD_Schematic:fiducial INOV_VER_REC=14:13_5-28-08
-AP IOD_Schematic:fiducial 1 #=1
 |Q IOD_Schematic:hole150x288 1
 AS IOD_Schematic:hole150x288 DEVICE=HOLE150X288
 AS IOD_Schematic:hole150x288 PARTS=1
@@ -148,9 +142,6 @@ AP IOD_Schematic:c 2 #=2
 |Q IOD_Schematic:nraologo 1
 AS IOD_Schematic:nraologo PKG_TYPE=LOGO
 AS IOD_Schematic:nraologo INOV_VER_REC=16:01_1-29-08
-|Q IOD_Schematic:snpatch 1
-AS IOD_Schematic:snpatch PKG_TYPE=SNPATCH
-AS IOD_Schematic:snpatch INOV_VER_REC=16:00_2-12-08
 |Q IOD_Schematic:roach_config 1
 AS IOD_Schematic:roach_config SHEET
 AS IOD_Schematic:roach_config DEVICE=ROACH_CONFIG
@@ -190,12 +181,6 @@ AP IOD_Schematic:roach_transceivers_psu 3 PINTYPE=OUT
 AP IOD_Schematic:roach_transceivers_psu 4 PINTYPE=IN
 AP IOD_Schematic:roach_transceivers_psu 5 PINTYPE=IN
 AP IOD_Schematic:roach_transceivers_psu 6 PINTYPE=IN
-|Q IOD_Schematic:cockroach 1
-AS IOD_Schematic:cockroach PKG_TYPE=CUCARACA
-AS IOD_Schematic:cockroach INOV_VER_REC=21:18_2-20-08
-|Q IOD_Schematic:casperlogo 1
-AS IOD_Schematic:casperlogo PKG_TYPE=CASPERLOGO
-AS IOD_Schematic:casperlogo INOV_VER_REC=6:59_2-14-08
 |Q IOD_Schematic:heatsinkhole 1
 AS IOD_Schematic:heatsinkhole REFDES=U?
 AS IOD_Schematic:heatsinkhole PKG_TYPE=HEATSINKHOLE
@@ -438,6 +423,21 @@ AP IOD_Schematic:roach_monitor 33 PINTYPE=IN
 AP IOD_Schematic:roach_monitor 34 PINTYPE=OUT
 AP IOD_Schematic:roach_monitor 35 PINTYPE=OUT
 AP IOD_Schematic:roach_monitor 36 PINTYPE=OUT
+|Q IOD_Schematic:casperlogo 1
+AS IOD_Schematic:casperlogo PKG_TYPE=CASPERLOGO
+AS IOD_Schematic:casperlogo INOV_VER_REC=6:59_2-14-08
+|Q IOD_Schematic:cockroach 1
+AS IOD_Schematic:cockroach PKG_TYPE=CUCARACA
+AS IOD_Schematic:cockroach INOV_VER_REC=6:53_6-4-08
+|Q IOD_Schematic:snpatch 1
+AS IOD_Schematic:snpatch PKG_TYPE=SNPATCH
+AS IOD_Schematic:snpatch INOV_VER_REC=16:00_2-12-08
+|Q IOD_Schematic:fiducial 1
+AS IOD_Schematic:fiducial REFDES=FU?
+AS IOD_Schematic:fiducial PKG_TYPE=FIDUCIAL
+AS IOD_Schematic:fiducial PINORDER=1
+AS IOD_Schematic:fiducial INOV_VER_REC=14:13_5-28-08
+AP IOD_Schematic:fiducial 1 #=1
 AN PADD[2:31] VLBUSISONSHEET=1
 AN PDATA[0:7] VLBUSISONSHEET=1
 AN PDATA[0:31] VLBUSISONSHEET=1
@@ -671,14 +671,6 @@ API $1I1251 IOD_Schematic:r 1 PINLOC=14G4
 API $1I1251 IOD_Schematic:r 1 #=1
 API $1I1251 IOD_Schematic:r 2 PINLOC=14G4
 API $1I1251 IOD_Schematic:r 2 #=2
-M IOD_Schematic:fiducial $1I1217
-I $1I1217 IOD_Schematic:fiducial $1N1222 REFDES=FU3`
-|R 14:13_5-28-08
-API $1I1217 IOD_Schematic:fiducial 1 #=1
-M IOD_Schematic:fiducial $1I1216
-I $1I1216 IOD_Schematic:fiducial $1N1221 REFDES=FU2`
-|R 14:13_5-28-08
-API $1I1216 IOD_Schematic:fiducial 1 #=1
 M IOD_Schematic:hole150x288 $1I314
 I $1I314 IOD_Schematic:hole150x288 GND SCHLOC=1Q4`GEOMETRY.HEIGHT=0`P/D_NUM=NA`MANUFACTURER=NA`REFDES=H7`
 |R 20:28_9-18-07
@@ -900,9 +892,6 @@ API $1I1115 IOD_Schematic:c 2 #=2
 M IOD_Schematic:nraologo $1I1076
 I $1I1076 IOD_Schematic:nraologo SCHLOC=1P1`GEOMETRY.HEIGHT=0`REFDES=LOGO1`
 |R 16:01_1-29-08
-M IOD_Schematic:snpatch $1I1078
-I $1I1078 IOD_Schematic:snpatch SCHLOC=1Q2`GEOMETRY.HEIGHT=0`REFDES=SNP1`
-|R 16:00_2-12-08
 W IOD_Schematic:roach_config $1I790
 I $1I790 IOD_Schematic:roach_config SX95T_CCLK_0 SX95T_CS_B_0 SX95T_DONE_0 SX95T_D_IN_0 SX95T_D_OUT_BUSY_0 SX95T_INIT_B_0 SX95T_M0_0 SX95T_M1_0 SX95T_M2_0 SX95T_PROGRAM_B_0 SX95T_RDWR_B_0 SX95T_TCK SX95T_TDI SX95T_TDO SX95T_TMS SHEET=16`
 |R 9:31_10-11-07
@@ -915,12 +904,6 @@ I $1I3 IOD_Schematic:roach_transceivers2_3 SHEET=9`
 W IOD_Schematic:roach_transceivers_psu $1I803
 I $1I803 IOD_Schematic:roach_transceivers_psu MGT_AVCCPLL_PG MGT_AVTTX_PG MGT_AVCC_PG MGT_AVTTX_EN MGT_AVCCPLL_EN MGT_AVCC_EN SHEET=10`
 |R 8:14_10-2-07
-M IOD_Schematic:cockroach $1I1081
-I $1I1081 IOD_Schematic:cockroach SCHLOC=1R3`GEOMETRY.HEIGHT=0`REFDES=LOGO4`
-|R 21:18_2-20-08
-M IOD_Schematic:casperlogo $1I1079
-I $1I1079 IOD_Schematic:casperlogo SCHLOC=1Q2`GEOMETRY.HEIGHT=0`REFDES=LOGO3`
-|R 6:59_2-14-08
 M IOD_Schematic:heatsinkhole $1I1074
 I $1I1074 IOD_Schematic:heatsinkhole DEVICE=HSHOLE_3_5D3_2_NP`SCHLOC=1Q5`GEOMETRY.HEIGHT=0.01`REFDES=H10`
 |R 15:52_1-22-08
@@ -936,10 +919,6 @@ I $1I291 IOD_Schematic:roach_v5_clk TD0 ATRTN0 SHEET=7`
 W IOD_Schematic:roach_adc_0 $1I4
 I $1I4 IOD_Schematic:roach_adc_0 SHEET=5`
 |R 8:11_10-2-07
-M IOD_Schematic:fiducial $1I1215
-I $1I1215 IOD_Schematic:fiducial $1N1220 REFDES=FU1`
-|R 14:13_5-28-08
-API $1I1215 IOD_Schematic:fiducial 1 #=1
 W IOD_Schematic:roach_ppc_tst_clk_io $1I1002
 I $1I1002 IOD_Schematic:roach_ppc_tst_clk_io CLK_CPLD_33MHZ CLK_CPLD_50MHZ CLK_GETH0_25MHZ CLK_SEL_M66EN CLK_TMRCLK CLK_UART_11_0592MHZ CLK_USB2_48MHZ CPU_TRST# DEBUG_TRST# GETH0_INT# GPIO44 MONITOR_INT PPC_THERMONA PPC_THERMONB PWR_GOOD RESET_PB_POR# RESET_POR# SEL_SYSCLK STTM_ALERT SX95T_TCK SX95T_TDI SX95T_TDO SX95T_TMS SYSERR V5_INT# SHEET=23`
 |R 11:45_1-24-08
@@ -1033,4 +1012,25 @@ I $1I863 IOD_Schematic:roach_ppc_nvm_serial BOOT_CFG0 BOOT_CFG1 BOOT_CFG2 CLK_PE
 W IOD_Schematic:roach_monitor $1I967
 I $1I967 IOD_Schematic:roach_monitor 12V_ATX 1V0_INHIBIT 1V5_INHIBIT 1V8_INHIBIT 2V5_INHIBIT 2V5_TRACK 3V3_ATX 5V_ATX ATRTN0 PPC_THERMONB FAN1_CONTROL FAN1_SENSE FAN2_CONTROL FAN2_SENSE FAN3_CONTROL FAN3_SENSE I1V0 I1V5 I1V8 I2C0_SDATA I2C0_SCLK I2V5 LOAD_RES_OFF MGT_AVCCPLL_EN MGT_AVCCPLL_PG MGT_AVCC_EN MGT_AVCC_PG MGT_AVTTX_EN MGT_AVTTX_PG MONITOR_INT PPC_RESET PS_ON# PWR_OK SYS_CONFIG[0:7] TD0 PPC_THERMONA SHEET=2`
 |R 7:42_10-25-07
+M IOD_Schematic:casperlogo $1I1079
+I $1I1079 IOD_Schematic:casperlogo SCHLOC=1Q2`GEOMETRY.HEIGHT=0`REFDES=LOGO3`
+|R 6:59_2-14-08
+M IOD_Schematic:cockroach $1I1081
+I $1I1081 IOD_Schematic:cockroach SCHLOC=1R3`GEOMETRY.HEIGHT=0`REFDES=LOGO4`
+|R 21:18_2-20-08
+M IOD_Schematic:snpatch $1I1078
+I $1I1078 IOD_Schematic:snpatch SCHLOC=1Q2`GEOMETRY.HEIGHT=0`REFDES=SNP1`
+|R 16:00_2-12-08
+M IOD_Schematic:fiducial $1I1217
+I $1I1217 IOD_Schematic:fiducial $1N1222 REFDES=FU3`
+|R 14:13_5-28-08
+API $1I1217 IOD_Schematic:fiducial 1 #=1
+M IOD_Schematic:fiducial $1I1216
+I $1I1216 IOD_Schematic:fiducial $1N1221 REFDES=FU2`
+|R 14:13_5-28-08
+API $1I1216 IOD_Schematic:fiducial 1 #=1
+M IOD_Schematic:fiducial $1I1215
+I $1I1215 IOD_Schematic:fiducial $1N1220 REFDES=FU1`
+|R 14:13_5-28-08
+API $1I1215 IOD_Schematic:fiducial 1 #=1
 EW
