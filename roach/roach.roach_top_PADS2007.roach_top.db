@@ -5,7 +5,7 @@
 	(config_properties
 		(attributes
 			(attval "PcbConfigName" "C:\Roach\elec\roach\roach_pcb.cfg")
-			(attval "CnsFile" "C:\Roach\elec\roach\pads2007.cns")
+			(attval "CnsFile" ".\pads2007.cns")
 			(attval "BeAdapter" "PADS2007")
 			(attval "FeAdapter" "DxDesigner")
 			(attval "SYSCONFIG" "pcbfwd")
@@ -26,7 +26,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1212657928"))
+		(file_ext "roach_top.pxr" "1212751437"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -1186,10 +1186,10 @@
  "R266" "R265" "R264" "R263" "R262" "R261" "R260" "R259" "R258" "R257" "R256" "R255" "R254" "R253" "R252" "R251"
  "R250" "R249" "R248" "R247" "R246" "R245" "R244" "R243" "R242" "R241" "R240" "R239" "R238" "R237" "R236" "R235"
  "R234" "R233" "R232" "R231" "R230" "R229" "R226" "R225" "R224" "R223" "R222" "R212" "R211" "R210" "R209" "R208"
- "R207" "R193" "R192" "R183" "R181" "R180" "R179" "R177" "R165" "R164" "R160" "R159" "R158" "R157" "R156" "R155"
- "R154" "R153" "R152" "R151" "R150" "R149" "R148" "R147" "R146" "R145" "R144" "R143" "R142" "R141" "R140" "R139"
- "R138" "R102" "R101" "R89" "R54" "R53" "R52" "R51" "R48" "R47" "R46" "R45" "R44" "R43" "R40" "R22" "R21" "R20" "R19" "R18"
- "R17" "R16" "R15" "R14" "R13" "R12" "R11" "R10" "R9" "R8" "R7" "R6" "R4" "R2" "R1"))
+ "R207" "R193" "R192" "R183" "R181" "R180" "R179" "R177" "R166" "R165" "R164" "R160" "R159" "R158" "R157" "R156"
+ "R155" "R154" "R153" "R152" "R151" "R150" "R149" "R148" "R147" "R146" "R145" "R144" "R143" "R142" "R141" "R140"
+ "R139" "R138" "R102" "R101" "R89" "R54" "R53" "R52" "R51" "R48" "R47" "R46" "R45" "R44" "R43" "R40" "R22" "R21" "R20" "R19"
+ "R18" "R17" "R16" "R15" "R14" "R13" "R12" "R11" "R10" "R9" "R8" "R7" "R6" "R4" "R2" "R1"))
 		(logical_part "RES0402_55"
 			(slots
 				(slot "R__RES0402_55_1"
@@ -13228,6 +13228,18 @@
 				(attval "GEOMETRY.HEIGHT" "0.4MM")
 				(attval "DEVICE" "RES0402_55")
 				(attval "REFDES" "R177")))
+		(component "RESC1005X40N"
+			(place "R166" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "4K7")
+				(attval "TOLERANCE" "5%")
+				(attval "P/D_NUM" "0402WGF0472T1E")
+				(attval "MANUFACTURER" "ROYAL OHM")
+				(attval "GEOMETRY.HEIGHT" "0.4MM")
+				(attval "DEVICE" "RES0402_55")
+				(attval "REFDES" "R166")))
 		(component "RESC1005X40N"
 			(place "R165" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
@@ -28328,6 +28340,7 @@
 		(func "$1I671\$1I371" "" "R180" 1)
 		(func "$1I671\$1I306" "" "R179" 1)
 		(func "$1I671\$1I305" "" "R177" 1)
+		(func "$1I790\$1I154" "" "R166" 1)
 		(func "$1I790\$1I151" "" "R165" 1)
 		(func "$1I1257" "" "R164" 1)
 		(func "$1I1251" "" "R163" 1)
@@ -32502,7 +32515,7 @@
  U15-AM19 U15-AG14 U15-AL12 U43-20 U43-19 U44-20 U44-19 R78-1 R64-1 R76-1 R68-1
  R72-1 R75-1 R63-1 R77-1 R60-1 R67-1 R71-1 R73-1 R62-1 R66-1 R70-1 R74-1 R61-1
  R65-1 R69-1 C330-1 C331-1 C332-1 C333-1 P11-2 P4-2 U45-5 U46-5 U48-5 C334-1
- C335-1 Q14-5 Q14-6 Q14-7 Q14-8))
+ C335-1 Q14-5 Q14-6 Q14-7 Q14-8 R166-1))
 		(net "3V3AUX"
 			(pins C538-1 JP28-3 J26-10 R282-2 R283-2 R284-2 R285-2 R286-2 R299-1 C542-1
  C543-1 U59-20 U59-1 U59-18 U59-19 U60-N13 U60-N4 U60-A2 U60-B7 U60-C4 U60-C5
@@ -32999,7 +33012,7 @@
 		(net "SX95T_M2_0"
 			(pins U1-R4 U54-107 R210-1 U15-AD22))
 		(net "SX95T_PROGRAM_B_0"
-			(pins U1-C5 U54-10 U15-M22))
+			(pins U1-C5 U54-10 U15-M22 R166-2))
 		(net "SX95T_RDWR_B_0"
 			(pins U54-35 U15-N23))
 		(net "SX95T_TCK"
