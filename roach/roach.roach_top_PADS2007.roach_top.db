@@ -26,7 +26,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1213803423"))
+		(file_ext "roach_top.pxr" "1213824929"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -1186,10 +1186,10 @@
  "R266" "R265" "R264" "R263" "R262" "R261" "R260" "R259" "R258" "R257" "R256" "R255" "R254" "R253" "R252" "R251"
  "R250" "R249" "R248" "R247" "R246" "R245" "R244" "R243" "R242" "R241" "R240" "R239" "R238" "R237" "R236" "R235"
  "R234" "R233" "R232" "R231" "R230" "R229" "R226" "R225" "R224" "R223" "R222" "R212" "R211" "R210" "R209" "R208"
- "R207" "R193" "R192" "R183" "R181" "R180" "R179" "R177" "R167" "R166" "R165" "R164" "R160" "R159" "R158" "R157"
- "R156" "R155" "R154" "R153" "R152" "R151" "R150" "R149" "R148" "R147" "R146" "R145" "R144" "R143" "R142" "R141"
- "R140" "R139" "R138" "R102" "R101" "R89" "R54" "R53" "R52" "R51" "R48" "R47" "R46" "R45" "R44" "R43" "R40" "R22" "R21"
- "R20" "R19" "R18" "R17" "R16" "R15" "R14" "R13" "R12" "R11" "R10" "R9" "R8" "R7" "R6" "R4" "R2" "R1"))
+ "R207" "R193" "R192" "R183" "R181" "R180" "R179" "R177" "R168" "R167" "R166" "R165" "R164" "R160" "R159" "R158"
+ "R157" "R156" "R155" "R154" "R153" "R152" "R151" "R150" "R149" "R148" "R147" "R146" "R145" "R144" "R143" "R142"
+ "R141" "R140" "R139" "R138" "R102" "R101" "R89" "R54" "R53" "R52" "R51" "R48" "R47" "R46" "R45" "R44" "R43" "R40" "R22"
+ "R21" "R20" "R19" "R18" "R17" "R16" "R15" "R14" "R13" "R12" "R11" "R10" "R9" "R8" "R7" "R6" "R4" "R2" "R1"))
 		(logical_part "RES0402_55"
 			(slots
 				(slot "R__RES0402_55_1"
@@ -13389,6 +13389,17 @@
 				(attval "GEOMETRY.HEIGHT" "0.4MM")
 				(attval "DEVICE" "RES0402_55")
 				(attval "REFDES" "R177")))
+		(component "RESC1005X40N"
+			(place "R168" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI")
+				(comp_pin "1" 0.0 0.0 "BI"))
+			(attributes
+				(attval "VALUE" "120R")
+				(attval "P/D_NUM" "0402WGF0121T1E")
+				(attval "MANUFACTURER" "ROYAL OHM")
+				(attval "GEOMETRY.HEIGHT" "0.4MM")
+				(attval "DEVICE" "RES0402_55")
+				(attval "REFDES" "R168")))
 		(component "RESC1005X40N"
 			(place "R167" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
@@ -28595,6 +28606,7 @@
 		(func "$1I671\$1I371" "" "R180" 1)
 		(func "$1I671\$1I306" "" "R179" 1)
 		(func "$1I671\$1I305" "" "R177" 1)
+		(func "$1I289\$1I1573" "" "R168" 1)
 		(func "$1I289\$1I1524" "" "R167" 1)
 		(func "$1I790\$1I154" "" "R166" 1)
 		(func "$1I790\$1I151" "" "R165" 1)
@@ -31176,21 +31188,21 @@
 		(net "$1I289\DDR_PCKE"
 			(pins J8-52 U1-AN9 RP24-1))
 		(net "$1I289\DDR_PCLKOUT"
-			(pins U1-AL1 U6-4))
+			(pins U1-AL1 R168-2 U6-4))
 		(net "$1I289\DDR_PCLKOUT#"
-			(pins U1-AK1 U6-5))
+			(pins U1-AK1 R168-1 U6-5))
 		(net "$1I289\DDR_PCLKOUT0"
 			(pins J8-185 C455-1 U6-38))
 		(net "$1I289\DDR_PCLKOUT0#"
 			(pins J8-186 C455-2 U6-37))
 		(net "$1I289\DDR_PCLKOUT1"
-			(pins J8-137 C308-1 U6-39 U6-3))
+			(pins J8-137 C308-1 U6-39))
 		(net "$1I289\DDR_PCLKOUT1#"
-			(pins J8-138 C308-2 U6-40 U6-2))
+			(pins J8-138 C308-2 U6-40))
 		(net "$1I289\DDR_PCLKOUT2"
-			(pins J8-220 C313-1))
+			(pins J8-220 C313-1 U6-3))
 		(net "$1I289\DDR_PCLKOUT2#"
-			(pins J8-221 C313-2))
+			(pins J8-221 C313-2 U6-2))
 		(net "$1I289\DDR_PCS0#"
 			(pins J8-193 U1-AH2 RP26-3))
 		(net "$1I289\DDR_PCS1#"
@@ -36502,6 +36514,12 @@
 		(net_scalar "$1I289\PAR_IN"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I289\FBOUT#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I289\FBOUT"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I289\DDR_PWE#"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
@@ -36854,12 +36872,32 @@
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
 				(cnsval "PCLASS" "PPCDDR")))
+		(net_scalar "$1I289\DDR_PCLKOUT2#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I289\DDR_PCLKOUT2"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I289\DDR_PCLKOUT1#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I289\DDR_PCLKOUT1"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I289\DDR_PCLKOUT0#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I289\DDR_PCLKOUT0"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I289\DDR_PCLKOUT#"
 			(constraints
+				(cnsval "SCHEDULED" "FALSE")
 				(cnsval "MAX_LENGTH" "7160")
 				(cnsval "MIN_LENGTH" "7000")))
 		(net_scalar "$1I289\DDR_PCLKOUT"
 			(constraints
+				(cnsval "SCHEDULED" "FALSE")
 				(cnsval "MAX_LENGTH" "7160")
 				(cnsval "MIN_LENGTH" "7000")))
 		(net_scalar "$1I289\DDR_PCKE"
@@ -36944,48 +36982,85 @@
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
 				(cnsval "PCLASS" "PPCDDR")))
+		(net_scalar "$1I289\$1N1535"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I289\$1N1530"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I289\$1N1525"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I289\$1N1520"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I289\$1N1519"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I289\$1N1518"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I289\$1N1517"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I289\$1N1516"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I289\$1N1515"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I289\$1N1514"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I289\$1N1513"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I289\$1N1512"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I289\$1N1511"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I289\$1N1510"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I289\$1N1509"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I289\$1N1508"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I289\$1N1507"
 			(attributes
-				(attval "NC" "")))
+				(attval "NC" ""))
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I289\$1N1471"
 			(attributes
 				(attval "NC" ""))
