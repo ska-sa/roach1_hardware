@@ -148,22 +148,6 @@ AP IOD_Schematic:res_180_0402_5_ 1 #=1
 AP IOD_Schematic:res_180_0402_5_ 1 PINTYPE=OUT
 AP IOD_Schematic:res_180_0402_5_ 2 #=2
 AP IOD_Schematic:res_180_0402_5_ 2 PINTYPE=OUT
-|Q IOD_Schematic:diode_led_0805_grn 1
-AS IOD_Schematic:diode_led_0805_grn MANUFACTURER=AVAGO
-AS IOD_Schematic:diode_led_0805_grn DEVICE=DIODE_LED_0805_GRN
-AS IOD_Schematic:diode_led_0805_grn PARTS=1
-AS IOD_Schematic:diode_led_0805_grn PKG_TYPE=LED_0805
-AS IOD_Schematic:diode_led_0805_grn LEVEL=STD
-AS IOD_Schematic:diode_led_0805_grn P/D_NUM=HSMG-C150
-AS IOD_Schematic:diode_led_0805_grn GRN=LHR
-AS IOD_Schematic:diode_led_0805_grn REFDES=CR?
-AS IOD_Schematic:diode_led_0805_grn VALUE
-AS IOD_Schematic:diode_led_0805_grn PINORDER=ANODE CATHODE
-AS IOD_Schematic:diode_led_0805_grn INOV_VER_REC=12:47_5-8-08
-AP IOD_Schematic:diode_led_0805_grn 1 #=2
-AP IOD_Schematic:diode_led_0805_grn 1 PINTYPE=OUT
-AP IOD_Schematic:diode_led_0805_grn 2 #=1
-AP IOD_Schematic:diode_led_0805_grn 2 PINTYPE=OUT
 |Q IOD_Schematic:r 2
 AS IOD_Schematic:r PKG_TYPE=RES
 AS IOD_Schematic:r PINOFF
@@ -2110,6 +2094,22 @@ AP IOD_Schematic:xilinx_14_pin_jtag 13 #=4
 AP IOD_Schematic:xilinx_14_pin_jtag 13 PINTYPE=OUT
 AP IOD_Schematic:xilinx_14_pin_jtag 14 #=2
 AP IOD_Schematic:xilinx_14_pin_jtag 14 PINTYPE=ANALOG
+|Q IOD_Schematic:diode_led_0805_grn 1
+AS IOD_Schematic:diode_led_0805_grn MANUFACTURER=AVAGO
+AS IOD_Schematic:diode_led_0805_grn DEVICE=DIODE_LED_0805_GRN
+AS IOD_Schematic:diode_led_0805_grn PARTS=1
+AS IOD_Schematic:diode_led_0805_grn PKG_TYPE=LED_0805
+AS IOD_Schematic:diode_led_0805_grn LEVEL=STD
+AS IOD_Schematic:diode_led_0805_grn P/D_NUM=HSMG-C150
+AS IOD_Schematic:diode_led_0805_grn GRN=LHR
+AS IOD_Schematic:diode_led_0805_grn REFDES=CR?
+AS IOD_Schematic:diode_led_0805_grn VALUE
+AS IOD_Schematic:diode_led_0805_grn PINORDER=ANODE CATHODE
+AS IOD_Schematic:diode_led_0805_grn INOV_VER_REC=12:47_5-8-08
+AP IOD_Schematic:diode_led_0805_grn 1 #=2
+AP IOD_Schematic:diode_led_0805_grn 1 PINTYPE=OUT
+AP IOD_Schematic:diode_led_0805_grn 2 #=1
+AP IOD_Schematic:diode_led_0805_grn 2 PINTYPE=OUT
 |Q IOD_Schematic:diode_led_0805_red 1
 AS IOD_Schematic:diode_led_0805_red REFDES=CR?
 AS IOD_Schematic:diode_led_0805_red DEVICE=DIODE_LED_0805_RED
@@ -2460,13 +2460,6 @@ M IOD_Schematic:res_180_0402_5_ $1I119
 I $1I119 IOD_Schematic:res_180_0402_5_ GND $1N60 SCHLOC=24P8`GEOMETRY.HEIGHT=0.4MM`SUP=AVNET`P/D_NUM=0402WGF0181T1E`MANUFACTURER=ROYAL OHM`REFDES=R197`PKG_TYPE=RESC1005X40N`BOARD_OPTION=BASE`VALUE=180R`
 API $1I119 IOD_Schematic:res_180_0402_5_ 1 PINLOC=24P8
 API $1I119 IOD_Schematic:res_180_0402_5_ 2 PINLOC=24P8
-M IOD_Schematic:diode_led_0805_grn $1I135
-I $1I135 IOD_Schematic:diode_led_0805_grn $1N39 $1N42 SCHLOC=24Q8`GEOMETRY.HEIGHT=1.2MM`MANUFACTURER=FAIRCHILD`REFDES=CR2`PKG_TYPE=LEDC3216X120N`VALUE=GRN`SHAPE`
-|R 9:12_9-26-07
-API $1I135 IOD_Schematic:diode_led_0805_grn 1 PINLOC=24Q8
-API $1I135 IOD_Schematic:diode_led_0805_grn 1 #=2
-API $1I135 IOD_Schematic:diode_led_0805_grn 2 PINLOC=24Q8
-API $1I135 IOD_Schematic:diode_led_0805_grn 2 #=1
 |N 2
 M IOD_Schematic:r $1I276
 I $1I276 IOD_Schematic:r CPLD_TMS 3V3 SCHLOC=24Q4`DEVICE=RES0402_55`USEEQUIVALENT=FALSE`GEOMETRY.HEIGHT=0.4MM`MANPARTPACKAGE=0402 (1005)`OPERATINGVOLTAGE=50V`MANPARTDESCRIPTION=CHIP RESISTOR.`P/D_NUM=0402WGF0102T1E`REFDES=R193`MANUFACTURER=ROYAL OHM`DESCRIP=RES0402X0_40`RATING=0.063W`TOLERANCE=1%`VALUE=1K`PKG_TYPE=RESC1005X40N`
@@ -3035,13 +3028,6 @@ API $1I146 IOD_Schematic:diode_led_0805_grn 1 PINLOC=24G7
 API $1I146 IOD_Schematic:diode_led_0805_grn 1 #=2
 API $1I146 IOD_Schematic:diode_led_0805_grn 2 PINLOC=24G7
 API $1I146 IOD_Schematic:diode_led_0805_grn 2 #=1
-M IOD_Schematic:diode_led_0805_grn $1I132
-I $1I132 IOD_Schematic:diode_led_0805_grn 5V $1N60 SCHLOC=24Q8`GEOMETRY.HEIGHT=1.2MM`MANUFACTURER=FAIRCHILD`REFDES=CR1`PKG_TYPE=LEDC3216X120N`NEED_TO_MIRROR/ROTATE_PIN_DISPLAY_PROPERTIES`VALUE=GRN`SHAPE`
-|R 9:12_9-26-07
-API $1I132 IOD_Schematic:diode_led_0805_grn 1 PINLOC=24Q8
-API $1I132 IOD_Schematic:diode_led_0805_grn 1 #=2
-API $1I132 IOD_Schematic:diode_led_0805_grn 2 PINLOC=24Q8
-API $1I132 IOD_Schematic:diode_led_0805_grn 2 #=1
 P IOD_Schematic:out SX95T_PROGRAM_B_0
 I SX95T_PROGRAM_B_0 IOD_Schematic:out SX95T_PROGRAM_B_0 
 |R 7:39_8-30-07
@@ -3060,4 +3046,18 @@ API $1I143 IOD_Schematic:diode_led_0805_red 1 PINLOC=24H7
 API $1I143 IOD_Schematic:diode_led_0805_red 1 #=2
 API $1I143 IOD_Schematic:diode_led_0805_red 2 PINLOC=24H7
 API $1I143 IOD_Schematic:diode_led_0805_red 2 #=1
+M IOD_Schematic:diode_led_0805_grn $1I132
+I $1I132 IOD_Schematic:diode_led_0805_grn 5V $1N60 SCHLOC=24Q8`GEOMETRY.HEIGHT=1.2MM`MANUFACTURER=FAIRCHILD`REFDES=CR1`PKG_TYPE=LEDC3216X120N`NEED_TO_MIRROR/ROTATE_PIN_DISPLAY_PROPERTIES`VALUE=GRN`SHAPE`
+|R 12:47_5-8-08
+API $1I132 IOD_Schematic:diode_led_0805_grn 1 PINLOC=24Q8
+API $1I132 IOD_Schematic:diode_led_0805_grn 1 #=2
+API $1I132 IOD_Schematic:diode_led_0805_grn 2 PINLOC=24Q8
+API $1I132 IOD_Schematic:diode_led_0805_grn 2 #=1
+M IOD_Schematic:diode_led_0805_grn $1I135
+I $1I135 IOD_Schematic:diode_led_0805_grn $1N39 $1N42 SCHLOC=24Q8`GEOMETRY.HEIGHT=1.2MM`MANUFACTURER=FAIRCHILD`REFDES=CR2`PKG_TYPE=LEDC3216X120N`VALUE=GRN`SHAPE`
+|R 12:47_5-8-08
+API $1I135 IOD_Schematic:diode_led_0805_grn 1 PINLOC=24Q8
+API $1I135 IOD_Schematic:diode_led_0805_grn 1 #=2
+API $1I135 IOD_Schematic:diode_led_0805_grn 2 PINLOC=24Q8
+API $1I135 IOD_Schematic:diode_led_0805_grn 2 #=1
 EW
