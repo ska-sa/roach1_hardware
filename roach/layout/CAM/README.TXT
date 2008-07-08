@@ -82,6 +82,9 @@ bottom		100 Ohm +/- 10% differential **
 
 11. Bids shall include fees for electrical test of bare boards as a separate line item.
 
+12. INSTALL 1/4" RAIL BORDER EXTENSION ON TWO LONG SIDES OF THE FAB.  USE V SCORE ON THE BORDER RAILS FOR SEPARATION PURPOSE.  
+INSTALL FOUR FIDUCIALS, TWO ON EACH RAIL WITH MASKING CLEARANCE.
+
 Please direct technical questions or issues to one of--
 Technical points of contact.
 
