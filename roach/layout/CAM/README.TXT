@@ -88,16 +88,20 @@ INSTALL FOUR FIDUCIALS, TWO ON EACH RAIL WITH MASKING CLEARANCE.
 Please direct technical questions or issues to one of--
 Technical points of contact.
 
+Henry Chen
+Casper Group, BWRC
+Berkeley California USA
+408-806-9730
+hchen05@ssl.berkeley.edu
+
 Michael Revnell
 National Radio Astronomy Observatory
 Socorro New Mexico USA
-
 (505)835-7293
 mrevnell@nrao.edu
 
 Francois Kapp
 South African Square Kilometre Array
 Cape Town South Africa
-
 +27 21 531 7282
 francois.kapp@ska.ac.za
