@@ -116,25 +116,6 @@ AP IOD_Schematic:c 2 #=2
 |Q IOD_Schematic:nraologo 1
 AS IOD_Schematic:nraologo PKG_TYPE=LOGO
 AS IOD_Schematic:nraologo INOV_VER_REC=16:01_1-29-08
-|Q IOD_Schematic:roach_transceivers0_1 1
-AS IOD_Schematic:roach_transceivers0_1 DEVICE=ROACH_TRANSCEIVERS0_1
-AS IOD_Schematic:roach_transceivers0_1 SHEET
-AS IOD_Schematic:roach_transceivers0_1 INOV_VER_REC=8:12_10-2-07
-|Q IOD_Schematic:roach_transceivers2_3 1
-AS IOD_Schematic:roach_transceivers2_3 DEVICE=ROACH_TRANSCEIVERS2_3
-AS IOD_Schematic:roach_transceivers2_3 SHEET
-AS IOD_Schematic:roach_transceivers2_3 INOV_VER_REC=8:14_10-2-07
-|Q IOD_Schematic:roach_transceivers_psu 1
-AS IOD_Schematic:roach_transceivers_psu PINORDER= MGT_AVCCPLL_PG MGT_AVTTX_PG MGT_AVCC_PG MGT_AVTTX_EN MGT_AVCCPLL_EN MGT_AVCC_EN
-AS IOD_Schematic:roach_transceivers_psu DEVICE=ROACH_TRANSCEIVERS_PSU
-AS IOD_Schematic:roach_transceivers_psu SHEET
-AS IOD_Schematic:roach_transceivers_psu INOV_VER_REC=8:14_10-2-07
-AP IOD_Schematic:roach_transceivers_psu 1 PINTYPE=OUT
-AP IOD_Schematic:roach_transceivers_psu 2 PINTYPE=OUT
-AP IOD_Schematic:roach_transceivers_psu 3 PINTYPE=OUT
-AP IOD_Schematic:roach_transceivers_psu 4 PINTYPE=IN
-AP IOD_Schematic:roach_transceivers_psu 5 PINTYPE=IN
-AP IOD_Schematic:roach_transceivers_psu 6 PINTYPE=IN
 |Q IOD_Schematic:heatsinkhole 1
 AS IOD_Schematic:heatsinkhole REFDES=U?
 AS IOD_Schematic:heatsinkhole PKG_TYPE=HEATSINKHOLE
@@ -438,6 +419,35 @@ AP IOD_Schematic:roach_ppc_cpld 44 PINTYPE=OUT
 AP IOD_Schematic:roach_ppc_cpld 45 PINTYPE=OUT
 AP IOD_Schematic:roach_ppc_cpld 46 PINTYPE=IN
 AP IOD_Schematic:roach_ppc_cpld 47 PINTYPE=IN
+|Q IOD_Schematic:roach_transceivers_psu 1
+AS IOD_Schematic:roach_transceivers_psu PINORDER= MGT_AVCCPLL_PG MGT_AVTTX_PG MGT_AVCC_PG MGT_AVTTX_EN MGT_AVCCPLL_EN MGT_AVCC_EN
+AS IOD_Schematic:roach_transceivers_psu DEVICE=ROACH_TRANSCEIVERS_PSU
+AS IOD_Schematic:roach_transceivers_psu SHEET
+AS IOD_Schematic:roach_transceivers_psu INOV_VER_REC=8:14_10-2-07
+AP IOD_Schematic:roach_transceivers_psu 1 PINTYPE=OUT
+AP IOD_Schematic:roach_transceivers_psu 2 PINTYPE=OUT
+AP IOD_Schematic:roach_transceivers_psu 3 PINTYPE=OUT
+AP IOD_Schematic:roach_transceivers_psu 4 PINTYPE=IN
+AP IOD_Schematic:roach_transceivers_psu 5 PINTYPE=IN
+AP IOD_Schematic:roach_transceivers_psu 6 PINTYPE=IN
+|Q IOD_Schematic:roach_transceivers0_1 1
+AS IOD_Schematic:roach_transceivers0_1 DEVICE=ROACH_TRANSCEIVERS0_1
+AS IOD_Schematic:roach_transceivers0_1 SHEET
+AS IOD_Schematic:roach_transceivers0_1 PINORDER=MGT_REFCLK_Q1_1_N MGT_REFCLK_Q1_1_P MGT_REFCLK_Q2_0_N MGT_REFCLK_Q2_0_P
+AS IOD_Schematic:roach_transceivers0_1 INOV_VER_REC=8:30_10-9-08
+AP IOD_Schematic:roach_transceivers0_1 1 PINTYPE=OUT
+AP IOD_Schematic:roach_transceivers0_1 2 PINTYPE=OUT
+AP IOD_Schematic:roach_transceivers0_1 3 PINTYPE=IN
+AP IOD_Schematic:roach_transceivers0_1 4 PINTYPE=IN
+|Q IOD_Schematic:roach_transceivers2_3 1
+AS IOD_Schematic:roach_transceivers2_3 DEVICE=ROACH_TRANSCEIVERS2_3
+AS IOD_Schematic:roach_transceivers2_3 SHEET
+AS IOD_Schematic:roach_transceivers2_3 PINORDER=MGT_REFCLK_Q1_1_N MGT_REFCLK_Q1_1_P MGT_REFCLK_Q2_0_N MGT_REFCLK_Q2_0_P
+AS IOD_Schematic:roach_transceivers2_3 INOV_VER_REC=8:31_10-9-08
+AP IOD_Schematic:roach_transceivers2_3 1 PINTYPE=IN
+AP IOD_Schematic:roach_transceivers2_3 2 PINTYPE=IN
+AP IOD_Schematic:roach_transceivers2_3 3 PINTYPE=OUT
+AP IOD_Schematic:roach_transceivers2_3 4 PINTYPE=OUT
 AN PADD[2:31] VLBUSISONSHEET=1
 AN PDATA[0:7] VLBUSISONSHEET=1
 AN PDATA[0:31] VLBUSISONSHEET=1
@@ -882,18 +892,6 @@ API $1I1115 IOD_Schematic:c 2 #=2
 M IOD_Schematic:nraologo $1I1076
 I $1I1076 IOD_Schematic:nraologo P/D_NUM=N/A`SCHLOC=1P1`GEOMETRY.HEIGHT=0`REFDES=LOGO1`
 |R 16:01_1-29-08
-W IOD_Schematic:roach_transceivers0_1 $1I2
-I $1I2 IOD_Schematic:roach_transceivers0_1 SHEET=8`
-|R 8:12_10-2-07
-W IOD_Schematic:roach_transceivers2_3 $1I3
-I $1I3 IOD_Schematic:roach_transceivers2_3 SHEET=9`
-|R 8:14_10-2-07
-W IOD_Schematic:roach_transceivers_psu $1I803
-I $1I803 IOD_Schematic:roach_transceivers_psu MGT_AVCCPLL_PG MGT_AVTTX_PG MGT_AVCC_PG MGT_AVTTX_EN MGT_AVCCPLL_EN MGT_AVCC_EN SHEET=10`
-|R 8:14_10-2-07
-M IOD_Schematic:heatsinkhole $1I1074
-I $1I1074 IOD_Schematic:heatsinkhole P/D_NUM=N/A`SCHLOC=1Q5`DEVICE=HSHOLE_3_5D3_2_NP`GEOMETRY.HEIGHT=0`REFDES=H10`
-|R 15:52_1-22-08
 M IOD_Schematic:heatsinkhole $1I1075
 I $1I1075 IOD_Schematic:heatsinkhole P/D_NUM=N/A`SCHLOC=1Q5`DEVICE=HSHOLE_3_5D3_2_NP`GEOMETRY.HEIGHT=0`REFDES=H11`
 |R 15:52_1-22-08
@@ -1034,4 +1032,16 @@ I $1I1002 IOD_Schematic:roach_ppc_tst_clk_io CLK_CPLD_33MHZ CLK_CPLD_50MHZ CLK_G
 W IOD_Schematic:roach_ppc_cpld $1I747
 I $1I747 IOD_Schematic:roach_ppc_cpld BOOT_CFG0 BOOT_CFG1 BOOT_CFG2 CLK_CPLD_33MHZ CLK_CPLD_50MHZ CLK_PERCLK CLK_SEL_M66EN CLK_TMRCLK CPLD_INT CPU_TRST# DEBUG_TRST# EE1_WP EE2_BOOT_WP EXT_RESET# FRY_BY# FWP# GETH0_RST# M66EN PADD[27:31] PCS_2 PDATA[0:7] POE# PPC_DDR2_RESET_N PPC_RESET PREADY PR_W# PWBE_0# PWR_GOOD RESET_CPLD# RESET_PB_POR# RESET_POR# SELECTMAP_CS SEL_SYSCLK STTM_AS SX95T_CCLK_0 SX95T_CS_B_0 SX95T_DONE_0 SX95T_D_IN_0 SX95T_D_OUT_BUSY_0 SX95T_INIT_B_0 SX95T_M2_0 SX95T_M1_0 SX95T_M0_0 SX95T_PROGRAM_B_0 SX95T_RDWR_B_0 SYSERR SYS_CONFIG[0:7] SHEET=24`
 |R 7:26_10-9-08
+M IOD_Schematic:heatsinkhole $1I1074
+I $1I1074 IOD_Schematic:heatsinkhole P/D_NUM=N/A`SCHLOC=1Q5`DEVICE=HSHOLE_3_5D3_2_NP`GEOMETRY.HEIGHT=0`REFDES=H10`
+|R 15:52_1-22-08
+W IOD_Schematic:roach_transceivers_psu $1I803
+I $1I803 IOD_Schematic:roach_transceivers_psu MGT_AVCCPLL_PG MGT_AVTTX_PG MGT_AVCC_PG MGT_AVTTX_EN MGT_AVCCPLL_EN MGT_AVCC_EN SHEET=10`
+|R 8:14_10-2-07
+W IOD_Schematic:roach_transceivers0_1 $1I2
+I $1I2 IOD_Schematic:roach_transceivers0_1 $1N1268 $1N1266 $1N1272 $1N1270 SHEET=8`
+|R 8:30_10-9-08
+W IOD_Schematic:roach_transceivers2_3 $1I3
+I $1I3 IOD_Schematic:roach_transceivers2_3 $1N1268 $1N1266 $1N1272 $1N1270 SHEET=9`
+|R 8:31_10-9-08
 EW
