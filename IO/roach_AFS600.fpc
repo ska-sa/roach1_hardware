@@ -20,7 +20,6 @@
   (CDBFLOW 0)
   (HKP true)
   (LOCAL_PDB_PATH "..\\roach\\Integration\\LocalPartsDB.pdb")
-  (GENERATENEEDED_SYMBOLS 1)
   (LIBRARY_VERSION "Version 73_00")
   (PART_NUMBER roach_afs600)
   (SIGNALS
@@ -388,12 +387,37 @@
         (SIGNAL
           (NAME "GPIO_CC<1>")
           (HDL_NAME "GPIO_CC<1>")
-          (TYPE IO)
+          (PIN D11)
+          (TYPE CLOCK)
           (IOSTANDARD LVTTL)
         )
         (SIGNAL
           (NAME "GPIO_CC<0>")
           (HDL_NAME "GPIO_CC<0>")
+          (PIN E11)
+          (TYPE CLOCK)
+          (IOSTANDARD LVTTL)
+        )
+      )
+      (TYPE CLOCK)
+      (IOSTANDARD LVTTL)
+    )
+    (SIGNAL
+      (NAME GPIO_DIR)
+      (HDL_NAME GPIO_DIR)
+      (DIR OUT)
+      (ELEMENTS
+        (SIGNAL
+          (NAME "GPIO_DIR<1>")
+          (HDL_NAME "GPIO_DIR<1>")
+          (PIN H12)
+          (TYPE IO)
+          (IOSTANDARD LVTTL)
+        )
+        (SIGNAL
+          (NAME "GPIO_DIR<0>")
+          (HDL_NAME "GPIO_DIR<0>")
+          (PIN F12)
           (TYPE IO)
           (IOSTANDARD LVTTL)
         )
@@ -409,48 +433,56 @@
         (SIGNAL
           (NAME "GPIO_IO<7>")
           (HDL_NAME "GPIO_IO<7>")
+          (PIN A11)
           (TYPE IO)
           (IOSTANDARD LVTTL)
         )
         (SIGNAL
           (NAME "GPIO_IO<6>")
           (HDL_NAME "GPIO_IO<6>")
+          (PIN A14)
           (TYPE IO)
           (IOSTANDARD LVTTL)
         )
         (SIGNAL
           (NAME "GPIO_IO<5>")
           (HDL_NAME "GPIO_IO<5>")
+          (PIN C10)
           (TYPE IO)
           (IOSTANDARD LVTTL)
         )
         (SIGNAL
           (NAME "GPIO_IO<4>")
           (HDL_NAME "GPIO_IO<4>")
+          (PIN F9)
           (TYPE IO)
           (IOSTANDARD LVTTL)
         )
         (SIGNAL
           (NAME "GPIO_IO<3>")
           (HDL_NAME "GPIO_IO<3>")
+          (PIN E9)
           (TYPE IO)
           (IOSTANDARD LVTTL)
         )
         (SIGNAL
           (NAME "GPIO_IO<2>")
           (HDL_NAME "GPIO_IO<2>")
+          (PIN C9)
           (TYPE IO)
           (IOSTANDARD LVTTL)
         )
         (SIGNAL
           (NAME "GPIO_IO<1>")
           (HDL_NAME "GPIO_IO<1>")
+          (PIN D10)
           (TYPE IO)
           (IOSTANDARD LVTTL)
         )
         (SIGNAL
           (NAME "GPIO_IO<0>")
           (HDL_NAME "GPIO_IO<0>")
+          (PIN F10)
           (TYPE IO)
           (IOSTANDARD LVTTL)
         )
@@ -1441,7 +1473,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B5,C10,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A13,B5,D13,D14,D15,D2,D3,D4,D5,E12,E14,E15,E2,E3,E5,E6,F11,F13,F14,F15,F16,F3,F4,F5,F6,F7,G11,G13,G14,G3,G4,G6,H11,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -1502,7 +1534,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B5,C10,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A13,B5,D13,D14,D15,D2,D3,D4,D5,E12,E14,E15,E2,E3,E5,E6,F11,F13,F14,F15,F16,F3,F4,F5,F6,F7,G11,G13,G14,G3,G4,G6,H11,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
           (OWNER ICDBDXD)
         )
         (ATTRIBUTE
@@ -7741,7 +7773,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B5,C10,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A13,B5,D13,D14,D15,D2,D3,D4,D5,E12,E14,E15,E2,E3,E5,E6,F11,F13,F14,F15,F16,F3,F4,F5,F6,F7,G11,G13,G14,G3,G4,G6,H11,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -7802,7 +7834,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B5,C10,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A13,B5,D13,D14,D15,D2,D3,D4,D5,E12,E14,E15,E2,E3,E5,E6,F11,F13,F14,F15,F16,F3,F4,F5,F6,F7,G11,G13,G14,G3,G4,G6,H11,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
           (OWNER ICDBDXD)
         )
         (ATTRIBUTE
@@ -15015,7 +15047,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B5,C10,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A13,B5,D13,D14,D15,D2,D3,D4,D5,E12,E14,E15,E2,E3,E5,E6,F11,F13,F14,F15,F16,F3,F4,F5,F6,F7,G11,G13,G14,G3,G4,G6,H11,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -15076,7 +15108,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B5,C10,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A13,B5,D13,D14,D15,D2,D3,D4,D5,E12,E14,E15,E2,E3,E5,E6,F11,F13,F14,F15,F16,F3,F4,F5,F6,F7,G11,G13,G14,G3,G4,G6,H11,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
           (OWNER ICDBDXD)
         )
         (ATTRIBUTE
@@ -15134,11 +15166,11 @@
       (BACKGROUND T)
       (BACKGROUNDNAME Box)
       (ISLOCAL T)
-      (OUTLINE -10160 -5080 71120 55880)
+      (OUTLINE -10160 -5080 71120 91440)
       (PCB T)
       (ELEMENTS
         (RECT
-          (POSITION 0 -5080 60960 55880)
+          (POSITION 0 -5080 60960 91440)
           (BACKGROUND T)
         )
         (PORT
@@ -15384,7 +15416,7 @@
         (PORT
           (TYPE SIGNAL)
           (NAME PPC_RESET)
-          (POSITION 71120 10160)
+          (POSITION 71120 5080)
           (EXTTYPE OUT)
           (ROTATION 180)
           (LENGTH 10160)
@@ -15454,20 +15486,20 @@
         )
         (TEXT
           (LABEL PPC_RESET)
-          (POSITION 60114 10160)
+          (POSITION 60114 5080)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
         (TEXT
           (PINNUMBER PPC_RESET)
-          (POSITION 71120 9652)
+          (POSITION 71120 4572)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (PORT
           (TYPE SIGNAL)
           (NAME "SYS_CONFIG<7>")
-          (POSITION 71120 50800)
+          (POSITION 71120 45720)
           (EXTTYPE OUT)
           (ROTATION 180)
           (LENGTH 10160)
@@ -15537,14 +15569,14 @@
         )
         (TEXT
           (LABEL "SYS_CONFIG<7>")
-          (POSITION 60114 50800)
+          (POSITION 60114 45720)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE SIGNAL)
           (NAME "SYS_CONFIG<6>")
-          (POSITION 71120 45720)
+          (POSITION 71120 40640)
           (EXTTYPE OUT)
           (ROTATION 180)
           (LENGTH 10160)
@@ -15614,14 +15646,14 @@
         )
         (TEXT
           (LABEL "SYS_CONFIG<6>")
-          (POSITION 60114 45720)
+          (POSITION 60114 40640)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE SIGNAL)
           (NAME "SYS_CONFIG<5>")
-          (POSITION 71120 40640)
+          (POSITION 71120 35560)
           (EXTTYPE OUT)
           (ROTATION 180)
           (LENGTH 10160)
@@ -15691,14 +15723,14 @@
         )
         (TEXT
           (LABEL "SYS_CONFIG<5>")
-          (POSITION 60114 40640)
+          (POSITION 60114 35560)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE SIGNAL)
           (NAME "SYS_CONFIG<4>")
-          (POSITION 71120 35560)
+          (POSITION 71120 30480)
           (EXTTYPE OUT)
           (ROTATION 180)
           (LENGTH 10160)
@@ -15768,14 +15800,14 @@
         )
         (TEXT
           (LABEL "SYS_CONFIG<4>")
-          (POSITION 60114 35560)
+          (POSITION 60114 30480)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE SIGNAL)
           (NAME "SYS_CONFIG<3>")
-          (POSITION 71120 30480)
+          (POSITION 71120 25400)
           (EXTTYPE OUT)
           (ROTATION 180)
           (LENGTH 10160)
@@ -15845,14 +15877,14 @@
         )
         (TEXT
           (LABEL "SYS_CONFIG<3>")
-          (POSITION 60114 30480)
+          (POSITION 60114 25400)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE SIGNAL)
           (NAME "SYS_CONFIG<2>")
-          (POSITION 71120 25400)
+          (POSITION 71120 20320)
           (EXTTYPE OUT)
           (ROTATION 180)
           (LENGTH 10160)
@@ -15922,14 +15954,14 @@
         )
         (TEXT
           (LABEL "SYS_CONFIG<2>")
-          (POSITION 60114 25400)
+          (POSITION 60114 20320)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE SIGNAL)
           (NAME "SYS_CONFIG<1>")
-          (POSITION 71120 20320)
+          (POSITION 71120 15240)
           (EXTTYPE OUT)
           (ROTATION 180)
           (LENGTH 10160)
@@ -15999,14 +16031,14 @@
         )
         (TEXT
           (LABEL "SYS_CONFIG<1>")
-          (POSITION 60114 20320)
+          (POSITION 60114 15240)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
         (PORT
           (TYPE SIGNAL)
           (NAME "SYS_CONFIG<0>")
-          (POSITION 71120 15240)
+          (POSITION 71120 10160)
           (EXTTYPE OUT)
           (ROTATION 180)
           (LENGTH 10160)
@@ -16076,56 +16108,1020 @@
         )
         (TEXT
           (LABEL "SYS_CONFIG<0>")
-          (POSITION 60114 15240)
+          (POSITION 60114 10160)
           (HALIGN RIGHT)
           (VALIGN CENTER)
         )
         (TEXT
           (PINNUMBER "SYS_CONFIG<7>")
-          (POSITION 71120 50292)
-          (HALIGN RIGHT)
-          (VALIGN BOTTOM)
-        )
-        (TEXT
-          (PINNUMBER "SYS_CONFIG<6>")
           (POSITION 71120 45212)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER "SYS_CONFIG<5>")
+          (PINNUMBER "SYS_CONFIG<6>")
           (POSITION 71120 40132)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER "SYS_CONFIG<4>")
+          (PINNUMBER "SYS_CONFIG<5>")
           (POSITION 71120 35052)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER "SYS_CONFIG<3>")
+          (PINNUMBER "SYS_CONFIG<4>")
           (POSITION 71120 29972)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER "SYS_CONFIG<2>")
+          (PINNUMBER "SYS_CONFIG<3>")
           (POSITION 71120 24892)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER "SYS_CONFIG<1>")
+          (PINNUMBER "SYS_CONFIG<2>")
           (POSITION 71120 19812)
           (HALIGN RIGHT)
           (VALIGN BOTTOM)
         )
         (TEXT
-          (PINNUMBER "SYS_CONFIG<0>")
+          (PINNUMBER "SYS_CONFIG<1>")
           (POSITION 71120 14732)
           (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER "SYS_CONFIG<0>")
+          (POSITION 71120 9652)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (PORT
+          (TYPE PIN)
+          (NAME D11)
+          (POSITION -10160 25400)
+          (LENGTH 10160)
+          (SLOT 13)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE D11)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE D11)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE D11)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE D11)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE D11)
+              (OWNER IDESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Type")
+              (VALUE BI)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "GPIO_CC(1)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_CC(1)")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_CC(1)")
+              (OWNER IDESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL D11)
+          (POSITION 846 25400)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE PIN)
+          (NAME E11)
+          (POSITION -10160 30480)
+          (LENGTH 10160)
+          (SLOT 14)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE E11)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE E11)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE E11)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE E11)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE E11)
+              (OWNER IDESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Type")
+              (VALUE BI)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "GPIO_CC(0)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_CC(0)")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_CC(0)")
+              (OWNER IDESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL E11)
+          (POSITION 846 30480)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME "GPIO_DIR<1>")
+          (POSITION 71120 55880)
+          (EXTTYPE OUT)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 15)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE H12)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE H12)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE H12)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE H12)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE H12)
+              (OWNER IDESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Type")
+              (VALUE OUT)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "GPIO_DIR(1)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_DIR(1)")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_DIR(1)")
+              (OWNER IDESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "GPIO_DIR<1>")
+          (POSITION 60114 55880)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME "GPIO_DIR<0>")
+          (POSITION 71120 81280)
+          (EXTTYPE OUT)
+          (ROTATION 180)
+          (LENGTH 10160)
+          (SLOT 16)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE F12)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE F12)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE F12)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE F12)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE F12)
+              (OWNER IDESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Type")
+              (VALUE OUT)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE OUT)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "GPIO_DIR(0)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_DIR(0)")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_DIR(0)")
+              (OWNER IDESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "GPIO_DIR<0>")
+          (POSITION 60114 81280)
+          (HALIGN RIGHT)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME "GPIO_IO<7>")
+          (POSITION -10160 40640)
+          (EXTTYPE BI)
+          (LENGTH 10160)
+          (SLOT 17)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE A11)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE A11)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE A11)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE A11)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE A11)
+              (OWNER IDESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Type")
+              (VALUE BI)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "GPIO_IO(7)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_IO(7)")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_IO(7)")
+              (OWNER IDESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "GPIO_IO<7>")
+          (POSITION 846 40640)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME "GPIO_IO<6>")
+          (POSITION -10160 45720)
+          (EXTTYPE BI)
+          (LENGTH 10160)
+          (SLOT 18)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE A14)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE A14)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE A14)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE A14)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE A14)
+              (OWNER IDESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Type")
+              (VALUE BI)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "GPIO_IO(6)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_IO(6)")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_IO(6)")
+              (OWNER IDESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "GPIO_IO<6>")
+          (POSITION 846 45720)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME "GPIO_IO<5>")
+          (POSITION -10160 50800)
+          (EXTTYPE BI)
+          (LENGTH 10160)
+          (SLOT 19)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE C10)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE C10)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE C10)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE C10)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE C10)
+              (OWNER IDESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Type")
+              (VALUE BI)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "GPIO_IO(5)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_IO(5)")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_IO(5)")
+              (OWNER IDESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "GPIO_IO<5>")
+          (POSITION 846 50800)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME "GPIO_IO<4>")
+          (POSITION -10160 55880)
+          (EXTTYPE BI)
+          (LENGTH 10160)
+          (SLOT 20)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE F9)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE F9)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE F9)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE F9)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE F9)
+              (OWNER IDESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Type")
+              (VALUE BI)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "GPIO_IO(4)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_IO(4)")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_IO(4)")
+              (OWNER IDESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "GPIO_IO<4>")
+          (POSITION 846 55880)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME "GPIO_IO<3>")
+          (POSITION -10160 66040)
+          (EXTTYPE BI)
+          (LENGTH 10160)
+          (SLOT 21)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE E9)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE E9)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE E9)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE E9)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE E9)
+              (OWNER IDESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Type")
+              (VALUE BI)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "GPIO_IO(3)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_IO(3)")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_IO(3)")
+              (OWNER IDESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "GPIO_IO<3>")
+          (POSITION 846 66040)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME "GPIO_IO<2>")
+          (POSITION -10160 71120)
+          (EXTTYPE BI)
+          (LENGTH 10160)
+          (SLOT 22)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE C9)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE C9)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE C9)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE C9)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE C9)
+              (OWNER IDESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Type")
+              (VALUE BI)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "GPIO_IO(2)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_IO(2)")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_IO(2)")
+              (OWNER IDESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "GPIO_IO<2>")
+          (POSITION 846 71120)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME "GPIO_IO<1>")
+          (POSITION -10160 76200)
+          (EXTTYPE BI)
+          (LENGTH 10160)
+          (SLOT 23)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE D10)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE D10)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE D10)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE D10)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE D10)
+              (OWNER IDESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Type")
+              (VALUE BI)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "GPIO_IO(1)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_IO(1)")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_IO(1)")
+              (OWNER IDESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "GPIO_IO<1>")
+          (POSITION 846 76200)
+          (VALIGN CENTER)
+        )
+        (PORT
+          (TYPE SIGNAL)
+          (NAME "GPIO_IO<0>")
+          (POSITION -10160 81280)
+          (EXTTYPE BI)
+          (LENGTH 10160)
+          (SLOT 24)
+          (ELEMENTS
+            (LINE
+              (POINTS 0 0 10160 0)
+            )
+          )
+          (ATTRIBUTES
+            (ATTRIBUTE
+              (NAME "#")
+              (VALUE F10)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE F10)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PIN_NO)
+              (VALUE F10)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE F10)
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Number")
+              (VALUE F10)
+              (OWNER IDESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE BI)
+              (OWNER DXDESIGNER)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Type")
+              (VALUE BI)
+              (OWNER ICDBDXD)
+            )
+            (ATTRIBUTE
+              (NAME PINTYPE)
+              (VALUE IXO)
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME PIN)
+              (VALUE "GPIO_IO(0)")
+              (OWNER DESIGNARCHITECT)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_IO(0)")
+              (OWNER DESIGNCAPTURE)
+            )
+            (ATTRIBUTE
+              (NAME "Pin Name")
+              (VALUE "GPIO_IO(0)")
+              (OWNER IDESIGNCAPTURE)
+            )
+          )
+        )
+        (TEXT
+          (LABEL "GPIO_IO<0>")
+          (POSITION 846 81280)
+          (VALIGN CENTER)
+        )
+        (TEXT
+          (PINNUMBER D11)
+          (POSITION -10160 24892)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER E11)
+          (POSITION -10160 29972)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER "GPIO_DIR<1>")
+          (POSITION 71120 55372)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER "GPIO_DIR<0>")
+          (POSITION 71120 80772)
+          (HALIGN RIGHT)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER "GPIO_IO<7>")
+          (POSITION -10160 40132)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER "GPIO_IO<6>")
+          (POSITION -10160 45212)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER "GPIO_IO<5>")
+          (POSITION -10160 50292)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER "GPIO_IO<4>")
+          (POSITION -10160 55372)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER "GPIO_IO<3>")
+          (POSITION -10160 65532)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER "GPIO_IO<2>")
+          (POSITION -10160 70612)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER "GPIO_IO<1>")
+          (POSITION -10160 75692)
+          (VALIGN BOTTOM)
+        )
+        (TEXT
+          (PINNUMBER "GPIO_IO<0>")
+          (POSITION -10160 80772)
           (VALIGN BOTTOM)
         )
       )
@@ -16172,12 +17168,12 @@
         )
         (ATTRIBUTE
           (NAME PINSWAP)
-          (VALUE "(I2C0_33_DATA,I2C0_SCLK,MONITOR_INT,PPC_RESET,SYS_CONFIG7,SYS_CONFIG6,SYS_CONFIG5,SYS_CONFIG4,SYS_CONFIG3,SYS_CONFIG2,SYS_CONFIG1,SYS_CONFIG0)")
+          (VALUE "(GPIO_CC1,GPIO_CC0),(I2C0_33_DATA,I2C0_SCLK,MONITOR_INT,PPC_RESET,SYS_CONFIG7,SYS_CONFIG6,SYS_CONFIG5,SYS_CONFIG4,SYS_CONFIG3,SYS_CONFIG2,SYS_CONFIG1,SYS_CONFIG0,GPIO_DIR1,GPIO_DIR0,GPIO_IO7,GPIO_IO6,GPIO_IO5,GPIO_IO4,GPIO_IO3,GPIO_IO2,GPIO_IO1,GPIO_IO0)")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
           (NAME PINSWAP)
-          (VALUE "(I2C0_33_DATA,I2C0_SCLK,MONITOR_INT,PPC_RESET,SYS_CONFIG7,SYS_CONFIG6,SYS_CONFIG5,SYS_CONFIG4,SYS_CONFIG3,SYS_CONFIG2,SYS_CONFIG1,SYS_CONFIG0)")
+          (VALUE "(GPIO_CC1,GPIO_CC0),(I2C0_33_DATA,I2C0_SCLK,MONITOR_INT,PPC_RESET,SYS_CONFIG7,SYS_CONFIG6,SYS_CONFIG5,SYS_CONFIG4,SYS_CONFIG3,SYS_CONFIG2,SYS_CONFIG1,SYS_CONFIG0,GPIO_DIR1,GPIO_DIR0,GPIO_IO7,GPIO_IO6,GPIO_IO5,GPIO_IO4,GPIO_IO3,GPIO_IO2,GPIO_IO1,GPIO_IO0)")
           (OWNER ICDBDXD)
         )
         (ATTRIBUTE
@@ -16187,7 +17183,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B5,C10,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A13,B5,D13,D14,D15,D2,D3,D4,D5,E12,E14,E15,E2,E3,E5,E6,F11,F13,F14,F15,F16,F3,F4,F5,F6,F7,G11,G13,G14,G3,G4,G6,H11,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
           (OWNER DXDESIGNER)
         )
         (ATTRIBUTE
@@ -16278,7 +17274,7 @@
         )
         (ATTRIBUTE
           (NAME NC)
-          (VALUE "A11,A13,A14,B5,C10,C9,D10,D11,D13,D14,D15,D2,D3,D4,D5,E11,E12,E14,E15,E2,E3,E5,E6,E9,F10,F11,F12,F13,F14,F15,F16,F3,F4,F5,F6,F7,F9,G11,G13,G14,G3,G4,G6,H11,H12,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
+          (VALUE "A13,B5,D13,D14,D15,D2,D3,D4,D5,E12,E14,E15,E2,E3,E5,E6,F11,F13,F14,F15,F16,F3,F4,F5,F6,F7,G11,G13,G14,G3,G4,G6,H11,H13,H14,H2,J11,J12,J13,J14,J2,J3,J5,J6,K1,K11,K13,K14,K16,K3,K4,K6,L1,L2,L3,L4,L5,L6,M11,M2,M3,M7,N3,N6,P12,P4,P5,R13")
           (OWNER ICDBDXD)
         )
         (ATTRIBUTE
@@ -16338,6 +17334,14 @@
     (IO
       (PIN A10)
       (STANDARD LVCMOS33)
+    )
+    (IO
+      (PIN A11)
+      (STANDARD LVTTL)
+    )
+    (IO
+      (PIN A14)
+      (STANDARD LVTTL)
     )
     (IO
       (PIN A3)
@@ -16400,6 +17404,10 @@
       (STANDARD LVCMOS33)
     )
     (IO
+      (PIN C10)
+      (STANDARD LVTTL)
+    )
+    (IO
       (PIN C11)
       (STANDARD LVCMOS33)
     )
@@ -16420,8 +17428,20 @@
       (STANDARD LVCMOS33)
     )
     (IO
+      (PIN C9)
+      (STANDARD LVTTL)
+    )
+    (IO
       (PIN D1)
       (STANDARD LVCMOS33)
+    )
+    (IO
+      (PIN D10)
+      (STANDARD LVTTL)
+    )
+    (IO
+      (PIN D11)
+      (STANDARD LVTTL)
     )
     (IO
       (PIN D16)
@@ -16444,11 +17464,27 @@
       (STANDARD LVTTL)
     )
     (IO
+      (PIN E11)
+      (STANDARD LVTTL)
+    )
+    (IO
       (PIN E8)
       (STANDARD LVTTL)
     )
     (IO
+      (PIN E9)
+      (STANDARD LVTTL)
+    )
+    (IO
       (PIN F1)
+      (STANDARD LVTTL)
+    )
+    (IO
+      (PIN F10)
+      (STANDARD LVTTL)
+    )
+    (IO
+      (PIN F12)
       (STANDARD LVTTL)
     )
     (IO
@@ -16457,6 +17493,10 @@
     )
     (IO
       (PIN F8)
+      (STANDARD LVTTL)
+    )
+    (IO
+      (PIN F9)
       (STANDARD LVTTL)
     )
     (IO
@@ -16470,6 +17510,10 @@
     (IO
       (PIN H1)
       (STANDARD LVCMOS33)
+    )
+    (IO
+      (PIN H12)
+      (STANDARD LVTTL)
     )
     (IO
       (PIN H15)
@@ -16602,6 +17646,14 @@
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
+      (PIN A11)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
+      (PIN A14)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
       (PIN A3)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
@@ -16662,6 +17714,10 @@
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
+      (PIN C10)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
       (PIN C11)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
@@ -16682,8 +17738,20 @@
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
+      (PIN C9)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
       (PIN D1)
       (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
+      (PIN D10)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
+      (PIN D11)
+      (GROUP CLOCK_Vref_NR_VccIO_3_3)
     )
     (SWAP
       (PIN D16)
@@ -16706,11 +17774,27 @@
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
+      (PIN E11)
+      (GROUP CLOCK_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
       (PIN E8)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
+      (PIN E9)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
       (PIN F1)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
+      (PIN F10)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
+      (PIN F12)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
@@ -16719,6 +17803,10 @@
     )
     (SWAP
       (PIN F8)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
+      (PIN F9)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
@@ -16731,6 +17819,10 @@
     )
     (SWAP
       (PIN H1)
+      (GROUP IO_Vref_NR_VccIO_3_3)
+    )
+    (SWAP
+      (PIN H12)
       (GROUP IO_Vref_NR_VccIO_3_3)
     )
     (SWAP
