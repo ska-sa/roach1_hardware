@@ -5,7 +5,7 @@
 	(config_properties
 		(attributes
 			(attval "PcbConfigName" "C:\Roach\elec\roach\roach_pcb.cfg")
-			(attval "CnsFile" ".\pads2007.cns")
+			(attval "CnsFile" "C:\Roach\elec\roach\pads2007.cns")
 			(attval "BeAdapter" "PADS2007")
 			(attval "FeAdapter" "DxDesigner")
 			(attval "SYSCONFIG" "pcbfwd")
@@ -26,7 +26,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1223561690"))
+		(file_ext "roach_top.pxr" "1223647472"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -661,7 +661,7 @@
 						(attval "PKG_TYPE" "SOT95P280X145-5N")
 						(attval "REFDES" "U?"))))
 			(pin 1 2 "power_gate1" 0 "NC" 0)
-			(pin 5 2 "power_gate2" 0 "3V3AUX" 0)
+			(pin 5 2 "power_gate2" 0 "3V3" 0)
 			(pin 3 2 "power_gate3" 0 "GND" 0)
 			(pin 4  4 "SN74LVC1G07__SN74LVC1G07DBV_1" 0 "Q" 0)
 			(pin 2  3 "SN74LVC1G07__SN74LVC1G07DBV_1" 0 "A" 0))
@@ -1029,6 +1029,18 @@
 			(pin C7  4 "ROACH_AFS600__ROACH_AFS600_1" 0 "XPORT_RESET" 0)
 			(pin H4  5 "ROACH_AFS600__ROACH_AFS600_1" 0 "XTAL1" 0)
 			(pin H3  5 "ROACH_AFS600__ROACH_AFS600_1" 0 "XTAL2" 0))
+		(part "RES_2512")
+		(logical_part_mapping "RES_2512"
+			(comp "R298" "R296" "R295" "R294" "R293" "R292" "R287"))
+		(logical_part "RES_2512"
+			(slots
+				(slot "R__RES_2512_1"
+					(attributes
+						(attval "PKG_TYPE" "R1/4W")
+						(attval "REFDES" "R?")
+						(attval "VALUE" ""))))
+			(pin 2  5 "R__RES_2512_1" 0 "N2" 0)
+			(pin 1  5 "R__RES_2512_1" 0 "N1" 0))
 		(part "RES_180_0402_5%")
 		(logical_part_mapping "RES_180_0402_5%"
 			(comp "R203" "R202" "R201" "R200" "R199" "R197" "R42"))
@@ -1254,9 +1266,9 @@
 			(pin 1  5 "R__RES0402X0_35_1" 0 "N1" 0))
 		(part "R")
 		(logical_part_mapping "R"
-			(comp "R306" "R305" "R299" "R298" "R296" "R295" "R294" "R293" "R292" "R291" "R290" "R289" "R288" "R287" "R286"
- "R285" "R284" "R283" "R282" "R281" "R280" "R279" "R278" "R189" "R188" "R187" "R185" "R175" "R174" "R173" "R163"
- "R162" "R161" "R135" "R134" "R133" "R132" "R84" "R83" "R5" "R3"))
+			(comp "R306" "R305" "R299" "R291" "R290" "R289" "R288" "R286" "R285" "R284" "R283" "R282" "R281" "R280" "R279"
+ "R278" "R189" "R188" "R187" "R185" "R175" "R174" "R173" "R163" "R162" "R161" "R135" "R134" "R133" "R132" "R84"
+ "R83" "R5" "R3"))
 		(logical_part "R"
 			(slots
 				(slot "R__R_1"
@@ -10342,7 +10354,7 @@
 				(attval "P/D_NUM" "SN74LVC1G07DBVT")
 				(attval "DEVICE" "SN74LVC1G07DBV")
 				(attval "REFDES" "U7")))
-		(component "PQFN50P602X602X100-41N"
+		(component "QFN50P600X600X100-41N"
 			(place "U6" 0.0 0.0 top 0.0
 				(comp_pin "17" 0.0 0.0 "OUT")
 				(comp_pin "16" 0.0 0.0 "OUT")
@@ -12252,19 +12264,19 @@
 				(attval "P/D_NUM" "WSL25121L000FEA")
 				(attval "MANUFACTURER" "VISHAY DALE")
 				(attval "GEOMETRY.HEIGHT" "0.89MM")
-				(attval "DEVICE" "R")
+				(attval "DEVICE" "RES_2512")
 				(attval "REFDES" "R298")))
-		(component "RESC5025X90N"
+		(component "RESC6432X89N"
 			(place "R296" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
 			(attributes
-				(attval "VALUE" "0R0047")
+				(attval "VALUE" "0R004")
 				(attval "TOLERANCE" "1%")
-				(attval "P/D_NUM" "WSL20104L700FEA")
+				(attval "P/D_NUM" "WSL25124L000FEA")
 				(attval "MANUFACTURER" "VISHAY DALE")
 				(attval "GEOMETRY.HEIGHT" "0.89MM")
-				(attval "DEVICE" "R")
+				(attval "DEVICE" "RES_2512")
 				(attval "REFDES" "R296")))
 		(component "RESC6432X89N"
 			(place "R295" 0.0 0.0 top 0.0
@@ -12273,46 +12285,46 @@
 			(attributes
 				(attval "VALUE" "0R0022")
 				(attval "TOLERANCE" "1%")
-				(attval "P/D_NUM" "WSL25122L200FEA")
+				(attval "P/D_NUM" "WSL25122L000FEA")
 				(attval "MANUFACTURER" "VISHAY DALE")
 				(attval "GEOMETRY.HEIGHT" "0.89MM")
-				(attval "DEVICE" "R")
+				(attval "DEVICE" "RES_2512")
 				(attval "REFDES" "R295")))
-		(component "RESC5025X90N"
+		(component "RESC6432X89N"
 			(place "R294" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
 			(attributes
 				(attval "VALUE" "0R01")
 				(attval "TOLERANCE" "1%")
-				(attval "P/D_NUM" "WSL2010R0100FEA")
+				(attval "P/D_NUM" "WSL2512R0100FEA")
 				(attval "MANUFACTURER" "VISHAY DALE")
 				(attval "GEOMETRY.HEIGHT" "0.89MM")
-				(attval "DEVICE" "R")
+				(attval "DEVICE" "RES_2512")
 				(attval "REFDES" "R294")))
-		(component "RESC5025X90N"
+		(component "RESC6432X89N"
 			(place "R293" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
 			(attributes
 				(attval "VALUE" "0R01")
 				(attval "TOLERANCE" "1%")
-				(attval "P/D_NUM" "WSL2010R0100FEA")
+				(attval "P/D_NUM" "WSL2512R0100FEA")
 				(attval "MANUFACTURER" "VISHAY DALE")
 				(attval "GEOMETRY.HEIGHT" "0.89MM")
-				(attval "DEVICE" "R")
+				(attval "DEVICE" "RES_2512")
 				(attval "REFDES" "R293")))
-		(component "RESC5025X90N"
+		(component "RESC6432X89N"
 			(place "R292" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
 			(attributes
-				(attval "VALUE" "0R0047")
+				(attval "VALUE" "0R004")
 				(attval "TOLERANCE" "1%")
-				(attval "P/D_NUM" "WSL20104L700FEA")
+				(attval "P/D_NUM" "WSL25124L000FEA")
 				(attval "MANUFACTURER" "VISHAY DALE")
 				(attval "GEOMETRY.HEIGHT" "0.89MM")
-				(attval "DEVICE" "R")
+				(attval "DEVICE" "RES_2512")
 				(attval "REFDES" "R292")))
 		(component "RESC1005X40N"
 			(place "R291" 0.0 0.0 top 0.0
@@ -12362,17 +12374,17 @@
 				(attval "GEOMETRY.HEIGHT" "0.4MM")
 				(attval "DEVICE" "R")
 				(attval "REFDES" "R288")))
-		(component "RESC5025X90N"
+		(component "RESC6432X89N"
 			(place "R287" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "BI")
 				(comp_pin "1" 0.0 0.0 "BI"))
 			(attributes
 				(attval "VALUE" "0R01")
 				(attval "TOLERANCE" "1%")
-				(attval "P/D_NUM" "WSL2010R0100FEA")
+				(attval "P/D_NUM" "WSL2512R0100FEA")
 				(attval "MANUFACTURER" "VISHAY DALE")
 				(attval "GEOMETRY.HEIGHT" "0.89MM")
-				(attval "DEVICE" "R")
+				(attval "DEVICE" "RES_2512")
 				(attval "REFDES" "R287")))
 		(component "RESC1005X40N"
 			(place "R286" 0.0 0.0 top 0.0
@@ -32511,7 +32523,7 @@
 		(net "$1I967\$1N665"
 			(pins R284-1 J7-5))
 		(net "$1I967\$1N695"
-			(pins R278-1 R287-2 R289-2 Q12-1 Q12-2 Q12-3))
+			(pins R278-1 R289-2 R287-2 Q12-1 Q12-2 Q12-3))
 		(net "$1I967\$1N1043"
 			(pins C540-2 U61-12))
 		(net "$1I967\$1N1045"
@@ -32621,29 +32633,29 @@
 		(net "$1I967\MON_BIO_CC1"
 			(pins J3-19 U67-2))
 		(net "$1I967\MON_GPIO0"
-			(pins U60-F10 U65-4))
+			(pins U65-4 U60-F10))
 		(net "$1I967\MON_GPIO1"
-			(pins U60-D10 U65-5))
+			(pins U65-5 U60-D10))
 		(net "$1I967\MON_GPIO2"
-			(pins U60-C9 U65-6))
+			(pins U65-6 U60-C9))
 		(net "$1I967\MON_GPIO3"
-			(pins U60-E9 U65-7))
+			(pins U65-7 U60-E9))
 		(net "$1I967\MON_GPIO4"
-			(pins U60-F9 U66-4))
+			(pins U66-4 U60-F9))
 		(net "$1I967\MON_GPIO5"
-			(pins U60-C10 U66-5))
+			(pins U66-5 U60-C10))
 		(net "$1I967\MON_GPIO6"
-			(pins U60-A14 U66-6))
+			(pins U66-6 U60-A14))
 		(net "$1I967\MON_GPIO7"
-			(pins U60-A11 U66-7))
+			(pins U66-7 U60-A11))
 		(net "$1I967\MON_GPIO_CC0"
 			(pins U60-E11 U68-4))
 		(net "$1I967\MON_GPIO_CC1"
 			(pins U60-D11 U67-4))
 		(net "$1I967\MON_GPIO_DIR0"
-			(pins U60-F12 R188-1 U65-2 U65-3))
+			(pins R188-1 U65-2 U65-3 U60-F12))
 		(net "$1I967\MON_GPIO_DIR1"
-			(pins U60-H12 R189-1 U66-2 U66-3))
+			(pins R189-1 U66-2 U66-3 U60-H12))
 		(net "$1I967\MON_RESET#"
 			(pins R299-2 J7-12 U60-C13 U3-8))
 		(net "$1I967\NCAP"
@@ -33247,14 +33259,14 @@
  R62-1 R66-1 R70-1 R74-1 R61-1 R65-1 R69-1 C330-1 C331-1 C332-1 C333-1 P11-2
  P4-2 U45-5 U46-5 U48-5 C334-1 C335-1 Q14-5 Q14-6 Q14-7 Q14-8))
 		(net "3V3AUX"
-			(pins C538-1 JP28-3 J26-10 R282-2 R283-2 R284-2 R285-2 R286-2 R299-1 C542-1
- C543-1 U59-20 U59-1 U59-18 U59-19 U60-N13 U60-N4 U60-A2 U60-B7 U60-C4 U60-C5
- U60-A15 U60-B10 U60-C12 U60-D12 U60-C14 U60-C16 U60-E13 U60-G15 U60-K15
- U60-M13 U60-R16 U60-C1 U60-C3 U60-E4 U60-G2 U60-K2 U60-M4 U60-R1 U60-H6
- U60-L13 J27-6 Q11-2 J28-2 U61-5 C551-1 C553-1 U3-5 C61-1 C399-1 C568-1 C569-1
- C570-1 C571-1 C572-1 C573-1 C574-1 C575-1 C576-1 C577-1 C578-1 C579-1 C580-1
- C581-1 C582-1 C583-1 C584-1 C585-1 C586-1 C587-1 C588-1 C589-1 R188-2 R189-2
- U65-1 U65-16 U66-1 U66-16 C68-1 C69-1 U67-5 U68-5))
+			(pins C538-1 JP28-3 J26-10 R188-2 R189-2 R282-2 R283-2 R284-2 R285-2 R286-2
+ R299-1 U65-1 U65-16 U66-1 U66-16 C542-1 C543-1 C68-1 C69-1 U59-20 U59-1
+ U59-18 U59-19 U60-N13 U60-N4 U60-A2 U60-B7 U60-C4 U60-C5 U60-A15 U60-B10
+ U60-C12 U60-D12 U60-C14 U60-C16 U60-E13 U60-G15 U60-K15 U60-M13 U60-R16
+ U60-C1 U60-C3 U60-E4 U60-G2 U60-K2 U60-M4 U60-R1 U60-H6 U60-L13 J27-6 Q11-2
+ J28-2 U67-5 U68-5 U61-5 C551-1 C553-1 U3-5 C61-1 C399-1 C568-1 C569-1 C570-1
+ C571-1 C572-1 C573-1 C574-1 C575-1 C576-1 C577-1 C578-1 C579-1 C580-1 C581-1
+ C582-1 C583-1 C584-1 C585-1 C586-1 C587-1 C588-1 C589-1))
 		(net "3V3_ATX"
 			(pins C417-1 C471-1 C472-1 C620-1 J32-8 J18-1 J18-2 J18-12 J18-13 R293-1
  R145-1))
@@ -33279,7 +33291,7 @@
 			(pins C301-1 C305-1 C306-1 C307-1 L7-1 L14-1 L15-1 Q12-5 Q12-6 Q12-7 Q12-8))
 		(net "12V_ATX"
 			(pins J32-4 R187-2 R173-2 R174-2 R175-2 J18-10 J18-11 J19-2 J20-2 J21-2
- R287-1 R291-2))
+ R291-2 R287-1))
 		(net "ATRTN0"
 			(pins U15-W17 U60-T4 J31-1 J31-3))
 		(net "BOOT_CFG0"
@@ -33536,19 +33548,19 @@
  U42-H7 C649-2 C650-2 C651-2 C197-2 C652-2 C199-2 C653-2 C654-2 C193-2 C656-2
  C195-2 C658-2 C659-2 R86-2 R87-2 U43-18 U44-18 R85-2 R82-2 C330-2 C331-2
  C332-2 C333-2 P11-4 P4-4 U45-2 U46-2 U48-2 C334-2 C335-2 C538-2 J41-1 J41-3
- J41-5 J41-7 JP26-1 JP27-1 JP28-1 J26-9 R281-1 R288-1 R290-1 C545-2 J7-14
- J7-3 J7-4 C543-2 C544-2 C539-2 U59-12 U59-14 U59-2 U59-3 U59-4 U59-13
- U59-17 U59-21 U60-A1 U60-L7 U60-N12 U60-P14 U60-P3 U60-P9 U60-T13 U60-H5
- U60-A12 U60-G12 U60-G5 U60-G7 U60-G9 U60-H10 U60-H8 U60-J7 U60-J9 U60-K10
- U60-K12 U60-A16 U60-K5 U60-K8 U60-M1 U60-M16 U60-P16 U60-P2 U60-T1 U60-T16
- U60-A5 U60-C15 U60-C2 U60-E1 U60-E10 U60-E16 U60-E7 U60-B1 U60-B16 J27-2
- J27-10 R159-2 J28-1 J28-9 J28-10 C548-2 U61-6 C549-2 C550-2 C551-2 C552-2
- C553-2 C554-2 C555-2 U3-4 C33-2 C61-2 C399-2 C556-2 C557-2 C558-2 C559-2
- C560-2 C561-2 C562-2 C563-2 C564-2 C565-2 C566-2 C567-2 C568-2 C569-2 C570-2
- C571-2 C572-2 C573-2 C574-2 C575-2 C576-2 C577-2 C578-2 C579-2 C580-2 C581-2
- C582-2 C583-2 C584-2 C585-2 C586-2 C587-2 C588-2 C589-2 J3-10 J3-12 J3-14
- J3-16 J3-18 J3-2 J3-20 J3-4 J3-6 J3-8 U65-15 U65-14 U65-8 U65-9 U66-15 U66-14
- U66-8 U66-9 C68-2 C69-2 U67-3 U68-3))
+ J41-5 J41-7 J3-10 J3-12 J3-14 J3-16 J3-18 J3-2 J3-20 J3-4 J3-6 J3-8 JP26-1
+ JP27-1 JP28-1 J26-9 R281-1 R288-1 R290-1 C545-2 U65-15 U65-14 U65-8 U65-9
+ U66-15 U66-14 U66-8 U66-9 J7-14 J7-3 J7-4 C543-2 C544-2 C68-2 C69-2 C539-2
+ U59-12 U59-14 U59-2 U59-3 U59-4 U59-13 U59-17 U59-21 U60-A1 U60-L7 U60-N12
+ U60-P14 U60-P3 U60-P9 U60-T13 U60-H5 U60-A12 U60-G12 U60-G5 U60-G7 U60-G9
+ U60-H10 U60-H8 U60-J7 U60-J9 U60-K10 U60-K12 U60-A16 U60-K5 U60-K8 U60-M1
+ U60-M16 U60-P16 U60-P2 U60-T1 U60-T16 U60-A5 U60-C15 U60-C2 U60-E1 U60-E10
+ U60-E16 U60-E7 U60-B1 U60-B16 J27-2 J27-10 R159-2 J28-1 J28-9 J28-10 C548-2
+ U67-3 U68-3 U61-6 C549-2 C550-2 C551-2 C552-2 C553-2 C554-2 C555-2 U3-4
+ C33-2 C61-2 C399-2 C556-2 C557-2 C558-2 C559-2 C560-2 C561-2 C562-2 C563-2
+ C564-2 C565-2 C566-2 C567-2 C568-2 C569-2 C570-2 C571-2 C572-2 C573-2 C574-2
+ C575-2 C576-2 C577-2 C578-2 C579-2 C580-2 C581-2 C582-2 C583-2 C584-2 C585-2
+ C586-2 C587-2 C588-2 C589-2))
 		(net "GPIO44"
 			(pins RO5-1 U1-V32))
 		(net "I1V0"
@@ -35297,6 +35309,72 @@
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I967\MON_RESET#"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\MON_GPIO_DIR1"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\MON_GPIO_DIR0"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\MON_GPIO_CC1"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\MON_GPIO_CC0"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\MON_GPIO7"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\MON_GPIO6"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\MON_GPIO5"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\MON_GPIO4"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\MON_GPIO3"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\MON_GPIO2"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\MON_GPIO1"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\MON_GPIO0"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\MON_BIO_CC1"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\MON_BIO_CC0"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\MON_BIO7"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\MON_BIO6"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\MON_BIO5"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\MON_BIO4"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\MON_BIO3"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\MON_BIO2"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\MON_BIO1"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I967\MON_BIO0"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I967\DEBUG_SERIAL_OUT"
