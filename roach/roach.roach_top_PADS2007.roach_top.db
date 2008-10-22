@@ -26,7 +26,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1224250862"))
+		(file_ext "roach_top.pxr" "1224596318"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -4251,7 +4251,7 @@
 			(pin 1  3 "FJD3076TM__FJD3076TM_1" 0 "B" 0))
 		(part "FIDUCIAL")
 		(logical_part_mapping "FIDUCIAL"
-			(comp "FU6" "FU5" "FU4" "FU3" "FU2" "FU1"))
+			(comp "FU12" "FU11" "FU10" "FU9" "FU8" "FU7" "FU6" "FU5" "FU4" "FU3" "FU2" "FU1"))
 		(logical_part "FIDUCIAL"
 			(slots
 				(slot "FIDUCIAL__FIDUCIAL_1"
@@ -18122,6 +18122,54 @@
 				(attval "DEVICE" "HOLE150X288")
 				(attval "REFDES" "H1")))
 		(component "FIDUCIAL"
+			(place "FU12" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0))
+			(attributes
+				(attval "P/D_NUM" "N/A")
+				(attval "GEOMETRY.HEIGHT" "0")
+				(attval "DEVICE" "FIDUCIAL")
+				(attval "REFDES" "FU12")))
+		(component "FIDUCIAL"
+			(place "FU11" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0))
+			(attributes
+				(attval "P/D_NUM" "N/A")
+				(attval "GEOMETRY.HEIGHT" "0")
+				(attval "DEVICE" "FIDUCIAL")
+				(attval "REFDES" "FU11")))
+		(component "FIDUCIAL"
+			(place "FU10" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0))
+			(attributes
+				(attval "P/D_NUM" "N/A")
+				(attval "GEOMETRY.HEIGHT" "0")
+				(attval "DEVICE" "FIDUCIAL")
+				(attval "REFDES" "FU10")))
+		(component "FIDUCIAL"
+			(place "FU9" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0))
+			(attributes
+				(attval "P/D_NUM" "N/A")
+				(attval "GEOMETRY.HEIGHT" "0")
+				(attval "DEVICE" "FIDUCIAL")
+				(attval "REFDES" "FU9")))
+		(component "FIDUCIAL"
+			(place "FU8" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0))
+			(attributes
+				(attval "P/D_NUM" "N/A")
+				(attval "GEOMETRY.HEIGHT" "0")
+				(attval "DEVICE" "FIDUCIAL")
+				(attval "REFDES" "FU8")))
+		(component "FIDUCIAL"
+			(place "FU7" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0))
+			(attributes
+				(attval "P/D_NUM" "N/A")
+				(attval "GEOMETRY.HEIGHT" "0")
+				(attval "DEVICE" "FIDUCIAL")
+				(attval "REFDES" "FU7")))
+		(component "FIDUCIAL"
 			(place "FU6" 0.0 0.0 top 0.0
 				(comp_pin "1" 0.0 0.0))
 			(attributes
@@ -29270,6 +29318,12 @@
 		(func "$1I310" "" "H3" 1)
 		(func "$1I309" "" "H2" 1)
 		(func "$1I308" "" "H1" 1)
+		(func "$1I1291" "" "FU12" 1)
+		(func "$1I1290" "" "FU11" 1)
+		(func "$1I1289" "" "FU10" 1)
+		(func "$1I1288" "" "FU9" 1)
+		(func "$1I1287" "" "FU8" 1)
+		(func "$1I1286" "" "FU7" 1)
 		(func "$1I1285" "" "FU6" 1)
 		(func "$1I1283" "" "FU5" 1)
 		(func "$1I1281" "" "FU4" 1)
@@ -33167,6 +33221,18 @@
 			(pins FU5-1))
 		(net "$1N1284"
 			(pins FU6-1))
+		(net "$1N1292"
+			(pins FU7-1))
+		(net "$1N1293"
+			(pins FU8-1))
+		(net "$1N1294"
+			(pins FU9-1))
+		(net "$1N1295"
+			(pins FU10-1))
+		(net "$1N1296"
+			(pins FU11-1))
+		(net "$1N1297"
+			(pins FU12-1))
 		(net "1V0"
 			(pins C351-2 C396-2 C397-2 C398-2 U15-AA12 U15-AA14 U15-AC18 U15-AC20
  U15-AD13 U15-AD17 U15-M13 U15-M17 U15-M19 U15-N12 U15-N16 U15-N18 U15-AA16
@@ -34471,6 +34537,24 @@
 		(net_scalar "1V0"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1N1297"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1N1296"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1N1295"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1N1294"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1N1293"
+			(attributes
+				(attval "NC" "")))
+		(net_scalar "$1N1292"
+			(attributes
+				(attval "NC" "")))
 		(net_scalar "$1N1284"
 			(attributes
 				(attval "NC" ""))
