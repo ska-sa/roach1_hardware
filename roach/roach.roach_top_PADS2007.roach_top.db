@@ -26,7 +26,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1224764725"))
+		(file_ext "roach_top.pxr" "1226066217"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -419,6 +419,25 @@
 						(attval "VALUE" ""))))
 			(pin 2  4 "VAR_5R5V_0603_30A__VAR_5R5V_0603_30A_1" 0 "2" 0)
 			(pin 1  4 "VAR_5R5V_0603_30A__VAR_5R5V_0603_30A_1" 0 "1" 0))
+		(part "USB_SH_RA_A_TH")
+		(logical_part_mapping "USB_SH_RA_A_TH"
+			(comp "P6"))
+		(logical_part "USB_SH_RA_A_TH"
+			(slots
+				(slot "CON_USBA_1X4_F_RA_TH__USB_SH_RA_A_TH_1"
+					(attributes
+						(attval "DEVICE" "USB_SH_RA_A_TH")
+						(attval "MANUFACTURER" "TYCO ELECTRONICS")
+						(attval "P/D_NUM" "292303-1")
+						(attval "PKG_TYPE" "787616_TH")
+						(attval "REFDES" "P?")
+						(attval "VALUE" ""))))
+			(pin 1  4 "CON_USBA_1X4_F_RA_TH__USB_SH_RA_A_TH_1" 0 "1" 0)
+			(pin 2  4 "CON_USBA_1X4_F_RA_TH__USB_SH_RA_A_TH_1" 0 "2" 0)
+			(pin 3  4 "CON_USBA_1X4_F_RA_TH__USB_SH_RA_A_TH_1" 0 "3" 0)
+			(pin 4  4 "CON_USBA_1X4_F_RA_TH__USB_SH_RA_A_TH_1" 0 "4" 0)
+			(pin 6  4 "CON_USBA_1X4_F_RA_TH__USB_SH_RA_A_TH_1" 0 "6" 0)
+			(pin 5  4 "CON_USBA_1X4_F_RA_TH__USB_SH_RA_A_TH_1" 0 "5" 0))
 		(part "TP_ROUND100")
 		(logical_part_mapping "TP_ROUND100"
 			(comp "TP9" "TP8" "TP7" "TP6" "TP5" "TP4" "TP3" "TP2"))
@@ -4657,25 +4676,6 @@
 			(pin 194  3 "DDR2_DIMM_POWER__DDR2_240DIMM_2" 0 "VDDQ_11" 0)
 			(pin 191  3 "DDR2_DIMM_POWER__DDR2_240DIMM_2" 0 "VDDQ_10" 0)
 			(pin 51  3 "DDR2_DIMM_POWER__DDR2_240DIMM_2" 0 "VDDQ_1" 0))
-		(part "CON_USBA_1X4_F_RA_TH")
-		(logical_part_mapping "CON_USBA_1X4_F_RA_TH"
-			(comp "P6"))
-		(logical_part "CON_USBA_1X4_F_RA_TH"
-			(slots
-				(slot "CON_USBA_1X4_F_RA_TH__CON_USBA_1X4_F_RA_TH_1"
-					(attributes
-						(attval "DEVICE" "CON_USBA_1X4_F_RA_TH")
-						(attval "MANUFACTURER" "TYCO ELECTRONICS")
-						(attval "P/D_NUM" "292303-1")
-						(attval "PKG_TYPE" "787616_TH")
-						(attval "REFDES" "P?")
-						(attval "VALUE" ""))))
-			(pin 1  4 "CON_USBA_1X4_F_RA_TH__CON_USBA_1X4_F_RA_TH_1" 0 "1" 0)
-			(pin 2  4 "CON_USBA_1X4_F_RA_TH__CON_USBA_1X4_F_RA_TH_1" 0 "2" 0)
-			(pin 3  4 "CON_USBA_1X4_F_RA_TH__CON_USBA_1X4_F_RA_TH_1" 0 "3" 0)
-			(pin 4  4 "CON_USBA_1X4_F_RA_TH__CON_USBA_1X4_F_RA_TH_1" 0 "4" 0)
-			(pin 6  4 "CON_USBA_1X4_F_RA_TH__CON_USBA_1X4_F_RA_TH_1" 0 "6" 0)
-			(pin 5  4 "CON_USBA_1X4_F_RA_TH__CON_USBA_1X4_F_RA_TH_1" 0 "5" 0))
 		(part "CON_RJ45_1X8_F_RA_TH_2LEDGY")
 		(logical_part_mapping "CON_RJ45_1X8_F_RA_TH_2LEDGY"
 			(comp "J25"))
@@ -16113,7 +16113,7 @@
 				(attval "GEOMETRY.HEIGHT" "9.5MM")
 				(attval "DEVICE" "ZDOK40")
 				(attval "REFDES" "P7")))
-		(component "787616_TH"
+		(component "MOLEX894858001"
 			(place "P6" 0.0 0.0 top 0.0
 				(comp_pin "1" 0.0 0.0 "OUT")
 				(comp_pin "2" 0.0 0.0 "OUT")
@@ -16122,11 +16122,11 @@
 				(comp_pin "6" 0.0 0.0 "OUT")
 				(comp_pin "5" 0.0 0.0 "OUT"))
 			(attributes
-				(attval "MANUFACTURER" "TYCO ELECTRONICS")
-				(attval "P/D_NUM" "292303-1")
 				(attval "VALUE" "NONE")
-				(attval "GEOMETRY.HEIGHT" "7MM")
-				(attval "DEVICE" "CON_USBA_1X4_F_RA_TH")
+				(attval "P/D_NUM" "89485-8001")
+				(attval "MANUFACTURER" "MOLEX")
+				(attval "GEOMETRY.HEIGHT" "14.45MM")
+				(attval "DEVICE" "USB_SH_RA_A_TH")
 				(attval "REFDES" "P6")))
 		(component "TYCO6367550"
 			(place "P5" 0.0 0.0 top 0.0
@@ -28856,8 +28856,8 @@
 		(func "$1I747\$1I582" "" "SW3" 1)
 		(func "$1I747\$1I549" "" "SW2" 1)
 		(func "$1I1002\$1I238" "" "SW1" 1)
-		(func "$1I42\$1I212" "" "SP2" 1)
-		(func "$1I42\$1I265" "" "SP2" 2)
+		(func "$1I42\$1I439" "" "SP2" 1)
+		(func "$1I42\$1I440" "" "SP2" 2)
 		(func "$1I1078" "" "SNP1" 1)
 		(func "$1I1002\$1I241" "" "RS10" 1)
 		(func "$1I1002\$1I227" "" "RS9" 1)
@@ -31378,7 +31378,7 @@
 		(net "$1I7\QSH_B_D_P18"
 			(pins U15-N24 P9-74))
 		(net "$1I42\$1N20"
-			(pins C612-1 C613-1 P6-1 C614-1 PTC1-2 VR4-1))
+			(pins C612-1 C613-1 C614-1 P6-1 PTC1-2 VR4-1))
 		(net "$1I42\$1N409"
 			(pins U1-A5))
 		(net "$1I42\$1N410"
@@ -31394,9 +31394,9 @@
 		(net "$1I42\N29340527"
 			(pins R182-1 U1-L3))
 		(net "$1I42\USB2_XCVR_D+"
-			(pins P6-3 U1-J2 SP2-2))
+			(pins P6-3 U1-J2 SP2-1))
 		(net "$1I42\USB2_XCVR_D-"
-			(pins P6-2 U1-J1 SP2-1))
+			(pins P6-2 U1-J1 SP2-2))
 		(net "$1I144\$1N38"
 			(pins U13-10 U15-J10))
 		(net "$1I144\$1N39"
@@ -33567,7 +33567,7 @@
  P5-B2 P5-B20 P5-B3 P5-B4 P5-B5 P5-B6 P5-B7 P5-B8 P5-B9 P5-E1 P5-E10 P5-E11
  P5-E12 P5-E13 P5-E14 P5-E15 P5-E16 P5-E17 P5-E18 P5-E19 P5-E2 P5-E20 P5-E3
  P5-E4 P5-E5 P5-E6 P5-E7 P5-E8 P5-E9 P5-W1 P5-W6 P5-X1 P5-X6 P5-Y1 P5-Y6 P5-Z1
- P5-Z6 C315-2 C317-2 C318-2 C321-2 C612-2 C613-2 P6-5 P6-6 P6-4 C614-2 R182-2
+ P5-Z6 C315-2 C317-2 C318-2 C321-2 C612-2 C613-2 C614-2 P6-5 P6-6 P6-4 R182-2
  VR4-2 U1-N2 SP2-3 C336-2 C338-2 C341-2 C342-2 P7-B1 P7-B10 P7-B11 P7-B12
  P7-B13 P7-B14 P7-B15 P7-B16 P7-B17 P7-B18 P7-B19 P7-B2 P7-B20 P7-B3 P7-B4
  P7-B5 P7-B6 P7-B7 P7-B8 P7-B9 P7-E1 P7-E10 P7-E11 P7-E12 P7-E13 P7-E14
