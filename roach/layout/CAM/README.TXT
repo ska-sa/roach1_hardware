@@ -1,4 +1,4 @@
-Board specifications for ibob2 / roach.
+Board specifications for ROACH 1.0.2.
 
 1. Bare board workmanship and finish in accordance with the latest revision of
 IPC-6012: Performance Specification for Rigid Printed Boards.
@@ -62,6 +62,7 @@ bottom silk              --  ssb016029.pho
 bottom paste             --  smd016022.pho
 
 fabrication drawing      --  dd001024.pho
+Assembly Drawing         --  adt001027.pho
 
 * note -- adjust to obtain a nominal finished board thickness of 93 mil.
 
@@ -82,8 +83,8 @@ bottom		100 Ohm +/- 10% differential **
 
 11. Bids shall include fees for electrical test of bare boards as a separate line item.
 
-12. INSTALL 1/4" RAIL BORDER EXTENSION ON TWO LONG SIDES OF THE FAB.  USE V SCORE ON THE BORDER RAILS FOR SEPARATION PURPOSE.  
-INSTALL FOUR FIDUCIALS, TWO ON EACH RAIL WITH MASKING CLEARANCE.
+12. NOTE RAIL BORDER EXTENSION ON ALL SIDES OF THE FAB INDICATED ON ASSEMBLY DRAWING.  USE V SCORE ON THE BORDER RAILS FOR SEPARATION PURPOSE.  
+LINES ARE 15 MIL FROM BOARD EDGE.  PLEASE CALL TO CLARIFY IF UNCLEAR.
 
 Please direct technical questions or issues to one of--
 Technical points of contact.
@@ -93,12 +94,6 @@ Casper Group, BWRC
 Berkeley California USA
 510-666-3121 / 408-806-9730
 hchen05@ssl.berkeley.edu
-
-Michael Revnell
-National Radio Astronomy Observatory
-Socorro New Mexico USA
-(505)835-7293
-mrevnell@nrao.edu
 
 Francois Kapp
 South African Square Kilometre Array
