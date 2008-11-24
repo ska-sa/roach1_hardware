@@ -79,27 +79,6 @@ AP IOD_Schematic:cap_pol 1 PINTYPE=BI
 AP IOD_Schematic:cap_pol 1 #=1
 AP IOD_Schematic:cap_pol 2 PINTYPE=BI
 AP IOD_Schematic:cap_pol 2 #=2
-|Q IOD_Schematic:fuse_500ma_1206_smt_ptc 1
-AS IOD_Schematic:fuse_500ma_1206_smt_ptc MANUFACTURER=LITTELFUSE
-AS IOD_Schematic:fuse_500ma_1206_smt_ptc DEVICE=FUSE_500MA_1206_SMT_PTC
-AS IOD_Schematic:fuse_500ma_1206_smt_ptc PARTS=1
-AS IOD_Schematic:fuse_500ma_1206_smt_ptc PKG_TYPE=FU_1206L
-AS IOD_Schematic:fuse_500ma_1206_smt_ptc LEVEL=STD
-AS IOD_Schematic:fuse_500ma_1206_smt_ptc NOTES=REFLOW: 245DEGC, 20 SEC MAX
-AS IOD_Schematic:fuse_500ma_1206_smt_ptc GRN=LHR*
-AS IOD_Schematic:fuse_500ma_1206_smt_ptc ALT_PART=NA
-AS IOD_Schematic:fuse_500ma_1206_smt_ptc SUP=LIF: 1206L050
-AS IOD_Schematic:fuse_500ma_1206_smt_ptc ALT_SUP=NA
-AS IOD_Schematic:fuse_500ma_1206_smt_ptc SHAPE=1206
-AS IOD_Schematic:fuse_500ma_1206_smt_ptc P/D_NUM=1206L050
-AS IOD_Schematic:fuse_500ma_1206_smt_ptc VALUE=500MA
-AS IOD_Schematic:fuse_500ma_1206_smt_ptc REFDES=PTC?
-AS IOD_Schematic:fuse_500ma_1206_smt_ptc PINORDER=1 2
-AS IOD_Schematic:fuse_500ma_1206_smt_ptc INOV_VER_REC=8:42_10-4-07
-AP IOD_Schematic:fuse_500ma_1206_smt_ptc 1 #=1
-AP IOD_Schematic:fuse_500ma_1206_smt_ptc 1 PINTYPE=OUT
-AP IOD_Schematic:fuse_500ma_1206_smt_ptc 2 #=2
-AP IOD_Schematic:fuse_500ma_1206_smt_ptc 2 PINTYPE=OUT
 |Q IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_g 1
 AS IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_g REFDES=U?
 AS IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_g DEVICE=IC_CPU_TE-PBGA680_440EPX-GRX
@@ -200,6 +179,27 @@ AP IOD_Schematic:sup_esd_sot23_1kv 1 #=1,2
 AP IOD_Schematic:sup_esd_sot23_1kv 1 PINTYPE=OUT
 AP IOD_Schematic:sup_esd_sot23_1kv 2 #=3,3
 AP IOD_Schematic:sup_esd_sot23_1kv 2 PINTYPE=OUT
+|Q IOD_Schematic:fuse_500ma_1206_smt_ptc 1
+AS IOD_Schematic:fuse_500ma_1206_smt_ptc MANUFACTURER=LITTELFUSE
+AS IOD_Schematic:fuse_500ma_1206_smt_ptc DEVICE=FUSE_500MA_1206_SMT_PTC
+AS IOD_Schematic:fuse_500ma_1206_smt_ptc PARTS=1
+AS IOD_Schematic:fuse_500ma_1206_smt_ptc PKG_TYPE=FU_1206L
+AS IOD_Schematic:fuse_500ma_1206_smt_ptc LEVEL=STD
+AS IOD_Schematic:fuse_500ma_1206_smt_ptc NOTES=REFLOW: 245DEGC, 20 SEC MAX
+AS IOD_Schematic:fuse_500ma_1206_smt_ptc GRN=LHR*
+AS IOD_Schematic:fuse_500ma_1206_smt_ptc ALT_PART=NA
+AS IOD_Schematic:fuse_500ma_1206_smt_ptc SUP=LIF: 1206L050
+AS IOD_Schematic:fuse_500ma_1206_smt_ptc ALT_SUP=NA
+AS IOD_Schematic:fuse_500ma_1206_smt_ptc SHAPE=1206
+AS IOD_Schematic:fuse_500ma_1206_smt_ptc P/D_NUM=1206L050
+AS IOD_Schematic:fuse_500ma_1206_smt_ptc VALUE=500MA
+AS IOD_Schematic:fuse_500ma_1206_smt_ptc REFDES=PTC?
+AS IOD_Schematic:fuse_500ma_1206_smt_ptc PINORDER=1 2
+AS IOD_Schematic:fuse_500ma_1206_smt_ptc INOV_VER_REC=8:42_10-4-07
+AP IOD_Schematic:fuse_500ma_1206_smt_ptc 1 #=1
+AP IOD_Schematic:fuse_500ma_1206_smt_ptc 1 PINTYPE=OUT
+AP IOD_Schematic:fuse_500ma_1206_smt_ptc 2 #=2
+AP IOD_Schematic:fuse_500ma_1206_smt_ptc 2 PINTYPE=OUT
 AN USB2_XCVR_D- DIFF_PAIR=$1I42\USB2_XCVR_D+,$1I42\USB2_XCVR_D-
 AN USB2_XCVR_D+ DIFF_PAIR=$1I42\USB2_XCVR_D+,$1I42\USB2_XCVR_D-
 AN $1N409 NC
@@ -248,13 +248,6 @@ API $1I403 IOD_Schematic:cap_pol 1 PINLOC=21G4
 API $1I403 IOD_Schematic:cap_pol 1 #=1
 API $1I403 IOD_Schematic:cap_pol 2 PINLOC=21G4
 API $1I403 IOD_Schematic:cap_pol 2 #=2
-M IOD_Schematic:fuse_500ma_1206_smt_ptc $1I399
-I $1I399 IOD_Schematic:fuse_500ma_1206_smt_ptc 5V $1N20 SCHLOC=21G4`GEOMETRY.HEIGHT=0.75MM`PKG_TYPE=FUSC3216X75N`REFDES=PTC1`
-|R 8:42_10-4-07
-API $1I399 IOD_Schematic:fuse_500ma_1206_smt_ptc 1 PINLOC=21G4
-API $1I399 IOD_Schematic:fuse_500ma_1206_smt_ptc 1 #=1
-API $1I399 IOD_Schematic:fuse_500ma_1206_smt_ptc 2 PINLOC=21G4
-API $1I399 IOD_Schematic:fuse_500ma_1206_smt_ptc 2 #=2
 M IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_g $1I228
 I $1I228 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_g SX95T_DONE_0 SX95T_D_OUT_BUSY_0 SX95T_PROGRAM_B_0 SX95T_INIT_B_0 SX95T_M0_0 SX95T_M1_0 SX95T_M2_0 $1N409 $1N413 $1N414 N29340527 $1N411 $1N412 $1N410 USB2_XCVR_D+ USB2_XCVR_D- GND CLK_USB2_48MHZ SCHLOC=21B4`GEOMETRY.HEIGHT=2.65MM`HYPER_MOD_FILE=PPC440EPX.IBS`HYPER_MOD=PPC440EPX-NTA400T`MANUFACTURER=AMCC`P/D_NUM=PPC440EPX-NTA533T`NOTES=245DEGC 30SEC, MAX PEAK PROCESS`REFDES=U1`PKG_TYPE=BGA680C100P34X34_3500X3500X265`VALUE=440EPX`
 |R 14:02_10-12-07
@@ -348,4 +341,11 @@ API $1I440 IOD_Schematic:sup_esd_sot23_1kv 1 PINLOC=21F3
 API $1I440 IOD_Schematic:sup_esd_sot23_1kv 1 #=2
 API $1I440 IOD_Schematic:sup_esd_sot23_1kv 2 PINLOC=21F3
 API $1I440 IOD_Schematic:sup_esd_sot23_1kv 2 #=3
+M IOD_Schematic:fuse_500ma_1206_smt_ptc $1I399
+I $1I399 IOD_Schematic:fuse_500ma_1206_smt_ptc 5V $1N20 SCHLOC=21G4`GEOMETRY.HEIGHT=0.75MM`PKG_TYPE=FUSC3216X75N`REFDES=PTC1`
+|R 7:18_11-20-08
+API $1I399 IOD_Schematic:fuse_500ma_1206_smt_ptc 1 PINLOC=21G4
+API $1I399 IOD_Schematic:fuse_500ma_1206_smt_ptc 1 #=1
+API $1I399 IOD_Schematic:fuse_500ma_1206_smt_ptc 2 PINLOC=21G4
+API $1I399 IOD_Schematic:fuse_500ma_1206_smt_ptc 2 #=2
 EW

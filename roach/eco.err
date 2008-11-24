@@ -1,9 +1,23 @@
 ** ECO In Report **
 
-Tue Nov 18 09:03:08 2008
+Thu Nov 20 10:03:08 2008
 
 Input  File : C:\Roach\elec\roach\roach_top.eco
 Current Job : roach102.pcb
 
 
-No errors found
+
+Line 6 , Section *DELPIN*
+J14.4  5V
+* WARNING: Connection C4.1-J14.4 contains protected elements. Protection is ignored.
+* WARNING: Connection J14.4-PTC1.1 contains protected elements. Protection is ignored.
+
+Line 7 , Section *DELPIN*
+J24.2  3V3
+* WARNING: Connection J24.2-J8.238 contains protected elements. Protection is ignored.
+
+Line 8 , Section *DELPIN*
+P2.4  5V
+* WARNING: Connection C4.1-P2.4 contains protected elements. Protection is ignored.
+
+Warning: Protection status is ignored!

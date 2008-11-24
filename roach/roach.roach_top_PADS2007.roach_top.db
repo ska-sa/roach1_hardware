@@ -26,7 +26,7 @@
 		(attributes
 			(attval "EPLANNER_DSN" "1.0")))
 	(files_ext
-		(file_ext "roach_top.pxr" "1226991775"))
+		(file_ext "roach_top.pxr" "1227168174"))
 	(part_library
 		(part "ZDOK40")
 		(logical_part_mapping "ZDOK40"
@@ -1837,6 +1837,21 @@
 			(pin 7  5 "PTH08T210WAD_1__PTH05T210WAD_1" 0 "GND_2" 0)
 			(pin 8  5 "PTH08T210WAD_1__PTH05T210WAD_1" 0 "GND_1" 0)
 			(pin 3  5 "PTH08T210WAD_1__PTH05T210WAD_1" 0 "GND_0" 0))
+		(part "PTC")
+		(logical_part_mapping "PTC"
+			(comp "PTC9" "PTC8" "PTC7" "PTC6" "PTC5" "PTC4" "PTC3" "PTC2"))
+		(logical_part "PTC"
+			(slots
+				(slot "PTC__PTC_1"
+					(attributes
+						(attval "DEVICE" "PTC")
+						(attval "MANUFACTURER" "")
+						(attval "P/D_NUM" "")
+						(attval "PKG_TYPE" "PKG")
+						(attval "REFDES" "PTC?")
+						(attval "VALUE" ""))))
+			(pin 2  4 "PTC__PTC_1" 0 "2" 0)
+			(pin 1  4 "PTC__PTC_1" 0 "1" 0))
 		(part "PAD_1MM_SMT")
 		(logical_part_mapping "PAD_1MM_SMT"
 			(comp "TP1"))
@@ -15800,6 +15815,86 @@
 				(attval "GEOMETRY.HEIGHT" "1.11MM")
 				(attval "DEVICE" "BSS138")
 				(attval "REFDES" "Q4")))
+		(component "FUSC3216X85N"
+			(place "PTC9" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "OUT")
+				(comp_pin "1" 0.0 0.0 "OUT"))
+			(attributes
+				(attval "VALUE" "500MA/13.2V")
+				(attval "P/D_NUM" "MF-NSMF050-2")
+				(attval "MANUFACTURER" "BOURNS")
+				(attval "DEVICE" "PTC")
+				(attval "REFDES" "PTC9")))
+		(component "FUSC3216X85N"
+			(place "PTC8" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "OUT")
+				(comp_pin "1" 0.0 0.0 "OUT"))
+			(attributes
+				(attval "VALUE" "500MA/13.2V")
+				(attval "P/D_NUM" "MF-NSMF050-2")
+				(attval "MANUFACTURER" "BOURNS")
+				(attval "DEVICE" "PTC")
+				(attval "REFDES" "PTC8")))
+		(component "FUSC3216X85N"
+			(place "PTC7" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "OUT")
+				(comp_pin "1" 0.0 0.0 "OUT"))
+			(attributes
+				(attval "VALUE" "500MA/13.2V")
+				(attval "P/D_NUM" "MF-NSMF050-2")
+				(attval "MANUFACTURER" "BOURNS")
+				(attval "DEVICE" "PTC")
+				(attval "REFDES" "PTC7")))
+		(component "FUSC3216X85N"
+			(place "PTC6" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "OUT")
+				(comp_pin "1" 0.0 0.0 "OUT"))
+			(attributes
+				(attval "VALUE" "500MA/13.2V")
+				(attval "P/D_NUM" "MF-NSMF050-2")
+				(attval "MANUFACTURER" "BOURNS")
+				(attval "DEVICE" "PTC")
+				(attval "REFDES" "PTC6")))
+		(component "FUSC3216X85N"
+			(place "PTC5" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "OUT")
+				(comp_pin "1" 0.0 0.0 "OUT"))
+			(attributes
+				(attval "VALUE" "500MA/13.2V")
+				(attval "P/D_NUM" "MF-NSMF050-2")
+				(attval "MANUFACTURER" "BOURNS")
+				(attval "DEVICE" "PTC")
+				(attval "REFDES" "PTC5")))
+		(component "FUSC3216X85N"
+			(place "PTC4" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "OUT")
+				(comp_pin "1" 0.0 0.0 "OUT"))
+			(attributes
+				(attval "VALUE" "500MA/13.2V")
+				(attval "P/D_NUM" "MF-NSMF050-2")
+				(attval "MANUFACTURER" "BOURNS")
+				(attval "DEVICE" "PTC")
+				(attval "REFDES" "PTC4")))
+		(component "FUSC3216X85N"
+			(place "PTC3" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "OUT")
+				(comp_pin "1" 0.0 0.0 "OUT"))
+			(attributes
+				(attval "VALUE" "500MA/13.2V")
+				(attval "P/D_NUM" "MF-NSMF050-2")
+				(attval "MANUFACTURER" "BOURNS")
+				(attval "DEVICE" "PTC")
+				(attval "REFDES" "PTC3")))
+		(component "FUSC3216X85N"
+			(place "PTC2" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "OUT")
+				(comp_pin "1" 0.0 0.0 "OUT"))
+			(attributes
+				(attval "VALUE" "500MA/13.2V")
+				(attval "P/D_NUM" "MF-NSMF050-2")
+				(attval "MANUFACTURER" "BOURNS")
+				(attval "DEVICE" "PTC")
+				(attval "REFDES" "PTC2")))
 		(component "FUSC3216X75N"
 			(place "PTC1" 0.0 0.0 top 0.0
 				(comp_pin "2" 0.0 0.0 "OUT")
@@ -29116,6 +29211,14 @@
 		(func "$1I671\$1I292" "" "Q6" 1)
 		(func "$1I671\$1I203" "" "Q5" 1)
 		(func "$1I671\$1I183" "" "Q4" 1)
+		(func "$1I863\$1I950" "" "PTC9" 1)
+		(func "$1I863\$1I942" "" "PTC8" 1)
+		(func "$1I790\$1I162" "" "PTC7" 1)
+		(func "$1I863\$1I941" "" "PTC6" 1)
+		(func "$1I863\$1I940" "" "PTC5" 1)
+		(func "$1I671\$1I630" "" "PTC4" 1)
+		(func "$1I671\$1I629" "" "PTC3" 1)
+		(func "$1I671\$1I625" "" "PTC2" 1)
 		(func "$1I42\$1I399" "" "PTC1" 1)
 		(func "$1I863\$1I313" "" "P11" 1)
 		(func "$1I7\$1I223" "" "P9" 1)
@@ -31816,6 +31919,12 @@
 			(pins R175-1 U52-2 D11-3 J20-3))
 		(net "$1I671\$1N586"
 			(pins R174-1 U49-2 D10-3 J19-3))
+		(net "$1I671\$1N626"
+			(pins PTC2-2 J19-2))
+		(net "$1I671\$1N631"
+			(pins PTC3-2 J20-2))
+		(net "$1I671\$1N633"
+			(pins PTC4-2 J21-2))
 		(net "$1I747\$1N12"
 			(pins CR6-1 R203-2))
 		(net "$1I747\$1N34"
@@ -31938,6 +32047,8 @@
 			(pins U54-102 R200-1))
 		(net "$1I747\USER_LED1"
 			(pins U54-101 R201-1))
+		(net "$1I790\$1N163"
+			(pins PTC7-2 J24-2))
 		(net "$1I790\SX95T_HSWAP_EN"
 			(pins R209-2 U15-M23))
 		(net "$1I790\SX95T_TDI"
@@ -32364,6 +32475,14 @@
 			(pins U1-H3))
 		(net "$1I863\$1N881"
 			(pins R4-1 U1-A7))
+		(net "$1I863\$1N930"
+			(pins PTC5-2 P4-2))
+		(net "$1I863\$1N933"
+			(pins PTC6-2 P11-2))
+		(net "$1I863\$1N944"
+			(pins PTC8-2 P2-4))
+		(net "$1I863\$1N951"
+			(pins PTC9-2 J14-4))
 		(net "$1I863\$PIN0"
 			(pins R81-2 R80-1))
 		(net "$1I863\CPU_UART0_DCD#"
@@ -33218,16 +33337,16 @@
  P7-Z3 C339-1 R305-2 R135-2 CR3-2 CR4-2 U2-5 C473-1 C474-1 C475-1 C476-1
  C477-1 C478-1 C479-1 C480-1 C481-1 C482-1 C483-1 C13-1 U35-5 C615-1 RO10-3
  RO11-1 RO14-3 U54-8 U54-109 U54-127 U54-141 U54-27 U54-55 U54-73 U54-93
- J17-8 R194-2 R195-2 R196-2 R198-2 R204-2 R205-2 R206-2 CR6-2 CR5-2 R89-2
- R165-2 R166-1 R207-2 R208-2 R210-2 R212-2 C485-1 U15-AA22 U15-AD23 C486-1
- C487-1 J24-2 C488-1 R213-2 R218-2 R219-2 U55-10 U56-10 U57-10 L13-2 L3-2 L2-2
- U38-2 U38-8 U40-3 U40-8 R5-1 R83-1 R84-1 R132-1 R133-1 R134-1 U41-3 R88-2
- U42-F7 U42-G5 U42-F1 U42-D8 C649-1 C650-1 C651-1 C652-1 C653-1 C654-1 C656-1
- C658-1 C659-1 U15-D13 U15-G14 U15-AH21 U15-AM19 U15-AG14 U15-AL12 U43-20
- U43-19 U44-20 U44-19 R78-1 R64-1 R76-1 R68-1 R72-1 R75-1 R63-1 R77-1 R60-1
- R67-1 R71-1 R73-1 R62-1 R66-1 R70-1 R74-1 R61-1 R65-1 R69-1 C330-1 C331-1
- C332-1 C333-1 P11-2 P4-2 U45-5 U46-5 U48-5 C334-1 C335-1 Q14-5 Q14-6 Q14-7
- Q14-8))
+ J17-8 R194-2 R195-2 R196-2 R198-2 R204-2 R205-2 R206-2 CR6-2 CR5-2 PTC7-1
+ R89-2 R165-2 R166-1 R207-2 R208-2 R210-2 R212-2 C485-1 U15-AA22 U15-AD23
+ C486-1 C487-1 C488-1 R213-2 R218-2 R219-2 U55-10 U56-10 U57-10 L13-2 L3-2
+ L2-2 U38-2 U38-8 U40-3 U40-8 R5-1 R83-1 R84-1 R132-1 R133-1 R134-1 U41-3
+ PTC5-1 PTC6-1 R88-2 U42-F7 U42-G5 U42-F1 U42-D8 C649-1 C650-1 C651-1 C652-1
+ C653-1 C654-1 C656-1 C658-1 C659-1 U15-D13 U15-G14 U15-AH21 U15-AM19
+ U15-AG14 U15-AL12 U43-20 U43-19 U44-20 U44-19 R78-1 R64-1 R76-1 R68-1 R72-1
+ R75-1 R63-1 R77-1 R60-1 R67-1 R71-1 R73-1 R62-1 R66-1 R70-1 R74-1 R61-1 R65-1
+ R69-1 C330-1 C331-1 C332-1 C333-1 U45-5 U46-5 U48-5 C334-1 C335-1 Q14-5
+ Q14-6 Q14-7 Q14-8))
 		(net "3V3AUX"
 			(pins R190-1 R191-1 R192-1 U7-5 U39-5 U47-5 U49-5 U52-5 U64-5 C538-1 JP28-3
  J26-10 R188-2 R189-2 R282-2 R283-2 R284-2 R285-2 R286-2 R299-1 U65-1 U65-16
@@ -33252,7 +33371,7 @@
  C58-1 U16-10 R229-1 R230-1 C459-1 U32-10 U4-2 U5-2 U25-2 C6-1 C16-1 R103-2
  R107-2 R136-2 R137-2 C158-1 D9-4 C314-1 P5-W2 P5-X2 P5-Y2 P5-Z2 C315-1 PTC1-1
  C336-1 P7-W2 P7-X2 P7-Y2 P7-Z2 C337-1 R235-1 R236-1 C467-1 U33-10 L6-1 L5-1
- L16-1 CR1-2 C2-1 C1-1 C3-1 C4-1 J14-4 P2-4 Q13-5 Q13-6 Q13-7 Q13-8))
+ L16-1 CR1-2 C2-1 C1-1 C3-1 C4-1 PTC8-1 PTC9-1 Q13-5 Q13-6 Q13-7 Q13-8))
 		(net "5VAUX"
 			(pins C296-2 C297-2 C298-2 C299-2 J32-10 R180-1 J18-9 U59-10 U59-11 U59-5
  U59-6 U59-7 U59-8 C552-1))
@@ -33261,7 +33380,7 @@
 		(net "12V"
 			(pins C301-1 C305-1 C306-1 C307-1 L7-1 L14-1 L15-1 Q12-5 Q12-6 Q12-7 Q12-8))
 		(net "12V_ATX"
-			(pins J32-4 R187-2 R173-2 R174-2 R175-2 J18-10 J18-11 J19-2 J20-2 J21-2
+			(pins J32-4 R187-2 R173-2 R174-2 R175-2 PTC2-1 PTC3-1 PTC4-1 J18-10 J18-11
  R291-2 R287-1))
 		(net "ATRTN0"
 			(pins U15-W17 U60-T4 J31-1 J31-3))
@@ -35710,6 +35829,18 @@
 		(net_scalar "$1I863\$PIN0"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I863\$1N951"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I863\$1N944"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I863\$1N933"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I863\$1N930"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I863\$1N881"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
@@ -36600,6 +36731,9 @@
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")
 				(cnsval "PCLASS" "PPCPBUS")))
+		(net_scalar "$1I790\$1N163"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I747\USER_LED1"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
@@ -36841,6 +36975,15 @@
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I747\$1N12"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I671\$1N633"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I671\$1N631"
+			(constraints
+				(cnsval "SCHEDULED" "FALSE")))
+		(net_scalar "$1I671\$1N626"
 			(constraints
 				(cnsval "SCHEDULED" "FALSE")))
 		(net_scalar "$1I671\$1N586"
