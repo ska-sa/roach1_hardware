@@ -8,7 +8,7 @@ ANSI-J-STD-001: Requirements for Soldered Electrical and Electronic Assemblies.
 
 3. Pad finish to be HASL or white tin.
 
-4. Solder mask to be green LPI.
+4. Solder mask to be black LPI.
 
 5. Silk screen legends to be white.
 
@@ -83,7 +83,7 @@ bottom		100 Ohm +/- 10% differential **
 
 11. Bids shall include fees for electrical test of bare boards as a separate line item.
 
-12. NOTE RAIL BORDER EXTENSION ON ALL SIDES OF THE FAB INDICATED ON ASSEMBLY DRAWING.  USE V SCORE ON THE BORDER RAILS FOR SEPARATION PURPOSE.  
+12. NOTE RAIL BORDER EXTENSION ON ALL SIDES OF THE FAB INDICATED ON ASSEMBLY DRAWING.  USE V SCORE ON THE BORDER RAILS FOR SEPARATION PURPOSE.
 LINES ARE 15 MIL FROM BOARD EDGE.  PLEASE CALL TO CLARIFY IF UNCLEAR.
 
 Please direct technical questions or issues to one of--
