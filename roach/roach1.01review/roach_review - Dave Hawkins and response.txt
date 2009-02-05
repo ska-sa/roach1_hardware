@@ -1,0 +1,226 @@
+ROACH review notes
+------------------
+
+6/11/2008
+
+Documents provided for review:
+
+[1] roach_top.pdf (schematic)
+[2] ppc-blockdiagram-asbuilt.pdf
+[3] fpga-blockdiagram-asbuilt.pdf
+
+Review notes/discussion points:
+
+1. Schematic format.
+
+   The schematic is not legible on 11 x 17 paper.
+   
+   This makes it difficult to review and annotate
+   for old guys that like to destroy forests.
+   
+   p3. Ha! I guarantee that no layout guy is going
+   to see the comment on this page unless they're
+   zooming in to read it.
+   
+2. Power supply design.
+
+   The FPGA can probably draw on the order of 10A
+   or more. There should be some analysis provided
+   showing that the transients due to load steps from
+   idle to full-load, and full-load to idle maintain
+   voltage regulation within the FPGA requirements.
+   
+   The schematic shows an Actel AFS600 Fusion device.
+   Perhaps a description of its application and
+   requirements/performance for this specific application
+   could be provided.
+   
+   Power considerations that should be detailed are;
+     - inrush current limiting
+     - transient response
+     - overcurrent monitoring and shutdown
+     
+     
+   For example, p3:
+   
+   u53. Vout = 2.5V, Cout_esr = 5mOhm
+        Load transient 3.5A, so ESR induced dip is 17.5mV. 
+        Looks ok to me. 
+   
+   u27. Vout = 1.8V, Cout_esr = 5mOhm
+        Load transient 11.9A, so ESR induced dip is 59.5mV.
+        
+        If the 1.8V rail tolerance is +/-50mV, then this
+        is marginal, and two capacitors in parallel would
+        be required to reduce the ESR.
+        
+   u50. Vout = 1.0V, Cout_esr = 5mOhm / 4
+        Load transient 25.3A, so ESR induced dip is 31.6mV.
+        I suspect this is ok.
+   
+   The load-dump response depends on the inductors used in
+   the supply module. This can not be determined from the 
+   schematic (and I'm not going to look at the data sheets
+   at this point).
+   
+   It would be nice to see these design decisions documented 
+   for review, rather than have to be re-checked by a reviewer.
+  
+      
+3. Thermal protection
+
+   The device likely to get too hot is the FPGA.
+   
+   The control CPLD, should be responsible for 
+   monitoring power and temperature of the FPGA,
+   so that hardware can shut it down, independently
+   of the CPU.
+   
+   On p2 of the schematic, I see a thermal diode 
+   connection on the Fusion part, and p1 shows it
+   goes to the Virtex. So thats good.
+   
+   Its a bit confusing on p1, as the part is called
+   ROACH_V5_CLK - its the diode pins not the clock!
+   
+   I'm assuming that the Fusion device will be configured
+   to shut-down the power-supplies to the Virtex in the
+   event of a thermal overtemperature.
+   
+   
+4. p2 PTBASE signal is driving the base of a transistor
+   without a current limiting resistor in series with 
+   the FPGA pin and the transistor base.
+   
+   If the FPGA signal is an I/O output then this would
+   be incorrect.
+   
+   Please review this circuit connection
+
+   (I'm not familiar with the Xilinx parts, so will leave
+   it up to you guys).
+
+
+5. p3. 12V Fan control
+
+   The fan control/sense lines go to the Xilinx FPGAs.
+   
+   I would recommend at least a resistor, but better a
+   buffer, in the path between any high-voltage device
+   and the low-voltage FPGA.
+
+   I accidentally brushed a scope probe across a 12V
+   pin to a 3.3V control pin, and killed a CPLD on
+   my board. The CPLD was easy to replace, so it was
+   no big deal. The same goes for a buffer in between
+   these parts.
+   
+   So, add sacrificial protection parts between the
+   Xilinx chip, and anything that could kill it.
+   
+   There are lots of Fairchild and TI TinyLogic parts
+   that are appropriate.
+   
+   
+6. p8 Supply decoupling
+
+   The schematics show ferrite beads with decaps in a 
+   low-pass filter configuration, eg. FB1 and C94.
+   This arrangement reduces noise from the power
+   rail getting to the device.
+   
+   Its also a good idea to have a decoupling cap on
+   the other side of the ferrite bead. This creates
+   a PI filter. This stops noise from the device
+   getting back into the power rails.
+   
+   Ditto for p17 beads on the CPU.
+   (Note that the layout may have these parts arranged
+   as a PI filter, but its not obvious from the schematic)
+   
+   
+7. p8 U8. 
+
+   Why are the 1:4 LVDS outputs being ac-coupled
+   to their respective devices?
+          
+   The outputs all appear to go to the Xilinx
+   device, which I assume has LVDS inputs.
+          
+   Ditto for p9.
+   
+   
+8. p13  U12
+
+   The DIR1/2 pins are supplied by VCCA. However,
+   VCCA = 1.8V, whereas the pins are pulled to 3.3V.
+   
+   Either VCCA/VCCB are wrong, or the pull-up voltage
+   is wrong.
+   
+   
+
+9. p20  J25
+
+   Check the forward voltage of the LEDs in the connector.
+   Its generally advised to drive the PHY signal (2.5V) to
+   a  3.3V buffer, that then drives the LED, this ensures
+   that the diode Vf of 2.3V (probably) is always exceeded.
+   
+   Its a minor point, and possibly not required.
+   
+   
+10. DDR2 interfaces
+       
+       
+   Depending on how fast the DDR2 is going to be operated,
+   I'd recommend a post-layout IBIS simulation to ensure that
+   voltage margins and timing margins can be met.
+   
+   
+   Hi Dave,
+
+Thanks yet again for great review notes!  Numbers below refer to your txt file...
+
+Regards,
+Francois
+
+1. The paper size has been upsetting reviewers for a while.  We are a little spoilt with an A1 plotter in that regard.  I take the blame for that!
+
+2. Regarding the power, we're using the TurboTrans modules from TI, and the design takes the figures into account on the schematic.  Predicted transient response should be OK, but you're right about adding it to the schematic for review.  We took a worst case power estimate, so the figures in practice should be better.  In all cases about 50mV was the target.  The load step for the 1.8V rail comes to 54mV, but it is highly unlikely that an actual 12A step would ever occur.  The PowerPC and FPGA are not intended to come on at the same time, so the maximum step in practice should be about 8A, which was enough to persuade me that it would work.
+
+The 1V rail is most likely to see the actual listed load step if the FPGA core is full, so that is the one I was most careful about.
+
+Inrush current limiting is done in two ways: the power supplies each track the next higher supply and the Actel has control over a pin (2V5_TRACK), which is slowed down through an RC and could be slowed down further by a PWM ramp if necessary.  Again, some notes to this effect wouldn't hurt.
+
+3. The Actel has the temperature monitoring, which would issue warnings, and failing an improvement, cut the power.  It logs this in on board EEPROM, so that the cause of a power trip can be investigated.  
+
+4. The Actel itself runs of the standby 5V, which is regulated by a built-in series regulator controller and Q11 down to 1.5V - hence the funny connections around p2 PTBASE.  That part works fine, so there is no concern with that.
+
+5. The fan control also hangs off the Actel.  The point about the proximity of the 12V to the Actel inputs remain valid though and it is a practical consideration that we will consider.
+
+6. The supply decoupling: in the case of the CPU, I think it has the PI arrangement, not so much so for the transceiver supplies.  I'll look into the viability of adding some small capacitors there.
+
+7. The clocks could be DC coupled.
+
+8. Well spotted on the VCCA - DIR pin error on p13! Thanks.
+
+9. LED forward voltage should be OK.  These are mostly debug, so it's OK if they aren't very bright.  The two on the connector itself are 2.1V forward voltage (typical), but again, they won't actually be visible in most installations, so I think it's OK if they're not too bright.
+
+10. We've done extensive checks in HyperLynx.  They all look fine out to above 400MHz, so we are likely to exceed the capability of most FPGA speed grades.
+
+
+
+
+
+David Hawkins wrote:
+> Hi guys,
+> 
+> Here's a few review comments for you.
+> 
+> Cheers,
+> Dave
+> 
+
+   
+   

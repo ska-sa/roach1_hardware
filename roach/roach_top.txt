@@ -1,0 +1,875 @@
+
+
+
+roach_top                Wednesday, February 04, 2009 12:33 PM                   Page  1
+
+#   Q- REFDES     MANUFACTURER    PART #          DESCRIPTION     VALUE      PACKAGE    
+----------------------------------------------------------------------------------------
+1   1  LOGO3                      N/A                                        CASPERLOGO 
+2   1  LOGO4                      N/A                                        CUCARACA   
+3   12 FU1,FU2,                   N/A                                        FIDUCIAL   
+       FU3,FU4,                                                                         
+       FU5,FU6,                                                                         
+       FU7,FU8,                                                                         
+       FU9,FU10,                                                                        
+       FU11,FU12                                                                        
+4   2  H10,H11                    N/A                                        HEATSINKH- 
+5   1  LOGO1                      N/A                                        LOGO       
+6   1  LOGO2                      N/A                                        MEERKATLO- 
+7   1  SNP1                       N/A                                        SNPATCH    
+8   8  U7,U39,                    SN74LVC1G07DBVT                            SOT95P280- 
+       U47,U49,                                                                         
+       U52,U64,                                                                         
+       U67,U68                                                                          
+9   1  J27        3M              2510-6002UB                                MOLEX15-9- 
+10  1  J26        3M              2510-6002UB     HEADER 5X2                 MOLEX15-9- 
+11  1  J32        3M              8510-4500PL     HEADER 5X2 FEM-            3M2510_60- 
+12  3  J2,J3,J9   3M              N2520-6V0C-RB-- HEADER 10X2 SH-            3MN2520-6- 
+13  1  U60        ACTEL           AFS600-FG256                               BGA256C10- 
+14  1  D6         AGILENT TECHNO- HSMS-C150                       DUPLEX LED LEDC3216X- 
+15  1  D7         AGILENT TECHNO- HSMS-C150                       L10 LED    LEDC3216X- 
+16  1  D8         AGILENT TECHNO- HSMS-C150                       L100 LED   LEDC3216X- 
+17  4  D2,D3,D4,  AGILENT TECHNO- HSMS-C150                       OPTICAL M- LEDC3216X- 
+       D5                                                                               
+18  1  U1         AMCC            PPC440EPX-NTA5-                 440EPX     BGA680C10- 
+19  4  J10,J11,   AMPHENOL        132136                          SMA        AMPHENOL1- 
+       J12,J13                                                                          
+20  1  U41        ANALOG DEVICES  AD7414ARTZ-0                    AD7414-0   SOT95P284- 
+21  2  U4,U5      ANALOG DEVICES  ADCMP605BCPZ                               QFN50P300- 
+22  1  U61        ANALOG DEVICES  ADM3101EACPZ-R-                            QFN50P300- 
+23  1  U25        ANALOG DEVICES  ADR03ARZ                                   SOIC127P6- 
+24  2  U38,U40    ATMEL           AT24HC04BN-SH                   AT24HC04   SOIC127P6- 
+25  4  C48,C49,   AVX             04023A180KAT2A                  18PF       CAPC1005X- 
+       C51,C52                                                                          
+26  1  C539       AVX             04023C101KAT2A                  100PF      CAPC1005X- 
+27  4  C744,C745, AVX             04023C471KAT2A                  470PF      CAPC1005X- 
+       C746,C747                                                                        
+28  1  C47        AVX             08053C225KAT2A                  2.2UF      CAPC2012X- 
+29  1  C2         AVX             1210YD226KAT2A                  22UF       CAPC3225X- 
+30  12 C608,C609, AVX             TPSB107K006R                    100UF      CAPMP3528- 
+       C610,C611,                                                                       
+       C730,C731,                                                                       
+       C732,C733,                                                                       
+       C735,C737,                                                                       
+       C739,C740                                                                        
+31  1  C1         AVX             TPSD227K010R00-                 220UF      CAPMP7343- 
+32  1  SW1        BOURNS          7914G                           SPST       BOURNS791- 
+33  8  PTC2,PTC3, BOURNS          MF-NSMF050-2                    500MA/13.- FUSC3216X- 
+       PTC4,PTC5,                                                                       
+       PTC6,PTC7,                                                                       
+       PTC8,PTC9                                                                        
+34  1  Y2         CITIZEN         CS10-12.000MAG-                 12.00 MHZ  FX532A     
+35  1  Y1         CITIZEN         CS10-22.1184MA-                 22.1184MHZ FX532A     
+36  1  X2         CRYSTEK         CCLD-023-25-10-                 100.00MHZ  OSCSC254P- 
+
+
+
+
+roach_top                Wednesday, February 04, 2009 12:33 PM                   Page  2
+
+#   Q- REFDES     MANUFACTURER    PART #          DESCRIPTION     VALUE      PACKAGE    
+----------------------------------------------------------------------------------------
+37  2  X1,X4      CRYSTEK         CCLD-023-25-15-                 156.25MHZ  OSCSC254P- 
+38  1  X3         CRYSTEK         CCLD-024-25-20-                 200.00MHZ  OSCSC254P- 
+39  1  U9         CYPRESS         CY22381FXI_021-                 CY22381FX- SOIC127P6- 
+40  1  U24        CYPRESS         CY2292F                         CY2292FZX- SOIC127P6- 
+41  1  X5         ECS INTERNATIO- ECX-306                         32.768KHZ  OSCL550P3- 
+42  3  Q12,Q13,   FAIRCHILD       FDS6675BZ                                  SO-8       
+       Q14                                                                              
+43  1  Q11        FAIRCHILD       FJD3076TM       NPN TRANSISTOR             DPAK-P950- 
+44  5  Q4,Q5,Q6,  FAIRCHILD SEMI- BSS138                          BSS138     SOT95P240- 
+       Q7,Q8                                                                            
+45  2  Q9,Q10     FAIRCHILD SEMI- NDS331N                         NDS331N    SOT95P241- 
+46  1  P3         FUJITSU         FCN-268F036-G/- FUJITSU 2X2 CX-            FUJITSU_F- 
+47  1  J25        HALO            HFJ11-1G02E-L12 RJ45, INTEGRAT-            RJ45_8POS  
+48  2  U43,U44    INTERSIL        ICL3225EIAZ                     ICL3225ECA SOP65P778- 
+49  1  C550       KEMET           C0805C153J5RAC                  15NF       CAPC2012X- 
+50  3  C498,C499, KEMET           C0805C153J5RAC                  15NF       CAPC2012X- 
+       C500                                                                             
+51  1  C614       KEMET           T491X227M010AT                  220UF      CAPMP7343- 
+52  2  C311,C312  KEMET           T520B336M006AT-                 33UF       CAPMP3528- 
+53  22 C88,C89,   KEMET           T520B476M006AT-                 47UF       CAPMP3528- 
+       C164,C326,                                                                       
+       C327,C328,                                                                       
+       C334,C335,                                                                       
+       C348,C349,                                                                       
+       C350,C388,                                                                       
+       C389,C390,                                                                       
+       C391,C392,                                                                       
+       C393,C394,                                                                       
+       C395,C488,                                                                       
+       C602,C603                                                                        
+54  2  C309,C310  KEMET           T520V337M2R5AT-                 330UF      CAPMP7343- 
+55  6  C104,C105, KEMET           T530X108M2R5AS-                 1000UF     CAPMP7343- 
+       C400,C402,                                                                       
+       C405,C410                                                                        
+56  2  C538,C545  KEMET           T530X337M010AT-                 330UF      CAPMP7343- 
+57  3  C501,C502, KEMET           T530X337M010AT-                 330UF      CAPMP7343- 
+       C503                                                                             
+58  1  C413       KEMET           T530X687M004AS-                 680UF      CAPMP7343- 
+59  1  J28        LANTRONIX       XP1001001-03R                              XP100100X- 
+60  1  PTC1       LITTELFUSE      1206L050                        500MA      FUSC3216X- 
+61  1  SP2        LITTELFUSE      PGB102ST23WR                    PGB102ST2- SOT23-SC2- 
+62  1  VR4        LITTELFUSE      V5.5MLA0603XXX                  5.5V 20A   VARC1608X- 
+63  2  U21,U34    MAXIM           MAX9032AKA                                 SOT80P330- 
+64  2  U20,U30    MAXIM           MAX9032AKA                                 SOT80P330- 
+65  1  U31        MICREL          MIC2774N-29YMS                  MIC2774N-- SOT95P280- 
+66  2  U8,U26     MICREL          SY89832UMI                                 QFN50P300- 
+67  1  J41        MOLEX           15-91-2080      HEADER 4X2                 MOLEX15-9- 
+68  1  J7         MOLEX           15-91-2140      HEADER 7X2                 MOLEX15-9- 
+69  1  J31        MOLEX           15-91-2200      HEADER 10X2                MOLEX15-9- 
+70  1  J18        MOLEX           44206-0007      ATX MAIN POWER-            MOLEX_442- 
+71  3  J19,J20,   MOLEX           47053-1000      ATX 4 WIRE FAN-            MOLEX_470- 
+       J21                                                                              
+72  1  J24        MOLEX           87832-1420                                 CON7X2_87- 
+73  2  J8,J15     MOLEX           879160001                                  MOLEX8791- 
+74  1  P6         MOLEX           89485-8001                      NONE       MOLEX8948- 
+75  7  L8,L9,L10, MURATA          BLM18PG181SN1X                  180OHM 1.- INDC1608X- 
+
+
+
+
+roach_top                Wednesday, February 04, 2009 12:33 PM                   Page  3
+
+#   Q- REFDES     MANUFACTURER    PART #          DESCRIPTION     VALUE      PACKAGE    
+----------------------------------------------------------------------------------------
+75  7  L11,L12,   MURATA          BLM18PG181SN1X                  180OHM 1.- INDC1608X- 
+       L13,L17                                                                          
+76  4  L1,L2,L3,  MURATA          BLM21B601SPT                    600OHM 20- INDC2012X- 
+       L4                                                                               
+77  6  L5,L6,L7,  MURATA          BLM31PG121SN1B                  BLM31PG12- INDC3216X- 
+       L14,L15,                                                                         
+       L16                                                                              
+78  52 CP1,CP2,   MURATA          GNM214B11C104M- CAPACITOR,CHIP- 100NF      CAPCAF50P- 
+       CP3,CP4,                                                                         
+       CP5,CP6,                                                                         
+       CP7,CP8,                                                                         
+       CP9,CP10,                                                                        
+       CP11,CP12,                                                                       
+       CP13,CP14,                                                                       
+       CP15,CP16,                                                                       
+       CP17,CP18,                                                                       
+       CP19,CP20,                                                                       
+       CP21,CP22,                                                                       
+       CP23,CP24,                                                                       
+       CP25,CP26,                                                                       
+       CP27,CP28,                                                                       
+       CP29,CP30,                                                                       
+       CP31,CP32,                                                                       
+       CP33,CP34,                                                                       
+       CP35,CP36,                                                                       
+       CP37,CP38,                                                                       
+       CP39,CP40,                                                                       
+       CP41,CP42,                                                                       
+       CP43,CP44,                                                                       
+       CP45,CP46,                                                                       
+       CP47,CP48,                                                                       
+       CP49,CP50,                                                                       
+       CP51,CP52                                                                        
+79  2  C554,C555  MURATA          GRM1555C1H101J-                 100PF      CAPC1005X- 
+80  2  C21,C22    MURATA          GRM1555C1H220J-                 22PF       CAPC1005X- 
+81  6  C308,C313, MURATA          GRM1555C1H5R0C- CERAMIC CHIP C- 5PF        CAPC1005X- 
+       C455,C461,                                                                       
+       C462,C463                                                                        
+82  50 C33,C61,   MURATA          GRM155R60J103K-                 10NF       CAPC1005X- 
+       C66,C67,                                                                         
+       C76,C77,                                                                         
+       C127,C129,                                                                       
+       C131,C132,                                                                       
+       C133,C135,                                                                       
+       C148,C239,                                                                       
+       C241,C242,                                                                       
+       C243,C244,                                                                       
+       C246,C556,                                                                       
+       C557,C558,                                                                       
+       C559,C560,                                                                       
+       C561,C562,                                                                       
+       C563,C564,                                                                       
+       C568,C570,                                                                       
+       C571,C572,                                                                       
+       C573,C574,                                                                       
+       C575,C576,                                                                       
+
+
+
+
+roach_top                Wednesday, February 04, 2009 12:33 PM                   Page  4
+
+#   Q- REFDES     MANUFACTURER    PART #          DESCRIPTION     VALUE      PACKAGE    
+----------------------------------------------------------------------------------------
+82  50 C577,C581, MURATA          GRM155R60J103K-                 10NF       CAPC1005X- 
+       C582,C583,                                                                       
+       C584,C585,                                                                       
+       C586,C587,                                                                       
+       C588,C589,                                                                       
+       C616,C617,                                                                       
+       C618,C619                                                                        
+83  12 C70,C71,   MURATA          GRM155R60J104K-                 100NF      CAPC1005X- 
+       C74,C75,                                                                         
+       C82,C83,                                                                         
+       C99,C103,                                                                        
+       C128,C136,                                                                       
+       C227,C247                                                                        
+84  1  C613       MURATA          GRM155R61A102K- CERAMIC CHIP C- 1NF        CAPC1005X- 
+85  83 C5,C13,    MURATA          GRM155R71A104K- CERAMIC CHIP C- 100NF      CAPC1005X- 
+       C15,C20,                                                                         
+       C32,C57,                                                                         
+       C62,C68,                                                                         
+       C69,C296,                                                                        
+       C297,C298,                                                                       
+       C299,C300,                                                                       
+       C301,C305,                                                                       
+       C306,C307,                                                                       
+       C314,C316,                                                                       
+       C319,C320,                                                                       
+       C336,C338,                                                                       
+       C341,C342,                                                                       
+       C351,C396,                                                                       
+       C397,C398,                                                                       
+       C407,C408,                                                                       
+       C411,C414,                                                                       
+       C417,C430,                                                                       
+       C431,C432,                                                                       
+       C435,C436,                                                                       
+       C437,C438,                                                                       
+       C439,C440,                                                                       
+       C441,C442,                                                                       
+       C453,C454,                                                                       
+       C460,C471,                                                                       
+       C472,C473,                                                                       
+       C474,C475,                                                                       
+       C476,C477,                                                                       
+       C478,C479,                                                                       
+       C480,C481,                                                                       
+       C482,C483,                                                                       
+       C514,C516,                                                                       
+       C518,C520,                                                                       
+       C522,C524,                                                                       
+       C527,C528,                                                                       
+       C529,C532,                                                                       
+       C540,C541,                                                                       
+       C542,C543,                                                                       
+       C544,C546,                                                                       
+       C594,C612,                                                                       
+       C620,C748,                                                                       
+       C749                                                                             
+
+
+
+
+roach_top                Wednesday, February 04, 2009 12:33 PM                   Page  5
+
+#   Q- REFDES     MANUFACTURER    PART #          DESCRIPTION     VALUE      PACKAGE    
+----------------------------------------------------------------------------------------
+86  52 C6,C14,    MURATA          GRM155R71E103K- CERAMIC CHIP C- 10NF       CAPC1005X- 
+       C16,C17,                                                                         
+       C46,C50,                                                                         
+       C55,C56,                                                                         
+       C63,C352,                                                                        
+       C353,C354,                                                                       
+       C355,C356,                                                                       
+       C357,C358,                                                                       
+       C359,C360,                                                                       
+       C433,C434,                                                                       
+       C443,C444,                                                                       
+       C445,C446,                                                                       
+       C447,C448,                                                                       
+       C449,C450,                                                                       
+       C451,C452,                                                                       
+       C507,C508,                                                                       
+       C509,C510,                                                                       
+       C511,C512,                                                                       
+       C513,C515,                                                                       
+       C517,C519,                                                                       
+       C521,C523,                                                                       
+       C525,C526,                                                                       
+       C530,C531,                                                                       
+       C533,C534,                                                                       
+       C590,C591,                                                                       
+       C592,C593                                                                        
+87  32 C106,C107, MURATA          GRM155R71E103K- CERAMIC CHIP C- 10NF       CAPC1005X- 
+       C108,C109,                                                                       
+       C110,C111,                                                                       
+       C112,C113,                                                                       
+       C140,C141,                                                                       
+       C142,C143,                                                                       
+       C144,C145,                                                                       
+       C146,C147,                                                                       
+       C183,C184,                                                                       
+       C185,C186,                                                                       
+       C187,C188,                                                                       
+       C189,C190,                                                                       
+       C249,C250,                                                                       
+       C251,C252,                                                                       
+       C253,C254,                                                                       
+       C255,C256                                                                        
+88  7  C489,C490, MURATA          GRM188R61E105K-                 1UF        CAPC1608X- 
+       C491,C504,                                                                       
+       C505,C506,                                                                       
+       C553                                                                             
+89  8  C315,C317, MURATA          GRM188R71C105K- CERAMIC CHIP C- 1UF        CAPC1608X- 
+       C318,C321,                                                                       
+       C337,C339,                                                                       
+       C340,C343                                                                        
+90  31 C7,C8,C9,  MURATA          GRM21BR60J106K-                 10UF       CAPC2012X- 
+       C23,C24,                                                                         
+       C25,C26,                                                                         
+       C27,C28,                                                                         
+       C29,C30,                                                                         
+       C31,C120,                                                                        
+
+
+
+
+roach_top                Wednesday, February 04, 2009 12:33 PM                   Page  6
+
+#   Q- REFDES     MANUFACTURER    PART #          DESCRIPTION     VALUE      PACKAGE    
+----------------------------------------------------------------------------------------
+90  31 C122,C124, MURATA          GRM21BR60J106K-                 10UF       CAPC2012X- 
+       C153,C154,                                                                       
+       C155,C156,                                                                       
+       C157,C163,                                                                       
+       C172,C174,                                                                       
+       C176,C180,                                                                       
+       C273,C274,                                                                       
+       C281,C282,                                                                       
+       C283,C284                                                                        
+91  4  C138,C139, MURATA          GRM21BR61C475K-                 4.7UF      CAPC2012X- 
+       C167,C168                                                                        
+92  5  C58,C329,  MURATA          GRM21BR61E475K-                 4U7F       CAPC2012X- 
+       C459,C467,                                                                       
+       C595                                                                             
+93  3  C485,C547, MURATA          GRM21BR71E225K-                 2U2        CAPC2012X- 
+       C548                                                                             
+94  28 C59,C60,   MURATA          GRM32DR61C106K-                 10UF       CAPC3225X- 
+       C84,C117,                                                                        
+       C270,C271,                                                                       
+       C418,C421,                                                                       
+       C422,C425,                                                                       
+       C426,C456,                                                                       
+       C457,C458,                                                                       
+       C464,C465,                                                                       
+       C466,C492,                                                                       
+       C493,C494,                                                                       
+       C495,C496,                                                                       
+       C497,C551,                                                                       
+       C552,C596,                                                                       
+       C597,C598                                                                        
+95  8  C549,C565, MURATA          GRM32DR61C106K- CER CAP         10UF       CAPC3225X- 
+       C566,C567,                                                                       
+       C569,C578,                                                                       
+       C579,C580                                                                        
+96  11 C90,C91,   MURATA          GRM32ER61C226K-                 22UF       CAPC3225X- 
+       C165,C166,                                                                       
+       C419,C420,                                                                       
+       C423,C424,                                                                       
+       C535,C536,                                                                       
+       C537                                                                             
+97  4  JP6,JP9,   N/A             JP2             STANDARD JUMPER NO POP     JUMPER     
+       JP24,JP25                                                                        
+98  8  JP12,JP13, N/A             JP3             3 WAY JUMPER    1-2        RESC3P150- 
+       JP14,JP15,                                                                       
+       JP20,JP21,                                                                       
+       JP22,JP23                                                                        
+99  9  JP10,JP11, N/A             JP3             3 WAY JUMPER    2-3        RESC3P150- 
+       JP16,JP17,                                                                       
+       JP18,JP19,                                                                       
+       JP26,JP27,                                                                       
+       JP28                                                                             
+100 32 V1,V2,V3,  NA              N/A                                        DIFFVIA    
+       V4,V5,V6,                                                                        
+       V7,V8,V9,                                                                        
+       V18,V19,                                                                         
+       V20,V21,                                                                         
+
+
+
+
+roach_top                Wednesday, February 04, 2009 12:33 PM                   Page  7
+
+#   Q- REFDES     MANUFACTURER    PART #          DESCRIPTION     VALUE      PACKAGE    
+----------------------------------------------------------------------------------------
+100 32 V22,V23,   NA              N/A                                        DIFFVIA    
+       V24,V25,                                                                         
+       V34,V35,                                                                         
+       V36,V37,                                                                         
+       V38,V39,                                                                         
+       V40,V49,                                                                         
+       V50,V51,                                                                         
+       V52,V53,                                                                         
+       V54,V55,                                                                         
+       V56                                                                              
+101 9  H1,H2,H3,  NA              N/A                                        HOLE150X2- 
+       H4,H5,H6,                                                                        
+       H7,H8,H9                                                                         
+102 1  TP1        NA              N/A                             TEST POINT TP_SMT_1MM 
+103 8  TP2,TP3,   NA              N/A             TEST POINT                 TPR100     
+       TP4,TP5,                                                                         
+       TP6,TP7,                                                                         
+       TP8,TP9                                                                          
+104 1  U58        NATIONAL        DP83865DVH                                 QFP50P172- 
+105 1  P2         NORCOMP         182-009-112-171                 9P DSUB M- 87203-6043 
+106 1  D9         NXP             PRTR5V0U2AX                     NONE       SOT143B    
+107 2  SW2,SW3    OMRON           A6S-4101-H                      4POLE      90HB_SERI- 
+108 3  D10,D11,   ON SEMI         BZX84C3V3LT1                    3V3        SOT95P240- 
+       D12                                                                              
+109 2  CR5,CR6    OSRAM           Q62702P5178                     RED        LEDC3216X- 
+110 8  CR1,CR2,   OSRAM           Q62702P5179                     GRN        LEDC3216X- 
+       CR3,CR4,                                                                         
+       CR7,CR8,                                                                         
+       CR9,CR10                                                                         
+111 1- C10,C11,   PANASONIC       ECJ-0EB0J224K   CERAMIC CHIP C- 220NF      CAPC1005X- 
+       C12,C18,                                                                         
+       C19,C34,                                                                         
+       C35,C36,                                                                         
+       C37,C38,                                                                         
+       C39,C40,                                                                         
+       C41,C42,                                                                         
+       C43,C44,                                                                         
+       C45,C64,                                                                         
+       C65,C78,                                                                         
+       C79,C85,                                                                         
+       C86,C87,                                                                         
+       C92,C93,                                                                         
+       C94,C96,                                                                         
+       C98,C100,                                                                        
+       C101,C102,                                                                       
+       C114,C115,                                                                       
+       C116,C118,                                                                       
+       C119,C121,                                                                       
+       C123,C125,                                                                       
+       C126,C137,                                                                       
+       C158,C159,                                                                       
+       C160,C161,                                                                       
+       C162,C169,                                                                       
+       C170,C171,                                                                       
+       C173,C175,                                                                       
+       C177,C178,                                                                       
+
+
+
+
+roach_top                Wednesday, February 04, 2009 12:33 PM                   Page  8
+
+#   Q- REFDES     MANUFACTURER    PART #          DESCRIPTION     VALUE      PACKAGE    
+----------------------------------------------------------------------------------------
+111 1- C179,C181, PANASONIC       ECJ-0EB0J224K   CERAMIC CHIP C- 220NF      CAPC1005X- 
+       C182,C191,                                                                       
+       C200,C201,                                                                       
+       C202,C203,                                                                       
+       C204,C205,                                                                       
+       C206,C207,                                                                       
+       C208,C209,                                                                       
+       C210,C211,                                                                       
+       C212,C213,                                                                       
+       C214,C215,                                                                       
+       C216,C217,                                                                       
+       C218,C219,                                                                       
+       C220,C221,                                                                       
+       C222,C223,                                                                       
+       C224,C225,                                                                       
+       C226,C228,                                                                       
+       C229,C230,                                                                       
+       C231,C232,                                                                       
+       C233,C234,                                                                       
+       C235,C236,                                                                       
+       C237,C238,                                                                       
+       C248,C257,                                                                       
+       C258,C259,                                                                       
+       C260,C261,                                                                       
+       C262,C263,                                                                       
+       C264,C265,                                                                       
+       C266,C267,                                                                       
+       C268,C269,                                                                       
+       C272,C275,                                                                       
+       C276,C277,                                                                       
+       C278,C279,                                                                       
+       C280,C285,                                                                       
+       C286,C287,                                                                       
+       C288,C289,                                                                       
+       C290,C291,                                                                       
+       C292,C293,                                                                       
+       C294,C295,                                                                       
+       C302,C303,                                                                       
+       C304,C322,                                                                       
+       C323,C324,                                                                       
+       C325,C330,                                                                       
+       C331,C332,                                                                       
+       C333,C344,                                                                       
+       C345,C346,                                                                       
+       C347,C361,                                                                       
+       C362,C363,                                                                       
+       C364,C365,                                                                       
+       C366,C367,                                                                       
+       C368,C369,                                                                       
+       C370,C371,                                                                       
+       C372,C373,                                                                       
+       C374,C375,                                                                       
+       C376,C377,                                                                       
+       C378,C379,                                                                       
+       C380,C381,                                                                       
+       C382,C383,                                                                       
+
+
+
+
+roach_top                Wednesday, February 04, 2009 12:33 PM                   Page  9
+
+#   Q- REFDES     MANUFACTURER    PART #          DESCRIPTION     VALUE      PACKAGE    
+----------------------------------------------------------------------------------------
+111 1- C384,C385, PANASONIC       ECJ-0EB0J224K   CERAMIC CHIP C- 220NF      CAPC1005X- 
+       C386,C387,                                                                       
+       C399,C427,                                                                       
+       C428,C429,                                                                       
+       C468,C469,                                                                       
+       C470,C486,                                                                       
+       C487,C599,                                                                       
+       C600,C601                                                                        
+112 3  U45,U46,   PERICOM         PI5A3157ZAEX                    PI5A3157   SON50P100- 
+       U48                                                                              
+113 1  J17        PROCONN         SDSR13-A0-0005                             PROCONN_S- 
+114 4  R4,R111,   ROYAL OHM       0402WG00T1E                     0R         RESC1005X- 
+       R112,R144                                                                        
+115 1  R262       ROYAL OHM       0402WGF0100T1E                  10         RESC1005X- 
+116 8  R3,R24,    ROYAL OHM       0402WGF0102T1E                  1K         RESC1005X- 
+       R25,R85,                                                                         
+       R183,R207,                                                                       
+       R208,R267                                                                        
+117 5  RO1,RO2,   ROYAL OHM       0402WGF0102T1E                  NO POP     RESC1005X- 
+       RO3,RO4,                                                                         
+       RO5                                                                              
+118 8  R213,R218, ROYAL OHM       0402WGF0103T1E                  100K       RESC1005X- 
+       R219,R278,                                                                       
+       R279,R280,                                                                       
+       R283,R285                                                                        
+119 54 R1,R2,R7,  ROYAL OHM       0402WGF0103T1E                  10K        RESC1005X- 
+       R8,R9,R36,                                                                       
+       R37,R38,                                                                         
+       R39,R47,                                                                         
+       R48,R53,                                                                         
+       R54,R86,                                                                         
+       R87,R96,                                                                         
+       R99,R100,                                                                        
+       R101,R102,                                                                       
+       R105,R109,                                                                       
+       R110,R114,                                                                       
+       R117,R130,                                                                       
+       R131,R135,                                                                       
+       R161,R162,                                                                       
+       R163,R167,                                                                       
+       R180,R181,                                                                       
+       R188,R189,                                                                       
+       R194,R195,                                                                       
+       R196,R198,                                                                       
+       R204,R205,                                                                       
+       R206,R229,                                                                       
+       R230,R235,                                                                       
+       R236,R288,                                                                       
+       R289,R290,                                                                       
+       R291,R299,                                                                       
+       R302,R303                                                                        
+120 2  R168,R169  ROYAL OHM       0402WGF0121T1E                  120R       RESC1005X- 
+121 4  R79,R92,   ROYAL OHM       0402WGF0151T1E                  150R       RESC1005X- 
+       R122,R125                                                                        
+122 2  R41,R88    ROYAL OHM       0402WGF0153T1E                  15K        RESC1005X- 
+123 1  R263       ROYAL OHM       0402WGF0180T1E                  18         RESC1005X- 
+
+
+
+
+roach_top                Wednesday, February 04, 2009 12:33 PM                   Page 10
+
+#   Q- REFDES     MANUFACTURER    PART #          DESCRIPTION     VALUE      PACKAGE    
+----------------------------------------------------------------------------------------
+124 9  R42,R197,  ROYAL OHM       0402WGF0181T1E                  180R       RESC1005X- 
+       R199,R200,                                                                       
+       R201,R202,                                                                       
+       R203,R284,                                                                       
+       R286                                                                             
+125 2  R215,R216  ROYAL OHM       0402WGF01821T1E                 1K8        RESC1005X- 
+126 29 R10,R11,   ROYAL OHM       0402WGF0220T1E                  22R        RESC1005X- 
+       R12,R13,                                                                         
+       R14,R15,                                                                         
+       R16,R17,                                                                         
+       R18,R19,                                                                         
+       R20,R21,                                                                         
+       R139,R142,                                                                       
+       R145,R150,                                                                       
+       R222,R223,                                                                       
+       R237,R239,                                                                       
+       R240,R241,                                                                       
+       R242,R272,                                                                       
+       R273,R274,                                                                       
+       R275,R276,                                                                       
+       R277                                                                             
+127 13 R170,R171, ROYAL OHM       0402WGF0222T1E                  2K2        RESC1005X- 
+       R172,R238,                                                                       
+       R243,R245,                                                                       
+       R247,R249,                                                                       
+       R252,R268,                                                                       
+       R269,R270,                                                                       
+       R271                                                                             
+128 3  R264,R265, ROYAL OHM       0402WGF0222T1E                  NO POP     RESC1005X- 
+       R266                                                                             
+129 1  R164       ROYAL OHM       0402WGF0330T1E                  33R        RESC1005X- 
+130 5  R244,R246, ROYAL OHM       0402WGF0331T1E                  330R       RESC1005X- 
+       R248,R250,                                                                       
+       R251                                                                             
+131 38 R5,R23,    ROYAL OHM       0402WGF0332T1E                  3K3        RESC1005X- 
+       R27,R28,                                                                         
+       R29,R30,                                                                         
+       R31,R32,                                                                         
+       R33,R34,                                                                         
+       R35,R60,                                                                         
+       R61,R62,                                                                         
+       R63,R64,                                                                         
+       R65,R66,                                                                         
+       R67,R68,                                                                         
+       R69,R70,                                                                         
+       R71,R72,                                                                         
+       R73,R74,                                                                         
+       R75,R76,                                                                         
+       R77,R78,                                                                         
+       R80,R81,                                                                         
+       R82,R83,                                                                         
+       R84,R132,                                                                        
+       R133,R134                                                                        
+132 8  R57,R58,   ROYAL OHM       0402WGF0392T1E                  3K9        RESC1005X- 
+       R93,R95,                                                                         
+       R118,R120,                                                                       
+
+
+
+
+roach_top                Wednesday, February 04, 2009 12:33 PM                   Page 11
+
+#   Q- REFDES     MANUFACTURER    PART #          DESCRIPTION     VALUE      PACKAGE    
+----------------------------------------------------------------------------------------
+132 8  R127,R129  ROYAL OHM       0402WGF0392T1E                  3K9        RESC1005X- 
+133 1  R159       ROYAL OHM       0402WGF0393T1E                  39K        RESC1005X- 
+134 20 R89,R165,  ROYAL OHM       0402WGF0472T1E                  4K7        RESC1005X- 
+       R166,R173,                                                                       
+       R174,R175,                                                                       
+       R190,R191,                                                                       
+       R192,R209,                                                                       
+       R210,R211,                                                                       
+       R212,R224,                                                                       
+       R225,R226,                                                                       
+       R231,R232,                                                                       
+       R233,R234                                                                        
+135 2  R97,R98    ROYAL OHM       0402WGF0512T1E                  5K1        RESC1005X- 
+136 1  R160       ROYAL OHM       0402WGF0563T1E                  56K        RESC1005X- 
+137 4  R59,R94,   ROYAL OHM       0402WGF0682T1E                  6K8        RESC1005X- 
+       R119,R128                                                                        
+138 12 R103,R104, ROYAL OHM       0402WGF1000T1E                  100R       RESC1005X- 
+       R107,R108,                                                                       
+       R115,R116,                                                                       
+       R136,R137,                                                                       
+       R176,R178,                                                                       
+       R184,R186                                                                        
+139 1  R149       ROYAL OHM       0402WGF1021T1E                  1K02       RESC1005X- 
+140 1  R221       ROYAL OHM       0402WGF1101T1E                  1K1        RESC1005X- 
+141 1  R281       ROYAL OHM       0402WGF1151T1E                  1K15       RESC1005X- 
+142 1  R146       ROYAL OHM       0402WGF1581T1E                  1K58       RESC1005X- 
+143 1  R179       ROYAL OHM       0402WGF2372T1E                  2K37       RESC1005X- 
+144 1  R306       ROYAL OHM       0402WGF2400T1E                  240R       RESC1005X- 
+145 2  R55,R304   ROYAL OHM       0402WGF249JTIE                  249R       RESC1005X- 
+146 1  R305       ROYAL OHM       0402WGF3300T1E                  330R       RESC1005X- 
+147 1  R182       ROYAL OHM       0402WGF3401T1E                  3K4        RESC1005X- 
+148 1  R282       ROYAL OHM       0402WGF3571T1E                  3K57       RESC1005X- 
+149 2  R214,R217  ROYAL OHM       0402WGF3601T1E                  3K6        RESC1005X- 
+150 1  R220       ROYAL OHM       0402WGF4421T1E                  4K42       RESC1005X- 
+151 1  R148       ROYAL OHM       0402WGF4752T1E                  4K75       RESC1005X- 
+152 25 R22,R40,   ROYAL OHM       0402WGF499JT1E                  49.9R      RESC1005X- 
+       R51,R52,                                                                         
+       R56,R140,                                                                        
+       R141,R151,                                                                       
+       R152,R153,                                                                       
+       R154,R155,                                                                       
+       R156,R157,                                                                       
+       R158,R254,                                                                       
+       R255,R256,                                                                       
+       R257,R258,                                                                       
+       R259,R260,                                                                       
+       R261,R300,                                                                       
+       R301                                                                             
+153 2  R49,R50    ROYAL OHM       0402WGF499JT1E                  49R9       RESC1005X- 
+154 2  R121,R126  ROYAL OHM       0402WGF5101T1E                  5K1        RESC1005X- 
+155 1  R177       ROYAL OHM       0402WGF5361T1E                  5K36       RESC1005X- 
+156 1  R143       ROYAL OHM       0402WGF6342T1E                  63K4       RESC1005X- 
+157 1  R147       ROYAL OHM       0402WGF6982T1E                  6K98       RESC1005X- 
+158 2  R106,R113  ROYAL OHM       0402WGF8201T1E                  82K        RESC1005X- 
+159 1  R253       ROYAL OHM       0402WGF9761T1E                  9K76       RESC1005X- 
+160 4  R43,R44,   ROYAL OHM       0402WGJ0101T1E                  100R       RESC1005X- 
+
+
+
+
+roach_top                Wednesday, February 04, 2009 12:33 PM                   Page 12
+
+#   Q- REFDES     MANUFACTURER    PART #          DESCRIPTION     VALUE      PACKAGE    
+----------------------------------------------------------------------------------------
+160 4  R45,R46    ROYAL OHM       0402WGJ0101T1E                  100R       RESC1005X- 
+161 3  RO10,RO11, ROYAL OHM       0402WGJ0104T1E                  NO POP     RESC3P150- 
+       RO14                                                                             
+162 2  R6,R138    ROYAL OHM       0402WGJ0120T1E                  120R       RESC1005X- 
+163 7  R26,RS1,   ROYAL OHM       4D02WGJ0330T                    33         RESC1005X- 
+       RS2,RS3,                                                                         
+       RS7,RS9,                                                                         
+       RS10                                                                             
+164 14 RP13,RP14, ROYAL OHM       4D02WGJ0510B1E                  49.9R      RESCAV50P- 
+       RP15,RP16,                                                                       
+       RP17,RP18,                                                                       
+       RP19,RP20,                                                                       
+       RP21,RP22,                                                                       
+       RP23,RP24,                                                                       
+       RP25,RP26                                                                        
+165 24 RP1,RP2,   ROYAL OHM       4D02WGJ0510T                    51R        RESCAV50P- 
+       RP3,RP4,                                                                         
+       RP5,RP6,                                                                         
+       RP7,RP8,                                                                         
+       RP9,RP10,                                                                        
+       RP11,RP12,                                                                       
+       RP27,RP28,                                                                       
+       RP29,RP30,                                                                       
+       RP31,RP32,                                                                       
+       RP33,RP34,                                                                       
+       RP35,RP36,                                                                       
+       RP37,RP38                                                                        
+166 2  U17,U63    SAMSUNG         K7S3218T4C-FC40 QDRII+ X18 CON-            BGA165C10- 
+167 1  J14        SAMTEC          HLE-105-02-G-DV                            J_10IO_TBD 
+168 1  P9         SAMTEC          QSH-040-01-L-D-                            QSH-040-0- 
+169 2  P4,P11     SAMTEC          TSM-105-01-TM--                 0.1IN M S- TSM_5X1_SV 
+170 2  P1,P8      SAMTEC          TSM-108-01-TM--                 .1IN M SMT TSM_8X2_DV 
+171 5  C401,C403, SANYO           16SVP330M                       330UF      CAPAE1050- 
+       C404,C409,                                                                       
+       C412                                                                             
+172 1  U42        SPANSION        S29GL512P11FFI-                 32MX16 MI- BGA64C100- 
+173 36 FB1,FB3,   TDK             MPZ1608S221A                    220@100M   INDC1608X- 
+       FB4,FB5,                                                                         
+       FB8,FB9,                                                                         
+       FB10,FB11,                                                                       
+       FB14,FB15,                                                                       
+       FB16,FB17,                                                                       
+       FB19,FB22,                                                                       
+       FB23,FB24,                                                                       
+       FB25,FB26,                                                                       
+       FB27,FB28,                                                                       
+       FB30,FB31,                                                                       
+       FB32,FB35,                                                                       
+       FB36,FB37,                                                                       
+       FB38,FB41,                                                                       
+       FB42,FB43,                                                                       
+       FB44,FB46,                                                                       
+       FB49,FB50,                                                                       
+       FB51,FB52                                                                        
+174 7  U10,U11,   TEXAS INSTRUME- 74AVCH4T245DGV-                            SOP40P640- 
+       U12,U13,                                                                         
+
+
+
+
+roach_top                Wednesday, February 04, 2009 12:33 PM                   Page 13
+
+#   Q- REFDES     MANUFACTURER    PART #          DESCRIPTION     VALUE      PACKAGE    
+----------------------------------------------------------------------------------------
+174 7  U14,U65,   TEXAS INSTRUME- 74AVCH4T245DGV-                            SOP40P640- 
+       U66                                                                              
+175 1  U50        TEXAS INSTRUME- PTH05T210WAD                    PTH05T210- PTH08T210- 
+176 1  U27        TEXAS INSTRUME- PTH08T220WAD                               PTH08T220- 
+177 1  U53        TEXAS INSTRUME- PTH08T230WAD                               PTH08T230- 
+178 1  U51        TEXAS INSTRUME- PTH08T240WAD                    PTH08T240- PTH08T240- 
+179 4  U22,U23,   TEXAS INSTRUME- SN74AHC1G08DCKR                            SOT65P210- 
+       U36,U37                                                                          
+180 1  U2         TEXAS INSTRUME- SN74AHC1G125DC-                            SOT65P210- 
+181 1  U35        TEXAS INSTRUME- SN74LVC1G08DCKR                 74LVC1G08  SOT65P210- 
+182 4  U18,U19,   TEXAS INSTRUME- TPS2031D                                   SOIC127P6- 
+       U28,U29                                                                          
+183 4  U16,U32,   TEXAS INSTRUME- TPS51100DGQ                     TPS51100D- SOP50P490- 
+       U33,U62                                                                          
+184 4  U55,U56,   TEXAS INSTRUME- TPS74401RGWT                    TPS74401R- QFN65P500- 
+       U57,U59                                                                          
+185 1  U6         TI              CDCU877ARHAT                               QFN50P600- 
+186 1  U3         TI              TL7700CPSR                                 SOIC127P7- 
+187 1  J1         TYCO ELECTRONI- 5767054-1                       .25IN F S- 767054-1   
+188 2  P5,P7      TYCO ELECTRONI- 6367550-5                       ZDOK40     TYCO63675- 
+189 1- C3,C4,C53, VENKEL          C0402X7R160-10-                 0.1UF      CAPC1005X- 
+       C54,C149,                                                                        
+       C150,C151,                                                                       
+       C152,C192,                                                                       
+       C193,C194,                                                                       
+       C195,C196,                                                                       
+       C197,C198,                                                                       
+       C199,C604,                                                                       
+       C605,C606,                                                                       
+       C607,C615,                                                                       
+       C621,C622,                                                                       
+       C623,C624,                                                                       
+       C625,C626,                                                                       
+       C627,C629,                                                                       
+       C630,C631,                                                                       
+       C632,C634,                                                                       
+       C636,C637,                                                                       
+       C638,C639,                                                                       
+       C640,C641,                                                                       
+       C642,C643,                                                                       
+       C644,C645,                                                                       
+       C647,C648,                                                                       
+       C649,C650,                                                                       
+       C651,C652,                                                                       
+       C653,C654,                                                                       
+       C655,C656,                                                                       
+       C657,C658,                                                                       
+       C659,C660,                                                                       
+       C661,C662,                                                                       
+       C664,C665,                                                                       
+       C666,C667,                                                                       
+       C668,C669,                                                                       
+       C670,C671,                                                                       
+       C672,C673,                                                                       
+       C674,C675,                                                                       
+       C677,C678,                                                                       
+
+
+
+
+roach_top                Wednesday, February 04, 2009 12:33 PM                   Page 14
+
+#   Q- REFDES     MANUFACTURER    PART #          DESCRIPTION     VALUE      PACKAGE    
+----------------------------------------------------------------------------------------
+189 1- C679,C680, VENKEL          C0402X7R160-10-                 0.1UF      CAPC1005X- 
+       C681,C682,                                                                       
+       C683,C684,                                                                       
+       C686,C687,                                                                       
+       C688,C689,                                                                       
+       C690,C691,                                                                       
+       C692,C693,                                                                       
+       C694,C695,                                                                       
+       C696,C697,                                                                       
+       C698,C699,                                                                       
+       C700,C702,                                                                       
+       C704,C705,                                                                       
+       C706,C707,                                                                       
+       C708,C709,                                                                       
+       C710,C711,                                                                       
+       C712,C713,                                                                       
+       C714,C715,                                                                       
+       C716,C717,                                                                       
+       C718,C719,                                                                       
+       C720,C722,                                                                       
+       C723,C724,                                                                       
+       C725,C726,                                                                       
+       C729                                                                             
+190 1  R185       VISHAY          AC05000001009J-                 10R        VISHAY_AC- 
+191 1  R187       VISHAY          AC05000005609J-                 56R        VISHAY_AC- 
+192 1  D1         VISHAY          BAV70-V                         BAV70      SOT95P248- 
+193 1  R298       VISHAY DALE     WSL25121L000FEA                 0R001      RESC6432X- 
+194 1  R295       VISHAY DALE     WSL25122L000FEA                 0R002      RESC6432X- 
+195 2  R292,R296  VISHAY DALE     WSL25124L000FEA                 0R004      RESC6432X- 
+196 3  R287,R293, VISHAY DALE     WSL2512R0100FEA                 0R01       RESC6432X- 
+       R294                                                                             
+197 1  U54        XILINX          XC2C256_7VQ144C                            QFP50P220- 
+198 1  U15        XILINX          XC5VSX95T                                  BGA1136C1- 
+    --                                                                                  
+    1-                                                                                  
+

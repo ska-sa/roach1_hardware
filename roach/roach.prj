@@ -1,0 +1,46 @@
+SECTION FlowSettings
+KEY FlowType "NETLIST"
+ENDSECTION
+SECTION DesignInfo
+LIST IndependentLibraries
+VALUE "DIR [W] . (IOD_Schematic)"
+VALUE "DIR [rm] $IOD_HOME\IODesigner\dxdesigner\builtin (builtin)"
+ENDLIST
+KEY FrontEndSnapshot "DxD"
+KEY Bus_Contents ".\conts.bc"
+KEY CnsFileName ".\pads2007.cns"
+KEY LayoutID "PADS2007"
+KEY PcbCfgFileName ".\roach_pcb.cfg"
+KEY CentralLibrary ""
+KEY PinComponents ".\pintype.pin"
+KEY BorderSymbols ".\borders.ini"
+ENDSECTION
+SECTION iCDB
+LIST Designs
+VALUE "roach_top"
+ENDLIST
+KEY iCDBDir ".\database"
+ENDSECTION
+SECTION roach_top
+KEY RootBlock "roach_top"
+KEY ConfigType "PCB"
+KEY ModelManagerDir "ICXPro\Local_Cache\Model_Manager"
+KEY ModelManagerProjPath "ICXPro"
+KEY SimControlDir "ICXPro\Simulation_Templates"
+KEY SchematicDesignStatus "0"
+KEY SchematicDesignBackAnno "0"
+KEY PCBForwardAnno "-1"
+KEY CADBackAnno "0"
+KEY UpdateJobPrefsDB "Sync"
+KEY SchematicConflict "FE"
+KEY LayoutTemplate "4 Layer Template"
+KEY AllowAlpha "0"
+KEY FwdAnnoExtractFlag "0"
+KEY UnusedPartsFlag "0"
+KEY FwdAnnoRebuildFlag "0"
+KEY DisableBackAnnoChanges "0"
+KEY FwdAnnoSchematicrefDesChanges "0"
+KEY FwdAnnoReplaceFlag "0"
+KEY FwdAnnoCleanBuildFlag "0"
+KEY SearchPathScheme "(Default)"
+ENDSECTION

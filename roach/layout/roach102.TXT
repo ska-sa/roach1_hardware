@@ -1,0 +1,306 @@
+ --------------------------------------------------------------------
+|   HyperLynx Batch Mode Report, Version 7.7                         |
+|                                                                    |
+| Note:   Search on '** Warning **'  and  '** Warning(Severe) **'    |
+|         to find signal-integrity and EMC problems.                 |
+|                                                                    |
+| Note:   The signal-integrity information below is a summary of     |
+|         the results from the corner cases selected for this batch  |
+|         run (Fast-Strong, Typical, and Slow-Weak).                 |
+|                                                                    |
+| Note:   Signal-integrity simulation tests for SI compliance        |
+|         against user-set limits, and includes effects of           |
+|         transmission-line discontinuities, IC loading, etc.        |
+|         SI violation flags include:                                |
+|           D = Delay error                                          |
+|               -> min delay to pin < net's min delay threshold  OR  |
+|               -> max delay to pin > net's max delay threshold      |
+|           T = Threshold error                                      |
+|               -> during transition, the pin's signal level did     |
+|                  not reach the switching threshold                 |
+|           R = Rail-overshoot error                                 |
+|               -> pin's signal level exceeded the power-supply rail |
+|                  by more than the net's overshoot threshold        |
+|           O = Signal-integrity-overshoot error                     |
+|               -> pin's signal level exceeded the steady-state      |
+|                  level by more than the net's overshoot threshold  |
+|           M = Multi-threshold-crossing error                       |
+|               -> pin's signal level crossed the threshold more     |
+|                  than once during transition                       |
+|           N = Non-monotonic error                                  |
+|               -> pin's signal level changed direction while within |
+|                  the transition region between Vil and Vih         |
+|           X = Crosstalk error                                      |
+|               -> crosstalk from neighbor nets exceeded the         |
+|                  threshold value for this net                      |
+|           - = No error in this field                               |
+|                                                                    |
+| Note:   Metal delays shown in this report are copper delays only   |
+|         (no effects of reflections, IC loading, etc.) For actual   |
+|         pin-to-pin delays, see detailed SI simulation results.     |
+|                                                                    |
+| Note:   The signal-integrity effects of vias were not taken into   |
+|         consideration.                                             |
+ --------------------------------------------------------------------
+
+START TIME
+**********************************************************************
+  Date ............................. Thursday Nov. 20,2008
+  Time ............................. 11:06:45
+
+GENERAL INFORMATION
+**********************************************************************
+  Board ............................ roach102.hyp
+  Total number of nets ............. 1476
+  Total number of components........ 1382
+  Board temperature ................ 20.0 degrees C
+  Default IC model (used for quick analysis if IC model is missing)
+    IC driver rise/fall time ..2.000 ns
+    IC driver switching voltage range ..3.00 V
+    IC driver output impedance 1.0 ohms
+    IC input capacitance ..... 7.0 pF
+
+STACKUP
+**********************************************************************
+Note: layer number (old) is from the PCB layout package
+**********************************************************************
+
+  SIGNAL LAYER --------------------------------------------
+    layer number .......... 1
+    layer number (old) .... 1
+    name .................. Top
+    thickness ............. 0.50 oz
+    plating thickness ..... 0.00 oz
+    material name ......... 
+    resistivity ........... 1.724e-008 ohm-meter
+    temp coefficient ...... 0.003930
+    test trace width ...... 3.937 mils
+    test trace impedance .. 69.95 ohms
+  DIELECTRIC LAYER ----------------------------------------
+    thickness ............. 4.016 mils
+    material name ......... 
+    dielectric constant ... 4.0
+  PLANE LAYER ---------------------------------------------
+    layer number .......... 2
+    layer number (old) .... 2
+    name .................. ground1
+    thickness ............. 0.50 oz
+    plating thickness ..... 0.00 oz
+    material name ......... 
+    resistivity ........... 1.724e-008 ohm-meter
+    temp coefficient ...... 0.003930
+  DIELECTRIC LAYER ----------------------------------------
+    thickness ............. 4.016 mils
+    material name ......... 
+    dielectric constant ... 4.0
+  SIGNAL LAYER --------------------------------------------
+    layer number .......... 3
+    layer number (old) .... 3
+    name .................. route2
+    thickness ............. 0.50 oz
+    plating thickness ..... 0.00 oz
+    material name ......... 
+    resistivity ........... 1.724e-008 ohm-meter
+    temp coefficient ...... 0.003930
+    test trace width ...... 3.937 mils
+    test trace impedance .. 45.27 ohms
+  DIELECTRIC LAYER ----------------------------------------
+    thickness ............. 4.016 mils
+    material name ......... 
+    dielectric constant ... 4.0
+  PLANE LAYER ---------------------------------------------
+    layer number .......... 4
+    layer number (old) .... 4
+    name .................. 2v5
+    thickness ............. 0.50 oz
+    plating thickness ..... 0.00 oz
+    material name ......... 
+    resistivity ........... 1.724e-008 ohm-meter
+    temp coefficient ...... 0.003930
+  DIELECTRIC LAYER ----------------------------------------
+    thickness ............. 4.016 mils
+    material name ......... 
+    dielectric constant ... 4.0
+  SIGNAL LAYER --------------------------------------------
+    layer number .......... 5
+    layer number (old) .... 5
+    name .................. route3
+    thickness ............. 0.50 oz
+    plating thickness ..... 0.00 oz
+    material name ......... 
+    resistivity ........... 1.724e-008 ohm-meter
+    temp coefficient ...... 0.003930
+    test trace width ...... 3.937 mils
+    test trace impedance .. 45.27 ohms
+  DIELECTRIC LAYER ----------------------------------------
+    thickness ............. 4.016 mils
+    material name ......... 
+    dielectric constant ... 4.0
+  PLANE LAYER ---------------------------------------------
+    layer number .......... 6
+    layer number (old) .... 6
+    name .................. ground3
+    thickness ............. 0.50 oz
+    plating thickness ..... 0.00 oz
+    material name ......... 
+    resistivity ........... 1.724e-008 ohm-meter
+    temp coefficient ...... 0.003930
+  DIELECTRIC LAYER ----------------------------------------
+    thickness ............. 4.016 mils
+    material name ......... 
+    dielectric constant ... 4.0
+  SIGNAL LAYER --------------------------------------------
+    layer number .......... 7
+    layer number (old) .... 7
+    name .................. route4
+    thickness ............. 0.50 oz
+    plating thickness ..... 0.00 oz
+    material name ......... 
+    resistivity ........... 1.724e-008 ohm-meter
+    temp coefficient ...... 0.003930
+    test trace width ...... 3.937 mils
+    test trace impedance .. 45.27 ohms
+  DIELECTRIC LAYER ----------------------------------------
+    thickness ............. 4.016 mils
+    material name ......... 
+    dielectric constant ... 4.0
+  PLANE LAYER ---------------------------------------------
+    layer number .......... 8
+    layer number (old) .... 8
+    name .................. ASSORTED
+    thickness ............. 0.50 oz
+    plating thickness ..... 0.00 oz
+    material name ......... 
+    resistivity ........... 1.724e-008 ohm-meter
+    temp coefficient ...... 0.003930
+  DIELECTRIC LAYER ----------------------------------------
+    thickness ............. 4.016 mils
+    material name ......... 
+    dielectric constant ... 4.0
+  PLANE LAYER ---------------------------------------------
+    layer number .......... 9
+    layer number (old) .... 9
+    name .................. 3v3_1v5aux
+    thickness ............. 0.50 oz
+    plating thickness ..... 0.00 oz
+    material name ......... 
+    resistivity ........... 1.724e-008 ohm-meter
+    temp coefficient ...... 0.003930
+  DIELECTRIC LAYER ----------------------------------------
+    thickness ............. 4.016 mils
+    material name ......... 
+    dielectric constant ... 4.0
+  SIGNAL LAYER --------------------------------------------
+    layer number .......... 10
+    layer number (old) .... 10
+    name .................. route5
+    thickness ............. 0.50 oz
+    plating thickness ..... 0.00 oz
+    material name ......... 
+    resistivity ........... 1.724e-008 ohm-meter
+    temp coefficient ...... 0.003930
+    test trace width ...... 3.929 mils
+    test trace impedance .. 45.31 ohms
+  DIELECTRIC LAYER ----------------------------------------
+    thickness ............. 4.016 mils
+    material name ......... 
+    dielectric constant ... 4.0
+  PLANE LAYER ---------------------------------------------
+    layer number .......... 11
+    layer number (old) .... 11
+    name .................. 1v0_3v3aux
+    thickness ............. 0.50 oz
+    plating thickness ..... 0.00 oz
+    material name ......... 
+    resistivity ........... 1.724e-008 ohm-meter
+    temp coefficient ...... 0.003930
+  DIELECTRIC LAYER ----------------------------------------
+    thickness ............. 4.016 mils
+    material name ......... 
+    dielectric constant ... 4.0
+  SIGNAL LAYER --------------------------------------------
+    layer number .......... 12
+    layer number (old) .... 12
+    name .................. route6
+    thickness ............. 0.50 oz
+    plating thickness ..... 0.00 oz
+    material name ......... 
+    resistivity ........... 1.724e-008 ohm-meter
+    temp coefficient ...... 0.003930
+    test trace width ...... 3.937 mils
+    test trace impedance .. 45.27 ohms
+  DIELECTRIC LAYER ----------------------------------------
+    thickness ............. 4.016 mils
+    material name ......... 
+    dielectric constant ... 4.0
+  PLANE LAYER ---------------------------------------------
+    layer number .......... 13
+    layer number (old) .... 13
+    name .................. 1v8
+    thickness ............. 0.50 oz
+    plating thickness ..... 0.00 oz
+    material name ......... 
+    resistivity ........... 1.724e-008 ohm-meter
+    temp coefficient ...... 0.003930
+  DIELECTRIC LAYER ----------------------------------------
+    thickness ............. 4.016 mils
+    material name ......... 
+    dielectric constant ... 4.0
+  SIGNAL LAYER --------------------------------------------
+    layer number .......... 14
+    layer number (old) .... 14
+    name .................. route7
+    thickness ............. 0.50 oz
+    plating thickness ..... 0.00 oz
+    material name ......... 
+    resistivity ........... 1.724e-008 ohm-meter
+    temp coefficient ...... 0.003930
+    test trace width ...... 3.937 mils
+    test trace impedance .. 45.27 ohms
+  DIELECTRIC LAYER ----------------------------------------
+    thickness ............. 4.016 mils
+    material name ......... 
+    dielectric constant ... 4.0
+  PLANE LAYER ---------------------------------------------
+    layer number .......... 15
+    layer number (old) .... 15
+    name .................. ground8
+    thickness ............. 0.50 oz
+    plating thickness ..... 0.00 oz
+    material name ......... 
+    resistivity ........... 1.724e-008 ohm-meter
+    temp coefficient ...... 0.003930
+  DIELECTRIC LAYER ----------------------------------------
+    thickness ............. 4.016 mils
+    material name ......... 
+    dielectric constant ... 4.0
+  SIGNAL LAYER --------------------------------------------
+    layer number .......... 16
+    layer number (old) .... 16
+    name .................. Bottom
+    thickness ............. 0.50 oz
+    plating thickness ..... 0.00 oz
+    material name ......... 
+    resistivity ........... 1.724e-008 ohm-meter
+    temp coefficient ...... 0.003930
+    test trace width ...... 3.937 mils
+    test trace impedance .. 69.95 ohms
+
+CHANGED PASSIVE-COMPONENT VALUES
+**********************************************************************
+  Reference Designator  User Entered Value
+  --------------------  ------------------
+
+NEW TERMINATING COMPONENTS (Quick Terminators)
+**********************************************************************
+  Terminator Location          Type                Value(s)
+  ---------------------------  ------------------  -------------------
+
+
+END TIME
+**********************************************************************
+  Date ............................. Thursday Nov. 20,2008
+  Time ............................. 11:06:45
+  Total Run Time....................  0 Days, 00 Hours, 00 Minutes 00 Seconds
+
+******************************* END **********************************

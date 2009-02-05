@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<IcdbPartsListerConfiguration version="1" outputVersion="1" outputFormat="DELIM" doOats="NO" pagination="YES" spacing="1" pdbVerification="NO" symLibPrefix="NO" delimiter=" ;">
+  <Banner enable="NO"/>
+  <Revision enable="NO"/>
+  <Page length="63" topMargin="3"/>
+  <Header type="NORMAL"/>
+  <Columns>
+    <Column name="#" width="3" dec="0" justification="LEFT" select="NO" visible="YES" sort="NO" sum="NO" type="ITEM"/>
+    <Column name="QTY" width="2" dec="0" justification="LEFT" select="NO" visible="YES" sort="NO" sum="YES" type="QTY"/>
+    <Column name="REFDES" width="10" dec="0" justification="LEFT" select="NO" visible="YES" sort="NO" sum="NO" type="REFERENCE" mode="EXPAND"/>
+    <Column name="MANUFACTURER" width="15" dec="0" select="NO" visible="YES" sort="NO" sum="NO" attribute="MANUFACTURER" multiplyBy="" type="ITEMIZER"/>
+    <Column name="PART #" width="15" dec="0" select="NO" visible="YES" sort="NO" sum="NO" attribute="P/D_NUM" multiplyBy="" type="ITEMIZER"/>
+    <Column name="DESCRIPTION" width="15" dec="0" select="NO" visible="YES" sort="NO" sum="NO" attribute="DESCRIPTION" multiplyBy="" type="ITEMIZER"/>
+    <Column name="VALUE" width="10" dec="0" select="NO" visible="YES" sort="NO" sum="NO" attribute="VALUE" multiplyBy="" type="ITEMIZER"/>
+    <Column name="PACKAGE" width="10" dec="0" select="NO" visible="YES" sort="NO" sum="NO" attribute="PKG_TYPE" multiplyBy="" type="ITEMIZER"/>
+  </Columns>
+  <Ignore>
+    <Component attribute="CLASS" value="RF" scope="ALL"/>
+    <Component attribute="LEVEL" value="STD" scope="BELOW"/>
+  </Ignore>
+</IcdbPartsListerConfiguration>
