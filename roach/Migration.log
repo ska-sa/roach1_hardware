@@ -1,0 +1,285 @@
+Migration log file
+
+00:00:00 Starting Migration
+00:00:00 old file backup
+00:00:00 Project configuration files are being read...
+00:00:00 Parse .dproj file
+00:00:00 Parse .dproj file: done
+00:00:00 CDB flow is not used. Migrate as NETLIST flow...
+00:00:00 The following schematics found in C:\Roach\elec\roach\: 
+00:00:00 'roach_5v_power.1' 'roach_adc_0.1' 'roach_adc_1.1' 'roach_config.1' 'roach_ddr2_dimm.1' 'roach_diff_gpio.1' 'roach_gpio_misc.1' 'roach_monitor.1' 'roach_ppc_cpld.1' 'roach_ppc_ddr2.1' 'roach_ppc_eth1.1' 'roach_ppc_nvm_serial.1' 'roach_ppc_pci.1' 'roach_ppc_power_1.1' 'roach_ppc_power_2.1' 'roach_ppc_tst_clk_io.1' 'roach_ppc_usb.1' 'roach_psu.1' 'roach_qdr2p_by0_1.1' 'roach_qdr2p_by2_3.1' 'roach_top.1' 'roach_transceivers0_1.1' 'roach_transceivers2_3.1' 'roach_transceivers_psu.1' 'roach_v5_clk.1' 
+Reading navigator.ini for getting root block name
+00:00:00 Parse Viewdraw.ini file
+The following user-specific settings are defined in the project:
+BIGCROSS: 1
+SHEETSIZE: 8
+DEFSHEET: 1
+DEFMETHOD: 1
+BOXSIZE: 2
+OATS: 0
+The settings above have not been maintained during migration and it should be reset once the project has been opened. Note changing these settings will affect all projects that you open but do not affect the data in the project.
+00:00:01 CProjectMigration::OpenICDB()
+00:00:01 iCDB opened successfully
+00:00:01 AddSnapshot successful
+00:00:01 Design blocks conversion
+00:00:01 The following schematics found in C:\Roach\elec\roach\: 
+00:00:01 'roach_5v_power.1' 'roach_adc_0.1' 'roach_adc_1.1' 'roach_config.1' 'roach_ddr2_dimm.1' 'roach_diff_gpio.1' 'roach_gpio_misc.1' 'roach_monitor.1' 'roach_ppc_cpld.1' 'roach_ppc_ddr2.1' 'roach_ppc_eth1.1' 'roach_ppc_nvm_serial.1' 'roach_ppc_pci.1' 'roach_ppc_power_1.1' 'roach_ppc_power_2.1' 'roach_ppc_tst_clk_io.1' 'roach_ppc_usb.1' 'roach_psu.1' 'roach_qdr2p_by0_1.1' 'roach_qdr2p_by2_3.1' 'roach_top.1' 'roach_transceivers0_1.1' 'roach_transceivers2_3.1' 'roach_transceivers_psu.1' 'roach_v5_clk.1' 
+00:00:01 Adding block roach_5v_power.1
+00:00:01 Adding block roach_adc_0.1
+00:00:01 Adding block roach_adc_1.1
+00:00:01 Adding block roach_config.1
+00:00:01 Adding block roach_ddr2_dimm.1
+00:00:01 Adding block roach_diff_gpio.1
+00:00:01 Adding block roach_gpio_misc.1
+00:00:01 Adding block roach_monitor.1
+00:00:01 Adding block roach_ppc_cpld.1
+00:00:01 Adding block roach_ppc_ddr2.1
+00:00:01 Adding block roach_ppc_eth1.1
+00:00:01 Adding block roach_ppc_nvm_serial.1
+00:00:01 Adding block roach_ppc_pci.1
+00:00:01 Adding block roach_ppc_power_1.1
+00:00:01 Adding block roach_ppc_power_2.1
+00:00:01 Adding block roach_ppc_tst_clk_io.1
+00:00:01 Adding block roach_ppc_usb.1
+00:00:01 Adding block roach_psu.1
+00:00:01 Adding block roach_qdr2p_by0_1.1
+00:00:01 Adding block roach_qdr2p_by2_3.1
+00:00:01 Adding block roach_top.1
+00:00:01 Adding block roach_transceivers0_1.1
+00:00:01 Adding block roach_transceivers2_3.1
+00:00:01 Adding block roach_transceivers_psu.1
+00:00:01 Adding block roach_v5_clk.1
+00:00:14 Default configuration for roach_5v_power.1 has been created
+00:00:16 Default configuration for roach_adc_0.1 has been created
+00:00:17 Default configuration for roach_adc_1.1 has been created
+00:00:17 Default configuration for roach_config.1 has been created
+00:00:20 Default configuration for roach_ddr2_dimm.1 has been created
+00:00:21 Default configuration for roach_diff_gpio.1 has been created
+00:00:22 Default configuration for roach_gpio_misc.1 has been created
+00:00:24 Default configuration for roach_monitor.1 has been created
+00:00:26 Default configuration for roach_ppc_cpld.1 has been created
+00:00:29 Default configuration for roach_ppc_ddr2.1 has been created
+00:00:30 Default configuration for roach_ppc_eth1.1 has been created
+00:00:30 Warning: Component $1I941 on schematic roach_ppc_nvm_serial.1 is out of date with its symbol
+00:00:30 Warning: Component $1I940 on schematic roach_ppc_nvm_serial.1 is out of date with its symbol
+00:00:33 Default configuration for roach_ppc_nvm_serial.1 has been created
+00:00:34 Default configuration for roach_ppc_pci.1 has been created
+00:00:35 Default configuration for roach_ppc_power_1.1 has been created
+00:00:35 Default configuration for roach_ppc_power_2.1 has been created
+00:00:36 Default configuration for roach_ppc_tst_clk_io.1 has been created
+00:00:36 Warning: Component $1I399 on schematic roach_ppc_usb.1 is out of date with its symbol
+00:00:36 Default configuration for roach_ppc_usb.1 has been created
+00:00:36 Warning: Component $1I630 on schematic roach_psu.1 is out of date with its symbol
+00:00:36 Warning: Component $1I625 on schematic roach_psu.1 is out of date with its symbol
+00:00:36 Warning: Component $1I629 on schematic roach_psu.1 is out of date with its symbol
+00:00:37 Default configuration for roach_psu.1 has been created
+00:00:39 Default configuration for roach_qdr2p_by0_1.1 has been created
+00:00:41 Default configuration for roach_qdr2p_by2_3.1 has been created
+00:00:42 Default configuration for roach_transceivers0_1.1 has been created
+00:00:44 Default configuration for roach_transceivers2_3.1 has been created
+00:00:45 Default configuration for roach_transceivers_psu.1 has been created
+00:00:45 Default configuration for roach_v5_clk.1 has been created
+00:00:48 Default configuration for roach_top.1 has been created
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 SUPER REFRESH....
+00:00:48 Starting OATs conversion...
+00:00:48 OATs conversion: roach_top.1
+00:00:52 End of block migration to iCDB: success
+
+Collected global net names:
+12V
+1V0
+1V5
+1V5AUX
+1V5_CPU
+1V8
+1V8_CPU
+2V5
+2V5_CPU
+3V3
+3V3AUX
+3V3_ATX
+3V3_CPU
+5V
+5VAUX
+DDR_VREF_0V9
+DDR_VTT
+GND
+MGT_AVCC
+MGT_AVCCPLL
+MGT_AVTT
+N12V
+VCC_JTAG
+VREF_0V9
+VREF_QDR_BY0_1
+VREF_QDR_BY2_3
+VTT_0V9
+VTT_QDR_BY0_1
+VTT_QDR_BY2_3
+
+00:00:52 Add missing ports and update evaluated attributes...
+00:01:01 Add missing ports and update evaluated attributes complete.
+00:01:01 Side files migration...
+Side files conversion has been skipped because there are no valid side files
+00:01:01 Side files migration: done
+00:01:01 Importing OLE objects...
+00:01:01 Importing OLE objects: done
+No valid IODesigner data has been found
+00:01:02 Moving obsolete files to backup directory...
+00:01:02 Moving obsolete files to backup directory: done
+Migration complete 1 minute, 2 seconds
+ 
+The following design attributes are not DxD common properties:
+@CHECKED
+@DATETIME
+@DESCRIPTION
+@DOCNO
+@DRAWN
+@NAME
+@PATH
+@REVISION
+ALTMANUFACTURER
+ALT_MANUFACTURER
+ALT_NAME
+ALT_P/D_NUM
+ALT_PART
+ALT_PART#
+ALT_PKG_TYPE
+ALT_SUP
+BANKS
+BI
+BOARD_OPTION
+CHECKED
+CURRENTRATING
+DATAURL
+DECAL
+DESCRIP
+DIELECTRIC
+DIFFPAIR_GAP
+DIFFPAIR_RESTRICT_LAYER_CHANGE
+DIFFPAIR_WIDTH
+DIFF_PAIR
+DIGIKEY_PART#
+DIGIKEY_PN
+DISCONTINUED
+DOCNO
+DRAWN
+DRILL_TO_PAD
+DRILL_TO_SMD
+DRILL_TO_TRACK
+DRILL_TO_VIA
+EP#
+EPI#
+ESR
+FRACTURE
+GEOMTETRY.HEIGHT
+GND
+GRN
+HEIGHT
+HYPER_MOD
+HYPER_MOD_FILE
+ID
+IN
+IOD_IMPLSIGNALNAME
+IREF
+LENGTH
+LENGTH_MINIMIZATION_TYPE
+MANPARTDESCRIPTION
+MANPARTPACKAGE
+MATCH_LENGTH
+MAX_LENGTH
+MAX_TRACK_WIDTH
+MIN_LENGTH
+MIN_TRACK_WIDTH
+MOUSER_PN
+NAME
+NEED_TO_MIRROR/ROTATE_PIN_DISPLAY_PROPERTIES
+NET_RULE
+NOSTUFF
+NOTE
+NOTES
+NO_CONNECT
+OBSOLETE
+OPERATINGVOLTAGE
+OPTION
+OUT
+OUTLINE_TO_PAD
+OUTLINE_TO_SMD
+PACKAGE
+PADSPASSPCB
+PAD_TO_PAD
+PAD_TO_TRACK
+PAD_TO_VIA
+PARTNUMBERID
+PARTSPEC
+PARTTYPE
+PCBCLASS
+PINLOC
+POWERDISSIPATION
+POWERRATING
+REC_TRACK_WIDTH
+REVISION
+ROHS_COMPLAINT
+RipperSignalInfo
+SAME_NET_PAD_TO_CRN
+SAME_NET_SMD_TO_CRN
+SAME_NET_SMD_TO_VIA
+SCHLOC
+SCOUT_META_FORMAT_PREFIX_0
+SCOUT_META_FORMAT_PREFIX_1
+SCOUT_META_FORMAT_PREFIX_2
+SCOUT_META_PAGE_ANNOTATION
+SHAPE
+SHEET
+SLOT
+SMD_TO_PAD
+SMD_TO_SMD
+SMD_TO_TRACK
+SMD_TO_VIA
+SOURCE_PATH
+SS_TEXT
+STANDARDS
+SUPPLIER
+SUPPLIERPART#
+SUP_PNUM
+TANLOSSANGLE
+TEXT_TO_PAD
+TEXT_TO_SMD
+TEXT_TO_TRACK
+TEXT_TO_VIA
+TIME_STAMP
+TRACK_TO_TRACK
+TYPE
+USEEQUIVALENT
+VALID_LAYER
+VIA_TO_TRACK
+VIA_TO_VIA
+VOLTAGERATING
+VPC
+XREF
+All definitions of common properties are stored in C:\MentorGraphics\2007.4PADS\SDD_HOME\standard\netlist.prp.
+Copy this file to another location, use the Properties Definition Editor to add
+missing properties if needed, and point to the new file in the Settings dialog. See The DxDesigner Administrator's Guide in the InfoHub for details.

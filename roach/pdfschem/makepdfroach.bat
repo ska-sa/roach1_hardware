@@ -1,0 +1,1 @@
+C:\MentorGraphics\2007.4PADS\SDD_HOME\wv\win32\bin\sch2pdf.exe -project c:\roach\elec\roach\roach.prj -schematic roach_top -a c:\roach\elec\roach\roach.pdf -c 2 -o c:\roach\elec\roach\sheetorder.out
