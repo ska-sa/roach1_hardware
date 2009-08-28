@@ -1,7 +1,7 @@
 *PADS-LIBRARY-PART-TYPES-V2007*
 
-INDC1608X80USR INDC1608X80USR M IND 2 0 0 0 0 2
-"Geometry.Height" 0.8mm
-"Description" Inductor,Chip;1.60mm L X 0.80mm W X 0.80mm H
+SOP65P640X120-24USR SOP65P640X120-24USR M SOP 2 0 0 0 0 24
+"Geometry.Height" 1.2mm
+"Description" SOP,0.65mm pitch;24 pin,4.40mm W X 7.80mm L X 1.20mm H body
 
 *END*
