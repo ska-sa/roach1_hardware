@@ -1,9 +1,7 @@
-| Wirelist created using version 5.4.
-V 5.4
-K 78345153990 roach_ppc_ddr2
+| Wirelist created using version 6.0 
+V 6.0
 DW roach_ppc_ddr2
-Q Case
-SA SOURCE_PATH 
+SA SOURCE_PATH= 
 SA SHEET=22 OF 25 
 SA SCOUT_META_FORMAT_PREFIX_0=XREF 
 SA SCOUT_META_FORMAT_PREFIX_1=SCHLOC 
@@ -12,30 +10,30 @@ SA SCOUT_META_PAGE_ANNOTATION=SHEET=22 OF 25
 |Q IOD_Schematic:r 1
 AS IOD_Schematic:r PKG_TYPE=RES
 AS IOD_Schematic:r PINOFF
-AS IOD_Schematic:r PREFIX=R
+AS IOD_Schematic:r Prefix=R
 AS IOD_Schematic:r PARTS=1
 AS IOD_Schematic:r LEVEL=STD
 AS IOD_Schematic:r REFDES=R?
 AS IOD_Schematic:r VALUE
 AS IOD_Schematic:r POWERRATING
-AS IOD_Schematic:r PINORDER=N1 N2
 AS IOD_Schematic:r INOV_VER_REC=9:28_5-9-07
-AP IOD_Schematic:r 1 PINTYPE=BI
+AS IOD_Schematic:r PINORDER=N1 N2
 AP IOD_Schematic:r 1 #=1
-AP IOD_Schematic:r 2 PINTYPE=BI
+AP IOD_Schematic:r 1 PINTYPE=BI
 AP IOD_Schematic:r 2 #=2
+AP IOD_Schematic:r 2 PINTYPE=BI
 |Q IOD_Schematic:tp 1
 AS IOD_Schematic:tp DEVICE=TP_ROUND100
 AS IOD_Schematic:tp PARTS=1
 AS IOD_Schematic:tp PKG_TYPE=TPR100
 AS IOD_Schematic:tp NETNAME
 AS IOD_Schematic:tp REFDES=TP?
-AS IOD_Schematic:tp PINORDER=P1
 AS IOD_Schematic:tp INOV_VER_REC=9:11_9-20-07
+AS IOD_Schematic:tp PINORDER=P1
 AP IOD_Schematic:tp 1 #=1
 AP IOD_Schematic:tp 1 PINTYPE=OUT
 |Q IOD_Schematic:c 1
-AS IOD_Schematic:c PREFIX=C
+AS IOD_Schematic:c Prefix=C
 AS IOD_Schematic:c PARTSPEC=CAPACITOR
 AS IOD_Schematic:c LEVEL=STD
 AS IOD_Schematic:c PARTS=1
@@ -44,12 +42,12 @@ AS IOD_Schematic:c PINOFF
 AS IOD_Schematic:c VALUE
 AS IOD_Schematic:c VOLTAGERATING
 AS IOD_Schematic:c REFDES=C?
-AS IOD_Schematic:c PINORDER=N1 N2
 AS IOD_Schematic:c INOV_VER_REC=6:11_8-28-07
-AP IOD_Schematic:c 1 PINTYPE=BI
+AS IOD_Schematic:c PINORDER=N1 N2
 AP IOD_Schematic:c 1 #=1
-AP IOD_Schematic:c 2 PINTYPE=BI
+AP IOD_Schematic:c 1 PINTYPE=BI
 AP IOD_Schematic:c 2 #=2
+AP IOD_Schematic:c 2 PINTYPE=BI
 |Q IOD_Schematic:cap_100nf_0402_16v_10__x7r 1
 AS IOD_Schematic:cap_100nf_0402_16v_10__x7r REFDES=C?
 AS IOD_Schematic:cap_100nf_0402_16v_10__x7r DEVICE=CAP_100NF_0402_16V_10%_X7R
@@ -64,6 +62,7 @@ AS IOD_Schematic:cap_100nf_0402_16v_10__x7r ALT_SUP=NA
 AS IOD_Schematic:cap_100nf_0402_16v_10__x7r P/D_NUM=VEN: C0402X7R160-104KN
 AS IOD_Schematic:cap_100nf_0402_16v_10__x7r ALT_PART=NA
 AS IOD_Schematic:cap_100nf_0402_16v_10__x7r VALUE
+AS IOD_Schematic:cap_100nf_0402_16v_10__x7r INOV_VER_REC=-
 AS IOD_Schematic:cap_100nf_0402_16v_10__x7r PINORDER=1 2
 AP IOD_Schematic:cap_100nf_0402_16v_10__x7r 1 #=1
 AP IOD_Schematic:cap_100nf_0402_16v_10__x7r 1 PINTYPE=OUT
@@ -83,12 +82,15 @@ AS IOD_Schematic:cap_10nf_0402_25v_10__x7r ALT_SUP=VIS: VJ0402Y103KXX
 AS IOD_Schematic:cap_10nf_0402_25v_10__x7r P/D_NUM=KEM: C0402C103K3RAC
 AS IOD_Schematic:cap_10nf_0402_25v_10__x7r ALT_PART=VIS: VJ0402Y103KXX
 AS IOD_Schematic:cap_10nf_0402_25v_10__x7r VALUE
+AS IOD_Schematic:cap_10nf_0402_25v_10__x7r INOV_VER_REC=-
 AS IOD_Schematic:cap_10nf_0402_25v_10__x7r PINORDER=1 2
 AP IOD_Schematic:cap_10nf_0402_25v_10__x7r 1 #=1
 AP IOD_Schematic:cap_10nf_0402_25v_10__x7r 1 PINTYPE=OUT
 AP IOD_Schematic:cap_10nf_0402_25v_10__x7r 2 #=2
 AP IOD_Schematic:cap_10nf_0402_25v_10__x7r 2 PINTYPE=OUT
 AS IOD_Schematic:in IN
+AS IOD_Schematic:in Pin!Order=IN
+AS IOD_Schematic:in INOV_VER_REC=7:39_8-30-07
 AS IOD_Schematic:in PINORDER=IN
 AP IOD_Schematic:in 1 PINTYPE=IN
 |Q IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 1
@@ -101,6 +103,7 @@ AS IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d P/D_NUM=PPC440EPx-NTA533T
 AS IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d NOTES=245degC 30sec, max peak process
 AS IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d VALUE
 AS IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d HETERO=IC_CPU_TE_PBGA680_440EPX_GRX_A,IC_CPU_TE_PBGA680_440EPX_GRX_B,IC_CPU_TE_PBGA680_440EPX_GRX_C,IC_CPU_TE_PBGA680_440EPX_GRX_D,IC_CPU_TE_PBGA680_440EPX_GRX_E,IC_CPU_TE_PBGA680_440EPX_GRX_F,IC_CPU_TE_PBGA680_440EPX_GRX_G,IC_CPU_TE_PBGA680_440EPX_GRX_H,IC_CPU_TE_PBGA680_440EPX_GRX_I,IC_CPU_TE_PBGA680_440EPX_GRX_J
+AS IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d INOV_VER_REC=-
 AS IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d PINORDER=BA0 BA1 BA2 BANKSEL#0 BANKSEL#1 CAS# DM0 DM1 DM2 DM3 DM4 DM5 DM6 DM7 DM8 DQS0 DQS1 DQS2 DQS3 DQS4 DQS5 DQS6 DQS7 DQS8 ECC0 ECC1 ECC2 ECC3 ECC4 ECC5 ECC6 ECC7 MEMADDR00 MEMADDR01 MEMADDR02 MEMADDR03 MEMADDR04 MEMADDR05 MEMADDR06 MEMADDR07 MEMADDR08 MEMADDR09 MEMADDR10 MEMADDR11 MEMADDR12 MEMADDR13 MEMCLKEN MEMCLKOUT MEMCLKOUT# MEMDATA00 MEMDATA01 MEMDATA02 MEMDATA03 MEMDATA04 MEMDATA05 MEMDATA06 MEMDATA07 MEMDATA08 MEMDATA09 MEMDATA10 MEMDATA11 MEMDATA12 MEMDATA13 MEMDATA14 MEMDATA15 MEMDATA16 MEMDATA17 MEMDATA18 MEMDATA19 MEMDATA20 MEMDATA21 MEMDATA22 MEMDATA23 MEMDATA24 MEMDATA25 MEMDATA26 MEMDATA27 MEMDATA28 MEMDATA29 MEMDATA30 MEMDATA31 MEMDATA32 MEMDATA33 MEMDATA34 MEMDATA35 MEMDATA36 MEMDATA37 MEMDATA38 MEMDATA39 MEMDATA40 MEMDATA41 MEMDATA42 MEMDATA43 MEMDATA44 MEMDATA45 MEMDATA46 MEMDATA47 MEMDATA48 MEMDATA49 MEMDATA50 MEMDATA51 MEMDATA52 MEMDATA53 MEMDATA54 MEMDATA55 MEMDATA56 MEMDATA57 MEMDATA58 MEMDATA59 MEMDATA60 MEMDATA61 MEMDATA62 MEMDATA63 MEMODT0 MEMODT1 RAS# SVREF1A SVREF1B SVREF2A SVREF2B WE#
 AP IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 1 #=AJ3
 AP IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 1 PINTYPE=IN
@@ -345,7 +348,7 @@ AP IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 120 PINTYPE=OUT
 AP IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 121 #=AJ2
 AP IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 121 PINTYPE=IN
 |Q IOD_Schematic:c-pack4 1
-AS IOD_Schematic:c-pack4 PREFIX=C
+AS IOD_Schematic:c-pack4 Prefix=C
 AS IOD_Schematic:c-pack4 PARTSPEC=CAPACITOR
 AS IOD_Schematic:c-pack4 PARTS=1
 AS IOD_Schematic:c-pack4 LEVEL=STD
@@ -354,583 +357,585 @@ AS IOD_Schematic:c-pack4 PINOFF
 AS IOD_Schematic:c-pack4 VALUE
 AS IOD_Schematic:c-pack4 VOLTAGERATING
 AS IOD_Schematic:c-pack4 REFDES=CP?
-AS IOD_Schematic:c-pack4 PINORDER=N1 N2 N3 N4 N5 N6 N7 N8
 AS IOD_Schematic:c-pack4 INOV_VER_REC=8:20_8-8-07
-AP IOD_Schematic:c-pack4 1 PINTYPE=BI
+AS IOD_Schematic:c-pack4 PINORDER=N1 N2 N3 N4 N5 N6 N7 N8
 AP IOD_Schematic:c-pack4 1 #=1
+AP IOD_Schematic:c-pack4 1 PINTYPE=BI
 AP IOD_Schematic:c-pack4 2 #=2
 AP IOD_Schematic:c-pack4 2 PINTYPE=BI
-AP IOD_Schematic:c-pack4 3 PINTYPE=BI
 AP IOD_Schematic:c-pack4 3 #=3
+AP IOD_Schematic:c-pack4 3 PINTYPE=BI
 AP IOD_Schematic:c-pack4 4 #=4
 AP IOD_Schematic:c-pack4 4 PINTYPE=BI
 AP IOD_Schematic:c-pack4 5 #=5
 AP IOD_Schematic:c-pack4 5 PINTYPE=BI
-AP IOD_Schematic:c-pack4 6 PINTYPE=BI
 AP IOD_Schematic:c-pack4 6 #=6
+AP IOD_Schematic:c-pack4 6 PINTYPE=BI
 AP IOD_Schematic:c-pack4 7 #=7
 AP IOD_Schematic:c-pack4 7 PINTYPE=BI
-AP IOD_Schematic:c-pack4 8 PINTYPE=BI
 AP IOD_Schematic:c-pack4 8 #=8
+AP IOD_Schematic:c-pack4 8 PINTYPE=BI
 |Q IOD_Schematic:res_pack_4 1
 AS IOD_Schematic:res_pack_4 DEVICE=RESPACK4
 AS IOD_Schematic:res_pack_4 REFDES=RP?
 AS IOD_Schematic:res_pack_4 PINOFF
 AS IOD_Schematic:res_pack_4 PKG_TYPE=RES
-AS IOD_Schematic:res_pack_4 PREFIX=RP
+AS IOD_Schematic:res_pack_4 Prefix=RP
 AS IOD_Schematic:res_pack_4 PARTS=1
 AS IOD_Schematic:res_pack_4 VALUE
-AS IOD_Schematic:res_pack_4 PINORDER=N1 N2 N3 N4 N5 N6 N7 N8
 AS IOD_Schematic:res_pack_4 INOV_VER_REC=11:14_1-24-08
-AP IOD_Schematic:res_pack_4 1 PINTYPE=ANALOG
+AS IOD_Schematic:res_pack_4 PINORDER=N1 N2 N3 N4 N5 N6 N7 N8
 AP IOD_Schematic:res_pack_4 1 #=1
-AP IOD_Schematic:res_pack_4 2 PINTYPE=ANALOG
+AP IOD_Schematic:res_pack_4 1 PINTYPE=ANALOG
 AP IOD_Schematic:res_pack_4 2 #=2
-AP IOD_Schematic:res_pack_4 3 PINTYPE=ANALOG
+AP IOD_Schematic:res_pack_4 2 PINTYPE=ANALOG
 AP IOD_Schematic:res_pack_4 3 #=3
-AP IOD_Schematic:res_pack_4 4 PINTYPE=ANALOG
+AP IOD_Schematic:res_pack_4 3 PINTYPE=ANALOG
 AP IOD_Schematic:res_pack_4 4 #=4
-AP IOD_Schematic:res_pack_4 5 PINTYPE=ANALOG
+AP IOD_Schematic:res_pack_4 4 PINTYPE=ANALOG
 AP IOD_Schematic:res_pack_4 5 #=5
-AP IOD_Schematic:res_pack_4 6 PINTYPE=ANALOG
+AP IOD_Schematic:res_pack_4 5 PINTYPE=ANALOG
 AP IOD_Schematic:res_pack_4 6 #=6
-AP IOD_Schematic:res_pack_4 7 PINTYPE=ANALOG
+AP IOD_Schematic:res_pack_4 6 PINTYPE=ANALOG
 AP IOD_Schematic:res_pack_4 7 #=7
-AP IOD_Schematic:res_pack_4 8 PINTYPE=ANALOG
+AP IOD_Schematic:res_pack_4 7 PINTYPE=ANALOG
 AP IOD_Schematic:res_pack_4 8 #=8
+AP IOD_Schematic:res_pack_4 8 PINTYPE=ANALOG
 |Q IOD_Schematic:ddr2_dimm_power 1
+AS IOD_Schematic:ddr2_dimm_power INOV_VER_REC=11:06:24_8-7-09
 AS IOD_Schematic:ddr2_dimm_power DEVICE=DDR2_240DIMM
 AS IOD_Schematic:ddr2_dimm_power HETERO=DDR2_DIMM, DDR2_DIMM_POWER
 AS IOD_Schematic:ddr2_dimm_power MANUFACTURER=MOLEX
-AS IOD_Schematic:ddr2_dimm_power NC=19, 102, 126, 135, 147, 156, 165, 203, 212, 224, 233
 AS IOD_Schematic:ddr2_dimm_power PKG_TYPE=MOLEX879160001
 AS IOD_Schematic:ddr2_dimm_power LEVEL=STD
 AS IOD_Schematic:ddr2_dimm_power PARTS=1
 AS IOD_Schematic:ddr2_dimm_power REFDES=J?
 AS IOD_Schematic:ddr2_dimm_power P/D_NUM=879160001
 AS IOD_Schematic:ddr2_dimm_power PINORDER=VDDQ_1 VDDQ_10 VDDQ_11 VDDQ_2 VDDQ_3 VDDQ_4 VDDQ_5 VDDQ_6 VDDQ_7 VDDQ_8 VDDQ_9 VDDSPD VDD_1 VDD_10 VDD_11 VDD_2 VDD_3 VDD_4 VDD_5 VDD_6 VDD_7 VDD_8 VDD_9 VREF VSS_1 VSS_10 VSS_11 VSS_12 VSS_13 VSS_14 VSS_15 VSS_16 VSS_17 VSS_18 VSS_19 VSS_2 VSS_20 VSS_21 VSS_22 VSS_23 VSS_24 VSS_25 VSS_26 VSS_27 VSS_28 VSS_29 VSS_3 VSS_30 VSS_31 VSS_32 VSS_33 VSS_34 VSS_35 VSS_36 VSS_37 VSS_38 VSS_39 VSS_4 VSS_40 VSS_41 VSS_42 VSS_43 VSS_44 VSS_45 VSS_46 VSS_47 VSS_48 VSS_49 VSS_5 VSS_50 VSS_51 VSS_52 VSS_53 VSS_54 VSS_55 VSS_56 VSS_57 VSS_58 VSS_59 VSS_6 VSS_60 VSS_61 VSS_62 VSS_63 VSS_64 VSS_7 VSS_8 VSS_9
-AS IOD_Schematic:ddr2_dimm_power INOV_VER_REC=9:42_9-3-07
-AP IOD_Schematic:ddr2_dimm_power 1 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 1 #=51
+AP IOD_Schematic:ddr2_dimm_power 1 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 2 #=191
 AP IOD_Schematic:ddr2_dimm_power 2 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 3 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 3 #=194
+AP IOD_Schematic:ddr2_dimm_power 3 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 4 #=56
 AP IOD_Schematic:ddr2_dimm_power 4 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 5 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 5 #=62
+AP IOD_Schematic:ddr2_dimm_power 5 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 6 #=72
 AP IOD_Schematic:ddr2_dimm_power 6 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 7 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 7 #=75
+AP IOD_Schematic:ddr2_dimm_power 7 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 8 #=78
 AP IOD_Schematic:ddr2_dimm_power 8 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 9 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 9 #=170
+AP IOD_Schematic:ddr2_dimm_power 9 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 10 #=175
 AP IOD_Schematic:ddr2_dimm_power 10 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 11 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 11 #=181
-AP IOD_Schematic:ddr2_dimm_power 12 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 11 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 12 #=238
+AP IOD_Schematic:ddr2_dimm_power 12 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 13 #=53
 AP IOD_Schematic:ddr2_dimm_power 13 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 14 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 14 #=189
+AP IOD_Schematic:ddr2_dimm_power 14 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 15 #=197
 AP IOD_Schematic:ddr2_dimm_power 15 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 16 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 16 #=59
+AP IOD_Schematic:ddr2_dimm_power 16 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 17 #=64
 AP IOD_Schematic:ddr2_dimm_power 17 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 18 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 18 #=67
+AP IOD_Schematic:ddr2_dimm_power 18 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 19 #=69
 AP IOD_Schematic:ddr2_dimm_power 19 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 20 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 20 #=172
+AP IOD_Schematic:ddr2_dimm_power 20 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 21 #=178
 AP IOD_Schematic:ddr2_dimm_power 21 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 22 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 22 #=184
+AP IOD_Schematic:ddr2_dimm_power 22 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 23 #=187
 AP IOD_Schematic:ddr2_dimm_power 23 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 24 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 24 #=1
-AP IOD_Schematic:ddr2_dimm_power 25 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 24 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 25 #=2
-AP IOD_Schematic:ddr2_dimm_power 26 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 25 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 26 #=29
-AP IOD_Schematic:ddr2_dimm_power 27 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 26 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 27 #=32
-AP IOD_Schematic:ddr2_dimm_power 28 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 27 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 28 #=35
-AP IOD_Schematic:ddr2_dimm_power 29 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 28 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 29 #=38
-AP IOD_Schematic:ddr2_dimm_power 30 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 29 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 30 #=41
-AP IOD_Schematic:ddr2_dimm_power 31 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 30 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 31 #=44
-AP IOD_Schematic:ddr2_dimm_power 32 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 31 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 32 #=47
-AP IOD_Schematic:ddr2_dimm_power 33 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 32 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 33 #=50
-AP IOD_Schematic:ddr2_dimm_power 34 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 33 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 34 #=65
-AP IOD_Schematic:ddr2_dimm_power 35 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 34 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 35 #=66
-AP IOD_Schematic:ddr2_dimm_power 36 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 35 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 36 #=5
-AP IOD_Schematic:ddr2_dimm_power 37 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 36 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 37 #=79
-AP IOD_Schematic:ddr2_dimm_power 38 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 37 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 38 #=82
-AP IOD_Schematic:ddr2_dimm_power 39 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 38 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 39 #=85
-AP IOD_Schematic:ddr2_dimm_power 40 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 39 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 40 #=88
-AP IOD_Schematic:ddr2_dimm_power 41 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 40 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 41 #=91
-AP IOD_Schematic:ddr2_dimm_power 42 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 41 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 42 #=94
+AP IOD_Schematic:ddr2_dimm_power 42 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 43 #=97
 AP IOD_Schematic:ddr2_dimm_power 43 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 44 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 44 #=100
+AP IOD_Schematic:ddr2_dimm_power 44 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 45 #=103
 AP IOD_Schematic:ddr2_dimm_power 45 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 46 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 46 #=106
-AP IOD_Schematic:ddr2_dimm_power 47 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 46 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 47 #=8
+AP IOD_Schematic:ddr2_dimm_power 47 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 48 #=109
 AP IOD_Schematic:ddr2_dimm_power 48 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 49 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 49 #=112
+AP IOD_Schematic:ddr2_dimm_power 49 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 50 #=115
 AP IOD_Schematic:ddr2_dimm_power 50 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 51 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 51 #=118
+AP IOD_Schematic:ddr2_dimm_power 51 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 52 #=121
 AP IOD_Schematic:ddr2_dimm_power 52 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 53 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 53 #=124
+AP IOD_Schematic:ddr2_dimm_power 53 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 54 #=127
 AP IOD_Schematic:ddr2_dimm_power 54 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 55 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 55 #=130
+AP IOD_Schematic:ddr2_dimm_power 55 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 56 #=133
 AP IOD_Schematic:ddr2_dimm_power 56 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 57 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 57 #=136
-AP IOD_Schematic:ddr2_dimm_power 58 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 57 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 58 #=11
+AP IOD_Schematic:ddr2_dimm_power 58 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 59 #=139
 AP IOD_Schematic:ddr2_dimm_power 59 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 60 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 60 #=142
+AP IOD_Schematic:ddr2_dimm_power 60 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 61 #=145
 AP IOD_Schematic:ddr2_dimm_power 61 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 62 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 62 #=148
+AP IOD_Schematic:ddr2_dimm_power 62 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 63 #=151
 AP IOD_Schematic:ddr2_dimm_power 63 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 64 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 64 #=154
+AP IOD_Schematic:ddr2_dimm_power 64 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 65 #=157
 AP IOD_Schematic:ddr2_dimm_power 65 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 66 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 66 #=160
+AP IOD_Schematic:ddr2_dimm_power 66 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 67 #=163
 AP IOD_Schematic:ddr2_dimm_power 67 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 68 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 68 #=166
-AP IOD_Schematic:ddr2_dimm_power 69 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 68 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 69 #=14
+AP IOD_Schematic:ddr2_dimm_power 69 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 70 #=169
 AP IOD_Schematic:ddr2_dimm_power 70 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 71 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 71 #=198
+AP IOD_Schematic:ddr2_dimm_power 71 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 72 #=201
 AP IOD_Schematic:ddr2_dimm_power 72 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 73 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 73 #=204
+AP IOD_Schematic:ddr2_dimm_power 73 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 74 #=207
 AP IOD_Schematic:ddr2_dimm_power 74 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 75 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 75 #=210
+AP IOD_Schematic:ddr2_dimm_power 75 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 76 #=213
 AP IOD_Schematic:ddr2_dimm_power 76 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 77 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 77 #=216
+AP IOD_Schematic:ddr2_dimm_power 77 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 78 #=219
 AP IOD_Schematic:ddr2_dimm_power 78 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 79 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 79 #=222
-AP IOD_Schematic:ddr2_dimm_power 80 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 79 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 80 #=17
+AP IOD_Schematic:ddr2_dimm_power 80 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 81 #=225
 AP IOD_Schematic:ddr2_dimm_power 81 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 82 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 82 #=228
+AP IOD_Schematic:ddr2_dimm_power 82 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 83 #=231
 AP IOD_Schematic:ddr2_dimm_power 83 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 84 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 84 #=234
+AP IOD_Schematic:ddr2_dimm_power 84 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 85 #=237
 AP IOD_Schematic:ddr2_dimm_power 85 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm_power 86 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 86 #=20
-AP IOD_Schematic:ddr2_dimm_power 87 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 86 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 87 #=23
-AP IOD_Schematic:ddr2_dimm_power 88 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm_power 87 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm_power 88 #=26
+AP IOD_Schematic:ddr2_dimm_power 88 PINTYPE=IN
 |Q IOD_Schematic:tps51100dgqr 1
 AS IOD_Schematic:tps51100dgqr LEVEL=STD
 AS IOD_Schematic:tps51100dgqr DEVICE=TPS51100DGQ
 AS IOD_Schematic:tps51100dgqr REFDES=U?
 AS IOD_Schematic:tps51100dgqr PKG_TYPE=MSOP10_PP
 AS IOD_Schematic:tps51100dgqr P/D_NUM=TPS51100DGQ
-AS IOD_Schematic:tps51100dgqr PINORDER=GND PGND PPAD S3 S5 VDDQSNS VIN VLDOIN VTT VTTREF VTTSNS
 AS IOD_Schematic:tps51100dgqr INOV_VER_REC=13:12_5-27-08
-AP IOD_Schematic:tps51100dgqr 1 PINTYPE=ANALOG
+AS IOD_Schematic:tps51100dgqr PINORDER=GND PGND PPAD S3 S5 VDDQSNS VIN VLDOIN VTT VTTREF VTTSNS
 AP IOD_Schematic:tps51100dgqr 1 #=8
-AP IOD_Schematic:tps51100dgqr 2 PINTYPE=ANALOG
+AP IOD_Schematic:tps51100dgqr 1 PINTYPE=ANALOG
 AP IOD_Schematic:tps51100dgqr 2 #=4
-AP IOD_Schematic:tps51100dgqr 3 PINTYPE=ANALOG
+AP IOD_Schematic:tps51100dgqr 2 PINTYPE=ANALOG
 AP IOD_Schematic:tps51100dgqr 3 #=11
-AP IOD_Schematic:tps51100dgqr 4 PINTYPE=IN
+AP IOD_Schematic:tps51100dgqr 3 PINTYPE=ANALOG
 AP IOD_Schematic:tps51100dgqr 4 #=7
-AP IOD_Schematic:tps51100dgqr 5 PINTYPE=IN
+AP IOD_Schematic:tps51100dgqr 4 PINTYPE=IN
 AP IOD_Schematic:tps51100dgqr 5 #=9
-AP IOD_Schematic:tps51100dgqr 6 PINTYPE=IN
+AP IOD_Schematic:tps51100dgqr 5 PINTYPE=IN
 AP IOD_Schematic:tps51100dgqr 6 #=1
-AP IOD_Schematic:tps51100dgqr 7 PINTYPE=IN
+AP IOD_Schematic:tps51100dgqr 6 PINTYPE=IN
 AP IOD_Schematic:tps51100dgqr 7 #=10
-AP IOD_Schematic:tps51100dgqr 8 PINTYPE=IN
+AP IOD_Schematic:tps51100dgqr 7 PINTYPE=IN
 AP IOD_Schematic:tps51100dgqr 8 #=2
-AP IOD_Schematic:tps51100dgqr 9 PINTYPE=OUT
+AP IOD_Schematic:tps51100dgqr 8 PINTYPE=IN
 AP IOD_Schematic:tps51100dgqr 9 #=3
-AP IOD_Schematic:tps51100dgqr 10 PINTYPE=OUT
+AP IOD_Schematic:tps51100dgqr 9 PINTYPE=OUT
 AP IOD_Schematic:tps51100dgqr 10 #=6
-AP IOD_Schematic:tps51100dgqr 11 PINTYPE=IN
+AP IOD_Schematic:tps51100dgqr 10 PINTYPE=OUT
 AP IOD_Schematic:tps51100dgqr 11 #=5
+AP IOD_Schematic:tps51100dgqr 11 PINTYPE=IN
 AS IOD_Schematic:in IN
+AS IOD_Schematic:in Pin!Order=IN
+AS IOD_Schematic:in INOV_VER_REC=7:39_8-30-07
 AS IOD_Schematic:in PINORDER=IN
 AP IOD_Schematic:in 1 PINTYPE=IN
 AS IOD_Schematic:bi BI
+AS IOD_Schematic:bi Pin!Order=BI
+AS IOD_Schematic:bi INOV_VER_REC=11:48_10-3-07
 AS IOD_Schematic:bi PINORDER=BI
 AP IOD_Schematic:bi 1 PINTYPE=BI
 |Q IOD_Schematic:ddr2_dimm 1
+AS IOD_Schematic:ddr2_dimm INOV_VER_REC=11:06:39_8-7-09
 AS IOD_Schematic:ddr2_dimm DEVICE=DDR2_240DIMM
 AS IOD_Schematic:ddr2_dimm HETERO=DDR2_DIMM, DDR2_DIMM_POWER
 AS IOD_Schematic:ddr2_dimm MANUFACTURER=MOLEX
-AS IOD_Schematic:ddr2_dimm NC=19, 102, 126, 135, 147, 156, 165, 203, 212, 224, 233
 AS IOD_Schematic:ddr2_dimm PKG_TYPE=MOLEX879160001
 AS IOD_Schematic:ddr2_dimm LEVEL=STD
 AS IOD_Schematic:ddr2_dimm PARTS=1
 AS IOD_Schematic:ddr2_dimm REFDES=J?
 AS IOD_Schematic:ddr2_dimm P/D_NUM=879160001
 AS IOD_Schematic:ddr2_dimm PINORDER=DDR2_DIMM_A[0] DDR2_DIMM_A[10] DDR2_DIMM_A[11] DDR2_DIMM_A[12] DDR2_DIMM_A[13] DDR2_DIMM_A[14] DDR2_DIMM_A[15] DDR2_DIMM_A[1] DDR2_DIMM_A[2] DDR2_DIMM_A[3] DDR2_DIMM_A[4] DDR2_DIMM_A[5] DDR2_DIMM_A[6] DDR2_DIMM_A[7] DDR2_DIMM_A[8] DDR2_DIMM_A[9] DDR2_DIMM_BA[0] DDR2_DIMM_BA[1] DDR2_DIMM_BA[2] DDR2_DIMM_CAS# DDR2_DIMM_CB0 DDR2_DIMM_CB1 DDR2_DIMM_CB2 DDR2_DIMM_CB3 DDR2_DIMM_CB4 DDR2_DIMM_CB5 DDR2_DIMM_CB6 DDR2_DIMM_CB7 DDR2_DIMM_CKE[0] DDR2_DIMM_CKE[1] DDR2_DIMM_CK_N[0] DDR2_DIMM_CK_N[1] DDR2_DIMM_CK_N[2] DDR2_DIMM_CK_P[0] DDR2_DIMM_CK_P[1] DDR2_DIMM_CK_P[2] DDR2_DIMM_DM[0] DDR2_DIMM_DM[1] DDR2_DIMM_DM[2] DDR2_DIMM_DM[3] DDR2_DIMM_DM[4] DDR2_DIMM_DM[5] DDR2_DIMM_DM[6] DDR2_DIMM_DM[7] DDR2_DIMM_DM_CB DDR2_DIMM_DQS_CB_N DDR2_DIMM_DQS_CB_P DDR2_DIMM_DQS_N[0] DDR2_DIMM_DQS_N[1] DDR2_DIMM_DQS_N[2] DDR2_DIMM_DQS_N[3] DDR2_DIMM_DQS_N[4] DDR2_DIMM_DQS_N[5] DDR2_DIMM_DQS_N[6] DDR2_DIMM_DQS_N[7] DDR2_DIMM_DQS_P[0] DDR2_DIMM_DQS_P[1] DDR2_DIMM_DQS_P[2] DDR2_DIMM_DQS_P[3] DDR2_DIMM_DQS_P[4] DDR2_DIMM_DQS_P[5] DDR2_DIMM_DQS_P[6] DDR2_DIMM_DQS_P[7] DDR2_DIMM_DQ[0] DDR2_DIMM_DQ[10] DDR2_DIMM_DQ[11] DDR2_DIMM_DQ[12] DDR2_DIMM_DQ[13] DDR2_DIMM_DQ[14] DDR2_DIMM_DQ[15] DDR2_DIMM_DQ[16] DDR2_DIMM_DQ[17] DDR2_DIMM_DQ[18] DDR2_DIMM_DQ[19] DDR2_DIMM_DQ[1] DDR2_DIMM_DQ[20] DDR2_DIMM_DQ[21] DDR2_DIMM_DQ[22] DDR2_DIMM_DQ[23] DDR2_DIMM_DQ[24] DDR2_DIMM_DQ[25] DDR2_DIMM_DQ[26] DDR2_DIMM_DQ[27] DDR2_DIMM_DQ[28] DDR2_DIMM_DQ[29] DDR2_DIMM_DQ[2] DDR2_DIMM_DQ[30] DDR2_DIMM_DQ[31] DDR2_DIMM_DQ[32] DDR2_DIMM_DQ[33] DDR2_DIMM_DQ[34] DDR2_DIMM_DQ[35] DDR2_DIMM_DQ[36] DDR2_DIMM_DQ[37] DDR2_DIMM_DQ[38] DDR2_DIMM_DQ[39] DDR2_DIMM_DQ[3] DDR2_DIMM_DQ[40] DDR2_DIMM_DQ[41] DDR2_DIMM_DQ[42] DDR2_DIMM_DQ[43] DDR2_DIMM_DQ[44] DDR2_DIMM_DQ[45] DDR2_DIMM_DQ[46] DDR2_DIMM_DQ[47] DDR2_DIMM_DQ[48] DDR2_DIMM_DQ[49] DDR2_DIMM_DQ[4] DDR2_DIMM_DQ[50] DDR2_DIMM_DQ[51] DDR2_DIMM_DQ[52] DDR2_DIMM_DQ[53] DDR2_DIMM_DQ[54] DDR2_DIMM_DQ[55] DDR2_DIMM_DQ[56] DDR2_DIMM_DQ[57] DDR2_DIMM_DQ[58] DDR2_DIMM_DQ[59] DDR2_DIMM_DQ[5] DDR2_DIMM_DQ[60] DDR2_DIMM_DQ[61] DDR2_DIMM_DQ[62] DDR2_DIMM_DQ[63] DDR2_DIMM_DQ[6] DDR2_DIMM_DQ[7] DDR2_DIMM_DQ[8] DDR2_DIMM_DQ[9] DDR2_DIMM_ODT[0] DDR2_DIMM_ODT[1] DDR2_DIMM_RAS# DDR2_DIMM_RESET# DDR2_DIMM_S#[0] DDR2_DIMM_S#[1] DDR2_DIMM_SA0 DDR2_DIMM_SA1 DDR2_DIMM_SA2 DDR2_DIMM_SCL DDR2_DIMM_SDA DDR2_DIMM_WE# PAR_IN PAR_OUT
-AS IOD_Schematic:ddr2_dimm INOV_VER_REC=11:30_1-24-08
-AP IOD_Schematic:ddr2_dimm 1 #= 188
+AP IOD_Schematic:ddr2_dimm 1 #=188
 AP IOD_Schematic:ddr2_dimm 1 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 2 #= 70
+AP IOD_Schematic:ddr2_dimm 2 #=70
 AP IOD_Schematic:ddr2_dimm 2 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 3 #= 57
+AP IOD_Schematic:ddr2_dimm 3 #=57
 AP IOD_Schematic:ddr2_dimm 3 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 4 #= 176
+AP IOD_Schematic:ddr2_dimm 4 #=176
 AP IOD_Schematic:ddr2_dimm 4 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 5 #= 196
+AP IOD_Schematic:ddr2_dimm 5 #=196
 AP IOD_Schematic:ddr2_dimm 5 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 6 #= 174
+AP IOD_Schematic:ddr2_dimm 6 #=174
 AP IOD_Schematic:ddr2_dimm 6 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 7 #= 173
+AP IOD_Schematic:ddr2_dimm 7 #=173
 AP IOD_Schematic:ddr2_dimm 7 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 8 #= 183
+AP IOD_Schematic:ddr2_dimm 8 #=183
 AP IOD_Schematic:ddr2_dimm 8 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 9 #= 63
+AP IOD_Schematic:ddr2_dimm 9 #=63
 AP IOD_Schematic:ddr2_dimm 9 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 10 #= 182
+AP IOD_Schematic:ddr2_dimm 10 #=182
 AP IOD_Schematic:ddr2_dimm 10 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 11 #= 61
+AP IOD_Schematic:ddr2_dimm 11 #=61
 AP IOD_Schematic:ddr2_dimm 11 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 12 #= 60
+AP IOD_Schematic:ddr2_dimm 12 #=60
 AP IOD_Schematic:ddr2_dimm 12 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 13 #= 180
+AP IOD_Schematic:ddr2_dimm 13 #=180
 AP IOD_Schematic:ddr2_dimm 13 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 14 #= 58
+AP IOD_Schematic:ddr2_dimm 14 #=58
 AP IOD_Schematic:ddr2_dimm 14 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 15 #= 179
+AP IOD_Schematic:ddr2_dimm 15 #=179
 AP IOD_Schematic:ddr2_dimm 15 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 16 #= 177
+AP IOD_Schematic:ddr2_dimm 16 #=177
 AP IOD_Schematic:ddr2_dimm 16 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 17 #= 71
+AP IOD_Schematic:ddr2_dimm 17 #=71
 AP IOD_Schematic:ddr2_dimm 17 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 18 #= 190
+AP IOD_Schematic:ddr2_dimm 18 #=190
 AP IOD_Schematic:ddr2_dimm 18 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 19 #= 54
+AP IOD_Schematic:ddr2_dimm 19 #=54
 AP IOD_Schematic:ddr2_dimm 19 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 20 #= 74
+AP IOD_Schematic:ddr2_dimm 20 #=74
 AP IOD_Schematic:ddr2_dimm 20 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 21 PINTYPE=BI
 AP IOD_Schematic:ddr2_dimm 21 #=42
+AP IOD_Schematic:ddr2_dimm 21 PINTYPE=BI
 AP IOD_Schematic:ddr2_dimm 22 #=43
 AP IOD_Schematic:ddr2_dimm 22 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 23 PINTYPE=BI
 AP IOD_Schematic:ddr2_dimm 23 #=48
+AP IOD_Schematic:ddr2_dimm 23 PINTYPE=BI
 AP IOD_Schematic:ddr2_dimm 24 #=49
 AP IOD_Schematic:ddr2_dimm 24 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 25 PINTYPE=BI
 AP IOD_Schematic:ddr2_dimm 25 #=161
+AP IOD_Schematic:ddr2_dimm 25 PINTYPE=BI
 AP IOD_Schematic:ddr2_dimm 26 #=162
 AP IOD_Schematic:ddr2_dimm 26 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 27 PINTYPE=BI
 AP IOD_Schematic:ddr2_dimm 27 #=167
+AP IOD_Schematic:ddr2_dimm 27 PINTYPE=BI
 AP IOD_Schematic:ddr2_dimm 28 #=168
 AP IOD_Schematic:ddr2_dimm 28 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 29 #= 52
+AP IOD_Schematic:ddr2_dimm 29 #=52
 AP IOD_Schematic:ddr2_dimm 29 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 30 #= 171
+AP IOD_Schematic:ddr2_dimm 30 #=171
 AP IOD_Schematic:ddr2_dimm 30 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 31 #= 186
+AP IOD_Schematic:ddr2_dimm 31 #=186
 AP IOD_Schematic:ddr2_dimm 31 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 32 #= 138
+AP IOD_Schematic:ddr2_dimm 32 #=138
 AP IOD_Schematic:ddr2_dimm 32 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 33 #= 221
+AP IOD_Schematic:ddr2_dimm 33 #=221
 AP IOD_Schematic:ddr2_dimm 33 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 34 #= 185
+AP IOD_Schematic:ddr2_dimm 34 #=185
 AP IOD_Schematic:ddr2_dimm 34 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 35 #= 137
+AP IOD_Schematic:ddr2_dimm 35 #=137
 AP IOD_Schematic:ddr2_dimm 35 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 36 #= 220
+AP IOD_Schematic:ddr2_dimm 36 #=220
 AP IOD_Schematic:ddr2_dimm 36 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 37 #= 125
+AP IOD_Schematic:ddr2_dimm 37 #=125
 AP IOD_Schematic:ddr2_dimm 37 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 38 #= 134
+AP IOD_Schematic:ddr2_dimm 38 #=134
 AP IOD_Schematic:ddr2_dimm 38 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 39 #= 146
+AP IOD_Schematic:ddr2_dimm 39 #=146
 AP IOD_Schematic:ddr2_dimm 39 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 40 #= 155
+AP IOD_Schematic:ddr2_dimm 40 #=155
 AP IOD_Schematic:ddr2_dimm 40 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 41 #= 202
+AP IOD_Schematic:ddr2_dimm 41 #=202
 AP IOD_Schematic:ddr2_dimm 41 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 42 #= 211
+AP IOD_Schematic:ddr2_dimm 42 #=211
 AP IOD_Schematic:ddr2_dimm 42 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 43 #= 223
+AP IOD_Schematic:ddr2_dimm 43 #=223
 AP IOD_Schematic:ddr2_dimm 43 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 44 #= 232
+AP IOD_Schematic:ddr2_dimm 44 #=232
 AP IOD_Schematic:ddr2_dimm 44 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 45 #= 164
+AP IOD_Schematic:ddr2_dimm 45 #=164
 AP IOD_Schematic:ddr2_dimm 45 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 46 #= 45
+AP IOD_Schematic:ddr2_dimm 46 #=45
 AP IOD_Schematic:ddr2_dimm 46 PINTYPE=OUT
-AP IOD_Schematic:ddr2_dimm 47 #= 46
+AP IOD_Schematic:ddr2_dimm 47 #=46
 AP IOD_Schematic:ddr2_dimm 47 PINTYPE=OUT
-AP IOD_Schematic:ddr2_dimm 48 #= 6
+AP IOD_Schematic:ddr2_dimm 48 #=6
 AP IOD_Schematic:ddr2_dimm 48 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 49 #= 15
+AP IOD_Schematic:ddr2_dimm 49 #=15
 AP IOD_Schematic:ddr2_dimm 49 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 50 #= 27
+AP IOD_Schematic:ddr2_dimm 50 #=27
 AP IOD_Schematic:ddr2_dimm 50 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 51 #= 36
+AP IOD_Schematic:ddr2_dimm 51 #=36
 AP IOD_Schematic:ddr2_dimm 51 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 52 #= 83
+AP IOD_Schematic:ddr2_dimm 52 #=83
 AP IOD_Schematic:ddr2_dimm 52 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 53 #= 92
+AP IOD_Schematic:ddr2_dimm 53 #=92
 AP IOD_Schematic:ddr2_dimm 53 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 54 #= 104
+AP IOD_Schematic:ddr2_dimm 54 #=104
 AP IOD_Schematic:ddr2_dimm 54 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 55 #= 113
+AP IOD_Schematic:ddr2_dimm 55 #=113
 AP IOD_Schematic:ddr2_dimm 55 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 56 #= 7
+AP IOD_Schematic:ddr2_dimm 56 #=7
 AP IOD_Schematic:ddr2_dimm 56 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 57 #= 16
+AP IOD_Schematic:ddr2_dimm 57 #=16
 AP IOD_Schematic:ddr2_dimm 57 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 58 #= 28
+AP IOD_Schematic:ddr2_dimm 58 #=28
 AP IOD_Schematic:ddr2_dimm 58 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 59 #= 37
+AP IOD_Schematic:ddr2_dimm 59 #=37
 AP IOD_Schematic:ddr2_dimm 59 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 60 #= 84
+AP IOD_Schematic:ddr2_dimm 60 #=84
 AP IOD_Schematic:ddr2_dimm 60 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 61 #= 93
+AP IOD_Schematic:ddr2_dimm 61 #=93
 AP IOD_Schematic:ddr2_dimm 61 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 62 #= 105
+AP IOD_Schematic:ddr2_dimm 62 #=105
 AP IOD_Schematic:ddr2_dimm 62 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 63 #= 114
+AP IOD_Schematic:ddr2_dimm 63 #=114
 AP IOD_Schematic:ddr2_dimm 63 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 64 #= 3
+AP IOD_Schematic:ddr2_dimm 64 #=3
 AP IOD_Schematic:ddr2_dimm 64 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 65 #= 21
+AP IOD_Schematic:ddr2_dimm 65 #=21
 AP IOD_Schematic:ddr2_dimm 65 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 66 #= 22
+AP IOD_Schematic:ddr2_dimm 66 #=22
 AP IOD_Schematic:ddr2_dimm 66 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 67 #= 131
+AP IOD_Schematic:ddr2_dimm 67 #=131
 AP IOD_Schematic:ddr2_dimm 67 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 68 #= 132
+AP IOD_Schematic:ddr2_dimm 68 #=132
 AP IOD_Schematic:ddr2_dimm 68 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 69 #= 140
+AP IOD_Schematic:ddr2_dimm 69 #=140
 AP IOD_Schematic:ddr2_dimm 69 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 70 #= 141
+AP IOD_Schematic:ddr2_dimm 70 #=141
 AP IOD_Schematic:ddr2_dimm 70 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 71 #= 24
+AP IOD_Schematic:ddr2_dimm 71 #=24
 AP IOD_Schematic:ddr2_dimm 71 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 72 #= 25
+AP IOD_Schematic:ddr2_dimm 72 #=25
 AP IOD_Schematic:ddr2_dimm 72 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 73 #= 30
+AP IOD_Schematic:ddr2_dimm 73 #=30
 AP IOD_Schematic:ddr2_dimm 73 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 74 #= 31
+AP IOD_Schematic:ddr2_dimm 74 #=31
 AP IOD_Schematic:ddr2_dimm 74 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 75 #= 4
+AP IOD_Schematic:ddr2_dimm 75 #=4
 AP IOD_Schematic:ddr2_dimm 75 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 76 #= 143
+AP IOD_Schematic:ddr2_dimm 76 #=143
 AP IOD_Schematic:ddr2_dimm 76 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 77 #= 144
+AP IOD_Schematic:ddr2_dimm 77 #=144
 AP IOD_Schematic:ddr2_dimm 77 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 78 #= 149
+AP IOD_Schematic:ddr2_dimm 78 #=149
 AP IOD_Schematic:ddr2_dimm 78 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 79 #= 150
+AP IOD_Schematic:ddr2_dimm 79 #=150
 AP IOD_Schematic:ddr2_dimm 79 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 80 #= 33
+AP IOD_Schematic:ddr2_dimm 80 #=33
 AP IOD_Schematic:ddr2_dimm 80 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 81 #= 34
+AP IOD_Schematic:ddr2_dimm 81 #=34
 AP IOD_Schematic:ddr2_dimm 81 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 82 #= 39
+AP IOD_Schematic:ddr2_dimm 82 #=39
 AP IOD_Schematic:ddr2_dimm 82 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 83 #= 40
+AP IOD_Schematic:ddr2_dimm 83 #=40
 AP IOD_Schematic:ddr2_dimm 83 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 84 #= 152
+AP IOD_Schematic:ddr2_dimm 84 #=152
 AP IOD_Schematic:ddr2_dimm 84 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 85 #= 153
+AP IOD_Schematic:ddr2_dimm 85 #=153
 AP IOD_Schematic:ddr2_dimm 85 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 86 #= 9
+AP IOD_Schematic:ddr2_dimm 86 #=9
 AP IOD_Schematic:ddr2_dimm 86 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 87 #= 158
+AP IOD_Schematic:ddr2_dimm 87 #=158
 AP IOD_Schematic:ddr2_dimm 87 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 88 #= 159
+AP IOD_Schematic:ddr2_dimm 88 #=159
 AP IOD_Schematic:ddr2_dimm 88 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 89 #= 80
+AP IOD_Schematic:ddr2_dimm 89 #=80
 AP IOD_Schematic:ddr2_dimm 89 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 90 #= 81
+AP IOD_Schematic:ddr2_dimm 90 #=81
 AP IOD_Schematic:ddr2_dimm 90 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 91 #= 86
+AP IOD_Schematic:ddr2_dimm 91 #=86
 AP IOD_Schematic:ddr2_dimm 91 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 92 #= 87
+AP IOD_Schematic:ddr2_dimm 92 #=87
 AP IOD_Schematic:ddr2_dimm 92 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 93 #= 199
+AP IOD_Schematic:ddr2_dimm 93 #=199
 AP IOD_Schematic:ddr2_dimm 93 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 94 #= 200
+AP IOD_Schematic:ddr2_dimm 94 #=200
 AP IOD_Schematic:ddr2_dimm 94 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 95 #= 205
+AP IOD_Schematic:ddr2_dimm 95 #=205
 AP IOD_Schematic:ddr2_dimm 95 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 96 #= 206
+AP IOD_Schematic:ddr2_dimm 96 #=206
 AP IOD_Schematic:ddr2_dimm 96 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 97 #= 10
+AP IOD_Schematic:ddr2_dimm 97 #=10
 AP IOD_Schematic:ddr2_dimm 97 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 98 #= 89
+AP IOD_Schematic:ddr2_dimm 98 #=89
 AP IOD_Schematic:ddr2_dimm 98 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 99 #= 90
+AP IOD_Schematic:ddr2_dimm 99 #=90
 AP IOD_Schematic:ddr2_dimm 99 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 100 #= 95
+AP IOD_Schematic:ddr2_dimm 100 #=95
 AP IOD_Schematic:ddr2_dimm 100 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 101 #= 96
+AP IOD_Schematic:ddr2_dimm 101 #=96
 AP IOD_Schematic:ddr2_dimm 101 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 102 #= 208
+AP IOD_Schematic:ddr2_dimm 102 #=208
 AP IOD_Schematic:ddr2_dimm 102 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 103 #= 209
+AP IOD_Schematic:ddr2_dimm 103 #=209
 AP IOD_Schematic:ddr2_dimm 103 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 104 #= 214
+AP IOD_Schematic:ddr2_dimm 104 #=214
 AP IOD_Schematic:ddr2_dimm 104 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 105 #= 215
+AP IOD_Schematic:ddr2_dimm 105 #=215
 AP IOD_Schematic:ddr2_dimm 105 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 106 #= 98
+AP IOD_Schematic:ddr2_dimm 106 #=98
 AP IOD_Schematic:ddr2_dimm 106 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 107 #= 99
+AP IOD_Schematic:ddr2_dimm 107 #=99
 AP IOD_Schematic:ddr2_dimm 107 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 108 #= 122
+AP IOD_Schematic:ddr2_dimm 108 #=122
 AP IOD_Schematic:ddr2_dimm 108 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 109 #= 107
+AP IOD_Schematic:ddr2_dimm 109 #=107
 AP IOD_Schematic:ddr2_dimm 109 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 110 #= 108
+AP IOD_Schematic:ddr2_dimm 110 #=108
 AP IOD_Schematic:ddr2_dimm 110 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 111 #= 217
+AP IOD_Schematic:ddr2_dimm 111 #=217
 AP IOD_Schematic:ddr2_dimm 111 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 112 #= 218
+AP IOD_Schematic:ddr2_dimm 112 #=218
 AP IOD_Schematic:ddr2_dimm 112 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 113 #= 226
+AP IOD_Schematic:ddr2_dimm 113 #=226
 AP IOD_Schematic:ddr2_dimm 113 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 114 #= 227
+AP IOD_Schematic:ddr2_dimm 114 #=227
 AP IOD_Schematic:ddr2_dimm 114 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 115 #= 110
+AP IOD_Schematic:ddr2_dimm 115 #=110
 AP IOD_Schematic:ddr2_dimm 115 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 116 #= 111
+AP IOD_Schematic:ddr2_dimm 116 #=111
 AP IOD_Schematic:ddr2_dimm 116 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 117 #= 116
+AP IOD_Schematic:ddr2_dimm 117 #=116
 AP IOD_Schematic:ddr2_dimm 117 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 118 #= 117
+AP IOD_Schematic:ddr2_dimm 118 #=117
 AP IOD_Schematic:ddr2_dimm 118 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 119 #= 123
+AP IOD_Schematic:ddr2_dimm 119 #=123
 AP IOD_Schematic:ddr2_dimm 119 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 120 #= 229
+AP IOD_Schematic:ddr2_dimm 120 #=229
 AP IOD_Schematic:ddr2_dimm 120 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 121 #= 230
+AP IOD_Schematic:ddr2_dimm 121 #=230
 AP IOD_Schematic:ddr2_dimm 121 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 122 #= 235
+AP IOD_Schematic:ddr2_dimm 122 #=235
 AP IOD_Schematic:ddr2_dimm 122 PINTYPE=BI
 AP IOD_Schematic:ddr2_dimm 123 #=236
 AP IOD_Schematic:ddr2_dimm 123 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 124 #= 128
+AP IOD_Schematic:ddr2_dimm 124 #=128
 AP IOD_Schematic:ddr2_dimm 124 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 125 #= 129
+AP IOD_Schematic:ddr2_dimm 125 #=129
 AP IOD_Schematic:ddr2_dimm 125 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 126 #= 12
+AP IOD_Schematic:ddr2_dimm 126 #=12
 AP IOD_Schematic:ddr2_dimm 126 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 127 #= 13
+AP IOD_Schematic:ddr2_dimm 127 #=13
 AP IOD_Schematic:ddr2_dimm 127 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 128 #= 195
+AP IOD_Schematic:ddr2_dimm 128 #=195
 AP IOD_Schematic:ddr2_dimm 128 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 129 #= 77
+AP IOD_Schematic:ddr2_dimm 129 #=77
 AP IOD_Schematic:ddr2_dimm 129 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 130 #= 192
+AP IOD_Schematic:ddr2_dimm 130 #=192
 AP IOD_Schematic:ddr2_dimm 130 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 131 #= 18
+AP IOD_Schematic:ddr2_dimm 131 #=18
 AP IOD_Schematic:ddr2_dimm 131 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 132 #= 193
+AP IOD_Schematic:ddr2_dimm 132 #=193
 AP IOD_Schematic:ddr2_dimm 132 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 133 #= 76
+AP IOD_Schematic:ddr2_dimm 133 #=76
 AP IOD_Schematic:ddr2_dimm 133 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 134 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm 134 #=239
+AP IOD_Schematic:ddr2_dimm 134 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm 135 #=240
 AP IOD_Schematic:ddr2_dimm 135 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 136 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm 136 #=101
-AP IOD_Schematic:ddr2_dimm 137 #= 120
+AP IOD_Schematic:ddr2_dimm 136 PINTYPE=IN
+AP IOD_Schematic:ddr2_dimm 137 #=120
 AP IOD_Schematic:ddr2_dimm 137 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 138 #= 119
+AP IOD_Schematic:ddr2_dimm 138 #=119
 AP IOD_Schematic:ddr2_dimm 138 PINTYPE=BI
-AP IOD_Schematic:ddr2_dimm 139 #= 73
+AP IOD_Schematic:ddr2_dimm 139 #=73
 AP IOD_Schematic:ddr2_dimm 139 PINTYPE=IN
 AP IOD_Schematic:ddr2_dimm 140 #=68
 AP IOD_Schematic:ddr2_dimm 140 PINTYPE=IN
-AP IOD_Schematic:ddr2_dimm 141 PINTYPE=OUT
 AP IOD_Schematic:ddr2_dimm 141 #=55
+AP IOD_Schematic:ddr2_dimm 141 PINTYPE=OUT
 |Q IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ 2
 AS IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ DEVICE=IND_BEAD_0603_180OHM_1R5A_25%
 AS IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ PARTS=1
 AS IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ PKG_TYPE=L_0603
 AS IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ LEVEL=STD
-AS IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ SUP=MUR: BLM18PG181SN1X
+AS IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ SUP=MUR: BLM18PG181SN1x
 AS IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ ALT_SUP=NA
-AS IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ P/D_NUM=MUR: BLM18PG181SN1X
+AS IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ P/D_NUM=MUR: BLM18PG181SN1x
 AS IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ ALT_PART=NA
 AS IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ GRN=LHR
 AS IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ VALUE
 AS IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ SHAPE=0603
 AS IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ REFDES=L?
-AS IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ PINORDER=A B
 AS IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ INOV_VER_REC=15:30_6-18-08
+AS IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ PINORDER=A B
 AP IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ 1 #=1
 AP IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ 1 PINTYPE=OUT
 AP IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ 2 #=2
@@ -944,109 +949,189 @@ AS IOD_Schematic:cdcu877 PARTS=1
 AS IOD_Schematic:cdcu877 DEVICE=CDCU877
 AS IOD_Schematic:cdcu877 REFDES=U?
 AS IOD_Schematic:cdcu877 P/D_NUM=CDCU877...
-AS IOD_Schematic:cdcu877 PINORDER=AGND AVDD CLK CLK# FBIN FBIN# FBOUT FBOUT# GND1 GND2 OE OS VDDQ1 VDDQ2 VDDQ3 VDDQ4 VDDQ5 VDDQ6 VDDQ7 VDDQ8 VDDQ9 Y0 Y0# Y1 Y1# Y2 Y2# Y3 Y3# Y4 Y4# Y5 Y5# Y6 Y6# Y7 Y7# Y8 Y8# Y9 Y9#
 AS IOD_Schematic:cdcu877 INOV_VER_REC=14:14_6-18-08
-AP IOD_Schematic:cdcu877 1 PINTYPE=IN
+AS IOD_Schematic:cdcu877 PINORDER=AGND AVDD CLK CLK# FBIN FBIN# FBOUT FBOUT# GND1 GND2 OE OS VDDQ1 VDDQ2 VDDQ3 VDDQ4 VDDQ5 VDDQ6 VDDQ7 VDDQ8 VDDQ9 Y0 Y0# Y1 Y1# Y2 Y2# Y3 Y3# Y4 Y4# Y5 Y5# Y6 Y6# Y7 Y7# Y8 Y8# Y9 Y9#
 AP IOD_Schematic:cdcu877 1 #=7
+AP IOD_Schematic:cdcu877 1 PINTYPE=IN
 AP IOD_Schematic:cdcu877 2 #=8
 AP IOD_Schematic:cdcu877 2 PINTYPE=IN
-AP IOD_Schematic:cdcu877 3 PINTYPE=IN
 AP IOD_Schematic:cdcu877 3 #=4
+AP IOD_Schematic:cdcu877 3 PINTYPE=IN
 AP IOD_Schematic:cdcu877 4 #=5
 AP IOD_Schematic:cdcu877 4 PINTYPE=IN
 AP IOD_Schematic:cdcu877 5 #=27
 AP IOD_Schematic:cdcu877 5 PINTYPE=IN
-AP IOD_Schematic:cdcu877 6 PINTYPE=IN
 AP IOD_Schematic:cdcu877 6 #=26
+AP IOD_Schematic:cdcu877 6 PINTYPE=IN
 AP IOD_Schematic:cdcu877 7 #=24
 AP IOD_Schematic:cdcu877 7 PINTYPE=OUT
-AP IOD_Schematic:cdcu877 8 PINTYPE=OUT
 AP IOD_Schematic:cdcu877 8 #=25
+AP IOD_Schematic:cdcu877 8 PINTYPE=OUT
 AP IOD_Schematic:cdcu877 9 #=10
 AP IOD_Schematic:cdcu877 9 PINTYPE=IN
-AP IOD_Schematic:cdcu877 10 PINTYPE=IN
 AP IOD_Schematic:cdcu877 10 #=41
+AP IOD_Schematic:cdcu877 10 PINTYPE=IN
 AP IOD_Schematic:cdcu877 11 #=22
 AP IOD_Schematic:cdcu877 11 PINTYPE=IN
-AP IOD_Schematic:cdcu877 12 PINTYPE=IN
 AP IOD_Schematic:cdcu877 12 #=21
+AP IOD_Schematic:cdcu877 12 PINTYPE=IN
 AP IOD_Schematic:cdcu877 13 #=1
 AP IOD_Schematic:cdcu877 13 PINTYPE=IN
-AP IOD_Schematic:cdcu877 14 PINTYPE=IN
 AP IOD_Schematic:cdcu877 14 #=6
+AP IOD_Schematic:cdcu877 14 PINTYPE=IN
 AP IOD_Schematic:cdcu877 15 #=9
 AP IOD_Schematic:cdcu877 15 PINTYPE=IN
-AP IOD_Schematic:cdcu877 16 PINTYPE=IN
 AP IOD_Schematic:cdcu877 16 #=15
+AP IOD_Schematic:cdcu877 16 PINTYPE=IN
 AP IOD_Schematic:cdcu877 17 #=20
 AP IOD_Schematic:cdcu877 17 PINTYPE=IN
-AP IOD_Schematic:cdcu877 18 PINTYPE=IN
 AP IOD_Schematic:cdcu877 18 #=23
+AP IOD_Schematic:cdcu877 18 PINTYPE=IN
 AP IOD_Schematic:cdcu877 19 #=28
 AP IOD_Schematic:cdcu877 19 PINTYPE=IN
-AP IOD_Schematic:cdcu877 20 PINTYPE=IN
 AP IOD_Schematic:cdcu877 20 #=31
+AP IOD_Schematic:cdcu877 20 PINTYPE=IN
 AP IOD_Schematic:cdcu877 21 #=36
 AP IOD_Schematic:cdcu877 21 PINTYPE=IN
 AP IOD_Schematic:cdcu877 22 #=38
 AP IOD_Schematic:cdcu877 22 PINTYPE=OUT
-AP IOD_Schematic:cdcu877 23 PINTYPE=OUT
 AP IOD_Schematic:cdcu877 23 #=37
-AP IOD_Schematic:cdcu877 24 PINTYPE=OUT
+AP IOD_Schematic:cdcu877 23 PINTYPE=OUT
 AP IOD_Schematic:cdcu877 24 #=39
+AP IOD_Schematic:cdcu877 24 PINTYPE=OUT
 AP IOD_Schematic:cdcu877 25 #=40
 AP IOD_Schematic:cdcu877 25 PINTYPE=OUT
 AP IOD_Schematic:cdcu877 26 #=3
 AP IOD_Schematic:cdcu877 26 PINTYPE=OUT
-AP IOD_Schematic:cdcu877 27 PINTYPE=OUT
 AP IOD_Schematic:cdcu877 27 #=2
-AP IOD_Schematic:cdcu877 28 PINTYPE=OUT
+AP IOD_Schematic:cdcu877 27 PINTYPE=OUT
 AP IOD_Schematic:cdcu877 28 #=11
+AP IOD_Schematic:cdcu877 28 PINTYPE=OUT
 AP IOD_Schematic:cdcu877 29 #=12
 AP IOD_Schematic:cdcu877 29 PINTYPE=OUT
 AP IOD_Schematic:cdcu877 30 #=14
 AP IOD_Schematic:cdcu877 30 PINTYPE=OUT
-AP IOD_Schematic:cdcu877 31 PINTYPE=OUT
 AP IOD_Schematic:cdcu877 31 #=13
-AP IOD_Schematic:cdcu877 32 PINTYPE=OUT
+AP IOD_Schematic:cdcu877 31 PINTYPE=OUT
 AP IOD_Schematic:cdcu877 32 #=34
+AP IOD_Schematic:cdcu877 32 PINTYPE=OUT
 AP IOD_Schematic:cdcu877 33 #=35
 AP IOD_Schematic:cdcu877 33 PINTYPE=OUT
 AP IOD_Schematic:cdcu877 34 #=33
 AP IOD_Schematic:cdcu877 34 PINTYPE=OUT
-AP IOD_Schematic:cdcu877 35 PINTYPE=OUT
 AP IOD_Schematic:cdcu877 35 #=32
-AP IOD_Schematic:cdcu877 36 PINTYPE=OUT
+AP IOD_Schematic:cdcu877 35 PINTYPE=OUT
 AP IOD_Schematic:cdcu877 36 #=29
+AP IOD_Schematic:cdcu877 36 PINTYPE=OUT
 AP IOD_Schematic:cdcu877 37 #=30
 AP IOD_Schematic:cdcu877 37 PINTYPE=OUT
 AP IOD_Schematic:cdcu877 38 #=19
 AP IOD_Schematic:cdcu877 38 PINTYPE=OUT
-AP IOD_Schematic:cdcu877 39 PINTYPE=OUT
 AP IOD_Schematic:cdcu877 39 #=18
-AP IOD_Schematic:cdcu877 40 PINTYPE=OUT
+AP IOD_Schematic:cdcu877 39 PINTYPE=OUT
 AP IOD_Schematic:cdcu877 40 #=16
+AP IOD_Schematic:cdcu877 40 PINTYPE=OUT
 AP IOD_Schematic:cdcu877 41 #=17
 AP IOD_Schematic:cdcu877 41 PINTYPE=OUT
 AN DDR_PA[15:0] VLBUSISONSHEET=1
 AN PPC_ECC[7:0] VLBUSISONSHEET=1
 AN DDR_PDQ[63:0] VLBUSISONSHEET=1
-AN DDR_PCLKOUT2# MIN_LENGTH=6350
-AN DDR_PCLKOUT2# MAX_LENGTH=6450
-AN DDR_PCLKOUT2 MIN_LENGTH=6350
-AN DDR_PCLKOUT2 MAX_LENGTH=6450
-AN DDR_PCLKOUT0# MIN_LENGTH=6350
+AN DDR_PCKE PCBCLASS=PPCDDR
+AN $1N1592 NC
+AN $1N1593 NC
+AN $1N1594 NC
+AN $1N1595 NC
+AN $1N1515 NC
+AN $1N1516 NC
+AN $1N1513 NC
+AN $1N1514 NC
+AN $1N1511 NC
+AN $1N1512 NC
+AN $1N1509 NC
+AN $1N1510 NC
+AN $1N1508 NC
+AN DDR_PBA2 PCBCLASS=PPCDDR
+AN DDR_PBA1 PCBCLASS=PPCDDR
+AN DDR_PDQS8 PCBCLASS=PPCDDR
+AN DDR_PDQS6 PCBCLASS=PPCDDR
+AN DDR_PDQS5 PCBCLASS=PPCDDR
+AN DDR_PDQS4 PCBCLASS=PPCDDR
+AN DDR_PDQS3 PCBCLASS=PPCDDR
+AN DDR_PDQS2 PCBCLASS=PPCDDR
+AN DDR_PDQS1 PCBCLASS=PPCDDR
+AN DDR_PDM5 PCBCLASS=PPCDDR
+AN DDR_PDQS0 PCBCLASS=PPCDDR
+AN DDR_PDM0 PCBCLASS=PPCDDR
+AN DDR_PRAS# PCBCLASS=PPCDDR
+AN DDR_PCAS# PCBCLASS=PPCDDR
+AN DDR_PWE# PCBCLASS=PPCDDR
+AN DDR_PDQ22 PCBCLASS=PPCDDR
+AN DDR_PDM7 PCBCLASS=PPCDDR
+AN DDR_PDQS7 PCBCLASS=PPCDDR
+AN DDR_PODT0 PCBCLASS=PPCDDR
+AN DDR_PDM1 PCBCLASS=PPCDDR
+AN DDR_PCS1# PCBCLASS=PPCDDR
+AN DDR_PCS0# PCBCLASS=PPCDDR
+AN DDR_PODT1 PCBCLASS=PPCDDR
+AN DDR_PDM2 PCBCLASS=PPCDDR
+AN DDR_PDM3 PCBCLASS=PPCDDR
+AN DDR_PDM4 PCBCLASS=PPCDDR
+AN DDR_PDM6 PCBCLASS=PPCDDR
+AN DDR_PDM8 PCBCLASS=PPCDDR
+AN DDR_PBA0 PCBCLASS=PPCDDR
+AN $1N1471 NC
+AN $1N1507 NC
 AN DDR_PCLKOUT0# MAX_LENGTH=6450
-AN DDR_PCLKOUT0 MIN_LENGTH=6350
+AN DDR_PCLKOUT0# MIN_LENGTH=6350
 AN DDR_PCLKOUT0 MAX_LENGTH=6450
-AN DDR_PCLKOUT1# MIN_LENGTH=6350
+AN DDR_PCLKOUT0 MIN_LENGTH=6350
 AN DDR_PCLKOUT1# MAX_LENGTH=6450
-AN DDR_PCLKOUT1 MIN_LENGTH=6350
+AN DDR_PCLKOUT1# MIN_LENGTH=6350
 AN DDR_PCLKOUT1 MAX_LENGTH=6450
-AN FBOUT MIN_LENGTH=155
-AN FBOUT MAX_LENGTH=165
-AN FBOUT# MIN_LENGTH=155
+AN DDR_PCLKOUT1 MIN_LENGTH=6350
+AN DDR_PCLKOUT2# MAX_LENGTH=6450
+AN DDR_PCLKOUT2# MIN_LENGTH=6350
+AN DDR_PCLKOUT2 MAX_LENGTH=6450
+AN DDR_PCLKOUT2 MIN_LENGTH=6350
+AN $1N1326 NC
+AN $1N1325 NC
+AN $1N1324 NC
+AN $1N1323 NC
+AN $1N1322 NC
+AN $1N1321 NC
+AN $1N1320 NC
+AN $1N1319 NC
+AN $1N1318 NC
+AN DDR_PCLKOUT# MAX_LENGTH=510
+AN DDR_PCLKOUT# MIN_LENGTH=500
+AN DDR_PCLKOUT MAX_LENGTH=510
+AN DDR_PCLKOUT MIN_LENGTH=500
 AN FBOUT# MAX_LENGTH=165
+AN FBOUT# MIN_LENGTH=155
+AN FBOUT MAX_LENGTH=165
+AN FBOUT MIN_LENGTH=155
+AN DDR_PA10 PCBCLASS=PPCDDR
+AN DDR_PA13 PCBCLASS=PPCDDR
+AN DDR_PA11 PCBCLASS=PPCDDR
+AN DDR_PA1 PCBCLASS=PPCDDR
+AN DDR_PA4 PCBCLASS=PPCDDR
+AN DDR_PA2 PCBCLASS=PPCDDR
+AN DDR_PA3 PCBCLASS=PPCDDR
+AN DDR_PA5 PCBCLASS=PPCDDR
+AN DDR_PA9 PCBCLASS=PPCDDR
+AN DDR_PA7 PCBCLASS=PPCDDR
+AN DDR_PA0 PCBCLASS=PPCDDR
+AN DDR_PA6 PCBCLASS=PPCDDR
+AN DDR_PA8 PCBCLASS=PPCDDR
+AN DDR_PA12 PCBCLASS=PPCDDR
+AN PPC_ECC1 PCBCLASS=PPCDDR
+AN PPC_ECC3 PCBCLASS=PPCDDR
+AN PPC_ECC5 PCBCLASS=PPCDDR
+AN PPC_ECC2 PCBCLASS=PPCDDR
+AN PPC_ECC0 PCBCLASS=PPCDDR
+AN PPC_ECC4 PCBCLASS=PPCDDR
+AN PPC_ECC7 PCBCLASS=PPCDDR
+AN PPC_ECC6 PCBCLASS=PPCDDR
 AN DDR_PDQ0 PCBCLASS=PPCDDR
 AN DDR_PDQ32 PCBCLASS=PPCDDR
 AN DDR_PDQ55 PCBCLASS=PPCDDR
@@ -1101,1624 +1186,852 @@ AN DDR_PDQ3 PCBCLASS=PPCDDR
 AN DDR_PDQ2 PCBCLASS=PPCDDR
 AN DDR_PDQ1 PCBCLASS=PPCDDR
 AN DDR_PDQ60 PCBCLASS=PPCDDR
-AN DDR_PDQ22 PCBCLASS=PPCDDR
+AN DDR_PDQ28 PCBCLASS=PPCDDR
+AN DDR_PDQ62 PCBCLASS=PPCDDR
 AN DDR_PDQ41 PCBCLASS=PPCDDR
 AN DDR_PDQ45 PCBCLASS=PPCDDR
 AN DDR_PDQ43 PCBCLASS=PPCDDR
-AN DDR_PDQ28 PCBCLASS=PPCDDR
-AN DDR_PDQ62 PCBCLASS=PPCDDR
+AN DDR_PDQ59 PCBCLASS=PPCDDR
 AN DDR_PDQ63 PCBCLASS=PPCDDR
 AN DDR_PDQ61 PCBCLASS=PPCDDR
-AN DDR_PDQ59 PCBCLASS=PPCDDR
 AN DDR_PDQ58 PCBCLASS=PPCDDR
-AN DDR_PCLKOUT MAX_LENGTH=510
-AN DDR_PCLKOUT MIN_LENGTH=500
-AN DDR_PCLKOUT XREF=22-2A
-AN DDR_PCLKOUT# MAX_LENGTH=510
-AN DDR_PCLKOUT# MIN_LENGTH=500
-AN DDR_PCLKOUT# XREF=22-2A
-AN DDR_PCLKOUT MAX_LENGTH=510
-AN DDR_PCLKOUT MIN_LENGTH=500
-AN DDR_PCLKOUT# MAX_LENGTH=510
-AN DDR_PCLKOUT# MIN_LENGTH=500
-AN $1N1318 NC
-AN $1N1319 NC
-AN $1N1320 NC
-AN $1N1321 NC
-AN $1N1322 NC
-AN $1N1323 NC
-AN $1N1324 NC
-AN $1N1325 NC
-AN $1N1326 NC
-AN DDR_PDQS8 PCBCLASS=PPCDDR
-AN DDR_PDQS8 XREF=22-8D
-AN PPC_ECC2 PCBCLASS=PPCDDR
-AN PPC_ECC0 PCBCLASS=PPCDDR
-AN PPC_ECC4 PCBCLASS=PPCDDR
-AN PPC_ECC7 PCBCLASS=PPCDDR
-AN PPC_ECC6 PCBCLASS=PPCDDR
-AN PPC_ECC5 PCBCLASS=PPCDDR
-AN PPC_ECC3 PCBCLASS=PPCDDR
-AN PPC_ECC1 PCBCLASS=PPCDDR
-AN DDR_PA10 PCBCLASS=PPCDDR
-AN DDR_PA13 PCBCLASS=PPCDDR
-AN DDR_PA1 PCBCLASS=PPCDDR
-AN DDR_PA4 PCBCLASS=PPCDDR
-AN DDR_PA2 PCBCLASS=PPCDDR
-AN DDR_PA5 PCBCLASS=PPCDDR
-AN DDR_PA9 PCBCLASS=PPCDDR
-AN DDR_PA7 PCBCLASS=PPCDDR
-AN DDR_PA0 PCBCLASS=PPCDDR
-AN DDR_PA6 PCBCLASS=PPCDDR
-AN DDR_PA8 PCBCLASS=PPCDDR
-AN DDR_PA3 PCBCLASS=PPCDDR
-AN DDR_PA11 PCBCLASS=PPCDDR
-AN DDR_PA12 PCBCLASS=PPCDDR
-AN $1N1507 NC
-AN DDR_PBA1 XREF=22-8K,22-9D
-AN DDR_PBA2 XREF=22-9D,22-10L
-AN DDR_PBA2 XREF=22-8K,22-10L
-AN DDR_PBA1 XREF=22-8K,22-8L
-AN DDR_PBA0 XREF=22-7L,22-8K
-AN DDR_PBA0 XREF=22-7L,22-9D
-AN DDR_PCAS# XREF=22-7L,22-9D
-AN DDR_PCKE PCBCLASS=PPCDDR
-AN DDR_PCKE XREF=22-6K,22-8D
-AN DDR_PRAS# PCBCLASS=PPCDDR
-AN DDR_PRAS# XREF=22-7L,22-9D
-AN $1N1471 NC
-AN DDR_PODT1 PCBCLASS=PPCDDR
-AN DDR_PODT1 XREF=22-8D
-AN DDR_PODT0 PCBCLASS=PPCDDR
-AN DDR_PODT0 XREF=22-8D
-AN DDR_PCS1# PCBCLASS=PPCDDR
-AN DDR_PCS1# XREF=22-3K,22-8D
-AN DDR_PCAS# PCBCLASS=PPCDDR
-AN DDR_PCAS# XREF=22-8K,22-9D
-AN DDR_PCS0# XREF=22-3K,22-8D
-AN DDR_PWE# XREF=22-3K,22-9D
-AN DDR_PRAS# XREF=22-7K,22-9D
-AN DDR_PBA0 PCBCLASS=PPCDDR
-AN DDR_PBA0 XREF=22-8K,22-9D
-AN DDR_PDM1 XREF=22-6K
-AN DDR_PDM2 XREF=22-6K
-AN DDR_PDM3 XREF=22-6K
-AN DDR_PDM4 XREF=22-6K
-AN DDR_PDM6 XREF=22-6K
-AN DDR_PDM8 XREF=22-6K
-AN DDR_PCKE XREF=22-6K,22-11L
-AN DDR_PODT1 XREF=22-6L
-AN DDR_PDM8 PCBCLASS=PPCDDR
-AN DDR_PDM8 XREF=22-8D
-AN DDR_PDM7 PCBCLASS=PPCDDR
-AN DDR_PDM7 XREF=22-8D
-AN DDR_PDM6 PCBCLASS=PPCDDR
-AN DDR_PDM6 XREF=22-9D
-AN DDR_PDM5 PCBCLASS=PPCDDR
-AN DDR_PDM5 XREF=22-9D
-AN DDR_PDM4 PCBCLASS=PPCDDR
-AN DDR_PDM4 XREF=22-9D
-AN DDR_PDM3 PCBCLASS=PPCDDR
-AN DDR_PDM3 XREF=22-9D
-AN DDR_PDM2 PCBCLASS=PPCDDR
-AN DDR_PDM2 XREF=22-9D
-AN DDR_PCS0# PCBCLASS=PPCDDR
-AN DDR_PCS0# XREF=22-7L,22-8D
-AN DDR_PCS1# XREF=22-7L,22-8D
-AN DDR_PWE# PCBCLASS=PPCDDR
-AN DDR_PWE# XREF=22-7L,22-9D
-AN DDR_PCS0# XREF=22-3K,22-7L
-AN DDR_PCS1# XREF=22-3K,22-7L
-AN DDR_PDQS7 PCBCLASS=PPCDDR
-AN DDR_PDQS7 XREF=22-8D
-AN DDR_PDQS6 PCBCLASS=PPCDDR
-AN DDR_PDQS6 XREF=22-8D
-AN DDR_PDQS5 PCBCLASS=PPCDDR
-AN DDR_PDQS5 XREF=22-8D
-AN DDR_PDQS4 PCBCLASS=PPCDDR
-AN DDR_PDQS4 XREF=22-8D
-AN DDR_PDQS3 PCBCLASS=PPCDDR
-AN DDR_PDQS3 XREF=22-8D
-AN DDR_PDQS2 PCBCLASS=PPCDDR
-AN DDR_PDQS2 XREF=22-8D
-AN DDR_PDQS1 PCBCLASS=PPCDDR
-AN DDR_PDQS1 XREF=22-8D
-AN DDR_PDQS0 PCBCLASS=PPCDDR
-AN DDR_PDQS0 XREF=22-8D
-AN DDR_PDM1 PCBCLASS=PPCDDR
-AN DDR_PDM1 XREF=22-9D
-AN DDR_PDM0 PCBCLASS=PPCDDR
-AN DDR_PDM0 XREF=22-9D
-AN DDR_PODT0 XREF=22-7L
-AN DDR_PDQS7 XREF=22-5K
-AN DDR_PDM7 XREF=22-6K
-AN DDR_PWE# XREF=22-3K,22-7L
-AN DDR_PCAS# XREF=22-7L,22-8K
-AN DDR_PRAS# XREF=22-7K,22-7L
-AN DDR_PDM0 XREF=22-5K
-AN DDR_PDQS0 XREF=22-4K
-AN DDR_PDM5 XREF=22-6K
-AN DDR_PDQS1 XREF=22-4K
-AN DDR_PDQS2 XREF=22-4K
-AN DDR_PDQS3 XREF=22-4K
-AN DDR_PDQS4 XREF=22-4K
-AN DDR_PDQS5 XREF=22-5K
-AN DDR_PDQS6 XREF=22-5K
-AN DDR_PDQS8 XREF=22-5K
-AN DDR_PBA1 PCBCLASS=PPCDDR
-AN DDR_PBA1 XREF=22-8L,22-9D
-AN DDR_PBA2 PCBCLASS=PPCDDR
-AN DDR_PBA2 XREF=22-8K,22-9D
-AN $1N1508 NC
-AN $1N1510 NC
-AN $1N1509 NC
-AN $1N1512 NC
-AN $1N1511 NC
-AN $1N1514 NC
-AN $1N1513 NC
-AN $1N1516 NC
-AN $1N1515 NC
-AN $1N1595 NC
-AN $1N1594 NC
-AN $1N1593 NC
-AN $1N1592 NC
-AN DDR_PCKE XREF=22-8D,22-11L
-G 3V3
+G GND
+G 1V8
 G DDR_VTT
 G DDR_VREF_0V9
-G 1V8
+G 3V3
 G 5V
-G GND
 M IOD_Schematic:r $1I1577
-I $1I1577 IOD_Schematic:r FBOUT# FBOUT SCHLOC=22A1`DEVICE=RES0402_55`STANDARDS=0402`GEOMETRY.HEIGHT=0.4MM`PKG_TYPE=RESC1005X40N`POWERRATING=0.0625`VALUE=120R`P/D_NUM=0402WGF0121T1E`MANUFACTURER=ROYAL OHM`REFDES=R169`
+I $1I1577 IOD_Schematic:r FBOUT# FBOUT DEVICE`STANDARDS=0402`GEOMETRY.HEIGHT=0.4MM`PKG_TYPE`POWERRATING=0.0625`VALUE`P/D_NUM`MANUFACTURER`REFDES=R?`
 |R 9:28_5-9-07
-API $1I1577 IOD_Schematic:r 1 PINLOC=22A1
 API $1I1577 IOD_Schematic:r 1 #=1
-API $1I1577 IOD_Schematic:r 2 PINLOC=22A1
 API $1I1577 IOD_Schematic:r 2 #=2
 M IOD_Schematic:r $1I1524
-I $1I1524 IOD_Schematic:r 1V8 $1N1525 SCHLOC=22A3`SUP=AVNET`RATING=0.0625W`TOLERANCE=5%`STANDARDS=0402`GEOMETRY.HEIGHT=0.4MM`PKG_TYPE=RESC1005X40N`POWERRATING=0.0625`VALUE=10K`P/D_NUM=0402WGF0103T1E`MANUFACTURER=ROYAL OHM`REFDES=R167`DEVICE=RES0402_55`
+I $1I1524 IOD_Schematic:r 1V8 $1N1525 SUP=AVNET`RATING=0.0625W`TOLERANCE`STANDARDS=0402`GEOMETRY.HEIGHT=0.4MM`PKG_TYPE`POWERRATING=0.0625`VALUE`P/D_NUM`MANUFACTURER`REFDES=R?`DEVICE`
 |R 9:28_5-9-07
-API $1I1524 IOD_Schematic:r 1 PINLOC=22A3
 API $1I1524 IOD_Schematic:r 1 #=1
-API $1I1524 IOD_Schematic:r 2 PINLOC=22B3
 API $1I1524 IOD_Schematic:r 2 #=2
 M IOD_Schematic:tp $1I1412
-I $1I1412 IOD_Schematic:tp PAR_IN SCHLOC=22L2`GEOMETRY.HEIGHT=0`PARTS=1`LEVEL=STD`MANUFACTURER=NA`REFDES=TP5`P/D_NUM=N/A`DESCRIPTION=TEST POINT`
+I $1I1412 IOD_Schematic:tp PAR_IN GEOMETRY.HEIGHT=0`PARTS=1`LEVEL=STD`MANUFACTURER`REFDES=TP?`P/D_NUM`DESCRIPTION=TEST POINT`
 |R 9:11_9-20-07
-API $1I1412 IOD_Schematic:tp 1 PINLOC=22K2
 API $1I1412 IOD_Schematic:tp 1 #=1
 M IOD_Schematic:r $1I1387
-I $1I1387 IOD_Schematic:r 5V $1N1372 SCHLOC=22B5`SUP=AVNET`RATING=0.0625W`DEVICE=RES0402_55`TOLERANCE=5%`STANDARDS=0402`GEOMETRY.HEIGHT=0.4MM`PKG_TYPE=RESC1005X40N`POWERRATING=0.0625`VALUE=10K`P/D_NUM=0402WGF0103T1E`MANUFACTURER=ROYAL OHM`REFDES=R230`
+I $1I1387 IOD_Schematic:r 5V $1N1372 SUP=AVNET`RATING=0.0625W`DEVICE`TOLERANCE`STANDARDS=0402`GEOMETRY.HEIGHT=0.4MM`PKG_TYPE`POWERRATING=0.0625`VALUE`P/D_NUM`MANUFACTURER`REFDES=R?`
 |R 9:28_5-9-07
-API $1I1387 IOD_Schematic:r 1 PINLOC=22B5
 API $1I1387 IOD_Schematic:r 1 #=1
-API $1I1387 IOD_Schematic:r 2 PINLOC=22B5
 API $1I1387 IOD_Schematic:r 2 #=2
 M IOD_Schematic:c $1I1393
-I $1I1393 IOD_Schematic:c 1V8 GND SCHLOC=22A5`GEOMETRY.HEIGHT=2.2MM`DEVICE=CAP1210_220`MANUFACTURER=MURATA`REFDES=C456`VALUE=10UF`TOLERANCE=±10%`VOLTAGERATING=16V`PKG_TYPE=CAPC3225X220N`P/D_NUM=GRM32DR61C106KA01K`PARTS=1`
+I $1I1393 IOD_Schematic:c 1V8 GND GEOMETRY.HEIGHT=2.2MM`DEVICE`MANUFACTURER`REFDES=C?`VALUE`TOLERANCE`VOLTAGERATING=16V`PKG_TYPE`P/D_NUM`PARTS=1`
 |R 6:11_8-28-07
-API $1I1393 IOD_Schematic:c 1 PINLOC=22A5
 API $1I1393 IOD_Schematic:c 1 #=1
-API $1I1393 IOD_Schematic:c 2 PINLOC=22A5
 API $1I1393 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1395
-I $1I1395 IOD_Schematic:c DDR_VTT GND SCHLOC=22E5`GEOMETRY.HEIGHT=2.2MM`DEVICE=CAP1210_220`MANUFACTURER=MURATA`REFDES=C458`VALUE=10UF`TOLERANCE=±10%`VOLTAGERATING=16V`PKG_TYPE=CAPC3225X220N`P/D_NUM=GRM32DR61C106KA01K`PARTS=1`
+I $1I1395 IOD_Schematic:c DDR_VTT GND GEOMETRY.HEIGHT=2.2MM`DEVICE`MANUFACTURER`REFDES=C?`VALUE`TOLERANCE`VOLTAGERATING=16V`PKG_TYPE`P/D_NUM`PARTS=1`
 |R 6:11_8-28-07
-API $1I1395 IOD_Schematic:c 1 PINLOC=22E5
 API $1I1395 IOD_Schematic:c 1 #=1
-API $1I1395 IOD_Schematic:c 2 PINLOC=22E5
 API $1I1395 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1396
-I $1I1396 IOD_Schematic:c DDR_VREF_0V9 GND SCHLOC=22D5`MANUFACTURER=MURATA`REFDES=C453`VALUE=100NF`TYPE=FIXED`TOLERANCE=10%`VOLTAGERATING=10V`DIELECTRIC=X7R`DEVICE=CHIP_CAPACITOR`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE=CAPC1005X55N`P/D_NUM=GRM155R71A104KAO1B`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
+I $1I1396 IOD_Schematic:c DDR_VREF_0V9 GND MANUFACTURER`REFDES=C?`VALUE`TYPE=FIXED`TOLERANCE`VOLTAGERATING=10V`DIELECTRIC=X7R`DEVICE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE`P/D_NUM`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
 |R 6:11_8-28-07
-API $1I1396 IOD_Schematic:c 1 PINLOC=22D5
 API $1I1396 IOD_Schematic:c 1 #=1
-API $1I1396 IOD_Schematic:c 2 PINLOC=22D5
 API $1I1396 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1397
-I $1I1397 IOD_Schematic:c 5V GND SCHLOC=22A5`DEVICE=CAP0805_135`PARTS=1`P/D_NUM=GRM21BR61E475KA12K`PKG_TYPE=CAPC2012X135N`VOLTAGERATING=10V`TOLERANCE=±10%`VALUE=4U7F`REFDES=C459`GEOMETRY.HEIGHT=1.35MM`MANUFACTURER=MURATA`
+I $1I1397 IOD_Schematic:c 5V GND DEVICE`PARTS=1`P/D_NUM`PKG_TYPE`VOLTAGERATING=10V`TOLERANCE`VALUE`REFDES=C?`GEOMETRY.HEIGHT=1.35MM`MANUFACTURER`
 |R 6:11_8-28-07
-API $1I1397 IOD_Schematic:c 1 PINLOC=22A5
 API $1I1397 IOD_Schematic:c 1 #=1
-API $1I1397 IOD_Schematic:c 2 PINLOC=22A5
 API $1I1397 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1178
-I $1I1178 IOD_Schematic:c 1V8 GND SCHLOC=22P1`MANUFACTURER=MURATA`REFDES=C452`VALUE=10NF`TYPE=FIXED`TOLERANCE=10%`VOLTAGERATING=25V`DIELECTRIC=X7R`DEVICE=CHIP_CAPACITOR`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE=CAPC1005X55N`P/D_NUM=GRM155R71E103KAO1B`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
+I $1I1178 IOD_Schematic:c 1V8 GND MANUFACTURER`REFDES=C?`VALUE`TYPE=FIXED`TOLERANCE`VOLTAGERATING=25V`DIELECTRIC=X7R`DEVICE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE`P/D_NUM`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
 |R 6:11_8-28-07
-API $1I1178 IOD_Schematic:c 1 PINLOC=22P1
 API $1I1178 IOD_Schematic:c 1 #=1
-API $1I1178 IOD_Schematic:c 2 PINLOC=22P1
 API $1I1178 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1177
-I $1I1177 IOD_Schematic:c 1V8 GND SCHLOC=22P1`MANUFACTURER=MURATA`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM=GRM155R71E103KAO1B`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIP_CAPACITOR`DIELECTRIC=X7R`VOLTAGERATING=25V`TOLERANCE=10%`TYPE=FIXED`VALUE=10NF`REFDES=C451`
+I $1I1177 IOD_Schematic:c 1V8 GND MANUFACTURER`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM`PKG_TYPE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE`DIELECTRIC=X7R`VOLTAGERATING=25V`TOLERANCE`TYPE=FIXED`VALUE`REFDES=C?`
 |R 6:11_8-28-07
-API $1I1177 IOD_Schematic:c 1 PINLOC=22P1
 API $1I1177 IOD_Schematic:c 1 #=1
-API $1I1177 IOD_Schematic:c 2 PINLOC=22P1
 API $1I1177 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1174
-I $1I1174 IOD_Schematic:c 1V8 GND SCHLOC=22R1`MANUFACTURER=MURATA`REFDES=C448`VALUE=10NF`TYPE=FIXED`TOLERANCE=10%`VOLTAGERATING=25V`DIELECTRIC=X7R`DEVICE=CHIP_CAPACITOR`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE=CAPC1005X55N`P/D_NUM=GRM155R71E103KAO1B`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
+I $1I1174 IOD_Schematic:c 1V8 GND MANUFACTURER`REFDES=C?`VALUE`TYPE=FIXED`TOLERANCE`VOLTAGERATING=25V`DIELECTRIC=X7R`DEVICE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE`P/D_NUM`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
 |R 6:11_8-28-07
-API $1I1174 IOD_Schematic:c 1 PINLOC=22R1
 API $1I1174 IOD_Schematic:c 1 #=1
-API $1I1174 IOD_Schematic:c 2 PINLOC=22R1
 API $1I1174 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1173
-I $1I1173 IOD_Schematic:c 1V8 GND SCHLOC=22R1`MANUFACTURER=MURATA`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM=GRM155R71E103KAO1B`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIP_CAPACITOR`DIELECTRIC=X7R`VOLTAGERATING=25V`TOLERANCE=10%`TYPE=FIXED`VALUE=10NF`REFDES=C447`
+I $1I1173 IOD_Schematic:c 1V8 GND MANUFACTURER`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM`PKG_TYPE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE`DIELECTRIC=X7R`VOLTAGERATING=25V`TOLERANCE`TYPE=FIXED`VALUE`REFDES=C?`
 |R 6:11_8-28-07
-API $1I1173 IOD_Schematic:c 1 PINLOC=22R1
 API $1I1173 IOD_Schematic:c 1 #=1
-API $1I1173 IOD_Schematic:c 2 PINLOC=22R1
 API $1I1173 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1172
-I $1I1172 IOD_Schematic:c 1V8 GND SCHLOC=22S2`MANUFACTURER=MURATA`REFDES=C446`VALUE=10NF`TYPE=FIXED`TOLERANCE=10%`VOLTAGERATING=25V`DIELECTRIC=X7R`DEVICE=CHIP_CAPACITOR`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE=CAPC1005X55N`P/D_NUM=GRM155R71E103KAO1B`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
+I $1I1172 IOD_Schematic:c 1V8 GND MANUFACTURER`REFDES=C?`VALUE`TYPE=FIXED`TOLERANCE`VOLTAGERATING=25V`DIELECTRIC=X7R`DEVICE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE`P/D_NUM`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
 |R 6:11_8-28-07
-API $1I1172 IOD_Schematic:c 1 PINLOC=22S3
 API $1I1172 IOD_Schematic:c 1 #=1
-API $1I1172 IOD_Schematic:c 2 PINLOC=22S2
 API $1I1172 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1171
-I $1I1171 IOD_Schematic:c 1V8 GND SCHLOC=22R2`MANUFACTURER=MURATA`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM=GRM155R71E103KAO1B`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIP_CAPACITOR`DIELECTRIC=X7R`VOLTAGERATING=25V`TOLERANCE=10%`TYPE=FIXED`VALUE=10NF`REFDES=C445`
+I $1I1171 IOD_Schematic:c 1V8 GND MANUFACTURER`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM`PKG_TYPE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE`DIELECTRIC=X7R`VOLTAGERATING=25V`TOLERANCE`TYPE=FIXED`VALUE`REFDES=C?`
 |R 6:11_8-28-07
-API $1I1171 IOD_Schematic:c 1 PINLOC=22R3
 API $1I1171 IOD_Schematic:c 1 #=1
-API $1I1171 IOD_Schematic:c 2 PINLOC=22R2
 API $1I1171 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1170
-I $1I1170 IOD_Schematic:c 1V8 GND SCHLOC=22R2`MANUFACTURER=MURATA`REFDES=C444`VALUE=10NF`TYPE=FIXED`TOLERANCE=10%`VOLTAGERATING=25V`DIELECTRIC=X7R`DEVICE=CHIP_CAPACITOR`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE=CAPC1005X55N`P/D_NUM=GRM155R71E103KAO1B`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
+I $1I1170 IOD_Schematic:c 1V8 GND MANUFACTURER`REFDES=C?`VALUE`TYPE=FIXED`TOLERANCE`VOLTAGERATING=25V`DIELECTRIC=X7R`DEVICE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE`P/D_NUM`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
 |R 6:11_8-28-07
-API $1I1170 IOD_Schematic:c 1 PINLOC=22R3
 API $1I1170 IOD_Schematic:c 1 #=1
-API $1I1170 IOD_Schematic:c 2 PINLOC=22R2
 API $1I1170 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1169
-I $1I1169 IOD_Schematic:c 1V8 GND SCHLOC=22Q2`MANUFACTURER=MURATA`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM=GRM155R71E103KAO1B`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIP_CAPACITOR`DIELECTRIC=X7R`VOLTAGERATING=25V`TOLERANCE=10%`TYPE=FIXED`VALUE=10NF`REFDES=C443`
+I $1I1169 IOD_Schematic:c 1V8 GND MANUFACTURER`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM`PKG_TYPE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE`DIELECTRIC=X7R`VOLTAGERATING=25V`TOLERANCE`TYPE=FIXED`VALUE`REFDES=C?`
 |R 6:11_8-28-07
-API $1I1169 IOD_Schematic:c 1 PINLOC=22Q3
 API $1I1169 IOD_Schematic:c 1 #=1
-API $1I1169 IOD_Schematic:c 2 PINLOC=22Q2
 API $1I1169 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1165
-I $1I1165 IOD_Schematic:c 1V8 GND SCHLOC=22R1`MANUFACTURER=MURATA`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM=GRM155R71A104KAO1B`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIP_CAPACITOR`DIELECTRIC=X7R`VOLTAGERATING=10V`TOLERANCE=10%`TYPE=FIXED`VALUE=100NF`REFDES=C441`
+I $1I1165 IOD_Schematic:c 1V8 GND MANUFACTURER`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM`PKG_TYPE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE`DIELECTRIC=X7R`VOLTAGERATING=10V`TOLERANCE`TYPE=FIXED`VALUE`REFDES=C?`
 |R 6:11_8-28-07
-API $1I1165 IOD_Schematic:c 1 PINLOC=22R1
 API $1I1165 IOD_Schematic:c 1 #=1
-API $1I1165 IOD_Schematic:c 2 PINLOC=22R1
 API $1I1165 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1167
-I $1I1167 IOD_Schematic:c 1V8 GND SCHLOC=22R1`MANUFACTURER=MURATA`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM=GRM155R71A104KAO1B`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIP_CAPACITOR`DIELECTRIC=X7R`VOLTAGERATING=10V`TOLERANCE=10%`TYPE=FIXED`VALUE=100NF`REFDES=C442`
+I $1I1167 IOD_Schematic:c 1V8 GND MANUFACTURER`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM`PKG_TYPE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE`DIELECTRIC=X7R`VOLTAGERATING=10V`TOLERANCE`TYPE=FIXED`VALUE`REFDES=C?`
 |R 6:11_8-28-07
-API $1I1167 IOD_Schematic:c 1 PINLOC=22R1
 API $1I1167 IOD_Schematic:c 1 #=1
-API $1I1167 IOD_Schematic:c 2 PINLOC=22R1
 API $1I1167 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1157
-I $1I1157 IOD_Schematic:c 1V8 GND SCHLOC=22Q1`MANUFACTURER=MURATA`REFDES=C439`VALUE=100NF`TYPE=FIXED`TOLERANCE=10%`VOLTAGERATING=10V`DIELECTRIC=X7R`DEVICE=CHIP_CAPACITOR`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE=CAPC1005X55N`P/D_NUM=GRM155R71A104KAO1B`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
+I $1I1157 IOD_Schematic:c 1V8 GND MANUFACTURER`REFDES=C?`VALUE`TYPE=FIXED`TOLERANCE`VOLTAGERATING=10V`DIELECTRIC=X7R`DEVICE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE`P/D_NUM`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
 |R 6:11_8-28-07
-API $1I1157 IOD_Schematic:c 1 PINLOC=22Q1
 API $1I1157 IOD_Schematic:c 1 #=1
-API $1I1157 IOD_Schematic:c 2 PINLOC=22Q1
 API $1I1157 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1146
-I $1I1146 IOD_Schematic:c 1V8 GND SCHLOC=22P1`MANUFACTURER=MURATA`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM=GRM155R71A104KAO1B`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIP_CAPACITOR`DIELECTRIC=X7R`VOLTAGERATING=10V`TOLERANCE=10%`TYPE=FIXED`VALUE=100NF`REFDES=C437`
+I $1I1146 IOD_Schematic:c 1V8 GND MANUFACTURER`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM`PKG_TYPE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE`DIELECTRIC=X7R`VOLTAGERATING=10V`TOLERANCE`TYPE=FIXED`VALUE`REFDES=C?`
 |R 6:11_8-28-07
-API $1I1146 IOD_Schematic:c 1 PINLOC=22P1
 API $1I1146 IOD_Schematic:c 1 #=1
-API $1I1146 IOD_Schematic:c 2 PINLOC=22P1
 API $1I1146 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1148
-I $1I1148 IOD_Schematic:c 1V8 GND SCHLOC=22P1`MANUFACTURER=MURATA`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM=GRM155R71A104KAO1B`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIP_CAPACITOR`DIELECTRIC=X7R`VOLTAGERATING=10V`TOLERANCE=10%`TYPE=FIXED`VALUE=100NF`REFDES=C438`
+I $1I1148 IOD_Schematic:c 1V8 GND MANUFACTURER`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM`PKG_TYPE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE`DIELECTRIC=X7R`VOLTAGERATING=10V`TOLERANCE`TYPE=FIXED`VALUE`REFDES=C?`
 |R 6:11_8-28-07
-API $1I1148 IOD_Schematic:c 1 PINLOC=22P1
 API $1I1148 IOD_Schematic:c 1 #=1
-API $1I1148 IOD_Schematic:c 2 PINLOC=22P1
 API $1I1148 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1138
-I $1I1138 IOD_Schematic:c 1V8 GND SCHLOC=22R2`MANUFACTURER=MURATA`REFDES=C435`VALUE=100NF`TYPE=FIXED`TOLERANCE=10%`VOLTAGERATING=10V`DIELECTRIC=X7R`DEVICE=CHIP_CAPACITOR`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE=CAPC1005X55N`P/D_NUM=GRM155R71A104KAO1B`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
+I $1I1138 IOD_Schematic:c 1V8 GND MANUFACTURER`REFDES=C?`VALUE`TYPE=FIXED`TOLERANCE`VOLTAGERATING=10V`DIELECTRIC=X7R`DEVICE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE`P/D_NUM`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
 |R 6:11_8-28-07
-API $1I1138 IOD_Schematic:c 1 PINLOC=22R3
 API $1I1138 IOD_Schematic:c 1 #=1
-API $1I1138 IOD_Schematic:c 2 PINLOC=22R2
 API $1I1138 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1140
-I $1I1140 IOD_Schematic:c 1V8 GND SCHLOC=22R2`MANUFACTURER=MURATA`REFDES=C436`VALUE=100NF`TYPE=FIXED`TOLERANCE=10%`VOLTAGERATING=10V`DIELECTRIC=X7R`DEVICE=CHIP_CAPACITOR`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE=CAPC1005X55N`P/D_NUM=GRM155R71A104KAO1B`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
+I $1I1140 IOD_Schematic:c 1V8 GND MANUFACTURER`REFDES=C?`VALUE`TYPE=FIXED`TOLERANCE`VOLTAGERATING=10V`DIELECTRIC=X7R`DEVICE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE`P/D_NUM`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
 |R 6:11_8-28-07
-API $1I1140 IOD_Schematic:c 1 PINLOC=22R3
 API $1I1140 IOD_Schematic:c 1 #=1
-API $1I1140 IOD_Schematic:c 2 PINLOC=22R2
 API $1I1140 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1074
-I $1I1074 IOD_Schematic:c DDR_VREF_0V9 GND SCHLOC=22P2`MANUFACTURER=MURATA`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM=GRM155R71A104KAO1B`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIP_CAPACITOR`DIELECTRIC=X7R`VOLTAGERATING=10V`TOLERANCE=10%`TYPE=FIXED`VALUE=100NF`REFDES=C432`
+I $1I1074 IOD_Schematic:c DDR_VREF_0V9 GND MANUFACTURER`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM`PKG_TYPE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE`DIELECTRIC=X7R`VOLTAGERATING=10V`TOLERANCE`TYPE=FIXED`VALUE`REFDES=C?`
 |R 6:11_8-28-07
-API $1I1074 IOD_Schematic:c 1 PINLOC=22P3
 API $1I1074 IOD_Schematic:c 1 #=1
-API $1I1074 IOD_Schematic:c 2 PINLOC=22P2
 API $1I1074 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1075
-I $1I1075 IOD_Schematic:c DDR_VREF_0V9 GND SCHLOC=22P2`MANUFACTURER=MURATA`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM=GRM155R71E103KAO1B`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIP_CAPACITOR`DIELECTRIC=X7R`VOLTAGERATING=25V`TOLERANCE=10%`TYPE=FIXED`VALUE=10NF`REFDES=C433`
+I $1I1075 IOD_Schematic:c DDR_VREF_0V9 GND MANUFACTURER`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM`PKG_TYPE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE`DIELECTRIC=X7R`VOLTAGERATING=25V`TOLERANCE`TYPE=FIXED`VALUE`REFDES=C?`
 |R 6:11_8-28-07
-API $1I1075 IOD_Schematic:c 1 PINLOC=22P3
 API $1I1075 IOD_Schematic:c 1 #=1
-API $1I1075 IOD_Schematic:c 2 PINLOC=22P2
 API $1I1075 IOD_Schematic:c 2 #=2
 M IOD_Schematic:r $1I1101
-I $1I1101 IOD_Schematic:r DDR_PODT1 GND SCHLOC=22K3`DEVICE=RES0402_55`REFDES=R226`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGF0472T1E`VALUE=4K7`POWERRATING=0.0625`PKG_TYPE=RESC1005X40N`GEOMETRY.HEIGHT=0.4MM`STANDARDS=0402`
+I $1I1101 IOD_Schematic:r DDR_PODT1 GND DEVICE`REFDES=R?`MANUFACTURER`P/D_NUM`VALUE`POWERRATING=0.0625`PKG_TYPE`GEOMETRY.HEIGHT=0.4MM`STANDARDS=0402`
 |R 9:28_5-9-07
-API $1I1101 IOD_Schematic:r 1 PINLOC=22K3
 API $1I1101 IOD_Schematic:r 1 #=1
-API $1I1101 IOD_Schematic:r 2 PINLOC=22L3
 API $1I1101 IOD_Schematic:r 2 #=2
 M IOD_Schematic:c $1I994
-I $1I994 IOD_Schematic:c 1V8 GND SCHLOC=22P2`MANUFACTURER=MURATA`REFDES=C454`VALUE=100NF`TYPE=FIXED`TOLERANCE=10%`VOLTAGERATING=10V`DIELECTRIC=X7R`DEVICE=CHIP_CAPACITOR`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE=CAPC1005X55N`P/D_NUM=GRM155R71A104KAO1B`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
+I $1I994 IOD_Schematic:c 1V8 GND MANUFACTURER`REFDES=C?`VALUE`TYPE=FIXED`TOLERANCE`VOLTAGERATING=10V`DIELECTRIC=X7R`DEVICE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE`P/D_NUM`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
 |R 6:11_8-28-07
-API $1I994 IOD_Schematic:c 1 PINLOC=22P3
 API $1I994 IOD_Schematic:c 1 #=1
-API $1I994 IOD_Schematic:c 2 PINLOC=22P2
 API $1I994 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1054
-I $1I1054 IOD_Schematic:c 1V8 GND SCHLOC=22Q2`MANUFACTURER=MURATA`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM=GRM155R71A104KAO1B`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIP_CAPACITOR`DIELECTRIC=X7R`VOLTAGERATING=10V`TOLERANCE=10%`TYPE=FIXED`VALUE=100NF`REFDES=C430`
+I $1I1054 IOD_Schematic:c 1V8 GND MANUFACTURER`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM`PKG_TYPE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE`DIELECTRIC=X7R`VOLTAGERATING=10V`TOLERANCE`TYPE=FIXED`VALUE`REFDES=C?`
 |R 6:11_8-28-07
-API $1I1054 IOD_Schematic:c 1 PINLOC=22Q3
 API $1I1054 IOD_Schematic:c 1 #=1
-API $1I1054 IOD_Schematic:c 2 PINLOC=22Q2
 API $1I1054 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1056
-I $1I1056 IOD_Schematic:c 1V8 GND SCHLOC=22Q2`MANUFACTURER=MURATA`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM=GRM155R71A104KAO1B`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIP_CAPACITOR`DIELECTRIC=X7R`VOLTAGERATING=10V`TOLERANCE=10%`TYPE=FIXED`VALUE=100NF`REFDES=C431`
+I $1I1056 IOD_Schematic:c 1V8 GND MANUFACTURER`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM`PKG_TYPE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE`DIELECTRIC=X7R`VOLTAGERATING=10V`TOLERANCE`TYPE=FIXED`VALUE`REFDES=C?`
 |R 6:11_8-28-07
-API $1I1056 IOD_Schematic:c 1 PINLOC=22Q3
 API $1I1056 IOD_Schematic:c 1 #=1
-API $1I1056 IOD_Schematic:c 2 PINLOC=22Q2
 API $1I1056 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1092
-I $1I1092 IOD_Schematic:c 1V8 GND SCHLOC=22Q2`MANUFACTURER=MURATA`REFDES=C434`VALUE=10NF`TYPE=FIXED`TOLERANCE=10%`VOLTAGERATING=25V`DIELECTRIC=X7R`DEVICE=CHIP_CAPACITOR`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE=CAPC1005X55N`P/D_NUM=GRM155R71E103KAO1B`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
+I $1I1092 IOD_Schematic:c 1V8 GND MANUFACTURER`REFDES=C?`VALUE`TYPE=FIXED`TOLERANCE`VOLTAGERATING=25V`DIELECTRIC=X7R`DEVICE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE`P/D_NUM`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
 |R 6:11_8-28-07
-API $1I1092 IOD_Schematic:c 1 PINLOC=22Q3
 API $1I1092 IOD_Schematic:c 1 #=1
-API $1I1092 IOD_Schematic:c 2 PINLOC=22Q2
 API $1I1092 IOD_Schematic:c 2 #=2
 M IOD_Schematic:cap_100nf_0402_16v_10__x7r $1I536
-I $1I536 IOD_Schematic:cap_100nf_0402_16v_10__x7r 1V8 DDR_VREF_0V9 SCHLOC=22B7`P/D_NUM=C0402X7R160-104KN`GEOMETRY.HEIGHT=0.55MM`MANUFACTURER=VENKEL`REFDES=C150`PKG_TYPE=CAPC1005X55N`VALUE=0.1UF`SHAPE`
-API $1I536 IOD_Schematic:cap_100nf_0402_16v_10__x7r 1 PINLOC=22B7
+I $1I536 IOD_Schematic:cap_100nf_0402_16v_10__x7r 1V8 DDR_VREF_0V9 PKG_TYPE=CAPC1005X55N`P/D_NUM=C0402X7R160-104KN`GEOMETRY.HEIGHT=0.55MM`MANUFACTURER`REFDES=C?`VALUE`SHAPE`
 API $1I536 IOD_Schematic:cap_100nf_0402_16v_10__x7r 1 #=1
-API $1I536 IOD_Schematic:cap_100nf_0402_16v_10__x7r 2 PINLOC=22B7
 API $1I536 IOD_Schematic:cap_100nf_0402_16v_10__x7r 2 #=2
 M IOD_Schematic:cap_100nf_0402_16v_10__x7r $1I420
-I $1I420 IOD_Schematic:cap_100nf_0402_16v_10__x7r DDR_VREF_0V9 GND SCHLOC=22B6`P/D_NUM=C0402X7R160-104KN`GEOMETRY.HEIGHT=0.55MM`MANUFACTURER=VENKEL`REFDES=C149`PKG_TYPE=CAPC1005X55N`VALUE=0.1UF`SHAPE`
-API $1I420 IOD_Schematic:cap_100nf_0402_16v_10__x7r 1 PINLOC=22B6
+I $1I420 IOD_Schematic:cap_100nf_0402_16v_10__x7r DDR_VREF_0V9 GND P/D_NUM=C0402X7R160-104KN`PKG_TYPE=CAPC1005X55N`GEOMETRY.HEIGHT=0.55MM`MANUFACTURER`REFDES=C?`VALUE`SHAPE`
 API $1I420 IOD_Schematic:cap_100nf_0402_16v_10__x7r 1 #=1
-API $1I420 IOD_Schematic:cap_100nf_0402_16v_10__x7r 2 PINLOC=22B6
 API $1I420 IOD_Schematic:cap_100nf_0402_16v_10__x7r 2 #=2
 M IOD_Schematic:cap_100nf_0402_16v_10__x7r $1I563
-I $1I563 IOD_Schematic:cap_100nf_0402_16v_10__x7r DDR_VREF_0V9 GND SCHLOC=22B6`P/D_NUM=C0402X7R160-104KN`GEOMETRY.HEIGHT=0.55MM`MANUFACTURER=VENKEL`REFDES=C151`PKG_TYPE=CAPC1005X55N`VALUE=0.1UF`
-API $1I563 IOD_Schematic:cap_100nf_0402_16v_10__x7r 1 PINLOC=22B6
+I $1I563 IOD_Schematic:cap_100nf_0402_16v_10__x7r DDR_VREF_0V9 GND P/D_NUM=C0402X7R160-104KN`PKG_TYPE=CAPC1005X55N`GEOMETRY.HEIGHT=0.55MM`MANUFACTURER`REFDES=C?`VALUE`
 API $1I563 IOD_Schematic:cap_100nf_0402_16v_10__x7r 1 #=1
-API $1I563 IOD_Schematic:cap_100nf_0402_16v_10__x7r 2 PINLOC=22B6
 API $1I563 IOD_Schematic:cap_100nf_0402_16v_10__x7r 2 #=2
 M IOD_Schematic:cap_100nf_0402_16v_10__x7r $1I639
-I $1I639 IOD_Schematic:cap_100nf_0402_16v_10__x7r DDR_VREF_0V9 GND SCHLOC=22B6`P/D_NUM=C0402X7R160-104KN`GEOMETRY.HEIGHT=0.55MM`MANUFACTURER=VENKEL`REFDES=C152`PKG_TYPE=CAPC1005X55N`VALUE=0.1UF`
-API $1I639 IOD_Schematic:cap_100nf_0402_16v_10__x7r 1 PINLOC=22B6
+I $1I639 IOD_Schematic:cap_100nf_0402_16v_10__x7r DDR_VREF_0V9 GND P/D_NUM=C0402X7R160-104KN`PKG_TYPE=CAPC1005X55N`GEOMETRY.HEIGHT=0.55MM`MANUFACTURER`REFDES=C?`VALUE`
 API $1I639 IOD_Schematic:cap_100nf_0402_16v_10__x7r 1 #=1
-API $1I639 IOD_Schematic:cap_100nf_0402_16v_10__x7r 2 PINLOC=22B6
 API $1I639 IOD_Schematic:cap_100nf_0402_16v_10__x7r 2 #=2
 M IOD_Schematic:cap_10nf_0402_25v_10__x7r $1I625
-I $1I625 IOD_Schematic:cap_10nf_0402_25v_10__x7r DDR_VREF_0V9 GND SCHLOC=22C6`GEOMETRY.HEIGHT=0.55MM`SUP=AVNET`MANUFACTURER=MURATA`P/D_NUM=GRM155R60J103KA01J`REFDES=C148`PKG_TYPE=CAPC1005X55N`VALUE=10NF`
-API $1I625 IOD_Schematic:cap_10nf_0402_25v_10__x7r 1 PINLOC=22C6
+I $1I625 IOD_Schematic:cap_10nf_0402_25v_10__x7r DDR_VREF_0V9 GND SUP=AVNET`P/D_NUM=GRM155R60J103KA01J`PKG_TYPE=CAPC1005X55N`GEOMETRY.HEIGHT=0.55MM`MANUFACTURER`REFDES=C?`VALUE`
 API $1I625 IOD_Schematic:cap_10nf_0402_25v_10__x7r 1 #=1
-API $1I625 IOD_Schematic:cap_10nf_0402_25v_10__x7r 2 PINLOC=22C6
 API $1I625 IOD_Schematic:cap_10nf_0402_25v_10__x7r 2 #=2
 M IOD_Schematic:tp $1I1409
-I $1I1409 IOD_Schematic:tp PPC_DDR2_ERROR SCHLOC=22L2`GEOMETRY.HEIGHT=0`PARTS=1`LEVEL=STD`MANUFACTURER=NA`DESCRIPTION=TEST POINT`P/D_NUM=N/A`REFDES=TP4`
+I $1I1409 IOD_Schematic:tp PPC_DDR2_ERROR GEOMETRY.HEIGHT=0`PARTS=1`LEVEL=STD`MANUFACTURER`DESCRIPTION=TEST POINT`P/D_NUM`REFDES=TP?`
 |R 9:11_9-20-07
-API $1I1409 IOD_Schematic:tp 1 PINLOC=22K2
 API $1I1409 IOD_Schematic:tp 1 #=1
 P IOD_Schematic:in PPC_DDR2_RESET_N
 I PPC_DDR2_RESET_N IOD_Schematic:in PPC_DDR2_RESET_N 
 |R 7:39_8-30-07
-API PPC_DDR2_RESET_N IOD_Schematic:in 1 XREF=1-3B,1-3M,24-10F
 M IOD_Schematic:r $1I1371
-I $1I1371 IOD_Schematic:r 5V $1N1370 SCHLOC=22B5`SUP=AVNET`RATING=0.0625W`DEVICE=RES0402_55`REFDES=R229`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGF0103T1E`VALUE=10K`POWERRATING=0.0625`PKG_TYPE=RESC1005X40N`GEOMETRY.HEIGHT=0.4MM`STANDARDS=0402`TOLERANCE=5%`
+I $1I1371 IOD_Schematic:r 5V $1N1370 SUP=AVNET`RATING=0.0625W`DEVICE`REFDES=R?`MANUFACTURER`P/D_NUM`VALUE`POWERRATING=0.0625`PKG_TYPE`GEOMETRY.HEIGHT=0.4MM`STANDARDS=0402`TOLERANCE`
 |R 9:28_5-9-07
-API $1I1371 IOD_Schematic:r 1 PINLOC=22B5
 API $1I1371 IOD_Schematic:r 1 #=1
-API $1I1371 IOD_Schematic:r 2 PINLOC=22B5
 API $1I1371 IOD_Schematic:r 2 #=2
 M IOD_Schematic:c $1I1394
-I $1I1394 IOD_Schematic:c DDR_VTT GND SCHLOC=22D5`GEOMETRY.HEIGHT=2.2MM`DEVICE=CAP1210_220`PARTS=1`P/D_NUM=GRM32DR61C106KA01K`PKG_TYPE=CAPC3225X220N`VOLTAGERATING=16V`TOLERANCE=±10%`VALUE=10UF`REFDES=C457`MANUFACTURER=MURATA`
+I $1I1394 IOD_Schematic:c DDR_VTT GND GEOMETRY.HEIGHT=2.2MM`DEVICE`PARTS=1`P/D_NUM`PKG_TYPE`VOLTAGERATING=16V`TOLERANCE`VALUE`REFDES=C?`MANUFACTURER`
 |R 6:11_8-28-07
-API $1I1394 IOD_Schematic:c 1 PINLOC=22D5
 API $1I1394 IOD_Schematic:c 1 #=1
-API $1I1394 IOD_Schematic:c 2 PINLOC=22D5
 API $1I1394 IOD_Schematic:c 2 #=2
 M IOD_Schematic:r $1I1417
-I $1I1417 IOD_Schematic:r $1N1385 DDR_VTT SCHLOC=22D5`TOLERANCE=5%`STANDARDS=0402`GEOMETRY.HEIGHT=0.4MM`PKG_TYPE=RESC1005X40N`POWERRATING=0.0625`VALUE=120R`P/D_NUM=0402WGJ0120T1E`MANUFACTURER=ROYAL OHM`REFDES=R6`DEVICE=RES0402_55`
+I $1I1417 IOD_Schematic:r $1N1385 DDR_VTT TOLERANCE`STANDARDS=0402`GEOMETRY.HEIGHT=0.4MM`PKG_TYPE`POWERRATING=0.0625`VALUE`P/D_NUM`MANUFACTURER`REFDES=R?`DEVICE`
 |R 9:28_5-9-07
-API $1I1417 IOD_Schematic:r 1 PINLOC=22D5
 API $1I1417 IOD_Schematic:r 1 #=1
-API $1I1417 IOD_Schematic:r 2 PINLOC=22D5
 API $1I1417 IOD_Schematic:r 2 #=2
 M IOD_Schematic:c $1I1418
-I $1I1418 IOD_Schematic:c $1N1385 GND SCHLOC=22D5`VALUE=22PF`MANUFACTURER=MURATA`P/D_NUM=GRM1555C1H220JZ01B`PKG_TYPE=CAPC1005X55N`TOLERANCE=±5%`RATING=50V`DESCRIP=CER CAP`REFDES=C21`PARTTYPE=CAPACITORS`MANPARTDESCRIPTION=CHIP CAPACITOR;  CERAMIC; NON-POLARISED; ROHS`MANPARTPACKAGE=0402 (1005)`GEOMETRY.HEIGHT=0.55MM`PADSPASSPCB=TRUE`DATAURL=WWW.MURATA.COM`PARTNUMBERID=7924`
+I $1I1418 IOD_Schematic:c $1N1385 GND VALUE`MANUFACTURER`P/D_NUM`PKG_TYPE`TOLERANCE`RATING=50V`DESCRIP=CER CAP`REFDES=C?`PARTTYPE=CAPACITORS`MANPARTDESCRIPTION=CHIP CAPACITOR;  CERAMIC; NON-POLARISED; ROHS`MANPARTPACKAGE=0402 (1005)`GEOMETRY.HEIGHT=0.55MM`PADSPASSPCB=TRUE`DATAURL=WWW.MURATA.COM`PARTNUMBERID=7924`
 |R 6:11_8-28-07
-API $1I1418 IOD_Schematic:c 1 PINLOC=22D5
 API $1I1418 IOD_Schematic:c 1 #=1
-API $1I1418 IOD_Schematic:c 2 PINLOC=22D5
 API $1I1418 IOD_Schematic:c 2 #=2
 M IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d $1I630
-I $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d DDR_PBA0 DDR_PBA1 DDR_PBA2 DDR_PCS0# DDR_PCS1# DDR_PCAS# DDR_PDM0 DDR_PDM1 DDR_PDM2 DDR_PDM3 DDR_PDM4 DDR_PDM5 DDR_PDM6 DDR_PDM7 DDR_PDM8 DDR_PDQS0 DDR_PDQS1 DDR_PDQS2 DDR_PDQS3 DDR_PDQS4 DDR_PDQS5 DDR_PDQS6 DDR_PDQS7 DDR_PDQS8 PPC_ECC0 PPC_ECC1 PPC_ECC2 PPC_ECC3 PPC_ECC4 PPC_ECC5 PPC_ECC6 PPC_ECC7 DDR_PA0 DDR_PA1 DDR_PA2 DDR_PA3 DDR_PA4 DDR_PA5 DDR_PA6 DDR_PA7 DDR_PA8 DDR_PA9 DDR_PA10 DDR_PA11 DDR_PA12 DDR_PA13 DDR_PCKE DDR_PCLKOUT DDR_PCLKOUT# DDR_PDQ0 DDR_PDQ1 DDR_PDQ2 DDR_PDQ3 DDR_PDQ4 DDR_PDQ5 DDR_PDQ6 DDR_PDQ7 DDR_PDQ8 DDR_PDQ9 DDR_PDQ10 DDR_PDQ11 DDR_PDQ12 DDR_PDQ13 DDR_PDQ14 DDR_PDQ15 DDR_PDQ16 DDR_PDQ17 DDR_PDQ18 DDR_PDQ19 DDR_PDQ20 DDR_PDQ21 DDR_PDQ22 DDR_PDQ23 DDR_PDQ24 DDR_PDQ25 DDR_PDQ26 DDR_PDQ27 DDR_PDQ28 DDR_PDQ29 DDR_PDQ30 DDR_PDQ31 DDR_PDQ32 DDR_PDQ33 DDR_PDQ34 DDR_PDQ35 DDR_PDQ36 DDR_PDQ37 DDR_PDQ38 DDR_PDQ39 DDR_PDQ40 DDR_PDQ41 DDR_PDQ42 DDR_PDQ43 DDR_PDQ44 DDR_PDQ45 DDR_PDQ46 DDR_PDQ47 DDR_PDQ48 DDR_PDQ49 DDR_PDQ50 DDR_PDQ51 DDR_PDQ52 DDR_PDQ53 DDR_PDQ54 DDR_PDQ55 DDR_PDQ56 DDR_PDQ57 DDR_PDQ58 DDR_PDQ59 DDR_PDQ60 DDR_PDQ61 DDR_PDQ62 DDR_PDQ63 DDR_PODT0 DDR_PODT1 DDR_PRAS# DDR_VREF_0V9 DDR_VREF_0V9 DDR_VREF_0V9 DDR_VREF_0V9 DDR_PWE# SCHLOC=22C8`GEOMETRY.HEIGHT=2.65MM`HYPER_MOD_FILE=PPC440EPX.IBS`HYPER_MOD=PPC440EPX-NTA400T`MANUFACTURER=AMCC`P/D_NUM=PPC440EPX-NTA533T`REFDES=U1`PKG_TYPE=BGA680C100P34X34_3500X3500X265`VALUE=440EPX`
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 1 PINLOC=22D9
+I $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d DDR_PBA0 DDR_PBA1 DDR_PBA2 DDR_PCS0# DDR_PCS1# DDR_PCAS# DDR_PDM0 DDR_PDM1 DDR_PDM2 DDR_PDM3 DDR_PDM4 DDR_PDM5 DDR_PDM6 DDR_PDM7 DDR_PDM8 DDR_PDQS0 DDR_PDQS1 DDR_PDQS2 DDR_PDQS3 DDR_PDQS4 DDR_PDQS5 DDR_PDQS6 DDR_PDQS7 DDR_PDQS8 PPC_ECC0 PPC_ECC1 PPC_ECC2 PPC_ECC3 PPC_ECC4 PPC_ECC5 PPC_ECC6 PPC_ECC7 DDR_PA0 DDR_PA1 DDR_PA2 DDR_PA3 DDR_PA4 DDR_PA5 DDR_PA6 DDR_PA7 DDR_PA8 DDR_PA9 DDR_PA10 DDR_PA11 DDR_PA12 DDR_PA13 DDR_PCKE DDR_PCLKOUT DDR_PCLKOUT# DDR_PDQ0 DDR_PDQ1 DDR_PDQ2 DDR_PDQ3 DDR_PDQ4 DDR_PDQ5 DDR_PDQ6 DDR_PDQ7 DDR_PDQ8 DDR_PDQ9 DDR_PDQ10 DDR_PDQ11 DDR_PDQ12 DDR_PDQ13 DDR_PDQ14 DDR_PDQ15 DDR_PDQ16 DDR_PDQ17 DDR_PDQ18 DDR_PDQ19 DDR_PDQ20 DDR_PDQ21 DDR_PDQ22 DDR_PDQ23 DDR_PDQ24 DDR_PDQ25 DDR_PDQ26 DDR_PDQ27 DDR_PDQ28 DDR_PDQ29 DDR_PDQ30 DDR_PDQ31 DDR_PDQ32 DDR_PDQ33 DDR_PDQ34 DDR_PDQ35 DDR_PDQ36 DDR_PDQ37 DDR_PDQ38 DDR_PDQ39 DDR_PDQ40 DDR_PDQ41 DDR_PDQ42 DDR_PDQ43 DDR_PDQ44 DDR_PDQ45 DDR_PDQ46 DDR_PDQ47 DDR_PDQ48 DDR_PDQ49 DDR_PDQ50 DDR_PDQ51 DDR_PDQ52 DDR_PDQ53 DDR_PDQ54 DDR_PDQ55 DDR_PDQ56 DDR_PDQ57 DDR_PDQ58 DDR_PDQ59 DDR_PDQ60 DDR_PDQ61 DDR_PDQ62 DDR_PDQ63 DDR_PODT0 DDR_PODT1 DDR_PRAS# DDR_VREF_0V9 DDR_VREF_0V9 DDR_VREF_0V9 DDR_VREF_0V9 DDR_PWE# GEOMETRY.HEIGHT=2.65MM`HYPER_MOD_FILE=PPC440EPX.IBS`HYPER_MOD=PPC440EPX-NTA400T`MANUFACTURER`P/D_NUM`REFDES=U?`PKG_TYPE`VALUE`
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 1 #=AJ3
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 2 PINLOC=22D9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 2 #=AK3
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 3 PINLOC=22D9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 3 #=AP8
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 4 PINLOC=22D8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 4 #=AH2
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 5 PINLOC=22D8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 5 #=AH1
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 6 PINLOC=22D9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 6 #=AH4
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 7 PINLOC=22D9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 7 #=AL21
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 8 PINLOC=22D9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 8 #=AM18
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 9 PINLOC=22D9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 9 #=AP15
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 10 PINLOC=22D9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 10 #=AL14
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 11 PINLOC=22D9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 11 #=AE4
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 12 PINLOC=22D9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 12 #=AB3
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 13 PINLOC=22D9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 13 #=Y1
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 14 PINLOC=22D8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 14 #=U3
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 15 PINLOC=22D8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 15 #=AN10
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 16 PINLOC=22D8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 16 #=AM21
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 17 PINLOC=22D8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 17 #=AM19
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 18 PINLOC=22D8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 18 #=AL16
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 19 PINLOC=22D8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 19 #=AM13
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 20 PINLOC=22D8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 20 #=AE3
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 21 PINLOC=22D8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 21 #=AB4
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 22 PINLOC=22D8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 22 #=W4
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 23 PINLOC=22D8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 23 #=U4
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 24 PINLOC=22D8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 24 #=AP10
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 25 PINLOC=22D7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 25 #=AM11
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 26 PINLOC=22D7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 26 #=AL11
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 27 PINLOC=22D7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 27 #=AM9
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 28 PINLOC=22D7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 28 #=AL9
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 29 PINLOC=22D7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 29 #=AP11
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 30 PINLOC=22D7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 30 #=AN11
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 31 PINLOC=22D6
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 31 #=AM10
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 32 PINLOC=22D6
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 32 #=AP9
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 33 PINLOC=22D10
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 33 #=AM5
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 34 PINLOC=22D10
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 34 #=AP4
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 35 PINLOC=22D10
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 35 #=AP5
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 36 PINLOC=22D10
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 36 #=AM6
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 37 PINLOC=22D10
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 37 #=AP6
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 38 PINLOC=22D10
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 38 #=AN6
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 39 PINLOC=22D10
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 39 #=AL7
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 40 PINLOC=22D10
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 40 #=AN7
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 41 PINLOC=22D10
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 41 #=AM7
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 42 PINLOC=22D10
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 42 #=AP7
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 43 PINLOC=22D9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 43 #=AL2
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 44 PINLOC=22D9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 44 #=AL8
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 45 PINLOC=22D9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 45 #=AM8
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 46 PINLOC=22D9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 46 #=AG4
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 47 PINLOC=22D8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 47 #=AN9
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 48 PINLOC=22D7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 48 #=AL1
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 49 PINLOC=22D7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 49 #=AK1
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 50 PINLOC=22C10
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 50 #=AN22
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 51 PINLOC=22C10
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 51 #=AP22
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 52 PINLOC=22C10
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 52 #=AM20
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 53 PINLOC=22C10
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 53 #=AL20
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 54 PINLOC=22C10
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 54 #=AL22
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 55 PINLOC=22C10
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 55 #=AM22
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 56 PINLOC=22C10
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 56 #=AN21
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 57 PINLOC=22C10
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 57 #=AP21
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 58 PINLOC=22C10
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 58 #=AP20
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 59 PINLOC=22C10
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 59 #=AL18
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 60 PINLOC=22C9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 60 #=AN17
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 61 PINLOC=22C9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 61 #=AP17
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 62 PINLOC=22C9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 62 #=AN20
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 63 PINLOC=22C9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 63 #=AP19
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 64 PINLOC=22C9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 64 #=AN18
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 65 PINLOC=22C9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 65 #=AP18
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 66 PINLOC=22C9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 66 #=AM16
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 67 PINLOC=22C9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 67 #=AP16
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 68 PINLOC=22C9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 68 #=AL15
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 69 PINLOC=22C9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 69 #=AP14
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 70 PINLOC=22C9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 70 #=AL17
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 71 PINLOC=22C9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 71 #=AM17
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 72 PINLOC=22C9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 72 #=AN15
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 73 PINLOC=22C9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 73 #=AM15
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 74 PINLOC=22C9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 74 #=AP13
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 75 PINLOC=22C9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 75 #=AN13
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 76 PINLOC=22C9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 76 #=AP12
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 77 PINLOC=22C9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 77 #=AL12
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 78 PINLOC=22C9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 78 #=AM14
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 79 PINLOC=22C9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 79 #=AN14
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 80 PINLOC=22C8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 80 #=AL13
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 81 PINLOC=22C8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 81 #=AM12
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 82 PINLOC=22C8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 82 #=AF3
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 83 PINLOC=22C8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 83 #=AF1
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 84 PINLOC=22C8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 84 #=AD4
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 85 PINLOC=22C8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 85 #=AD3
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 86 PINLOC=22C8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 86 #=AG3
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 87 PINLOC=22C8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 87 #=AF2
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 88 PINLOC=22C8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 88 #=AE2
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 89 PINLOC=22C8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 89 #=AE1
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 90 PINLOC=22C8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 90 #=AC3
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 91 PINLOC=22C8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 91 #=AC1
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 92 PINLOC=22C8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 92 #=AA4
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 93 PINLOC=22C8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 93 #=AA3
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 94 PINLOC=22C8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 94 #=AD2
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 95 PINLOC=22C8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 95 #=AC4
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 96 PINLOC=22C8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 96 #=AB1
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 97 PINLOC=22C8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 97 #=AB2
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 98 PINLOC=22C8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 98 #=Y3
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 99 PINLOC=22C8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 99 #=Y2
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 100 PINLOC=22C7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 100 #=V4
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 101 PINLOC=22C7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 101 #=V3
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 102 PINLOC=22C7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 102 #=AA2
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 103 PINLOC=22C7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 103 #=AA1
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 104 PINLOC=22C7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 104 #=W3
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 105 PINLOC=22C7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 105 #=W1
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 106 PINLOC=22C7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 106 #=U1
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 107 PINLOC=22C7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 107 #=U2
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 108 PINLOC=22C7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 108 #=T4
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 109 PINLOC=22C7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 109 #=R1
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 110 PINLOC=22C7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 110 #=V2
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 111 PINLOC=22C7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 111 #=V1
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 112 PINLOC=22C7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 112 #=T1
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 113 PINLOC=22C7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 113 #=T3
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 114 PINLOC=22D8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 114 #=AH3
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 115 PINLOC=22D8
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 115 #=AG1
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 116 PINLOC=22D9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 116 #=AJ4
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 117 PINLOC=22C7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 117 #=Y4
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 118 PINLOC=22C7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 118 #=AL10
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 119 PINLOC=22C7
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 119 #=AF4
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 120 PINLOC=22C6
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 120 #=AL19
-API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 121 PINLOC=22D9
 API $1I630 IOD_Schematic:ic_cpu_te_pbga680_440epx_grx_d 121 #=AJ2
 M IOD_Schematic:c-pack4 $1I1058
-I $1I1058 IOD_Schematic:c-pack4 DDR_VTT DDR_VTT DDR_VTT DDR_VTT GND GND GND GND SCHLOC=22N10`GEOMETRY.HEIGHT=1.0MM`DEVICE=CAPCAF50P125X200X100`DESCRIPTION=CAPACITOR,CHIP ARRAY,0.5MM PITCH,8 PIN,1.25MM L X 2.00MM W X 1.00MM H`P/D_NUM=GNM214B11C104MA01B`VOLTAGERATING=16V`MANUFACTURER=MURATA`VALUE=100NF`REFDES=CP26`
+I $1I1058 IOD_Schematic:c-pack4 DDR_VTT DDR_VTT DDR_VTT DDR_VTT GND GND GND GND GEOMETRY.HEIGHT=1.0MM`DEVICE`DESCRIPTION=CAPACITOR,CHIP ARRAY,0.5MM PITCH,8 PIN,1.25MM L X 2.00MM W X 1.00MM H`P/D_NUM`VOLTAGERATING=16V`MANUFACTURER`VALUE`REFDES=CP?`
 |R 8:20_8-8-07
-API $1I1058 IOD_Schematic:c-pack4 1 PINLOC=22N10
 API $1I1058 IOD_Schematic:c-pack4 1 #=1
-API $1I1058 IOD_Schematic:c-pack4 2 PINLOC=22N10
 API $1I1058 IOD_Schematic:c-pack4 2 #=2
-API $1I1058 IOD_Schematic:c-pack4 3 PINLOC=22N10
 API $1I1058 IOD_Schematic:c-pack4 3 #=3
-API $1I1058 IOD_Schematic:c-pack4 4 PINLOC=22N10
 API $1I1058 IOD_Schematic:c-pack4 4 #=4
-API $1I1058 IOD_Schematic:c-pack4 5 PINLOC=22N10
 API $1I1058 IOD_Schematic:c-pack4 5 #=5
-API $1I1058 IOD_Schematic:c-pack4 6 PINLOC=22N10
 API $1I1058 IOD_Schematic:c-pack4 6 #=6
-API $1I1058 IOD_Schematic:c-pack4 7 PINLOC=22N10
 API $1I1058 IOD_Schematic:c-pack4 7 #=7
-API $1I1058 IOD_Schematic:c-pack4 8 PINLOC=22N10
 API $1I1058 IOD_Schematic:c-pack4 8 #=8
 M IOD_Schematic:c-pack4 $1I1059
-I $1I1059 IOD_Schematic:c-pack4 DDR_VTT DDR_VTT DDR_VTT DDR_VTT GND GND GND GND SCHLOC=22N10`GEOMETRY.HEIGHT=1.0MM`DEVICE=CAPCAF50P125X200X100`DESCRIPTION=CAPACITOR,CHIP ARRAY,0.5MM PITCH,8 PIN,1.25MM L X 2.00MM W X 1.00MM H`P/D_NUM=GNM214B11C104MA01B`VOLTAGERATING=16V`MANUFACTURER=MURATA`VALUE=100NF`REFDES=CP28`
+I $1I1059 IOD_Schematic:c-pack4 DDR_VTT DDR_VTT DDR_VTT DDR_VTT GND GND GND GND GEOMETRY.HEIGHT=1.0MM`DEVICE`DESCRIPTION=CAPACITOR,CHIP ARRAY,0.5MM PITCH,8 PIN,1.25MM L X 2.00MM W X 1.00MM H`P/D_NUM`VOLTAGERATING=16V`MANUFACTURER`VALUE`REFDES=CP?`
 |R 8:20_8-8-07
-API $1I1059 IOD_Schematic:c-pack4 1 PINLOC=22N10
 API $1I1059 IOD_Schematic:c-pack4 1 #=1
-API $1I1059 IOD_Schematic:c-pack4 2 PINLOC=22N10
 API $1I1059 IOD_Schematic:c-pack4 2 #=2
-API $1I1059 IOD_Schematic:c-pack4 3 PINLOC=22N10
 API $1I1059 IOD_Schematic:c-pack4 3 #=3
-API $1I1059 IOD_Schematic:c-pack4 4 PINLOC=22N10
 API $1I1059 IOD_Schematic:c-pack4 4 #=4
-API $1I1059 IOD_Schematic:c-pack4 5 PINLOC=22N10
 API $1I1059 IOD_Schematic:c-pack4 5 #=5
-API $1I1059 IOD_Schematic:c-pack4 6 PINLOC=22N10
 API $1I1059 IOD_Schematic:c-pack4 6 #=6
-API $1I1059 IOD_Schematic:c-pack4 7 PINLOC=22N10
 API $1I1059 IOD_Schematic:c-pack4 7 #=7
-API $1I1059 IOD_Schematic:c-pack4 8 PINLOC=22N10
 API $1I1059 IOD_Schematic:c-pack4 8 #=8
 M IOD_Schematic:c-pack4 $1I1060
-I $1I1060 IOD_Schematic:c-pack4 DDR_VTT DDR_VTT DDR_VTT DDR_VTT GND GND GND GND SCHLOC=22N9`GEOMETRY.HEIGHT=1.0MM`DEVICE=CAPCAF50P125X200X100`DESCRIPTION=CAPACITOR,CHIP ARRAY,0.5MM PITCH,8 PIN,1.25MM L X 2.00MM W X 1.00MM H`P/D_NUM=GNM214B11C104MA01B`VOLTAGERATING=16V`MANUFACTURER=MURATA`VALUE=100NF`REFDES=CP29`
+I $1I1060 IOD_Schematic:c-pack4 DDR_VTT DDR_VTT DDR_VTT DDR_VTT GND GND GND GND GEOMETRY.HEIGHT=1.0MM`DEVICE`DESCRIPTION=CAPACITOR,CHIP ARRAY,0.5MM PITCH,8 PIN,1.25MM L X 2.00MM W X 1.00MM H`P/D_NUM`VOLTAGERATING=16V`MANUFACTURER`VALUE`REFDES=CP?`
 |R 8:20_8-8-07
-API $1I1060 IOD_Schematic:c-pack4 1 PINLOC=22N9
 API $1I1060 IOD_Schematic:c-pack4 1 #=1
-API $1I1060 IOD_Schematic:c-pack4 2 PINLOC=22N9
 API $1I1060 IOD_Schematic:c-pack4 2 #=2
-API $1I1060 IOD_Schematic:c-pack4 3 PINLOC=22N9
 API $1I1060 IOD_Schematic:c-pack4 3 #=3
-API $1I1060 IOD_Schematic:c-pack4 4 PINLOC=22N9
 API $1I1060 IOD_Schematic:c-pack4 4 #=4
-API $1I1060 IOD_Schematic:c-pack4 5 PINLOC=22N9
 API $1I1060 IOD_Schematic:c-pack4 5 #=5
-API $1I1060 IOD_Schematic:c-pack4 6 PINLOC=22N9
 API $1I1060 IOD_Schematic:c-pack4 6 #=6
-API $1I1060 IOD_Schematic:c-pack4 7 PINLOC=22N9
 API $1I1060 IOD_Schematic:c-pack4 7 #=7
-API $1I1060 IOD_Schematic:c-pack4 8 PINLOC=22N9
 API $1I1060 IOD_Schematic:c-pack4 8 #=8
 M IOD_Schematic:c-pack4 $1I1061
-I $1I1061 IOD_Schematic:c-pack4 DDR_VTT DDR_VTT DDR_VTT DDR_VTT GND GND GND GND SCHLOC=22N9`GEOMETRY.HEIGHT=1.0MM`DEVICE=CAPCAF50P125X200X100`DESCRIPTION=CAPACITOR,CHIP ARRAY,0.5MM PITCH,8 PIN,1.25MM L X 2.00MM W X 1.00MM H`P/D_NUM=GNM214B11C104MA01B`VOLTAGERATING=16V`MANUFACTURER=MURATA`VALUE=100NF`REFDES=CP30`
+I $1I1061 IOD_Schematic:c-pack4 DDR_VTT DDR_VTT DDR_VTT DDR_VTT GND GND GND GND GEOMETRY.HEIGHT=1.0MM`DEVICE`DESCRIPTION=CAPACITOR,CHIP ARRAY,0.5MM PITCH,8 PIN,1.25MM L X 2.00MM W X 1.00MM H`P/D_NUM`VOLTAGERATING=16V`MANUFACTURER`VALUE`REFDES=CP?`
 |R 8:20_8-8-07
-API $1I1061 IOD_Schematic:c-pack4 1 PINLOC=22N9
 API $1I1061 IOD_Schematic:c-pack4 1 #=1
-API $1I1061 IOD_Schematic:c-pack4 2 PINLOC=22N9
 API $1I1061 IOD_Schematic:c-pack4 2 #=2
-API $1I1061 IOD_Schematic:c-pack4 3 PINLOC=22N9
 API $1I1061 IOD_Schematic:c-pack4 3 #=3
-API $1I1061 IOD_Schematic:c-pack4 4 PINLOC=22N9
 API $1I1061 IOD_Schematic:c-pack4 4 #=4
-API $1I1061 IOD_Schematic:c-pack4 5 PINLOC=22N9
 API $1I1061 IOD_Schematic:c-pack4 5 #=5
-API $1I1061 IOD_Schematic:c-pack4 6 PINLOC=22N9
 API $1I1061 IOD_Schematic:c-pack4 6 #=6
-API $1I1061 IOD_Schematic:c-pack4 7 PINLOC=22N9
 API $1I1061 IOD_Schematic:c-pack4 7 #=7
-API $1I1061 IOD_Schematic:c-pack4 8 PINLOC=22N9
 API $1I1061 IOD_Schematic:c-pack4 8 #=8
 M IOD_Schematic:c-pack4 $1I1119
-I $1I1119 IOD_Schematic:c-pack4 DDR_VTT DDR_VTT DDR_VTT DDR_VTT GND GND GND GND SCHLOC=22N8`GEOMETRY.HEIGHT=1.0MM`DEVICE=CAPCAF50P125X200X100`DESCRIPTION=CAPACITOR,CHIP ARRAY,0.5MM PITCH,8 PIN,1.25MM L X 2.00MM W X 1.00MM H`P/D_NUM=GNM214B11C104MA01B`VOLTAGERATING=16V`MANUFACTURER=MURATA`VALUE=100NF`REFDES=CP32`
+I $1I1119 IOD_Schematic:c-pack4 DDR_VTT DDR_VTT DDR_VTT DDR_VTT GND GND GND GND GEOMETRY.HEIGHT=1.0MM`DEVICE`DESCRIPTION=CAPACITOR,CHIP ARRAY,0.5MM PITCH,8 PIN,1.25MM L X 2.00MM W X 1.00MM H`P/D_NUM`VOLTAGERATING=16V`MANUFACTURER`VALUE`REFDES=CP?`
 |R 8:20_8-8-07
-API $1I1119 IOD_Schematic:c-pack4 1 PINLOC=22N8
 API $1I1119 IOD_Schematic:c-pack4 1 #=1
-API $1I1119 IOD_Schematic:c-pack4 2 PINLOC=22N8
 API $1I1119 IOD_Schematic:c-pack4 2 #=2
-API $1I1119 IOD_Schematic:c-pack4 3 PINLOC=22N8
 API $1I1119 IOD_Schematic:c-pack4 3 #=3
-API $1I1119 IOD_Schematic:c-pack4 4 PINLOC=22N8
 API $1I1119 IOD_Schematic:c-pack4 4 #=4
-API $1I1119 IOD_Schematic:c-pack4 5 PINLOC=22N7
 API $1I1119 IOD_Schematic:c-pack4 5 #=5
-API $1I1119 IOD_Schematic:c-pack4 6 PINLOC=22N7
 API $1I1119 IOD_Schematic:c-pack4 6 #=6
-API $1I1119 IOD_Schematic:c-pack4 7 PINLOC=22N7
 API $1I1119 IOD_Schematic:c-pack4 7 #=7
-API $1I1119 IOD_Schematic:c-pack4 8 PINLOC=22N7
 API $1I1119 IOD_Schematic:c-pack4 8 #=8
 M IOD_Schematic:c-pack4 $1I1105
-I $1I1105 IOD_Schematic:c-pack4 DDR_VTT DDR_VTT DDR_VTT DDR_VTT GND GND GND GND SCHLOC=22N7`GEOMETRY.HEIGHT=1.0MM`DEVICE=CAPCAF50P125X200X100`DESCRIPTION=CAPACITOR,CHIP ARRAY,0.5MM PITCH,8 PIN,1.25MM L X 2.00MM W X 1.00MM H`P/D_NUM=GNM214B11C104MA01B`VOLTAGERATING=16V`MANUFACTURER=MURATA`VALUE=100NF`REFDES=CP31`
+I $1I1105 IOD_Schematic:c-pack4 DDR_VTT DDR_VTT DDR_VTT DDR_VTT GND GND GND GND GEOMETRY.HEIGHT=1.0MM`DEVICE`DESCRIPTION=CAPACITOR,CHIP ARRAY,0.5MM PITCH,8 PIN,1.25MM L X 2.00MM W X 1.00MM H`P/D_NUM`VOLTAGERATING=16V`MANUFACTURER`VALUE`REFDES=CP?`
 |R 8:20_8-8-07
-API $1I1105 IOD_Schematic:c-pack4 1 PINLOC=22N7
 API $1I1105 IOD_Schematic:c-pack4 1 #=1
-API $1I1105 IOD_Schematic:c-pack4 2 PINLOC=22N7
 API $1I1105 IOD_Schematic:c-pack4 2 #=2
-API $1I1105 IOD_Schematic:c-pack4 3 PINLOC=22N7
 API $1I1105 IOD_Schematic:c-pack4 3 #=3
-API $1I1105 IOD_Schematic:c-pack4 4 PINLOC=22N7
 API $1I1105 IOD_Schematic:c-pack4 4 #=4
-API $1I1105 IOD_Schematic:c-pack4 5 PINLOC=22N7
 API $1I1105 IOD_Schematic:c-pack4 5 #=5
-API $1I1105 IOD_Schematic:c-pack4 6 PINLOC=22N7
 API $1I1105 IOD_Schematic:c-pack4 6 #=6
-API $1I1105 IOD_Schematic:c-pack4 7 PINLOC=22N7
 API $1I1105 IOD_Schematic:c-pack4 7 #=7
-API $1I1105 IOD_Schematic:c-pack4 8 PINLOC=22N7
 API $1I1105 IOD_Schematic:c-pack4 8 #=8
 M IOD_Schematic:c-pack4 $1I923
-I $1I923 IOD_Schematic:c-pack4 DDR_VTT DDR_VTT DDR_VTT DDR_VTT GND GND GND GND SCHLOC=22N6`GEOMETRY.HEIGHT=1.0MM`REFDES=CP33`VALUE=100NF`MANUFACTURER=MURATA`VOLTAGERATING=16V`P/D_NUM=GNM214B11C104MA01B`DESCRIPTION=CAPACITOR,CHIP ARRAY,0.5MM PITCH,8 PIN,1.25MM L X 2.00MM W X 1.00MM H`DEVICE=CAPCAF50P125X200X100`
+I $1I923 IOD_Schematic:c-pack4 DDR_VTT DDR_VTT DDR_VTT DDR_VTT GND GND GND GND GEOMETRY.HEIGHT=1.0MM`REFDES=CP?`VALUE`MANUFACTURER`VOLTAGERATING=16V`P/D_NUM`DESCRIPTION=CAPACITOR,CHIP ARRAY,0.5MM PITCH,8 PIN,1.25MM L X 2.00MM W X 1.00MM H`DEVICE`
 |R 8:20_8-8-07
-API $1I923 IOD_Schematic:c-pack4 1 PINLOC=22N7
 API $1I923 IOD_Schematic:c-pack4 1 #=1
-API $1I923 IOD_Schematic:c-pack4 2 PINLOC=22N7
 API $1I923 IOD_Schematic:c-pack4 2 #=2
-API $1I923 IOD_Schematic:c-pack4 3 PINLOC=22N7
 API $1I923 IOD_Schematic:c-pack4 3 #=3
-API $1I923 IOD_Schematic:c-pack4 4 PINLOC=22N7
 API $1I923 IOD_Schematic:c-pack4 4 #=4
-API $1I923 IOD_Schematic:c-pack4 5 PINLOC=22N6
 API $1I923 IOD_Schematic:c-pack4 5 #=5
-API $1I923 IOD_Schematic:c-pack4 6 PINLOC=22N6
 API $1I923 IOD_Schematic:c-pack4 6 #=6
-API $1I923 IOD_Schematic:c-pack4 7 PINLOC=22N6
 API $1I923 IOD_Schematic:c-pack4 7 #=7
-API $1I923 IOD_Schematic:c-pack4 8 PINLOC=22N6
 API $1I923 IOD_Schematic:c-pack4 8 #=8
 M IOD_Schematic:res_pack_4 $1I1062
-I $1I1062 IOD_Schematic:res_pack_4 DDR_PCS1# DDR_PODT0 DDR_PA13 DDR_PODT1 DDR_VTT DDR_VTT DDR_VTT DDR_VTT SCHLOC=22M7`TOLERANCE=1%`OPERATINGVOLTAGE=50V`MANPARTPACKAGE=4D02`MANPARTDESCRIPTION=RESISTOR CHIP ARRAYS, THICK FILM`LEVEL=STD`GEOMETRY.HEIGHT=0.55MM`P/D_NUM=4D02WGJ0510B1E`MANUFACTURER=ROYAL OHM`VALUE=49.9R`PKG_TYPE=RESCAV50P100X200X55-8N`REFDES=RP19`
+I $1I1062 IOD_Schematic:res_pack_4 DDR_PCS1# DDR_PODT0 DDR_PA13 DDR_PODT1 DDR_VTT DDR_VTT DDR_VTT DDR_VTT TOLERANCE`OPERATINGVOLTAGE=50V`MANPARTPACKAGE=4D02`MANPARTDESCRIPTION=RESISTOR CHIP ARRAYS, THICK FILM`LEVEL=STD`GEOMETRY.HEIGHT=0.55MM`P/D_NUM`MANUFACTURER`VALUE`PKG_TYPE`REFDES=RP?`
 |R 11:14_1-24-08
-API $1I1062 IOD_Schematic:res_pack_4 1 PINLOC=22M7
 API $1I1062 IOD_Schematic:res_pack_4 1 #=1
-API $1I1062 IOD_Schematic:res_pack_4 2 PINLOC=22M7
 API $1I1062 IOD_Schematic:res_pack_4 2 #=2
-API $1I1062 IOD_Schematic:res_pack_4 3 PINLOC=22M6
 API $1I1062 IOD_Schematic:res_pack_4 3 #=3
-API $1I1062 IOD_Schematic:res_pack_4 4 PINLOC=22M6
 API $1I1062 IOD_Schematic:res_pack_4 4 #=4
-API $1I1062 IOD_Schematic:res_pack_4 5 PINLOC=22N6
 API $1I1062 IOD_Schematic:res_pack_4 5 #=5
-API $1I1062 IOD_Schematic:res_pack_4 6 PINLOC=22N6
 API $1I1062 IOD_Schematic:res_pack_4 6 #=6
-API $1I1062 IOD_Schematic:res_pack_4 7 PINLOC=22N7
 API $1I1062 IOD_Schematic:res_pack_4 7 #=7
-API $1I1062 IOD_Schematic:res_pack_4 8 PINLOC=22N7
 API $1I1062 IOD_Schematic:res_pack_4 8 #=8
 M IOD_Schematic:res_pack_4 $1I1104
-I $1I1104 IOD_Schematic:res_pack_4 DDR_PRAS# DDR_PWE# DDR_PCS0# DDR_PCAS# DDR_VTT DDR_VTT DDR_VTT DDR_VTT SCHLOC=22M7`TOLERANCE=1%`OPERATINGVOLTAGE=50V`MANPARTPACKAGE=4D02`MANPARTDESCRIPTION=RESISTOR CHIP ARRAYS, THICK FILM`LEVEL=STD`GEOMETRY.HEIGHT=0.55MM`P/D_NUM=4D02WGJ0510B1E`MANUFACTURER=ROYAL OHM`VALUE=49.9R`PKG_TYPE=RESCAV50P100X200X55-8N`REFDES=RP26`
+I $1I1104 IOD_Schematic:res_pack_4 DDR_PRAS# DDR_PWE# DDR_PCS0# DDR_PCAS# DDR_VTT DDR_VTT DDR_VTT DDR_VTT TOLERANCE`OPERATINGVOLTAGE=50V`MANPARTPACKAGE=4D02`MANPARTDESCRIPTION=RESISTOR CHIP ARRAYS, THICK FILM`LEVEL=STD`GEOMETRY.HEIGHT=0.55MM`P/D_NUM`MANUFACTURER`VALUE`PKG_TYPE`REFDES=RP?`
 |R 11:14_1-24-08
-API $1I1104 IOD_Schematic:res_pack_4 1 PINLOC=22M7
 API $1I1104 IOD_Schematic:res_pack_4 1 #=1
-API $1I1104 IOD_Schematic:res_pack_4 2 PINLOC=22M7
 API $1I1104 IOD_Schematic:res_pack_4 2 #=2
-API $1I1104 IOD_Schematic:res_pack_4 3 PINLOC=22M7
 API $1I1104 IOD_Schematic:res_pack_4 3 #=3
-API $1I1104 IOD_Schematic:res_pack_4 4 PINLOC=22M7
 API $1I1104 IOD_Schematic:res_pack_4 4 #=4
-API $1I1104 IOD_Schematic:res_pack_4 5 PINLOC=22N7
 API $1I1104 IOD_Schematic:res_pack_4 5 #=5
-API $1I1104 IOD_Schematic:res_pack_4 6 PINLOC=22N7
 API $1I1104 IOD_Schematic:res_pack_4 6 #=6
-API $1I1104 IOD_Schematic:res_pack_4 7 PINLOC=22N7
 API $1I1104 IOD_Schematic:res_pack_4 7 #=7
-API $1I1104 IOD_Schematic:res_pack_4 8 PINLOC=22N7
 API $1I1104 IOD_Schematic:res_pack_4 8 #=8
 M IOD_Schematic:res_pack_4 $1I1103
-I $1I1103 IOD_Schematic:res_pack_4 DDR_PA0 DDR_PBA1 DDR_PA10 DDR_PBA0 DDR_VTT DDR_VTT DDR_VTT DDR_VTT SCHLOC=22M8`TOLERANCE=1%`OPERATINGVOLTAGE=50V`MANPARTPACKAGE=4D02`MANPARTDESCRIPTION=RESISTOR CHIP ARRAYS, THICK FILM`LEVEL=STD`GEOMETRY.HEIGHT=0.55MM`P/D_NUM=4D02WGJ0510B1E`MANUFACTURER=ROYAL OHM`VALUE=49.9R`PKG_TYPE=RESCAV50P100X200X55-8N`REFDES=RP25`
+I $1I1103 IOD_Schematic:res_pack_4 DDR_PA0 DDR_PBA1 DDR_PA10 DDR_PBA0 DDR_VTT DDR_VTT DDR_VTT DDR_VTT TOLERANCE`OPERATINGVOLTAGE=50V`MANPARTPACKAGE=4D02`MANPARTDESCRIPTION=RESISTOR CHIP ARRAYS, THICK FILM`LEVEL=STD`GEOMETRY.HEIGHT=0.55MM`P/D_NUM`MANUFACTURER`VALUE`PKG_TYPE`REFDES=RP?`
 |R 11:14_1-24-08
-API $1I1103 IOD_Schematic:res_pack_4 1 PINLOC=22M8
 API $1I1103 IOD_Schematic:res_pack_4 1 #=1
-API $1I1103 IOD_Schematic:res_pack_4 2 PINLOC=22M8
 API $1I1103 IOD_Schematic:res_pack_4 2 #=2
-API $1I1103 IOD_Schematic:res_pack_4 3 PINLOC=22M8
 API $1I1103 IOD_Schematic:res_pack_4 3 #=3
-API $1I1103 IOD_Schematic:res_pack_4 4 PINLOC=22M7
 API $1I1103 IOD_Schematic:res_pack_4 4 #=4
-API $1I1103 IOD_Schematic:res_pack_4 5 PINLOC=22N7
 API $1I1103 IOD_Schematic:res_pack_4 5 #=5
-API $1I1103 IOD_Schematic:res_pack_4 6 PINLOC=22N8
 API $1I1103 IOD_Schematic:res_pack_4 6 #=6
-API $1I1103 IOD_Schematic:res_pack_4 7 PINLOC=22N8
 API $1I1103 IOD_Schematic:res_pack_4 7 #=7
-API $1I1103 IOD_Schematic:res_pack_4 8 PINLOC=22N8
 API $1I1103 IOD_Schematic:res_pack_4 8 #=8
 M IOD_Schematic:res_pack_4 $1I1063
-I $1I1063 IOD_Schematic:res_pack_4 DDR_PA4 DDR_PA3 DDR_PA1 DDR_PA2 DDR_VTT DDR_VTT DDR_VTT DDR_VTT SCHLOC=22M9`TOLERANCE=1%`OPERATINGVOLTAGE=50V`MANPARTPACKAGE=4D02`MANPARTDESCRIPTION=RESISTOR CHIP ARRAYS, THICK FILM`LEVEL=STD`GEOMETRY.HEIGHT=0.55MM`P/D_NUM=4D02WGJ0510B1E`MANUFACTURER=ROYAL OHM`VALUE=49.9R`PKG_TYPE=RESCAV50P100X200X55-8N`REFDES=RP21`
+I $1I1063 IOD_Schematic:res_pack_4 DDR_PA4 DDR_PA3 DDR_PA1 DDR_PA2 DDR_VTT DDR_VTT DDR_VTT DDR_VTT TOLERANCE`OPERATINGVOLTAGE=50V`MANPARTPACKAGE=4D02`MANPARTDESCRIPTION=RESISTOR CHIP ARRAYS, THICK FILM`LEVEL=STD`GEOMETRY.HEIGHT=0.55MM`P/D_NUM`MANUFACTURER`VALUE`PKG_TYPE`REFDES=RP?`
 |R 11:14_1-24-08
-API $1I1063 IOD_Schematic:res_pack_4 1 PINLOC=22M9
 API $1I1063 IOD_Schematic:res_pack_4 1 #=1
-API $1I1063 IOD_Schematic:res_pack_4 2 PINLOC=22M9
 API $1I1063 IOD_Schematic:res_pack_4 2 #=2
-API $1I1063 IOD_Schematic:res_pack_4 3 PINLOC=22M9
 API $1I1063 IOD_Schematic:res_pack_4 3 #=3
-API $1I1063 IOD_Schematic:res_pack_4 4 PINLOC=22M9
 API $1I1063 IOD_Schematic:res_pack_4 4 #=4
-API $1I1063 IOD_Schematic:res_pack_4 5 PINLOC=22N9
 API $1I1063 IOD_Schematic:res_pack_4 5 #=5
-API $1I1063 IOD_Schematic:res_pack_4 6 PINLOC=22N9
 API $1I1063 IOD_Schematic:res_pack_4 6 #=6
-API $1I1063 IOD_Schematic:res_pack_4 7 PINLOC=22N9
 API $1I1063 IOD_Schematic:res_pack_4 7 #=7
-API $1I1063 IOD_Schematic:res_pack_4 8 PINLOC=22N9
 API $1I1063 IOD_Schematic:res_pack_4 8 #=8
 M IOD_Schematic:res_pack_4 $1I1064
-I $1I1064 IOD_Schematic:res_pack_4 DDR_PA7 DDR_PA8 DDR_PA6 DDR_PA5 DDR_VTT DDR_VTT DDR_VTT DDR_VTT SCHLOC=22M9`GEOMETRY.HEIGHT=0.55MM`TOLERANCE=1%`OPERATINGVOLTAGE=50V`MANPARTPACKAGE=4D02`MANPARTDESCRIPTION=RESISTOR CHIP ARRAYS, THICK FILM`LEVEL=STD`P/D_NUM=4D02WGJ0510B1E`MANUFACTURER=ROYAL OHM`VALUE=49.9R`PKG_TYPE=RESCAV50P100X200X55-8N`REFDES=RP22`
+I $1I1064 IOD_Schematic:res_pack_4 DDR_PA7 DDR_PA8 DDR_PA6 DDR_PA5 DDR_VTT DDR_VTT DDR_VTT DDR_VTT GEOMETRY.HEIGHT=0.55MM`TOLERANCE`OPERATINGVOLTAGE=50V`MANPARTPACKAGE=4D02`MANPARTDESCRIPTION=RESISTOR CHIP ARRAYS, THICK FILM`LEVEL=STD`P/D_NUM`MANUFACTURER`VALUE`PKG_TYPE`REFDES=RP?`
 |R 11:14_1-24-08
-API $1I1064 IOD_Schematic:res_pack_4 1 PINLOC=22M9
 API $1I1064 IOD_Schematic:res_pack_4 1 #=1
-API $1I1064 IOD_Schematic:res_pack_4 2 PINLOC=22M9
 API $1I1064 IOD_Schematic:res_pack_4 2 #=2
-API $1I1064 IOD_Schematic:res_pack_4 3 PINLOC=22M9
 API $1I1064 IOD_Schematic:res_pack_4 3 #=3
-API $1I1064 IOD_Schematic:res_pack_4 4 PINLOC=22M9
 API $1I1064 IOD_Schematic:res_pack_4 4 #=4
-API $1I1064 IOD_Schematic:res_pack_4 5 PINLOC=22N9
 API $1I1064 IOD_Schematic:res_pack_4 5 #=5
-API $1I1064 IOD_Schematic:res_pack_4 6 PINLOC=22N9
 API $1I1064 IOD_Schematic:res_pack_4 6 #=6
-API $1I1064 IOD_Schematic:res_pack_4 7 PINLOC=22N9
 API $1I1064 IOD_Schematic:res_pack_4 7 #=7
-API $1I1064 IOD_Schematic:res_pack_4 8 PINLOC=22N9
 API $1I1064 IOD_Schematic:res_pack_4 8 #=8
 M IOD_Schematic:res_pack_4 $1I1065
-I $1I1065 IOD_Schematic:res_pack_4 DDR_PA12 DDR_PA11 DDR_PA9 $1N1471 DDR_VTT DDR_VTT DDR_VTT DDR_VTT SCHLOC=22M10`GEOMETRY.HEIGHT=0.55MM`TOLERANCE=1%`OPERATINGVOLTAGE=50V`MANPARTPACKAGE=4D02`MANPARTDESCRIPTION=RESISTOR CHIP ARRAYS, THICK FILM`LEVEL=STD`P/D_NUM=4D02WGJ0510B1E`MANUFACTURER=ROYAL OHM`VALUE=49.9R`PKG_TYPE=RESCAV50P100X200X55-8N`REFDES=RP23`
+I $1I1065 IOD_Schematic:res_pack_4 DDR_PA12 DDR_PA11 DDR_PA9 $1N1471 DDR_VTT DDR_VTT DDR_VTT DDR_VTT GEOMETRY.HEIGHT=0.55MM`TOLERANCE`OPERATINGVOLTAGE=50V`MANPARTPACKAGE=4D02`MANPARTDESCRIPTION=RESISTOR CHIP ARRAYS, THICK FILM`LEVEL=STD`P/D_NUM`MANUFACTURER`VALUE`PKG_TYPE`REFDES=RP?`
 |R 11:14_1-24-08
-API $1I1065 IOD_Schematic:res_pack_4 1 PINLOC=22M10
 API $1I1065 IOD_Schematic:res_pack_4 1 #=1
-API $1I1065 IOD_Schematic:res_pack_4 2 PINLOC=22M10
 API $1I1065 IOD_Schematic:res_pack_4 2 #=2
-API $1I1065 IOD_Schematic:res_pack_4 3 PINLOC=22M10
 API $1I1065 IOD_Schematic:res_pack_4 3 #=3
-API $1I1065 IOD_Schematic:res_pack_4 4 PINLOC=22M10
 API $1I1065 IOD_Schematic:res_pack_4 4 #=4
-API $1I1065 IOD_Schematic:res_pack_4 5 PINLOC=22N10
 API $1I1065 IOD_Schematic:res_pack_4 5 #=5
-API $1I1065 IOD_Schematic:res_pack_4 6 PINLOC=22N10
 API $1I1065 IOD_Schematic:res_pack_4 6 #=6
-API $1I1065 IOD_Schematic:res_pack_4 7 PINLOC=22N10
 API $1I1065 IOD_Schematic:res_pack_4 7 #=7
-API $1I1065 IOD_Schematic:res_pack_4 8 PINLOC=22N10
 API $1I1065 IOD_Schematic:res_pack_4 8 #=8
 M IOD_Schematic:ddr2_dimm_power $1I1085
-I $1I1085 IOD_Schematic:ddr2_dimm_power 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 3V3 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 DDR_VREF_0V9 GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND SCHLOC=22Q7`GEOMETRY.HEIGHT=14.88MM`PKG_TYPE=MOLEX879160001`REFDES=J8`
-|R 9:42_9-3-07
-API $1I1085 IOD_Schematic:ddr2_dimm_power 1 PINLOC=22R4
+I $1I1085 IOD_Schematic:ddr2_dimm_power 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 3V3 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 DDR_VREF_0V9 GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GEOMETRY.HEIGHT=14.88MM`PKG_TYPE`REFDES=J?`
+|R 11:06:24_8-7-09
 API $1I1085 IOD_Schematic:ddr2_dimm_power 1 #=51
-API $1I1085 IOD_Schematic:ddr2_dimm_power 2 PINLOC=22R5
 API $1I1085 IOD_Schematic:ddr2_dimm_power 2 #=191
-API $1I1085 IOD_Schematic:ddr2_dimm_power 3 PINLOC=22R5
 API $1I1085 IOD_Schematic:ddr2_dimm_power 3 #=194
-API $1I1085 IOD_Schematic:ddr2_dimm_power 4 PINLOC=22R4
 API $1I1085 IOD_Schematic:ddr2_dimm_power 4 #=56
-API $1I1085 IOD_Schematic:ddr2_dimm_power 5 PINLOC=22R4
 API $1I1085 IOD_Schematic:ddr2_dimm_power 5 #=62
-API $1I1085 IOD_Schematic:ddr2_dimm_power 6 PINLOC=22R4
 API $1I1085 IOD_Schematic:ddr2_dimm_power 6 #=72
-API $1I1085 IOD_Schematic:ddr2_dimm_power 7 PINLOC=22R4
 API $1I1085 IOD_Schematic:ddr2_dimm_power 7 #=75
-API $1I1085 IOD_Schematic:ddr2_dimm_power 8 PINLOC=22R4
 API $1I1085 IOD_Schematic:ddr2_dimm_power 8 #=78
-API $1I1085 IOD_Schematic:ddr2_dimm_power 9 PINLOC=22R4
 API $1I1085 IOD_Schematic:ddr2_dimm_power 9 #=170
-API $1I1085 IOD_Schematic:ddr2_dimm_power 10 PINLOC=22R4
 API $1I1085 IOD_Schematic:ddr2_dimm_power 10 #=175
-API $1I1085 IOD_Schematic:ddr2_dimm_power 11 PINLOC=22R4
 API $1I1085 IOD_Schematic:ddr2_dimm_power 11 #=181
-API $1I1085 IOD_Schematic:ddr2_dimm_power 12 PINLOC=22R6
 API $1I1085 IOD_Schematic:ddr2_dimm_power 12 #=238
-API $1I1085 IOD_Schematic:ddr2_dimm_power 13 PINLOC=22R5
 API $1I1085 IOD_Schematic:ddr2_dimm_power 13 #=53
-API $1I1085 IOD_Schematic:ddr2_dimm_power 14 PINLOC=22R6
 API $1I1085 IOD_Schematic:ddr2_dimm_power 14 #=189
-API $1I1085 IOD_Schematic:ddr2_dimm_power 15 PINLOC=22R6
 API $1I1085 IOD_Schematic:ddr2_dimm_power 15 #=197
-API $1I1085 IOD_Schematic:ddr2_dimm_power 16 PINLOC=22R5
 API $1I1085 IOD_Schematic:ddr2_dimm_power 16 #=59
-API $1I1085 IOD_Schematic:ddr2_dimm_power 17 PINLOC=22R5
 API $1I1085 IOD_Schematic:ddr2_dimm_power 17 #=64
-API $1I1085 IOD_Schematic:ddr2_dimm_power 18 PINLOC=22R5
 API $1I1085 IOD_Schematic:ddr2_dimm_power 18 #=67
-API $1I1085 IOD_Schematic:ddr2_dimm_power 19 PINLOC=22R5
 API $1I1085 IOD_Schematic:ddr2_dimm_power 19 #=69
-API $1I1085 IOD_Schematic:ddr2_dimm_power 20 PINLOC=22R5
 API $1I1085 IOD_Schematic:ddr2_dimm_power 20 #=172
-API $1I1085 IOD_Schematic:ddr2_dimm_power 21 PINLOC=22R6
 API $1I1085 IOD_Schematic:ddr2_dimm_power 21 #=178
-API $1I1085 IOD_Schematic:ddr2_dimm_power 22 PINLOC=22R6
 API $1I1085 IOD_Schematic:ddr2_dimm_power 22 #=184
-API $1I1085 IOD_Schematic:ddr2_dimm_power 23 PINLOC=22R6
 API $1I1085 IOD_Schematic:ddr2_dimm_power 23 #=187
-API $1I1085 IOD_Schematic:ddr2_dimm_power 24 PINLOC=22R7
 API $1I1085 IOD_Schematic:ddr2_dimm_power 24 #=1
-API $1I1085 IOD_Schematic:ddr2_dimm_power 25 PINLOC=22P4
 API $1I1085 IOD_Schematic:ddr2_dimm_power 25 #=2
-API $1I1085 IOD_Schematic:ddr2_dimm_power 26 PINLOC=22P5
 API $1I1085 IOD_Schematic:ddr2_dimm_power 26 #=29
-API $1I1085 IOD_Schematic:ddr2_dimm_power 27 PINLOC=22P5
 API $1I1085 IOD_Schematic:ddr2_dimm_power 27 #=32
-API $1I1085 IOD_Schematic:ddr2_dimm_power 28 PINLOC=22P5
 API $1I1085 IOD_Schematic:ddr2_dimm_power 28 #=35
-API $1I1085 IOD_Schematic:ddr2_dimm_power 29 PINLOC=22P5
 API $1I1085 IOD_Schematic:ddr2_dimm_power 29 #=38
-API $1I1085 IOD_Schematic:ddr2_dimm_power 30 PINLOC=22P5
 API $1I1085 IOD_Schematic:ddr2_dimm_power 30 #=41
-API $1I1085 IOD_Schematic:ddr2_dimm_power 31 PINLOC=22P5
 API $1I1085 IOD_Schematic:ddr2_dimm_power 31 #=44
-API $1I1085 IOD_Schematic:ddr2_dimm_power 32 PINLOC=22P5
 API $1I1085 IOD_Schematic:ddr2_dimm_power 32 #=47
-API $1I1085 IOD_Schematic:ddr2_dimm_power 33 PINLOC=22P5
 API $1I1085 IOD_Schematic:ddr2_dimm_power 33 #=50
-API $1I1085 IOD_Schematic:ddr2_dimm_power 34 PINLOC=22P5
 API $1I1085 IOD_Schematic:ddr2_dimm_power 34 #=65
-API $1I1085 IOD_Schematic:ddr2_dimm_power 35 PINLOC=22P5
 API $1I1085 IOD_Schematic:ddr2_dimm_power 35 #=66
-API $1I1085 IOD_Schematic:ddr2_dimm_power 36 PINLOC=22P4
 API $1I1085 IOD_Schematic:ddr2_dimm_power 36 #=5
-API $1I1085 IOD_Schematic:ddr2_dimm_power 37 PINLOC=22P6
 API $1I1085 IOD_Schematic:ddr2_dimm_power 37 #=79
-API $1I1085 IOD_Schematic:ddr2_dimm_power 38 PINLOC=22P6
 API $1I1085 IOD_Schematic:ddr2_dimm_power 38 #=82
-API $1I1085 IOD_Schematic:ddr2_dimm_power 39 PINLOC=22P6
 API $1I1085 IOD_Schematic:ddr2_dimm_power 39 #=85
-API $1I1085 IOD_Schematic:ddr2_dimm_power 40 PINLOC=22P6
 API $1I1085 IOD_Schematic:ddr2_dimm_power 40 #=88
-API $1I1085 IOD_Schematic:ddr2_dimm_power 41 PINLOC=22P6
 API $1I1085 IOD_Schematic:ddr2_dimm_power 41 #=91
-API $1I1085 IOD_Schematic:ddr2_dimm_power 42 PINLOC=22P6
 API $1I1085 IOD_Schematic:ddr2_dimm_power 42 #=94
-API $1I1085 IOD_Schematic:ddr2_dimm_power 43 PINLOC=22P6
 API $1I1085 IOD_Schematic:ddr2_dimm_power 43 #=97
-API $1I1085 IOD_Schematic:ddr2_dimm_power 44 PINLOC=22P6
 API $1I1085 IOD_Schematic:ddr2_dimm_power 44 #=100
-API $1I1085 IOD_Schematic:ddr2_dimm_power 45 PINLOC=22P6
 API $1I1085 IOD_Schematic:ddr2_dimm_power 45 #=103
-API $1I1085 IOD_Schematic:ddr2_dimm_power 46 PINLOC=22P6
 API $1I1085 IOD_Schematic:ddr2_dimm_power 46 #=106
-API $1I1085 IOD_Schematic:ddr2_dimm_power 47 PINLOC=22P4
 API $1I1085 IOD_Schematic:ddr2_dimm_power 47 #=8
-API $1I1085 IOD_Schematic:ddr2_dimm_power 48 PINLOC=22P7
 API $1I1085 IOD_Schematic:ddr2_dimm_power 48 #=109
-API $1I1085 IOD_Schematic:ddr2_dimm_power 49 PINLOC=22P7
 API $1I1085 IOD_Schematic:ddr2_dimm_power 49 #=112
-API $1I1085 IOD_Schematic:ddr2_dimm_power 50 PINLOC=22P7
 API $1I1085 IOD_Schematic:ddr2_dimm_power 50 #=115
-API $1I1085 IOD_Schematic:ddr2_dimm_power 51 PINLOC=22P7
 API $1I1085 IOD_Schematic:ddr2_dimm_power 51 #=118
-API $1I1085 IOD_Schematic:ddr2_dimm_power 52 PINLOC=22P7
 API $1I1085 IOD_Schematic:ddr2_dimm_power 52 #=121
-API $1I1085 IOD_Schematic:ddr2_dimm_power 53 PINLOC=22P7
 API $1I1085 IOD_Schematic:ddr2_dimm_power 53 #=124
-API $1I1085 IOD_Schematic:ddr2_dimm_power 54 PINLOC=22P7
 API $1I1085 IOD_Schematic:ddr2_dimm_power 54 #=127
-API $1I1085 IOD_Schematic:ddr2_dimm_power 55 PINLOC=22P7
 API $1I1085 IOD_Schematic:ddr2_dimm_power 55 #=130
-API $1I1085 IOD_Schematic:ddr2_dimm_power 56 PINLOC=22P7
 API $1I1085 IOD_Schematic:ddr2_dimm_power 56 #=133
-API $1I1085 IOD_Schematic:ddr2_dimm_power 57 PINLOC=22P7
 API $1I1085 IOD_Schematic:ddr2_dimm_power 57 #=136
-API $1I1085 IOD_Schematic:ddr2_dimm_power 58 PINLOC=22P4
 API $1I1085 IOD_Schematic:ddr2_dimm_power 58 #=11
-API $1I1085 IOD_Schematic:ddr2_dimm_power 59 PINLOC=22P8
 API $1I1085 IOD_Schematic:ddr2_dimm_power 59 #=139
-API $1I1085 IOD_Schematic:ddr2_dimm_power 60 PINLOC=22P8
 API $1I1085 IOD_Schematic:ddr2_dimm_power 60 #=142
-API $1I1085 IOD_Schematic:ddr2_dimm_power 61 PINLOC=22P8
 API $1I1085 IOD_Schematic:ddr2_dimm_power 61 #=145
-API $1I1085 IOD_Schematic:ddr2_dimm_power 62 PINLOC=22P8
 API $1I1085 IOD_Schematic:ddr2_dimm_power 62 #=148
-API $1I1085 IOD_Schematic:ddr2_dimm_power 63 PINLOC=22P8
 API $1I1085 IOD_Schematic:ddr2_dimm_power 63 #=151
-API $1I1085 IOD_Schematic:ddr2_dimm_power 64 PINLOC=22P8
 API $1I1085 IOD_Schematic:ddr2_dimm_power 64 #=154
-API $1I1085 IOD_Schematic:ddr2_dimm_power 65 PINLOC=22P8
 API $1I1085 IOD_Schematic:ddr2_dimm_power 65 #=157
-API $1I1085 IOD_Schematic:ddr2_dimm_power 66 PINLOC=22P8
 API $1I1085 IOD_Schematic:ddr2_dimm_power 66 #=160
-API $1I1085 IOD_Schematic:ddr2_dimm_power 67 PINLOC=22P8
 API $1I1085 IOD_Schematic:ddr2_dimm_power 67 #=163
-API $1I1085 IOD_Schematic:ddr2_dimm_power 68 PINLOC=22P8
 API $1I1085 IOD_Schematic:ddr2_dimm_power 68 #=166
-API $1I1085 IOD_Schematic:ddr2_dimm_power 69 PINLOC=22P4
 API $1I1085 IOD_Schematic:ddr2_dimm_power 69 #=14
-API $1I1085 IOD_Schematic:ddr2_dimm_power 70 PINLOC=22P9
 API $1I1085 IOD_Schematic:ddr2_dimm_power 70 #=169
-API $1I1085 IOD_Schematic:ddr2_dimm_power 71 PINLOC=22P9
 API $1I1085 IOD_Schematic:ddr2_dimm_power 71 #=198
-API $1I1085 IOD_Schematic:ddr2_dimm_power 72 PINLOC=22P9
 API $1I1085 IOD_Schematic:ddr2_dimm_power 72 #=201
-API $1I1085 IOD_Schematic:ddr2_dimm_power 73 PINLOC=22P9
 API $1I1085 IOD_Schematic:ddr2_dimm_power 73 #=204
-API $1I1085 IOD_Schematic:ddr2_dimm_power 74 PINLOC=22P9
 API $1I1085 IOD_Schematic:ddr2_dimm_power 74 #=207
-API $1I1085 IOD_Schematic:ddr2_dimm_power 75 PINLOC=22P9
 API $1I1085 IOD_Schematic:ddr2_dimm_power 75 #=210
-API $1I1085 IOD_Schematic:ddr2_dimm_power 76 PINLOC=22P9
 API $1I1085 IOD_Schematic:ddr2_dimm_power 76 #=213
-API $1I1085 IOD_Schematic:ddr2_dimm_power 77 PINLOC=22P9
 API $1I1085 IOD_Schematic:ddr2_dimm_power 77 #=216
-API $1I1085 IOD_Schematic:ddr2_dimm_power 78 PINLOC=22P9
 API $1I1085 IOD_Schematic:ddr2_dimm_power 78 #=219
-API $1I1085 IOD_Schematic:ddr2_dimm_power 79 PINLOC=22P9
 API $1I1085 IOD_Schematic:ddr2_dimm_power 79 #=222
-API $1I1085 IOD_Schematic:ddr2_dimm_power 80 PINLOC=22P4
 API $1I1085 IOD_Schematic:ddr2_dimm_power 80 #=17
-API $1I1085 IOD_Schematic:ddr2_dimm_power 81 PINLOC=22P10
 API $1I1085 IOD_Schematic:ddr2_dimm_power 81 #=225
-API $1I1085 IOD_Schematic:ddr2_dimm_power 82 PINLOC=22P10
 API $1I1085 IOD_Schematic:ddr2_dimm_power 82 #=228
-API $1I1085 IOD_Schematic:ddr2_dimm_power 83 PINLOC=22P10
 API $1I1085 IOD_Schematic:ddr2_dimm_power 83 #=231
-API $1I1085 IOD_Schematic:ddr2_dimm_power 84 PINLOC=22P10
 API $1I1085 IOD_Schematic:ddr2_dimm_power 84 #=234
-API $1I1085 IOD_Schematic:ddr2_dimm_power 85 PINLOC=22P10
 API $1I1085 IOD_Schematic:ddr2_dimm_power 85 #=237
-API $1I1085 IOD_Schematic:ddr2_dimm_power 86 PINLOC=22P4
 API $1I1085 IOD_Schematic:ddr2_dimm_power 86 #=20
-API $1I1085 IOD_Schematic:ddr2_dimm_power 87 PINLOC=22P4
 API $1I1085 IOD_Schematic:ddr2_dimm_power 87 #=23
-API $1I1085 IOD_Schematic:ddr2_dimm_power 88 PINLOC=22P4
 API $1I1085 IOD_Schematic:ddr2_dimm_power 88 #=26
 M IOD_Schematic:tps51100dgqr $1I1398
-I $1I1398 IOD_Schematic:tps51100dgqr GND GND GND $1N1372 $1N1370 1V8 5V 1V8 DDR_VTT DDR_VREF_0V9 $1N1385 SCHLOC=22C5`DESCRIP=3A SINK SOURCE REGULATOR`MANUFACTURER=TEXAS INSTRUMENTS`REFDES=U32`PKG_TYPE=SOP50P490X110-11N`P/D_NUM=TPS51100DGQ`VALUE=TPS51100DGQ`MANPARTDESCRIPTION=3A SINK/SOURCE DDR TERMINATION REGULATOR`RATING=3A`MANPARTPACKAGE=DGQ : 10 PIN`GEOMETRY.HEIGHT=1.1MM`LENGTH=0`
+I $1I1398 IOD_Schematic:tps51100dgqr GND GND GND $1N1372 $1N1370 1V8 5V 1V8 DDR_VTT DDR_VREF_0V9 $1N1385 DESCRIP=3A SINK SOURCE REGULATOR`MANUFACTURER`REFDES=U?`PKG_TYPE`P/D_NUM`VALUE`MANPARTDESCRIPTION=3A SINK/SOURCE DDR TERMINATION REGULATOR`RATING=3A`MANPARTPACKAGE=DGQ : 10 PIN`GEOMETRY.HEIGHT=1.1MM`LENGTH=0`
 |R 13:12_5-27-08
-API $1I1398 IOD_Schematic:tps51100dgqr 1 PINLOC=22C5
 API $1I1398 IOD_Schematic:tps51100dgqr 1 #=8
-API $1I1398 IOD_Schematic:tps51100dgqr 2 PINLOC=22C5
 API $1I1398 IOD_Schematic:tps51100dgqr 2 #=4
-API $1I1398 IOD_Schematic:tps51100dgqr 3 PINLOC=22C5
 API $1I1398 IOD_Schematic:tps51100dgqr 3 #=11
-API $1I1398 IOD_Schematic:tps51100dgqr 4 PINLOC=22B5
 API $1I1398 IOD_Schematic:tps51100dgqr 4 #=7
-API $1I1398 IOD_Schematic:tps51100dgqr 5 PINLOC=22B5
 API $1I1398 IOD_Schematic:tps51100dgqr 5 #=9
-API $1I1398 IOD_Schematic:tps51100dgqr 6 PINLOC=22B5
 API $1I1398 IOD_Schematic:tps51100dgqr 6 #=1
-API $1I1398 IOD_Schematic:tps51100dgqr 7 PINLOC=22B5
 API $1I1398 IOD_Schematic:tps51100dgqr 7 #=10
-API $1I1398 IOD_Schematic:tps51100dgqr 8 PINLOC=22B5
 API $1I1398 IOD_Schematic:tps51100dgqr 8 #=2
-API $1I1398 IOD_Schematic:tps51100dgqr 9 PINLOC=22C5
 API $1I1398 IOD_Schematic:tps51100dgqr 9 #=3
-API $1I1398 IOD_Schematic:tps51100dgqr 10 PINLOC=22C5
 API $1I1398 IOD_Schematic:tps51100dgqr 10 #=6
-API $1I1398 IOD_Schematic:tps51100dgqr 11 PINLOC=22C5
 API $1I1398 IOD_Schematic:tps51100dgqr 11 #=5
 P IOD_Schematic:in I2C0_SCLK
 I I2C0_SCLK IOD_Schematic:in I2C0_SCLK 
 |R 7:39_8-30-07
-API I2C0_SCLK IOD_Schematic:in 1 XREF=1-4B,1-6L,1-10B,2-2P,25-5B
 P IOD_Schematic:bi I2C0_SDATA
 I I2C0_SDATA IOD_Schematic:bi I2C0_SDATA 
 |R 11:48_10-3-07
-API I2C0_SDATA IOD_Schematic:bi 1 XREF=1-3B,1-6L,1-10E
 M IOD_Schematic:res_pack_4 $1I1073
-I $1I1073 IOD_Schematic:res_pack_4 DDR_PCKE DDR_PA15 DDR_PA14 DDR_PBA2 DDR_VTT DDR_VTT DDR_VTT DDR_VTT SCHLOC=22M10`GEOMETRY.HEIGHT=0.55MM`TOLERANCE=1%`OPERATINGVOLTAGE=50V`MANPARTPACKAGE=4D02`MANPARTDESCRIPTION=RESISTOR CHIP ARRAYS, THICK FILM`LEVEL=STD`P/D_NUM=4D02WGJ0510B1E`MANUFACTURER=ROYAL OHM`VALUE=49.9R`PKG_TYPE=RESCAV50P100X200X55-8N`REFDES=RP24`
+I $1I1073 IOD_Schematic:res_pack_4 DDR_PCKE DDR_PA15 DDR_PA14 DDR_PBA2 DDR_VTT DDR_VTT DDR_VTT DDR_VTT GEOMETRY.HEIGHT=0.55MM`TOLERANCE`OPERATINGVOLTAGE=50V`MANPARTPACKAGE=4D02`MANPARTDESCRIPTION=RESISTOR CHIP ARRAYS, THICK FILM`LEVEL=STD`P/D_NUM`MANUFACTURER`VALUE`PKG_TYPE`REFDES=RP?`
 |R 11:14_1-24-08
-API $1I1073 IOD_Schematic:res_pack_4 1 PINLOC=22M11
 API $1I1073 IOD_Schematic:res_pack_4 1 #=1
-API $1I1073 IOD_Schematic:res_pack_4 2 PINLOC=22M10
 API $1I1073 IOD_Schematic:res_pack_4 2 #=2
-API $1I1073 IOD_Schematic:res_pack_4 3 PINLOC=22M10
 API $1I1073 IOD_Schematic:res_pack_4 3 #=3
-API $1I1073 IOD_Schematic:res_pack_4 4 PINLOC=22M10
 API $1I1073 IOD_Schematic:res_pack_4 4 #=4
-API $1I1073 IOD_Schematic:res_pack_4 5 PINLOC=22N10
 API $1I1073 IOD_Schematic:res_pack_4 5 #=5
-API $1I1073 IOD_Schematic:res_pack_4 6 PINLOC=22N10
 API $1I1073 IOD_Schematic:res_pack_4 6 #=6
-API $1I1073 IOD_Schematic:res_pack_4 7 PINLOC=22N10
 API $1I1073 IOD_Schematic:res_pack_4 7 #=7
-API $1I1073 IOD_Schematic:res_pack_4 8 PINLOC=22N11
 API $1I1073 IOD_Schematic:res_pack_4 8 #=8
 M IOD_Schematic:ddr2_dimm $1I1088
-I $1I1088 IOD_Schematic:ddr2_dimm DDR_PA0 DDR_PA10 DDR_PA11 DDR_PA12 DDR_PA13 DDR_PA14 DDR_PA15 DDR_PA1 DDR_PA2 DDR_PA3 DDR_PA4 DDR_PA5 DDR_PA6 DDR_PA7 DDR_PA8 DDR_PA9 DDR_PBA0 DDR_PBA1 DDR_PBA2 DDR_PCAS# PPC_ECC0 PPC_ECC1 PPC_ECC2 PPC_ECC3 PPC_ECC4 PPC_ECC5 PPC_ECC6 PPC_ECC7 DDR_PCKE DDR_PCKE DDR_PCLKOUT0# DDR_PCLKOUT1# DDR_PCLKOUT2# DDR_PCLKOUT0 DDR_PCLKOUT1 DDR_PCLKOUT2 DDR_PDM0 DDR_PDM1 DDR_PDM2 DDR_PDM3 DDR_PDM4 DDR_PDM5 DDR_PDM6 DDR_PDM7 DDR_PDM8 $1N1326 DDR_PDQS8 $1N1318 $1N1319 $1N1320 $1N1321 $1N1322 $1N1323 $1N1324 $1N1325 DDR_PDQS0 DDR_PDQS1 DDR_PDQS2 DDR_PDQS3 DDR_PDQS4 DDR_PDQS5 DDR_PDQS6 DDR_PDQS7 DDR_PDQ0 DDR_PDQ10 DDR_PDQ11 DDR_PDQ12 DDR_PDQ13 DDR_PDQ14 DDR_PDQ15 DDR_PDQ16 DDR_PDQ17 DDR_PDQ18 DDR_PDQ19 DDR_PDQ1 DDR_PDQ20 DDR_PDQ21 DDR_PDQ22 DDR_PDQ23 DDR_PDQ24 DDR_PDQ25 DDR_PDQ26 DDR_PDQ27 DDR_PDQ28 DDR_PDQ29 DDR_PDQ2 DDR_PDQ30 DDR_PDQ31 DDR_PDQ32 DDR_PDQ33 DDR_PDQ34 DDR_PDQ35 DDR_PDQ36 DDR_PDQ37 DDR_PDQ38 DDR_PDQ39 DDR_PDQ3 DDR_PDQ40 DDR_PDQ41 DDR_PDQ42 DDR_PDQ43 DDR_PDQ44 DDR_PDQ45 DDR_PDQ46 DDR_PDQ47 DDR_PDQ48 DDR_PDQ49 DDR_PDQ4 DDR_PDQ50 DDR_PDQ51 DDR_PDQ52 DDR_PDQ53 DDR_PDQ54 DDR_PDQ55 DDR_PDQ56 DDR_PDQ57 DDR_PDQ58 DDR_PDQ59 DDR_PDQ5 DDR_PDQ60 DDR_PDQ61 DDR_PDQ62 DDR_PDQ63 DDR_PDQ6 DDR_PDQ7 DDR_PDQ8 DDR_PDQ9 DDR_PODT0 DDR_PODT1 DDR_PRAS# PPC_DDR2_RESET_N DDR_PCS0# DDR_PCS1# GND GND GND I2C0_SCLK I2C0_SDATA DDR_PWE# PAR_IN PPC_DDR2_ERROR SCHLOC=22H6`GEOMETRY.HEIGHT=14.88MM`PKG_TYPE=MOLEX879160001`REFDES=J8`
-|R 11:30_1-24-08
-API $1I1088 IOD_Schematic:ddr2_dimm 1 PINLOC=22J8
+I $1I1088 IOD_Schematic:ddr2_dimm DDR_PA0 DDR_PA10 DDR_PA11 DDR_PA12 DDR_PA13 DDR_PA14 DDR_PA15 DDR_PA1 DDR_PA2 DDR_PA3 DDR_PA4 DDR_PA5 DDR_PA6 DDR_PA7 DDR_PA8 DDR_PA9 DDR_PBA0 DDR_PBA1 DDR_PBA2 DDR_PCAS# PPC_ECC0 PPC_ECC1 PPC_ECC2 PPC_ECC3 PPC_ECC4 PPC_ECC5 PPC_ECC6 PPC_ECC7 DDR_PCKE DDR_PCKE DDR_PCLKOUT0# DDR_PCLKOUT1# DDR_PCLKOUT2# DDR_PCLKOUT0 DDR_PCLKOUT1 DDR_PCLKOUT2 DDR_PDM0 DDR_PDM1 DDR_PDM2 DDR_PDM3 DDR_PDM4 DDR_PDM5 DDR_PDM6 DDR_PDM7 DDR_PDM8 $1N1326 DDR_PDQS8 $1N1318 $1N1319 $1N1320 $1N1321 $1N1322 $1N1323 $1N1324 $1N1325 DDR_PDQS0 DDR_PDQS1 DDR_PDQS2 DDR_PDQS3 DDR_PDQS4 DDR_PDQS5 DDR_PDQS6 DDR_PDQS7 DDR_PDQ0 DDR_PDQ10 DDR_PDQ11 DDR_PDQ12 DDR_PDQ13 DDR_PDQ14 DDR_PDQ15 DDR_PDQ16 DDR_PDQ17 DDR_PDQ18 DDR_PDQ19 DDR_PDQ1 DDR_PDQ20 DDR_PDQ21 DDR_PDQ22 DDR_PDQ23 DDR_PDQ24 DDR_PDQ25 DDR_PDQ26 DDR_PDQ27 DDR_PDQ28 DDR_PDQ29 DDR_PDQ2 DDR_PDQ30 DDR_PDQ31 DDR_PDQ32 DDR_PDQ33 DDR_PDQ34 DDR_PDQ35 DDR_PDQ36 DDR_PDQ37 DDR_PDQ38 DDR_PDQ39 DDR_PDQ3 DDR_PDQ40 DDR_PDQ41 DDR_PDQ42 DDR_PDQ43 DDR_PDQ44 DDR_PDQ45 DDR_PDQ46 DDR_PDQ47 DDR_PDQ48 DDR_PDQ49 DDR_PDQ4 DDR_PDQ50 DDR_PDQ51 DDR_PDQ52 DDR_PDQ53 DDR_PDQ54 DDR_PDQ55 DDR_PDQ56 DDR_PDQ57 DDR_PDQ58 DDR_PDQ59 DDR_PDQ5 DDR_PDQ60 DDR_PDQ61 DDR_PDQ62 DDR_PDQ63 DDR_PDQ6 DDR_PDQ7 DDR_PDQ8 DDR_PDQ9 DDR_PODT0 DDR_PODT1 DDR_PRAS# PPC_DDR2_RESET_N DDR_PCS0# DDR_PCS1# GND GND GND I2C0_SCLK I2C0_SDATA DDR_PWE# PAR_IN PPC_DDR2_ERROR GEOMETRY.HEIGHT=14.88MM`PKG_TYPE`REFDES=J?`
+|R 11:06:39_8-7-09
 API $1I1088 IOD_Schematic:ddr2_dimm 1 #=188
-API $1I1088 IOD_Schematic:ddr2_dimm 2 PINLOC=22J9
 API $1I1088 IOD_Schematic:ddr2_dimm 2 #=70
-API $1I1088 IOD_Schematic:ddr2_dimm 3 PINLOC=22J9
 API $1I1088 IOD_Schematic:ddr2_dimm 3 #=57
-API $1I1088 IOD_Schematic:ddr2_dimm 4 PINLOC=22J9
 API $1I1088 IOD_Schematic:ddr2_dimm 4 #=176
-API $1I1088 IOD_Schematic:ddr2_dimm 5 PINLOC=22J10
 API $1I1088 IOD_Schematic:ddr2_dimm 5 #=196
-API $1I1088 IOD_Schematic:ddr2_dimm 6 PINLOC=22J10
 API $1I1088 IOD_Schematic:ddr2_dimm 6 #=174
-API $1I1088 IOD_Schematic:ddr2_dimm 7 PINLOC=22J10
 API $1I1088 IOD_Schematic:ddr2_dimm 7 #=173
-API $1I1088 IOD_Schematic:ddr2_dimm 8 PINLOC=22J8
 API $1I1088 IOD_Schematic:ddr2_dimm 8 #=183
-API $1I1088 IOD_Schematic:ddr2_dimm 9 PINLOC=22J8
 API $1I1088 IOD_Schematic:ddr2_dimm 9 #=63
-API $1I1088 IOD_Schematic:ddr2_dimm 10 PINLOC=22J9
 API $1I1088 IOD_Schematic:ddr2_dimm 10 #=182
-API $1I1088 IOD_Schematic:ddr2_dimm 11 PINLOC=22J9
 API $1I1088 IOD_Schematic:ddr2_dimm 11 #=61
-API $1I1088 IOD_Schematic:ddr2_dimm 12 PINLOC=22J9
 API $1I1088 IOD_Schematic:ddr2_dimm 12 #=60
-API $1I1088 IOD_Schematic:ddr2_dimm 13 PINLOC=22J9
 API $1I1088 IOD_Schematic:ddr2_dimm 13 #=180
-API $1I1088 IOD_Schematic:ddr2_dimm 14 PINLOC=22J9
 API $1I1088 IOD_Schematic:ddr2_dimm 14 #=58
-API $1I1088 IOD_Schematic:ddr2_dimm 15 PINLOC=22J9
 API $1I1088 IOD_Schematic:ddr2_dimm 15 #=179
-API $1I1088 IOD_Schematic:ddr2_dimm 16 PINLOC=22J9
 API $1I1088 IOD_Schematic:ddr2_dimm 16 #=177
-API $1I1088 IOD_Schematic:ddr2_dimm 17 PINLOC=22J8
 API $1I1088 IOD_Schematic:ddr2_dimm 17 #=71
-API $1I1088 IOD_Schematic:ddr2_dimm 18 PINLOC=22J8
 API $1I1088 IOD_Schematic:ddr2_dimm 18 #=190
-API $1I1088 IOD_Schematic:ddr2_dimm 19 PINLOC=22J8
 API $1I1088 IOD_Schematic:ddr2_dimm 19 #=54
-API $1I1088 IOD_Schematic:ddr2_dimm 20 PINLOC=22J8
 API $1I1088 IOD_Schematic:ddr2_dimm 20 #=74
-API $1I1088 IOD_Schematic:ddr2_dimm 21 PINLOC=22G9
 API $1I1088 IOD_Schematic:ddr2_dimm 21 #=42
-API $1I1088 IOD_Schematic:ddr2_dimm 22 PINLOC=22G9
 API $1I1088 IOD_Schematic:ddr2_dimm 22 #=43
-API $1I1088 IOD_Schematic:ddr2_dimm 23 PINLOC=22G9
 API $1I1088 IOD_Schematic:ddr2_dimm 23 #=48
-API $1I1088 IOD_Schematic:ddr2_dimm 24 PINLOC=22G10
 API $1I1088 IOD_Schematic:ddr2_dimm 24 #=49
-API $1I1088 IOD_Schematic:ddr2_dimm 25 PINLOC=22G10
 API $1I1088 IOD_Schematic:ddr2_dimm 25 #=161
-API $1I1088 IOD_Schematic:ddr2_dimm 26 PINLOC=22G10
 API $1I1088 IOD_Schematic:ddr2_dimm 26 #=162
-API $1I1088 IOD_Schematic:ddr2_dimm 27 PINLOC=22G10
 API $1I1088 IOD_Schematic:ddr2_dimm 27 #=167
-API $1I1088 IOD_Schematic:ddr2_dimm 28 PINLOC=22G10
 API $1I1088 IOD_Schematic:ddr2_dimm 28 #=168
-API $1I1088 IOD_Schematic:ddr2_dimm 29 PINLOC=22J6
 API $1I1088 IOD_Schematic:ddr2_dimm 29 #=52
-API $1I1088 IOD_Schematic:ddr2_dimm 30 PINLOC=22J7
 API $1I1088 IOD_Schematic:ddr2_dimm 30 #=171
-API $1I1088 IOD_Schematic:ddr2_dimm 31 PINLOC=22J7
 API $1I1088 IOD_Schematic:ddr2_dimm 31 #=186
-API $1I1088 IOD_Schematic:ddr2_dimm 32 PINLOC=22J7
 API $1I1088 IOD_Schematic:ddr2_dimm 32 #=138
-API $1I1088 IOD_Schematic:ddr2_dimm 33 PINLOC=22J7
 API $1I1088 IOD_Schematic:ddr2_dimm 33 #=221
-API $1I1088 IOD_Schematic:ddr2_dimm 34 PINLOC=22J7
 API $1I1088 IOD_Schematic:ddr2_dimm 34 #=185
-API $1I1088 IOD_Schematic:ddr2_dimm 35 PINLOC=22J7
 API $1I1088 IOD_Schematic:ddr2_dimm 35 #=137
-API $1I1088 IOD_Schematic:ddr2_dimm 36 PINLOC=22J7
 API $1I1088 IOD_Schematic:ddr2_dimm 36 #=220
-API $1I1088 IOD_Schematic:ddr2_dimm 37 PINLOC=22J5
 API $1I1088 IOD_Schematic:ddr2_dimm 37 #=125
-API $1I1088 IOD_Schematic:ddr2_dimm 38 PINLOC=22J6
 API $1I1088 IOD_Schematic:ddr2_dimm 38 #=134
-API $1I1088 IOD_Schematic:ddr2_dimm 39 PINLOC=22J6
 API $1I1088 IOD_Schematic:ddr2_dimm 39 #=146
-API $1I1088 IOD_Schematic:ddr2_dimm 40 PINLOC=22J6
 API $1I1088 IOD_Schematic:ddr2_dimm 40 #=155
-API $1I1088 IOD_Schematic:ddr2_dimm 41 PINLOC=22J6
 API $1I1088 IOD_Schematic:ddr2_dimm 41 #=202
-API $1I1088 IOD_Schematic:ddr2_dimm 42 PINLOC=22J6
 API $1I1088 IOD_Schematic:ddr2_dimm 42 #=211
-API $1I1088 IOD_Schematic:ddr2_dimm 43 PINLOC=22J6
 API $1I1088 IOD_Schematic:ddr2_dimm 43 #=223
-API $1I1088 IOD_Schematic:ddr2_dimm 44 PINLOC=22J6
 API $1I1088 IOD_Schematic:ddr2_dimm 44 #=232
-API $1I1088 IOD_Schematic:ddr2_dimm 45 PINLOC=22J6
 API $1I1088 IOD_Schematic:ddr2_dimm 45 #=164
-API $1I1088 IOD_Schematic:ddr2_dimm 46 PINLOC=22J5
 API $1I1088 IOD_Schematic:ddr2_dimm 46 #=45
-API $1I1088 IOD_Schematic:ddr2_dimm 47 PINLOC=22J5
 API $1I1088 IOD_Schematic:ddr2_dimm 47 #=46
-API $1I1088 IOD_Schematic:ddr2_dimm 48 PINLOC=22J4
 API $1I1088 IOD_Schematic:ddr2_dimm 48 #=6
-API $1I1088 IOD_Schematic:ddr2_dimm 49 PINLOC=22J4
 API $1I1088 IOD_Schematic:ddr2_dimm 49 #=15
-API $1I1088 IOD_Schematic:ddr2_dimm 50 PINLOC=22J4
 API $1I1088 IOD_Schematic:ddr2_dimm 50 #=27
-API $1I1088 IOD_Schematic:ddr2_dimm 51 PINLOC=22J4
 API $1I1088 IOD_Schematic:ddr2_dimm 51 #=36
-API $1I1088 IOD_Schematic:ddr2_dimm 52 PINLOC=22J4
 API $1I1088 IOD_Schematic:ddr2_dimm 52 #=83
-API $1I1088 IOD_Schematic:ddr2_dimm 53 PINLOC=22J5
 API $1I1088 IOD_Schematic:ddr2_dimm 53 #=92
-API $1I1088 IOD_Schematic:ddr2_dimm 54 PINLOC=22J5
 API $1I1088 IOD_Schematic:ddr2_dimm 54 #=104
-API $1I1088 IOD_Schematic:ddr2_dimm 55 PINLOC=22J5
 API $1I1088 IOD_Schematic:ddr2_dimm 55 #=113
-API $1I1088 IOD_Schematic:ddr2_dimm 56 PINLOC=22J4
 API $1I1088 IOD_Schematic:ddr2_dimm 56 #=7
-API $1I1088 IOD_Schematic:ddr2_dimm 57 PINLOC=22J4
 API $1I1088 IOD_Schematic:ddr2_dimm 57 #=16
-API $1I1088 IOD_Schematic:ddr2_dimm 58 PINLOC=22J4
 API $1I1088 IOD_Schematic:ddr2_dimm 58 #=28
-API $1I1088 IOD_Schematic:ddr2_dimm 59 PINLOC=22J4
 API $1I1088 IOD_Schematic:ddr2_dimm 59 #=37
-API $1I1088 IOD_Schematic:ddr2_dimm 60 PINLOC=22J4
 API $1I1088 IOD_Schematic:ddr2_dimm 60 #=84
-API $1I1088 IOD_Schematic:ddr2_dimm 61 PINLOC=22J5
 API $1I1088 IOD_Schematic:ddr2_dimm 61 #=93
-API $1I1088 IOD_Schematic:ddr2_dimm 62 PINLOC=22J5
 API $1I1088 IOD_Schematic:ddr2_dimm 62 #=105
-API $1I1088 IOD_Schematic:ddr2_dimm 63 PINLOC=22J5
 API $1I1088 IOD_Schematic:ddr2_dimm 63 #=114
-API $1I1088 IOD_Schematic:ddr2_dimm 64 PINLOC=22G3
 API $1I1088 IOD_Schematic:ddr2_dimm 64 #=3
-API $1I1088 IOD_Schematic:ddr2_dimm 65 PINLOC=22G4
 API $1I1088 IOD_Schematic:ddr2_dimm 65 #=21
-API $1I1088 IOD_Schematic:ddr2_dimm 66 PINLOC=22G4
 API $1I1088 IOD_Schematic:ddr2_dimm 66 #=22
-API $1I1088 IOD_Schematic:ddr2_dimm 67 PINLOC=22G4
 API $1I1088 IOD_Schematic:ddr2_dimm 67 #=131
-API $1I1088 IOD_Schematic:ddr2_dimm 68 PINLOC=22G4
 API $1I1088 IOD_Schematic:ddr2_dimm 68 #=132
-API $1I1088 IOD_Schematic:ddr2_dimm 69 PINLOC=22G4
 API $1I1088 IOD_Schematic:ddr2_dimm 69 #=140
-API $1I1088 IOD_Schematic:ddr2_dimm 70 PINLOC=22G4
 API $1I1088 IOD_Schematic:ddr2_dimm 70 #=141
-API $1I1088 IOD_Schematic:ddr2_dimm 71 PINLOC=22G4
 API $1I1088 IOD_Schematic:ddr2_dimm 71 #=24
-API $1I1088 IOD_Schematic:ddr2_dimm 72 PINLOC=22G5
 API $1I1088 IOD_Schematic:ddr2_dimm 72 #=25
-API $1I1088 IOD_Schematic:ddr2_dimm 73 PINLOC=22G5
 API $1I1088 IOD_Schematic:ddr2_dimm 73 #=30
-API $1I1088 IOD_Schematic:ddr2_dimm 74 PINLOC=22G5
 API $1I1088 IOD_Schematic:ddr2_dimm 74 #=31
-API $1I1088 IOD_Schematic:ddr2_dimm 75 PINLOC=22G3
 API $1I1088 IOD_Schematic:ddr2_dimm 75 #=4
-API $1I1088 IOD_Schematic:ddr2_dimm 76 PINLOC=22G5
 API $1I1088 IOD_Schematic:ddr2_dimm 76 #=143
-API $1I1088 IOD_Schematic:ddr2_dimm 77 PINLOC=22G5
 API $1I1088 IOD_Schematic:ddr2_dimm 77 #=144
-API $1I1088 IOD_Schematic:ddr2_dimm 78 PINLOC=22G5
 API $1I1088 IOD_Schematic:ddr2_dimm 78 #=149
-API $1I1088 IOD_Schematic:ddr2_dimm 79 PINLOC=22G5
 API $1I1088 IOD_Schematic:ddr2_dimm 79 #=150
-API $1I1088 IOD_Schematic:ddr2_dimm 80 PINLOC=22G5
 API $1I1088 IOD_Schematic:ddr2_dimm 80 #=33
-API $1I1088 IOD_Schematic:ddr2_dimm 81 PINLOC=22G5
 API $1I1088 IOD_Schematic:ddr2_dimm 81 #=34
-API $1I1088 IOD_Schematic:ddr2_dimm 82 PINLOC=22G5
 API $1I1088 IOD_Schematic:ddr2_dimm 82 #=39
-API $1I1088 IOD_Schematic:ddr2_dimm 83 PINLOC=22G6
 API $1I1088 IOD_Schematic:ddr2_dimm 83 #=40
-API $1I1088 IOD_Schematic:ddr2_dimm 84 PINLOC=22G6
 API $1I1088 IOD_Schematic:ddr2_dimm 84 #=152
-API $1I1088 IOD_Schematic:ddr2_dimm 85 PINLOC=22G6
 API $1I1088 IOD_Schematic:ddr2_dimm 85 #=153
-API $1I1088 IOD_Schematic:ddr2_dimm 86 PINLOC=22G3
 API $1I1088 IOD_Schematic:ddr2_dimm 86 #=9
-API $1I1088 IOD_Schematic:ddr2_dimm 87 PINLOC=22G6
 API $1I1088 IOD_Schematic:ddr2_dimm 87 #=158
-API $1I1088 IOD_Schematic:ddr2_dimm 88 PINLOC=22G6
 API $1I1088 IOD_Schematic:ddr2_dimm 88 #=159
-API $1I1088 IOD_Schematic:ddr2_dimm 89 PINLOC=22G6
 API $1I1088 IOD_Schematic:ddr2_dimm 89 #=80
-API $1I1088 IOD_Schematic:ddr2_dimm 90 PINLOC=22G6
 API $1I1088 IOD_Schematic:ddr2_dimm 90 #=81
-API $1I1088 IOD_Schematic:ddr2_dimm 91 PINLOC=22G6
 API $1I1088 IOD_Schematic:ddr2_dimm 91 #=86
-API $1I1088 IOD_Schematic:ddr2_dimm 92 PINLOC=22G6
 API $1I1088 IOD_Schematic:ddr2_dimm 92 #=87
-API $1I1088 IOD_Schematic:ddr2_dimm 93 PINLOC=22G6
 API $1I1088 IOD_Schematic:ddr2_dimm 93 #=199
-API $1I1088 IOD_Schematic:ddr2_dimm 94 PINLOC=22G7
 API $1I1088 IOD_Schematic:ddr2_dimm 94 #=200
-API $1I1088 IOD_Schematic:ddr2_dimm 95 PINLOC=22G7
 API $1I1088 IOD_Schematic:ddr2_dimm 95 #=205
-API $1I1088 IOD_Schematic:ddr2_dimm 96 PINLOC=22G7
 API $1I1088 IOD_Schematic:ddr2_dimm 96 #=206
-API $1I1088 IOD_Schematic:ddr2_dimm 97 PINLOC=22G3
 API $1I1088 IOD_Schematic:ddr2_dimm 97 #=10
-API $1I1088 IOD_Schematic:ddr2_dimm 98 PINLOC=22G7
 API $1I1088 IOD_Schematic:ddr2_dimm 98 #=89
-API $1I1088 IOD_Schematic:ddr2_dimm 99 PINLOC=22G7
 API $1I1088 IOD_Schematic:ddr2_dimm 99 #=90
-API $1I1088 IOD_Schematic:ddr2_dimm 100 PINLOC=22G7
 API $1I1088 IOD_Schematic:ddr2_dimm 100 #=95
-API $1I1088 IOD_Schematic:ddr2_dimm 101 PINLOC=22G7
 API $1I1088 IOD_Schematic:ddr2_dimm 101 #=96
-API $1I1088 IOD_Schematic:ddr2_dimm 102 PINLOC=22G7
 API $1I1088 IOD_Schematic:ddr2_dimm 102 #=208
-API $1I1088 IOD_Schematic:ddr2_dimm 103 PINLOC=22G7
 API $1I1088 IOD_Schematic:ddr2_dimm 103 #=209
-API $1I1088 IOD_Schematic:ddr2_dimm 104 PINLOC=22G7
 API $1I1088 IOD_Schematic:ddr2_dimm 104 #=214
-API $1I1088 IOD_Schematic:ddr2_dimm 105 PINLOC=22G8
 API $1I1088 IOD_Schematic:ddr2_dimm 105 #=215
-API $1I1088 IOD_Schematic:ddr2_dimm 106 PINLOC=22G8
 API $1I1088 IOD_Schematic:ddr2_dimm 106 #=98
-API $1I1088 IOD_Schematic:ddr2_dimm 107 PINLOC=22G8
 API $1I1088 IOD_Schematic:ddr2_dimm 107 #=99
-API $1I1088 IOD_Schematic:ddr2_dimm 108 PINLOC=22G3
 API $1I1088 IOD_Schematic:ddr2_dimm 108 #=122
-API $1I1088 IOD_Schematic:ddr2_dimm 109 PINLOC=22G8
 API $1I1088 IOD_Schematic:ddr2_dimm 109 #=107
-API $1I1088 IOD_Schematic:ddr2_dimm 110 PINLOC=22G8
 API $1I1088 IOD_Schematic:ddr2_dimm 110 #=108
-API $1I1088 IOD_Schematic:ddr2_dimm 111 PINLOC=22G8
 API $1I1088 IOD_Schematic:ddr2_dimm 111 #=217
-API $1I1088 IOD_Schematic:ddr2_dimm 112 PINLOC=22G8
 API $1I1088 IOD_Schematic:ddr2_dimm 112 #=218
-API $1I1088 IOD_Schematic:ddr2_dimm 113 PINLOC=22G8
 API $1I1088 IOD_Schematic:ddr2_dimm 113 #=226
-API $1I1088 IOD_Schematic:ddr2_dimm 114 PINLOC=22G8
 API $1I1088 IOD_Schematic:ddr2_dimm 114 #=227
-API $1I1088 IOD_Schematic:ddr2_dimm 115 PINLOC=22G8
 API $1I1088 IOD_Schematic:ddr2_dimm 115 #=110
-API $1I1088 IOD_Schematic:ddr2_dimm 116 PINLOC=22G9
 API $1I1088 IOD_Schematic:ddr2_dimm 116 #=111
-API $1I1088 IOD_Schematic:ddr2_dimm 117 PINLOC=22G9
 API $1I1088 IOD_Schematic:ddr2_dimm 117 #=116
-API $1I1088 IOD_Schematic:ddr2_dimm 118 PINLOC=22G9
 API $1I1088 IOD_Schematic:ddr2_dimm 118 #=117
-API $1I1088 IOD_Schematic:ddr2_dimm 119 PINLOC=22G3
 API $1I1088 IOD_Schematic:ddr2_dimm 119 #=123
-API $1I1088 IOD_Schematic:ddr2_dimm 120 PINLOC=22G9
 API $1I1088 IOD_Schematic:ddr2_dimm 120 #=229
-API $1I1088 IOD_Schematic:ddr2_dimm 121 PINLOC=22G9
 API $1I1088 IOD_Schematic:ddr2_dimm 121 #=230
-API $1I1088 IOD_Schematic:ddr2_dimm 122 PINLOC=22G9
 API $1I1088 IOD_Schematic:ddr2_dimm 122 #=235
-API $1I1088 IOD_Schematic:ddr2_dimm 123 PINLOC=22G9
 API $1I1088 IOD_Schematic:ddr2_dimm 123 #=236
-API $1I1088 IOD_Schematic:ddr2_dimm 124 PINLOC=22G3
 API $1I1088 IOD_Schematic:ddr2_dimm 124 #=128
-API $1I1088 IOD_Schematic:ddr2_dimm 125 PINLOC=22G4
 API $1I1088 IOD_Schematic:ddr2_dimm 125 #=129
-API $1I1088 IOD_Schematic:ddr2_dimm 126 PINLOC=22G4
 API $1I1088 IOD_Schematic:ddr2_dimm 126 #=12
-API $1I1088 IOD_Schematic:ddr2_dimm 127 PINLOC=22G4
 API $1I1088 IOD_Schematic:ddr2_dimm 127 #=13
-API $1I1088 IOD_Schematic:ddr2_dimm 128 PINLOC=22J3
 API $1I1088 IOD_Schematic:ddr2_dimm 128 #=195
-API $1I1088 IOD_Schematic:ddr2_dimm 129 PINLOC=22J3
 API $1I1088 IOD_Schematic:ddr2_dimm 129 #=77
-API $1I1088 IOD_Schematic:ddr2_dimm 130 PINLOC=22J7
 API $1I1088 IOD_Schematic:ddr2_dimm 130 #=192
-API $1I1088 IOD_Schematic:ddr2_dimm 131 PINLOC=22J3
 API $1I1088 IOD_Schematic:ddr2_dimm 131 #=18
-API $1I1088 IOD_Schematic:ddr2_dimm 132 PINLOC=22J3
 API $1I1088 IOD_Schematic:ddr2_dimm 132 #=193
-API $1I1088 IOD_Schematic:ddr2_dimm 133 PINLOC=22J3
 API $1I1088 IOD_Schematic:ddr2_dimm 133 #=76
-API $1I1088 IOD_Schematic:ddr2_dimm 134 PINLOC=22G2
 API $1I1088 IOD_Schematic:ddr2_dimm 134 #=239
-API $1I1088 IOD_Schematic:ddr2_dimm 135 PINLOC=22G3
 API $1I1088 IOD_Schematic:ddr2_dimm 135 #=240
-API $1I1088 IOD_Schematic:ddr2_dimm 136 PINLOC=22G3
 API $1I1088 IOD_Schematic:ddr2_dimm 136 #=101
-API $1I1088 IOD_Schematic:ddr2_dimm 137 PINLOC=22G2
 API $1I1088 IOD_Schematic:ddr2_dimm 137 #=120
-API $1I1088 IOD_Schematic:ddr2_dimm 138 PINLOC=22G2
 API $1I1088 IOD_Schematic:ddr2_dimm 138 #=119
-API $1I1088 IOD_Schematic:ddr2_dimm 139 PINLOC=22J3
 API $1I1088 IOD_Schematic:ddr2_dimm 139 #=73
-API $1I1088 IOD_Schematic:ddr2_dimm 140 PINLOC=22J2
 API $1I1088 IOD_Schematic:ddr2_dimm 140 #=68
-API $1I1088 IOD_Schematic:ddr2_dimm 141 PINLOC=22J2
 API $1I1088 IOD_Schematic:ddr2_dimm 141 #=55
 M IOD_Schematic:c $1I1175
-I $1I1175 IOD_Schematic:c 1V8 GND SCHLOC=22Q1`MANUFACTURER=MURATA`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM=GRM155R71E103KAO1B`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIP_CAPACITOR`DIELECTRIC=X7R`VOLTAGERATING=25V`TOLERANCE=10%`TYPE=FIXED`VALUE=10NF`REFDES=C449`
+I $1I1175 IOD_Schematic:c 1V8 GND MANUFACTURER`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM`PKG_TYPE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE`DIELECTRIC=X7R`VOLTAGERATING=25V`TOLERANCE`TYPE=FIXED`VALUE`REFDES=C?`
 |R 6:11_8-28-07
-API $1I1175 IOD_Schematic:c 1 PINLOC=22Q1
 API $1I1175 IOD_Schematic:c 1 #=1
-API $1I1175 IOD_Schematic:c 2 PINLOC=22Q1
 API $1I1175 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1159
-I $1I1159 IOD_Schematic:c 1V8 GND SCHLOC=22Q1`MANUFACTURER=MURATA`REFDES=C440`VALUE=100NF`TYPE=FIXED`TOLERANCE=10%`VOLTAGERATING=10V`DIELECTRIC=X7R`DEVICE=CHIP_CAPACITOR`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE=CAPC1005X55N`P/D_NUM=GRM155R71A104KAO1B`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
+I $1I1159 IOD_Schematic:c 1V8 GND MANUFACTURER`REFDES=C?`VALUE`TYPE=FIXED`TOLERANCE`VOLTAGERATING=10V`DIELECTRIC=X7R`DEVICE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE`P/D_NUM`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
 |R 6:11_8-28-07
-API $1I1159 IOD_Schematic:c 1 PINLOC=22Q1
 API $1I1159 IOD_Schematic:c 1 #=1
-API $1I1159 IOD_Schematic:c 2 PINLOC=22Q1
 API $1I1159 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1176
-I $1I1176 IOD_Schematic:c 1V8 GND SCHLOC=22Q1`MANUFACTURER=MURATA`REFDES=C450`VALUE=10NF`TYPE=FIXED`TOLERANCE=10%`VOLTAGERATING=25V`DIELECTRIC=X7R`DEVICE=CHIP_CAPACITOR`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE=CAPC1005X55N`P/D_NUM=GRM155R71E103KAO1B`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
+I $1I1176 IOD_Schematic:c 1V8 GND MANUFACTURER`REFDES=C?`VALUE`TYPE=FIXED`TOLERANCE`VOLTAGERATING=25V`DIELECTRIC=X7R`DEVICE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE`P/D_NUM`TANLOSSANGLE=0`ROHS_COMPLAINT=ON`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
 |R 6:11_8-28-07
-API $1I1176 IOD_Schematic:c 1 PINLOC=22Q1
 API $1I1176 IOD_Schematic:c 1 #=1
-API $1I1176 IOD_Schematic:c 2 PINLOC=22Q1
 API $1I1176 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1529
-I $1I1529 IOD_Schematic:c $1N1535 GND SCHLOC=22A3`DEVICE=CAP0805_135`PARTS=1`P/D_NUM=GRM21BR61E475KA12K`PKG_TYPE=CAPC2012X135N`VOLTAGERATING=10V`TOLERANCE=±10%`VALUE=4U7F`REFDES=C329`GEOMETRY.HEIGHT=1.35MM`MANUFACTURER=MURATA`
+I $1I1529 IOD_Schematic:c $1N1535 GND DEVICE`PARTS=1`P/D_NUM`PKG_TYPE`VOLTAGERATING=10V`TOLERANCE`VALUE`REFDES=C?`GEOMETRY.HEIGHT=1.35MM`MANUFACTURER`
 |R 6:11_8-28-07
-API $1I1529 IOD_Schematic:c 1 PINLOC=22A3
 API $1I1529 IOD_Schematic:c 1 #=1
-API $1I1529 IOD_Schematic:c 2 PINLOC=22A3
 API $1I1529 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1523
-I $1I1523 IOD_Schematic:c $1N1535 GND SCHLOC=22A3`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM=GRM155R71A104KAO1B`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIP_CAPACITOR`DIELECTRIC=X7R`VOLTAGERATING=10V`TOLERANCE=10%`TYPE=FIXED`VALUE=100NF`REFDES=C300`MANUFACTURER=MURATA`
+I $1I1523 IOD_Schematic:c $1N1535 GND PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM`PKG_TYPE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE`DIELECTRIC=X7R`VOLTAGERATING=10V`TOLERANCE`TYPE=FIXED`VALUE`REFDES=C?`MANUFACTURER`
 |R 6:11_8-28-07
-API $1I1523 IOD_Schematic:c 1 PINLOC=22A3
 API $1I1523 IOD_Schematic:c 1 #=1
-API $1I1523 IOD_Schematic:c 2 PINLOC=22A3
 API $1I1523 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1522
-I $1I1522 IOD_Schematic:c $1N1535 GND SCHLOC=22A3`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM=GRM155R71E103KAO1B`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIP_CAPACITOR`DIELECTRIC=X7R`VOLTAGERATING=25V`TOLERANCE=10%`TYPE=FIXED`VALUE=10NF`REFDES=C63`MANUFACTURER=MURATA`
+I $1I1522 IOD_Schematic:c $1N1535 GND PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`ROHS_COMPLAINT=ON`TANLOSSANGLE=0`P/D_NUM`PKG_TYPE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE`DIELECTRIC=X7R`VOLTAGERATING=25V`TOLERANCE`TYPE=FIXED`VALUE`REFDES=C?`MANUFACTURER`
 |R 6:11_8-28-07
-API $1I1522 IOD_Schematic:c 1 PINLOC=22A3
 API $1I1522 IOD_Schematic:c 1 #=1
-API $1I1522 IOD_Schematic:c 2 PINLOC=22A3
 API $1I1522 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1564
-I $1I1564 IOD_Schematic:c DDR_PCLKOUT1 DDR_PCLKOUT1# SCHLOC=22L7`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`P/D_NUM=GRM1555C1H5R0CZ01B`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIPCAP0402`DIELECTRIC=C0G`VOLTAGERATING=50V`TOLERANCE=10%`TYPE=FIXED`VALUE=5PF`REFDES=C308`MANUFACTURER=MURATA`
+I $1I1564 IOD_Schematic:c DDR_PCLKOUT1 DDR_PCLKOUT1# PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`P/D_NUM`PKG_TYPE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE`DIELECTRIC=C0G`VOLTAGERATING=50V`TOLERANCE`TYPE=FIXED`VALUE`REFDES=C?`MANUFACTURER`
 |R 6:11_8-28-07
-API $1I1564 IOD_Schematic:c 1 PINLOC=22L7
 API $1I1564 IOD_Schematic:c 1 #=1
-API $1I1564 IOD_Schematic:c 2 PINLOC=22L7
 API $1I1564 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1565
-I $1I1565 IOD_Schematic:c DDR_PCLKOUT2 DDR_PCLKOUT2# SCHLOC=22L7`MANUFACTURER=MURATA`REFDES=C313`VALUE=5PF`TYPE=FIXED`TOLERANCE=10%`VOLTAGERATING=50V`DIELECTRIC=C0G`DEVICE=CHIPCAP0402`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE=CAPC1005X55N`P/D_NUM=GRM1555C1H5R0CZ01B`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
+I $1I1565 IOD_Schematic:c DDR_PCLKOUT2 DDR_PCLKOUT2# MANUFACTURER`REFDES=C?`VALUE`TYPE=FIXED`TOLERANCE`VOLTAGERATING=50V`DIELECTRIC=C0G`DEVICE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE`P/D_NUM`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
 |R 6:11_8-28-07
-API $1I1565 IOD_Schematic:c 1 PINLOC=22L7
 API $1I1565 IOD_Schematic:c 1 #=1
-API $1I1565 IOD_Schematic:c 2 PINLOC=22L7
 API $1I1565 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I1097
-I $1I1097 IOD_Schematic:c DDR_PCLKOUT0 DDR_PCLKOUT0# SCHLOC=22K7`MANUFACTURER=MURATA`REFDES=C455`VALUE=5PF`TYPE=FIXED`TOLERANCE=10%`VOLTAGERATING=50V`DIELECTRIC=C0G`DEVICE=CHIPCAP0402`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE=CAPC1005X55N`P/D_NUM=GRM1555C1H5R0CZ01B`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
+I $1I1097 IOD_Schematic:c DDR_PCLKOUT0 DDR_PCLKOUT0# MANUFACTURER`REFDES=C?`VALUE`TYPE=FIXED`TOLERANCE`VOLTAGERATING=50V`DIELECTRIC=C0G`DEVICE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE`P/D_NUM`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
 |R 6:11_8-28-07
-API $1I1097 IOD_Schematic:c 1 PINLOC=22K7
 API $1I1097 IOD_Schematic:c 1 #=1
-API $1I1097 IOD_Schematic:c 2 PINLOC=22K7
 API $1I1097 IOD_Schematic:c 2 #=2
 |N 2
 M IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ $1I1536
-I $1I1536 IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ $1N1535 1V8 SCHLOC=22B4`SUP=AVNET`P/D_NUM=BLM18PG181SN1X`GEOMETRY.HEIGHT=0.95MM`MANUFACTURER=MURATA`REFDES=L17`PKG_TYPE=INDC1608X95N`BOARD_OPTION=BASE`VALUE=180OHM 1.5A`
+I $1I1536 IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ $1N1535 1V8 SUP=AVNET`P/D_NUM`GEOMETRY.HEIGHT=0.95MM`MANUFACTURER`REFDES=L?`PKG_TYPE`BOARD_OPTION=BASE`VALUE`
 |R 15:30_6-18-08
-API $1I1536 IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ 1 PINLOC=22A4
 API $1I1536 IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ 1 #=1
-API $1I1536 IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ 2 PINLOC=22B4
 API $1I1536 IOD_Schematic:ind_bead_0603_180ohm_1r5a_25_ 2 #=2
 M IOD_Schematic:r $1I1100
-I $1I1100 IOD_Schematic:r DDR_PODT0 GND SCHLOC=22K3`DEVICE=RES0402_55`STANDARDS=0402`GEOMETRY.HEIGHT=0.4MM`PKG_TYPE=RESC1005X40N`POWERRATING=0.0625`VALUE=4K7`P/D_NUM=0402WGF0472T1E`MANUFACTURER=ROYAL OHM`REFDES=R225`
+I $1I1100 IOD_Schematic:r DDR_PODT0 GND DEVICE`STANDARDS=0402`GEOMETRY.HEIGHT=0.4MM`PKG_TYPE`POWERRATING=0.0625`VALUE`P/D_NUM`MANUFACTURER`REFDES=R?`
 |R 9:28_5-9-07
-API $1I1100 IOD_Schematic:r 1 PINLOC=22K3
 API $1I1100 IOD_Schematic:r 1 #=1
-API $1I1100 IOD_Schematic:r 2 PINLOC=22L3
 API $1I1100 IOD_Schematic:r 2 #=2
 M IOD_Schematic:r $1I1573
-I $1I1573 IOD_Schematic:r DDR_PCLKOUT# DDR_PCLKOUT SCHLOC=22A2`REFDES=R168`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGF0121T1E`VALUE=120R`POWERRATING=0.0625`PKG_TYPE=RESC1005X40N`GEOMETRY.HEIGHT=0.4MM`STANDARDS=0402`DEVICE=RES0402_55`
+I $1I1573 IOD_Schematic:r DDR_PCLKOUT# DDR_PCLKOUT REFDES=R?`MANUFACTURER`P/D_NUM`VALUE`POWERRATING=0.0625`PKG_TYPE`GEOMETRY.HEIGHT=0.4MM`STANDARDS=0402`DEVICE`
 |R 9:28_5-9-07
-API $1I1573 IOD_Schematic:r 1 PINLOC=22A2
 API $1I1573 IOD_Schematic:r 1 #=1
-API $1I1573 IOD_Schematic:r 2 PINLOC=22A2
 API $1I1573 IOD_Schematic:r 2 #=2
 M IOD_Schematic:cdcu877 $1I1498
-I $1I1498 IOD_Schematic:cdcu877 GND $1N1535 DDR_PCLKOUT DDR_PCLKOUT# FBOUT FBOUT# FBOUT FBOUT# GND GND $1N1525 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 $1N1593 $1N1592 DDR_PCLKOUT1 DDR_PCLKOUT1# $1N1594 $1N1595 $1N1507 $1N1508 $1N1509 $1N1510 $1N1511 $1N1512 $1N1513 $1N1514 $1N1515 $1N1516 DDR_PCLKOUT0 DDR_PCLKOUT0# DDR_PCLKOUT2 DDR_PCLKOUT2# SCHLOC=22B2`PKG_TYPE=QFN50P600X600X100-41N`DIGIKEY_PART#=296-19539-1-ND`P/D_NUM=CDCU877ARHAT`REFDES=U6`
+I $1I1498 IOD_Schematic:cdcu877 GND $1N1535 DDR_PCLKOUT DDR_PCLKOUT# FBOUT FBOUT# FBOUT FBOUT# GND GND $1N1525 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 1V8 $1N1593 $1N1592 DDR_PCLKOUT1 DDR_PCLKOUT1# $1N1594 $1N1595 $1N1507 $1N1508 $1N1509 $1N1510 $1N1511 $1N1512 $1N1513 $1N1514 $1N1515 $1N1516 DDR_PCLKOUT0 DDR_PCLKOUT0# DDR_PCLKOUT2 DDR_PCLKOUT2# PKG_TYPE`DIGIKEY_PART#=296-19539-1-ND`P/D_NUM`REFDES=U?`
 |R 14:14_6-18-08
-API $1I1498 IOD_Schematic:cdcu877 1 PINLOC=22B3
 API $1I1498 IOD_Schematic:cdcu877 1 #=7
-API $1I1498 IOD_Schematic:cdcu877 2 PINLOC=22B3
 API $1I1498 IOD_Schematic:cdcu877 2 #=8
-API $1I1498 IOD_Schematic:cdcu877 3 PINLOC=22B2
 API $1I1498 IOD_Schematic:cdcu877 3 #=4
-API $1I1498 IOD_Schematic:cdcu877 4 PINLOC=22B2
 API $1I1498 IOD_Schematic:cdcu877 4 #=5
-API $1I1498 IOD_Schematic:cdcu877 5 PINLOC=22B1
 API $1I1498 IOD_Schematic:cdcu877 5 #=27
-API $1I1498 IOD_Schematic:cdcu877 6 PINLOC=22B1
 API $1I1498 IOD_Schematic:cdcu877 6 #=26
-API $1I1498 IOD_Schematic:cdcu877 7 PINLOC=22C1
 API $1I1498 IOD_Schematic:cdcu877 7 #=24
-API $1I1498 IOD_Schematic:cdcu877 8 PINLOC=22C1
 API $1I1498 IOD_Schematic:cdcu877 8 #=25
-API $1I1498 IOD_Schematic:cdcu877 9 PINLOC=22B0
 API $1I1498 IOD_Schematic:cdcu877 9 #=10
-API $1I1498 IOD_Schematic:cdcu877 10 PINLOC=22B0
 API $1I1498 IOD_Schematic:cdcu877 10 #=41
-API $1I1498 IOD_Schematic:cdcu877 11 PINLOC=22B3
 API $1I1498 IOD_Schematic:cdcu877 11 #=22
-API $1I1498 IOD_Schematic:cdcu877 12 PINLOC=22B3
 API $1I1498 IOD_Schematic:cdcu877 12 #=21
-API $1I1498 IOD_Schematic:cdcu877 13 PINLOC=22B4
 API $1I1498 IOD_Schematic:cdcu877 13 #=1
-API $1I1498 IOD_Schematic:cdcu877 14 PINLOC=22B4
 API $1I1498 IOD_Schematic:cdcu877 14 #=6
-API $1I1498 IOD_Schematic:cdcu877 15 PINLOC=22B4
 API $1I1498 IOD_Schematic:cdcu877 15 #=9
-API $1I1498 IOD_Schematic:cdcu877 16 PINLOC=22B4
 API $1I1498 IOD_Schematic:cdcu877 16 #=15
-API $1I1498 IOD_Schematic:cdcu877 17 PINLOC=22B4
 API $1I1498 IOD_Schematic:cdcu877 17 #=20
-API $1I1498 IOD_Schematic:cdcu877 18 PINLOC=22B4
 API $1I1498 IOD_Schematic:cdcu877 18 #=23
-API $1I1498 IOD_Schematic:cdcu877 19 PINLOC=22B4
 API $1I1498 IOD_Schematic:cdcu877 19 #=28
-API $1I1498 IOD_Schematic:cdcu877 20 PINLOC=22B4
 API $1I1498 IOD_Schematic:cdcu877 20 #=31
-API $1I1498 IOD_Schematic:cdcu877 21 PINLOC=22B4
 API $1I1498 IOD_Schematic:cdcu877 21 #=36
-API $1I1498 IOD_Schematic:cdcu877 22 PINLOC=22C3
 API $1I1498 IOD_Schematic:cdcu877 22 #=38
-API $1I1498 IOD_Schematic:cdcu877 23 PINLOC=22C3
 API $1I1498 IOD_Schematic:cdcu877 23 #=37
-API $1I1498 IOD_Schematic:cdcu877 24 PINLOC=22C3
 API $1I1498 IOD_Schematic:cdcu877 24 #=39
-API $1I1498 IOD_Schematic:cdcu877 25 PINLOC=22C3
 API $1I1498 IOD_Schematic:cdcu877 25 #=40
-API $1I1498 IOD_Schematic:cdcu877 26 PINLOC=22C3
 API $1I1498 IOD_Schematic:cdcu877 26 #=3
-API $1I1498 IOD_Schematic:cdcu877 27 PINLOC=22C3
 API $1I1498 IOD_Schematic:cdcu877 27 #=2
-API $1I1498 IOD_Schematic:cdcu877 28 PINLOC=22C2
 API $1I1498 IOD_Schematic:cdcu877 28 #=11
-API $1I1498 IOD_Schematic:cdcu877 29 PINLOC=22C2
 API $1I1498 IOD_Schematic:cdcu877 29 #=12
-API $1I1498 IOD_Schematic:cdcu877 30 PINLOC=22C2
 API $1I1498 IOD_Schematic:cdcu877 30 #=14
-API $1I1498 IOD_Schematic:cdcu877 31 PINLOC=22C2
 API $1I1498 IOD_Schematic:cdcu877 31 #=13
-API $1I1498 IOD_Schematic:cdcu877 32 PINLOC=22C2
 API $1I1498 IOD_Schematic:cdcu877 32 #=34
-API $1I1498 IOD_Schematic:cdcu877 33 PINLOC=22C2
 API $1I1498 IOD_Schematic:cdcu877 33 #=35
-API $1I1498 IOD_Schematic:cdcu877 34 PINLOC=22C2
 API $1I1498 IOD_Schematic:cdcu877 34 #=33
-API $1I1498 IOD_Schematic:cdcu877 35 PINLOC=22C2
 API $1I1498 IOD_Schematic:cdcu877 35 #=32
-API $1I1498 IOD_Schematic:cdcu877 36 PINLOC=22C1
 API $1I1498 IOD_Schematic:cdcu877 36 #=29
-API $1I1498 IOD_Schematic:cdcu877 37 PINLOC=22C1
 API $1I1498 IOD_Schematic:cdcu877 37 #=30
-API $1I1498 IOD_Schematic:cdcu877 38 PINLOC=22C1
 API $1I1498 IOD_Schematic:cdcu877 38 #=19
-API $1I1498 IOD_Schematic:cdcu877 39 PINLOC=22C1
 API $1I1498 IOD_Schematic:cdcu877 39 #=18
-API $1I1498 IOD_Schematic:cdcu877 40 PINLOC=22C1
 API $1I1498 IOD_Schematic:cdcu877 40 #=16
-API $1I1498 IOD_Schematic:cdcu877 41 PINLOC=22C1
 API $1I1498 IOD_Schematic:cdcu877 41 #=17
 EW

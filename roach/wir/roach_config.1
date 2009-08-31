@@ -1,8 +1,6 @@
-| Wirelist created using version 5.4.
-V 5.4
-K 222425984600 roach_config
+| Wirelist created using version 6.0 
+V 6.0
 DW roach_config
-Q Case
 SA SHEET=16 OF 25 
 SA SCOUT_META_FORMAT_PREFIX_0=XREF 
 SA SCOUT_META_FORMAT_PREFIX_1=SCHLOC 
@@ -11,41 +9,46 @@ SA SCOUT_META_PAGE_ANNOTATION=SHEET=16 OF 25
 |Q IOD_Schematic:r 2
 AS IOD_Schematic:r PKG_TYPE=RES
 AS IOD_Schematic:r PINOFF
-AS IOD_Schematic:r PREFIX=R
+AS IOD_Schematic:r Prefix=R
 AS IOD_Schematic:r PARTS=1
 AS IOD_Schematic:r LEVEL=STD
 AS IOD_Schematic:r REFDES=R?
 AS IOD_Schematic:r VALUE
 AS IOD_Schematic:r POWERRATING
-AS IOD_Schematic:r PINORDER=N1 N2
 AS IOD_Schematic:r INOV_VER_REC=9:03_5-9-07
-AP IOD_Schematic:r 1 PINTYPE=BI
+AS IOD_Schematic:r PINORDER=N1 N2
 AP IOD_Schematic:r 1 #=1
-AP IOD_Schematic:r 2 PINTYPE=BI
+AP IOD_Schematic:r 1 PINTYPE=BI
 AP IOD_Schematic:r 2 #=2
+AP IOD_Schematic:r 2 PINTYPE=BI
 AS IOD_Schematic:out OUT
+AS IOD_Schematic:out Pin!Order=OUT
+AS IOD_Schematic:out INOV_VER_REC=7:39_8-30-07
 AS IOD_Schematic:out PINORDER=OUT
 AP IOD_Schematic:out 1 PINTYPE=OUT
 |Q IOD_Schematic:cap 1
-AS IOD_Schematic:cap VALUE=
+AS IOD_Schematic:cap VALUE
 AS IOD_Schematic:cap REFDES=C?
-AS IOD_Schematic:cap PREFIX=C
-AS IOD_Schematic:cap P/D_NUM=
+AS IOD_Schematic:cap Prefix=C
+AS IOD_Schematic:cap P/D_NUM
 AS IOD_Schematic:cap PARTSPEC=CAPACITOR
 AS IOD_Schematic:cap LEVEL=STD
 AS IOD_Schematic:cap PARTS=1
 AS IOD_Schematic:cap PKG_TYPE=CAP
 AS IOD_Schematic:cap PINOFF
+AS IOD_Schematic:cap INOV_VER_REC=-
 AS IOD_Schematic:cap PINORDER=N1 N2
-AP IOD_Schematic:cap 1 PINTYPE=BI
 AP IOD_Schematic:cap 1 #=1
+AP IOD_Schematic:cap 1 PINTYPE=BI
 AP IOD_Schematic:cap 2 #=2
 AP IOD_Schematic:cap 2 PINTYPE=BI
 AS IOD_Schematic:in IN
+AS IOD_Schematic:in Pin!Order=IN
+AS IOD_Schematic:in INOV_VER_REC=7:39_8-30-07
 AS IOD_Schematic:in PINORDER=IN
 AP IOD_Schematic:in 1 PINTYPE=IN
 |Q IOD_Schematic:c 1
-AS IOD_Schematic:c PREFIX=C
+AS IOD_Schematic:c Prefix=C
 AS IOD_Schematic:c PARTSPEC=CAPACITOR
 AS IOD_Schematic:c LEVEL=STD
 AS IOD_Schematic:c PARTS=1
@@ -54,34 +57,41 @@ AS IOD_Schematic:c PINOFF
 AS IOD_Schematic:c VALUE
 AS IOD_Schematic:c VOLTAGERATING
 AS IOD_Schematic:c REFDES=C?
-AS IOD_Schematic:c PINORDER=N1 N2
 AS IOD_Schematic:c INOV_VER_REC=6:11_8-28-07
-AP IOD_Schematic:c 1 PINTYPE=BI
+AS IOD_Schematic:c PINORDER=N1 N2
 AP IOD_Schematic:c 1 #=1
-AP IOD_Schematic:c 2 PINTYPE=BI
+AP IOD_Schematic:c 1 PINTYPE=BI
 AP IOD_Schematic:c 2 #=2
+AP IOD_Schematic:c 2 PINTYPE=BI
 AS IOD_Schematic:in IN
+AS IOD_Schematic:in Pin!Order=IN
+AS IOD_Schematic:in INOV_VER_REC=7:39_8-30-07
 AS IOD_Schematic:in PINORDER=IN
 AP IOD_Schematic:in 1 PINTYPE=IN
 AS IOD_Schematic:out OUT
+AS IOD_Schematic:out Pin!Order=OUT
+AS IOD_Schematic:out INOV_VER_REC=-
 AS IOD_Schematic:out PINORDER=OUT
 AP IOD_Schematic:out 1 PINTYPE=OUT
 |Q IOD_Schematic:cap_pol 1
 AS IOD_Schematic:cap_pol PARTS=1
 AS IOD_Schematic:cap_pol LEVEL=STD
 AS IOD_Schematic:cap_pol PINOFF
-AS IOD_Schematic:cap_pol PREFIX=C
-AS IOD_Schematic:cap_pol PINORDER=P N
+AS IOD_Schematic:cap_pol Prefix=C
+AS IOD_Schematic:cap_pol Pin!Order=P N
 AS IOD_Schematic:cap_pol PKG_TYPE=CAP
 AS IOD_Schematic:cap_pol REFDES=C?
 AS IOD_Schematic:cap_pol VOLTAGERATING
 AS IOD_Schematic:cap_pol VALUE
 AS IOD_Schematic:cap_pol INOV_VER_REC=9:27_9-20-07
+AS IOD_Schematic:cap_pol PINORDER=N P
+AP IOD_Schematic:cap_pol 1 #=2
 AP IOD_Schematic:cap_pol 1 PINTYPE=BI
-AP IOD_Schematic:cap_pol 1 #=1
+AP IOD_Schematic:cap_pol 2 #=1
 AP IOD_Schematic:cap_pol 2 PINTYPE=BI
-AP IOD_Schematic:cap_pol 2 #=2
 AS IOD_Schematic:bi BI
+AS IOD_Schematic:bi Pin!Order=BI
+AS IOD_Schematic:bi INOV_VER_REC=11:48_10-3-07
 AS IOD_Schematic:bi PINORDER=BI
 AP IOD_Schematic:bi 1 PINTYPE=BI
 |Q IOD_Schematic:xilinx_14_pin_jtag 1
@@ -91,8 +101,8 @@ AS IOD_Schematic:xilinx_14_pin_jtag PARTS=1
 AS IOD_Schematic:xilinx_14_pin_jtag DEVICE=14-PIN_JTAG
 AS IOD_Schematic:xilinx_14_pin_jtag P/D_NUM=JTAG-14
 AS IOD_Schematic:xilinx_14_pin_jtag REFDES=J?
-AS IOD_Schematic:xilinx_14_pin_jtag PINORDER=GND_0 GND_1 GND_2 GND_3 GND_4 GND_6 GND_7 NC_0 NC_1 TCK TDI TDO TMS VREF
 AS IOD_Schematic:xilinx_14_pin_jtag INOV_VER_REC=8:29_5-9-08
+AS IOD_Schematic:xilinx_14_pin_jtag PINORDER=GND_0 GND_1 GND_2 GND_3 GND_4 GND_6 GND_7 NC_0 NC_1 TCK TDI TDO TMS VREF
 AP IOD_Schematic:xilinx_14_pin_jtag 1 #=1
 AP IOD_Schematic:xilinx_14_pin_jtag 1 PINTYPE=ANALOG
 AP IOD_Schematic:xilinx_14_pin_jtag 2 #=3
@@ -107,11 +117,11 @@ AP IOD_Schematic:xilinx_14_pin_jtag 6 #=11
 AP IOD_Schematic:xilinx_14_pin_jtag 6 PINTYPE=ANALOG
 AP IOD_Schematic:xilinx_14_pin_jtag 7 #=13
 AP IOD_Schematic:xilinx_14_pin_jtag 7 PINTYPE=ANALOG
-AP IOD_Schematic:xilinx_14_pin_jtag 8 NC
 AP IOD_Schematic:xilinx_14_pin_jtag 8 #=12
+AP IOD_Schematic:xilinx_14_pin_jtag 8 NC=
 AP IOD_Schematic:xilinx_14_pin_jtag 8 PINTYPE=ANALOG
-AP IOD_Schematic:xilinx_14_pin_jtag 9 NC
 AP IOD_Schematic:xilinx_14_pin_jtag 9 #=14
+AP IOD_Schematic:xilinx_14_pin_jtag 9 NC=
 AP IOD_Schematic:xilinx_14_pin_jtag 9 PINTYPE=ANALOG
 AP IOD_Schematic:xilinx_14_pin_jtag 10 #=6
 AP IOD_Schematic:xilinx_14_pin_jtag 10 PINTYPE=OUT
@@ -137,259 +147,260 @@ AS IOD_Schematic:roach_jtag_conf FPCPATH=./IO\ROACH101.FPC
 AS IOD_Schematic:roach_jtag_conf HYPER_MOD=FF1136
 AS IOD_Schematic:roach_jtag_conf HYPER_MOD_FILE=VIRTEX5.IBS
 AS IOD_Schematic:roach_jtag_conf IOD_GENERATED=1
+AS IOD_Schematic:roach_jtag_conf INOV_VER_REC=-
 AS IOD_Schematic:roach_jtag_conf PINORDER=3V3_0 3V3_0_1 SX95T_CCLK_0 SX95T_CS_B_0 SX95T_DONE_0 SX95T_D_IN_0 SX95T_D_OUT_BUSY_0 SX95T_HSWAP_EN SX95T_INIT_B_0 SX95T_M0_0 SX95T_M1_0 SX95T_M2_0 SX95T_PROGRAM_B_0 SX95T_RDWR_B_0 SX95T_R_FUSE_0 SX95T_TCK SX95T_TDI SX95T_TDO SX95T_TMS SX95T_VFS_0 VBATT_0
 AP IOD_Schematic:roach_jtag_conf 1 #=AA22
-AP IOD_Schematic:roach_jtag_conf 1 PINTYPE=BI
+AP IOD_Schematic:roach_jtag_conf 1 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_jtag_conf 1 NO_CONNECT=NO
-AP IOD_Schematic:roach_jtag_conf 1 IOD_SIGNALNAME=3V3_0
+AP IOD_Schematic:roach_jtag_conf 1 IOD_CUSTOM=3V3_0
+AP IOD_Schematic:roach_jtag_conf 1 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 1 IOD_PINFUNCTION=VCCO_0
 AP IOD_Schematic:roach_jtag_conf 1 IOD_PINNAME=VCCO_0
 AP IOD_Schematic:roach_jtag_conf 1 IOD_PINNUMBER=AA22
-AP IOD_Schematic:roach_jtag_conf 1 IOD_PINFUNCTION=VCCO_0
-AP IOD_Schematic:roach_jtag_conf 1 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_jtag_conf 1 IOD_CUSTOM=3V3_0
 AP IOD_Schematic:roach_jtag_conf 1 IOD_PORTID=AA22
 AP IOD_Schematic:roach_jtag_conf 1 IOD_PORTTYPE=PIN
-AP IOD_Schematic:roach_jtag_conf 1 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 1 IOD_SIGNALNAME=3V3_0
+AP IOD_Schematic:roach_jtag_conf 1 PINTYPE=BI
 AP IOD_Schematic:roach_jtag_conf 2 #=AD23
-AP IOD_Schematic:roach_jtag_conf 2 PINTYPE=BI
+AP IOD_Schematic:roach_jtag_conf 2 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_jtag_conf 2 NO_CONNECT=NO
-AP IOD_Schematic:roach_jtag_conf 2 IOD_SIGNALNAME=3V3_0
+AP IOD_Schematic:roach_jtag_conf 2 IOD_CUSTOM=3V3_0_1
+AP IOD_Schematic:roach_jtag_conf 2 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 2 IOD_PINFUNCTION=VCCO_0
 AP IOD_Schematic:roach_jtag_conf 2 IOD_PINNAME=VCCO_0
 AP IOD_Schematic:roach_jtag_conf 2 IOD_PINNUMBER=AD23
-AP IOD_Schematic:roach_jtag_conf 2 IOD_PINFUNCTION=VCCO_0
-AP IOD_Schematic:roach_jtag_conf 2 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_jtag_conf 2 IOD_CUSTOM=3V3_0_1
 AP IOD_Schematic:roach_jtag_conf 2 IOD_PORTID=AD23
 AP IOD_Schematic:roach_jtag_conf 2 IOD_PORTTYPE=PIN
-AP IOD_Schematic:roach_jtag_conf 2 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 2 IOD_SIGNALNAME=3V3_0
+AP IOD_Schematic:roach_jtag_conf 2 PINTYPE=BI
 AP IOD_Schematic:roach_jtag_conf 3 #=N15
-AP IOD_Schematic:roach_jtag_conf 3 PINTYPE=BI
+AP IOD_Schematic:roach_jtag_conf 3 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_jtag_conf 3 NO_CONNECT=NO
-AP IOD_Schematic:roach_jtag_conf 3 IOD_SIGNALNAME=SX95T_CCLK_0
+AP IOD_Schematic:roach_jtag_conf 3 IOD_CUSTOM=SX95T_CCLK_0
+AP IOD_Schematic:roach_jtag_conf 3 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 3 IOD_PINFUNCTION=CCLK_0
 AP IOD_Schematic:roach_jtag_conf 3 IOD_PINNAME=CCLK_0
 AP IOD_Schematic:roach_jtag_conf 3 IOD_PINNUMBER=N15
-AP IOD_Schematic:roach_jtag_conf 3 IOD_PINFUNCTION=CCLK_0
-AP IOD_Schematic:roach_jtag_conf 3 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_jtag_conf 3 IOD_CUSTOM=SX95T_CCLK_0
 AP IOD_Schematic:roach_jtag_conf 3 IOD_PORTID=N15
 AP IOD_Schematic:roach_jtag_conf 3 IOD_PORTTYPE=PIN
-AP IOD_Schematic:roach_jtag_conf 3 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 3 IOD_SIGNALNAME=SX95T_CCLK_0
+AP IOD_Schematic:roach_jtag_conf 3 PINTYPE=BI
 AP IOD_Schematic:roach_jtag_conf 4 #=N22
-AP IOD_Schematic:roach_jtag_conf 4 PINTYPE=BI
+AP IOD_Schematic:roach_jtag_conf 4 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_jtag_conf 4 NO_CONNECT=NO
-AP IOD_Schematic:roach_jtag_conf 4 IOD_SIGNALNAME=SX95T_CS_B_0
+AP IOD_Schematic:roach_jtag_conf 4 IOD_CUSTOM=SX95T_CS_B_0
+AP IOD_Schematic:roach_jtag_conf 4 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 4 IOD_PINFUNCTION=CS_B_0
 AP IOD_Schematic:roach_jtag_conf 4 IOD_PINNAME=CS_B_0
 AP IOD_Schematic:roach_jtag_conf 4 IOD_PINNUMBER=N22
-AP IOD_Schematic:roach_jtag_conf 4 IOD_PINFUNCTION=CS_B_0
-AP IOD_Schematic:roach_jtag_conf 4 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_jtag_conf 4 IOD_CUSTOM=SX95T_CS_B_0
 AP IOD_Schematic:roach_jtag_conf 4 IOD_PORTID=N22
 AP IOD_Schematic:roach_jtag_conf 4 IOD_PORTTYPE=PIN
-AP IOD_Schematic:roach_jtag_conf 4 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 4 IOD_SIGNALNAME=SX95T_CS_B_0
+AP IOD_Schematic:roach_jtag_conf 4 PINTYPE=BI
 AP IOD_Schematic:roach_jtag_conf 5 #=M15
-AP IOD_Schematic:roach_jtag_conf 5 PINTYPE=BI
+AP IOD_Schematic:roach_jtag_conf 5 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_jtag_conf 5 NO_CONNECT=NO
-AP IOD_Schematic:roach_jtag_conf 5 IOD_SIGNALNAME=SX95T_DONE_0
+AP IOD_Schematic:roach_jtag_conf 5 IOD_CUSTOM=SX95T_DONE_0
+AP IOD_Schematic:roach_jtag_conf 5 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 5 IOD_PINFUNCTION=DONE_0
 AP IOD_Schematic:roach_jtag_conf 5 IOD_PINNAME=DONE_0
 AP IOD_Schematic:roach_jtag_conf 5 IOD_PINNUMBER=M15
-AP IOD_Schematic:roach_jtag_conf 5 IOD_PINFUNCTION=DONE_0
-AP IOD_Schematic:roach_jtag_conf 5 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_jtag_conf 5 IOD_CUSTOM=SX95T_DONE_0
 AP IOD_Schematic:roach_jtag_conf 5 IOD_PORTID=M15
 AP IOD_Schematic:roach_jtag_conf 5 IOD_PORTTYPE=PIN
-AP IOD_Schematic:roach_jtag_conf 5 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 5 IOD_SIGNALNAME=SX95T_DONE_0
+AP IOD_Schematic:roach_jtag_conf 5 PINTYPE=BI
 AP IOD_Schematic:roach_jtag_conf 6 #=P15
-AP IOD_Schematic:roach_jtag_conf 6 PINTYPE=BI
+AP IOD_Schematic:roach_jtag_conf 6 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_jtag_conf 6 NO_CONNECT=NO
-AP IOD_Schematic:roach_jtag_conf 6 IOD_SIGNALNAME=SX95T_D_IN_0
+AP IOD_Schematic:roach_jtag_conf 6 IOD_CUSTOM=SX95T_D_IN_0
+AP IOD_Schematic:roach_jtag_conf 6 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 6 IOD_PINFUNCTION=D_IN_0
 AP IOD_Schematic:roach_jtag_conf 6 IOD_PINNAME=D_IN_0
 AP IOD_Schematic:roach_jtag_conf 6 IOD_PINNUMBER=P15
-AP IOD_Schematic:roach_jtag_conf 6 IOD_PINFUNCTION=D_IN_0
-AP IOD_Schematic:roach_jtag_conf 6 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_jtag_conf 6 IOD_CUSTOM=SX95T_D_IN_0
 AP IOD_Schematic:roach_jtag_conf 6 IOD_PORTID=P15
 AP IOD_Schematic:roach_jtag_conf 6 IOD_PORTTYPE=PIN
-AP IOD_Schematic:roach_jtag_conf 6 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 6 IOD_SIGNALNAME=SX95T_D_IN_0
+AP IOD_Schematic:roach_jtag_conf 6 PINTYPE=BI
 AP IOD_Schematic:roach_jtag_conf 7 #=AD15
-AP IOD_Schematic:roach_jtag_conf 7 PINTYPE=BI
+AP IOD_Schematic:roach_jtag_conf 7 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_jtag_conf 7 NO_CONNECT=NO
-AP IOD_Schematic:roach_jtag_conf 7 IOD_SIGNALNAME=SX95T_D_OUT_BUSY_0
+AP IOD_Schematic:roach_jtag_conf 7 IOD_CUSTOM=SX95T_D_OUT_BUSY_0
+AP IOD_Schematic:roach_jtag_conf 7 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 7 IOD_PINFUNCTION=D_OUT_BUSY_0
 AP IOD_Schematic:roach_jtag_conf 7 IOD_PINNAME=D_OUT_BUSY_0
 AP IOD_Schematic:roach_jtag_conf 7 IOD_PINNUMBER=AD15
-AP IOD_Schematic:roach_jtag_conf 7 IOD_PINFUNCTION=D_OUT_BUSY_0
-AP IOD_Schematic:roach_jtag_conf 7 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_jtag_conf 7 IOD_CUSTOM=SX95T_D_OUT_BUSY_0
 AP IOD_Schematic:roach_jtag_conf 7 IOD_PORTID=AD15
 AP IOD_Schematic:roach_jtag_conf 7 IOD_PORTTYPE=PIN
-AP IOD_Schematic:roach_jtag_conf 7 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 7 IOD_SIGNALNAME=SX95T_D_OUT_BUSY_0
+AP IOD_Schematic:roach_jtag_conf 7 PINTYPE=BI
 AP IOD_Schematic:roach_jtag_conf 8 #=M23
-AP IOD_Schematic:roach_jtag_conf 8 PINTYPE=BI
+AP IOD_Schematic:roach_jtag_conf 8 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_jtag_conf 8 NO_CONNECT=NO
-AP IOD_Schematic:roach_jtag_conf 8 IOD_SIGNALNAME=SX95T_HSWAP_EN
+AP IOD_Schematic:roach_jtag_conf 8 IOD_CUSTOM=SX95T_HSWAP_EN
+AP IOD_Schematic:roach_jtag_conf 8 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 8 IOD_PINFUNCTION=HSWAPEN_0
 AP IOD_Schematic:roach_jtag_conf 8 IOD_PINNAME=HSWAPEN_0
 AP IOD_Schematic:roach_jtag_conf 8 IOD_PINNUMBER=M23
-AP IOD_Schematic:roach_jtag_conf 8 IOD_PINFUNCTION=HSWAPEN_0
-AP IOD_Schematic:roach_jtag_conf 8 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_jtag_conf 8 IOD_CUSTOM=SX95T_HSWAP_EN
 AP IOD_Schematic:roach_jtag_conf 8 IOD_PORTID=M23
 AP IOD_Schematic:roach_jtag_conf 8 IOD_PORTTYPE=PIN
-AP IOD_Schematic:roach_jtag_conf 8 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 8 IOD_SIGNALNAME=SX95T_HSWAP_EN
+AP IOD_Schematic:roach_jtag_conf 8 PINTYPE=BI
 AP IOD_Schematic:roach_jtag_conf 9 #=N14
-AP IOD_Schematic:roach_jtag_conf 9 PINTYPE=BI
+AP IOD_Schematic:roach_jtag_conf 9 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_jtag_conf 9 NO_CONNECT=NO
-AP IOD_Schematic:roach_jtag_conf 9 IOD_SIGNALNAME=SX95T_INIT_B_0
+AP IOD_Schematic:roach_jtag_conf 9 IOD_CUSTOM=SX95T_INIT_B_0
+AP IOD_Schematic:roach_jtag_conf 9 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 9 IOD_PINFUNCTION=INIT_B_0
 AP IOD_Schematic:roach_jtag_conf 9 IOD_PINNAME=INIT_B_0
 AP IOD_Schematic:roach_jtag_conf 9 IOD_PINNUMBER=N14
-AP IOD_Schematic:roach_jtag_conf 9 IOD_PINFUNCTION=INIT_B_0
-AP IOD_Schematic:roach_jtag_conf 9 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_jtag_conf 9 IOD_CUSTOM=SX95T_INIT_B_0
 AP IOD_Schematic:roach_jtag_conf 9 IOD_PORTID=N14
 AP IOD_Schematic:roach_jtag_conf 9 IOD_PORTTYPE=PIN
-AP IOD_Schematic:roach_jtag_conf 9 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 9 IOD_SIGNALNAME=SX95T_INIT_B_0
+AP IOD_Schematic:roach_jtag_conf 9 PINTYPE=BI
 AP IOD_Schematic:roach_jtag_conf 10 #=AD21
-AP IOD_Schematic:roach_jtag_conf 10 PINTYPE=BI
+AP IOD_Schematic:roach_jtag_conf 10 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_jtag_conf 10 NO_CONNECT=NO
-AP IOD_Schematic:roach_jtag_conf 10 IOD_SIGNALNAME=SX95T_M0_0
+AP IOD_Schematic:roach_jtag_conf 10 IOD_CUSTOM=SX95T_M0_0
+AP IOD_Schematic:roach_jtag_conf 10 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 10 IOD_PINFUNCTION=M0_0
 AP IOD_Schematic:roach_jtag_conf 10 IOD_PINNAME=M0_0
 AP IOD_Schematic:roach_jtag_conf 10 IOD_PINNUMBER=AD21
-AP IOD_Schematic:roach_jtag_conf 10 IOD_PINFUNCTION=M0_0
-AP IOD_Schematic:roach_jtag_conf 10 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_jtag_conf 10 IOD_CUSTOM=SX95T_M0_0
 AP IOD_Schematic:roach_jtag_conf 10 IOD_PORTID=AD21
 AP IOD_Schematic:roach_jtag_conf 10 IOD_PORTTYPE=PIN
-AP IOD_Schematic:roach_jtag_conf 10 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 10 IOD_SIGNALNAME=SX95T_M0_0
+AP IOD_Schematic:roach_jtag_conf 10 PINTYPE=BI
 AP IOD_Schematic:roach_jtag_conf 11 #=AC22
-AP IOD_Schematic:roach_jtag_conf 11 PINTYPE=BI
+AP IOD_Schematic:roach_jtag_conf 11 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_jtag_conf 11 NO_CONNECT=NO
-AP IOD_Schematic:roach_jtag_conf 11 IOD_SIGNALNAME=SX95T_M1_0
+AP IOD_Schematic:roach_jtag_conf 11 IOD_CUSTOM=SX95T_M1_0
+AP IOD_Schematic:roach_jtag_conf 11 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 11 IOD_PINFUNCTION=M1_0
 AP IOD_Schematic:roach_jtag_conf 11 IOD_PINNAME=M1_0
 AP IOD_Schematic:roach_jtag_conf 11 IOD_PINNUMBER=AC22
-AP IOD_Schematic:roach_jtag_conf 11 IOD_PINFUNCTION=M1_0
-AP IOD_Schematic:roach_jtag_conf 11 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_jtag_conf 11 IOD_CUSTOM=SX95T_M1_0
 AP IOD_Schematic:roach_jtag_conf 11 IOD_PORTID=AC22
 AP IOD_Schematic:roach_jtag_conf 11 IOD_PORTTYPE=PIN
-AP IOD_Schematic:roach_jtag_conf 11 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 11 IOD_SIGNALNAME=SX95T_M1_0
+AP IOD_Schematic:roach_jtag_conf 11 PINTYPE=BI
 AP IOD_Schematic:roach_jtag_conf 12 #=AD22
-AP IOD_Schematic:roach_jtag_conf 12 PINTYPE=BI
+AP IOD_Schematic:roach_jtag_conf 12 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_jtag_conf 12 NO_CONNECT=NO
-AP IOD_Schematic:roach_jtag_conf 12 IOD_SIGNALNAME=SX95T_M2_0
+AP IOD_Schematic:roach_jtag_conf 12 IOD_CUSTOM=SX95T_M2_0
+AP IOD_Schematic:roach_jtag_conf 12 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 12 IOD_PINFUNCTION=M2_0
 AP IOD_Schematic:roach_jtag_conf 12 IOD_PINNAME=M2_0
 AP IOD_Schematic:roach_jtag_conf 12 IOD_PINNUMBER=AD22
-AP IOD_Schematic:roach_jtag_conf 12 IOD_PINFUNCTION=M2_0
-AP IOD_Schematic:roach_jtag_conf 12 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_jtag_conf 12 IOD_CUSTOM=SX95T_M2_0
 AP IOD_Schematic:roach_jtag_conf 12 IOD_PORTID=AD22
 AP IOD_Schematic:roach_jtag_conf 12 IOD_PORTTYPE=PIN
-AP IOD_Schematic:roach_jtag_conf 12 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 12 IOD_SIGNALNAME=SX95T_M2_0
+AP IOD_Schematic:roach_jtag_conf 12 PINTYPE=BI
 AP IOD_Schematic:roach_jtag_conf 13 #=M22
-AP IOD_Schematic:roach_jtag_conf 13 PINTYPE=BI
+AP IOD_Schematic:roach_jtag_conf 13 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_jtag_conf 13 NO_CONNECT=NO
-AP IOD_Schematic:roach_jtag_conf 13 IOD_SIGNALNAME=SX95T_PROGRAM_B_0
+AP IOD_Schematic:roach_jtag_conf 13 IOD_CUSTOM=SX95T_PROGRAM_B_0
+AP IOD_Schematic:roach_jtag_conf 13 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 13 IOD_PINFUNCTION=PROGRAM_B_0
 AP IOD_Schematic:roach_jtag_conf 13 IOD_PINNAME=PROGRAM_B_0
 AP IOD_Schematic:roach_jtag_conf 13 IOD_PINNUMBER=M22
-AP IOD_Schematic:roach_jtag_conf 13 IOD_PINFUNCTION=PROGRAM_B_0
-AP IOD_Schematic:roach_jtag_conf 13 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_jtag_conf 13 IOD_CUSTOM=SX95T_PROGRAM_B_0
 AP IOD_Schematic:roach_jtag_conf 13 IOD_PORTID=M22
 AP IOD_Schematic:roach_jtag_conf 13 IOD_PORTTYPE=PIN
-AP IOD_Schematic:roach_jtag_conf 13 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 13 IOD_SIGNALNAME=SX95T_PROGRAM_B_0
+AP IOD_Schematic:roach_jtag_conf 13 PINTYPE=BI
 AP IOD_Schematic:roach_jtag_conf 14 #=N23
-AP IOD_Schematic:roach_jtag_conf 14 PINTYPE=BI
+AP IOD_Schematic:roach_jtag_conf 14 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_jtag_conf 14 NO_CONNECT=NO
-AP IOD_Schematic:roach_jtag_conf 14 IOD_SIGNALNAME=SX95T_RDWR_B_0
+AP IOD_Schematic:roach_jtag_conf 14 IOD_CUSTOM=SX95T_RDWR_B_0
+AP IOD_Schematic:roach_jtag_conf 14 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 14 IOD_PINFUNCTION=RDWR_B_0
 AP IOD_Schematic:roach_jtag_conf 14 IOD_PINNAME=RDWR_B_0
 AP IOD_Schematic:roach_jtag_conf 14 IOD_PINNUMBER=N23
-AP IOD_Schematic:roach_jtag_conf 14 IOD_PINFUNCTION=RDWR_B_0
-AP IOD_Schematic:roach_jtag_conf 14 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_jtag_conf 14 IOD_CUSTOM=SX95T_RDWR_B_0
 AP IOD_Schematic:roach_jtag_conf 14 IOD_PORTID=N23
 AP IOD_Schematic:roach_jtag_conf 14 IOD_PORTTYPE=PIN
-AP IOD_Schematic:roach_jtag_conf 14 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 14 IOD_SIGNALNAME=SX95T_RDWR_B_0
+AP IOD_Schematic:roach_jtag_conf 14 PINTYPE=BI
 AP IOD_Schematic:roach_jtag_conf 15 #=AC23
-AP IOD_Schematic:roach_jtag_conf 15 PINTYPE=BI
+AP IOD_Schematic:roach_jtag_conf 15 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_jtag_conf 15 NO_CONNECT=NO
-AP IOD_Schematic:roach_jtag_conf 15 IOD_SIGNALNAME=SX95T_R_FUSE_0
+AP IOD_Schematic:roach_jtag_conf 15 IOD_CUSTOM=SX95T_R_FUSE_0
+AP IOD_Schematic:roach_jtag_conf 15 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 15 IOD_PINFUNCTION=RSVD_0
 AP IOD_Schematic:roach_jtag_conf 15 IOD_PINNAME=RSVD_0
 AP IOD_Schematic:roach_jtag_conf 15 IOD_PINNUMBER=AC23
-AP IOD_Schematic:roach_jtag_conf 15 IOD_PINFUNCTION=RSVD_0
-AP IOD_Schematic:roach_jtag_conf 15 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_jtag_conf 15 IOD_CUSTOM=SX95T_R_FUSE_0
 AP IOD_Schematic:roach_jtag_conf 15 IOD_PORTID=AC23
 AP IOD_Schematic:roach_jtag_conf 15 IOD_PORTTYPE=PIN
-AP IOD_Schematic:roach_jtag_conf 15 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 15 IOD_SIGNALNAME=SX95T_R_FUSE_0
+AP IOD_Schematic:roach_jtag_conf 15 PINTYPE=BI
 AP IOD_Schematic:roach_jtag_conf 16 #=AB15
-AP IOD_Schematic:roach_jtag_conf 16 PINTYPE=BI
+AP IOD_Schematic:roach_jtag_conf 16 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_jtag_conf 16 NO_CONNECT=NO
-AP IOD_Schematic:roach_jtag_conf 16 IOD_SIGNALNAME=SX95T_TCK
+AP IOD_Schematic:roach_jtag_conf 16 IOD_CUSTOM=SX95T_TCK
+AP IOD_Schematic:roach_jtag_conf 16 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 16 IOD_PINFUNCTION=TCK_0
 AP IOD_Schematic:roach_jtag_conf 16 IOD_PINNAME=TCK_0
 AP IOD_Schematic:roach_jtag_conf 16 IOD_PINNUMBER=AB15
-AP IOD_Schematic:roach_jtag_conf 16 IOD_PINFUNCTION=TCK_0
-AP IOD_Schematic:roach_jtag_conf 16 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_jtag_conf 16 IOD_CUSTOM=SX95T_TCK
 AP IOD_Schematic:roach_jtag_conf 16 IOD_PORTID=AB15
 AP IOD_Schematic:roach_jtag_conf 16 IOD_PORTTYPE=PIN
-AP IOD_Schematic:roach_jtag_conf 16 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 16 IOD_SIGNALNAME=SX95T_TCK
+AP IOD_Schematic:roach_jtag_conf 16 PINTYPE=BI
 AP IOD_Schematic:roach_jtag_conf 17 #=AC15
-AP IOD_Schematic:roach_jtag_conf 17 PINTYPE=BI
+AP IOD_Schematic:roach_jtag_conf 17 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_jtag_conf 17 NO_CONNECT=NO
-AP IOD_Schematic:roach_jtag_conf 17 IOD_SIGNALNAME=SX95T_TDI
+AP IOD_Schematic:roach_jtag_conf 17 IOD_CUSTOM=SX95T_TDI
+AP IOD_Schematic:roach_jtag_conf 17 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 17 IOD_PINFUNCTION=TDI_0
 AP IOD_Schematic:roach_jtag_conf 17 IOD_PINNAME=TDI_0
 AP IOD_Schematic:roach_jtag_conf 17 IOD_PINNUMBER=AC15
-AP IOD_Schematic:roach_jtag_conf 17 IOD_PINFUNCTION=TDI_0
-AP IOD_Schematic:roach_jtag_conf 17 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_jtag_conf 17 IOD_CUSTOM=SX95T_TDI
 AP IOD_Schematic:roach_jtag_conf 17 IOD_PORTID=AC15
 AP IOD_Schematic:roach_jtag_conf 17 IOD_PORTTYPE=PIN
-AP IOD_Schematic:roach_jtag_conf 17 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 17 IOD_SIGNALNAME=SX95T_TDI
+AP IOD_Schematic:roach_jtag_conf 17 PINTYPE=BI
 AP IOD_Schematic:roach_jtag_conf 18 #=AD14
-AP IOD_Schematic:roach_jtag_conf 18 PINTYPE=BI
+AP IOD_Schematic:roach_jtag_conf 18 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_jtag_conf 18 NO_CONNECT=NO
-AP IOD_Schematic:roach_jtag_conf 18 IOD_SIGNALNAME=SX95T_TDO
+AP IOD_Schematic:roach_jtag_conf 18 IOD_CUSTOM=SX95T_TDO
+AP IOD_Schematic:roach_jtag_conf 18 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 18 IOD_PINFUNCTION=TDO_0
 AP IOD_Schematic:roach_jtag_conf 18 IOD_PINNAME=TDO_0
 AP IOD_Schematic:roach_jtag_conf 18 IOD_PINNUMBER=AD14
-AP IOD_Schematic:roach_jtag_conf 18 IOD_PINFUNCTION=TDO_0
-AP IOD_Schematic:roach_jtag_conf 18 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_jtag_conf 18 IOD_CUSTOM=SX95T_TDO
 AP IOD_Schematic:roach_jtag_conf 18 IOD_PORTID=AD14
 AP IOD_Schematic:roach_jtag_conf 18 IOD_PORTTYPE=PIN
-AP IOD_Schematic:roach_jtag_conf 18 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 18 IOD_SIGNALNAME=SX95T_TDO
+AP IOD_Schematic:roach_jtag_conf 18 PINTYPE=BI
 AP IOD_Schematic:roach_jtag_conf 19 #=AC14
-AP IOD_Schematic:roach_jtag_conf 19 PINTYPE=BI
+AP IOD_Schematic:roach_jtag_conf 19 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_jtag_conf 19 NO_CONNECT=NO
-AP IOD_Schematic:roach_jtag_conf 19 IOD_SIGNALNAME=SX95T_TMS
+AP IOD_Schematic:roach_jtag_conf 19 IOD_CUSTOM=SX95T_TMS
+AP IOD_Schematic:roach_jtag_conf 19 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 19 IOD_PINFUNCTION=TMS_0
 AP IOD_Schematic:roach_jtag_conf 19 IOD_PINNAME=TMS_0
 AP IOD_Schematic:roach_jtag_conf 19 IOD_PINNUMBER=AC14
-AP IOD_Schematic:roach_jtag_conf 19 IOD_PINFUNCTION=TMS_0
-AP IOD_Schematic:roach_jtag_conf 19 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_jtag_conf 19 IOD_CUSTOM=SX95T_TMS
 AP IOD_Schematic:roach_jtag_conf 19 IOD_PORTID=AC14
 AP IOD_Schematic:roach_jtag_conf 19 IOD_PORTTYPE=PIN
-AP IOD_Schematic:roach_jtag_conf 19 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 19 IOD_SIGNALNAME=SX95T_TMS
+AP IOD_Schematic:roach_jtag_conf 19 PINTYPE=BI
 AP IOD_Schematic:roach_jtag_conf 20 #=AB23
-AP IOD_Schematic:roach_jtag_conf 20 PINTYPE=BI
+AP IOD_Schematic:roach_jtag_conf 20 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_jtag_conf 20 NO_CONNECT=NO
-AP IOD_Schematic:roach_jtag_conf 20 IOD_SIGNALNAME=SX95T_VFS_0
+AP IOD_Schematic:roach_jtag_conf 20 IOD_CUSTOM=SX95T_VFS_0
+AP IOD_Schematic:roach_jtag_conf 20 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 20 IOD_PINFUNCTION=RSVD_0
 AP IOD_Schematic:roach_jtag_conf 20 IOD_PINNAME=RSVD_0
 AP IOD_Schematic:roach_jtag_conf 20 IOD_PINNUMBER=AB23
-AP IOD_Schematic:roach_jtag_conf 20 IOD_PINFUNCTION=RSVD_0
-AP IOD_Schematic:roach_jtag_conf 20 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_jtag_conf 20 IOD_CUSTOM=SX95T_VFS_0
 AP IOD_Schematic:roach_jtag_conf 20 IOD_PORTID=AB23
 AP IOD_Schematic:roach_jtag_conf 20 IOD_PORTTYPE=PIN
-AP IOD_Schematic:roach_jtag_conf 20 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 20 IOD_SIGNALNAME=SX95T_VFS_0
+AP IOD_Schematic:roach_jtag_conf 20 PINTYPE=BI
 AP IOD_Schematic:roach_jtag_conf 21 #=L23
-AP IOD_Schematic:roach_jtag_conf 21 PINTYPE=BI
+AP IOD_Schematic:roach_jtag_conf 21 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_jtag_conf 21 NO_CONNECT=NO
-AP IOD_Schematic:roach_jtag_conf 21 IOD_SIGNALNAME=VBATT_0
+AP IOD_Schematic:roach_jtag_conf 21 IOD_CUSTOM=VBATT_0
+AP IOD_Schematic:roach_jtag_conf 21 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 21 IOD_PINFUNCTION=VBATT_0
 AP IOD_Schematic:roach_jtag_conf 21 IOD_PINNAME=VBATT_0
 AP IOD_Schematic:roach_jtag_conf 21 IOD_PINNUMBER=L23
-AP IOD_Schematic:roach_jtag_conf 21 IOD_PINFUNCTION=VBATT_0
-AP IOD_Schematic:roach_jtag_conf 21 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_jtag_conf 21 IOD_CUSTOM=VBATT_0
 AP IOD_Schematic:roach_jtag_conf 21 IOD_PORTID=L23
 AP IOD_Schematic:roach_jtag_conf 21 IOD_PORTTYPE=PIN
-AP IOD_Schematic:roach_jtag_conf 21 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_jtag_conf 21 IOD_SIGNALNAME=VBATT_0
+AP IOD_Schematic:roach_jtag_conf 21 PINTYPE=BI
 |Q IOD_Schematic:ptc 1
 AS IOD_Schematic:ptc SUPPART#
 AS IOD_Schematic:ptc MANUFACTURER
@@ -401,253 +412,175 @@ AS IOD_Schematic:ptc SUP
 AS IOD_Schematic:ptc P/D_NUM
 AS IOD_Schematic:ptc VALUE
 AS IOD_Schematic:ptc REFDES=PTC?
-AS IOD_Schematic:ptc PINORDER=1 2
 AS IOD_Schematic:ptc INOV_VER_REC=7:38_11-20-08
+AS IOD_Schematic:ptc PINORDER=1 2
 AP IOD_Schematic:ptc 1 #=1
 AP IOD_Schematic:ptc 1 PINTYPE=OUT
 AP IOD_Schematic:ptc 2 #=2
 AP IOD_Schematic:ptc 2 PINTYPE=OUT
 AN SX95T_HSWAP_EN PCBCLASS=PPCPBUS
-G GND
 G 3V3
+G GND
 |N 2
 M IOD_Schematic:r $1I154
-I $1I154 IOD_Schematic:r 3V3 SX95T_PROGRAM_B_0 SCHLOC=16B3`DEVICE=RES0402_55`GEOMETRY.HEIGHT=0.4MM`REFDES=R166`PKG_TYPE=RESC1005X40N`VALUE=4K7`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGF0472T1E`POWERRATING=0.0625`STANDARDS=0402`TOLERANCE=5%`
+I $1I154 IOD_Schematic:r 3V3 SX95T_PROGRAM_B_0 DEVICE`GEOMETRY.HEIGHT=0.4MM`REFDES=R?`PKG_TYPE`VALUE`MANUFACTURER`P/D_NUM`POWERRATING=0.0625`STANDARDS=0402`TOLERANCE`
 |R 9:03_5-9-07
-API $1I154 IOD_Schematic:r 1 PINLOC=16B2
 API $1I154 IOD_Schematic:r 1 #=1
-API $1I154 IOD_Schematic:r 2 PINLOC=16B3
 API $1I154 IOD_Schematic:r 2 #=2
 P IOD_Schematic:out SX95T_M2_0
 I SX95T_M2_0 IOD_Schematic:out SX95T_M2_0 
 |R 7:39_8-30-07
-API SX95T_M2_0 IOD_Schematic:out 1 XREF=1-2G,1-4F,1-8G,21-4D,24-7F
 P IOD_Schematic:out SX95T_M1_0
 I SX95T_M1_0 IOD_Schematic:out SX95T_M1_0 
 |R 7:39_8-30-07
-API SX95T_M1_0 IOD_Schematic:out 1 XREF=1-2G,1-4F,1-8G,21-4D,24-7F
 |N 2
 M IOD_Schematic:r $1I16
-I $1I16 IOD_Schematic:r SX95T_TMS 3V3 SCHLOC=16K4`DEVICE=RES0402_55`USEEQUIVALENT=FALSE`GEOMETRY.HEIGHT=0.4MM`MANPARTPACKAGE=0402 (1005)`OPERATINGVOLTAGE=50V`MANPARTDESCRIPTION=CHIP RESISTOR.`P/D_NUM=0402WGF0102T1E`REFDES=R207`MANUFACTURER=ROYAL OHM`DESCRIP=RES0402X0_40`RATING=0.063W`TOLERANCE=1%`VALUE=1K`PKG_TYPE=RESC1005X40N`
+I $1I16 IOD_Schematic:r SX95T_TMS 3V3 DEVICE`USEEQUIVALENT=FALSE`GEOMETRY.HEIGHT=0.4MM`MANPARTPACKAGE=0402 (1005)`OPERATINGVOLTAGE=50V`MANPARTDESCRIPTION=CHIP RESISTOR.`P/D_NUM`REFDES=R?`MANUFACTURER`DESCRIP=RES0402X0_40`RATING=0.063W`TOLERANCE`VALUE`PKG_TYPE`
 |R 9:03_5-9-07
-API $1I16 IOD_Schematic:r 1 PINLOC=16K4
 API $1I16 IOD_Schematic:r 1 #=1
-API $1I16 IOD_Schematic:r 2 PINLOC=16K4
 API $1I16 IOD_Schematic:r 2 #=2
 |N 2
 M IOD_Schematic:r $1I17
-I $1I17 IOD_Schematic:r SX95T_TCK 3V3 SCHLOC=16K4`DEVICE=RES0402_55`USEEQUIVALENT=FALSE`GEOMETRY.HEIGHT=0.4MM`MANPARTPACKAGE=0402 (1005)`OPERATINGVOLTAGE=50V`MANPARTDESCRIPTION=CHIP RESISTOR.`P/D_NUM=0402WGF0102T1E`REFDES=R208`MANUFACTURER=ROYAL OHM`DESCRIP=RES0402X0_40`RATING=0.063W`TOLERANCE=1%`VALUE=1K`PKG_TYPE=RESC1005X40N`
+I $1I17 IOD_Schematic:r SX95T_TCK 3V3 DEVICE`USEEQUIVALENT=FALSE`GEOMETRY.HEIGHT=0.4MM`MANPARTPACKAGE=0402 (1005)`OPERATINGVOLTAGE=50V`MANPARTDESCRIPTION=CHIP RESISTOR.`P/D_NUM`REFDES=R?`MANUFACTURER`DESCRIP=RES0402X0_40`RATING=0.063W`TOLERANCE`VALUE`PKG_TYPE`
 |R 9:03_5-9-07
-API $1I17 IOD_Schematic:r 1 PINLOC=16K4
 API $1I17 IOD_Schematic:r 1 #=1
-API $1I17 IOD_Schematic:r 2 PINLOC=16K4
 API $1I17 IOD_Schematic:r 2 #=2
 M IOD_Schematic:cap $1I18
-I $1I18 IOD_Schematic:cap 3V3 GND SCHLOC=16L4`GEOMETRY.HEIGHT=1.4MM`DEVICE=CAP0805_140`VOLTAGERATING=25V`PARTTYPE=CAPACITORS`OPERATINGVOLTAGE=25V`MANPARTDESCRIPTION=CAPACITOR, MULTILAYER CHIP ;  CERAMIC; NON-POLARISED`LENGTH=2.2`ESR=0.002`VALUE=2U2`PKG_TYPE=CAPC2012X140N`TOLERANCE=±10%`DESCRIP=CER CAP`MANUFACTURER=MURATA`REFDES=C485`P/D_NUM=GRM21BR71E225KA73B`
-API $1I18 IOD_Schematic:cap 1 PINLOC=16L5
+I $1I18 IOD_Schematic:cap 3V3 GND GEOMETRY.HEIGHT=1.4MM`DEVICE`VOLTAGERATING=25V`PARTTYPE=CAPACITORS`OPERATINGVOLTAGE=25V`MANPARTDESCRIPTION=CAPACITOR, MULTILAYER CHIP ;  CERAMIC; NON-POLARISED`LENGTH=2.2`ESR=0.002`VALUE`PKG_TYPE`TOLERANCE`DESCRIP=CER CAP`MANUFACTURER`REFDES=C?`P/D_NUM`
 API $1I18 IOD_Schematic:cap 1 #=1
-API $1I18 IOD_Schematic:cap 2 PINLOC=16L4
 API $1I18 IOD_Schematic:cap 2 #=2
 P IOD_Schematic:in SX95T_RDWR_B_0
 I SX95T_RDWR_B_0 IOD_Schematic:in SX95T_RDWR_B_0 
 |R 7:39_8-30-07
-API SX95T_RDWR_B_0 IOD_Schematic:in 1 XREF=1-2M,1-8D,24-8C
 |N 2
 M IOD_Schematic:r $1I91
-I $1I91 IOD_Schematic:r GND SX95T_M1_0 SCHLOC=16C3`DEVICE=RES0402_55`TOLERANCE=5%`STANDARDS=0402`POWERRATING=0.0625`P/D_NUM=0402WGF0472T1E`MANUFACTURER=ROYAL OHM`VALUE=4K7`PKG_TYPE=RESC1005X40N`REFDES=R211`GEOMETRY.HEIGHT=0.4MM`
+I $1I91 IOD_Schematic:r GND SX95T_M1_0 DEVICE`TOLERANCE`STANDARDS=0402`POWERRATING=0.0625`P/D_NUM`MANUFACTURER`VALUE`PKG_TYPE`REFDES=R?`GEOMETRY.HEIGHT=0.4MM`
 |R 9:03_5-9-07
-API $1I91 IOD_Schematic:r 1 PINLOC=16B2
 API $1I91 IOD_Schematic:r 1 #=1
-API $1I91 IOD_Schematic:r 2 PINLOC=16B3
 API $1I91 IOD_Schematic:r 2 #=2
 M IOD_Schematic:c $1I115
-I $1I115 IOD_Schematic:c 3V3 GND SCHLOC=16B6`MANUFACTURER=PANASONIC`REFDES=C487`VALUE=220NF`TYPE=FIXED`TOLERANCE=10%`VOLTAGERATING=6.3V`DIELECTRIC=X7R`DEVICE=CHIPCAP0402X0_5`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE=CAPC1005X55N`P/D_NUM=ECJ-0EB0J224K`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
+I $1I115 IOD_Schematic:c 3V3 GND MANUFACTURER`REFDES=C?`VALUE`TYPE=FIXED`TOLERANCE`VOLTAGERATING=6.3V`DIELECTRIC=X7R`DEVICE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE`P/D_NUM`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
 |R 6:11_8-28-07
-API $1I115 IOD_Schematic:c 1 PINLOC=16B6
 API $1I115 IOD_Schematic:c 1 #=1
-API $1I115 IOD_Schematic:c 2 PINLOC=16B6
 API $1I115 IOD_Schematic:c 2 #=2
 P IOD_Schematic:in SX95T_TMS
 I SX95T_TMS IOD_Schematic:in SX95T_TMS 
 |R 7:39_8-30-07
-API SX95T_TMS IOD_Schematic:in 1 XREF=1-3G,1-8D,24-5M
 P IOD_Schematic:out SX95T_TDO
 I SX95T_TDO IOD_Schematic:out SX95T_TDO 
-API SX95T_TDO IOD_Schematic:out 1 XREF=1-3G,1-8G,24-6M
 P IOD_Schematic:in SX95T_TCK
 I SX95T_TCK IOD_Schematic:in SX95T_TCK 
 |R 7:39_8-30-07
-API SX95T_TCK IOD_Schematic:in 1 XREF=1-3G,1-8D,24-5M
 M IOD_Schematic:cap_pol $1I116
-I $1I116 IOD_Schematic:cap_pol 3V3 GND SCHLOC=16A6`VOLTAGERATING=6V`VALUE=47UF`TOLERANCE=20%`PKG_TYPE=CAPMP3528X210N`GEOMETRY.HEIGHT=2.1MM`DIELECTRIC=TANTALUM`DEVICE=TANT_CAP_B`P/D_NUM=T520B476M006ATE070`MANUFACTURER=KEMET`REFDES=C488`
+I $1I116 IOD_Schematic:cap_pol GND 3V3 VOLTAGERATING=6V`VALUE`TOLERANCE`PKG_TYPE`GEOMETRY.HEIGHT=2.1MM`DIELECTRIC=TANTALUM`DEVICE`P/D_NUM`MANUFACTURER`REFDES=C?`
 |R 9:27_9-20-07
-API $1I116 IOD_Schematic:cap_pol 1 PINLOC=16A6
-API $1I116 IOD_Schematic:cap_pol 1 #=1
-API $1I116 IOD_Schematic:cap_pol 2 PINLOC=16A6
-API $1I116 IOD_Schematic:cap_pol 2 #=2
+API $1I116 IOD_Schematic:cap_pol 1 #=2
+API $1I116 IOD_Schematic:cap_pol 2 #=1
 P IOD_Schematic:in SX95T_PROGRAM_B_0
 I SX95T_PROGRAM_B_0 IOD_Schematic:in SX95T_PROGRAM_B_0 
 |R 7:39_8-30-07
-API SX95T_PROGRAM_B_0 IOD_Schematic:in 1 XREF=1-2M,1-4F,1-8D,21-4D,24-10C
 P IOD_Schematic:out SX95T_D_OUT_BUSY_0
 I SX95T_D_OUT_BUSY_0 IOD_Schematic:out SX95T_D_OUT_BUSY_0 
 |R 7:39_8-30-07
-API SX95T_D_OUT_BUSY_0 IOD_Schematic:out 1 XREF=1-2G,1-4F,1-8G,21-5D,24-7C
 P IOD_Schematic:out SX95T_M0_0
 I SX95T_M0_0 IOD_Schematic:out SX95T_M0_0 
 |R 7:39_8-30-07
-API SX95T_M0_0 IOD_Schematic:out 1 XREF=1-2G,1-4F,1-8G,21-4D,24-7F
 M IOD_Schematic:c $1I114
-I $1I114 IOD_Schematic:c 3V3 GND SCHLOC=16B6`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`P/D_NUM=ECJ-0EB0J224K`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIPCAP0402X0_5`DIELECTRIC=X7R`VOLTAGERATING=6.3V`TOLERANCE=10%`TYPE=FIXED`VALUE=220NF`REFDES=C486`MANUFACTURER=PANASONIC`
+I $1I114 IOD_Schematic:c 3V3 GND PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`P/D_NUM`PKG_TYPE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE`DIELECTRIC=X7R`VOLTAGERATING=6.3V`TOLERANCE`TYPE=FIXED`VALUE`REFDES=C?`MANUFACTURER`
 |R 6:11_8-28-07
-API $1I114 IOD_Schematic:c 1 PINLOC=16B6
 API $1I114 IOD_Schematic:c 1 #=1
-API $1I114 IOD_Schematic:c 2 PINLOC=16B6
 API $1I114 IOD_Schematic:c 2 #=2
 P IOD_Schematic:bi SX95T_DONE_0
 I SX95T_DONE_0 IOD_Schematic:bi SX95T_DONE_0 
 |R 11:48_10-3-07
-API SX95T_DONE_0 IOD_Schematic:bi 1 XREF=1-2M,1-4F,1-8G,21-5D
 P IOD_Schematic:bi SX95T_CCLK_0
 I SX95T_CCLK_0 IOD_Schematic:bi SX95T_CCLK_0 
 |R 11:48_10-3-07
-API SX95T_CCLK_0 IOD_Schematic:bi 1 XREF=1-3M,1-8G,24-4F,24-7C
 P IOD_Schematic:in SX95T_CS_B_0
 I SX95T_CS_B_0 IOD_Schematic:in SX95T_CS_B_0 
 |R 7:39_8-30-07
-API SX95T_CS_B_0 IOD_Schematic:in 1 XREF=1-2M,1-8D,24-6C
 P IOD_Schematic:in SX95T_D_IN_0
 I SX95T_D_IN_0 IOD_Schematic:in SX95T_D_IN_0 
 |R 7:39_8-30-07
-API SX95T_D_IN_0 IOD_Schematic:in 1 XREF=1-2M,1-6G,1-8D,24-7C,25-7B,25-10B
 |N 2
 M IOD_Schematic:r $1I87
-I $1I87 IOD_Schematic:r GND SX95T_HSWAP_EN SCHLOC=16F4`DEVICE=RES0402_55`TOLERANCE=5%`STANDARDS=0402`POWERRATING=0.0625`P/D_NUM=0402WGF0472T1E`MANUFACTURER=ROYAL OHM`VALUE=4K7`PKG_TYPE=RESC1005X40N`REFDES=R209`GEOMETRY.HEIGHT=0.4MM`
+I $1I87 IOD_Schematic:r GND SX95T_HSWAP_EN DEVICE`TOLERANCE`STANDARDS=0402`POWERRATING=0.0625`P/D_NUM`MANUFACTURER`VALUE`PKG_TYPE`REFDES=R?`GEOMETRY.HEIGHT=0.4MM`
 |R 9:03_5-9-07
-API $1I87 IOD_Schematic:r 1 PINLOC=16F4
 API $1I87 IOD_Schematic:r 1 #=1
-API $1I87 IOD_Schematic:r 2 PINLOC=16F4
 API $1I87 IOD_Schematic:r 2 #=2
 M IOD_Schematic:xilinx_14_pin_jtag $1I8
-I $1I8 IOD_Schematic:xilinx_14_pin_jtag GND GND GND GND GND GND GND ? ? SX95T_TCK SX95T_TDI CPLD_TDO SX95T_TMS $1N163 SCHLOC=16J4`GEOMETRY.HEIGHT=6.4MM`DESCRIP=J-TAG CONNECTOR`MANUFACTURER=MOLEX`REFDES=J24`P/D_NUM=87832-1420`PKG_TYPE=CON7X2_87832_P2_H11_SMD`DATAURL=WWW.MOLEX.COM`MANPARTPACKAGE=JTAG : 14-PIN`OPERATINGVOLTAGE=150V`RATING=2A`MANPARTDESCRIPTION=STAIGHT SMD, DUAL ROW HEADER - ROHS`PARTTYPE=CONNECTORS`
+I $1I8 IOD_Schematic:xilinx_14_pin_jtag GND GND GND GND GND GND GND ? ? SX95T_TCK SX95T_TDI CPLD_TDO SX95T_TMS $1N163 GEOMETRY.HEIGHT=6.4MM`DESCRIP=J-TAG CONNECTOR`MANUFACTURER`REFDES=J?`P/D_NUM`PKG_TYPE`DATAURL=WWW.MOLEX.COM`MANPARTPACKAGE=JTAG : 14-PIN`OPERATINGVOLTAGE=150V`RATING=2A`MANPARTDESCRIPTION=STAIGHT SMD, DUAL ROW HEADER - ROHS`PARTTYPE=CONNECTORS`
 |R 8:29_5-9-08
-API $1I8 IOD_Schematic:xilinx_14_pin_jtag 1 PINLOC=16J4
 API $1I8 IOD_Schematic:xilinx_14_pin_jtag 1 #=1
-API $1I8 IOD_Schematic:xilinx_14_pin_jtag 2 PINLOC=16J4
 API $1I8 IOD_Schematic:xilinx_14_pin_jtag 2 #=3
-API $1I8 IOD_Schematic:xilinx_14_pin_jtag 3 PINLOC=16J4
 API $1I8 IOD_Schematic:xilinx_14_pin_jtag 3 #=5
-API $1I8 IOD_Schematic:xilinx_14_pin_jtag 4 PINLOC=16J4
 API $1I8 IOD_Schematic:xilinx_14_pin_jtag 4 #=7
-API $1I8 IOD_Schematic:xilinx_14_pin_jtag 5 PINLOC=16J4
 API $1I8 IOD_Schematic:xilinx_14_pin_jtag 5 #=9
-API $1I8 IOD_Schematic:xilinx_14_pin_jtag 6 PINLOC=16H4
 API $1I8 IOD_Schematic:xilinx_14_pin_jtag 6 #=11
-API $1I8 IOD_Schematic:xilinx_14_pin_jtag 7 PINLOC=16H4
 API $1I8 IOD_Schematic:xilinx_14_pin_jtag 7 #=13
-API $1I8 IOD_Schematic:xilinx_14_pin_jtag 8 PINLOC=16J5
 API $1I8 IOD_Schematic:xilinx_14_pin_jtag 8 #=12
-API $1I8 IOD_Schematic:xilinx_14_pin_jtag 9 PINLOC=16J5
 API $1I8 IOD_Schematic:xilinx_14_pin_jtag 9 #=14
-API $1I8 IOD_Schematic:xilinx_14_pin_jtag 10 PINLOC=16J4
 API $1I8 IOD_Schematic:xilinx_14_pin_jtag 10 #=6
-API $1I8 IOD_Schematic:xilinx_14_pin_jtag 11 PINLOC=16J4
 API $1I8 IOD_Schematic:xilinx_14_pin_jtag 11 #=10
-API $1I8 IOD_Schematic:xilinx_14_pin_jtag 12 PINLOC=16H4
 API $1I8 IOD_Schematic:xilinx_14_pin_jtag 12 #=8
-API $1I8 IOD_Schematic:xilinx_14_pin_jtag 13 PINLOC=16J4
 API $1I8 IOD_Schematic:xilinx_14_pin_jtag 13 #=4
-API $1I8 IOD_Schematic:xilinx_14_pin_jtag 14 PINLOC=16H5
 API $1I8 IOD_Schematic:xilinx_14_pin_jtag 14 #=2
 |N 2
 M IOD_Schematic:r $1I142
-I $1I142 IOD_Schematic:r SX95T_DONE_0 3V3 SCHLOC=16C5`DEVICE=RES0402_55`TOLERANCE=5%`STANDARDS=0402`POWERRATING=0.0625`P/D_NUM=0402WGF0472T1E`MANUFACTURER=ROYAL OHM`VALUE=4K7`PKG_TYPE=RESC1005X40N`REFDES=R89`GEOMETRY.HEIGHT=0.4MM`
+I $1I142 IOD_Schematic:r SX95T_DONE_0 3V3 DEVICE`TOLERANCE`STANDARDS=0402`POWERRATING=0.0625`P/D_NUM`MANUFACTURER`VALUE`PKG_TYPE`REFDES=R?`GEOMETRY.HEIGHT=0.4MM`
 |R 9:03_5-9-07
-API $1I142 IOD_Schematic:r 1 PINLOC=16B5
 API $1I142 IOD_Schematic:r 1 #=1
-API $1I142 IOD_Schematic:r 2 PINLOC=16B5
 API $1I142 IOD_Schematic:r 2 #=2
 |N 2
 M IOD_Schematic:r $1I92
-I $1I92 IOD_Schematic:r SX95T_M0_0 3V3 SCHLOC=16B5`DEVICE=RES0402_55`GEOMETRY.HEIGHT=0.4MM`REFDES=R212`PKG_TYPE=RESC1005X40N`VALUE=4K7`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGF0472T1E`POWERRATING=0.0625`STANDARDS=0402`TOLERANCE=5%`
+I $1I92 IOD_Schematic:r SX95T_M0_0 3V3 DEVICE`GEOMETRY.HEIGHT=0.4MM`REFDES=R?`PKG_TYPE`VALUE`MANUFACTURER`P/D_NUM`POWERRATING=0.0625`STANDARDS=0402`TOLERANCE`
 |R 9:03_5-9-07
-API $1I92 IOD_Schematic:r 1 PINLOC=16B5
 API $1I92 IOD_Schematic:r 1 #=1
-API $1I92 IOD_Schematic:r 2 PINLOC=16B5
 API $1I92 IOD_Schematic:r 2 #=2
 P IOD_Schematic:bi SX95T_INIT_B_0
 I SX95T_INIT_B_0 IOD_Schematic:bi SX95T_INIT_B_0 
 |R 11:48_10-3-07
-API SX95T_INIT_B_0 IOD_Schematic:bi 1 XREF=1-2M,1-4F,1-8G,21-4D,24-9F
 |N 2
 M IOD_Schematic:r $1I90
-I $1I90 IOD_Schematic:r SX95T_M2_0 3V3 SCHLOC=16C5`DEVICE=RES0402_55`GEOMETRY.HEIGHT=0.4MM`REFDES=R210`PKG_TYPE=RESC1005X40N`VALUE=4K7`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGF0472T1E`POWERRATING=0.0625`STANDARDS=0402`TOLERANCE=5%`
+I $1I90 IOD_Schematic:r SX95T_M2_0 3V3 DEVICE`GEOMETRY.HEIGHT=0.4MM`REFDES=R?`PKG_TYPE`VALUE`MANUFACTURER`P/D_NUM`POWERRATING=0.0625`STANDARDS=0402`TOLERANCE`
 |R 9:03_5-9-07
-API $1I90 IOD_Schematic:r 1 PINLOC=16C5
 API $1I90 IOD_Schematic:r 1 #=1
-API $1I90 IOD_Schematic:r 2 PINLOC=16C5
 API $1I90 IOD_Schematic:r 2 #=2
 |N 2
 M IOD_Schematic:r $1I151
-I $1I151 IOD_Schematic:r SX95T_INIT_B_0 3V3 SCHLOC=16C5`TOLERANCE=5%`STANDARDS=0402`POWERRATING=0.0625`P/D_NUM=0402WGF0472T1E`MANUFACTURER=ROYAL OHM`VALUE=4K7`PKG_TYPE=RESC1005X40N`REFDES=R165`GEOMETRY.HEIGHT=0.4MM`DEVICE=RES0402_55`
+I $1I151 IOD_Schematic:r SX95T_INIT_B_0 3V3 TOLERANCE`STANDARDS=0402`POWERRATING=0.0625`P/D_NUM`MANUFACTURER`VALUE`PKG_TYPE`REFDES=R?`GEOMETRY.HEIGHT=0.4MM`DEVICE`
 |R 9:03_5-9-07
-API $1I151 IOD_Schematic:r 1 PINLOC=16C5
 API $1I151 IOD_Schematic:r 1 #=1
-API $1I151 IOD_Schematic:r 2 PINLOC=16C5
 API $1I151 IOD_Schematic:r 2 #=2
 M IOD_Schematic:roach_jtag_conf $1I20
-I $1I20 IOD_Schematic:roach_jtag_conf 3V3 3V3 SX95T_CCLK_0 SX95T_CS_B_0 SX95T_DONE_0 SX95T_D_IN_0 SX95T_D_OUT_BUSY_0 SX95T_HSWAP_EN SX95T_INIT_B_0 SX95T_M0_0 SX95T_M1_0 SX95T_M2_0 SX95T_PROGRAM_B_0 SX95T_RDWR_B_0 GND SX95T_TCK SX95T_TDI SX95T_TDO SX95T_TMS GND GND SCHLOC=16E4`GEOMETRY.HEIGHT=3.4MM`MANUFACTURER=XILINX`NC=U4,U5`BANKS=0`P/D_NUM=XC5VSX95T`PARTS=1`REFDES=U15`
-API $1I20 IOD_Schematic:roach_jtag_conf 1 PINLOC=16D5
+I $1I20 IOD_Schematic:roach_jtag_conf 3V3 3V3 SX95T_CCLK_0 SX95T_CS_B_0 SX95T_DONE_0 SX95T_D_IN_0 SX95T_D_OUT_BUSY_0 SX95T_HSWAP_EN SX95T_INIT_B_0 SX95T_M0_0 SX95T_M1_0 SX95T_M2_0 SX95T_PROGRAM_B_0 SX95T_RDWR_B_0 GND SX95T_TCK SX95T_TDI SX95T_TDO SX95T_TMS GND GND GEOMETRY.HEIGHT=3.4MM`MANUFACTURER`NC=U4,U5`BANKS=0`P/D_NUM`PARTS=1`REFDES=U?`
 API $1I20 IOD_Schematic:roach_jtag_conf 1 #=AA22
-API $1I20 IOD_Schematic:roach_jtag_conf 2 PINLOC=16D5
 API $1I20 IOD_Schematic:roach_jtag_conf 2 #=AD23
-API $1I20 IOD_Schematic:roach_jtag_conf 3 PINLOC=16D4
 API $1I20 IOD_Schematic:roach_jtag_conf 3 #=N15
-API $1I20 IOD_Schematic:roach_jtag_conf 4 PINLOC=16D4
 API $1I20 IOD_Schematic:roach_jtag_conf 4 #=N22
-API $1I20 IOD_Schematic:roach_jtag_conf 5 PINLOC=16D4
 API $1I20 IOD_Schematic:roach_jtag_conf 5 #=M15
-API $1I20 IOD_Schematic:roach_jtag_conf 6 PINLOC=16D4
 API $1I20 IOD_Schematic:roach_jtag_conf 6 #=P15
-API $1I20 IOD_Schematic:roach_jtag_conf 7 PINLOC=16D4
 API $1I20 IOD_Schematic:roach_jtag_conf 7 #=AD15
-API $1I20 IOD_Schematic:roach_jtag_conf 8 PINLOC=16F5
 API $1I20 IOD_Schematic:roach_jtag_conf 8 #=M23
-API $1I20 IOD_Schematic:roach_jtag_conf 9 PINLOC=16D4
 API $1I20 IOD_Schematic:roach_jtag_conf 9 #=N14
-API $1I20 IOD_Schematic:roach_jtag_conf 10 PINLOC=16D3
 API $1I20 IOD_Schematic:roach_jtag_conf 10 #=AD21
-API $1I20 IOD_Schematic:roach_jtag_conf 11 PINLOC=16D3
 API $1I20 IOD_Schematic:roach_jtag_conf 11 #=AC22
-API $1I20 IOD_Schematic:roach_jtag_conf 12 PINLOC=16D3
 API $1I20 IOD_Schematic:roach_jtag_conf 12 #=AD22
-API $1I20 IOD_Schematic:roach_jtag_conf 13 PINLOC=16D3
 API $1I20 IOD_Schematic:roach_jtag_conf 13 #=M22
-API $1I20 IOD_Schematic:roach_jtag_conf 14 PINLOC=16D3
 API $1I20 IOD_Schematic:roach_jtag_conf 14 #=N23
-API $1I20 IOD_Schematic:roach_jtag_conf 15 PINLOC=16D3
 API $1I20 IOD_Schematic:roach_jtag_conf 15 #=AC23
-API $1I20 IOD_Schematic:roach_jtag_conf 16 PINLOC=16D4
 API $1I20 IOD_Schematic:roach_jtag_conf 16 #=AB15
-API $1I20 IOD_Schematic:roach_jtag_conf 17 PINLOC=16D4
 API $1I20 IOD_Schematic:roach_jtag_conf 17 #=AC15
-API $1I20 IOD_Schematic:roach_jtag_conf 18 PINLOC=16F4
 API $1I20 IOD_Schematic:roach_jtag_conf 18 #=AD14
-API $1I20 IOD_Schematic:roach_jtag_conf 19 PINLOC=16D5
 API $1I20 IOD_Schematic:roach_jtag_conf 19 #=AC14
-API $1I20 IOD_Schematic:roach_jtag_conf 20 PINLOC=16D3
 API $1I20 IOD_Schematic:roach_jtag_conf 20 #=AB23
-API $1I20 IOD_Schematic:roach_jtag_conf 21 PINLOC=16F5
 API $1I20 IOD_Schematic:roach_jtag_conf 21 #=L23
 P IOD_Schematic:in CPLD_TDO
 I CPLD_TDO IOD_Schematic:in CPLD_TDO 
 |R 7:39_8-30-07
-API CPLD_TDO IOD_Schematic:in 1 XREF=1-3M,1-8D,24-5M
 M IOD_Schematic:ptc $1I162
-I $1I162 IOD_Schematic:ptc 3V3 $1N163 SCHLOC=16H5`PKG_TYPE=FUSC3216X85N`MANUFACTURER=BOURNS`VALUE=500MA/13.2V`SUPPART#=MF-NSMF050-2CT-ND`SUP=DIGIKEY`P/D_NUM=MF-NSMF050-2`REFDES=PTC7`
+I $1I162 IOD_Schematic:ptc 3V3 $1N163 PKG_TYPE`MANUFACTURER`VALUE`SUPPART#=MF-NSMF050-2CT-ND`SUP=DIGIKEY`P/D_NUM`REFDES=PTC?`
 |R 7:38_11-20-08
-API $1I162 IOD_Schematic:ptc 1 PINLOC=16H5
 API $1I162 IOD_Schematic:ptc 1 #=1
-API $1I162 IOD_Schematic:ptc 2 PINLOC=16H5
 API $1I162 IOD_Schematic:ptc 2 #=2
 EW

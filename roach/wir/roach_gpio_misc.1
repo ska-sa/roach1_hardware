@@ -1,8 +1,6 @@
-| Wirelist created using version 5.4.
-V 5.4
-K 81958005190 roach_gpio_misc
+| Wirelist created using version 6.0 
+V 6.0
 DW roach_gpio_misc
-Q Case
 SA SHEET=13 OF 25 
 SA SCOUT_META_FORMAT_PREFIX_0=XREF 
 SA SCOUT_META_FORMAT_PREFIX_1=SCHLOC 
@@ -11,18 +9,18 @@ SA SCOUT_META_PAGE_ANNOTATION=SHEET=13 OF 25
 |Q IOD_Schematic:r 1
 AS IOD_Schematic:r PKG_TYPE=RES
 AS IOD_Schematic:r PINOFF
-AS IOD_Schematic:r PREFIX=R
+AS IOD_Schematic:r Prefix=R
 AS IOD_Schematic:r PARTS=1
 AS IOD_Schematic:r LEVEL=STD
 AS IOD_Schematic:r REFDES=R?
 AS IOD_Schematic:r VALUE
 AS IOD_Schematic:r POWERRATING
-AS IOD_Schematic:r PINORDER=N1 N2
 AS IOD_Schematic:r INOV_VER_REC=9:28_5-9-07
-AP IOD_Schematic:r 1 PINTYPE=BI
+AS IOD_Schematic:r PINORDER=N1 N2
 AP IOD_Schematic:r 1 #=1
-AP IOD_Schematic:r 2 PINTYPE=BI
+AP IOD_Schematic:r 1 PINTYPE=BI
 AP IOD_Schematic:r 2 #=2
+AP IOD_Schematic:r 2 PINTYPE=BI
 |Q IOD_Schematic:diode_led_0805_grn 1
 AS IOD_Schematic:diode_led_0805_grn MANUFACTURER=AVAGO
 AS IOD_Schematic:diode_led_0805_grn DEVICE=DIODE_LED_0805_GRN
@@ -33,14 +31,14 @@ AS IOD_Schematic:diode_led_0805_grn P/D_NUM=HSMG-C150
 AS IOD_Schematic:diode_led_0805_grn GRN=LHR
 AS IOD_Schematic:diode_led_0805_grn REFDES=CR?
 AS IOD_Schematic:diode_led_0805_grn VALUE
-AS IOD_Schematic:diode_led_0805_grn PINORDER=ANODE CATHODE
 AS IOD_Schematic:diode_led_0805_grn INOV_VER_REC=12:47_5-8-08
+AS IOD_Schematic:diode_led_0805_grn PINORDER=ANODE CATHODE
 AP IOD_Schematic:diode_led_0805_grn 1 #=2
 AP IOD_Schematic:diode_led_0805_grn 1 PINTYPE=OUT
 AP IOD_Schematic:diode_led_0805_grn 2 #=1
 AP IOD_Schematic:diode_led_0805_grn 2 PINTYPE=OUT
 |Q IOD_Schematic:c 1
-AS IOD_Schematic:c PREFIX=C
+AS IOD_Schematic:c Prefix=C
 AS IOD_Schematic:c PARTSPEC=CAPACITOR
 AS IOD_Schematic:c LEVEL=STD
 AS IOD_Schematic:c PARTS=1
@@ -49,12 +47,12 @@ AS IOD_Schematic:c PINOFF
 AS IOD_Schematic:c VALUE
 AS IOD_Schematic:c VOLTAGERATING
 AS IOD_Schematic:c REFDES=C?
-AS IOD_Schematic:c PINORDER=N1 N2
 AS IOD_Schematic:c INOV_VER_REC=6:11_8-28-07
-AP IOD_Schematic:c 1 PINTYPE=BI
+AS IOD_Schematic:c PINORDER=N1 N2
 AP IOD_Schematic:c 1 #=1
-AP IOD_Schematic:c 2 PINTYPE=BI
+AP IOD_Schematic:c 1 PINTYPE=BI
 AP IOD_Schematic:c 2 #=2
+AP IOD_Schematic:c 2 PINTYPE=BI
 |Q IOD_Schematic:sn74avch4t245 1
 AS IOD_Schematic:sn74avch4t245 LEVEL=STD
 AS IOD_Schematic:sn74avch4t245 PKG_TYPE=SOP40P640X120-16N
@@ -63,40 +61,40 @@ AS IOD_Schematic:sn74avch4t245 DEVICE=SN74AVCH4T245DGV
 AS IOD_Schematic:sn74avch4t245 PARTS=1
 AS IOD_Schematic:sn74avch4t245 P/D_NUM=74AVCH4T245DGVRE4
 AS IOD_Schematic:sn74avch4t245 REFDES=U?
-AS IOD_Schematic:sn74avch4t245 PINORDER=1A1 1A2 1B1 1B2 1DIR 1OE# 2A1 2A2 2B1 2B2 2DIR 2OE# GND1 GND2 VCCA VCCB
 AS IOD_Schematic:sn74avch4t245 INOV_VER_REC=8:54_1-24-08
-AP IOD_Schematic:sn74avch4t245 1 PINTYPE=BI
+AS IOD_Schematic:sn74avch4t245 PINORDER=1A1 1A2 1B1 1B2 1DIR 1OE# 2A1 2A2 2B1 2B2 2DIR 2OE# GND1 GND2 VCCA VCCB
 AP IOD_Schematic:sn74avch4t245 1 #=4
-AP IOD_Schematic:sn74avch4t245 2 PINTYPE=BI
+AP IOD_Schematic:sn74avch4t245 1 PINTYPE=BI
 AP IOD_Schematic:sn74avch4t245 2 #=5
-AP IOD_Schematic:sn74avch4t245 3 PINTYPE=BI
+AP IOD_Schematic:sn74avch4t245 2 PINTYPE=BI
 AP IOD_Schematic:sn74avch4t245 3 #=13
-AP IOD_Schematic:sn74avch4t245 4 PINTYPE=BI
+AP IOD_Schematic:sn74avch4t245 3 PINTYPE=BI
 AP IOD_Schematic:sn74avch4t245 4 #=12
-AP IOD_Schematic:sn74avch4t245 5 PINTYPE=IN
+AP IOD_Schematic:sn74avch4t245 4 PINTYPE=BI
 AP IOD_Schematic:sn74avch4t245 5 #=2
-AP IOD_Schematic:sn74avch4t245 6 PINTYPE=IN
+AP IOD_Schematic:sn74avch4t245 5 PINTYPE=IN
 AP IOD_Schematic:sn74avch4t245 6 #=15
-AP IOD_Schematic:sn74avch4t245 7 PINTYPE=BI
+AP IOD_Schematic:sn74avch4t245 6 PINTYPE=IN
 AP IOD_Schematic:sn74avch4t245 7 #=6
-AP IOD_Schematic:sn74avch4t245 8 PINTYPE=BI
+AP IOD_Schematic:sn74avch4t245 7 PINTYPE=BI
 AP IOD_Schematic:sn74avch4t245 8 #=7
-AP IOD_Schematic:sn74avch4t245 9 PINTYPE=BI
+AP IOD_Schematic:sn74avch4t245 8 PINTYPE=BI
 AP IOD_Schematic:sn74avch4t245 9 #=11
-AP IOD_Schematic:sn74avch4t245 10 PINTYPE=BI
+AP IOD_Schematic:sn74avch4t245 9 PINTYPE=BI
 AP IOD_Schematic:sn74avch4t245 10 #=10
-AP IOD_Schematic:sn74avch4t245 11 PINTYPE=IN
+AP IOD_Schematic:sn74avch4t245 10 PINTYPE=BI
 AP IOD_Schematic:sn74avch4t245 11 #=3
-AP IOD_Schematic:sn74avch4t245 12 PINTYPE=IN
+AP IOD_Schematic:sn74avch4t245 11 PINTYPE=IN
 AP IOD_Schematic:sn74avch4t245 12 #=14
-AP IOD_Schematic:sn74avch4t245 13 PINTYPE=IN
+AP IOD_Schematic:sn74avch4t245 12 PINTYPE=IN
 AP IOD_Schematic:sn74avch4t245 13 #=8
-AP IOD_Schematic:sn74avch4t245 14 PINTYPE=IN
+AP IOD_Schematic:sn74avch4t245 13 PINTYPE=IN
 AP IOD_Schematic:sn74avch4t245 14 #=9
-AP IOD_Schematic:sn74avch4t245 15 PINTYPE=IN
+AP IOD_Schematic:sn74avch4t245 14 PINTYPE=IN
 AP IOD_Schematic:sn74avch4t245 15 #=1
-AP IOD_Schematic:sn74avch4t245 16 PINTYPE=IN
+AP IOD_Schematic:sn74avch4t245 15 PINTYPE=IN
 AP IOD_Schematic:sn74avch4t245 16 #=16
+AP IOD_Schematic:sn74avch4t245 16 PINTYPE=IN
 |Q IOD_Schematic:sma_receptacle 1
 AS IOD_Schematic:sma_receptacle PKG_TYPE=AMPHENOL132136
 AS IOD_Schematic:sma_receptacle LEVEL=STD
@@ -105,16 +103,16 @@ AS IOD_Schematic:sma_receptacle PARTS=1
 AS IOD_Schematic:sma_receptacle DEVICE=SMA_PCBMOUNT_RECEPTACLE
 AS IOD_Schematic:sma_receptacle REFDES=J?
 AS IOD_Schematic:sma_receptacle P/D_NUM=TBD
-AS IOD_Schematic:sma_receptacle PINORDER=SH1 SH2 SH3 SH4 SIGNAL
 AS IOD_Schematic:sma_receptacle INOV_VER_REC=18:26_10-1-07
-AP IOD_Schematic:sma_receptacle 1 PINTYPE=ANALOG
+AS IOD_Schematic:sma_receptacle PINORDER=SH1 SH2 SH3 SH4 SIGNAL
 AP IOD_Schematic:sma_receptacle 1 #=2
+AP IOD_Schematic:sma_receptacle 1 PINTYPE=ANALOG
 AP IOD_Schematic:sma_receptacle 2 #=3
 AP IOD_Schematic:sma_receptacle 2 PINTYPE=ANALOG
 AP IOD_Schematic:sma_receptacle 3 #=4
 AP IOD_Schematic:sma_receptacle 3 PINTYPE=ANALOG
-AP IOD_Schematic:sma_receptacle 4 PINTYPE=ANALOG
 AP IOD_Schematic:sma_receptacle 4 #=5
+AP IOD_Schematic:sma_receptacle 4 PINTYPE=ANALOG
 AP IOD_Schematic:sma_receptacle 5 #=1
 AP IOD_Schematic:sma_receptacle 5 PINTYPE=BI
 |Q IOD_Schematic:header10x2shrouded 1
@@ -122,55 +120,55 @@ AS IOD_Schematic:header10x2shrouded SUP_PNUM=MSH20KCT-ND
 AS IOD_Schematic:header10x2shrouded SUPPLIER=DIGIKEY
 AS IOD_Schematic:header10x2shrouded LEVEL=STD
 AS IOD_Schematic:header10x2shrouded MANUFACTURER=3M
-AS IOD_Schematic:header10x2shrouded PREFIX=J
+AS IOD_Schematic:header10x2shrouded Prefix=J
 AS IOD_Schematic:header10x2shrouded PKG_TYPE=3MN2520-6V0C-RB-WE
 AS IOD_Schematic:header10x2shrouded DESCRIPTION=HEADER 10X2 SHROUDED
 AS IOD_Schematic:header10x2shrouded PARTS=1
 AS IOD_Schematic:header10x2shrouded DEVICE=HD10X2SHROUDED
 AS IOD_Schematic:header10x2shrouded REFDES=J?
 AS IOD_Schematic:header10x2shrouded P/D_NUM=N2520-6V0C-RB-WE
-AS IOD_Schematic:header10x2shrouded PINORDER=P1 P10 P11 P12 P13 P14 P15 P16 P17 P18 P19 P2 P20 P3 P4 P5 P6 P7 P8 P9
 AS IOD_Schematic:header10x2shrouded INOV_VER_REC=8:47_10-12-07
-AP IOD_Schematic:header10x2shrouded 1 PINTYPE=BI
+AS IOD_Schematic:header10x2shrouded PINORDER=P1 P10 P11 P12 P13 P14 P15 P16 P17 P18 P19 P2 P20 P3 P4 P5 P6 P7 P8 P9
 AP IOD_Schematic:header10x2shrouded 1 #=1
+AP IOD_Schematic:header10x2shrouded 1 PINTYPE=BI
 AP IOD_Schematic:header10x2shrouded 2 #=10
 AP IOD_Schematic:header10x2shrouded 2 PINTYPE=BI
 AP IOD_Schematic:header10x2shrouded 3 #=11
 AP IOD_Schematic:header10x2shrouded 3 PINTYPE=BI
-AP IOD_Schematic:header10x2shrouded 4 PINTYPE=BI
 AP IOD_Schematic:header10x2shrouded 4 #=12
-AP IOD_Schematic:header10x2shrouded 5 PINTYPE=BI
+AP IOD_Schematic:header10x2shrouded 4 PINTYPE=BI
 AP IOD_Schematic:header10x2shrouded 5 #=13
+AP IOD_Schematic:header10x2shrouded 5 PINTYPE=BI
 AP IOD_Schematic:header10x2shrouded 6 #=14
 AP IOD_Schematic:header10x2shrouded 6 PINTYPE=BI
 AP IOD_Schematic:header10x2shrouded 7 #=15
 AP IOD_Schematic:header10x2shrouded 7 PINTYPE=BI
-AP IOD_Schematic:header10x2shrouded 8 PINTYPE=BI
 AP IOD_Schematic:header10x2shrouded 8 #=16
-AP IOD_Schematic:header10x2shrouded 9 PINTYPE=BI
+AP IOD_Schematic:header10x2shrouded 8 PINTYPE=BI
 AP IOD_Schematic:header10x2shrouded 9 #=17
+AP IOD_Schematic:header10x2shrouded 9 PINTYPE=BI
 AP IOD_Schematic:header10x2shrouded 10 #=18
 AP IOD_Schematic:header10x2shrouded 10 PINTYPE=BI
 AP IOD_Schematic:header10x2shrouded 11 #=19
 AP IOD_Schematic:header10x2shrouded 11 PINTYPE=BI
 AP IOD_Schematic:header10x2shrouded 12 #=2
 AP IOD_Schematic:header10x2shrouded 12 PINTYPE=BI
-AP IOD_Schematic:header10x2shrouded 13 PINTYPE=BI
 AP IOD_Schematic:header10x2shrouded 13 #=20
+AP IOD_Schematic:header10x2shrouded 13 PINTYPE=BI
 AP IOD_Schematic:header10x2shrouded 14 #=3
 AP IOD_Schematic:header10x2shrouded 14 PINTYPE=BI
-AP IOD_Schematic:header10x2shrouded 15 PINTYPE=BI
 AP IOD_Schematic:header10x2shrouded 15 #=4
-AP IOD_Schematic:header10x2shrouded 16 PINTYPE=BI
+AP IOD_Schematic:header10x2shrouded 15 PINTYPE=BI
 AP IOD_Schematic:header10x2shrouded 16 #=5
+AP IOD_Schematic:header10x2shrouded 16 PINTYPE=BI
 AP IOD_Schematic:header10x2shrouded 17 #=6
 AP IOD_Schematic:header10x2shrouded 17 PINTYPE=BI
 AP IOD_Schematic:header10x2shrouded 18 #=7
 AP IOD_Schematic:header10x2shrouded 18 PINTYPE=BI
-AP IOD_Schematic:header10x2shrouded 19 PINTYPE=BI
 AP IOD_Schematic:header10x2shrouded 19 #=8
-AP IOD_Schematic:header10x2shrouded 20 PINTYPE=BI
+AP IOD_Schematic:header10x2shrouded 19 PINTYPE=BI
 AP IOD_Schematic:header10x2shrouded 20 #=9
+AP IOD_Schematic:header10x2shrouded 20 PINTYPE=BI
 |Q IOD_Schematic:roach_gpio 1
 AS IOD_Schematic:roach_gpio HETERO_SYMNAME=ROACH101
 AS IOD_Schematic:roach_gpio HETERO=(ROACH_DDR2),(ROACH_GND),(ROACH_GPIO),(ROACH_JTAG_CONF),(ROACH_MGT112),(ROACH_MGT114),(ROACH_MGT116),(ROACH_MGT118),(ROACH_MGT120),(ROACH_MGT122),(ROACH_MGT124),(ROACH_MGT126),(ROACH_MIXED2V5_VCCO),(ROACH_PER),(ROACH_QDR2_BY0_1),(ROACH_QDR2_BY2_3),(ROACH_QSH),(ROACH_SYS_CLK),(ROACH_SYS_MON),(ROACH_VCCAUX),(ROACH_VCCINT),(ROACH_ZDOK0),(ROACH_ZDOK1)
@@ -186,914 +184,698 @@ AS IOD_Schematic:roach_gpio BANKS=1, 5, 11, 12, 15, 20, 23, 25
 AS IOD_Schematic:roach_gpio HYPER_MOD=FF1136
 AS IOD_Schematic:roach_gpio HYPER_MOD_FILE=VIRTEX5.IBS
 AS IOD_Schematic:roach_gpio IOD_GENERATED=1
+AS IOD_Schematic:roach_gpio INOV_VER_REC=-
 AS IOD_Schematic:roach_gpio PINORDER=GPIOLVC15[0] GPIOLVC15[1] GPIOLVC15[2] GPIOLVC15[3] GPIOLVC15[4] GPIOLVC15[5] GPIOLVC15[6] GPIOLVC15[7] GPIOLVC18[0] GPIOLVC18[1] GPIOLVC18[2] GPIOLVC18[3] GPIOLVC18[4] GPIOLVC18[5] GPIOLVC25[0] GPIOLVC25[10] GPIOLVC25[11] GPIOLVC25[1] GPIOLVC25[2] GPIOLVC25[3] GPIOLVC25[4] GPIOLVC25[5] GPIOLVC25[6] GPIOLVC25[7] GPIOLVC25[8] GPIOLVC25[9] GPIOLVC33[0] GPIOLVC33[3] GPIOLVC33[4]
 AP IOD_Schematic:roach_gpio 1 #=A26
-AP IOD_Schematic:roach_gpio 1 PINTYPE=BI
+AP IOD_Schematic:roach_gpio 1 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 1 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 1 IOD_SIGNALNAME=GPIOLVC15<0>
+AP IOD_Schematic:roach_gpio 1 IOD_CUSTOM=GPIOLVC15<0>
+AP IOD_Schematic:roach_gpio 1 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 1 IOD_PINFUNCTION=IO_L10N_CC_23
 AP IOD_Schematic:roach_gpio 1 IOD_PINNAME=IOB_X0Y298
 AP IOD_Schematic:roach_gpio 1 IOD_PINNUMBER=A26
-AP IOD_Schematic:roach_gpio 1 IOD_PINFUNCTION=IO_L10N_CC_23
-AP IOD_Schematic:roach_gpio 1 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 1 IOD_CUSTOM=GPIOLVC15<0>
 AP IOD_Schematic:roach_gpio 1 IOD_PORTID=GPIOLVC15<0>
 AP IOD_Schematic:roach_gpio 1 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 1 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 1 IOD_SIGNALNAME=GPIOLVC15<0>
+AP IOD_Schematic:roach_gpio 1 PINTYPE=BI
 AP IOD_Schematic:roach_gpio 2 #=E24
-AP IOD_Schematic:roach_gpio 2 PINTYPE=BI
+AP IOD_Schematic:roach_gpio 2 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 2 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 2 IOD_SIGNALNAME=GPIOLVC15<1>
+AP IOD_Schematic:roach_gpio 2 IOD_CUSTOM=GPIOLVC15<1>
+AP IOD_Schematic:roach_gpio 2 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 2 IOD_PINFUNCTION=IO_L19N_5
 AP IOD_Schematic:roach_gpio 2 IOD_PINNAME=IOB_X1Y280
 AP IOD_Schematic:roach_gpio 2 IOD_PINNUMBER=E24
-AP IOD_Schematic:roach_gpio 2 IOD_PINFUNCTION=IO_L19N_5
-AP IOD_Schematic:roach_gpio 2 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 2 IOD_CUSTOM=GPIOLVC15<1>
 AP IOD_Schematic:roach_gpio 2 IOD_PORTID=GPIOLVC15<1>
 AP IOD_Schematic:roach_gpio 2 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 2 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 2 IOD_SIGNALNAME=GPIOLVC15<1>
+AP IOD_Schematic:roach_gpio 2 PINTYPE=BI
 AP IOD_Schematic:roach_gpio 3 #=D24
-AP IOD_Schematic:roach_gpio 3 PINTYPE=BI
+AP IOD_Schematic:roach_gpio 3 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 3 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 3 IOD_SIGNALNAME=GPIOLVC15<2>
+AP IOD_Schematic:roach_gpio 3 IOD_CUSTOM=GPIOLVC15<2>
+AP IOD_Schematic:roach_gpio 3 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 3 IOD_PINFUNCTION=IO_L17P_5
 AP IOD_Schematic:roach_gpio 3 IOD_PINNAME=IOB_X1Y285
 AP IOD_Schematic:roach_gpio 3 IOD_PINNUMBER=D24
-AP IOD_Schematic:roach_gpio 3 IOD_PINFUNCTION=IO_L17P_5
-AP IOD_Schematic:roach_gpio 3 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 3 IOD_CUSTOM=GPIOLVC15<2>
 AP IOD_Schematic:roach_gpio 3 IOD_PORTID=GPIOLVC15<2>
 AP IOD_Schematic:roach_gpio 3 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 3 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 3 IOD_SIGNALNAME=GPIOLVC15<2>
+AP IOD_Schematic:roach_gpio 3 PINTYPE=BI
 AP IOD_Schematic:roach_gpio 4 #=B27
-AP IOD_Schematic:roach_gpio 4 PINTYPE=BI
+AP IOD_Schematic:roach_gpio 4 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 4 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 4 IOD_SIGNALNAME=GPIOLVC15<3>
+AP IOD_Schematic:roach_gpio 4 IOD_CUSTOM=GPIOLVC15<3>
+AP IOD_Schematic:roach_gpio 4 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 4 IOD_PINFUNCTION=IO_L10P_CC_23
 AP IOD_Schematic:roach_gpio 4 IOD_PINNAME=IOB_X0Y299
 AP IOD_Schematic:roach_gpio 4 IOD_PINNUMBER=B27
-AP IOD_Schematic:roach_gpio 4 IOD_PINFUNCTION=IO_L10P_CC_23
-AP IOD_Schematic:roach_gpio 4 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 4 IOD_CUSTOM=GPIOLVC15<3>
 AP IOD_Schematic:roach_gpio 4 IOD_PORTID=GPIOLVC15<3>
 AP IOD_Schematic:roach_gpio 4 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 4 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 4 IOD_SIGNALNAME=GPIOLVC15<3>
+AP IOD_Schematic:roach_gpio 4 PINTYPE=BI
 AP IOD_Schematic:roach_gpio 5 #=J10
-AP IOD_Schematic:roach_gpio 5 PINTYPE=BI
+AP IOD_Schematic:roach_gpio 5 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 5 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 5 IOD_SIGNALNAME=GPIOLVC15<4>
+AP IOD_Schematic:roach_gpio 5 IOD_CUSTOM=GPIOLVC15<4>
+AP IOD_Schematic:roach_gpio 5 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 5 IOD_PINFUNCTION=IO_L9P_CC_20
 AP IOD_Schematic:roach_gpio 5 IOD_PINNAME=IOB_X2Y261
 AP IOD_Schematic:roach_gpio 5 IOD_PINNUMBER=J10
-AP IOD_Schematic:roach_gpio 5 IOD_PINFUNCTION=IO_L9P_CC_20
-AP IOD_Schematic:roach_gpio 5 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 5 IOD_CUSTOM=GPIOLVC15<4>
 AP IOD_Schematic:roach_gpio 5 IOD_PORTID=GPIOLVC15<4>
 AP IOD_Schematic:roach_gpio 5 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 5 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 5 IOD_SIGNALNAME=GPIOLVC15<4>
+AP IOD_Schematic:roach_gpio 5 PINTYPE=BI
 AP IOD_Schematic:roach_gpio 6 #=J9
-AP IOD_Schematic:roach_gpio 6 PINTYPE=BI
+AP IOD_Schematic:roach_gpio 6 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 6 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 6 IOD_SIGNALNAME=GPIOLVC15<5>
+AP IOD_Schematic:roach_gpio 6 IOD_CUSTOM=GPIOLVC15<5>
+AP IOD_Schematic:roach_gpio 6 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 6 IOD_PINFUNCTION=IO_L9N_CC_20
 AP IOD_Schematic:roach_gpio 6 IOD_PINNAME=IOB_X2Y260
 AP IOD_Schematic:roach_gpio 6 IOD_PINNUMBER=J9
-AP IOD_Schematic:roach_gpio 6 IOD_PINFUNCTION=IO_L9N_CC_20
-AP IOD_Schematic:roach_gpio 6 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 6 IOD_CUSTOM=GPIOLVC15<5>
 AP IOD_Schematic:roach_gpio 6 IOD_PORTID=GPIOLVC15<5>
 AP IOD_Schematic:roach_gpio 6 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 6 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 6 IOD_SIGNALNAME=GPIOLVC15<5>
+AP IOD_Schematic:roach_gpio 6 PINTYPE=BI
 AP IOD_Schematic:roach_gpio 7 #=H7
-AP IOD_Schematic:roach_gpio 7 PINTYPE=BI
+AP IOD_Schematic:roach_gpio 7 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 7 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 7 IOD_SIGNALNAME=GPIOLVC15<6>
+AP IOD_Schematic:roach_gpio 7 IOD_CUSTOM=GPIOLVC15<6>
+AP IOD_Schematic:roach_gpio 7 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 7 IOD_PINFUNCTION=IO_L11P_CC_12
 AP IOD_Schematic:roach_gpio 7 IOD_PINNAME=IOB_X2Y177
 AP IOD_Schematic:roach_gpio 7 IOD_PINNUMBER=H7
-AP IOD_Schematic:roach_gpio 7 IOD_PINFUNCTION=IO_L11P_CC_12
-AP IOD_Schematic:roach_gpio 7 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 7 IOD_CUSTOM=GPIOLVC15<6>
 AP IOD_Schematic:roach_gpio 7 IOD_PORTID=GPIOLVC15<6>
 AP IOD_Schematic:roach_gpio 7 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 7 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 7 IOD_SIGNALNAME=GPIOLVC15<6>
+AP IOD_Schematic:roach_gpio 7 PINTYPE=BI
 AP IOD_Schematic:roach_gpio 8 #=J7
-AP IOD_Schematic:roach_gpio 8 PINTYPE=BI
+AP IOD_Schematic:roach_gpio 8 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 8 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 8 IOD_SIGNALNAME=GPIOLVC15<7>
+AP IOD_Schematic:roach_gpio 8 IOD_CUSTOM=GPIOLVC15<7>
+AP IOD_Schematic:roach_gpio 8 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 8 IOD_PINFUNCTION=IO_L11N_CC_12
 AP IOD_Schematic:roach_gpio 8 IOD_PINNAME=IOB_X2Y176
 AP IOD_Schematic:roach_gpio 8 IOD_PINNUMBER=J7
-AP IOD_Schematic:roach_gpio 8 IOD_PINFUNCTION=IO_L11N_CC_12
-AP IOD_Schematic:roach_gpio 8 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 8 IOD_CUSTOM=GPIOLVC15<7>
 AP IOD_Schematic:roach_gpio 8 IOD_PORTID=GPIOLVC15<7>
 AP IOD_Schematic:roach_gpio 8 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 8 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 8 IOD_SIGNALNAME=GPIOLVC15<7>
+AP IOD_Schematic:roach_gpio 8 PINTYPE=BI
 AP IOD_Schematic:roach_gpio 9 #=AP26
-AP IOD_Schematic:roach_gpio 9 PINTYPE=BI
+AP IOD_Schematic:roach_gpio 9 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 9 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 9 IOD_SIGNALNAME=GPIOLVC18<0>
+AP IOD_Schematic:roach_gpio 9 IOD_CUSTOM=GPIOLVC18<0>
+AP IOD_Schematic:roach_gpio 9 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 9 IOD_PINFUNCTION=IO_L10P_CC_25
 AP IOD_Schematic:roach_gpio 9 IOD_PINNAME=IOB_X0Y19
 AP IOD_Schematic:roach_gpio 9 IOD_PINNUMBER=AP26
-AP IOD_Schematic:roach_gpio 9 IOD_PINFUNCTION=IO_L10P_CC_25
-AP IOD_Schematic:roach_gpio 9 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 9 IOD_CUSTOM=GPIOLVC18<0>
 AP IOD_Schematic:roach_gpio 9 IOD_PORTID=GPIOLVC18<0>
 AP IOD_Schematic:roach_gpio 9 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 9 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 9 IOD_SIGNALNAME=GPIOLVC18<0>
+AP IOD_Schematic:roach_gpio 9 PINTYPE=BI
 AP IOD_Schematic:roach_gpio 10 #=AP25
-AP IOD_Schematic:roach_gpio 10 PINTYPE=BI
+AP IOD_Schematic:roach_gpio 10 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 10 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 10 IOD_SIGNALNAME=GPIOLVC18<1>
+AP IOD_Schematic:roach_gpio 10 IOD_CUSTOM=GPIOLVC18<1>
+AP IOD_Schematic:roach_gpio 10 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 10 IOD_PINFUNCTION=IO_L10N_CC_25
 AP IOD_Schematic:roach_gpio 10 IOD_PINNAME=IOB_X0Y18
 AP IOD_Schematic:roach_gpio 10 IOD_PINNUMBER=AP25
-AP IOD_Schematic:roach_gpio 10 IOD_PINFUNCTION=IO_L10N_CC_25
-AP IOD_Schematic:roach_gpio 10 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 10 IOD_CUSTOM=GPIOLVC18<1>
 AP IOD_Schematic:roach_gpio 10 IOD_PORTID=GPIOLVC18<1>
 AP IOD_Schematic:roach_gpio 10 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 10 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 10 IOD_SIGNALNAME=GPIOLVC18<1>
+AP IOD_Schematic:roach_gpio 10 PINTYPE=BI
 AP IOD_Schematic:roach_gpio 11 #=AL25
-AP IOD_Schematic:roach_gpio 11 PINTYPE=BI
+AP IOD_Schematic:roach_gpio 11 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 11 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 11 IOD_SIGNALNAME=GPIOLVC18<2>
+AP IOD_Schematic:roach_gpio 11 IOD_CUSTOM=GPIOLVC18<2>
+AP IOD_Schematic:roach_gpio 11 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 11 IOD_PINFUNCTION=IO_L11P_CC_25
 AP IOD_Schematic:roach_gpio 11 IOD_PINNAME=IOB_X0Y17
 AP IOD_Schematic:roach_gpio 11 IOD_PINNUMBER=AL25
-AP IOD_Schematic:roach_gpio 11 IOD_PINFUNCTION=IO_L11P_CC_25
-AP IOD_Schematic:roach_gpio 11 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 11 IOD_CUSTOM=GPIOLVC18<2>
 AP IOD_Schematic:roach_gpio 11 IOD_PORTID=GPIOLVC18<2>
 AP IOD_Schematic:roach_gpio 11 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 11 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 11 IOD_SIGNALNAME=GPIOLVC18<2>
+AP IOD_Schematic:roach_gpio 11 PINTYPE=BI
 AP IOD_Schematic:roach_gpio 12 #=AL24
-AP IOD_Schematic:roach_gpio 12 PINTYPE=BI
+AP IOD_Schematic:roach_gpio 12 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 12 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 12 IOD_SIGNALNAME=GPIOLVC18<3>
+AP IOD_Schematic:roach_gpio 12 IOD_CUSTOM=GPIOLVC18<3>
+AP IOD_Schematic:roach_gpio 12 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 12 IOD_PINFUNCTION=IO_L11N_CC_25
 AP IOD_Schematic:roach_gpio 12 IOD_PINNAME=IOB_X0Y16
 AP IOD_Schematic:roach_gpio 12 IOD_PINNUMBER=AL24
-AP IOD_Schematic:roach_gpio 12 IOD_PINFUNCTION=IO_L11N_CC_25
-AP IOD_Schematic:roach_gpio 12 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 12 IOD_CUSTOM=GPIOLVC18<3>
 AP IOD_Schematic:roach_gpio 12 IOD_PORTID=GPIOLVC18<3>
 AP IOD_Schematic:roach_gpio 12 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 12 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 12 IOD_SIGNALNAME=GPIOLVC18<3>
+AP IOD_Schematic:roach_gpio 12 PINTYPE=BI
 AP IOD_Schematic:roach_gpio 13 #=AP22
-AP IOD_Schematic:roach_gpio 13 PINTYPE=BI
+AP IOD_Schematic:roach_gpio 13 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 13 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 13 IOD_SIGNALNAME=GPIOLVC18<4>
+AP IOD_Schematic:roach_gpio 13 IOD_CUSTOM=GPIOLVC18<4>
+AP IOD_Schematic:roach_gpio 13 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 13 IOD_PINFUNCTION=IO_L18P_25
 AP IOD_Schematic:roach_gpio 13 IOD_PINNAME=IOB_X0Y3
 AP IOD_Schematic:roach_gpio 13 IOD_PINNUMBER=AP22
-AP IOD_Schematic:roach_gpio 13 IOD_PINFUNCTION=IO_L18P_25
-AP IOD_Schematic:roach_gpio 13 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 13 IOD_CUSTOM=GPIOLVC18<4>
 AP IOD_Schematic:roach_gpio 13 IOD_PORTID=GPIOLVC18<4>
 AP IOD_Schematic:roach_gpio 13 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 13 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 13 IOD_SIGNALNAME=GPIOLVC18<4>
+AP IOD_Schematic:roach_gpio 13 PINTYPE=BI
 AP IOD_Schematic:roach_gpio 14 #=AP21
-AP IOD_Schematic:roach_gpio 14 PINTYPE=BI
+AP IOD_Schematic:roach_gpio 14 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 14 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 14 IOD_SIGNALNAME=GPIOLVC18<5>
+AP IOD_Schematic:roach_gpio 14 IOD_CUSTOM=GPIOLVC18<5>
+AP IOD_Schematic:roach_gpio 14 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 14 IOD_PINFUNCTION=IO_L18N_25
 AP IOD_Schematic:roach_gpio 14 IOD_PINNAME=IOB_X0Y2
 AP IOD_Schematic:roach_gpio 14 IOD_PINNUMBER=AP21
-AP IOD_Schematic:roach_gpio 14 IOD_PINFUNCTION=IO_L18N_25
-AP IOD_Schematic:roach_gpio 14 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 14 IOD_CUSTOM=GPIOLVC18<5>
 AP IOD_Schematic:roach_gpio 14 IOD_PORTID=GPIOLVC18<5>
 AP IOD_Schematic:roach_gpio 14 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 14 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 14 IOD_SIGNALNAME=GPIOLVC18<5>
+AP IOD_Schematic:roach_gpio 14 PINTYPE=BI
 AP IOD_Schematic:roach_gpio 15 #=M32
-AP IOD_Schematic:roach_gpio 15 PINTYPE=OUT
+AP IOD_Schematic:roach_gpio 15 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 15 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 15 IOD_SIGNALNAME=GPIOLVC25<0>
+AP IOD_Schematic:roach_gpio 15 IOD_CUSTOM=GPIOLVC25<0>
+AP IOD_Schematic:roach_gpio 15 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 15 IOD_PINFUNCTION=IO_L13N_11
 AP IOD_Schematic:roach_gpio 15 IOD_PINNAME=IOB_X0Y172
 AP IOD_Schematic:roach_gpio 15 IOD_PINNUMBER=M32
-AP IOD_Schematic:roach_gpio 15 IOD_PINFUNCTION=IO_L13N_11
-AP IOD_Schematic:roach_gpio 15 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 15 IOD_CUSTOM=GPIOLVC25<0>
 AP IOD_Schematic:roach_gpio 15 IOD_PORTID=GPIOLVC25<0>
 AP IOD_Schematic:roach_gpio 15 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 15 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 15 IOD_SIGNALNAME=GPIOLVC25<0>
+AP IOD_Schematic:roach_gpio 15 PINTYPE=OUT
 AP IOD_Schematic:roach_gpio 16 #=P31
-AP IOD_Schematic:roach_gpio 16 PINTYPE=OUT
+AP IOD_Schematic:roach_gpio 16 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 16 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 16 IOD_SIGNALNAME=GPIOLVC25<10>
+AP IOD_Schematic:roach_gpio 16 IOD_CUSTOM=GPIOLVC25<10>
+AP IOD_Schematic:roach_gpio 16 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 16 IOD_PINFUNCTION=IO_L10P_CC_15
 AP IOD_Schematic:roach_gpio 16 IOD_PINNAME=IOB_X0Y219
 AP IOD_Schematic:roach_gpio 16 IOD_PINNUMBER=P31
-AP IOD_Schematic:roach_gpio 16 IOD_PINFUNCTION=IO_L10P_CC_15
-AP IOD_Schematic:roach_gpio 16 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 16 IOD_CUSTOM=GPIOLVC25<10>
 AP IOD_Schematic:roach_gpio 16 IOD_PORTID=GPIOLVC25<10>
 AP IOD_Schematic:roach_gpio 16 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 16 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 16 IOD_SIGNALNAME=GPIOLVC25<10>
+AP IOD_Schematic:roach_gpio 16 PINTYPE=OUT
 AP IOD_Schematic:roach_gpio 17 #=P30
-AP IOD_Schematic:roach_gpio 17 PINTYPE=OUT
+AP IOD_Schematic:roach_gpio 17 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 17 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 17 IOD_SIGNALNAME=GPIOLVC25<11>
+AP IOD_Schematic:roach_gpio 17 IOD_CUSTOM=GPIOLVC25<11>
+AP IOD_Schematic:roach_gpio 17 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 17 IOD_PINFUNCTION=IO_L10N_CC_15
 AP IOD_Schematic:roach_gpio 17 IOD_PINNAME=IOB_X0Y218
 AP IOD_Schematic:roach_gpio 17 IOD_PINNUMBER=P30
-AP IOD_Schematic:roach_gpio 17 IOD_PINFUNCTION=IO_L10N_CC_15
-AP IOD_Schematic:roach_gpio 17 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 17 IOD_CUSTOM=GPIOLVC25<11>
 AP IOD_Schematic:roach_gpio 17 IOD_PORTID=GPIOLVC25<11>
 AP IOD_Schematic:roach_gpio 17 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 17 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 17 IOD_SIGNALNAME=GPIOLVC25<11>
+AP IOD_Schematic:roach_gpio 17 PINTYPE=OUT
 AP IOD_Schematic:roach_gpio 18 #=N33
-AP IOD_Schematic:roach_gpio 18 PINTYPE=OUT
+AP IOD_Schematic:roach_gpio 18 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 18 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 18 IOD_SIGNALNAME=GPIOLVC25<1>
+AP IOD_Schematic:roach_gpio 18 IOD_CUSTOM=GPIOLVC25<1>
+AP IOD_Schematic:roach_gpio 18 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 18 IOD_PINFUNCTION=IO_L12P_VRN_11
 AP IOD_Schematic:roach_gpio 18 IOD_PINNAME=IOB_X0Y175
 AP IOD_Schematic:roach_gpio 18 IOD_PINNUMBER=N33
-AP IOD_Schematic:roach_gpio 18 IOD_PINFUNCTION=IO_L12P_VRN_11
-AP IOD_Schematic:roach_gpio 18 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 18 IOD_CUSTOM=GPIOLVC25<1>
 AP IOD_Schematic:roach_gpio 18 IOD_PORTID=GPIOLVC25<1>
 AP IOD_Schematic:roach_gpio 18 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 18 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 18 IOD_SIGNALNAME=GPIOLVC25<1>
+AP IOD_Schematic:roach_gpio 18 PINTYPE=OUT
 AP IOD_Schematic:roach_gpio 19 #=N34
-AP IOD_Schematic:roach_gpio 19 PINTYPE=OUT
+AP IOD_Schematic:roach_gpio 19 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 19 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 19 IOD_SIGNALNAME=GPIOLVC25<2>
+AP IOD_Schematic:roach_gpio 19 IOD_CUSTOM=GPIOLVC25<2>
+AP IOD_Schematic:roach_gpio 19 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 19 IOD_PINFUNCTION=IO_L14N_VREF_11
 AP IOD_Schematic:roach_gpio 19 IOD_PINNAME=IOB_X0Y170
 AP IOD_Schematic:roach_gpio 19 IOD_PINNUMBER=N34
-AP IOD_Schematic:roach_gpio 19 IOD_PINFUNCTION=IO_L14N_VREF_11
-AP IOD_Schematic:roach_gpio 19 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 19 IOD_CUSTOM=GPIOLVC25<2>
 AP IOD_Schematic:roach_gpio 19 IOD_PORTID=GPIOLVC25<2>
 AP IOD_Schematic:roach_gpio 19 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 19 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 19 IOD_SIGNALNAME=GPIOLVC25<2>
+AP IOD_Schematic:roach_gpio 19 PINTYPE=OUT
 AP IOD_Schematic:roach_gpio 20 #=P34
-AP IOD_Schematic:roach_gpio 20 PINTYPE=OUT
+AP IOD_Schematic:roach_gpio 20 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 20 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 20 IOD_SIGNALNAME=GPIOLVC25<3>
+AP IOD_Schematic:roach_gpio 20 IOD_CUSTOM=GPIOLVC25<3>
+AP IOD_Schematic:roach_gpio 20 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 20 IOD_PINFUNCTION=IO_L14P_11
 AP IOD_Schematic:roach_gpio 20 IOD_PINNAME=IOB_X0Y171
 AP IOD_Schematic:roach_gpio 20 IOD_PINNUMBER=P34
-AP IOD_Schematic:roach_gpio 20 IOD_PINFUNCTION=IO_L14P_11
-AP IOD_Schematic:roach_gpio 20 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 20 IOD_CUSTOM=GPIOLVC25<3>
 AP IOD_Schematic:roach_gpio 20 IOD_PORTID=GPIOLVC25<3>
 AP IOD_Schematic:roach_gpio 20 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 20 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 20 IOD_SIGNALNAME=GPIOLVC25<3>
+AP IOD_Schematic:roach_gpio 20 PINTYPE=OUT
 AP IOD_Schematic:roach_gpio 21 #=R33
-AP IOD_Schematic:roach_gpio 21 PINTYPE=OUT
+AP IOD_Schematic:roach_gpio 21 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 21 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 21 IOD_SIGNALNAME=GPIOLVC25<4>
+AP IOD_Schematic:roach_gpio 21 IOD_CUSTOM=GPIOLVC25<4>
+AP IOD_Schematic:roach_gpio 21 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 21 IOD_PINFUNCTION=IO_L17P_SM11P_11
 AP IOD_Schematic:roach_gpio 21 IOD_PINNAME=IOB_X0Y165
 AP IOD_Schematic:roach_gpio 21 IOD_PINNUMBER=R33
-AP IOD_Schematic:roach_gpio 21 IOD_PINFUNCTION=IO_L17P_SM11P_11
-AP IOD_Schematic:roach_gpio 21 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 21 IOD_CUSTOM=GPIOLVC25<4>
 AP IOD_Schematic:roach_gpio 21 IOD_PORTID=GPIOLVC25<4>
 AP IOD_Schematic:roach_gpio 21 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 21 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 21 IOD_SIGNALNAME=GPIOLVC25<4>
+AP IOD_Schematic:roach_gpio 21 PINTYPE=OUT
 AP IOD_Schematic:roach_gpio 22 #=M33
-AP IOD_Schematic:roach_gpio 22 PINTYPE=OUT
+AP IOD_Schematic:roach_gpio 22 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 22 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 22 IOD_SIGNALNAME=GPIOLVC25<5>
+AP IOD_Schematic:roach_gpio 22 IOD_CUSTOM=GPIOLVC25<5>
+AP IOD_Schematic:roach_gpio 22 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 22 IOD_PINFUNCTION=IO_L12N_VRP_11
 AP IOD_Schematic:roach_gpio 22 IOD_PINNAME=IOB_X0Y174
 AP IOD_Schematic:roach_gpio 22 IOD_PINNUMBER=M33
-AP IOD_Schematic:roach_gpio 22 IOD_PINFUNCTION=IO_L12N_VRP_11
-AP IOD_Schematic:roach_gpio 22 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 22 IOD_CUSTOM=GPIOLVC25<5>
 AP IOD_Schematic:roach_gpio 22 IOD_PORTID=GPIOLVC25<5>
 AP IOD_Schematic:roach_gpio 22 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 22 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 22 IOD_SIGNALNAME=GPIOLVC25<5>
+AP IOD_Schematic:roach_gpio 22 PINTYPE=OUT
 AP IOD_Schematic:roach_gpio 23 #=L33
-AP IOD_Schematic:roach_gpio 23 PINTYPE=OUT
+AP IOD_Schematic:roach_gpio 23 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 23 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 23 IOD_SIGNALNAME=GPIOLVC25<6>
+AP IOD_Schematic:roach_gpio 23 IOD_CUSTOM=GPIOLVC25<6>
+AP IOD_Schematic:roach_gpio 23 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 23 IOD_PINFUNCTION=IO_L13P_11
 AP IOD_Schematic:roach_gpio 23 IOD_PINNAME=IOB_X0Y173
 AP IOD_Schematic:roach_gpio 23 IOD_PINNUMBER=L33
-AP IOD_Schematic:roach_gpio 23 IOD_PINFUNCTION=IO_L13P_11
-AP IOD_Schematic:roach_gpio 23 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 23 IOD_CUSTOM=GPIOLVC25<6>
 AP IOD_Schematic:roach_gpio 23 IOD_PORTID=GPIOLVC25<6>
 AP IOD_Schematic:roach_gpio 23 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 23 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 23 IOD_SIGNALNAME=GPIOLVC25<6>
+AP IOD_Schematic:roach_gpio 23 PINTYPE=OUT
 AP IOD_Schematic:roach_gpio 24 #=P32
-AP IOD_Schematic:roach_gpio 24 PINTYPE=OUT
+AP IOD_Schematic:roach_gpio 24 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 24 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 24 IOD_SIGNALNAME=GPIOLVC25<7>
+AP IOD_Schematic:roach_gpio 24 IOD_CUSTOM=GPIOLVC25<7>
+AP IOD_Schematic:roach_gpio 24 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 24 IOD_PINFUNCTION=IO_L15P_SM13P_11
 AP IOD_Schematic:roach_gpio 24 IOD_PINNAME=IOB_X0Y169
 AP IOD_Schematic:roach_gpio 24 IOD_PINNUMBER=P32
-AP IOD_Schematic:roach_gpio 24 IOD_PINFUNCTION=IO_L15P_SM13P_11
-AP IOD_Schematic:roach_gpio 24 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 24 IOD_CUSTOM=GPIOLVC25<7>
 AP IOD_Schematic:roach_gpio 24 IOD_PORTID=GPIOLVC25<7>
 AP IOD_Schematic:roach_gpio 24 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 24 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 24 IOD_SIGNALNAME=GPIOLVC25<7>
+AP IOD_Schematic:roach_gpio 24 PINTYPE=OUT
 AP IOD_Schematic:roach_gpio 25 #=N32
-AP IOD_Schematic:roach_gpio 25 PINTYPE=OUT
+AP IOD_Schematic:roach_gpio 25 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 25 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 25 IOD_SIGNALNAME=GPIOLVC25<8>
+AP IOD_Schematic:roach_gpio 25 IOD_CUSTOM=GPIOLVC25<8>
+AP IOD_Schematic:roach_gpio 25 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 25 IOD_PINFUNCTION=IO_L15N_SM13N_11
 AP IOD_Schematic:roach_gpio 25 IOD_PINNAME=IOB_X0Y168
 AP IOD_Schematic:roach_gpio 25 IOD_PINNUMBER=N32
-AP IOD_Schematic:roach_gpio 25 IOD_PINFUNCTION=IO_L15N_SM13N_11
-AP IOD_Schematic:roach_gpio 25 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 25 IOD_CUSTOM=GPIOLVC25<8>
 AP IOD_Schematic:roach_gpio 25 IOD_PORTID=GPIOLVC25<8>
 AP IOD_Schematic:roach_gpio 25 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 25 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 25 IOD_SIGNALNAME=GPIOLVC25<8>
+AP IOD_Schematic:roach_gpio 25 PINTYPE=OUT
 AP IOD_Schematic:roach_gpio 26 #=R32
-AP IOD_Schematic:roach_gpio 26 PINTYPE=OUT
+AP IOD_Schematic:roach_gpio 26 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 26 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 26 IOD_SIGNALNAME=GPIOLVC25<9>
+AP IOD_Schematic:roach_gpio 26 IOD_CUSTOM=GPIOLVC25<9>
+AP IOD_Schematic:roach_gpio 26 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 26 IOD_PINFUNCTION=IO_L17N_SM11N_11
 AP IOD_Schematic:roach_gpio 26 IOD_PINNAME=IOB_X0Y164
 AP IOD_Schematic:roach_gpio 26 IOD_PINNUMBER=R32
-AP IOD_Schematic:roach_gpio 26 IOD_PINFUNCTION=IO_L17N_SM11N_11
-AP IOD_Schematic:roach_gpio 26 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 26 IOD_CUSTOM=GPIOLVC25<9>
 AP IOD_Schematic:roach_gpio 26 IOD_PORTID=GPIOLVC25<9>
 AP IOD_Schematic:roach_gpio 26 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 26 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 26 IOD_SIGNALNAME=GPIOLVC25<9>
+AP IOD_Schematic:roach_gpio 26 PINTYPE=OUT
 AP IOD_Schematic:roach_gpio 27 #=H12
-AP IOD_Schematic:roach_gpio 27 PINTYPE=BI
-AP IOD_Schematic:roach_gpio 27 IOD_SIGNALNAME=GPIOLVC33<0>
-AP IOD_Schematic:roach_gpio 27 IOD_PINNAME=IOB_X1Y184
-AP IOD_Schematic:roach_gpio 27 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 27 IOD_PINNUMBER=H12
-AP IOD_Schematic:roach_gpio 27 IOD_PINFUNCTION=IO_L7N_A4_D20_1
 AP IOD_Schematic:roach_gpio 27 IOD_IMPLSIGNALNAME=
+AP IOD_Schematic:roach_gpio 27 NO_CONNECT=NO
 AP IOD_Schematic:roach_gpio 27 IOD_CUSTOM=
+AP IOD_Schematic:roach_gpio 27 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 27 IOD_PINFUNCTION=IO_L7N_A4_D20_1
+AP IOD_Schematic:roach_gpio 27 IOD_PINNAME=IOB_X1Y184
+AP IOD_Schematic:roach_gpio 27 IOD_PINNUMBER=H12
 AP IOD_Schematic:roach_gpio 27 IOD_PORTID=H12
 AP IOD_Schematic:roach_gpio 27 IOD_PORTTYPE=PIN
-AP IOD_Schematic:roach_gpio 27 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 27 IOD_SIGNALNAME=GPIOLVC33<0>
+AP IOD_Schematic:roach_gpio 27 PINTYPE=BI
 AP IOD_Schematic:roach_gpio 28 #=AE18
-AP IOD_Schematic:roach_gpio 28 PINTYPE=BI
+AP IOD_Schematic:roach_gpio 28 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 28 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 28 IOD_SIGNALNAME=GPIOLVC33<3>
+AP IOD_Schematic:roach_gpio 28 IOD_CUSTOM=GPIOLVC33<3>
+AP IOD_Schematic:roach_gpio 28 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 28 IOD_PINFUNCTION=IO_L8N_CC_GC_4
 AP IOD_Schematic:roach_gpio 28 IOD_PINNAME=IOB_X1Y102
 AP IOD_Schematic:roach_gpio 28 IOD_PINNUMBER=AE18
-AP IOD_Schematic:roach_gpio 28 IOD_PINFUNCTION=IO_L8N_CC_GC_4
-AP IOD_Schematic:roach_gpio 28 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 28 IOD_CUSTOM=GPIOLVC33<3>
 AP IOD_Schematic:roach_gpio 28 IOD_PORTID=GPIOLVC33<3>
 AP IOD_Schematic:roach_gpio 28 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 28 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 28 IOD_SIGNALNAME=GPIOLVC33<3>
+AP IOD_Schematic:roach_gpio 28 PINTYPE=BI
 AP IOD_Schematic:roach_gpio 29 #=AE14
-AP IOD_Schematic:roach_gpio 29 PINTYPE=BI
+AP IOD_Schematic:roach_gpio 29 IOD_IMPLSIGNALNAME=
 AP IOD_Schematic:roach_gpio 29 NO_CONNECT=NO
-AP IOD_Schematic:roach_gpio 29 IOD_SIGNALNAME=GPIOLVC33<4>
+AP IOD_Schematic:roach_gpio 29 IOD_CUSTOM=GPIOLVC33<4>
+AP IOD_Schematic:roach_gpio 29 IOD_LABELTYPE=IOD_SIGNALNAME
+AP IOD_Schematic:roach_gpio 29 IOD_PINFUNCTION=IO_L4P_FCS_B_2
 AP IOD_Schematic:roach_gpio 29 IOD_PINNAME=IOB_X1Y131
 AP IOD_Schematic:roach_gpio 29 IOD_PINNUMBER=AE14
-AP IOD_Schematic:roach_gpio 29 IOD_PINFUNCTION=IO_L4P_FCS_B_2
-AP IOD_Schematic:roach_gpio 29 IOD_IMPLSIGNALNAME=
-AP IOD_Schematic:roach_gpio 29 IOD_CUSTOM=GPIOLVC33<4>
 AP IOD_Schematic:roach_gpio 29 IOD_PORTID=GPIOLVC33<4>
 AP IOD_Schematic:roach_gpio 29 IOD_PORTTYPE=SIGNAL
-AP IOD_Schematic:roach_gpio 29 IOD_LABELTYPE=IOD_SIGNALNAME
-AN $1N452 NC
-AN $1N424 NC
-AN $1N427 NC
-AN $1N425 NC
-AN $1N426 NC
-AN $1N439 NC
+AP IOD_Schematic:roach_gpio 29 IOD_SIGNALNAME=GPIOLVC33<4>
+AP IOD_Schematic:roach_gpio 29 PINTYPE=BI
 AN $1N451 NC
-G 2V5
-G 1V8
-G GND
-G 1V5
+AN $1N439 NC
+AN $1N426 NC
+AN $1N425 NC
+AN $1N427 NC
+AN $1N424 NC
+AN $1N452 NC
 G 3V3
+G GND
+G 1V8
+G 2V5
+G 1V5
 M IOD_Schematic:r $1I345
-I $1I345 IOD_Schematic:r GND GPIOLVC33[3] SCHLOC=13Q8`SUP=AVNET`RATING=0.0625W`DEVICE=RES0402_55`REFDES=R2`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGF0103T1E`VALUE=10K`POWERRATING=0.0625`PKG_TYPE=RESC1005X40N`GEOMETRY.HEIGHT=0.4MM`STANDARDS=0402`TOLERANCE=5%`
+I $1I345 IOD_Schematic:r GND GPIOLVC333 SUP=AVNET`RATING=0.0625W`DEVICE`REFDES=R?`MANUFACTURER`P/D_NUM`VALUE`POWERRATING=0.0625`PKG_TYPE`GEOMETRY.HEIGHT=0.4MM`STANDARDS=0402`TOLERANCE`
 |R 9:28_5-9-07
-API $1I345 IOD_Schematic:r 1 PINLOC=13Q8
 API $1I345 IOD_Schematic:r 1 #=1
-API $1I345 IOD_Schematic:r 2 PINLOC=13P8
 API $1I345 IOD_Schematic:r 2 #=2
 M IOD_Schematic:r $1I341
-I $1I341 IOD_Schematic:r GPIOLVC33[4] GND SCHLOC=13C8`SUP=AVNET`RATING=0.0625W`TOLERANCE=5%`STANDARDS=0402`GEOMETRY.HEIGHT=0.4MM`PKG_TYPE=RESC1005X40N`POWERRATING=0.0625`VALUE=10K`P/D_NUM=0402WGF0103T1E`MANUFACTURER=ROYAL OHM`REFDES=R1`DEVICE=RES0402_55`
+I $1I341 IOD_Schematic:r GPIOLVC334 GND SUP=AVNET`RATING=0.0625W`TOLERANCE`STANDARDS=0402`GEOMETRY.HEIGHT=0.4MM`PKG_TYPE`POWERRATING=0.0625`VALUE`P/D_NUM`MANUFACTURER`REFDES=R?`DEVICE`
 |R 9:28_5-9-07
-API $1I341 IOD_Schematic:r 1 PINLOC=13C8
 API $1I341 IOD_Schematic:r 1 #=1
-API $1I341 IOD_Schematic:r 2 PINLOC=13C8
 API $1I341 IOD_Schematic:r 2 #=2
 M IOD_Schematic:r $1I303
-I $1I303 IOD_Schematic:r $1N176 $1N305 SCHLOC=13R4`REFDES=R50`DEVICE=RES0402X0_35`GEOMETRY.HEIGHT=0.4MM`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGF499JT1E`PKG_TYPE=RESC1005X40N`POWERRATING=0.0625`STANDARDS=0402`TOLERANCE=1%`VALUE=49R9`
+I $1I303 IOD_Schematic:r $1N176 $1N305 REFDES=R?`DEVICE`GEOMETRY.HEIGHT=0.4MM`MANUFACTURER`P/D_NUM`PKG_TYPE`POWERRATING=0.0625`STANDARDS=0402`TOLERANCE`VALUE`
 |R 9:28_5-9-07
-API $1I303 IOD_Schematic:r 1 PINLOC=13R4
 API $1I303 IOD_Schematic:r 1 #=1
-API $1I303 IOD_Schematic:r 2 PINLOC=13R4
 API $1I303 IOD_Schematic:r 2 #=2
 M IOD_Schematic:r $1I280
-I $1I280 IOD_Schematic:r $1N281 3V3 SCHLOC=13Q2`DEVICE=RES0402_55`REFDES=R46`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGJ0101T1E`VALUE=100R`POWERRATING=0.0625`PKG_TYPE=RESC1005X40N`GEOMETRY.HEIGHT=0.4MM`STANDARDS=0402`TOLERANCE=5%`
+I $1I280 IOD_Schematic:r $1N281 3V3 DEVICE`REFDES=R?`MANUFACTURER`P/D_NUM`VALUE`POWERRATING=0.0625`PKG_TYPE`GEOMETRY.HEIGHT=0.4MM`STANDARDS=0402`TOLERANCE`
 |R 9:28_5-9-07
-API $1I280 IOD_Schematic:r 1 PINLOC=13Q2
 API $1I280 IOD_Schematic:r 1 #=1
-API $1I280 IOD_Schematic:r 2 PINLOC=13Q2
 API $1I280 IOD_Schematic:r 2 #=2
 M IOD_Schematic:r $1I278
-I $1I278 IOD_Schematic:r $1N279 3V3 SCHLOC=13Q2`TOLERANCE=5%`STANDARDS=0402`GEOMETRY.HEIGHT=0.4MM`PKG_TYPE=RESC1005X40N`POWERRATING=0.0625`VALUE=100R`P/D_NUM=0402WGJ0101T1E`MANUFACTURER=ROYAL OHM`REFDES=R45`DEVICE=RES0402_55`
+I $1I278 IOD_Schematic:r $1N279 3V3 TOLERANCE`STANDARDS=0402`GEOMETRY.HEIGHT=0.4MM`PKG_TYPE`POWERRATING=0.0625`VALUE`P/D_NUM`MANUFACTURER`REFDES=R?`DEVICE`
 |R 9:28_5-9-07
-API $1I278 IOD_Schematic:r 1 PINLOC=13Q2
 API $1I278 IOD_Schematic:r 1 #=1
-API $1I278 IOD_Schematic:r 2 PINLOC=13Q2
 API $1I278 IOD_Schematic:r 2 #=2
 M IOD_Schematic:r $1I275
-I $1I275 IOD_Schematic:r $1N276 3V3 SCHLOC=13Q3`TOLERANCE=5%`STANDARDS=0402`GEOMETRY.HEIGHT=0.4MM`PKG_TYPE=RESC1005X40N`POWERRATING=0.0625`VALUE=100R`P/D_NUM=0402WGJ0101T1E`MANUFACTURER=ROYAL OHM`REFDES=R44`DEVICE=RES0402_55`
+I $1I275 IOD_Schematic:r $1N276 3V3 TOLERANCE`STANDARDS=0402`GEOMETRY.HEIGHT=0.4MM`PKG_TYPE`POWERRATING=0.0625`VALUE`P/D_NUM`MANUFACTURER`REFDES=R?`DEVICE`
 |R 9:28_5-9-07
-API $1I275 IOD_Schematic:r 1 PINLOC=13Q3
 API $1I275 IOD_Schematic:r 1 #=1
-API $1I275 IOD_Schematic:r 2 PINLOC=13Q3
 API $1I275 IOD_Schematic:r 2 #=2
 M IOD_Schematic:diode_led_0805_grn $1I252
-I $1I252 IOD_Schematic:diode_led_0805_grn $1N276 $1N264 SCHLOC=13Q3`GEOMETRY.HEIGHT=1.2MM`VALUE=GRN`PKG_TYPE=LEDC3216X120N`REFDES=CR7`MANUFACTURER=OSRAM`P/D_NUM=Q62702P5179`
+I $1I252 IOD_Schematic:diode_led_0805_grn $1N276 $1N264 GEOMETRY.HEIGHT=1.2MM`VALUE`PKG_TYPE`REFDES=CR?`MANUFACTURER`P/D_NUM`
 |R 12:47_5-8-08
-API $1I252 IOD_Schematic:diode_led_0805_grn 1 PINLOC=13Q3
 API $1I252 IOD_Schematic:diode_led_0805_grn 1 #=2
-API $1I252 IOD_Schematic:diode_led_0805_grn 2 PINLOC=13Q3
 API $1I252 IOD_Schematic:diode_led_0805_grn 2 #=1
 M IOD_Schematic:diode_led_0805_grn $1I253
-I $1I253 IOD_Schematic:diode_led_0805_grn $1N277 $1N266 SCHLOC=13Q3`GEOMETRY.HEIGHT=1.2MM`MANUFACTURER=OSRAM`REFDES=CR8`PKG_TYPE=LEDC3216X120N`VALUE=GRN`P/D_NUM=Q62702P5179`
+I $1I253 IOD_Schematic:diode_led_0805_grn $1N277 $1N266 GEOMETRY.HEIGHT=1.2MM`MANUFACTURER`REFDES=CR?`PKG_TYPE`VALUE`P/D_NUM`
 |R 12:47_5-8-08
-API $1I253 IOD_Schematic:diode_led_0805_grn 1 PINLOC=13Q3
 API $1I253 IOD_Schematic:diode_led_0805_grn 1 #=2
-API $1I253 IOD_Schematic:diode_led_0805_grn 2 PINLOC=13Q3
 API $1I253 IOD_Schematic:diode_led_0805_grn 2 #=1
 M IOD_Schematic:diode_led_0805_grn $1I254
-I $1I254 IOD_Schematic:diode_led_0805_grn $1N279 $1N268 SCHLOC=13Q2`GEOMETRY.HEIGHT=1.2MM`VALUE=GRN`PKG_TYPE=LEDC3216X120N`REFDES=CR9`MANUFACTURER=OSRAM`P/D_NUM=Q62702P5179`
+I $1I254 IOD_Schematic:diode_led_0805_grn $1N279 $1N268 GEOMETRY.HEIGHT=1.2MM`VALUE`PKG_TYPE`REFDES=CR?`MANUFACTURER`P/D_NUM`
 |R 12:47_5-8-08
-API $1I254 IOD_Schematic:diode_led_0805_grn 1 PINLOC=13Q2
 API $1I254 IOD_Schematic:diode_led_0805_grn 1 #=2
-API $1I254 IOD_Schematic:diode_led_0805_grn 2 PINLOC=13Q2
 API $1I254 IOD_Schematic:diode_led_0805_grn 2 #=1
 M IOD_Schematic:diode_led_0805_grn $1I255
-I $1I255 IOD_Schematic:diode_led_0805_grn $1N281 $1N270 SCHLOC=13Q2`GEOMETRY.HEIGHT=1.2MM`MANUFACTURER=OSRAM`REFDES=CR10`PKG_TYPE=LEDC3216X120N`VALUE=GRN`P/D_NUM=Q62702P5179`
+I $1I255 IOD_Schematic:diode_led_0805_grn $1N281 $1N270 GEOMETRY.HEIGHT=1.2MM`MANUFACTURER`REFDES=CR?`PKG_TYPE`VALUE`P/D_NUM`
 |R 12:47_5-8-08
-API $1I255 IOD_Schematic:diode_led_0805_grn 1 PINLOC=13Q2
 API $1I255 IOD_Schematic:diode_led_0805_grn 1 #=2
-API $1I255 IOD_Schematic:diode_led_0805_grn 2 PINLOC=13Q2
 API $1I255 IOD_Schematic:diode_led_0805_grn 2 #=1
 M IOD_Schematic:r $1I242
-I $1I242 IOD_Schematic:r $1N241 GND SCHLOC=13P3`SUP=AVNET`RATING=0.0625W`TOLERANCE=5%`STANDARDS=0402`GEOMETRY.HEIGHT=0.4MM`PKG_TYPE=RESC1005X40N`POWERRATING=0.0625`VALUE=10K`P/D_NUM=0402WGF0103T1E`MANUFACTURER=ROYAL OHM`REFDES=R9`DEVICE=RES0402_55`
+I $1I242 IOD_Schematic:r $1N241 GND SUP=AVNET`RATING=0.0625W`TOLERANCE`STANDARDS=0402`GEOMETRY.HEIGHT=0.4MM`PKG_TYPE`POWERRATING=0.0625`VALUE`P/D_NUM`MANUFACTURER`REFDES=R?`DEVICE`
 |R 9:28_5-9-07
-API $1I242 IOD_Schematic:r 1 PINLOC=13P3
 API $1I242 IOD_Schematic:r 1 #=1
-API $1I242 IOD_Schematic:r 2 PINLOC=13P3
 API $1I242 IOD_Schematic:r 2 #=2
 M IOD_Schematic:c $1I249
-I $1I249 IOD_Schematic:c 1V8 GND SCHLOC=13M1`MANUFACTURER=PANASONIC`REFDES=C44`VALUE=220NF`TYPE=FIXED`TOLERANCE=10%`VOLTAGERATING=6.3V`DIELECTRIC=X7R`DEVICE=CHIPCAP0402X0_5`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE=CAPC1005X55N`P/D_NUM=ECJ-0EB0J224K`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
+I $1I249 IOD_Schematic:c 1V8 GND MANUFACTURER`REFDES=C?`VALUE`TYPE=FIXED`TOLERANCE`VOLTAGERATING=6.3V`DIELECTRIC=X7R`DEVICE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE`P/D_NUM`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
 |R 6:11_8-28-07
-API $1I249 IOD_Schematic:c 1 PINLOC=13M1
 API $1I249 IOD_Schematic:c 1 #=1
-API $1I249 IOD_Schematic:c 2 PINLOC=13M1
 API $1I249 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I250
-I $1I250 IOD_Schematic:c 3V3 GND SCHLOC=13N1`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`P/D_NUM=ECJ-0EB0J224K`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIPCAP0402X0_5`DIELECTRIC=X7R`VOLTAGERATING=6.3V`TOLERANCE=10%`TYPE=FIXED`VALUE=220NF`REFDES=C45`MANUFACTURER=PANASONIC`
+I $1I250 IOD_Schematic:c 3V3 GND PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`P/D_NUM`PKG_TYPE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE`DIELECTRIC=X7R`VOLTAGERATING=6.3V`TOLERANCE`TYPE=FIXED`VALUE`REFDES=C?`MANUFACTURER`
 |R 6:11_8-28-07
-API $1I250 IOD_Schematic:c 1 PINLOC=13N1
 API $1I250 IOD_Schematic:c 1 #=1
-API $1I250 IOD_Schematic:c 2 PINLOC=13N1
 API $1I250 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I209
-I $1I209 IOD_Schematic:c 2V5 GND SCHLOC=13N8`MANUFACTURER=PANASONIC`REFDES=C41`VALUE=220NF`TYPE=FIXED`TOLERANCE=10%`VOLTAGERATING=6.3V`DIELECTRIC=X7R`DEVICE=CHIPCAP0402X0_5`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE=CAPC1005X55N`P/D_NUM=ECJ-0EB0J224K`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
+I $1I209 IOD_Schematic:c 2V5 GND MANUFACTURER`REFDES=C?`VALUE`TYPE=FIXED`TOLERANCE`VOLTAGERATING=6.3V`DIELECTRIC=X7R`DEVICE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE`P/D_NUM`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
 |R 6:11_8-28-07
-API $1I209 IOD_Schematic:c 1 PINLOC=13N8
 API $1I209 IOD_Schematic:c 1 #=1
-API $1I209 IOD_Schematic:c 2 PINLOC=13N8
 API $1I209 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I210
-I $1I210 IOD_Schematic:c 3V3 GND SCHLOC=13N8`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`P/D_NUM=ECJ-0EB0J224K`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIPCAP0402X0_5`DIELECTRIC=X7R`VOLTAGERATING=6.3V`TOLERANCE=10%`TYPE=FIXED`VALUE=220NF`REFDES=C42`MANUFACTURER=PANASONIC`
+I $1I210 IOD_Schematic:c 3V3 GND PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`P/D_NUM`PKG_TYPE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE`DIELECTRIC=X7R`VOLTAGERATING=6.3V`TOLERANCE`TYPE=FIXED`VALUE`REFDES=C?`MANUFACTURER`
 |R 6:11_8-28-07
-API $1I210 IOD_Schematic:c 1 PINLOC=13N8
 API $1I210 IOD_Schematic:c 1 #=1
-API $1I210 IOD_Schematic:c 2 PINLOC=13N8
 API $1I210 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I203
-I $1I203 IOD_Schematic:c 3V3 GND SCHLOC=13N4`MANUFACTURER=PANASONIC`REFDES=C39`VALUE=220NF`TYPE=FIXED`TOLERANCE=10%`VOLTAGERATING=6.3V`DIELECTRIC=X7R`DEVICE=CHIPCAP0402X0_5`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE=CAPC1005X55N`P/D_NUM=ECJ-0EB0J224K`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
+I $1I203 IOD_Schematic:c 3V3 GND MANUFACTURER`REFDES=C?`VALUE`TYPE=FIXED`TOLERANCE`VOLTAGERATING=6.3V`DIELECTRIC=X7R`DEVICE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE`P/D_NUM`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
 |R 6:11_8-28-07
-API $1I203 IOD_Schematic:c 1 PINLOC=13N4
 API $1I203 IOD_Schematic:c 1 #=1
-API $1I203 IOD_Schematic:c 2 PINLOC=13N4
 API $1I203 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I204
-I $1I204 IOD_Schematic:c 2V5 GND SCHLOC=13N4`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`P/D_NUM=ECJ-0EB0J224K`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIPCAP0402X0_5`DIELECTRIC=X7R`VOLTAGERATING=6.3V`TOLERANCE=10%`TYPE=FIXED`VALUE=220NF`REFDES=C40`MANUFACTURER=PANASONIC`
+I $1I204 IOD_Schematic:c 2V5 GND PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`P/D_NUM`PKG_TYPE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE`DIELECTRIC=X7R`VOLTAGERATING=6.3V`TOLERANCE`TYPE=FIXED`VALUE`REFDES=C?`MANUFACTURER`
 |R 6:11_8-28-07
-API $1I204 IOD_Schematic:c 1 PINLOC=13N4
 API $1I204 IOD_Schematic:c 1 #=1
-API $1I204 IOD_Schematic:c 2 PINLOC=13N4
 API $1I204 IOD_Schematic:c 2 #=2
 M IOD_Schematic:sn74avch4t245 $1I125
-I $1I125 IOD_Schematic:sn74avch4t245 $1N163 $1N165 $1N43 $1N44 GPIOLVC33[3] $1N144 $1N167 $1N169 $1N45 $1N46 GPIOLVC33[3] $1N144 GND GND 3V3 2V5 SCHLOC=13N7`GEOMETRY.HEIGHT=1.2MM`REFDES=U10`
+I $1I125 IOD_Schematic:sn74avch4t245 $1N163 $1N165 $1N43 $1N44 GPIOLVC333 $1N144 $1N167 $1N169 $1N45 $1N46 GPIOLVC333 $1N144 GND GND 3V3 2V5 GEOMETRY.HEIGHT=1.2MM`REFDES=U?`
 |R 8:54_1-24-08
-API $1I125 IOD_Schematic:sn74avch4t245 1 PINLOC=13P7
 API $1I125 IOD_Schematic:sn74avch4t245 1 #=4
-API $1I125 IOD_Schematic:sn74avch4t245 2 PINLOC=13P7
 API $1I125 IOD_Schematic:sn74avch4t245 2 #=5
-API $1I125 IOD_Schematic:sn74avch4t245 3 PINLOC=13M7
 API $1I125 IOD_Schematic:sn74avch4t245 3 #=13
-API $1I125 IOD_Schematic:sn74avch4t245 4 PINLOC=13M7
 API $1I125 IOD_Schematic:sn74avch4t245 4 #=12
-API $1I125 IOD_Schematic:sn74avch4t245 5 PINLOC=13P7
 API $1I125 IOD_Schematic:sn74avch4t245 5 #=2
-API $1I125 IOD_Schematic:sn74avch4t245 6 PINLOC=13M7
 API $1I125 IOD_Schematic:sn74avch4t245 6 #=15
-API $1I125 IOD_Schematic:sn74avch4t245 7 PINLOC=13P7
 API $1I125 IOD_Schematic:sn74avch4t245 7 #=6
-API $1I125 IOD_Schematic:sn74avch4t245 8 PINLOC=13P7
 API $1I125 IOD_Schematic:sn74avch4t245 8 #=7
-API $1I125 IOD_Schematic:sn74avch4t245 9 PINLOC=13M7
 API $1I125 IOD_Schematic:sn74avch4t245 9 #=11
-API $1I125 IOD_Schematic:sn74avch4t245 10 PINLOC=13M7
 API $1I125 IOD_Schematic:sn74avch4t245 10 #=10
-API $1I125 IOD_Schematic:sn74avch4t245 11 PINLOC=13P7
 API $1I125 IOD_Schematic:sn74avch4t245 11 #=3
-API $1I125 IOD_Schematic:sn74avch4t245 12 PINLOC=13M7
 API $1I125 IOD_Schematic:sn74avch4t245 12 #=14
-API $1I125 IOD_Schematic:sn74avch4t245 13 PINLOC=13P6
 API $1I125 IOD_Schematic:sn74avch4t245 13 #=8
-API $1I125 IOD_Schematic:sn74avch4t245 14 PINLOC=13P6
 API $1I125 IOD_Schematic:sn74avch4t245 14 #=9
-API $1I125 IOD_Schematic:sn74avch4t245 15 PINLOC=13M6
 API $1I125 IOD_Schematic:sn74avch4t245 15 #=1
-API $1I125 IOD_Schematic:sn74avch4t245 16 PINLOC=13M6
 API $1I125 IOD_Schematic:sn74avch4t245 16 #=16
 M IOD_Schematic:sn74avch4t245 $1I91
-I $1I91 IOD_Schematic:sn74avch4t245 $1N113 $1N115 GPIOLVC15[3] GPIOLVC15[2] GPIOLVC33[4] $1N94 $1N119 $1N117 GPIOLVC15[1] GPIOLVC15[0] GPIOLVC33[4] $1N94 GND GND 3V3 1V5 SCHLOC=13D5`GEOMETRY.HEIGHT=1.2MM`REFDES=U14`
+I $1I91 IOD_Schematic:sn74avch4t245 $1N113 $1N115 GPIOLVC153 GPIOLVC152 GPIOLVC334 $1N94 $1N119 $1N117 GPIOLVC151 GPIOLVC150 GPIOLVC334 $1N94 GND GND 3V3 1V5 GEOMETRY.HEIGHT=1.2MM`REFDES=U?`
 |R 8:54_1-24-08
-API $1I91 IOD_Schematic:sn74avch4t245 1 PINLOC=13C5
 API $1I91 IOD_Schematic:sn74avch4t245 1 #=4
-API $1I91 IOD_Schematic:sn74avch4t245 2 PINLOC=13C5
 API $1I91 IOD_Schematic:sn74avch4t245 2 #=5
-API $1I91 IOD_Schematic:sn74avch4t245 3 PINLOC=13E5
 API $1I91 IOD_Schematic:sn74avch4t245 3 #=13
-API $1I91 IOD_Schematic:sn74avch4t245 4 PINLOC=13E5
 API $1I91 IOD_Schematic:sn74avch4t245 4 #=12
-API $1I91 IOD_Schematic:sn74avch4t245 5 PINLOC=13C6
 API $1I91 IOD_Schematic:sn74avch4t245 5 #=2
-API $1I91 IOD_Schematic:sn74avch4t245 6 PINLOC=13E6
 API $1I91 IOD_Schematic:sn74avch4t245 6 #=15
-API $1I91 IOD_Schematic:sn74avch4t245 7 PINLOC=13C5
 API $1I91 IOD_Schematic:sn74avch4t245 7 #=6
-API $1I91 IOD_Schematic:sn74avch4t245 8 PINLOC=13C5
 API $1I91 IOD_Schematic:sn74avch4t245 8 #=7
-API $1I91 IOD_Schematic:sn74avch4t245 9 PINLOC=13E5
 API $1I91 IOD_Schematic:sn74avch4t245 9 #=11
-API $1I91 IOD_Schematic:sn74avch4t245 10 PINLOC=13E5
 API $1I91 IOD_Schematic:sn74avch4t245 10 #=10
-API $1I91 IOD_Schematic:sn74avch4t245 11 PINLOC=13C5
 API $1I91 IOD_Schematic:sn74avch4t245 11 #=3
-API $1I91 IOD_Schematic:sn74avch4t245 12 PINLOC=13E5
 API $1I91 IOD_Schematic:sn74avch4t245 12 #=14
-API $1I91 IOD_Schematic:sn74avch4t245 13 PINLOC=13C5
 API $1I91 IOD_Schematic:sn74avch4t245 13 #=8
-API $1I91 IOD_Schematic:sn74avch4t245 14 PINLOC=13C5
 API $1I91 IOD_Schematic:sn74avch4t245 14 #=9
-API $1I91 IOD_Schematic:sn74avch4t245 15 PINLOC=13E5
 API $1I91 IOD_Schematic:sn74avch4t245 15 #=1
-API $1I91 IOD_Schematic:sn74avch4t245 16 PINLOC=13E5
 API $1I91 IOD_Schematic:sn74avch4t245 16 #=16
 M IOD_Schematic:sn74avch4t245 $1I59
-I $1I59 IOD_Schematic:sn74avch4t245 $1N105 $1N107 $1N315 $1N40 GPIOLVC33[4] $1N67 $1N109 $1N111 $1N39 $1N38 GPIOLVC33[4] $1N67 GND GND 3V3 1V5 SCHLOC=13D7`GEOMETRY.HEIGHT=1.2MM`REFDES=U13`
+I $1I59 IOD_Schematic:sn74avch4t245 $1N105 $1N107 $1N315 $1N40 GPIOLVC334 $1N67 $1N109 $1N111 $1N39 $1N38 GPIOLVC334 $1N67 GND GND 3V3 1V5 GEOMETRY.HEIGHT=1.2MM`REFDES=U?`
 |R 8:54_1-24-08
-API $1I59 IOD_Schematic:sn74avch4t245 1 PINLOC=13C7
 API $1I59 IOD_Schematic:sn74avch4t245 1 #=4
-API $1I59 IOD_Schematic:sn74avch4t245 2 PINLOC=13C7
 API $1I59 IOD_Schematic:sn74avch4t245 2 #=5
-API $1I59 IOD_Schematic:sn74avch4t245 3 PINLOC=13E7
 API $1I59 IOD_Schematic:sn74avch4t245 3 #=13
-API $1I59 IOD_Schematic:sn74avch4t245 4 PINLOC=13E7
 API $1I59 IOD_Schematic:sn74avch4t245 4 #=12
-API $1I59 IOD_Schematic:sn74avch4t245 5 PINLOC=13C7
 API $1I59 IOD_Schematic:sn74avch4t245 5 #=2
-API $1I59 IOD_Schematic:sn74avch4t245 6 PINLOC=13E7
 API $1I59 IOD_Schematic:sn74avch4t245 6 #=15
-API $1I59 IOD_Schematic:sn74avch4t245 7 PINLOC=13C7
 API $1I59 IOD_Schematic:sn74avch4t245 7 #=6
-API $1I59 IOD_Schematic:sn74avch4t245 8 PINLOC=13C7
 API $1I59 IOD_Schematic:sn74avch4t245 8 #=7
-API $1I59 IOD_Schematic:sn74avch4t245 9 PINLOC=13E7
 API $1I59 IOD_Schematic:sn74avch4t245 9 #=11
-API $1I59 IOD_Schematic:sn74avch4t245 10 PINLOC=13E7
 API $1I59 IOD_Schematic:sn74avch4t245 10 #=10
-API $1I59 IOD_Schematic:sn74avch4t245 11 PINLOC=13C7
 API $1I59 IOD_Schematic:sn74avch4t245 11 #=3
-API $1I59 IOD_Schematic:sn74avch4t245 12 PINLOC=13E7
 API $1I59 IOD_Schematic:sn74avch4t245 12 #=14
-API $1I59 IOD_Schematic:sn74avch4t245 13 PINLOC=13C6
 API $1I59 IOD_Schematic:sn74avch4t245 13 #=8
-API $1I59 IOD_Schematic:sn74avch4t245 14 PINLOC=13C6
 API $1I59 IOD_Schematic:sn74avch4t245 14 #=9
-API $1I59 IOD_Schematic:sn74avch4t245 15 PINLOC=13E6
 API $1I59 IOD_Schematic:sn74avch4t245 15 #=1
-API $1I59 IOD_Schematic:sn74avch4t245 16 PINLOC=13E6
 API $1I59 IOD_Schematic:sn74avch4t245 16 #=16
 M IOD_Schematic:c $1I181
-I $1I181 IOD_Schematic:c 3V3 GND SCHLOC=13D8`MANUFACTURER=PANASONIC`REFDES=C35`VALUE=220NF`TYPE=FIXED`TOLERANCE=10%`VOLTAGERATING=6.3V`DIELECTRIC=X7R`DEVICE=CHIPCAP0402X0_5`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE=CAPC1005X55N`P/D_NUM=ECJ-0EB0J224K`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
+I $1I181 IOD_Schematic:c 3V3 GND MANUFACTURER`REFDES=C?`VALUE`TYPE=FIXED`TOLERANCE`VOLTAGERATING=6.3V`DIELECTRIC=X7R`DEVICE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE`P/D_NUM`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
 |R 6:11_8-28-07
-API $1I181 IOD_Schematic:c 1 PINLOC=13D8
 API $1I181 IOD_Schematic:c 1 #=1
-API $1I181 IOD_Schematic:c 2 PINLOC=13D8
 API $1I181 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I180
-I $1I180 IOD_Schematic:c 3V3 GND SCHLOC=13D8`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`P/D_NUM=ECJ-0EB0J224K`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIPCAP0402X0_5`DIELECTRIC=X7R`VOLTAGERATING=6.3V`TOLERANCE=10%`TYPE=FIXED`VALUE=220NF`REFDES=C34`MANUFACTURER=PANASONIC`
+I $1I180 IOD_Schematic:c 3V3 GND PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`P/D_NUM`PKG_TYPE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE`DIELECTRIC=X7R`VOLTAGERATING=6.3V`TOLERANCE`TYPE=FIXED`VALUE`REFDES=C?`MANUFACTURER`
 |R 6:11_8-28-07
-API $1I180 IOD_Schematic:c 1 PINLOC=13D8
 API $1I180 IOD_Schematic:c 1 #=1
-API $1I180 IOD_Schematic:c 2 PINLOC=13D8
 API $1I180 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I183
-I $1I183 IOD_Schematic:c 1V5 GND SCHLOC=13D4`MANUFACTURER=PANASONIC`REFDES=C37`VALUE=220NF`TYPE=FIXED`TOLERANCE=10%`VOLTAGERATING=6.3V`DIELECTRIC=X7R`DEVICE=CHIPCAP0402X0_5`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE=CAPC1005X55N`P/D_NUM=ECJ-0EB0J224K`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
+I $1I183 IOD_Schematic:c 1V5 GND MANUFACTURER`REFDES=C?`VALUE`TYPE=FIXED`TOLERANCE`VOLTAGERATING=6.3V`DIELECTRIC=X7R`DEVICE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE`P/D_NUM`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
 |R 6:11_8-28-07
-API $1I183 IOD_Schematic:c 1 PINLOC=13D4
 API $1I183 IOD_Schematic:c 1 #=1
-API $1I183 IOD_Schematic:c 2 PINLOC=13D4
 API $1I183 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I184
-I $1I184 IOD_Schematic:c 3V3 GND SCHLOC=13D4`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`P/D_NUM=ECJ-0EB0J224K`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIPCAP0402X0_5`DIELECTRIC=X7R`VOLTAGERATING=6.3V`TOLERANCE=10%`TYPE=FIXED`VALUE=220NF`REFDES=C38`MANUFACTURER=PANASONIC`
+I $1I184 IOD_Schematic:c 3V3 GND PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`P/D_NUM`PKG_TYPE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE`DIELECTRIC=X7R`VOLTAGERATING=6.3V`TOLERANCE`TYPE=FIXED`VALUE`REFDES=C?`MANUFACTURER`
 |R 6:11_8-28-07
-API $1I184 IOD_Schematic:c 1 PINLOC=13D4
 API $1I184 IOD_Schematic:c 1 #=1
-API $1I184 IOD_Schematic:c 2 PINLOC=13D4
 API $1I184 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I182
-I $1I182 IOD_Schematic:c 3V3 GND SCHLOC=13B7`PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`P/D_NUM=ECJ-0EB0J224K`PKG_TYPE=CAPC1005X55N`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE=CHIPCAP0402X0_5`DIELECTRIC=X7R`VOLTAGERATING=6.3V`TOLERANCE=10%`TYPE=FIXED`VALUE=220NF`REFDES=C36`MANUFACTURER=PANASONIC`
+I $1I182 IOD_Schematic:c 3V3 GND PARTS=1`GEOMETRY.HEIGHT=0.55MM`STANDARDS=0402`P/D_NUM`PKG_TYPE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`DEVICE`DIELECTRIC=X7R`VOLTAGERATING=6.3V`TOLERANCE`TYPE=FIXED`VALUE`REFDES=C?`MANUFACTURER`
 |R 6:11_8-28-07
-API $1I182 IOD_Schematic:c 1 PINLOC=13B7
 API $1I182 IOD_Schematic:c 1 #=1
-API $1I182 IOD_Schematic:c 2 PINLOC=13B7
 API $1I182 IOD_Schematic:c 2 #=2
 M IOD_Schematic:c $1I216
-I $1I216 IOD_Schematic:c 3V3 GND SCHLOC=13R7`MANUFACTURER=PANASONIC`REFDES=C43`VALUE=220NF`TYPE=FIXED`TOLERANCE=10%`VOLTAGERATING=6.3V`DIELECTRIC=X7R`DEVICE=CHIPCAP0402X0_5`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE=CAPC1005X55N`P/D_NUM=ECJ-0EB0J224K`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
+I $1I216 IOD_Schematic:c 3V3 GND MANUFACTURER`REFDES=C?`VALUE`TYPE=FIXED`TOLERANCE`VOLTAGERATING=6.3V`DIELECTRIC=X7R`DEVICE`DESCRIPTION=CERAMIC CHIP CAPACITOR - 0402`PKG_TYPE`P/D_NUM`STANDARDS=0402`GEOMETRY.HEIGHT=0.55MM`PARTS=1`
 |R 6:11_8-28-07
-API $1I216 IOD_Schematic:c 1 PINLOC=13R7
 API $1I216 IOD_Schematic:c 1 #=1
-API $1I216 IOD_Schematic:c 2 PINLOC=13R7
 API $1I216 IOD_Schematic:c 2 #=2
 M IOD_Schematic:r $1I154
-I $1I154 IOD_Schematic:r $1N153 GND SCHLOC=13M6`SUP=AVNET`RATING=0.0625W`DEVICE=RES0402_55`REFDES=R8`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGF0103T1E`VALUE=10K`POWERRATING=0.0625`PKG_TYPE=RESC1005X40N`GEOMETRY.HEIGHT=0.4MM`STANDARDS=0402`TOLERANCE=5%`
+I $1I154 IOD_Schematic:r $1N153 GND SUP=AVNET`RATING=0.0625W`DEVICE`REFDES=R?`MANUFACTURER`P/D_NUM`VALUE`POWERRATING=0.0625`PKG_TYPE`GEOMETRY.HEIGHT=0.4MM`STANDARDS=0402`TOLERANCE`
 |R 9:28_5-9-07
-API $1I154 IOD_Schematic:r 1 PINLOC=13M6
 API $1I154 IOD_Schematic:r 1 #=1
-API $1I154 IOD_Schematic:r 2 PINLOC=13M6
 API $1I154 IOD_Schematic:r 2 #=2
 M IOD_Schematic:sn74avch4t245 $1I155
-I $1I155 IOD_Schematic:sn74avch4t245 $1N178 $1N176 $1N47 $1N48 GPIOLVC33[3] $1N153 $1N174 $1N172 $1N49 $1N50 GPIOLVC33[3] $1N153 GND GND 3V3 2V5 SCHLOC=13N5`GEOMETRY.HEIGHT=1.2MM`REFDES=U11`
+I $1I155 IOD_Schematic:sn74avch4t245 $1N178 $1N176 $1N47 $1N48 GPIOLVC333 $1N153 $1N174 $1N172 $1N49 $1N50 GPIOLVC333 $1N153 GND GND 3V3 2V5 GEOMETRY.HEIGHT=1.2MM`REFDES=U?`
 |R 8:54_1-24-08
-API $1I155 IOD_Schematic:sn74avch4t245 1 PINLOC=13P5
 API $1I155 IOD_Schematic:sn74avch4t245 1 #=4
-API $1I155 IOD_Schematic:sn74avch4t245 2 PINLOC=13P5
 API $1I155 IOD_Schematic:sn74avch4t245 2 #=5
-API $1I155 IOD_Schematic:sn74avch4t245 3 PINLOC=13M5
 API $1I155 IOD_Schematic:sn74avch4t245 3 #=13
-API $1I155 IOD_Schematic:sn74avch4t245 4 PINLOC=13M5
 API $1I155 IOD_Schematic:sn74avch4t245 4 #=12
-API $1I155 IOD_Schematic:sn74avch4t245 5 PINLOC=13P6
 API $1I155 IOD_Schematic:sn74avch4t245 5 #=2
-API $1I155 IOD_Schematic:sn74avch4t245 6 PINLOC=13M6
 API $1I155 IOD_Schematic:sn74avch4t245 6 #=15
-API $1I155 IOD_Schematic:sn74avch4t245 7 PINLOC=13P5
 API $1I155 IOD_Schematic:sn74avch4t245 7 #=6
-API $1I155 IOD_Schematic:sn74avch4t245 8 PINLOC=13P5
 API $1I155 IOD_Schematic:sn74avch4t245 8 #=7
-API $1I155 IOD_Schematic:sn74avch4t245 9 PINLOC=13M5
 API $1I155 IOD_Schematic:sn74avch4t245 9 #=11
-API $1I155 IOD_Schematic:sn74avch4t245 10 PINLOC=13M5
 API $1I155 IOD_Schematic:sn74avch4t245 10 #=10
-API $1I155 IOD_Schematic:sn74avch4t245 11 PINLOC=13P5
 API $1I155 IOD_Schematic:sn74avch4t245 11 #=3
-API $1I155 IOD_Schematic:sn74avch4t245 12 PINLOC=13M5
 API $1I155 IOD_Schematic:sn74avch4t245 12 #=14
-API $1I155 IOD_Schematic:sn74avch4t245 13 PINLOC=13P5
 API $1I155 IOD_Schematic:sn74avch4t245 13 #=8
-API $1I155 IOD_Schematic:sn74avch4t245 14 PINLOC=13P5
 API $1I155 IOD_Schematic:sn74avch4t245 14 #=9
-API $1I155 IOD_Schematic:sn74avch4t245 15 PINLOC=13M5
 API $1I155 IOD_Schematic:sn74avch4t245 15 #=1
-API $1I155 IOD_Schematic:sn74avch4t245 16 PINLOC=13M5
 API $1I155 IOD_Schematic:sn74avch4t245 16 #=16
 M IOD_Schematic:sn74avch4t245 $1I240
-I $1I240 IOD_Schematic:sn74avch4t245 $1N51 $1N52 $1N264 $1N266 3V3 $1N241 $1N55 $1N41 $1N268 $1N270 3V3 $1N241 GND GND 1V8 3V3 SCHLOC=13N3`GEOMETRY.HEIGHT=1.2MM`REFDES=U12`
+I $1I240 IOD_Schematic:sn74avch4t245 $1N51 $1N52 $1N264 $1N266 3V3 $1N241 $1N55 $1N41 $1N268 $1N270 3V3 $1N241 GND GND 1V8 3V3 GEOMETRY.HEIGHT=1.2MM`REFDES=U?`
 |R 8:54_1-24-08
-API $1I240 IOD_Schematic:sn74avch4t245 1 PINLOC=13M3
 API $1I240 IOD_Schematic:sn74avch4t245 1 #=4
-API $1I240 IOD_Schematic:sn74avch4t245 2 PINLOC=13M3
 API $1I240 IOD_Schematic:sn74avch4t245 2 #=5
-API $1I240 IOD_Schematic:sn74avch4t245 3 PINLOC=13N3
 API $1I240 IOD_Schematic:sn74avch4t245 3 #=13
-API $1I240 IOD_Schematic:sn74avch4t245 4 PINLOC=13N3
 API $1I240 IOD_Schematic:sn74avch4t245 4 #=12
-API $1I240 IOD_Schematic:sn74avch4t245 5 PINLOC=13M3
 API $1I240 IOD_Schematic:sn74avch4t245 5 #=2
-API $1I240 IOD_Schematic:sn74avch4t245 6 PINLOC=13N3
 API $1I240 IOD_Schematic:sn74avch4t245 6 #=15
-API $1I240 IOD_Schematic:sn74avch4t245 7 PINLOC=13M2
 API $1I240 IOD_Schematic:sn74avch4t245 7 #=6
-API $1I240 IOD_Schematic:sn74avch4t245 8 PINLOC=13M2
 API $1I240 IOD_Schematic:sn74avch4t245 8 #=7
-API $1I240 IOD_Schematic:sn74avch4t245 9 PINLOC=13N2
 API $1I240 IOD_Schematic:sn74avch4t245 9 #=11
-API $1I240 IOD_Schematic:sn74avch4t245 10 PINLOC=13N2
 API $1I240 IOD_Schematic:sn74avch4t245 10 #=10
-API $1I240 IOD_Schematic:sn74avch4t245 11 PINLOC=13M3
 API $1I240 IOD_Schematic:sn74avch4t245 11 #=3
-API $1I240 IOD_Schematic:sn74avch4t245 12 PINLOC=13N3
 API $1I240 IOD_Schematic:sn74avch4t245 12 #=14
-API $1I240 IOD_Schematic:sn74avch4t245 13 PINLOC=13M2
 API $1I240 IOD_Schematic:sn74avch4t245 13 #=8
-API $1I240 IOD_Schematic:sn74avch4t245 14 PINLOC=13M2
 API $1I240 IOD_Schematic:sn74avch4t245 14 #=9
-API $1I240 IOD_Schematic:sn74avch4t245 15 PINLOC=13N2
 API $1I240 IOD_Schematic:sn74avch4t245 15 #=1
-API $1I240 IOD_Schematic:sn74avch4t245 16 PINLOC=13N2
 API $1I240 IOD_Schematic:sn74avch4t245 16 #=16
 M IOD_Schematic:r $1I93
-I $1I93 IOD_Schematic:r $1N94 GND SCHLOC=13E6`SUP=AVNET`RATING=0.0625W`TOLERANCE=5%`STANDARDS=0402`GEOMETRY.HEIGHT=0.4MM`PKG_TYPE=RESC1005X40N`POWERRATING=0.0625`VALUE=10K`P/D_NUM=0402WGF0103T1E`MANUFACTURER=ROYAL OHM`REFDES=R48`DEVICE=RES0402_55`
+I $1I93 IOD_Schematic:r $1N94 GND SUP=AVNET`RATING=0.0625W`TOLERANCE`STANDARDS=0402`GEOMETRY.HEIGHT=0.4MM`PKG_TYPE`POWERRATING=0.0625`VALUE`P/D_NUM`MANUFACTURER`REFDES=R?`DEVICE`
 |R 9:28_5-9-07
-API $1I93 IOD_Schematic:r 1 PINLOC=13E6
 API $1I93 IOD_Schematic:r 1 #=1
-API $1I93 IOD_Schematic:r 2 PINLOC=13E6
 API $1I93 IOD_Schematic:r 2 #=2
 M IOD_Schematic:r $1I274
-I $1I274 IOD_Schematic:r $1N277 3V3 SCHLOC=13Q3`DEVICE=RES0402_55`REFDES=R43`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGJ0101T1E`VALUE=100R`POWERRATING=0.0625`PKG_TYPE=RESC1005X40N`GEOMETRY.HEIGHT=0.4MM`STANDARDS=0402`TOLERANCE=5%`
+I $1I274 IOD_Schematic:r $1N277 3V3 DEVICE`REFDES=R?`MANUFACTURER`P/D_NUM`VALUE`POWERRATING=0.0625`PKG_TYPE`GEOMETRY.HEIGHT=0.4MM`STANDARDS=0402`TOLERANCE`
 |R 9:28_5-9-07
-API $1I274 IOD_Schematic:r 1 PINLOC=13Q3
 API $1I274 IOD_Schematic:r 1 #=1
-API $1I274 IOD_Schematic:r 2 PINLOC=13Q3
 API $1I274 IOD_Schematic:r 2 #=2
 M IOD_Schematic:r $1I290
-I $1I290 IOD_Schematic:r $1N178 $1N291 SCHLOC=13Q4`VALUE=49R9`TOLERANCE=1%`STANDARDS=0402`POWERRATING=0.0625`PKG_TYPE=RESC1005X40N`P/D_NUM=0402WGF499JT1E`MANUFACTURER=ROYAL OHM`GEOMETRY.HEIGHT=0.4MM`DEVICE=RES0402X0_35`REFDES=R49`
+I $1I290 IOD_Schematic:r $1N178 $1N291 VALUE`TOLERANCE`STANDARDS=0402`POWERRATING=0.0625`PKG_TYPE`P/D_NUM`MANUFACTURER`GEOMETRY.HEIGHT=0.4MM`DEVICE`REFDES=R?`
 |R 9:28_5-9-07
-API $1I290 IOD_Schematic:r 1 PINLOC=13Q4
 API $1I290 IOD_Schematic:r 1 #=1
-API $1I290 IOD_Schematic:r 2 PINLOC=13Q4
 API $1I290 IOD_Schematic:r 2 #=2
 M IOD_Schematic:sma_receptacle $1I288
-I $1I288 IOD_Schematic:sma_receptacle GND GND GND GND $1N291 SCHLOC=13R4`GEOMETRY.HEIGHT=9.86MM`VALUE=SMA`P/D_NUM=132136`MANUFACTURER=AMPHENOL`REFDES=J10`
+I $1I288 IOD_Schematic:sma_receptacle GND GND GND GND $1N291 GEOMETRY.HEIGHT=9.86MM`VALUE`P/D_NUM`MANUFACTURER`REFDES=J?`
 |R 18:26_10-1-07
-API $1I288 IOD_Schematic:sma_receptacle 1 PINLOC=13R4
 API $1I288 IOD_Schematic:sma_receptacle 1 #=2
-API $1I288 IOD_Schematic:sma_receptacle 2 PINLOC=13R4
 API $1I288 IOD_Schematic:sma_receptacle 2 #=3
-API $1I288 IOD_Schematic:sma_receptacle 3 PINLOC=13R5
 API $1I288 IOD_Schematic:sma_receptacle 3 #=4
-API $1I288 IOD_Schematic:sma_receptacle 4 PINLOC=13R5
 API $1I288 IOD_Schematic:sma_receptacle 4 #=5
-API $1I288 IOD_Schematic:sma_receptacle 5 PINLOC=13R4
 API $1I288 IOD_Schematic:sma_receptacle 5 #=1
 M IOD_Schematic:sma_receptacle $1I304
-I $1I304 IOD_Schematic:sma_receptacle GND GND GND GND $1N305 SCHLOC=13R4`GEOMETRY.HEIGHT=9.86MM`VALUE=SMA`P/D_NUM=132136`MANUFACTURER=AMPHENOL`REFDES=J11`
+I $1I304 IOD_Schematic:sma_receptacle GND GND GND GND $1N305 GEOMETRY.HEIGHT=9.86MM`VALUE`P/D_NUM`MANUFACTURER`REFDES=J?`
 |R 18:26_10-1-07
-API $1I304 IOD_Schematic:sma_receptacle 1 PINLOC=13R3
 API $1I304 IOD_Schematic:sma_receptacle 1 #=2
-API $1I304 IOD_Schematic:sma_receptacle 2 PINLOC=13R3
 API $1I304 IOD_Schematic:sma_receptacle 2 #=3
-API $1I304 IOD_Schematic:sma_receptacle 3 PINLOC=13R4
 API $1I304 IOD_Schematic:sma_receptacle 3 #=4
-API $1I304 IOD_Schematic:sma_receptacle 4 PINLOC=13R4
 API $1I304 IOD_Schematic:sma_receptacle 4 #=5
-API $1I304 IOD_Schematic:sma_receptacle 5 PINLOC=13R4
 API $1I304 IOD_Schematic:sma_receptacle 5 #=1
 M IOD_Schematic:header10x2shrouded $1I327
-I $1I327 IOD_Schematic:header10x2shrouded 3V3 GND $1N117 GND $1N119 GND $1N115 GND $1N113 GND GND GND GND $1N111 GND $1N109 GND $1N107 GND $1N105 SCHLOC=13A6`GEOMETRY.HEIGHT=9.91MM`REFDES=J2`
+I $1I327 IOD_Schematic:header10x2shrouded 3V3 GND $1N117 GND $1N119 GND $1N115 GND $1N113 GND GND GND GND $1N111 GND $1N109 GND $1N107 GND $1N105 GEOMETRY.HEIGHT=9.91MM`REFDES=J?`
 |R 8:47_10-12-07
-API $1I327 IOD_Schematic:header10x2shrouded 1 PINLOC=13B6
 API $1I327 IOD_Schematic:header10x2shrouded 1 #=1
-API $1I327 IOD_Schematic:header10x2shrouded 2 PINLOC=13A6
 API $1I327 IOD_Schematic:header10x2shrouded 2 #=10
-API $1I327 IOD_Schematic:header10x2shrouded 3 PINLOC=13B6
 API $1I327 IOD_Schematic:header10x2shrouded 3 #=11
-API $1I327 IOD_Schematic:header10x2shrouded 4 PINLOC=13A6
 API $1I327 IOD_Schematic:header10x2shrouded 4 #=12
-API $1I327 IOD_Schematic:header10x2shrouded 5 PINLOC=13B6
 API $1I327 IOD_Schematic:header10x2shrouded 5 #=13
-API $1I327 IOD_Schematic:header10x2shrouded 6 PINLOC=13A6
 API $1I327 IOD_Schematic:header10x2shrouded 6 #=14
-API $1I327 IOD_Schematic:header10x2shrouded 7 PINLOC=13B6
 API $1I327 IOD_Schematic:header10x2shrouded 7 #=15
-API $1I327 IOD_Schematic:header10x2shrouded 8 PINLOC=13A6
 API $1I327 IOD_Schematic:header10x2shrouded 8 #=16
-API $1I327 IOD_Schematic:header10x2shrouded 9 PINLOC=13B6
 API $1I327 IOD_Schematic:header10x2shrouded 9 #=17
-API $1I327 IOD_Schematic:header10x2shrouded 10 PINLOC=13A6
 API $1I327 IOD_Schematic:header10x2shrouded 10 #=18
-API $1I327 IOD_Schematic:header10x2shrouded 11 PINLOC=13B5
 API $1I327 IOD_Schematic:header10x2shrouded 11 #=19
-API $1I327 IOD_Schematic:header10x2shrouded 12 PINLOC=13A6
 API $1I327 IOD_Schematic:header10x2shrouded 12 #=2
-API $1I327 IOD_Schematic:header10x2shrouded 13 PINLOC=13A5
 API $1I327 IOD_Schematic:header10x2shrouded 13 #=20
-API $1I327 IOD_Schematic:header10x2shrouded 14 PINLOC=13B6
 API $1I327 IOD_Schematic:header10x2shrouded 14 #=3
-API $1I327 IOD_Schematic:header10x2shrouded 15 PINLOC=13A6
 API $1I327 IOD_Schematic:header10x2shrouded 15 #=4
-API $1I327 IOD_Schematic:header10x2shrouded 16 PINLOC=13B6
 API $1I327 IOD_Schematic:header10x2shrouded 16 #=5
-API $1I327 IOD_Schematic:header10x2shrouded 17 PINLOC=13A6
 API $1I327 IOD_Schematic:header10x2shrouded 17 #=6
-API $1I327 IOD_Schematic:header10x2shrouded 18 PINLOC=13B6
 API $1I327 IOD_Schematic:header10x2shrouded 18 #=7
-API $1I327 IOD_Schematic:header10x2shrouded 19 PINLOC=13A6
 API $1I327 IOD_Schematic:header10x2shrouded 19 #=8
-API $1I327 IOD_Schematic:header10x2shrouded 20 PINLOC=13B6
 API $1I327 IOD_Schematic:header10x2shrouded 20 #=9
 M IOD_Schematic:header10x2shrouded $1I330
-I $1I330 IOD_Schematic:header10x2shrouded 3V3 GND $1N172 GND $1N174 GND $1N176 GND $1N178 GND GND GND GND $1N169 GND $1N167 GND $1N165 GND $1N163 SCHLOC=13R6`GEOMETRY.HEIGHT=9.91MM`REFDES=J9`
+I $1I330 IOD_Schematic:header10x2shrouded 3V3 GND $1N172 GND $1N174 GND $1N176 GND $1N178 GND GND GND GND $1N169 GND $1N167 GND $1N165 GND $1N163 GEOMETRY.HEIGHT=9.91MM`REFDES=J?`
 |R 8:47_10-12-07
-API $1I330 IOD_Schematic:header10x2shrouded 1 PINLOC=13R6
 API $1I330 IOD_Schematic:header10x2shrouded 1 #=1
-API $1I330 IOD_Schematic:header10x2shrouded 2 PINLOC=13R6
 API $1I330 IOD_Schematic:header10x2shrouded 2 #=10
-API $1I330 IOD_Schematic:header10x2shrouded 3 PINLOC=13R6
 API $1I330 IOD_Schematic:header10x2shrouded 3 #=11
-API $1I330 IOD_Schematic:header10x2shrouded 4 PINLOC=13R6
 API $1I330 IOD_Schematic:header10x2shrouded 4 #=12
-API $1I330 IOD_Schematic:header10x2shrouded 5 PINLOC=13R6
 API $1I330 IOD_Schematic:header10x2shrouded 5 #=13
-API $1I330 IOD_Schematic:header10x2shrouded 6 PINLOC=13R6
 API $1I330 IOD_Schematic:header10x2shrouded 6 #=14
-API $1I330 IOD_Schematic:header10x2shrouded 7 PINLOC=13R6
 API $1I330 IOD_Schematic:header10x2shrouded 7 #=15
-API $1I330 IOD_Schematic:header10x2shrouded 8 PINLOC=13R6
 API $1I330 IOD_Schematic:header10x2shrouded 8 #=16
-API $1I330 IOD_Schematic:header10x2shrouded 9 PINLOC=13R5
 API $1I330 IOD_Schematic:header10x2shrouded 9 #=17
-API $1I330 IOD_Schematic:header10x2shrouded 10 PINLOC=13R5
 API $1I330 IOD_Schematic:header10x2shrouded 10 #=18
-API $1I330 IOD_Schematic:header10x2shrouded 11 PINLOC=13R5
 API $1I330 IOD_Schematic:header10x2shrouded 11 #=19
-API $1I330 IOD_Schematic:header10x2shrouded 12 PINLOC=13R6
 API $1I330 IOD_Schematic:header10x2shrouded 12 #=2
-API $1I330 IOD_Schematic:header10x2shrouded 13 PINLOC=13R5
 API $1I330 IOD_Schematic:header10x2shrouded 13 #=20
-API $1I330 IOD_Schematic:header10x2shrouded 14 PINLOC=13R6
 API $1I330 IOD_Schematic:header10x2shrouded 14 #=3
-API $1I330 IOD_Schematic:header10x2shrouded 15 PINLOC=13R6
 API $1I330 IOD_Schematic:header10x2shrouded 15 #=4
-API $1I330 IOD_Schematic:header10x2shrouded 16 PINLOC=13R6
 API $1I330 IOD_Schematic:header10x2shrouded 16 #=5
-API $1I330 IOD_Schematic:header10x2shrouded 17 PINLOC=13R6
 API $1I330 IOD_Schematic:header10x2shrouded 17 #=6
-API $1I330 IOD_Schematic:header10x2shrouded 18 PINLOC=13R6
 API $1I330 IOD_Schematic:header10x2shrouded 18 #=7
-API $1I330 IOD_Schematic:header10x2shrouded 19 PINLOC=13R6
 API $1I330 IOD_Schematic:header10x2shrouded 19 #=8
-API $1I330 IOD_Schematic:header10x2shrouded 20 PINLOC=13R6
 API $1I330 IOD_Schematic:header10x2shrouded 20 #=9
 M IOD_Schematic:r $1I66
-I $1I66 IOD_Schematic:r $1N67 GND SCHLOC=13E7`SUP=AVNET`RATING=0.0625W`DEVICE=RES0402_55`REFDES=R47`MANUFACTURER=ROYAL OHM`P/D_NUM=0402WGF0103T1E`VALUE=10K`POWERRATING=0.0625`PKG_TYPE=RESC1005X40N`GEOMETRY.HEIGHT=0.4MM`STANDARDS=0402`TOLERANCE=5%`
+I $1I66 IOD_Schematic:r $1N67 GND SUP=AVNET`RATING=0.0625W`DEVICE`REFDES=R?`MANUFACTURER`P/D_NUM`VALUE`POWERRATING=0.0625`PKG_TYPE`GEOMETRY.HEIGHT=0.4MM`STANDARDS=0402`TOLERANCE`
 |R 9:28_5-9-07
-API $1I66 IOD_Schematic:r 1 PINLOC=13E7
 API $1I66 IOD_Schematic:r 1 #=1
-API $1I66 IOD_Schematic:r 2 PINLOC=13E7
 API $1I66 IOD_Schematic:r 2 #=2
 M IOD_Schematic:r $1I143
-I $1I143 IOD_Schematic:r $1N144 GND SCHLOC=13M7`SUP=AVNET`RATING=0.0625W`TOLERANCE=5%`STANDARDS=0402`GEOMETRY.HEIGHT=0.4MM`PKG_TYPE=RESC1005X40N`POWERRATING=0.0625`VALUE=10K`P/D_NUM=0402WGF0103T1E`MANUFACTURER=ROYAL OHM`REFDES=R7`DEVICE=RES0402_55`
+I $1I143 IOD_Schematic:r $1N144 GND SUP=AVNET`RATING=0.0625W`TOLERANCE`STANDARDS=0402`GEOMETRY.HEIGHT=0.4MM`PKG_TYPE`POWERRATING=0.0625`VALUE`P/D_NUM`MANUFACTURER`REFDES=R?`DEVICE`
 |R 9:28_5-9-07
-API $1I143 IOD_Schematic:r 1 PINLOC=13M7
 API $1I143 IOD_Schematic:r 1 #=1
-API $1I143 IOD_Schematic:r 2 PINLOC=13M7
 API $1I143 IOD_Schematic:r 2 #=2
 M IOD_Schematic:roach_gpio $1I32
-I $1I32 IOD_Schematic:roach_gpio GPIOLVC15[0] GPIOLVC15[1] GPIOLVC15[2] GPIOLVC15[3] $1N38 $1N39 $1N40 $1N315 $1N51 $1N52 $1N55 $1N41 $1N439 $1N427 $1N451 $1N425 $1N424 $1N43 $1N44 $1N45 $1N46 $1N47 $1N48 $1N49 $1N50 $1N426 $1N452 GPIOLVC33[3] GPIOLVC33[4] SCHLOC=13H6`GEOMETRY.HEIGHT=3.4MM`MANUFACTURER=XILINX`BANKS=5, 11, 25`P/D_NUM=XC5VSX95T`PARTS=1`REFDES=U15`
-API $1I32 IOD_Schematic:roach_gpio 1 PINLOC=13G6
+I $1I32 IOD_Schematic:roach_gpio GPIOLVC150 GPIOLVC151 GPIOLVC152 GPIOLVC153 $1N38 $1N39 $1N40 $1N315 $1N51 $1N52 $1N55 $1N41 $1N439 $1N427 $1N451 $1N425 $1N424 $1N43 $1N44 $1N45 $1N46 $1N47 $1N48 $1N49 $1N50 $1N426 $1N452 GPIOLVC333 GPIOLVC334 GEOMETRY.HEIGHT=3.4MM`MANUFACTURER`BANKS=5, 11, 25`P/D_NUM`PARTS=1`REFDES=U?`
 API $1I32 IOD_Schematic:roach_gpio 1 #=A26
-API $1I32 IOD_Schematic:roach_gpio 2 PINLOC=13G6
 API $1I32 IOD_Schematic:roach_gpio 2 #=E24
-API $1I32 IOD_Schematic:roach_gpio 3 PINLOC=13G6
 API $1I32 IOD_Schematic:roach_gpio 3 #=D24
-API $1I32 IOD_Schematic:roach_gpio 4 PINLOC=13G6
 API $1I32 IOD_Schematic:roach_gpio 4 #=B27
-API $1I32 IOD_Schematic:roach_gpio 5 PINLOC=13G6
 API $1I32 IOD_Schematic:roach_gpio 5 #=J10
-API $1I32 IOD_Schematic:roach_gpio 6 PINLOC=13G7
 API $1I32 IOD_Schematic:roach_gpio 6 #=J9
-API $1I32 IOD_Schematic:roach_gpio 7 PINLOC=13G7
 API $1I32 IOD_Schematic:roach_gpio 7 #=H7
-API $1I32 IOD_Schematic:roach_gpio 8 PINLOC=13G7
 API $1I32 IOD_Schematic:roach_gpio 8 #=J7
-API $1I32 IOD_Schematic:roach_gpio 9 PINLOC=13J6
 API $1I32 IOD_Schematic:roach_gpio 9 #=AP26
-API $1I32 IOD_Schematic:roach_gpio 10 PINLOC=13J6
 API $1I32 IOD_Schematic:roach_gpio 10 #=AP25
-API $1I32 IOD_Schematic:roach_gpio 11 PINLOC=13J6
 API $1I32 IOD_Schematic:roach_gpio 11 #=AL25
-API $1I32 IOD_Schematic:roach_gpio 12 PINLOC=13J6
 API $1I32 IOD_Schematic:roach_gpio 12 #=AL24
-API $1I32 IOD_Schematic:roach_gpio 13 PINLOC=13J6
 API $1I32 IOD_Schematic:roach_gpio 13 #=AP22
-API $1I32 IOD_Schematic:roach_gpio 14 PINLOC=13J5
 API $1I32 IOD_Schematic:roach_gpio 14 #=AP21
-API $1I32 IOD_Schematic:roach_gpio 15 PINLOC=13J7
 API $1I32 IOD_Schematic:roach_gpio 15 #=M32
-API $1I32 IOD_Schematic:roach_gpio 16 PINLOC=13J6
 API $1I32 IOD_Schematic:roach_gpio 16 #=P31
-API $1I32 IOD_Schematic:roach_gpio 17 PINLOC=13J6
 API $1I32 IOD_Schematic:roach_gpio 17 #=P30
-API $1I32 IOD_Schematic:roach_gpio 18 PINLOC=13J7
 API $1I32 IOD_Schematic:roach_gpio 18 #=N33
-API $1I32 IOD_Schematic:roach_gpio 19 PINLOC=13J7
 API $1I32 IOD_Schematic:roach_gpio 19 #=N34
-API $1I32 IOD_Schematic:roach_gpio 20 PINLOC=13J7
 API $1I32 IOD_Schematic:roach_gpio 20 #=P34
-API $1I32 IOD_Schematic:roach_gpio 21 PINLOC=13J7
 API $1I32 IOD_Schematic:roach_gpio 21 #=R33
-API $1I32 IOD_Schematic:roach_gpio 22 PINLOC=13J7
 API $1I32 IOD_Schematic:roach_gpio 22 #=M33
-API $1I32 IOD_Schematic:roach_gpio 23 PINLOC=13J7
 API $1I32 IOD_Schematic:roach_gpio 23 #=L33
-API $1I32 IOD_Schematic:roach_gpio 24 PINLOC=13J7
 API $1I32 IOD_Schematic:roach_gpio 24 #=P32
-API $1I32 IOD_Schematic:roach_gpio 25 PINLOC=13J7
 API $1I32 IOD_Schematic:roach_gpio 25 #=N32
-API $1I32 IOD_Schematic:roach_gpio 26 PINLOC=13J6
 API $1I32 IOD_Schematic:roach_gpio 26 #=R32
-API $1I32 IOD_Schematic:roach_gpio 27 PINLOC=13G7
-API $1I32 IOD_Schematic:roach_gpio 28 PINLOC=13G7
 API $1I32 IOD_Schematic:roach_gpio 28 #=AE18
-API $1I32 IOD_Schematic:roach_gpio 29 PINLOC=13G7
 API $1I32 IOD_Schematic:roach_gpio 29 #=AE14
 EW
