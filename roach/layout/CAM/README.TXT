@@ -6,9 +6,9 @@ IPC-6012: Performance Specification for Rigid Printed Boards.
 2. Assembled board in accordance with latest revision of
 ANSI-J-STD-001: Requirements for Soldered Electrical and Electronic Assemblies.
 
-3. Pad finish to be HASL or white tin.
+3. Pad finish to be ENIG.
 
-4. Solder mask to be black LPI.
+4. Solder mask to be blue LPI.
 
 5. Silk screen legends to be white.
 
