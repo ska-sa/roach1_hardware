@@ -1,4 +1,4 @@
-Board specifications for ROACH 1.0.2.
+Board specifications for ROACH 1.0.3.
 
 1. Bare board workmanship and finish in accordance with the latest revision of
 IPC-6012: Performance Specification for Rigid Printed Boards.
